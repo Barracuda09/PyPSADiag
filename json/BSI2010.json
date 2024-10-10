@@ -1,0 +1,5144 @@
+{
+  "name": "bsi_2010",
+  "tx_id": "752",
+  "rx_id": "652",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "BSI_2010_Continental": "C318",
+    "BSI_2010_Valeo": "E4D8",
+    "BSI_2010_EVO": "B4E0"
+  },
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "vin": "VIN",
+    "all_computers": "Available Computers",
+    "engine": "Engine and fuel system",
+    "info": "Driver information",
+    "lights": "Lighting",
+    "drive_assist": "Driving assistance",
+    "media": "Media",
+    "security": "Safety",
+    "comfort": "Comfort",
+    "other": "Miscellaneous",
+    "unsorted": "Unsorted"
+  },
+  "zones": {
+    "2100": {
+      "id": "Gauging_Group_Data_List",
+      "tab": "unsorted",
+      "name": "Gauging group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "tab": "unsorted",
+      "name": "Gauging group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2102": {
+      "id": "Maintenance_Group_Data_List",
+      "tab": "unsorted",
+      "name": "Maintenance group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2103": {
+      "id": "Maintenance_Group_Data_Values",
+      "tab": "unsorted",
+      "name": "Maintenance group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2104": {
+      "id": "Secured_Configuration_Settings_Group_Data_List",
+      "tab": "unsorted",
+      "name": "Secured configuration settings group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2105": {
+      "id": "Secured_Configuration_Settings_Data_Values",
+      "tab": "unsorted",
+      "name": "Secured configuration settings data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2106": {
+      "id": "Secured_Configuration_Settings_Group_Data_List_2",
+      "tab": "unsorted",
+      "name": "Secured configuration settings group data list 2",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2200": {
+      "id": "CFG_APQ_BSI_TABLEJAUGE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Type 0" },
+        { "value": "1", "name": "Type 1" },
+        { "value": "2", "name": "Type 2" },
+        { "value": "3", "name": "Type 3" },
+        { "value": "4", "name": "Type 4" },
+        { "value": "5", "name": "Type 5" },
+        { "value": "6", "name": "Type 6" },
+        { "value": "7", "name": "Type 7" },
+        { "value": "8", "name": "Type 8" },
+        { "value": "9", "name": "Type 9" },
+        { "value": "0A", "name": "Type 10" },
+        { "value": "0B", "name": "Type 11" },
+        { "value": "0C", "name": "Type 12" },
+        { "value": "0D", "name": "Type 13" },
+        { "value": "0E", "name": "Type 14" },
+        { "value": "0F", "name": "Type 16" }
+      ],
+      "name": "Fuel level measurement algorithm"
+    },
+    "2201": {
+      "id": "CFG_A4R_BSI_CAPARESER_000_New",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Tank capacity in liters"
+    },
+    "2202": {
+      "id": "CFG_BYT_BSI_RVIDE_2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "The resistance of the fuel level sensor with an empty tank"
+    },
+    "2203": {
+      "id": "CFG_BYU_BSI_RPLEIN_2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "The resistance of the fuel level sensor with a full tank"
+    },
+    "2204": {
+      "id": "CFG_A8G_BSI_LOIJAUGEAL_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Valeur de résistance jaughege définie pour le réservoir play"
+    },
+    "2205": {
+      "id": "CFG_AWS_BSI_TABLE_JAUGE_HUILE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Type 0" },
+        { "value": "1", "name": "Type 1" },
+        { "value": "2", "name": "Type 2" },
+        { "value": "3", "name": "Type 3" },
+        { "value": "4", "name": "Type 4" },
+        { "value": "5", "name": "Type 5" },
+        { "value": "6", "name": "Type 6" },
+        { "value": "7", "name": "Type 7" },
+        { "value": "8", "name": "Type 8" },
+        { "value": "9", "name": "Type 9" },
+        { "value": "0A", "name": "Type 10" },
+        { "value": "0B", "name": "Type 11" },
+        { "value": "0C", "name": "Type 12" },
+        { "value": "0D", "name": "Type 13" },
+        { "value": "0E", "name": "Type 14" },
+        { "value": "0F", "name": "Type 15" }
+      ],
+      "name": "Selecting the mode of monitoring the level of motor oil"
+    },
+    "2206": {
+      "id": "CFG_D15_BSI_ORIGINE_NIVHUILE2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Motor service box" },
+        { "value": "1", "name": "Engine control computer" },
+        { "value": "2", "name": "No acquisition" }
+      ],
+      "name": "Source of oil level"
+    },
+    "2207": {
+      "id": "CFG_BZL_BSI_ORIGINE_P_HUILE_2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Motor service box" },
+        { "value": "1", "name": "Engine control computer" },
+        { "value": "2", "name": "Smart utility box" }
+      ],
+      "name": "Source of oil pressure information"
+    },
+    "2208": {
+      "id": "CFG_AKH_BSI_PROVTHUILE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Motor service box" },
+        { "value": "1", "name": "Engine control computer" }
+      ],
+      "name": "Source of oil temperature"
+    },
+    "2209": {
+      "id": "CFG_BZB_BSI_TYPE_CAPT_PHUILE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Pressure meter" },
+        { "value": "1", "name": "Analog sensor" },
+        { "value": "2", "name": "Absent" }
+      ],
+      "name": "The presence and type of oil pressure sensor"
+    },
+    "220A": {
+      "id": "CFG_D57_BSI_SEUIL_CARB_CRITIQUE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Critical fuel level"
+    },
+    "2288": {
+      "id": "CFG_DGK_BSI_SEUIL_VIT_MOY_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Threshold Average life"
+    },
+    "2300": {
+      "id": "CFG_AKM_BSI_TYPE_AAS_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "None"
+        },
+        {
+          "value": "1",
+          "name": "Rear parking sensors"
+        },
+        {
+          "value": "2",
+          "name": "Front parking sensors"
+        },
+        {
+          "value": "3",
+          "name": "Parking sensors front and rear"
+        },
+        {
+          "value": "4",
+          "name": "Only measure the available parking space using the parking aid unit"
+        },
+        {
+          "value": "5",
+          "name": "Rear parking sensors + parking space measurement with parking aid"
+        },
+        {
+          "value": "6",
+          "name": "Front parking sensors + parking space measurement with parking aid"
+        },
+        {
+          "value": "7",
+          "name": "Parking sensors front and rear + search for a parking space using the parking assist unit"
+        },
+        {
+          "value": "8",
+          "name": "Measuring parking space with the Blind Spot Monitor"
+        },
+        {
+          "value": "9",
+          "name": "Rear parking sensors + parking space measurement with blind spot monitor"
+        },
+        {
+          "value": "10",
+          "name": "Reverse camera only"
+        },
+        {
+          "value": "11",
+          "name": "Reversing camera + rear parking sensors"
+        },
+        {
+          "value": "12",
+          "name": "Reversing camera + front parking sensors"
+        },
+        {
+          "value": "13",
+          "name": "Reversing camera + parking sensors front and rear"
+        },
+        {
+          "value": "14",
+          "name": "Reversing camera + parking space measurement with parking aid"
+        },
+        {
+          "value": "15",
+          "name": "Reversing camera + rear parking sensors + parking space measurement with parking aid"
+        },
+        {
+          "value": "16",
+          "name": "Reversing camera + front parking sensors + parking space measurement with parking aid"
+        },
+        {
+          "value": "17",
+          "name": "Reversing camera + front and rear parking sensors + parking space measurement with parking aid"
+        },
+        {
+          "value": "18",
+          "name": "Reversing camera + parking space measurement with blind spot monitor"
+        },
+        {
+          "value": "19",
+          "name": "Reversing camera + rear parking sensors + parking space measurement with blind spot monitor"
+        },
+        {
+          "value": "23",
+          "name": "Parking sensors front and rear + semi-automatic parking"
+        },
+        {
+          "value": "24",
+          "name": "Measuring available parking space with parking aid + semi-automatic parking"
+        },
+        {
+          "value": "25",
+          "name": "Rear parking sensors + parking space measurement with parking aid + semi-automatic parking"
+        },
+        {
+          "value": "26",
+          "name": "Front parking sensors + parking space measurement with parking aid + semi-automatic parking"
+        },
+        {
+          "value": "27",
+          "name": "Parking sensors front and rear + parking space measurement with parking aid + semi-automatic parking"
+        },
+        {
+          "value": "28",
+          "name": "Rear parking sensors + parking space measurement with blind spot monitoring + semi-automatic parking"
+        },
+        {
+          "value": "29",
+          "name": "Front parking sensors + parking space measurement with blind spot monitoring + semi-automatic parking"
+        },
+        {
+          "value": "33",
+          "name": "City Park and Visual Reversing Aid and with AAS Rear and Front function"
+        },
+        {
+          "value": "34",
+          "name": "City Park and Visual Reversing Aid and MPD on AAS Active only"
+        },
+        {
+          "value": "35",
+          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Rear function"
+        },
+        {
+          "value": "36",
+          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Front function"
+        },
+        {
+          "value": "37",
+          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Front and rear function"
+        },
+        {
+          "value": "38",
+          "name": "City Park and Visual Reversing Aid and MPD on SAM Active only"
+        },
+        {
+          "value": "39",
+          "name": "City Park and Visual Reversing Aid and MPD on SAM with Rear AAS function"
+        },
+        {
+          "value": "3A",
+          "name": "City Park and Visual Reversing Aid and MPD on SAM with Front AAS function"
+        },
+        {
+          "value": "3B",
+          "name": "City Park and Visual Reversing Aid and MPD on SAM with Front and Rear AAS function"
+        },
+        { "value": "43", "name": "43" },
+        { "value": "51", "name": "51" },
+        { "value": "53", "name": "53" },
+        { "value": "63", "name": "63" },
+        { "value": "64", "name": "64" },
+        { "value": "65", "name": "65" },
+        { "value": "66", "name": "66" },
+        { "value": "67", "name": "67" },
+        { "value": "68", "name": "68" },
+        { "value": "69", "name": "69" },
+        { "value": "73", "name": "73" },
+        { "value": "74", "name": "74" },
+        { "value": "75", "name": "75" },
+        { "value": "76", "name": "76" },
+        { "value": "77", "name": "77" },
+        { "value": "88", "name": "88" },
+        { "value": "79", "name": "79" },
+        { "value": "80", "name": "80" },
+        { "value": "81", "name": "81" },
+        { "value": "82", "name": "82" },
+        { "value": "83", "name": "83" },
+        { "value": "84", "name": "84" },
+        { "value": "85", "name": "85" },
+        { "value": "86", "name": "86" },
+        { "value": "87", "name": "87" },
+        { "value": "89", "name": "89" },
+        { "value": "90", "name": "90" },
+        { "value": "91", "name": "91" },
+        { "value": "92", "name": "92" },
+        { "value": "93", "name": "93" },
+        { "value": "94", "name": "94" },
+        { "value": "95", "name": "95" },
+        { "value": "96", "name": "96" },
+        { "value": "97", "name": "97" },
+        { "value": "98", "name": "98" },
+        { "value": "99", "name": "99" },
+        {
+          "value": "0A",
+          "name": "Parking sensors in front + measurement of free parking space using a block of control of blind zones"
+        },
+        {
+          "value": "0B",
+          "name": "Parking sensors in front and back + measurement of free parking space using a block of control of blind zones"
+        },
+        {
+          "value": "1A",
+          "name": "Robby camera + parking sensors in front + measurement of free parking space using a block of control of blind zones"
+        },
+        {
+          "value": "1B",
+          "name": "Robby camera + parking sensors in front and back + measurement of free parking space using a block of control of blind zones"
+        },
+        {
+          "value": "2A",
+          "name": "Parking sensors in front + measurement of free parking space using a unit control unit + semi-automatic parking"
+        },
+        {
+          "value": "2B",
+          "name": "Parking sensors in front and back + measurement of free parking space using a block of control of blind zones + semi-automatic parking"
+        },
+        { "value": "3A", "name": "BEHIND" },
+        { "value": "6A", "name": "Sha" },
+        { "value": "6B", "name": "BB" },
+        { "value": "7A", "name": "Scha" },
+        { "value": "7B", "name": "7b" },
+        { "value": "8A", "name": "8a" },
+        { "value": "8B", "name": "8b" },
+        { "value": "9A", "name": "9a" },
+        { "value": "9B", "name": "I WOULD" },
+        { "value": "A0", "name": "A0" },
+        { "value": "A1", "name": "A1" },
+        { "value": "A2", "name": "A2" },
+        { "value": "A3", "name": "Az" },
+        { "value": "A4", "name": "A4" },
+        { "value": "A5", "name": "A5" },
+        { "value": "A6", "name": "Ash" },
+        { "value": "A7", "name": "A7" },
+        { "value": "A8", "name": "A8" },
+        { "value": "A9", "name": "And I" },
+        { "value": "AA", "name": "Aa" },
+        { "value": "AB", "name": "Ab" },
+        { "value": "B0", "name": "B0" },
+        { "value": "B1", "name": "B1" },
+        { "value": "B2", "name": "B2" },
+        { "value": "B3", "name": "Bz" },
+        { "value": "B4", "name": "Warhead" },
+        { "value": "B5", "name": "B5" },
+        { "value": "B6", "name": "BB" },
+        { "value": "B7", "name": "B7" },
+        { "value": "B8", "name": "B8" },
+        { "value": "F9", "name": "F9" },
+        { "value": "BA", "name": "Ba" },
+        { "value": "BB", "name": "BB" },
+        { "value": "E0", "name": "E0" },
+        { "value": "E1", "name": "E1" },
+        { "value": "E2", "name": "E2" },
+        { "value": "E3", "name": "Sk" },
+        { "value": "E4", "name": "E4" },
+        { "value": "E5", "name": "E5" },
+        { "value": "E6", "name": "Eat" },
+        { "value": "E7", "name": "E7" },
+        { "value": "E8", "name": "E8" },
+        { "value": "E9", "name": "E9" },
+        { "value": "EA", "name": "EA" },
+        { "value": "EB", "name": "Fuck" },
+        { "value": "F0", "name": "F0" },
+        { "value": "F1", "name": "F1" },
+        { "value": "F2", "name": "F2" },
+        { "value": "F3", "name": "FZ" },
+        { "value": "F4", "name": "Pch" },
+        { "value": "F5", "name": "F5" },
+        { "value": "F6", "name": "FSh" },
+        { "value": "F7", "name": "F7" },
+        { "value": "F8", "name": "F8" },
+        { "value": "FA", "name": "F" },
+        { "value": "FB", "name": "FB" }
+      ],
+      "name": "The presence of assistance systems for parking / controlling blind areas / control of the strip"
+    },
+    "2301": {
+      "id": "CFG_BQK_BSI_PRESENCE_BSG_RQ_000",
+      "tab": "other",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a trailer switching unit (TSB)"
+    },
+    "2302": {
+      "id": "CFG_B50_BSI_SON_AAS_AU_COM200X_000_new",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The sound signal of the Assistance System for Parking is supplied with a steering wheel switch"
+    },
+    "2303": {
+      "id": "CFG_AKK_BSI_RETVISUAAS_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Parking system with visual alarm"
+    },
+    "2304": {
+      "id": "CFG_B84_BSI_CLE_INHIB_AIRBAG_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a passenger airbag"
+    },
+    "2305": {
+      "id": "CFG_B8A_BSI_TYPE_MONTE_ALARME_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Security alarm installed at the factory" },
+        { "value": "1", "name": "Security alarm, established additional" }
+      ],
+      "name": "Type of installation of security alarms"
+    },
+    "2306": {
+      "id": "CFG_B85_BSI_INHIB_VOLUME_ALARME_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Active" },
+        { "value": "1", "name": "Inactive" }
+      ],
+      "name": "Security alarm volume control system"
+    },
+    "2307": {
+      "id": "CFG_BZC_BSI_PRESENCE_NB_TO_000",
+      "tab": "other",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "1 hatch" },
+        { "value": "2", "name": "2 hatch" },
+        { "value": "3", "name": "3 hatch" }
+      ],
+      "name": "The presence and number of hatches in the roof"
+    },
+    "2308": {
+      "id": "LID_23_36_4_0",
+      "tab": "other",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Car with right handside drive"
+    },
+    "2309": {
+      "id": "CFG_ABM_BSI_TYPEALARME_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Standard alarm" },
+        { "value": "2", "name": "Belgium security alarm" },
+        { "value": "3", "name": "Security alarm for Switzerland" },
+        { "value": "4", "name": "Alarm for the UK" },
+        { "value": "5", "name": "Sweden alarm" },
+        { "value": "6", "name": "Alarm for China" }
+      ],
+      "name": "Type of security alarm"
+    },
+    "230A": {
+      "id": "CFG_BQM_BSI_MODELE_CLE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Mechanical key" },
+        { "value": "1", "name": "Electronic key" },
+        { "value": "2", "name": "Remote remote control \"Free Hands\"" }
+      ],
+      "name": "Key type"
+    },
+    "230B": {
+      "id": "CFG_AX9_BSI_NBR_C_NON_BOUCLAGE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "The number of warning signs that seat belts are not fastened"
+    },
+    "230C": {
+      "id": "CFG_AX8_BSI_NAPPE_DETECT_PASS_AV_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Front passenger presence sensor"
+    },
+    "230D": {
+      "id": "CFG_B3Z_BSI_BARRETTE_TNB_SUR_LIN_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a seat belt warning bar in the LIN network"
+    },
+    "230E": {
+      "id": "CFG_AY6_BSI_INHIB_DIAG_TNB_COND_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed seat belt of the driver (No Checkmark = yes)"
+    },
+    "230F": {
+      "id": "CFG_AY8_BSI_INHIB_DIAG_TNB_PAV_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed seat belt of the front passenger (No Checkmark = yes)"
+    },
+    "2310": {
+      "id": "CFG_B3U_BSI_INHIB_DIAG_TNB_PARC_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed passenger seat belt of the central rear seat (No Checkmark = yes)"
+    },
+    "2311": {
+      "id": "CFG_B3W_BSI_INHIB_DIAG_TNB_PARD_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed passenger seat belt of the right rear seat (No Checkmark = yes)"
+    },
+    "2312": {
+      "id": "CFG_B3V_BSI_INHIB_DIAG_TNB_PARG_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed passenger seat belt of the left rear seat (No Checkmark = yes)"
+    },
+    "2313": {
+      "id": "CFG_B4N_BSI_INHIB_DIAG_TNB_RANG3_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of an fixed seat belt of the third row of seats (No Checkmark = yes)"
+    },
+    "2314": {
+      "id": "CFG_A72_BSI_EMF_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Multifunctional display"
+    },
+    "2315": {
+      "id": "CFG_BEG_BSI_PRESENCE_MATT_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a matrix display"
+    },
+    "2316": {
+      "id": "CFG_AAV_BSI_STOPSTART_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Stop and Start function"
+    },
+    "2317": {
+      "id": "CFG_B4R_BSI_PSEUDO_CONSO_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Display of information on fuel consumption without taking into account excess consumption due to regeneration of the particulate filter"
+    },
+    "2318": {
+      "id": "CFG_B6D_BSI_CLIMAT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "-17 - +37" },
+        { "value": "1", "name": "-25 - +37" },
+        { "value": "2", "name": "-30 - +37" },
+        { "value": "4", "name": "-17 - +45" },
+        { "value": "8", "name": "-17 - +50" },
+        { "value": "10", "name": "-30 - +45" }
+      ],
+      "name": "Climate type"
+    },
+    "2319": {
+      "id": "CFG_BC0_BSI_SIEGE_CHAUFFANT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of seats with heating"
+    },
+    "231A": {
+      "id": "CFG_000_FREIN_BVPR",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Manual" },
+        { "value": "1", "name": "Automatic" },
+        { "value": "2", "name": "Robotized 1" },
+        { "value": "3", "name": "Robotized 2" }
+      ],
+      "name": "Type of gearbox"
+    },
+    "231B": {
+      "id": "CFG_BQO_BSI_TYPE_DEMARRAGE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Mechanical key" },
+        { "value": "1", "name": "Mechanical key in emergency mode" },
+        { "value": "2", "name": "Impulse signal from engine start switch" },
+        { "value": "3", "name": "Maintained by engine start-up switch" }
+      ],
+      "name": "Type of launch"
+    },
+    "231C": {
+      "id": "CFG_BQP_BSI_TYPE_GMP_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Petrol engine" },
+        { "value": "1", "name": "Diesel engine" },
+        { "value": "2", "name": "Bioflex engine" },
+        { "value": "3", "name": "BioFlex engine with preheating" }
+      ],
+      "name": "Type of combustion engine"
+    },
+    "231D": {
+      "id": "CFG_D2L_BSI_PRESENCE_DSG_DIRECT_001",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Direct first generation (with a computer)" },
+        { "value": "2", "name": "Indirect using the ABS/ESP unit" },
+        { "value": "3", "name": "Direct second generation (with a computer)" }
+      ],
+      "name": "Tire pressure control type"
+    },
+    "231E": {
+      "id": "CFG_A5S_BSI_CDL_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Light sensor"
+    },
+    "231F": {
+      "id": "CFG_AYU_BSI_COMMODO_ECL_4POSI_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a lighting control knob with 4 positions"
+    },
+    "2320": {
+      "id": "CFG_BQR_BSI_OPTION_FMH_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Track lighting"
+    },
+    "2321": {
+      "id": "CFG_A9F_BSI_OPTMAE_000",
+      "tab": "other",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Training car"
+    },
+    "2322": {
+      "id": "CFG_AV9_BSI_TYPE_MENU_PERSO_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Unique profile" },
+        { "value": "2", "name": "Several profiles" }
+      ],
+      "name": "Type of individual settings menu"
+    },
+    "2323": {
+      "id": "CFG_A3R_BSI_ABAV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of front fog lights"
+    },
+    "2324": {
+      "id": "CFG_BC5_BSI_TYPE_ECL_VIRAGE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "No specific lighting" },
+        { "value": "1", "name": "Static lighting: controlled by intelligent switch box" },
+        { "value": "2", "name": "Static lighting: computer controlled headlights" },
+        { "value": "3", "name": "Dynamic lighting: guided headlights" }
+      ],
+      "name": "Type of cornering lighting"
+    },
+    "2325": {
+      "id": "CFG_AWV_BSI_TYPE_ECLAIRAGE_AVANT_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "1", "name": "Standard lighting" },
+        { "value": "2", "name": "Single filament halogen lamp" },
+        { "value": "4", "name": "Double filament halogen lamp" },
+        { "value": "8", "name": "Xenon lamp" },
+        { "value": "10", "name": "LED lamp" }
+      ],
+      "name": "Type of head lighting"
+    },
+    "2326": {
+      "id": "CFG_BQS_BSI_PRESENCE_CAFR_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a feature of high-beam switching function: Smart-Beam lighting (HBA/CAFR)"
+    },
+    "2327": {
+      "id": "CFG_BKE_BSI_PRESENCE_AMB_ACCUEIL_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the interior lighting and entry into the car function"
+    },
+    "2328": {
+      "id": "CFG_A5T_BSI_CDP_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Rain sensor"
+    },
+    "2329": {
+      "id": "CFG_A8N_BSI_LVPROJ_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of headlight washers"
+    },
+    "232A": {
+      "id": "CFG_B8A_BSI_TYPE_MONTE_ALARME_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "1", "name": "Absent" },
+        { "value": "2", "name": "Day lighting in one block" },
+        { "value": "3", "name": "Functional day lighting *1 type of type *2" },
+        { "value": "4", "name": "Separate day lighting" },
+        { "value": "5", "name": "Functional day lighting *1 type of type *2 (repeat ???)" }
+      ],
+      "name": "Type of daylight running lights"
+    },
+    "232B": {
+      "id": "CFG_B3D_BSI_DIURNES_ET_POSITION_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Simultaneous activation of daytime running lights and side lights"
+    },
+    "232C": {
+      "id": "CFG_B3F_BSI_ETAT_DEFAUT_DIURNES_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Lighting on the default daylight"
+    },
+    "232D": {
+      "id": "CFG_BTG_BSI_TYPE_FAP_2010_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "A pump controlled by wired communication" },
+        {
+          "value": "2",
+          "name": "Pump additives on the multiplex network Lin-1"
+        },
+        {
+          "value": "3",
+          "name": "Pump additives on the multiplex network Lin-2"
+        },
+        { "value": "4", "name": "Soot filter without adding additives" }
+      ],
+      "name": "The presence and type of additive in diesel fuel"
+    },
+    "232E": {
+      "id": "CFG_BE8_BSI_PLIP_RHF_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a special high-frequency receiver (Japan)"
+    },
+    "232F": {
+      "id": "CFG_AC3_BSI_VEROUPASS_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Passenger door lock"
+    },
+    "2330": {
+      "id": "CFG_A7H_BSI_FERVTELCLE_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Closing windows using a remote control and key"
+    },
+    "2331": {
+      "id": "CFG_ABN_BSI_TYPECHAUFF_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Thermoresistors 1000 watts" },
+        { "value": "2", "name": "Autonomous heating" },
+        { "value": "3", "name": "Programmable heating" },
+        { "value": "4", "name": "Thermoresistors 300 watts" },
+        { "value": "5", "name": "Thermoresistors 600 watts" }
+      ],
+      "name": "Type of additional heating system"
+    },
+    "2332": {
+      "id": "CFG_B0C_BSI_DEF_OPT_ALTERNATEUR_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Self-starting" },
+        { "value": "2", "name": "Controlled" },
+        { "value": "3", "name": "Starter-generator" },
+        { "value": "4", "name": "Controlled 2nd generation" }
+      ],
+      "name": "Generator type"
+    },
+    "2333": {
+      "id": "CFG_BFV_BSI_TYPE_BATTERIE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "42 ah" },
+        { "value": "1", "name": "50 ah" },
+        { "value": "2", "name": "60 ah" },
+        { "value": "3", "name": "64 ah" },
+        { "value": "4", "name": "70 ah" },
+        { "value": "5", "name": "75 ah" },
+        { "value": "6", "name": "95 ah" },
+        { "value": "7", "name": "55 ah" },
+        { "value": "8", "name": "80 ah" },
+        { "value": "9", "name": "82 ah" },
+        { "value": "A", "name": "90 ah" }
+      ],
+      "name": "Type of battery"
+    },
+    "2334": {
+      "id": "CFG_B93_BSI_TYPE_SOC_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Yes performed by the battery charge level control unit" },
+        { "value": "2", "name": "Yes performed by intelligent switching unit" }
+      ],
+      "name": "Battery charge assessment function"
+    },
+    "2338": {
+      "id": "CFG_A8V_BSI_MIXAGE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Ungovernable" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" },
+        { "value": "4", "name": "Four-zone" }
+      ],
+      "name": "Air mixing type"
+    },
+    "2339": {
+      "id": "CFG_AKD_BSI_MEMOP_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Module for memorizing the position of the passenger seat"
+    },
+    "233A": {
+      "id": "CFG_B52_BSI_UCE_CAN_AMPLI_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Audio system amplifier"
+    },
+    "233B": {
+      "id": "CFG_B3Y_BSI_PRESENCE_CAAR_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a block of the corrector of the height of the rear part (pneumatic suspension)"
+    },
+    "233C": {
+      "id": "CFG_A60_BSI_CLIM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of air conditioning"
+    },
+    "233D": {
+      "id": "CFG_AVA_BSI_PRESENCE_FSE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an auxiliary electric brake"
+    },
+    "233E": {
+      "id": "CFG_A8U_BSI_MEMOCONDUC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: remembering driver's seat adjustments"
+    },
+    "233F": {
+      "id": "CFG_BVL_BSI_XVVREPROG_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a programmable cruise control system"
+    },
+    "2340": {
+      "id": "CFG_AYR_BSI_DIAG_STATION_STL_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: a warning system for unintentional intersection of road marking lines"
+    },
+    "2341": {
+      "id": "CFG_B3E_BSI_PRESENCE_VTH_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a system display system in the field of view of the driver"
+    },
+    "2342": {
+      "id": "CFG_BQU_BSI_PRESENCE_TELEMATIQUE_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a telematics block"
+    },
+    "2343": {
+      "id": "CFG_B36_BSI_FEUX_STATIONNEMENT_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of parking lights (lateral designation of dimensions)"
+    },
+    "2344": {
+      "id": "CFG_A5V_BSI_CDS_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Dynamic stabilization system (ESP)"
+    },
+    "2345": {
+      "id": "CFG_ABA_BSI_TEMPEXT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an outdoor temperature sensor"
+    },
+    "2346": {
+      "id": "CFG_AAT_BSI_SONDEAUGAZ_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Diesel-fuel water sensor"
+    },
+    "2347": {
+      "id": "CFG_AYK_BSI_OFFSET_CONS_LVV_RVV_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Correction of the difference between the speed set for cruise control, and speed by speedometer in km/h (multiply the value by 10)"
+    },
+    "2348": {
+      "id": "CFG_A8H_BSI_LRAVV_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value":  "0", "name": "Absent" },
+        { "value":  "2", "name": "Cruise control (RVV2)" },
+        { "value":  "3", "name": "Cruise control (RVV2) with speed limiter (LVV)" },
+        { "value":  "4", "name": "Automatic cruise control (ACC)" },
+        { "value":  "5", "name": "Automatic cruise control (ACC) with speed limiter (LVV)" },
+        { "value":  "7", "name": "Automatic cruise control (ACC) with RVV2+LVV" },
+        { "value":  "8", "name": "Over-speed warning only" },
+        { "value": "0A", "name": "Cruise control (RVV2) with over-speed alert" },
+        { "value": "0C", "name": "Automatic cruise control (ACC) with over-speed alert" },
+        { "value": "10", "name": "Speed limiter (LVV) only" }
+      ],
+      "name": "The presence and type of regulator/speed limiter"
+    },
+    "2349": {
+      "id": "CFG_A4A_BSI_ALRTSVIT_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Warning about speeding for countries of the Arabian Peninsula"
+    },
+    "234A": {
+      "id": "CFG_A8L_BSI_LVAVMUX_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Multiplex front windows"
+    },
+    "234B": {
+      "id": "CFG_D16_BSI_PRES_LEVE_VITRES_AP_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of four power windows with anti-pinch function or two front windows with anti-pinch function (if the rear windows are not electric)"
+    },
+    "234C": {
+      "id": "CFG_AWD_BSI_FONCTION_ACCUEIL_CON_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the driver's meeting"
+    },
+    "234D": {
+      "id": "CFG_D2M_BSI_RABAT_RETRO_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "External mirrors with electric and folding, controlled by an intellectual switching unit (BSI)"
+    },
+    "234E": {
+      "id": "CFG_BQV_BSI_PRES_FCT_MASSAGE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an massage option"
+    },
+    "234F": {
+      "id": "CFG_AAC_BSI_RHEOSTAUTO_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Automatic backlighting of the dashboard and multifunctional display, depending on the brightness of the outdoor lighting"
+    },
+    "2350": {
+      "id": "CFG_AWS_BSI_TABLE_JAUGE_HUILE_000",
+      "tab": "vin",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "1008", "name": "DS3" },
+        { "value": "100C", "name": "208 3-door (A9)" },
+        { "value": "110C", "name": "208 5-Door (A9)" },
+        { "value": "1111", "name": "208 5-Door (AI9) / 2008 (AI94)" },
+        { "value": "1113", "name": "C4 CACTUS" },
+        { "value": "1116", "name": "C4 Cactus (Mercosur)" },
+        { "value": "130D", "name": "301 / C-Yelysee" },
+        { "value": "1310", "name": "301 / c-elisee (Iran)" },
+        { "value": "1312", "name": "301 / c-elisee (china)" },
+        { "value": "140F", "name": "2008" },
+        { "value": "1414", "name": "2008 (China)" },
+        { "value": "1415", "name": "C3-XR" },
+        { "value": "1419", "name": "301 5-door" },
+        { "value": "170E", "name": "DS3 Cabrio" },
+        { "value": "2109", "name": "C4 Saloon 5-Door" },
+        { "value": "210A", "name": "DS5" },
+        { "value": "2113", "name": "2113" },
+        { "value": "2115", "name": "308 5-Door" },
+        { "value": "2118", "name": "2118" },
+        { "value": "211A", "name": "DS5 (China)" },
+        { "value": "211C", "name": "C4 Berline 5-Door (Iran)" },
+        { "value": "211F", "name": "DS4S" },
+        { "value": "2120", "name": "308 5-Door (China)" },
+        { "value": "2215", "name": "308 SW" },
+        { "value": "2312", "name": "C4L (China)" },
+        { "value": "231B", "name": "C4 Sedan (Russia)" },
+        { "value": "231C", "name": "C4L (Iran)" },
+        { "value": "231E", "name": "C4L (B73M)" },
+        { "value": "231F", "name": "DS5 LS" },
+        { "value": "2320", "name": "308 4-Door (China)" },
+        { "value": "2321", "name": "L60 / C4 (BZ3)" },
+        { "value": "241F", "name": "DS6" },
+        { "value": "2509", "name": "DS4" },
+        { "value": "2813", "name": "2813" },
+        { "value": "2814", "name": "C4 Picasso 7-Eats" },
+        { "value": "2818", "name": "2818" },
+        { "value": "2A14", "name": "C4 Picasso 5-Eats" },
+        { "value": "3307", "name": "508 4-door" },
+        { "value": "3308", "name": "508 (China)" },
+        { "value": "330A", "name": "G95 4-Door (China)" },
+        { "value": "3407", "name": "508 rxh" },
+        { "value": "3B07", "name": "508 SW" },
+        { "value": "5303", "name": "308 4-door (tx9)" },
+        { "value": "5304", "name": "C6 4-Door (China)" },
+        { "value": "5308", "name": "C5 4-Door" },
+        { "value": "5402", "name": "3008 (P84)" },
+        { "value": "5405", "name": "4008 (P84C)" },
+        { "value": "5406", "name": "5406" },
+        { "value": "5407", "name": "C5 Aircons 5-Door (C84C)" },
+        { "value": "5802", "name": "5008 (P87)" },
+        { "value": "5901", "name": "Jumpy/Expert" },
+        { "value": "5902", "name": "5008 (P87 China)" },
+        { "value": "5C01", "name": "Spacetourer/Traveller" },
+        { "value": "6103", "name": "C3 (B618)" },
+        { "value": "6106", "name": "C3 Iran (B618)" },
+        { "value": "6405", "name": "M44 Iran" },
+        { "value": "6A01", "name": "6A01" },
+        { "value": "6A02", "name": "C3 AIRCROSS (A88)" },
+        { "value": "6A04", "name": "C4 Aircons (A88 Chine)" },
+        { "value": "7101", "name": "508 5-Door (R8 Europe)" },
+        { "value": "7105", "name": "508L 5-door (R83 China)" },
+        { "value": "7201", "name": "508 Break (R8)" },
+        { "value": "7403", "name": "DS7 Crossback (X74 Europe)" },
+        { "value": "7406", "name": "C5 AIRCROSS (C84)" },
+        { "value": "7407", "name": "DS7 Crossback (X74 China)" },
+        { "value": "7803", "name": "X83 Europe" },
+        { "value": "7902", "name": "Berlingo Utility (K9)" },
+        { "value": "7903", "name": "X83 China" },
+        { "value": "7904", "name": "7904" },
+        { "value": "7C02", "name": "Berlingo (K9)" },
+        { "value": "7C04", "name": "7c04" },
+        { "value": "8102", "name": "P21 Europe" },
+        { "value": "8104", "name": "P21 Berline 5 Portes" },
+        { "value": "8105", "name": "C41 Europe" },
+        { "value": "810D", "name": "Corsa P2JO - Berlines 5 Porte" },
+        { "value": "8306", "name": "C43 China" },
+        { "value": "8307", "name": "C43 Mercosur" },
+        { "value": "8401", "name": "D34" },
+        { "value": "8403", "name": "P24 China" },
+        { "value": "8404", "name": "P24 Europe" },
+        { "value": "8407", "name": "DS 3 Crossback China D34" },
+        { "value": "840E", "name": "P2Q0" },
+        { "value": "0000", "name": "Unknown" }
+      ],
+      "name": "Type of car"
+    },
+    "2351": {
+      "id": "CFG_BQW_BSI_TYPE_SECURITE_ENFANT_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "There is no, or there is a mechanical system for protecting children without information about the state of locks" },
+        { "value": "1", "name": "Mechanical system of protecting children with information about the state of locks" },
+        { "value": "10", "name": "Electric system for protecting children with information on the state of locks" }
+      ],
+      "name": "Availability and type of function of the children's protection system"
+    },
+    "2352": {
+      "id": "CFG_ABL_BSI_TYPCONDA_000_bis_temp",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of locking" },
+        { "value": "1", "name": "Simple blocking" },
+        { "value": "2", "name": "Superblock 2 times" },
+        { "value": "3", "name": "Super blocking 1 time" }
+      ],
+      "name": "Type of locking"
+    },
+    "2353": {
+      "id": "CFG_BZD_BSI_TYPE_SELECTIVITE2010_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value":  "0", "name": "Lack of selectivity" },
+        { "value":  "1", "name": "Choosing unlocking the driver's door" },
+        { "value": "10", "name": "Selectivity of the front/rear opening elements of the body" }
+      ],
+      "name": "Type of locking/unlocking door locks"
+    },
+    "2354": {
+      "id": "CFG_BQX_BSI_TYPE_FCT_3EBOUT_PLIP_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Opening or unlocking trunk/5th door" },
+        { "value": "1", "name": "Opening or unlocking rear window" },
+        { "value": "2", "name": "Lighting / alarm" },
+        { "value": "06", "name": "Unlocking the charging area" },
+        {
+          "value": "07",
+          "name": "Opening / closing the front right sliding side door"
+        }
+      ],
+      "name": "The function of the third button of the high-frequency remote control"
+    },
+    "2357": {
+      "id": "CFG_BQY_BSI_TYP_APUI_3EBOUT_PLIP_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Short pressing" },
+        { "value": "1", "name": "Long-term pressing" },
+        { "value": "2", "name": "Support maintained" }
+      ],
+      "name": "Type of pressing the third remote control button"
+    },
+    "2360": {
+      "id": "CFG_BVJ_BSI_ECL_INTERSECTION_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an additional head lighting function using fog lights"
+    },
+    "2361": {
+      "id": "CFG_BVI_BSI_PRES_FCT_AERAT_TELEC_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the function of turning on ventilation from the remote control"
+    },
+    "2362": {
+      "id": "CFG_BVH_BSI_OPTION_SIGNATURE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "There are no backlight lamps" },
+        { "value": "1", "name": "Dimensions and daylight lights" },
+        { "value": "2", "name": "Gabarit lights" },
+        { "value": "3", "name": "Day lighting" },
+        { "value": "4", "name": "CFG_BVH_BSI_OPTION_SIGNATURE_000_04" },
+        { "value": "5", "name": "CFG_BVH_BSI_OPTION_SIGNATURE_000_05" }
+      ],
+      "name": "Front headlights with daytime running lights"
+    },
+    "2364": {
+      "id": "CFG_BEB_BSI_PRESENCE_DIRA_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of power steering"
+    },
+    "2365": {
+      "id": "CFG_AXN_BSI_MODE_THATCHAM_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Activating THATCHAM mode"
+    },
+    "2366": {
+      "id": "CFG_BQ9_BSI_PRESENCE_MDS_BTA_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a service module (MDS) or autonomous telematics unit (BTA)"
+    },
+    "2367": {
+      "id": "CFG_A3Q_BSI_ABAR_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of rear fog lights"
+    },
+    "2368": {
+      "id": "CFG_B31_BSI_ABAR_GAUCHE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the rear left fog light"
+    },
+    "2369": {
+      "id": "CFG_B32_BSI_ABAR_DROITE_000_NEW",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the rear right fog light"
+    },
+    "236A": {
+      "id": "CFG_B20_BSI_FEUX_DE_RECUL_GAUCHE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of left reversing light"
+    },
+    "236B": {
+      "id": "CFG_B21_BSI_FEUX_DE_RECUL_DROIT_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of right reversing light"
+    },
+    "236C": {
+      "id": "CFG_BVG_BSI_PRES_BOITIER_CMF_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a multifunctional camera (CMF)"
+    },
+    "236D": {
+      "id": "CFG_BVF_BSI_PRES_CDPL_LIN_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of rain / light lighting sensor on the LIN network"
+    },
+    "236E": {
+      "id": "CFG_BVE_BSI_ECLAIREURS_LATERAUX_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of outer side backlight"
+    },
+    "236F": {
+      "id": "CFG_BVD_BSI_PRES_BOITIER_CAFR_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "the presence of a computer switch"
+    },
+    "2370": {
+      "id": "CFG_BLL_BSI_PRESENCE_GSI_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an indicator of the recommended transmission (gearbox)"
+    },
+    "2371": {
+      "id": "CFG_BVC_BSI_PRES_SIEGE_COND_ELEC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a driver's seat with an electrical control included in the intellectual switching unit (BSI)"
+    },
+    "2372": {
+      "id": "CFG_BVB_BSI_PRES_SIEGE_PASS_ELEC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a passenger seat with an electrical control included in the intellectual switching unit (BSI)"
+    },
+    "2373": {
+      "id": "CFG_BXN_BSI_TYPE_AIDE_CONDUITE_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Blind spot monitoring provided by a blind spot monitoring computer" },
+        { "value": "2", "name": "Warning of unintentional crossing of road markings is provided by a multifunctional video camera" },
+        { "value": "3", "name": "Blind Spot Monitoring, Computer Controlled Blind Spot Monitoring and Cross Lane Warning System Controlled by multifunctional Video Camera" },
+        { "value": "4", "name": "Warning of unintentional line crossings using infrared sensors" },
+        { "value": "5", "name": "Blind Spot Monitoring with Blind Spot Monitoring Computer + Cross Line Warning with Infrared Sensors" },
+        { "value": "8", "name": "Blind Spot Monitoring with Parking Assist Computer" },
+        { "value": "A", "name": "Blind spot control is provided by a parking assistance computer and a cross-line warning system using a multifunctional video camera" },
+        { "value": "C", "name": "Blind spot monitoring with parking assist computer + cross-line warning with infrared sensors" }
+      ],
+      "name": "Availability and type of driving assistance system (AFIL / SAM)"
+    },
+    "2375": {
+      "id": "CFG_B6Q_BSI_HILL_ASSIST_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Preservation of braking (system of dynamic stabilization) for 2 seconds at the beginning of movement on the slope"
+    },
+    "2376": {
+      "id": "CFG_BV9_BSI_TYPE_SONDE_AIR_2010_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "1 sensor" },
+        { "value": "2", "name": "2 sensors in front" },
+        { "value": "3", "name": "1 sensor in front and 2 sensors behind" },
+        { "value": "4", "name": "2 sensors in front and 2 sensors behind" },
+        { "value": "5", "name": "2 sensors behind" }
+      ],
+      "name": "The presence and type of sensor of the supplied air"
+    },
+    "2378": {
+      "id": "CFG_AAU_BSI_SONDENSOL_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "2", "name": "Sunlight single-zone sensor" },
+        { "value": "3", "name": "Sunlight double-zone sensor" }
+      ],
+      "name": "Sunlight sensor type"
+    },
+    "2379": {
+      "id": "CFG_A4V_BSI_CAPTPOLLU_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a pollution sensor"
+    },
+    "237A": {
+      "id": "CFG_BLN_BSI_SEUIL_VIT_CONDA_AUTO_000_New",
+      "tab": "security",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "The threshold value of the speed for automatic blocking in movement in km/h"
+    },
+    "237B": {
+      "id": "CFG_BC4_BSI_SONDE_TEMP_EVAPO_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Front sensor" },
+        { "value": "2", "name": "One front and one rear sensor" }
+      ],
+      "name": "The position of the temperature sensors of the evaporator"
+    },
+    "237C": {
+      "id": "237C",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Pressure sensor 30 bar" },
+        { "value": "1", "name": "Pressure sensor 35 bar" }
+      ],
+      "name": "Type of pressure sensor of the air conditioning system"
+    },
+    "237D": {
+      "id": "237D",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "Compressor with the internal control system with the coupling"
+        },
+        {
+          "value": "1",
+          "name": "Compressor with an external control system with a coupling"
+        },
+        {
+          "value": "2",
+          "name": "Compressor with an external control system, without a coupling"
+        },
+        {
+          "value": "3",
+          "name": "Compressor of permanent working volume with a drive clutch"
+        },
+        { "value": "4", "name": "Electric" }
+      ],
+      "name": "Type of air conditioning compressor"
+    },
+    "237E": {
+      "id": "CFG_BXO_BSI_SIEGES_CLIMATISES_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Seat heating" },
+        { "value": "2", "name": "Heated and ventilated seats" }
+      ],
+      "name": "the presence of heated seats or heated ventilated seats"
+    },
+    "237F": {
+      "id": "CFG_AXM_BSI_TYPE_ENTREE_AIR_PIL_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Not controlled" },
+        {
+          "value": "1",
+          "name": "Activated depending on the percentage of the closure"
+        },
+        {
+          "value": "2",
+          "name": "Activated depending on the level (controlled recirculation)"
+        }
+      ],
+      "name": "Air supply type"
+    },
+    "2380": {
+      "id": "CFG_BV8_BSI_MIXAGE_AVANT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Ungovernable" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" }
+      ],
+      "name": "Air mixing type (front air conditioner)"
+    },
+    "2381": {
+      "id": "CFG_A6M_BSI_DISTRIBUT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Ungovernable" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" },
+        { "value": "3", "name": "Three-zone" },
+        { "value": "4", "name": "Single-zone dual drive" },
+        { "value": "5", "name": "Double-wheel dual drive" }
+      ],
+      "name": "Air distribution system type"
+    },
+    "2382": {
+      "id": "CFG_B5T_BSI_PRESENCE_PULSAR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Non-controlled electric fan or absent" },
+        { "value": "1", "name": "Contained interior electric fan" },
+        { "value": "2", "name": "Controlled right and left fans of the interior" },
+        { "value": "3", "name": "Separate air supply from the right and left side (relay for the front)" },
+        { "value": "4", "name": "The rear fan with controlled power" }
+      ],
+      "name": "Rear interior fan type"
+    },
+    "2383": {
+      "id": "CFG_BV7_BSI_MIXAGE_ARRIERE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Ungovernable" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" }
+      ],
+      "name": "Air mixing type (rear air conditioner)"
+    },
+    "2384": {
+      "id": "CFG_BV6_BSI_DISTRIBUT_AR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Ungovernable" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" }
+      ],
+      "name": "Distribution type: rear"
+    },
+    "2385": {
+      "id": "CFG_BV5_BSI_MODUL_HYBRID_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Engine with \"Stop and Start\" function" },
+        { "value": "2", "name": "Hybrid power unit" }
+      ],
+      "name": "The presence of the \"Stop and Start\" engine or hybrid power unit"
+    },
+    "2386": {
+      "id": "CFG_B5V_BSI_PRESENCE_RTE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Using the heat of the exhaust gases to heating the interior"
+    },
+    "2387": {
+      "id": "CFG_ABK_BSI_TYPCLIM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without air conditioning" },
+        { "value": "1", "name": "Single-zone" },
+        { "value": "2", "name": "Double-zone" },
+        {
+          "value": "3",
+          "name": "The air conditioning air conditioning with the regulation of mixing air flows"
+        }
+      ],
+      "name": "Type of air conditioning"
+    },
+    "2388": {
+      "id": "CFG_BV3_BSI_MODUL_CLIM_TI_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "The air conditioner is turned off" },
+        {
+          "value": "1",
+          "name": "Air conditioning is turned on when the ignition is turned on"
+        },
+        { "value": "2", "name": "The function is restored" }
+      ],
+      "name": "The presence of a heater or air conditioner with a non-working engine"
+    },
+    "2389": {
+      "id": "CFG_AA5_BSI_RAPCOMPRES_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Information about the inclusion of air conditioning compressor"
+    },
+    "238A": {
+      "id": "CFG_BJW_BSI_POMPE_EAU_DEBRAYABLE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a coolant pump with a drive clutch"
+    },
+    "238B": {
+      "id": "CFG_BNL_BSI_PRESENCE_DCT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an algorithm for combustion of the fuel mixture with a cold engine to accelerate the heating of the car interior"
+    },
+    "238C": {
+      "id": "CFG_BXP_BSI_PRECOND_THERMIQUE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        {
+          "value": "1",
+          "name": "Internal preliminary thermal preparation (with matrix and menu)"
+        },
+        {
+          "value": "2",
+          "name": "External preliminary thermal training (additional installation)"
+        },
+        {
+          "value": "3",
+          "name": "Internal and external preliminary thermal training (with a matrix, menu and remote control)"
+        }
+      ],
+      "name": "The presence and type of preliminary thermal training"
+    },
+    "238D": {
+      "id": "CFG_BV2_BSI_PARE_BRISE_ATHERMIQ_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Athermic windshield"
+    },
+    "238E": {
+      "id": "CFG_B89_BSI_PRESENCE_GNV_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Natural gas (GNV)"
+    },
+    "238F": {
+      "id": "CFG_BBM_BSI_ACTI_CONFIG_POLICE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "With the inclusion of rotation indicators" },
+        { "value": "1", "name": "Without turning on the turning indicators" }
+      ],
+      "name": "Configuration \"Police\"?"
+    },
+    "2390": {
+      "id": "CFG_AYV_BSI_COMMODO_ESV_AUTO_IMP_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a handle with the switching button for the automatic wiper mode"
+    },
+    "2391": {
+      "id": "CFG_BXQ_BSI_PRESENCE_MMAR_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Availability of rear multimedia equipment"
+    },
+    "2392": {
+      "id": "CFG_BXR_BSI_TYPE_FMUX_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Front multiplex panel (electric)" },
+        { "value": "2", "name": "Front multiplex panel (mechanical)" }
+      ],
+      "name": "Availability and type of multiplex control panel"
+    },
+    "2394": {
+      "id": "CFG_BXT_BSI_TYPE_RADIO_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without a car radio" },
+        { "value": "1", "name": "RD5" },
+        { "value": "2", "name": "CD car radio with a display (RDE)" },
+        { "value": "4", "name": "RD45" },
+        { "value": "8", "name": "RD9" },
+        { "value": "10", "name": "RD6" }
+      ],
+      "name": "Type of radio receiver"
+    },
+    "2395": {
+      "id": "CFG_BXU_BSI_TYPE_BTEL_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without telematics" },
+        { "value": "1", "name": "Rneg" },
+        { "value": "2", "name": "NG4" },
+        { "value": "4", "name": "Smeg" },
+        { "value": "8", "name": "Smeg+" },
+        { "value": "10", "name": "MRN" },
+        { "value": "20", "name": "NAC/RCC" },
+        { "value": "40", "name": "Smeg Asia" },
+        { "value": "80", "name": "RCE" }
+      ],
+      "name": "Type of telematics block"
+    },
+    "2396": {
+      "id": "CFG_A3T_BSI_ABSMUX_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: multiplex anti-lock system (ABS)"
+    },
+    "2399": {
+      "id": "CFG_BXV_BSI_RETRO_AVEC_MEMO_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Electrically adjustable exterior mirrors with position memory"
+    },
+    "239A": {
+      "id": "CFG_BXW_BSI_PRESENCE_HORLOGE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a clock"
+    },
+    "239B": {
+      "id": "CFG_A98_BSI_ODB_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: on-board computer (ODB)"
+    },
+    "239C": {
+      "id": "CFG_AK9_BSI_BLACKPANEL_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Black Panel mode"
+    },
+    "239D": {
+      "id": "CFG_BXX_BSI_MODUL_CTP_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Additional resistance CTP1" },
+        { "value": "2", "name": "Additional resistance CTP2" },
+        { "value": "3", "name": "Additional resistances CTP1 and CTP2" },
+        { "value": "4", "name": "Additional resistances CTP1 and CTP2 (04)" },
+        { "value": "5", "name": "Additional resistances CTP1 and CTP2 (05)" },
+        { "value": "6", "name": "(06)" },
+        { "value": "7", "name": "(07)" }
+      ],
+      "name": "The presence and type of heating resistances"
+    },
+    "239E": {
+      "id": "CFG_BXY_BSI_MODUL_RECHAUFFEUR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Additional heater" },
+        { "value": "2", "name": "Thermal preliminary preparation" },
+        {
+          "value": "3",
+          "name": "Additional heater and thermal preliminary preparation"
+        }
+      ],
+      "name": "The presence and type of air heater"
+    },
+    "239F": {
+      "id": "CFG_BXZ_BSI_TYP_PUSH_REOSTA_AMB_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of adjustment" },
+        { "value": "1", "name": "Button (step by step increase)" },
+        { "value": "2", "name": "Two buttons (more and less)" },
+        { "value": "3", "name": "Using the menu" }
+      ],
+      "name": "The presence and type of adjustment of the brightness of the interior backlight"
+    },
+    "23A0": {
+      "id": "CFG_BY0_BSI_PRESENCE_VELUM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "1 hatch" },
+        { "value": "2", "name": "2 hatch" },
+        { "value": "3", "name": "3 hatch" }
+      ],
+      "name": "The presence and number of hatches"
+    },
+    "23A1": {
+      "id": "MP_TYPE_MOTORISATION",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Internal combustion engine" },
+        {
+          "value": "1",
+          "name": "Internal combustion engine and electric motor (hybrid power unit)"
+        }
+      ],
+      "name": "engine's type"
+    },
+    "23A2": {
+      "id": "CFG_BY2_BSI_MODUL_STTCONFORT_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Standard" },
+        { "value": "1", "name": "Increased comfort" }
+      ],
+      "name": "Thermal comfort for the \"Stop and Start\" system"
+    },
+    "23A3": {
+      "id": "CFG_BY4_BSI_TYPE_FSE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Information from the ESP system" },
+        {
+          "value": "2",
+          "name": "Information coming from the parking brake with the electrical control"
+        },
+        {
+          "value": "3",
+          "name": "Using ESP (with an electric support of calipers)"
+        },
+        {
+          "value": "4",
+          "name": "Parking brake with an electrical control (with an electric support of calipers)"
+        }
+      ],
+      "name": "The presence and type of parking brake with electrical control"
+    },
+    "23A4": {
+      "id": "CFG_BZE_BSI_PRESENCE_VOLET_MOT_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a trunk door with an electric drive"
+    },
+    "23A5": {
+      "id": "CFG_BZF_BSI_TYPE_SEL_XVV_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Using a pen" },
+        { "value": "1", "name": "With 1 key" },
+        { "value": "2", "name": "With 2 keys" },
+        { "value": "3", "name": "With 3 keys" },
+        { "value": "4", "name": "With 4 keys" }
+      ],
+      "name": "Selecting vehicle speed limit or cruise control"
+    },
+    "23A6": {
+      "id": "CFG_BZG_BSI_TYPE_SELECT_OUV_AR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of selectivity" },
+        { "value": "1", "name": "Discovery" },
+        { "value": "2", "name": "Unlocking" }
+      ],
+      "name": "Type of electoral opening of the rear door using a high-frequency remote control"
+    },
+    "23A7": {
+      "id": "CFG_BZH_BSI_PRESENCE_STORE_ELEC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a curtain with an electric drive"
+    },
+    "23A8": {
+      "id": "CFG_AVM_BSI_BOITIER_SIEGES_AR_EL_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Rear seats with electric drive"
+    },
+    "23A9": {
+      "id": "CFG_BZI_BSI_TYPE_ACQ_PUSH_SECENF_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "There is no electrical security system for children"
+        },
+        {
+          "value": "1",
+          "name": "Button associated with the intellectual switching unit (BSI)"
+        },
+        {
+          "value": "2",
+          "name": "Button associated with the driver's door panel and working as a 2-position switch"
+        },
+        {
+          "value": "3",
+          "name": "Button associated with the driver's door panel and working as a simple switch"
+        }
+      ],
+      "name": "The presence and type of the children's safety system switch"
+    },
+    "23AA": {
+      "id": "CFG_BZJ_BSI_PRESENCE_PRISE_230V_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a 230V socket"
+    },
+    "23AB": {
+      "id": "CFG_D5B_BSI_PRESENCE_COM2008_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Sound signal supplied by a steering wheel switch of type 2008"
+    },
+    "23AC": {
+      "id": "CFG_D18_BSI_TYPE_ALIM_UCFREIN_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "The computer is absent or does not receive power from the \"plus\" of the central power switch" },
+        { "value": "1", "name": "Receives power \"+\" from the central power switch" }
+      ],
+      "name": "Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)"
+    },
+    "23AD": {
+      "id": "CFG_D19_BSI_CONF_REL_GMP_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "The relay is not used" },
+        { "value": "1", "name": "Air supply pump to the exhaust system" },
+        { "value": "2", "name": "SCR heater (decrease in NOX content for Euro 6)" },
+        { "value": "3", "name": "Liquid pump of the air conditioning system" },
+        { "value": "4", "name": "reserve" }
+      ],
+      "name": "The type of equipment connected to the relay of the electro-focus of the intelligent switching unit (BSI)"
+    },
+    "23AE": {
+      "id": "CFG_D1A_BSI_ECLAIR_INTERSECTION_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an additional head lighting function (Intersection)"
+    },
+    "23AF": {
+      "id": "CFG_D1B_BSI_ARCHI_ANTIBR_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without relay" },
+        { "value": "1", "name": "With a relay" }
+      ],
+      "name": "Type of control of front fog lights"
+    },
+    "23B0": {
+      "id": "CFG_D1C_BSI_DIURNE_MENU_PERSO_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a function of headlights in the personal settings menu"
+    },
+    "23B1": {
+      "id": "CFG_D1D_BSI_PRESENCE_STT_CLIM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "The Stop and Start function is absent or not taken into account" },
+        { "value": "1", "name": "It is taken into account" }
+      ],
+      "name": "Accounting for Stop and Start function of air conditioning"
+    },
+    "23B2": {
+      "id": "CFG_D2H_BSI_PRESENCE_MEAP_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Air supply module in the motor compartment controlled by an intelligent switching unit (BSI)"
+    },
+    "23B3": {
+      "id": "CFG_D2I_BSI_OPTION_MENU_FSE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a parking brake menu with an electrical control in the personal settings menu"
+    },
+    "23B4": {
+      "id": "CFG_D2J_BSI_CONFIG_HARMONIES_SON_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Having a sound selection menu"
+    },
+    "23B5": {
+      "id": "CFG_D38_BSI_PRES_CIELO_SAN_VELUM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a sun-roof without a curtain with an electric drive"
+    },
+    "23B6": {
+      "id": "CFG_D5C_BSI_PRESENCE_MUS_LIN_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "the presence of an ultrasound module included in the LIN network of an intellectual switching unit"
+    },
+    "23B7": {
+      "id": "CFG_D5D_BSI_PRESENCE_SIRENE_LIN_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a security alarm siren associated with the BSI LIN network"
+    },
+    "23B8": {
+      "id": "CFG_D2O_BSI_PRESENCE_MIT_000",
+      "tab": "other",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a block for re-equipment (auto-school and management for disabled people)"
+    },
+    "23B9": {
+      "id": "CFG_D5Z_BSI_PRESENCE_ARC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a warning function about the risk of a collision"
+    },
+    "23BA": {
+      "id": "CFG_D60_BSI_PRESENCE_CAV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a rotation angle sensor of the steering wheel multiplex"
+    },
+    "23BB": {
+      "id": "CFG_D61_BSI_TYPE_STOP_START_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without" },
+        { "value": "1", "name": "Type \"ISTAR PHASE 1\" with a starter" },
+        { "value": "2", "name": "Type \"Phase 2\" with a starter" },
+        { "value": "3", "name": "Type \"istar phase 2\" with a starter" },
+        { "value": "4", "name": "Type \"istar phase 2\" without a starter" }
+      ],
+      "name": "Availability and type of function \"Stop and Start\""
+    },
+    "23BC": {
+      "id": "CFG_BGU_BSI_PRESENCE_ARTIV_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The availability of a system for compliance with a safe distance"
+    },
+    "23BD": {
+      "id": "CFG_D62_BSI_PRESENCE_RVVI_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of intellectual cruise control"
+    },
+    "23BE": {
+      "id": "CFG_D63_BSI_POS_AV_EN_PWM_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "discrete" },
+        { "value": "1", "name": "By changing the voltage" }
+      ],
+      "name": "Type of control of the front dimensions"
+    },
+    "23BF": {
+      "id": "CFG_D64_BSI_DRL_EN_PWM_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Discrete" },
+        { "value": "1", "name": "By changing the voltage" }
+      ],
+      "name": "Daytime running light control type"
+    },
+    "23C0": {
+      "id": "CFG_D65_BSI_PRESENCE_CVP_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a programmable speed value (Touch display)"
+    },
+    "23C1": {
+      "id": "CFG_D66_BSI_ESSLAV_AV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "The switching unit of the engine" },
+        { "value": "1", "name": "Intellectual switching unit" }
+      ],
+      "name": "Type of control of front wiper"
+    },
+    "23C2": {
+      "id": "CFG_D67_BSI_PRESENCE_LIN_EVAV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the front wiper in the LIN network"
+    },
+    "23C3": {
+      "id": "CFG_23C3_BSI_PRESENCE_ECR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "There is ahead on the left" },
+        { "value": "2", "name": "There is ahead on the right" },
+        { "value": "3", "name": "There is ahead on the left and right" }
+      ],
+      "name": "The presence of a reversing inertial seat belt coil"
+    },
+    "23C4": {
+      "id": "CFG_D96_BSI_PRESENCE_FARC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an option for automatic braking in the event of a risk of collision"
+    },
+    "23C5": {
+      "id": "CFG_23C5_BSI_TYP_RHEOST_LED_PLAF_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without changes in current" },
+        { "value": "1", "name": "With variable current power" }
+      ],
+      "name": "Type of interior lighting"
+    },
+    "23C6": {
+      "id": "CFG_23C6_BSI_ACTIV_DRL_PAR_COMODO_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Turning on daylight headlights on the steering wheel switch"
+    },
+    "23C7": {
+      "id": "CFG_D99_BSI_FEUX_DIURNES_LED_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of daylight headlights on LEDs for the mode of showroom"
+    },
+    "23C8": {
+      "id": "CFG_D9A_BSI_TYPE_PUSH_DSGI_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "using an intellectual switching unit" },
+        { "value": "1", "name": "Using the instrument panel" },
+        { "value": "2", "name": "Using a touch display" },
+        { "value": "3", "name": "Using the parameter menu" }
+      ],
+      "name": "Obtaining a requirement of re-initialization of a system for detecting pressure in tires (from ABS/ESP)"
+    },
+    "23C9": {
+      "id": "CFG_D9B_BSI_INHIBDIAG_FEU_POS_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Stopping of diagnostics of the front dimensions of the car"
+    },
+    "23CA": {
+      "id": "CFG_D9C_BSI_INHIBDIAG_FEU_DIRUNE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Stopping of diagnostics of the vehicle daylight of the car"
+    },
+    "23CB": {
+      "id": "CFG_D04_BSI_ACTIV_FCT_GEE_STT_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Electricity management resolution Stop and Start options"
+    },
+    "23CC": {
+      "id": "CFG_D9D_BSI_TYPE_DECODAGE_VERROU_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of decoding" },
+        { "value": "1", "name": "Decoding type of simple blocking" },
+        { "value": "2", "name": "Decoding the type of superblock" },
+        { "value": "3", "name": "Decoding type of low cost lock" },
+        { "value": "4", "name": "The rear swing doors" },
+        { "value": "5", "name": "Locking lock" }
+      ],
+      "name": "Type of coding of information of front door locks and trunk lid or tailgate"
+    },
+    "23CD": {
+      "id": "CFG_D58_BSI_ACTIV_DELEST_PULSEUR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Activation of the disconnect algorithm of the injection fan"
+    },
+    "23CE": {
+      "id": "CFG_DB0_BSI_PRESENCE_GAZ_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "A car with a gas system (GNV, GPL)"
+    },
+    "23CF": {
+      "id": "CFG_DBF_BSI_PRESENCE_TDC_FILAIRE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of air conditioner control panel via wired connection"
+    },
+    "23D0": {
+      "id": "CFG_DC5_BSI_OPTION_SCR_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a decrease in the release of nitrogen oxides"
+    },
+    "23D1": {
+      "id": "CFG_DC6_BSI_ANTI_SOULEVE_ALARME_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a security alarm with a vehicle lift-up protection function"
+    },
+    "23D2": {
+      "id": "CFG_DC7_BSI_OPT_DEGI_GICLEUR_AV_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of heated front windshield washer jets"
+    },
+    "23D3": {
+      "id": "CFG_DC8_BSI_TYPE_DEBIT_AEROTHERM_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "No switchable coolant pump" },
+        { "value": "1", "name": "The presence of coolant pump with drive coupling" },
+        { "value": "2", "name": "Distribution and control of coolant supply is performed outside the engine" }
+      ],
+      "name": "Features of the cooling circuit"
+    },
+    "23D4": {
+      "id": "CFG_DC9_BSI_TYPE_INHIB_LVAR_000",
+      "tab": "safety",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of prohibition" },
+        {
+          "value": "1",
+          "name": "Turning off the children's security system (if there is a child safety system)"
+        },
+        { "value": "2", "name": "Turning off the button" }
+      ],
+      "name": "Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)"
+    },
+    "23D5": {
+      "id": "CFG_DCA_BSI_TYPE_FCT_PUSH_G_HDC_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Day lighting" },
+        { "value": "2", "name": "Sound signal" },
+        { "value": "3", "name": "A warning signal" },
+        { "value": "4", "name": "Telematics" },
+        { "value": "5", "name": "Changing the displayed page of the on-board computer" },
+        { "value": "6", "name": "Function of Rear-view mirrors" }
+      ],
+      "name": "The function of the left button of the steering wheel switching module"
+    },
+    "23D6": {
+      "id": "CFG_AA9_BSI_RETINDEMAR_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "External mirrors with the position for movement in the rear"
+    },
+    "23D7": {
+      "id": "CFG_DCT_BSI_OPTION_LAVAGE_ECO_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Configuration of economical windshield washing (limited washing time and number of strokes)"
+    },
+    "23D8": {
+      "id": "CFG_DCK_BSI_PRES_POMPE_VIDE_ELEC_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an electric vacuum pump"
+    },
+    "23D9": {
+      "id": "CFG_DCJ_BSI_PRES_OPTION_VIDE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a solution optimization module"
+    },
+    "23DA": {
+      "id": "CFG_DCV_BSI_PRES_MODE_DYNAMIQUE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of dynamic driving function"
+    },
+    "23DB": {
+      "id": "CFG_DCW_BSI_OPTION_TAXI_000",
+      "tab": "other",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: \"Taxi\""
+    },
+    "23DC": {
+      "id": "CFG_DCU_BSI_TYPE_NVLE_REGLMT_ESP_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Old legislation" },
+        { "value": "1", "name": "New legislation" }
+      ],
+      "name": "ESP certification type"
+    },
+    "23DD": {
+      "id": "CFG_DDU_BSI_PRES_RHEOST_AMB_CMB_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Adjustment of the brightness of the interior backlight from the instrument panel"
+    },
+    "23DE": {
+      "id": "CFG_DE4_BSI_TYPE_VIBREUR_AFIL_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "Vibration of the seat using a vibrator control unit"
+        },
+        {
+          "value": "1",
+          "name": "Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines"
+        },
+        {
+          "value": "2",
+          "name": "Vibration belts of safety belts from a computer with tensioners"
+        }
+      ],
+      "name": "Type of vibrators of the warning function of unintentional intersection of road marking lines"
+    },
+    "23DF": {
+      "id": "CFG_DE5_BSI_PRES_FEUX_CALANDRE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of radiator cladding"
+    },
+    "23E0": {
+      "id": "CFG_DE6_BSI_OPT_AC_DEC_FAIB_LUM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Inclusion of light when unlocking a car"
+    },
+    "23E1": {
+      "id": "CFG_DEG_BSI_OPT_LAV_AR_CONF_BIS_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The rear window washer option is located opposite the rear wiper brush"
+    },
+    "23E2": {
+      "id": "CFG_DCI_BSI_PRES_PAREBRISE_CHAUF_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of windshield heating"
+    },
+    "23E5": {
+      "id": "CFG_DET_BSI_TYPE_GEST_ALT_PILOTE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "The controlled first-generation generator" },
+        { "value": "2", "name": "Controlled second-generation generator" },
+        { "value": "3", "name": "A controlled generator with the optimization of the charge of the service battery of generation 3" },
+        { "value": "4", "name": "A controlled generator with the optimization of the battery of the generation 4" }
+      ],
+      "name": "Control type of controlled generator"
+    },
+    "23e6": {
+      "id": "CFG_DEU_BSI_PRES_POMPE_BASSE_PRE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a low pressure fuel pump"
+    },
+    "23e7": {
+      "id": "CFG_DFB_BSI_OPT_DECONNEXION_ASR_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: To disable traction control function"
+    },
+    "23E8": {
+      "id": "CFG_DFK_BSI_PRES_SIEGE_CHAUFFANT_001",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Heating the front seats" },
+        { "value": "2", "name": "Heating of the rear seats" },
+        { "value": "3", "name": "heating the front and rear seats" }
+      ],
+      "name": "The presence of front and rear seats with heating"
+    },
+    "23ea": {
+      "id": "CFG_A3N_BSI_AAF_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Automatic lighting on"
+    },
+    "23EB": {
+      "id": "CFG_DFE_BSI_TYPE_ACTIVATION_AAF_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Using the personal settings menu" },
+        { "value": "1", "name": "Using the control module under the steering wheel" }
+      ],
+      "name": "Type of automatic inclusion of lighting"
+    },
+    "23EC": {
+      "id": "CFG_DFF_BSI_TYPE_PUSH_INHIB_AAS_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Using the instrument panel" },
+        { "value": "2", "name": "Using a touch display" }
+      ],
+      "name": "Type of information from the switch of assistance in parking"
+    },
+    "23ED": {
+      "id": "CFG_DFG_BSI_TYPE_ACQUI_PUSH_STT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "using an intellectual switching unit" },
+        { "value": "1", "name": "Using the instrument panel" },
+        { "value": "2", "name": "Bloc of telematics" },
+        { "value": "3", "name": "Using a multiplexed front panel" }
+      ],
+      "name": "The type of information from the STOP and Start switch"
+    },
+    "23EE": {
+      "id": "CFG_DFJ_BSI_TYPE_PACK_DYNAMIQUE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "global" },
+        { "value": "2", "name": "Partial.Only engine control and gearbox" }
+      ],
+      "name": "Dynamic driving function"
+    },
+    "23F1": {
+      "id": "CFG_DG4_BSI_TYP-CLASSALTERNATEUR_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Class 7" },
+        { "value": "1", "name": "Class 8" },
+        { "value": "2", "name": "Class 8+" },
+        { "value": "3", "name": "Class 9" },
+        { "value": "4", "name": "Class 12" },
+        { "value": "5", "name": "Class 15" },
+        { "value": "6", "name": "Class 18" },
+        { "value": "7", "name": "Class 22" },
+        { "value": "8", "name": "Class isstt50" },
+        { "value": "9", "name": "Class istt51" },
+        { "value": "A", "name": "Class istt52" },
+        { "value": "B", "name": "Class istt6" },
+        { "value": "C", "name": "Class isstt40" },
+        { "value": "D", "name": "Class istt41" },
+        { "value": "E", "name": "Class istt53" }
+      ],
+      "name": "Generator class type"
+    },
+    "23f2": {
+      "id": "CFG_DGL_BSI_ACTIVATION_FCT_ARC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The state of initialization of the warning function in the risk of collision"
+    },
+    "23f3": {
+      "id": "CFG_DGM_BSI_TYPE_SENS_ARC_NIV_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Level 1" },
+        { "value": "1", "name": "Level 2" },
+        { "value": "2", "name": "Level 3" },
+        { "value": "3", "name": "Level 4" }
+      ],
+      "name": "The state of initialization of the sensitivity of the warning function in the risk of a collision"
+    },
+    "23f4": {
+      "id": "CFG_DGN_BSI_ACTIVATION_FARC_FA_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The state of initialization of the automatic braking function at the risk of collision"
+    },
+    "23f5": {
+      "id": "CFG_DH4_BSI_OPT_FEUX_STOPPARABAR_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Using the rear fog lights for the function of the stop signal"
+    },
+    "23f6": {
+      "id": "CFG_DH5_BSI_ALRTDEPASSCONSVITLVV_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a sound alarm exceeding the established speed limit"
+    },
+    "23f7": {
+      "id": "CFG_DH7_BSI_INHIBDIAG_FEU_POS_AR_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Stopping of diagnostics of the rear dimensions of the car"
+    },
+    "23f8": {
+      "id": "CFG_DJN_BSI_OPTION_AS_MUS_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Protection from the rise of the car is controlled by an ultrasound module"
+    },
+    "23F9": {
+      "id": "CFG_DJO_BSI_TYPE_SC_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Euro 4" },
+        { "value": "1", "name": "Euro 5" },
+        { "value": "2", "name": "Euro 6" },
+        { "value": "3", "name": "Euro 6.1" },
+        { "value": "4", "name": "Euro 6.2" },
+        { "value": "5", "name": "Euro 6.3" },
+        { "value": "6", "name": "Unknown" }
+      ],
+      "name": "Type of gearbox moment"
+    },
+    "23FA": {
+      "id": "CFG_DJP_BSI_OPT_BIPLOCK_BCLCEINT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt"
+    },
+    "23fb": {
+      "id": "CFG_B91_BSI_PRESENCE_SBW_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of an automatic gearbox with a computer of an electric drive"
+    },
+    "23fc": {
+      "id": "CFG_BHG_BSI_PRESENCE_ASR_PLUS_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of anti-slip mode switch (ASR)"
+    },
+    "23FD": {
+      "id": "CFG_DJS_BSI_TYPE_FARC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "absent" },
+        { "value": "1", "name": "simple" },
+        { "value": "2", "name": "urban" },
+        { "value": "3", "name": "2 generation" },
+        { "value": "4", "name": "3 generation" },
+        { "value": "5", "name": "4 generation" }
+      ],
+      "name": "Automatic braking type at risk of collision (FARC)"
+    },
+    "23FE": {
+      "id": "CFG_DJT_BSI_TYPE_ACQ_IHM_CLIM_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Physical interface \"Man-Machine\"" },
+        { "value": "1", "name": "Touch interface \"Man-Machine\"" },
+        { "value": "2", "name": "Physical and Touch interface \"Man-Machine\"" }
+      ],
+      "name": "Type of obtaining information \"Man-Machine\" air conditioning"
+    },
+    "23FF": {
+      "id": "CFG_DK0_BSI_DIURNE_AVEC_POSITION_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Front and rear dimensions" },
+        { "value": "2", "name": "The rear overall lanterns" }
+      ],
+      "name": "Simultaneous inclusion of daylight and overall lanterns"
+    },
+    "2402": {
+      "id": "CFG_DKA_BSI_LUCH_BESOIN_UCAPS_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Permission of the discharge of electricity stored in the energy battery in the rear window heating network"
+    },
+    "2403": {
+      "id": "CFG_DKJ_BSI_PRESENCE_BSG_E_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Clothing switching unit"
+    },
+    "2404": {
+      "id": "CFG_DLB_BSI_ADD_STOPLIGHT_BUMPER_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of stop-signals on the rear bumper"
+    },
+    "2405": {
+      "id": "CFG_DLG_BSI_TYPE_DA_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Electro-hydraulic power steering (GEP)" },
+        { "value": "1", "name": "Variable power steering" },
+        { "value": "2", "name": "Electric power steering" }
+      ],
+      "name": "Type of power steering"
+    },
+    "2406": {
+      "id": "CFG_DLH_BSI_TYPE_PIL_CLIGN_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Discrete" },
+        { "value": "1", "name": "By changing the voltage" }
+      ],
+      "name": "Type of control of front indicators"
+    },
+    "2407": {
+      "id": "CFG_DLP_BSI_CMD_PUSH_REOSTA_AMB_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without adjustment" },
+        { "value": "1", "name": "The adjustment requirement using the key controlled by the intellectual switching unit" },
+        { "value": "2", "name": "The adjustment requirement using two plus and minus keys controlled by an intellectual switching unit" },
+        { "value": "3", "name": "Adjustment requirement using the configuration menu" },
+        { "value": "4", "name": "The requirement to adjust the key on the dashboard" },
+        { "value": "5", "name": "Adjustment requirement using two keys on the dashboard" }
+      ],
+      "name": "Front turn signal control type"
+    },
+    "2408": {
+      "id": "CFG_DNP_BSI_TYPE_FONCT_AFIL_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a warning system about unintentional intersection of road marking lines"
+    },
+    "2409": {
+      "id": "CFG_DNQ_BSI_TYPE_DIAG_ECL_AV_LED_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Wired communication" },
+        { "value": "1", "name": "LIN network" }
+      ],
+      "name": "The presence of diagnostics for LED low beam headlights"
+    },
+    "240A": {
+      "id": "CFG_DNR_BSI_INHIB_DIAG_ANTIBR_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Diagnostics disconnection"
+    },
+    "240B": {
+      "id": "CFG_DNT_BSI_OPT_DIAG_ECL_VIR_STA_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Diagnosis of additional static head lighting"
+    },
+    "240C": {
+      "id": "CFG_DNU_BSI_TYPE_ECL_VIR_STAT_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Halogen lamps" },
+        { "value": "1", "name": "Light-emitting diode" }
+      ],
+      "name": "Type of system of additional static head lighting"
+    },
+    "240D": {
+      "id": "CFG_DNW_BSI_OPTION_PLV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of additional static head lighting (PLV)"
+    },
+    "240E": {
+      "id": "CFG_DTY_BSI_ARCHI_ALARME_000",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Alarm module" },
+        { "value": "1", "name": "Intellectual switching unit" }
+      ],
+      "name": "Computer controlling perimeter security alarm"
+    },
+    "240F": {
+      "id": "CFG_DTZ_BSI_OPT_APPEL_ASSISTANCE_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Calling technical assistance" },
+        { "value": "2", "name": "Remote diagnostic service" },
+        { "value": "3", "name": "All options are activated" }
+      ],
+      "name": "Telematics options"
+    },
+    "2410": {
+      "id": "CFG_DVL_BSI_PRES_PALETTES_VOLANT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Driving control on the steering wheel is controlled by an intellectual switching unit"
+        }
+      ],
+      "name": "The presence and type of gear shift control on the steering wheel"
+    },
+    "2411": {
+      "id": "CFG_DW5_BSI_TYPE_LARGEUR_PSD_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Short side door" },
+        { "value": "1", "name": "Long side door" }
+      ],
+      "name": "The width of the side door"
+    },
+    "2412": {
+      "id": "CFG_DW6_BSI_PRESENCE_OUV_AR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Without the back door" },
+        { "value": "1", "name": "Trunk / luggage department" },
+        { "value": "2", "name": "The door of the luggage compartment" },
+        { "value": "3", "name": "The rear swing doors" }
+      ],
+      "name": "The presence and type of rear door"
+    },
+    "2413": {
+      "id": "CFG_DXU_BSI_OPTION_BSG_TC_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a switching unit for the re-equipment of the body"
+    },
+    "2414": {
+      "id": "CFG_DXV_BSI_TYPE_DAA_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Type 1" },
+        { "value": "2", "name": "Type 3" },
+        { "value": "3", "name": "Type 1 and type 3" },
+        { "value": "4", "name": "Type 4" },
+        { "value": "5", "name": "Type 1 and type 4" },
+        { "value": "6", "name": "Type 3 and type 4" },
+        { "value": "7", "name": "Type 1, type 3 and type 4" }
+      ],
+      "name": "The presence and type of determination of the driver's attentiveness"
+    },
+    "2415": {
+      "id": "CFG_DXY_BSI_TYPE_ILV_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Reception of a multifunctional video camera" },
+        { "value": "2", "name": "Perception using the navigation system" },
+        { "value": "3", "name": "Reception of a multifunctional video camera and navigation system" }
+      ],
+      "name": "The presence and type of perception of traffic signaling"
+    },
+    "2416": {
+      "id": "CFG_DY1_BSI_PRESENCE_PORTE_ARD_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "The hollow door" },
+        { "value": "2", "name": "Mechanical side sliding door" },
+        { "value": "3", "name": "Light sliding door with electric drive" }
+      ],
+      "name": "The presence and type of the right rear side door"
+    },
+    "2417": {
+      "id": "CFG_DY2_BSI_PRESENCE_PORTE_ARG_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "The hollow door" },
+        { "value": "2", "name": "Mechanical side sliding door" },
+        { "value": "3", "name": "Light sliding door with electric drive" }
+      ],
+      "name": "The presence and type of left rear side door"
+    },
+    "2418": {
+      "id": "CFG_E05_BSI_TYPE_FEUXPOSITION_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "halogen headlights" },
+        { "value": "1", "name": "Led lights" }
+      ],
+      "name": "Type of front side lights"
+    },
+    "2419": {
+      "id": "CFG_E06_BSI_TYPE_CLIGNOTANT_AV_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "halogen headlights" },
+        { "value": "1", "name": "Led lights" }
+      ],
+      "name": "Type of anterior rotation indicators"
+    },
+    "241A": {
+      "id": "CFG_E0B_BSI_SWITCH_RVV_RVVI_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of contactor" },
+        { "value": "1", "name": "The presence of a contactor" }
+      ],
+      "name": "The presence of a switch between a simple cruise control system and an adaptive cruise control system"
+    },
+    "241B": {
+      "id": "CFG_E0D_BSI_PRESENCE_LVE_AV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the front electric windows"
+    },
+    "241C": {
+      "id": "CFG_E0E_BSI_OPTION_ESSLUNET_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a rear window cleaner"
+    },
+    "241D": {
+      "id": "CFG_E0F_BSI_PRESENCE_LUNETTE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Opening rear window"
+    },
+    "241E": {
+      "id": "CFG_E0J_BSI_OPT_AVE_COLONNE_DIR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Electric ignition lock"
+    },
+    "241F": {
+      "id": "CFG_E0L_BSI_OPT_BAA_RIGHT_DOOR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: \"Hands-free access\" for the right rear side door"
+    },
+    "2420": {
+      "id": "CFG_E0M_BSI_OPT_BAA_LEFT_DOOR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: \"Hands-free access\" for the left rear side door"
+    },
+    "2421": {
+      "id": "CFG_E0O_BSI_OPT_BAA_TAILGATE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: \"Hands-free access\" for the back door"
+    },
+    "2422": {
+      "id": "CFG_E1H_BSI_TYPE_COND_CHAUF_CLIM_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Short air duct heating" },
+        { "value": "1", "name": "Long air duct heating" }
+      ],
+      "name": "Type of air duct heating the air conditioning system"
+    },
+    "2423": {
+      "id": "CFG_E1J_BSI_TYPE_ALERTE_AFIL_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "Light or visual warning (seat belt, seat ...)"
+        },
+        { "value": "1", "name": "Sound and visual alarm" }
+      ],
+      "name": "Type of message Prevention function of crossing road marking lines"
+    },
+    "2424": {
+      "id": "CFG_E1I_BSI_TYPE_GARNITURE_SIEGE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Textile" },
+        { "value": "1", "name": "Leather" }
+      ],
+      "name": "Type of upholstery seats"
+    },
+    "2425": {
+      "id": "CFG_E2Y_BSI_PRESENCE_CRT_000",
+      "tab": "media",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The availability of telematics receiver control"
+    },
+    "2426": {
+      "id": "CFG_E2Z_BSI_TURN_INDIC_MOV_EFFEC_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Intellectual switching unit" },
+        { "value": "1", "name": "Burning wires" }
+      ],
+      "name": "Type of control of rotation indicators with a smooth increase in brightness"
+    },
+    "2427": {
+      "id": "CFG_E3A_BSI_OPTION_HADC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a control system for descent"
+    },
+    "2428": {
+      "id": "CFG_E3B_BSI_TYPE_IHM_PBCHAUFFANT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Turn on the button by pressing" },
+        {
+          "value": "1",
+          "name": "Turn on the rear window heating button (Luch) or button of visibility (VISI)"
+        },
+        {
+          "value": "2",
+          "name": "Turning on the heating of the windshield on the multifunctional front panel"
+        }
+      ],
+      "name": "Type of button on windshield heating"
+    },
+    "2429": {
+      "id": "CFG_E61_BSI_TYPE_MEAP_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "Controlled air intake module with 2-position shutters"
+        },
+        {
+          "value": "4",
+          "name": "Controlled air intake module with multi-position damper"
+        }
+      ],
+      "name": "Type of controlled air intake module"
+    },
+    "242A": {
+      "id": "CFG_E62_BSI_OPTION_ARC_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        {
+          "value": "1",
+          "name": "Generation 1 (warning at the risk of a collision with a mobile object)"
+        },
+        {
+          "value": "2",
+          "name": "Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)"
+        },
+        { "value": "3", "name": "Generation 3" },
+        { "value": "4", "name": "Generation 4" }
+      ],
+      "name": "Type of warning in the risk of collision"
+    },
+    "242B": {
+      "id": "CFG_E63_BSI_TYPE_DECOD_VERROU_PB_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of decoding" },
+        { "value": "1", "name": "Decoding type of simple blocking" },
+        { "value": "2", "name": "Decoding the type of superblock" },
+        { "value": "3", "name": "Decoding type of low cost lock" },
+        {
+          "value": "4",
+          "name": "Decoding of information from the opening unit of the rear open door"
+        }
+      ],
+      "name": "Type of information encoding from the locks of the rear swing doors"
+    },
+    "242C": {
+      "id": "CFG_E64_BSI_NUM_TABLE_ANTENNE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "The number of the calibration table antennas of the access function \"Free Hands\""
+    },
+    "242D": {
+      "id": "CFG_E65_BSI_OPT_COND_AUT_ROUL_ZC_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Automatic blocking access to the cargo area when moving"
+    },
+    "242E": {
+      "id": "CFG_E66_BSI_OPTION_LKA_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a help function in holding a car in the movement lane"
+    },
+    "242F": {
+      "id": "CFG_E67_BSI_OPTION_ACTIVE_BSD_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Lane Keeping Assist linked to Blind Spot Monitoring"
+    },
+    "2430": {
+      "id": "CFG_E8B_BSI_OPT_MOVING_EFFEC_INH_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "gradual shutdown of rotation indicators (while maintaining the blinking mode)"
+    },
+    "2431": {
+      "id": "CFG_E8C_BSI_TYPE_BVA_BOITE_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "AX6" },
+        { "value": "1", "name": "AT8 (AL4)" },
+        { "value": "2", "name": "AXN8" },
+        { "value": "3", "name": "CFG_E8C_BSI_TYPE_BVA_BOTE_000_03" },
+        { "value": "4", "name": "CFG_E8C_BSI_TYPE_BVA_BOTE_000_04" }
+      ],
+      "name": "Automatic gearbox type"
+    },
+    "2432": {
+      "id": "CFG_E8C_BSI_TYPE_BVA_BOITE_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Seat heating" },
+        { "value": "2", "name": "Heated and ventilated seats" }
+      ],
+      "name": "The presence of heated seats or heated ventilated seats"
+    },
+    "2433": {
+      "id": "CFG_EBJ_BSI_TYPE_ACTIV_HY_MODE_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Choice with a pen" },
+        { "value": "1", "name": "Select by the switch" }
+      ],
+      "name": "Selecting the modes of operation of a hybrid drive"
+    },
+    "2434": {
+      "id": "CFG_EBK_BSI_OPT_MODE_DYN_COMFORT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Comfortable polysensory package CFG_EBK_BSI_OPT_MODE_DYN_COMFORT_000"
+    },
+    "2435": {
+      "id": "CFG_EBL_BSI_POLYSENSORIAL_PACK_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Polisor Package CFG_EBL_BSI_POLSENSORIAL_PACK_000"
+    },
+    "2436": {
+      "id": "CFG_EBM_BSI_OPT_EXPORT_POI_RADAR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Navigation option to provide radar points of interest with appropriate speed restrictions"
+    },
+    "2437": {
+      "id": "CFG_EFT_BSI_OPT_WLC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Wireless charger"
+    },
+    "2438": {
+      "id": "CFG_EC2_BSI_TYPE_APPUI_EJECT_COF_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Simple pressing" },
+        { "value": "1", "name": "Double pressing" }
+      ],
+      "name": "Type of trunk opening switch or baggage compartment door"
+    },
+    "2446": {
+      "id": "CFG_EG3_BSI_PRES_FEUX_POS_ADD_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Additional rear overall lantern"
+    },
+    "2447": {
+      "id": "CFG_EGB_BSI_OP_SPARE_WHEEL_DETEC_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Detection of the presence of a spare wheel"
+    },
+    "2448": {
+      "id": "CFG_EGL_BSI_OPT_PRES_VOLANT_CHAU_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Steering wheel with heating"
+    },
+    "2449": {
+      "id": "CFG_EIQ_BSI_OPTION_IDVR_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Multifunctional video registrar camera"
+    },
+    "244B": {
+      "id": "CFG_ENE_BSI_TYP_ILV_OVERSPEED_AL_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Lack of warnings" },
+        { "value": "1", "name": "Temporary warning" },
+        { "value": "2", "name": "Constant warning" }
+      ],
+      "name": "The presence and duration of the withdrawal of the division of speed exceeding"
+    },
+    "244C": {
+      "id": "CFG_EJL_BSI_TYPE_LANE_ASSIST_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "absent" },
+        {
+          "value": "1",
+          "name": "The function is limited by the warning about the intersection of road marking lines"
+        },
+        {
+          "value": "2",
+          "name": "Full function of assistance in holding the car in the lane"
+        }
+      ],
+      "name": "The presence and type of assistance in holding the car within the lane"
+    },
+    "244D": {
+      "id": "CFG_EL5_BSI_OPTION_AFS_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Additional head lighting functions: Cornering lights (AFS)"
+    },
+    "2452": {
+      "id": "CFG_UNKOWN_2452",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Full Auto Stop (BVA)" },
+        { "value": "1", "name": "30 (BVM)" },
+        { "value": "2", "name": "Stop and Go (BVA)" }
+      ],
+      "name": "Type of mode for ACC"
+    },
+    "2453": {
+      "id": "CFG_UNKOWN_2453",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "Radar" },
+        { "value": "2", "name": "Radar & Camera" },
+        { "value": "3", "name": "Camera" }
+      ],
+      "name": "Type technologie detection for ACC"
+    },
+    "245A": {
+      "id": "CFG_EOW_BSI_PILOTAGE_RELAIS_DA_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Turning on the power steering computer power relay, made by the BSI unit"
+    },
+    "245B": {
+      "id": "CFG_EOX_BSI_MAINTIEN_ALIM_LV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Car with power saving for power windows"
+    },
+    "245C": {
+      "id": "CFG_ER1_BSI_PRESENCE_DMTR_000",
+      "tab": "engine",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Block for maintaining the voltage of the on-board network"
+    },
+    "2461": {
+      "id": "CFG_ENZ_BSI_TYPE_FRONT_SEAT_MASS_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "From the driver" },
+        { "value": "1", "name": "From the passenger" },
+        { "value": "2", "name": "side of the driver and passenger" }
+      ],
+      "name": "Front seats with massage function"
+    },
+    "2465": {
+      "id": "CFG_EUW_BSI_TYPE_HEATER_CLIM_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Coolating fluid heater control computer" },
+        { "value": "1", "name": "Multiplewlex computer of coolant heater" }
+      ],
+      "name": "Cooling liquid heater type"
+    },
+    "2466": {
+      "id": "CFG_EVD_BSI_OPTION_DSV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "There is no function" },
+        {
+          "value": "1",
+          "name": "The function is (the rear view camera with *3 rear images for Picasso)"
+        },
+        { "value": "2", "name": "Rear view camera" }
+      ],
+      "name": "Rear-view mirrors"
+    },
+    "2480": {
+      "id": "CFG_F3W_BSI_OPTION_ECL_AMBI_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the interior lighting function in the personal settings menu"
+    },
+    "2481": {
+      "id": "CFG_F3X_BSI_OPTION_MATRIX_BEAM_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Improved operation of the high beam switching function (Matrix Beam)"
+    },
+    "2482": {
+      "id": "CFG_F49_BSI_TYPE_ALARM_LED_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "LED/signaler indicates alarm activation status"
+    },
+    "2483": {
+      "id": "CFG_F4A_BSI_TYP_ORANGE_BRAKE_HMI_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "There is no function" },
+        { "value": "1", "name": "Warning about the ESP system malfunction" },
+        { "value": "2", "name": "Brake system malfunction" }
+      ],
+      "name": "Type of orange warning light to indicate a faulty brake booster"
+    },
+    "2484": {
+      "id": "CFG_F4U_BSI_TYPE_EMERGENCY_CALL_000",
+      "tab": "safety",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "There is no function" },
+        { "value": "1", "name": "manufacturer" },
+        { "value": "2", "name": "European Union" },
+        { "value": "3", "name": "Russia" }
+      ],
+      "name": "The presence and type of emergency call"
+    },
+    "2486": {
+      "id": "CFG_F4W_BSI_TYPE_FEUX_POSITION_A_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "No function" },
+        { "value": "1", "name": "Halogen" },
+        { "value": "2", "name": "LED" }
+      ],
+      "name": "Type of overall tail lights"
+    },
+    "2487": {
+      "id": "CFG_F52_BSI_TYPE_PLAF_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "3 positional switch" },
+        { "value": "1", "name": "Contactor" },
+        { "value": "2", "name": "Pulse button with long and short press" },
+        { "value": "3", "name": "2 control buttons" }
+      ],
+      "name": "Type of lamp switch"
+    },
+    "248A": {
+      "id": "CFG_F7R_BSI_TYPE_CMB_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "----" },
+        { "value": "1", "name": "Simple instrument panel" },
+        { "value": "2", "name": "CIROCCO dashboard - Device digital panel" },
+        { "value": "3", "name": "Instrument panel with multifunctional display functions" },
+        { "value": "4", "name": "Instrument panel with matrix display" }
+      ],
+      "name": "Type of dashboard"
+    },
+    "248B": {
+      "id": "CFG_F7S_BSI_PRESENSE_MATRICE_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a matrix display"
+    },
+    "248D": {
+      "id": "CFG_FA4_BSI_TYPE_ECL_CORREC_SITE_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "0",
+          "name": "Manual adjustment directly on the headlights"
+        },
+        {
+          "value": "1",
+          "name": "Manual correction using a regulator of the height of the headlight of the headlights in the cabin"
+        },
+        {
+          "value": "2",
+          "name": "Static adjustment of headlights of the height"
+        },
+        {
+          "value": "3",
+          "name": "Dynamic adjustment of the position of the light bundle of the headlight in height"
+        }
+      ],
+      "name": "Headlight beam height corrector"
+    },
+    "248F": {
+      "id": "CFG_FGG_BSI_TYPE_MNGT_NIGHT_DAY_000",
+      "tab": "lights",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Intellectual switching unit" },
+        { "value": "1", "name": "Inner rear-view mirror" }
+      ],
+      "name": "Management \"day/night\""
+    },
+    "2490": {
+      "id": "CFG_FGH_BSI_OPTION_INHIB_LED_ZEV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of a LED to disable the state of work in ZEV mode"
+    },
+    "2493": {
+      "id": "CFG_FIJ_BSI_OPT_ALAR_ACTI_ON_KEY_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Turning on the security alarm when blocking locks using a mechanical key"
+    },
+    "2494": {
+      "id": "CFG_FKW_BSI_PRES_REAR_ELEC_MACHI_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "The presence of the rear traction electric machine"
+    },
+    "2495": {
+      "id": "CFG_FSA_BSI_TYPE_ACTIV_ASRPLUS_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Inclusion with a handle" },
+        { "value": "1", "name": "Activation by a switch" }
+      ],
+      "name": "Type of activation of the ASR+ Antibux system+"
+    },
+    "2498": {
+      "id": "CFG_GB4_BSI_OPTION_HEAT_PUMP_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Absent" },
+        { "value": "1", "name": "There is" }
+      ],
+      "name": "The function of the heat pump"
+    },
+    "2499": {
+      "id": "CFG_GB5_BSI_TY_GND_LINKS_SETTING_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Normal mode" },
+        { "value": "1", "name": "Sports mode" }
+      ],
+      "name": "Mode of operation of the vehicle's steering and damping"
+    },
+    "249D": {
+      "id": "CFG_GFB_BSI_ACQ_PUSH_CITYPARK_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Using the intellectual switching unit BSI" },
+        { "value": "1", "name": "Another" }
+      ],
+      "name": "Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking"
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "d501": {
+      "id": "CFG_BR1_BSI_UCECAN_UDS_BML_000_ABSENT",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands"
+    },
+    "d502": {
+      "id": "CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch"
+    },
+    "d503": {
+      "id": "CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags"
+    },
+    "d504": {
+      "id": "CFG_BR4_BSI_UCECAN_UDS_LCE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key"
+    },
+    "d505": {
+      "id": "CFG_BR5_BSI_UCECAN_UDS_BRHF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver"
+    },
+    "d506": {
+      "id": "CFG_AMJ_BSI_UCE_CAN_BSM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit"
+    },
+    "d507": {
+      "id": "CFG_BR7_BSI_UCECAN_UDS_BDCP_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit"
+    },
+    "d508": {
+      "id": "CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel"
+    },
+    "d509": {
+      "id": "CFG_BR9_BSI_UCECAN_UDS_AVE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock"
+    },
+    "d50a": {
+      "id": "CFG_BRA_BSI_UCECAN_UDS_BSI_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)"
+    },
+    "d50b": {
+      "id": "CFG_BRB_BSI_UCECAN_UDS_PLC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door"
+    },
+    "d50c": {
+      "id": "CFG_BRC_BSI_UCECAN_UDS_BDMA_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats"
+    },
+    "d50d": {
+      "id": "CFG_BRD_BSI_UCECAN_UDS_AUS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm"
+    },
+    "d50e": {
+      "id": "CFG_BRE_BSI_UCECAN_UDS_AAS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System"
+    },
+    "d50f": {
+      "id": "CFG_BRF_BSI_UCECAN_UDS_MAE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module"
+    },
+    "d510": {
+      "id": "CFG_BRG_BSI_UCECAN_UDS_CMB_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel"
+    },
+    "d511": {
+      "id": "CFG_BRH_BSI_UCECAN_UDS_RADIO_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver"
+    },
+    "d512": {
+      "id": "CFG_AN4_BSI_UCE_CAN_STL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)"
+    },
+    "d513": {
+      "id": "CFG_BRJ_BSI_UCECAN_UDS_BTEL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation"
+    },
+    "d514": {
+      "id": "CFG_BRK_BSI_UCECAN_UDS_EMF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRK_BSI_UCECAN_UDS_EMF_000: display"
+    },
+    "d515": {
+      "id": "CFG_BRL_BSI_UCECAN_UDS_TE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???"
+    },
+    "d516": {
+      "id": "CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA"
+    },
+    "d517": {
+      "id": "CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch"
+    },
+    "d518": {
+      "id": "CFG_BRO_BSI_UCECAN_UDS_CLIM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning"
+    },
+    "d519": {
+      "id": "CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position"
+    },
+    "d51A": {
+      "id": "CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???"
+    },
+    "d51B": {
+      "id": "CFG_BRR_BSI_UCECAN_UDS_VTH_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???"
+    },
+    "d51C": {
+      "id": "CFG_BRS_BSI_UCECAN_UDS_CDC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer"
+    },
+    "d51D": {
+      "id": "CFG_BRT_BSI_UCECAN_UDS_MATT_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display"
+    },
+    "d51E": {
+      "id": "CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???"
+    },
+    "d51f": {
+      "id": "CFG_BRV_BSI_UCECAN_UDS_DEF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler"
+    },
+    "d520": {
+      "id": "CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can"
+    },
+    "d521": {
+      "id": "CFG_BRX_BSI_UCECAN_UDS_MDS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit"
+    },
+    "d522": {
+      "id": "CFG_BRY_BSI_UCECAN_UDS_AMPLI_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier"
+    },
+    "d523": {
+      "id": "CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_New",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain"
+    },
+    "d524": {
+      "id": "CFG_BS0_BSI_UCECAN_UDS_CAV_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex"
+    },
+    "d525": {
+      "id": "CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain"
+    },
+    "d526": {
+      "id": "CFG_BS2_BSI_UCECAN_UDS_CMM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer"
+    },
+    "d527": {
+      "id": "CFG_BS3_BSI_UCECAN_UDS_BV_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox"
+    },
+    "d528": {
+      "id": "CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)"
+    },
+    "d529": {
+      "id": "CFG_BS5_BSI_UCECAN_UDS_DSG_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer"
+    },
+    "d52a": {
+      "id": "CFG_BS6_BSI_UCECAN_UDS_CSS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)"
+    },
+    "d52b": {
+      "id": "CFG_BS7_BSI_UCECAN_UDS_BHI_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???"
+    },
+    "d52c": {
+      "id": "CFG_000_TELE_BVA_DIVER_FREINELEC_temp",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake"
+    },
+    "d52d": {
+      "id": "CFG_BS9_BSI_UCECAN_UDS_DA_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer"
+    },
+    "d52e": {
+      "id": "CFG_BSA_BSI_UCECAN_UDS_ARTIV_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control"
+    },
+    "d52f": {
+      "id": "CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed"
+    },
+    "d530": {
+      "id": "CFG_BSC_BSI_UCECAN_UDS_CAAR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension"
+    },
+    "d531": {
+      "id": "CFG_AO1_BIC_GYR_ACC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer"
+    },
+    "d532": {
+      "id": "CFG_BSE_BSI_UCECAN_UDS_ASRPLUS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???"
+    },
+    "d533": {
+      "id": "CFG_BSF_BSI_UCECAN_UDS_BIR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???"
+    },
+    "d534": {
+      "id": "CFG_BTC_BSI_UCECAN_UDS_SAM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE"
+    },
+    "d535": {
+      "id": "CFG_BTD_BSI_UCECAN_UDS_CAFR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508"
+    },
+    "d536": {
+      "id": "CFG_BTE_BSI_UCECAN_UDS_CMF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)"
+    },
+    "d537": {
+      "id": "CFG_BTF_BSI_UCECAN_UDS_BPV_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit"
+    },
+    "d538": {
+      "id": "CFG_BZK_BSI_UCECAN_UDS_BEBA_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers"
+    },
+    "d539": {
+      "id": "CFG_D1E_BSI_UCECAN_UDS_BSE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???"
+    },
+    "d53a": {
+      "id": "CFG_D1F_BSI_UCECAN_UDS_HCU1_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1"
+    },
+    "d53b": {
+      "id": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2"
+    },
+    "d53c": {
+      "id": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2"
+    },
+    "d53d": {
+      "id": "CFG_D68_BSI_UCECAN_UDS_ECR_G_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt"
+    },
+    "d53e": {
+      "id": "CFG_D69_BSI_UCECAN_UDS_ECR_D_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt"
+    },
+    "d53f": {
+      "id": "CFG_D9E_BSI_UCECAN_UDS_DMTR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network"
+    },
+    "d540": {
+      "id": "CFG_D9F_BSI_UCECAN_UDS_AVP_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)"
+    },
+    "d541": {
+      "id": "CFG_DBG_BSI_UCECAN_UDS_TBMU_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module"
+    },
+    "d542": {
+      "id": "CFG_DGG_BSI_UCECAN_UDS_PIU_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)"
+    },
+    "d543": {
+      "id": "CFG_DKK_BSI_UCECAN_UDS_BSG_E_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???"
+    },
+    "d544": {
+      "id": "CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox"
+    },
+    "d545": {
+      "id": "CFG_EG8_BSI_UCECAN_ESM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever"
+    },
+    "d546": {
+      "id": "CFG_EIP_BSI_UCECAN_IDVR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)"
+    },
+    "d547": {
+      "id": "CFG_ELQ_BSI_UCECAN_CLIM_AR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system"
+    },
+    "d548": {
+      "id": "CFG_EN1_BSI_UCECAN_IVCD_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)"
+    },
+    "d549": {
+      "id": "CFG_EN2_BSI_UCECAN_BSG_S_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit"
+    },
+    "d54a": {
+      "id": "CFG_EOY_BSI_UCECAN_BVN_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EY_BSI_UCECAN_BVN_000: night vision computer"
+    },
+    "d54b": {
+      "id": "CFG_EWA_BSI_UCECAN_CGPL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWA_BSI_UCECAN_CGPL_000: ???"
+    },
+    "d54c": {
+      "id": "CFG_EWG_BSI_UCECAN_PFHM_FL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???"
+    },
+    "d54d": {
+      "id": "CFG_EWH_BSI_UCECAN_PFHM_FR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???"
+    },
+    "d54e": {
+      "id": "CFG_EWI_BSI_UCECAN_PFHM_RL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???"
+    },
+    "d54f": {
+      "id": "CFG_EWK_BSI_UCECAN_PFHM_RR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???"
+    },
+    "d550": {
+      "id": "CFG_EWL_BSI_UCECAN_SDCM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\\*(SDCM)"
+    },
+    "d551": {
+      "id": "CFG_EWM_BSI_UCECAN_WLC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWM_BSI_UCECAN_WLC_000: ???"
+    },
+    "d552": {
+      "id": "CFG_EWX_BSI_UCECAN_EBB_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster"
+    },
+    "d553": {
+      "id": "CFG_EWY_BSI_UCECAN_AVAS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal"
+    },
+    "d554": {
+      "id": "CFG_EWZ_BSI_UCECAN_VCU_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox"
+    },
+    "d555": {
+      "id": "CFG_EX0_BSI_UCECAN_LVNSD_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EX0_BSI_UCECAN_LVNSD_000: ???"
+    },
+    "d556": {
+      "id": "CFG_FGJ_BSI_UCECAN_SWITCH_A_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\\*2"
+    },
+    "d557": {
+      "id": "CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\\*1"
+    },
+    "d558": {
+      "id": "CFG_GDJ_BSI_UCECAN_BSRF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit"
+    },
+    "d559": {
+      "id": "CFG_GDK_BSI_UCECAN_PVS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system"
+    },
+    "d5a0": {
+      "id": "CFG_BSG_BSI_UCELIN_UDS_ADDGO_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)"
+    },
+    "d5a1": {
+      "id": "CFG_BSH_BSI_UCELIN_UDS_BPL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???"
+    },
+    "d5a2": {
+      "id": "CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light"
+    },
+    "d5a3": {
+      "id": "CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit"
+    },
+    "d5a4": {
+      "id": "CFG_BSK_BSI_UCELIN_UDS_CDPL_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor"
+    },
+    "d5a5": {
+      "id": "CFG_BSL_BSI_UCELIN_UDS_ESV_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network"
+    },
+    "d5a6": {
+      "id": "CFG_BSM_BSI_UCELIN_UDS_BPGA_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)"
+    },
+    "d5a7": {
+      "id": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel"
+    },
+    "d5a8": {
+      "id": "CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key"
+    },
+    "d5a9": {
+      "id": "CFG_BSP_BSI_UCELIN_UDS_VCI_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies"
+    },
+    "d5aa": {
+      "id": "CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock"
+    },
+    "d5ab": {
+      "id": "CFG_D2K_BSI_UCELIN_UDS_MEAP_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module"
+    },
+    "d5ac": {
+      "id": "CFG_D3B_BSI_UCELIN_UDS_MUS_001",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module"
+    },
+    "d5ad": {
+      "id": "CFG_D3A_BSI_UCELIN_UDS_SIR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren"
+    },
+    "d5ae": {
+      "id": "CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)"
+    },
+    "d5af": {
+      "id": "CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module"
+    },
+    "d5b0": {
+      "id": "CFG_DGD_BSI_UCELIN_UDS_DGT_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???"
+    },
+    "d5b1": {
+      "id": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???"
+    },
+    "d5b2": {
+      "id": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???"
+    },
+    "d5b3": {
+      "id": "CFG_EBT_BSI_UCELIN_BAAS_R_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side"
+    },
+    "d5b4": {
+      "id": "CFG_EBV_BSI_UCELIN_BAAS_L_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side"
+    },
+    "d5b5": {
+      "id": "CFG_EBW_BSI_UCELIN_BAAS_T_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind"
+    },
+    "d5b6": {
+      "id": "CFG_EBX_BSI_UCELIN_SPB_D_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???"
+    },
+    "d5b7": {
+      "id": "CFG_EBY_BSI_UCELIN_SCB_D_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer"
+    },
+    "d5b8": {
+      "id": "CFG_EBZ_BSI_UCELIN_BRNCV_D_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat"
+    },
+    "d5b9": {
+      "id": "CFG_EC0_BSI_UCELIN_SPB_P_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???"
+    },
+    "d5ba": {
+      "id": "CFG_EC1_BSI_UCELIN_SCB_P_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer"
+    },
+    "d5bb": {
+      "id": "CFG_EBU_BSI_UCELIN_BRNCV_P_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat"
+    },
+    "d5bc": {
+      "id": "CFG_ELA_BSI_UCELIN_BRNC_ARG_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat"
+    },
+    "d5bd": {
+      "id": "CFG_ELB_BSI_UCELIN_BRNC_ARD_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat"
+    },
+    "d5be": {
+      "id": "CFG_EN4_BSI_UCELIN_VAB_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)"
+    },
+    "d5bf": {
+      "id": "CFG_ELC_BSI_UCELIN_ARS_FEU_COND_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???"
+    },
+    "d5c0": {
+      "id": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???"
+    },
+    "d5c1": {
+      "id": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???"
+    },
+    "d5c2": {
+      "id": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???"
+    },
+    "d5c3": {
+      "id": "CFG_ELG_BSI_UCELIN_TO_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\\*lin ???"
+    },
+    "d5c4": {
+      "id": "CFG_ELR_BSI_UCELIN_PLMB_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???"
+    },
+    "d5c5": {
+      "id": "CFG_EOZ_BSI_UCELIN_CCE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor"
+    },
+    "d5c7": {
+      "id": "CFG_EY0_BSI_UCELIN_OCS_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EY0_BSI_UCELIN_OCS_000: ???"
+    },
+    "d5c8": {
+      "id": "CFG_EYG_BSI_UCELIN_CTPE_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater"
+    },
+    "d600": {
+      "id": "CFG_BH0_BSI_NS_PRESENCE_CDC_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer"
+    },
+    "d601": {
+      "id": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\\*RD5 ???"
+    },
+    "d602": {
+      "id": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control"
+    },
+    "d603": {
+      "id": "CFG_BK2_BSI_NS_PRESENCEKMLUSBBOX_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???"
+    }
+  }
+}
