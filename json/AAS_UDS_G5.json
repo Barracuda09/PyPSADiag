@@ -12,9 +12,9 @@
     "CVM2": "CVM2"
   },
   "zones": {
-    "2100": {
+    "2101": {
       "id": "Configuration_Group_Data_Values",
-      "tab": "CVM2",
+      "tab": "AAS_UDS_G5",
       "name": "Configuration group data values",
       "byte": 0,
       "type": "raw",
@@ -22,7 +22,7 @@
     },
     "2901": {
       "id": "Secure_Traceability_Value",
-      "tab": "CVM2",
+      "tab": "AAS_UDS_G5",
       "name": "Secure Traceability Value",
       "byte": 0,
       "type": "raw",
