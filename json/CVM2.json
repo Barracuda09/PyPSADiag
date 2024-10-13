@@ -1,0 +1,56 @@
+{
+  "name": "CVM2",
+  "tx_id": "74A",
+  "rx_id": "64A",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys":  "E2E5",
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "unsorted": "Unsorted",
+    "CVM2": "CVM2"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_Values",
+      "tab": "CVM2",
+      "name": "Configuration group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2901": {
+      "id": "Secure_Traceability_Value",
+      "tab": "CVM2",
+      "name": "Secure Traceability Value",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }	
+  }
+}
