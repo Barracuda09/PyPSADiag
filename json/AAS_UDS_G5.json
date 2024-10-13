@@ -12,7 +12,7 @@
     "CVM2": "CVM2"
   },
   "zones": {
-    "2100": {
+    "2101": {
       "id": "Configuration_Group_Data_Values",
       "tab": "CVM2",
       "name": "Configuration group data values",
