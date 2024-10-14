@@ -1,0 +1,56 @@
+{
+  "name": "AAS_UDS_G5",
+  "tx_id": "75D",
+  "rx_id": "65D",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys":  "D1F5",
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "unsorted": "Unsorted",
+    "AAS_UDS_G5": "AAS_UDS_G5"
+  },
+  "zones": {
+    "2101": {
+      "id": "Configuration_Group_Data_Values",
+      "tab": "AAS_UDS_G5",
+      "name": "Configuration group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2901": {
+      "id": "Secure_Traceability_Value",
+      "tab": "AAS_UDS_G5",
+      "name": "Secure Traceability Value",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }	
+  }
+}

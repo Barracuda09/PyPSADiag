@@ -1,5 +1,5 @@
 {
-  "name": "cvm",
+  "name": "CVM3",
   "tx_id": "74A",
   "rx_id": "64A",
   "protocol": "uds",
@@ -8,12 +8,13 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "unsorted": "Unsorted",
+    "CVM3": "CVM3"
   },
   "zones": {
     "2100": {
       "id": "Configuration_Group_Data_List",
-      "tab": "unsorted",
+      "tab": "CVM3",
       "name": "Configuration group data list",
       "byte": 0,
       "type": "raw",
@@ -21,8 +22,16 @@
     },
     "2101": {
       "id": "Configuration_Group_Data_Values",
-      "tab": "unsorted",
+      "tab": "CVM3",
       "name": "Configuration group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2901": {
+      "id": "Secure_Traceability_Value",
+      "tab": "CVM3",
+      "name": "Secure Traceability Value",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
