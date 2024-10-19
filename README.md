@@ -6,9 +6,10 @@ See for additional Hardware/Info: [ludwig-v arduino-psa-diag](https://github.com
 Currently supporting:
 
 - JSON Configuration for BSI2010 to setup GUI</br> (Grabbed from: [forum-peugeot.com user weirdcactus](https://www.forum-peugeot.com/Forum/threads/tuto-t%C3%A9l%C3%A9codage-et-calibration-dun-nac-rcc-cirocco-cmb_num-sans-diagbox-via-arduino.121767/page-152#post-2739080))
-- Reading Zones that are present in JSON Configuration file
+- Reading Zones that are listed in JSON Configuration file
+- Reading Zones with Multiple configurations, that are listed in JSON Configuration file
 - Writing Zones to CSV file
-- Writing changed Zones to ECU
+- Writing changed Zones (as an list) to ECU
 
 What I would like to support:
 - [ludwig-v nac reverse engineering JSON file](https://github.com/ludwig-v/psa-nac-firmware-reverse-engineering/blob/main/Configuration/nac.json)
@@ -32,7 +33,10 @@ contribute to the project, like:
 Build
 -----
 - Install Python 3.12 or above
-- Install `requirements.txt`
+- Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`
+- Create virtual enviroment `python -m venv /path/to/PyPSADiag/.venv`
+- Goto virtual enviroment with `/path/to/PyPSADiag/.venv/Script/activate`
+- Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
 - Change GUI:
 	- `pyside6-designer PyPSADiag.ui`
 - Build GUI:

@@ -137,7 +137,7 @@
       "byte": 0,
       "type": "int",
       "form_type": "string",
-      "name": "Valeur de résistance jaughege définie pour le réservoir play"
+      "name": "Gauging law (Alert level)"
     },
     "2205": {
       "id": "CFG_AWS_BSI_TABLE_JAUGE_HUILE_000",

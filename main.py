@@ -33,6 +33,7 @@ from ui_PyPSADiag import Ui_MainWindow
 import EcuZoneReader
 import FileLoader
 from EcuZoneTable import EcuZoneTableView
+from EcuZoneTreeView  import EcuZoneTreeView
 
 """
   - pyside6-designer PyPSADiag.ui
@@ -48,9 +49,9 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.ui.setupUi(self)
 
-        # Setup TableView
-        self.tableView = EcuZoneTableView(self.ui.centralwidget)
-        self.ui.gridLayout.addWidget(self.tableView, 5, 0, 1, 1)
+        # Setup TreeView
+        self.treeView = EcuZoneTreeView(self.ui.centralwidget)
+        self.ui.gridLayout.addWidget(self.treeView, 5, 0, 1, 1)
 
         # Connect button signals to slots
         self.ui.sendCommand.clicked.connect(self.sendCommand)
@@ -83,13 +84,13 @@ class MainWindow(QMainWindow):
         #
         self.ecuZoneReaderThread = EcuZoneReader.EcuZoneReaderThread(self.serialController)
         self.ecuZoneReaderThread.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
-        self.ecuZoneReaderThread.updateTableSignal.connect(self.updateTableCallback)
+        self.ecuZoneReaderThread.updateZoneDataSignal.connect(self.updateZoneDataback)
 
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
 
-    # Update ECU Combobox and Zone Table view with "new" Zone file
+    # Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZones(self, ecuObjectList: dict):
         self.ui.ecuComboBox.clear()
         self.ui.ecuComboBox.addItem(ecuObjectList["name"])
@@ -97,7 +98,7 @@ class MainWindow(QMainWindow):
         for zoneObject in zoneObjectList:
             self.ui.ecuComboBox.addItem(str(zoneObject))
 
-        self.tableView.updateView(ecuObjectList)
+        self.treeView.updateView(ecuObjectList)
 
     @Slot()
     def connectPort(self):
@@ -105,6 +106,7 @@ class MainWindow(QMainWindow):
             self.serialController.port = self.ui.portNameComboBox.currentText()
             self.serialController.baudrate = 115200
             self.serialController.open()
+            self.serialController.setDTR(True)
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.readZone.setEnabled(True)
@@ -144,7 +146,7 @@ class MainWindow(QMainWindow):
     def saveCSVFile(self):
         fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
         #self.fileLoaderThread.enable(fileName[0], 0);
-        self.tableView.getValuesAsCSV()
+        self.treeView.getValuesAsCSV()
 
     @Slot()
     def openZoneFile(self):
@@ -159,7 +161,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def readZone(self):
         if self.serialController.isOpen():
-            fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "", "CSV Files (*.csv)")
+            fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
             if fileName[0] == "":
                 return
 
@@ -169,20 +171,23 @@ class MainWindow(QMainWindow):
 
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+            startDiagmode = "1003"
+            stopDiagmode = "1001"
             # Read Requested Zone or ALL Zones from ECU
             if self.ui.ecuComboBox.currentIndex() == 0:
-                self.ecuZoneReaderThread.setZonesToRead(ecu, self.ecuObjectList["zones"])
+                self.ecuZoneReaderThread.setZonesToRead(ecu, startDiagmode, self.ecuObjectList["zones"], stopDiagmode)
             else:
                 zone = dict()
                 zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
-                self.ecuZoneReaderThread.setZonesToRead(ecu, zone)
+                self.ecuZoneReaderThread.setZonesToRead(ecu, startDiagmode, zone, stopDiagmode)
 
     @Slot()
     def writeZone(self):
         if self.serialController.isOpen():
+        		# Setup text of changed zones and put it into MessageBox
             text = ""
             changeCount = 0
-            valueList = self.tableView.getZoneListOfHexValue()
+            valueList = self.treeView.getZoneListOfHexValue()
             for tabList in valueList:
                 for zone in tabList:
                     text += str(zone) + "\r\n"
@@ -193,17 +198,22 @@ class MainWindow(QMainWindow):
             if QMessageBox.Cancel == QMessageBox.question(self, "Write zone(s) to ECU", text, QMessageBox.Save, QMessageBox.Cancel):
                 return
             # Setup CAN_EMIT_ID
-            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"] + "\r"
-            startDiagmode = "1003\r"
-            stopDiagmode = "1001\r"
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+            if self.ecuObjectList["protocol"] == "uds":
+                startDiagmode = "1003"
+                stopDiagmode = "1001"
+            else:
+                self.ui.output.append("Protocal not supported yet!")
+                return
             # Get the corresponding ECU Key
             keyType = self.ecuObjectList["key_type"]
             if keyType == "single":
-                key = ":" + self.ecuObjectList["keys"] + ":03:03\r"
+                key = ":" + self.ecuObjectList["keys"] + ":03:03"
             else:
-                key = ":" + self.ecuObjectList["keys"]["BSI_2010_EVO"] + ":03:03\r"
+                key = ":" + self.ecuObjectList["keys"]["BSI_2010_EVO"] + ":03:03"
+                self.ui.output.append("Mutli KEY should be implemented Beter!!")
 
-            secureTraceability = "2E2901FD00000010101\r"
+            secureTraceability = "2E2901FD00000010101"
 
             receiveData = self.ecuZoneReaderThread.sendReceive(ecu)
             print(receiveData)
@@ -216,8 +226,8 @@ class MainWindow(QMainWindow):
 
             for tabList in valueList:
                 for zone in tabList:
-                    writeCmd = "2E" + zone[0] + zone[1] + "\r"
-                    readCmd = "22" + zone[0] + "\r"
+                    writeCmd = "2E" + zone[0] + zone[1]
+                    readCmd = "22" + zone[0]
 
                     receiveData = self.ecuZoneReaderThread.sendReceive(readCmd)
                     print(receiveData)
@@ -232,7 +242,7 @@ class MainWindow(QMainWindow):
                 self.receiveData = self.ecuZoneReaderThread.sendReceive(secureTraceability)
                 print(receiveData)
             else:
-                print("NO Secure Traceability is Written!!")
+                self.ui.output.append("NO Secure Traceability is Written!!")
 
             receiveData = self.ecuZoneReaderThread.sendReceive(stopDiagmode)
             print(receiveData)
@@ -253,11 +263,11 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def csvReadCallback(self, value: list):
-        self.tableView.changeZoneOption(value[0], value[1], value[2]);
+        self.treeView.changeZoneOption(value[0], value[1], value[2]);
 
     @Slot()
-    def updateTableCallback(self, zoneData: str, value: str, valueType: str):
-        self.tableView.changeZoneOption(zoneData, value, valueType)
+    def updateZoneDataback(self, zoneData: str, value: str, valueType: str):
+        self.treeView.changeZoneOption(zoneData, value, valueType)
 
     @Slot()
     def serialPacketReceiverCallback(self, packet: list, time: float):
