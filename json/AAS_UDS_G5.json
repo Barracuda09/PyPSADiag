@@ -1,0 +1,131 @@
+{
+  "name": "aas_uds_g5",
+  "tx_id": "75D",
+  "rx_id": "65D",
+  "protocol": "uds",
+  "key_type": "single",
+  "key": "D1F5",
+  "key_2": "B6F0",
+  "coding": "true",
+  "errors": "true",
+  "tabs": {
+    "aas_uds": "AAS UDS G5"
+  },
+  "zones": {
+     "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "aas_uds",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+   "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "aas_uds",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_BVV_AAS_AVR_000": {
+        "tab": "aas_uds",
+        "name": "Availability of rear view camera function",
+        "tooltip": "Availability of rear view camera function",
+        "alt_name": "@P17284-POLUXDATA, @P21830-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      "CFG_DEQ_AAS_TYPE_CHAINE_TRACTION_000": {
+        "tab": "aas_uds",
+        "name": "CFG_DEQ_AAS_TYPE_CHAINE_TRACTION_000",
+        "tooltip": "",
+        "alt_name": "",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      "CFG_BVW_AAS_SAM_000": {
+        "tab": "aas_uds",
+        "name": "The presence of the function of monitoring the \"dead\" zones",
+        "tooltip": "",
+        "alt_name": "@P17354-POLUXDATA, @P37278-POLUXDATA",
+        "comment": "double param with CFG_DAY_AAS_PRESENCE_CITYPARK_000",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      "CFG_DAY_AAS_PRESENCE_CITYPARK_000": {
+        "tab": "aas_uds",
+        "name": "Availability of semi-automatic parking function",
+        "cfg_tooltip": "",
+        "alt_name": "@P31079-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      "CFG_DBN_AAS_PRESENCE_AMSP_000": {
+        "name": "Availability of the parking assistance function",
+        "tooltip": "",
+        "alt_name": "@P31929-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      "CFG_A05_AAS_AAS_AV_000": {
+        "name": "Availability of front obstacle sensors",
+        "tooltip": "Detection of an obstacle ahead is possible if the vehicle is equipped with front obstacle sensors, and if the parameter \"presence of front obstacle sensors\" is entered as \"Equipped\"",
+        "alt_name": "@P32326-POLUXDATA, @P30865-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      "CFG_EFH_AAS_ACTIVATION_ENVOI_DTC_000": {
+        "name": "CFG_EFH_AAS_ACTIVATION_ENVOI_DTC_000",
+        "cfg_name_p": "@T",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "checkbox",
+        "mask": "10000000"
+      },
+      "CFG_E4P_PRESENCE_FLANKGUARD_000": {
+        "name": "CFG_E4P_PRESENCE_FLANKGUARD_000",
+        "cfg_tooltip": "",
+        "alt_name": "",
+        "byte": 0,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      }
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "aas_uds",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "aas_uds",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "aas_uds",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }	
+  }
+}

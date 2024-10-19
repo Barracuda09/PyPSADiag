@@ -1,0 +1,7 @@
+/.idea
+/.env
+/.venv
+/__pycache__
+/.git
+/csv/test.csv
+/json/test.json

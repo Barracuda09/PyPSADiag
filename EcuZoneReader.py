@@ -27,7 +27,7 @@ from PySide6.QtCore import Qt, QThread, Signal
 
 class EcuZoneReaderThread(QThread):
     receivedPacketSignal = Signal(list, float)
-    updateTableSignal = Signal(str, str, str)
+    updateZoneDataSignal = Signal(str, str, str)
     writeQ = queue.Queue()
     ecuReadZone = str()
     zoneName = str()
@@ -43,7 +43,7 @@ class EcuZoneReaderThread(QThread):
         self.isRunning = False
 
     def __readData(self):
-        self.msleep(60)
+        self.msleep(80)
         data = bytearray()
         runLoop = True
         while runLoop:
@@ -52,23 +52,25 @@ class EcuZoneReaderThread(QThread):
                 subData = self.serialPort.read(dataLen)
                 if len(subData):
                     data.extend(subData)
-                    self.msleep(200)
+                    self.msleep(250)
             else:
                 runLoop = False
         return data
 
-    def setZonesToRead(self, ecuID, zoneList):
+    def setZonesToRead(self, ecuID: str, startDiagmode, zoneList, stopDiagmode):
         if not self.serialPort.isOpen():
             self.receivedPacketSignal.emit(["Serial Port Not Open", "", "", ""], time.time())
-        else:
-            if self.isRunning == False:
-                self.start();
-            self.writeQ.put(ecuID)
-            self.writeQ.put(zoneList)
+            return
+        if self.isRunning == False:
+            self.start();
+        self.writeQ.put(ecuID)
+        self.writeQ.put(startDiagmode)
+        self.writeQ.put(zoneList)
+        self.writeQ.put(stopDiagmode)
 
     def sendReceive(self, cmd: str):
-        print(cmd)
-        self.serialPort.write(cmd.encode("utf-8"))
+        cmd += "\r"
+        self.__write(cmd.encode("utf-8"))
         data = self.__readData()
         if len(data) == 0:
             return "Timeout"
@@ -85,7 +87,7 @@ class EcuZoneReaderThread(QThread):
 
         i = data.find(b"\r")
         decodedData = data[:i].decode("utf-8");
-        if len(decodedData) > 2:
+        if len(decodedData) > 4:
             if decodedData[0: + 2] == "62" and len(decodedData) > 6:
                 # Get only responce data
                 answerZone = decodedData[2: + 6]
@@ -105,17 +107,37 @@ class EcuZoneReaderThread(QThread):
                                 self.answerDecorated = str(paramObject["name"])
 
                 self.receivedPacketSignal.emit([self.ecuReadZone, answer, valType, answerDecorated, self.zoneName], time.time())
-                self.updateTableSignal.emit(self.ecuReadZone, answer, valType)
+                self.updateZoneDataSignal.emit(self.ecuReadZone, answer, valType)
+            elif decodedData[0: + 4] == "5001":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Communication closed", "cmd answer", decodedData, self.zoneName], time.time())
+            elif decodedData[0: + 4] == "5002":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Download session opened", "cmd answer", decodedData, self.zoneName], time.time())
+            elif decodedData[0: + 4] == "5003":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Diagnostic session opened", "cmd answer", decodedData, self.zoneName], time.time())
+            elif decodedData[0: + 4] == "6702":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for download", "cmd answer", decodedData, self.zoneName], time.time())
+            elif decodedData[0: + 4] == "6704":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for configuration", "cmd answer", decodedData, self.zoneName], time.time())
             elif decodedData[0: + 2] == "7F":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", "string", "---", self.zoneName], time.time())
-                self.updateTableSignal.emit(self.ecuReadZone, "No Response", "string")
-            elif decodedData[0: + 2] == "OK":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "OK", "string", "---", self.zoneName], time.time())
-                self.updateTableSignal.emit(self.ecuReadZone, "OK", "string")
+                if len(decodedData) >= 6 and decodedData[0: + 6] == "7F2231":
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "Request out of range", "cmd answer", decodedData, self.zoneName], time.time())
+                    self.updateZoneDataSignal.emit(self.ecuReadZone, "Request out of range", "cmd answer")
+                else:
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", "cmd answer", decodedData, self.zoneName], time.time())
+                    self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response", "cmd answer")
             else:
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", "string", decodedData, self.zoneName], time.time())
-                self.updateTableSignal.emit(self.ecuReadZone, "Unkown Error", "string")
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", "cmd answer", decodedData, self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error", "cmd answer")
+        elif len(decodedData) <= 2:
+            if decodedData[0: + 2] == "OK":
+                self.receivedPacketSignal.emit([self.ecuReadZone, "OK", "cmd answer", decodedData, self.zoneName], time.time())
+            else:
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", "cmd answer", decodedData, self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error", "cmd answer")
 
+    def __write(self, data):
+        print(data)
+        self.serialPort.write(data)
 
     def run(self):
         self.isRunning = True
@@ -128,9 +150,10 @@ class EcuZoneReaderThread(QThread):
                         self.zoneActive = element[str(zoneIDObject)]
                         self.zoneName = str(self.zoneActive["name"])
                         self.formType = str(self.zoneActive["form_type"])
+
                         # Send and receive data
                         ecuReadZoneSend = "22" + str(zoneIDObject) + "\r"
-                        self.serialPort.write(ecuReadZoneSend.encode("utf-8"))
+                        self.__write(ecuReadZoneSend.encode("utf-8"))
                         self.readResponse();
                 else:
                     # Just empty zone names
@@ -138,8 +161,8 @@ class EcuZoneReaderThread(QThread):
                     self.ecuReadZone = str(element)
 
                     # Send and receive data
-                    ecuID = str(element) + "\r";
-                    self.serialPort.write(str(ecuID).encode("utf-8"))
+                    command = str(element) + "\r";
+                    self.__write(command.encode("utf-8"))
                     self.readResponse();
             else:
                 self.msleep(100)
