@@ -107,6 +107,7 @@ class MainWindow(QMainWindow):
             self.serialController.baudrate = 115200
             self.serialController.open()
             self.serialController.setDTR(True)
+            # Set button states
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.readZone.setEnabled(True)
@@ -128,7 +129,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def sendCommand(self):
         if self.serialController.isOpen():
-            cmd = self.ui.command.text() + "\r"
+            cmd = self.ui.command.text() + "\n"
             self.ui.output.append(cmd)
             self.receiveData = self.ecuZoneReaderThread.sendReceive(cmd)
             self.ui.output.append(self.receiveData)
@@ -184,7 +185,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def writeZone(self):
         if self.serialController.isOpen():
-        		# Setup text of changed zones and put it into MessageBox
+            # Setup text of changed zones and put it into MessageBox
             text = ""
             changeCount = 0
             valueList = self.treeView.getZoneListOfHexValue()
@@ -252,8 +253,8 @@ class MainWindow(QMainWindow):
         if self.serialController.isOpen():
             print("Reboot ECU")
             # Setup CAN_EMIT_ID
-            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"] + "\r"
-            rebootECU = "1103\r"
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"] + "\n"
+            rebootECU = "1103\n"
 
             receiveData = self.ecuZoneReaderThread.sendReceive(ecu)
             print(receiveData)

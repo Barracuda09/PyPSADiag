@@ -69,7 +69,7 @@ class EcuZoneReaderThread(QThread):
         self.writeQ.put(stopDiagmode)
 
     def sendReceive(self, cmd: str):
-        cmd += "\r"
+        cmd += "\n"
         self.__write(cmd.encode("utf-8"))
         data = self.__readData()
         if len(data) == 0:
@@ -152,7 +152,7 @@ class EcuZoneReaderThread(QThread):
                         self.formType = str(self.zoneActive["form_type"])
 
                         # Send and receive data
-                        ecuReadZoneSend = "22" + str(zoneIDObject) + "\r"
+                        ecuReadZoneSend = "22" + str(zoneIDObject) + "\n"
                         self.__write(ecuReadZoneSend.encode("utf-8"))
                         self.readResponse();
                 else:
@@ -161,7 +161,7 @@ class EcuZoneReaderThread(QThread):
                     self.ecuReadZone = str(element)
 
                     # Send and receive data
-                    command = str(element) + "\r";
+                    command = str(element) + "\n";
                     self.__write(command.encode("utf-8"))
                     self.readResponse();
             else:
