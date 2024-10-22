@@ -1,0 +1,5 @@
+>75D:65D,OK,cmd answer,OK,
+1003,Diagnostic session opened,cmd answer,500300C80014,
+2100,04008001,raw,04008001,Configuration group data list
+2101,04BCEE,raw,04BCEE,Gauging group data values
+1001,Communication closed,cmd answer,500100C80014,

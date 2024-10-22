@@ -30,7 +30,7 @@ from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
-    zoneObject = ""
+    zoneObject = dict
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
         super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone, description])
         parent.insertTopLevelItem(row, self)
@@ -58,8 +58,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
         if isinstance(widget, EcuZoneLineEdit):
-            if widget.isLineEditChanged():
-                value = widget.text()
+            value = widget.getZoneAndHex()
         return [self.zone, value]
 
     def changeZoneOption(self, root, data: str, valueType: str):
@@ -67,27 +66,20 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         byteData = []
         for i in range(0, len(data), 2):
             byteData.append(data[i:i + 2])
+        # Set Root value of Multi Config zone
         widget = root.treeWidget().itemWidget(root, 2)
-        widget.setText(str(data))
+        widget.changeZoneOption(data, "")
+
+        # Set individual Sub items
         for index in range(root.childCount()):
             cellItem = root.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            zone = self.zoneObject[widget.getConfigID()]
-            byteNr = zone["byte"]
-            mask = int(zone["mask"], 2)
-            byte = int(byteData[byteNr], 16) & mask
             if isinstance(widget, EcuZoneLineEdit):
-                widget.setText(str(data))
+                widget.changeZoneOption(data, valueType)
             elif isinstance(widget, EcuZoneCheckBox):
-                if byte > 0:
-                    widget.setCheckState(Qt.Unchecked)
-                else:
-                    widget.setCheckState(Qt.Checked)
+                widget.changeZoneOption(data, valueType)
             elif isinstance(widget, EcuZoneComboBox):
-                for i in range(widget.count()):
-                    if widget.itemData(i) == byte:
-                        widget.setCurrentIndex(i)
-                        break
+                widget.changeZoneOption(data, valueType)
 
     def __update(self):
         rootWidget = self.treeWidget().itemWidget(self, 2)
@@ -98,27 +90,20 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            zone = self.zoneObject[widget.getConfigID()]
-            byteNr = zone["byte"]
+
+            byteNr = widget.getCorrespondingByte()
+
             # Do we need to expand
             if len(byteData) < (byteNr + 1):
                 for i in range((byteNr - len(byteData) + 1)):
                     byteData.insert(len(byteData) + i, "00")
-            mask = int(zone["mask"], 2)
+
             if isinstance(widget, EcuZoneLineEdit):
-                value = (int(byteData[byteNr], 16) & ~mask) | int(widget.text(), 16)
-                byteData[byteNr] = "%0.2X" % value
+                byteData[byteNr] = widget.update(byteData[byteNr])
             elif isinstance(widget, EcuZoneCheckBox):
-                if widget.isChecked():
-                    value = (int(byteData[byteNr], 16) & ~mask)
-                    byteData[byteNr] = "%0.2X" % value
-                else:
-                    value = (int(byteData[byteNr], 16) | mask)
-                    byteData[byteNr] = "%0.2X" % value
+                byteData[byteNr] = widget.update(byteData[byteNr])
             elif isinstance(widget, EcuZoneComboBox):
-                index = widget.currentIndex()
-                value = (int(byteData[byteNr], 16) & ~mask) | widget.itemData(index)
-                byteData[byteNr] = "%0.2X" % value
+                byteData[byteNr] = widget.update(byteData[byteNr])
 
         data = ""
         for i in range(len(byteData)):

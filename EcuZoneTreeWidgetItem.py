@@ -48,37 +48,19 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
         if isinstance(widget, EcuZoneLineEdit):
-            if widget.isLineEditChanged():
-                value = widget.text()
+            value = widget.getZoneAndHex()
         elif isinstance(widget, EcuZoneCheckBox):
-            if widget.isCheckBoxChanged():
-                if widget.checkState() == Qt.Checked:
-                    value = "01"
-                else:
-                    value = "00"
+            value = widget.getZoneAndHex()
         elif isinstance(widget, EcuZoneComboBox):
-            if widget.isComboBoxChanged():
-                index = widget.currentIndex()
-                value = "%0.2X" % widget.itemData(index)
+            value = widget.getZoneAndHex()
         return [self.zone, value]
 
     def changeZoneOption(self, cellItem, data: str, valueType: str):
         widget = cellItem.treeWidget().itemWidget(cellItem, 2)
         if isinstance(widget, EcuZoneLineEdit):
-            if valueType == "string_ascii":
-                widget.setText(str(data))
-            elif valueType == "int":
-                widget.setText(str(int(data, 16)))
-            else:
-                widget.setText(data)
+            widget.changeZoneOption(data, valueType)
         elif isinstance(widget, EcuZoneCheckBox):
-            if data == "01":
-                widget.setCheckState(Qt.Checked)
-            elif data == "00":
-                widget.setCheckState(Qt.Unchecked)
+            widget.changeZoneOption(data, valueType)
         elif isinstance(widget, EcuZoneComboBox):
-            for i in range(widget.count()):
-                if widget.itemData(i) == int(data, 16):
-                    widget.setCurrentIndex(i)
-                    return
+            widget.changeZoneOption(data, valueType)
 

@@ -3,9 +3,11 @@
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
-  "key_type": "single",
-  "key": "D1F5",
-  "key_2": "B6F0",
+  "key_type": "multi",
+  "keys": {
+    "key 1": "D1F5",
+    "key 2": "B6F0"
+  },
   "coding": "true",
   "errors": "true",
   "tabs": {

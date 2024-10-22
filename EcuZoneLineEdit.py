@@ -1,5 +1,5 @@
 """
-   EcuZoneTable.py
+   EcuZoneLineEdit.py
 
    Copyright (C) 2024 - 2025 Marc Postema (mpostema09 -at- gmail.com)
 
@@ -25,23 +25,76 @@ from PySide6.QtWidgets import QLineEdit
 class EcuZoneLineEdit(QLineEdit):
     """
     """
-    value = ""
-    configID = ""
-    def __init__(self, parent, readOnly: bool, configID: str = ""):
+    initialValue = ""
+    zoneObject = dict
+    def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
-        self.configID = configID
         self.setReadOnly(readOnly)
+        self.zoneObject = zoneObject
 
-    def getConfigID(self):
-        return self.configID
+    def getCorrespondingByte(self):
+        return self.zoneObject["byte"]
 
-    def setText(self, val):
-        self.value = val;
+    def __setText(self, val):
+        self.initialValue = val;
         super().setText(val)
 
     def updateText(self, val):
         super().setText(val)
 
     def isLineEditChanged(self):
-        return self.isEnabled() and self.value != self.text()
+        return self.isEnabled() and self.initialValue != self.text()
+
+    def getZoneAndHex(self):
+        value = "None"
+        if self.isLineEditChanged():
+            value = self.text()
+        return value
+
+    def __shift(self):
+        # Code snippet by Sean Eron Anderson
+        v = int(self.zoneObject["mask"], 2)
+        c = 32
+        v &= -v
+        if v:
+            c -= 1
+        if v & 0x0000FFFF:
+            c -= 16
+        if v & 0x00FF00FF:
+            c -= 8
+        if v & 0x0F0F0F0F:
+            c -= 4
+        if v & 0x33333333:
+            c -= 2
+        if v & 0x55555555:
+            c -= 1
+        return c
+
+    def update(self, byte: str):
+        if "mask" in self.zoneObject:
+            text = self.text()
+            mask = int(self.zoneObject["mask"], 2)
+            if text != None and text != "":
+                newByte = int(text) << self.__shift()
+                value = (int(byte, 16) & ~mask) | newByte
+                byte = "%0.2X" % value
+        return byte
+
+    def changeZoneOption(self, data: str, valueType: str):
+        if "mask" in self.zoneObject:
+            byteData = []
+            for i in range(0, len(data), 2):
+                byteData.append(data[i:i + 2])
+
+            byteNr = self.zoneObject["byte"]
+            mask = int(self.zoneObject["mask"], 2)
+            byte = (int(byteData[byteNr], 16) & mask) >> self.__shift()
+            self.__setText(str(byte))
+        else:
+            if valueType == "string_ascii":
+                self.__setText(str(data))
+            elif valueType == "int":
+                self.__setText(str(int(data, 16)))
+            else:
+                self.__setText(data)
 

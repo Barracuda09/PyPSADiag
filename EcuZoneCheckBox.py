@@ -1,5 +1,5 @@
 """
-   EcuZoneTable.py
+   EcuZoneCheckBox.py
 
    Copyright (C) 2024 - 2025 Marc Postema (mpostema09 -at- gmail.com)
 
@@ -19,25 +19,82 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QCheckBox
 
 
 class EcuZoneCheckBox(QCheckBox):
     """
     """
-    value = 0
-    configID = ""
-    def __init__(self, parent, configID: str = ""):
+    initialValue = 0
+    zoneObject = dict
+    def __init__(self, parent, zoneObject: dict):
         super(EcuZoneCheckBox, self).__init__(parent)
-        self.configID = configID
+        self.zoneObject = zoneObject
 
-    def getConfigID(self):
-        return self.configID
+    def getCorrespondingByte(self):
+        return self.zoneObject["byte"]
 
     def setCheckState(self, val):
-        self.value = val;
+        self.initialValue = val;
         super().setCheckState(val)
 
     def isCheckBoxChanged(self):
-        return self.isEnabled() and self.value != self.checkState()
+        return self.isEnabled() and self.initialValue != self.checkState()
+
+    def getZoneAndHex(self):
+        value = "None"
+        if "mask" in self.zoneObject:
+            print("EcuZoneCheckBox.getZoneAndHex(..) has mask?")
+        else:
+            if self.isCheckBoxChanged():
+                if self.checkState() == Qt.Checked:
+                    value = "01"
+                else:
+                    value = "00"
+        return value
+
+    def update(self, byte: str):
+        mask = int(self.zoneObject["mask"], 2)
+        if "available_logic" in self.zoneObject and "active_high" == self.zoneObject["available_logic"]:
+            if self.isChecked():
+                value = (int(byte, 16) | mask)
+                byte = "%0.2X" % value
+            else:
+                value = (int(byte, 16) & ~mask)
+                byte = "%0.2X" % value
+        else:
+            if self.isChecked():
+                value = (int(byte, 16) & ~mask)
+                byte = "%0.2X" % value
+            else:
+                value = (int(byte, 16) | mask)
+                byte = "%0.2X" % value
+
+        return byte
+
+    def changeZoneOption(self, data: str, valueType: str):
+        if "mask" in self.zoneObject:
+            byteData = []
+            for i in range(0, len(data), 2):
+                byteData.append(data[i:i + 2])
+
+            byteNr = self.zoneObject["byte"]
+            mask = int(self.zoneObject["mask"], 2)
+            byte = int(byteData[byteNr], 16) & mask
+            if "available_logic" in self.zoneObject and "active_high" == self.zoneObject["available_logic"]:
+                if byte > 0:
+                    self.setCheckState(Qt.Checked)
+                else:
+                    self.setCheckState(Qt.Unchecked)
+            else:
+                if byte > 0:
+                    self.setCheckState(Qt.Unchecked)
+                else:
+                    self.setCheckState(Qt.Checked)
+        else:
+            if data == "01":
+                self.setCheckState(Qt.Checked)
+            elif data == "00":
+                self.setCheckState(Qt.Unchecked)
 

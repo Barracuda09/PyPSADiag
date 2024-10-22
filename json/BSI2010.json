@@ -5,9 +5,9 @@
   "protocol": "uds",
   "key_type": "multi",
   "keys": {
+    "BSI_2010_EVO": "B4E0",
     "BSI_2010_Continental": "C318",
-    "BSI_2010_Valeo": "E4D8",
-    "BSI_2010_EVO": "B4E0"
+    "BSI_2010_Valeo": "E4D8"
   },
   "coding": true,
   "errors": true,

@@ -38,7 +38,7 @@ class SerialControllerThread(QThread):
         self.serialPort.setBaudRate(QSerialPort.Baud115200)
         self.serialPort.setPortName("COM3")
         self.serialPort.open(QIODevice.ReadWrite)
-        elementE = ">333:333\r"
+        elementE = ">333:333\n"
         print(elementE.encode("utf-8"))
         self.serialPort.write(elementE.encode("utf-8"))
         print("Write Done")

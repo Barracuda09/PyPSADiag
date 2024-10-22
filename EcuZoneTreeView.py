@@ -90,45 +90,55 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             formType = zoneObject["form_type"]
             if formType == "multi":
                 root = EcuMultiZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), "", zoneObject)
-                root.addRootWidgetItem(self, EcuZoneLineEdit(self, True, ""))
+                root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, True))
                 rowCount += 1
-                for subZoneIDObject in zoneObject:
-                    subZoneObject = zoneObject[str(subZoneIDObject)]
-                    # Check do we have a sub config if not goto next
-                    if not "name" in subZoneObject:
-                        continue
-                    # We have a sub config
-                    formType = subZoneObject["form_type"]
-                    name = subZoneObject["name"]
-                    if formType == "combobox":
-                        widgetItem = EcuZoneComboBox(self, str(subZoneIDObject))
-                        # Fill Combo Box
-                        for paramObject in subZoneObject["params"]:
-                            widgetItem.addItem(paramObject["name"], int(paramObject["mask"], 2))
-                        widgetItem.setCurrentIndex(0)
-                        root.addChildWidgetItem(self, name, widgetItem)
-                    elif formType == "checkbox":
-                        root.addChildWidgetItem(self, name, EcuZoneCheckBox(self, str(subZoneIDObject)))
-                    elif formType == "string":
-                        root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, False, str(subZoneIDObject)))
+                # Do we have new NAC json File
+                if "params" in zoneObject:
+                    zoneObject = zoneObject["params"]
+                    for subZoneObject in zoneObject:
+                        # Check do we have a sub config if not goto next
+                        if not "name" in subZoneObject:
+                            continue
+                        # We have a sub config
+                        formType = subZoneObject["form_type"]
+                        name = subZoneObject["name"]
+                        if formType == "combobox":
+                            widgetItem = EcuZoneComboBox(self, subZoneObject)
+                            root.addChildWidgetItem(self, name, widgetItem)
+                        elif formType == "checkbox":
+                            root.addChildWidgetItem(self, name, EcuZoneCheckBox(self, subZoneObject))
+                        elif formType == "string":
+                            root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, subZoneObject, False))
+                else:
+                    for subZoneIDObject in zoneObject:
+                        subZoneObject = zoneObject[str(subZoneIDObject)]
+                        # Check do we have a sub config if not goto next
+                        if not "name" in subZoneObject:
+                            continue
+                        # We have a sub config
+                        formType = subZoneObject["form_type"]
+                        name = subZoneObject["name"]
+                        if formType == "combobox":
+                            widgetItem = EcuZoneComboBox(self, subZoneObject)
+                            root.addChildWidgetItem(self, name, widgetItem)
+                        elif formType == "checkbox":
+                            root.addChildWidgetItem(self, name, EcuZoneCheckBox(self, subZoneObject))
+                        elif formType == "string":
+                            root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, subZoneObject, False))
                 root.setExpanded(True)
             else:
                 root = EcuZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), zoneObject["name"])
                 rowCount += 1
                 if formType == "combobox":
-                    item = EcuZoneComboBox(self)
-                    for paramObject in zoneObject["params"]:
-                        item.addItem(paramObject["name"], int(paramObject["value"], 16))
-                    item.setCurrentIndex(0)
-                    root.addItem(self, item)
+                    root.addItem(self, EcuZoneComboBox(self, zoneObject))
                 elif formType == "checkbox":
-                    root.addItem(self, EcuZoneCheckBox(self))
+                    root.addItem(self, EcuZoneCheckBox(self, zoneObject))
                 elif formType == "string":
-                    root.addItem(self, EcuZoneLineEdit(self, False))
+                    root.addItem(self, EcuZoneLineEdit(self, zoneObject, False))
 
-        self.setColumnWidth(0, 60)
+        self.setColumnWidth(0, 70)
         self.setColumnWidth(1, 500)
-        self.setColumnWidth(2, 280)
+        self.setColumnWidth(2, 350)
 
     def markItemValueOutOfRange(self, item):
         item.setBackground(0, QColor(255, 128, 0))
