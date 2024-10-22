@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'PyPSADiag.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.8.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
         MainWindow.setSizeIncrement(QSize(1, 1))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
@@ -37,7 +37,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setSizeConstraint(QLayout.SetDefaultConstraint)
+        self.gridLayout.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
         self.sendCommand = QPushButton(self.centralwidget)
         self.sendCommand.setObjectName(u"sendCommand")
 
@@ -48,11 +48,11 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.command, 1, 0, 1, 1)
 
-        self.horizontalSpacer_2 = QSpacerItem(700, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.horizontalSpacer_2 = QSpacerItem(700, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.gridLayout.addItem(self.horizontalSpacer_2, 0, 0, 1, 1)
 
-        self.horizontalSpacer = QSpacerItem(100, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.horizontalSpacer = QSpacerItem(100, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.gridLayout.addItem(self.horizontalSpacer, 0, 1, 1, 1)
 
@@ -67,6 +67,15 @@ class Ui_MainWindow(object):
         self.ecuComboBox.setObjectName(u"ecuComboBox")
 
         self.verticalLayout.addWidget(self.ecuComboBox)
+
+        self.ecuKeyComboBox = QComboBox(self.centralwidget)
+        self.ecuKeyComboBox.setObjectName(u"ecuKeyComboBox")
+
+        self.verticalLayout.addWidget(self.ecuKeyComboBox)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer_5)
 
         self.readZone = QPushButton(self.centralwidget)
         self.readZone.setObjectName(u"readZone")
@@ -88,7 +97,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.writeSecureTraceability)
 
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout.addItem(self.verticalSpacer_3)
 
@@ -99,7 +108,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.output = QTextEdit(self.centralwidget)
         self.output.setObjectName(u"output")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy1.setHorizontalStretch(1)
         sizePolicy1.setVerticalStretch(1)
         sizePolicy1.setHeightForWidth(self.output.sizePolicy().hasHeightForWidth())
@@ -115,7 +124,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_4 = QVBoxLayout()
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_4.addItem(self.verticalSpacer_4)
 
@@ -132,7 +141,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addLayout(self.verticalLayout_4)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_2.addItem(self.verticalSpacer_2)
 
@@ -151,7 +160,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.DisconnectPort)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.verticalLayout_2.addItem(self.verticalSpacer)
 

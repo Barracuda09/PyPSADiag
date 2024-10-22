@@ -91,12 +91,27 @@ class MainWindow(QMainWindow):
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
 
     # Update ECU Combobox and Zone Tree view with "new" Zone file
-    def updateEcuZones(self, ecuObjectList: dict):
+    def updateEcuZonesAndKeys(self, ecuObjectList: dict):
+        # Update ECU Zone ComboBox
         self.ui.ecuComboBox.clear()
-        self.ui.ecuComboBox.addItem(ecuObjectList["name"])
+        name = ecuObjectList["name"]
+        self.ui.ecuComboBox.addItem(name)
         zoneObjectList = ecuObjectList["zones"]
         for zoneObject in zoneObjectList:
             self.ui.ecuComboBox.addItem(str(zoneObject))
+
+        # Update ECU Key ComboBox
+        self.ui.ecuKeyComboBox.clear()
+        keyType = ecuObjectList["key_type"]
+        if keyType == "single":
+            key = str(ecuObjectList["keys"])
+            item = name + " - " + key
+            self.ui.ecuKeyComboBox.addItem(item, key)
+        elif keyType == "multi":
+            for keyItem in ecuObjectList["keys"]:
+                key = str(ecuObjectList["keys"][keyItem])
+                item = str(keyItem) + " - " + key
+                self.ui.ecuKeyComboBox.addItem(item, key)
 
         self.treeView.updateView(ecuObjectList)
 
@@ -157,7 +172,7 @@ class MainWindow(QMainWindow):
         file = open(fileName[0], 'r', encoding='utf-8')
         jsonFile = file.read()
         self.ecuObjectList = json.loads(jsonFile.encode("utf-8"))
-        self.updateEcuZones(self.ecuObjectList)
+        self.updateEcuZonesAndKeys(self.ecuObjectList)
 
     @Slot()
     def readZone(self):
@@ -198,21 +213,19 @@ class MainWindow(QMainWindow):
                 return
             if QMessageBox.Cancel == QMessageBox.question(self, "Write zone(s) to ECU", text, QMessageBox.Save, QMessageBox.Cancel):
                 return
+
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
             if self.ecuObjectList["protocol"] == "uds":
                 startDiagmode = "1003"
                 stopDiagmode = "1001"
             else:
-                self.ui.output.append("Protocal not supported yet!")
+                self.ui.output.append("Protocol not supported yet!")
                 return
-            # Get the corresponding ECU Key
-            keyType = self.ecuObjectList["key_type"]
-            if keyType == "single":
-                key = ":" + self.ecuObjectList["keys"] + ":03:03"
-            else:
-                key = ":" + self.ecuObjectList["keys"]["BSI_2010_EVO"] + ":03:03"
-                self.ui.output.append("Mutli KEY should be implemented Beter!!")
+
+            # Get the corresponding ECU Key from Combobox
+            index = self.ui.ecuKeyComboBox.currentIndex()
+            key = ":" + self.ui.ecuKeyComboBox.itemData(index) + ":03:03"
 
             secureTraceability = "2E2901FD00000010101"
 
