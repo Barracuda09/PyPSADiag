@@ -137,7 +137,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                     root.addItem(self, EcuZoneLineEdit(self, zoneObject, False))
 
         self.setColumnWidth(0, 70)
-        self.setColumnWidth(1, 500)
+        self.setColumnWidth(1, 400)
         self.setColumnWidth(2, 350)
 
     def markItemValueOutOfRange(self, item):

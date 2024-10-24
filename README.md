@@ -37,16 +37,12 @@ Build
 - Create virtual enviroment `python -m venv /path/to/PyPSADiag/.venv`
 - Goto virtual enviroment with `/path/to/PyPSADiag/.venv/Script/activate`
 - Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
-- Change GUI:
-	- `pyside6-designer PyPSADiag.ui`
-- Build GUI:
-	- `pyside6-uic PyPSADiag.ui -o ui_PyPSADiag.py`
 - Run with:
 	1. python `main.py`
 	2. `Open Zone File` and select an ECU JSON file
 	3. `Connect` to correct Arduino hardware
 	4. `Read` Zones
-	5. <b>RISK: The you can change Zones and use `Write` to write them to ECU.</b>
+	5. <b>RISK: You can change Zones and use `Write` to write them to ECU.<br/>Always Check that these zones look correct</b>
 
 Donate
 ------

@@ -29,29 +29,29 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBo
 
 import serial.tools.list_ports
 
-from ui_PyPSADiag import Ui_MainWindow
+from PyPSADiagGUI import PyPSADiagGUI
 import EcuZoneReader
 import FileLoader
+from FileConverter import FileConverter
 from EcuZoneTable import EcuZoneTableView
 from EcuZoneTreeView  import EcuZoneTreeView
 
 """
-  - pyside6-designer PyPSADiag.ui
-  - pyside6-uic PyPSADiag.ui -o ui_PyPSADiag.py
-  - python main.py
+  - Change GUI in: PyPSADiagGUI.py
+  - Run with: python main.py
 """
 class MainWindow(QMainWindow):
     portNameList = list()
-    ui = Ui_MainWindow()
+    ui = PyPSADiagGUI()
     ecuObjectList = dict()
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.ui.setupUi(self)
+        self.ui.setupGUi(self)
 
-        # Setup TreeView
-        self.treeView = EcuZoneTreeView(self.ui.centralwidget)
-        self.ui.gridLayout.addWidget(self.treeView, 5, 0, 1, 1)
+        #converter = FileConverter()
+        #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
+        #converter.convertCIROCCO("./json/test_CIROCCO_original.json", "./json/test_CIROCCO_conv.json")
 
         # Connect button signals to slots
         self.ui.sendCommand.clicked.connect(self.sendCommand)
@@ -113,7 +113,7 @@ class MainWindow(QMainWindow):
                 item = str(keyItem) + " - " + key
                 self.ui.ecuKeyComboBox.addItem(item, key)
 
-        self.treeView.updateView(ecuObjectList)
+        self.ui.treeView.updateView(ecuObjectList)
 
     @Slot()
     def connectPort(self):
@@ -162,7 +162,7 @@ class MainWindow(QMainWindow):
     def saveCSVFile(self):
         fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
         #self.fileLoaderThread.enable(fileName[0], 0);
-        self.treeView.getValuesAsCSV()
+        self.ui.treeView.getValuesAsCSV()
 
     @Slot()
     def openZoneFile(self):
@@ -203,7 +203,7 @@ class MainWindow(QMainWindow):
             # Setup text of changed zones and put it into MessageBox
             text = ""
             changeCount = 0
-            valueList = self.treeView.getZoneListOfHexValue()
+            valueList = self.ui.treeView.getZoneListOfHexValue()
             for tabList in valueList:
                 for zone in tabList:
                     text += str(zone) + "\r\n"
@@ -277,11 +277,11 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def csvReadCallback(self, value: list):
-        self.treeView.changeZoneOption(value[0], value[1], value[2]);
+        self.ui.treeView.changeZoneOption(value[0], value[1], value[2]);
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str, valueType: str):
-        self.treeView.changeZoneOption(zoneData, value, valueType)
+        self.ui.treeView.changeZoneOption(zoneData, value, valueType)
 
     @Slot()
     def serialPacketReceiverCallback(self, packet: list, time: float):
