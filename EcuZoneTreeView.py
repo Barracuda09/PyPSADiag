@@ -89,8 +89,10 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                 continue
             formType = zoneObject["form_type"]
             if formType == "multi":
-                root = EcuMultiZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), "", zoneObject)
+                rootName = "** " + zoneObject["name"] + " **"
+                root = EcuMultiZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), rootName, zoneObject)
                 root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, True))
+                self.markItemAsRootLevel(root)
                 rowCount += 1
                 # Do we have new NAC json File
                 if "params" in zoneObject:
@@ -139,6 +141,10 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         self.setColumnWidth(0, 70)
         self.setColumnWidth(1, 400)
         self.setColumnWidth(2, 350)
+
+    def markItemAsRootLevel(self, item):
+        item.setBackground(0, QColor(0, 255, 0))
+        item.setBackground(1, QColor(0, 255, 0))
 
     def markItemValueOutOfRange(self, item):
         item.setBackground(0, QColor(255, 128, 0))
