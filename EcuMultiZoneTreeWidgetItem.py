@@ -34,6 +34,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
         super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone, description])
         parent.insertTopLevelItem(row, self)
+        self.setToolTip(1, description)
         self.zoneObject = zoneObject
         self.zone = zone
 
@@ -43,6 +44,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
 
     def addChildWidgetItem(self, tree: QTreeWidget, label, widget):
         level = EcuZoneTreeWidgetItem(self, None, "", label)
+        level.setToolTip(1, label)
         tree.setItemWidget(level, 2, widget)
         self.__setupConnections(widget)
 
