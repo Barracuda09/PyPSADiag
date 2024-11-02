@@ -43,18 +43,19 @@ class EcuZoneReaderThread(QThread):
         self.isRunning = False
 
     def __readData(self):
-        self.msleep(80)
         data = bytearray()
-        runLoop = True
-        while runLoop:
+        runLoop = 5
+        while runLoop > 0:
             dataLen = self.serialPort.in_waiting
             if dataLen > 1:
                 subData = self.serialPort.read(dataLen)
                 if len(subData):
                     data.extend(subData)
-                    self.msleep(250)
+                    self.msleep(100)
+                    runLoop = 5
             else:
-                runLoop = False
+                self.msleep(50)
+                runLoop -= 1
         return data
 
     def setZonesToRead(self, ecuID: str, startDiagmode, zoneList, stopDiagmode):
@@ -68,11 +69,22 @@ class EcuZoneReaderThread(QThread):
         self.writeQ.put(zoneList)
         self.writeQ.put(stopDiagmode)
 
+    def __simulateAnswer(self, cmd: str):
+        if cmd[:1] == ">":
+            return "OK"
+        if cmd == "1003\n":
+            return "500300C80014"
+        if cmd == "2703\n":
+            return "67036B0A71E0"
+        if cmd[:4] == "2704":
+            return "6704"
+
     def sendReceive(self, cmd: str):
         cmd += "\n"
         self.__write(cmd.encode("utf-8"))
         data = self.__readData()
         if len(data) == 0:
+#            return self.__simulateAnswer(cmd)
             return "Timeout"
 
         i = data.find(b"\r")
@@ -136,7 +148,6 @@ class EcuZoneReaderThread(QThread):
                 self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error", "cmd answer")
 
     def __write(self, data):
-        print(data)
         self.serialPort.write(data)
 
     def run(self):
