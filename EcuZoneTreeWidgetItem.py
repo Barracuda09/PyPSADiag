@@ -33,6 +33,7 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
         super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone, description])
         if isinstance(parent, QTreeWidget):
             parent.insertTopLevelItem(row, self)
+        self.setToolTip(1, description)
         self.zone = zone
 
 #        label = QLabel(description)
