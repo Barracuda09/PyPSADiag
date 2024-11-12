@@ -7,7 +7,7 @@
   "key_type": "multi",
   "keys": {
     "NAC": "D91C",
-    "RCC": "D91C"
+    "RCC": "F107"
   },
   "tabs": {
     "telemat": "Telematic Unit (BTEL)"
