@@ -27,6 +27,7 @@ class EcuZoneLineEdit(QLineEdit):
     """
     initialValue = ""
     zoneObject = dict
+    valueType = ""
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.setReadOnly(readOnly)
@@ -48,7 +49,12 @@ class EcuZoneLineEdit(QLineEdit):
     def getZoneAndHex(self):
         value = "None"
         if self.isLineEditChanged():
-            value = self.text()
+            if self.valueType == "string_ascii":
+                value = self.text().encode().hex()
+            elif self.valueType == "int":
+                value = "%0.2X" % int(self.text())
+            else:
+                value = self.text()
         return value
 
     def __shift(self):
@@ -81,6 +87,7 @@ class EcuZoneLineEdit(QLineEdit):
         return byte
 
     def changeZoneOption(self, data: str, valueType: str):
+        self.valueType = valueType
         if "mask" in self.zoneObject:
             byteData = []
             for i in range(0, len(data), 2):
@@ -92,9 +99,11 @@ class EcuZoneLineEdit(QLineEdit):
             self.__setText(str(byte))
         else:
             if valueType == "string_ascii":
-                self.__setText(str(data))
+                txt = bytes.fromhex(data).decode("utf-8")
+                self.__setText(txt)
             elif valueType == "int":
-                self.__setText(str(int(data, 16)))
+                txt = str(int(data, 16))
+                self.__setText(txt)
             else:
                 self.__setText(data)
 
