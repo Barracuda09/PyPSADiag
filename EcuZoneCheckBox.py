@@ -40,7 +40,7 @@ class EcuZoneCheckBox(QCheckBox):
         super().setCheckState(val)
 
     def isCheckBoxChanged(self):
-        return self.isEnabled() and self.initialValue != self.checkState()
+        return self.isEnabled() and self.initialValue != 0 and self.initialValue != self.checkState()
 
     def getZoneAndHex(self):
         value = "None"
