@@ -27,11 +27,10 @@ import time
 from PySide6.QtCore import Qt, Slot, QIODevice
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 
-import serial.tools.list_ports
-
 from PyPSADiagGUI import PyPSADiagGUI
-import EcuZoneReader
 import FileLoader
+from UDSCommunication import UDSCommunication
+from SerialPort import SerialPort
 from FileConverter import FileConverter
 from EcuZoneTable import EcuZoneTableView
 from EcuZoneTreeView  import EcuZoneTreeView
@@ -41,12 +40,21 @@ from EcuZoneTreeView  import EcuZoneTreeView
   - Run with: python main.py
 """
 class MainWindow(QMainWindow):
-    portNameList = list()
     ui = PyPSADiagGUI()
     ecuObjectList = dict()
+    simulation = False
+    stream = None
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        if len(sys.argv) >= 2:
+            for arg in sys.argv:
+                if arg == "--simu":
+                    self.simulation = True
+                if arg == "--help":
+                    print("Use --simu   For simulation")
+                    exit()
+
         self.ui.setupGUi(self)
 
         #converter = FileConverter()
@@ -61,30 +69,28 @@ class MainWindow(QMainWindow):
         self.ui.readZone.clicked.connect(self.readZone)
         self.ui.writeZone.clicked.connect(self.writeZone)
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
+        self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
 
-        # Get available Serial ports and put it in Combobox
-        self.ui.portNameComboBox.clear()
-        comPorts = serial.tools.list_ports.comports()
-        nameList = list(port.device for port in comPorts)
-        for name in nameList:
-            self.ui.portNameComboBox.addItem(name)
-
         # Setup serial controller
-        self.serialController = serial.Serial()
+        self.serialController = SerialPort()
+        self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
 
         # Set initial button states
         self.ui.DisconnectPort.setEnabled(False)
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
+        self.ui.readEcuFaults.setEnabled(False)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
+        self.ui.useSketchSeedGenerator.setCheckState(Qt.Checked)
 
         #
-        self.ecuZoneReaderThread = EcuZoneReader.EcuZoneReaderThread(self.serialController)
-        self.ecuZoneReaderThread.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
-        self.ecuZoneReaderThread.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.udsCommunication = UDSCommunication(self.serialController, self.simulation)
+        self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
+        self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
+        self.udsCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
 
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
@@ -115,41 +121,55 @@ class MainWindow(QMainWindow):
 
         self.ui.treeView.updateView(ecuObjectList)
 
+    def writeToOutputView(self, text: str):
+        self.ui.output.append(text)
+        self.ui.output.viewport().repaint()
+
     @Slot()
     def connectPort(self):
-        try:
-            self.serialController.port = self.ui.portNameComboBox.currentText()
-            self.serialController.baudrate = 115200
-            self.serialController.open()
-            self.serialController.setDTR(True)
-            # Set button states
-            self.ui.ConnectPort.setEnabled(False)
-            self.ui.DisconnectPort.setEnabled(True)
-            self.ui.readZone.setEnabled(True)
-            self.ui.writeZone.setEnabled(True)
-            self.ui.writeZone.setEnabled(True)
-        except serial.SerialException as e:
-            print('Error opening port: ' + str(e))
+        self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
+        receiveData = self.serialController.sendReceive("D")
+        if receiveData != "OK":
+            # Give some option to check values and to cancel the write
+            if QMessageBox.Cancel == QMessageBox.warning(self, "Not the recommended sketch found", "It is recommened to use this sketch:\r\nhttps://github.com/Barracuda09/arduino-psa-diag/blob/master/arduino-psa-diag/arduino-psa-diag.ino\r\n\r\nContinu with using Python Seed Generator", QMessageBox.Ok, QMessageBox.Cancel):
+                self.disconnectPort()
+                return
+            # Disable Sketch Seed Generator, use Python Generator
+            self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
+            self.ui.useSketchSeedGenerator.setEnabled(False)
+        else:
+            receiveData = self.serialController.sendReceive("N")
+            if receiveData != "OK":
+                return
+
+        # Set button states
+        self.ui.ConnectPort.setEnabled(False)
+        self.ui.DisconnectPort.setEnabled(True)
 
     @Slot()
     def disconnectPort(self):
-        self.stream.close()
+        if self.stream != None:
+            self.stream.close()
         self.serialController.close()
         self.ui.ConnectPort.setEnabled(True)
         self.ui.DisconnectPort.setEnabled(False)
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
+        self.ui.readEcuFaults.setEnabled(False)
+        self.ui.rebootEcu.setEnabled(False)
+        self.ui.useSketchSeedGenerator.setCheckState(Qt.Checked)
+        self.ui.useSketchSeedGenerator.setEnabled(True)
 
     @Slot()
     def sendCommand(self):
         if self.serialController.isOpen():
-            cmd = self.ui.command.text() + "\n"
-            self.ui.output.append(cmd)
-            self.receiveData = self.ecuZoneReaderThread.sendReceive(cmd)
-            self.ui.output.append(self.receiveData)
+            cmd = self.ui.command.text()
+            self.writeToOutputView(cmd)
+            self.receiveData = self.serialController.sendReceive(cmd)
+            self.writeToOutputView(self.receiveData)
         else:
-            self.ui.output.append("Port not open!")
+            self.writeToOutputView("Port not open!")
 
     @Slot()
     def openCSVFile(self):
@@ -173,6 +193,11 @@ class MainWindow(QMainWindow):
         jsonFile = file.read()
         self.ecuObjectList = json.loads(jsonFile.encode("utf-8"))
         self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.ui.readZone.setEnabled(True)
+        self.ui.writeZone.setEnabled(True)
+        self.ui.writeZone.setEnabled(True)
+        self.ui.readEcuFaults.setEnabled(True)
+        self.ui.rebootEcu.setEnabled(True)
 
     @Slot()
     def readZone(self):
@@ -187,15 +212,18 @@ class MainWindow(QMainWindow):
 
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
-            startDiagmode = "1003"
-            stopDiagmode = "1001"
-            # Read Requested Zone or ALL Zones from ECU
-            if self.ui.ecuComboBox.currentIndex() == 0:
-                self.ecuZoneReaderThread.setZonesToRead(ecu, startDiagmode, self.ecuObjectList["zones"], stopDiagmode)
+
+            if self.ecuObjectList["protocol"] == "uds":
+                # Read Requested Zone or ALL Zones from ECU
+                if self.ui.ecuComboBox.currentIndex() == 0:
+                    self.udsCommunication.setZonesToRead(ecu, self.ecuObjectList["zones"])
+                else:
+                    zone = dict()
+                    zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
+                    self.udsCommunication.setZonesToRead(ecu, zone)
             else:
-                zone = dict()
-                zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
-                self.ecuZoneReaderThread.setZonesToRead(ecu, startDiagmode, zone, stopDiagmode)
+                self.writeToOutputView("Protocol not supported yet!")
+                return
 
     @Slot()
     def writeZone(self):
@@ -209,71 +237,49 @@ class MainWindow(QMainWindow):
                     text += str(zone) + "\r\n"
                     changeCount += 1
             if changeCount == 0:
-                self.ui.output.append("Nothing changed")
-                return
-            if QMessageBox.Cancel == QMessageBox.question(self, "Write zone(s) to ECU", text, QMessageBox.Save, QMessageBox.Cancel):
+                self.writeToOutputView("Nothing changed")
                 return
 
-            # Setup CAN_EMIT_ID
-            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
-            if self.ecuObjectList["protocol"] == "uds":
-                startDiagmode = "1003"
-                stopDiagmode = "1001"
-            else:
-                self.ui.output.append("Protocol not supported yet!")
+            # Give some option to check values and to cancel the write
+            if QMessageBox.Cancel == QMessageBox.question(self, "Write zone(s) to ECU", text, QMessageBox.Save, QMessageBox.Cancel):
                 return
 
             # Get the corresponding ECU Key from Combobox
             index = self.ui.ecuKeyComboBox.currentIndex()
-            key = ":" + self.ui.ecuKeyComboBox.itemData(index) + ":03:03"
+            key = self.ui.ecuKeyComboBox.itemData(index)
+            # Setup CAN_EMIT_ID
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
-            secureTraceability = "2E2901FD00000010101"
-
-            receiveData = self.ecuZoneReaderThread.sendReceive(ecu)
-            print(receiveData)
-
-            receiveData = self.ecuZoneReaderThread.sendReceive(startDiagmode)
-            print(receiveData)
-
-            receiveData = self.ecuZoneReaderThread.sendReceive(key)
-            print(receiveData)
-
-            for tabList in valueList:
-                for zone in tabList:
-                    writeCmd = "2E" + zone[0] + zone[1]
-                    readCmd = "22" + zone[0]
-
-                    receiveData = self.ecuZoneReaderThread.sendReceive(readCmd)
-                    print(receiveData)
-
-                    receiveData = self.ecuZoneReaderThread.sendReceive(writeCmd)
-                    print(receiveData)
-
-                    receiveData = self.ecuZoneReaderThread.sendReceive(readCmd)
-                    print(receiveData)
-
-            if self.ui.writeSecureTraceability.isChecked():
-                self.receiveData = self.ecuZoneReaderThread.sendReceive(secureTraceability)
-                print(receiveData)
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
-                self.ui.output.append("NO Secure Traceability is Written!!")
+                self.writeToOutputView("Protocol not supported yet!")
+                return
 
-            receiveData = self.ecuZoneReaderThread.sendReceive(stopDiagmode)
-            print(receiveData)
 
     @Slot()
     def rebootEcu(self):
         if self.serialController.isOpen():
-            print("Reboot ECU")
             # Setup CAN_EMIT_ID
-            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"] + "\n"
-            rebootECU = "1103\n"
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
-            receiveData = self.ecuZoneReaderThread.sendReceive(ecu)
-            print(receiveData)
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.rebootEcu(ecu)
+            else:
+                self.writeToOutputView("Protocol not supported yet!")
+                return
 
-            receiveData = self.ecuZoneReaderThread.sendReceive(rebootECU)
-            print(receiveData)
+    @Slot()
+    def readEcuFaults(self):
+        if self.serialController.isOpen():
+            # Setup CAN_EMIT_ID
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.readEcuFaults(ecu)
+            else:
+                self.writeToOutputView("Protocol not supported yet!")
+                return
 
     @Slot()
     def csvReadCallback(self, value: list):
@@ -284,8 +290,12 @@ class MainWindow(QMainWindow):
         self.ui.treeView.changeZoneOption(zoneData, value, valueType)
 
     @Slot()
+    def outputToTextEditCallback(self, text: str):
+        self.writeToOutputView(text)
+
+    @Slot()
     def serialPacketReceiverCallback(self, packet: list, time: float):
-        self.ui.output.append(str(packet))
+        self.writeToOutputView(str(packet))
         self.csvWriter.writerow(packet)
         self.stream.flush()
 
