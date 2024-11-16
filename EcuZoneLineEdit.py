@@ -99,7 +99,14 @@ class EcuZoneLineEdit(QLineEdit):
             self.__setText(str(byte))
         else:
             if valueType == "string_ascii":
-                txt = bytes.fromhex(data).decode("utf-8")
+                txt = data
+                try:
+                    txt = bytes.fromhex(data).decode("utf-8")
+                except:
+                    valueType = "string"
+                self.__setText(txt)
+            elif valueType == "string_date":
+                txt = ("%0.2d" % int(data[0:2], 16)) + "." + ("%0.2d" % int(data[2:4], 16)) + "." + ("%0.2d" % int(data[4:6], 16))
                 self.__setText(txt)
             elif valueType == "int":
                 txt = str(int(data, 16))
