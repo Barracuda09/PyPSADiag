@@ -1,0 +1,78 @@
+{
+  "name": "DGT Screen",
+  "tx_id": "736",
+  "rx_id": "716",
+  "lin": "47",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "EMF_DGT_UDS_GP (DGT7CFF)": "FD69",
+    "EMF_C": "F6C4",
+    "EMF_DGT_LVDS_BD   (Key 1)": "16FB",
+    "EMF_DGT_LVDS_BD-8 (Key 2)": "DF69",
+    "EMF_DGT_LVDS_BD   (Key 3)": "CF52"
+  },
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "dgt_screen": "DGT Screen"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_1",
+      "tab": "dgt_screen",
+      "name": "Configuration group data 1",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2110": {
+      "id": "Configuration_Group_Data_2",
+      "tab": "dgt_screen",
+      "name": "Configuration group data 2",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "dgt_screen",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "dgt_screen",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "dgt_screen",
+      "name": "Production Date",
+      "byte": 0,
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "dgt_screen",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "dgt_screen",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }
+  }
+}
