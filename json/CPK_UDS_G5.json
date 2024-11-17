@@ -15,6 +15,7 @@
       "id": "Configuration_Group_Data_Values",
       "name": "Configuration group data values",
       "tab": "unsorted",
+      "type": "raw",
       "form_type": "multi",
       "CFG_ETX_RVC_004": {
         "name": "Presence of RVC",
