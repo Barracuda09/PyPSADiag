@@ -196,7 +196,7 @@
       "id": "SN",
       "tab": "unsorted",
       "byte": 0,
-      "type": "raw,
+      "type": "raw",
       "form_type": "string",
       "name": "Serial number"
     }	
