@@ -147,13 +147,13 @@
       "type": "raw",
       "form_type": "string"
     },
-    "f190": {
-      "id": "VIN",
-      "tab": "vin",
+    "f18c": {
+      "id": "SN",
+      "tab": "unsorted",
       "byte": 0,
-      "type": "string_ascii",
+      "type": "raw",
       "form_type": "string",
-      "name": "VIN"
+      "name": "Serial Number"
     }	
   }
 }
