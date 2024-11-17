@@ -1,0 +1,159 @@
+{
+  "name": "CPK_UDS_G5",
+  "tx_id": "75D",
+  "rx_id": "65D",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys":  "D1F5",
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "unsorted": "Unsorted"
+  },
+  "zones": {
+    "2101": {
+      "id": "Configuration_Group_Data_Values",
+      "name": "Configuration group data values",
+      "tab": "unsorted",
+      "form_type": "multi",
+      "CFG_ETX_RVC_004": {
+        "name": "Presence of RVC",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
+        "name": "Presence of blind spot assist",
+        "name_p": "@P35575-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "00000100"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETX_PARKPILOT_004": {
+        "name": "Presence of semi-automatic parking pilot",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00011000",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present",
+            "mask": "00011000"
+          }
+        ]
+      },
+      "CFG_ETX_FRONT_004": {
+        "name": "Presence of front parking sensors",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_ETX_AAS_004": {
+        "name": "Presence of parking sensors",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      }
+    },
+    "2901": {
+      "id": "Secure_Traceability_Value",
+      "tab": "unsorted",
+      "name": "Secure Traceability Value",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }	
+  }
+}
