@@ -40,6 +40,7 @@ class PyPSADiagGUI(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
         MainWindow.setSizeIncrement(QSize(1, 1))
+        MainWindow.setWindowTitle("PyPSADiag")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(1)

@@ -11,6 +11,7 @@
   },
   "tabs": {
     "telemat": "Telematic Unit (BTEL)"
+    "ecuinfo": "ECU Info",
   },
   "zones": {
     "2100": {
@@ -10369,7 +10370,7 @@
     },
     "f080": {
       "id": "ZA_ZONE",
-      "tab": "telemat",
+      "tab": "ecuinfo",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
@@ -10377,10 +10378,26 @@
     },
     "f0fe": {
       "id": "ZI_ZONE",
-      "tab": "telemat",
+      "tab": "ecuinfo",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
+      "form_type": "string"
+    },
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ecuinfo",
+      "name": "Production Date",
+      "byte": 0,
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ecuinfo",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
       "form_type": "string"
     },
     "f190": {
@@ -10390,6 +10407,6 @@
       "type": "string_ascii",
       "form_type": "string",
       "name": "VIN"
-    }	
+    }
   }
 }
