@@ -52,7 +52,7 @@ class SerialPort():
             print('Error opening port: ' + str(e))
 
     def write(self, data):
-        print(data)
+        #print(data)
         self.serialPort.write(data)
 
     def readData(self):
