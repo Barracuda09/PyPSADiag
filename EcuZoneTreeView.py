@@ -91,7 +91,8 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if formType == "multi":
                 rootName = "** " + zoneObject["name"] + " **"
                 root = EcuMultiZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), rootName, zoneObject)
-                root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, True))
+                rootReadOnly = True
+                root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, rootReadOnly))
                 self.markItemAsRootLevel(root)
                 rowCount += 1
                 # Do we have new NAC json File
