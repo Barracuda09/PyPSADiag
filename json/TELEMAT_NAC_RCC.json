@@ -10,8 +10,8 @@
     "RCC": "F107"
   },
   "tabs": {
-    "telemat": "Telematic Unit (BTEL)"
-    "ecuinfo": "ECU Info",
+    "telemat": "Telematic Unit (BTEL)",
+    "ecuinfo": "ECU Info"
   },
   "zones": {
     "2100": {
