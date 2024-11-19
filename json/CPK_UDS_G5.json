@@ -38,6 +38,28 @@
           }
         ]
       },
+      "CFG_ETV_CVM_CV_HYBRID_004": {
+        "name": "Hybrid",
+        "name_p": "@P35575-POLUXDATA",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_HYBRID_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "00000010"
+          },
+          {
+            "name_cfg": "CFG_ETX_HYBRID_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
       "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
         "name": "Presence of blind spot assist",
         "name_p": "@P35575-POLUXDATA",
