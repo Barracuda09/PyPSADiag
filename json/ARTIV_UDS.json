@@ -113,13 +113,13 @@
             "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
             "name_p": "@P51745-POLUXDATA",
             "name": "Function present",
-            "mask": "00000001"
+            "mask": "00000000"
           },
           {
             "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
             "name_p": "@P51749-POLUXDATA",
             "name": "Function absent",
-            "mask": "00000000"
+            "mask": "00000001"
           }
         ]
       },
@@ -135,13 +135,13 @@
             "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
             "name_p": "@P51745-POLUXDATA",
             "name": "Function present",
-            "mask": "00000010"
+            "mask": "00000000"
           },
           {
             "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
             "name_p": "@P51749-POLUXDATA",
             "name": "Function absent",
-            "mask": "00000000"
+            "mask": "00000010"
           }
         ]
       }
