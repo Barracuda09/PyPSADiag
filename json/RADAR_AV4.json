@@ -1,0 +1,76 @@
+{
+  "name": "RADAR_AV4",
+  "tx_id": "6B6",
+  "rx_id": "696",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "EFCA",
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "unsorted": "Unsorted"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "cvm3",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "unsorted",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_E8Z_ARTIV_RADAR_24G_FREQUENCY_002": {
+        "name": "Type of speed regulator",
+        "name_p": "@P51544-POLUXDATA",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_011",
+            "name_p": "@P51748-POLUXDATA",
+            "name": "ACC Stop&Go",
+            "mask": "11110111"
+          },
+          {
+            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_110",
+            "name_p": "@P32813-POLUXDATA",
+            "name": "Without ACC",
+            "mask": "11111110"
+          }
+        ]
+      }
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f18c": {
+      "id": "SN",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Serial number"
+    }
+  }
+}

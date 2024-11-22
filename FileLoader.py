@@ -47,16 +47,24 @@ class FileLoaderThread(QThread):
 
     def run(self):
         self.isRunning = True
+        code = "utf-8"
         while self.isRunning:
             if self.path is not None:
                 try:
-                    with open(str(self.path), 'r') as stream:
-                        for rowData in csv.reader(stream):
-                            if not self.isRunning:
-                                break
-                            self.newRowSignal.emit(rowData)
-                            self.msleep(self.delayMs)
-                        self.loadingFinishedSignal.emit()
+                    stream = open(str(self.path), 'r', encoding=code)
                 except OSError:
                     print("file not found: " + self.path)
+                    self.stop()
+
+                try:
+                    for rowData in csv.reader(stream):
+                        if not self.isRunning:
+                            break
+                        self.newRowSignal.emit(rowData)
+                        self.msleep(self.delayMs)
+                    self.loadingFinishedSignal.emit()
+                except:
+                    if code == "utf-8":
+                        code = "iso-8859-1"
+                        continue;
                 self.stop()

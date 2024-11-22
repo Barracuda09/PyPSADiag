@@ -22,7 +22,7 @@
       "type": "raw",
       "form_type": "string"
     },
-   "2101": {
+   "2102": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
       "tab": "aas_uds",
@@ -121,6 +121,22 @@
       "type": "raw",
       "form_type": "string"
     },
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "aas_uds",
+      "name": "Production Date",
+      "byte": 0,
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "aas_uds",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
+    },
     "f190": {
       "id": "VIN",
       "tab": "aas_uds",
@@ -128,6 +144,6 @@
       "type": "string_ascii",
       "form_type": "string",
       "name": "VIN"
-    }	
+    }
   }
 }

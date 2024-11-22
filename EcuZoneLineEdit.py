@@ -27,6 +27,7 @@ class EcuZoneLineEdit(QLineEdit):
     """
     initialValue = ""
     zoneObject = dict
+    valueType = ""
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.setReadOnly(readOnly)
@@ -48,7 +49,12 @@ class EcuZoneLineEdit(QLineEdit):
     def getZoneAndHex(self):
         value = "None"
         if self.isLineEditChanged():
-            value = self.text()
+            if self.valueType == "string_ascii":
+                value = self.text().encode().hex()
+            elif self.valueType == "int":
+                value = "%0.2X" % int(self.text())
+            else:
+                value = self.text()
         return value
 
     def __shift(self):
@@ -81,6 +87,7 @@ class EcuZoneLineEdit(QLineEdit):
         return byte
 
     def changeZoneOption(self, data: str, valueType: str):
+        self.valueType = valueType
         if "mask" in self.zoneObject:
             byteData = []
             for i in range(0, len(data), 2):
@@ -92,9 +99,30 @@ class EcuZoneLineEdit(QLineEdit):
             self.__setText(str(byte))
         else:
             if valueType == "string_ascii":
-                self.__setText(str(data))
+                try:
+                    txt = bytes.fromhex(data).decode("utf-8")
+                except:
+                    valueType = "string"
+                    txt = data
+                self.__setText(txt)
+            elif valueType == "string_date":
+                day   = int(data[0:2], 16)
+                month = int(data[2:4], 16)
+                year  = int(data[4:6], 16)
+                # Check if date is not sane, then give ASCII
+                if year >= 30 or day > 31 or month > 12:
+                    day   = data[0:2]
+                    month = data[2:4]
+                    year  = data[4:6]
+                else:
+                    day   = ("%0.2d" % int(data[0:2], 16))
+                    month = ("%0.2d" % int(data[2:4], 16))
+                    year  = ("%0.2d" % int(data[4:6], 16))
+                txt = day + "." + month + "." + year
+                self.__setText(txt)
             elif valueType == "int":
-                self.__setText(str(int(data, 16)))
+                txt = str(int(data, 16))
+                self.__setText(txt)
             else:
                 self.__setText(data)
 

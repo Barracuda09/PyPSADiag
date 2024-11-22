@@ -40,6 +40,7 @@ class PyPSADiagGUI(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
         MainWindow.setSizeIncrement(QSize(1, 1))
+        MainWindow.setWindowTitle("PyPSADiag")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(1)
@@ -77,8 +78,12 @@ class PyPSADiagGUI(object):
         self.writeZone.setText(QCoreApplication.translate("MainWindow", u"Write", None))
         self.rebootEcu = QPushButton()
         self.rebootEcu.setText(QCoreApplication.translate("MainWindow", u"Reboot ECU", None))
+        self.readEcuFaults = QPushButton()
+        self.readEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Read ECU Faults", None))
         self.writeSecureTraceability = QCheckBox()
         self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
+        self.useSketchSeedGenerator = QCheckBox()
+        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
         self.treeView = EcuZoneTreeView(self.frame)
 
         # Setup Top Left Layout
@@ -109,7 +114,10 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
         self.bottomRightLayout.addWidget(self.readZone)
         self.bottomRightLayout.addWidget(self.writeZone)
+        self.bottomRightLayout.addWidget(self.readEcuFaults)
+        self.bottomRightLayout.addWidget(self.rebootEcu)
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
+        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
         self.bottomRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
 
         # Add Top Left, Right Layout -> Main Top Layout
