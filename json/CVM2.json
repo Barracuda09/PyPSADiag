@@ -46,7 +46,7 @@
         "type": "bool",
         "form_type": "combobox",
         "mask": "11000000",
-		"params": [
+        "params": [
           {
             "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_011",
             "name_p": "@P51748-POLUXDATA",
@@ -199,6 +199,6 @@
       "type": "raw",
       "form_type": "string",
       "name": "Serial number"
-    }	
+    }
   }
 }
