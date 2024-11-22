@@ -2,7 +2,7 @@
   "name": "DGT Screen",
   "tx_id": "736",
   "rx_id": "716",
-  "lin": "47",
+  "lin_id": "47",
   "protocol": "uds",
   "key_type": "multi",
   "keys": {
@@ -65,14 +65,6 @@
       "byte": 0,
       "type": "string_ascii",
       "form_type": "string"
-    },
-    "f190": {
-      "id": "VIN",
-      "tab": "dgt_screen",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string",
-      "name": "VIN"
     }
   }
 }
