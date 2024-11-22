@@ -1,0 +1,765 @@
+{
+  "_comment": "Grabbed and adapted from: psacode",
+  "name": "matt_2010",
+  "tx_id": "772",
+  "rx_id": "672",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "ECEC",
+  "tabs": {
+    "2100": "zone 2100",
+    "0200": "zone 0200"
+  },
+  "coding": "true",
+  "errors": "true",
+  "zones": {
+    "2100": {
+      "name": "Telecoding_MATT_2100",
+      "tab": "2100",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+        "id": "CFG_BKN_MATT_CONF_ALERTES_000",
+        "name": "On-board computer warnings",
+        "byte": 0,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BP0_MATT_MENU_LANGUE_000",
+        "name": "Language menu",
+        "byte": 0,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BKP_MATT_CONF_AUDIO_000",
+        "name": "Media data from the head unit",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BKQ_MATT_CONF_BVA_BVMP_000",
+        "name": "Gearbox transmission indicator (for display on a separate screen or in the upper right corner)",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BKR_MATT_CONF_LVV_000",
+        "name": "Cruise control and limiter (only limiter is possible depending on the display version)",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BKS_MATT_CONF_MAINT_000",
+        "name": "Output of maintenance information when the ignition is switched on",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BVU_MATT_MENU_PARAM_FCT_000",
+        "name": "Menu \"Car parameters\"",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_D2U_MATT_POP_NAV_VTH_000",
+        "name": "Displaying pop-up navigation pointers",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BKV_MATT_CONF_NAV_000",
+        "name": "Displaying navigation from the head unit",
+        "byte": 1,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BKW_MATT_CONF_NIVHU_000",
+        "name": "Checking the oil level",
+        "byte": 1,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BKX_MATT_CONF_ODB_000",
+        "name": "Trip data",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BKY_MATT_CONF_ODO_000",
+        "name": "Displaying the mileage in the bottom row",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id":"CFG_BKZ_MATT_CONF_PAGE_T_EXT_000",
+        "name": "Display of the temperature screen",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BL0_MATT_CONF_RVV_000",
+        "name": "Cruise control",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BVT_MATT_CONF_STT_000",
+        "name": "Keyless access",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BW9_MATT_CONF_RAPPEL_XVV_000",
+        "name": "Top row with cruise control (for new displays - cruise memory display MEM)",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BL2_MATT_CONF_FCT_DESIGNATEUR_000",
+        "name": "The presence of a control stick connected to the display",
+        "byte": 2,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BL3_MATT_CONF_MENU_TEMP_000",
+        "name": "The unit selection menu in the settings",
+        "byte": 2,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BP3_MATT_MENU_PARAM_UL_000",
+        "name": "Language selection menu in settings",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
+        "name": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
+        "name": "Webasto Settings Menu",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQB_MATT_CONF_MENU_HARMONIE_000",
+        "name": "Color theme selection menu in settings",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BPX_MATT_CONF_MENU_REG_HEURE_000",
+        "name": "Time setting menu in settings",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BOZ_MATT_MENU_TCFG_000",
+        "name": "CFG_BOZ_MATT_MENU_TCFG",
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
+        "name": "Color theme",
+        "byte": 3,
+        "type": "bool",
+        "mask": "11100000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "01000000", "name": "orange"},
+          { "mask": "00100000", "name": "black"},
+          { "mask": "00000000", "name": "techno black"},
+          { "mask": "01100000", "name": "blue"},
+          { "mask": "10000000", "name": "toffee"}
+        ]
+      },
+      {
+        "id": "CFG_BPY_MATT_CONF_AFFICHAGE_HEURE_000",
+        "name": "Time display",
+        "byte": 3,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_DBB_MATT_CONF_RVVI_000",
+        "name": "Adaptive cruise control",
+        "byte": 3,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BPZ_MATT_CONF_TYPE_CLE_000",
+        "name": "Starting the engine with the Start button",
+        "byte": 3,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_DBQ_MATT_CONF_DSG_CHECK_000",
+        "name": "Displaying messages about a drop in tire pressure",
+        "byte": 3,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_D0B_MATT_CONF_GSI_001",
+        "name": "Tire pressure drop detection system / gear indicator in the upper right corner",
+        "byte": 3,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQD_MATT_CONF_SILHOUETTE_000",
+        "name": "Body type (silhouette)",
+        "byte": 4,
+        "type": "bool",
+        "mask": "11100000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - hacthback"},
+          { "mask": "00100000", "name": "sedan"},
+          { "mask": "01000000", "name": "wagon"},
+          { "mask": "10000000", "name": "3 - ???"}
+        ]
+      },
+      {
+        "id": "CFG_BOY_MATT_ITEM_BLACKPANEL_TCFG_000",
+        "name": "Black panel mode",
+        "byte": 4,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BOX_MATT_ITEM_ACCESJDA_TCFG_000",
+        "name": "History of warnings",
+        "byte": 4,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000",
+        "name": "CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000",
+        "byte": 4,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000",
+        "name": "CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000",
+        "byte": 4,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000",
+        "name": "CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000",
+        "byte": 4,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQ3_MATT_CONF_ARTIV_ACC_000",
+        "name": "Adaptive cruise control mode",
+        "byte": 5,
+        "type": "bool",
+        "mask": "11000000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "00 - ???"},
+          { "mask": "01000000", "name": "01 - ???"},
+          { "mask": "10000000", "name": "10 - ???"},
+          { "mask": "11000000", "name": "11 - ???"}
+        ]
+      },
+      {
+        "id": "CFG_BPB_MATT_MENU_UNIT_000",
+        "name": "CFG_BPB_MATT_MENU_UNIT_000",
+        "byte": 5,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BOT_MATT_MENU_SONS_000",
+        "name": "The menu for selecting the tune of the steering wheel switch",
+        "byte": 5,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BQA_MATT_CONF_COULEUR_RETRO_000",
+        "name": "CFG_BQA_MATT_CONF_COULEUR_RETRO_000",
+        "byte": 5,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_BWA_MATT_CONF_HYBRIDE_000",
+        "name": "CFG_BWA_MATT_CONF_HYBRIDE_000",
+        "byte": 5,
+        "type": "bool",
+        "mask": "00000110",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "00 - ???"},
+          { "mask": "00000010", "name": "01 - ???"},
+          { "mask": "00000100", "name": "10 - ???"},
+          { "mask": "00000110", "name": "11 - ???"}
+        ]
+      },
+      {
+        "id": "CFG_D2V_MATT_PRES_AAS_000",
+        "name": "Availability of an obstacle detection system",
+        "byte": 5,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_DC0_MATT_CONF_POI_RADAR_000",
+        "name": "CFG_DC0_MATT_CONF_POI_RADAR_000",
+        "byte": 6,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
+        "name": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
+        "byte": 6,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_DBR_MATT_CONF_AFF_DYN_000",
+        "name": "CFG_DBR_MATT_CONF_AFF_DYN_000",
+        "byte": 6,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "6_3",
+        "name": "6_3 UNKNOWN",
+        "byte": 6,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "6_7",
+        "name": "6_7 UNKNOWN",
+        "byte": 6,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_D8H_MATT_MARQUE_000",
+        "name": "CFG_D8H_MATT_MARQUE_000",
+        "byte": 6,
+        "type": "bool",
+        "mask": "11100000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "Peugeot"},
+          { "mask": "00100000", "name": "Citroen"},
+          { "mask": "01000000", "name": "Fiat"},
+          { "mask": "10000000", "name": "DS"}
+        ]
+      },
+      {
+        "id": "CFG_DX8_MATT_GENERATION_RVVI_000",
+        "name": "CFG_DX8_MATT_GENERATION_RVVI_000",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_E16_MATT_GENERATION_POI_RADAR_001",
+        "name": "CFG_E16_MATT_GENERATION_POI_RADAR_001",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_E13_MATT_TYPE_FM_002",
+        "name": "CFG_E13_MATT_TYPE_FM_002",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "7_5",
+        "name": "7_5 UNKNOWN",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "7_6",
+        "name": "7_6 UNKNOWN",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "7_7",
+        "name": "7_7 UNKNOWN",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_E12_MATT_TYPE_EXPORT_000",
+        "name": "CFG_E12_MATT_TYPE_EXPORT_000",
+        "byte": 7,
+        "type": "bool",
+        "mask": "11000000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "00"},
+          { "mask": "01000000", "name": "01"},
+          { "mask": "10000000", "name": "10"}
+        ]
+      },
+      {
+        "id": "CFG_EC3_MATT_CONF_LKA_000",
+        "name": "Lane tracking system",
+        "byte": 8,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_EC4_MATT_CONF_ECO_COACHING_000",
+        "name": "CFG_EC4_MATT_CONF_ECO_COACHING_000",
+        "byte": 8,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "8_2",
+        "name": "8_2 UNKNOWN",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_EC5_MATT_CONF_ALARM_GULF_COUN_000",
+        "name": "CFG_EC6_MATT_CONF_SLI_ISA_000",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "CFG_EC7_MATT_CONF_ACC_000",
+        "name": "CFG_EC7_MATT_CONF_ACC_000",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "8_5",
+        "name": "8_5 UNKNOWN",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "8_6",
+        "name": "8_6 UNKNOWN",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "8_7",
+        "name": "8_7 UNKNOWN",
+        "byte": 8,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      }
+      ]
+    },
+    "0200": {
+      "name": "Telecoding_MATT_0200",
+      "tab": "0200",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+      {
+        "id": "checkbox_byte0F8hbit0",
+        "name": "The current transfer pointer in the upper right corner (one character)",
+        "byte": 0,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit1",
+        "name": "The current transfer pointer in the upper right corner (PRND)",
+        "byte": 0,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit2",        "name": "Instant consumption and power reserve in the bottom line (to activate - disable this bit)",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit3",        "name": "Activation of the upper line (cruise, limiter, gear pointer)",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit4",        "name": "0-4 UNKONOWN",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit5",        "name": "0-5 UNKONOWN",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit6",        "name": "Current speed display (main screen)",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F8hbit7",        "name": "The transfer pointer in the upper right corner (???)",
+
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit0",
+        "name": "byte0F9hbit0",
+        "byte": 1,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit1",
+        "name": "byte0F9hbit1",
+        "byte": 1,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit2",        "name": "byte0F9hbit2",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit3",        "name": "byte0F9hbit3",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit4",        "name": "byte0F9hbit4",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit5",        "name": "byte0F9hbit5",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit6",        "name": "byte0F9hbit6",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0F9hbit7",        "name": "byte0F9hbit7",
+
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit0",
+        "name": "byte0FAhbit0",
+        "byte": 2,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit1",
+        "name": "byte0FAhbit1",
+        "byte": 2,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit2",        "name": "byte0FAhbit2",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit3",        "name": "checkbox_byte0FAhbit3",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit4",            "name": "byte0FAhbit4",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit5",        "name": "checkbox_byte0FAhbit5",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit6",        "name": "byte0FAhbit6",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox"
+      },
+      {
+        "id": "checkbox_byte0FAhbit7",        "name": "checkbox_byte0FAhbit7",
+
+        "byte": 2,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox"
+      }
+      ]
+    }
+  }
+}
