@@ -50,13 +50,13 @@ class SeedKeyAlgorithm():
             result += (sec[0] * sec[2]) + sec[1]
 
         if self.debug:
-            print(hex(sec[0]) + " " + hex(sec[1]) + " " + hex(sec[2]))
-            print("data   " + hex(data))
-            print("rem    " + hex(rem))
-            print("num    " + hex(num))
-            print("dom1   " + hex(dom1))
-            print("dom2   " + hex(dom2))
-            print("result " + hex(result))
+            print("  " + hex(sec[0]) + " " + hex(sec[1]) + " " + hex(sec[2]))
+            print("  data   " + hex(data))
+            print("  rem    " + hex(rem))
+            print("  num    " + hex(num))
+            print("  dom1   " + hex(dom1))
+            print("  dom2   " + hex(dom2))
+            print("  result " + hex(result))
         return int(result) & 0xFFFF
 
     # Code grabbed from ludwig-v(Vluds) Github page and adapted for Python
@@ -72,6 +72,7 @@ class SeedKeyAlgorithm():
 
     # Some Seed data to test algorithm
     def trySeed(self, t):
+        print("Try " + str(t))
         match(t):
             case 1:
                 calSeed = 0x5ADF35FE
@@ -90,13 +91,21 @@ class SeedKeyAlgorithm():
                 calSeed = 0x17D83D3F
                 chg = 0x11BF5E67
                 key = 0xD91C
+            case 5:
+                calSeed = 0x759F6DB3
+                chg = 0x288071B2
+                key = 0xB6F0
+            case 6:
+                calSeed = 0x56FC7F9B
+                chg = 0x00370AD3
+                key = 0xEFCA
 
         self.debug =  True
         seed = self.computeResponse(key, chg)
         if seed - calSeed != 0:
-            print("** Failed caclulation **")
-        print("Known Seed " + hex(calSeed))
-        print("Calc  Seed " + hex(seed))
+            print("    ** Failed caclulation **")
+        print("    Known Seed " + hex(calSeed))
+        print("    Calc  Seed " + hex(seed))
         self.debug =  False
 
     def testCalculations(self):
@@ -104,5 +113,7 @@ class SeedKeyAlgorithm():
         self.trySeed(2)
         self.trySeed(3)
         self.trySeed(4)
+        self.trySeed(5)
+        self.trySeed(6)
 
 
