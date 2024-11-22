@@ -72,7 +72,11 @@ class EcuZoneComboBox(QComboBox):
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
-            byte = int(byteData[byteNr], 16) & mask
+            if byteNr < len(byteData):
+                byte = int(byteData[byteNr], 16) & mask
+            else:
+                self.setStyleSheet("QComboBox{background-color: red;}");
+                self.setEnabled(False)
 
         for i in range(self.count()):
             if self.itemData(i) == byte:
