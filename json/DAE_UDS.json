@@ -1,0 +1,175 @@
+{
+  "name": "dae_uds",
+  "tx_id": "6B5",
+  "rx_id": "695",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys":  "2105",
+  "coding": true,
+  "errors": true,
+  "tabs": {
+    "unsorted": "Unsorted"
+  },
+  "zones": {
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "unsorted",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DAE_1": {
+        "name": "?",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_DAE_1",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "11111011"
+          },
+          {
+            "name_cfg": "CFG_DAE_1",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_2": {
+        "name": "?",
+        "name_p": "@P46310-POLUXDATA",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_DAE_2",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "11111101"
+          },
+          {
+            "name_cfg": "CFG_DAE_2",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_3": {
+        "name": "?",
+        "name_p": "@P38650-POLUXDATA",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "01111111"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_4": {
+        "name": "?",
+        "name_p": "@P46336-POLUXDATA",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "01111111"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_5": {
+        "name": "?",
+        "name_p": "@P46336-POLUXDATA",
+        "byte": 10,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
+            "name_p": "@P51745-POLUXDATA",
+            "name": "Function present",
+            "mask": "10111111"
+          },
+          {
+            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
+            "name_p": "@P51749-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_6": {
+        "name": "?",
+        "name_p": "@P51613-POLUXDATA@\\*(LKA / LPA)@\\*(DAA3 / DAA4)",
+        "byte": 11,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name_p": "@P32813-POLUXDATA",
+            "name": "Function present",
+            "mask": "11111101"
+          },
+          {
+            "name_p": "@P33396-POLUXDATA",
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      }
+    },
+    "f080": {
+      "id": "ZA_ZONE",
+      "tab": "unsorted",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f0fe": {
+      "id": "ZI_ZONE",
+      "tab": "unsorted",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "f18c": {
+      "id": "SN",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Serial number"
+    }	
+  }
+}
