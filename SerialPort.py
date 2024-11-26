@@ -46,6 +46,7 @@ class SerialPort():
         try:
             self.serialPort.port = portNr
             self.serialPort.baudrate = baudRate
+            self.serialPort.timeout = 5.0
             #self.serialController.setDTR(True)
             self.serialPort.open()
         except serial.SerialException as e:
@@ -55,16 +56,17 @@ class SerialPort():
         #print(data)
         self.serialPort.write(data)
 
-    def readData(self):
+    def readRawData(self):
         data = bytearray()
         runLoop = 50
         while runLoop > 0:
             dataLen = self.serialPort.in_waiting
             if dataLen > 1:
-                subData = self.serialPort.read(dataLen)
-                if len(subData):
+                subData = self.serialPort.read_until(expected=b"\r\n")
+                if len(subData) > 0:
                     data.extend(subData)
                     if data.find(b"\r") != -1:
+                        print(data)
                         break
                     time.sleep(0.1)
                     runLoop = 5
@@ -73,10 +75,19 @@ class SerialPort():
                 runLoop -= 1
         return data
 
+    def readData(self):
+        data = self.readRawData()
+        if len(data) == 0:
+            return "Timeout"
+
+        i = data.find(b"\r")
+        decodedData = data[:i].decode("utf-8");
+        return decodedData
+
     def sendReceive(self, cmd: str):
         cmd += "\n"
         self.write(cmd.encode("utf-8"))
-        data = self.readData()
+        data = self.readRawData()
         if len(data) == 0:
             return "Timeout"
 
