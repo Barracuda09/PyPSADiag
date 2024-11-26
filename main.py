@@ -24,12 +24,14 @@ import random
 import json
 import csv
 import time
+from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
 from UDSCommunication import UDSCommunication
+from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
 from EcuZoneTable import EcuZoneTableView
@@ -51,6 +53,10 @@ class MainWindow(QMainWindow):
             for arg in sys.argv:
                 if arg == "--simu":
                     self.simulation = True
+                if arg == "--checkcalc":
+                    calc = SeedKeyAlgorithm()
+                    calc.testCalculations()
+                    exit()
                 if arg == "--help":
                     print("Use --simu   For simulation")
                     exit()
@@ -84,7 +90,7 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
-        self.ui.useSketchSeedGenerator.setCheckState(Qt.Checked)
+#        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
         #
         self.udsCommunication = UDSCommunication(self.serialController, self.simulation)
@@ -122,25 +128,12 @@ class MainWindow(QMainWindow):
         self.ui.treeView.updateView(ecuObjectList)
 
     def writeToOutputView(self, text: str):
-        self.ui.output.append(text)
+        self.ui.output.append(str(datetime.now()) + " --|  " + text)
         self.ui.output.viewport().repaint()
 
     @Slot()
     def connectPort(self):
         self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
-        receiveData = self.serialController.sendReceive("D")
-        if receiveData != "OK":
-            # Give some option to check values and to cancel the write
-            if QMessageBox.Cancel == QMessageBox.warning(self, "Not the recommended sketch found", "It is recommened to use this sketch:\r\nhttps://github.com/Barracuda09/arduino-psa-diag/blob/master/arduino-psa-diag/arduino-psa-diag.ino\r\n\r\nContinu with using Python Seed Generator", QMessageBox.Ok, QMessageBox.Cancel):
-                self.disconnectPort()
-                return
-            # Disable Sketch Seed Generator, use Python Generator
-            self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
-            self.ui.useSketchSeedGenerator.setEnabled(False)
-        else:
-            receiveData = self.serialController.sendReceive("N")
-            if receiveData != "OK":
-                return
 
         # Set button states
         self.ui.ConnectPort.setEnabled(False)
@@ -158,8 +151,8 @@ class MainWindow(QMainWindow):
         self.ui.writeZone.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
-        self.ui.useSketchSeedGenerator.setCheckState(Qt.Checked)
-        self.ui.useSketchSeedGenerator.setEnabled(True)
+#        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
+#        self.ui.useSketchSeedGenerator.setEnabled(True)
 
     @Slot()
     def sendCommand(self):
@@ -213,17 +206,25 @@ class MainWindow(QMainWindow):
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
+            # Setup LIN_ID if present
+            lin = ""
+            if "lin_id" in self.ecuObjectList:
+                lin = "L" + self.ecuObjectList["lin_id"]
+
             if self.ecuObjectList["protocol"] == "uds":
                 # Read Requested Zone or ALL Zones from ECU
                 if self.ui.ecuComboBox.currentIndex() == 0:
-                    self.udsCommunication.setZonesToRead(ecu, self.ecuObjectList["zones"])
+                    self.udsCommunication.setZonesToRead(ecu, lin, self.ecuObjectList["zones"])
                 else:
                     zone = dict()
                     zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
-                    self.udsCommunication.setZonesToRead(ecu, zone)
+                    self.udsCommunication.setZonesToRead(ecu, lin, zone)
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
+        else:
+            self.writeToOutputView("Port not open!")
+
 
     @Slot()
     def writeZone(self):
@@ -250,11 +251,19 @@ class MainWindow(QMainWindow):
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
+            # Setup LIN_ID if present
+            lin = ""
+            if "lin_id" in self.ecuObjectList:
+                lin = "L" + self.ecuObjectList["lin_id"]
+
             if self.ecuObjectList["protocol"] == "uds":
-                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, key, valueList, self.ui.writeSecureTraceability.isChecked())
+#                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
+                self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
+        else:
+            self.writeToOutputView("Port not open!")
 
 
     @Slot()
@@ -268,6 +277,8 @@ class MainWindow(QMainWindow):
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
+        else:
+            self.writeToOutputView("Port not open!")
 
     @Slot()
     def readEcuFaults(self):
@@ -280,6 +291,8 @@ class MainWindow(QMainWindow):
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
+        else:
+            self.writeToOutputView("Port not open!")
 
     @Slot()
     def csvReadCallback(self, value: list):

@@ -66,7 +66,7 @@ class SerialPort():
                 if len(subData) > 0:
                     data.extend(subData)
                     if data.find(b"\r") != -1:
-                        print(data)
+#                        print(data)
                         break
                     time.sleep(0.1)
                     runLoop = 5
