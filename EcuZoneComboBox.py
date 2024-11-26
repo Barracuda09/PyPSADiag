@@ -19,6 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QComboBox
 
 
@@ -30,6 +31,7 @@ class EcuZoneComboBox(QComboBox):
     def __init__(self, parent, zoneObject: dict):
         super(EcuZoneComboBox, self).__init__(parent)
         self.setStyleSheet("combobox-popup: 3;")
+        self.setFocusPolicy(Qt.StrongFocus)
         self.zoneObject = zoneObject
         # Fill Combo Box
         for paramObject in self.zoneObject["params"]:
@@ -38,6 +40,11 @@ class EcuZoneComboBox(QComboBox):
             else:
                 self.addItem(paramObject["name"], int(paramObject["value"], 16))
         self.setCurrentIndex(0)
+
+    # Prevent scrolling without focus
+    def wheelEvent(self, e):
+        if self.hasFocus():
+            super().wheelEvent(e);
 
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
