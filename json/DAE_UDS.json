@@ -11,6 +11,14 @@
     "unsorted": "Unsorted"
   },
   "zones": {
+     "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "aas_uds",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "2101": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
@@ -170,6 +178,6 @@
       "type": "raw",
       "form_type": "string",
       "name": "Serial number"
-    }	
+    }
   }
 }
