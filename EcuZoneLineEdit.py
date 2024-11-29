@@ -57,9 +57,9 @@ class EcuZoneLineEdit(QLineEdit):
                 value = self.text()
         return value
 
-    def __shift(self):
+    def __shift(self, mask: int):
         # Code snippet by Sean Eron Anderson
-        v = int(self.zoneObject["mask"], 2)
+        v = mask
         c = 32
         v &= -v
         if v:
@@ -81,7 +81,7 @@ class EcuZoneLineEdit(QLineEdit):
             text = self.text()
             mask = int(self.zoneObject["mask"], 2)
             if text != None and text != "":
-                newByte = int(text) << self.__shift()
+                newByte = int(text) << self.__shift(mask)
                 value = (int(byte, 16) & ~mask) | newByte
                 byte = "%0.2X" % value
         return byte
@@ -95,7 +95,12 @@ class EcuZoneLineEdit(QLineEdit):
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
-            byte = (int(byteData[byteNr], 16) & mask) >> self.__shift()
+            byte = 0
+            if mask < 256:
+                byte = (int(byteData[byteNr], 16) & mask) >> self.__shift(mask)
+            else:
+                print("Bigger")
+                print(valueType)
             self.__setText(str(byte))
         else:
             if valueType == "string_ascii":
