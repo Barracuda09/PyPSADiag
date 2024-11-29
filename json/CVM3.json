@@ -25,156 +25,224 @@
       "tab": "cvm3",
       "type": "raw",
       "form_type": "multi",
-      "CFG_ETW_CVM_CVM_OPTION_SLI_004": {
-        "name": "Speed limit indication",
-        "name_p": "@P51544-POLUXDATA",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11100000",
-        "params": [
-          {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_011",
-            "name_p": "@P51748-POLUXDATA",
-            "name": "Function present with navigation system",
-            "mask": "01100000"
-          },
-          {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_101",
-            "name_p": "@P51741-POLUXDATA",
-            "name": "Function present without navigation system",
-            "mask": "10100000"
-          },
-          {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_110",
-            "name_p": "@P32813-POLUXDATA",
-            "name": "function absent",
-            "mask": "11000000"
-          }
-        ]
-      },
-      "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
-        "name": "Type of lane departure warning",
-        "name_p": "@P35575-POLUXDATA",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00010000"
-      },
-      "CFG_ETU_CVM_CVM_LDW_PRESENT_004": {
-        "name": "Lane departure warning system",
-        "name_p": "@P46336-POLUXDATA",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00001000"
-      },
-      "CFG_ETT_CVM_HBA_PRESENT_004": {
-        "name": "Headlamp assistant function (HBA)",
-        "name_p": "@P38650-POLUXDATA",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00000100"
-      },
-      "CFG_ETS_CVM_FAEBS_PRESENT_004": {
-        "name": "Emergency collision braking function",
-        "name_p": "@P46310-POLUXDATA",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00000010"
-      },
-      "CFG_ETY_CVM_LKA_PRESENT_004": {
-        "name": "Lane keeping assistance function *1 and/or detection of reduced driver vigilance *2",
-        "name_p": "@P51613-POLUXDATA@\\*(LKA / LPA)@\\*(DAA3 / DAA4)",
-        "byte": 1,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "00000001",
-        "params": [
-          {
-            "name_p": "@P32813-POLUXDATA",
-            "name": "function absent",
-            "mask": "00000001"
-          },
-          {
-            "name_p": "@P33396-POLUXDATA",
-            "name": "function present",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_EU2_CVM_AMVAR_PRESENT_004": {
-        "name": "Variable damping suspension",
-        "name_p": "@P20056-POLUXDATA",
-        "byte": 2,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "10000000"
-      },
-      "CFG_EUE_CVM_ACC_PRESENT_004": {
-        "name": "Adapted cruise control (ACC)",
-        "name_p": "@P46837-POLUXDATA",
-        "byte": 2,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "01000000"
-      },
-      "CFG_EUI_CVM_PRESENCE_RADAR_004": {
-        "name": "Presence of the distance alert radar",
-        "name_p": "@P56680-POLUXDATA",
-        "byte": 2,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00100000"
-      },
-      "CFG_EUA_CVM_OPTION_ETSR_004": {
-        "name": "Recognition of road signs",
-        "name_p": "@P51449-POLUXDATA",
-        "byte": 2,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00010000"
-      },
-      "CFG_EU6_CVM_MB_PRESENT_004": {
-        "name": "Main beams assistant function improved",
-        "name_p": "@P51549-POLUXDATA",
-        "byte": 2,
-        "type": "bool",
-        "form_type": "checkbox",
-        "mask": "00001000"
-      },
       "CFG_ETX_TYPE_ECLAIRAGE_004": {
         "name": "Type of lighting",
-        "name_p": "@P24418-POLUXDATA",
         "byte": 2,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000111",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "xenon lamp",
+            "name": "Not specified",
+            "mask": "00000111"
+          },
+          {
+            "name": "Xenon lamp",
             "mask": "00000011"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_101",
-            "name_p": "@P51744-POLUXDATA",
             "name": "LED lamp",
             "mask": "00000101"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "halogen bulb *1",
+            "name": "Halogen lamp",
             "mask": "00000110"
+          }
+        ]
+      },
+      "CFG_EU6_CVM_MB_PRESENT_004": {
+        "name": "Main beams assistant function improved",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00001000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EUA_CVM_OPTION_ETSR_004": {
+        "name": "Recognition of road signs",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00010000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EUI_CVM_PRESENCE_RADAR_004": {
+        "name": "Presence of the distance alert radar",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00100000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EUE_CVM_ACC_PRESENT_004": {
+        "name": "Adapted cruise control (ACC)",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "01000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+        "CFG_EU2_CVM_AMVAR_PRESENT_004": {
+          "name": "Variable damping suspension",
+          "byte": 2,
+          "type": "bool",
+          "form_type": "combobox",
+          "mask": "10000000",
+          "params": [
+            {
+              "name": "Function ABSENT",
+              "mask": "10000000"
+            },
+            {
+              "name": "Function present",
+              "mask": "00000000"
+            }
+          ]
+        },
+      "CFG_ETY_CVM_LKA_PRESENT_004": {
+        "name": "Lane keeping assistance function LKA/LPA and/or detection of reduced driver vigilance DAA3/DAA4",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000001"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETS_CVM_FAEBS_PRESENT_004": {
+        "name": "Emergency collision braking function",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000010"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETT_CVM_HBA_PRESENT_004": {
+        "name": "Headlamp assistant function (HBA)",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000100"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETU_CVM_CVM_LDW_PRESENT_004": {
+        "name": "Lane departure warning system",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00001000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
+        "name": "Type of lane departure warning",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Without ACC",
+            "mask": "00010000"
+          },
+          {
+            "name": "With ACC",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETW_CVM_CVM_OPTION_SLI_004": {
+        "name": "Speed limit indication",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "11000000"
+          },
+          {
+            "name": "Function present with navigation system",
+            "mask": "01100000"
+          },
+          {
+            "name": "Function present without navigation system",
+            "mask": "10100000"
           }
         ]
       }
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
       "tab": "cvm3",
       "name": "ZA Zone",
@@ -182,7 +250,7 @@
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
       "tab": "cvm3",
       "name": "ZI Zone",
@@ -205,14 +273,6 @@
       "byte": 0,
       "type": "string_ascii",
       "form_type": "string"
-    },
-    "f190": {
-      "id": "VIN",
-      "tab": "cvm3",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string",
-      "name": "VIN"
     }
   }
 }
