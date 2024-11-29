@@ -32,11 +32,11 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
     zoneObject = dict
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
-        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone, description])
+        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
         parent.insertTopLevelItem(row, self)
         self.setToolTip(1, description)
         self.zoneObject = zoneObject
-        self.zone = zone
+        self.zone = zone.upper()
 
     def addRootWidgetItem(self, tree: QTreeWidget, widget):
         tree.setItemWidget(self, 2, widget)

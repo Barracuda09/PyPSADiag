@@ -79,6 +79,10 @@ class UDSCommunication(QThread):
         if cmd[:4] == "2704":
             return "6704"
         if cmd[:2] == "22":
+            if cmd[2:6] == "F0FE":
+                return "62" + cmd[2:6] + "FFFF000006E030082202061300FFFFFF0002000002948185"
+            elif cmd[2:6] == "F080":
+                return "62" + cmd[2:6] + "9807513880000698261526801900FFFFFF01FFFFFFFF"
             return "62" + cmd[2:6] + "12345679"
         if cmd[:2] == "2E":
             return "6E" + cmd[2:6]
@@ -279,7 +283,6 @@ class UDSCommunication(QThread):
 
             self.writeToOutputView("Write Successful")
 
-
     def rebootEcu(self, ecuID: str):
         if self.serialPort.isOpen():
             self.writeToOutputView("Reboot ECU...")
@@ -348,8 +351,7 @@ class UDSCommunication(QThread):
                 # Get only responce data
                 answerZone = decodedData[2: + 6]
                 if answerZone.upper() != self.ecuReadZone.upper():
-                    print(answerZone + " - " + self.ecuReadZone)
-                    self.receivedPacketSignal.emit(["Requesed zone different from received zone", "", "", ""], time.time())
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", "", ""], time.time())
                     return data
                 answer = decodedData[6:]
                 answerDecorated = answer
@@ -399,20 +401,20 @@ class UDSCommunication(QThread):
                 element = self.writeQ.get()
                 if isinstance(element, dict):
                     for zoneIDObject in element:
-                        self.ecuReadZone = str(zoneIDObject)
+                        self.ecuReadZone = str(zoneIDObject).upper()
                         self.zoneActive = element[str(zoneIDObject)]
                         self.zoneName = str(self.zoneActive["name"])
                         self.formType = str(self.zoneActive["form_type"])
 
                         # Send and receive data
-                        ecuReadZoneSend = "22" + str(zoneIDObject)
+                        ecuReadZoneSend = "22" + self.ecuReadZone
                         receiveData = self.writeECUCommand(ecuReadZoneSend)
                         self.parseReadResponse(receiveData);
                         self.msleep(100)
                 else:
                     # Just empty zone names
                     self.zoneName = ""
-                    self.ecuReadZone = str(element)
+                    self.ecuReadZone = str(element).upper()
 
                     # Send and receive data
                     command = str(element);

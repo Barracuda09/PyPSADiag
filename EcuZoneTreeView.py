@@ -39,7 +39,12 @@ class EcuZoneTreeView(QTabWidget):
 
     def updateView(self, ecuObjectList):
         if ecuObjectList != None:
-            self.zoneObjectList = ecuObjectList["zones"]
+            if "zones" in ecuObjectList:
+                self.zoneObjectList = ecuObjectList["zones"]
+            elif "ecu" in ecuObjectList:
+                self.zoneObjectList = ecuObjectList["ecu"]
+            else:
+                return;
             self.clear()
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
@@ -64,15 +69,17 @@ class EcuZoneTreeView(QTabWidget):
         widget = self.currentWidget()
         return widget.getZoneAndHexValueOfCurrentRow()
 
-    def changeZoneOption(self, zone, data: str, valueType: str):
+    def changeZoneOption(self, zone: str, data: str, valueType: str):
         for zoneIDObject in self.zoneObjectList:
-            if str(zone) == str(zoneIDObject):
-                zoneObject = self.zoneObjectList[zone]
+            if zone.upper() == zoneIDObject.upper():
+                zoneObject = self.zoneObjectList[zoneIDObject]
                 tabName = zoneObject["tab"]
                 for tab in self.tabs:
                     if tab[0] == tabName:
                         widget = self.widget(tab[1])
-                        widget.changeZoneOption(zone, data, valueType)
+                        widget.changeZoneOption(zone.upper(), data, valueType)
+            else:
+                print("Wrong Zone in tree: " + zone)
 
 
 class EcuZoneTreeViewWidget(QTreeWidget):
@@ -84,13 +91,14 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         rowCount = 0
         # Setup Tree view
         for zoneIDObject in zoneObjectList:
-            zoneObject = zoneObjectList[str(zoneIDObject)]
-            if zoneObject["tab"] != tabName:
+            zoneObject = zoneObjectList[zoneIDObject]
+            if not("tab" in zoneObject) or zoneObject["tab"] != tabName:
                 continue
+
             formType = zoneObject["form_type"]
             if formType == "multi":
                 rootName = "** " + zoneObject["name"] + " **"
-                root = EcuMultiZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), rootName, zoneObject)
+                root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, rootName, zoneObject)
                 rootReadOnly = True
                 root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, rootReadOnly))
                 self.markItemAsRootLevel(root)

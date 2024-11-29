@@ -46,6 +46,7 @@ class MainWindow(QMainWindow):
     ecuObjectList = dict()
     simulation = False
     stream = None
+    csvWriter = None
 
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -108,22 +109,28 @@ class MainWindow(QMainWindow):
         self.ui.ecuComboBox.clear()
         name = ecuObjectList["name"]
         self.ui.ecuComboBox.addItem(name)
-        zoneObjectList = ecuObjectList["zones"]
+        if "zones" in ecuObjectList:
+            zoneObjectList = ecuObjectList["zones"]
+            # Update ECU Key ComboBox
+            self.ui.ecuKeyComboBox.clear()
+            keyType = ecuObjectList["key_type"]
+            if keyType == "single":
+                key = str(ecuObjectList["keys"])
+                item = name + " - " + key
+                self.ui.ecuKeyComboBox.addItem(item, key)
+            elif keyType == "multi":
+                for keyItem in ecuObjectList["keys"]:
+                    key = str(ecuObjectList["keys"][keyItem])
+                    item = str(keyItem) + " - " + key
+                    self.ui.ecuKeyComboBox.addItem(item, key)
+        elif "ecu" in ecuObjectList:
+            zoneObjectList = ecuObjectList["ecu"]
+        else:
+            self.writeToOutputView("Not correct JSON file")
+            return;
+
         for zoneObject in zoneObjectList:
             self.ui.ecuComboBox.addItem(str(zoneObject))
-
-        # Update ECU Key ComboBox
-        self.ui.ecuKeyComboBox.clear()
-        keyType = ecuObjectList["key_type"]
-        if keyType == "single":
-            key = str(ecuObjectList["keys"])
-            item = name + " - " + key
-            self.ui.ecuKeyComboBox.addItem(item, key)
-        elif keyType == "multi":
-            for keyItem in ecuObjectList["keys"]:
-                key = str(ecuObjectList["keys"][keyItem])
-                item = str(keyItem) + " - " + key
-                self.ui.ecuKeyComboBox.addItem(item, key)
 
         self.ui.treeView.updateView(ecuObjectList)
 
@@ -309,8 +316,9 @@ class MainWindow(QMainWindow):
     @Slot()
     def serialPacketReceiverCallback(self, packet: list, time: float):
         self.writeToOutputView(str(packet))
-        self.csvWriter.writerow(packet)
-        self.stream.flush()
+        if self.stream != None:
+            self.csvWriter.writerow(packet)
+            self.stream.flush()
 
 
 if __name__ == "__main__":

@@ -30,11 +30,11 @@ from EcuZoneComboBox import EcuZoneComboBox
 class EcuZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
     def __init__(self, parent, row: int, zone: str, description: str):
-        super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone, description])
+        super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
         if isinstance(parent, QTreeWidget):
             parent.insertTopLevelItem(row, self)
         self.setToolTip(1, description)
-        self.zone = zone
+        self.zone = zone.upper()
 
 #        label = QLabel(description)
 #        label.setWordWrap(True)
