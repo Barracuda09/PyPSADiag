@@ -78,8 +78,6 @@ class EcuZoneTreeView(QTabWidget):
                     if tab[0] == tabName:
                         widget = self.widget(tab[1])
                         widget.changeZoneOption(zone.upper(), data, valueType)
-            else:
-                print("Wrong Zone in tree: " + zone)
 
 
 class EcuZoneTreeViewWidget(QTreeWidget):
