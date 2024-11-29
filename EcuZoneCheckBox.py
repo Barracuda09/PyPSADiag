@@ -81,6 +81,10 @@ class EcuZoneCheckBox(QCheckBox):
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
+            if byteNr >= len(byteData):
+                self.setStyleSheet("QCheckBox{background-color: red;}");
+                self.setEnabled(False)
+                return
             byte = int(byteData[byteNr], 16) & mask
             if "available_logic" in self.zoneObject and "active_high" == self.zoneObject["available_logic"]:
                 if byte > 0:
