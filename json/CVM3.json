@@ -70,7 +70,7 @@
       },
       "CFG_EUA_CVM_OPTION_ETSR_004": {
         "name": "Recognition of road signs",
-        "byte": 1,
+        "byte": 2,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00010000",
@@ -257,7 +257,30 @@
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Supplier",
+          "byte": 4,
+          "mask": "11111111",
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "System",
+          "byte": 5,
+          "mask": "11111111",
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration",
+          "byte": 21,
+          "mask": "11111111",
+          "type": "raw",
+          "form_type": "string"
+        }
+      ]
     },
     "F18B": {
       "id": "Production_Date",
