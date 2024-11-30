@@ -8,12 +8,13 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
     "2100": {
       "id": "Configuration_Group_Data_List",
-      "tab": "cvm3",
+      "tab": "tele",
       "name": "Configuration group data list",
       "byte": 0,
       "type": "raw",
@@ -22,12 +23,11 @@
     "2101": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_E8Y_ARTIV_ENGINE_TYPE_002": {
         "name": "Type of engine",
-        "name_p": "@P24418-POLUXDATA",
         "byte": 1,
         "type": "bool",
         "form_type": "combobox",
@@ -53,21 +53,16 @@
       },
       "CFG_E8Z_ARTIV_RADAR_24G_FREQUENCY_002": {
         "name": "Starting frequency (Megahertz)",
-        "name_p": "@P51544-POLUXDATA",
         "byte": 2,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_011",
-            "name_p": "@P51748-POLUXDATA",
             "name": "24150",
             "mask": "11111110"
           },
           {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_110",
-            "name_p": "@P32813-POLUXDATA",
             "name": "24075",
             "mask": "11111101"
           }
@@ -75,27 +70,20 @@
       },
       "CFG_E92_ARTIV_CRUISE_CONTROL_TYPE_002": {
         "name": "Type of cruise control",
-        "name_p": "@P35575-POLUXDATA",
         "byte": 3,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Cruise control absent",
+            "name": "Cruise control ABSENT",
             "mask": "11111110"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
             "name": "Adapted cruise control",
             "mask": "11111101"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
             "name": "Adapted cruise control until the vehicle stops",
             "mask": "11111011"
           }
@@ -103,72 +91,70 @@
       },
       "CFG_E90_ARTIV_OPTION_ARC_002": {
         "name": "Emergency collision braking function",
-        "name_p": "@P46310-POLUXDATA",
         "byte": 4,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000001",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00000000"
+            "name": "Function ABSENT",
+            "mask": "00000001"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000001"
+            "name": "Function present",
+            "mask": "00000000"
           }
         ]
       },
       "CFG_E91_ARTIV_OPTION_FARC_002": {
         "name": "Presence of the emergency collision braking function",
-        "name_p": "@P38650-POLUXDATA",
         "byte": 4,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000010",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00000000"
+            "name": "Function ABSENT",
+            "mask": "00000010"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000010"
+            "name": "Function present",
+            "mask": "00000000"
           }
         ]
       }
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f18c": {
-      "id": "SN",
-      "tab": "unsorted",
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ident",
+      "name": "Production Date",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string",
-      "name": "Serial number"
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ident",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
     }
   }
 }

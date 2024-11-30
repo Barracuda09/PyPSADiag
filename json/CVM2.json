@@ -8,13 +8,14 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
     "2100": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_ETX_TYPE_ECLAIRAGE_004": {
@@ -25,12 +26,12 @@
         "mask": "11000000",
         "params": [
           {
-            "name": "xenon lamp",
-            "mask": "01000000"
+            "name": "Halogen lamp",
+            "mask": "00000000"
           },
           {
-            "name": "halogen bulb *1",
-            "mask": "00000000"
+            "name": "Xenon lamp",
+            "mask": "01000000"
           }
         ]
       },
@@ -42,16 +43,16 @@
         "mask": "11000000",
         "params": [
           {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
             "name": "Function present with navigation system",
             "mask": "10000000"
           },
           {
             "name": "Function present without navigation system",
             "mask": "01000000"
-          },
-          {
-            "name": "Function absent",
-            "mask": "00000000"
           }
         ]
       },
@@ -63,12 +64,12 @@
         "mask": "00100000",
         "params": [
           {
-            "name": "Function present",
-            "mask": "00100000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00100000"
           }
         ]
       },
@@ -80,12 +81,12 @@
         "mask": "00010000",
         "params": [
           {
-            "name": "Function present",
-            "mask": "00010000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00010000"
           }
         ]
       },
@@ -97,12 +98,12 @@
         "mask": "00001000",
         "params": [
           {
-            "name": "Function present",
-            "mask": "00001000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00001000"
           }
         ]
       },
@@ -114,12 +115,12 @@
         "mask": "00000100",
         "params": [
           {
-            "name": "Function present",
-            "mask": "00000100"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00000100"
           }
         ]
       },
@@ -143,7 +144,7 @@
     },
     "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
@@ -151,7 +152,7 @@
     },
     "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
@@ -159,7 +160,7 @@
     },
     "F18B": {
       "id": "Production_Date",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "Production Date",
       "byte": 0,
       "type": "string_date",
@@ -167,7 +168,7 @@
     },
     "F18C": {
       "id": "Serial_Number",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "Serial Number",
       "byte": 0,
       "type": "string_ascii",

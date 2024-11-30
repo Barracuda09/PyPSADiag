@@ -1,5 +1,5 @@
 {
-  "name": "dae_uds",
+  "name": "DAE_UDS",
   "tx_id": "6B5",
   "rx_id": "695",
   "protocol": "uds",
@@ -8,12 +8,13 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
      "2100": {
       "id": "Configuration_Group_Data_List",
-      "tab": "aas_uds",
+      "tab": "tele",
       "name": "Configuration group data list",
       "byte": 0,
       "type": "raw",
@@ -22,7 +23,7 @@
     "2101": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_DAE_1": {
@@ -196,7 +197,7 @@
     },
     "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
@@ -204,15 +205,15 @@
     },
     "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
-      "form_type": "string",
+      "form_type": "string"
     },
     "F18B": {
       "id": "Production_Date",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "Production Date",
       "byte": 0,
       "type": "string_date",
@@ -220,7 +221,7 @@
     },
     "F18C": {
       "id": "Serial_Number",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "Serial Number",
       "byte": 0,
       "type": "string_ascii",
