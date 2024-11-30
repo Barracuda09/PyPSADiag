@@ -19,6 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+import json
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -102,6 +103,22 @@ class EcuZoneLineEdit(QLineEdit):
                 print("Bigger")
                 print(valueType)
             self.__setText(str(byte))
+        elif "byte_range" in self.zoneObject:
+            byteNr = self.zoneObject["byte"] * 2
+            ran = self.zoneObject["byte_range"] * 2
+            txt = data[byteNr:byteNr + ran]
+            if "type" in self.zoneObject:
+                if "zi_cal" == self.zoneObject["type"]:
+                    txt = "98" + txt + "80"
+                elif "zi_sup" == self.zoneObject["type"]:
+                    file = open("./data/ECU_SUPPLIERS.json", 'r', encoding='utf-8')
+                    jsonFile = file.read()
+                    supplierList = json.loads(jsonFile.encode("utf-8"))
+                    if txt in supplierList:
+                        txt = supplierList[str(txt)]
+                elif "zi_sys" == self.zoneObject["type"]:
+                    txt = txt
+            self.__setText(txt)
         else:
             if valueType == "string_ascii":
                 try:

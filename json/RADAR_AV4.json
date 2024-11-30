@@ -57,8 +57,30 @@
       "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Supplier",
+          "byte": 4,
+          "byte_range": 1,
+          "type": "zi_sup",
+          "form_type": "string"
+        },
+        {
+          "name": "System",
+          "byte": 5,
+          "byte_range": 1,
+          "type": "zi_sys",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration",
+          "byte": 21,
+          "byte_range": 3,
+          "type": "zi_cal",
+          "form_type": "string"
+        }
+      ]
     },
     "F18B": {
       "id": "Production_Date",

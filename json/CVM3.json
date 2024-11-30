@@ -262,22 +262,22 @@
         {
           "name": "Supplier",
           "byte": 4,
-          "mask": "11111111",
-          "type": "raw",
+          "byte_range": 1,
+          "type": "zi_sup",
           "form_type": "string"
         },
         {
           "name": "System",
           "byte": 5,
-          "mask": "11111111",
-          "type": "raw",
+          "byte_range": 1,
+          "type": "zi_sys",
           "form_type": "string"
         },
         {
           "name": "Calibration",
           "byte": 21,
-          "mask": "11111111",
-          "type": "raw",
+          "byte_range": 3,
+          "type": "zi_cal",
           "form_type": "string"
         }
       ]

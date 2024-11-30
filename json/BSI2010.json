@@ -4054,7 +4054,7 @@
       ],
       "name": "Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking"
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
       "tab": "ecuinfo",
       "name": "ZA Zone",
@@ -4062,13 +4062,35 @@
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
       "tab": "ecuinfo",
       "name": "ZI Zone",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Supplier",
+          "byte": 4,
+          "byte_range": 1,
+          "type": "zi_sup",
+          "form_type": "string"
+        },
+        {
+          "name": "System",
+          "byte": 5,
+          "byte_range": 1,
+          "type": "zi_sys",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration",
+          "byte": 21,
+          "byte_range": 3,
+          "type": "zi_cal",
+          "form_type": "string"
+        }
+      ]
     },
     "F18B": {
       "id": "Production_Date",
