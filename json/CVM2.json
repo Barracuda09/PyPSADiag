@@ -8,197 +8,171 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
     "2100": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_ETX_TYPE_ECLAIRAGE_004": {
         "name": "Type of lighting",
-        "name_p": "@P24418-POLUXDATA",
         "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11000000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "xenon lamp",
-            "mask": "01000000"
+            "name": "Halogen lamp",
+            "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "halogen bulb *1",
-            "mask": "00000000"
+            "name": "Xenon lamp",
+            "mask": "01000000"
           }
         ]
       },
       "CFG_ETW_CVM_CVM_OPTION_SLI_004": {
         "name": "Speed limit indication",
-        "name_p": "@P51544-POLUXDATA",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11000000",
         "params": [
           {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_011",
-            "name_p": "@P51748-POLUXDATA",
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
             "name": "Function present with navigation system",
             "mask": "10000000"
           },
           {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_101",
-            "name_p": "@P51741-POLUXDATA",
             "name": "Function present without navigation system",
             "mask": "01000000"
-          },
-          {
-            "name_cfg": "CFG_ETW_CVM_CVM_OPTION_SLI_110",
-            "name_p": "@P32813-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
           }
         ]
       },
       "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
         "name": "Lane keeping assist",
-        "name_p": "@P35575-POLUXDATA",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00100000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00100000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00100000"
           }
         ]
       },
       "CFG_ETS_CVM_FAEBS_PRESENT_004": {
         "name": "Emergency collision braking function",
-        "name_p": "@P46310-POLUXDATA",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00010000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00010000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00010000"
           }
         ]
       },
       "CFG_ETT_CVM_HBA_PRESENT_004": {
         "name": "Headlamp assistant function (HBA)",
-        "name_p": "@P38650-POLUXDATA",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00001000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00001000"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00001000"
           }
         ]
       },
       "CFG_ETU_CVM_CVM_LDW_PRESENT_004": {
         "name": "Lane departure warning system",
-        "name_p": "@P46336-POLUXDATA",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000100",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00000100"
+            "name": "Function ABSENT",
+            "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "Function present",
+            "mask": "00000100"
           }
         ]
       },
       "CFG_ETY_CVM_LDW_PRESENT_004": {
         "name": "Type of alarm for lane keeping assistance",
-        "name_p": "@P51613-POLUXDATA@\\*(LKA / LPA)@\\*(DAA3 / DAA4)",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000011",
         "params": [
           {
-            "name_p": "@P32813-POLUXDATA",
             "name": "Without ACC",
             "mask": "00000000"
           },
           {
-            "name_p": "@P33396-POLUXDATA",
             "name": "With ACC",
             "mask": "00000010"
           }
         ]
-	}
+      }
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f18c": {
-      "id": "SN",
-      "tab": "unsorted",
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ident",
+      "name": "Production Date",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string",
-      "name": "Serial number"
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ident",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
     }
   }
 }

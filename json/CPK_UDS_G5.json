@@ -8,15 +8,58 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "2101": {
       "id": "Configuration_Group_Data_Values",
       "name": "Configuration group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
+      "CFG_ETX_FRONT_004": {
+        "name": "Presence of front parking sensors",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_ETV_CV_SAM_004": {
+        "name": "Presence of blind spot assist",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000100"
+          }
+        ]
+      },
       "CFG_ETX_RVC_004": {
         "name": "Presence of RVC",
         "byte": 0,
@@ -25,60 +68,12 @@
         "mask": "00000001",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function absent",
+            "name": "Function ABSENT",
             "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
             "name": "Function present",
             "mask": "00000001"
-          }
-        ]
-      },
-      "CFG_ETV_CVM_CV_HYBRID_004": {
-        "name": "Hybrid",
-        "name_p": "@P35575-POLUXDATA",
-        "byte": 0,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "00000010",
-        "params": [
-          {
-            "name_cfg": "CFG_ETX_HYBRID_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00000010"
-          },
-          {
-            "name_cfg": "CFG_ETX_HYBRID_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_ETV_CVM_CV_LDW_REGULATION_004": {
-        "name": "Presence of blind spot assist",
-        "name_p": "@P35575-POLUXDATA",
-        "byte": 0,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "00000100",
-        "params": [
-          {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "00000100"
-          },
-          {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
           }
         ]
       },
@@ -90,37 +85,12 @@
         "mask": "00011000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function absent",
+            "name": "Function ABSENT",
             "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
             "name": "Function present",
             "mask": "00011000"
-          }
-        ]
-      },
-      "CFG_ETX_FRONT_004": {
-        "name": "Presence of front parking sensors",
-        "byte": 0,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "00100000",
-        "params": [
-          {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function absent",
-            "mask": "00000000"
-          },
-          {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
-            "name": "Function present",
-            "mask": "00100000"
           }
         ]
       },
@@ -132,51 +102,72 @@
         "mask": "10000000",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function absent",
+            "name": "Function ABSENT",
             "mask": "00000000"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
             "name": "Function present",
             "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_ETV_CV_HYBRID_004": {
+        "name": "Hybrid",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
           }
         ]
       }
     },
     "2901": {
       "id": "Secure_Traceability_Value",
-      "tab": "unsorted",
+      "tab": "tele",
       "name": "Secure Traceability Value",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f18c": {
-      "id": "SN",
-      "tab": "unsorted",
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ident",
+      "name": "Production Date",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string",
-      "name": "Serial Number"
-    }	
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ident",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
+    }
   }
 }

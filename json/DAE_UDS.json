@@ -1,5 +1,5 @@
 {
-  "name": "dae_uds",
+  "name": "DAE_UDS",
   "tx_id": "6B5",
   "rx_id": "695",
   "protocol": "uds",
@@ -8,12 +8,13 @@
   "coding": true,
   "errors": true,
   "tabs": {
-    "unsorted": "Unsorted"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
      "2100": {
       "id": "Configuration_Group_Data_List",
-      "tab": "aas_uds",
+      "tab": "tele",
       "name": "Configuration group data list",
       "byte": 0,
       "type": "raw",
@@ -22,162 +23,209 @@
     "2101": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "unsorted",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_DAE_1": {
-        "name": "?",
+        "name": "Byte 1",
         "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_DAE_1",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
+            "name": "Function present 1",
             "mask": "11111011"
           },
           {
-            "name_cfg": "CFG_DAE_1",
-            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "11001011"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_DAE_2": {
-        "name": "?",
-        "name_p": "@P46310-POLUXDATA",
+        "name": "Byte 2",
         "byte": 2,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_DAE_2",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
+            "name": "Function present 1",
             "mask": "11111101"
           },
           {
-            "name_cfg": "CFG_DAE_2",
-            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "11110111"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_DAE_3": {
-        "name": "?",
-        "name_p": "@P38650-POLUXDATA",
+        "name": "Byte 3",
         "byte": 3,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
+            "name": "Function present 1",
             "mask": "01111111"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "11111110"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_DAE_4": {
-        "name": "?",
-        "name_p": "@P46336-POLUXDATA",
-        "byte": 8,
+        "name": "Byte 6",
+        "byte": 6,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "01111111"
+            "name": "Function present 1",
+            "mask": "11111111"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "11111011"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_DAE_5": {
-        "name": "?",
-        "name_p": "@P46336-POLUXDATA",
-        "byte": 10,
+        "name": "Byte 8",
+        "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_011",
-            "name_p": "@P51745-POLUXDATA",
-            "name": "Function present",
-            "mask": "10111111"
+            "name": "Function present 1",
+            "mask": "11111111"
           },
           {
-            "name_cfg": "CFG_ETX_TYPE_ECLAIRAGE_110",
-            "name_p": "@P51749-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "01111111"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_DAE_6": {
-        "name": "?",
-        "name_p": "@P51613-POLUXDATA@\\*(LKA / LPA)@\\*(DAA3 / DAA4)",
+        "name": "Byte 9",
+        "byte": 9,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "Function present 1",
+            "mask": "11111111"
+          },
+          {
+            "name": "Function present 2",
+            "mask": "11111101"
+          },
+          {
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_7": {
+        "name": "Byte 10",
+        "byte": 10,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "Function present 1",
+            "mask": "11111111"
+          },
+          {
+            "name": "Function present 1",
+            "mask": "10111111"
+          },
+          {
+            "name": "Function absent",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_8": {
+        "name": "Byte 11",
         "byte": 11,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name_p": "@P32813-POLUXDATA",
-            "name": "Function present",
+            "name": "Function present 1",
             "mask": "11111101"
           },
           {
-            "name_p": "@P33396-POLUXDATA",
+            "name": "Function present 2",
+            "mask": "11111011"
+          },
+          {
             "name": "Function absent",
             "mask": "00000000"
           }
         ]
       }
     },
-    "f080": {
+    "F080": {
       "id": "ZA_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZA Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f0fe": {
+    "F0FE": {
       "id": "ZI_ZONE",
-      "tab": "unsorted",
+      "tab": "ident",
       "name": "ZI Zone",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
-    "f18c": {
-      "id": "SN",
-      "tab": "unsorted",
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ident",
+      "name": "Production Date",
       "byte": 0,
-      "type": "raw",
-      "form_type": "string",
-      "name": "Serial number"
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ident",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
     }
-  }
+    }
 }
