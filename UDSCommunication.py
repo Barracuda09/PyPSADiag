@@ -98,7 +98,10 @@ class UDSCommunication(QThread):
         receiveData = self.serialPort.sendReceive(cmd)
         if self.simulation and receiveData == "Timeout":
             receiveData = self.__simulateAnswer(cmd)
-        if receiveData == "7F3E03":
+        # Check response we need to retry reading
+        # 7F3E03 (Custom error)
+        # 7Fxx78 (Request Correctly Received - Response Pending)
+        while receiveData == "7F3E03" or (len(receiveData) == 6 and receiveData[:2] == "7F" and receiveData[4:6] == "78"):
             self.writeToOutputView("< " + receiveData + "  ** Skipping **")
             time.sleep(0.2)
             receiveData = self.serialPort.readData()
