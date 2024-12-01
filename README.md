@@ -1,5 +1,11 @@
 # PyPSADiag
 
+**IMPORTANT!**
+-------
+This application is as is, and you use it at your own risk.<br/>
+I am not responsible for any damages or injuries resulting from the use of this application.<br/>
+**VERY IMPORTANT:** This application is for educational purposes only.
+
 An Python application for configuring PSA/Stellantis based cars<br/>
 See for additional Hardware/Info: [ludwig-v arduino-psa-diag](https://github.com/ludwig-v/arduino-psa-diag)
 
@@ -13,11 +19,6 @@ Currently supporting:
 
 What I would like to support:
 - More ECU JSON Files
-
-IMPORTANT!
--------
-This application is as is, and you use it at your own risk.<br/>
-I am not responsible for any damages or injuries resulting from the use of this application.
 
 Help
 -------
