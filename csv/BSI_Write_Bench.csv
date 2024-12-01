@@ -1,11 +1,9 @@
->752:652,OK,cmd answer,OK,
-1003,Diagnostic session opened,cmd answer,500300C80014,
 2100,220022012202220322042205220622082209220A,raw,220022012202220322042205220622082209220A,Gauging group data list
 2101,022C015E003C0A0201808200,raw,022C015E003C0A0201808200,Gauging group data values
 2102,228022812282228322842289,raw,228022812282228322842289,Maintenance group data list
 2103,020C64000600,raw,020C64000600,Maintenance group data values
-2104,Timeout,string,----,Secured configuration settings group data list
-2105,Unkown Error,cmd answer,22210523542357236123642365236623682369236C236D236E23702371237223732375237623782379237A237B237C237D237F23802381238723882389238B238C238D238F2392239423952399239B239C239D239E23A023A223A323A623A923AB23AE23B123B223B423B523B623B7242A23BB23BF23C023C223C723C823CC23CD23CE23D023D123D223D323D523D823DB23DC23E223E323E423E523E623E823E923EA23EC23EE23F623F923FC23FD23FE2409240D240E240F241424152418242424252427243124322437243A244C244D24512452245324552456245C2468246C247,Secured configuration settings data values
+2104,2300230123022303230423052306230723082309230A230B230C230D230F231023112312231423172318231A231B231C231D232123232325232623272329232A232D232F233023332334233A23412343234423452346234723482349234A234B234D234E235023512352235323542357236123642365236623682369236C236D236E23702371237223732375237623782379237A237B237C237D237F23802381238723882389238B238C238D238F2392239423952399239B239C239D239E23A023A223A323A623A923AB23AE23B123B223B423B523B623B7242A23BB23BF23C023C223C723C823CC23CD23CE23D023D123D223D323D523D823DB23DC23E223E323E423E523E623E823E923EA23EC23EE23F623F923FC23FD23FE2409240D240E240F241424152418242424252427243124322437243A244C244D24512452245324552456245C2468246C24702471247224732475247A24792478247C247D2481248424862487248A249124922499,raw,2300230123022303230423052306230723082309230A230B230C230D230F231023112312231423172318231A231B231C231D232123232325232623272329232A232D232F233023332334233A23412343234423452346234723482349234A234B234D234E235023512352235323542357236123642365236623682369236C236D236E23702371237223732375237623782379237A237B237C237D237F23802381238723882389238B238C238D238F2392239423952399239B239C239D239E23A023A223A323A623A923AB23AE23B123B223B423B523B623B7242A23BB23BF23C023C223C723C823CC23CD23CE23D023D123D223D323D523D823DB23DC23E223E323E423E523E623E823E923EA23EC23EE23F623F923FC23FD23FE2409240D240E240F241424152418242424252427243124322437243A244C244D24512452245324552456245C2468246C24702471247224732475247A24792478247C247D2481248424862487248A249124922499,Secured configuration settings group data list
+2105,13340000000B8002001221C1011020138500DD021A80A00A5E04400081403020101010201858000200408000000008E0040420401000050812000101008280C09806034040000C0006000040000060E00802010001000000,raw,13340000000B8002001221C1011020138500DD021A80A00A5E04400081403020101010201858000200408000000008E0040420401000050812000101008280C09806034040000C0006000040000060E00802010001000000,Secured configuration settings data values
 2106,Request out of range,cmd answer,7F2231,Secured configuration settings group data list 2
 2200,02,hex,02,Fuel level measurement algorithm
 2201,2C,int,2C,Tank capacity in liters
@@ -60,7 +58,7 @@
 2326,01,bool,01,The presence of a feature of high-beam switching function: Smart-Beam lighting (HBA/CAFR)
 2327,01,bool,01,The presence of the interior lighting and entry into the car function
 2328,Request out of range,cmd answer,7F2231,Rain sensor
-2329,00,bool,00,The presence of headlight washers
+2329,01,bool,01,The presence of headlight washers
 232A,04,hex,04,Type of daylight running lights
 232B,Request out of range,cmd answer,7F2231,Simultaneous activation of daytime running lights and side lights
 232C,Request out of range,cmd answer,7F2231,Lighting on the default daylight
@@ -228,26 +226,26 @@
 23E1,Request out of range,cmd answer,7F2231,The rear window washer option is located opposite the rear wiper brush
 23E2,00,bool,00,The presence of windshield heating
 23E5,04,hex,04,Control type of controlled generator
-23e6,01,bool,01,The presence of a low pressure fuel pump
-23e7,Request out of range,cmd answer,7F2231,Option: To disable traction control function
+23E6,01,bool,01,The presence of a low pressure fuel pump
+23E7,Request out of range,cmd answer,7F2231,Option: To disable traction control function
 23E8,00,hex,00,The presence of front and rear seats with heating
-23ea,01,bool,01,Option: Automatic lighting on
+23EA,01,bool,01,Option: Automatic lighting on
 23EB,Request out of range,cmd answer,7F2231,Type of automatic inclusion of lighting
 23EC,01,hex,01,Type of information from the switch of assistance in parking
 23ED,Request out of range,cmd answer,7F2231,The type of information from the STOP and Start switch
 23EE,00,hex,00,Dynamic driving function
 23F1,Request out of range,cmd answer,7F2231,Generator class type
-23f2,Request out of range,cmd answer,7F2231,The state of initialization of the warning function in the risk of collision
-23f3,Request out of range,cmd answer,7F2231,The state of initialization of the sensitivity of the warning function in the risk of a collision
-23f4,Request out of range,cmd answer,7F2231,The state of initialization of the automatic braking function at the risk of collision
-23f5,Request out of range,cmd answer,7F2231,Using the rear fog lights for the function of the stop signal
-23f6,01,bool,01,The presence of a sound alarm exceeding the established speed limit
-23f7,Request out of range,cmd answer,7F2231,Stopping of diagnostics of the rear dimensions of the car
-23f8,Request out of range,cmd answer,7F2231,Option: Protection from the rise of the car is controlled by an ultrasound module
+23F2,Request out of range,cmd answer,7F2231,The state of initialization of the warning function in the risk of collision
+23F3,Request out of range,cmd answer,7F2231,The state of initialization of the sensitivity of the warning function in the risk of a collision
+23F4,Request out of range,cmd answer,7F2231,The state of initialization of the automatic braking function at the risk of collision
+23F5,Request out of range,cmd answer,7F2231,Using the rear fog lights for the function of the stop signal
+23F6,01,bool,01,The presence of a sound alarm exceeding the established speed limit
+23F7,Request out of range,cmd answer,7F2231,Stopping of diagnostics of the rear dimensions of the car
+23F8,Request out of range,cmd answer,7F2231,Option: Protection from the rise of the car is controlled by an ultrasound module
 23F9,05,hex,05,Type of gearbox moment
 23FA,Request out of range,cmd answer,7F2231,"Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt"
-23fb,Request out of range,cmd answer,7F2231,The presence of an automatic gearbox with a computer of an electric drive
-23fc,00,bool,00,The presence of anti-slip mode switch (ASR)
+23FB,Request out of range,cmd answer,7F2231,The presence of an automatic gearbox with a computer of an electric drive
+23FC,00,bool,00,The presence of anti-slip mode switch (ASR)
 23FD,03,hex,03,Automatic braking type at risk of collision (FARC)
 23FE,02,hex,02,"Type of obtaining information ""Man-Machine"" air conditioning"
 23FF,Request out of range,cmd answer,7F2231,Simultaneous inclusion of daylight and overall lanterns
@@ -339,140 +337,141 @@
 2498,Request out of range,cmd answer,7F2231,The function of the heat pump
 2499,00,hex,00,Mode of operation of the vehicle's steering and damping
 249D,Request out of range,cmd answer,7F2231,Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking
-f080,9809154880001398307076800233FFFF0001FFFFFFFF,raw,9809154880001398307076800233FFFF0001FFFFFFFF,ZA Zone
-f0fe,0000000013B309031450060A550D03140002000001942880,raw,0000000013B309031450060A550D03140002000001942880,ZI Zone
-f190,56584B5550484E4B4B4C34323431383933,string_ascii,56584B5550484E4B4B4C34323431383933,VIN
-d501,00,bool,00,CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands
-d502,01,bool,01,CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch
-d503,01,bool,01,CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags
-d504,00,bool,00,CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key
-d505,00,bool,00,CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver
-d506,00,bool,00,CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit
-d507,00,bool,00,CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit
-d508,01,bool,01,CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel
-d509,00,bool,00,CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock
-d50a,01,bool,01,CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)
-d50b,00,bool,00,CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door
-d50c,00,bool,00,CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats
-d50d,00,bool,00,CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm
-d50e,01,bool,01,CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System
-d50f,00,bool,00,CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module
-d510,01,bool,01,CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel
-d511,00,bool,00,CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver
-d512,00,bool,00,CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)
-d513,01,bool,01,CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation
-d514,00,bool,00,CFG_BRK_BSI_UCECAN_UDS_EMF_000: display
-d515,00,bool,00,CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???
-d516,00,bool,00,CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA
-d517,00,bool,00,CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch
-d518,01,bool,01,CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning
-d519,00,bool,00,CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position
-d51A,00,bool,00,CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???
-d51B,00,bool,00,CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???
-d51C,00,bool,00,CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer
-d51D,00,bool,00,CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display
-d51E,00,bool,00,CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???
-d51f,00,bool,00,CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler
-d520,01,bool,01,CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can
-d521,00,bool,00,CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit
-d522,00,bool,00,CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier
-d523,00,bool,00,CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain
-d524,01,bool,01,CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex
-d525,00,bool,00,CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain
-d526,01,bool,01,CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer
-d527,00,bool,00,CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox
-d528,01,bool,01,CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)
-d529,00,bool,00,CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer
-d52a,00,bool,00,CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)
-d52b,00,bool,00,CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???
-d52c,00,bool,00,CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake
-d52d,01,bool,01,CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer
-d52e,00,bool,00,CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control
-d52f,00,bool,00,CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed
-d530,00,bool,00,CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension
-d531,00,bool,00,CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer
-d532,00,bool,00,CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???
-d533,00,bool,00,CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???
-d534,00,bool,00,CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE
-d535,00,bool,00,CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508
-d536,01,bool,01,CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)
-d537,00,bool,00,CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit
-d538,00,bool,00,CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers
-d539,00,bool,00,CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???
-d53a,00,bool,00,CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1
-d53b,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
-d53c,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
-d53d,00,bool,00,CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt
-d53e,00,bool,00,CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt
-d53f,00,bool,00,CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network
-d540,00,bool,00,CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)
-d541,00,bool,00,CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module
-d542,Request out of range,cmd answer,7F2231,CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)
-d543,Request out of range,cmd answer,7F2231,CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???
-d544,00,bool,00,CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox
-d545,00,bool,00,CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever
-d546,00,bool,00,CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)
-d547,00,bool,00,CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system
-d548,00,bool,00,CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)
-d549,00,bool,00,CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit
-d54a,00,bool,00,CFG_EY_BSI_UCECAN_BVN_000: night vision computer
-d54b,Request out of range,cmd answer,7F2231,CFG_EWA_BSI_UCECAN_CGPL_000: ???
-d54c,00,bool,00,CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???
-d54d,00,bool,00,CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???
-d54e,00,bool,00,CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???
-d54f,00,bool,00,CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???
-d550,00,bool,00,CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\*(SDCM)
-d551,00,bool,00,CFG_EWM_BSI_UCECAN_WLC_000: ???
-d552,Request out of range,cmd answer,7F2231,CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster
-d553,00,bool,00,CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal
-d554,00,bool,00,CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox
-d555,00,bool,00,CFG_EX0_BSI_UCECAN_LVNSD_000: ???
-d556,Request out of range,cmd answer,7F2231,CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\*2
-d557,Request out of range,cmd answer,7F2231,CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\*1
-d558,Request out of range,cmd answer,7F2231,CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit
-d559,Request out of range,cmd answer,7F2231,CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system
-d5a0,00,bool,00,CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)
-d5a1,00,bool,00,CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???
-d5a2,01,bool,01,CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light
-d5a3,01,bool,01,CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit
-d5a4,01,bool,01,CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor
-d5a5,00,bool,00,CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network
-d5a6,00,bool,00,CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)
-d5a7,00,bool,00,CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel
-d5a8,00,bool,00,CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key
-d5a9,01,bool,01,CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies
-d5aa,00,bool,00,CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock
-d5ab,01,bool,01,CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module
-d5ac,00,bool,00,CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module
-d5ad,00,bool,00,CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren
-d5ae,00,bool,00,CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)
-d5af,00,bool,00,CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module
-d5b0,00,bool,00,CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???
-d5b1,00,bool,00,CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???
-d5b2,00,bool,00,CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???
-d5b3,00,bool,00,CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side
-d5b4,00,bool,00,CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side
-d5b5,00,bool,00,CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind
-d5b6,00,bool,00,CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???
-d5b7,00,bool,00,CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer
-d5b8,00,bool,00,CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat
-d5b9,00,bool,00,CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???
-d5ba,00,bool,00,CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer
-d5bb,00,bool,00,CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat
-d5bc,00,bool,00,CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat
-d5bd,00,bool,00,Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat
-d5be,00,bool,00,CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)
-d5bf,00,bool,00,CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???
-d5c0,00,bool,00,CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???
-d5c1,00,bool,00,CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???
-d5c2,00,bool,00,CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???
-d5c3,00,bool,00,Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\*lin ???
-d5c4,00,bool,00,CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???
-d5c5,00,bool,00,CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor
-d5c7,00,bool,00,CFG_EY0_BSI_UCELIN_OCS_000: ???
-d5c8,00,bool,00,CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater
-d600,Request out of range,cmd answer,7F2231,CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer
-d601,Request out of range,cmd answer,7F2231,CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\*RD5 ???
-d602,01,bool,01,CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control
-d603,Request out of range,cmd answer,7F2231,CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\*1 ???
-1001,Communication closed,cmd answer,500100C80014,
+F080,9809154880001398307076800233FFFF0001FFFFFFFF,raw,9809154880001398307076800233FFFF0001FFFFFFFF,ZA Zone
+F0FE,0000000013B309031450060A550D03140002000001942880,raw,0000000013B309031450060A550D03140002000001942880,ZI Zone
+F18B,090314,string_date,090314,Production Date
+F18C,29400895,string_ascii,29400895,Serial Number
+F190,56584B5550484E4B4B4C34323431383933,string_ascii,56584B5550484E4B4B4C34323431383933,VIN
+D501,00,bool,00,CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands
+D502,01,bool,01,CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch
+D503,01,bool,01,CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags
+D504,00,bool,00,CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key
+D505,00,bool,00,CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver
+D506,00,bool,00,CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit
+D507,00,bool,00,CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit
+D508,01,bool,01,CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel
+D509,00,bool,00,CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock
+D50A,01,bool,01,CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)
+D50B,00,bool,00,CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door
+D50C,00,bool,00,CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats
+D50D,00,bool,00,CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm
+D50E,01,bool,01,CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System
+D50F,00,bool,00,CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module
+D510,01,bool,01,CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel
+D511,00,bool,00,CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver
+D512,00,bool,00,CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)
+D513,01,bool,01,CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation
+D514,00,bool,00,CFG_BRK_BSI_UCECAN_UDS_EMF_000: display
+D515,00,bool,00,CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???
+D516,00,bool,00,CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA
+D517,00,bool,00,CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch
+D518,01,bool,01,CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning
+D519,00,bool,00,CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position
+D51A,00,bool,00,CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???
+D51B,00,bool,00,CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???
+D51C,00,bool,00,CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer
+D51D,00,bool,00,CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display
+D51E,00,bool,00,CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???
+D51F,00,bool,00,CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler
+D520,01,bool,01,CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can
+D521,00,bool,00,CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit
+D522,00,bool,00,CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier
+D523,00,bool,00,CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain
+D524,01,bool,01,CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex
+D525,00,bool,00,CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain
+D526,01,bool,01,CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer
+D527,00,bool,00,CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox
+D528,01,bool,01,CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)
+D529,00,bool,00,CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer
+D52A,00,bool,00,CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)
+D52B,00,bool,00,CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???
+D52C,00,bool,00,CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake
+D52D,01,bool,01,CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer
+D52E,00,bool,00,CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control
+D52F,00,bool,00,CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed
+D530,00,bool,00,CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension
+D531,00,bool,00,CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer
+D532,00,bool,00,CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???
+D533,00,bool,00,CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???
+D534,00,bool,00,CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE
+D535,00,bool,00,CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508
+D536,01,bool,01,CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)
+D537,00,bool,00,CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit
+D538,00,bool,00,CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers
+D539,00,bool,00,CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???
+D53A,00,bool,00,CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1
+D53B,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
+D53C,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
+D53D,00,bool,00,CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt
+D53E,00,bool,00,CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt
+D53F,00,bool,00,CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network
+D540,00,bool,00,CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)
+D541,00,bool,00,CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module
+D542,Request out of range,cmd answer,7F2231,CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)
+D543,Request out of range,cmd answer,7F2231,CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???
+D544,00,bool,00,CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox
+D545,00,bool,00,CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever
+D546,00,bool,00,CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)
+D547,00,bool,00,CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system
+D548,00,bool,00,CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)
+D549,00,bool,00,CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit
+D54A,00,bool,00,CFG_EY_BSI_UCECAN_BVN_000: night vision computer
+D54B,Request out of range,cmd answer,7F2231,CFG_EWA_BSI_UCECAN_CGPL_000: ???
+D54C,00,bool,00,CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???
+D54D,00,bool,00,CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???
+D54E,00,bool,00,CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???
+D54F,00,bool,00,CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???
+D550,00,bool,00,CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\*(SDCM)
+D551,00,bool,00,CFG_EWM_BSI_UCECAN_WLC_000: ???
+D552,Request out of range,cmd answer,7F2231,CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster
+D553,00,bool,00,CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal
+D554,00,bool,00,CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox
+D555,00,bool,00,CFG_EX0_BSI_UCECAN_LVNSD_000: ???
+D556,Request out of range,cmd answer,7F2231,CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\*2
+D557,Request out of range,cmd answer,7F2231,CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\*1
+D558,Request out of range,cmd answer,7F2231,CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit
+D559,Request out of range,cmd answer,7F2231,CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system
+D5A0,00,bool,00,CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)
+D5A1,00,bool,00,CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???
+D5A2,01,bool,01,CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light
+D5A3,01,bool,01,CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit
+D5A4,01,bool,01,CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor
+D5A5,00,bool,00,CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network
+D5A6,00,bool,00,CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)
+D5A7,00,bool,00,CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel
+D5A8,00,bool,00,CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key
+D5A9,01,bool,01,CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies
+D5AA,00,bool,00,CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock
+D5AB,01,bool,01,CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module
+D5AC,00,bool,00,CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module
+D5AD,00,bool,00,CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren
+D5AE,00,bool,00,CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)
+D5AF,00,bool,00,CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module
+D5B0,00,bool,00,CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???
+D5B1,00,bool,00,CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???
+D5B2,00,bool,00,CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???
+D5B3,00,bool,00,CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side
+D5B4,00,bool,00,CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side
+D5B5,00,bool,00,CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind
+D5B6,00,bool,00,CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???
+D5B7,00,bool,00,CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer
+D5B8,00,bool,00,CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat
+D5B9,00,bool,00,CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???
+D5BA,00,bool,00,CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer
+D5BB,00,bool,00,CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat
+D5BC,00,bool,00,CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat
+D5BD,00,bool,00,Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat
+D5BE,00,bool,00,CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)
+D5BF,00,bool,00,CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???
+D5C0,00,bool,00,CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???
+D5C1,00,bool,00,CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???
+D5C2,00,bool,00,CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???
+D5C3,00,bool,00,Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\*lin ???
+D5C4,00,bool,00,CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???
+D5C5,00,bool,00,CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor
+D5C7,00,bool,00,CFG_EY0_BSI_UCELIN_OCS_000: ???
+D5C8,00,bool,00,CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater
+D600,Request out of range,cmd answer,7F2231,CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer
+D601,Request out of range,cmd answer,7F2231,CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\*RD5 ???
+D602,01,bool,01,CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control
+D603,Request out of range,cmd answer,7F2231,CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\*1 ???
