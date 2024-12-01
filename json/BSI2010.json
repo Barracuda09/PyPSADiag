@@ -4067,6 +4067,7 @@
       "tab": "ecuinfo",
       "name": "ZI Zone",
       "byte": 0,
+      "type": "raw",
       "form_type": "multi",
       "params": [
         {
