@@ -351,14 +351,16 @@ class UDSCommunication(QThread):
         decodedData = data;
         if len(decodedData) > 4:
             if decodedData[0: + 2] == "62" and len(decodedData) > 6:
-                # Get only responce data
+                # Get only response data
                 answerZone = decodedData[2: + 6]
                 if answerZone.upper() != self.ecuReadZone.upper():
                     self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", "", ""], time.time())
                     return data
                 answer = decodedData[6:]
                 answerDecorated = answer
-                valType = self.zoneActive["type"]
+                valType = "None"
+                if type in self.zoneActive:
+                    valType = self.zoneActive["type"]
 
                 # Check if we can find a "Decorated" answer from Combobox
                 if self.formType == "combobox":
