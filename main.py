@@ -24,6 +24,7 @@ import random
 import json
 import csv
 import time
+import os
 from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
@@ -192,6 +193,17 @@ class MainWindow(QMainWindow):
         file = open(fileName[0], 'r', encoding='utf-8')
         jsonFile = file.read()
         self.ecuObjectList = json.loads(jsonFile.encode("utf-8"))
+        # Do we need to include a JSON File and attach it to 'zones'
+        if "include_zone_object" in self.ecuObjectList:
+            includeZonePath = self.ecuObjectList["include_zone_object"]
+            if os.path.exists(includeZonePath):
+                includeZoneFile = open(includeZonePath, 'r', encoding='utf-8')
+                includeJsonFile = includeZoneFile.read()
+                includeObjectList = json.loads(includeJsonFile.encode("utf-8"))
+                self.ecuObjectList["zones"].update(includeObjectList)
+            else:
+                self.writeToOutputView("Include Zone file not found: " + includeZonePath)
+
         self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.ui.readZone.setEnabled(True)
         self.ui.writeZone.setEnabled(True)

@@ -1,5 +1,5 @@
 {
-  "name": "aas_uds_g5",
+  "name": "AAS UDS G5",
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
@@ -10,13 +10,15 @@
   },
   "coding": "true",
   "errors": "true",
+  "include_zone_object": "./json/IdentECU.json",
   "tabs": {
-    "aas_uds": "AAS UDS G5"
+    "ident": "Identification",
+    "tele": "Telecoding"
   },
   "zones": {
      "2100": {
       "id": "Configuration_Group_Data_List",
-      "tab": "aas_uds",
+      "tab": "tele",
       "name": "Configuration group data list",
       "byte": 0,
       "type": "raw",
@@ -25,7 +27,7 @@
    "2102": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
-      "tab": "aas_uds",
+      "tab": "tele",
       "type": "raw",
       "form_type": "multi",
       "CFG_BVV_AAS_AVR_000": {
@@ -104,46 +106,6 @@
         "mask": "01000000",
         "form_type": "checkbox"
       }
-    },
-    "f080": {
-      "id": "ZA_ZONE",
-      "tab": "aas_uds",
-      "name": "ZA Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "f0fe": {
-      "id": "ZI_ZONE",
-      "tab": "aas_uds",
-      "name": "ZI Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "F18B": {
-      "id": "Production_Date",
-      "tab": "aas_uds",
-      "name": "Production Date",
-      "byte": 0,
-      "type": "string_date",
-      "form_type": "string"
-    },
-    "F18C": {
-      "id": "Serial_Number",
-      "tab": "aas_uds",
-      "name": "Serial Number",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string"
-    },
-    "f190": {
-      "id": "VIN",
-      "tab": "aas_uds",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string",
-      "name": "VIN"
     }
   }
 }

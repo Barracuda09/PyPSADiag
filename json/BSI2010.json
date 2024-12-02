@@ -12,9 +12,10 @@
   },
   "coding": true,
   "errors": true,
+  "include_zone_object": "./json/IdentECU.json",
   "tabs": {
     "vin": "VIN",
-    "ecuinfo": "ECU Info",
+    "ident": "Identification",
     "all_computers": "Available Computers",
     "engine": "Engine and fuel system",
     "info": "Driver information",
@@ -4054,62 +4055,7 @@
       ],
       "name": "Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking"
     },
-    "F080": {
-      "id": "ZA_ZONE",
-      "tab": "ecuinfo",
-      "name": "ZA Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "F0FE": {
-      "id": "ZI_ZONE",
-      "tab": "ecuinfo",
-      "name": "ZI Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "name": "Supplier",
-          "byte": 4,
-          "byte_range": 1,
-          "type": "zi_sup",
-          "form_type": "string"
-        },
-        {
-          "name": "System",
-          "byte": 5,
-          "byte_range": 1,
-          "type": "zi_sys",
-          "form_type": "string"
-        },
-        {
-          "name": "Calibration",
-          "byte": 21,
-          "byte_range": 3,
-          "type": "zi_cal",
-          "form_type": "string"
-        }
-      ]
-    },
-    "F18B": {
-      "id": "Production_Date",
-      "tab": "ecuinfo",
-      "name": "Production Date",
-      "byte": 0,
-      "type": "string_date",
-      "form_type": "string"
-    },
-    "F18C": {
-      "id": "Serial_Number",
-      "tab": "ecuinfo",
-      "name": "Serial Number",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string"
-    },
-    "f190": {
+    "F190": {
       "id": "VIN",
       "tab": "vin",
       "byte": 0,

@@ -1,0 +1,116 @@
+{
+  "2901": {
+    "id": "Secure_Traceability_Value",
+    "tab": "tele",
+    "name": "Secure Traceability Value",
+    "byte": 0,
+    "type": "raw",
+    "form_type": "string"
+  },
+  "F080": {
+    "id": "ZA_ZONE",
+    "tab": "ident",
+    "name": "ZA Zone",
+    "byte": 0,
+    "type": "raw",
+    "form_type": "multi",
+    "params": [
+      {
+        "name": "Hardware Number",
+        "byte": 7,
+        "byte_range": 5,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Type",
+        "byte": 20,
+        "byte_range": 3,
+        "type": "raw",
+        "form_type": "string"
+      }
+    ]
+  },
+  "F0FE": {
+    "id": "ZI_ZONE",
+    "tab": "ident",
+    "name": "ZI Zone",
+    "byte": 0,
+    "type": "raw",
+    "form_type": "multi",
+    "params": [
+      {
+        "name": "Supplier",
+        "byte": 4,
+        "byte_range": 1,
+        "type": "zi_sup",
+        "form_type": "string"
+      },
+      {
+        "name": "System",
+        "byte": 5,
+        "byte_range": 1,
+        "type": "zi_sys",
+        "form_type": "string"
+      },
+      {
+        "name": "Production Date",
+        "byte": 6,
+        "byte_range": 3,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Telecoding Counter",
+        "byte": 20,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Telecoding Date",
+        "byte": 13,
+        "byte_range": 3,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Calibration",
+        "byte": 21,
+        "byte_range": 3,
+        "type": "zi_cal",
+        "form_type": "string"
+      },
+      {
+        "name": "Calibration Reference",
+        "byte": 10,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Calibration Edition",
+        "byte": 11,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      }
+    ]
+  },
+  "F18B": {
+    "id": "Production_Date",
+    "tab": "ident",
+    "name": "Production Date",
+    "byte": 0,
+    "type": "string_date",
+    "form_type": "string"
+  },
+  "F18C": {
+    "id": "Serial_Number",
+    "tab": "ident",
+    "name": "Serial Number",
+    "byte": 0,
+    "type": "string_ascii",
+    "form_type": "string"
+  }
+}
