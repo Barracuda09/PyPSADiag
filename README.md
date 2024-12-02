@@ -8,16 +8,15 @@ I am not responsible for any damages or injuries resulting from the use of this 
 
 -------
 
-An Python application for configuring PSA/Stellantis based cars<br/>
+An Python application for sending diagnostic frames over CAN-BUS to PSA/Stellantis based cars <br/>
 See for additional Hardware/Info: [ludwig-v arduino-psa-diag](https://github.com/ludwig-v/arduino-psa-diag)
 
 Currently supporting:
 
 - JSON Configuration for example BSI2010 to setup GUI<br/>[See more JSON Configuration Files](https://github.com/Barracuda09/PyPSADiag/tree/main/json)
 - Reading Zones that are listed in JSON Configuration file
-- Reading Zones with Multiple configurations, that are listed in JSON Configuration file
-- Writing Zones to CSV file
-- Writing changed Zones (as an list) to ECU
+- Saving Zones to CSV file
+- Saving changed Zones (as an list) to ECU
 
 What I would like to support:
 - More ECU JSON Files
