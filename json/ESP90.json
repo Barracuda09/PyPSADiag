@@ -1,0 +1,415 @@
+{
+    "name": "ESP90",
+    "tx_id": "6AD",
+    "rx_id": "68D",
+    "protocol": "uds",
+    "key_type": "multi",
+    "keys": {
+        "key1": "60A5",
+        "key2": "BC93"
+    },
+    "coding": true,
+    "errors": true,
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Configuration_Group_Data_List",
+            "tab": "tele",
+            "name": "Configuration group data list",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "2101": {
+            "id": "Gauging_Group_Data_Values",
+            "name": "Gauging group data values",
+            "tab": "tele",
+            "type": "raw",
+            "form_type": "multi",
+            "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
+                "name": "ACC type",
+                "byte": 23,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00111111",
+                "params": [
+                    {
+                        "name": "Without ACC",
+                        "mask": "00111111"
+                    },
+                    {
+                        "name": "ACC",
+                        "mask": "00111110"
+                    },
+                    {
+                        "name": "ACC 30",
+                        "mask": "00111011"
+                    },
+                    {
+                        "name": "ACC Stop&Go",
+                        "mask": "00101111"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_ACC": {
+                "name": "Suspension type",
+                "byte": 23,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11000000",
+                "params": [
+                    {
+                        "name": "Without variable dampers",
+                        "mask": "11000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_CITY_PARK": {
+                "name": "Semi-automatic parking system",
+                "byte": 24,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11000000",
+                "params": [
+                    {
+                        "name": "Without semi-automatic parking system",
+                        "mask": "11000000"
+                    },
+                    {
+                        "name": "With semi-automatic parking system",
+                        "mask": "10000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_CAV": {
+                "name": "Type of steering angle sensor",
+                "byte": 24,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00111000",
+                "params": [
+                    {
+                        "name": "With steering wheel angle sensor U+ 3",
+                        "mask": "00101000"
+                    },
+                    {
+                        "name": "With steering wheel angle sensor   1",
+                        "mask": "00111000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_ONE_CAN": {
+                "name": "Type of steering angle sensor",
+                "byte": 24,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "2 CAN",
+                        "mask": "00000100"
+                    },
+                    {
+                        "name": "1 CAN",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_ASR": {
+                "name": "Type of traction control",
+                "byte": 24,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000011",
+                "params": [
+                    {
+                        "name": "Without traction control",
+                        "mask": "00000011"
+                    },
+                    {
+                        "name": "With traction control",
+                        "mask": "00000010"
+                    },
+                    {
+                        "name": "With traction control  ( selector )",
+                        "mask": "00000001"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_HADC": {
+                "name": "Descent control system",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Without descent control system",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "With descent control system",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_FARC": {
+                "name": "Emergency collision braking",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01110000",
+                "params": [
+                    {
+                        "name": "Without emergency collision braking",
+                        "mask": "01110000"
+                    },
+                    {
+                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera only )",
+                        "mask": "00110000"
+                    },
+                    {
+                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera and distance alert radar )",
+                        "mask": "01010000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_DIRECTION": {
+                "name": "Side of steering wheel",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Steering wheel on right",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Steering wheel on left",
+                        "mask": "00001000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_CVR": {
+                "name": "Type of wheel speed sensors",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "Wheel speed sensor with detection of the direction of rotation of the wheel",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Wheel speed sensor without detection of the direction of rotation of the wheel",
+                        "mask": "00000100"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_COMELEC": {
+                "name": "Automatic gearbox electric control ECU",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000010",
+                "params": [
+                    {
+                        "name": "Without automatic gearbox electric control ECU",
+                        "mask": "00000010"
+                    },
+                    {
+                        "name": "With automatic gearbox electric control ECU",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_ADEC": {
+                "name": "Hill start assistance system",
+                "byte": 25,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Without hill start assistance system",
+                        "mask": "00000001"
+                    },
+                    {
+                        "name": "With hill start assistance system",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_STT": {
+                "name": "Stop & Start",
+                "byte": 26,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11000000",
+                "params": [
+                    {
+                        "name": "Without Stop and Start",
+                        "mask": "11000000"
+                    },
+                    {
+                        "name": "Stop and Start with alternator",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "Stop and Start with starter",
+                        "mask": "01000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_MASTERVAC": {
+                "name": "Type of brake servo",
+                "byte": 26,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00110000",
+                "params": [
+                    {
+                        "name": "Without multiplexed brake servo",
+                        "mask": "00110000"
+                    },
+                    {
+                        "name": "With multiplexed brake servo",
+                        "mask": "00100000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_ICB": {
+                "name": "Automatic braking after collision",
+                "byte": 26,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Without automatic braking after collision",
+                        "mask": "00001000"
+                    },
+                    {
+                        "name": "With automatic braking after collision",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_CMA_CDA": {
+                "name": "Hydraulic compensation system in case of braking failure",
+                "byte": 26,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "Without hydraulic compensation system in case of braking failure",
+                        "mask": "00000100"
+                    },
+                    {
+                        "name": "With hydraulic compensation system in case of braking failure",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_DSG": {
+                "name": "Presence of tyre under-inflation detection",
+                "byte": 26,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000011",
+                "params": [
+                    {
+                        "name": "With indirect tyre under-inflation detection U+ (TPMF)",
+                        "mask": "00000010"
+                    },
+                    {
+                        "name": "With direct tyre under-inflation detection",
+                        "mask": "00000011"
+                    },
+                    {
+                        "name": "With indirect tyre under-inflation detection U+ (TPMC)",
+                        "mask": "00000001"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_TJA": {
+                "name": "Heavy traffic driving assistance system)",
+                "byte": 27,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Without heavy traffic driving assistance system",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "With heavy traffic driving assistance system",
+                        "mask": "00000000"
+                    }
+                ]
+            }
+        },
+        "F080": {
+            "id": "ZA_ZONE",
+            "tab": "ident",
+            "name": "ZA Zone",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "F0FE": {
+            "id": "ZI_ZONE",
+            "tab": "ident",
+            "name": "ZI Zone",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Supplier",
+                    "byte": 4,
+                    "byte_range": 1,
+                    "type": "zi_sup",
+                    "form_type": "string"
+                },
+                {
+                    "name": "System",
+                    "byte": 5,
+                    "byte_range": 1,
+                    "type": "zi_sys",
+                    "form_type": "string"
+                },
+                {
+                    "name": "Calibration",
+                    "byte": 21,
+                    "byte_range": 3,
+                    "type": "zi_cal",
+                    "form_type": "string"
+                }
+            ]
+        },
+        "F18B": {
+            "id": "Production_Date",
+            "tab": "ident",
+            "name": "Production Date",
+            "byte": 0,
+            "type": "string_date",
+            "form_type": "string"
+        },
+        "F18C": {
+            "id": "Serial_Number",
+            "tab": "ident",
+            "name": "Serial Number",
+            "byte": 0,
+            "type": "string_ascii",
+            "form_type": "string"
+        }
+    }
+}
