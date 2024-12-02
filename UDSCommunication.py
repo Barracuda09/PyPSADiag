@@ -186,7 +186,7 @@ class UDSCommunication(QThread):
         receiveData = self.writeECUCommand(reply)
         if len(receiveData) != 4 or receiveData[:4] != "6704":
             if receiveData == "7F2735":
-                self.writeToOutputView("ECU unlock: ECU Reports Invalid Key", receiveData)
+                self.writeToOutputView("ECU unlock: Failed, ECU Reports Invalid Key", receiveData)
             else:
                 self.writeToOutputView("ECU unlock: Failed", receiveData)
             return False
