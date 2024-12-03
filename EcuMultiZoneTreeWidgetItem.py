@@ -31,6 +31,7 @@ from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
     zoneObject = dict
+    integrity = True
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
         super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
         parent.insertTopLevelItem(row, self)
@@ -59,7 +60,8 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     def getZoneAndHex(self):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
-        if isinstance(widget, EcuZoneLineEdit):
+        # Check if Integrity is correct, then return Zone data
+        if self.integrity and isinstance(widget, EcuZoneLineEdit):
             value = widget.getZoneAndHex()
         return [self.zone, value]
 
@@ -77,11 +79,19 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             cellItem = root.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
             if isinstance(widget, EcuZoneLineEdit):
-                widget.changeZoneOption(data, valueType)
+                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
             elif isinstance(widget, EcuZoneCheckBox):
-                widget.changeZoneOption(data, valueType)
+                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
             elif isinstance(widget, EcuZoneComboBox):
-                widget.changeZoneOption(data, valueType)
+                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
+
+        # Integrity wrong, disable the sub zones and coding
+        if not self.integrity:
+            for index in range(root.childCount()):
+                cellItem = root.child(index)
+                widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+                widget.setStyleSheet("QComboBox{background-color: red;}");
+                widget.setEnabled(False)
 
     def __update(self):
         rootWidget = self.treeWidget().itemWidget(self, 2)

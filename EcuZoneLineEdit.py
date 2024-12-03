@@ -148,3 +148,4 @@ class EcuZoneLineEdit(QLineEdit):
             else:
                 self.__setText(data)
 
+        return True

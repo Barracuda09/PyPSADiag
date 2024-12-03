@@ -82,10 +82,12 @@ class EcuZoneComboBox(QComboBox):
             if byteNr < len(byteData):
                 byte = int(byteData[byteNr], 16) & mask
             else:
-                self.setStyleSheet("QComboBox{background-color: red;}");
-                self.setEnabled(False)
+                # Integrity wrong, size does not match
+                return False
 
         for i in range(self.count()):
             if self.itemData(i) == byte:
                 self.setCurrentIndex(i)
                 break
+
+        return True
