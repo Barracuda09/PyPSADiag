@@ -4,11 +4,11 @@
 -------
 This application is as is, and you use it at your own risk.<br/>
 I am not responsible for any damages or injuries resulting from the use of this application.<br/>
-**VERY IMPORTANT:** This application is for educational purposes only.
+**VERY IMPORTANT:** This application is for **educational** purposes only **and should be used with care!.**
 
 -------
 
-An Python application for sending diagnostic frames over CAN-BUS to PSA/Stellantis based cars <br/>
+PyPSADiag is an Python application for sending diagnostic frames over CAN-BUS to PSA/Stellantis based cars <br/>
 See for additional Hardware/Info: [ludwig-v arduino-psa-diag](https://github.com/ludwig-v/arduino-psa-diag)
 
 Currently supporting:
@@ -44,7 +44,7 @@ Build
 	2. `Open Zone File` and select an ECU JSON file
 	3. `Connect` to correct Arduino hardware
 	4. `Read` Zones
-	5. <b>RISK: You can change Zones and use `Write` to write them to ECU.<br/>Always Check that these zones look correct</b>
+	5. <b> **RISK:** You can save the Zones to the ECU by using the `Write` Button.<br/> **Always Check that these zones look correct** </b>
 
 Donate
 ------
