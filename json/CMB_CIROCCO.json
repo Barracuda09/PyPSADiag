@@ -1,1786 +1,1788 @@
 {
-  "_comment": "CIROCCO ripped and script converted from ludwig-v github",
-  "name": "combine",
-  "tx_id": "75F",
-  "rx_id": "65F",
-  "protocol": "uds",
-  "key_type": "multi",
-  "keys": {
-    "CIROCCO": "FAFA"
-  },
-  "tabs": {
-    "cmb": "Instrument Panel CIROCCO"
-  },
-  "zones": {
-    "2100": {
-      "name": "Telecoding_Fct_Main",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "ADS_CMB_CONF_NIVHU",
-          "name_original": "ADS",
-          "name": "Oil level indicator",
-          "byte": 0,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+    "_comment": "CIROCCO ripped and script converted from ludwig-v github",
+    "name": "combine",
+    "tx_id": "75F",
+    "rx_id": "65F",
+    "protocol": "uds",
+    "key_type": "multi",
+    "keys": {
+        "CIROCCO": "FAFA"
+    },
+    "include_zone_object": "./json/IdentECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "cmb": "Instrument Panel CIROCCO"
+    },
+    "zones": {
+        "2100": {
+            "name": "Telecoding_Fct_Main",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "ADS_CMB_CONF_NIVHU",
+                    "name_original": "ADS",
+                    "name": "Oil level indicator",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "AV1_CMB_CONF_RVV",
+                    "name_original": "AV1",
+                    "name": "Cruise control (RVV)",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "AV2_CMB_CONF_LVV",
+                    "name_original": "AV2",
+                    "name": "Vehicle speed limitation",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "D49_CMB_CONF_DOP",
+                    "name_original": "D49",
+                    "name": "Obstacle detection",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "EWR_ELECTRICAL_MOTOR",
+                    "name_original": "EWR",
+                    "name": "Electric Vehicle",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "D3W_CMB_CONF_RVVI",
+                    "name_original": "D3W",
+                    "name": "Adaptative Cruise Control (ACC)",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "D7S_CMB_CONF_POI_RADAR",
+                    "name_original": "D7S",
+                    "name": "Display of the alerts, POI and hazardous areas",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "D7T_CMB_CONF_VIT_CONSEILLE",
+                    "name_original": "D7T",
+                    "name": "Recommended gear change indicator",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "EAT_PUSH_VARIANT_CFG",
+                    "name_original": "EAT",
+                    "name": "Push variant",
+                    "byte": 2,
+                    "mask": "01110000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "DP8_CMB_OBC_STT",
+                    "name_original": "DP8",
+                    "name": "Stop and Start system",
+                    "byte": 2,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQ8_DOORS_TYPE",
+                    "name_original": "DQ8",
+                    "name": "Type of accesses",
+                    "byte": 3,
+                    "mask": "00000011",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "rear doors"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "1 sliding door"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "2 sliding doors"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "DP5_CMB_OUTLINE",
+                    "name_original": "DP5",
+                    "name": "Body shape type",
+                    "byte": 2,
+                    "mask": "00001100",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Two box"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Saloon"
+                        },
+                        {
+                            "mask": "00001000",
+                            "name": "Monospace"
+                        },
+                        {
+                            "mask": "00001100",
+                            "name": "Other"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "DQ6_CMB_LKA_VAL_PRESENCE",
+                    "name_original": "DQ6",
+                    "name": "Active Lane Departure function (LKA)",
+                    "byte": 3,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQ7_CMB_DYN_PACK_PRESENCE",
+                    "name_original": "DQ7",
+                    "name": "Dynamic driving function",
+                    "byte": 3,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQB_CMB_OPTION_EXPORT_NAV",
+                    "name_original": "DQB",
+                    "name": "Navigation display",
+                    "byte": 12,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQG_CMB_OPTION_EXPORT_AUDIO",
+                    "name_original": "DQG",
+                    "name": "Display audio informations",
+                    "byte": 12,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "ENV_CMB_AVN_PRESENCE",
+                    "name_original": "ENV",
+                    "name": "Night vision assistance",
+                    "byte": 12,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQQ_DAT_DG_ALARM",
+                    "name_original": "DQQ",
+                    "name": "Onboard computer alerts",
+                    "byte": 12,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E2D_TYPE_EXPORT_PRINC2",
+                    "name_original": "E2D",
+                    "name": "Type of export PRINC2",
+                    "byte": 12,
+                    "mask": "00111000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "DQP_DAT_DG_TYRES_PRESSUR",
+                    "name_original": "DQP",
+                    "name": "Tyres pressure",
+                    "byte": 14,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQV_CMB_DAT_DG_ADML_CFG",
+                    "name_original": "DQV",
+                    "name": "Hands free starting access",
+                    "byte": 11,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E2C_TYPE_EXPORT_VIDEO",
+                    "name_original": "E2C",
+                    "name": "Type of video export",
+                    "byte": 15,
+                    "mask": "00000110",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "E1U_CMB_OPT_EXPORT_INFO_TRAF",
+                    "name_original": "E1U",
+                    "name": "Display traffic informations",
+                    "byte": 15,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "EWQ_HY_MYH",
+                    "name_original": "EWQ",
+                    "name": "Hybrid MYH",
+                    "byte": 15,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E2F_TYPE_LISTE_PICTO",
+                    "name_original": "E2F",
+                    "name": "Type of picto list",
+                    "byte": 15,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DW7_TYPE_EXPORT_MEDIA",
+                    "name_original": "DW7",
+                    "name": "Export media type",
+                    "byte": 15,
+                    "mask": "01100000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "DQW_CMB_DAT_DG_STT_CFG",
+                    "name_original": "DQW",
+                    "name": "Stop and Start function",
+                    "byte": 11,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "EKN_CMB_TELLTALES_LKA",
+                    "name_original": "EKN",
+                    "name": "Lane departure warning system (AFIL)",
+                    "byte": 11,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQA_CMB_SLI",
+                    "name_original": "DQA",
+                    "name": "Speed limit indication function",
+                    "byte": 11,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DQH_CMB_TYPE_BAND_FM",
+                    "name_original": "DQH",
+                    "name": "Type of aerial",
+                    "byte": 12,
+                    "mask": "10000000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "FM1 and FM2 aerial"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "FM aerial"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EWP_HY_MEL_AR",
+                    "name_original": "EWP",
+                    "name": "Hybrid MEL AR",
+                    "byte": 16,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DXJ_REAR_VC",
+                    "name_original": "DXJ",
+                    "name": "Reverse camera",
+                    "byte": 16,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DXK_PANORAMIC_VC",
+                    "name_original": "DXK",
+                    "name": "Panoramic reverse camera",
+                    "byte": 16,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DXK_PANORAMIC_VC",
+                    "name_original": "DXK",
+                    "name": "Type of panoramic visual assistance camera",
+                    "byte": 16,
+                    "mask": "00000110",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Type 1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Type 2"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Type 3"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Type 4"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "DQR_CMB_DAT_DG_UREA",
+                    "name_original": "DQR",
+                    "name": "Urea warning lamp",
+                    "byte": 13,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E1Q_CMB_CITYPARK_AS",
+                    "name_original": "E1Q",
+                    "name": "Semi-automatic parking system",
+                    "byte": 17,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E68_CMB_SEAT_NB",
+                    "name_original": "E68",
+                    "name": "Seats, row 3",
+                    "byte": 18,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E3J_ATT_DG_HY_PRESENT",
+                    "name_original": "E3J",
+                    "name": "Hybrid function",
+                    "byte": 18,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6Z_CMB_PERSO_PICTURE_EXPORT",
+                    "name_original": "E6Z",
+                    "name": "Screen background personalisation function",
+                    "byte": 18,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6B_CMB_TELLTALES_EL_PARK_BK",
+                    "name_original": "E6B",
+                    "name": "Parking brake Visual and Sound Alerts",
+                    "byte": 18,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E08_CMB_GAUGE_ENG_SPD_DIGIT",
+                    "name_original": "E08",
+                    "name": "Rev counter",
+                    "byte": 18,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E7A_CMB_LUM_AMBIENCE_CFG",
+                    "name_original": "E7A",
+                    "name": "Ambience lighting",
+                    "byte": 18,
+                    "mask": "00100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Rheostatage"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "Ambience lighting"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "E70_CMB_CARLINE",
+                    "name_original": "E70",
+                    "name": "Type of car",
+                    "byte": 19,
+                    "mask": "11110000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "3008"
+                        },
+                        {
+                            "mask": "00010000",
+                            "name": "New 2008"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "New 208"
+                        },
+                        {
+                            "mask": "00110000",
+                            "name": "Unknown car 4"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "Unknown car 5"
+                        },
+                        {
+                            "mask": "01010000",
+                            "name": "Unknown car 6"
+                        },
+                        {
+                            "mask": "01100000",
+                            "name": "Unknown car 7"
+                        },
+                        {
+                            "mask": "01110000",
+                            "name": "Unknown car 8"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "Unknown car 9"
+                        },
+                        {
+                            "mask": "10010000",
+                            "name": "Unknown car 10"
+                        },
+                        {
+                            "mask": "10100000",
+                            "name": "Unknown car 11"
+                        },
+                        {
+                            "mask": "10110000",
+                            "name": "Unknown car 12"
+                        },
+                        {
+                            "mask": "11000000",
+                            "name": "Unknown car 13"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "E7B_CMB_XVV_PRESENCE_ACC",
+                    "name_original": "E7B",
+                    "name": "Adapted cruise control",
+                    "byte": 18,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6I_CMB_OPTION_EXPORT_MEDIA",
+                    "name_original": "E6I",
+                    "name": "Display media informations",
+                    "byte": 19,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
-        {
-          "extra_name": "AV1_CMB_CONF_RVV",
-          "name_original": "AV1",
-          "name": "Cruise control (RVV)",
-          "byte": 0,
-          "mask": "00100000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "2101": {
+            "name": "Telecoding_Fct_IO",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "EIH_CMB_WIRE_IN_LANE_DEPARTU",
+                    "name_original": "EIH",
+                    "name": "AFIL PUSH input (Lane departure warning system)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EIL_CMB_WIRE_OUT_LANE_DEPART",
+                    "name_original": "EIL",
+                    "name": "AFIL LED output (Lane departure warning system)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI0_CMB_WIRE_IN_CITY_PARK_PU",
+                    "name_original": "EI0",
+                    "name": "City Park Assist PUSH input",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EIM_CMB_WIRE_OUT_CITY_PARK_L",
+                    "name_original": "EIM",
+                    "name": "City Park Assist LED output",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI4_CMB_WIRE_IN_DYNAMIC_PUSH",
+                    "name_original": "EI4",
+                    "name": "Dynamic mode (Sport mode) PUSH input",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI3_CMB_WIRE_OUT_DYNAMIC_LED",
+                    "name_original": "EI3",
+                    "name": "Dynamic mode (Sport mode) LED output",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI2_CMB_WIRE_IN_ESP_PUSH",
+                    "name_original": "EI2",
+                    "name": "ESP PUSH input",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EIJ_CMB_WIRE_OUT_ESP_LED",
+                    "name_original": "EIJ",
+                    "name": "ESP LED output",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EII_CMB_WIRE_IN_HILL_ASSIST",
+                    "name_original": "EII",
+                    "name": "Hill Assist PUSH input",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EHZ_CMB_WIRE_OUT_HILL_ASSIS",
+                    "name_original": "EHZ",
+                    "name": "Hill Assist LED output",
+                    "byte": 9,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI6_CMB_WIRE_IN_LKA_PUSH",
+                    "name_original": "EI6",
+                    "name": "Lane Keeping Assist (LKA) PUSH input",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI5_CMB_WIRE_OUT_LKA_LED",
+                    "name_original": "EI5",
+                    "name": "Lane Keeping Assist (LKA) LED output",
+                    "byte": 11,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EHY_CMB_WIRE_IN_LANE_POSITIO",
+                    "name_original": "EHY",
+                    "name": "Lane Positioning Assist (LPA) PUSH input",
+                    "byte": 12,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EIR_CMB_WIRE_OUT_LPA_LED",
+                    "name_original": "EIR",
+                    "name": "Lane Positioning Assist (LPA) LED output",
+                    "byte": 13,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EI1_CMB_WIRE_IN_LTP_PUSH",
+                    "name_original": "EI1",
+                    "name": "Low tyre pressure PUSH input",
+                    "byte": 14,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EIK_CMB_WIRE_OUT_ELEC_PARK_B",
+                    "name_original": "EIK",
+                    "name": "Electric parking brake LED output",
+                    "byte": 15,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EQJ_CMB_WIRE_IN_STT",
+                    "zoneLength": 19,
+                    "name_original": "EQJ",
+                    "name": "Start&Stop (STT) PUSH input",
+                    "byte": 16,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "EQK_CMB_WIRE_OUT_STT",
+                    "zoneLength": 19,
+                    "name_original": "EQK",
+                    "name": "Start&Stop (STT) LED output",
+                    "byte": 17,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "ERH_CMB_WIRE_OUT_XDOME",
+                    "zoneLength": 19,
+                    "name_original": "ERH",
+                    "name": "XDOME LED output",
+                    "byte": 18,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                }
+            ]
         },
-        {
-          "extra_name": "AV2_CMB_CONF_LVV",
-          "name_original": "AV2",
-          "name": "Vehicle speed limitation",
-          "byte": 0,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "2200": {
+            "name": "Telecoding_Fct_Secondary",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "DOX_CMB_DATE_TIME_SYNC",
+                    "name_original": "DOX",
+                    "name": "Automatic synchronisation of the time",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DOT_CMB_DATE_TIME_ZONE_INIT",
+                    "name_original": "DOT",
+                    "name": "Time Zone",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "UTC-12"
+                        },
+                        {
+                            "mask": "00110000",
+                            "name": "UTC"
+                        },
+                        {
+                            "mask": "00110100",
+                            "name": "UTC+1"
+                        },
+                        {
+                            "mask": "00111000",
+                            "name": "UTC+2"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "AAA_",
+                    "name_original": "AAA",
+                    "name": "Lane positioning assist",
+                    "byte": 3,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
-        {
-          "extra_name": "D49_CMB_CONF_DOP",
-          "name_original": "D49",
-          "name": "Obstacle detection",
-          "byte": 0,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "2300": {
+            "name": "Telecoding_Fct_HMI",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "DQC_CMB_OPTION_EXPORT_POI_RA",
+                    "name_original": "DQC",
+                    "name": "Personal Mode 2",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6D_CMB_PERSO_CFG",
+                    "name_original": "E6D",
+                    "name": "Personal Mode",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6K_CMB_DAT_DG_CLASSIC_CFG",
+                    "name_original": "E6K",
+                    "name": "Dials Mode",
+                    "byte": 1,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6M_CMB_ADAS_CFG",
+                    "name_original": "E6M",
+                    "name": "Driving Mode",
+                    "byte": 1,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6O_CMB_CARTO_CFG",
+                    "name_original": "E6O",
+                    "name": "Navigation Mode",
+                    "byte": 1,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6Q_CMB_LIGHT_CFG",
+                    "name_original": "E6Q",
+                    "name": "Minimal Mode",
+                    "byte": 1,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6S_CMB_RESERVED_CONFIG1_CFG",
+                    "name_original": "E6S",
+                    "name": "Hybrid Mode",
+                    "byte": 1,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "E6U_CMB_RESERVED_CONFIG2_CFG",
+                    "name_original": "E6U",
+                    "name": "Computer Mode",
+                    "byte": 1,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
+                    "zoneLength": 7,
+                    "name_original": "F4K",
+                    "name": "Ambience 8",
+                    "byte": 6,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
+                    "zoneLength": 7,
+                    "name_original": "F4J",
+                    "name": "Ambience 7",
+                    "byte": 6,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
+                    "zoneLength": 7,
+                    "name_original": "F4I",
+                    "name": "Ambience 6",
+                    "byte": 6,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
+                    "zoneLength": 7,
+                    "name_original": "F4H",
+                    "name": "Ambience 5",
+                    "byte": 6,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
+                    "zoneLength": 7,
+                    "name_original": "F4G",
+                    "name": "Ambience 4",
+                    "byte": 6,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
+                    "zoneLength": 7,
+                    "name_original": "F4F",
+                    "name": "Ambience 3",
+                    "byte": 6,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
+                    "zoneLength": 7,
+                    "name_original": "F4D",
+                    "name": "Ambience 2",
+                    "byte": 6,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
+                    "zoneLength": 7,
+                    "name_original": "F4E",
+                    "name": "Ambience 1",
+                    "byte": 6,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
+                    "zoneLength": 8,
+                    "name_original": "F4K",
+                    "name": "Ambience 8",
+                    "byte": 7,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
+                    "zoneLength": 8,
+                    "name_original": "F4J",
+                    "name": "Ambience 7",
+                    "byte": 7,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
+                    "zoneLength": 8,
+                    "name_original": "F4I",
+                    "name": "Ambience 6",
+                    "byte": 7,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
+                    "zoneLength": 8,
+                    "name_original": "F4H",
+                    "name": "Ambience 5",
+                    "byte": 7,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
+                    "zoneLength": 8,
+                    "name_original": "F4G",
+                    "name": "Ambience 4",
+                    "byte": 7,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
+                    "zoneLength": 8,
+                    "name_original": "F4F",
+                    "name": "Ambience 3",
+                    "byte": 7,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
+                    "zoneLength": 8,
+                    "name_original": "F4D",
+                    "name": "Ambience 2",
+                    "byte": 7,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
+                    "zoneLength": 8,
+                    "name_original": "F4E",
+                    "name": "Ambience 1",
+                    "byte": 7,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
-        {
-          "extra_name": "EWR_ELECTRICAL_MOTOR",
-          "name_original": "EWR",
-          "name": "Electric Vehicle",
-          "byte": 0,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "0200": {
+            "name": "Calibration_Fct_Main",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "F4N_CMB_AMBIANCE_DEFAULT",
+                    "name_original": "F4N",
+                    "name": "Number of the default ambience",
+                    "byte": 35,
+                    "mask": "00001110",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
         },
-        {
-          "extra_name": "D3W_CMB_CONF_RVVI",
-          "name_original": "D3W",
-          "name": "Adaptative Cruise Control (ACC)",
-          "byte": 0,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "0900": {
+            "name": "Calibration_Fct_HMI",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
+                    "name_original": "F4E",
+                    "name": "Ambience 1",
+                    "byte": 16,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
+                    "name_original": "F4D",
+                    "name": "Ambience 2",
+                    "byte": 16,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
+                    "name_original": "F4F",
+                    "name": "Ambience 3",
+                    "byte": 16,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
+                    "name_original": "F4G",
+                    "name": "Ambience 4",
+                    "byte": 16,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
+                    "name_original": "F4H",
+                    "name": "Ambience 5",
+                    "byte": 16,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
+                    "name_original": "F4I",
+                    "name": "Ambience 6",
+                    "byte": 16,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
+                    "name_original": "F4J",
+                    "name": "Ambience 7",
+                    "byte": 16,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
+                    "name_original": "F4K",
+                    "name": "Ambience 8",
+                    "byte": 16,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
-        {
-          "extra_name": "D7S_CMB_CONF_POI_RADAR",
-          "name_original": "D7S",
-          "name": "Display of the alerts, POI and hazardous areas",
-          "byte": 1,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "F18C": {
+            "name": "Telecoding_Serial",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "SN",
+                    "name_original": "SN",
+                    "name": "ignore",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
         },
-        {
-          "extra_name": "D7T_CMB_CONF_VIT_CONSEILLE",
-          "name_original": "D7T",
-          "name": "Recommended gear change indicator",
-          "byte": 1,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "f080": {
+            "id": "ZA_ZONE",
+            "tab": "cmb",
+            "name": "ZA Zone",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
         },
-        {
-          "extra_name": "EAT_PUSH_VARIANT_CFG",
-          "name_original": "EAT",
-          "name": "Push variant",
-          "byte": 2,
-          "mask": "01110000",
-          "type": "raw",
-          "form_type": "string"
+        "f0fe": {
+            "id": "ZI_ZONE",
+            "tab": "cmb",
+            "name": "ZI Zone",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
         },
-        {
-          "extra_name": "DP8_CMB_OBC_STT",
-          "name_original": "DP8",
-          "name": "Stop and Start system",
-          "byte": 2,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQ8_DOORS_TYPE",
-          "name_original": "DQ8",
-          "name": "Type of accesses",
-          "byte": 3,
-          "mask": "00000011",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "rear doors"
-            },
-            {
-              "mask": "00000001",
-              "name": "1 sliding door"
-            },
-            {
-              "mask": "00000010",
-              "name": "2 sliding doors"
-            }
-          ]
-        },
-        {
-          "extra_name": "DP5_CMB_OUTLINE",
-          "name_original": "DP5",
-          "name": "Body shape type",
-          "byte": 2,
-          "mask": "00001100",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Two box"
-            },
-            {
-              "mask": "00000100",
-              "name": "Saloon"
-            },
-            {
-              "mask": "00001000",
-              "name": "Monospace"
-            },
-            {
-              "mask": "00001100",
-              "name": "Other"
-            }
-          ]
-        },
-        {
-          "extra_name": "DQ6_CMB_LKA_VAL_PRESENCE",
-          "name_original": "DQ6",
-          "name": "Active Lane Departure function (LKA)",
-          "byte": 3,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQ7_CMB_DYN_PACK_PRESENCE",
-          "name_original": "DQ7",
-          "name": "Dynamic driving function",
-          "byte": 3,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQB_CMB_OPTION_EXPORT_NAV",
-          "name_original": "DQB",
-          "name": "Navigation display",
-          "byte": 12,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQG_CMB_OPTION_EXPORT_AUDIO",
-          "name_original": "DQG",
-          "name": "Display audio informations",
-          "byte": 12,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "ENV_CMB_AVN_PRESENCE",
-          "name_original": "ENV",
-          "name": "Night vision assistance",
-          "byte": 12,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQQ_DAT_DG_ALARM",
-          "name_original": "DQQ",
-          "name": "Onboard computer alerts",
-          "byte": 12,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E2D_TYPE_EXPORT_PRINC2",
-          "name_original": "E2D",
-          "name": "Type of export PRINC2",
-          "byte": 12,
-          "mask": "00111000",
-          "type": "raw",
-          "form_type": "string"
-        },
-        {
-          "extra_name": "DQP_DAT_DG_TYRES_PRESSUR",
-          "name_original": "DQP",
-          "name": "Tyres pressure",
-          "byte": 14,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQV_CMB_DAT_DG_ADML_CFG",
-          "name_original": "DQV",
-          "name": "Hands free starting access",
-          "byte": 11,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E2C_TYPE_EXPORT_VIDEO",
-          "name_original": "E2C",
-          "name": "Type of video export",
-          "byte": 15,
-          "mask": "00000110",
-          "type": "raw",
-          "form_type": "string"
-        },
-        {
-          "extra_name": "E1U_CMB_OPT_EXPORT_INFO_TRAF",
-          "name_original": "E1U",
-          "name": "Display traffic informations",
-          "byte": 15,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "EWQ_HY_MYH",
-          "name_original": "EWQ",
-          "name": "Hybrid MYH",
-          "byte": 15,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E2F_TYPE_LISTE_PICTO",
-          "name_original": "E2F",
-          "name": "Type of picto list",
-          "byte": 15,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DW7_TYPE_EXPORT_MEDIA",
-          "name_original": "DW7",
-          "name": "Export media type",
-          "byte": 15,
-          "mask": "01100000",
-          "type": "raw",
-          "form_type": "string"
-        },
-        {
-          "extra_name": "DQW_CMB_DAT_DG_STT_CFG",
-          "name_original": "DQW",
-          "name": "Stop and Start function",
-          "byte": 11,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "EKN_CMB_TELLTALES_LKA",
-          "name_original": "EKN",
-          "name": "Lane departure warning system (AFIL)",
-          "byte": 11,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQA_CMB_SLI",
-          "name_original": "DQA",
-          "name": "Speed limit indication function",
-          "byte": 11,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DQH_CMB_TYPE_BAND_FM",
-          "name_original": "DQH",
-          "name": "Type of aerial",
-          "byte": 12,
-          "mask": "10000000",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "FM1 and FM2 aerial"
-            },
-            {
-              "mask": "10000000",
-              "name": "FM aerial"
-            }
-          ]
-        },
-        {
-          "extra_name": "EWP_HY_MEL_AR",
-          "name_original": "EWP",
-          "name": "Hybrid MEL AR",
-          "byte": 16,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DXJ_REAR_VC",
-          "name_original": "DXJ",
-          "name": "Reverse camera",
-          "byte": 16,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DXK_PANORAMIC_VC",
-          "name_original": "DXK",
-          "name": "Panoramic reverse camera",
-          "byte": 16,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DXK_PANORAMIC_VC",
-          "name_original": "DXK",
-          "name": "Type of panoramic visual assistance camera",
-          "byte": 16,
-          "mask": "00000110",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Type 1"
-            },
-            {
-              "mask": "00000010",
-              "name": "Type 2"
-            },
-            {
-              "mask": "00000100",
-              "name": "Type 3"
-            },
-            {
-              "mask": "00000110",
-              "name": "Type 4"
-            }
-          ]
-        },
-        {
-          "extra_name": "DQR_CMB_DAT_DG_UREA",
-          "name_original": "DQR",
-          "name": "Urea warning lamp",
-          "byte": 13,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E1Q_CMB_CITYPARK_AS",
-          "name_original": "E1Q",
-          "name": "Semi-automatic parking system",
-          "byte": 17,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E68_CMB_SEAT_NB",
-          "name_original": "E68",
-          "name": "Seats, row 3",
-          "byte": 18,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E3J_ATT_DG_HY_PRESENT",
-          "name_original": "E3J",
-          "name": "Hybrid function",
-          "byte": 18,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6Z_CMB_PERSO_PICTURE_EXPORT",
-          "name_original": "E6Z",
-          "name": "Screen background personalisation function",
-          "byte": 18,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6B_CMB_TELLTALES_EL_PARK_BK",
-          "name_original": "E6B",
-          "name": "Parking brake Visual and Sound Alerts",
-          "byte": 18,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E08_CMB_GAUGE_ENG_SPD_DIGIT",
-          "name_original": "E08",
-          "name": "Rev counter",
-          "byte": 18,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E7A_CMB_LUM_AMBIENCE_CFG",
-          "name_original": "E7A",
-          "name": "Ambience lighting",
-          "byte": 18,
-          "mask": "00100000",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Rheostatage"
-            },
-            {
-              "mask": "00100000",
-              "name": "Ambience lighting"
-            }
-          ]
-        },
-        {
-          "extra_name": "E70_CMB_CARLINE",
-          "name_original": "E70",
-          "name": "Type of car",
-          "byte": 19,
-          "mask": "11110000",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "3008"
-            },
-            {
-              "mask": "00010000",
-              "name": "New 2008"
-            },
-            {
-              "mask": "00100000",
-              "name": "New 208"
-            },
-            {
-              "mask": "00110000",
-              "name": "Unknown car 4"
-            },
-            {
-              "mask": "01000000",
-              "name": "Unknown car 5"
-            },
-            {
-              "mask": "01010000",
-              "name": "Unknown car 6"
-            },
-            {
-              "mask": "01100000",
-              "name": "Unknown car 7"
-            },
-            {
-              "mask": "01110000",
-              "name": "Unknown car 8"
-            },
-            {
-              "mask": "10000000",
-              "name": "Unknown car 9"
-            },
-            {
-              "mask": "10010000",
-              "name": "Unknown car 10"
-            },
-            {
-              "mask": "10100000",
-              "name": "Unknown car 11"
-            },
-            {
-              "mask": "10110000",
-              "name": "Unknown car 12"
-            },
-            {
-              "mask": "11000000",
-              "name": "Unknown car 13"
-            }
-          ]
-        },
-        {
-          "extra_name": "E7B_CMB_XVV_PRESENCE_ACC",
-          "name_original": "E7B",
-          "name": "Adapted cruise control",
-          "byte": 18,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6I_CMB_OPTION_EXPORT_MEDIA",
-          "name_original": "E6I",
-          "name": "Display media informations",
-          "byte": 19,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+        "f190": {
+            "id": "VIN",
+            "tab": "cmb",
+            "byte": 0,
+            "type": "string_ascii",
+            "form_type": "string",
+            "name": "VIN"
         }
-      ]
-    },
-    "2101": {
-      "name": "Telecoding_Fct_IO",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "EIH_CMB_WIRE_IN_LANE_DEPARTU",
-          "name_original": "EIH",
-          "name": "AFIL PUSH input (Lane departure warning system)",
-          "byte": 0,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EIL_CMB_WIRE_OUT_LANE_DEPART",
-          "name_original": "EIL",
-          "name": "AFIL LED output (Lane departure warning system)",
-          "byte": 1,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI0_CMB_WIRE_IN_CITY_PARK_PU",
-          "name_original": "EI0",
-          "name": "City Park Assist PUSH input",
-          "byte": 2,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EIM_CMB_WIRE_OUT_CITY_PARK_L",
-          "name_original": "EIM",
-          "name": "City Park Assist LED output",
-          "byte": 3,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI4_CMB_WIRE_IN_DYNAMIC_PUSH",
-          "name_original": "EI4",
-          "name": "Dynamic mode (Sport mode) PUSH input",
-          "byte": 4,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI3_CMB_WIRE_OUT_DYNAMIC_LED",
-          "name_original": "EI3",
-          "name": "Dynamic mode (Sport mode) LED output",
-          "byte": 5,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI2_CMB_WIRE_IN_ESP_PUSH",
-          "name_original": "EI2",
-          "name": "ESP PUSH input",
-          "byte": 6,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EIJ_CMB_WIRE_OUT_ESP_LED",
-          "name_original": "EIJ",
-          "name": "ESP LED output",
-          "byte": 7,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EII_CMB_WIRE_IN_HILL_ASSIST",
-          "name_original": "EII",
-          "name": "Hill Assist PUSH input",
-          "byte": 8,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EHZ_CMB_WIRE_OUT_HILL_ASSIS",
-          "name_original": "EHZ",
-          "name": "Hill Assist LED output",
-          "byte": 9,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI6_CMB_WIRE_IN_LKA_PUSH",
-          "name_original": "EI6",
-          "name": "Lane Keeping Assist (LKA) PUSH input",
-          "byte": 10,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI5_CMB_WIRE_OUT_LKA_LED",
-          "name_original": "EI5",
-          "name": "Lane Keeping Assist (LKA) LED output",
-          "byte": 11,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EHY_CMB_WIRE_IN_LANE_POSITIO",
-          "name_original": "EHY",
-          "name": "Lane Positioning Assist (LPA) PUSH input",
-          "byte": 12,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EIR_CMB_WIRE_OUT_LPA_LED",
-          "name_original": "EIR",
-          "name": "Lane Positioning Assist (LPA) LED output",
-          "byte": 13,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EI1_CMB_WIRE_IN_LTP_PUSH",
-          "name_original": "EI1",
-          "name": "Low tyre pressure PUSH input",
-          "byte": 14,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EIK_CMB_WIRE_OUT_ELEC_PARK_B",
-          "name_original": "EIK",
-          "name": "Electric parking brake LED output",
-          "byte": 15,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EQJ_CMB_WIRE_IN_STT",
-          "zoneLength": 19,
-          "name_original": "EQJ",
-          "name": "Start&Stop (STT) PUSH input",
-          "byte": 16,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 2)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 4)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 6)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 11)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 13)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 15)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 17)"
-            }
-          ]
-        },
-        {
-          "extra_name": "EQK_CMB_WIRE_OUT_STT",
-          "zoneLength": 19,
-          "name_original": "EQK",
-          "name": "Start&Stop (STT) LED output",
-          "byte": 17,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        },
-        {
-          "extra_name": "ERH_CMB_WIRE_OUT_XDOME",
-          "zoneLength": 19,
-          "name_original": "ERH",
-          "name": "XDOME LED output",
-          "byte": 18,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "Absent"
-            },
-            {
-              "mask": "00000001",
-              "name": "Position 1 (CIROCCO: PIN 3)"
-            },
-            {
-              "mask": "00000010",
-              "name": "Position 2 (CIROCCO: PIN 5)"
-            },
-            {
-              "mask": "00000011",
-              "name": "Position 3 (CIROCCO: PIN 10)"
-            },
-            {
-              "mask": "00000100",
-              "name": "Position 4 (CIROCCO: PIN 12)"
-            },
-            {
-              "mask": "00000101",
-              "name": "Position 5 (CIROCCO: PIN 14)"
-            },
-            {
-              "mask": "00000110",
-              "name": "Position 6 (CIROCCO: PIN 16)"
-            },
-            {
-              "mask": "00000111",
-              "name": "Position 7 (CIROCCO: PIN 18)"
-            }
-          ]
-        }
-      ]
-    },
-    "2200": {
-      "name": "Telecoding_Fct_Secondary",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "DOX_CMB_DATE_TIME_SYNC",
-          "name_original": "DOX",
-          "name": "Automatic synchronisation of the time",
-          "byte": 0,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "DOT_CMB_DATE_TIME_ZONE_INIT",
-          "name_original": "DOT",
-          "name": "Time Zone",
-          "byte": 1,
-          "mask": "11111111",
-          "form_type": "combobox",
-          "params": [
-            {
-              "mask": "00000000",
-              "name": "UTC-12"
-            },
-            {
-              "mask": "00110000",
-              "name": "UTC"
-            },
-            {
-              "mask": "00110100",
-              "name": "UTC+1"
-            },
-            {
-              "mask": "00111000",
-              "name": "UTC+2"
-            }
-          ]
-        },
-        {
-          "extra_name": "AAA_",
-          "name_original": "AAA",
-          "name": "Lane positioning assist",
-          "byte": 3,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        }
-      ]
-    },
-    "2300": {
-      "name": "Telecoding_Fct_HMI",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "DQC_CMB_OPTION_EXPORT_POI_RA",
-          "name_original": "DQC",
-          "name": "Personal Mode 2",
-          "byte": 1,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6D_CMB_PERSO_CFG",
-          "name_original": "E6D",
-          "name": "Personal Mode",
-          "byte": 1,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6K_CMB_DAT_DG_CLASSIC_CFG",
-          "name_original": "E6K",
-          "name": "Dials Mode",
-          "byte": 1,
-          "mask": "00100000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6M_CMB_ADAS_CFG",
-          "name_original": "E6M",
-          "name": "Driving Mode",
-          "byte": 1,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6O_CMB_CARTO_CFG",
-          "name_original": "E6O",
-          "name": "Navigation Mode",
-          "byte": 1,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6Q_CMB_LIGHT_CFG",
-          "name_original": "E6Q",
-          "name": "Minimal Mode",
-          "byte": 1,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6S_CMB_RESERVED_CONFIG1_CFG",
-          "name_original": "E6S",
-          "name": "Hybrid Mode",
-          "byte": 1,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "E6U_CMB_RESERVED_CONFIG2_CFG",
-          "name_original": "E6U",
-          "name": "Computer Mode",
-          "byte": 1,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
-          "zoneLength": 7,
-          "name_original": "F4K",
-          "name": "Ambience 8",
-          "byte": 6,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
-          "zoneLength": 7,
-          "name_original": "F4J",
-          "name": "Ambience 7",
-          "byte": 6,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
-          "zoneLength": 7,
-          "name_original": "F4I",
-          "name": "Ambience 6",
-          "byte": 6,
-          "mask": "00100000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
-          "zoneLength": 7,
-          "name_original": "F4H",
-          "name": "Ambience 5",
-          "byte": 6,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
-          "zoneLength": 7,
-          "name_original": "F4G",
-          "name": "Ambience 4",
-          "byte": 6,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
-          "zoneLength": 7,
-          "name_original": "F4F",
-          "name": "Ambience 3",
-          "byte": 6,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
-          "zoneLength": 7,
-          "name_original": "F4D",
-          "name": "Ambience 2",
-          "byte": 6,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
-          "zoneLength": 7,
-          "name_original": "F4E",
-          "name": "Ambience 1",
-          "byte": 6,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
-          "zoneLength": 8,
-          "name_original": "F4K",
-          "name": "Ambience 8",
-          "byte": 7,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
-          "zoneLength": 8,
-          "name_original": "F4J",
-          "name": "Ambience 7",
-          "byte": 7,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
-          "zoneLength": 8,
-          "name_original": "F4I",
-          "name": "Ambience 6",
-          "byte": 7,
-          "mask": "00100000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
-          "zoneLength": 8,
-          "name_original": "F4H",
-          "name": "Ambience 5",
-          "byte": 7,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
-          "zoneLength": 8,
-          "name_original": "F4G",
-          "name": "Ambience 4",
-          "byte": 7,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
-          "zoneLength": 8,
-          "name_original": "F4F",
-          "name": "Ambience 3",
-          "byte": 7,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
-          "zoneLength": 8,
-          "name_original": "F4D",
-          "name": "Ambience 2",
-          "byte": 7,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
-          "zoneLength": 8,
-          "name_original": "F4E",
-          "name": "Ambience 1",
-          "byte": 7,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        }
-      ]
-    },
-    "0200": {
-      "name": "Calibration_Fct_Main",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "F4N_CMB_AMBIANCE_DEFAULT",
-          "name_original": "F4N",
-          "name": "Number of the default ambience",
-          "byte": 35,
-          "mask": "00001110",
-          "type": "raw",
-          "form_type": "string"
-        }
-      ]
-    },
-    "0900": {
-      "name": "Calibration_Fct_HMI",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
-          "name_original": "F4E",
-          "name": "Ambience 1",
-          "byte": 16,
-          "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
-          "name_original": "F4D",
-          "name": "Ambience 2",
-          "byte": 16,
-          "mask": "01000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
-          "name_original": "F4F",
-          "name": "Ambience 3",
-          "byte": 16,
-          "mask": "00100000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
-          "name_original": "F4G",
-          "name": "Ambience 4",
-          "byte": 16,
-          "mask": "00010000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
-          "name_original": "F4H",
-          "name": "Ambience 5",
-          "byte": 16,
-          "mask": "00001000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
-          "name_original": "F4I",
-          "name": "Ambience 6",
-          "byte": 16,
-          "mask": "00000100",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
-          "name_original": "F4J",
-          "name": "Ambience 7",
-          "byte": 16,
-          "mask": "00000010",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        },
-        {
-          "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
-          "name_original": "F4K",
-          "name": "Ambience 8",
-          "byte": 16,
-          "mask": "00000001",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
-        }
-      ]
-    },
-    "F18C": {
-      "name": "Telecoding_Serial",
-      "tab": "cmb",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-          "extra_name": "SN",
-          "name_original": "SN",
-          "name": "ignore",
-          "byte": 0,
-          "mask": "11111111",
-          "type": "raw",
-          "form_type": "string"
-        }
-      ]
-    },
-    "f080": {
-      "id": "ZA_ZONE",
-      "tab": "cmb",
-      "name": "ZA Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "f0fe": {
-      "id": "ZI_ZONE",
-      "tab": "cmb",
-      "name": "ZI Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "f190": {
-      "id": "VIN",
-      "tab": "cmb",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string",
-      "name": "VIN"
-    }	
-  }
+    }
 }
