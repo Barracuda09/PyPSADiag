@@ -57,7 +57,7 @@
         "name": "Production Date",
         "byte": 6,
         "byte_range": 3,
-        "type": "raw",
+        "type": "string_date",
         "form_type": "string"
       },
       {
@@ -71,7 +71,7 @@
         "name": "Telecoding Date",
         "byte": 13,
         "byte_range": 3,
-        "type": "raw",
+        "type": "string_date",
         "form_type": "string"
       },
       {

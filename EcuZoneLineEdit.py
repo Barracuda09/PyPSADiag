@@ -87,6 +87,22 @@ class EcuZoneLineEdit(QLineEdit):
                 byte = "%0.2X" % value
         return byte
 
+    def __convertStringToDate(self, data: str):
+        day   = int(data[0:2], 16)
+        month = int(data[2:4], 16)
+        year  = int(data[4:6], 16)
+        # Check if date is not sane, then give ASCII
+        if year >= 30 or day > 31 or month > 12:
+            day   = data[0:2]
+            month = data[2:4]
+            year  = data[4:6]
+        else:
+            day   = ("%0.2d" % int(data[0:2], 16))
+            month = ("%0.2d" % int(data[2:4], 16))
+            year  = ("%0.2d" % int(data[4:6], 16))
+        txt = day + "." + month + "." + year
+        return txt
+
     def changeZoneOption(self, data: str, valueType: str):
         self.valueType = valueType
         if "mask" in self.zoneObject:
@@ -118,6 +134,8 @@ class EcuZoneLineEdit(QLineEdit):
                         txt = supplierList[str(txt)]
                 elif "zi_sys" == self.zoneObject["type"]:
                     txt = txt
+                elif "string_date" == self.zoneObject["type"]:
+                    txt = self.__convertStringToDate(txt)
             self.__setText(txt)
         else:
             if valueType == "string_ascii":
@@ -128,19 +146,7 @@ class EcuZoneLineEdit(QLineEdit):
                     txt = data
                 self.__setText(txt)
             elif valueType == "string_date":
-                day   = int(data[0:2], 16)
-                month = int(data[2:4], 16)
-                year  = int(data[4:6], 16)
-                # Check if date is not sane, then give ASCII
-                if year >= 30 or day > 31 or month > 12:
-                    day   = data[0:2]
-                    month = data[2:4]
-                    year  = data[4:6]
-                else:
-                    day   = ("%0.2d" % int(data[0:2], 16))
-                    month = ("%0.2d" % int(data[2:4], 16))
-                    year  = ("%0.2d" % int(data[4:6], 16))
-                txt = day + "." + month + "." + year
+                txt = self.__convertStringToDate(data)
                 self.__setText(txt)
             elif valueType == "int":
                 txt = str(int(data, 16))
