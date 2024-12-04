@@ -83,6 +83,12 @@ class UDSCommunication(QThread):
                 return "62" + cmd[2:6] + "FFFF000006E030082202061300FFFFFF0002000002948185"
             elif cmd[2:6] == "F080":
                 return "62" + cmd[2:6] + "9807513880000698261526801900FFFFFF01FFFFFFFF"
+            elif cmd[2:6] == "F190":
+                return "62" + cmd[2:6] + "56584B5550484E4B4B4C34323431383933"
+            elif cmd[2:6] == "F18B":
+                return "62" + cmd[2:6] + "090314"
+            elif cmd[2:6] == "F18C":
+                return "62" + cmd[2:6] + "29400895"
             return "62" + cmd[2:6] + "12345679"
         if cmd[:2] == "2E":
             return "6E" + cmd[2:6]
@@ -362,7 +368,7 @@ class UDSCommunication(QThread):
                 answer = decodedData[6:]
                 answerDecorated = answer
                 valType = "None"
-                if type in self.zoneActive:
+                if "type" in self.zoneActive:
                     valType = self.zoneActive["type"]
 
                 # Check if we can find a "Decorated" answer from Combobox
