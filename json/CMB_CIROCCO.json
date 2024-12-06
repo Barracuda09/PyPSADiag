@@ -1742,47 +1742,6 @@
                     "available_logic": "active_high"
                 }
             ]
-        },
-        "F18C": {
-            "name": "Telecoding_Serial",
-            "tab": "cmb",
-            "type": "raw",
-            "form_type": "multi",
-            "params": [
-                {
-                    "extra_name": "SN",
-                    "name_original": "SN",
-                    "name": "ignore",
-                    "byte": 0,
-                    "mask": "11111111",
-                    "type": "raw",
-                    "form_type": "string"
-                }
-            ]
-        },
-        "f080": {
-            "id": "ZA_ZONE",
-            "tab": "cmb",
-            "name": "ZA Zone",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string"
-        },
-        "f0fe": {
-            "id": "ZI_ZONE",
-            "tab": "cmb",
-            "name": "ZI Zone",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string"
-        },
-        "f190": {
-            "id": "VIN",
-            "tab": "cmb",
-            "byte": 0,
-            "type": "string_ascii",
-            "form_type": "string",
-            "name": "VIN"
         }
     }
 }

@@ -12,6 +12,11 @@
     "ident": "Identification",
     "tele": "Telecoding"
   },
+  "system_supported": {
+    "E0": "AAS Valeo",
+    "E1": "AAS Bosch",
+    "E2": "AAS Metasystem"
+  },
   "zones": {
     "2100": {
       "id": "Configuration_Group_Data_List",

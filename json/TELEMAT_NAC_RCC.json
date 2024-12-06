@@ -11,6 +11,7 @@
     },
     "include_zone_object": "./json/IdentECU.json",
     "tabs": {
+        "vin": "VIN",
         "ident": "Identification",
         "telemat": "Telematic Unit (BTEL)"
     },
@@ -10369,41 +10370,9 @@
                 }
             ]
         },
-        "f080": {
-            "id": "ZA_ZONE",
-            "tab": "ecuinfo",
-            "name": "ZA Zone",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string"
-        },
-        "f0fe": {
-            "id": "ZI_ZONE",
-            "tab": "ecuinfo",
-            "name": "ZI Zone",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string"
-        },
-        "F18B": {
-            "id": "Production_Date",
-            "tab": "ecuinfo",
-            "name": "Production Date",
-            "byte": 0,
-            "type": "string_date",
-            "form_type": "string"
-        },
-        "F18C": {
-            "id": "Serial_Number",
-            "tab": "ecuinfo",
-            "name": "Serial Number",
-            "byte": 0,
-            "type": "string_ascii",
-            "form_type": "string"
-        },
-        "f190": {
+        "F190": {
             "id": "VIN",
-            "tab": "telemat",
+            "tab": "vin",
             "byte": 0,
             "type": "string_ascii",
             "form_type": "string",

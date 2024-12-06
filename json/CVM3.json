@@ -12,6 +12,17 @@
     "ident": "Identification",
     "tele": "Telecoding"
   },
+  "supported": {
+    "supplier": {
+      "0F": "TRW"
+    },
+    "system": {
+      "D9": "CVM"
+    },
+    "type": {
+      "0179": "CVM3"
+    }
+  },
   "zones": {
     "2100": {
       "id": "Configuration_Group_Data_List",

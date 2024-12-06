@@ -16,6 +16,7 @@
   "tabs": {
     "vin": "VIN",
     "ident": "Identification",
+    "tele": "Telecoding",
     "all_computers": "Available Computers",
     "engine": "Engine and fuel system",
     "info": "Driver information",
@@ -3884,7 +3885,7 @@
     },
     "2484": {
       "id": "CFG_F4U_BSI_TYPE_EMERGENCY_CALL_000",
-      "tab": "safety",
+      "tab": "security",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
