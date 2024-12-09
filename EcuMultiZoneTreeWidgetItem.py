@@ -30,14 +30,16 @@ from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
-    zoneObject = dict
+    zoneDescription = ""
+    zoneObject = {}
     integrity = True
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
-        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
+        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), str("** " + description + " **")])
         parent.insertTopLevelItem(row, self)
         self.setToolTip(1, description)
         self.zoneObject = zoneObject
         self.zone = zone.upper()
+        self.zoneDescription = description
 
     def addRootWidgetItem(self, tree: QTreeWidget, widget):
         tree.setItemWidget(self, 2, widget)
@@ -56,6 +58,14 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             widget.stateChanged.connect(self.stateChanged)
         elif isinstance(widget, EcuZoneComboBox):
             widget.currentIndexChanged.connect(self.currentIndexChanged)
+
+    def getValuesAsCSV(self):
+        widget = self.treeWidget().itemWidget(self, 2)
+        value = "None"
+        # Check if Integrity is correct, then return Zone data
+        if self.integrity and isinstance(widget, EcuZoneLineEdit):
+            value = widget.getValuesAsCSV()
+        return [self.zone, value, self.zoneDescription]
 
     def getZoneAndHex(self):
         widget = self.treeWidget().itemWidget(self, 2)

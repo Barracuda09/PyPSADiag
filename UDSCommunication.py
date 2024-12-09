@@ -29,13 +29,12 @@ from SeedKeyAlgorithm import SeedKeyAlgorithm
 class UDSCommunication(QThread):
     receivedPacketSignal = Signal(list, float)
     outputToTextEditSignal = Signal(str)
-    updateZoneDataSignal = Signal(str, str, str)
+    updateZoneDataSignal = Signal(str, str)
     algo = SeedKeyAlgorithm()
     writeQ = queue.Queue()
-    ecuReadZone = str()
-    zoneName = str()
-    formType = str()
-    zoneActive = dict()
+    ecuReadZone = ""
+    zoneName = ""
+    zoneActive = {}
 
     def __init__(self, serialPort, simulation: bool):
         super(UDSCommunication, self).__init__()
@@ -337,7 +336,7 @@ class UDSCommunication(QThread):
 
     def setZonesToRead(self, ecuID: str, lin: str, zoneList: dict):
         if not self.serialPort.isOpen():
-            self.receivedPacketSignal.emit(["Serial Port Not Open", "", "", ""], time.time())
+            self.receivedPacketSignal.emit(["Serial Port Not Open", "", ""], time.time())
             return
         if self.isRunning == False:
             self.start();
@@ -354,7 +353,7 @@ class UDSCommunication(QThread):
 
     def parseReadResponse(self, data: str):
         if len(data) == 0:
-            self.receivedPacketSignal.emit([self.ecuReadZone, "Timeout", "string", "----", self.zoneName], time.time())
+            self.receivedPacketSignal.emit([self.ecuReadZone, "Timeout", self.zoneName], time.time())
             return data
 
         decodedData = data;
@@ -363,49 +362,38 @@ class UDSCommunication(QThread):
                 # Get only response data
                 answerZone = decodedData[2: + 6]
                 if answerZone.upper() != self.ecuReadZone.upper():
-                    self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", "", ""], time.time())
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", ""], time.time())
                     return data
                 answer = decodedData[6:]
-                answerDecorated = answer
-                valType = "None"
-                if "type" in self.zoneActive:
-                    valType = self.zoneActive["type"]
 
-                # Check if we can find a "Decorated" answer from Combobox
-                if self.formType == "combobox":
-                    for paramObject in self.zoneActive["params"]:
-                        if valType == "hex":
-                            if int(paramObject["value"], 16) == int(answer, 16):
-                                self.answerDecorated = str(paramObject["name"])
-
-                self.receivedPacketSignal.emit([self.ecuReadZone, answer, valType, answerDecorated, self.zoneName], time.time())
-                self.updateZoneDataSignal.emit(self.ecuReadZone, answer, valType)
+                self.receivedPacketSignal.emit([self.ecuReadZone, answer, self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, answer)
             elif decodedData[0: + 4] == "5001":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Communication closed", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Communication closed", self.zoneName], time.time())
             elif decodedData[0: + 4] == "5002":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Download session opened", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Download session opened", self.zoneName], time.time())
             elif decodedData[0: + 4] == "5003":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Diagnostic session opened", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Diagnostic session opened", self.zoneName], time.time())
             elif decodedData[0: + 4] == "6702":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for download", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for download", self.zoneName], time.time())
             elif decodedData[0: + 4] == "6704":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for configuration", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for configuration", self.zoneName], time.time())
             elif decodedData[0: + 2] == "7F":
                 if len(decodedData) >= 6 and decodedData[0: + 6] == "7F2231":
-                    self.receivedPacketSignal.emit([self.ecuReadZone, "Request out of range", "cmd answer", decodedData, self.zoneName], time.time())
-                    self.updateZoneDataSignal.emit(self.ecuReadZone, "Request out of range", "cmd answer")
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "Request out of range", self.zoneName], time.time())
+                    self.updateZoneDataSignal.emit(self.ecuReadZone, "Request out of range")
                 else:
-                    self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", "cmd answer", decodedData, self.zoneName], time.time())
-                    self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response", "cmd answer")
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", self.zoneName], time.time())
+                    self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response")
             else:
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", "cmd answer", decodedData, self.zoneName], time.time())
-                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error", "cmd answer")
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error")
         elif len(decodedData) <= 2:
             if decodedData[0: + 2] == "OK":
-                self.receivedPacketSignal.emit([self.ecuReadZone, "OK", "cmd answer", decodedData, self.zoneName], time.time())
+                self.receivedPacketSignal.emit([self.ecuReadZone, "OK", self.zoneName], time.time())
             else:
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", "cmd answer", decodedData, self.zoneName], time.time())
-                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error", "cmd answer")
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error")
         return data
 
     def run(self):
@@ -418,7 +406,6 @@ class UDSCommunication(QThread):
                         self.ecuReadZone = str(zoneIDObject).upper()
                         self.zoneActive = element[str(zoneIDObject)]
                         self.zoneName = str(self.zoneActive["name"])
-                        self.formType = str(self.zoneActive["form_type"])
 
                         # Send and receive data
                         ecuReadZoneSend = "22" + self.ecuReadZone

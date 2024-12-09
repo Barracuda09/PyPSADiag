@@ -27,7 +27,7 @@ class EcuZoneComboBox(QComboBox):
     """
     """
     value = 0
-    zoneObject = dict
+    zoneObject = {}
     def __init__(self, parent, zoneObject: dict):
         super(EcuZoneComboBox, self).__init__(parent)
         self.setStyleSheet("combobox-popup: 3;")
@@ -55,6 +55,13 @@ class EcuZoneComboBox(QComboBox):
 
     def isComboBoxChanged(self):
         return self.isEnabled() and self.value != self.currentIndex()
+
+    def getValuesAsCSV(self):
+        value = "Disabled"
+        if self.isEnabled():
+            index = self.currentIndex()
+            value = "%0.2X" % self.itemData(index)
+        return value
 
     def getZoneAndHex(self):
         value = "None"

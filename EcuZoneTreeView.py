@@ -45,6 +45,17 @@ class EcuZoneTreeView(QTabWidget):
                 self.zoneObjectList = ecuObjectList["ecu"]
             else:
                 return;
+
+            # Checking integrity of JSON file
+            for zoneIDObject in self.zoneObjectList:
+                zoneObject = self.zoneObjectList[zoneIDObject]
+                if not("tab" in zoneObject):
+                    print(zoneIDObject + ": Has not tab assigned")
+                    continue
+                if not(zoneObject["tab"] in ecuObjectList["tabs"]):
+                    print(zoneIDObject + ": uses '" + zoneObject["tab"] + "' tab, but is not in tabs list")
+                    continue
+
             self.clear()
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
@@ -53,10 +64,11 @@ class EcuZoneTreeView(QTabWidget):
                 self.tabs.append([tabs, index])
 
     def getValuesAsCSV(self):
+        value = []
         for tab in self.tabs:
             widget = self.widget(tab[1])
-            print(tab[1])
-            widget.getValuesAsCSV()
+            value.append(widget.getValuesAsCSV())
+        return value
 
     def getZoneListOfHexValue(self):
         value = []
@@ -69,10 +81,15 @@ class EcuZoneTreeView(QTabWidget):
         widget = self.currentWidget()
         return widget.getZoneAndHexValueOfCurrentRow()
 
-    def changeZoneOption(self, zone: str, data: str, valueType: str):
+    def changeZoneOption(self, zone: str, data: str):
         for zoneIDObject in self.zoneObjectList:
             if zone.upper() == zoneIDObject.upper():
                 zoneObject = self.zoneObjectList[zoneIDObject]
+                valueType = "None"
+                if "type" in zoneObject:
+                    valueType = zoneObject["type"]
+                else:
+                    print(zoneIDObject + ": has no item 'type'")
                 tabName = zoneObject["tab"]
                 for tab in self.tabs:
                     if tab[0] == tabName:
@@ -93,10 +110,10 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if not("tab" in zoneObject) or zoneObject["tab"] != tabName:
                 continue
 
+            itemName = zoneObject["name"];
             formType = zoneObject["form_type"]
             if formType == "multi":
-                rootName = "** " + zoneObject["name"] + " **"
-                root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, rootName, zoneObject)
+                root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, itemName, zoneObject)
                 rootReadOnly = True
                 root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, rootReadOnly))
                 self.markItemAsRootLevel(root)
@@ -136,7 +153,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                             root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, subZoneObject, False))
                 root.setExpanded(True)
             else:
-                root = EcuZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), zoneObject["name"])
+                root = EcuZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), itemName)
                 rowCount += 1
                 if formType == "combobox":
                     root.addItem(self, EcuZoneComboBox(self, zoneObject))
@@ -164,8 +181,12 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         item.setBackground(1, QColor(255, 128, 128))
 
     def getValuesAsCSV(self):
-        print(self.item(0,0).text())
-        print(self.item(0,1).text())
+        value = []
+        for index in range(self.topLevelItemCount()):
+            item = self.topLevelItem(index)
+            itemValue = item.getValuesAsCSV()
+            value.append(itemValue)
+        return value
 
     def getZoneListOfHexValue(self):
         value = []
@@ -180,7 +201,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         cellItems = self.findItems(zone, Qt.MatchExactly)
         if cellItems:
             cellItem = cellItems[0]
-            if data == "No Response" or valueType == "cmd answer":
+            if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unkown Error" or data == "Timeout":
                 self.markItemNoResponse(cellItem)
                 return
             cellItem.changeZoneOption(cellItem, data, valueType)

@@ -26,9 +26,10 @@ from PySide6.QtWidgets import QLineEdit
 class EcuZoneLineEdit(QLineEdit):
     """
     """
-    initialValue = ""
-    zoneObject = dict
+    zoneObject = {}
     valueType = ""
+    initialValue = ""
+    initialRaw = ""
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.setReadOnly(readOnly)
@@ -46,6 +47,19 @@ class EcuZoneLineEdit(QLineEdit):
 
     def isLineEditChanged(self):
         return self.isEnabled() and self.initialValue != self.text()
+
+    def getValuesAsCSV(self):
+        value = "Disabled"
+        if self.isEnabled():
+            if self.valueType == "string_ascii":
+                value = self.text().encode().hex()
+            elif self.valueType == "string_date":
+                value = self.initialRaw
+            elif self.valueType == "int":
+                value = "%0.2X" % int(self.text())
+            else:
+                value = self.text()
+        return value
 
     def getZoneAndHex(self):
         value = "None"
@@ -88,6 +102,7 @@ class EcuZoneLineEdit(QLineEdit):
         return byte
 
     def __convertStringToDate(self, data: str):
+        self.initialDate = data
         day   = int(data[0:2], 16)
         month = int(data[2:4], 16)
         year  = int(data[4:6], 16)
@@ -105,6 +120,7 @@ class EcuZoneLineEdit(QLineEdit):
 
     def changeZoneOption(self, data: str, valueType: str):
         self.valueType = valueType
+        self.initialRaw = data
         if "mask" in self.zoneObject:
             byteData = []
             for i in range(0, len(data), 2):
@@ -144,14 +160,13 @@ class EcuZoneLineEdit(QLineEdit):
                 except:
                     valueType = "string"
                     txt = data
-                self.__setText(txt)
             elif valueType == "string_date":
                 txt = self.__convertStringToDate(data)
-                self.__setText(txt)
             elif valueType == "int":
                 txt = str(int(data, 16))
-                self.__setText(txt)
             else:
-                self.__setText(data)
+                txt = data
+
+            self.__setText(txt)
 
         return True

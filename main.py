@@ -35,7 +35,6 @@ from UDSCommunication import UDSCommunication
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
-from EcuZoneTable import EcuZoneTableView
 from EcuZoneTreeView  import EcuZoneTreeView
 
 """
@@ -44,7 +43,7 @@ from EcuZoneTreeView  import EcuZoneTreeView
 """
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
-    ecuObjectList = dict()
+    ecuObjectList = {}
     simulation = False
     stream = None
     csvWriter = None
@@ -94,7 +93,7 @@ class MainWindow(QMainWindow):
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
-        #
+        # UDS
         self.udsCommunication = UDSCommunication(self.serialController, self.simulation)
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
@@ -182,8 +181,18 @@ class MainWindow(QMainWindow):
     @Slot()
     def saveCSVFile(self):
         fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
-        #self.fileLoaderThread.enable(fileName[0], 0);
-        self.ui.treeView.getValuesAsCSV()
+        if fileName[0] == "":
+            return
+
+        # Open CSV for writing
+        self.stream = open(fileName[0], 'w', newline='')
+        self.csvWriter = csv.writer(self.stream)
+        if self.stream != None:
+            valueList = self.ui.treeView.getValuesAsCSV()
+            for tabList in valueList:
+                for zone in tabList:
+                    self.csvWriter.writerow(zone)
+            self.stream.flush()
 
     @Slot()
     def openZoneFile(self):
@@ -235,7 +244,7 @@ class MainWindow(QMainWindow):
                 if self.ui.ecuComboBox.currentIndex() == 0:
                     self.udsCommunication.setZonesToRead(ecu, lin, self.ecuObjectList["zones"])
                 else:
-                    zone = dict()
+                    zone = {}
                     zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
                     self.udsCommunication.setZonesToRead(ecu, lin, zone)
             else:
@@ -315,11 +324,11 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def csvReadCallback(self, value: list):
-        self.ui.treeView.changeZoneOption(value[0], value[1], value[2]);
+        self.ui.treeView.changeZoneOption(value[0], value[1]);
 
     @Slot()
-    def updateZoneDataback(self, zoneData: str, value: str, valueType: str):
-        self.ui.treeView.changeZoneOption(zoneData, value, valueType)
+    def updateZoneDataback(self, zoneData: str, value: str):
+        self.ui.treeView.changeZoneOption(zoneData, value)
 
     @Slot()
     def outputToTextEditCallback(self, text: str):

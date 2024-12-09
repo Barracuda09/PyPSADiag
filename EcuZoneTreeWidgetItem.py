@@ -29,12 +29,14 @@ from EcuZoneComboBox import EcuZoneComboBox
 
 class EcuZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
+    zoneDescription = ""
     def __init__(self, parent, row: int, zone: str, description: str):
         super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
         if isinstance(parent, QTreeWidget):
             parent.insertTopLevelItem(row, self)
         self.setToolTip(1, description)
         self.zone = zone.upper()
+        self.zoneDescription = description
 
 #        label = QLabel(description)
 #        label.setWordWrap(True)
@@ -44,6 +46,17 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
 
     def addItem(self, tree: QTreeWidgetItem, widget):
         tree.setItemWidget(self, 2, widget)
+
+    def getValuesAsCSV(self):
+        widget = self.treeWidget().itemWidget(self, 2)
+        value = "None"
+        if isinstance(widget, EcuZoneLineEdit):
+            value = widget.getValuesAsCSV()
+        elif isinstance(widget, EcuZoneCheckBox):
+            value = widget.getValuesAsCSV()
+        elif isinstance(widget, EcuZoneComboBox):
+            value = widget.getValuesAsCSV()
+        return [self.zone, value, self.zoneDescription]
 
     def getZoneAndHex(self):
         widget = self.treeWidget().itemWidget(self, 2)

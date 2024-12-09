@@ -27,7 +27,7 @@ class EcuZoneCheckBox(QCheckBox):
     """
     """
     initialValue = 0
-    zoneObject = dict
+    zoneObject = {}
     def __init__(self, parent, zoneObject: dict):
         super(EcuZoneCheckBox, self).__init__(parent)
         self.zoneObject = zoneObject
@@ -41,6 +41,15 @@ class EcuZoneCheckBox(QCheckBox):
 
     def isCheckBoxChanged(self):
         return self.isEnabled() and self.initialValue != 0 and self.initialValue != self.checkState()
+
+    def getValuesAsCSV(self):
+        value = "Disabled"
+        if self.isEnabled():
+            if self.checkState() == Qt.Checked:
+                value = "01"
+            else:
+                value = "00"
+        return value
 
     def getZoneAndHex(self):
         value = "None"
