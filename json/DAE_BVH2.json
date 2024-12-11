@@ -1,0 +1,109 @@
+{
+  "name": "DAE_BVH2",
+  "tx_id": "6B5",
+  "rx_id": "695",
+  "protocol": "kwp",
+  "key_type": "single",
+  "keys":  "2305",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./json/IdentECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "A0": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DAE_PARK_01": {
+        "name": "Presense of semi-automatic parking",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000001"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_STEER_02": {
+        "name": "Presense of steering angle sensor",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "WITHOUT steering angle sensor",
+            "mask": "00000010"
+          },
+          {
+            "name": "With steering angle sensor",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_SST_0C": {
+        "name": "Presense of Start and Stop",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001100",
+        "params": [
+          {
+            "name": "Start and Stop with generator-starter",
+            "mask": "00001100"
+          },
+          {
+            "name": "Hybrid or Start and Stop with starter",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_DAE_LKA_10": {
+        "name": "Presense of Lane Keeping Assist",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00010000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_DAE_LPA_20": {
+        "name": "Presense of Lane Positioning Assist",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00100000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      }
+    }
+  }
+}
