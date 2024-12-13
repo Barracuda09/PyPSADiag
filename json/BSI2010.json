@@ -12,7 +12,7 @@
   },
   "coding": true,
   "errors": true,
-  "include_zone_object": "./json/IdentECU.json",
+  "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
     "vin": "VIN",
     "ident": "Identification",

@@ -2,12 +2,12 @@
   "name": "DAE_BVH2",
   "tx_id": "6B5",
   "rx_id": "695",
-  "protocol": "kwp",
+  "protocol": "kwp_is",
   "key_type": "single",
   "keys":  "2305",
   "coding": true,
   "errors": true,
-  "include_zone_object": "./json/IdentECU.json",
+  "include_zone_object": "./data/IdentKWPECU.json",
   "tabs": {
     "ident": "Identification",
     "tele": "Telecoding"
