@@ -20,6 +20,8 @@
 """
 
 import json
+from PySide6.QtGui import QKeyEvent
+from PySide6.QtCore import Qt, QEvent
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -34,6 +36,16 @@ class EcuZoneLineEdit(QLineEdit):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
+
+    def event(self, event: QEvent):
+        if event.type() == QEvent.KeyPress:
+            keyEvent = QKeyEvent(event)
+            # When ESC -> Clear focus
+            if keyEvent.key() == Qt.Key_Escape:
+                # @TODO: Maybe give option to undo changes?
+                self.clearFocus()
+                return True
+        return super().event(event)
 
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]

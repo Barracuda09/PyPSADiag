@@ -102,6 +102,8 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
         self.setColumnCount(3)
         self.setHeaderLabels(["Zone", "Zone Description", "Options"])
+        self.setSelectionMode(QTreeWidget.NoSelection)
+        self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
         rowCount = 0
         # Setup Tree view

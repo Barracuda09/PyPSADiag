@@ -19,7 +19,8 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt
+from PySide6.QtGui import QKeyEvent
+from PySide6.QtCore import Qt, QEvent
 from PySide6.QtWidgets import QComboBox
 
 
@@ -40,6 +41,16 @@ class EcuZoneComboBox(QComboBox):
             else:
                 self.addItem(paramObject["name"], int(paramObject["value"], 16))
         self.setCurrentIndex(0)
+
+    def event(self, event: QEvent):
+        if event.type() == QEvent.KeyPress:
+            keyEvent = QKeyEvent(event)
+            # When ESC -> Clear focus
+            if keyEvent.key() == Qt.Key_Escape:
+                # @TODO: Maybe give option to undo changes?
+                self.clearFocus()
+                return True
+        return super().event(event)
 
     # Prevent scrolling without focus
     def wheelEvent(self, e):
