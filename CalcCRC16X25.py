@@ -59,6 +59,9 @@ class CalcCRC16X25():
             case 3:
                 data    = "34A00000000605D800000000"
                 dataCmp = "34A00000000605D8000000000CC2"
+            case 4:
+                data    = "34A00000000605FBFD000000"
+                dataCmp = "34A00000000605FBFD000000F543"
 
         crc = self.calcCRC16X25(data)
         data += crc[0]
@@ -73,5 +76,6 @@ class CalcCRC16X25():
         self.__tryCRC(1)
         self.__tryCRC(2)
         self.__tryCRC(3)
+        self.__tryCRC(4)
 
 
