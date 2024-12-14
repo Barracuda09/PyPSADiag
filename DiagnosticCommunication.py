@@ -1,5 +1,5 @@
 """
-   UDSCommunication.py
+   DiagnosticCommunication.py
 
    Copyright (C) 2024 - 2025 Marc Postema (mpostema09 -at- gmail.com)
 
@@ -25,22 +25,66 @@ from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtWidgets import QTextEdit
 
 from SeedKeyAlgorithm import SeedKeyAlgorithm
+from CalcCRC16X25 import CalcCRC16X25
 
-class UDSCommunication(QThread):
+class DiagnosticCommunication(QThread):
     receivedPacketSignal = Signal(list, float)
     outputToTextEditSignal = Signal(str)
     updateZoneDataSignal = Signal(str, str)
     algo = SeedKeyAlgorithm()
+    crcx25 = CalcCRC16X25()
     writeQ = queue.Queue()
     ecuReadZone = ""
     zoneName = ""
     zoneActive = {}
+    protocol = ""
+    keepAlive = ""
+    stopKeepAlive = ""
+    startDiagmode = ""
+    stopDiagmode = ""
+    unlockServiceConfig = ""
+    unlockResponseConfig = ""
+    readSecureTraceability = ""
+    secureTraceability = ""
+    readEcuFaultsMode = ""
+    readZoneTag = ""
+    writeZoneTag = ""
 
-    def __init__(self, serialPort, simulation: bool):
-        super(UDSCommunication, self).__init__()
+    def __init__(self, serialPort, protocol: str(), simulation: bool()):
+        super(DiagnosticCommunication, self).__init__()
         self.serialPort = serialPort
         self.simulation = simulation
         self.isRunning = False
+        self.protocol = protocol
+        if self.protocol == "uds":
+            #self.crcx25.testCrc()
+            self.keepAlive = "KU"
+            self.stopKeepAlive = "S"
+            self.startDiagmode = "1003"
+            self.stopDiagmode = "1001"
+            self.unlockServiceConfig = "2703"
+            self.unlockResponseConfig = "2704"
+            self.readSecureTraceability = "222901"
+            self.secureTraceability = "2E2901FD000000010101"
+            self.readEcuFaultsMode = "190209"
+            self.readZoneTag = "22"
+            self.writeZoneTag = "2E"
+        elif self.protocol == "kwp_is":
+            self.keepAlive = "KK"
+            self.stopKeepAlive = "S"
+            self.startDiagmode = "81"
+            self.stopDiagmode = "82"
+            self.unlockServiceConfig = "2783"
+            self.unlockResponseConfig = "2784"
+            self.readSecureTraceability = ""
+            self.secureTraceability = ""
+            self.readEcuFaultsMode = "190209"
+            self.readZoneTag = "21"
+            self.writeZoneTag = "34"
+        else:
+            print("Incorrect protocol: " + protocol)
+            exit()
+
         #self.algo.testCalculations()
         #receiveData = "670311BF5E67"
         #key = "D91C"
@@ -78,10 +122,12 @@ class UDSCommunication(QThread):
         if cmd[:4] == "2704":
             return "6704"
         if cmd[:2] == "22":
-            if cmd[2:6] == "F0FE":
-                return "62" + cmd[2:6] + "FFFF000006E030082202061300FFFFFF0002000002948185"
+            if  cmd[2:6] == "2901":
+                 return "62" + cmd[2:6] + "FD000000010101"
+            elif cmd[2:6] == "F0FE":
+                return "62" + cmd[2:6] + "FFFF000006E0280220032812000D03140002000002940165"
             elif cmd[2:6] == "F080":
-                return "62" + cmd[2:6] + "9807513880000698261526801900FFFFFF01FFFFFFFF"
+                return "62" + cmd[2:6] + "9807513880000698261534801800FFFFFF01FFFFFFFF"
             elif cmd[2:6] == "F190":
                 return "62" + cmd[2:6] + "56584B5550484E4B4B4C34323431383933"
             elif cmd[2:6] == "F18B":
@@ -91,6 +137,32 @@ class UDSCommunication(QThread):
             return "62" + cmd[2:6] + "12345679"
         if cmd[:2] == "2E":
             return "6E" + cmd[2:6]
+        if cmd == "KK":
+            return "OK"
+        if cmd == "81":
+            return "C1D08F"
+        if cmd == "82":
+            return "C2"
+        if cmd == "2783":
+            return "67836B0A71E0"
+        if cmd[:4] == "2784":
+            return "6784"
+        if cmd[:2] == "21":
+            if cmd[2:4] == "FE":
+                return "61" + cmd[2:4] + "FFFF000006E030082202061300FFFFFF0002000002948185"
+            elif cmd[2:4] == "A0":
+                return "61" + cmd[2:4] + "05C0FB0002000001"
+            elif cmd[2:4] == "80":
+                return "61" + cmd[2:4] + "9807513880000698261526801900FFFFFF01FFFFFFFF"
+            elif cmd[2:4] == "90":
+                return "61" + cmd[2:4] + "56584B5550484E4B4B4C34323431383933"
+            elif cmd[2:4] == "8B":
+                return "61" + cmd[2:4] + "090314"
+            elif cmd[2:4] == "8C":
+                return "61" + cmd[2:4] + "29400895"
+            return "61" + cmd[2:4] + "12345679"
+        if cmd[:2] == "34":
+            return "6E" + cmd[2:4]
         return "Timeout"
 
     def writeToOutputView(self, text: str, reply: str = None):
@@ -114,35 +186,37 @@ class UDSCommunication(QThread):
         return receiveData
 
     def startSendingKeepAlive(self):
-        receiveData = self.writeECUCommand("KU")
+        receiveData = self.writeECUCommand(self.keepAlive)
         if receiveData != "OK":
             self.writeToOutputView("ECU Send keep-alive: Failed", receiveData)
             return False
         return True
 
     def stopSendingKeepAlive(self):
-        receiveData = self.writeECUCommand("S")
+        receiveData = self.writeECUCommand(self.stopKeepAlive)
         if receiveData != "OK":
             self.writeToOutputView("Reset ECU Keep Alive: Failed", receiveData)
             return False
         return True
 
     def startDiagnosticMode(self):
-        startDiagmode = "1003"
-        receiveData = self.writeECUCommand(startDiagmode)
-        if len(receiveData) != 12 or receiveData[:4] != "5003":
-            self.writeToOutputView("Open Diagnostic session: Failed", receiveData)
-            return False
-        return True
+        receiveData = self.writeECUCommand(self.startDiagmode)
+        if len(receiveData) == 12 and receiveData[:4] == "5003":
+            return True
+        elif len(receiveData) == 6 and receiveData[:2] == "C1":
+            return True
+        self.writeToOutputView("Open Diagnostic session: Failed", receiveData)
+        return False
 
     def stopDiagnosticMode(self):
         self.stopSendingKeepAlive()
-        stopDiagmode = "1001"
-        receiveData = self.writeECUCommand(stopDiagmode)
-        if len(receiveData) != 12 or receiveData[:4] != "5001":
-            self.writeToOutputView("Closing Diagnostic session: Failed", receiveData)
-            return False
-        return True
+        receiveData = self.writeECUCommand(self.stopDiagmode)
+        if len(receiveData) == 12 and receiveData[:4] == "5001":
+            return True
+        elif len(receiveData) == 2 and receiveData[:2] == "C2":
+            return True
+        self.writeToOutputView("Closing Diagnostic session: Failed", receiveData)
+        return False
 
     def setupSketchSeedForDiagnoticMode(self, key: str):
         sketchSeedSetup = ":" + key + ":03:03"
@@ -159,10 +233,9 @@ class UDSCommunication(QThread):
         return True
 
     def unlockingServiceForConfiguration(self, key: str):
-        unlockServiceConfig = "2703"
         tryCnt = 8
         while tryCnt:
-            receiveData = self.writeECUCommand(unlockServiceConfig)
+            receiveData = self.writeECUCommand(self.unlockServiceConfig)
             if len(receiveData) != 12:
                 if len(receiveData) >= 6:
                     # Unlocking - Required time delay not expired
@@ -174,8 +247,9 @@ class UDSCommunication(QThread):
                         tryCnt = 0
                 else:
                     tryCnt = 0
-            elif len(receiveData) == 12 and receiveData[:4] == "6703":
-                break;
+            elif len(receiveData) == 12:
+                if receiveData[:4] == "6703" or receiveData[:4] == "6783":
+                    break;
 
         if tryCnt == 0:
             self.writeToOutputView("ECU Unlock Request: Failed", receiveData)
@@ -186,16 +260,17 @@ class UDSCommunication(QThread):
         return seed
 
     def sendUnlockingResponseForConfiguration(self, seed: str):
-        unlockResponseConfig = "2704"
-        reply = unlockResponseConfig + seed
+        reply = self.unlockResponseConfig + seed
         receiveData = self.writeECUCommand(reply)
-        if len(receiveData) != 4 or receiveData[:4] != "6704":
-            if receiveData == "7F2735":
-                self.writeToOutputView("ECU unlock: Failed, ECU Reports Invalid Key", receiveData)
-            else:
-                self.writeToOutputView("ECU unlock: Failed", receiveData)
-            return False
-        return True
+        if len(receiveData) == 4:
+            if receiveData[:4] == "6704" or receiveData[:4] == "6784":
+                return True
+
+        if receiveData == "7F2735":
+            self.writeToOutputView("ECU unlock: Failed, ECU Reports Invalid Key", receiveData)
+        else:
+            self.writeToOutputView("ECU unlock: Failed", receiveData)
+        return False
 
     def writeZoneConfigurationCommand(self, cmd: str):
         receiveData = self.writeECUCommand(cmd)
@@ -220,8 +295,9 @@ class UDSCommunication(QThread):
 
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
         if self.serialPort.isOpen():
-            readSecureTraceability = "222901"
-            secureTraceability = "2E2901FD000000010101"
+            if self.protocol == "kwp_is" and not(self.simulation):
+                self.writeToOutputView("Writing KWP ECU: Not Supported yet!", receiveData)
+                return
 
             receiveData = self.writeECUCommand(ecuID)
             if receiveData != "OK":
@@ -272,8 +348,8 @@ class UDSCommunication(QThread):
             for tabList in valueList:
                 for zone in tabList:
                     time.sleep(0.2)
-                    writeCmd = "2E" + zone[0] + zone[1]
-                    readCmd = "22" + zone[0]
+                    writeCmd = self.writeZoneTag + zone[0] + zone[1]
+                    readCmd = self.readZoneTag + zone[0]
                     time.sleep(0.2)
                     receiveData = self.writeECUCommand(readCmd)
                     time.sleep(0.2)
@@ -281,9 +357,9 @@ class UDSCommunication(QThread):
                     time.sleep(0.2)
                     receiveData = self.writeECUCommand(readCmd)
 
-            receiveData = self.writeECUCommand(readSecureTraceability)
+            receiveData = self.writeECUCommand(self.readSecureTraceability)
             if writeSecureTraceability:
-                receiveData = self.writeECUCommand(secureTraceability)
+                receiveData = self.writeECUCommand(self.secureTraceability)
                 if len(receiveData) != 6 or receiveData[:2] != "6E":
                     self.writeToOutputView("Configuration Write of Secure Traceability Zone: Failed", receiveData)
             else:
@@ -311,28 +387,22 @@ class UDSCommunication(QThread):
         if self.serialPort.isOpen():
             self.writeToOutputView("Read ECU Faults...")
 
-            startDiagmode = "1003"
-            stopDiagmode = "1001"
-            readEcuFaults = "190209"
-
             receiveData = self.writeECUCommand(ecuID)
             if receiveData != "OK":
                 self.writeToOutputView("ECU Not selected!")
                 return
 
-            receiveData = self.writeECUCommand(startDiagmode)
-            if len(receiveData) != 12 or receiveData[:4] != "5003":
-                self.writeToOutputView("Open Diagnostic session: Failed")
+            if not self.startDiagnosticMode():
                 return
 
-            receiveData = self.writeECUCommand(readEcuFaults)
+            receiveData = self.writeECUCommand(self.readEcuFaultsMode)
             if len(receiveData) < 4:
                 self.writeToOutputView("Reading ECU Faults: Failed")
 
-            receiveData = self.writeECUCommand(stopDiagmode)
-            if len(receiveData) != 12 or receiveData[:4] != "5001":
-                self.writeToOutputView("Closing Diagnostic session: Failed")
+            if not self.stopDiagnosticMode():
                 return
+
+            self.writeToOutputView("Reading ECU Faults: Successful")
 
     def setZonesToRead(self, ecuID: str, lin: str, zoneList: dict):
         if not self.serialPort.isOpen():
@@ -341,15 +411,14 @@ class UDSCommunication(QThread):
         if self.isRunning == False:
             self.start();
 
-        startDiagmode = "1003"
-        stopDiagmode = "1001"
-
         self.writeQ.put(ecuID)
         if lin != None and len(lin) > 1:
             self.writeQ.put(lin)
-        self.writeQ.put(startDiagmode)
+        self.writeQ.put(self.keepAlive)
+        self.writeQ.put(self.startDiagmode)
         self.writeQ.put(zoneList)
-        self.writeQ.put(stopDiagmode)
+        self.writeQ.put(self.stopKeepAlive)
+        self.writeQ.put(self.stopDiagmode)
 
     def parseReadResponse(self, data: str):
         if len(data) == 0:
@@ -358,13 +427,20 @@ class UDSCommunication(QThread):
 
         decodedData = data;
         if len(decodedData) > 4:
-            if decodedData[0: + 2] == "62" and len(decodedData) > 6:
+            if (decodedData[0:2] == "62" or decodedData[0:2] == "61") and len(decodedData) > 6:
                 # Get only response data
-                answerZone = decodedData[2: + 6]
+                answerZone = ""
+                answer = ""
+                if decodedData[0:2] == "62":
+                    answerZone = decodedData[2:6]
+                    answer = decodedData[6:]
+                elif decodedData[0:2] == "61":
+                    answerZone = decodedData[2:4]
+                    answer = decodedData[4:]
+
                 if answerZone.upper() != self.ecuReadZone.upper():
-                    self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", ""], time.time())
+                    self.receivedPacketSignal.emit([self.ecuReadZone, "Requesed zone different from received zone", decodedData], time.time())
                     return data
-                answer = decodedData[6:]
 
                 self.receivedPacketSignal.emit([self.ecuReadZone, answer, self.zoneName], time.time())
                 self.updateZoneDataSignal.emit(self.ecuReadZone, answer)
@@ -389,7 +465,7 @@ class UDSCommunication(QThread):
                 self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
                 self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error")
         elif len(decodedData) <= 2:
-            if decodedData[0: + 2] == "OK":
+            if decodedData[0:2] == "OK":
                 self.receivedPacketSignal.emit([self.ecuReadZone, "OK", self.zoneName], time.time())
             else:
                 self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
@@ -408,7 +484,7 @@ class UDSCommunication(QThread):
                         self.zoneName = str(self.zoneActive["name"])
 
                         # Send and receive data
-                        ecuReadZoneSend = "22" + self.ecuReadZone
+                        ecuReadZoneSend = self.readZoneTag + self.ecuReadZone
                         receiveData = self.writeECUCommand(ecuReadZoneSend)
                         self.parseReadResponse(receiveData);
                         self.msleep(100)
@@ -418,12 +494,21 @@ class UDSCommunication(QThread):
                     self.ecuReadZone = str(element).upper()
 
                     # Send and receive data
-                    command = str(element);
-                    receiveData = self.writeECUCommand(command)
+                    if self.ecuReadZone == self.startDiagmode:
+                        # Timeout on open Diag Mode, No ECU? then stop reading
+                        if not self.startDiagnosticMode():
+                            self.writeToOutputView("Open Diagnostic session: Failed/Stopping", receiveData)
+                            self.emptyQueue()
+                            self.isRunning = False
+                    elif self.ecuReadZone == self.stopDiagmode:
+                        self.stopDiagnosticMode()
+                    elif self.ecuReadZone == self.keepAlive:
+                        self.startSendingKeepAlive()
+                    elif self.ecuReadZone == self.stopKeepAlive:
+                        self.stopSendingKeepAlive()
+                    else:
+                        receiveData = self.writeECUCommand(self.ecuReadZone)
 
-                    # Timeout on open Diag Mode, No ECU? then stop reading
-                    if element == "1003" and receiveData == "Timeout":
-                        self.writeToOutputView("Open Diagnostic session: Failed/Stopping", receiveData)
-                        self.emptyQueue()
             else:
-                self.msleep(100)
+                self.writeToOutputView("Reading ECU Zones: Successful")
+                self.isRunning = False

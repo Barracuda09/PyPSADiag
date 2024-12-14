@@ -31,7 +31,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBo
 
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
-from UDSCommunication import UDSCommunication
+from DiagnosticCommunication import DiagnosticCommunication
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
@@ -94,10 +94,16 @@ class MainWindow(QMainWindow):
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
         # UDS
-        self.udsCommunication = UDSCommunication(self.serialController, self.simulation)
+        self.udsCommunication = DiagnosticCommunication(self.serialController, "uds", self.simulation)
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.udsCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+
+        # KWP_IS
+        self.kwpCommunication = DiagnosticCommunication(self.serialController, "kwp_is", self.simulation)
+        self.kwpCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
+        self.kwpCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
+        self.kwpCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
 
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
@@ -247,6 +253,14 @@ class MainWindow(QMainWindow):
                     zone = {}
                     zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
                     self.udsCommunication.setZonesToRead(ecu, lin, zone)
+            elif self.ecuObjectList["protocol"] == "kwp_is":
+                # Read Requested Zone or ALL Zones from ECU
+                if self.ui.ecuComboBox.currentIndex() == 0:
+                    self.kwpCommunication.setZonesToRead(ecu, lin, self.ecuObjectList["zones"])
+                else:
+                    zone = {}
+                    zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
+                    self.kwpCommunication.setZonesToRead(ecu, lin, zone)
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
@@ -287,6 +301,8 @@ class MainWindow(QMainWindow):
             if self.ecuObjectList["protocol"] == "uds":
 #                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
                 self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
+            elif self.ecuObjectList["protocol"] == "kwp_is":
+                self.kwpCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
