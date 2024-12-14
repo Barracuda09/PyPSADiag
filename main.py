@@ -77,6 +77,7 @@ class MainWindow(QMainWindow):
         self.ui.writeZone.clicked.connect(self.writeZone)
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
+        self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
 
@@ -143,6 +144,10 @@ class MainWindow(QMainWindow):
     def writeToOutputView(self, text: str):
         self.ui.output.append(str(datetime.now()) + " --|  " + text)
         self.ui.output.viewport().repaint()
+
+    @Slot()
+    def searchConnectPort(self):
+        self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
 
     @Slot()
     def connectPort(self):
