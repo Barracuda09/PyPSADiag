@@ -21,6 +21,7 @@
 
 import time
 import queue
+import json
 from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtWidgets import QTextEdit
 
@@ -159,10 +160,11 @@ class DiagnosticCommunication(QThread):
             elif cmd[2:4] == "8B":
                 return "61" + cmd[2:4] + "090314"
             elif cmd[2:4] == "8C":
-                return "61" + cmd[2:4] + "29400895"
+                #return "61" + cmd[2:4] + "29400895"
+                return "7F2112"
             return "61" + cmd[2:4] + "12345679"
         if cmd[:2] == "34":
-            return "6E" + cmd[2:4]
+            return "7402" + cmd[2:4]
         return "Timeout"
 
     def writeToOutputView(self, text: str, reply: str = None):
@@ -272,8 +274,9 @@ class DiagnosticCommunication(QThread):
             self.writeToOutputView("ECU unlock: Failed", receiveData)
         return False
 
-    def writeZoneConfigurationCommand(self, cmd: str):
-        receiveData = self.writeECUCommand(cmd)
+    def writeUDSZoneConfigurationCommand(self, zone: str(), data: str()):
+        writeCmd = self.writeZoneTag + zone + data
+        receiveData = self.writeECUCommand(writeCmd)
         if len(receiveData) == 6 and receiveData[:2] == "6E":
             return True
 
@@ -292,6 +295,30 @@ class DiagnosticCommunication(QThread):
         else:
             self.writeToOutputView("Write Configuration Zone: Failed", receiveData)
             return False
+
+    def writeKWPZoneConfigurationCommand(self, zone: str(), data: str()):
+        addrHigh = "00"
+        addrMid = "00"
+        addrLow = "00"
+        address = addrHigh + addrMid + addrLow
+        securedTraceability = "FD000000"
+        indexTelecodage = data[0:2]
+        zoneData = data[4:6]
+        subCmd = indexTelecodage + zoneData + securedTraceability
+        size = "%0.2X" % int((len(subCmd) / 2))
+        cmd = self.writeZoneTag + zone + address + size + subCmd
+        crc = self.crcx25.calcCRC16X25(cmd)
+        cmd += crc[0]
+        cmd += crc[1]
+        receiveData = self.writeECUCommand(cmd)
+        if len(receiveData) >= 4:
+            if receiveData[0:4] == "7402":
+                return True
+            elif receiveData[0:4] == "74A0":
+                self.writeToOutputView("Write Configuration Zone: Failed (Incorrect Checksum)", receiveData)
+
+        self.writeToOutputView("Write Configuration Zone: Failed", receiveData)
+        return False
 
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
         if self.serialPort.isOpen():
@@ -327,7 +354,6 @@ class DiagnosticCommunication(QThread):
                 if not self.setupSketchSeedForDiagnoticMode(key):
                     self.stopDiagnosticMode()
                     return
-
             else:
                 seed = self.unlockingServiceForConfiguration(key)
                 if len(seed) == 0:
@@ -348,22 +374,25 @@ class DiagnosticCommunication(QThread):
             for tabList in valueList:
                 for zone in tabList:
                     time.sleep(0.2)
-                    writeCmd = self.writeZoneTag + zone[0] + zone[1]
                     readCmd = self.readZoneTag + zone[0]
                     time.sleep(0.2)
                     receiveData = self.writeECUCommand(readCmd)
                     time.sleep(0.2)
-                    self.writeZoneConfigurationCommand(writeCmd)
+                    if self.protocol == "uds":
+                        self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
+                    elif self.protocol == "kwp_is":
+                        self.writeKWPZoneConfigurationCommand(zone[0], zone[1])
                     time.sleep(0.2)
                     receiveData = self.writeECUCommand(readCmd)
 
-            receiveData = self.writeECUCommand(self.readSecureTraceability)
-            if writeSecureTraceability:
-                receiveData = self.writeECUCommand(self.secureTraceability)
-                if len(receiveData) != 6 or receiveData[:2] != "6E":
-                    self.writeToOutputView("Configuration Write of Secure Traceability Zone: Failed", receiveData)
-            else:
-                self.writeToOutputView("NO Secure Traceability is Written!!")
+            if self.protocol == "uds":
+                receiveData = self.writeECUCommand(self.readSecureTraceability)
+                if writeSecureTraceability:
+                    receiveData = self.writeECUCommand(self.secureTraceability)
+                    if len(receiveData) != 6 or receiveData[:2] != "6E":
+                        self.writeToOutputView("Configuration Write of Secure Traceability Zone: Failed", receiveData)
+                else:
+                    self.writeToOutputView("NO Secure Traceability is Written!!")
 
             if not self.stopDiagnosticMode():
                 return
@@ -455,9 +484,20 @@ class DiagnosticCommunication(QThread):
             elif decodedData[0: + 4] == "6704":
                 self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for configuration", self.zoneName], time.time())
             elif decodedData[0: + 2] == "7F":
-                if len(decodedData) >= 6 and decodedData[0: + 6] == "7F2231":
-                    self.receivedPacketSignal.emit([self.ecuReadZone, "Request out of range", self.zoneName], time.time())
-                    self.updateZoneDataSignal.emit(self.ecuReadZone, "Request out of range")
+                file = open("./data/ErrorResponse.json", 'r', encoding='utf-8')
+                jsonFile = file.read()
+                errorList = json.loads(jsonFile.encode("utf-8"))
+
+                if len(decodedData) >= 6:
+                    error = decodedData[4:6]
+                    cmd = decodedData[2:4]
+                    if error in errorList:
+                        error = "Error: (" + cmd + ") " + errorList[error]
+                        self.receivedPacketSignal.emit([self.ecuReadZone, error, self.zoneName], time.time())
+                        self.updateZoneDataSignal.emit(self.ecuReadZone, error)
+                    else:
+                        self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", self.zoneName], time.time())
+                        self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response")
                 else:
                     self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", self.zoneName], time.time())
                     self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response")

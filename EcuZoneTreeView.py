@@ -203,7 +203,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         cellItems = self.findItems(zone, Qt.MatchExactly)
         if cellItems:
             cellItem = cellItems[0]
-            if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unkown Error" or data == "Timeout":
+            if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unkown Error" or data == "Timeout" or (len(data) >= 6 and data[0:6] == "Error:"):
                 self.markItemNoResponse(cellItem)
                 return
             cellItem.changeZoneOption(cellItem, data, valueType)
