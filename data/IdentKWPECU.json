@@ -89,15 +89,7 @@
       }
     ]
   },
-  "8B": {
-    "id": "Production_Date",
-    "tab": "ident",
-    "name": "Production Date",
-    "byte": 0,
-    "type": "string_date",
-    "form_type": "string"
-  },
-  "8C": {
+  "82": {
     "id": "Serial_Number",
     "tab": "ident",
     "name": "Serial Number",
