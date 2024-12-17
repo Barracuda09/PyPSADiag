@@ -322,10 +322,6 @@ class DiagnosticCommunication(QThread):
 
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
         if self.serialPort.isOpen():
-            if self.protocol == "kwp_is" and not(self.simulation):
-                self.writeToOutputView("Writing KWP ECU: Not Supported yet!", receiveData)
-                return
-
             receiveData = self.writeECUCommand(ecuID)
             if receiveData != "OK":
                 self.writeToOutputView("Selecting ECU: Failed", receiveData)
@@ -336,9 +332,9 @@ class DiagnosticCommunication(QThread):
                 if receiveData != "OK":
                     self.writeToOutputView("Selecting LIN ECU: Failed")
                     return
-
-            if not self.stopDiagnosticMode():
-                return
+# Not needed
+#            if not self.stopDiagnosticMode():
+#                return
 
             time.sleep(0.5)
 
