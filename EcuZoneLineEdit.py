@@ -153,7 +153,7 @@ class EcuZoneLineEdit(QLineEdit):
             txt = data[byteNr:byteNr + ran]
             if "type" in self.zoneObject:
                 if "zi_cal" == self.zoneObject["type"]:
-                    txt = "98" + txt + "80"
+                    txt = "96" + txt + "80"
                 elif "zi_sup" == self.zoneObject["type"]:
                     file = open("./data/ECU_SUPPLIERS.json", 'r', encoding='utf-8')
                     jsonFile = file.read()

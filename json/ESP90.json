@@ -6,7 +6,8 @@
     "key_type": "multi",
     "keys": {
         "key1": "60A5",
-        "key2": "BC93"
+        "key2": "BC93",
+        "key3": "2305"
     },
     "coding": true,
     "errors": true,

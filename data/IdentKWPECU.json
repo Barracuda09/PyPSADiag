@@ -53,28 +53,28 @@
         "form_type": "string"
       },
       {
-        "name": "Telecoding Counter",
+        "name": "Download Counter",
         "byte": 20,
         "byte_range": 1,
         "type": "raw",
         "form_type": "string"
       },
       {
-        "name": "Telecoding Date",
+        "name": "Download Date",
         "byte": 13,
         "byte_range": 3,
         "type": "string_date",
         "form_type": "string"
       },
       {
-        "name": "Calibration",
+        "name": "Calibration Reference",
         "byte": 21,
         "byte_range": 3,
         "type": "zi_cal",
         "form_type": "string"
       },
       {
-        "name": "Calibration Reference",
+        "name": "Calibration Version",
         "byte": 10,
         "byte_range": 1,
         "type": "raw",
