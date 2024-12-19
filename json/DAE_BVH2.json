@@ -70,7 +70,7 @@
           }
         ]
       },
-      "CFG_DAE_LKA_10": {
+      "CFG_DAE_LPA_10": {
         "name": "Presense of Lane Positioning Assist",
         "byte": 2,
         "type": "bool",
@@ -87,7 +87,7 @@
           }
         ]
       },
-      "CFG_DAE_LPA_20": {
+      "CFG_DAE_LKA_20": {
         "name": "Presense of Lane Keeping Assist",
         "byte": 2,
         "type": "bool",
