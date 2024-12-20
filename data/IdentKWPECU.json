@@ -8,7 +8,14 @@
     "form_type": "multi",
     "params": [
       {
-        "name": "Hardware Number",
+        "name": "Equipment Part Number",
+        "byte": 0,
+        "byte_range": 5,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Equipment Additional Reference",
         "byte": 7,
         "byte_range": 5,
         "type": "raw",
