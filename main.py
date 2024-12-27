@@ -45,6 +45,7 @@ class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
     ecuObjectList = {}
     simulation = False
+    scan = False
     stream = None
     csvWriter = None
 
@@ -54,6 +55,8 @@ class MainWindow(QMainWindow):
             for arg in sys.argv:
                 if arg == "--simu":
                     self.simulation = True
+                if arg == "--scan":
+                    self.scan = True
                 if arg == "--checkcalc":
                     calc = SeedKeyAlgorithm()
                     calc.testCalculations()
@@ -62,7 +65,7 @@ class MainWindow(QMainWindow):
                     print("Use --simu   For simulation")
                     exit()
 
-        self.ui.setupGUi(self)
+        self.ui.setupGUi(self, self.scan)
 
         #converter = FileConverter()
         #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
@@ -82,7 +85,7 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
 
         # Setup serial controller
-        self.serialController = SerialPort()
+        self.serialController = SerialPort(self.simulation)
         self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
 
         # Set initial button states
@@ -95,13 +98,13 @@ class MainWindow(QMainWindow):
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
         # UDS
-        self.udsCommunication = DiagnosticCommunication(self.serialController, "uds", self.simulation)
+        self.udsCommunication = DiagnosticCommunication(self.serialController, "uds")
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.udsCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
 
         # KWP_IS
-        self.kwpCommunication = DiagnosticCommunication(self.serialController, "kwp_is", self.simulation)
+        self.kwpCommunication = DiagnosticCommunication(self.serialController, "kwp_is")
         self.kwpCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.kwpCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwpCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)

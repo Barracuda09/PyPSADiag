@@ -30,7 +30,7 @@ class CalcCRC16X25():
         byteData = []
         for i in range(0, len(data), 2):
             byteData.append(int(data[i:i + 2], 16))
-        crc = 0xFFFF;
+        crc = 0xFFFF
         for i in range(0, len(byteData)):
             crc ^= (byteData[i] & 0xFF) << 0;
             for i in range(0, 8):
@@ -38,7 +38,7 @@ class CalcCRC16X25():
                     crc = (crc >> 1) ^ 0x8408
                 else:
                     crc = crc >> 1
-        crc = crc ^ 0xffff;
+        crc = crc ^ 0xFFFF
         return ["%0.2X" % (crc & 0xFF), "%0.2X" % ((crc >> 8) & 0xFF)]
 
 

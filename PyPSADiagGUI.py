@@ -35,7 +35,7 @@ from EcuZoneTreeView  import EcuZoneTreeView
 
 class PyPSADiagGUI(object):
 
-    def setupGUi(self, MainWindow):
+    def setupGUi(self, MainWindow, scan: bool()):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
@@ -47,10 +47,6 @@ class PyPSADiagGUI(object):
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
         self.centralwidget.setSizePolicy(sizePolicy)
-
-        self.frame = QFrame(self.centralwidget)
-        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
         self.command = QLineEdit()
         self.output = QTextEdit()
@@ -86,13 +82,18 @@ class PyPSADiagGUI(object):
         self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
 #        self.useSketchSeedGenerator = QCheckBox()
 #        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
-        self.treeView = EcuZoneTreeView(self.frame)
+        self.treeView = EcuZoneTreeView(None)
+        if scan:
+            self.scanTreeView = EcuZoneTreeView(None)
 
+        ###################################################
         # Setup Top Left Layout
         self.topLeftLayout = QVBoxLayout()
         self.topLeftLayout.addWidget(self.command)
         self.topLeftLayout.addWidget(self.output)
+        ###################################################
 
+        ###################################################
         # Setup Top Right Layout
         self.topRightLayout = QVBoxLayout()
         self.topRightLayout.addWidget(self.sendCommand)
@@ -105,12 +106,16 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        ###################################################
 
-        # Setup Bottom Left Layout
+        ###################################################
+        # Setup Bottom Left Layout (TreeView)
         self.bottomLeftLayout = QVBoxLayout()
         self.bottomLeftLayout.addWidget(self.treeView)
+        ###################################################
 
-        # Setup Bottom Right Layout
+        ###################################################
+        # Setup Bottom Right Layout (Buttons)
         self.bottomRightLayout = QVBoxLayout()
         self.bottomRightLayout.addWidget(self.openZoneFile)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
@@ -122,33 +127,72 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
         self.bottomRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        ###################################################
 
+        ###################################################
         # Add Top Left, Right Layout -> Main Top Layout
-        self.topLayout = QHBoxLayout()
         self.topLayout = QHBoxLayout()
         self.topLayout.addLayout(self.topLeftLayout)
         self.topLayout.addLayout(self.topRightLayout)
+        ###################################################
 
+        ###################################################
         # Add Bottom Left, Right Layout -> Main Bottom Layout
-        self.bottomLayout = QHBoxLayout()
         self.bottomLayout = QHBoxLayout()
         self.bottomLayout.addLayout(self.bottomLeftLayout)
         self.bottomLayout.addLayout(self.bottomRightLayout)
+        ###################################################
 
-        # Setup splitter
-        self.splitter = QSplitter(self.frame)
-        self.splitter.setOrientation(Qt.Orientation.Vertical)
+        ###################################################
+        # Setup splitter Vertical (Top-Bottom)
+        self.splitterTopBottom = QSplitter()
+        self.splitterTopBottom.setOrientation(Qt.Orientation.Vertical)
 
         self.topWidget = QWidget()
         self.topWidget.setLayout(self.topLayout)
-        self.splitter.addWidget(self.topWidget)
+        self.splitterTopBottom.addWidget(self.topWidget)
 
         self.bottomWidget = QWidget()
         self.bottomWidget.setLayout(self.bottomLayout)
-        self.splitter.addWidget(self.bottomWidget)
+        self.splitterTopBottom.addWidget(self.bottomWidget)
+        ###################################################
+
+        if scan:
+            ###################################################
+            # Setup Main Left Layout
+            self.mainLeftLayout = QHBoxLayout()
+            self.mainLeftLayout.addWidget(self.scanTreeView)
+            ###################################################
+
+            ###################################################
+            # Setup Main Right Layout
+            self.mainRightLayout = QHBoxLayout()
+            self.mainRightLayout.addWidget(self.splitterTopBottom)
+            ###################################################
+
+            ###################################################
+            # Setup splitter Horizontal (Left-Right)
+            self.splitterLeftRight = QSplitter()
+            self.splitterLeftRight.setOrientation(Qt.Orientation.Horizontal)
+
+            self.mainLeftWidget = QWidget()
+            self.mainLeftWidget.setLayout(self.mainLeftLayout)
+            self.splitterLeftRight.addWidget(self.mainLeftWidget)
+
+            self.mainRightWidget = QWidget()
+            self.mainRightWidget.setLayout(self.mainRightLayout)
+            self.splitterLeftRight.addWidget(self.mainRightWidget)
+            ###################################################
+
+        self.frame = QFrame(self.centralwidget)
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
         self.frameLayout = QHBoxLayout()
-        self.frameLayout.addWidget(self.splitter)
+        if scan:
+            self.frameLayout.addWidget(self.splitterLeftRight)
+        else:
+            self.frameLayout.addWidget(self.splitterTopBottom)
         self.frame.setLayout(self.frameLayout)
 
         # Setup Main Frame

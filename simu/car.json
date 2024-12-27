@@ -1,0 +1,18 @@
+{
+	"74A:64A": {
+		"protocol": "uds",
+		"file": "./simu/CVM3.csv"
+	},
+	"752:652": {
+		"protocol": "uds",
+		"file": "./simu/BSI2010_EV.csv"
+	},
+	"75D:65D": {
+		"protocol": "uds",
+		"file": "./simu/AAS.csv"
+	},
+	"6B5:695": {
+		"protocol": "kwp_is",
+		"file": "./simu/DAE_BVH2.csv"
+	}
+}

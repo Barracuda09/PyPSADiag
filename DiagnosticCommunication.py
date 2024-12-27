@@ -51,10 +51,9 @@ class DiagnosticCommunication(QThread):
     readZoneTag = ""
     writeZoneTag = ""
 
-    def __init__(self, serialPort, protocol: str(), simulation: bool()):
+    def __init__(self, serialPort, protocol: str()):
         super(DiagnosticCommunication, self).__init__()
         self.serialPort = serialPort
-        self.simulation = simulation
         self.isRunning = False
         self.protocol = protocol
         if self.protocol == "uds":
@@ -105,68 +104,6 @@ class DiagnosticCommunication(QThread):
             except:
                 continue
 
-    def __simulateAnswer(self, cmd: str):
-        if cmd[:1] == ">":
-            return "OK"
-        if cmd == "KU":
-            return "OK"
-        if cmd == "S":
-            return "OK"
-        if cmd[:1] == ":":
-            return "6704"
-        if cmd == "1003":
-            return "500300C80014"
-        if cmd == "1001":
-            return "500100C80014"
-        if cmd == "2703":
-            return "67036B0A71E0"
-        if cmd[:4] == "2704":
-            return "6704"
-        if cmd[:2] == "22":
-            if  cmd[2:6] == "2901":
-                 return "62" + cmd[2:6] + "FD000000010101"
-            elif cmd[2:6] == "F0FE":
-                return "62" + cmd[2:6] + "FFFF000006E0280220032812000D03140002000002940165"
-            elif cmd[2:6] == "F080":
-                return "62" + cmd[2:6] + "9807513880000698261534801800FFFFFF01FFFFFFFF"
-            elif cmd[2:6] == "F190":
-                return "62" + cmd[2:6] + "56584B5550484E4B4B4C34323431383933"
-            elif cmd[2:6] == "F18B":
-                return "62" + cmd[2:6] + "090314"
-            elif cmd[2:6] == "F18C":
-                return "62" + cmd[2:6] + "29400895"
-            return "62" + cmd[2:6] + "12345679"
-        if cmd[:2] == "2E":
-            return "6E" + cmd[2:6]
-        if cmd == "KK":
-            return "OK"
-        if cmd == "81":
-            return "C1D08F"
-        if cmd == "82":
-            return "C2"
-        if cmd == "2783":
-            return "67836B0A71E0"
-        if cmd[:4] == "2784":
-            return "6784"
-        if cmd[:2] == "21":
-            if cmd[2:4] == "FE":
-                return "61" + cmd[2:4] + "FFFF000006E030082202061300FFFFFF0002000002948185"
-            elif cmd[2:4] == "A0":
-                return "61" + cmd[2:4] + "05C0FB0002000001"
-            elif cmd[2:4] == "80":
-                return "61" + cmd[2:4] + "9807513880000698261526801900FFFFFF01FFFFFFFF"
-            elif cmd[2:4] == "90":
-                return "61" + cmd[2:4] + "56584B5550484E4B4B4C34323431383933"
-            elif cmd[2:4] == "8B":
-                return "61" + cmd[2:4] + "090314"
-            elif cmd[2:4] == "8C":
-                #return "61" + cmd[2:4] + "29400895"
-                return "7F2112"
-            return "61" + cmd[2:4] + "12345679"
-        if cmd[:2] == "34":
-            return "7402" + cmd[2:4]
-        return "Timeout"
-
     def writeToOutputView(self, text: str, reply: str = None):
         if reply != None:
             text = text + " (" + reply + ")"
@@ -175,8 +112,6 @@ class DiagnosticCommunication(QThread):
     def writeECUCommand(self, cmd: str):
         self.writeToOutputView("> " + cmd)
         receiveData = self.serialPort.sendReceive(cmd)
-        if self.simulation and receiveData == "Timeout":
-            receiveData = self.__simulateAnswer(cmd)
         # Check response we need to retry reading
         # 7F3E03 (Custom error)
         # 7Fxx78 (Request Correctly Received - Response Pending)
@@ -321,79 +256,82 @@ class DiagnosticCommunication(QThread):
         return False
 
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
-        if self.serialPort.isOpen():
-            receiveData = self.writeECUCommand(ecuID)
+        if not self.serialPort.isOpen():
+            self.receivedPacketSignal.emit(["Serial Port Not Open", "", ""], time.time())
+            return
+
+        receiveData = self.writeECUCommand(ecuID)
+        if receiveData != "OK":
+            self.writeToOutputView("Selecting ECU: Failed", receiveData)
+            return
+
+        if lin != None and len(lin) > 1:
+            receiveData = self.writeECUCommand(lin)
             if receiveData != "OK":
-                self.writeToOutputView("Selecting ECU: Failed", receiveData)
+                self.writeToOutputView("Selecting LIN ECU: Failed")
                 return
-
-            if lin != None and len(lin) > 1:
-                receiveData = self.writeECUCommand(lin)
-                if receiveData != "OK":
-                    self.writeToOutputView("Selecting LIN ECU: Failed")
-                    return
 # Not needed
-#            if not self.stopDiagnosticMode():
-#                return
+#        if not self.stopDiagnosticMode():
+#            return
 
-            time.sleep(0.5)
+        time.sleep(0.5)
 
-            if not self.startSendingKeepAlive():
+        if not self.startSendingKeepAlive():
+            return
+
+        if not self.startDiagnosticMode():
+            return
+
+        time.sleep(0.5)
+
+        if useSketchSeed:
+            if not self.setupSketchSeedForDiagnoticMode(key):
+                self.stopDiagnosticMode()
+                return
+        else:
+            seed = self.unlockingServiceForConfiguration(key)
+            if len(seed) == 0:
+                self.stopDiagnosticMode()
                 return
 
-            if not self.startDiagnosticMode():
+            self.writeToOutputView("Waiting 2 Sec...")
+            time.sleep(2)
+
+            if not self.sendUnlockingResponseForConfiguration(seed):
+                self.stopDiagnosticMode()
                 return
 
-            time.sleep(0.5)
+            if not self.stopSendingKeepAlive():
+                return
 
-            if useSketchSeed:
-                if not self.setupSketchSeedForDiagnoticMode(key):
-                    self.stopDiagnosticMode()
-                    return
+        # Write Zones
+        for tabList in valueList:
+            for zone in tabList:
+                time.sleep(0.2)
+                readCmd = self.readZoneTag + zone[0]
+                time.sleep(0.2)
+                receiveData = self.writeECUCommand(readCmd)
+                time.sleep(0.2)
+                if self.protocol == "uds":
+                    self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
+                elif self.protocol == "kwp_is":
+                    self.writeKWPZoneConfigurationCommand(zone[0], zone[1])
+                time.sleep(0.2)
+                receiveData = self.writeECUCommand(readCmd)
+
+        if self.protocol == "uds":
+            receiveData = self.writeECUCommand(self.readSecureTraceability)
+            if writeSecureTraceability:
+                receiveData = self.writeECUCommand(self.secureTraceability)
+                if len(receiveData) != 6 or receiveData[:2] != "6E":
+                    self.writeToOutputView("Configuration Write of Secure Traceability Zone: Failed", receiveData)
             else:
-                seed = self.unlockingServiceForConfiguration(key)
-                if len(seed) == 0:
-                    self.stopDiagnosticMode()
-                    return
+                self.writeToOutputView("NO Secure Traceability is Written!!")
 
-                self.writeToOutputView("Waiting 2 Sec...")
-                time.sleep(2)
+        if not self.stopDiagnosticMode():
+            return
 
-                if not self.sendUnlockingResponseForConfiguration(seed):
-                    self.stopDiagnosticMode()
-                    return
-
-                if not self.stopSendingKeepAlive():
-                    return
-
-            # Write Zones
-            for tabList in valueList:
-                for zone in tabList:
-                    time.sleep(0.2)
-                    readCmd = self.readZoneTag + zone[0]
-                    time.sleep(0.2)
-                    receiveData = self.writeECUCommand(readCmd)
-                    time.sleep(0.2)
-                    if self.protocol == "uds":
-                        self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
-                    elif self.protocol == "kwp_is":
-                        self.writeKWPZoneConfigurationCommand(zone[0], zone[1])
-                    time.sleep(0.2)
-                    receiveData = self.writeECUCommand(readCmd)
-
-            if self.protocol == "uds":
-                receiveData = self.writeECUCommand(self.readSecureTraceability)
-                if writeSecureTraceability:
-                    receiveData = self.writeECUCommand(self.secureTraceability)
-                    if len(receiveData) != 6 or receiveData[:2] != "6E":
-                        self.writeToOutputView("Configuration Write of Secure Traceability Zone: Failed", receiveData)
-                else:
-                    self.writeToOutputView("NO Secure Traceability is Written!!")
-
-            if not self.stopDiagnosticMode():
-                return
-
-            self.writeToOutputView("Write Successful")
+        self.writeToOutputView("Write Successful")
 
     def rebootEcu(self, ecuID: str):
         if self.serialPort.isOpen():

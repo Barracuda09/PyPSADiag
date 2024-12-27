@@ -22,11 +22,16 @@
 import time
 import serial.tools.list_ports
 
+from EcuSimulation import EcuSimulation
+
 
 class SerialPort():
+    ecuSimulation = EcuSimulation()
+    simulation = False
 
-    def __init__(self):
+    def __init__(self, simulation: bool()):
         self.serialPort = serial.Serial()
+        self.simulation = simulation
 
     # Get available Serial ports and put it in Combobox
     def fillPortNameCombobox(self, combobox):
@@ -37,7 +42,7 @@ class SerialPort():
             combobox.addItem(name)
 
     def isOpen(self):
-        return self.serialPort.isOpen()
+        return self.serialPort.isOpen() or self.simulation == True
 
     def close(self):
         self.serialPort.close()
@@ -85,12 +90,15 @@ class SerialPort():
         return decodedData
 
     def sendReceive(self, cmd: str):
-        cmd += "\n"
-        self.write(cmd.encode("utf-8"))
-        data = self.readRawData()
-        if len(data) == 0:
-            return "Timeout"
+        if self.simulation:
+            return self.ecuSimulation.sendReceive(cmd)
+        else:
+            cmd += "\n"
+            self.write(cmd.encode("utf-8"))
+            data = self.readRawData()
+            if len(data) == 0:
+                return "Timeout"
 
-        i = data.find(b"\r")
-        decodedData = data[:i].decode("utf-8");
-        return decodedData
+            i = data.find(b"\r")
+            decodedData = data[:i].decode("utf-8");
+            return decodedData

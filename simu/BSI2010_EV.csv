@@ -1,0 +1,477 @@
+2100,220022012202220322042205220622082209220A,raw,220022012202220322042205220622082209220A,Gauging group data list
+2101,022C015E003C0A0201808200,raw,022C015E003C0A0201808200,Gauging group data values
+2102,228022812282228322842289,raw,228022812282228322842289,Maintenance group data list
+2103,020C64000600,raw,020C64000600,Maintenance group data values
+2104,2300230123022303230423052306230723082309230A230B230C230D230F231023112312231423172318231A231B231C231D232123232325232623272329232A232D232F233023332334233A23412343234423452346234723482349234A234B234D234E235023512352235323542357236123642365236623682369236C236D236E23702371237223732375237623782379237A237B237C237D237F23802381238723882389238B238C238D238F2392239423952399239B239C239D239E23A023A223A323A623A923AB23AE23B123B223B423B523B623B7242A23BB23BF23C023C223C723C823CC23CD23CE23D023D123D223D323D523D823DB23DC23E223E323E423E523E623E823E923EA23EC23EE23F623F923FC23FD23FE2409240D240E240F241424152418242424252427243124322437243A244C244D24512452245324552456245C2468246C24702471247224732475247A24792478247C247D2481248424862487248A249124922499,raw,2300230123022303230423052306230723082309230A230B230C230D230F231023112312231423172318231A231B231C231D232123232325232623272329232A232D232F233023332334233A23412343234423452346234723482349234A234B234D234E235023512352235323542357236123642365236623682369236C236D236E23702371237223732375237623782379237A237B237C237D237F23802381238723882389238B238C238D238F2392239423952399239B239C239D239E23A023A223A323A623A923AB23AE23B123B223B423B523B623B7242A23BB23BF23C023C223C723C823CC23CD23CE23D023D123D223D323D523D823DB23DC23E223E323E423E523E623E823E923EA23EC23EE23F623F923FC23FD23FE2409240D240E240F241424152418242424252427243124322437243A244C244D24512452245324552456245C2468246C24702471247224732475247A24792478247C247D2481248424862487248A249124922499,Secured configuration settings group data list
+2105,13340000000B8002001221C1011020138500DD021A80A00A5E04400081403020101010201858000200408000000008E0040420401000050812000101008280C09806034040000C0006000040000060E00802010001000000,raw,13340000000B8002001221C1011020138500DD021A80A00A5E04400081403020101010201858000200408000000008E0040420401000050812000101008280C09806034040000C0006000040000060E00802010001000000,Secured configuration settings data values
+2106,Request out of range,cmd answer,7F2231,Secured configuration settings group data list 2
+2200,02,hex,02,Fuel level measurement algorithm
+2201,2C,int,2C,Tank capacity in liters
+2202,015E,int,015E,The resistance of the fuel level sensor with an empty tank
+2203,003C,int,003C,The resistance of the fuel level sensor with a full tank
+2204,0A,int,0A,Gauging law (Alert level)
+2205,02,hex,02,Selecting the mode of monitoring the level of motor oil
+2206,01,hex,01,Source of oil level
+2207,Request out of range,cmd answer,7F2231,Source of oil pressure information
+2208,01,hex,01,Source of oil temperature
+2209,01,hex,01,The presence and type of oil pressure sensor
+220A,04,int,04,Critical fuel level
+2288,Request out of range,cmd answer,7F2231,Threshold Average life
+2300,13,hex,13,The presence of assistance systems for parking / controlling blind areas / control of the strip
+2301,00,bool,00,The presence of a trailer switching unit (TSB)
+2302,00,bool,00,The sound signal of the Assistance System for Parking is supplied with a steering wheel switch
+2303,01,bool,01,Parking system with visual alarm
+2304,01,bool,01,The presence of a passenger airbag
+2305,00,hex,00,Type of installation of security alarms
+2306,01,hex,01,Security alarm volume control system
+2307,00,hex,00,The presence and number of hatches in the roof
+2308,00,bool,00,Car with right handside drive
+2309,00,hex,00,Type of security alarm
+230A,00,hex,00,Key type
+230B,05,int,05,The number of warning signs that seat belts are not fastened
+230C,01,bool,01,Front passenger presence sensor
+230D,01,bool,01,The presence of a seat belt warning bar in the LIN network
+230E,Request out of range,cmd answer,7F2231,Detection of an fixed seat belt of the driver (No Checkmark = yes)
+230F,00,bool,00,Detection of an fixed seat belt of the front passenger (No Checkmark = yes)
+2310,00,bool,00,Detection of an fixed passenger seat belt of the central rear seat (No Checkmark = yes)
+2311,00,bool,00,Detection of an fixed passenger seat belt of the right rear seat (No Checkmark = yes)
+2312,00,bool,00,Detection of an fixed passenger seat belt of the left rear seat (No Checkmark = yes)
+2313,Request out of range,cmd answer,7F2231,Detection of an fixed seat belt of the third row of seats (No Checkmark = yes)
+2314,00,bool,00,Option: Multifunctional display
+2315,Request out of range,cmd answer,7F2231,The presence of a matrix display
+2316,Request out of range,cmd answer,7F2231,Stop and Start function
+2317,00,bool,00,Display of information on fuel consumption without taking into account excess consumption due to regeneration of the particulate filter
+2318,01,hex,01,Climate type
+2319,Request out of range,cmd answer,7F2231,The presence of seats with heating
+231A,00,hex,00,Type of gearbox
+231B,00,hex,00,Type of launch
+231C,00,hex,00,Type of combustion engine
+231D,02,hex,02,Tire pressure control type
+231E,Request out of range,cmd answer,7F2231,Light sensor
+231F,Request out of range,cmd answer,7F2231,The presence of a lighting control knob with 4 positions
+2320,Request out of range,cmd answer,7F2231,Option: Track lighting
+2321,00,bool,00,Option: Training car
+2322,Request out of range,cmd answer,7F2231,Type of individual settings menu
+2323,01,bool,01,The presence of front fog lights
+2324,Request out of range,cmd answer,7F2231,Type of cornering lighting
+2325,10,hex,10,Type of head lighting
+2326,01,bool,01,The presence of a feature of high-beam switching function: Smart-Beam lighting (HBA/CAFR)
+2327,01,bool,01,The presence of the interior lighting and entry into the car function
+2328,Request out of range,cmd answer,7F2231,Rain sensor
+2329,01,bool,01,The presence of headlight washers
+232A,04,hex,04,Type of daylight running lights
+232B,Request out of range,cmd answer,7F2231,Simultaneous activation of daytime running lights and side lights
+232C,Request out of range,cmd answer,7F2231,Lighting on the default daylight
+232D,04,hex,04,The presence and type of additive in diesel fuel
+232E,Request out of range,cmd answer,7F2231,The presence of a special high-frequency receiver (Japan)
+232F,00,bool,00,Passenger door lock
+2330,01,bool,01,Option: Closing windows using a remote control and key
+2331,Request out of range,cmd answer,7F2231,Type of additional heating system
+2332,Request out of range,cmd answer,7F2231,Generator type
+2333,02,hex,02,Type of battery
+2334,01,hex,01,Battery charge assessment function
+2338,Request out of range,cmd answer,7F2231,Air mixing type
+2339,Request out of range,cmd answer,7F2231,Option: Module for memorizing the position of the passenger seat
+233A,00,bool,00,Audio system amplifier
+233B,Request out of range,cmd answer,7F2231,The presence of a block of the corrector of the height of the rear part (pneumatic suspension)
+233C,Request out of range,cmd answer,7F2231,The presence of air conditioning
+233D,Request out of range,cmd answer,7F2231,The presence of an auxiliary electric brake
+233E,Request out of range,cmd answer,7F2231,Option: remembering driver's seat adjustments
+233F,Request out of range,cmd answer,7F2231,The presence of a programmable cruise control system
+2340,Request out of range,cmd answer,7F2231,Option: a warning system for unintentional intersection of road marking lines
+2341,00,bool,00,The presence of a system display system in the field of view of the driver
+2342,Request out of range,cmd answer,7F2231,The presence of a telematics block
+2343,01,bool,01,The presence of parking lights (lateral designation of dimensions)
+2344,01,bool,01,Dynamic stabilization system (ESP)
+2345,01,bool,01,The presence of an outdoor temperature sensor
+2346,00,bool,00,Diesel-fuel water sensor
+2347,14,int,14,"Correction of the difference between the speed set for cruise control, and speed by speedometer in km/h (multiply the value by 10)"
+2348,03,hex,03,The presence and type of regulator/speed limiter
+2349,00,bool,00,Warning about speeding for countries of the Arabian Peninsula
+234A,01,bool,01,Multiplex front windows
+234B,01,bool,01,The presence of four power windows with anti-pinch function or two front windows with anti-pinch function (if the rear windows are not electric)
+234C,Request out of range,cmd answer,7F2231,The presence of the driver's meeting
+234D,01,bool,01,"External mirrors with electric and folding, controlled by an intellectual switching unit (BSI)"
+234E,00,bool,00,The presence of an massage option
+234F,Request out of range,cmd answer,7F2231,"Automatic backlighting of the dashboard and multifunctional display, depending on the brightness of the outdoor lighting"
+2350,810D,hex,810D,Type of car
+2351,01,hex,01,Availability and type of function of the children's protection system
+2352,01,hex,01,Type of locking
+2353,01,hex,01,Type of locking/unlocking door locks
+2354,00,hex,00,The function of the third button of the high-frequency remote control
+2357,01,hex,01,Type of pressing the third remote control button
+2360,Request out of range,cmd answer,7F2231,The presence of an additional head lighting function using fog lights
+2361,00,bool,00,The presence of the function of turning on ventilation from the remote control
+2362,Request out of range,cmd answer,7F2231,Front headlights with daytime running lights
+2364,01,bool,01,The presence of power steering
+2365,00,bool,00,Activating THATCHAM mode
+2366,00,bool,00,The presence of a service module (MDS) or autonomous telematics unit (BTA)
+2367,Request out of range,cmd answer,7F2231,The presence of rear fog lights
+2368,01,bool,01,The presence of the rear left fog light
+2369,00,bool,00,The presence of the rear right fog light
+236A,Request out of range,cmd answer,7F2231,The presence of left reversing light
+236B,Request out of range,cmd answer,7F2231,The presence of right reversing light
+236C,01,bool,01,The presence of a multifunctional camera (CMF)
+236D,01,bool,01,The presence of rain / light lighting sensor on the LIN network
+236E,01,bool,01,The presence of outer side backlight
+236F,Request out of range,cmd answer,7F2231,the presence of a computer switch
+2370,01,bool,01,The presence of an indicator of the recommended transmission (gearbox)
+2371,00,bool,00,The presence of a driver's seat with an electrical control included in the intellectual switching unit (BSI)
+2372,00,bool,00,The presence of a passenger seat with an electrical control included in the intellectual switching unit (BSI)
+2373,08,hex,08,Availability and type of driving assistance system (AFIL / SAM)
+2375,01,bool,01,Preservation of braking (system of dynamic stabilization) for 2 seconds at the beginning of movement on the slope
+2376,00,hex,00,The presence and type of sensor of the supplied air
+2378,02,hex,02,Sunlight sensor type
+2379,00,bool,00,The presence of a pollution sensor
+237A,0A,int,0A,The threshold value of the speed for automatic blocking in movement in km/h
+237B,01,hex,01,The position of the temperature sensors of the evaporator
+237C,01,hex,01,Type of pressure sensor of the air conditioning system
+237D,02,hex,02,Type of air conditioning compressor
+237E,Request out of range,cmd answer,7F2231,the presence of heated seats or heated ventilated seats
+237F,01,hex,01,Air supply type
+2380,01,hex,01,Air mixing type (front air conditioner)
+2381,01,hex,01,Air distribution system type
+2382,Request out of range,cmd answer,7F2231,Rear interior fan type
+2383,Request out of range,cmd answer,7F2231,Air mixing type (rear air conditioner)
+2384,Request out of range,cmd answer,7F2231,Distribution type: rear
+2385,Request out of range,cmd answer,7F2231,"The presence of the ""Stop and Start"" engine or hybrid power unit"
+2386,Request out of range,cmd answer,7F2231,Using the heat of the exhaust gases to heating the interior
+2387,02,hex,02,Type of air conditioning
+2388,01,hex,01,The presence of a heater or air conditioner with a non-working engine
+2389,85,int,85,Information about the inclusion of air conditioning compressor
+238A,Request out of range,cmd answer,7F2231,The presence of a coolant pump with a drive clutch
+238B,01,bool,01,The presence of an algorithm for combustion of the fuel mixture with a cold engine to accelerate the heating of the car interior
+238C,00,hex,00,The presence and type of preliminary thermal training
+238D,00,bool,00,Athermic windshield
+238E,Request out of range,cmd answer,7F2231,Option: Natural gas (GNV)
+238F,00,hex,00,"Configuration ""Police""?"
+2390,Request out of range,cmd answer,7F2231,The presence of a handle with the switching button for the automatic wiper mode
+2391,Request out of range,cmd answer,7F2231,Availability of rear multimedia equipment
+2392,01,hex,01,Availability and type of multiplex control panel
+2394,00,hex,00,Type of radio receiver
+2395,20,hex,20,Type of telematics block
+2396,Request out of range,cmd answer,7F2231,Option: multiplex anti-lock system (ABS)
+2399,00,bool,00,Electrically adjustable exterior mirrors with position memory
+239A,Request out of range,cmd answer,7F2231,The presence of a clock
+239B,01,bool,01,Option: on-board computer (ODB)
+239C,00,bool,00,Option: Black Panel mode
+239D,00,hex,00,The presence and type of heating resistances
+239E,00,hex,00,The presence and type of air heater
+239F,Request out of range,cmd answer,7F2231,The presence and type of adjustment of the brightness of the interior backlight
+23A0,00,hex,00,The presence and number of hatches
+23A1,Request out of range,cmd answer,7F2231,engine's type
+23A2,00,hex,00,"Thermal comfort for the ""Stop and Start"" system"
+23A3,00,hex,00,The presence and type of parking brake with electrical control
+23A4,Request out of range,cmd answer,7F2231,The presence of a trunk door with an electric drive
+23A5,Request out of range,cmd answer,7F2231,Selecting vehicle speed limit or cruise control
+23A6,01,hex,01,Type of electoral opening of the rear door using a high-frequency remote control
+23A7,Request out of range,cmd answer,7F2231,The presence of a curtain with an electric drive
+23A8,Request out of range,cmd answer,7F2231,Rear seats with electric drive
+23A9,00,hex,00,The presence and type of the children's safety system switch
+23AA,Request out of range,cmd answer,7F2231,The presence of a 230V socket
+23AB,00,bool,00,Sound signal supplied by a steering wheel switch of type 2008
+23AC,Request out of range,cmd answer,7F2231,Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)
+23AD,Request out of range,cmd answer,7F2231,The type of equipment connected to the relay of the electro-focus of the intelligent switching unit (BSI)
+23AE,01,bool,01,The presence of an additional head lighting function (Intersection)
+23AF,Request out of range,cmd answer,7F2231,Type of control of front fog lights
+23B0,Request out of range,cmd answer,7F2231,The presence of a function of headlights in the personal settings menu
+23B1,01,hex,01,Accounting for Stop and Start function of air conditioning
+23B2,01,bool,01,Air supply module in the motor compartment controlled by an intelligent switching unit (BSI)
+23B3,Request out of range,cmd answer,7F2231,The presence of a parking brake menu with an electrical control in the personal settings menu
+23B4,00,bool,00,Having a sound selection menu
+23B5,00,bool,00,The presence of a sun-roof without a curtain with an electric drive
+23B6,00,bool,00,the presence of an ultrasound module included in the LIN network of an intellectual switching unit
+23B7,00,bool,00,The presence of a security alarm siren associated with the BSI LIN network
+23B8,Request out of range,cmd answer,7F2231,The presence of a block for re-equipment (auto-school and management for disabled people)
+23B9,Request out of range,cmd answer,7F2231,The presence of a warning function about the risk of a collision
+23BA,Request out of range,cmd answer,7F2231,The presence of a rotation angle sensor of the steering wheel multiplex
+23BB,02,hex,02,"Availability and type of function ""Stop and Start"""
+23BC,Request out of range,cmd answer,7F2231,The availability of a system for compliance with a safe distance
+23BD,Request out of range,cmd answer,7F2231,The presence of intellectual cruise control
+23BE,Request out of range,cmd answer,7F2231,Type of control of the front dimensions
+23BF,00,hex,00,Daytime running light control type
+23C0,00,bool,00,The presence of a programmable speed value (Touch display)
+23C1,Request out of range,cmd answer,7F2231,Type of control of front wiper
+23C2,00,bool,00,The presence of the front wiper in the LIN network
+23C3,Request out of range,cmd answer,7F2231,The presence of a reversing inertial seat belt coil
+23C4,Request out of range,cmd answer,7F2231,The presence of an option for automatic braking in the event of a risk of collision
+23C5,Request out of range,cmd answer,7F2231,Type of interior lighting
+23C6,Request out of range,cmd answer,7F2231,Turning on daylight headlights on the steering wheel switch
+23C7,01,bool,01,The presence of daylight headlights on LEDs for the mode of showroom
+23C8,02,hex,02,Obtaining a requirement of re-initialization of a system for detecting pressure in tires (from ABS/ESP)
+23C9,Request out of range,cmd answer,7F2231,Stopping of diagnostics of the front dimensions of the car
+23CA,Request out of range,cmd answer,7F2231,Stopping of diagnostics of the vehicle daylight of the car
+23CB,Request out of range,cmd answer,7F2231,Electricity management resolution Stop and Start options
+23CC,00,hex,00,Type of coding of information of front door locks and trunk lid or tailgate
+23CD,01,bool,01,Activation of the disconnect algorithm of the injection fan
+23CE,00,bool,00,"A car with a gas system (GNV, GPL)"
+23CF,Request out of range,cmd answer,7F2231,The presence of air conditioner control panel via wired connection
+23D0,00,bool,00,The presence of a decrease in the release of nitrogen oxides
+23D1,00,bool,00,The presence of a security alarm with a vehicle lift-up protection function
+23D2,00,bool,00,The presence of heated front windshield washer jets
+23D3,00,hex,00,Features of the cooling circuit
+23D4,Request out of range,cmd answer,7F2231,Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)
+23D5,05,hex,05,The function of the left button of the steering wheel switching module
+23D6,Request out of range,cmd answer,7F2231,External mirrors with the position for movement in the rear
+23D7,Request out of range,cmd answer,7F2231,Option: Configuration of economical windshield washing (limited washing time and number of strokes)
+23D8,00,bool,00,The presence of an electric vacuum pump
+23D9,Request out of range,cmd answer,7F2231,The presence of a solution optimization module
+23DA,Request out of range,cmd answer,7F2231,The presence of dynamic driving function
+23DB,00,bool,00,"Option: ""Taxi"""
+23DC,00,hex,00,ESP certification type
+23DD,Request out of range,cmd answer,7F2231,Adjustment of the brightness of the interior backlight from the instrument panel
+23DE,Request out of range,cmd answer,7F2231,Type of vibrators of the warning function of unintentional intersection of road marking lines
+23DF,Request out of range,cmd answer,7F2231,The presence of radiator cladding
+23E0,Request out of range,cmd answer,7F2231,Option: Inclusion of light when unlocking a car
+23E1,Request out of range,cmd answer,7F2231,The rear window washer option is located opposite the rear wiper brush
+23E2,00,bool,00,The presence of windshield heating
+23E5,04,hex,04,Control type of controlled generator
+23E6,01,bool,01,The presence of a low pressure fuel pump
+23E7,Request out of range,cmd answer,7F2231,Option: To disable traction control function
+23E8,00,hex,00,The presence of front and rear seats with heating
+23EA,01,bool,01,Option: Automatic lighting on
+23EB,Request out of range,cmd answer,7F2231,Type of automatic inclusion of lighting
+23EC,01,hex,01,Type of information from the switch of assistance in parking
+23ED,Request out of range,cmd answer,7F2231,The type of information from the STOP and Start switch
+23EE,00,hex,00,Dynamic driving function
+23F1,Request out of range,cmd answer,7F2231,Generator class type
+23F2,Request out of range,cmd answer,7F2231,The state of initialization of the warning function in the risk of collision
+23F3,Request out of range,cmd answer,7F2231,The state of initialization of the sensitivity of the warning function in the risk of a collision
+23F4,Request out of range,cmd answer,7F2231,The state of initialization of the automatic braking function at the risk of collision
+23F5,Request out of range,cmd answer,7F2231,Using the rear fog lights for the function of the stop signal
+23F6,01,bool,01,The presence of a sound alarm exceeding the established speed limit
+23F7,Request out of range,cmd answer,7F2231,Stopping of diagnostics of the rear dimensions of the car
+23F8,Request out of range,cmd answer,7F2231,Option: Protection from the rise of the car is controlled by an ultrasound module
+23F9,05,hex,05,Type of gearbox moment
+23FA,Request out of range,cmd answer,7F2231,"Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt"
+23FB,Request out of range,cmd answer,7F2231,The presence of an automatic gearbox with a computer of an electric drive
+23FC,00,bool,00,The presence of anti-slip mode switch (ASR)
+23FD,03,hex,03,Automatic braking type at risk of collision (FARC)
+23FE,02,hex,02,"Type of obtaining information ""Man-Machine"" air conditioning"
+23FF,Request out of range,cmd answer,7F2231,Simultaneous inclusion of daylight and overall lanterns
+2402,Request out of range,cmd answer,7F2231,Permission of the discharge of electricity stored in the energy battery in the rear window heating network
+2403,Request out of range,cmd answer,7F2231,Clothing switching unit
+2404,Request out of range,cmd answer,7F2231,The presence of stop-signals on the rear bumper
+2405,Request out of range,cmd answer,7F2231,Type of power steering
+2406,Request out of range,cmd answer,7F2231,Type of control of front indicators
+2407,Request out of range,cmd answer,7F2231,Front turn signal control type
+2408,Request out of range,cmd answer,7F2231,The presence of a warning system about unintentional intersection of road marking lines
+2409,00,hex,00,The presence of diagnostics for LED low beam headlights
+240A,Request out of range,cmd answer,7F2231,Diagnostics disconnection
+240B,Request out of range,cmd answer,7F2231,Diagnosis of additional static head lighting
+240C,Request out of range,cmd answer,7F2231,Type of system of additional static head lighting
+240D,01,bool,01,The presence of additional static head lighting (PLV)
+240E,01,hex,01,Computer controlling perimeter security alarm
+240F,00,hex,00,Telematics options
+2410,Request out of range,cmd answer,7F2231,The presence and type of gear shift control on the steering wheel
+2411,Request out of range,cmd answer,7F2231,The width of the side door
+2412,Request out of range,cmd answer,7F2231,The presence and type of rear door
+2413,Request out of range,cmd answer,7F2231,The presence of a switching unit for the re-equipment of the body
+2414,03,hex,03,The presence and type of determination of the driver's attentiveness
+2415,01,hex,01,The presence and type of perception of traffic signaling
+2416,Request out of range,cmd answer,7F2231,The presence and type of the right rear side door
+2417,Request out of range,cmd answer,7F2231,The presence and type of left rear side door
+2418,01,hex,01,Type of front side lights
+2419,Request out of range,cmd answer,7F2231,Type of anterior rotation indicators
+241A,Request out of range,cmd answer,7F2231,The presence of a switch between a simple cruise control system and an adaptive cruise control system
+241B,Request out of range,cmd answer,7F2231,The presence of the front electric windows
+241C,Request out of range,cmd answer,7F2231,The presence of a rear window cleaner
+241D,Request out of range,cmd answer,7F2231,Option: Opening rear window
+241E,Request out of range,cmd answer,7F2231,Electric ignition lock
+241F,Request out of range,cmd answer,7F2231,"Option: ""Hands-free access"" for the right rear side door"
+2420,Request out of range,cmd answer,7F2231,"Option: ""Hands-free access"" for the left rear side door"
+2421,Request out of range,cmd answer,7F2231,"Option: ""Hands-free access"" for the back door"
+2422,Request out of range,cmd answer,7F2231,Type of air duct heating the air conditioning system
+2423,Request out of range,cmd answer,7F2231,Type of message Prevention function of crossing road marking lines
+2424,00,hex,00,Type of upholstery seats
+2425,01,bool,01,The availability of telematics receiver control
+2426,Request out of range,cmd answer,7F2231,Type of control of rotation indicators with a smooth increase in brightness
+2427,00,bool,00,The presence of a control system for descent
+2428,Request out of range,cmd answer,7F2231,Type of button on windshield heating
+2429,Request out of range,cmd answer,7F2231,Type of controlled air intake module
+242A,02,hex,02,Type of warning in the risk of collision
+242B,Request out of range,cmd answer,7F2231,Type of information encoding from the locks of the rear swing doors
+242C,Request out of range,cmd answer,7F2231,"The number of the calibration table antennas of the access function ""Free Hands"""
+242D,Request out of range,cmd answer,7F2231,Automatic blocking access to the cargo area when moving
+242E,Request out of range,cmd answer,7F2231,The presence of a help function in holding a car in the movement lane
+242F,Request out of range,cmd answer,7F2231,Lane Keeping Assist linked to Blind Spot Monitoring
+2430,Request out of range,cmd answer,7F2231,gradual shutdown of rotation indicators (while maintaining the blinking mode)
+2431,02,hex,02,Automatic gearbox type
+2432,00,hex,00,The presence of heated seats or heated ventilated seats
+2433,Request out of range,cmd answer,7F2231,Selecting the modes of operation of a hybrid drive
+2434,Request out of range,cmd answer,7F2231,Option: Comfortable polysensory package CFG_EBK_BSI_OPT_MODE_DYN_COMFORT_000
+2435,Request out of range,cmd answer,7F2231,Option: Polisor Package CFG_EBL_BSI_POLSENSORIAL_PACK_000
+2436,Request out of range,cmd answer,7F2231,Navigation option to provide radar points of interest with appropriate speed restrictions
+2437,00,bool,00,Option: Wireless charger
+2438,Request out of range,cmd answer,7F2231,Type of trunk opening switch or baggage compartment door
+2446,Request out of range,cmd answer,7F2231,Additional rear overall lantern
+2447,Request out of range,cmd answer,7F2231,Detection of the presence of a spare wheel
+2448,Request out of range,cmd answer,7F2231,Steering wheel with heating
+2449,Request out of range,cmd answer,7F2231,Multifunctional video registrar camera
+244B,Request out of range,cmd answer,7F2231,The presence and duration of the withdrawal of the division of speed exceeding
+244C,01,hex,01,The presence and type of assistance in holding the car within the lane
+244D,01,bool,01,Additional head lighting functions: Cornering lights (AFS)
+2452,00,hex,00,Type of mode for ACC
+2453,03,hex,03,Type technologie detection for ACC
+245A,Request out of range,cmd answer,7F2231,"Turning on the power steering computer power relay, made by the BSI unit"
+245B,Request out of range,cmd answer,7F2231,Car with power saving for power windows
+245C,00,bool,00,Block for maintaining the voltage of the on-board network
+2461,Request out of range,cmd answer,7F2231,Front seats with massage function
+2465,Request out of range,cmd answer,7F2231,Cooling liquid heater type
+2466,Request out of range,cmd answer,7F2231,Rear-view mirrors
+2480,Request out of range,cmd answer,7F2231,The presence of the interior lighting function in the personal settings menu
+2481,01,bool,01,Improved operation of the high beam switching function (Matrix Beam)
+2482,Request out of range,cmd answer,7F2231,LED/signaler indicates alarm activation status
+2483,Request out of range,cmd answer,7F2231,Type of orange warning light to indicate a faulty brake booster
+2484,00,hex,00,The presence and type of emergency call
+2486,01,hex,01,Type of overall tail lights
+2487,00,hex,00,Type of lamp switch
+248A,01,hex,01,Type of dashboard
+248B,Request out of range,cmd answer,7F2231,The presence of a matrix display
+248D,Request out of range,cmd answer,7F2231,Headlight beam height corrector
+248F,Request out of range,cmd answer,7F2231,"Management ""day/night"""
+2490,Request out of range,cmd answer,7F2231,The presence of a LED to disable the state of work in ZEV mode
+2493,Request out of range,cmd answer,7F2231,Turning on the security alarm when blocking locks using a mechanical key
+2494,Request out of range,cmd answer,7F2231,The presence of the rear traction electric machine
+2495,Request out of range,cmd answer,7F2231,Type of activation of the ASR+ Antibux system+
+2498,Request out of range,cmd answer,7F2231,The function of the heat pump
+2499,00,hex,00,Mode of operation of the vehicle's steering and damping
+249D,Request out of range,cmd answer,7F2231,Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking
+F080,9809154880001398307076800233FFFF0001FFFFFFFF,raw,9809154880001398307076800233FFFF0001FFFFFFFF,ZA Zone
+F0FE,0000000013B309031450060A550D03140002000001942880,raw,0000000013B309031450060A550D03140002000001942880,ZI Zone
+F18B,090314,string_date,090314,Production Date
+F18C,29400895,string_ascii,29400895,Serial Number
+F190,56584B5550484E4B4B4C34323431383933,string_ascii,56584B5550484E4B4B4C34323431383933,VIN
+D501,00,bool,00,CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands
+D502,01,bool,01,CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch
+D503,01,bool,01,CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags
+D504,00,bool,00,CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key
+D505,00,bool,00,CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver
+D506,00,bool,00,CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit
+D507,00,bool,00,CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit
+D508,01,bool,01,CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel
+D509,00,bool,00,CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock
+D50A,01,bool,01,CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)
+D50B,00,bool,00,CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door
+D50C,00,bool,00,CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats
+D50D,00,bool,00,CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm
+D50E,01,bool,01,CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System
+D50F,00,bool,00,CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module
+D510,01,bool,01,CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel
+D511,00,bool,00,CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver
+D512,00,bool,00,CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)
+D513,01,bool,01,CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation
+D514,00,bool,00,CFG_BRK_BSI_UCECAN_UDS_EMF_000: display
+D515,00,bool,00,CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???
+D516,00,bool,00,CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA
+D517,00,bool,00,CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch
+D518,01,bool,01,CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning
+D519,00,bool,00,CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position
+D51A,00,bool,00,CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???
+D51B,00,bool,00,CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???
+D51C,00,bool,00,CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer
+D51D,00,bool,00,CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display
+D51E,00,bool,00,CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???
+D51F,00,bool,00,CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler
+D520,01,bool,01,CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can
+D521,00,bool,00,CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit
+D522,00,bool,00,CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier
+D523,00,bool,00,CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain
+D524,01,bool,01,CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex
+D525,00,bool,00,CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain
+D526,01,bool,01,CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer
+D527,00,bool,00,CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox
+D528,01,bool,01,CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)
+D529,00,bool,00,CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer
+D52A,00,bool,00,CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)
+D52B,00,bool,00,CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???
+D52C,00,bool,00,CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake
+D52D,01,bool,01,CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer
+D52E,00,bool,00,CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control
+D52F,00,bool,00,CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed
+D530,00,bool,00,CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension
+D531,00,bool,00,CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer
+D532,00,bool,00,CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???
+D533,00,bool,00,CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???
+D534,00,bool,00,CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE
+D535,00,bool,00,CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508
+D536,01,bool,01,CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)
+D537,00,bool,00,CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit
+D538,00,bool,00,CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers
+D539,00,bool,00,CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???
+D53A,00,bool,00,CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1
+D53B,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
+D53C,00,bool,00,CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2
+D53D,00,bool,00,CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt
+D53E,00,bool,00,CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt
+D53F,00,bool,00,CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network
+D540,00,bool,00,CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)
+D541,00,bool,00,CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module
+D542,Request out of range,cmd answer,7F2231,CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)
+D543,Request out of range,cmd answer,7F2231,CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???
+D544,00,bool,00,CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox
+D545,00,bool,00,CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever
+D546,00,bool,00,CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)
+D547,00,bool,00,CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system
+D548,00,bool,00,CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)
+D549,00,bool,00,CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit
+D54A,00,bool,00,CFG_EY_BSI_UCECAN_BVN_000: night vision computer
+D54B,Request out of range,cmd answer,7F2231,CFG_EWA_BSI_UCECAN_CGPL_000: ???
+D54C,00,bool,00,CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???
+D54D,00,bool,00,CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???
+D54E,00,bool,00,CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???
+D54F,00,bool,00,CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???
+D550,00,bool,00,CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\*(SDCM)
+D551,00,bool,00,CFG_EWM_BSI_UCECAN_WLC_000: ???
+D552,Request out of range,cmd answer,7F2231,CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster
+D553,00,bool,00,CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal
+D554,00,bool,00,CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox
+D555,00,bool,00,CFG_EX0_BSI_UCECAN_LVNSD_000: ???
+D556,Request out of range,cmd answer,7F2231,CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\*2
+D557,Request out of range,cmd answer,7F2231,CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\*1
+D558,Request out of range,cmd answer,7F2231,CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit
+D559,Request out of range,cmd answer,7F2231,CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system
+D5A0,00,bool,00,CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)
+D5A1,00,bool,00,CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???
+D5A2,01,bool,01,CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light
+D5A3,01,bool,01,CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit
+D5A4,01,bool,01,CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor
+D5A5,00,bool,00,CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network
+D5A6,00,bool,00,CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)
+D5A7,00,bool,00,CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel
+D5A8,00,bool,00,CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key
+D5A9,01,bool,01,CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies
+D5AA,00,bool,00,CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock
+D5AB,01,bool,01,CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module
+D5AC,00,bool,00,CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module
+D5AD,00,bool,00,CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren
+D5AE,00,bool,00,CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)
+D5AF,00,bool,00,CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module
+D5B0,00,bool,00,CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???
+D5B1,00,bool,00,CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???
+D5B2,00,bool,00,CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???
+D5B3,00,bool,00,CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side
+D5B4,00,bool,00,CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side
+D5B5,00,bool,00,CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind
+D5B6,00,bool,00,CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???
+D5B7,00,bool,00,CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer
+D5B8,00,bool,00,CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat
+D5B9,00,bool,00,CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???
+D5BA,00,bool,00,CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer
+D5BB,00,bool,00,CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat
+D5BC,00,bool,00,CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat
+D5BD,00,bool,00,Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat
+D5BE,00,bool,00,CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)
+D5BF,00,bool,00,CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???
+D5C0,00,bool,00,CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???
+D5C1,00,bool,00,CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???
+D5C2,00,bool,00,CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???
+D5C3,00,bool,00,Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\*lin ???
+D5C4,00,bool,00,CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???
+D5C5,00,bool,00,CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor
+D5C7,00,bool,00,CFG_EY0_BSI_UCELIN_OCS_000: ???
+D5C8,00,bool,00,CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater
+D600,Request out of range,cmd answer,7F2231,CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer
+D601,Request out of range,cmd answer,7F2231,CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\*RD5 ???
+D602,01,bool,01,CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control
+D603,Request out of range,cmd answer,7F2231,CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\*1 ???
