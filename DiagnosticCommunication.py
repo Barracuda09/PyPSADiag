@@ -138,7 +138,7 @@ class DiagnosticCommunication(QThread):
 
     def startDiagnosticMode(self):
         receiveData = self.writeECUCommand(self.startDiagmode)
-        if len(receiveData) == 12 and receiveData[:4] == "5003":
+        if len(receiveData) >= 4 and receiveData[:4] == "5003":
             return True
         elif len(receiveData) == 6 and receiveData[:2] == "C1":
             return True
@@ -148,7 +148,7 @@ class DiagnosticCommunication(QThread):
     def stopDiagnosticMode(self):
         self.stopSendingKeepAlive()
         receiveData = self.writeECUCommand(self.stopDiagmode)
-        if len(receiveData) == 12 and receiveData[:4] == "5001":
+        if len(receiveData) >= 4 and receiveData[:4] == "5001":
             return True
         elif len(receiveData) == 2 and receiveData[:2] == "C2":
             return True
