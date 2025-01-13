@@ -14,19 +14,20 @@
   "errors": true,
   "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
-    "vin": "VIN",
     "ident": "Identification",
     "tele": "Telecoding",
-    "all_computers": "Available Computers",
-    "engine": "Engine and fuel system",
-    "info": "Driver information",
-    "lights": "Lighting",
-    "wipers":  "Washers and Wipers",
-    "drive_assist": "Driving assistance",
+    "vin": "VIN CODE",
+    "all_computers": "ECUS PRESET",
+    "thresthold": "MAINTENANCE",
+    "engine": "POWER UNIT",
+    "info": "DRIVER INFORMATION",
+    "lights": "LIGHTING-SIGNALING",
+    "wipers":  "WASHING AND WIPING",
+    "drive_assist": "DRIVER ASSISTANCE",
     "media": "Media",
-    "security": "Safety",
-    "comfort": "Comfort",
-    "other": "Miscellaneous",
+    "security": "PROTECTION-ACCESSES-MECHANICAL ASSISTANCE",
+    "comfort": "DRIVING COMFORT",
+    "other": "MISCELLANEOUS",
     "unsorted": "Unsorted"
   },
   "zones": {
@@ -128,12 +129,36 @@
       "form_type": "string",
       "name": "The resistance of the fuel level sensor with an empty tank"
     },
+    "2202": {
+      "id": "CFG_BYT_BSI_RVIDE_2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "00", "name": "0" },
+        { "value": "015E", "name": "350 Ohms" }
+      ],
+      "name": "The resistance of the fuel level sensor with an empty tank"
+    },
     "2203": {
       "id": "CFG_BYU_BSI_RPLEIN_2010_000",
       "tab": "info",
       "byte": 0,
       "type": "int",
       "form_type": "string",
+      "name": "The resistance of the fuel level sensor with a full tank"
+    },
+    "2203": {
+      "id": "CFG_BYU_BSI_RPLEIN_2010_000",
+      "tab": "info",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "00", "name": "0" },
+        { "value": "0040", "name": "64 Ohms" }
+      ],
       "name": "The resistance of the fuel level sensor with a full tank"
     },
     "2204": {
@@ -3609,7 +3634,7 @@
         { "value": "1", "name": "AT8 (AL4)" },
         { "value": "2", "name": "AXN8" },
         { "value": "3", "name": "CFG_E8C_BSI_TYPE_BVA_BOTE_000_03" },
-        { "value": "4", "name": "CFG_E8C_BSI_TYPE_BVA_BOTE_000_04" }
+        { "value": "4", "name": "Value not referenced" }
       ],
       "name": "Automatic gearbox type"
     },
@@ -5128,6 +5153,90 @@
       "type": "bool",
       "form_type": "checkbox",
       "name": "CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???"
+    },
+    "2281": {
+      "id": "Total period before servicing (thresthold)",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Total period before servicing (thresthold)"
+    },
+    "2283": {
+      "id": "First maintenance threshold",
+      "tab": "info",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "First maintenance threshold1"
+    },
+    "2283": {
+      "id": "First maintenance threshold",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "00", "name": "0KM" },
+        { "value": "7D", "name": "Electric-12500KM" },
+        { "value": "32", "name": "Petrol-5000KM" }
+      ],
+      "name": "First maintenance threshold"
+    },
+    "2282": {
+      "id": "Servicing threshold(marketing)",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Servicing threshold(marketing)"
+    },
+    "2282": {
+      "id": "Servicing threshold(marketing)",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "00", "name": "0KM" },
+        { "value": "7D", "name": "Electric-25000KM" },
+        { "value": "64", "name": "Petrol-20000KM" }
+      ],
+      "name": "Servicing threshold(marketing)"
+    },
+    "2284": {
+      "id": "Duration before first service",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "int",
+      "form_type": "string",
+      "name": "Duration before first service"
+    },
+    "2280": {
+      "id": "Type of service",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Distance-dependent maintenance" },
+        { "value": "1", "name": "Distance-based servicing weighted by time" },
+        { "value": "2", "name": "Distance and timebased servicing" }
+      ],
+      "name": "Type of service"
+    },
+    "2289": {
+      "id": "Selection of the servicing managed by the engine",
+      "tab": "thresthold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0", "name": "Static" },
+        { "value": "1", "name": "Dynamic" },
+        { "value": "2", "name": "Hybrid dynamic mantenance" }
+      ],
+      "name": "Selection of the servicing managed by the engine"
     }
   }
 }
