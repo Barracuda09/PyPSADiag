@@ -1,0 +1,279 @@
+{
+    "name": "ESPMK100_UDS",
+    "tx_id": "6AD",
+    "rx_id": "68D",
+    "protocol": "uds",
+    "key_type": "multi",
+    "keys": {
+        "key1-uds": "7884"
+    },
+    "coding": true,
+    "errors": true,
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Configuration_Group_Data_List",
+            "tab": "tele",
+            "name": "Configuration group data list",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "2101": {
+            "id": "Configuration_Group_Data_Values",
+            "name": "Configuration group data values",
+            "tab": "tele",
+            "type": "raw",
+            "form_type": "multi",
+            "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
+                "name": "ACC type",
+                "byte": 19,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00111111",
+                "params": [
+                    {
+                        "name": "Without ACC",
+                        "mask": "00111111"
+                    },
+                    {
+                        "name": "ACC",
+                        "mask": "00111110"
+                    },
+                    {
+                        "name": "ACC 30",
+                        "mask": "00111011"
+                    },
+                    {
+                        "name": "ACC Stop&Go",
+                        "mask": "00111101"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_CITY_PARK": {
+                "name": "Semi-automatic parking system",
+                "byte": 20,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11000000",
+                "params": [
+                    {
+                        "name": "Without semi-automatic parking system",
+                        "mask": "11000000"
+                    },
+                    {
+                        "name": "With semi-automatic parking system",
+                        "mask": "10000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_CAV": {
+                "name": "Type of steering angle sensor",
+                "byte": 19,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00111000",
+                "params": [
+                    {
+                        "name": "With steering wheel angle sensor",
+                        "mask": "00101000"
+                    },
+                    {
+                        "name": "With virtualsteering wheel angle sensor",
+                        "mask": "00111000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_ASR": {
+                "name": "Type of traction control",
+                "byte": 20,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000011",
+                "params": [
+                    {
+                        "name": "Without traction control",
+                        "mask": "00000011"
+                    },
+                    {
+                        "name": "With traction control",
+                        "mask": "00000010"
+                    },
+                    {
+                        "name": "With traction control  ( selector )",
+                        "mask": "00000001"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_HADC": {
+                "name": "Descent control system",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Without descent control system",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "With descent control system",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_FARC": {
+                "name": "Emergency collision braking",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01110000",
+                "params": [
+                    {
+                        "name": "Without emergency collision braking",
+                        "mask": "01110000"
+                    },
+                    {
+                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera only )",
+                        "mask": "00110000"
+                    },
+                    {
+                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera and distance alert radar )",
+                        "mask": "01010000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_DIRECTION": {
+                "name": "Side of steering wheel",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Steering wheel on right",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Steering wheel on left",
+                        "mask": "00001000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_CVR": {
+                "name": "Type of wheel speed sensors",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "Wheel speed sensor with detection of the direction of rotation of the wheel",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Wheel speed sensor without detection of the direction of rotation of the wheel",
+                        "mask": "00000100"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UCPR_ADEC": {
+                "name": "Hill start assistance system",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Without hill start assistance system",
+                        "mask": "00000001"
+                    },
+                    {
+                        "name": "With hill start assistance system",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_STT": {
+                "name": "Stop & Start",
+                "byte": 22,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11000000",
+                "params": [
+                    {
+                        "name": "Without Stop and Start",
+                        "mask": "11000000"
+                    },
+                    {
+                        "name": "Stop and Start with alternator",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "Stop and Start with starter",
+                        "mask": "01000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_ICB": {
+                "name": "Automatic braking after collision",
+                "byte": 22,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Without automatic braking after collision",
+                        "mask": "00001000"
+                    },
+                    {
+                        "name": "With automatic braking after collision",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_DSG": {
+                "name": "Presence of tyre under-inflation detection",
+                "byte": 22,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000011",
+                "params": [
+                    {
+                        "name": "With indirect tyre under-inflation detection U+ (TPMF)",
+                        "mask": "00000010"
+                    },
+                    {
+                        "name": "With direct tyre under-inflation detection",
+                        "mask": "00000011"
+                    },
+                    {
+                        "name": "With indirect tyre under-inflation detection U+ (TPMC)",
+                        "mask": "00000001"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_TJA": {
+                "name": "Heavy traffic driving assistance system)",
+                "byte": 23,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Without heavy traffic driving assistance system",
+                        "mask": "10000000"
+                    },
+                    {
+                        "name": "With heavy traffic driving assistance system",
+                        "mask": "00000000"
+                    }
+                ]
+            }
+        }
+    }
+}
