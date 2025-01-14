@@ -1,5 +1,5 @@
 {
-  "name": "ESP90",
+  "name": "INJ_UDS_TEST",
   "tx_id": "6A8",
   "rx_id": "688",
   "protocol": "uds",
