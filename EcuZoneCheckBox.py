@@ -28,8 +28,10 @@ class EcuZoneCheckBox(QCheckBox):
     """
     initialValue = 0
     zoneObject = {}
-    def __init__(self, parent, zoneObject: dict):
+    itemReadOnly = False
+    def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneCheckBox, self).__init__(parent)
+        self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
 
     def getCorrespondingByte(self):
@@ -39,8 +41,8 @@ class EcuZoneCheckBox(QCheckBox):
         self.initialValue = val;
         super().setCheckState(val)
 
-    def isCheckBoxChanged(self):
-        return self.isEnabled() and self.initialValue != 0 and self.initialValue != self.checkState()
+    def isCheckBoxChanged(self, virginWrite: bool()):
+        return self.isEnabled() and not(self.itemReadOnly) and self.initialValue != 0 and self.initialValue != self.checkState()
 
     def getValuesAsCSV(self):
         value = "Disabled"
@@ -51,12 +53,12 @@ class EcuZoneCheckBox(QCheckBox):
                 value = "00"
         return value
 
-    def getZoneAndHex(self):
+    def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
         if "mask" in self.zoneObject:
             print("EcuZoneCheckBox.getZoneAndHex(..) has mask?")
         else:
-            if self.isCheckBoxChanged():
+            if self.isCheckBoxChanged(virginWrite):
                 if self.checkState() == Qt.Checked:
                     value = "01"
                 else:

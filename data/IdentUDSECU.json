@@ -3,6 +3,7 @@
     "id": "Secure_Traceability_Value",
     "tab": "tele",
     "name": "Secure Traceability Value",
+    "read_only": true,
     "byte": 0,
     "type": "raw",
     "form_type": "string"
@@ -11,6 +12,7 @@
     "id": "ZA_ZONE",
     "tab": "ident",
     "name": "ZA Zone",
+    "read_only": true,
     "byte": 0,
     "type": "raw",
     "form_type": "multi",
@@ -42,6 +44,7 @@
     "id": "ZI_ZONE",
     "tab": "ident",
     "name": "ZI Zone",
+    "read_only": true,
     "byte": 0,
     "type": "raw",
     "form_type": "multi",
@@ -108,6 +111,7 @@
     "id": "Production_Date",
     "tab": "ident",
     "name": "Production Date",
+    "read_only": true,
     "byte": 0,
     "type": "string_date",
     "form_type": "string"
@@ -116,6 +120,7 @@
     "id": "Serial_Number",
     "tab": "ident",
     "name": "Serial Number",
+    "read_only": true,
     "byte": 0,
     "type": "string_ascii",
     "form_type": "string"

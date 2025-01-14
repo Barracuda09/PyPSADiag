@@ -29,10 +29,12 @@ class EcuZoneComboBox(QComboBox):
     """
     value = 0
     zoneObject = {}
-    def __init__(self, parent, zoneObject: dict):
+    itemReadOnly = False
+    def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneComboBox, self).__init__(parent)
         self.setStyleSheet("combobox-popup: 3;")
         self.setFocusPolicy(Qt.StrongFocus)
+        self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
         # Fill Combo Box
         for paramObject in self.zoneObject["params"]:
@@ -64,8 +66,8 @@ class EcuZoneComboBox(QComboBox):
         self.value = val;
         super().setCurrentIndex(val)
 
-    def isComboBoxChanged(self):
-        return self.isEnabled() and self.value != self.currentIndex()
+    def isComboBoxChanged(self, virginWrite: bool()):
+        return self.isEnabled() and not(self.itemReadOnly) and self.value != self.currentIndex()
 
     def getValuesAsCSV(self):
         value = "Disabled"
@@ -74,9 +76,9 @@ class EcuZoneComboBox(QComboBox):
             value = "%0.2X" % self.itemData(index)
         return value
 
-    def getZoneAndHex(self):
+    def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
-        if self.isComboBoxChanged():
+        if self.isComboBoxChanged(virginWrite):
             index = self.currentIndex()
             value = "%0.2X" % self.itemData(index)
         return value

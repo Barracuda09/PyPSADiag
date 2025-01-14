@@ -70,11 +70,11 @@ class EcuZoneTreeView(QTabWidget):
             value.append(widget.getValuesAsCSV())
         return value
 
-    def getZoneListOfHexValue(self):
+    def getZoneListOfHexValue(self, virginWrite: bool()):
         value = []
         for tab in self.tabs:
             widget = self.widget(tab[1])
-            value.append(widget.getZoneListOfHexValue())
+            value.append(widget.getZoneListOfHexValue(virginWrite))
         return value
 
     def getZoneAndHexValueOfCurrentRow(self):
@@ -106,18 +106,20 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
         rowCount = 0
+        itemReadOnly = False
         # Setup Tree view
         for zoneIDObject in zoneObjectList:
             zoneObject = zoneObjectList[zoneIDObject]
             if not("tab" in zoneObject) or zoneObject["tab"] != tabName:
                 continue
+            if "read_only" in zoneObject:
+                itemReadOnly = zoneObject["read_only"]
 
             itemName = zoneObject["name"];
             formType = zoneObject["form_type"]
             if formType == "multi":
                 root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, itemName, zoneObject)
-                rootReadOnly = True
-                root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, rootReadOnly))
+                root.addRootWidgetItem(self, EcuZoneLineEdit(self, zoneObject, itemReadOnly))
                 self.markItemAsRootLevel(root)
                 rowCount += 1
                 # Do we have new NAC json File
@@ -131,12 +133,14 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                         formType = subZoneObject["form_type"]
                         name = subZoneObject["name"]
                         if formType == "combobox":
-                            widgetItem = EcuZoneComboBox(self, subZoneObject)
+                            widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)
                         elif formType == "checkbox":
-                            root.addChildWidgetItem(self, name, EcuZoneCheckBox(self, subZoneObject))
+                            widgetItem = EcuZoneCheckBox(self, subZoneObject, itemReadOnly)
+                            root.addChildWidgetItem(self, name, widgetItem)
                         elif formType == "string":
-                            root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, subZoneObject, False))
+                            widgetItem = EcuZoneLineEdit(self, subZoneObject, itemReadOnly)
+                            root.addChildWidgetItem(self, name, widgetItem)
                 else:
                     for subZoneIDObject in zoneObject:
                         subZoneObject = zoneObject[str(subZoneIDObject)]
@@ -147,22 +151,27 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                         formType = subZoneObject["form_type"]
                         name = subZoneObject["name"]
                         if formType == "combobox":
-                            widgetItem = EcuZoneComboBox(self, subZoneObject)
+                            widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)
                         elif formType == "checkbox":
-                            root.addChildWidgetItem(self, name, EcuZoneCheckBox(self, subZoneObject))
+                            widgetItem = EcuZoneCheckBox(self, subZoneObject, itemReadOnly)
+                            root.addChildWidgetItem(self, name, widgetItem)
                         elif formType == "string":
-                            root.addChildWidgetItem(self, name, EcuZoneLineEdit(self, subZoneObject, False))
+                            widgetItem = EcuZoneLineEdit(self, subZoneObject, itemReadOnly)
+                            root.addChildWidgetItem(self, name, widgetItem)
                 root.setExpanded(True)
             else:
                 root = EcuZoneTreeWidgetItem(self, rowCount, str(zoneIDObject), itemName)
                 rowCount += 1
                 if formType == "combobox":
-                    root.addItem(self, EcuZoneComboBox(self, zoneObject))
+                    widgetItem = EcuZoneComboBox(self, zoneObject, itemReadOnly)
+                    root.addItem(self, widgetItem)
                 elif formType == "checkbox":
-                    root.addItem(self, EcuZoneCheckBox(self, zoneObject))
+                    widgetItem = EcuZoneCheckBox(self, zoneObject, itemReadOnly)
+                    root.addItem(self, widgetItem)
                 elif formType == "string":
-                    root.addItem(self, EcuZoneLineEdit(self, zoneObject, False))
+                    widgetItem = EcuZoneLineEdit(self, zoneObject, itemReadOnly)
+                    root.addItem(self, widgetItem)
 
         self.setColumnWidth(0, 70)
         self.setColumnWidth(1, 400)
@@ -190,11 +199,11 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             value.append(itemValue)
         return value
 
-    def getZoneListOfHexValue(self):
+    def getZoneListOfHexValue(self, virginWrite: bool()):
         value = []
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
-            itemValue = item.getZoneAndHex()
+            itemValue = item.getZoneAndHex(virginWrite)
             if itemValue[1] != "None":
                 value.append(itemValue)
         return value

@@ -58,15 +58,15 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
             value = widget.getValuesAsCSV()
         return [self.zone, value, self.zoneDescription]
 
-    def getZoneAndHex(self):
+    def getZoneAndHex(self, virginWrite: bool()):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
         if isinstance(widget, EcuZoneLineEdit):
-            value = widget.getZoneAndHex()
+            value = widget.getZoneAndHex(virginWrite)
         elif isinstance(widget, EcuZoneCheckBox):
-            value = widget.getZoneAndHex()
+            value = widget.getZoneAndHex(virginWrite)
         elif isinstance(widget, EcuZoneComboBox):
-            value = widget.getZoneAndHex()
+            value = widget.getZoneAndHex(virginWrite)
         return [self.zone, value]
 
     def changeZoneOption(self, cellItem, data: str, valueType: str):

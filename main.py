@@ -36,6 +36,8 @@ from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
 from EcuZoneTreeView  import EcuZoneTreeView
+from MessageDialog  import MessageDialog
+
 
 """
   - Change GUI in: PyPSADiagGUI.py
@@ -94,6 +96,7 @@ class MainWindow(QMainWindow):
         self.ui.writeZone.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
+        self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
@@ -284,9 +287,11 @@ class MainWindow(QMainWindow):
     def writeZone(self):
         if self.serialController.isOpen():
             # Setup text of changed zones and put it into MessageBox
+            virginWrite = self.ui.virginWriteZone.isChecked()
+            self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
             text = ""
             changeCount = 0
-            valueList = self.ui.treeView.getZoneListOfHexValue()
+            valueList = self.ui.treeView.getZoneListOfHexValue(virginWrite)
             for tabList in valueList:
                 for zone in tabList:
                     text += str(zone) + "\r\n"
@@ -296,7 +301,8 @@ class MainWindow(QMainWindow):
                 return
 
             # Give some option to check values and to cancel the write
-            if QMessageBox.Cancel == QMessageBox.question(self, "Write zone(s) to ECU", text, QMessageBox.Save, QMessageBox.Cancel):
+            changedialog = MessageDialog(self, "Write zone(s) to ECU", text)
+            if MessageDialog.Rejected == changedialog.exec():
                 return
 
             # Get the corresponding ECU Key from Combobox

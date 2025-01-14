@@ -32,8 +32,10 @@ class EcuZoneLineEdit(QLineEdit):
     valueType = ""
     initialValue = ""
     initialRaw = ""
+    itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
+        self.itemReadOnly = readOnly
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
 
@@ -57,8 +59,8 @@ class EcuZoneLineEdit(QLineEdit):
     def updateText(self, val):
         super().setText(val)
 
-    def isLineEditChanged(self):
-        return self.isEnabled() and self.initialValue != self.text()
+    def isLineEditChanged(self, virginWrite: bool()):
+        return self.isEnabled() and not(self.itemReadOnly) and (self.initialValue != self.text() or virginWrite)
 
     def getValuesAsCSV(self):
         value = "Disabled"
@@ -73,9 +75,9 @@ class EcuZoneLineEdit(QLineEdit):
                 value = self.text()
         return value
 
-    def getZoneAndHex(self):
+    def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
-        if self.isLineEditChanged():
+        if self.isLineEditChanged(virginWrite):
             if self.valueType == "string_ascii":
                 value = self.text().encode().hex()
             elif self.valueType == "int":
@@ -174,6 +176,8 @@ class EcuZoneLineEdit(QLineEdit):
                     txt = data
             elif valueType == "string_date":
                 txt = self.__convertStringToDate(data)
+            elif valueType == "mileage":
+                txt = str(int(data, 16) / 10)
             elif valueType == "int":
                 txt = str(int(data, 16))
             else:
