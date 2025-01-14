@@ -31,6 +31,23 @@
     "unsorted": "Unsorted"
   },
   "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "DBA2": {
+      "id": "Mileage",
+      "tab": "vin",
+      "read_only": true,
+      "byte": 0,
+      "type": "mileage",
+      "form_type": "string",
+      "name": "Mileage"
+    },
     "2100": {
       "id": "Gauging_Group_Data_List",
       "tab": "unsorted",
@@ -4081,14 +4098,6 @@
         { "value": "1", "name": "Another" }
       ],
       "name": "Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking"
-    },
-    "F190": {
-      "id": "VIN",
-      "tab": "vin",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string",
-      "name": "VIN"
     },
     "D501": {
       "id": "CFG_BR1_BSI_UCECAN_UDS_BML_000_ABSENT",
