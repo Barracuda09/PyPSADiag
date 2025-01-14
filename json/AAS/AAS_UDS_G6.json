@@ -1,0 +1,99 @@
+{
+  "name": "AAS UDS G6",
+  "tx_id": "75D",
+  "rx_id": "65D",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "key 1": "D1F5",
+    "key 2": "B6F0"
+  },
+  "coding": "true",
+  "errors": "true",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List1",
+      "tab": "tele",
+      "name": "Configuration group data list1",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Configuration_Group_Data_List2",
+      "tab": "tele",
+      "name": "Configuration group data list2",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F080": {
+      "id": "ZA_ZONE",
+      "tab": "ident",
+      "name": "ZA Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Hardware",
+          "byte": 7,
+          "byte_range": 5,
+          "type": "raw",
+          "form_type": "string"
+        }
+      ]
+    },
+    "F0FE": {
+      "id": "ZI_ZONE",
+      "tab": "ident",
+      "name": "ZI Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Supplier",
+          "byte": 4,
+          "byte_range": 1,
+          "type": "zi_sup",
+          "form_type": "string"
+        },
+        {
+          "name": "System",
+          "byte": 5,
+          "byte_range": 1,
+          "type": "zi_sys",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration",
+          "byte": 21,
+          "byte_range": 3,
+          "type": "zi_cal",
+          "form_type": "string"
+        }
+      ]
+    },
+    "F18B": {
+      "id": "Production_Date",
+      "tab": "ident",
+      "name": "Production Date",
+      "byte": 0,
+      "type": "string_date",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "Serial_Number",
+      "tab": "ident",
+      "name": "Serial Number",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string"
+    }
+  }
+}
