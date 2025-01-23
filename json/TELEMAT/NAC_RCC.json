@@ -1332,6 +1332,15 @@
                             "name": "State 16 - C4 II (B7) / DS4 4 Pads Type 3 - AEE2010"
                         }
                     ]
+                },
+                {
+                    "extra_name": "?",
+                    "name_original": "?",
+                    "name": "?",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
                 }
             ]
         },
