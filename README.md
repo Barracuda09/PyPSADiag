@@ -2,7 +2,7 @@
 
 **IMPORTANT!**
 -------
-This application is as is, and you use it at your own risk.<br/>
+This application is as is, and you use it **at your own risk**.<br/>
 I am not responsible for any damages or injuries resulting from the use of this application.<br/>
 **VERY IMPORTANT:** This application is for **educational** purposes only **and should be used with care!.**
 
@@ -35,7 +35,8 @@ contribute to the project, like:
 Build
 -----
 - Install Python 3.12 or above
-- Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`
+- Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`<br>
+  OR use this [Download ZIP](https://github.com/Barracuda09/PyPSADiag/archive/refs/heads/main.zip)
 - Create virtual enviroment `python -m venv /path/to/PyPSADiag/.venv`
 - Goto virtual enviroment with `/path/to/PyPSADiag/.venv/Script/activate`
 - Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
