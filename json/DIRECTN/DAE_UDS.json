@@ -27,171 +27,133 @@
       "tab": "tele",
       "type": "raw",
       "form_type": "multi",
-      "CFG_DAE_1": {
-        "name": "Byte 1",
-        "byte": 1,
+      "CONFIG_INDICE_TELECODAGE": {
+        "name": "CONFIG_INDICE_TELECODAGE",
+        "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name": "Function present 1",
-            "mask": "11111011"
+            "name": "CONFIG_INDICE_TELECODAGE_01",
+            "mask": "00000001"
           },
           {
-            "name": "Function present 2",
-            "mask": "11001011"
-          },
-          {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "CONFIG_INDICE_TELECODAGE_03",
+            "mask": "00000011"
           }
         ]
       },
-      "CFG_DAE_2": {
-        "name": "Byte 2",
+      "CFG_EP0_DAE_UDS_LXA_003": {
+        "name": "Full lane keeping assistance function",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "With lane keeping assistance function",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without lane keeping assistance function",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_EP1_DAE_UDS_MODE_DYN_003": {
+        "name": "Dynamic driving function",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "With dynamic driving function",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without dynamic driving function",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_EP2_DAE_UDS_STTD_003": {
+        "name": "Stop and Start",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "With Stop and Start",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without Stop and Start",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_EP3_DAE_UDS_CPK_003": {
+        "name": "Semi-automatic parking system",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "With semi-automatic parking system",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without semi-automatic parking system",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_EP4_DAE_UDS_CAV_003": {
+        "name": "Type of steering wheel angle sensor",
         "byte": 2,
         "type": "bool",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name": "Function present 1",
+            "name": "Without steering wheel angle sensor",
             "mask": "11111101"
           },
           {
-            "name": "Function present 2",
-            "mask": "11110111"
+            "name": "With steering wheel angle sensor",
+            "mask": "11111011"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "With virtual steering wheel angle sensor",
+            "mask": "11110111"
           }
         ]
       },
-      "CFG_DAE_3": {
-        "name": "Byte 3",
-        "byte": 3,
-        "type": "bool",
+      "CFG_EP8_DAE_UDS_DPPR_003": {
+        "name": "Type of tyre",
+        "byte": 11,
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
-            "name": "Function present 1",
-            "mask": "01111111"
-          },
-          {
-            "name": "Function present 2",
+            "name": "15 inches",
             "mask": "11111110"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_DAE_4": {
-        "name": "Byte 6",
-        "byte": 6,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "Function present 1",
-            "mask": "11111111"
-          },
-          {
-            "name": "Function present 2",
-            "mask": "11111011"
-          },
-          {
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_DAE_5": {
-        "name": "Byte 8",
-        "byte": 8,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "Function present 1",
-            "mask": "11111111"
-          },
-          {
-            "name": "Function present 2",
-            "mask": "01111111"
-          },
-          {
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_DAE_6": {
-        "name": "Byte 9",
-        "byte": 9,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "Function present 1",
-            "mask": "11111111"
-          },
-          {
-            "name": "Function present 2",
+            "name": "16 inches",
             "mask": "11111101"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_DAE_7": {
-        "name": "Byte 10",
-        "byte": 10,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "Function present 1",
-            "mask": "11111111"
-          },
-          {
-            "name": "Function present 1",
-            "mask": "10111111"
-          },
-          {
-            "name": "Function absent",
-            "mask": "00000000"
-          }
-        ]
-      },
-      "CFG_DAE_8": {
-        "name": "Byte 11",
-        "byte": 11,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "Function present 1",
-            "mask": "11111101"
-          },
-          {
-            "name": "Function present 2",
+            "name": "17 inches",
             "mask": "11111011"
           },
           {
-            "name": "Function absent",
-            "mask": "00000000"
+            "name": "18 inches",
+            "mask": "11110111"
           }
         ]
       }
