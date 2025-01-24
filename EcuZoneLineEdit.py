@@ -20,6 +20,7 @@
 """
 
 import json
+import os
 from PySide6.QtGui import QKeyEvent
 from PySide6.QtCore import Qt, QEvent
 from PySide6.QtWidgets import QLineEdit
@@ -62,29 +63,30 @@ class EcuZoneLineEdit(QLineEdit):
     def isLineEditChanged(self, virginWrite: bool()):
         return self.isEnabled() and not(self.itemReadOnly) and (self.initialValue != self.text() or virginWrite)
 
+    def __convertZoneData(self):
+        if self.valueType == "string_ascii":
+            value = self.text().encode().hex()
+        elif self.valueType == "string_date":
+            value = self.initialRaw
+        elif self.valueType == "int":
+            value = "%0.2X" % int(self.text())
+        else:
+            value = self.text()
+
+        return value.upper()
+
     def getValuesAsCSV(self):
-        value = "Disabled"
         if self.isEnabled():
-            if self.valueType == "string_ascii":
-                value = self.text().encode().hex()
-            elif self.valueType == "string_date":
-                value = self.initialRaw
-            elif self.valueType == "int":
-                value = "%0.2X" % int(self.text())
-            else:
-                value = self.text()
-        return value
+            return self.__convertZoneData()
+
+        return "Disabled"
 
     def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
         if self.isLineEditChanged(virginWrite):
-            if self.valueType == "string_ascii":
-                value = self.text().encode().hex()
-            elif self.valueType == "int":
-                value = "%0.2X" % int(self.text())
-            else:
-                value = self.text()
-        return value
+            return self.__convertZoneData()
+
+        return "None"
 
     def __shift(self, mask: int):
         # Code snippet by Sean Eron Anderson
@@ -157,7 +159,7 @@ class EcuZoneLineEdit(QLineEdit):
                 if "zi_cal" == self.zoneObject["type"]:
                     txt = "96" + txt + "80"
                 elif "zi_sup" == self.zoneObject["type"]:
-                    file = open("./data/ECU_SUPPLIERS.json", 'r', encoding='utf-8')
+                    file = open(os.path.join(os.path.dirname(__file__), "data/ECU_SUPPLIERS.json"), 'r', encoding='utf-8')
                     jsonFile = file.read()
                     supplierList = json.loads(jsonFile.encode("utf-8"))
                     if txt in supplierList:
