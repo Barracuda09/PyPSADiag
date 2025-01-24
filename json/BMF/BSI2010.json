@@ -5164,12 +5164,15 @@
       "name": "CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???"
     },
     "2281": {
-      "id": "Total period before servicing (thresthold)",
+      "id": "Total period(time) before servicing (threshold)",
       "tab": "thresthold",
       "byte": 0,
-      "type": "int",
-      "form_type": "string",
-      "name": "Total period before servicing (thresthold)"
+      "type": "hex",
+      "form_type": "combobox",
+      "params": [
+        { "value": "0C", "name": "12 months" }
+      ],
+      "name": "Total period(time) before servicing (threshold)"
     },
     "2283": {
       "id": "First maintenance threshold",
@@ -5209,7 +5212,9 @@
       "params": [
         { "value": "00", "name": "0KM" },
         { "value": "7D", "name": "Electric-25000KM" },
-        { "value": "64", "name": "Petrol-20000KM" }
+        { "value": "64", "name": "Petrol-20000KM" },
+        { "value": "4B", "name": "Petrol-15000KM" },
+        { "value": "C8", "name": "Diesel-30000KM" }
       ],
       "name": "Servicing threshold(marketing)"
     },
