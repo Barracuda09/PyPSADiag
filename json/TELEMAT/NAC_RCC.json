@@ -13,12 +13,21 @@
     "tabs": {
         "vin": "VIN",
         "ident": "Identification",
+        "tele": "TELE",
+        "aas": "AAS",
+        "afil": "AFIL",
+        "artiv": "ARTIV",
+        "audio": "AUDIO",
+        "btel": "BTEL",
+        "hmi": "HMI",
+        "obc": "OBC",
+        "visiopark": "VISIOPARK",
         "telemat": "Telematic Unit (BTEL)"
     },
     "zones": {
         "2100": {
             "name": "Telecoding_Fct_AAS",
-            "tab": "telemat",
+            "tab": "aas",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -84,7 +93,7 @@
         },
         "2101": {
             "name": "Telecoding_Fct_AFIL",
-            "tab": "telemat",
+            "tab": "afil",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -119,7 +128,7 @@
         },
         "2103": {
             "name": "Telecoding_Fct_ARTIV",
-            "tab": "telemat",
+            "tab": "artiv",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -189,7 +198,7 @@
         },
         "2104": {
             "name": "Telecoding_Fct_AUDIO",
-            "tab": "telemat",
+            "tab": "audio",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -567,7 +576,7 @@
         },
         "2108": {
             "name": "Telecoding_Fct_BTEL",
-            "tab": "telemat",
+            "tab": "btel",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -1487,7 +1496,7 @@
                 {
                     "extra_name": "VERR_INTERNET",
                     "name_original": "BZ8",
-                    "name": "",
+                    "name": "VERR_INTERNET",
                     "byte": 1,
                     "mask": "11111111",
                     "type": "raw",
@@ -1975,7 +1984,7 @@
         },
         "2125": {
             "name": "Telecoding_Fct_OBC",
-            "tab": "telemat",
+            "tab": "obc",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -2340,7 +2349,7 @@
         },
         "2127": {
             "name": "Telecoding_Fct_HMI",
-            "tab": "telemat",
+            "tab": "hmi",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -10069,7 +10078,7 @@
         },
         "212F": {
             "name": "Telecoding_Fct_AUDIO2",
-            "tab": "telemat",
+            "tab": "audio",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -10104,7 +10113,7 @@
         },
         "212A": {
             "name": "Telecoding_Fct_VISIOPARK",
-            "tab": "telemat",
+            "tab": "visiopark",
             "type": "raw",
             "form_type": "multi",
             "params": [
