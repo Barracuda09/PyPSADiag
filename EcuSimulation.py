@@ -23,6 +23,7 @@ import time
 import queue
 import csv
 import json
+import os
 from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtWidgets import QTextEdit
 
@@ -49,7 +50,7 @@ class EcuSimulation(QThread):
     def __simulateAnswer(self, cmd: str):
         if cmd[:1] == ">":
             # Open car simulation file
-            file = open("./simu/car.json", 'r', encoding='utf-8')
+            file = open(os.path.join(os.path.dirname(__file__), "simu/car.json"), 'r', encoding='utf-8')
             jsonFile = file.read()
             self.carECUList = json.loads(jsonFile.encode("utf-8"))
             self.txID = cmd[1:4]
@@ -111,7 +112,7 @@ class EcuSimulation(QThread):
         code = "utf-8"
         while True:
             try:
-                stream = open(str(path), 'r', encoding=code)
+                stream = open(os.path.join(os.path.dirname(__file__), str(path)), 'r', encoding=code)
             except OSError:
                 return False
 

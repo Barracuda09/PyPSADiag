@@ -25,6 +25,7 @@ import json
 import csv
 import time
 import os
+import os
 from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
@@ -194,14 +195,16 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def openCSVFile(self):
-        fileName = QFileDialog.getOpenFileName(self, "Open CSV Zone File", "./csv", "CSV Files (*.csv)")
+        path = os.path.join(os.path.dirname(__file__), "csv")
+        fileName = QFileDialog.getOpenFileName(self, "Open CSV Zone File", path, "CSV Files (*.csv)")
         if fileName[0] == "":
             return
         self.fileLoaderThread.enable(fileName[0], 0);
 
     @Slot()
     def saveCSVFile(self):
-        fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
+        path = os.path.join(os.path.dirname(__file__), "csv")
+        fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", path, "CSV Files (*.csv)")
         if fileName[0] == "":
             return
 
@@ -217,7 +220,8 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def openZoneFile(self):
-        fileName = QFileDialog.getOpenFileName(self, "Open JSON Zone File", "./json", "JSON Files (*.json)")
+        path = os.path.join(os.path.dirname(__file__), "json")
+        fileName = QFileDialog.getOpenFileName(self, "Open JSON Zone File", path, "JSON Files (*.json)")
         if fileName[0] == "":
             return
         file = open(fileName[0], 'r', encoding='utf-8')
@@ -225,7 +229,7 @@ class MainWindow(QMainWindow):
         self.ecuObjectList = json.loads(jsonFile.encode("utf-8"))
         # Do we need to include a JSON File and attach it to 'zones'
         if "include_zone_object" in self.ecuObjectList:
-            includeZonePath = self.ecuObjectList["include_zone_object"]
+            includeZonePath = os.path.join(os.path.dirname(__file__), self.ecuObjectList["include_zone_object"])
             if os.path.exists(includeZonePath):
                 includeZoneFile = open(includeZonePath, 'r', encoding='utf-8')
                 includeJsonFile = includeZoneFile.read()
@@ -244,7 +248,8 @@ class MainWindow(QMainWindow):
     @Slot()
     def readZone(self):
         if self.serialController.isOpen():
-            fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", "./csv", "CSV Files (*.csv)")
+            path = os.path.join(os.path.dirname(__file__), "csv")
+            fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", path, "CSV Files (*.csv)")
             if fileName[0] == "":
                 return
 
