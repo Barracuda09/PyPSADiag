@@ -97,7 +97,7 @@
       },
       "CFG_EP3_DAE_UDS_CPK_003": {
         "name": "Semi-automatic parking system",
-        "byte": 0,
+        "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000001",
