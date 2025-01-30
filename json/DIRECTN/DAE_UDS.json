@@ -46,7 +46,7 @@
       },
       "CFG_EP0_DAE_UDS_LXA_003": {
         "name": "Full lane keeping assistance function",
-        "byte": 0,
+        "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00100000",
@@ -63,7 +63,7 @@
       },
       "CFG_EP1_DAE_UDS_MODE_DYN_003": {
         "name": "Dynamic driving function",
-        "byte": 0,
+        "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00010000",
@@ -80,7 +80,7 @@
       },
       "CFG_EP2_DAE_UDS_STTD_003": {
         "name": "Stop and Start",
-        "byte": 0,
+        "byte": 1,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000100",
@@ -119,6 +119,10 @@
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
+          {
+            "name": "Without steering wheel angle sensor",
+            "mask": "11111110"
+          },
           {
             "name": "Without steering wheel angle sensor",
             "mask": "11111101"
