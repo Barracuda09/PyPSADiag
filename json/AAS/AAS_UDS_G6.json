@@ -28,9 +28,256 @@
       "id": "Configuration_Group_Data_List2",
       "tab": "tele",
       "name": "Configuration group data list2",
-      "byte": 0,
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "CFG_ETB_AAS_TYPE_ACTIV_CITYPARK_000": {
+        "name": "INDICATES THE TYPE OF PUSH TO ACTIVATE THE CITYPARK",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "00000110",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "00000110"
+          },
+          {
+            "name": "2 Option",
+            "mask": "00000100"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00000010"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_ETA_AAS_TYPE_CPT_ANGLE_VOLAN_000": {
+        "name": "INDICATES THE TYPE OF STEERING WHEEL ANGLE (SENSOR OR ESTIMATOR)",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00011000",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "00011000"
+          },
+          {
+            "name": "2 Option",
+            "mask": "00010000"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00001000"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_BVV_AAS_AVR_000": {
+        "name": "Presence of the Reversing Vision Assistance function on the vehicle",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "PRESENT",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_EQQ_AAS_DEVELOPPEE_ROUE_MAX_000": {
+        "name": "MAXIMAL WHEEL CIRCONFERENCE ",
+        "byte": 1,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      },
+      "CFG_EQR_AAS_DEVELOPPEE_ROUE_MIN_000": {
+        "name": "MININAL WHEEL CIRCONFERENCE",
+        "byte": 3,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      },
+      "CFG_EQW_AAS_OPTI_CONTI_ACTIV_CPK_000": {
+        "name": "OPTION CONTINUOUS ACTIV CPK ACTIVATION OF THE CONT",
+        "byte": 5,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "PRESENT",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_EQV_AAS_OPTION_LXA_000": {
+        "name": "INDICATES THE PRESENCE OF THE LKA OR LP",
+        "byte": 5,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "PRESENT",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_BVW_AAS_SAM_000": {
+        "name": "Presence of the blind spot monitoring function on the vehicle",
+        "byte": 5,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "PRESENT",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_EQZ_AAS_TYPE_BV_000": {
+        "name": "Type of gearbox",
+        "byte": 5,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000011",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "00000011"
+          },
+          {
+            "name": "2 Option",
+            "mask": "00000010"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00000001"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EQU_AAS_TYPE_FUNCTIONAL_ABSD_000": {
+        "name": "INDICATES THE KIND OF ACTIVE (ABSD)",
+        "byte": 6,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Off",
+            "mask": "00000000"
+          },
+          {
+            "name": "On",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_EQY_AAS_TYPE_DOP_000": {
+        "name": "TYPE OF PARK PILOT",
+        "byte": 6,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000110",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "00000110"
+          },
+          {
+            "name": "2 Option",
+            "mask": "00000100"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00000010"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EQX_AAS_TYPE_CITYPARK_000": {
+        "name": "TYPE OF CITY PARK",
+        "byte": 6,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00011000",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "00011000"
+          },
+          {
+            "name": "2 Option",
+            "mask": "00010000"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00001000"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      },
+      "CFG_EQT_AAS_TYPE_CHAINE_TRACTION_001": {
+        "name": "Type of drive",
+        "byte": 6,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01100000",
+        "params": [
+          {
+            "name": "3 Option",
+            "mask": "01100000"
+          },
+          {
+            "name": "2 Option",
+            "mask": "01000000"
+          },
+          {
+            "name": "1 Option",
+            "mask": "00100000"
+          },
+          {
+            "name": "0 Option",
+            "mask": "00000000"
+          }
+        ]
+      }
     }
   }
 }
