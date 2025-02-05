@@ -1,0 +1,905 @@
+{
+  "name": "COMBINE_UDS",
+  "tx_id": "75F",
+  "rx_id": "65F",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "Key1": "50A6",
+    "Key2": "DA33"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding",
+    "main": "Main Values",
+    "hmi": "HMI Values"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Main_Values",
+      "name": "Configuration Main Values",
+      "tab": "main",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_D49_CMB_CONF_DOP_000": {
+        "name": "Obstacle detection",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_AV1_CMB_CONF_RVV_000": {
+        "name": "Cruise control",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_AV2_CMB_CONF_LVV_000": {
+        "name": "Cruise control/speed limiter",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      },
+      "CFG_D3W_CMB_CONF_RVVI_000": {
+        "name": "Adaptive cruise control and speed limiter (RVVI)",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_ADS_CMB_CONF_NIVHU_000": {
+        "name": "Absence of oil level",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_D3N_CMB_CONF_MAINT_000": {
+        "name": "Service indicator function",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_D3X_CMB_CONF_ODO_PARTIEL_000": {
+        "name": "Request to display the partial ODO-Meter",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_D3J_CMB_CONF_PAGE_T_EXT_000": {
+        "name": "The ECU stores the distance travelled between two regenerations",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_EAT_CMB_PUSH_VARIANT_CFG_002": {
+        "name": "Push Variant",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000111",
+        "params": [
+          {
+            "name": "000",
+            "mask": "00000000"
+          },
+          {
+            "name": "001",
+            "mask": "00000001"
+          },
+          {
+            "name": "010",
+            "mask": "00000010"
+          },
+          {
+            "name": "011",
+            "mask": "00000011"
+          },
+          {
+            "name": "100",
+            "mask": "00000100"
+          },
+          {
+            "name": "101",
+            "mask": "00000101"
+          }
+        ]
+      },
+      "CFG_DPC_CMB_VEHICLE_000": {
+        "name": "Vehicle",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_DPD_CMB_SOUNDHARMONY_000": {
+        "name": "Soundharmony",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_DON_CMB_UNITS_LANGUAGE_000": {
+        "name": "Units Language",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_D7T_CMB_CONF_VIT_CONSEILLE_000": {
+        "name": "Presence display of recommended speeds",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      },
+      "CFG_D7S_CMB_CONF_POI_RADAR_000": {
+        "name": "Display of the alerts, POI and hazardous areas",
+        "byte": 1,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_E69_CMB_RVV_RVVI_PUSH_LED_000": {
+        "name": "Presence of internal switching Push button for RVVI",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DOR_CMB_RLVV_SELECTION_000": {
+        "name": "Presence of selection of RLVV",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_DP5_CMB_OUTLINE_000": {
+        "name": "Body shape type",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001100",
+        "params": [
+          {
+            "name": "Tailgate",
+            "mask": "00000000"
+          },
+          {
+            "name": "Saloon",
+            "mask": "00000100"
+          },
+          {
+            "name": "Monospace",
+            "mask": "00001000"
+          },
+          {
+            "name": "Others",
+            "mask": "00001100"
+          }
+        ]
+      },
+      "CFG_DPA_CMB_OBC_000": {
+        "name": "Presence of on-board charger (OBC)",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_E7B_CMB_XVV_PRESENCE_ACC_000": {
+        "name": "Displaying of the ACC function",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_EBO_CMB_OBC_LPG_000": {
+        "name": "Indicator if LPG information must be displayed",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      },
+      "CFG_DP8_CMB_OBC_STT_000": {
+        "name": "Stop and Start system",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_DQ8_CMB_DOORS_TYPE_000": {
+        "name": "Type of accesses",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000011",
+        "params": [
+          {
+            "name": "Rear doors",
+            "mask": "00000000"
+          },
+          {
+            "name": "1 sliding door",
+            "mask": "00000001"
+          },
+          {
+            "name": "2 sliding door",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_DQ7_CMB_DYN_PACK_PRESENCE_000": {
+        "name": "Dynamic driving function",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_DQ6_CMB_LKA_VAL_PRESENCE_000": {
+        "name": "Active Lane Departure function (LKA)",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_DQ5_CMB_DAA_PRESENCE_000": {
+        "name": "Presence of Driver Attention Assist (DAA)",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_DQA_CMB_SLI_000": {
+        "name": "Speed limit indication function",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_EHW_CMB_ACC_TYPE_000": {
+        "name": "Type of ACC Function",
+        "byte": 4,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "00",
+            "value": "00"
+          },
+          {
+            "name": "01",
+            "value": "01"
+          },
+          {
+            "name": "02",
+            "value": "02"
+          }
+        ]
+      },
+      "CFG_DQ9_CMB_EMPTY_PAGE_CFG_000": {
+        "name": "Empty Page",
+        "byte": 11,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_DQW_CMB_DAT_DG_STT_CFG_000": {
+        "name": "Stop and Start function",
+        "byte": 11,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_DQV_CMB_DAT_DG_ADML_CFG_000": {
+        "name": "Hands free starting access",
+        "byte": 11,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_DQY_CMB_DAT_DG_BRAND_CFG_001": {
+        "name": "Brand Configuration",
+        "byte": 11,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01110000",
+        "params": [
+          {
+            "name": "Peugeot",
+            "mask": "00000000"
+          },
+          {
+            "name": "citroen",
+            "mask": "00010000"
+          },
+          {
+            "name": "brand 010",
+            "mask": "00100000"
+          },
+          {
+            "name": "Toyota",
+            "mask": "00110000"
+          },
+          {
+            "name": "Opel",
+            "mask": "01000000"
+          },
+          {
+            "name": "brand 101",
+            "mask": "01010000"
+          }
+        ]
+      },
+      "CFG_DQR_CMB_DAT_DG_UREA_000": {
+        "name": "Urea warning lamp",
+        "byte": 12,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DQQ_CMB_DAT_DG_ALARM_000": {
+        "name": "Onboard computer alerts",
+        "byte": 12,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000100",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000100"
+          }
+        ]
+      },
+      "CFG_E2D_CMB_TYPE_EXPORT_PRINC2_001": {
+        "name": "Type of export PRINC2",
+        "byte": 12,
+        "type": "raw",
+        "form_type": "string",
+        "mask": "00111000"
+      },
+      "CFG_DQB_CMB_OPTION_EXPORT_NAV_000": {
+        "name": "Navigation display",
+        "byte": 12,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      },
+      "CFG_DQP_CMB_DAT_DG_TYRES_PRESSUR_000": {
+        "name": "Tyre pressure",
+        "byte": 13,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DQ3_CMB_GBOX_000": {
+        "name": "GBOX",
+        "byte": 13,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_EHX_CMB_LPA_CFG_000": {
+        "name": "Configuration state of Lane positioning assist (LPA)",
+        "byte": 14,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "value": "00"
+          },
+          {
+            "name": "Function present",
+            "value": "01"
+          }
+        ]
+      },
+      "CFG_E2F_CMB_TYPE_LISTE_PICTO_002": {
+        "name": "Indicates if Pictograms List is Basic or Extended",
+        "byte": 15,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_E1R_CMB_SPEED_ADVISOR_CFG_000": {
+        "name": "Memorization of speed advisor",
+        "byte": 15,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_DVC_CMB_CHECK_MENU_CFG_000": {
+        "name": "Specifies if Check Page is available",
+        "byte": 15,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "10000000"
+          }
+        ]
+      }
+    },
+    "2101": {
+      "id": "Configuration_IO_Values",
+      "tab": "tele",
+      "name": "Configuration IO Values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2200": {
+      "id": "Configuration_Secondary_Values",
+      "name": "Configuration Secondary Values",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DOZ_CMB_DATE_TIME_DISP_000": {
+        "name": "Presence of Data and Time Display",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DOY_CMB_DATE_TIME_MENU_000": {
+        "name": "Presence of Data and Time Menu",
+        "byte": 0,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      }
+    },
+    "2300": {
+      "id": "Configuration_HMI_Values",
+      "name": "Configuration HMI Values",
+      "tab": "hmi",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DP7_CMB_OBC_POPUPPAGE_000": {
+        "name": "Popup-Page on-board charger (OBC)",
+        "byte": 18,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DOG_CMB_GAUGE_COOL_TEMP_DIGI_000": {
+        "name": "Presence of showing digital Coolant temperature",
+        "byte": 18,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_E08_CMB_GAUGE_ENG_SPD_DIGIT_000": {
+        "name": "Rev counter",
+        "byte": 18,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_DOL_CMB_GAUGE_VHL_SPD_DIGIT_000": {
+        "name": "Presence of showing digital vehicle speed",
+        "byte": 18,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_DPB_CMB_OBC_PERMANENTPAGE_000": {
+        "name": "Presence of permanent on-board charger page",
+        "byte": 19,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      }
+    }
+  }
+}

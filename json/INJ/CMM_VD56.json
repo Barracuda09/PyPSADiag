@@ -1,0 +1,301 @@
+{
+  "name": "CMM_VD56",
+  "tx_id": "6A8",
+  "rx_id": "688",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "key1": "9395"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DWV_CMM_UDS_FPR_005": {
+        "name": "Engine cooling management",
+        "byte": 1,
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "Dual speed Fan Assembly",
+            "mask": "11101111"
+          }
+        ]
+      },
+      "CFG_DWY_CMM_UDS_PCPR_005": {
+        "name": "Air conditioning pressure sensor",
+        "byte": 2,
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "With air conditioning",
+            "mask": "11111011"
+          },
+          {
+            "name": "Without air conditioning",
+            "mask": "11111110"
+          }
+        ]
+      },
+      "CFG_DWL_CMM_UDS_BVPR_005": {
+        "name": "Type of gearbox",
+        "byte": 3,
+        "form_type": "combobox",
+        "mask": "11111111",
+        "params": [
+          {
+            "name": "MB6 type manual gearbox",
+            "mask": "11111101"
+          },
+          {
+            "name": "ATN8 type automatic gearbox",
+            "mask": "01111111"
+          },
+          {
+            "name": "AT6III type automatic gearbox",
+            "mask": "10111111"
+          }
+        ]
+      },
+      "CFG_DWM_CMM_UDS_CAPR_005": {
+        "name": "Associated alternator class",
+        "byte": 4,
+        "form_type": "combobox",
+        "mask": "1111111111111111",
+        "params": [
+          {
+            "name": "Reversible alternator",
+            "mask": "1111111011111111"
+          },
+          {
+            "name": "category 8",
+            "mask": "1111011111111111"
+          },
+          {
+            "name": "category 12",
+            "mask": "1101111111111111"
+          },
+          {
+            "name": "category 15",
+            "mask": "1011111111111111"
+          },
+          {
+            "name": "category 18",
+            "mask": "0111111111111111"
+          },
+          {
+            "name": "category 22 ",
+            "mask": "1111111111111110"
+          }
+        ]
+      },
+      "CFG_DWT_CMM_UDS_EASYMOVEPR": {
+        "name": "Electric parking brake",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "With hill start assist",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without hill start assist",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_DWU_CMM_UDS_ESPPR_004": {
+        "name": "ESP (stability control)",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "With ESP",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without ABS/ESP",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_ES3_CMM_UDS_RVVPR_005": {
+        "name": "Presence of RVV",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "With vehicle speed regulation",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without cruise control / With adaptive cruise control",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_ES8_CMM_UDS_LVVPR_005": {
+        "name": "Presence of LVV",
+        "byte": 9,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "With speed limiter",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without speed limiter",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_ERJ_CMM_UDS_ACCPR_005": {
+        "name": "Presence of ACC",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "With adaptive cruise control",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without adaptive cruise control",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "CFG_ES7_CMM_UDS_ACC30PR_005": {
+        "name": "Presence ACC 30",
+        "byte": 10,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "With ACC 30",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without ACC 30",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_ERK_CMM_UDS_ACCSGPR_005": {
+        "name": "Presence ACC Stop and Go",
+        "byte": 9,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "With ACC Stop and Go",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without ACC Stop and Go",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_ES5_CMM_UDS_VPPR_005": {
+        "name": "Controlled air inlet module",
+        "byte": 8,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "With controlled air inlet module",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without controlled air inlet module",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_ES0_CMM_UDS_GPLPR_005": {
+        "name": "Fuel GPL",
+        "byte": 9,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "With GPL",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without GPL",
+            "mask": "00000001"
+          }
+        ]
+      },
+      "CFG_DWI_CMM_UDS_BBY1PR_004": {
+        "name": "Oil vapour recirculation circuit heater 1",
+        "byte": 10,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Crankcase breather system (With reheater)",
+            "mask": "00000000"
+          },
+          {
+            "name": "Crankcase breather system (Without heater)",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_ES1_CMM_UDS_HADCPR_005": {
+        "name": "Descent control system",
+        "byte": 10,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "With descent control system",
+            "mask": "00000000"
+          },
+          {
+            "name": "Without descent control system",
+            "mask": "00001000"
+          }
+        ]
+      }
+    }
+  }
+}
