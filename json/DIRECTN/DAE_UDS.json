@@ -3,8 +3,11 @@
   "tx_id": "6B5",
   "rx_id": "695",
   "protocol": "uds",
-  "key_type": "single",
-  "keys":  "2105",
+  "key_type": "multi",
+  "keys": {
+    "key1": "2105",
+    "key2": "2707"
+  },
   "coding": true,
   "errors": true,
   "include_zone_object": "./data/IdentUDSECU.json",
