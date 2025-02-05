@@ -259,7 +259,7 @@
       "params": [
         { "value": "0", "name": "Pressure meter" },
         { "value": "1", "name": "Analog sensor" },
-        { "value": "2", "name": "Absent" }
+        { "value": "2", "name": "ABSENT" }
       ],
       "name": "The presence and type of oil pressure sensor"
     },
@@ -612,7 +612,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 hatch" },
         { "value": "2", "name": "2 hatch" },
         { "value": "3", "name": "3 hatch" }
@@ -634,7 +634,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Standard alarm" },
         { "value": "2", "name": "Belgium security alarm" },
         { "value": "3", "name": "Security alarm for Switzerland" },
@@ -794,8 +794,8 @@
       "params": [
         { "value": "0", "name": "Manual" },
         { "value": "1", "name": "Automatic" },
-        { "value": "2", "name": "Robotized 1" },
-        { "value": "3", "name": "Robotized 2" }
+        { "value": "2", "name": "Piloted manual" },
+        { "value": "3", "name": "Piloted double clutch" }
       ],
       "name": "Type of gearbox"
     },
@@ -811,7 +811,7 @@
         { "value": "2", "name": "Impulse signal from engine start switch" },
         { "value": "3", "name": "Maintained by engine start-up switch" }
       ],
-      "name": "Type of launch"
+      "name": "Type of starting"
     },
     "231C": {
       "id": "CFG_BQP_BSI_TYPE_GMP_000",
@@ -834,7 +834,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Direct first generation (with a computer)" },
         { "value": "2", "name": "Indirect using the ABS/ESP unit" },
         { "value": "3", "name": "Direct second generation (with a computer)" }
@@ -880,7 +880,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Unique profile" },
         { "value": "2", "name": "Several profiles" }
       ],
@@ -962,11 +962,11 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "1", "name": "Absent" },
-        { "value": "2", "name": "Day lighting in one block" },
-        { "value": "3", "name": "Functional day lighting *1 type of type *2" },
-        { "value": "4", "name": "Separate day lighting" },
-        { "value": "5", "name": "Functional day lighting *1 type of type *2 (repeat ???)" }
+        { "value": "1", "name": "ABSENT" },
+        { "value": "2", "name": "Shared day running lights" },
+        { "value": "3", "name": "Functional day lighting *1 lamps of type *1" },
+        { "value": "4", "name": "Dedicated day running lights" },
+        { "value": "5", "name": "Functional day lighting *1 lamps of type *2" }
       ],
       "name": "Type of daylight running lights"
     },
@@ -993,7 +993,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "A pump controlled by wired communication" },
         {
           "value": "2",
@@ -1038,7 +1038,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Thermoresistors 1000 watts" },
         { "value": "2", "name": "Autonomous heating" },
         { "value": "3", "name": "Programmable heating" },
@@ -1054,7 +1054,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Self-starting" },
         { "value": "2", "name": "Controlled" },
         { "value": "3", "name": "Starter-generator" },
@@ -1090,11 +1090,11 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Yes performed by the battery charge level control unit" },
         { "value": "2", "name": "Yes performed by intelligent switching unit" }
       ],
-      "name": "Battery charge assessment function"
+      "name": "Battery charge estimate function"
     },
     "2338": {
       "id": "CFG_A8V_BSI_MIXAGE_000",
@@ -1237,7 +1237,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value":  "0", "name": "Absent" },
+        { "value":  "0", "name": "ABSENT" },
         { "value":  "2", "name": "Cruise control (RVV2)" },
         { "value":  "3", "name": "Cruise control (RVV2) with speed limiter (LVV)" },
         { "value":  "4", "name": "Automatic cruise control (ACC)" },
@@ -1248,7 +1248,7 @@
         { "value": "0C", "name": "Automatic cruise control (ACC) with over-speed alert" },
         { "value": "10", "name": "Speed limiter (LVV) only" }
       ],
-      "name": "The presence and type of regulator/speed limiter"
+      "name": "Presence of Speed Limiter / Cruise Control"
     },
     "2349": {
       "id": "CFG_A4A_BSI_ALRTSVIT_000",
@@ -1629,7 +1629,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Blind spot monitoring provided by a blind spot monitoring computer" },
         { "value": "2", "name": "Warning of unintentional crossing of road markings is provided by a multifunctional video camera" },
         { "value": "3", "name": "Blind Spot Monitoring, Computer Controlled Blind Spot Monitoring and Cross Lane Warning System Controlled by multifunctional Video Camera" },
@@ -1656,7 +1656,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 sensor" },
         { "value": "2", "name": "2 sensors in front" },
         { "value": "3", "name": "1 sensor in front and 2 sensors behind" },
@@ -1672,7 +1672,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "2", "name": "Sunlight single-zone sensor" },
         { "value": "3", "name": "Sunlight double-zone sensor" }
       ],
@@ -1701,7 +1701,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front sensor" },
         { "value": "2", "name": "One front and one rear sensor" }
       ],
@@ -1753,7 +1753,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Seat heating" },
         { "value": "2", "name": "Heated and ventilated seats" }
       ],
@@ -1855,7 +1855,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Engine with \"Stop and Start\" function" },
         { "value": "2", "name": "Hybrid power unit" }
       ],
@@ -1933,7 +1933,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         {
           "value": "1",
           "name": "Internal preliminary thermal preparation (with matrix and menu)"
@@ -2000,7 +2000,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front multiplex panel (electric)" },
         { "value": "2", "name": "Front multiplex panel (mechanical)" }
       ],
@@ -2088,7 +2088,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Additional resistance CTP1" },
         { "value": "2", "name": "Additional resistance CTP2" },
         { "value": "3", "name": "Additional resistances CTP1 and CTP2" },
@@ -2106,7 +2106,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Additional heater" },
         { "value": "2", "name": "Thermal preliminary preparation" },
         {
@@ -2137,7 +2137,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 hatch" },
         { "value": "2", "name": "2 hatch" },
         { "value": "3", "name": "3 hatch" }
@@ -2178,7 +2178,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Information from the ESP system" },
         {
           "value": "2",
@@ -2518,10 +2518,10 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
-        { "value": "1", "name": "There is ahead on the left" },
-        { "value": "2", "name": "There is ahead on the right" },
-        { "value": "3", "name": "There is ahead on the left and right" }
+        { "value": "0", "name": "ABSENT" },
+        { "value": "1", "name": "There is on the front left" },
+        { "value": "2", "name": "There is on the front right" },
+        { "value": "3", "name": "There is on the front left and right" }
       ],
       "name": "The presence of a reversing inertial seat belt coil"
     },
@@ -2699,7 +2699,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Day lighting" },
         { "value": "2", "name": "Sound signal" },
         { "value": "3", "name": "A warning signal" },
@@ -2838,7 +2838,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The controlled first-generation generator" },
         { "value": "2", "name": "Controlled second-generation generator" },
         { "value": "3", "name": "A controlled generator with the optimization of the charge of the service battery of generation 3" },
@@ -2869,7 +2869,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Heating the front seats" },
         { "value": "2", "name": "Heating of the rear seats" },
         { "value": "3", "name": "heating the front and rear seats" }
@@ -2903,7 +2903,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Using the instrument panel" },
         { "value": "2", "name": "Using a touch display" }
       ],
@@ -2930,9 +2930,9 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "global" },
-        { "value": "2", "name": "Partial.Only engine control and gearbox" }
+        { "value": "2", "name": "Partial (Engine and gearbox management only)" }
       ],
       "name": "Dynamic driving function"
     },
@@ -3100,7 +3100,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front and rear dimensions" },
         { "value": "2", "name": "The rear overall lanterns" }
       ],
@@ -3246,7 +3246,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Calling technical assistance" },
         { "value": "2", "name": "Remote diagnostic service" },
         { "value": "3", "name": "All options are activated" }
@@ -3312,14 +3312,14 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Type 1" },
         { "value": "2", "name": "Type 3" },
-        { "value": "3", "name": "Type 1 and type 3" },
+        { "value": "3", "name": "Type 1 and Type 3" },
         { "value": "4", "name": "Type 4" },
-        { "value": "5", "name": "Type 1 and type 4" },
-        { "value": "6", "name": "Type 3 and type 4" },
-        { "value": "7", "name": "Type 1, type 3 and type 4" }
+        { "value": "5", "name": "Type 1 and Type 4" },
+        { "value": "6", "name": "Type 3 and Type 4" },
+        { "value": "7", "name": "Type 1, Type 3 and Type 4" }
       ],
       "name": "The presence and type of determination of the driver's attentiveness"
     },
@@ -3330,7 +3330,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Reception of a multifunctional video camera" },
         { "value": "2", "name": "Perception using the navigation system" },
         { "value": "3", "name": "Reception of a multifunctional video camera and navigation system" }
@@ -3344,7 +3344,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The hollow door" },
         { "value": "2", "name": "Mechanical side sliding door" },
         { "value": "3", "name": "Light sliding door with electric drive" }
@@ -3358,7 +3358,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The hollow door" },
         { "value": "2", "name": "Mechanical side sliding door" },
         { "value": "3", "name": "Light sliding door with electric drive" }
@@ -3568,7 +3568,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         {
           "value": "1",
           "name": "Generation 1 (warning at the risk of a collision with a mobile object)"
@@ -3650,8 +3650,9 @@
         { "value": "0", "name": "AX6" },
         { "value": "1", "name": "AT8 (AL4)" },
         { "value": "2", "name": "AXN8" },
-        { "value": "3", "name": "CFG_E8C_BSI_TYPE_BVA_BOTE_000_03" },
-        { "value": "4", "name": "Value not referenced" }
+        { "value": "3", "name": "The hybrid automatic gearbox" },
+        { "value": "4", "name": "Reduction gear with park finger locking actuator" },
+        { "value": "5", "name": "CVT" }
       ],
       "name": "Automatic gearbox type"
     },
@@ -3662,7 +3663,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Seat heating" },
         { "value": "2", "name": "Heated and ventilated seats" }
       ],
@@ -3816,7 +3817,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Radar" },
         { "value": "2", "name": "Radar & Camera" },
         { "value": "3", "name": "Camera" }
@@ -4070,7 +4071,7 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Absent" },
+        { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "There is" }
       ],
       "name": "The function of the heat pump"
