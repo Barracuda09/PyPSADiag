@@ -37,6 +37,9 @@ class EcuZoneCheckBox(QCheckBox):
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 
+    def getCorrespondingByteSize(self):
+        return 1
+
     def setCheckState(self, val):
         self.initialValue = val;
         super().setCheckState(val)

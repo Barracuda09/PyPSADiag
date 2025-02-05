@@ -53,6 +53,9 @@ class EcuZoneLineEdit(QLineEdit):
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 
+    def getCorrespondingByteSize(self):
+        return 1
+
     def __setText(self, val):
         self.initialValue = val;
         super().setText(val)

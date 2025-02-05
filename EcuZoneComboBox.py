@@ -62,6 +62,14 @@ class EcuZoneComboBox(QComboBox):
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 
+    def getCorrespondingByteSize(self):
+        bits = int(self.zoneObject["mask"], 2).bit_count()
+        if bits > 8 and bits < 16:
+            return 2
+        elif bits > 16 and bits < 32:
+            return 4
+        return 1
+
     def setCurrentIndex(self, val):
         self.value = val;
         super().setCurrentIndex(val)
@@ -87,7 +95,8 @@ class EcuZoneComboBox(QComboBox):
         index = self.currentIndex()
         mask = int(self.zoneObject["mask"], 2)
         value = (int(byte, 16) & ~mask) | self.itemData(index)
-        byte = "%0.2X" % value
+        size = self.getCorrespondingByteSize() * 2
+        byte = f"%0.{size}X" % value
         return byte
 
     def changeZoneOption(self, data: str, valueType: str):
@@ -99,12 +108,20 @@ class EcuZoneComboBox(QComboBox):
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
-            if byteNr < len(byteData):
-                byte = int(byteData[byteNr], 16) & mask
+            size = self.getCorrespondingByteSize()
+
+            currByteData = byteData[byteNr : byteNr + size]
+            currData = ""
+            for i in range(len(currByteData)):
+                currData += currByteData[i]
+
+            if (byteNr + size) <= len(byteData):
+                byte = int(currData, 16) & mask
             else:
                 # Integrity wrong, size does not match
                 return False
 
+        # Find the Option (byte) from the ComboBox
         for i in range(self.count()):
             if self.itemData(i) == byte:
                 self.setCurrentIndex(i)

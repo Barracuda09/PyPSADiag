@@ -77,10 +77,6 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         return [self.zone, value]
 
     def changeZoneOption(self, root, data: str, valueType: str):
-        # Make Bytes (2 chars) from input data
-        byteData = []
-        for i in range(0, len(data), 2):
-            byteData.append(data[i:i + 2])
         # Set Root value of Multi Config zone
         widget = root.treeWidget().itemWidget(root, 2)
         widget.changeZoneOption(data, "")
@@ -107,31 +103,41 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     def __update(self):
         rootWidget = self.treeWidget().itemWidget(self, 2)
         data = rootWidget.text()
+        # Make Bytes (2 chars) from input data
         byteData = []
         for i in range(0, len(data), 2):
             byteData.append(data[i:i + 2])
+
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
 
             byteNr = widget.getCorrespondingByte()
+            size = widget.getCorrespondingByteSize()
 
             # Do we need to expand
-            if len(byteData) < (byteNr + 1):
-                for i in range((byteNr - len(byteData) + 1)):
-                    byteData.insert(len(byteData) + i, "00")
+            byteDataLen = len(byteData)
+            if byteDataLen < (byteNr + size):
+                for i in range((byteNr - byteDataLen) + size):
+                    byteData.insert(byteDataLen + i, "00")
+
+            # Get the corresponing data for this "zone"
+            currData = str().join(byteData[byteNr : byteNr + size])
 
             if isinstance(widget, EcuZoneLineEdit):
-                byteData[byteNr] = widget.update(byteData[byteNr])
+                currData = widget.update(currData)
             elif isinstance(widget, EcuZoneCheckBox):
-                byteData[byteNr] = widget.update(byteData[byteNr])
+                currData = widget.update(currData)
             elif isinstance(widget, EcuZoneComboBox):
-                byteData[byteNr] = widget.update(byteData[byteNr])
+                currData = widget.update(currData)
 
-        data = ""
-        for i in range(len(byteData)):
-            data += byteData[i]
-        rootWidget.updateText(str(data))
+            # Put back changed "zone" data
+            for i in range(size):
+                j = (i * 2)
+                byteData[byteNr + i] = currData[j:j + 2]
+
+        # Update changed "zone" data
+        rootWidget.updateText(str().join(byteData))
 
     @Slot()
     def currentIndexChanged(self, item: int):
