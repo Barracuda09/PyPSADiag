@@ -63,6 +63,11 @@ class EcuZoneTreeView(QTabWidget):
                 index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
                 self.tabs.append([tabs, index])
 
+    def hideNoResponseZones(self, hide: bool()):
+        for tab in self.tabs:
+            widget = self.widget(tab[1])
+            widget.hideNoResponseZones(hide)
+
     def getValuesAsCSV(self):
         value = []
         for tab in self.tabs:
@@ -190,6 +195,16 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         widget.setDisabled(True);
         item.setBackground(0, QColor(255, 128, 128))
         item.setBackground(1, QColor(255, 128, 128))
+
+    def hideNoResponseZones(self, hide: bool()):
+        for index in range(self.topLevelItemCount()):
+            item = self.topLevelItem(index)
+            if hide:
+                widget = item.treeWidget().itemWidget(item, 2)
+                if widget.isEnabled() == False:
+                    item.setHidden(True)
+            else:
+                item.setHidden(False)
 
     def getValuesAsCSV(self):
         value = []

@@ -97,7 +97,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             for index in range(root.childCount()):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-                widget.setStyleSheet("QComboBox{background-color: red;}");
+                widget.setStyleSheet("QComboBox{background-color: red;}")
                 widget.setEnabled(False)
 
     def __update(self):

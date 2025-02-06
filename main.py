@@ -86,6 +86,7 @@ class MainWindow(QMainWindow):
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
+        self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
         # Setup serial controller
         self.serialController = SerialPort(self.simulation)
@@ -182,6 +183,10 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.setEnabled(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 #        self.ui.useSketchSeedGenerator.setEnabled(True)
+
+    @Slot()
+    def hideNoResponseZones(self, state):
+        self.ui.treeView.hideNoResponseZones(state == 2)
 
     @Slot()
     def sendCommand(self):

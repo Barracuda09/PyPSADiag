@@ -82,6 +82,8 @@ class PyPSADiagGUI(object):
         self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
         self.virginWriteZone = QCheckBox()
         self.virginWriteZone.setText(QCoreApplication.translate("MainWindow", u"Virgin Write", None))
+        self.hideNoResponseZone = QCheckBox()
+        self.hideNoResponseZone.setText(QCoreApplication.translate("MainWindow", u"Hide 'No Response' Zones", None))
 #        self.useSketchSeedGenerator = QCheckBox()
 #        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
         self.treeView = EcuZoneTreeView(None)
@@ -128,6 +130,7 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.rebootEcu)
         self.bottomRightLayout.addWidget(self.virginWriteZone)
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
+        self.bottomRightLayout.addWidget(self.hideNoResponseZone)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
         self.bottomRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
