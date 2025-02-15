@@ -286,268 +286,143 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        {
-          "value": "0",
-          "name": "None"
-        },
-        {
-          "value": "1",
-          "name": "Rear parking sensors"
-        },
-        {
-          "value": "2",
-          "name": "Front parking sensors"
-        },
-        {
-          "value": "3",
-          "name": "Parking sensors front and rear"
-        },
-        {
-          "value": "4",
-          "name": "Only measure the available parking space using the parking aid unit"
-        },
-        {
-          "value": "5",
-          "name": "Rear parking sensors + parking space measurement with parking aid"
-        },
-        {
-          "value": "6",
-          "name": "Front parking sensors + parking space measurement with parking aid"
-        },
-        {
-          "value": "7",
-          "name": "Parking sensors front and rear + search for a parking space using the parking assist unit"
-        },
-        {
-          "value": "8",
-          "name": "Measuring parking space with the Blind Spot Monitor"
-        },
-        {
-          "value": "9",
-          "name": "Rear parking sensors + parking space measurement with blind spot monitor"
-        },
-        {
-          "value": "10",
-          "name": "Reverse camera only"
-        },
-        {
-          "value": "11",
-          "name": "Reversing camera + rear parking sensors"
-        },
-        {
-          "value": "12",
-          "name": "Reversing camera + front parking sensors"
-        },
-        {
-          "value": "13",
-          "name": "Reversing camera + parking sensors front and rear"
-        },
-        {
-          "value": "14",
-          "name": "Reversing camera + parking space measurement with parking aid"
-        },
-        {
-          "value": "15",
-          "name": "Reversing camera + rear parking sensors + parking space measurement with parking aid"
-        },
-        {
-          "value": "16",
-          "name": "Reversing camera + front parking sensors + parking space measurement with parking aid"
-        },
-        {
-          "value": "17",
-          "name": "Reversing camera + front and rear parking sensors + parking space measurement with parking aid"
-        },
-        {
-          "value": "18",
-          "name": "Reversing camera + parking space measurement with blind spot monitor"
-        },
-        {
-          "value": "19",
-          "name": "Reversing camera + rear parking sensors + parking space measurement with blind spot monitor"
-        },
-        {
-          "value": "23",
-          "name": "Parking sensors front and rear + semi-automatic parking"
-        },
-        {
-          "value": "24",
-          "name": "Measuring available parking space with parking aid + semi-automatic parking"
-        },
-        {
-          "value": "25",
-          "name": "Rear parking sensors + parking space measurement with parking aid + semi-automatic parking"
-        },
-        {
-          "value": "26",
-          "name": "Front parking sensors + parking space measurement with parking aid + semi-automatic parking"
-        },
-        {
-          "value": "27",
-          "name": "Parking sensors front and rear + parking space measurement with parking aid + semi-automatic parking"
-        },
-        {
-          "value": "28",
-          "name": "Rear parking sensors + parking space measurement with blind spot monitoring + semi-automatic parking"
-        },
-        {
-          "value": "29",
-          "name": "Front parking sensors + parking space measurement with blind spot monitoring + semi-automatic parking"
-        },
-        {
-          "value": "33",
-          "name": "City Park and Visual Reversing Aid and with AAS Rear and Front function"
-        },
-        {
-          "value": "34",
-          "name": "City Park and Visual Reversing Aid and MPD on AAS Active only"
-        },
-        {
-          "value": "35",
-          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Rear function"
-        },
-        {
-          "value": "36",
-          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Front function"
-        },
-        {
-          "value": "37",
-          "name": "City Park and Visual Reversing Aid and MPD on AAS with AAS Front and rear function"
-        },
-        {
-          "value": "38",
-          "name": "City Park and Visual Reversing Aid and MPD on SAM Active only"
-        },
-        {
-          "value": "39",
-          "name": "City Park and Visual Reversing Aid and MPD on SAM with Rear AAS function"
-        },
-        {
-          "value": "3A",
-          "name": "City Park and Visual Reversing Aid and MPD on SAM with Front AAS function"
-        },
-        {
-          "value": "3B",
-          "name": "City Park and Visual Reversing Aid and MPD on SAM with Front and Rear AAS function"
-        },
-        { "value": "43", "name": "43" },
-        { "value": "51", "name": "51" },
-        { "value": "53", "name": "53" },
-        { "value": "63", "name": "63" },
-        { "value": "64", "name": "64" },
-        { "value": "65", "name": "65" },
-        { "value": "66", "name": "66" },
-        { "value": "67", "name": "67" },
-        { "value": "68", "name": "68" },
-        { "value": "69", "name": "69" },
-        { "value": "73", "name": "73" },
-        { "value": "74", "name": "74" },
-        { "value": "75", "name": "75" },
-        { "value": "76", "name": "76" },
-        { "value": "77", "name": "77" },
-        { "value": "88", "name": "88" },
-        { "value": "79", "name": "79" },
-        { "value": "80", "name": "80" },
-        { "value": "81", "name": "81" },
-        { "value": "82", "name": "82" },
-        { "value": "83", "name": "83" },
-        { "value": "84", "name": "84" },
-        { "value": "85", "name": "85" },
-        { "value": "86", "name": "86" },
-        { "value": "87", "name": "87" },
-        { "value": "89", "name": "89" },
-        { "value": "90", "name": "90" },
-        { "value": "91", "name": "91" },
-        { "value": "92", "name": "92" },
-        { "value": "93", "name": "93" },
-        { "value": "94", "name": "94" },
-        { "value": "95", "name": "95" },
-        { "value": "96", "name": "96" },
-        { "value": "97", "name": "97" },
-        { "value": "98", "name": "98" },
-        { "value": "99", "name": "99" },
-        {
-          "value": "0A",
-          "name": "Parking sensors in front + measurement of free parking space using a block of control of blind zones"
-        },
-        {
-          "value": "0B",
-          "name": "Parking sensors in front and back + measurement of free parking space using a block of control of blind zones"
-        },
-        {
-          "value": "1A",
-          "name": "Robby camera + parking sensors in front + measurement of free parking space using a block of control of blind zones"
-        },
-        {
-          "value": "1B",
-          "name": "Robby camera + parking sensors in front and back + measurement of free parking space using a block of control of blind zones"
-        },
-        {
-          "value": "2A",
-          "name": "Parking sensors in front + measurement of free parking space using a unit control unit + semi-automatic parking"
-        },
-        {
-          "value": "2B",
-          "name": "Parking sensors in front and back + measurement of free parking space using a block of control of blind zones + semi-automatic parking"
-        },
-        { "value": "3A", "name": "BEHIND" },
-        { "value": "6A", "name": "Sha" },
-        { "value": "6B", "name": "BB" },
-        { "value": "7A", "name": "Scha" },
-        { "value": "7B", "name": "7b" },
-        { "value": "8A", "name": "8a" },
-        { "value": "8B", "name": "8b" },
-        { "value": "9A", "name": "9a" },
-        { "value": "9B", "name": "I WOULD" },
-        { "value": "A0", "name": "A0" },
-        { "value": "A1", "name": "A1" },
-        { "value": "A2", "name": "A2" },
-        { "value": "A3", "name": "Az" },
-        { "value": "A4", "name": "A4" },
-        { "value": "A5", "name": "A5" },
-        { "value": "A6", "name": "Ash" },
-        { "value": "A7", "name": "A7" },
-        { "value": "A8", "name": "A8" },
-        { "value": "A9", "name": "And I" },
-        { "value": "AA", "name": "Aa" },
-        { "value": "AB", "name": "Ab" },
-        { "value": "B0", "name": "B0" },
-        { "value": "B1", "name": "B1" },
-        { "value": "B2", "name": "B2" },
-        { "value": "B3", "name": "Bz" },
-        { "value": "B4", "name": "Warhead" },
-        { "value": "B5", "name": "B5" },
-        { "value": "B6", "name": "BB" },
-        { "value": "B7", "name": "B7" },
-        { "value": "B8", "name": "B8" },
-        { "value": "F9", "name": "F9" },
-        { "value": "BA", "name": "Ba" },
-        { "value": "BB", "name": "BB" },
-        { "value": "E0", "name": "E0" },
-        { "value": "E1", "name": "E1" },
-        { "value": "E2", "name": "E2" },
-        { "value": "E3", "name": "Sk" },
-        { "value": "E4", "name": "E4" },
-        { "value": "E5", "name": "E5" },
-        { "value": "E6", "name": "Eat" },
-        { "value": "E7", "name": "E7" },
-        { "value": "E8", "name": "E8" },
-        { "value": "E9", "name": "E9" },
-        { "value": "EA", "name": "EA" },
-        { "value": "EB", "name": "Fuck" },
-        { "value": "F0", "name": "F0" },
-        { "value": "F1", "name": "F1" },
-        { "value": "F2", "name": "F2" },
-        { "value": "F3", "name": "FZ" },
-        { "value": "F4", "name": "Pch" },
-        { "value": "F5", "name": "F5" },
-        { "value": "F6", "name": "FSh" },
-        { "value": "F7", "name": "F7" },
-        { "value": "F8", "name": "F8" },
-        { "value": "FA", "name": "F" },
-        { "value": "FB", "name": "FB" }
+        { "value": "00", "name": "Without"  },
+        { "value": "01", "name": "parking assistance rear"  },
+        { "value": "02", "name": "Front parking assistance"  },
+        { "value": "03", "name": "front and rear parking assistance"  },
+        { "value": "04", "name": "without parking assistance + available space measurement managed by the parking assistance ECU"  },
+        { "value": "05", "name": "rear parking assistance + available space measurement managed by the parking assistance ECU"  },
+        { "value": "06", "name": "Front parking assistance + available space measurement managed by the parking assistance ECU"  },
+        { "value": "07", "name": "With the front and rear parking assistance and with the available space measuring function managed by the parking assistance ECU"  },
+        { "value": "08", "name": "without parking assistance + available space measurement managed by the blind spot monitoring"  },
+        { "value": "09", "name": "rear parking assistance + available space measurement managed by the blind spot monitoring"  },
+        { "value": "0A", "name": "Front parking assistance + available space measurement managed by the blind spot monitoring"  },
+        { "value": "0B", "name": "Front / rear parking assistance and available space measurement by blind spot monitoring"  },
+        { "value": "10", "name": "Visual reversing assistance without parking assistance"  },
+        { "value": "11", "name": "Rear parking assistance and visual reversing assistance camera"  },
+        { "value": "12", "name": "Front parking assistance + reversing assistance camera"  },
+        { "value": "13", "name": "With front and rear parking assistance and visual reversing assistance"  },
+        { "value": "14", "name": "without parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "15", "name": "Rear parking assistance and visual reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "16", "name": "Front parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "17", "name": "front and rear parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "18", "name": "without parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "19", "name": "Rear parking assistance and visual reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "1A", "name": "Front parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "1B", "name": "front and rear parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "23", "name": "With front and rear parking assistance and with semi-automatic parking system"  },
+        { "value": "24", "name": "without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "25", "name": "rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "26", "name": "Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "27", "name": "front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "28", "name": "without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "29", "name": "rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "2A", "name": "Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "2B", "name": "front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "33", "name": "With front and rear parking assistance, with visual reversing assistance and with semi-automatic parking system"  },
+        { "value": "34", "name": "without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "35", "name": "rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "36", "name": "Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "37", "name": "front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "38", "name": "without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "39", "name": "rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "3A", "name": "Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "3B", "name": "front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "43", "name": "semi-automatic parking system with perpendicular parking option + front and rear parking assistance"  },
+        { "value": "51", "name": "semi-automatic parking system with perpendicular parking option + reversing assistance camera + rear parking assistance"  },
+        { "value": "53", "name": "semi-automatic parking system with perpendicular parking option + rear parking assistance + front and rear parking assistance"  },
+        { "value": "63", "name": "front and rear parking assistance + semi-automatic parking system with perpendicular parking option"  },
+        { "value": "64", "name": "without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU"  },
+        { "value": "65", "name": "rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU"  },
+        { "value": "66", "name": "Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU"  },
+        { "value": "67", "name": "front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU"  },
+        { "value": "68", "name": "without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring"  },
+        { "value": "69", "name": "rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring"  },
+        { "value": "6A", "name": "Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring"  },
+        { "value": "6B", "name": "front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring"  },
+        { "value": "73", "name": "front and rear parking assistance + reversing assistance camera + semi-automatic parking system with perpendicular parking option"  },
+        { "value": "74", "name": "without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "75", "name": "rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "76", "name": "Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "77", "name": "front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "78", "name": "without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "79", "name": "rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "7A", "name": "Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "7B", "name": "front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "81", "name": "Side view through rear vision side camera + rear parking assistance"  },
+        { "value": "83", "name": "Side view through rear vision side camera + front and rear parking assistance"  },
+        { "value": "E3", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + front and rear parking assistance"  },
+        { "value": "91", "name": "Side view through rear vision side camera + reversing assistance camera + rear parking assistance"  },
+        { "value": "93", "name": "Side view through rear vision side camera + reversing assistance camera + front and rear parking assistance"  },
+        { "value": "F3", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance"  },
+        { "value": "80", "name": "Side view through rear vision side camera"  },
+        { "value": "82", "name": "Side view through rear vision side camera + Front parking assistance"  },
+        { "value": "84", "name": "Side view through rear vision side camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "85", "name": "Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "86", "name": "Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "87", "name": "Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "88", "name": "Side view through rear vision side camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "89", "name": "Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "8A", "name": "Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "8B", "name": "Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  },
+        { "value": "90", "name": "Side view through rear vision side camera + reversing assistance camera"  },
+        { "value": "92", "name": "Side view through rear vision side camera + reversing assistance camera + Front parking assistance"  },
+        { "value": "94", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "95", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "96", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "97", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "98", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "99", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "9A", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "9B", "name": "Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  },
+        { "value": "A0", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system"  },
+        { "value": "A1", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + rear parking assistance"  },
+        { "value": "A2", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + Front parking assistance"  },
+        { "value": "A3", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + front and rear parking assistance"  },
+        { "value": "A4", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "A5", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "A6", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "A7", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "A8", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "A9", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "AA", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "AB", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  },
+        { "value": "B0", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera"  },
+        { "value": "B1", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance"  },
+        { "value": "B2", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance"  },
+        { "value": "B3", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance"  },
+        { "value": "B4", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "B5", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "B6", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "B7", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "B8", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "B9", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "BA", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "BB", "name": "Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  },
+        { "value": "E0", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system"  },
+        { "value": "E1", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + rear parking assistance"  },
+        { "value": "E2", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + Front parking assistance"  },
+        { "value": "E4", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU"  },
+        { "value": "E5", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "E6", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "E7", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "E8", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring"  },
+        { "value": "E9", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "EA", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "EB", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  },
+        { "value": "F0", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera"  },
+        { "value": "F1", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance"  },
+        { "value": "F2", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance"  },
+        { "value": "F4", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU"  },
+        { "value": "F5", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance"  },
+        { "value": "F6", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance"  },
+        { "value": "F7", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance"  },
+        { "value": "F8", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring"  },
+        { "value": "F9", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance"  },
+        { "value": "FA", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance"  },
+        { "value": "FB", "name": "Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance"  }
       ],
-      "name": "The presence of assistance systems for parking / controlling blind areas / control of the strip"
+      "name": "Type of parking assistance"
     },
     "2301": {
       "id": "CFG_BQK_BSI_PRESENCE_BSG_RQ_000",
@@ -563,7 +438,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The sound signal of the Assistance System for Parking is supplied with a steering wheel switch"
+      "name": "Parking assistance audible warning emitted by the switching module under the steering wheel"
     },
     "2303": {
       "id": "CFG_AKK_BSI_RETVISUAAS_000",
@@ -683,51 +558,117 @@
     },
     "230E": {
       "id": "CFG_AY6_BSI_INHIB_DIAG_TNB_COND_000",
+      "name": "Driver's seat belt not fastened detection",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed seat belt of the driver (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "230F": {
       "id": "CFG_AY8_BSI_INHIB_DIAG_TNB_PAV_000",
+      "name": "Front passenger's seat belt not fastened detection",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed seat belt of the front passenger (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "2310": {
       "id": "CFG_B3U_BSI_INHIB_DIAG_TNB_PARC_000",
+      "name": "Rear middle passenger's seat belt not fastened detection",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed passenger seat belt of the central rear seat (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "2311": {
       "id": "CFG_B3W_BSI_INHIB_DIAG_TNB_PARD_000",
+      "name": "Rear RH passenger's seat belt not fastened detection",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed passenger seat belt of the right rear seat (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "2312": {
       "id": "CFG_B3V_BSI_INHIB_DIAG_TNB_PARG_000",
+      "name": "Rear LH passenger's seat belt not fastened detection",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed passenger seat belt of the left rear seat (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "2313": {
       "id": "CFG_B4N_BSI_INHIB_DIAG_TNB_RANG3_000",
+      "name": "Detection of seat belt not fastened for the third row of seats",
       "tab": "info",
       "byte": 0,
       "type": "bool",
-      "form_type": "checkbox",
-      "name": "Detection of an fixed seat belt of the third row of seats (No Checkmark = yes)"
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        {
+          "name": "YES",
+          "value": "00"
+        },
+        {
+          "name": "NO",
+          "mask": "01"
+        }
+      ]
     },
     "2314": {
       "id": "CFG_A72_BSI_EMF_000",
@@ -1196,7 +1137,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The presence of parking lights (lateral designation of dimensions)"
+      "name": "The presence of the parking lights (side marking)"
     },
     "2344": {
       "id": "CFG_A5V_BSI_CDS_000",
@@ -1493,14 +1434,14 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "There are no backlight lamps" },
-        { "value": "1", "name": "Dimensions and daylight lights" },
-        { "value": "2", "name": "Gabarit lights" },
-        { "value": "3", "name": "Day lighting" },
-        { "value": "4", "name": "CFG_BVH_BSI_OPTION_SIGNATURE_000_04" },
-        { "value": "5", "name": "CFG_BVH_BSI_OPTION_SIGNATURE_000_05" }
+        { "value": "0", "name": "No signature lamps" },
+        { "value": "1", "name": "Sidelamps and daytime lamps" },
+        { "value": "2", "name": "Sidelamps" },
+        { "value": "3", "name": "Day running lamps" },
+        { "value": "4", "name": "Automatic lighting of the daytime running lamps" },
+        { "value": "5", "name": "Side lamps,day running lamps and number plate lamps" }
       ],
-      "name": "Front headlights with daytime running lights"
+      "name": "Front lamps used for the signature lighting function"
     },
     "2364": {
       "id": "CFG_BEB_BSI_PRESENCE_DIRA_000",
@@ -1580,7 +1521,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The presence of rain / light lighting sensor on the LIN network"
+      "name": "Presence of a rain/brightness sensor on the LIN"
     },
     "236E": {
       "id": "CFG_BVE_BSI_ECLAIREURS_LATERAUX_000",
@@ -1588,7 +1529,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The presence of outer side backlight"
+      "name": "Presence of exterior side lighter"
     },
     "236F": {
       "id": "CFG_BVD_BSI_PRES_BOITIER_CAFR_000",
@@ -1630,16 +1571,16 @@
       "form_type": "combobox",
       "params": [
         { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Blind spot monitoring provided by a blind spot monitoring computer" },
-        { "value": "2", "name": "Warning of unintentional crossing of road markings is provided by a multifunctional video camera" },
-        { "value": "3", "name": "Blind Spot Monitoring, Computer Controlled Blind Spot Monitoring and Cross Lane Warning System Controlled by multifunctional Video Camera" },
-        { "value": "4", "name": "Warning of unintentional line crossings using infrared sensors" },
-        { "value": "5", "name": "Blind Spot Monitoring with Blind Spot Monitoring Computer + Cross Line Warning with Infrared Sensors" },
-        { "value": "8", "name": "Blind Spot Monitoring with Parking Assist Computer" },
-        { "value": "A", "name": "Blind spot control is provided by a parking assistance computer and a cross-line warning system using a multifunctional video camera" },
-        { "value": "C", "name": "Blind spot monitoring with parking assist computer + cross-line warning with infrared sensors" }
+        { "value": "1", "name": "Blind spot monitoring managed by a blind spot monitoring function ECU" },
+        { "value": "2", "name": "Lane departure warning system managed by the multifunction video camera" },
+        { "value": "3", "name": "Blind spot monitoring managed by the blind spot monitoring ECU and lane departure warning system managed by the multifunction video camera" },
+        { "value": "4", "name": "Lane wandering alert (infrared)" },
+        { "value": "5", "name": "Blind spot monitoring managed by a blind spot monitoring ECU and presence of the lane departure warning system (infrared)" },
+        { "value": "8", "name": "Blind spot monitoring managed by the parking assistance ECU" },
+        { "value": "A", "name": "Blind spot monitoring managed by the parking assistance ECU and lane departure warning system managed by the multifunction video camera" },
+        { "value": "C", "name": "Blind spot monitoring managed by the parking assistance ECU and presence of the lane departure warning system (infrared)" }
       ],
-      "name": "Availability and type of driving assistance system (AFIL / SAM)"
+      "name": "The presence and type of driving aid (AFIL / SAM)"
     },
     "2375": {
       "id": "CFG_B6Q_BSI_HILL_ASSIST_000",
@@ -1692,7 +1633,7 @@
       "byte": 0,
       "type": "int",
       "form_type": "string",
-      "name": "The threshold value of the speed for automatic blocking in movement in km/h"
+      "name": "The speed threshold for automatic locking when driving (km/h)"
     },
     "237B": {
       "id": "CFG_BC4_BSI_SONDE_TEMP_EVAPO_000",
@@ -2322,7 +2263,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The presence of an additional head lighting function (Intersection)"
+      "name": "Presence of the intersection lighting function"
     },
     "23AF": {
       "id": "CFG_D1B_BSI_ARCHI_ANTIBR_AV_000",
@@ -2907,7 +2848,7 @@
         { "value": "1", "name": "Using the instrument panel" },
         { "value": "2", "name": "Using a touch display" }
       ],
-      "name": "Type of information from the switch of assistance in parking"
+      "name": "Type of acquisition of the parking assistance deactivation switch"
     },
     "23ED": {
       "id": "CFG_DFG_BSI_TYPE_ACQUI_PUSH_STT_000",
@@ -3331,11 +3272,11 @@
       "form_type": "combobox",
       "params": [
         { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Reception of a multifunctional video camera" },
-        { "value": "2", "name": "Perception using the navigation system" },
-        { "value": "3", "name": "Reception of a multifunctional video camera and navigation system" }
+        { "value": "1", "name": "Acquisition by the multifunction video camera" },
+        { "value": "2", "name": "Acquisition by the navigation" },
+        { "value": "3", "name": "Acquisition by the multifunction video camera and by the navigation" }
       ],
-      "name": "The presence and type of perception of traffic signaling"
+      "name": "The presence and type of road signalling acquisition"
     },
     "2416": {
       "id": "CFG_DY1_BSI_PRESENCE_PORTE_ARD_000",
@@ -3755,7 +3696,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Multifunctional video registrar camera"
+      "name": "Multifunction video recording camera"
     },
     "244B": {
       "id": "CFG_ENE_BSI_TYP_ILV_OVERSPEED_AL_000",
@@ -3764,11 +3705,11 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0", "name": "Lack of warnings" },
+        { "value": "0", "name": "ABSENT of warning" },
         { "value": "1", "name": "Temporary warning" },
-        { "value": "2", "name": "Constant warning" }
+        { "value": "2", "name": "Permanent warning" }
       ],
-      "name": "The presence and duration of the withdrawal of the division of speed exceeding"
+      "name": "Presence and duration of displaying of the overspeed warning"
     },
     "244C": {
       "id": "CFG_EJL_BSI_TYPE_LANE_ASSIST_000",
@@ -3778,16 +3719,10 @@
       "form_type": "combobox",
       "params": [
         { "value": "0", "name": "absent" },
-        {
-          "value": "1",
-          "name": "The function is limited by the warning about the intersection of road marking lines"
-        },
-        {
-          "value": "2",
-          "name": "Full function of assistance in holding the car in the lane"
-        }
+        { "value": "1", "name": "Function limited to the lane departure warning" },
+        { "value": "2", "name": "Full lane keeping assistance function" }
       ],
-      "name": "The presence and type of assistance in holding the car within the lane"
+      "name": "The presence and type of lane keeping assistance"
     },
     "244D": {
       "id": "CFG_EL5_BSI_OPTION_AFS_000",
@@ -3811,7 +3746,7 @@
       "name": "Type of mode for ACC"
     },
     "2453": {
-      "id": "CFG_UNKOWN_2453",
+      "id": "CFG_ENG_BSI_TYP_TARGET_DETECTION_000",
       "tab": "drive_assist",
       "byte": 0,
       "type": "hex",
@@ -3822,7 +3757,7 @@
         { "value": "2", "name": "Radar & Camera" },
         { "value": "3", "name": "Camera" }
       ],
-      "name": "Type technologie detection for ACC"
+      "name": "Type of technologie for ACC"
     },
     "245A": {
       "id": "CFG_EOW_BSI_PILOTAGE_RELAIS_DA_000",
@@ -3976,7 +3911,7 @@
       "params": [
         { "value": "0", "name": "----" },
         { "value": "1", "name": "Simple instrument panel" },
-        { "value": "2", "name": "CIROCCO dashboard - Device digital panel" },
+        { "value": "2", "name": "CIROCCO instrument panel / Digital instrument panel" },
         { "value": "3", "name": "Instrument panel with multifunctional display functions" },
         { "value": "4", "name": "Instrument panel with matrix display" }
       ],
