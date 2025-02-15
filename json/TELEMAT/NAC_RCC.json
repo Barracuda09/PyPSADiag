@@ -1,6 +1,6 @@
 {
     "_comment": "NAC.json - script converted from ludwig-v github",
-    "name": "telemat_nac_rcc",
+    "name": "NAC/RCC",
     "tx_id": "764",
     "rx_id": "664",
     "protocol": "uds",
