@@ -152,6 +152,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup splitter Vertical (Top-Bottom)
         self.splitterTopBottom = QSplitter()
+        self.splitterTopBottom.setStyleSheet("QSplitter::handle {background: gray;}")
         self.splitterTopBottom.setOrientation(Qt.Orientation.Vertical)
 
         self.topWidget = QWidget()
