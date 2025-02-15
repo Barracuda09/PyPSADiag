@@ -34,6 +34,7 @@ class EcuZoneTreeView(QTabWidget):
     """
     def __init__(self, parent, ecuObjectList = None):
         super(EcuZoneTreeView, self).__init__(parent)
+        self.hideZones = False
         self.setSizePolicy(QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.MinimumExpanding))
         self.updateView(ecuObjectList)
 
@@ -63,7 +64,11 @@ class EcuZoneTreeView(QTabWidget):
                 index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
                 self.tabs.append([tabs, index])
 
+            self.hideNoResponseZones(self.hideZones)
+
     def hideNoResponseZones(self, hide: bool()):
+        # Take over the hide flag, so we know for next update/change
+        self.hideZones = hide
         for tab in self.tabs:
             widget = self.widget(tab[1])
             widget.hideNoResponseZones(hide)
@@ -100,6 +105,7 @@ class EcuZoneTreeView(QTabWidget):
                     if tab[0] == tabName:
                         widget = self.widget(tab[1])
                         widget.changeZoneOption(zone.upper(), data, valueType)
+        self.hideNoResponseZones(self.hideZones)
 
 
 class EcuZoneTreeViewWidget(QTreeWidget):
