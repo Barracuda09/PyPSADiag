@@ -896,7 +896,7 @@
           },
           {
             "name": "Function present",
-            "mask": "00100000"
+            "mask": "10000000"
           }
         ]
       }
