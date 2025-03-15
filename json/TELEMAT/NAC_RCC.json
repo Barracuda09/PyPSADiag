@@ -1212,7 +1212,7 @@
                     "name_original": "D8L",
                     "name": "Display Touch button \"Main beams assistant\"",
                     "byte": 0,
-                    "mask": "100000000",
+                    "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
