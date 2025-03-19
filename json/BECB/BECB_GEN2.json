@@ -1,0 +1,24 @@
+{
+  "name": "BECB_GEN2_TEST",
+  "tx_id": "6C4",
+  "rx_id": "604",
+  "protocol": "kwp_is",
+  "key_type": "single",
+  "keys": "****",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+    "zones": {
+        "B2": {
+            "id": "Gauging_Group_Data_Values",
+            "name": "Gauging group data values",
+            "tab": "tele",
+            "type": "raw",
+            "form_type": "multi",
+        }
+    }
+}
