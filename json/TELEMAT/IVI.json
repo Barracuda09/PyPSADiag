@@ -1,0 +1,65 @@
+{
+    "name": "IVI_TEST",
+    "tx_id": "764",
+    "rx_id": "664",
+    "protocol": "uds",
+    "key_type": "single",
+    "keys": "****",
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "vin": "VIN",
+        "telemat": "Telematic Unit (BTEL)"
+    },
+    "zones": {
+        "2100": {
+            "id": "Gauging_Group_Data_Values",
+            "tab": "telemat",
+            "name": "Gauging group data values",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "210B": {
+            "id": "Gauging_Group_Data_Values",
+            "tab": "telemat",
+            "name": "Gauging group data values",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "F181": {
+            "name": "Telecoding_Serial?",
+            "tab": "telemat",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "SN?",
+                    "name_original": "SN?",
+                    "name": "ignore",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
+        },
+        "F190": {
+            "name": "Telecoding_Fct_VIN",
+            "tab": "telemat",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "VIN",
+                    "name_original": "VIN",
+                    "name": "ignore",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
+        }
+    }
+}
