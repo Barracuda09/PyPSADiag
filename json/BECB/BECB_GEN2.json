@@ -19,6 +19,23 @@
             "tab": "tele",
             "type": "raw",
             "form_type": "multi",
+            "CFG_DAE_PARK_01": {
+                "name": "Calibration for state of charge in battery",
+                "byte": 2,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11111111",
+                "params": [
+                    {
+                        "name": "Value not specified",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "83",
+                        "mask": "10000011"
+                    }
+                ]
+            }
         }
     }
 }

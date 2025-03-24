@@ -8,6 +8,7 @@
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
         "vin": "VIN",
+        "ident": "Identification",
         "telemat": "Telematic Unit (BTEL)"
     },
     "zones": {
@@ -46,7 +47,7 @@
         },
         "F190": {
             "name": "Telecoding_Fct_VIN",
-            "tab": "telemat",
+            "tab": "VIN",
             "type": "raw",
             "form_type": "multi",
             "params": [
