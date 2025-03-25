@@ -1,13 +1,12 @@
 {
-  "name": "BECB_GEN2_TEST",
+  "name": "BECB_GEN2",
   "tx_id": "6C4",
   "rx_id": "604",
-  "protocol": "kwp_is",
+  "protocol": "kwp_hab",
   "key_type": "single",
   "keys": "****",
   "coding": true,
   "errors": true,
-  "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
     "ident": "Identification",
     "tele": "Telecoding"
@@ -36,6 +35,38 @@
                     }
                 ]
             }
+        },
+        "D5": {
+            "id": "1",
+            "name": "?",
+            "tab": "ident",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D6": {
+            "id": "2",
+            "name": "?",
+            "tab": "ident",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D7": {
+            "id": "HWn",
+            "name": "HW number",
+            "tab": "ident",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "DA": {
+            "id": "3",
+            "name": "?",
+            "tab": "ident",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
         }
     }
 }

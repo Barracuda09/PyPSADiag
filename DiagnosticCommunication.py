@@ -81,6 +81,18 @@ class DiagnosticCommunication(QThread):
             self.readEcuFaultsMode = "190209"
             self.readZoneTag = "21"
             self.writeZoneTag = "34"
+        elif self.protocol == "kwp_hab":
+            self.keepAlive = ""
+            self.stopKeepAlive = ""
+            self.startDiagmode = "10C0"
+            self.stopDiagmode = "1081"
+            self.unlockServiceConfig = "2783"
+            self.unlockResponseConfig = "2784"
+            self.readSecureTraceability = ""
+            self.secureTraceability = ""
+            self.readEcuFaultsMode = "17FF00"
+            self.readZoneTag = "21"
+            self.writeZoneTag = "3B"
         else:
             print("Incorrect protocol: " + protocol)
             exit()
@@ -142,6 +154,8 @@ class DiagnosticCommunication(QThread):
             return True
         elif len(receiveData) == 6 and receiveData[:2] == "C1":
             return True
+        elif len(receiveData) == 4 and receiveData[:4] == "50C0":
+            return True
         self.writeToOutputView("Open Diagnostic session: Failed", receiveData)
         return False
 
@@ -151,6 +165,8 @@ class DiagnosticCommunication(QThread):
         if len(receiveData) >= 4 and receiveData[:4] == "5001":
             return True
         elif len(receiveData) == 2 and receiveData[:2] == "C2":
+            return True
+        elif len(receiveData) == 4 and receiveData[:4] == "5081":
             return True
         self.writeToOutputView("Closing Diagnostic session: Failed", receiveData)
         return False
