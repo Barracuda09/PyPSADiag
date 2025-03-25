@@ -114,6 +114,12 @@ class MainWindow(QMainWindow):
         self.kwpCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwpCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
 
+        # KWP_HAB
+        self.kwpCommunication = DiagnosticCommunication(self.serialController, "kwp_hab")
+        self.kwpCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
+        self.kwpCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
+        self.kwpCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
@@ -286,6 +292,14 @@ class MainWindow(QMainWindow):
                     zone = {}
                     zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
                     self.kwpCommunication.setZonesToRead(ecu, lin, zone)
+            elif self.ecuObjectList["protocol"] == "kwp_hab":
+                # Read Requested Zone or ALL Zones from ECU
+                if self.ui.ecuComboBox.currentIndex() == 0:
+                    self.kwpCommunication.setZonesToRead(ecu, lin, self.ecuObjectList["zones"])
+                else:
+                    zone = {}
+                    zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
+                    self.kwpCommunication.setZonesToRead(ecu, lin, zone)
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return
@@ -330,6 +344,8 @@ class MainWindow(QMainWindow):
 #                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
                 self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             elif self.ecuObjectList["protocol"] == "kwp_is":
+                self.kwpCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
+            elif self.ecuObjectList["protocol"] == "kwp_hab":
                 self.kwpCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
                 self.writeToOutputView("Protocol not supported yet!")
