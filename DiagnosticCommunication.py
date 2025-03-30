@@ -78,7 +78,7 @@ class DiagnosticCommunication(QThread):
             self.unlockResponseConfig = "2784"
             self.readSecureTraceability = ""
             self.secureTraceability = ""
-            self.readEcuFaultsMode = "190209"
+            self.readEcuFaultsMode = "17FF00"
             self.readZoneTag = "21"
             self.writeZoneTag = "34"
         elif self.protocol == "kwp_hab":
@@ -86,8 +86,8 @@ class DiagnosticCommunication(QThread):
             self.stopKeepAlive = ""
             self.startDiagmode = "10C0"
             self.stopDiagmode = "1081"
-            self.unlockServiceConfig = "2783"
-            self.unlockResponseConfig = "2784"
+            self.unlockServiceConfig = ""
+            self.unlockResponseConfig = ""
             self.readSecureTraceability = ""
             self.secureTraceability = ""
             self.readEcuFaultsMode = "17FF00"
@@ -247,7 +247,7 @@ class DiagnosticCommunication(QThread):
             self.writeToOutputView("Write Configuration Zone: Failed", receiveData)
             return False
 
-    def writeKWPZoneConfigurationCommand(self, zone: str(), data: str()):
+    def writeKWPisZoneConfigurationCommand(self, zone: str(), data: str()):
         addrHigh = "00"
         addrMid = "00"
         addrLow = "00"
@@ -331,7 +331,7 @@ class DiagnosticCommunication(QThread):
                 if self.protocol == "uds":
                     self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
                 elif self.protocol == "kwp_is":
-                    self.writeKWPZoneConfigurationCommand(zone[0], zone[1])
+                    self.writeKWPisZoneConfigurationCommand(zone[0], zone[1])
                 time.sleep(0.2)
                 receiveData = self.writeECUCommand(readCmd)
 
