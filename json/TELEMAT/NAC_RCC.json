@@ -1766,6 +1766,15 @@
                     "form_type": "string"
                 },
                 {
+                    "extra_name": "?",
+                    "name_original": "?",
+                    "name": "?",
+                    "byte": 3,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "BTEL_COUNTRY",
                     "name_original": "AKT",
                     "name": "Geographic area of use of the radio",
@@ -9237,36 +9246,9 @@
         "0106": {
             "name": "Telecoding_Fct_BluetoothName",
             "tab": "telemat",
-            "type": "raw",
-            "form_type": "multi",
-            "params": [
-                {
-                    "extra_name": "Bluetooth Name",
-                    "name_original": "BTN",
-                    "name": "Bluetooth Name",
-                    "byte": 0,
-                    "mask": "11111111",
-                    "type": "raw",
-                    "form_type": "string"
-                }
-            ]
-        },
-        "F190": {
-            "name": "Telecoding_Fct_VIN",
-            "tab": "telemat",
-            "type": "raw",
-            "form_type": "multi",
-            "params": [
-                {
-                    "extra_name": "VIN",
-                    "name_original": "VIN",
-                    "name": "ignore",
-                    "byte": 0,
-                    "mask": "11111111",
-                    "type": "raw",
-                    "form_type": "string"
-                }
-            ]
+            "byte": 0,
+            "type": "string_ascii",
+            "form_type": "string"
         },
         "F18C": {
             "name": "Telecoding_Serial",
