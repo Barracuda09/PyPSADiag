@@ -725,6 +725,23 @@
           }
         ]
       },
+      "CFG_E2F_CMB_TYPE_LISTE_PICTO_002_E": {
+        "name": "Indicates if Pictograms List is Basic or Extended (1)",
+        "byte": 15,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
       "CFG_E1R_CMB_SPEED_ADVISOR_CFG_000": {
         "name": "Memorization of speed advisor",
         "byte": 15,
