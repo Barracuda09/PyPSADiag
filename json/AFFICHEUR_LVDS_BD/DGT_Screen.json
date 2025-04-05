@@ -14,57 +14,90 @@
   },
   "coding": true,
   "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding",
     "dgt_screen": "DGT Screen"
   },
   "zones": {
     "2100": {
-      "id": "Configuration_Group_Data_1",
+      "id": "Configuration_Group_Data_List_2100",
       "tab": "dgt_screen",
-      "name": "Configuration group data 1",
-      "byte": 0,
+      "name": "Configuration group data list 2100",
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "CFG_2100_4": {
+        "name": "??? Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_2100_5": {
+        "name": "Airco/Temperature Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_2100_6": {
+        "name": "??? Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      }
     },
     "2110": {
-      "id": "Configuration_Group_Data_2",
+      "id": "Configuration_Group_Data_List_2110",
       "tab": "dgt_screen",
-      "name": "Configuration group data 2",
-      "byte": 0,
+      "name": "Configuration group data list 2110",
       "type": "raw",
-      "form_type": "string"
-    },
-    "f080": {
-      "id": "ZA_ZONE",
-      "tab": "dgt_screen",
-      "name": "ZA Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "f0fe": {
-      "id": "ZI_ZONE",
-      "tab": "dgt_screen",
-      "name": "ZI Zone",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "F18B": {
-      "id": "Production_Date",
-      "tab": "dgt_screen",
-      "name": "Production Date",
-      "byte": 0,
-      "type": "string_date",
-      "form_type": "string"
-    },
-    "F18C": {
-      "id": "Serial_Number",
-      "tab": "dgt_screen",
-      "name": "Serial Number",
-      "byte": 0,
-      "type": "string_ascii",
-      "form_type": "string"
+      "form_type": "multi",
+      "CFG_2110_0": {
+        "name": "Touch",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Single-Touch",
+            "mask": "00000000"
+          },
+          {
+            "name": "Multi-Touch",
+            "mask": "10000000"
+          }
+        ]
+      }
     }
   }
 }
