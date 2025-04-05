@@ -33,17 +33,17 @@
       "form_type": "string"
     },
     "2100": {
-      "id": "Configuration_Group_Data_List1",
+      "id": "Configuration_Group_Data_List_2100",
       "tab": "tele",
-      "name": "Configuration group data list1",
+      "name": "Configuration group data list 2100",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
     },
     "2101": {
-      "id": "Configuration_Group_Data_List2",
+      "id": "Configuration_Group_Data_List_2101",
       "tab": "tele",
-      "name": "Configuration group data list2",
+      "name": "Configuration group data list 2101",
       "type": "raw",
       "form_type": "multi",
       "CFG_ETB_AAS_TYPE_ACTIV_CITYPARK_000": {
@@ -113,14 +113,14 @@
         ]
       },
       "CFG_EQQ_AAS_DEVELOPPEE_ROUE_MAX_000": {
-        "name": "MAXIMAL WHEEL CIRCONFERENCE ",
+        "name": "Maximum wheel circumference",
         "byte": 1,
         "byte_range": 2,
         "type": "raw",
         "form_type": "string"
       },
       "CFG_EQR_AAS_DEVELOPPEE_ROUE_MIN_000": {
-        "name": "MININAL WHEEL CIRCONFERENCE",
+        "name": "Minimum wheel circumference",
         "byte": 3,
         "byte_range": 2,
         "type": "raw",
@@ -161,7 +161,7 @@
         ]
       },
       "CFG_BVW_AAS_SAM_000": {
-        "name": "Presence of the blind spot monitoring function on the vehicle",
+        "name": "Presence of the blind spot monitoring function",
         "byte": 5,
         "type": "bool",
         "form_type": "combobox",
@@ -220,7 +220,7 @@
         ]
       },
       "CFG_EQY_AAS_TYPE_DOP_000": {
-        "name": "TYPE OF PARK PILOT",
+        "name": "Type of Park Pilot",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
@@ -245,7 +245,7 @@
         ]
       },
       "CFG_EQX_AAS_TYPE_CITYPARK_000": {
-        "name": "TYPE OF CITY PARK",
+        "name": "Type of City Park",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
