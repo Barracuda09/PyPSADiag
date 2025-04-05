@@ -93,11 +93,20 @@ class EcuZoneCheckBox(QCheckBox):
             for i in range(0, len(data), 2):
                 byteData.append(data[i:i + 2])
 
+            # Is this option used for this Zone (NAC/RCC JSON Files)
+            zoneLength = len(byteData)
+            if "zoneLength" in self.zoneObject:
+                zoneLength = self.zoneObject["zoneLength"]
+                if zoneLength != len(byteData):
+                    return 2
+
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
+
+            # Integrity wrong, size does not match
             if byteNr >= len(byteData):
-                # Integrity wrong, size does not match
-                return False
+                return 1
+
             byte = int(byteData[byteNr], 16) & mask
             if "available_logic" in self.zoneObject and "active_high" == self.zoneObject["available_logic"]:
                 if byte > 0:
@@ -115,5 +124,5 @@ class EcuZoneCheckBox(QCheckBox):
             elif data == "00":
                 self.setCheckState(Qt.Unchecked)
 
-        return True
+        return 0
 

@@ -145,14 +145,21 @@ class EcuZoneLineEdit(QLineEdit):
             for i in range(0, len(data), 2):
                 byteData.append(data[i:i + 2])
 
+            # Is this option used for this Zone (NAC/RCC JSON Files)
+            zoneLength = len(byteData)
+            if "zoneLength" in self.zoneObject:
+                zoneLength = self.zoneObject["zoneLength"]
+                if zoneLength > len(byteData):
+                    return 2
+
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
             byte = 0
-            if mask < 256:
+            if mask < 256 and byteNr < len(byteData):
                 byte = (int(byteData[byteNr], 16) & mask) >> self.__shift(mask)
             else:
-                print("Bigger")
-                print(valueType)
+                return 1
+
             self.__setText(str(byte))
         elif "byte_range" in self.zoneObject:
             byteNr = self.zoneObject["byte"] * 2
@@ -190,4 +197,4 @@ class EcuZoneLineEdit(QLineEdit):
 
             self.__setText(txt)
 
-        return True
+        return 0

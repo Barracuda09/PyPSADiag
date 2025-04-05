@@ -116,6 +116,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         self.setSelectionMode(QTreeWidget.NoSelection)
         self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
+        self.setAutoScroll(False)
         rowCount = 0
         itemReadOnly = False
         # Setup Tree view

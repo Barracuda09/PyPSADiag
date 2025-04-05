@@ -106,25 +106,43 @@ class EcuZoneComboBox(QComboBox):
             for i in range(0, len(data), 2):
                 byteData.append(data[i:i + 2])
 
+            # Is this option used for this Zone (NAC/RCC JSON Files)
+            zoneLength = len(byteData)
+            if "zoneLength" in self.zoneObject:
+                zoneLength = self.zoneObject["zoneLength"]
+                if zoneLength > len(byteData):
+                    return 2
+
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
             size = self.getCorrespondingByteSize()
+
+            # Integrity wrong, size does not match
+            if (byteNr + size) > len(byteData):
+                return 1
 
             currByteData = byteData[byteNr : byteNr + size]
             currData = ""
             for i in range(len(currByteData)):
                 currData += currByteData[i]
 
-            if (byteNr + size) <= len(byteData):
-                byte = int(currData, 16) & mask
-            else:
-                # Integrity wrong, size does not match
-                return False
+            byte = int(currData, 16) & mask
+        else:
+            print(" No mask")
+            print("  Obj   : " + str(self.zoneObject))
 
         # Find the Option (byte) from the ComboBox
+        foundMatch = False
         for i in range(self.count()):
             if self.itemData(i) == byte:
                 self.setCurrentIndex(i)
+                foundMatch = True
                 break
 
-        return True
+        # Did we find item, else add it to combobox
+        if foundMatch == False:
+            print("** Add missing combobox item " + "0x%0.2X" % byte + " **")
+            self.addItem("** 0x%0.2X" % byte, int(byte))
+            self.setCurrentIndex(self.count() - 1)
+
+        return 0

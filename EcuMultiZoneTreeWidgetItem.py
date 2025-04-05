@@ -33,6 +33,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zoneDescription = ""
     zoneObject = {}
     integrity = True
+    selfUpdate = False
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
         super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), str("** " + description + " **")])
         parent.insertTopLevelItem(row, self)
@@ -77,21 +78,31 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         return [self.zone, value]
 
     def changeZoneOption(self, root, data: str, valueType: str):
-        # Set Root value of Multi Config zone
-        widget = root.treeWidget().itemWidget(root, 2)
-        widget.changeZoneOption(data, "")
+        self.selfUpdate == True
+        try:
+            # Set Root value of Multi Config zone
+            widget = root.treeWidget().itemWidget(root, 2)
+            widget.changeZoneOption(data, "")
 
-        # Set individual Sub items
-        for index in range(root.childCount()):
-            cellItem = root.child(index)
-            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            if isinstance(widget, EcuZoneLineEdit):
-                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
-            elif isinstance(widget, EcuZoneCheckBox):
-                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
-            elif isinstance(widget, EcuZoneComboBox):
-                self.integrity = widget.changeZoneOption(data, valueType) and self.integrity
+            # Set individual Sub items
+            for index in range(root.childCount()):
+                cellItem = root.child(index)
+                widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+                result = widget.changeZoneOption(data, valueType)
 
+                if result == 2:
+                    print("Disabled(2): " + self.zone)
+                    widget.setStyleSheet("QComboBox{background-color: red;}")
+                    widget.setEnabled(False)
+                    cellItem.setHidden(True)
+                elif result == 1:
+                    print("Disabled(1): " + self.zone)
+                    self.integrity = False
+
+        except:
+            print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption")
+
+        self.selfUpdate == False
         # Integrity wrong, disable the sub zones and coding
         if not self.integrity:
             for index in range(root.childCount()):
@@ -101,6 +112,10 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 widget.setEnabled(False)
 
     def __update(self):
+        # If we are "self" updating (By loading CSV file) do not call update
+        if self.selfUpdate == True:
+            return
+
         rootWidget = self.treeWidget().itemWidget(self, 2)
         data = rootWidget.text()
         # Make Bytes (2 chars) from input data
@@ -115,11 +130,9 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             byteNr = widget.getCorrespondingByte()
             size = widget.getCorrespondingByteSize()
 
-            # Do we need to expand
-            byteDataLen = len(byteData)
-            if byteDataLen < (byteNr + size):
-                for i in range((byteNr - byteDataLen) + size):
-                    byteData.insert(byteDataLen + i, "00")
+            # Size do not correspond or not Enabled, Then Goto next item
+            if (byteNr + size) > len(byteData) or widget.isEnabled() == False:
+                continue
 
             # Get the corresponing data for this "zone"
             currData = str().join(byteData[byteNr : byteNr + size])
