@@ -1,13 +1,12 @@
 {
     "_comment": "NAC.json - script converted from ludwig-v github",
-    "name": "NAC/RCC",
+    "name": "NAC",
     "tx_id": "764",
     "rx_id": "664",
     "protocol": "uds",
     "key_type": "multi",
     "keys": {
-        "NAC": "D91C",
-        "RCC": "F107"
+        "NAC": "D91C"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
