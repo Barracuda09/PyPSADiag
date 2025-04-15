@@ -63,11 +63,12 @@ class EcuZoneComboBox(QComboBox):
         return self.zoneObject["byte"]
 
     def getCorrespondingByteSize(self):
-        bits = int(self.zoneObject["mask"], 2).bit_count()
-        if bits > 8 and bits < 16:
-            return 2
-        elif bits > 16 and bits < 32:
-            return 4
+        if "mask" in self.zoneObject:
+            bits = int(self.zoneObject["mask"], 2).bit_count()
+            if bits > 8 and bits <= 16:
+                return 2
+            elif bits > 16 and bits <= 32:
+                return 4
         return 1
 
     def setCurrentIndex(self, val):

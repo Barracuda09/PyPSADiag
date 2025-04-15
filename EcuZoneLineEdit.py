@@ -54,6 +54,12 @@ class EcuZoneLineEdit(QLineEdit):
         return self.zoneObject["byte"]
 
     def getCorrespondingByteSize(self):
+        if "mask" in self.zoneObject:
+            bits = int(self.zoneObject["mask"], 2).bit_count()
+            if bits > 8 and bits <= 16:
+                return 2
+            elif bits > 16 and bits <= 32:
+                return 4
         return 1
 
     def __setText(self, val):
@@ -115,9 +121,10 @@ class EcuZoneLineEdit(QLineEdit):
             text = self.text()
             mask = int(self.zoneObject["mask"], 2)
             if text != None and text != "":
+                size = self.getCorrespondingByteSize() * 2
                 newByte = int(text) << self.__shift(mask)
                 value = (int(byte, 16) & ~mask) | newByte
-                byte = "%0.2X" % value
+                byte = f"%0.{size}X" % value
         return byte
 
     def __convertStringToDate(self, data: str):
@@ -154,13 +161,20 @@ class EcuZoneLineEdit(QLineEdit):
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
-            byte = 0
-            if mask < 256 and byteNr < len(byteData):
-                byte = (int(byteData[byteNr], 16) & mask) >> self.__shift(mask)
-            else:
+            size = self.getCorrespondingByteSize()
+
+            # Integrity wrong, size does not match
+            if (byteNr + size) > len(byteData):
                 return 1
 
+            currByteData = byteData[byteNr : byteNr + size]
+            currData = ""
+            for i in range(len(currByteData)):
+                currData += currByteData[i]
+
+            byte = (int(currData, 16) & mask) >> self.__shift(mask)
             self.__setText(str(byte))
+
         elif "byte_range" in self.zoneObject:
             byteNr = self.zoneObject["byte"] * 2
             ran = self.zoneObject["byte_range"] * 2
