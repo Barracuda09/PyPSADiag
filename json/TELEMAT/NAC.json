@@ -6,6 +6,7 @@
     "protocol": "uds",
     "key_type": "multi",
     "keys": {
+    "keys": {
         "NAC": "D91C"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
@@ -9190,7 +9191,7 @@
                 {
                     "extra_name": "DAT_DG_HY_MTH",
                     "name_original": "EXT",
-                    "name": "Thermal motor",
+                    "name": "Internal combustion engine",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -10121,7 +10122,7 @@
                     "name_original": "E4H",
                     "name": "X Axis Position of the camera (-8000)\r\n0 <> 6000mm",
                     "byte": 0,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10130,7 +10131,7 @@
                     "name_original": "E4G",
                     "name": "Y Axis Position of the camera (-3000)\r\n0 <> 6000mm",
                     "byte": 2,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10139,7 +10140,7 @@
                     "name_original": "E4F",
                     "name": "Z Axis Position of the camera (+100)\r\n0 <> 1900mm",
                     "byte": 4,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10148,7 +10149,7 @@
                     "name_original": "E4E",
                     "name": "Camera Roll Angle  (Roll) (-180)\r\n0 <> 3600° / 0.1",
                     "byte": 6,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10157,16 +10158,16 @@
                     "name_original": "E4D",
                     "name": "Vertical angle of the camera (Pitch)\r\n0 <> 1800° / 0.1",
                     "byte": 8,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
                 {
                     "extra_name": "REAR_CAMERA_YAW",
-                    "name_original": "E4E",
+                    "name_original": "E4C",
                     "name": "Horizontal angle of the camera (Yaw) (-180)\r\n0 <> 3600° / 0.1",
                     "byte": 10,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10175,7 +10176,7 @@
                     "name_original": "E49",
                     "name": "Distance between front wheels and front of vehicle (+150)\r\n0 <> 1850mm",
                     "byte": 12,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10184,7 +10185,7 @@
                     "name_original": "E48",
                     "name": "Distance between rear wheels and rear of vehicle (+150)\r\n0 <> 1850mm",
                     "byte": 14,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10193,7 +10194,7 @@
                     "name_original": "E47",
                     "name": "Distance between rear wheels and front wheels (+1000)\r\n0 <> 4000mm",
                     "byte": 16,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10202,7 +10203,7 @@
                     "name_original": "E44",
                     "name": "Distance between ground and rear bumper edge\r\n0 <> 1500mm",
                     "byte": 18,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10247,7 +10248,7 @@
                     "name_original": "ECB",
                     "name": "Real Top View Height (if camera is too low)\r\n1000 <> 2550mm",
                     "byte": 24,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10274,7 +10275,7 @@
                     "name_original": "E51",
                     "name": "Vehicle width (+1500)\r\n0 <> 1000mm",
                     "byte": 28,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10283,7 +10284,7 @@
                     "name_original": "EB2",
                     "name": "Trailer hook height\r\n50 <> 1500mm",
                     "byte": 31,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
@@ -10292,7 +10293,7 @@
                     "name_original": "EB3",
                     "name": "Trailer hook length\r\n0 <> 2000mm",
                     "byte": 33,
-                    "mask": "11111111",
+                    "mask": "1111111111111111",
                     "type": "raw",
                     "form_type": "string"
                 },
