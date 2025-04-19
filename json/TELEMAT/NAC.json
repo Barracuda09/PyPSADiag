@@ -6,7 +6,6 @@
     "protocol": "uds",
     "key_type": "multi",
     "keys": {
-    "keys": {
         "NAC": "D91C"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
