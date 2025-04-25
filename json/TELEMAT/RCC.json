@@ -2224,6 +2224,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -2374,6 +2382,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -2524,6 +2540,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -2674,6 +2698,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -2824,6 +2856,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -2974,6 +3014,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3124,6 +3172,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3274,6 +3330,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3424,6 +3488,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3574,6 +3646,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3762,6 +3842,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -3912,6 +4000,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4062,6 +4158,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4212,6 +4316,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4362,6 +4474,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4512,6 +4632,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4662,6 +4790,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4812,6 +4948,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -4962,6 +5106,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5112,6 +5264,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5300,6 +5460,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5450,6 +5618,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5600,6 +5776,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5750,6 +5934,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -5900,6 +6092,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6050,6 +6250,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6200,6 +6408,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6350,6 +6566,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6500,6 +6724,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6650,6 +6882,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6838,6 +7078,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -6988,6 +7236,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7138,6 +7394,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7288,6 +7552,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7438,6 +7710,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7588,6 +7868,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7738,6 +8026,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -7888,6 +8184,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -8038,6 +8342,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 },
@@ -8188,6 +8500,14 @@
                         {
                             "mask": "00100110",
                             "name": "Hands-Free opening function (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00100111",
+                            "name": "Sound When Speed Limit Changes (Wave3/4 only)"
+                        },
+                        {
+                            "mask": "00101000",
+                            "name": "Excessive Speed Warning (Wave3/4 only)",
                         }
                     ]
                 }
