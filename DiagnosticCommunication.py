@@ -43,6 +43,7 @@ class DiagnosticCommunication(QThread):
     stopKeepAlive = ""
     startDiagmode = ""
     stopDiagmode = ""
+    rebootECU = ""
     unlockServiceConfig = ""
     unlockResponseConfig = ""
     readSecureTraceability = ""
@@ -62,6 +63,7 @@ class DiagnosticCommunication(QThread):
             self.stopKeepAlive = "S"
             self.startDiagmode = "1003"
             self.stopDiagmode = "1001"
+            self.rebootECU = "1103"
             self.unlockServiceConfig = "2703"
             self.unlockResponseConfig = "2704"
             self.readSecureTraceability = "222901"
@@ -74,6 +76,7 @@ class DiagnosticCommunication(QThread):
             self.stopKeepAlive = "S"
             self.startDiagmode = "81"
             self.stopDiagmode = "82"
+            self.rebootECU = ""
             self.unlockServiceConfig = "2783"
             self.unlockResponseConfig = "2784"
             self.readSecureTraceability = ""
@@ -86,6 +89,7 @@ class DiagnosticCommunication(QThread):
             self.stopKeepAlive = ""
             self.startDiagmode = "10C0"
             self.stopDiagmode = "1081"
+            self.rebootECU = "31A800"
             self.unlockServiceConfig = ""
             self.unlockResponseConfig = ""
             self.readSecureTraceability = ""
@@ -352,15 +356,18 @@ class DiagnosticCommunication(QThread):
     def rebootEcu(self, ecuID: str):
         if self.serialPort.isOpen():
             self.writeToOutputView("Reboot ECU...")
-            receiveData = self.serialPort.sendReceive(ecuID)
+            receiveData = self.writeECUCommand(ecuID)
             if receiveData != "OK":
                 self.writeToOutputView("ECU Not selected!")
                 return
 
-            receiveData = self.ecuZoneReaderThread.sendReceive("1103")
-            if len(receiveData) != 4 or receiveData[:4] != "5103":
-                self.writeToOutputView("Reboot: Failed")
+            receiveData = self.writeECUCommand(self.rebootECU)
+            if len(receiveData) >= 4 and receiveData[:4] == "5103":
                 return
+            elif len(receiveData) >= 6 and receiveData[:6] == "71A801":
+                return
+
+            self.writeToOutputView("Reboot: Failed")
 
     def readEcuFaults(self, ecuID: str):
         if self.serialPort.isOpen():

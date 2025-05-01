@@ -362,6 +362,8 @@ class MainWindow(QMainWindow):
 
             if self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.rebootEcu(ecu)
+            elif self.ecuObjectList["protocol"] == "kwp_hab":
+                self.kwphabCommunication.rebootEcu(ecu)
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return

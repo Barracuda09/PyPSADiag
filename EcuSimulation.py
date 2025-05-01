@@ -71,6 +71,8 @@ class EcuSimulation(QThread):
             return "6704"
 
         # UDS
+        if cmd == "1103":
+            return "5103"
         if cmd == "1003":
             # Check if ECU is in car simulation and if correct protocol
             if (self.ecuID in self.carECUList) and (self.carECUList[self.ecuID]["protocol"] == "uds"):
@@ -99,6 +101,10 @@ class EcuSimulation(QThread):
             return "67836B0A71E0"
         if cmd[:4] == "2784":
             return "6784"
+
+        # KWP_HAB
+        if cmd == "31A800":
+            return "71A801"
 
         # Simulate Read/Write
         if self.protocol == "uds":
