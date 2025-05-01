@@ -384,7 +384,9 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def csvReadCallback(self, value: list):
-        self.ui.treeView.changeZoneOption(value[0], value[1]);
+        # Did we had an empty line in CSV? Then skip it.
+        if len(value) >= 2:
+            self.ui.treeView.changeZoneOption(value[0], value[1]);
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str):
