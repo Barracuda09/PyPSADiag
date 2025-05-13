@@ -5153,7 +5153,8 @@
         { "value": "32", "name": "Petrol-10000KM" },
         { "value": "23", "name": "Petrol-7000KM" },
         { "value": "19", "name": "Petrol-5000KM" },
-        { "value": "C8", "name": "Diesel-30000KM" }
+        { "value": "96", "name": "Diesel-30000KM"},
+        { "value": "C8", "name": "Diesel-40000KM"}
       ],
       "name": "Servicing threshold(marketing)"
     },
