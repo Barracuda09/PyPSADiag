@@ -49,6 +49,7 @@ class DiagnosticCommunication(QThread):
     readSecureTraceability = ""
     secureTraceability = ""
     readEcuFaultsMode = ""
+    clearEcuFaultsMode = ""
     readZoneTag = ""
     writeZoneTag = ""
 
@@ -69,6 +70,7 @@ class DiagnosticCommunication(QThread):
             self.readSecureTraceability = "222901"
             self.secureTraceability = "2E2901FD000000010101"
             self.readEcuFaultsMode = "190209"
+            self.clearEcuFaultsMode = "14FFFFFF"
             self.readZoneTag = "22"
             self.writeZoneTag = "2E"
         elif self.protocol == "kwp_is":
@@ -82,6 +84,7 @@ class DiagnosticCommunication(QThread):
             self.readSecureTraceability = ""
             self.secureTraceability = ""
             self.readEcuFaultsMode = "17FF00"
+            self.clearEcuFaultsMode = "14FF00"
             self.readZoneTag = "21"
             self.writeZoneTag = "34"
         elif self.protocol == "kwp_hab":
@@ -95,6 +98,7 @@ class DiagnosticCommunication(QThread):
             self.readSecureTraceability = ""
             self.secureTraceability = ""
             self.readEcuFaultsMode = "17FF00"
+            self.clearEcuFaultsMode = "14FF00"
             self.readZoneTag = "21"
             self.writeZoneTag = "3B"
         else:
@@ -381,14 +385,37 @@ class DiagnosticCommunication(QThread):
             if not self.startDiagnosticMode():
                 return
 
+            cmdOk = False
             receiveData = self.writeECUCommand(self.readEcuFaultsMode)
-            if len(receiveData) < 4:
-                self.writeToOutputView("Reading ECU Faults: Failed")
+            if len(receiveData) > 4:
+                cmdOk = True
 
-            if not self.stopDiagnosticMode():
+            if self.stopDiagnosticMode() and cmdOk:
                 return
 
-            self.writeToOutputView("Reading ECU Faults: Successful")
+            self.writeToOutputView("Reading ECU Faults: Failed")
+
+    def clearEcuFaults(self, ecuID: str):
+        if self.serialPort.isOpen():
+            self.writeToOutputView("Clearing ECU Faults...")
+
+            receiveData = self.writeECUCommand(ecuID)
+            if receiveData != "OK":
+                self.writeToOutputView("ECU Not selected!")
+                return
+
+            if not self.startDiagnosticMode():
+                return
+
+            cmdOk = False
+            receiveData = self.writeECUCommand(self.clearEcuFaultsMode)
+            if len(receiveData) >= 2 and receiveData[:2] == "54":
+                cmdOk = True
+
+            if self.stopDiagnosticMode() and cmdOk:
+                return
+
+            self.writeToOutputView("Clearing ECU Faults: Failed")
 
     def setZonesToRead(self, ecuID: str, lin: str, zoneList: dict):
         if not self.serialPort.isOpen():

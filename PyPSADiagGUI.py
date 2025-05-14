@@ -34,13 +34,21 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
 from EcuZoneTreeView  import EcuZoneTreeView
 
 class PyPSADiagGUI(object):
+    mainWindow = None
+
+    def setFilePathInWindowsTitle(self, path: str()):
+        if path == "":
+            self.mainWindow.setWindowTitle("PyPSADiag")
+        else:
+            self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
     def setupGUi(self, MainWindow, scan: bool()):
+        self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
         MainWindow.setSizeIncrement(QSize(1, 1))
-        MainWindow.setWindowTitle("PyPSADiag")
+        self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(1)
@@ -78,6 +86,8 @@ class PyPSADiagGUI(object):
         self.rebootEcu.setText(QCoreApplication.translate("MainWindow", u"Reboot ECU", None))
         self.readEcuFaults = QPushButton()
         self.readEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Read ECU Faults", None))
+        self.clearEcuFaults = QPushButton()
+        self.clearEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Clear ECU Faults", None))
         self.writeSecureTraceability = QCheckBox()
         self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
         self.virginWriteZone = QCheckBox()
@@ -127,6 +137,7 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.readZone)
         self.bottomRightLayout.addWidget(self.writeZone)
         self.bottomRightLayout.addWidget(self.readEcuFaults)
+        self.bottomRightLayout.addWidget(self.clearEcuFaults)
         self.bottomRightLayout.addWidget(self.rebootEcu)
         self.bottomRightLayout.addWidget(self.virginWriteZone)
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)

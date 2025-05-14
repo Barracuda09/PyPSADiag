@@ -24,7 +24,7 @@ from PySide6.QtWidgets import QWidget, QFrame, QDialog, QTextEdit, QPushButton, 
 
 class MessageDialog(QDialog):
 
-    def __init__(self, parent, title: str(), text: str()):
+    def __init__(self, parent, title: str(), acceptTxt: str(), text: str()):
         super(MessageDialog, self).__init__(parent)
         self.setWindowTitle(title)
         self.setModal(True)
@@ -42,7 +42,7 @@ class MessageDialog(QDialog):
         self.rejectButton = QPushButton()
         self.rejectButton.setText("Cancel")
         self.acceptButton = QPushButton()
-        self.acceptButton.setText("Save")
+        self.acceptButton.setText(acceptTxt)
 
         self.rejectButton.clicked.connect(self.rejectCallback)
         self.acceptButton.clicked.connect(self.acceptCallback)
@@ -59,6 +59,7 @@ class MessageDialog(QDialog):
         self.frameLayout.addLayout(self.buttontLayout)
 
         self.setLayout(self.frameLayout)
+        self.resize(self.sizeHint());
 
     @Slot()
     def rejectCallback(self):

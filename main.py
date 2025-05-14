@@ -83,6 +83,7 @@ class MainWindow(QMainWindow):
         self.ui.writeZone.clicked.connect(self.writeZone)
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
+        self.ui.clearEcuFaults.clicked.connect(self.clearEcuFaults)
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
@@ -97,6 +98,7 @@ class MainWindow(QMainWindow):
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
+        self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
@@ -185,6 +187,7 @@ class MainWindow(QMainWindow):
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
+        self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -210,7 +213,9 @@ class MainWindow(QMainWindow):
         fileName = QFileDialog.getOpenFileName(self, "Open CSV Zone File", path, "CSV Files (*.csv)")
         if fileName[0] == "":
             return
-        self.fileLoaderThread.enable(fileName[0], 0);
+
+        self.ui.setFilePathInWindowsTitle(fileName[0])
+        self.fileLoaderThread.enable(fileName[0], 0)
 
     @Slot()
     def saveCSVFile(self):
@@ -220,6 +225,7 @@ class MainWindow(QMainWindow):
             return
 
         # Open CSV for writing
+        self.ui.setFilePathInWindowsTitle(fileName[0])
         self.stream = open(fileName[0], 'w', newline='')
         self.csvWriter = csv.writer(self.stream)
         if self.stream != None:
@@ -250,9 +256,11 @@ class MainWindow(QMainWindow):
                 self.writeToOutputView("Include Zone file not found: " + includeZonePath)
 
         self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.ui.setFilePathInWindowsTitle("")
         self.ui.readZone.setEnabled(True)
         self.ui.writeZone.setEnabled(True)
         self.ui.writeZone.setEnabled(True)
+        self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
 
@@ -265,6 +273,7 @@ class MainWindow(QMainWindow):
                 return
 
             # Open CSV for writing
+            self.ui.setFilePathInWindowsTitle(fileName[0])
             self.stream = open(fileName[0], 'w', newline='')
             self.csvWriter = csv.writer(self.stream)
 
@@ -325,7 +334,7 @@ class MainWindow(QMainWindow):
                 return
 
             # Give some option to check values and to cancel the write
-            changedialog = MessageDialog(self, "Write zone(s) to ECU", text)
+            changedialog = MessageDialog(self, "Write zone(s) to ECU", "Write", text)
             if MessageDialog.Rejected == changedialog.exec():
                 return
 
@@ -378,6 +387,25 @@ class MainWindow(QMainWindow):
 
             if self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.readEcuFaults(ecu)
+            else:
+                self.writeToOutputView("Protocol not supported yet!")
+                return
+        else:
+            self.writeToOutputView("Port not open!")
+
+    @Slot()
+    def clearEcuFaults(self):
+        if self.serialController.isOpen():
+            # Setup CAN_EMIT_ID
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+
+            # Give some option to cancel the Clear Fault Codes
+            changedialog = MessageDialog(self, "Clearing Faults Codes of ECU:", "Ok", ecu)
+            if MessageDialog.Rejected == changedialog.exec():
+                return
+
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.clearEcuFaults(ecu)
             else:
                 self.writeToOutputView("Protocol not supported yet!")
                 return

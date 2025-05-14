@@ -156,6 +156,8 @@ class EcuSimulation(QThread):
                     item[1] = cmd[6:]
                     return "6E" + cmd[2:6]
             return "7F2E31"
+        elif cmd[:8] == "14FFFFFF":
+            return "54"
 
         return "Timeout"
 
