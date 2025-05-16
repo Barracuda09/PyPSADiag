@@ -7,7 +7,8 @@
     "keys": {
         "key1": "60A5",
         "key2": "BC93",
-        "key3": "2305"
+        "key3": "2305",
+        "ESP81": "ABFB"
     },
     "coding": true,
     "errors": true,
