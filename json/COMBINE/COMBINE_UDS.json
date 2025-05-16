@@ -861,7 +861,7 @@
         ]
       },
       "CFG_EWQ_CMB_HY_MYH_000": {
-        "name": "Precense of thermic motor",
+        "name": "Precense of internal combustion engine",
         "byte": 16,
         "type": "bool",
         "form_type": "combobox",
