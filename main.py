@@ -89,6 +89,9 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
         self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
+        # Connect Other/General signals to slots
+        self.ui.command.returnPressed.connect(self.sendCommand)
+
         # Setup serial controller
         self.serialController = SerialPort(self.simulation)
         self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
@@ -201,6 +204,7 @@ class MainWindow(QMainWindow):
     def sendCommand(self):
         if self.serialController.isOpen():
             cmd = self.ui.command.text()
+            self.ui.command.clear()
             self.writeToOutputView(cmd)
             self.receiveData = self.serialController.sendReceive(cmd)
             self.writeToOutputView(self.receiveData)

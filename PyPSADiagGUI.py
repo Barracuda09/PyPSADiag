@@ -32,6 +32,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QTextEdit, QVBoxLayout, QWidget)
 
 from EcuZoneTreeView  import EcuZoneTreeView
+from HistoryLineEdit import HistoryLineEdit
 
 class PyPSADiagGUI(object):
     mainWindow = None
@@ -56,7 +57,7 @@ class PyPSADiagGUI(object):
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
         self.centralwidget.setSizePolicy(sizePolicy)
 
-        self.command = QLineEdit()
+        self.command = HistoryLineEdit()
         self.output = QTextEdit()
         self.output.setReadOnly(True)
 
