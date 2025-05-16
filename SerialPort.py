@@ -74,9 +74,9 @@ class SerialPort():
 #                        print(data)
                         break
                     time.sleep(0.1)
-                    runLoop = 5
+                    runLoop = 10
             else:
-                time.sleep(0.10)
+                time.sleep(0.1)
                 runLoop -= 1
         return data
 
