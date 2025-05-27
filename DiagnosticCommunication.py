@@ -22,6 +22,7 @@
 import time
 import queue
 import json
+import os
 from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtWidgets import QTextEdit
 
@@ -213,7 +214,18 @@ class DiagnosticCommunication(QThread):
                     break;
 
         if tryCnt == 0:
-            self.writeToOutputView("ECU Unlock Request: Failed", receiveData)
+            error = "ECU Unlock Failed:"
+            if len(receiveData) >= 6 and receiveData[:2] == "7F":
+                fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
+                file = open(fileName, 'r', encoding='utf-8')
+                jsonFile = file.read()
+                errorList = json.loads(jsonFile.encode("utf-8"))
+                error = receiveData[4:6]
+                cmd = receiveData[2:4]
+                if error in errorList:
+                    error = "ECU Unlock Failed (" + cmd + "): " + errorList[error]
+
+            self.writeToOutputView(error, receiveData)
             return ""
 
         challenge = int(receiveData[4:12], 16)
@@ -227,10 +239,18 @@ class DiagnosticCommunication(QThread):
             if receiveData[:4] == "6704" or receiveData[:4] == "6784":
                 return True
 
-        if receiveData == "7F2735":
-            self.writeToOutputView("ECU unlock: Failed, ECU Reports Invalid Key", receiveData)
-        else:
-            self.writeToOutputView("ECU unlock: Failed", receiveData)
+        error = "ECU Unlock Failed:"
+        if len(receiveData) >= 6 and receiveData[:2] == "7F":
+            fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
+            file = open(fileName, 'r', encoding='utf-8')
+            jsonFile = file.read()
+            errorList = json.loads(jsonFile.encode("utf-8"))
+            error = receiveData[4:6]
+            cmd = receiveData[2:4]
+            if error in errorList:
+                error = "ECU Unlock Failed (" + cmd + "): " + errorList[error]
+
+        self.writeToOutputView(error, receiveData)
         return False
 
     def writeUDSZoneConfigurationCommand(self, zone: str(), data: str()):
@@ -468,7 +488,8 @@ class DiagnosticCommunication(QThread):
             elif decodedData[0: + 4] == "6704":
                 self.receivedPacketSignal.emit([self.ecuReadZone, "Unlocked successfully for configuration", self.zoneName], time.time())
             elif decodedData[0: + 2] == "7F":
-                file = open("./data/ErrorResponse.json", 'r', encoding='utf-8')
+                fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
+                file = open(fileName, 'r', encoding='utf-8')
                 jsonFile = file.read()
                 errorList = json.loads(jsonFile.encode("utf-8"))
 
@@ -486,14 +507,14 @@ class DiagnosticCommunication(QThread):
                     self.receivedPacketSignal.emit([self.ecuReadZone, "No Response", self.zoneName], time.time())
                     self.updateZoneDataSignal.emit(self.ecuReadZone, "No Response")
             else:
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
-                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error")
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unknown Error", self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unknown Error")
         elif len(decodedData) <= 2:
             if decodedData[0:2] == "OK":
                 self.receivedPacketSignal.emit([self.ecuReadZone, "OK", self.zoneName], time.time())
             else:
-                self.receivedPacketSignal.emit([self.ecuReadZone, "Unkown Error", self.zoneName], time.time())
-                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unkown Error")
+                self.receivedPacketSignal.emit([self.ecuReadZone, "Unknown Error", self.zoneName], time.time())
+                self.updateZoneDataSignal.emit(self.ecuReadZone, "Unknown Error")
         return data
 
     def run(self):
