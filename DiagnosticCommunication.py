@@ -136,10 +136,23 @@ class DiagnosticCommunication(QThread):
         # Check response we need to retry reading
         # 7F3E03 (Custom error)
         # 7Fxx78 (Request Correctly Received - Response Pending)
-        while receiveData == "7F3E03" or (len(receiveData) == 6 and receiveData[:2] == "7F" and receiveData[4:6] == "78"):
-            self.writeToOutputView("< " + receiveData + "  ** Skipping **")
-            time.sleep(0.2)
-            receiveData = self.serialPort.readData()
+        if len(receiveData) >= 6:
+            i = receiveData.find("7F3E03")
+            while i >= 0 or (receiveData[:2] == "7F" and receiveData[4:6] == "78"):
+                self.writeToOutputView("< " + receiveData + "  ** Skipping/Stripping **")
+                time.sleep(0.2)
+                if i > 0:
+                    # Custom Error '7F3E03' is not at first position, so strip it from reply.
+                    # And add next reply to receive buffer.
+                    receiveData = receiveData[:i]
+                    self.writeToOutputView("< " + receiveData + "  ** Stripping **")
+                    receiveData += self.serialPort.readData()
+                else:
+                    receiveData = self.serialPort.readData()
+
+                # Check did we receive again the custom error
+                i = receiveData.find("7F3E03")
+
         self.writeToOutputView("< " + receiveData)
         return receiveData
 
