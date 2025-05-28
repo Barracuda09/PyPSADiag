@@ -42,6 +42,10 @@ class EcuSimulation(QThread):
     def __init__(self):
         super(EcuSimulation, self).__init__()
 
+    def receive(self):
+        time.sleep(0.2)
+        #return "2306230723082309230A230B230C230D230E230F"
+        return ""
 
     def sendReceive(self, cmd: str):
         time.sleep(0.2)
@@ -144,6 +148,8 @@ class EcuSimulation(QThread):
         if cmd[:2] == "22":
             if  cmd[2:6] == "2901":
                  return "62" + cmd[2:6] + "FD000000010101"
+#            elif cmd[2:6] == "2104":
+#                return "6221042300230123022303230423057F3E03"
             for item in self.ecuData:
                 if item[0] == cmd[2:6]:
                     return "62" + cmd[2:6] + item[1]

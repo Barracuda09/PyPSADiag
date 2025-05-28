@@ -81,20 +81,9 @@ class SerialPort():
         return data
 
     def readData(self):
-        data = self.readRawData()
-        if len(data) == 0:
-            return "Timeout"
-
-        i = data.find(b"\r")
-        decodedData = data[:i].decode("utf-8");
-        return decodedData
-
-    def sendReceive(self, cmd: str):
         if self.simulation:
-            return self.ecuSimulation.sendReceive(cmd)
+            return self.ecuSimulation.receive()
         else:
-            cmd += "\n"
-            self.write(cmd.encode("utf-8"))
             data = self.readRawData()
             if len(data) == 0:
                 return "Timeout"
@@ -102,3 +91,11 @@ class SerialPort():
             i = data.find(b"\r")
             decodedData = data[:i].decode("utf-8");
             return decodedData
+
+    def sendReceive(self, cmd: str):
+        if self.simulation:
+            return self.ecuSimulation.sendReceive(cmd)
+        else:
+            cmd += "\n"
+            self.write(cmd.encode("utf-8"))
+            return self.readData();
