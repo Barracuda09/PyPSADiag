@@ -7,15 +7,16 @@
   "key_type": "single",
   "keys": "ECEC",
   "tabs": {
-    "2100": "zone 2100",
-    "0200": "zone 0200"
+        "ident": "Identification",
+        "coding": "Telecoding"
   },
   "coding": "true",
   "errors": "true",
+  "include_zone_object": "./data/IdentUDSECU.json",
   "zones": {
     "2100": {
       "name": "Telecoding_MATT_2100",
-      "tab": "2100",
+      "tab": "coding",
       "type": "raw",
       "form_type": "multi",
       "params": [
@@ -563,7 +564,7 @@
     },
     "0200": {
       "name": "Telecoding_MATT_0200",
-      "tab": "0200",
+      "tab": "coding",
       "type": "raw",
       "form_type": "multi",
       "params": [
@@ -584,48 +585,49 @@
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit2",        "name": "Instant consumption and power reserve in the bottom line (to activate - disable this bit)",
-
+        "id": "checkbox_byte0F8hbit2",
+        "name": "Instant consumption and power reserve in the bottom line (to activate - disable this bit)",
         "byte": 0,
         "type": "bool",
         "mask": "00100000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit3",        "name": "Activation of the upper line (cruise, limiter, gear pointer)",
-
+        "id": "checkbox_byte0F8hbit3",
+        "name": "Activation of the upper line (cruise, limiter, gear pointer)",
         "byte": 0,
         "type": "bool",
         "mask": "00010000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit4",        "name": "0-4 UNKONOWN",
-
+        "id": "checkbox_byte0F8hbit4",
+        "name": "0-4 UNKONOWN",
         "byte": 0,
         "type": "bool",
         "mask": "00001000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit5",        "name": "0-5 UNKONOWN",
-
+        "id": "checkbox_byte0F8hbit5",
+        "name": "0-5 UNKONOWN",
         "byte": 0,
         "type": "bool",
         "mask": "00000100",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit6",        "name": "Current speed display (main screen)",
-
+        "id": "checkbox_byte0F8hbit6",
+        "name": "Presence of Current speed display (main screen)",
         "byte": 0,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
-        "id": "checkbox_byte0F8hbit7",        "name": "The transfer pointer in the upper right corner (???)",
-
+        "id": "checkbox_byte0F8hbit7",
+        "name": "The transfer pointer in the upper right corner (???)",
         "byte": 0,
         "type": "bool",
         "mask": "00000001",
@@ -648,48 +650,48 @@
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit2",        "name": "byte0F9hbit2",
-
+        "id": "checkbox_byte0F9hbit2",
+        "name": "byte0F9hbit2",
         "byte": 1,
         "type": "bool",
         "mask": "00100000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit3",        "name": "byte0F9hbit3",
-
+        "id": "checkbox_byte0F9hbit3",
+        "name": "byte0F9hbit3",
         "byte": 1,
         "type": "bool",
         "mask": "00010000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit4",        "name": "byte0F9hbit4",
-
+        "id": "checkbox_byte0F9hbit4",
+        "name": "byte0F9hbit4",
         "byte": 1,
         "type": "bool",
         "mask": "00001000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit5",        "name": "byte0F9hbit5",
-
+        "id": "checkbox_byte0F9hbit5",
+        "name": "byte0F9hbit5",
         "byte": 1,
         "type": "bool",
         "mask": "00000100",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit6",        "name": "byte0F9hbit6",
-
+        "id": "checkbox_byte0F9hbit6",
+        "name": "byte0F9hbit6",
         "byte": 1,
         "type": "bool",
         "mask": "00000010",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F9hbit7",        "name": "byte0F9hbit7",
-
+        "id": "checkbox_byte0F9hbit7",
+        "name": "byte0F9hbit7",
         "byte": 1,
         "type": "bool",
         "mask": "00000001",
@@ -712,48 +714,48 @@
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit2",        "name": "byte0FAhbit2",
-
+        "id": "checkbox_byte0FAhbit2",
+        "name": "byte0FAhbit2",
         "byte": 2,
         "type": "bool",
         "mask": "00100000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit3",        "name": "checkbox_byte0FAhbit3",
-
+        "id": "checkbox_byte0FAhbit3",
+        "name": "checkbox_byte0FAhbit3",
         "byte": 2,
         "type": "bool",
         "mask": "00010000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit4",            "name": "byte0FAhbit4",
-
+        "id": "checkbox_byte0FAhbit4",
+        "name": "byte0FAhbit4",
         "byte": 2,
         "type": "bool",
         "mask": "00001000",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit5",        "name": "checkbox_byte0FAhbit5",
-
+        "id": "checkbox_byte0FAhbit5",
+        "name": "checkbox_byte0FAhbit5",
         "byte": 2,
         "type": "bool",
         "mask": "00000100",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit6",        "name": "byte0FAhbit6",
-
+        "id": "checkbox_byte0FAhbit6",
+        "name": "byte0FAhbit6",
         "byte": 2,
         "type": "bool",
         "mask": "00000010",
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0FAhbit7",        "name": "checkbox_byte0FAhbit7",
-
+        "id": "checkbox_byte0FAhbit7",
+        "name": "checkbox_byte0FAhbit7",
         "byte": 2,
         "type": "bool",
         "mask": "00000001",
