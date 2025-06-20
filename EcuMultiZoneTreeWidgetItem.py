@@ -89,18 +89,16 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
                 result = widget.changeZoneOption(data, valueType)
-
                 if result == 2:
-                    print("Disabled(2): " + self.zone)
+                    print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
                     widget.setStyleSheet("QComboBox{background-color: red;}")
                     widget.setEnabled(False)
                     cellItem.setHidden(True)
                 elif result == 1:
-                    print("Disabled(1): " + self.zone)
+                    print("Disabled(1): " + self.zone + " - " + widget.getDescriptionName())
                     self.integrity = False
-
         except:
-            print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption")
+            print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption " + self.zone + " - " + widget.getDescriptionName())
 
         self.selfUpdate == False
         # Integrity wrong, disable the sub zones and coding

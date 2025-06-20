@@ -59,6 +59,9 @@ class EcuZoneComboBox(QComboBox):
         if self.hasFocus():
             super().wheelEvent(e);
 
+    def getDescriptionName(self):
+        return self.zoneObject["name"]
+
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 

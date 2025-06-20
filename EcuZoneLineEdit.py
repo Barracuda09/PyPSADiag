@@ -50,6 +50,9 @@ class EcuZoneLineEdit(QLineEdit):
                 return True
         return super().event(event)
 
+    def getDescriptionName(self):
+        return self.zoneObject["name"]
+
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 

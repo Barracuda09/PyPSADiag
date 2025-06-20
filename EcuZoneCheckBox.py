@@ -34,6 +34,9 @@ class EcuZoneCheckBox(QCheckBox):
         self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
 
+    def getDescriptionName(self):
+        return self.zoneObject["name"]
+
     def getCorrespondingByte(self):
         return self.zoneObject["byte"]
 
@@ -97,14 +100,14 @@ class EcuZoneCheckBox(QCheckBox):
             zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength != len(byteData):
+                if zoneLength > len(byteData):
                     return 2
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
 
             # Integrity wrong, size does not match
-            if byteNr >= len(byteData):
+            if byteNr > len(byteData):
                 return 1
 
             byte = int(byteData[byteNr], 16) & mask
