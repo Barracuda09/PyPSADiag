@@ -20,206 +20,208 @@
       "type": "raw",
       "form_type": "multi",
       "params": [
-        {
-        "id": "CFG_BKN_MATT_CONF_ALERTES_000",
-        "name": "On-board computer warnings",
-        "byte": 0,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox"
+      {
+      "id": "CFG_BKN_MATT_CONF_ALERTES_000",
+      "name": "Presence of On-board computer warnings",
+      "byte": 0,
+      "type": "bool",
+      "mask": "10000000",
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
-        "id": "CFG_BP0_MATT_MENU_LANGUE_000",
-        "name": "Language menu",
-        "byte": 0,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox"
+      "id": "CFG_BP0_MATT_MENU_LANGUE_000",
+      "name": "Presence of Language selection menu",
+      "byte": 0,
+      "type": "bool",
+      "mask": "01000000",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_BKP_MATT_CONF_AUDIO_000",
-        "name": "Media data from the head unit",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox"
+      "id": "CFG_BKP_MATT_CONF_AUDIO_000",
+      "name": "Presence of Media information display",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00100000",
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
-        "id":"CFG_BKQ_MATT_CONF_BVA_BVMP_000",
-        "name": "Gearbox transmission indicator (for display on a separate screen or in the upper right corner)",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox"
+      "id": "CFG_BKQ_MATT_CONF_BVA_BVMP_000",
+      "name": "Gearbox transmission indicator (for display on a separate screen or in the upper right corner)",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00010000",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_BKR_MATT_CONF_LVV_000",
-        "name": "Cruise control and limiter (only limiter is possible depending on the display version)",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox"
+      "id": "CFG_BKR_MATT_CONF_LVV_000",
+      "name": "Cruise control and limiter (only limiter is possible depending on the display version)",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00001000",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_BKS_MATT_CONF_MAINT_000",
-        "name": "Output of maintenance information when the ignition is switched on",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox"
+      "id": "CFG_BKS_MATT_CONF_MAINT_000",
+      "name": "Output of maintenance information when the ignition is switched on",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00000100",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_BVU_MATT_MENU_PARAM_FCT_000",
-        "name": "Menu \"Car parameters\"",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000010",
-        "form_type": "checkbox"
+      "id":"CFG_BVU_MATT_MENU_PARAM_FCT_000",
+      "name": "Menu \"Car parameters\"",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00000010",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_D2U_MATT_POP_NAV_VTH_000",
-        "name": "Displaying pop-up navigation pointers",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000001",
-        "form_type": "checkbox"
+      "id":"CFG_D2U_MATT_POP_NAV_VTH_000",
+      "name": "Displaying pop-up navigation pointers",
+      "byte": 0,
+      "type": "bool",
+      "mask": "00000001",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BKV_MATT_CONF_NAV_000",
-        "name": "Displaying navigation from the head unit",
-        "byte": 1,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox"
+      "id": "CFG_BKV_MATT_CONF_NAV_000",
+      "name": "Displaying navigation from the head unit",
+      "byte": 1,
+      "type": "bool",
+      "mask": "10000000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BKW_MATT_CONF_NIVHU_000",
-        "name": "Checking the oil level",
-        "byte": 1,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox"
+      "id": "CFG_BKW_MATT_CONF_NIVHU_000",
+      "name": "Checking the oil level",
+      "byte": 1,
+      "type": "bool",
+      "mask": "01000000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BKX_MATT_CONF_ODB_000",
-        "name": "Trip data",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox"
+      "id": "CFG_BKX_MATT_CONF_ODB_000",
+      "name": "Trip data",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00100000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BKY_MATT_CONF_ODO_000",
-        "name": "Displaying the mileage in the bottom row",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox"
+      "id": "CFG_BKY_MATT_CONF_ODO_000",
+      "name": "Displaying the mileage in the bottom row",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00010000",
+      "form_type": "checkbox"
       },
       {
-        "id":"CFG_BKZ_MATT_CONF_PAGE_T_EXT_000",
-        "name": "Display of the temperature screen",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox"
+      "id":"CFG_BKZ_MATT_CONF_PAGE_T_EXT_000",
+      "name": "Display of the temperature screen",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00001000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BL0_MATT_CONF_RVV_000",
-        "name": "Cruise control",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox"
+      "id": "CFG_BL0_MATT_CONF_RVV_000",
+      "name": "Cruise control",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00000100",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BVT_MATT_CONF_STT_000",
-        "name": "Keyless access",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00000010",
-        "form_type": "checkbox"
+      "id": "CFG_BVT_MATT_CONF_STT_000",
+      "name": "Keyless access",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00000010",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BW9_MATT_CONF_RAPPEL_XVV_000",
-        "name": "Top row with cruise control (for new displays - cruise memory display MEM)",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00000001",
-        "form_type": "checkbox"
+      "id": "CFG_BW9_MATT_CONF_RAPPEL_XVV_000",
+      "name": "Top row with cruise control (for new displays - cruise memory display MEM)",
+      "byte": 1,
+      "type": "bool",
+      "mask": "00000001",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BL2_MATT_CONF_FCT_DESIGNATEUR_000",
-        "name": "The presence of a control stick connected to the display",
-        "byte": 2,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox"
+      "id": "CFG_BL2_MATT_CONF_FCT_DESIGNATEUR_000",
+      "name": "The presence of a control stick connected to the display",
+      "byte": 2,
+      "type": "bool",
+      "mask": "10000000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BL3_MATT_CONF_MENU_TEMP_000",
-        "name": "The unit selection menu in the settings",
-        "byte": 2,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox"
+      "id": "CFG_BL3_MATT_CONF_MENU_TEMP_000",
+      "name": "The unit selection menu in the settings",
+      "byte": 2,
+      "type": "bool",
+      "mask": "01000000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BP3_MATT_MENU_PARAM_UL_000",
-        "name": "Language selection menu in settings",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox"
+      "id": "CFG_BP3_MATT_MENU_PARAM_UL_000",
+      "name": "Language selection menu in settings",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00100000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
-        "name": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox"
+      "id": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
+      "name": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00010000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
-        "name": "Webasto Settings Menu",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox"
+      "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
+      "name": "Webasto Settings Menu",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00001000",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BQB_MATT_CONF_MENU_HARMONIE_000",
-        "name": "Color theme selection menu in settings",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox"
+      "id": "CFG_BQB_MATT_CONF_MENU_HARMONIE_000",
+      "name": "Color theme selection menu in settings",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00000100",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BPX_MATT_CONF_MENU_REG_HEURE_000",
-        "name": "Time setting menu in settings",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00000010",
-        "form_type": "checkbox"
+      "id": "CFG_BPX_MATT_CONF_MENU_REG_HEURE_000",
+      "name": "Time setting menu in settings",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00000010",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BOZ_MATT_MENU_TCFG_000",
-        "name": "CFG_BOZ_MATT_MENU_TCFG",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00000001",
-        "form_type": "checkbox"
+      "id": "CFG_BOZ_MATT_MENU_TCFG_000",
+      "name": "CFG_BOZ_MATT_MENU_TCFG",
+      "byte": 2,
+      "type": "bool",
+      "mask": "00000001",
+      "form_type": "checkbox"
       },
       {
-        "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
-        "name": "Color theme",
-        "byte": 3,
-        "type": "bool",
-        "mask": "11100000",
-        "form_type": "combobox",
-        "params": [
+      "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
+      "name": "Color theme",
+      "byte": 3,
+      "type": "bool",
+      "mask": "11100000",
+      "form_type": "combobox",
+      "params": [
           { "mask": "01000000", "name": "orange"},
           { "mask": "00100000", "name": "black"},
           { "mask": "00000000", "name": "techno black"},

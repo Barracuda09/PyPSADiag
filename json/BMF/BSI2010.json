@@ -142,14 +142,6 @@
       "id": "CFG_BYT_BSI_RVIDE_2010_000",
       "tab": "info",
       "byte": 0,
-      "type": "int",
-      "form_type": "string",
-      "name": "The resistance of the fuel level sensor with an empty tank"
-    },
-    "2202": {
-      "id": "CFG_BYT_BSI_RVIDE_2010_000",
-      "tab": "info",
-      "byte": 0,
       "type": "hex",
       "form_type": "combobox",
       "params": [
@@ -157,14 +149,6 @@
         { "value": "015E", "name": "350 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with an empty tank"
-    },
-    "2203": {
-      "id": "CFG_BYU_BSI_RPLEIN_2010_000",
-      "tab": "info",
-      "byte": 0,
-      "type": "int",
-      "form_type": "string",
-      "name": "The resistance of the fuel level sensor with a full tank"
     },
     "2203": {
       "id": "CFG_BYU_BSI_RPLEIN_2010_000",
@@ -5106,17 +5090,10 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "0C", "name": "12 months" }
+        { "value": "0C", "name": "12 months" },
+        { "value": "18", "name": "24 months" }
       ],
       "name": "Total period(time) before servicing (threshold)"
-    },
-    "2283": {
-      "id": "First maintenance threshold",
-      "tab": "info",
-      "byte": 0,
-      "type": "int",
-      "form_type": "string",
-      "name": "First maintenance threshold1"
     },
     "2283": {
       "id": "First maintenance threshold",
@@ -5130,14 +5107,6 @@
         { "value": "32", "name": "Petrol-5000KM" }
       ],
       "name": "First maintenance threshold"
-    },
-    "2282": {
-      "id": "Servicing threshold(marketing)",
-      "tab": "thresthold",
-      "byte": 0,
-      "type": "int",
-      "form_type": "string",
-      "name": "Servicing threshold(marketing)"
     },
     "2282": {
       "id": "Servicing threshold(marketing)",
