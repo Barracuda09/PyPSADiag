@@ -218,6 +218,7 @@ class MainWindow(QMainWindow):
         if fileName[0] == "":
             return
 
+        self.ui.treeView.clearZoneListValues()
         self.ui.setFilePathInWindowsTitle(fileName[0])
         self.fileLoaderThread.enable(fileName[0], 0)
 

@@ -59,6 +59,10 @@ class EcuZoneCheckBox(QCheckBox):
                 value = "00"
         return value
 
+    def clearZoneValue(self):
+        initialValue = 0
+        self.setCheckState(Qt.Unchecked)
+
     def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
         if "mask" in self.zoneObject:

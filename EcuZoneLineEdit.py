@@ -93,6 +93,12 @@ class EcuZoneLineEdit(QLineEdit):
 
         return "Disabled"
 
+    def clearZoneValue(self):
+        valueType = ""
+        initialValue = ""
+        initialRaw = ""
+        self.clear()
+
     def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
         if self.isLineEditChanged(virginWrite):

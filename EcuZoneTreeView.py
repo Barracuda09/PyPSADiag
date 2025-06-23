@@ -80,6 +80,11 @@ class EcuZoneTreeView(QTabWidget):
             value.append(widget.getValuesAsCSV())
         return value
 
+    def clearZoneListValues(self):
+        for tab in self.tabs:
+            widget = self.widget(tab[1])
+            widget.clearZoneListValues()
+
     def getZoneListOfHexValue(self, virginWrite: bool()):
         value = []
         for tab in self.tabs:
@@ -220,6 +225,11 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             itemValue = item.getValuesAsCSV()
             value.append(itemValue)
         return value
+
+    def clearZoneListValues(self):
+        for index in range(self.topLevelItemCount()):
+            item = self.topLevelItem(index)
+            item.clearZoneListValues()
 
     def getZoneListOfHexValue(self, virginWrite: bool()):
         value = []

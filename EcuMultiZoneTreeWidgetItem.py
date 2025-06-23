@@ -69,6 +69,14 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             value = widget.getValuesAsCSV()
         return [self.zone, value, self.zoneDescription]
 
+    def clearZoneListValues(self):
+        rootWidget = self.treeWidget().itemWidget(self, 2)
+        rootWidget.clearZoneValue()
+        for index in range(self.childCount()):
+            cellItem = self.child(index)
+            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            widget.clearZoneValue()
+
     def getZoneAndHex(self, virginWrite: bool()):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"

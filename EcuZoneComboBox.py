@@ -88,6 +88,10 @@ class EcuZoneComboBox(QComboBox):
             value = "%0.2X" % self.itemData(index)
         return value
 
+    def clearZoneValue(self):
+        value = 0
+        self.setCurrentIndex(0)
+
     def getZoneAndHex(self, virginWrite: bool()):
         value = "None"
         if self.isComboBoxChanged(virginWrite):
