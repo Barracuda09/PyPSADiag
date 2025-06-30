@@ -54,7 +54,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.lang_code = ""
+        self.lang_code = "en"
         self.lang = False
         if len(sys.argv) >= 2:
             for arg in sys.argv:
@@ -76,12 +76,10 @@ class MainWindow(QMainWindow):
                     print("Use --lang nl   For NL translation")
                     exit()
 
-        self.translator = QTranslator()
-        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
-        self.translator.load(qm_path)
-        QApplication.instance().installTranslator(self.translator)
+        self.addTranslators()
 
-        self.ui.setupGUI(self, self.scan)
+        self.ui.setupGUI(self, self.scan, self.lang_code)
+        self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
         #converter = FileConverter()
         #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
@@ -141,6 +139,25 @@ class MainWindow(QMainWindow):
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
+
+    def addTranslators(self):
+            self.translator = QTranslator()
+            self.loadTranslator()
+            QApplication.instance().installTranslator(self.translator)
+
+    def changeLanguage(self, index):
+            lang_code = self.ui.languageComboBox.itemData(index)
+            if lang_code:
+                self.lang_code = lang_code
+
+            self.loadTranslator()
+            self.ui.translateGUI(self)
+            if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
+                self.updateEcuZonesAndKeys(self.ecuObjectList)
+
+    def loadTranslator(self):
+            qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
+            self.translator.load(qm_path)
 
     # Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZonesAndKeys(self, ecuObjectList: dict):

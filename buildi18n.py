@@ -125,7 +125,7 @@ if __name__ == "__main__":
         printUsage();
 
     files = "EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py DiagnosticCommunication.py main.py"
-    subprocess.run(f"pyside6-lupdate {files} -source-language en_EN -ts ./i18n/PyPSADiag_{langCode}.ts".split(" "))
+    subprocess.run(f"pyside6-lupdate {files} -source-language en_EN -ts ./i18n/PyPSADiag_{langCode}.qt.ts".split(" "))
 
     i18nList = []
 
@@ -143,4 +143,4 @@ if __name__ == "__main__":
         print(file)
         processJSONFile(str(file), i18nList)
 
-    addi18nListToTS(f"./i18n/PyPSADiag_{langCode}.ts", i18nList)
+    addi18nListToTS(f"./i18n/PyPSADiag_{langCode}.qt.ts", i18nList)

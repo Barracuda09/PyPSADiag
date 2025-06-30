@@ -30,8 +30,8 @@ class FileTranslater:
     def __init__(self):
         print("Translating...")
 
-    # pathIn  = ./i18n/PyPSADiag_nl.ts
-    # pathOut = ./i18n/PyPSADiag_translated_nl.ts
+    # pathIn  = ./i18n/PyPSADiag_nl.qt.ts
+    # pathOut = ./i18n/PyPSADiag_translated_nl.qt.ts
     def translate(self, pathIn, pathOut):
         if pathIn == pathOut:
             print("In and out paths are the same... ERROR")
@@ -89,8 +89,8 @@ def printUsage():
     print("Usage: translate [OPTIONS]")
     print("")
     print("Mandatory Options:")
-    print("  --input        ./i18n/PyPSADiag_[lang_code].ts     Specifies the input ts file, for example: ./i18n/PyPSADiag_nl.ts")
-    print("  --releaseonly                                      Only release translation 'qm' file from input 'ts' file")
+    print("  --input        ./i18n/PyPSADiag_[lang_code].qt.ts     Specifies the input ts file, for example: ./i18n/PyPSADiag_nl.qt.ts")
+    print("  --releaseonly                                         Only release translation 'qm' file from input 'ts' file")
     print("")
     exit()
 
