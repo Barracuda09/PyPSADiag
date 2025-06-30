@@ -62,7 +62,7 @@ class EcuZoneTreeView(QTabWidget):
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
                 name = i18n().tr(str(ecuObjectList["tabs"][tabs]))
-                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
+                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), name)
                 self.tabs.append([tabs, index])
 
             self.hideNoResponseZones(self.hideZones)
@@ -118,7 +118,8 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def __init__(self, parent, zoneObjectList, tabName: str):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
         self.setColumnCount(3)
-        self.setHeaderLabels([i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")])
+        headers = [i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")]
+        self.setHeaderLabels(headers)
         self.setSelectionMode(QTreeWidget.NoSelection)
         self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
@@ -133,7 +134,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if "read_only" in zoneObject:
                 itemReadOnly = zoneObject["read_only"]
 
-            itemName = zoneObject["name"];
+            itemName = i18n().tr(zoneObject["name"])
             formType = zoneObject["form_type"]
             if formType == "multi":
                 root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, itemName, zoneObject)
@@ -149,7 +150,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                             continue
                         # We have a sub config
                         formType = subZoneObject["form_type"]
-                        name = subZoneObject["name"]
+                        name = i18n().tr(subZoneObject["name"])
                         if formType == "combobox":
                             widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)
@@ -167,7 +168,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                             continue
                         # We have a sub config
                         formType = subZoneObject["form_type"]
-                        name = subZoneObject["name"]
+                        name = i18n().tr(subZoneObject["name"])
                         if formType == "combobox":
                             widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)

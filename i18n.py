@@ -41,5 +41,5 @@ class i18n():
     def tr(self, text: str):
         #return text
         #return self.translate_text(text)
-        return str(QCoreApplication.translate("", text))
+        return str(QCoreApplication.translate("MainWindow", text))
 
