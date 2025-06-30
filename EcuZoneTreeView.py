@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt, Slot
+from PySide6.QtCore import Qt, Slot, QCoreApplication
 from PySide6.QtWidgets import QSizePolicy, QTabWidget, QTreeWidget
 from PySide6.QtGui import QColor
 
@@ -60,8 +60,8 @@ class EcuZoneTreeView(QTabWidget):
             self.clear()
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
-                name = ecuObjectList["tabs"][tabs]
-                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
+                name = QCoreApplication.translate("MainWindow", str(ecuObjectList["tabs"][tabs]))
+                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), name)
                 self.tabs.append([tabs, index])
 
             self.hideNoResponseZones(self.hideZones)
@@ -117,7 +117,10 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def __init__(self, parent, zoneObjectList, tabName: str):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
         self.setColumnCount(3)
-        self.setHeaderLabels(["Zone", "Zone Description", "Options"])
+        headers = [QCoreApplication.translate("MainWindow", "Zone"),
+                   QCoreApplication.translate("MainWindow", "Zone Description"),
+                   QCoreApplication.translate("MainWindow", "Options")]
+        self.setHeaderLabels(headers)
         self.setSelectionMode(QTreeWidget.NoSelection)
         self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
@@ -132,7 +135,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if "read_only" in zoneObject:
                 itemReadOnly = zoneObject["read_only"]
 
-            itemName = zoneObject["name"];
+            itemName = QCoreApplication.translate("MainWindow", zoneObject["name"])
             formType = zoneObject["form_type"]
             if formType == "multi":
                 root = EcuMultiZoneTreeWidgetItem(self, rowCount, zoneIDObject, itemName, zoneObject)
@@ -148,7 +151,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                             continue
                         # We have a sub config
                         formType = subZoneObject["form_type"]
-                        name = subZoneObject["name"]
+                        name = QCoreApplication.translate("MainWindow", subZoneObject["name"])
                         if formType == "combobox":
                             widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)
@@ -166,7 +169,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                             continue
                         # We have a sub config
                         formType = subZoneObject["form_type"]
-                        name = subZoneObject["name"]
+                        name = QCoreApplication.translate("MainWindow", subZoneObject["name"])
                         if formType == "combobox":
                             widgetItem = EcuZoneComboBox(self, subZoneObject, itemReadOnly)
                             root.addChildWidgetItem(self, name, widgetItem)

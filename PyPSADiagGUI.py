@@ -19,6 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+import os
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -35,6 +36,7 @@ from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
 
 class PyPSADiagGUI(object):
+    currentDir = os.path.dirname(os.path.abspath(__file__))
     mainWindow = None
 
     def setFilePathInWindowsTitle(self, path: str()):
@@ -61,42 +63,33 @@ class PyPSADiagGUI(object):
         self.output = QTextEdit()
         self.output.setReadOnly(True)
 
+        # Setup languages
+        self.setupLanguages()
+
         self.sendCommand = QPushButton()
-        self.sendCommand.setText(QCoreApplication.translate("MainWindow", u"Send Command", None))
         self.openCSVFile = QPushButton()
-        self.openCSVFile.setText(QCoreApplication.translate("MainWindow", u"Open CSV File", None))
         self.saveCSVFile = QPushButton()
-        self.saveCSVFile.setText(QCoreApplication.translate("MainWindow", u"Write CSV File", None))
 
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
-        self.ConnectPort.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
         self.SearchConnectPort = QPushButton()
-        self.SearchConnectPort.setText(QCoreApplication.translate("MainWindow", u"Search", None))
+
         self.DisconnectPort = QPushButton()
-        self.DisconnectPort.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
         self.openZoneFile = QPushButton()
-        self.openZoneFile.setText(QCoreApplication.translate("MainWindow", u"Open Zone File", None))
         self.ecuComboBox = QComboBox()
         self.ecuKeyComboBox = QComboBox()
         self.readZone = QPushButton()
-        self.readZone.setText(QCoreApplication.translate("MainWindow", u"Read", None))
         self.writeZone = QPushButton()
-        self.writeZone.setText(QCoreApplication.translate("MainWindow", u"Write", None))
         self.rebootEcu = QPushButton()
-        self.rebootEcu.setText(QCoreApplication.translate("MainWindow", u"Reboot ECU", None))
         self.readEcuFaults = QPushButton()
-        self.readEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Read ECU Faults", None))
         self.clearEcuFaults = QPushButton()
-        self.clearEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Clear ECU Faults", None))
         self.writeSecureTraceability = QCheckBox()
-        self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
         self.virginWriteZone = QCheckBox()
-        self.virginWriteZone.setText(QCoreApplication.translate("MainWindow", u"Virgin Write", None))
         self.hideNoResponseZone = QCheckBox()
-        self.hideNoResponseZone.setText(QCoreApplication.translate("MainWindow", u"Hide 'No Response' Zones", None))
 #        self.useSketchSeedGenerator = QCheckBox()
-#        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
+
+        self.translateUi(MainWindow);
+
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
@@ -107,6 +100,14 @@ class PyPSADiagGUI(object):
         self.topLeftLayout.addWidget(self.command)
         self.topLeftLayout.addWidget(self.output)
         ###################################################
+
+        ###################################################
+        # Setup Language Header Layout
+        self.languageHeaderLayout = QHBoxLayout()
+
+        self.languageHeaderLayout.addStretch()
+        self.languageHeaderLayout.setContentsMargins(0, 5, 0, 0)
+        self.languageHeaderLayout.addWidget(self.languageComboBox)
 
         ###################################################
         # Setup Top Right Layout
@@ -120,6 +121,7 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
+        self.topRightLayout.addWidget(self.languageComboBox)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
@@ -204,6 +206,7 @@ class PyPSADiagGUI(object):
             ###################################################
 
         self.frame = QFrame(self.centralwidget)
+        self.frame.setContentsMargins(10, 0, 10, 10)
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
@@ -214,8 +217,45 @@ class PyPSADiagGUI(object):
             self.frameLayout.addWidget(self.splitterTopBottom)
         self.frame.setLayout(self.frameLayout)
 
+        # Setup language Widget
+        self.languageWidget = QWidget()
+        self.languageWidget.setLayout(self.languageHeaderLayout)
+
         # Setup Main Frame
-        self.mainLayout = QHBoxLayout()
+        self.mainLayout = QVBoxLayout()
+        self.mainLayout.setSpacing(0)
+        self.mainLayout.setContentsMargins(0, 0, 0, 0)
+
+        self.mainLayout.addWidget(self.languageWidget)
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
         MainWindow.setCentralWidget(self.centralwidget)
+
+    def setupLanguages(self):
+        self.languageComboBox = QComboBox()
+        self.languageComboBox.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
+        self.languageComboBox.setMinimumWidth(100)
+
+        flags_path = os.path.join(self.currentDir, "localization", "flags")
+        self.languageComboBox.addItem(QIcon(os.path.join(flags_path, "en.png")), "English", "en")
+        self.languageComboBox.addItem(QIcon(os.path.join(flags_path, "ua.png")), "Українська", "ua")
+
+    def translateUi(self, MainWindow):
+        self.sendCommand.setText(QCoreApplication.translate("MainWindow", u"Send Command", None))
+        self.openCSVFile.setText(QCoreApplication.translate("MainWindow", u"Open CSV File", None))
+        self.saveCSVFile.setText(QCoreApplication.translate("MainWindow", u"Write CSV File", None))
+        self.ConnectPort.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
+        self.SearchConnectPort.setText(QCoreApplication.translate("MainWindow", u"Search", None))
+        self.DisconnectPort.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
+        self.openZoneFile.setText(QCoreApplication.translate("MainWindow", u"Open Zone File", None))
+        self.readZone.setText(QCoreApplication.translate("MainWindow", u"Read", None))
+        self.writeZone.setText(QCoreApplication.translate("MainWindow", u"Write", None))
+        self.rebootEcu.setText(QCoreApplication.translate("MainWindow", u"Reboot ECU", None))
+        self.readEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Read ECU Faults", None))
+        self.clearEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Clear ECU Faults", None))
+        self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
+        self.hideNoResponseZone.setText(QCoreApplication.translate("MainWindow", u"Hide 'No Response' Zones", None))
+#        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
+
+        self.jsonZoneFileTitle = QCoreApplication.translate("MainWindow", "Open JSON Zone File")
+        self.jsonZoneFileFilter = QCoreApplication.translate("MainWindow", "JSON Files (*.json)")
