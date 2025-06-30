@@ -20,11 +20,8 @@
     </message>
     <message>
         <location filename="../../../json/MATT/MATT2010.json"/>
-        <source>Gearbox transmission indicator (for display on a separate screen or in the upper right corner)
-            </source>
-        <translation>Індикатор трансмісії коробки передач (для відображення на окремому екрані або у верхньому
-                правому куті)
-            </translation>
+        <source>Gearbox transmission indicator (for display on a separate screen or in the upper right corner)</source>
+        <translation>Індикатор трансмісії коробки передач (для відображення на окремому екрані або у верхньому правому куті)</translation>
     </message>
     <message>
         <location filename="../../../json/MATT/MATT2010.json"/>
@@ -154,7 +151,7 @@
     <message>
         <location filename="../../../json/MATT/MATT2010.json"/>
         <source>toffee</source>
-        <translation>іриска</translation>
+        <translation>янтарний</translation>
     </message>
     <message>
         <location filename="../../../json/MATT/MATT2010.json"/>
