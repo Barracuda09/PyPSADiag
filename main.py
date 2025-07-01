@@ -25,7 +25,6 @@ import json
 import csv
 import time
 import os
-import os
 from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
@@ -419,7 +418,7 @@ class MainWindow(QMainWindow):
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
             # Give some option to cancel the Clear Fault Codes
-            changedialog = MessageDialog(self, i18n().tr("Clearing Faults Codes of ECU:"), i18n().tr("Ok"), ecu)
+            changedialog = MessageDialog(self, i18n().tr("Clearing Fault Codes of ECU:"), i18n().tr("Ok"), ecu)
             if MessageDialog.Rejected == changedialog.exec():
                 return
 
