@@ -39,13 +39,13 @@ from EcuZoneTreeView  import EcuZoneTreeView
 from MessageDialog  import MessageDialog
 from i18n import i18n
 
-
 """
   - Change GUI in: PyPSADiagGUI.py
   - Run with: python main.py
 """
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
+    langCode = "en"
     ecuObjectList = {}
     simulation = False
     scan = False
@@ -54,15 +54,8 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.lang_code = ""
-        self.lang = False
         if len(sys.argv) >= 2:
             for arg in sys.argv:
-                if arg == "--lang":
-                    self.lang = True
-                if self.lang and arg != "--lang":
-                    self.lang = False
-                    self.lang_code = str(arg)
                 if arg == "--simu":
                     self.simulation = True
                 if arg == "--scan":
@@ -72,16 +65,13 @@ class MainWindow(QMainWindow):
                     calc.testCalculations()
                     exit()
                 if arg == "--help":
-                    print("Use --simu      For simulation")
-                    print("Use --lang nl   For NL translation")
+                    print("Use --simu   For simulation")
                     exit()
 
-        self.translator = QTranslator()
-        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
-        self.translator.load(qm_path)
-        QApplication.instance().installTranslator(self.translator)
-
         self.ui.setupGUI(self, self.scan)
+        self.addTranslators()
+
+        self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
         #converter = FileConverter()
         #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
@@ -142,11 +132,36 @@ class MainWindow(QMainWindow):
         self.fileLoaderThread = FileLoader.FileLoaderThread()
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
 
-    # Update ECU Combobox and Zone Tree view with "new" Zone file
+    def addTranslators(self):
+        self.mainTranslator = QTranslator()
+        self.jsonTranslator = QTranslator()
+
+        app_instance = QApplication.instance()
+        app_instance.installTranslator(self.mainTranslator)
+        app_instance.installTranslator(self.jsonTranslator)
+
+    def changeLanguage(self, index):
+        lang_code = self.ui.languageComboBox.itemData(index)
+        if lang_code:
+            self.langCode = lang_code
+
+        self.loadTranslator(self.mainTranslator, "main.qm")
+        self.ui.translateGUI(self)
+        if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
+            self.updateEcuZonesAndKeys(self.ecuObjectList)
+
+    def loadTranslator(self, translator: QTranslator, file_name: str):
+        translator.load(os.path.join(self.ui.currentDir, "i18n", "translations", f"{self.langCode}", file_name))
+
+# Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZonesAndKeys(self, ecuObjectList: dict):
         # Update ECU Zone ComboBox
         self.ui.ecuComboBox.clear()
         name = ecuObjectList["name"]
+
+        # Load translation file
+        self.loadTranslator(self.jsonTranslator, f"{name}.qm")
+
         self.ui.ecuComboBox.addItem(name)
         if "zones" in ecuObjectList:
             zoneObjectList = ecuObjectList["zones"]
@@ -256,7 +271,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def openZoneFile(self):
         path = os.path.join(os.path.dirname(__file__), "json")
-        fileName = QFileDialog.getOpenFileName(self, i18n().tr("Open JSON Zone File"), path, i18n().tr("JSON Files") + "(*.json)")
+        fileName = QFileDialog.getOpenFileName(self, self.ui.jsonZoneFileTitle, path, self.ui.jsonZoneFileFilter)
         if fileName[0] == "":
             return
         file = open(fileName[0], 'r', encoding='utf-8')

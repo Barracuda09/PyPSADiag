@@ -25,21 +25,21 @@ from googletrans import Translator as GoogleTranslator
 
 class i18n():
 
-    def __init__(self):
-        self.translator = GoogleTranslator()
-        self.trans = True;
+    # def __init__(self):
+        # self.translator = GoogleTranslator()
+        # self.trans = True;
 
-    def translate_text(self, text: str):
-        return asyncio.run(self.async_translate_text(text))
-
-    async def async_translate_text(self, text: str):
-        print("Translate")
-        result = await self.translator.translate(text, dest="de")
-        print(str(result.text))
-        return str(result.text)
+    # def translate_text(self, text: str):
+    #     return asyncio.run(self.async_translate_text(text))
+    #
+    # async def async_translate_text(self, text: str):
+    #     print("Translate")
+    #     result = await self.translator.translate(text, dest="de")
+    #     print(str(result.text))
+    #     return str(result.text)
 
     def tr(self, text: str):
         #return text
         #return self.translate_text(text)
-        return str(QCoreApplication.translate("", text))
+        return str(QCoreApplication.translate("MainWindow", text))
 
