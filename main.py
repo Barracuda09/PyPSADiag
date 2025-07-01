@@ -62,7 +62,7 @@ class MainWindow(QMainWindow):
                 if arg == "--lang":
                     self.lang = True
                 if self.lang:
-                    self.lang = True
+                    self.lang = False
                     self.lang_code = str(arg)
                 if arg == "--simu":
                     self.simulation = True
@@ -73,7 +73,8 @@ class MainWindow(QMainWindow):
                     calc.testCalculations()
                     exit()
                 if arg == "--help":
-                    print("Use --simu   For simulation")
+                    print("Use --simu      For simulation")
+                    print("Use --lang nl   For NL translation")
                     exit()
 
 #        self.translator = QTranslator()
