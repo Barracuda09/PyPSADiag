@@ -20,7 +20,7 @@
 """
 
 from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent, QCoreApplication
+from PySide6.QtCore import Qt, QEvent
 from PySide6.QtWidgets import QComboBox
 from i18n import i18n
 

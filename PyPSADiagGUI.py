@@ -261,4 +261,4 @@ class PyPSADiagGUI(object):
 #        self.useSketchSeedGenerator.setText(i18n().tr("Use Sketch Seed Generator"))
 
         self.jsonZoneFileTitle = i18n().tr("Open JSON Zone File")
-        self.jsonZoneFileFilter = i18n().tr("JSON Files (*.json)")
+        self.jsonZoneFileFilter = i18n().tr("JSON Files") + " (*.json)"

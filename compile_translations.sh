@@ -3,7 +3,7 @@
 TS_DIR="./i18n/translations/ua"
 
 if ! command -v pyside6-lrelease &> /dev/null; then
-    echo "❌ pyside6-lrelease не знайдено. Встанови PySide6 спочатку (pip install pyside6)"
+    echo "❌ pyside6-lrelease not found. Install PySide6 first (pip install pyside6)"
     exit 1
 fi
 

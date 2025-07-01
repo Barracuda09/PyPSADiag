@@ -90,8 +90,8 @@
     </message>
     <message>
         <location filename="../../PyPSADiagGUI.py" line="236"/>
-        <source>JSON Files (*.json)</source>
-        <translation>Файли (*.json)</translation>
+        <source>JSON Files</source>
+        <translation>Файли</translation>
     </message>
     <message>
         <location filename="../../EcuZoneTreeView.py" line="120"/>

@@ -4,67 +4,67 @@
     <context>
         <name>MainWindow</name>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="219"/>
+            <location filename="../PyPSADiagGUI.py" line="246"/>
             <source>Send Command</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="220"/>
+            <location filename="../PyPSADiagGUI.py" line="247"/>
             <source>Open CSV File</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="221"/>
+            <location filename="../PyPSADiagGUI.py" line="248"/>
             <source>Write CSV File</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="222"/>
+            <location filename="../PyPSADiagGUI.py" line="249"/>
             <source>Connect</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="223"/>
+            <location filename="../PyPSADiagGUI.py" line="250"/>
             <source>Search</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="224"/>
+            <location filename="../PyPSADiagGUI.py" line="251"/>
             <source>Disconnect</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="225"/>
+            <location filename="../PyPSADiagGUI.py" line="252"/>
             <source>Open Zone File</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="226"/>
+            <location filename="../PyPSADiagGUI.py" line="253"/>
             <source>Read</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="227"/>
+            <location filename="../PyPSADiagGUI.py" line="254"/>
             <source>Write</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="228"/>
+            <location filename="../PyPSADiagGUI.py" line="255"/>
             <source>Reboot ECU</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="229"/>
+            <location filename="../PyPSADiagGUI.py" line="256"/>
             <source>Read ECU Faults</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="230"/>
+            <location filename="../PyPSADiagGUI.py" line="257"/>
             <source>Clear ECU Faults</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="231"/>
+            <location filename="../PyPSADiagGUI.py" line="258"/>
             <source>Write Secure Traceability</source>
             <translation type="unfinished"/>
         </message>
@@ -74,28 +74,28 @@
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="232"/>
+            <location filename="../PyPSADiagGUI.py" line="260"/>
             <source>Hide &apos;No Response&apos; Zones</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="233"/>
+            <location filename="../PyPSADiagGUI.py" line="261"/>
             <source>Use Sketch Seed Generator</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="235"/>
+            <location filename="../PyPSADiagGUI.py" line="263"/>
             <source>Open JSON Zone File</source>
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../PyPSADiagGUI.py" line="236"/>
-            <source>JSON Files (*.json)</source>
+            <location filename="../PyPSADiagGUI.py" line="264"/>
+            <source>JSON Files</source>
             <translation type="unfinished"/>
         </message>
         <!-- Zone View  -->
         <message>
-            <location filename="../EcuZoneTreeView.py" line="120"/>
+            <location filename="../EcuZoneTreeView.py" line="121"/>
             <source>Zone</source>
             <translation type="unfinished"/>
         </message>
@@ -105,7 +105,7 @@
             <translation type="unfinished"/>
         </message>
         <message>
-            <location filename="../EcuZoneTreeView.py" line="122"/>
+            <location filename="../EcuZoneTreeView.py" line="121"/>
             <source>Options</source>
             <translation type="unfinished"/>
         </message>

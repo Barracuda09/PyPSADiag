@@ -62,7 +62,7 @@ class EcuZoneTreeView(QTabWidget):
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
                 name = i18n().tr(str(ecuObjectList["tabs"][tabs]))
-                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), name)
+                index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
                 self.tabs.append([tabs, index])
 
             self.hideNoResponseZones(self.hideZones)
