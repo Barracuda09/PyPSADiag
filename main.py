@@ -27,7 +27,7 @@ import time
 import os
 import os
 from datetime import datetime
-from PySide6.QtCore import Qt, Slot, QIODevice
+from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 
 from PyPSADiagGUI import PyPSADiagGUI
@@ -38,6 +38,7 @@ from SerialPort import SerialPort
 from FileConverter import FileConverter
 from EcuZoneTreeView  import EcuZoneTreeView
 from MessageDialog  import MessageDialog
+from i18n import i18n
 
 
 """
@@ -54,8 +55,15 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.lang_code = ""
+        self.lang = False
         if len(sys.argv) >= 2:
             for arg in sys.argv:
+                if arg == "--lang":
+                    self.lang = True
+                if self.lang:
+                    self.lang = True
+                    self.lang_code = str(arg)
                 if arg == "--simu":
                     self.simulation = True
                 if arg == "--scan":
@@ -68,7 +76,13 @@ class MainWindow(QMainWindow):
                     print("Use --simu   For simulation")
                     exit()
 
-        self.ui.setupGUi(self, self.scan)
+#        self.translator = QTranslator()
+#        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
+#        print(qm_path)
+#        print(self.translator.load(qm_path))
+#        QApplication.instance().installTranslator(self.translator)
+
+        self.ui.setupGUI(self, self.scan)
 
         #converter = FileConverter()
         #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
@@ -152,7 +166,7 @@ class MainWindow(QMainWindow):
         elif "ecu" in ecuObjectList:
             zoneObjectList = ecuObjectList["ecu"]
         else:
-            self.writeToOutputView("Not correct JSON file")
+            self.writeToOutputView(i18n().tr("Not correct JSON file"))
             return;
 
         for zoneObject in zoneObjectList:
@@ -209,12 +223,12 @@ class MainWindow(QMainWindow):
             self.receiveData = self.serialController.sendReceive(cmd)
             self.writeToOutputView(self.receiveData)
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
     @Slot()
     def openCSVFile(self):
         path = os.path.join(os.path.dirname(__file__), "csv")
-        fileName = QFileDialog.getOpenFileName(self, "Open CSV Zone File", path, "CSV Files (*.csv)")
+        fileName = QFileDialog.getOpenFileName(self, i18n().tr("Open CSV Zone File"), path, i18n().tr("CSV Files") + "(*.csv)")
         if fileName[0] == "":
             return
 
@@ -225,7 +239,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def saveCSVFile(self):
         path = os.path.join(os.path.dirname(__file__), "csv")
-        fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", path, "CSV Files (*.csv)")
+        fileName = QFileDialog.getSaveFileName(self, i18n().tr("Save CSV Zone File"), path, i18n().tr("CSV Files") + "(*.csv)")
         if fileName[0] == "":
             return
 
@@ -243,7 +257,7 @@ class MainWindow(QMainWindow):
     @Slot()
     def openZoneFile(self):
         path = os.path.join(os.path.dirname(__file__), "json")
-        fileName = QFileDialog.getOpenFileName(self, "Open JSON Zone File", path, "JSON Files (*.json)")
+        fileName = QFileDialog.getOpenFileName(self, i18n().tr("Open JSON Zone File"), path, i18n().tr("JSON Files") + "(*.json)")
         if fileName[0] == "":
             return
         file = open(fileName[0], 'r', encoding='utf-8')
@@ -258,7 +272,7 @@ class MainWindow(QMainWindow):
                 includeObjectList = json.loads(includeJsonFile.encode("utf-8"))
                 self.ecuObjectList["zones"].update(includeObjectList)
             else:
-                self.writeToOutputView("Include Zone file not found: " + includeZonePath)
+                self.writeToOutputView(i18n().tr("Include Zone file not found: ") + includeZonePath)
 
         self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.ui.setFilePathInWindowsTitle("")
@@ -273,7 +287,7 @@ class MainWindow(QMainWindow):
     def readZone(self):
         if self.serialController.isOpen():
             path = os.path.join(os.path.dirname(__file__), "csv")
-            fileName = QFileDialog.getSaveFileName(self, "Save CSV Zone File", path, "CSV Files (*.csv)")
+            fileName = QFileDialog.getSaveFileName(self, i18n().tr("Save CSV Zone File"), path, i18n().tr("CSV Files") + "(*.csv)")
             if fileName[0] == "":
                 return
 
@@ -315,10 +329,10 @@ class MainWindow(QMainWindow):
                     zone[self.ui.ecuComboBox.currentText()] = self.ecuObjectList["zones"][self.ui.ecuComboBox.currentText()];
                     self.kwphabCommunication.setZonesToRead(ecu, lin, zone)
             else:
-                self.writeToOutputView("Protocol not supported yet!")
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
 
     @Slot()
@@ -335,11 +349,11 @@ class MainWindow(QMainWindow):
                     text += str(zone) + "\r\n"
                     changeCount += 1
             if changeCount == 0:
-                self.writeToOutputView("Nothing changed")
+                self.writeToOutputView(i18n().tr("Nothing changed"))
                 return
 
             # Give some option to check values and to cancel the write
-            changedialog = MessageDialog(self, "Write zone(s) to ECU", "Write", text)
+            changedialog = MessageDialog(self, i18n().tr("Write zone(s) to ECU"), i18n().tr("Write"), text)
             if MessageDialog.Rejected == changedialog.exec():
                 return
 
@@ -362,10 +376,10 @@ class MainWindow(QMainWindow):
             elif self.ecuObjectList["protocol"] == "kwp_hab":
                 self.kwphabCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
-                self.writeToOutputView("Protocol not supported yet!")
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
 
     @Slot()
@@ -379,10 +393,10 @@ class MainWindow(QMainWindow):
             elif self.ecuObjectList["protocol"] == "kwp_hab":
                 self.kwphabCommunication.rebootEcu(ecu)
             else:
-                self.writeToOutputView("Protocol not supported yet!")
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
     @Slot()
     def readEcuFaults(self):
@@ -393,10 +407,10 @@ class MainWindow(QMainWindow):
             if self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.readEcuFaults(ecu)
             else:
-                self.writeToOutputView("Protocol not supported yet!")
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
     @Slot()
     def clearEcuFaults(self):
@@ -405,17 +419,17 @@ class MainWindow(QMainWindow):
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
             # Give some option to cancel the Clear Fault Codes
-            changedialog = MessageDialog(self, "Clearing Faults Codes of ECU:", "Ok", ecu)
+            changedialog = MessageDialog(self, i18n().tr("Clearing Faults Codes of ECU:"), i18n().tr("Ok"), ecu)
             if MessageDialog.Rejected == changedialog.exec():
                 return
 
             if self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.clearEcuFaults(ecu)
             else:
-                self.writeToOutputView("Protocol not supported yet!")
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
         else:
-            self.writeToOutputView("Port not open!")
+            self.writeToOutputView(i18n().tr("Port not open!"))
 
     @Slot()
     def csvReadCallback(self, value: list):

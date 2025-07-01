@@ -26,6 +26,7 @@ from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
 from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
+from i18n import i18n
 
 
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
@@ -35,9 +36,9 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     integrity = True
     selfUpdate = False
     def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
-        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), str("** " + description + " **")])
+        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), str("** " + i18n().tr(description) + " **")])
         parent.insertTopLevelItem(row, self)
-        self.setToolTip(1, description)
+        self.setToolTip(1, i18n().tr(description))
         self.zoneObject = zoneObject
         self.zone = zone.upper()
         self.zoneDescription = description

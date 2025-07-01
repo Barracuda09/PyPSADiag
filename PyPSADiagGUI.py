@@ -29,10 +29,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QHBoxLayout, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget)
+    QTextEdit, QVBoxLayout, QWidget, QMenuBar)
 
 from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
+from i18n import i18n
+
 
 class PyPSADiagGUI(object):
     mainWindow = None
@@ -43,12 +45,17 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
-    def setupGUi(self, MainWindow, scan: bool()):
+    def setupGUI(self, MainWindow, scan: bool()):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
         MainWindow.setSizeIncrement(QSize(1, 1))
+
+        #file_menu = self.mainWindow.menuBar().addMenu(i18n().tr("&File"))
+        #quit_action = file_menu.addAction(i18n().tr("Quit"))
+        #quit_action.setShortcut(i18n().tr("CTRL+Q"))
+
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
@@ -62,44 +69,31 @@ class PyPSADiagGUI(object):
         self.output.setReadOnly(True)
 
         self.sendCommand = QPushButton()
-        self.sendCommand.setText(QCoreApplication.translate("MainWindow", u"Send Command", None))
         self.openCSVFile = QPushButton()
-        self.openCSVFile.setText(QCoreApplication.translate("MainWindow", u"Open CSV File", None))
         self.saveCSVFile = QPushButton()
-        self.saveCSVFile.setText(QCoreApplication.translate("MainWindow", u"Write CSV File", None))
 
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
-        self.ConnectPort.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
         self.SearchConnectPort = QPushButton()
-        self.SearchConnectPort.setText(QCoreApplication.translate("MainWindow", u"Search", None))
         self.DisconnectPort = QPushButton()
-        self.DisconnectPort.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
         self.openZoneFile = QPushButton()
-        self.openZoneFile.setText(QCoreApplication.translate("MainWindow", u"Open Zone File", None))
         self.ecuComboBox = QComboBox()
         self.ecuKeyComboBox = QComboBox()
         self.readZone = QPushButton()
-        self.readZone.setText(QCoreApplication.translate("MainWindow", u"Read", None))
         self.writeZone = QPushButton()
-        self.writeZone.setText(QCoreApplication.translate("MainWindow", u"Write", None))
         self.rebootEcu = QPushButton()
-        self.rebootEcu.setText(QCoreApplication.translate("MainWindow", u"Reboot ECU", None))
         self.readEcuFaults = QPushButton()
-        self.readEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Read ECU Faults", None))
         self.clearEcuFaults = QPushButton()
-        self.clearEcuFaults.setText(QCoreApplication.translate("MainWindow", u"Clear ECU Faults", None))
         self.writeSecureTraceability = QCheckBox()
-        self.writeSecureTraceability.setText(QCoreApplication.translate("MainWindow", u"Write Secure Traceability", None))
         self.virginWriteZone = QCheckBox()
-        self.virginWriteZone.setText(QCoreApplication.translate("MainWindow", u"Virgin Write", None))
         self.hideNoResponseZone = QCheckBox()
-        self.hideNoResponseZone.setText(QCoreApplication.translate("MainWindow", u"Hide 'No Response' Zones", None))
 #        self.useSketchSeedGenerator = QCheckBox()
-#        self.useSketchSeedGenerator.setText(QCoreApplication.translate("MainWindow", u"Use Sketch Seed Generator", None))
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
+
+
+        self.translateGUI(self)
 
         ###################################################
         # Setup Top Left Layout
@@ -219,3 +213,21 @@ class PyPSADiagGUI(object):
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
         MainWindow.setCentralWidget(self.centralwidget)
+
+    def translateGUI(self, MainWindow):
+        self.sendCommand.setText(i18n().tr("Send Command"))
+        self.openCSVFile.setText(i18n().tr("Open CSV File"))
+        self.saveCSVFile.setText(i18n().tr("Write CSV File"))
+        self.ConnectPort.setText(i18n().tr("Connect"))
+        self.SearchConnectPort.setText(i18n().tr("Search"))
+        self.DisconnectPort.setText(i18n().tr("Disconnect"))
+        self.openZoneFile.setText(i18n().tr("Open Zone File"))
+        self.readZone.setText(i18n().tr("Read"))
+        self.writeZone.setText(i18n().tr("Write"))
+        self.rebootEcu.setText(i18n().tr("Reboot ECU"))
+        self.readEcuFaults.setText(i18n().tr("Read ECU Faults"))
+        self.clearEcuFaults.setText(i18n().tr("Clear ECU Faults"))
+        self.writeSecureTraceability.setText(i18n().tr("Write Secure Traceability"))
+        self.virginWriteZone.setText(i18n().tr("Virgin Write"))
+        self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))
+#        self.useSketchSeedGenerator.setText(i18n().tr("Use Sketch Seed Generator"))

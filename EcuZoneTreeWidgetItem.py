@@ -25,16 +25,17 @@ from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget, QLabel, QFrame
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
+from i18n import i18n
 
 
 class EcuZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
     zoneDescription = ""
     def __init__(self, parent, row: int, zone: str, description: str):
-        super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), description])
+        super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), i18n().tr(description)])
         if isinstance(parent, QTreeWidget):
             parent.insertTopLevelItem(row, self)
-        self.setToolTip(1, description)
+        self.setToolTip(1, i18n().tr(description))
         self.zone = zone.upper()
         self.zoneDescription = description
 

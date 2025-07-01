@@ -28,6 +28,7 @@ from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
 from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 from EcuMultiZoneTreeWidgetItem import EcuMultiZoneTreeWidgetItem
+from i18n import i18n
 
 class EcuZoneTreeView(QTabWidget):
     """
@@ -60,7 +61,7 @@ class EcuZoneTreeView(QTabWidget):
             self.clear()
             self.tabs = []
             for tabs in ecuObjectList["tabs"]:
-                name = ecuObjectList["tabs"][tabs]
+                name = i18n().tr(str(ecuObjectList["tabs"][tabs]))
                 index = self.addTab(EcuZoneTreeViewWidget(self, self.zoneObjectList, tabs), str(name))
                 self.tabs.append([tabs, index])
 
@@ -117,7 +118,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def __init__(self, parent, zoneObjectList, tabName: str):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
         self.setColumnCount(3)
-        self.setHeaderLabels(["Zone", "Zone Description", "Options"])
+        self.setHeaderLabels([i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")])
         self.setSelectionMode(QTreeWidget.NoSelection)
         self.setFocusPolicy(Qt.NoFocus);
         self.setWordWrap(True)
