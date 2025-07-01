@@ -47,6 +47,16 @@ Build
 	4. `Read` Zones
 	5. <b> **RISK:** You can save the Zones to the ECU by using the `Write` Button.<br/> **Always Check that these zones look correct** </b>
 
+Make Translations
+------
+
+For example to make a translation for Dutch use this command:
+- `pyside6-lupdate EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py main.py  -source-language en_EN -ts i18n/PyPSADiag_nl.ts`
+- `pyside6-linguist ./i18n/PyPSADiag_nl.ts`
+- `pyside6-lrelease ./i18n/PyPSADiag_nl.ts -qm ./i18n/translations/PyPSADiag_nl.qm`
+- `python main.py --lang nl`
+
+
 Donate
 ------
 

@@ -61,7 +61,7 @@ class MainWindow(QMainWindow):
             for arg in sys.argv:
                 if arg == "--lang":
                     self.lang = True
-                if self.lang:
+                if self.lang and arg != "--lang":
                     self.lang = False
                     self.lang_code = str(arg)
                 if arg == "--simu":
@@ -77,11 +77,10 @@ class MainWindow(QMainWindow):
                     print("Use --lang nl   For NL translation")
                     exit()
 
-#        self.translator = QTranslator()
-#        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
-#        print(qm_path)
-#        print(self.translator.load(qm_path))
-#        QApplication.instance().installTranslator(self.translator)
+        self.translator = QTranslator()
+        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
+        self.translator.load(qm_path)
+        QApplication.instance().installTranslator(self.translator)
 
         self.ui.setupGUI(self, self.scan)
 
