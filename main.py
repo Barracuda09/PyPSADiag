@@ -60,18 +60,18 @@ class MainWindow(QMainWindow):
             for arg in sys.argv:
                 if arg == "--lang":
                     self.lang = True
-                if self.lang and arg != "--lang":
+                elif self.lang:
                     self.lang = False
                     self.lang_code = str(arg)
-                if arg == "--simu":
+                elif arg == "--simu":
                     self.simulation = True
-                if arg == "--scan":
+                elif arg == "--scan":
                     self.scan = True
-                if arg == "--checkcalc":
+                elif arg == "--checkcalc":
                     calc = SeedKeyAlgorithm()
                     calc.testCalculations()
                     exit()
-                if arg == "--help":
+                elif arg == "--help":
                     print("Use --simu      For simulation")
                     print("Use --lang nl   For NL translation")
                     exit()

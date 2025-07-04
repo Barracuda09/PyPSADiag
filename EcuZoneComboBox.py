@@ -23,6 +23,7 @@ from PySide6.QtGui import QKeyEvent
 from PySide6.QtCore import Qt, QEvent
 from PySide6.QtWidgets import QComboBox
 
+from i18n import i18n
 
 class EcuZoneComboBox(QComboBox):
     """
@@ -38,10 +39,11 @@ class EcuZoneComboBox(QComboBox):
         self.zoneObject = zoneObject
         # Fill Combo Box
         for paramObject in self.zoneObject["params"]:
+            name = i18n().tr(paramObject["name"])
             if "mask" in paramObject:
-                self.addItem(paramObject["name"], int(paramObject["mask"], 2))
+                self.addItem(name, int(paramObject["mask"], 2))
             else:
-                self.addItem(paramObject["name"], int(paramObject["value"], 16))
+                self.addItem(name, int(paramObject["value"], 16))
         self.setCurrentIndex(0)
 
     def event(self, event: QEvent):
