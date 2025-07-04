@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl_NL" sourcelanguage="en_EN">
+<TS version="2.1" language="pl_PL" sourcelanguage="en_EN">
 <context>
     <name></name>
     <message>
+        <location filename="../EcuZoneTreeView.py" line="121"/>
+        <source>Zone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../EcuZoneTreeView.py" line="121"/>
+        <source>Zone Description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../EcuZoneTreeView.py" line="121"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../PyPSADiagGUI.py" line="218"/>
         <source>Send Command</source>
-        <translation>Stuur Commando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="219"/>
@@ -77,21 +92,6 @@
     <message>
         <location filename="../PyPSADiagGUI.py" line="232"/>
         <source>Hide &apos;No Response&apos; Zones</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../EcuZoneTreeView.py" line="121"/>
-        <source>Zone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../EcuZoneTreeView.py" line="121"/>
-        <source>Zone Description</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../EcuZoneTreeView.py" line="121"/>
-        <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
