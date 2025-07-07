@@ -3,3 +3,4 @@ PySerial
 PySide6>=6.9
 numpy
 googletrans
+legacy-cgi; python_version >= '3.13'
