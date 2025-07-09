@@ -486,7 +486,7 @@ class DiagnosticCommunication(QThread):
                     answer = decodedData[4:]
 
                 if answerZone.upper() != self.ecuReadZone.upper():
-                    self.receivedPacketSignal.emit([self.ecuReadZone, i18n().tr("Requesed zone different from received zone"), decodedData], time.time())
+                    self.receivedPacketSignal.emit([self.ecuReadZone, i18n().tr("Requested zone different from received zone"), decodedData], time.time())
                     return data
 
                 self.receivedPacketSignal.emit([self.ecuReadZone, answer, self.zoneName], time.time())
