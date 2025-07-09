@@ -25,16 +25,23 @@ from googletrans import Translator as GoogleTranslator
 
 class i18n():
 
-    def translate_text(self, text: str, dest: str):
+    def translate_text(self, text, dest: str):
+        #self.translator = GoogleTranslator(service_urls=['translate.google.com'])
         self.translator = GoogleTranslator()
-        return asyncio.run(self.async_translate_text(text, dest))
+        return asyncio.run(self.__async_translate_text(text, dest))
 
-    async def async_translate_text(self, text: str, dest: str):
-        result = await self.translator.translate(text, dest)
-        return str(result.text)
+    async def __async_translate_text(self, text, dest: str):
+        resultList = await self.translator.translate(text, dest=dest, src="en")
+        if isinstance(resultList, list):
+            text = []
+            for result in resultList:
+                text.append(result.text)
+            return text
+        else:
+            return resultList.text
 
     def tr(self, text: str):
         #return text
-        #return self.translate_text(text, "nl")
+        #return self.translate_text(text, "nl")[0]
         return str(QCoreApplication.translate("", text))
 
