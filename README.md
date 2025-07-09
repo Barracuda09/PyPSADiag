@@ -41,7 +41,7 @@ Build
 - Goto virtual enviroment with `/path/to/PyPSADiag/.venv/Script/activate`
 - Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
 - Run with:
-	1. `python main.py`
+	1. `python main.py --lang nl`
 	2. `Open Zone File` and select an ECU JSON file
 	3. `Connect` to correct Arduino hardware
 	4. `Read` Zones
@@ -51,7 +51,7 @@ Make Translations
 ------
 
 For example to make a translation for Dutch use this command:
-- ```pyside6-lupdate EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py DiagnosticCommunication.py main.py  -source-language en_EN -ts ./i18n/PyPSADiag_nl.ts```
+- `pyside6-lupdate EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py DiagnosticCommunication.py main.py  -source-language en_EN -ts ./i18n/PyPSADiag_nl.ts`
 - `pyside6-linguist ./i18n/PyPSADiag_nl.ts`
 - `pyside6-lrelease ./i18n/PyPSADiag_nl.ts -qm ./i18n/translations/PyPSADiag_nl.qm`
 - `python main.py --lang nl`
