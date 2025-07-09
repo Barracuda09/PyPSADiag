@@ -2,5 +2,5 @@ pyinstaller>=4.3
 PySerial
 PySide6>=6.9
 numpy
-googletrans
+googletrans>=4.0.2
 legacy-cgi; python_version >= '3.13'
