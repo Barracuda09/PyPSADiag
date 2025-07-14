@@ -94,190 +94,190 @@
         <translation>Verberg 'geen antwoord' zones</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="143" />
+        <location filename="../DiagnosticCommunication.py" line="154" />
         <source>** Skipping/Stripping **</source>
         <translation>** Skipping/strippen **</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="149" />
+        <location filename="../DiagnosticCommunication.py" line="160" />
         <source>** Stripping **</source>
         <translation>** strippen **</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="163" />
+        <location filename="../DiagnosticCommunication.py" line="174" />
         <source>ECU Send keep-alive: Failed</source>
         <translation>ECU Send Keep-alive: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="170" />
+        <location filename="../DiagnosticCommunication.py" line="181" />
         <source>Reset ECU Keep Alive: Failed</source>
         <translation>Reset ECU Keep Alive: Failed</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="182" />
+        <location filename="../DiagnosticCommunication.py" line="193" />
         <source>Open Diagnostic session: Failed</source>
         <translation>Open diagnostische sessie: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="194" />
+        <location filename="../DiagnosticCommunication.py" line="205" />
         <source>Closing Diagnostic session: Failed</source>
         <translation>Diagnostische sessie sluiten: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="202" />
+        <location filename="../DiagnosticCommunication.py" line="213" />
         <source>ECU Seed Request: Waiting</source>
         <translation>ECU -zaadverzoek: wachten</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="207" />
-        <location filename="../DiagnosticCommunication.py" line="284" />
+        <location filename="../DiagnosticCommunication.py" line="218" />
         <location filename="../DiagnosticCommunication.py" line="289" />
-        <location filename="../DiagnosticCommunication.py" line="313" />
+        <location filename="../DiagnosticCommunication.py" line="294" />
+        <location filename="../DiagnosticCommunication.py" line="318" />
         <source>Write Configuration Zone: Failed</source>
         <translation>Schrijf configuratiezone: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="219" />
+        <location filename="../DiagnosticCommunication.py" line="230" />
         <source>ECU Unlock Request: Retrying in 2 Seconds</source>
         <translation>ECU -ontgrendelingsverzoek: in 2 seconden opnieuw proberen</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="232" />
-        <location filename="../DiagnosticCommunication.py" line="257" />
+        <location filename="../DiagnosticCommunication.py" line="243" />
+        <location filename="../DiagnosticCommunication.py" line="265" />
         <source>ECU Unlock Failed:</source>
         <translation>ECU -ontgrendeling is mislukt:</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="240" />
-        <location filename="../DiagnosticCommunication.py" line="265" />
+        <location filename="../DiagnosticCommunication.py" line="248" />
+        <location filename="../DiagnosticCommunication.py" line="270" />
         <source>ECU Unlock Failed</source>
         <translation>ECU -ontgrendeling is mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="278" />
+        <location filename="../DiagnosticCommunication.py" line="283" />
         <source>Write Configuration Zone in progress</source>
         <translation>Schrijf configuratiezone in uitvoering</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="286" />
+        <location filename="../DiagnosticCommunication.py" line="291" />
         <source>Write Configuration Zone: Ok</source>
         <translation>Schrijf configuratiezone: OK</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="311" />
+        <location filename="../DiagnosticCommunication.py" line="316" />
         <source>Write Configuration Zone: Failed (Incorrect Checksum)</source>
         <translation>Schrijven configuratiezone: mislukt (onjuiste controlesom)</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="318" />
-        <location filename="../DiagnosticCommunication.py" line="456" />
+        <location filename="../DiagnosticCommunication.py" line="323" />
+        <location filename="../DiagnosticCommunication.py" line="461" />
         <source>Serial Port Not Open</source>
         <translation>Seriële poort niet open</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="323" />
+        <location filename="../DiagnosticCommunication.py" line="328" />
         <source>Selecting ECU: Failed</source>
         <translation>ECU selecteren: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="329" />
+        <location filename="../DiagnosticCommunication.py" line="334" />
         <source>Selecting LIN ECU: Failed</source>
         <translation>Lin ECU selecteren: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="355" />
+        <location filename="../DiagnosticCommunication.py" line="360" />
         <source>Waiting 2 Sec...</source>
         <translation>Wachten 2 sec ...</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="385" />
+        <location filename="../DiagnosticCommunication.py" line="390" />
         <source>Configuration Write of Secure Traceability Zone: Failed</source>
         <translation>Configuratie schrijven van de beveiligde traceerbaarheidszone: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="387" />
+        <location filename="../DiagnosticCommunication.py" line="392" />
         <source>NO Secure Traceability is Written!!</source>
         <translation>Er is geen veilige traceerbaarheid geschreven !!</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="392" />
+        <location filename="../DiagnosticCommunication.py" line="397" />
         <source>Write Successful</source>
         <translation>Schrijf succesvol</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="396" />
+        <location filename="../DiagnosticCommunication.py" line="401" />
         <source>Reboot ECU...</source>
         <translation>Reboot ECU ...</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="399" />
-        <location filename="../DiagnosticCommunication.py" line="416" />
-        <location filename="../DiagnosticCommunication.py" line="438" />
+        <location filename="../DiagnosticCommunication.py" line="404" />
+        <location filename="../DiagnosticCommunication.py" line="421" />
+        <location filename="../DiagnosticCommunication.py" line="443" />
         <source>ECU Not selected!</source>
         <translation>ECU niet geselecteerd!</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="408" />
+        <location filename="../DiagnosticCommunication.py" line="413" />
         <source>Reboot: Failed</source>
         <translation>Reboot: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="412" />
+        <location filename="../DiagnosticCommunication.py" line="417" />
         <source>Read ECU Faults...</source>
         <translation>Lees ECU -fouten ...</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="430" />
+        <location filename="../DiagnosticCommunication.py" line="435" />
         <source>Reading ECU Faults: Failed</source>
         <translation>ECU -fouten lezen: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="434" />
+        <location filename="../DiagnosticCommunication.py" line="439" />
         <source>Clearing ECU Faults...</source>
         <translation>ECU -fouten opruimen ...</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="452" />
+        <location filename="../DiagnosticCommunication.py" line="457" />
         <source>Clearing ECU Faults: Failed</source>
         <translation>ECU -fouten opruimen: mislukt</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="489" />
+        <location filename="../DiagnosticCommunication.py" line="494" />
         <source>Requested zone different from received zone</source>
         <translation>Gevraagde zone anders dan ontvangen zone</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="495" />
+        <location filename="../DiagnosticCommunication.py" line="500" />
         <source>Communication closed</source>
         <translation>Communicatie gesloten</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="497" />
+        <location filename="../DiagnosticCommunication.py" line="502" />
         <source>Download session opened</source>
         <translation>Download sessie geopend</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="499" />
+        <location filename="../DiagnosticCommunication.py" line="504" />
         <source>Diagnostic session opened</source>
         <translation>Diagnostische sessie geopend</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="501" />
+        <location filename="../DiagnosticCommunication.py" line="506" />
         <source>Unlocked successfully for download</source>
         <translation>Met succes ontgrendeld om te downloaden</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="503" />
+        <location filename="../DiagnosticCommunication.py" line="508" />
         <source>Unlocked successfully for configuration</source>
         <translation>Met succes ontgrendeld voor configuratie</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="559" />
+        <location filename="../DiagnosticCommunication.py" line="560" />
         <source>Open Diagnostic session: Failed/Stopping</source>
         <translation>Open diagnostische sessie: mislukt/stoppen</translation>
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="572" />
+        <location filename="../DiagnosticCommunication.py" line="573" />
         <source>Reading ECU Zones: Successful</source>
         <translation>ECU -zones lezen: succesvol</translation>
     </message>
@@ -445,18 +445,26 @@
         <translation>83</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="40" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="44" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="53" />
         <source>Supplier</source>
         <translation>Leverancier</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="48" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="12" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="21" />
         <source>Equipment Part Number</source>
         <translation>Onderdeelnummer van het apparatuur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="55" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="19" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="28" />
         <source>Equipment Additional Reference</source>
         <translation>Apparatuur extra referentie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="62" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="86" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="95" />
         <source>Calibration Version</source>
         <translation>Kalibratieversie</translation>
     </message><message>
@@ -487,8 +495,8 @@
         <translation>CFG_DEQ_AAS_TYPE_CHAINE_TRACTIE_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="55" />
-        <source>The presence of the function of monitoring the \"dead\" zones</source>
-        <translation>De aanwezigheid van de functie van het monitoren van de \"dode\" zones</translation>
+        <source>The presence of the function of monitoring the "dead" zones</source>
+        <translation>De aanwezigheid van de functie van het monitoren van de "dode" zones</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="66" />
         <source>Availability of semi-automatic parking function</source>
@@ -1278,8 +1286,8 @@
         <translation>Configuratie van de beperkingsmodus van de stuurprogramma</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="847" />
-        <source>Specifies if \"Check Page\" is available</source>
-        <translation>Geeft aan of \"check -pagina\" beschikbaar is</translation>
+        <source>Specifies if "Check Page" is available</source>
+        <translation>Geeft aan of "check -pagina" beschikbaar is</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="864" />
         <source>Precense of internal combustion engine</source>
@@ -2063,8 +2071,8 @@
         <translation>Uitvoer van onderhoudsinformatie wanneer de ontsteking is ingeschakeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="75" />
-        <source>Menu \"Car parameters\"</source>
-        <translation>Menu \"autoparameters\"</translation>
+        <source>Menu "Car parameters"</source>
+        <translation>Menu "autoparameters"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="83" />
         <source>Displaying pop-up navigation pointers</source>
@@ -5858,18 +5866,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="37" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="86" />
-        <source>Display Touch button \"Parking assistance\"</source>
-        <translation>Touch -touch -knop \"parkeerhulp\" weergeven</translation>
+        <source>Display Touch button "Parking assistance"</source>
+        <translation>Touch -touch -knop "parkeerhulp" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="68" />
-        <source>Physical Button \"Parking assistance\"</source>
-        <translation>Fysieke knop \"parkeerhulp\"</translation>
+        <source>Physical Button "Parking assistance"</source>
+        <translation>Fysieke knop "parkeerhulp"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="77" />
-        <source>Touch button Position \"Parking assistance\"</source>
-        <translation>Aanraking knoppositie \"Parkeerhulp\"</translation>
+        <source>Touch button Position "Parking assistance"</source>
+        <translation>Aanraking knoppositie "Parkeerhulp"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="64" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2134" />
@@ -5983,18 +5991,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="103" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="103" />
-        <source>Display Touch button \"Lane departure warning system (AFIL)\"</source>
-        <translation>Touch Touch -knop \"Lane Departure Warning System (AFIL)\" weergeven \"</translation>
+        <source>Display Touch button "Lane departure warning system (AFIL)"</source>
+        <translation>Touch Touch -knop "Lane Departure Warning System (AFIL)" weergeven "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="121" />
-        <source>Physical Button \"Lane departure warning system (AFIL)\"</source>
-        <translation>Fysieke knop \"Lane Departure Warning System (AFIL)\"</translation>
+        <source>Physical Button "Lane departure warning system (AFIL)"</source>
+        <translation>Fysieke knop "Lane Departure Warning System (AFIL)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="121" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="112" />
-        <source>Touch Button Position \"Lane departure warning system (AFIL)\"</source>
-        <translation>Aanrakingsknop positie \"Lane Departure Warning System (AFIL)\"</translation>
+        <source>Touch Button Position "Lane departure warning system (AFIL)"</source>
+        <translation>Aanrakingsknop positie "Lane Departure Warning System (AFIL)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="130" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="130" />
@@ -6003,18 +6011,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="147" />
-        <source>Display Touch button \"Distance Alert (ARTIV)\"</source>
-        <translation>Touch Touch -knop \"Afstand Alert (Artiv)\" weergeven</translation>
+        <source>Display Touch button "Distance Alert (ARTIV)"</source>
+        <translation>Touch Touch -knop "Afstand Alert (Artiv)" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="147" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="156" />
-        <source>Physical Button \"Distance Alert (ARTIV)\"</source>
-        <translation>Fysieke knop \"Afstand alert (artiv)\"</translation>
+        <source>Physical Button "Distance Alert (ARTIV)"</source>
+        <translation>Fysieke knop "Afstand alert (artiv)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="156" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="138" />
-        <source>Touch Button Position \"Distance Alert (ARTIV)\"\"</source>
-        <translation>Aanrakingsknoppositie \"Distance Alert (artiv)\" \"</translation>
+        <source>Touch Button Position "Distance Alert (ARTIV)""</source>
+        <translation>Aanrakingsknoppositie "Distance Alert (artiv)" "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="165" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="165" />
@@ -6129,8 +6137,8 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="295" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="362" />
-        <source>Automatic Volume Control \"ACV\"</source>
-        <translation>Automatische volumeregeling \"ACV\"</translation>
+        <source>Automatic Volume Control "ACV"</source>
+        <translation>Automatische volumeregeling "ACV"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="304" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="291" />
@@ -6239,13 +6247,13 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="445" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="459" />
-        <source>Physical Button \"Front Camera\"</source>
-        <translation>Fysieke knop \"camera aan de voorkant\"</translation>
+        <source>Physical Button "Front Camera"</source>
+        <translation>Fysieke knop "camera aan de voorkant"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="454" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="450" />
-        <source>Touch button Position \"Front Camera\"</source>
-        <translation>Aanrakingsknoppositie \"voor camera aan de voorkant\"</translation>
+        <source>Touch button Position "Front Camera"</source>
+        <translation>Aanrakingsknoppositie "voor camera aan de voorkant"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="463" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="512" />
@@ -6394,12 +6402,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="706" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="660" />
-        <source>\"SMARTAPPS\" Function</source>
-        <translation>\"SmartApps\" -functie</translation>
+        <source>"SMARTAPPS" Function</source>
+        <translation>"SmartApps" -functie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="715" />
-        <source>Display of the \"Adaptive cruise control\" settings</source>
-        <translation>Weergave van de instellingen \"Adaptive Cruise Control\"</translation>
+        <source>Display of the "Adaptive cruise control" settings</source>
+        <translation>Weergave van de instellingen "Adaptive Cruise Control"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="724" />
         <source>USB1 port</source>
@@ -6420,12 +6428,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="760" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="739" />
-        <source>\"MENU\" button</source>
-        <translation>\"Menu\" knop</translation>
+        <source>"MENU" button</source>
+        <translation>"Menu" knop</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="769" />
-        <source>Displaying of the \"MIRRORlink\" touch button</source>
-        <translation>De touch -knop \"MirrorLink\" weergeven</translation>
+        <source>Displaying of the "MIRRORlink" touch button</source>
+        <translation>De touch -knop "MirrorLink" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="780" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="759" />
@@ -6439,8 +6447,8 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="798" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="797" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="806" />
-        <source>\"Apple Carplay\" function</source>
-        <translation>\"Apple CarPlay\" -functie</translation>
+        <source>"Apple Carplay" function</source>
+        <translation>"Apple CarPlay" -functie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="807" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="778" />
@@ -6488,18 +6496,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="886" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1213" />
-        <source>Display Touch button \"Main beams assistant\"</source>
-        <translation>Toon aanraakknop \"hoofdstralen assistent\" weergeven</translation>
+        <source>Display Touch button "Main beams assistant"</source>
+        <translation>Toon aanraakknop "hoofdstralen assistent" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="895" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1231" />
-        <source>Physical Button \"Main beams assistant\"</source>
-        <translation>Fysieke knop \"hoofdstralen assistent\"</translation>
+        <source>Physical Button "Main beams assistant"</source>
+        <translation>Fysieke knop "hoofdstralen assistent"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="904" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1222" />
-        <source>Touch button Position \"Main beams assistant\"</source>
-        <translation>Aanrakingsknoppositie \"Hoofdstralen assistent\"</translation>
+        <source>Touch button Position "Main beams assistant"</source>
+        <translation>Aanrakingsknoppositie "Hoofdstralen assistent"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="913" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1266" />
@@ -6711,18 +6719,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1194" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1556" />
-        <source>Display Touch button \"Parking space measurement system\"</source>
-        <translation>Display touch -knop \"Parkeerruimte meetsysteem\"</translation>
+        <source>Display Touch button "Parking space measurement system"</source>
+        <translation>Display touch -knop "Parkeerruimte meetsysteem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1203" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1565" />
-        <source>Touch button Position \"Parking space measurement system\"</source>
-        <translation>Aanraking knoppositie \"Parkeerruimte meetsysteem\"</translation>
+        <source>Touch button Position "Parking space measurement system"</source>
+        <translation>Aanraking knoppositie "Parkeerruimte meetsysteem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1212" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1574" />
-        <source>Physical Button \"Parking space measurement system\"</source>
-        <translation>Fysieke knop \"Parkeerruimte meetsysteem\"</translation>
+        <source>Physical Button "Parking space measurement system"</source>
+        <translation>Fysieke knop "Parkeerruimte meetsysteem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1221" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1583" />
@@ -6872,18 +6880,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1433" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1864" />
-        <source>Display Touch button \"Blind spot monitoring\"</source>
-        <translation>Touch -touch -knop \"Blind Spot Monitoring\" weergeven</translation>
+        <source>Display Touch button "Blind spot monitoring"</source>
+        <translation>Touch -touch -knop "Blind Spot Monitoring" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1442" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1873" />
-        <source>Touch button Position \"Blind spot monitoring\"</source>
-        <translation>Aanraakknoppositie \"Blind Spot Monitoring\"</translation>
+        <source>Touch button Position "Blind spot monitoring"</source>
+        <translation>Aanraakknoppositie "Blind Spot Monitoring"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1451" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1882" />
-        <source>Physical Button \"Blind spot monitoring\"</source>
-        <translation>Fysieke knop \"Blind Spot Monitoring\"</translation>
+        <source>Physical Button "Blind spot monitoring"</source>
+        <translation>Fysieke knop "Blind Spot Monitoring"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1460" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1891" />
@@ -6892,18 +6900,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1468" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1899" />
-        <source>Display Touch button \"Lane Guard system\"</source>
-        <translation>Touch Touch -knop \"Lane Guard System\" weergeven</translation>
+        <source>Display Touch button "Lane Guard system"</source>
+        <translation>Touch Touch -knop "Lane Guard System" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1477" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1917" />
-        <source>Physical Button \"Lane Guard system\"</source>
-        <translation>Fysieke knop \"Lane Guard System\"</translation>
+        <source>Physical Button "Lane Guard system"</source>
+        <translation>Fysieke knop "Lane Guard System"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1486" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1908" />
-        <source>Touch button Position \"Lane Guard system\"</source>
-        <translation>Aanraking knoppositie \"Lane Guard System\"</translation>
+        <source>Touch button Position "Lane Guard system"</source>
+        <translation>Aanraking knoppositie "Lane Guard System"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1495" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1926" />
@@ -6912,18 +6920,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1503" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1934" />
-        <source>Display Touch button \"Automatic control of the volume \"ACV\"\"</source>
-        <translation>Toon aanraakknop \"Automatische besturing van het volume\" ACV \"\"</translation>
+        <source>Display Touch button "Automatic control of the volume "ACV""</source>
+        <translation>Toon aanraakknop "Automatische besturing van het volume" ACV ""</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1512" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1943" />
-        <source>Touch button Position \"Automatic control of the volume \"ACV\"\"</source>
-        <translation>Aanrakingsknoppositie \"Automatische besturing van het volume\" ACV \"\"</translation>
+        <source>Touch button Position "Automatic control of the volume "ACV""</source>
+        <translation>Aanrakingsknoppositie "Automatische besturing van het volume" ACV ""</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1521" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1952" />
-        <source>Physical Button \"Automatic control of the volume \"ACV\"\"</source>
-        <translation>Fysieke knop \"Automatische besturing van het volume\" ACV \"\"</translation>
+        <source>Physical Button "Automatic control of the volume "ACV""</source>
+        <translation>Fysieke knop "Automatische besturing van het volume" ACV ""</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1530" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1961" />
@@ -7214,8 +7222,8 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1938" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2351" />
-        <source>\"CHECK\" button</source>
-        <translation>\"Check\" -knop</translation>
+        <source>"CHECK" button</source>
+        <translation>"Check" -knop</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1947" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2360" />
@@ -10690,19 +10698,19 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8747" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9264" />
-        <source>Physical button for \"Night Vision\"</source>
-        <translation>Fysieke knop voor \"Night Vision\"</translation>
+        <source>Physical button for "Night Vision"</source>
+        <translation>Fysieke knop voor "Night Vision"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8756" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9433" />
-        <source>Touch button Position \"Night Vision\"</source>
-        <translation>Aanraking knoppositie \"Night Vision\"</translation>
+        <source>Touch button Position "Night Vision"</source>
+        <translation>Aanraking knoppositie "Night Vision"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8765" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9442" />
-        <source>Display Touch button \"Night Vision\"</source>
-        <translation>Toon aanraakknop \"Night Vision\" weergeven</translation>
+        <source>Display Touch button "Night Vision"</source>
+        <translation>Toon aanraakknop "Night Vision" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8775" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9310" />
@@ -10767,33 +10775,33 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8891" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9130" />
-        <source>Display Touch button \"Lateral Deviation Warning\" (ConnectedCAM)</source>
-        <translation>Touch -touch -knop \"laterale afwijking waarschuwing\" weergeven (ConnectedCam)</translation>
+        <source>Display Touch button "Lateral Deviation Warning" (ConnectedCAM)</source>
+        <translation>Touch -touch -knop "laterale afwijking waarschuwing" weergeven (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8900" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9110" />
-        <source>Physical button for \"Lateral Deviation Warning\" (ConnectedCAM)</source>
-        <translation>Fysieke knop voor \"laterale afwijking waarschuwing\" (ConnectedCam)</translation>
+        <source>Physical button for "Lateral Deviation Warning" (ConnectedCAM)</source>
+        <translation>Fysieke knop voor "laterale afwijking waarschuwing" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8909" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9120" />
-        <source>Touch button Position \"Lateral Deviation Warning\" (ConnectedCAM)</source>
-        <translation>Aanrakingsknoppositie \"laterale afwijking waarschuwing\" (ConnectedCam)</translation>
+        <source>Touch button Position "Lateral Deviation Warning" (ConnectedCAM)</source>
+        <translation>Aanrakingsknoppositie "laterale afwijking waarschuwing" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8918" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9100" />
-        <source>Display Touch button \"Front Collision Warning\" (ConnectedCAM)</source>
-        <translation>Display touch -knop \"Warning voor de voorkant botsing\" (ConnectedCam)</translation>
+        <source>Display Touch button "Front Collision Warning" (ConnectedCAM)</source>
+        <translation>Display touch -knop "Warning voor de voorkant botsing" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8927" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9080" />
-        <source>Physical button for \"Front Collision Warning\" (ConnectedCAM)</source>
-        <translation>Fysieke knop voor \"vooraan botsingswaarschuwing\" (ConnectedCam)</translation>
+        <source>Physical button for "Front Collision Warning" (ConnectedCAM)</source>
+        <translation>Fysieke knop voor "vooraan botsingswaarschuwing" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8936" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9090" />
-        <source>Touch button Position \"Front Collision Warning\" (ConnectedCAM)</source>
-        <translation>Aanrakingsknoppositie \"Botsingswaarschuwing vooraan\" (ConnectedCam)</translation>
+        <source>Touch button Position "Front Collision Warning" (ConnectedCAM)</source>
+        <translation>Aanrakingsknoppositie "Botsingswaarschuwing vooraan" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8945" />
         <source>Telecoding_Fct_ADAS</source>
@@ -10827,8 +10835,8 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8994" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9607" />
-        <source>Display Touch button \"Check\"</source>
-        <translation>Touch -knop \"Check\" weergeven \"</translation>
+        <source>Display Touch button "Check"</source>
+        <translation>Touch -knop "Check" weergeven "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9003" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9616" />
@@ -10867,17 +10875,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9050" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9663" />
-        <source>Display Touch button \"Semi-automatic parking system\"</source>
-        <translation>Touch-touch-knop \"Semi-automatisch parkeersysteem weergeven\"</translation>
+        <source>Display Touch button "Semi-automatic parking system"</source>
+        <translation>Touch-touch-knop "Semi-automatisch parkeersysteem weergeven"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9059" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9672" />
-        <source>Touch button Position \"Semi-automatic parking system\"</source>
-        <translation>Aanraking knoppositie \"Semi-automatisch parkeersysteem\"</translation>
+        <source>Touch button Position "Semi-automatic parking system"</source>
+        <translation>Aanraking knoppositie "Semi-automatisch parkeersysteem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9077" />
-        <source>Physical button for \"Semi-automatic parking system\"</source>
-        <translation>Fysieke knop voor \"semi-automatisch parkeersysteem\"</translation>
+        <source>Physical button for "Semi-automatic parking system"</source>
+        <translation>Fysieke knop voor "semi-automatisch parkeersysteem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9086" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9690" />
@@ -10951,8 +10959,8 @@
         <translation>Automatische airconditioning met dubbele zone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9192" />
-        <source>Presence of the \"Air conditioning temperature increase AC\" touch button</source>
-        <translation>Aanwezigheid van de aanraakknop \"Airconditioning Temperatuur verhogen AC\"</translation>
+        <source>Presence of the "Air conditioning temperature increase AC" touch button</source>
+        <translation>Aanwezigheid van de aanraakknop "Airconditioning Temperatuur verhogen AC"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9201" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9823" />
@@ -10985,8 +10993,8 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9255" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9734" />
-        <source>Touch button Position \"Thermal preconditioning (Webasto)\"</source>
-        <translation>Aanraking knoppositie \"Thermal Preconditioning (Webasto)\"</translation>
+        <source>Touch button Position "Thermal preconditioning (Webasto)"</source>
+        <translation>Aanraking knoppositie "Thermal Preconditioning (Webasto)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9264" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9886" />
@@ -10995,13 +11003,13 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9752" />
-        <source>Display Touch button \"Thermal preconditioning (Webasto)\"</source>
-        <translation>Touch -knop \"Thermal Preconditioning (Webasto)\" weergeven \"</translation>
+        <source>Display Touch button "Thermal preconditioning (Webasto)"</source>
+        <translation>Touch -knop "Thermal Preconditioning (Webasto)" weergeven "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9282" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9743" />
-        <source>Physical Button \"Thermal preconditioning (Webasto)\"</source>
-        <translation>Fysieke knop \"Thermal Preconditioning (Webasto)\"</translation>
+        <source>Physical Button "Thermal preconditioning (Webasto)"</source>
+        <translation>Fysieke knop "Thermal Preconditioning (Webasto)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9291" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9895" />
@@ -11095,22 +11103,22 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9417" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10030" />
-        <source>Physical Button \"Stop and Start\"</source>
-        <translation>Fysieke knop \"Stop en starten\"</translation>
+        <source>Physical Button "Stop and Start"</source>
+        <translation>Fysieke knop "Stop en starten"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9426" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10012" />
-        <source>Display Touch button \"Stop and Start\"</source>
-        <translation>Touch -touch -knop \"Stop en starten\" weergeven</translation>
+        <source>Display Touch button "Stop and Start"</source>
+        <translation>Touch -touch -knop "Stop en starten" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9435" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10021" />
-        <source>Touch button Position \"Stop and Start\"</source>
-        <translation>Aanraking knoppositie \"Stop en starten\"</translation>
+        <source>Touch button Position "Stop and Start"</source>
+        <translation>Aanraking knoppositie "Stop en starten"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9444" />
-        <source>Physical Button \"Stop and Start\" (Panel)</source>
-        <translation>Fysieke knop \"Stop en start\" (paneel)</translation>
+        <source>Physical Button "Stop and Start" (Panel)</source>
+        <translation>Fysieke knop "Stop en start" (paneel)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9453" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10039" />
@@ -11119,8 +11127,8 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9461" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10146" />
-        <source>Display Touch button \"Adaptive Cruise control\"</source>
-        <translation>Toon aanraakknop \"Adaptive Cruise Control\" weergeven</translation>
+        <source>Display Touch button "Adaptive Cruise control"</source>
+        <translation>Toon aanraakknop "Adaptive Cruise Control" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9470" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10128" />
@@ -11174,13 +11182,13 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9569" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10155" />
-        <source>Physical Button \"Adaptive Cruise Control\"</source>
-        <translation>Fysieke knop \"Adaptieve cruise control\"</translation>
+        <source>Physical Button "Adaptive Cruise Control"</source>
+        <translation>Fysieke knop "Adaptieve cruise control"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9578" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10164" />
-        <source>Touch button Position \"Adaptive Cruise Control\"</source>
-        <translation>Aanraking knoppositie \"Adaptieve cruise control\"</translation>
+        <source>Touch button Position "Adaptive Cruise Control"</source>
+        <translation>Aanraking knoppositie "Adaptieve cruise control"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9587" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10173" />
@@ -11274,18 +11282,18 @@
         <translation>Telecodering_fct_asr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9706" />
-        <source>Physical Button \"Traction Control\" (ASR+)</source>
-        <translation>Fysieke knop \"tractiecontrole\" (ASR+)</translation>
+        <source>Physical Button "Traction Control" (ASR+)</source>
+        <translation>Fysieke knop "tractiecontrole" (ASR+)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9715" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10276" />
-        <source>Physical Button \"Traction Control\"</source>
-        <translation>Fysieke knop \"tractiecontrole\"</translation>
+        <source>Physical Button "Traction Control"</source>
+        <translation>Fysieke knop "tractiecontrole"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9724" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10294" />
-        <source>Display Touch button \"Traction Control\"</source>
-        <translation>Toon aanraakknop \"tractiecontrole\" weergeven</translation>
+        <source>Display Touch button "Traction Control"</source>
+        <translation>Toon aanraakknop "tractiecontrole" weergeven</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9733" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10285" />
@@ -11380,112 +11388,112 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9903" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10442" />
-        <source>X Axis Position of the camera (-8000)\r\n0 &lt;&gt; 6000mm</source>
+        <source>X Axis Position of the camera (-8000)rn0 &lt;&gt; 6000mm</source>
         <translation>X aspositie van de camera (-8000) rn0 &lt;&gt; 6000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9912" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10451" />
-        <source>Y Axis Position of the camera (-3000)\r\n0 &lt;&gt; 6000mm</source>
+        <source>Y Axis Position of the camera (-3000)rn0 &lt;&gt; 6000mm</source>
         <translation>Y-aspositie van de camera (-3000) rn0 &lt;&gt; 6000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9921" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10460" />
-        <source>Z Axis Position of the camera (+100)\r\n0 &lt;&gt; 1900mm</source>
+        <source>Z Axis Position of the camera (+100)rn0 &lt;&gt; 1900mm</source>
         <translation>Z -aspositie van de camera (+100) rn0 &lt;&gt; 1900 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9930" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10469" />
-        <source>Camera Roll Angle  (Roll) (-180)\r\n0 &lt;&gt; 3600° / 0.1</source>
+        <source>Camera Roll Angle  (Roll) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
         <translation>Camerarolhoek (roll) (-180) rn0 &lt;&gt; 3600 ° / 0.1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9939" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10478" />
-        <source>Vertical angle of the camera (Pitch)\r\n0 &lt;&gt; 1800° / 0.1</source>
+        <source>Vertical angle of the camera (Pitch)rn0 &lt;&gt; 1800° / 0.1</source>
         <translation>Verticale hoek van de camera (pitch) rn0 &lt;&gt; 1800 ° / 0.1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9948" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10487" />
-        <source>Horizontal angle of the camera (Yaw) (-180)\r\n0 &lt;&gt; 3600° / 0.1</source>
+        <source>Horizontal angle of the camera (Yaw) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
         <translation>Horizontale hoek van de camera (gier) (-180) rn0 &lt;&gt; 3600 ° / 0.1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9957" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10496" />
-        <source>Distance between front wheels and front of vehicle (+150)\r\n0 &lt;&gt; 1850mm</source>
+        <source>Distance between front wheels and front of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
         <translation>Afstand tussen voorwielen en voorkant van het voertuig (+150) rn0 &lt;&gt; 1850 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9966" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10505" />
-        <source>Distance between rear wheels and rear of vehicle (+150)\r\n0 &lt;&gt; 1850mm</source>
+        <source>Distance between rear wheels and rear of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
         <translation>Afstand tussen achterwielen en de achterkant van het voertuig (+150) rn0 &lt;&gt; 1850 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9975" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10514" />
-        <source>Distance between rear wheels and front wheels (+1000)\r\n0 &lt;&gt; 4000mm</source>
+        <source>Distance between rear wheels and front wheels (+1000)rn0 &lt;&gt; 4000mm</source>
         <translation>Afstand tussen achterwielen en voorwielen (+1000) rn0 &lt;&gt; 4000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9984" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10523" />
-        <source>Distance between ground and rear bumper edge\r\n0 &lt;&gt; 1500mm</source>
+        <source>Distance between ground and rear bumper edgern0 &lt;&gt; 1500mm</source>
         <translation>Afstand tussen grond en achter bumper edgern0 &lt;&gt; 1500 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9993" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10532" />
-        <source>Line 0 width in pixel (Bottom)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 0 width in pixel (Bottom)rn1 &lt;&gt; 50px</source>
         <translation>Lijn 0 breedte in pixel (onder) rn1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10002" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10541" />
-        <source>Line 1 width in pixels (Middle)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 1 width in pixels (Middle)rn1 &lt;&gt; 50px</source>
         <translation>Lijn 1 breedte in pixels (midden) rn1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10011" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10550" />
-        <source>Line 2 width in pixels (Top)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 2 width in pixels (Top)rn1 &lt;&gt; 50px</source>
         <translation>Lijn 2 breedte in pixels (boven) rn1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10020" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10559" />
-        <source>Width of trajectory line in pixels\r\n1 &lt;&gt; 50px</source>
+        <source>Width of trajectory line in pixelsrn1 &lt;&gt; 50px</source>
         <translation>Breedte van trajectlijn in pixelsrn1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10029" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10568" />
-        <source>Real Top View Height (if camera is too low)\r\n1000 &lt;&gt; 2550mm</source>
+        <source>Real Top View Height (if camera is too low)rn1000 &lt;&gt; 2550mm</source>
         <translation>Echte bovenaanzicht Hoogte (als de camera te laag is) RN1000 &lt;&gt; 2550mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10038" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10577" />
-        <source>Image Brightness\r\n0 &lt;&gt; 255</source>
+        <source>Image Brightnessrn0 &lt;&gt; 255</source>
         <translation>Afbeelding helderheidrn0 &lt;&gt; 255</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10047" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10586" />
-        <source>Brightness range\r\n0 &lt;&gt; 255</source>
+        <source>Brightness rangern0 &lt;&gt; 255</source>
         <translation>Helderheid Rangern0 &lt;&gt; 255</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10056" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10595" />
-        <source>Vehicle width (+1500)\r\n0 &lt;&gt; 1000mm</source>
+        <source>Vehicle width (+1500)rn0 &lt;&gt; 1000mm</source>
         <translation>Voertuigbreedte (+1500) rn0 &lt;&gt; 1000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10065" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10604" />
-        <source>Trailer hook height\r\n50 &lt;&gt; 1500mm</source>
+        <source>Trailer hook heightrn50 &lt;&gt; 1500mm</source>
         <translation>Trailer Hook Heightrn50 &lt;&gt; 1500mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10074" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10613" />
-        <source>Trailer hook length\r\n0 &lt;&gt; 2000mm</source>
+        <source>Trailer hook lengthrn0 &lt;&gt; 2000mm</source>
         <translation>Trailer haak lengtern0 &lt;&gt; 2000mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10083" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10622" />
-        <source>Vertical Enlargement Ratio (Rear side view mode)\r\n100 &lt;&gt; 170</source>
+        <source>Vertical Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
         <translation>Verticale vergrotingsverhouding (modus achter zijaanzicht) rn100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10092" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10631" />
-        <source>Horizontal Enlargement Ratio (Rear side view mode)\r\n100 &lt;&gt; 170</source>
+        <source>Horizontal Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
         <translation>Horizontale vergrotingsverhouding (modus achter zijaanzicht) rn100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10101" />
@@ -11521,12 +11529,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10145" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10684" />
-        <source>Vertical Enlargement Ratio (Standard mode)\r\n100 &lt;&gt; 170</source>
+        <source>Vertical Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
         <translation>Verticale vergrotingsverhouding (standaardmodus) rn100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10154" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10693" />
-        <source>Horizontal Enlargement Ratio (Standard mode)\r\n100 &lt;&gt; 170</source>
+        <source>Horizontal Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
         <translation>Horizontale vergrotingsverhouding (standaardmodus) rn100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3" />
@@ -11559,8 +11567,8 @@
         <translation>Schetsen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="768" />
-        <source>\"MirrorLink\" function</source>
-        <translation>\"MirrorLink\" -functie</translation>
+        <source>"MirrorLink" function</source>
+        <translation>"MirrorLink" -functie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="816" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1022" />
@@ -11857,8 +11865,8 @@
         <translation>Verr_internet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1600" />
-        <source>Display of alerts and \"risk areas\" on the multifunction screen</source>
-        <translation>Weergave van waarschuwingen en \"risicogebieden\" op het multifunctiescherm</translation>
+        <source>Display of alerts and "risk areas" on the multifunction screen</source>
+        <translation>Weergave van waarschuwingen en "risicogebieden" op het multifunctiescherm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1609" />
         <source>Display of speed limit</source>
@@ -12037,8 +12045,8 @@
         <translation>Geen airconditioning</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9814" />
-        <source>Presence of the \"AC max\" touch key</source>
-        <translation>Aanwezigheid van de \"AC Max\" Touch Key</translation>
+        <source>Presence of the "AC max" touch key</source>
+        <translation>Aanwezigheid van de "AC Max" Touch Key</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9859" />
         <source>Air distribution</source>
@@ -13252,8 +13260,8 @@
         <translation>Elektronische sleutel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="515" />
-        <source>Remote remote control \"Free Hands\"</source>
-        <translation>Remote afstandsbediening \"Vrije handen\"</translation>
+        <source>Remote remote control "Free Hands"</source>
+        <translation>Remote afstandsbediening "Vrije handen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="517" />
         <source>Key type</source>
@@ -14565,16 +14573,16 @@
         <translation>Distributietype: achter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1784" />
-        <source>Engine with \"Stop and Start\" function</source>
-        <translation>Motor met \"Stop and Start\" -functie</translation>
+        <source>Engine with "Stop and Start" function</source>
+        <translation>Motor met "Stop and Start" -functie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1785" />
         <source>Hybrid power unit</source>
         <translation>Hybride vermogenseenheid</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1787" />
-        <source>The presence of the \"Stop and Start\" engine or hybrid power unit</source>
-        <translation>De aanwezigheid van de \"Stop and Start\" -motor- of hybride vermogenseenheid</translation>
+        <source>The presence of the "Stop and Start" engine or hybrid power unit</source>
+        <translation>De aanwezigheid van de "Stop and Start" -motor- of hybride vermogenseenheid</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1795" />
         <source>Using the heat of the exhaust gases to heating the interior</source>
@@ -14650,8 +14658,8 @@
         <translation>Zonder de draaiende indicatoren in te schakelen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1903" />
-        <source>Configuration \"Police\"?</source>
-        <translation>Configuratie \"politie\"?</translation>
+        <source>Configuration "Police"?</source>
+        <translation>Configuratie "politie"?</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1911" />
         <source>The presence of a handle with the switching button for the automatic wiper mode</source>
@@ -14850,8 +14858,8 @@
         <translation>Verhoogd comfort</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2097" />
-        <source>Thermal comfort for the \"Stop and Start\" system</source>
-        <translation>Thermisch comfort voor het \"stop and start\" -systeem</translation>
+        <source>Thermal comfort for the "Stop and Start" system</source>
+        <translation>Thermisch comfort voor het "stop and start" -systeem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2107" />
         <source>Information from the ESP system</source>
@@ -14950,12 +14958,12 @@
         <translation>Geluidssignaal geleverd door een stuurwielschakelaar van type 2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2224" />
-        <source>The computer is absent or does not receive power from the \"plus\" of the central power switch</source>
-        <translation>De computer is afwezig of ontvangt geen stroom van de \"plus\" van de centrale stroomschakelaar</translation>
+        <source>The computer is absent or does not receive power from the "plus" of the central power switch</source>
+        <translation>De computer is afwezig of ontvangt geen stroom van de "plus" van de centrale stroomschakelaar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2225" />
-        <source>Receives power \"+\" from the central power switch</source>
-        <translation>Ontvangt stroom \"+\" van de centrale stroomschakelaar</translation>
+        <source>Receives power "+" from the central power switch</source>
+        <translation>Ontvangt stroom "+" van de centrale stroomschakelaar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2227" />
         <source>Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)</source>
@@ -15054,24 +15062,24 @@
         <translation>De aanwezigheid van een rotatiehoeksensor van de stuurwiel multiplex</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2364" />
-        <source>Type \"ISTAR PHASE 1\" with a starter</source>
-        <translation>Type \"Istar fase 1\" met een starter</translation>
+        <source>Type "ISTAR PHASE 1" with a starter</source>
+        <translation>Type "Istar fase 1" met een starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2365" />
-        <source>Type \"Phase 2\" with a starter</source>
-        <translation>Typ \"fase 2\" met een starter</translation>
+        <source>Type "Phase 2" with a starter</source>
+        <translation>Typ "fase 2" met een starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2366" />
-        <source>Type \"istar phase 2\" with a starter</source>
-        <translation>Type \"Istar Phase 2\" met een starter</translation>
+        <source>Type "istar phase 2" with a starter</source>
+        <translation>Type "Istar Phase 2" met een starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2367" />
-        <source>Type \"istar phase 2\" without a starter</source>
-        <translation>Type \"Istar Phase 2\" zonder starter</translation>
+        <source>Type "istar phase 2" without a starter</source>
+        <translation>Type "Istar Phase 2" zonder starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2369" />
-        <source>Availability and type of function \"Stop and Start\"</source>
-        <translation>Beschikbaarheid en type functie \"Stop en Start\"</translation>
+        <source>Availability and type of function "Stop and Start"</source>
+        <translation>Beschikbaarheid en type functie "Stop en Start"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2377" />
         <source>The availability of a system for compliance with a safe distance</source>
@@ -15341,8 +15349,8 @@
         <translation>De aanwezigheid van dynamische rijfunctie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2683" />
-        <source>Option: \"Taxi\"</source>
-        <translation>Optie: \"Taxi\"</translation>
+        <source>Option: "Taxi"</source>
+        <translation>Optie: "Taxi"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2692" />
         <source>Old legislation</source>
@@ -15654,20 +15662,20 @@
         <translation>Automatisch remmen type risico op botsing (FARC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3015" />
-        <source>Physical interface \"Man-Machine\"</source>
-        <translation>Fysieke interface \"man-machine\"</translation>
+        <source>Physical interface "Man-Machine"</source>
+        <translation>Fysieke interface "man-machine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3016" />
-        <source>Touch interface \"Man-Machine\"</source>
-        <translation>Touch-interface \"man-machine\"</translation>
+        <source>Touch interface "Man-Machine"</source>
+        <translation>Touch-interface "man-machine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3017" />
-        <source>Physical and Touch interface \"Man-Machine\"</source>
-        <translation>Fysieke en touch-interface \"man-machine\"</translation>
+        <source>Physical and Touch interface "Man-Machine"</source>
+        <translation>Fysieke en touch-interface "man-machine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3019" />
-        <source>Type of obtaining information \"Man-Machine\" air conditioning</source>
-        <translation>Type van het verkrijgen van informatie \"man-machine\" airconditioning</translation>
+        <source>Type of obtaining information "Man-Machine" air conditioning</source>
+        <translation>Type van het verkrijgen van informatie "man-machine" airconditioning</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3029" />
         <source>Front and rear dimensions</source>
@@ -15955,16 +15963,16 @@
         <translation>Elektrisch ontstekingsvergrendeling</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3367" />
-        <source>Option: \"Hands-free access\" for the right rear side door</source>
-        <translation>Optie: \"Handsfree toegang\" voor de rechter achterste deur</translation>
+        <source>Option: "Hands-free access" for the right rear side door</source>
+        <translation>Optie: "Handsfree toegang" voor de rechter achterste deur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3375" />
-        <source>Option: \"Hands-free access\" for the left rear side door</source>
-        <translation>Optie: \"Handsfree toegang\" voor de deur van de linker achterzijde</translation>
+        <source>Option: "Hands-free access" for the left rear side door</source>
+        <translation>Optie: "Handsfree toegang" voor de deur van de linker achterzijde</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3383" />
-        <source>Option: \"Hands-free access\" for the back door</source>
-        <translation>Optie: \"Handsfree toegang\" voor de achterdeur</translation>
+        <source>Option: "Hands-free access" for the back door</source>
+        <translation>Optie: "Handsfree toegang" voor de achterdeur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3392" />
         <source>Short air duct heating</source>
@@ -16075,8 +16083,8 @@
         <translation>Type informatie die codert van de sloten van de achterste zwaaigeuren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3534" />
-        <source>The number of the calibration table antennas of the access function \"Free Hands\"</source>
-        <translation>Het aantal kalibratietabelantennes van de toegangsfunctie \"Vrije handen\"</translation>
+        <source>The number of the calibration table antennas of the access function "Free Hands"</source>
+        <translation>Het aantal kalibratietabelantennes van de toegangsfunctie "Vrije handen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3542" />
         <source>Automatic blocking access to the cargo area when moving</source>
@@ -16425,8 +16433,8 @@
         <translation>Binnenste achteruitkijkspiegel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3948" />
-        <source>Management \"day/night\"</source>
-        <translation>Management \"dag/nacht\"</translation>
+        <source>Management "day/night"</source>
+        <translation>Management "dag/nacht"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3956" />
         <source>The presence of a LED to disable the state of work in ZEV mode</source>
@@ -16798,7 +16806,7 @@
         <translation>Cfg_ewk_bsi_ucecan_pfhm_rr_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4660" />
-        <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\\*(SDCM)</source>
+        <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @*(SDCM)</source>
         <translation>CFG_EWL_BSI_UCECAN_SDCM_000: @P53052-POLUXDATA @*(SDCM)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4668" />
@@ -16822,11 +16830,11 @@
         <translation>Cfg_ex0_bsi_ucecan_lvnsd_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4708" />
-        <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\\*2</source>
+        <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</source>
         <translation>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4716" />
-        <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\\*1</source>
+        <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</source>
         <translation>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4724" />
@@ -16978,7 +16986,7 @@
         <translation>Cfg_elf_bsi_ucelin_ars_feu_c_p_000: uce lin boitier système adaptatif d'éclaire arrière feu complementaire passager ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5020" />
-        <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\\*lin ???</source>
+        <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @*lin ???</source>
         <translation>CFG_ELG_BSI_UCELIN_TO_000: @P35350-POLUXDATA @*lin ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5028" />
@@ -17002,7 +17010,7 @@
         <translation>CFG_BH0_BSI_NS_PRESENCE_CDC_000: Aanwezigheid van CD -wisselaar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5068" />
-        <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\\*RD5 ???</source>
+        <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@*RD5 ???</source>
         <translation>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@*rd5 ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5076" />
@@ -17010,7 +17018,7 @@
         <translation>CFG_B0B_B_BSI_RABAT_RETRO_TELECOM_000: de achterste spiegels vouwen met een hoog-frequentie afstandsbediening</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5084" />
-        <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???</source>
+        <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @*1 ???</source>
         <translation>CFG_BK2_BSI_NS_PRESECEKMLUSBOX_000: @P4042-POLUXDATA @*1 ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5093" />
@@ -17298,5 +17306,216 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="2" />
         <source>INJ_UDS_TEST</source>
         <translation>Inj_uds_test</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="5" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="14" />
+        <source>ZA Zone</source>
+        <translation>ZA Zone</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="26" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="35" />
+        <source>Type</source>
+        <translation>Type</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="37" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="46" />
+        <source>ZI Zone</source>
+        <translation>Zi Zone</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="51" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="60" />
+        <source>System</source>
+        <translation>Systeem</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="58" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="67" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="113" />
+        <source>Production Date</source>
+        <translation>Productiedatum</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="65" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="74" />
+        <source>Download Counter</source>
+        <translation>Download teller</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="72" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="81" />
+        <source>Download Date</source>
+        <translation>Downloaddatum</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="79" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="88" />
+        <source>Calibration Reference</source>
+        <translation>Kalibratiereferentie</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="93" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="102" />
+        <source>Calibration Edition</source>
+        <translation>Kalibratie -editie</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="104" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="122" />
+        <source>Serial Number</source>
+        <translation>Serienummer</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="2" />
+        <source>Service Non Supported</source>
+        <translation>Service niet ondersteund</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="3" />
+        <source>Sub-Function Not Supported</source>
+        <translation>Sub-functie niet ondersteund</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="4" />
+        <source>Incorrect Message Length Or Invalid Format</source>
+        <translation>Onjuist berichtlengte of ongeldig formaat</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="5" />
+        <source>Answer Too Long</source>
+        <translation>Antwoord te lang</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="6" />
+        <source>Busy-Repeat Request</source>
+        <translation>Druk-herhalingsverzoek</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="7" />
+        <source>Conditions Not Correct</source>
+        <translation>Voorwaarden niet correct</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="8" />
+        <source>Request Sequence Error</source>
+        <translation>Vraag een sequentiefout aan</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="9" />
+        <source>No response from the ECU</source>
+        <translation>Geen reactie van de ECU</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="10" />
+        <source>Failure To Execute Request</source>
+        <translation>Het niet uitvoeren van het verzoek</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="11" />
+        <source>Request Out Of Range</source>
+        <translation>Verzoek buiten bereik</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="12" />
+        <source>Security Access Denied</source>
+        <translation>Beveiligingstoegang geweigerd</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="13" />
+        <source>Invalid Key</source>
+        <translation>Ongeldige sleutel</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="14" />
+        <source>Number of Attempts Exceeded</source>
+        <translation>Aantal pogingen overtroffen</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="15" />
+        <source>Required Time Delay Not Expired</source>
+        <translation>Vereiste tijdsvertraging is niet verlopen</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="16" />
+        <source>Upload/Download Not Accepted</source>
+        <translation>Upload/downloaden niet geaccepteerd</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="17" />
+        <source>Transfer Data Suspended</source>
+        <translation>Overdrachtgegevens opgeschort</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="18" />
+        <source>General Programming Failure</source>
+        <translation>Algemene programmeerfout</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="19" />
+        <source>Wrong Block Sequence Counter</source>
+        <translation>Verkeerde bloksequentieteller</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="20" />
+        <source>Request Correctly Received (Response Pending)</source>
+        <translation>Verzoek correct ontvangen (antwoord in afwachting)</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="21" />
+        <source>Sub-Function Not Supported In Active Session</source>
+        <translation>Sub-functie niet ondersteund in actieve sessie</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="22" />
+        <source>Service Not Supported In Active Session</source>
+        <translation>Service die niet wordt ondersteund in actieve sessie</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="23" />
+        <source>RPM Too High</source>
+        <translation>RPM te hoog</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="24" />
+        <source>RPM Too Low</source>
+        <translation>RPM te laag</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="25" />
+        <source>Engine Running</source>
+        <translation>Motorloop</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="26" />
+        <source>Engine Not Running</source>
+        <translation>Motor loopt niet</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="27" />
+        <source>Engine Running For a Short Time</source>
+        <translation>Motor die een korte tijd loopt</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="28" />
+        <source>Temperature Too High</source>
+        <translation>Temperatuur te hoog</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="29" />
+        <source>Temperature Too Low</source>
+        <translation>Temperatuur te laag</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="30" />
+        <source>Speed ​​Too High</source>
+        <translation>Snelheid te hoog</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="31" />
+        <source>Speed ​​Too Low</source>
+        <translation>Snelheid te laag</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="32" />
+        <source>Order Too High</source>
+        <translation>Bestel te hoog</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="33" />
+        <source>Order Too Low</source>
+        <translation>Bestel te laag</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="34" />
+        <source>Transmission Not In Neutral</source>
+        <translation>Transmissie niet in neutraal</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="35" />
+        <source>Report Not Engaged</source>
+        <translation>Meld niet betrokken</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="36" />
+        <source>No pedal support</source>
+        <translation>Geen pedaalondersteuning</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="37" />
+        <source>Lever Not In Park Position</source>
+        <translation>Hendel niet in parkpositie</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="38" />
+        <source>Clutch Not Locked</source>
+        <translation>Koppeling niet vergrendeld</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="39" />
+        <source>Voltage Too High</source>
+        <translation>Spanning te hoog</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="40" />
+        <source>Voltage Too Low</source>
+        <translation>Spanning te laag</translation>
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="5" />
+        <source>Secure Traceability Value</source>
+        <translation>Beveiliging van de traceerbaarheidswaarde</translation>
     </message></context>
 </TS>

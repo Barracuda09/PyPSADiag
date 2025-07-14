@@ -1,132 +1,132 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="pl_PL" sourcelanguage="en_EN">
+<TS version="2.1" language="de_DE" sourcelanguage="en_EN">
 <context>
     <name />
     <message>
         <location filename="../EcuZoneTreeView.py" line="121" />
         <source>Zone</source>
-        <translation type="unfinished" />
+        <translation>Zone</translation>
     </message>
     <message>
         <location filename="../EcuZoneTreeView.py" line="121" />
         <source>Zone Description</source>
-        <translation type="unfinished" />
+        <translation>Zone Beschreibung</translation>
     </message>
     <message>
         <location filename="../EcuZoneTreeView.py" line="121" />
         <source>Options</source>
-        <translation type="unfinished" />
+        <translation>Optionen</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="218" />
         <source>Send Command</source>
-        <translation type="unfinished" />
+        <translation>Befehl senden</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="219" />
         <source>Open CSV File</source>
-        <translation type="unfinished" />
+        <translation>Öffnen Sie die CSV -Datei</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="220" />
         <source>Write CSV File</source>
-        <translation type="unfinished" />
+        <translation>Schreiben Sie eine CSV -Datei</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="221" />
         <source>Connect</source>
-        <translation type="unfinished" />
+        <translation>Verbinden</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="222" />
         <source>Search</source>
-        <translation type="unfinished" />
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="223" />
         <source>Disconnect</source>
-        <translation type="unfinished" />
+        <translation>Trennen</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="224" />
         <source>Open Zone File</source>
-        <translation type="unfinished" />
+        <translation>Open Zone -Datei</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="225" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="226" />
         <location filename="../main.py" line="355" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="227" />
         <source>Reboot ECU</source>
-        <translation type="unfinished" />
+        <translation>Neustart ecu</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="228" />
         <source>Read ECU Faults</source>
-        <translation type="unfinished" />
+        <translation>Lesen Sie ECU -Fehler</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="229" />
         <source>Clear ECU Faults</source>
-        <translation type="unfinished" />
+        <translation>Klare ECU -Fehler</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="230" />
         <source>Write Secure Traceability</source>
-        <translation type="unfinished" />
+        <translation>Schreiben Sie sichere Rückverfolgbarkeit</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="231" />
         <source>Virgin Write</source>
-        <translation type="unfinished" />
+        <translation>Jungfrau schreiben</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="232" />
         <source>Hide 'No Response' Zones</source>
-        <translation type="unfinished" />
+        <translation>"Keine Antwort" Zonen verstecken</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="154" />
         <source>** Skipping/Stripping **</source>
-        <translation type="unfinished" />
+        <translation>** Überspringen/Strippen **</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="160" />
         <source>** Stripping **</source>
-        <translation type="unfinished" />
+        <translation>** Stripping **</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="174" />
         <source>ECU Send keep-alive: Failed</source>
-        <translation type="unfinished" />
+        <translation>ECU Senden Keep-Alive: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="181" />
         <source>Reset ECU Keep Alive: Failed</source>
-        <translation type="unfinished" />
+        <translation>Reset Ecu Halten Sie sich am Leben: versagten</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="193" />
         <source>Open Diagnostic session: Failed</source>
-        <translation type="unfinished" />
+        <translation>Offene diagnostische Sitzung: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="205" />
         <source>Closing Diagnostic session: Failed</source>
-        <translation type="unfinished" />
+        <translation>Abschluss der diagnostischen Sitzung: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="213" />
         <source>ECU Seed Request: Waiting</source>
-        <translation type="unfinished" />
+        <translation>ECU -Saatgutanfrage: Warten</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="218" />
@@ -134,157 +134,157 @@
         <location filename="../DiagnosticCommunication.py" line="294" />
         <location filename="../DiagnosticCommunication.py" line="318" />
         <source>Write Configuration Zone: Failed</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationszone schreiben: fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="230" />
         <source>ECU Unlock Request: Retrying in 2 Seconds</source>
-        <translation type="unfinished" />
+        <translation>ECU -Entsperrenanfrage: In 2 Sekunden wiederholen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="243" />
         <location filename="../DiagnosticCommunication.py" line="265" />
         <source>ECU Unlock Failed:</source>
-        <translation type="unfinished" />
+        <translation>ECU -Entsperren fehlgeschlagen:</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="248" />
         <location filename="../DiagnosticCommunication.py" line="270" />
         <source>ECU Unlock Failed</source>
-        <translation type="unfinished" />
+        <translation>ECU Unlock ist fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="283" />
         <source>Write Configuration Zone in progress</source>
-        <translation type="unfinished" />
+        <translation>Schreiben Sie die Konfigurationszone in Arbeit</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="291" />
         <source>Write Configuration Zone: Ok</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationszone schreiben: OK</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="316" />
         <source>Write Configuration Zone: Failed (Incorrect Checksum)</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationszone schreiben: fehlgeschlagen (falsche Prüfsumme)</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="323" />
         <location filename="../DiagnosticCommunication.py" line="461" />
         <source>Serial Port Not Open</source>
-        <translation type="unfinished" />
+        <translation>Serienport nicht geöffnet</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="328" />
         <source>Selecting ECU: Failed</source>
-        <translation type="unfinished" />
+        <translation>Auswählen von ECU: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="334" />
         <source>Selecting LIN ECU: Failed</source>
-        <translation type="unfinished" />
+        <translation>Auswählen von Lin Ecu: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="360" />
         <source>Waiting 2 Sec...</source>
-        <translation type="unfinished" />
+        <translation>Warten 2 Sek. ...</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="390" />
         <source>Configuration Write of Secure Traceability Zone: Failed</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration Schreiben Sie die sichere Rückverfolgbarkeitszone: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="392" />
         <source>NO Secure Traceability is Written!!</source>
-        <translation type="unfinished" />
+        <translation>Es ist keine sichere Rückverfolgbarkeit geschrieben !!</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="397" />
         <source>Write Successful</source>
-        <translation type="unfinished" />
+        <translation>Schreiben Sie erfolgreich</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="401" />
         <source>Reboot ECU...</source>
-        <translation type="unfinished" />
+        <translation>Neustart ecu ...</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="404" />
         <location filename="../DiagnosticCommunication.py" line="421" />
         <location filename="../DiagnosticCommunication.py" line="443" />
         <source>ECU Not selected!</source>
-        <translation type="unfinished" />
+        <translation>ECU nicht ausgewählt!</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="413" />
         <source>Reboot: Failed</source>
-        <translation type="unfinished" />
+        <translation>Neustart: fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="417" />
         <source>Read ECU Faults...</source>
-        <translation type="unfinished" />
+        <translation>Lesen Sie ECU -Fehler ...</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="435" />
         <source>Reading ECU Faults: Failed</source>
-        <translation type="unfinished" />
+        <translation>Lesen von ECU -Fehlern: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="439" />
         <source>Clearing ECU Faults...</source>
-        <translation type="unfinished" />
+        <translation>ECU -Fehler löschen ...</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="457" />
         <source>Clearing ECU Faults: Failed</source>
-        <translation type="unfinished" />
+        <translation>Löschen von ECU -Fehlern: Fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="494" />
         <source>Requested zone different from received zone</source>
-        <translation type="unfinished" />
+        <translation>Angeforderte Zone anders als die empfangene Zone</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="500" />
         <source>Communication closed</source>
-        <translation type="unfinished" />
+        <translation>Kommunikation geschlossen</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="502" />
         <source>Download session opened</source>
-        <translation type="unfinished" />
+        <translation>Download -Sitzung geöffnet</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="504" />
         <source>Diagnostic session opened</source>
-        <translation type="unfinished" />
+        <translation>Diagnosesitzung geöffnet</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="506" />
         <source>Unlocked successfully for download</source>
-        <translation type="unfinished" />
+        <translation>Erfolgreich zum Download entsperrt</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="508" />
         <source>Unlocked successfully for configuration</source>
-        <translation type="unfinished" />
+        <translation>Für die Konfiguration erfolgreich entsperrt</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="560" />
         <source>Open Diagnostic session: Failed/Stopping</source>
-        <translation type="unfinished" />
+        <translation>Offene Diagnosesitzung: Fehlgeschlagen/Stopp</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="573" />
         <source>Reading ECU Zones: Successful</source>
-        <translation type="unfinished" />
+        <translation>Lesen von ECU -Zonen: erfolgreich</translation>
     </message>
     <message>
         <location filename="../main.py" line="168" />
         <source>Not correct JSON file</source>
-        <translation type="unfinished" />
+        <translation>Nicht korrekte JSON -Datei</translation>
     </message>
     <message>
         <location filename="../main.py" line="225" />
@@ -294,40 +294,40 @@
         <location filename="../main.py" line="412" />
         <location filename="../main.py" line="431" />
         <source>Port not open!</source>
-        <translation type="unfinished" />
+        <translation>Port nicht geöffnet!</translation>
     </message>
     <message>
         <location filename="../main.py" line="230" />
         <source>Open CSV Zone File</source>
-        <translation type="unfinished" />
+        <translation>Öffnen Sie die CSV -Zone -Datei</translation>
     </message>
     <message>
         <location filename="../main.py" line="230" />
         <location filename="../main.py" line="241" />
         <location filename="../main.py" line="289" />
         <source>CSV Files</source>
-        <translation type="unfinished" />
+        <translation>CSV -Dateien</translation>
     </message>
     <message>
         <location filename="../main.py" line="241" />
         <location filename="../main.py" line="289" />
         <source>Save CSV Zone File</source>
-        <translation type="unfinished" />
+        <translation>Speichern Sie die CSV -Zonendatei</translation>
     </message>
     <message>
         <location filename="../main.py" line="259" />
         <source>Open JSON Zone File</source>
-        <translation type="unfinished" />
+        <translation>Öffnen Sie die JSON -Zone -Datei</translation>
     </message>
     <message>
         <location filename="../main.py" line="259" />
         <source>JSON Files</source>
-        <translation type="unfinished" />
+        <translation>JSON -Dateien</translation>
     </message>
     <message>
         <location filename="../main.py" line="274" />
         <source>Include Zone file not found: </source>
-        <translation type="unfinished" />
+        <translation>Fügen Sie die Zonendatei ein, die nicht gefunden wurde:</translation>
     </message>
     <message>
         <location filename="../main.py" line="331" />
@@ -336,32 +336,32 @@
         <location filename="../main.py" line="409" />
         <location filename="../main.py" line="428" />
         <source>Protocol not supported yet!</source>
-        <translation type="unfinished" />
+        <translation>Protokoll noch nicht unterstützt!</translation>
     </message>
     <message>
         <location filename="../main.py" line="351" />
         <source>Nothing changed</source>
-        <translation type="unfinished" />
+        <translation>Nichts änderte sich</translation>
     </message>
     <message>
         <location filename="../main.py" line="355" />
         <source>Write zone(s) to ECU</source>
-        <translation type="unfinished" />
+        <translation>Schreiben Sie Zonen (en) nach ECU</translation>
     </message>
     <message>
         <location filename="../main.py" line="421" />
         <source>Clearing Fault Codes of ECU:</source>
-        <translation type="unfinished" />
+        <translation>Clearing -Fehlercodes von ECU:</translation>
     </message>
     <message>
         <location filename="../main.py" line="421" />
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 <message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="2" />
         <source>BECB_GEN2</source>
-        <translation type="unfinished" />
+        <translation>BECB_GEN2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="11" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="15" />
@@ -389,7 +389,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/MED17_4_4.json" line="14" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="15" />
         <source>Identification</source>
-        <translation type="unfinished" />
+        <translation>Identifikation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="12" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="16" />
@@ -413,7 +413,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/MED17_4_4.json" line="15" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="16" />
         <source>Telecoding</source>
-        <translation type="unfinished" />
+        <translation>Telekodierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="17" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="29" />
@@ -430,47 +430,47 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="28" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="30" />
         <source>Gauging group data values</source>
-        <translation type="unfinished" />
+        <translation>Gruppendatenwerte messen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="22" />
         <source>Calibration for state of charge in battery</source>
-        <translation type="unfinished" />
+        <translation>Kalibrierung für den Ladungszustand in der Batterie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="29" />
         <source>Value not specified</source>
-        <translation type="unfinished" />
+        <translation>Wert nicht angegeben</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="33" />
         <source>83</source>
-        <translation type="unfinished" />
+        <translation>83</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="40" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="44" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="53" />
         <source>Supplier</source>
-        <translation type="unfinished" />
+        <translation>Anbieter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="48" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="12" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="21" />
         <source>Equipment Part Number</source>
-        <translation type="unfinished" />
+        <translation>Ausrüstung Teilnummer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="19" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="28" />
         <source>Equipment Additional Reference</source>
-        <translation type="unfinished" />
+        <translation>Ausrüstung zusätzlicher Referenz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="62" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="86" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="95" />
         <source>Calibration Version</source>
-        <translation type="unfinished" />
+        <translation>Kalibrierungsversion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="2" />
         <source>AAS UDS G5</source>
-        <translation type="unfinished" />
+        <translation>AAS UDS G5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="22" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="24" />
@@ -484,43 +484,43 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="21" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="22" />
         <source>Configuration group data list</source>
-        <translation type="unfinished" />
+        <translation>Liste der Konfigurationsgruppendatenliste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="35" />
         <source>Availability of rear view camera function</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit der Rückfahrkamerasfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="45" />
         <source>CFG_DEQ_AAS_TYPE_CHAINE_TRACTION_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_deq_aas_type_chaine_traction_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="55" />
         <source>The presence of the function of monitoring the "dead" zones</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der Funktion der Überwachung der "toten" Zonen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="66" />
         <source>Availability of semi-automatic parking function</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit der semiautomatischen Parkfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="75" />
         <source>Availability of the parking assistance function</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit der Parkhilfefunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="84" />
         <source>Availability of front obstacle sensors</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit von Vorderhindernissensoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="93" />
         <source>CFG_EFH_AAS_ACTIVATION_ENVOI_DTC_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_efh_aas_activation_envoi_dtc_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="101" />
         <source>CFG_E4P_PRESENCE_FLANKGUARD_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_e4p_presence_flankguard_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="2" />
         <source>CPK_UDS_G5</source>
-        <translation type="unfinished" />
+        <translation>Cpk_uds_g5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="31" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE.json" line="29" />
@@ -528,11 +528,11 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE.json" line="45" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="28" />
         <source>Configuration group data values</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="36" />
         <source>Presence of front parking sensors</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von vorderen Parksensoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="43" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="60" />
@@ -616,7 +616,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="53" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="69" />
         <source>Function ABSENT</source>
-        <translation type="unfinished" />
+        <translation>Funktion abwesend</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="47" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="64" />
@@ -698,23 +698,23 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="57" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="73" />
         <source>Function present</source>
-        <translation type="unfinished" />
+        <translation>Funktion vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="53" />
         <source>Presence of blind spot assist</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines blinden Flecksassistents</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="70" />
         <source>Presence of RVC</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von RVC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="87" />
         <source>Presence of semi-automatic parking pilot</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines halbautomatischen Parkpilots</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="104" />
         <source>Presence of parking sensors</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Parksensoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/CPK_UDS_G5.json" line="121" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="92" />
@@ -763,36 +763,36 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3145" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="42" />
         <source>Hybrid</source>
-        <translation type="unfinished" />
+        <translation>Hybrid</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="2" />
         <source>AAS UDS G6</source>
-        <translation type="unfinished" />
+        <translation>AAS UDS G6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="22" />
         <source>Configuration group data list 0100</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 0100</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="30" />
         <source>Configuration group data list 0101</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 0101</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="38" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="27" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BOITEVIT/BVA_AXN8.json" line="21" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/MED17_4_4.json" line="21" />
         <source>Configuration group data list 2100</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 2100</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BOITEVIT/BVA_AXN8.json" line="29" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/MED17_4_4.json" line="29" />
         <source>Configuration group data list 2101</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 2101</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="50" />
         <source>INDICATES THE TYPE OF PUSH TO ACTIVATE THE CITYPARK</source>
-        <translation type="unfinished" />
+        <translation>Gibt die Art des Drucks an, den Citypark zu aktivieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="56" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="81" />
@@ -801,7 +801,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="255" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="280" />
         <source>3 Option</source>
-        <translation type="unfinished" />
+        <translation>3 Option</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="60" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="85" />
@@ -810,7 +810,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="259" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="284" />
         <source>2 Option</source>
-        <translation type="unfinished" />
+        <translation>2 Option</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="64" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="89" />
@@ -819,7 +819,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="263" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="288" />
         <source>1 Option</source>
-        <translation type="unfinished" />
+        <translation>1 Option</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="68" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="93" />
@@ -828,15 +828,15 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="267" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="292" />
         <source>0 Option</source>
-        <translation type="unfinished" />
+        <translation>0 Option</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="74" />
         <source>INDICATES THE TYPE OF STEERING WHEEL ANGLE (SENSOR OR ESTIMATOR)</source>
-        <translation type="unfinished" />
+        <translation>Gibt den Typ des Lenkradwinkels an (Sensor oder Schätzer)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="99" />
         <source>Presence of the Reversing Vision Assistance function on the vehicle</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Umkehrungsunterstützungsfunktion im Fahrzeug</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="106" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="137" />
@@ -882,222 +882,222 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3739" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3993" />
         <source>ABSENT</source>
-        <translation type="unfinished" />
+        <translation>ABWESEND</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="110" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="141" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="158" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="175" />
         <source>PRESENT</source>
-        <translation type="unfinished" />
+        <translation>GEGENWÄRTIG</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="116" />
         <source>Maximum wheel circumference</source>
-        <translation type="unfinished" />
+        <translation>Maximaler Radumfang</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="123" />
         <source>Minimum wheel circumference</source>
-        <translation type="unfinished" />
+        <translation>Mindestradumfang</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="130" />
         <source>OPTION CONTINUOUS ACTIV CPK ACTIVATION OF THE CONT</source>
-        <translation type="unfinished" />
+        <translation>Option Continuous Activ CPK -Aktivierung des Cont</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="147" />
         <source>INDICATES THE PRESENCE OF THE LKA OR LP</source>
-        <translation type="unfinished" />
+        <translation>Zeigt das Vorhandensein der LKA oder LP an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="164" />
         <source>Presence of the blind spot monitoring function</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Überwachungsfunktion der blinden Stelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="181" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="725" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="61" />
         <source>Type of gearbox</source>
-        <translation type="unfinished" />
+        <translation>Art der Getriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="206" />
         <source>INDICATES THE KIND OF ACTIVE (ABSD)</source>
-        <translation type="unfinished" />
+        <translation>Zeigt die Art von Aktiv (ABSD) an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="213" />
         <source>Off</source>
-        <translation type="unfinished" />
+        <translation>Aus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="217" />
         <source>On</source>
-        <translation type="unfinished" />
+        <translation>An</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="223" />
         <source>Type of Park Pilot</source>
-        <translation type="unfinished" />
+        <translation>Art des Parkpiloten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="248" />
         <source>Type of City Park</source>
-        <translation type="unfinished" />
+        <translation>Art des Stadtparks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="273" />
         <source>Type of drive</source>
-        <translation type="unfinished" />
+        <translation>Art des Laufwerks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G6.json" line="301" />
         <source>Configuration group data list 2102</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 2102</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE.json" line="2" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="3" />
         <source>combine</source>
-        <translation type="unfinished" />
+        <translation>kombinieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="2" />
         <source>COMBINE_UDS</source>
-        <translation type="unfinished" />
+        <translation>Kombine_uds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="17" />
         <source>Main Values</source>
-        <translation type="unfinished" />
+        <translation>Hauptwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="18" />
         <source>HMI Values</source>
-        <translation type="unfinished" />
+        <translation>HMI -Werte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="23" />
         <source>Configuration Main Values</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationshauptwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="28" />
         <source>The ECU stores the distance travelled between two regenerations</source>
-        <translation type="unfinished" />
+        <translation>Das ECU speichert die Strecke zwischen zwei Regenerationen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="45" />
         <source>Request to display the partial (Speed) ODO-Meter</source>
-        <translation type="unfinished" />
+        <translation>Anfrage zur Anzeige der teilweisen (Geschwindigkeit) ODO-Meter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="62" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="53" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9068" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9681" />
         <source>Obstacle detection</source>
-        <translation type="unfinished" />
+        <translation>Hinderniserkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="79" />
         <source>Adaptive cruise control and speed limiter (RVVI)</source>
-        <translation type="unfinished" />
+        <translation>Adaptiver Geschwindigkeitsregelung und Geschwindigkeitsbegrenzer (RVVI)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="96" />
         <source>Absence of oil level</source>
-        <translation type="unfinished" />
+        <translation>Abwesenheit des Ölstands</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="113" />
         <source>Cruise control</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="130" />
         <source>Cruise control/speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung/Geschwindigkeitsbegrenzer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="147" />
         <source>Service indicator function</source>
-        <translation type="unfinished" />
+        <translation>Serviceanzeigefunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="164" />
         <source>Push Variant</source>
-        <translation type="unfinished" />
+        <translation>Push -Variante</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="171" />
         <source>000</source>
-        <translation type="unfinished" />
+        <translation>000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="175" />
         <source>001</source>
-        <translation type="unfinished" />
+        <translation>001</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="179" />
         <source>010</source>
-        <translation type="unfinished" />
+        <translation>010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="183" />
         <source>011</source>
-        <translation type="unfinished" />
+        <translation>011</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="187" />
         <source>100</source>
-        <translation type="unfinished" />
+        <translation>100</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="191" />
         <source>101</source>
-        <translation type="unfinished" />
+        <translation>101</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="197" />
         <source>Vehicle</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeug</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="214" />
         <source>Soundharmony</source>
-        <translation type="unfinished" />
+        <translation>Soundharmonie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="231" />
         <source>Units Language</source>
-        <translation type="unfinished" />
+        <translation>Einheiten Sprache</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="248" />
         <source>Presence display of recommended speeds</source>
-        <translation type="unfinished" />
+        <translation>Präsenzanzeige von empfohlenen Geschwindigkeiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="265" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="80" />
         <source>Display of the alerts, POI and hazardous areas</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Warnungen, POI und gefährlichen Bereiche</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="282" />
         <source>Presence of internal switching Push button for RVVI</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines internen Schaltschalttastes für RVVI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="299" />
         <source>Presence of selection of RLVV</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Auswahl von RLVV</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="316" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="138" />
         <source>Body shape type</source>
-        <translation type="unfinished" />
+        <translation>Körperformtyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="323" />
         <source>Tailgate</source>
-        <translation type="unfinished" />
+        <translation>Heckklappe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="327" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="149" />
         <source>Saloon</source>
-        <translation type="unfinished" />
+        <translation>Saloon</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="331" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="153" />
         <source>Monospace</source>
-        <translation type="unfinished" />
+        <translation>Monospace</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="335" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="705" />
         <source>Others</source>
-        <translation type="unfinished" />
+        <translation>Andere</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="341" />
         <source>Presence of on-board charger (OBC)</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von On-Board-Ladegerät (OBC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="358" />
         <source>Displaying of the ACC function</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der ACC -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="375" />
         <source>Indicator if LPG information must be displayed</source>
-        <translation type="unfinished" />
+        <translation>Anzeige Wenn LPG -Informationen angezeigt werden müssen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="392" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="107" />
         <source>Stop and Start system</source>
-        <translation type="unfinished" />
+        <translation>System stoppen und starten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="409" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="116" />
@@ -1105,11 +1105,11 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1097" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1119" />
         <source>Type of accesses</source>
-        <translation type="unfinished" />
+        <translation>Art der Zugriffe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="416" />
         <source>Rear doors</source>
-        <translation type="unfinished" />
+        <translation>Hintertüren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="420" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="127" />
@@ -1117,63 +1117,63 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1108" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1130" />
         <source>1 sliding door</source>
-        <translation type="unfinished" />
+        <translation>1 Schiebetür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="424" />
         <source>2 sliding door</source>
-        <translation type="unfinished" />
+        <translation>2 Schiebetür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="430" />
         <source>Presence of Dynamic driving function</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein einer dynamischen Fahrfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="447" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="164" />
         <source>Active Lane Departure function (LKA)</source>
-        <translation type="unfinished" />
+        <translation>Aktive Fahrspurverlassensfunktion (LKA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="464" />
         <source>Presence of Driver Attention Assist (DAA)</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Aufmerksamkeitsassistent des Fahrers (DAA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="480" />
         <source>CFG_GBB_CMB_TELLTAL_PARK_BR_TYPE_000</source>
-        <translation type="unfinished" />
+        <translation>CFG_GBB_CMB_TELLTAL_PARK_BR_TYPE_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="496" />
         <source>Type of ACC Function</source>
-        <translation type="unfinished" />
+        <translation>Art der ACC -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="502" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="489" />
         <source>00</source>
-        <translation type="unfinished" />
+        <translation>00</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="506" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="490" />
         <source>01</source>
-        <translation type="unfinished" />
+        <translation>01</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="510" />
         <source>02</source>
-        <translation type="unfinished" />
+        <translation>02</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="516" />
         <source>Traffic sign recognition function</source>
-        <translation type="unfinished" />
+        <translation>Verkehrszeichenerkennungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="532" />
         <source>Display ECO Coaching information</source>
-        <translation type="unfinished" />
+        <translation>Zeigen Sie die Eco -Coaching -Informationen an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="548" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="308" />
         <source>Speed limit indication function</source>
-        <translation type="unfinished" />
+        <translation>Tempor -Limit -Indikationsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="565" />
         <source>Empty Page</source>
-        <translation type="unfinished" />
+        <translation>Leere Seite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="582" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="290" />
@@ -1182,312 +1182,312 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2267" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="679" />
         <source>Stop and Start function</source>
-        <translation type="unfinished" />
+        <translation>Stoppen- und Startfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="599" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="236" />
         <source>Hands free starting access</source>
-        <translation type="unfinished" />
+        <translation>Hände kostenloser Startzugriff</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="616" />
         <source>Brand Configuration</source>
-        <translation type="unfinished" />
+        <translation>Markenkonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="623" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="426" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="679" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="685" />
         <source>Peugeot</source>
-        <translation type="unfinished" />
+        <translation>Peugeot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="627" />
         <source>citroen</source>
-        <translation type="unfinished" />
+        <translation>Citroen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="631" />
         <source>brand 010</source>
-        <translation type="unfinished" />
+        <translation>Marke 010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="635" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="691" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="697" />
         <source>Toyota</source>
-        <translation type="unfinished" />
+        <translation>Toyota</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="639" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="695" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="701" />
         <source>Opel</source>
-        <translation type="unfinished" />
+        <translation>Opel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="643" />
         <source>brand 101</source>
-        <translation type="unfinished" />
+        <translation>Marke 101</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="649" />
         <source>Urea warning light</source>
-        <translation type="unfinished" />
+        <translation>Harnstoffwarnlicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="666" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="209" />
         <source>Onboard computer alerts</source>
-        <translation type="unfinished" />
+        <translation>Bordcomputerwarnungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="683" />
         <source>Indicates which Navigation data to display</source>
-        <translation type="unfinished" />
+        <translation>Gibt an, welche Navigationsdaten angezeigt werden sollen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="689" />
         <source>Without street R16</source>
-        <translation type="unfinished" />
+        <translation>Ohne Straße R16</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="693" />
         <source>With street R16</source>
-        <translation type="unfinished" />
+        <translation>Mit Street R16</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="697" />
         <source>JV and street R16</source>
-        <translation type="unfinished" />
+        <translation>JV und Street R16</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="701" />
         <source>JV and street R32</source>
-        <translation type="unfinished" />
+        <translation>JV und Street R32</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="711" />
         <source>Export Navigation display</source>
-        <translation type="unfinished" />
+        <translation>Exportnavigationsanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="728" />
         <source>Tyre pressure</source>
-        <translation type="unfinished" />
+        <translation>Reifendruck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="745" />
         <source>GBOX</source>
-        <translation type="unfinished" />
+        <translation>Gbox</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="762" />
         <source>State of Lane positioning assist (LPA)</source>
-        <translation type="unfinished" />
+        <translation>State of Lane Positioning Assist (LPA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="779" />
         <source>Indicates if Pictograms List is Basic or Extended</source>
-        <translation type="unfinished" />
+        <translation>Gibt an, ob die Liste der Piktogramme grundlegend oder erweitert ist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="796" />
         <source>Memorization of speed advisor</source>
-        <translation type="unfinished" />
+        <translation>Auswendiglernen von Speed ​​Advisor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="813" />
         <source>Alarm function for gulf countries</source>
-        <translation type="unfinished" />
+        <translation>Alarmfunktion für Golfländer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="830" />
         <source>Configuration of Driver restriction mode</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration des Treiberbeschränkungsmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="847" />
         <source>Specifies if "Check Page" is available</source>
-        <translation type="unfinished" />
+        <translation>Gibt an, ob "Seite" Seite "verfügbar ist" verfügbar ist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="864" />
         <source>Precense of internal combustion engine</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Verbrennungsmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="881" />
         <source>Precense of rear electric motor</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines hinteren Elektromotors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="898" />
         <source>Presence of Diagnostic indicator selection mode</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines Diagnoseinstellungsauswahlmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="915" />
         <source>CFG_EZB_CMB_OPTION_ADSD_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ezb_cmb_option_adsd_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="932" />
         <source>Presence of HY Page</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Hy -Seite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="952" />
         <source>Configuration IO Values</source>
-        <translation type="unfinished" />
+        <translation>Konfigurations -IO ​​-Werte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="959" />
         <source>Configuration Secondary Values</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration Sekundärwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="964" />
         <source>Presence of Data and Time Display</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Daten und Zeitanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="981" />
         <source>Presence of Data and Time Menu</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Daten und Zeitmenü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1000" />
         <source>Configuration HMI Values</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration HMI -Werte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1005" />
         <source>Popup-Page on-board charger (OBC)</source>
-        <translation type="unfinished" />
+        <translation>Popup-Seite On-Board-Ladegerät (OBC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1022" />
         <source>Presence of showing digital Coolant temperature</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Präsentation der digitalen Kühlmitteltemperatur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1039" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="442" />
         <source>Rev counter</source>
-        <translation type="unfinished" />
+        <translation>Drehzahlmesser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1056" />
         <source>Presence of showing digital vehicle speed</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein digitaler Fahrzeuggeschwindigkeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="1073" />
         <source>Presence of permanent on-board charger page</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein einer dauerhaften On-Board-Ladeseite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="14" />
         <source>Instrument Panel CIROCCO</source>
-        <translation type="unfinished" />
+        <translation>Instrumententafel Cirocco</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="18" />
         <source>Telecoding_Fct_Main</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_main</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="26" />
         <source>Oil level indicator</source>
-        <translation type="unfinished" />
+        <translation>Ölstandsanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="35" />
         <source>Cruise control (RVV)</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung (RVV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="44" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="59" />
         <source>Vehicle speed limitation</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeuggeschwindigkeitsbeschränkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="62" />
         <source>Electric Vehicle</source>
-        <translation type="unfinished" />
+        <translation>Elektrofahrzeug</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="71" />
         <source>Adaptative Cruise Control (ACC)</source>
-        <translation type="unfinished" />
+        <translation>Adaptive Geschwindigkeitsregelung (ACC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="89" />
         <source>Recommended gear change indicator</source>
-        <translation type="unfinished" />
+        <translation>Empfohlener Zahnradwechsel -Indikator</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="98" />
         <source>Push variant</source>
-        <translation type="unfinished" />
+        <translation>Push -Variante</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="123" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="832" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1104" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1126" />
         <source>rear doors</source>
-        <translation type="unfinished" />
+        <translation>Hintertüren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="131" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="840" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1134" />
         <source>2 sliding doors</source>
-        <translation type="unfinished" />
+        <translation>2 Schiebetüren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="145" />
         <source>Two box</source>
-        <translation type="unfinished" />
+        <translation>Zwei Schachtel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="157" />
         <source>Other</source>
-        <translation type="unfinished" />
+        <translation>Andere</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="173" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="68" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2862" />
         <source>Dynamic driving function</source>
-        <translation type="unfinished" />
+        <translation>Dynamische Fahrfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="182" />
         <source>Navigation display</source>
-        <translation type="unfinished" />
+        <translation>Navigationsanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="191" />
         <source>Display audio informations</source>
-        <translation type="unfinished" />
+        <translation>Audio -Informationen anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="200" />
         <source>Night vision assistance</source>
-        <translation type="unfinished" />
+        <translation>Nachtsicht Hilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="218" />
         <source>Type of export PRINC2</source>
-        <translation type="unfinished" />
+        <translation>Art des Export -Princ2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="227" />
         <source>Tyres pressure</source>
-        <translation type="unfinished" />
+        <translation>Reifendruck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="245" />
         <source>Type of video export</source>
-        <translation type="unfinished" />
+        <translation>Art des Videoexports</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="254" />
         <source>Display traffic informations</source>
-        <translation type="unfinished" />
+        <translation>Verkehrsinformationen anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="263" />
         <source>Hybrid MYH</source>
-        <translation type="unfinished" />
+        <translation>Hybrid myh</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="272" />
         <source>Type of picto list</source>
-        <translation type="unfinished" />
+        <translation>Art der Picto -Liste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="281" />
         <source>Export media type</source>
-        <translation type="unfinished" />
+        <translation>Medientyp Export</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="299" />
         <source>Lane departure warning system (AFIL)</source>
-        <translation type="unfinished" />
+        <translation>Spurverlassenswarnsystem (AFIL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="317" />
         <source>Type of aerial</source>
-        <translation type="unfinished" />
+        <translation>Art der Antenne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="324" />
         <source>FM1 and FM2 aerial</source>
-        <translation type="unfinished" />
+        <translation>FM1- und FM2 -Luftfahrt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="328" />
         <source>FM aerial</source>
-        <translation type="unfinished" />
+        <translation>FM -Luftfahrt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="335" />
         <source>Hybrid MEL AR</source>
-        <translation type="unfinished" />
+        <translation>Hybrid Mel Ar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="344" />
         <source>Reverse camera</source>
-        <translation type="unfinished" />
+        <translation>Rückwärtskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="353" />
         <source>Panoramic reverse camera</source>
-        <translation type="unfinished" />
+        <translation>Panorama -Rückwärtskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="362" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="490" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="495" />
         <source>Type of panoramic visual assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Art der Panoramablickkamera visueller Unterstützung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="369" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8863" />
@@ -1496,7 +1496,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="181" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3241" />
         <source>Type 1</source>
-        <translation type="unfinished" />
+        <translation>Typ 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="373" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8867" />
@@ -1504,131 +1504,131 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="116" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="182" />
         <source>Type 2</source>
-        <translation type="unfinished" />
+        <translation>Typ 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="377" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="117" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="183" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3242" />
         <source>Type 3</source>
-        <translation type="unfinished" />
+        <translation>Typ 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="381" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="118" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="184" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3244" />
         <source>Type 4</source>
-        <translation type="unfinished" />
+        <translation>Typ 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="388" />
         <source>Urea warning lamp</source>
-        <translation type="unfinished" />
+        <translation>Harnstoffwarnlampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="397" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="74" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="58" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="102" />
         <source>Semi-automatic parking system</source>
-        <translation type="unfinished" />
+        <translation>Halbautomatisches Parksystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="406" />
         <source>Seats, row 3</source>
-        <translation type="unfinished" />
+        <translation>Sitze, Reihe 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="415" />
         <source>Hybrid function</source>
-        <translation type="unfinished" />
+        <translation>Hybridfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="424" />
         <source>Screen background personalisation function</source>
-        <translation type="unfinished" />
+        <translation>Bildschirm Hintergrundpersonalisierungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="433" />
         <source>Parking brake Visual and Sound Alerts</source>
-        <translation type="unfinished" />
+        <translation>Feststellbremse visuelle und Tonwarnungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="451" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="462" />
         <source>Ambience lighting</source>
-        <translation type="unfinished" />
+        <translation>Ambiente beleuchtet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="458" />
         <source>Rheostatage</source>
-        <translation type="unfinished" />
+        <translation>Rheostatage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="469" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1325" />
         <source>Type of car</source>
-        <translation type="unfinished" />
+        <translation>Art des Autos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="476" />
         <source>3008</source>
-        <translation type="unfinished" />
+        <translation>3008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="480" />
         <source>New 2008</source>
-        <translation type="unfinished" />
+        <translation>Neu 2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="484" />
         <source>New 208</source>
-        <translation type="unfinished" />
+        <translation>Neu 208</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="488" />
         <source>Unknown car 4</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="492" />
         <source>Unknown car 5</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="496" />
         <source>Unknown car 6</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="500" />
         <source>Unknown car 7</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="504" />
         <source>Unknown car 8</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="508" />
         <source>Unknown car 9</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="512" />
         <source>Unknown car 10</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="516" />
         <source>Unknown car 11</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 11</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="520" />
         <source>Unknown car 12</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="524" />
         <source>Unknown car 13</source>
-        <translation type="unfinished" />
+        <translation>Unbekanntes Auto 13</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="531" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="84" />
         <source>Adapted cruise control</source>
-        <translation type="unfinished" />
+        <translation>Adaptive Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="540" />
         <source>Display media informations</source>
-        <translation type="unfinished" />
+        <translation>Medieninformationen anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="549" />
         <source>Telecoding_Fct_IO</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_io</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="557" />
         <source>AFIL PUSH input (Lane departure warning system)</source>
-        <translation type="unfinished" />
+        <translation>AFIL -Push -Input (Spurverlassenswarnsystem)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="564" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="606" />
@@ -1651,7 +1651,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1323" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1255" />
         <source>Absent</source>
-        <translation type="unfinished" />
+        <translation>Abwesend</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="568" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="652" />
@@ -1663,7 +1663,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1156" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1241" />
         <source>Position 1 (CIROCCO: PIN 2)</source>
-        <translation type="unfinished" />
+        <translation>Position 1 (Cirocco: Pin 2)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="572" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="656" />
@@ -1675,7 +1675,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1160" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1245" />
         <source>Position 2 (CIROCCO: PIN 4)</source>
-        <translation type="unfinished" />
+        <translation>Position 2 (Cirocco: Pin 4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="576" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="660" />
@@ -1687,7 +1687,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1164" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1249" />
         <source>Position 3 (CIROCCO: PIN 6)</source>
-        <translation type="unfinished" />
+        <translation>Position 3 (Cirocco: Pin 6)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="580" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="664" />
@@ -1699,7 +1699,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1168" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1253" />
         <source>Position 4 (CIROCCO: PIN 11)</source>
-        <translation type="unfinished" />
+        <translation>Position 4 (Cirocco: Pin 11)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="584" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="668" />
@@ -1711,7 +1711,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1172" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1257" />
         <source>Position 5 (CIROCCO: PIN 13)</source>
-        <translation type="unfinished" />
+        <translation>Position 5 (Cirocco: Pin 13)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="588" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="672" />
@@ -1723,7 +1723,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1176" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1261" />
         <source>Position 6 (CIROCCO: PIN 15)</source>
-        <translation type="unfinished" />
+        <translation>Position 6 (Cirocco: Pin 15)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="592" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="676" />
@@ -1735,11 +1735,11 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1180" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1265" />
         <source>Position 7 (CIROCCO: PIN 17)</source>
-        <translation type="unfinished" />
+        <translation>Position 7 (Cirocco: Pin 17)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="599" />
         <source>AFIL LED output (Lane departure warning system)</source>
-        <translation type="unfinished" />
+        <translation>AFIL -LED -Ausgabe (Lane Departure Warning System)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="610" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="694" />
@@ -1752,7 +1752,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1284" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1327" />
         <source>Position 1 (CIROCCO: PIN 3)</source>
-        <translation type="unfinished" />
+        <translation>Position 1 (Cirocco: Pin 3)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="614" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="698" />
@@ -1765,7 +1765,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1288" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1331" />
         <source>Position 2 (CIROCCO: PIN 5)</source>
-        <translation type="unfinished" />
+        <translation>Position 2 (Cirocco: Pin 5)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="618" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="702" />
@@ -1778,7 +1778,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1292" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1335" />
         <source>Position 3 (CIROCCO: PIN 10)</source>
-        <translation type="unfinished" />
+        <translation>Position 3 (Cirocco: Pin 10)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="622" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="706" />
@@ -1791,7 +1791,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1296" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1339" />
         <source>Position 4 (CIROCCO: PIN 12)</source>
-        <translation type="unfinished" />
+        <translation>Position 4 (Cirocco: Pin 12)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="626" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="710" />
@@ -1804,7 +1804,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1300" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1343" />
         <source>Position 5 (CIROCCO: PIN 14)</source>
-        <translation type="unfinished" />
+        <translation>Position 5 (Cirocco: Pin 14)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="630" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="714" />
@@ -1817,7 +1817,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1304" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1347" />
         <source>Position 6 (CIROCCO: PIN 16)</source>
-        <translation type="unfinished" />
+        <translation>Position 6 (Cirocco: Pin 16)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="634" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="718" />
@@ -1830,93 +1830,93 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1308" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1351" />
         <source>Position 7 (CIROCCO: PIN 18)</source>
-        <translation type="unfinished" />
+        <translation>Position 7 (Cirocco: Pin 18)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="641" />
         <source>City Park Assist PUSH input</source>
-        <translation type="unfinished" />
+        <translation>City Park Assist Push Input Input</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="683" />
         <source>City Park Assist LED output</source>
-        <translation type="unfinished" />
+        <translation>City Park Assist LED -Produktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="725" />
         <source>Dynamic mode (Sport mode) PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Dynamischer Modus (Sportmodus) Push -Eingang</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="767" />
         <source>Dynamic mode (Sport mode) LED output</source>
-        <translation type="unfinished" />
+        <translation>LED -Ausgabe von Dynamic Modus (Sportmodus)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="809" />
         <source>ESP PUSH input</source>
-        <translation type="unfinished" />
+        <translation>ESP -Push -Eingang</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="851" />
         <source>ESP LED output</source>
-        <translation type="unfinished" />
+        <translation>ESP -LED -Ausgabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="893" />
         <source>Hill Assist PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Hill Assist Push Input Input</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="935" />
         <source>Hill Assist LED output</source>
-        <translation type="unfinished" />
+        <translation>Hill Assist LED Outpution</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="977" />
         <source>Lane Keeping Assist (LKA) PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Lane Heeing Assist (LKA) Push -Eingabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1019" />
         <source>Lane Keeping Assist (LKA) LED output</source>
-        <translation type="unfinished" />
+        <translation>LED -LED -Ausgabe von Lane Heeing Assist (LKA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1061" />
         <source>Lane Positioning Assist (LPA) PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Lane Positioning Assist (LPA) Push -Eingabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1103" />
         <source>Lane Positioning Assist (LPA) LED output</source>
-        <translation type="unfinished" />
+        <translation>LED -LED -Ausgabe (Lane Positioning Assist (LPA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1145" />
         <source>Low tyre pressure PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Niedriger Reifendruck -Push -Eingang</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1187" />
         <source>Electric parking brake LED output</source>
-        <translation type="unfinished" />
+        <translation>Elektrische Parkbremse -LED -Ausgabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1230" />
         <source>Start&amp;Stop (STT) PUSH input</source>
-        <translation type="unfinished" />
+        <translation>Start &amp; Stop (STT) -Pus -Eingabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1273" />
         <source>Start&amp;Stop (STT) LED output</source>
-        <translation type="unfinished" />
+        <translation>Start &amp; Stop (STT) LED -Ausgabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1316" />
         <source>XDOME LED output</source>
-        <translation type="unfinished" />
+        <translation>XDome -LED -Ausgabe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1358" />
         <source>Telecoding_Fct_Secondary</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_secondary</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1366" />
         <source>Automatic synchronisation of the time</source>
-        <translation type="unfinished" />
+        <translation>Automatische Synchronisation der Zeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1375" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1666" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2048" />
         <source>Time Zone</source>
-        <translation type="unfinished" />
+        <translation>Zeitzone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1382" />
         <source>UTC-12</source>
-        <translation type="unfinished" />
+        <translation>UTC-12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1386" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1725" />
@@ -1924,7 +1924,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2107" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2229" />
         <source>UTC</source>
-        <translation type="unfinished" />
+        <translation>koordinierte Weltzeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1390" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1729" />
@@ -1932,569 +1932,569 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2111" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2233" />
         <source>UTC+1</source>
-        <translation type="unfinished" />
+        <translation>UTC+1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1394" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1733" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2115" />
         <source>UTC+2</source>
-        <translation type="unfinished" />
+        <translation>UTC+2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1401" />
         <source>Lane positioning assist</source>
-        <translation type="unfinished" />
+        <translation>Spurpositionierungsassistent</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1410" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1956" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2369" />
         <source>Telecoding_Fct_HMI</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_HMI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1418" />
         <source>Personal Mode 2</source>
-        <translation type="unfinished" />
+        <translation>Persönlicher Modus 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1427" />
         <source>Personal Mode</source>
-        <translation type="unfinished" />
+        <translation>Persönlicher Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1436" />
         <source>Dials Mode</source>
-        <translation type="unfinished" />
+        <translation>Zifferblattmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1445" />
         <source>Driving Mode</source>
-        <translation type="unfinished" />
+        <translation>Fahrmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1454" />
         <source>Navigation Mode</source>
-        <translation type="unfinished" />
+        <translation>Navigationsmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1463" />
         <source>Minimal Mode</source>
-        <translation type="unfinished" />
+        <translation>Minimaler Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1472" />
         <source>Hybrid Mode</source>
-        <translation type="unfinished" />
+        <translation>Hybridmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1481" />
         <source>Computer Mode</source>
-        <translation type="unfinished" />
+        <translation>Computermodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1491" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1571" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1738" />
         <source>Ambience 8</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1501" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1581" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1729" />
         <source>Ambience 7</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1511" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1591" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1720" />
         <source>Ambience 6</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1521" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1601" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1711" />
         <source>Ambience 5</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1531" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1611" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1702" />
         <source>Ambience 4</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1541" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1621" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1693" />
         <source>Ambience 3</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1551" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1631" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1684" />
         <source>Ambience 2</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1561" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1641" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1675" />
         <source>Ambience 1</source>
-        <translation type="unfinished" />
+        <translation>Ambiente 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1650" />
         <source>Calibration_Fct_Main</source>
-        <translation type="unfinished" />
+        <translation>CALIBRATION_FCT_MAIN</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1658" />
         <source>Number of the default ambience</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der Standardbiente</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/CIROCCO.json" line="1667" />
         <source>Calibration_Fct_HMI</source>
-        <translation type="unfinished" />
+        <translation>CALIBRATION_FCT_HMI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="3" />
         <source>matt_2010</source>
-        <translation type="unfinished" />
+        <translation>Matt_2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="18" />
         <source>Telecoding_MATT_2100</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_matt_2100</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="25" />
         <source>Presence of On-board computer warnings</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Computerwarnungen in Bord</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="34" />
         <source>Presence of Language selection menu</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Sprachauswahlmenüs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="42" />
         <source>Presence of Media information display</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Medieninformationen Anzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="51" />
         <source>Gearbox transmission indicator (for display on a separate screen or in the upper right corner)</source>
-        <translation type="unfinished" />
+        <translation>Getriebeübertragungsanzeige (für die Anzeige auf einem separaten Bildschirm oder in der oberen rechten Ecke)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="67" />
         <source>Output of maintenance information when the ignition is switched on</source>
-        <translation type="unfinished" />
+        <translation>Ausgabe von Wartungsinformationen beim Einschalten der Zündung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="75" />
         <source>Menu "Car parameters"</source>
-        <translation type="unfinished" />
+        <translation>Menü "Autoparameter"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="83" />
         <source>Displaying pop-up navigation pointers</source>
-        <translation type="unfinished" />
+        <translation>Anzeigen von Pop-up-Navigationszeigern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="91" />
         <source>Displaying navigation from the head unit</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Navigation aus der Kopfeinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="99" />
         <source>Oil Gauge</source>
-        <translation type="unfinished" />
+        <translation>Ölanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="107" />
         <source>Trip data</source>
-        <translation type="unfinished" />
+        <translation>Reisedaten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="115" />
         <source>Displaying the mileage in the bottom row</source>
-        <translation type="unfinished" />
+        <translation>Anzeigen der Kilometerleiste in der unteren Reihe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="123" />
         <source>Display of the temperature screen</source>
-        <translation type="unfinished" />
+        <translation>Anzeige des Temperaturbildschirms</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="131" />
         <source>Presence cruise control function</source>
-        <translation type="unfinished" />
+        <translation>Präsenz -Geschwindigkeitsregelungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="147" />
         <source>Top row with cruise control (for new displays - cruise memory display MEM)</source>
-        <translation type="unfinished" />
+        <translation>Obere Reihe mit Geschwindigkeitsregelung (für neue Displays - Kreuzfahrtspeicheranzeigeemem)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="155" />
         <source>The presence of a control stick connected to the display</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines mit dem Display verbundenen Kontrollsticks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="163" />
         <source>The unit selection menu in the settings</source>
-        <translation type="unfinished" />
+        <translation>Das Auswahlmenü der Einstellungen in den Einstellungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="171" />
         <source>Language selection menu in settings</source>
-        <translation type="unfinished" />
+        <translation>Sprachauswahlmenü in Einstellungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="179" />
         <source>Presence empty screen in Z0</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein leerer Bildschirm in z0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="187" />
         <source>Presence of the preconditioning menu (Webasto Settings Menu)</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Vorkonditionierungsmenüs (Menü "Webasto -Einstellungen))</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="195" />
         <source>Color theme selection menu in settings</source>
-        <translation type="unfinished" />
+        <translation>Menü zur Auswahl der Farbthemen in Einstellungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="203" />
         <source>Time setting menu in settings</source>
-        <translation type="unfinished" />
+        <translation>Zeiteinstellungsmenü in Einstellungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="211" />
         <source>Presence of the configurable button menu</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des konfigurierbaren Schaltfläche Menüs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="219" />
         <source>Default colour scheme used on the matrix</source>
-        <translation type="unfinished" />
+        <translation>Standard -Farbschema, das auf der Matrix verwendet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="225" />
         <source>orange</source>
-        <translation type="unfinished" />
+        <translation>orange</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="226" />
         <source>black</source>
-        <translation type="unfinished" />
+        <translation>Schwarz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="227" />
         <source>techno black</source>
-        <translation type="unfinished" />
+        <translation>Techno schwarz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="228" />
         <source>blue</source>
-        <translation type="unfinished" />
+        <translation>Blau</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="229" />
         <source>toffee</source>
-        <translation type="unfinished" />
+        <translation>Toffee</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="234" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9557" />
         <source>Time display</source>
-        <translation type="unfinished" />
+        <translation>Zeitanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="242" />
         <source>Adaptive cruise control and speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Adaptiver Geschwindigkeitsregelung und Geschwindigkeitsbegrenzer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="250" />
         <source>Starting the engine with the Start button</source>
-        <translation type="unfinished" />
+        <translation>Starten Sie den Motor mit dem Startknopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="258" />
         <source>Displaying messages about a drop in tire pressure</source>
-        <translation type="unfinished" />
+        <translation>Anzeigen von Nachrichten über einen Abfall des Reifendrucks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="266" />
         <source>Tire pressure drop detection system / gear indicator in the upper right corner</source>
-        <translation type="unfinished" />
+        <translation>Reifendruckabfall -Erkennungssystem / Zahnradanzeige in der oberen rechten Ecke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="274" />
         <source>Body type (silhouette)</source>
-        <translation type="unfinished" />
+        <translation>Körpertyp (Silhouette)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="280" />
         <source>hacthback</source>
-        <translation type="unfinished" />
+        <translation>Schrägheck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="281" />
         <source>sedan</source>
-        <translation type="unfinished" />
+        <translation>Limousine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="282" />
         <source>wagon</source>
-        <translation type="unfinished" />
+        <translation>Wagon</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="283" />
         <source>others</source>
-        <translation type="unfinished" />
+        <translation>andere</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="288" />
         <source>Black panel mode</source>
-        <translation type="unfinished" />
+        <translation>Schwarzer Panel -Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="296" />
         <source>History of warnings</source>
-        <translation type="unfinished" />
+        <translation>Geschichte der Warnungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="304" />
         <source>Configuration of the presence of the instrument panel personalisation item on the configurable button menu</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration des Vorhandenseins des Instrumententafel -Personalisierungselements im Menü Konfigurierbares Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="312" />
         <source>Configuration of the presence of the instrument panel colour item on the configurable button menu</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration des Vorhandenseins des Instrumententafel -Farbelements im Menü Konfigurierbarer Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="320" />
         <source>Configuration of the presence of the courtesy light lighting item on the configurable button menu</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration des Vorhandenseins des korrekten Lichtbeleuchtungselements im Menü Konfigurierbares Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="328" />
         <source>Adaptive cruise control mode (ARTIV)</source>
-        <translation type="unfinished" />
+        <translation>Adaptiver Geschwindigkeitsregelungsmodus (Artiv)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="334" />
         <source>00 - ???</source>
-        <translation type="unfinished" />
+        <translation>00 - ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="335" />
         <source>01 - ???</source>
-        <translation type="unfinished" />
+        <translation>01 - ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="336" />
         <source>10 - ???</source>
-        <translation type="unfinished" />
+        <translation>10 - ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="337" />
         <source>11 - ???</source>
-        <translation type="unfinished" />
+        <translation>11 - ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="342" />
         <source>Presence of the choice of distance and consumption units on the display menu</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Auswahl der Entfernungs- und Verbrauchseinheiten im Anzeigemenüer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="350" />
         <source>The menu for selecting the tune of the steering wheel switch</source>
-        <translation type="unfinished" />
+        <translation>Das Menü zur Auswahl der Melodie des Lenkradschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="358" />
         <source>Selection of the two-colour matrix backlighting colour</source>
-        <translation type="unfinished" />
+        <translation>Auswahl der zweifarbigen Matrix-Hintergrundbeleuchtung Farbe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="366" />
         <source>Presence of the hybrid function</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Hybridfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="372" />
         <source>Masked</source>
-        <translation type="unfinished" />
+        <translation>Maskiert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="373" />
         <source>2 Pages</source>
-        <translation type="unfinished" />
+        <translation>2 Seiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="374" />
         <source>Page 1</source>
-        <translation type="unfinished" />
+        <translation>Seite 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="375" />
         <source>Page 2</source>
-        <translation type="unfinished" />
+        <translation>Seite 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="380" />
         <source>Availability of an obstacle detection system</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit eines Hinderniserkennungssystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="388" />
         <source>POI Radar Data management</source>
-        <translation type="unfinished" />
+        <translation>Poi Radar -Datenverwaltung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="396" />
         <source>Recommended speed management</source>
-        <translation type="unfinished" />
+        <translation>Empfohlenes Geschwindigkeitsmanagement</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="404" />
         <source>Presence of Dynamic Pack (Status of the blind spot monitoring function)</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines dynamischen Packs (Status der Überwachungsfunktion der blinden Fleck)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="412" />
         <source>6_7 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>6_7 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="420" />
         <source>Vehicle brand</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmarke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="427" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="683" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="689" />
         <source>Citroen</source>
-        <translation type="unfinished" />
+        <translation>Citroen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="428" />
         <source>Fiat</source>
-        <translation type="unfinished" />
+        <translation>Fiat</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="429" />
         <source>Lancia</source>
-        <translation type="unfinished" />
+        <translation>Lancia</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="430" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="687" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="693" />
         <source>DS</source>
-        <translation type="unfinished" />
+        <translation>Ds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="435" />
         <source>Type of RVVI System</source>
-        <translation type="unfinished" />
+        <translation>Art des RVVI -Systems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="443" />
         <source>Type of POI Radar data</source>
-        <translation type="unfinished" />
+        <translation>Art der POI -Radardaten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="451" />
         <source>Indicates the of FM</source>
-        <translation type="unfinished" />
+        <translation>Zeigt das von FM an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="459" />
         <source>7_5 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>7_5 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="467" />
         <source>7_6 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>7_6 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="475" />
         <source>7_7 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>7_7 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="483" />
         <source>Indicates the type of export for audio function</source>
-        <translation type="unfinished" />
+        <translation>Gibt den Exporttyp für die Audiofunktion an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="491" />
         <source>10</source>
-        <translation type="unfinished" />
+        <translation>10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="496" />
         <source>Lane tracking system</source>
-        <translation type="unfinished" />
+        <translation>Spurverfolgungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="505" />
         <source>Presence of ECO Coaching</source>
-        <translation type="unfinished" />
+        <translation>Anwesenheit von Öko -Coaching</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="514" />
         <source>8_2 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>8_2 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="523" />
         <source>CFG_EC6_MATT_CONF_SLI_ISA_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ec6_matt_conf_sli_isa_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="532" />
         <source>CFG_EC7_MATT_CONF_ACC_000</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ec7_matt_conf_acc_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="541" />
         <source>8_5 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>8_5 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="550" />
         <source>8_6 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>8_6 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="559" />
         <source>8_7 UNKNOWN</source>
-        <translation type="unfinished" />
+        <translation>8_7 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="569" />
         <source>Telecoding_MATT_0200</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_matt_0200</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="576" />
         <source>The current transfer pointer in the upper right corner (one character)</source>
-        <translation type="unfinished" />
+        <translation>Der aktuelle Übertragungszeiger in der oberen rechten Ecke (ein Zeichen)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="584" />
         <source>The current transfer pointer in the upper right corner (PRND)</source>
-        <translation type="unfinished" />
+        <translation>Der aktuelle Übertragungszeiger in der oberen rechten Ecke (PRND)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="592" />
         <source>Instant consumption and power reserve in the bottom line (to activate - disable this bit)</source>
-        <translation type="unfinished" />
+        <translation>Sofortiger Verbrauch und Stromreserve im Gewinn (um zu aktivieren - Deaktivieren Sie dieses Bit)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="600" />
         <source>Activation of the upper line (cruise, limiter, gear pointer)</source>
-        <translation type="unfinished" />
+        <translation>Aktivierung der oberen Linie (Kreuzfahrt, Limiter, Zahnradzeiger)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="608" />
         <source>0-4 UNKONOWN</source>
-        <translation type="unfinished" />
+        <translation>0-4 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="616" />
         <source>0-5 UNKONOWN</source>
-        <translation type="unfinished" />
+        <translation>0-5 Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="624" />
         <source>Presence of Current speed display (main screen)</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der aktuellen Geschwindigkeitsanzeige (Hauptbildschirm)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="633" />
         <source>The transfer pointer in the upper right corner (???)</source>
-        <translation type="unfinished" />
+        <translation>Der Transferzeiger in der oberen rechten Ecke (???)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="641" />
         <source>byte0F9hbit0</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="649" />
         <source>byte0F9hbit1</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="657" />
         <source>byte0F9hbit2</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="665" />
         <source>byte0F9hbit3</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="673" />
         <source>byte0F9hbit4</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="681" />
         <source>byte0F9hbit5</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="689" />
         <source>byte0F9hbit6</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="697" />
         <source>byte0F9hbit7</source>
-        <translation type="unfinished" />
+        <translation>byte0f9hbit7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="705" />
         <source>byte0FAhbit0</source>
-        <translation type="unfinished" />
+        <translation>byte0fahbit0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="713" />
         <source>byte0FAhbit1</source>
-        <translation type="unfinished" />
+        <translation>byte0fahbit1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="721" />
         <source>byte0FAhbit2</source>
-        <translation type="unfinished" />
+        <translation>byte0fahbit2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="729" />
         <source>checkbox_byte0FAhbit3</source>
-        <translation type="unfinished" />
+        <translation>CHECKBOX_BYTE0FAHBIT3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="737" />
         <source>byte0FAhbit4</source>
-        <translation type="unfinished" />
+        <translation>byte0fahbit4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="745" />
         <source>checkbox_byte0FAhbit5</source>
-        <translation type="unfinished" />
+        <translation>CHECKBOX_BYTE0FAHBIT5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="753" />
         <source>byte0FAhbit6</source>
-        <translation type="unfinished" />
+        <translation>byte0fahbit6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="761" />
         <source>checkbox_byte0FAhbit7</source>
-        <translation type="unfinished" />
+        <translation>CHECKBOX_BYTE0FAHBIT7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="15" />
         <source>FMUX</source>
-        <translation type="unfinished" />
+        <translation>Fmux</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="20" />
         <source>FMUX group data values</source>
-        <translation type="unfinished" />
+        <translation>FMUX -Gruppendatenwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="28" />
         <source>Button ID (01)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (01)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="33" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="104" />
@@ -2541,7 +2541,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3015" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3086" />
         <source>None</source>
-        <translation type="unfinished" />
+        <translation>Keiner</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="34" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="105" />
@@ -2588,7 +2588,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3016" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3087" />
         <source>Eject</source>
-        <translation type="unfinished" />
+        <translation>Auswerfen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="35" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="106" />
@@ -2635,7 +2635,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3017" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3088" />
         <source>ESC Facade ESC</source>
-        <translation type="unfinished" />
+        <translation>ESC -Fassade Esc</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="36" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="107" />
@@ -2682,7 +2682,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3018" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3089" />
         <source>ESC Designateu</source>
-        <translation type="unfinished" />
+        <translation>ESC DesignateU</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="37" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="108" />
@@ -2729,7 +2729,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3019" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3090" />
         <source>Display/Dark</source>
-        <translation type="unfinished" />
+        <translation>Display/Dunkel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="38" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="109" />
@@ -2776,7 +2776,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3020" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3091" />
         <source>Display</source>
-        <translation type="unfinished" />
+        <translation>Anzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="39" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="110" />
@@ -2823,7 +2823,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3021" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3092" />
         <source>Dark</source>
-        <translation type="unfinished" />
+        <translation>Dunkel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="40" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="111" />
@@ -2870,7 +2870,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3022" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3093" />
         <source>TA/Info</source>
-        <translation type="unfinished" />
+        <translation>TA/Info</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="41" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="112" />
@@ -2917,7 +2917,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3023" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3094" />
         <source>TA</source>
-        <translation type="unfinished" />
+        <translation>Ta</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="42" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="113" />
@@ -2964,7 +2964,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3024" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3095" />
         <source>Source</source>
-        <translation type="unfinished" />
+        <translation>Quelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="43" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="114" />
@@ -3011,7 +3011,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3025" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3096" />
         <source>Source/Tel</source>
-        <translation type="unfinished" />
+        <translation>Quelle/Tel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="44" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="115" />
@@ -3058,7 +3058,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3026" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3097" />
         <source>Band</source>
-        <translation type="unfinished" />
+        <translation>Band</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="45" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="116" />
@@ -3105,7 +3105,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3027" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3098" />
         <source>List</source>
-        <translation type="unfinished" />
+        <translation>Liste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="117" />
@@ -3152,7 +3152,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3028" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3099" />
         <source>Audio</source>
-        <translation type="unfinished" />
+        <translation>Audio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="47" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="118" />
@@ -3199,7 +3199,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3029" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3100" />
         <source>Menu</source>
-        <translation type="unfinished" />
+        <translation>Speisekarte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="48" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="119" />
@@ -3246,7 +3246,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3030" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3101" />
         <source>Arrow Left</source>
-        <translation type="unfinished" />
+        <translation>Pfeil links</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="49" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="120" />
@@ -3293,7 +3293,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3031" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3102" />
         <source>Arrow Right</source>
-        <translation type="unfinished" />
+        <translation>Pfeil richtig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="50" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="121" />
@@ -3340,7 +3340,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3032" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3103" />
         <source>Arrow Up</source>
-        <translation type="unfinished" />
+        <translation>Pfeil hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="51" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="122" />
@@ -3387,7 +3387,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3033" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3104" />
         <source>Arrow Down</source>
-        <translation type="unfinished" />
+        <translation>Pfeil nach unten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="52" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="123" />
@@ -3434,7 +3434,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3034" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3105" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="53" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="124" />
@@ -3481,7 +3481,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3035" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3106" />
         <source>Phone</source>
-        <translation type="unfinished" />
+        <translation>Telefon</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="54" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="125" />
@@ -3528,7 +3528,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3036" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3107" />
         <source>Back/Retrun</source>
-        <translation type="unfinished" />
+        <translation>Zurück/zurück</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="126" />
@@ -3575,7 +3575,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3037" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3108" />
         <source>Hang Up</source>
-        <translation type="unfinished" />
+        <translation>Auflegen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="56" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="127" />
@@ -3622,7 +3622,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3038" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3109" />
         <source>Radio</source>
-        <translation type="unfinished" />
+        <translation>Radio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="57" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="128" />
@@ -3670,7 +3670,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3110" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="27" />
         <source>Media</source>
-        <translation type="unfinished" />
+        <translation>Medien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="58" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="129" />
@@ -3717,7 +3717,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3040" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3111" />
         <source>Music</source>
-        <translation type="unfinished" />
+        <translation>Musik</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="59" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="130" />
@@ -3764,7 +3764,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3041" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3112" />
         <source>Nav</source>
-        <translation type="unfinished" />
+        <translation>Navigation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="60" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="131" />
@@ -3811,7 +3811,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3042" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3113" />
         <source>Traffic</source>
-        <translation type="unfinished" />
+        <translation>Verkehr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="61" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="132" />
@@ -3858,7 +3858,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3043" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3114" />
         <source>Setup</source>
-        <translation type="unfinished" />
+        <translation>Aufstellen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="62" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="133" />
@@ -3905,7 +3905,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3044" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3115" />
         <source>Address Book</source>
-        <translation type="unfinished" />
+        <translation>Adressbuch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="63" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="134" />
@@ -3952,7 +3952,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3045" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3116" />
         <source>Direction Left</source>
-        <translation type="unfinished" />
+        <translation>Richtung links</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="64" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="135" />
@@ -3999,7 +3999,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3046" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3117" />
         <source>Direction Right</source>
-        <translation type="unfinished" />
+        <translation>Richtung rechts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="65" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="136" />
@@ -4046,7 +4046,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3047" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3118" />
         <source>Direction Up</source>
-        <translation type="unfinished" />
+        <translation>Richtung nach oben</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="66" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="137" />
@@ -4093,7 +4093,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3048" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3119" />
         <source>Direction Down</source>
-        <translation type="unfinished" />
+        <translation>Richtung nach unten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="67" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="138" />
@@ -4140,7 +4140,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3049" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3120" />
         <source>Direction Left HG</source>
-        <translation type="unfinished" />
+        <translation>Richtung links hg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="68" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="139" />
@@ -4187,7 +4187,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3050" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3121" />
         <source>Direction Right HG</source>
-        <translation type="unfinished" />
+        <translation>Richtung Recht hg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="69" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="140" />
@@ -4234,7 +4234,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3051" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3122" />
         <source>Direction Up HG</source>
-        <translation type="unfinished" />
+        <translation>Richtung nach oben hg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="70" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="141" />
@@ -4281,7 +4281,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3052" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3123" />
         <source>Direction Down HG</source>
-        <translation type="unfinished" />
+        <translation>Richtung nach unten hg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="71" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="142" />
@@ -4328,7 +4328,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3053" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3124" />
         <source>Mute</source>
-        <translation type="unfinished" />
+        <translation>Stumm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="72" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="143" />
@@ -4375,7 +4375,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3054" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3125" />
         <source>Mode</source>
-        <translation type="unfinished" />
+        <translation>Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="73" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="144" />
@@ -4422,7 +4422,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3055" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3126" />
         <source>Web</source>
-        <translation type="unfinished" />
+        <translation>Netz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="74" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="145" />
@@ -4469,7 +4469,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3056" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3127" />
         <source>Drive</source>
-        <translation type="unfinished" />
+        <translation>Fahren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="75" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="146" />
@@ -4516,7 +4516,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3057" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3128" />
         <source>Climate</source>
-        <translation type="unfinished" />
+        <translation>Klima</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="76" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="147" />
@@ -4563,7 +4563,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3058" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3129" />
         <source>Inhibition Synthese Vocale</source>
-        <translation type="unfinished" />
+        <translation>Hemmungssynthese -Vokale</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="77" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="148" />
@@ -4610,7 +4610,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3059" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3130" />
         <source>Info</source>
-        <translation type="unfinished" />
+        <translation>Info</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="78" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="149" />
@@ -4657,7 +4657,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3060" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3131" />
         <source>Zoom In</source>
-        <translation type="unfinished" />
+        <translation>Zoomen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="79" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="150" />
@@ -4704,7 +4704,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3061" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3132" />
         <source>Zoom Out</source>
-        <translation type="unfinished" />
+        <translation>Zoomen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="80" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="151" />
@@ -4751,7 +4751,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3062" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3133" />
         <source>Lum Screen +</source>
-        <translation type="unfinished" />
+        <translation>Lum -Bildschirm +</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="81" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="152" />
@@ -4798,7 +4798,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3063" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3134" />
         <source>Lum Screen -</source>
-        <translation type="unfinished" />
+        <translation>Lum -Bildschirm -</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="82" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="153" />
@@ -4845,7 +4845,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3064" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3135" />
         <source>Mute Micro</source>
-        <translation type="unfinished" />
+        <translation>Stumme Mikro</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="83" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="154" />
@@ -4892,7 +4892,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3065" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3136" />
         <source>APPS</source>
-        <translation type="unfinished" />
+        <translation>Apps</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="84" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="155" />
@@ -4939,7 +4939,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3066" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3137" />
         <source>Config</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="85" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="156" />
@@ -4986,7 +4986,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3067" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3138" />
         <source>MEM</source>
-        <translation type="unfinished" />
+        <translation>Mem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="86" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="157" />
@@ -5033,7 +5033,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3068" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3139" />
         <source>Multi-Drive</source>
-        <translation type="unfinished" />
+        <translation>Multi-Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="87" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="158" />
@@ -5080,7 +5080,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3069" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3140" />
         <source>Pointer Knob</source>
-        <translation type="unfinished" />
+        <translation>Zeigerknopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="88" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="159" />
@@ -5127,7 +5127,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3070" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3141" />
         <source>Synchro Knob</source>
-        <translation type="unfinished" />
+        <translation>Synchronknopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="89" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="160" />
@@ -5174,7 +5174,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3071" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3142" />
         <source>Volume</source>
-        <translation type="unfinished" />
+        <translation>Volumen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="90" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="161" />
@@ -5221,7 +5221,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3072" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3143" />
         <source>Volume Up</source>
-        <translation type="unfinished" />
+        <translation>Lautstärke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="91" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="162" />
@@ -5268,7 +5268,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3073" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3144" />
         <source>Volume Down</source>
-        <translation type="unfinished" />
+        <translation>Lautstärke nach unten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="93" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="164" />
@@ -5315,188 +5315,188 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3075" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3146" />
         <source>INFO_EMUX_CLIMATE_OPTIONS</source>
-        <translation type="unfinished" />
+        <translation>Info_emux_climate_options</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="99" />
         <source>Button ID (02)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (02)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="170" />
         <source>Button ID (03)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (03)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="241" />
         <source>Button ID (04)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (04)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="312" />
         <source>Button ID (05)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (05)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="383" />
         <source>Button ID (06)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (06)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="454" />
         <source>Button ID (07)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (07)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="525" />
         <source>Button ID (08)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (08)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="596" />
         <source>Button ID (09)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (09)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="667" />
         <source>Button ID (10)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (10)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="738" />
         <source>Button ID (11)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (11)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="809" />
         <source>Button ID (12)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (12)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="880" />
         <source>Button ID (13)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (13)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="951" />
         <source>Button ID (14)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (14)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1022" />
         <source>Button ID (15)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (15)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1093" />
         <source>Button ID (16)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (16)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1164" />
         <source>Button ID (17)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (17)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1235" />
         <source>Button ID (18)</source>
-        <translation type="unfinished" />
+        <translation>Taste ID (18)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1306" />
         <source>Button ID (19)</source>
-        <translation type="unfinished" />
+        <translation>Button ID (19)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1377" />
         <source>Button ID (20)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (20)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1448" />
         <source>Button ID (21)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (21)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1519" />
         <source>Button ID (22)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (22)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1590" />
         <source>Button ID (23)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (23)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1661" />
         <source>Button ID (24)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (24)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1732" />
         <source>Button ID (25)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (25)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1803" />
         <source>Button ID (26)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (26)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1874" />
         <source>Button ID (27)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (27)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="1945" />
         <source>Button ID (28)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (28)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2016" />
         <source>Button ID (29)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (29)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2087" />
         <source>Button ID (30)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (30)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2158" />
         <source>Button ID (31)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (31)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2229" />
         <source>Button ID (32)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (32)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2300" />
         <source>Button ID (33)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (33)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2371" />
         <source>Button ID (34)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (34)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2442" />
         <source>Button ID (35)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (35)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2513" />
         <source>Button ID (36)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (36)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2584" />
         <source>Button ID (37)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (37)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2655" />
         <source>Button ID (38)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (38)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2726" />
         <source>Button ID (39)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (39)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2797" />
         <source>Button ID (40)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (40)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2868" />
         <source>Button ID (41)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (41)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="2939" />
         <source>Button ID (42)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (42)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3010" />
         <source>Button ID (43)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (43)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/FMUX/FMUX.json" line="3081" />
         <source>Button ID (44)</source>
-        <translation type="unfinished" />
+        <translation>Taste -ID (44)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="2" />
         <source>ESP90</source>
-        <translation type="unfinished" />
+        <translation>ESP90</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="36" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="33" />
         <source>ACC type</source>
-        <translation type="unfinished" />
+        <translation>ACC -Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="43" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="40" />
@@ -5504,292 +5504,292 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="136" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="227" />
         <source>Without ACC</source>
-        <translation type="unfinished" />
+        <translation>Ohne ACC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="47" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="44" />
         <source>ACC</source>
-        <translation type="unfinished" />
+        <translation>Acc</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="51" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="48" />
         <source>ACC 30</source>
-        <translation type="unfinished" />
+        <translation>Acc 30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="52" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/RADAR_AV4.json" line="38" />
         <source>ACC Stop&amp;Go</source>
-        <translation type="unfinished" />
+        <translation>ACC STOP &amp; GO</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="61" />
         <source>Suspension type</source>
-        <translation type="unfinished" />
+        <translation>Federungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="68" />
         <source>Without variable dampers</source>
-        <translation type="unfinished" />
+        <translation>Ohne variable Dämpfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="81" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="65" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="113" />
         <source>Without semi-automatic parking system</source>
-        <translation type="unfinished" />
+        <translation>Ohne halbautomatisches Parksystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="85" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="69" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="109" />
         <source>With semi-automatic parking system</source>
-        <translation type="unfinished" />
+        <translation>Mit halbautomatischem Parksystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="91" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="108" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="75" />
         <source>Type of steering angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Art des Lenkwinkelsensors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="98" />
         <source>With steering wheel angle sensor U+ 3</source>
-        <translation type="unfinished" />
+        <translation>Mit Lenkradwinkelsensor u+ 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="102" />
         <source>With steering wheel angle sensor   1</source>
-        <translation type="unfinished" />
+        <translation>Mit Lenkradwinkelsensor 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="115" />
         <source>2 CAN</source>
-        <translation type="unfinished" />
+        <translation>2 CAN</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="119" />
         <source>1 CAN</source>
-        <translation type="unfinished" />
+        <translation>1 kann</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="125" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="92" />
         <source>Type of traction control</source>
-        <translation type="unfinished" />
+        <translation>Art der Traktionskontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="132" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="99" />
         <source>Without traction control</source>
-        <translation type="unfinished" />
+        <translation>Ohne Traktionskontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="136" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="103" />
         <source>With traction control</source>
-        <translation type="unfinished" />
+        <translation>Mit Traktionskontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="140" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="107" />
         <source>With traction control  ( selector )</source>
-        <translation type="unfinished" />
+        <translation>Mit Traktionskontrolle (Selektor)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="146" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="113" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="283" />
         <source>Descent control system</source>
-        <translation type="unfinished" />
+        <translation>Abstiegskontrollsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="153" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="120" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="294" />
         <source>Without descent control system</source>
-        <translation type="unfinished" />
+        <translation>Ohne Abstiegskontrollsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="157" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="124" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="290" />
         <source>With descent control system</source>
-        <translation type="unfinished" />
+        <translation>Mit Abstiegskontrollsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="163" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="130" />
         <source>Emergency collision braking</source>
-        <translation type="unfinished" />
+        <translation>Notfall -Kollisionsbremsen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="170" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="137" />
         <source>Without emergency collision braking</source>
-        <translation type="unfinished" />
+        <translation>Ohne Notfallkollision bremsen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="174" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="141" />
         <source>With automatic braking on risk of collision U+ ( with multifunction video camera only )</source>
-        <translation type="unfinished" />
+        <translation>Mit automatischem Bremsen auf Kollisionsrisiko U+ (nur mit einer Videokamera mit mehreren Funktionen)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="178" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="145" />
         <source>With automatic braking on risk of collision U+ ( with multifunction video camera and distance alert radar )</source>
-        <translation type="unfinished" />
+        <translation>Mit automatischem Bremsen des Kollisionsrisikos U+ (mit Multifunktions -Videokamera und Distanzalarmradar)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="184" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="151" />
         <source>Side of steering wheel</source>
-        <translation type="unfinished" />
+        <translation>Seite des Lenkrads</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="191" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="158" />
         <source>Steering wheel on right</source>
-        <translation type="unfinished" />
+        <translation>Lenkrad rechts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="195" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="162" />
         <source>Steering wheel on left</source>
-        <translation type="unfinished" />
+        <translation>Lenkrad links</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="201" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="168" />
         <source>Type of wheel speed sensors</source>
-        <translation type="unfinished" />
+        <translation>Art der Raddrehzahlsensoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="208" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="175" />
         <source>Wheel speed sensor with detection of the direction of rotation of the wheel</source>
-        <translation type="unfinished" />
+        <translation>Raddrehzahlsensor mit Nachweis der Drehrichtung des Rades</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="212" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="179" />
         <source>Wheel speed sensor without detection of the direction of rotation of the wheel</source>
-        <translation type="unfinished" />
+        <translation>Raddrehzahlsensor ohne Nachweis der Drehrichtung des Rades</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="218" />
         <source>Automatic gearbox electric control ECU</source>
-        <translation type="unfinished" />
+        <translation>Automatische ECU Elektrosteuerung für Automatikgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="225" />
         <source>Without automatic gearbox electric control ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne automatische Getriebe Electric Control ECU</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="229" />
         <source>With automatic gearbox electric control ECU</source>
-        <translation type="unfinished" />
+        <translation>Mit automatischer Getriebe Elektrosteuerung ECU</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="235" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="185" />
         <source>Hill start assistance system</source>
-        <translation type="unfinished" />
+        <translation>Hill Start Assistenzsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="242" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="192" />
         <source>Without hill start assistance system</source>
-        <translation type="unfinished" />
+        <translation>Ohne Bergstart -Assistenzsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="246" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="196" />
         <source>With hill start assistance system</source>
-        <translation type="unfinished" />
+        <translation>Mit Hill Start Assistenzsystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="252" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="202" />
         <source>Stop &amp; Start</source>
-        <translation type="unfinished" />
+        <translation>Stop &amp; Start</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="259" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="209" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="96" />
         <source>Without Stop and Start</source>
-        <translation type="unfinished" />
+        <translation>Ohne Stopp und Start</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="263" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="213" />
         <source>Stop and Start with alternator</source>
-        <translation type="unfinished" />
+        <translation>Stoppen Sie und beginnen Sie mit Lichtmaschine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="267" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="217" />
         <source>Stop and Start with starter</source>
-        <translation type="unfinished" />
+        <translation>Halten Sie an und beginnen Sie mit Starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="273" />
         <source>Type of brake servo</source>
-        <translation type="unfinished" />
+        <translation>Art der Bremsservo</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="280" />
         <source>Without multiplexed brake servo</source>
-        <translation type="unfinished" />
+        <translation>Ohne Multiplex -Bremsservo</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="284" />
         <source>With multiplexed brake servo</source>
-        <translation type="unfinished" />
+        <translation>Mit Multiplexed Bremsservo</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="290" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="223" />
         <source>Automatic braking after collision</source>
-        <translation type="unfinished" />
+        <translation>Automatisches Bremsen nach Kollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="297" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="230" />
         <source>Without automatic braking after collision</source>
-        <translation type="unfinished" />
+        <translation>Ohne automatisches Bremsen nach der Kollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="301" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="234" />
         <source>With automatic braking after collision</source>
-        <translation type="unfinished" />
+        <translation>Mit automatischem Bremsen nach der Kollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="307" />
         <source>Hydraulic compensation system in case of braking failure</source>
-        <translation type="unfinished" />
+        <translation>Hydraulikkompensationssystem bei Bremsfehlern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="314" />
         <source>Without hydraulic compensation system in case of braking failure</source>
-        <translation type="unfinished" />
+        <translation>Ohne hydraulisches Kompensationssystem bei Bremsfehlern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="318" />
         <source>With hydraulic compensation system in case of braking failure</source>
-        <translation type="unfinished" />
+        <translation>Mit Hydraulikkompensationssystem bei Bremsfehler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="324" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="240" />
         <source>Presence of tyre under-inflation detection</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Erkennung von Reifenuntergeborenen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="331" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="247" />
         <source>With indirect tyre under-inflation detection U+ (TPMF)</source>
-        <translation type="unfinished" />
+        <translation>Mit indirekter Reifenunterinflationserkennung U+ (TPMF)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="335" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="251" />
         <source>With direct tyre under-inflation detection</source>
-        <translation type="unfinished" />
+        <translation>Mit direkter Erkennung von Reifenuntergeborenen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="339" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="255" />
         <source>With indirect tyre under-inflation detection U+ (TPMC)</source>
-        <translation type="unfinished" />
+        <translation>Mit indirekter Reifenunterinflationserkennung U+ (TPMC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="345" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="261" />
         <source>Heavy traffic driving assistance system)</source>
-        <translation type="unfinished" />
+        <translation>Starken Verkehrsunterstützungssystem)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="352" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="268" />
         <source>Without heavy traffic driving assistance system</source>
-        <translation type="unfinished" />
+        <translation>Ohne starkes Verkehrsunterstützungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESP90.json" line="356" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="272" />
         <source>With heavy traffic driving assistance system</source>
-        <translation type="unfinished" />
+        <translation>Mit einem starken Verkehrsunterstützungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="2" />
         <source>ESPMK100_UDS</source>
-        <translation type="unfinished" />
+        <translation>ESPMK100_UDS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="82" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="134" />
         <source>With steering wheel angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Mit Lenkradwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ABRASR/ESPMK100_UDS.json" line="86" />
         <source>With virtualsteering wheel angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Mit virtuellem Lenkradwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3" />
         <source>RCC</source>
-        <translation type="unfinished" />
+        <translation>RCC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="13" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10168" />
@@ -5798,86 +5798,86 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="10" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="40" />
         <source>VIN</source>
-        <translation type="unfinished" />
+        <translation>Vin</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="15" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="15" />
         <source>TELE</source>
-        <translation type="unfinished" />
+        <translation>Tele</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="16" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="16" />
         <source>AAS</source>
-        <translation type="unfinished" />
+        <translation>Aas</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="17" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="17" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="26" />
         <source>DRIVER ASSISTANCE</source>
-        <translation type="unfinished" />
+        <translation>Fahrerhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="18" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="18" />
         <source>ARTIV</source>
-        <translation type="unfinished" />
+        <translation>Artiv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="19" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="19" />
         <source>AUDIO</source>
-        <translation type="unfinished" />
+        <translation>AUDIO</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="20" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="20" />
         <source>BLUETOOTH</source>
-        <translation type="unfinished" />
+        <translation>Bluetooth</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="21" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="368" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="21" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="355" />
         <source>BTEL</source>
-        <translation type="unfinished" />
+        <translation>BTEL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="22" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="22" />
         <source>HMI</source>
-        <translation type="unfinished" />
+        <translation>HMI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="23" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="23" />
         <source>OBC</source>
-        <translation type="unfinished" />
+        <translation>OBC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="24" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="24" />
         <source>VISIOPARK</source>
-        <translation type="unfinished" />
+        <translation>Visiopark</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="25" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="25" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="12" />
         <source>Telematic Unit (BTEL)</source>
-        <translation type="unfinished" />
+        <translation>Telematische Einheit (BTEL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="29" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="29" />
         <source>Telecoding_Fct_AAS</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_aas</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="37" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="86" />
         <source>Display Touch button "Parking assistance"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Parkhilfe" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="68" />
         <source>Physical Button "Parking assistance"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Parkhilfe"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="77" />
         <source>Touch button Position "Parking assistance"</source>
-        <translation type="unfinished" />
+        <translation>Touch Button Position "Parkhilfe"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="64" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2134" />
@@ -5962,1323 +5962,1323 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8665" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8823" />
         <source>Parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="71" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="44" />
         <source>Function absent or present at the rear</source>
-        <translation type="unfinished" />
+        <translation>Funktion abwesend oder anwesend im Heck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="75" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="48" />
         <source>Function present at front and rear</source>
-        <translation type="unfinished" />
+        <translation>Funktion vorne und hinten vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="79" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="52" />
         <source>Function present at the front, rear and side</source>
-        <translation type="unfinished" />
+        <translation>Funktion vorne, hinten und Seite vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="86" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="59" />
         <source>Sound adjustment</source>
-        <translation type="unfinished" />
+        <translation>Schallanpassung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="95" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="95" />
         <source>Telecoding_Fct_AFIL</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_afil</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="103" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="103" />
         <source>Display Touch button "Lane departure warning system (AFIL)"</source>
-        <translation type="unfinished" />
+        <translation>Touchs -Touch -Taste "Lane Abfahrt Warning System (AFIL)" anzeigen "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="121" />
         <source>Physical Button "Lane departure warning system (AFIL)"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Spurverlassenswarnsystem (AFIL)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="121" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="112" />
         <source>Touch Button Position "Lane departure warning system (AFIL)"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Lane Abfahrt Warning System (AFIL)" "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="130" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="130" />
         <source>Telecoding_Fct_ARTIV</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_artiv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="147" />
         <source>Display Touch button "Distance Alert (ARTIV)"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Distanzalarm (Artiv)" anzeigen "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="147" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="156" />
         <source>Physical Button "Distance Alert (ARTIV)"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Distanzalarm (Artiv)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="156" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="138" />
         <source>Touch Button Position "Distance Alert (ARTIV)""</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Abstandswarnung (Artiv)" "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="165" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="165" />
         <source>Distance Alert (ARTIV)</source>
-        <translation type="unfinished" />
+        <translation>Entfernungswarnung (Artiv)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="174" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="174" />
         <source>Presence and type of cruise control</source>
-        <translation type="unfinished" />
+        <translation>Präsenz und Art der Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="181" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="181" />
         <source>Absent Function</source>
-        <translation type="unfinished" />
+        <translation>Abwesende Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="185" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="185" />
         <source>Distance alert</source>
-        <translation type="unfinished" />
+        <translation>Entfernungswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="189" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9497" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="189" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10101" />
         <source>Adaptive cruise control</source>
-        <translation type="unfinished" />
+        <translation>Adaptive Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="193" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="193" />
         <source>Distance alert and Adaptive cruise control</source>
-        <translation type="unfinished" />
+        <translation>Entfernungswarnung und adaptive Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="200" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="200" />
         <source>Telecoding_Fct_AUDIO</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_audio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="208" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="217" />
         <source>HIFI Amplifier</source>
-        <translation type="unfinished" />
+        <translation>HiFi -Verstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="215" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="224" />
         <source>Absent Amplifier</source>
-        <translation type="unfinished" />
+        <translation>Fehlender Verstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="219" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="228" />
         <source>Standard Amplifier</source>
-        <translation type="unfinished" />
+        <translation>Standardverstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="223" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="232" />
         <source>Multiplexed Amplifier</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Verstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="227" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="236" />
         <source>Arkamys System</source>
-        <translation type="unfinished" />
+        <translation>Arkamys System</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="231" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="240" />
         <source>Multiplexed Amplifier (gen 1 China)</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Verstärker (Gen 1 China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="235" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="244" />
         <source>Multiplexed Amplifier (gen 2)</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Verstärker (Gen 2)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="239" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="248" />
         <source>Multiplexed Amplifier (gen 3)</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Verstärker (Gen 3)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="243" />
         <source>Multiplexed Amplifier (gen 3+)</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Verstärker (Gen 3+)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="250" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="208" />
         <source>Fader function</source>
-        <translation type="unfinished" />
+        <translation>Fader -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="259" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="264" />
         <source>Sound Harmony display</source>
-        <translation type="unfinished" />
+        <translation>Klangharmonie Display</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="268" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="273" />
         <source>Number of microphones</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der Mikrofone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="275" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="280" />
         <source>1 microphone</source>
-        <translation type="unfinished" />
+        <translation>1 Mikrofon</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="279" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="284" />
         <source>2 microphones</source>
-        <translation type="unfinished" />
+        <translation>2 Mikrofone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="286" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="255" />
         <source>Sound attenuation based on speed (km/h)</source>
-        <translation type="unfinished" />
+        <translation>Schalldämpfung basierend auf Geschwindigkeit (km/h)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="295" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="362" />
         <source>Automatic Volume Control "ACV"</source>
-        <translation type="unfinished" />
+        <translation>Automatische Lautstärkesteuerung "ACV"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="304" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="291" />
         <source>Dynamic Sport Pack</source>
-        <translation type="unfinished" />
+        <translation>Dynamisches Sportpaket</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="313" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="300" />
         <source>Dynamic Sport Pack Type</source>
-        <translation type="unfinished" />
+        <translation>Dynamischer Sportpacktyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="322" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="309" />
         <source>DSP coloring sound efficiency</source>
-        <translation type="unfinished" />
+        <translation>DSP -Färbung der Klangeffizienz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="331" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="318" />
         <source>DX Law for DSP sound</source>
-        <translation type="unfinished" />
+        <translation>DX -Gesetz für DSP Sound</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="338" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="325" />
         <source>N/A</source>
-        <translation type="unfinished" />
+        <translation>N / A</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="342" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="329" />
         <source>Law 1</source>
-        <translation type="unfinished" />
+        <translation>Gesetz 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="346" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="333" />
         <source>Law 2</source>
-        <translation type="unfinished" />
+        <translation>Gesetz 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="350" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="337" />
         <source>Law 3</source>
-        <translation type="unfinished" />
+        <translation>Gesetz 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="357" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="344" />
         <source>Origin of the DSP coloring order</source>
-        <translation type="unfinished" />
+        <translation>Ursprung der DSP -Malvorlagenreihenfolge</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="364" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="351" />
         <source>BSI</source>
-        <translation type="unfinished" />
+        <translation>BSI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="375" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="371" />
         <source>Media informations export</source>
-        <translation type="unfinished" />
+        <translation>Medieninformationen Export</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="384" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="380" />
         <source>Media informations export type</source>
-        <translation type="unfinished" />
+        <translation>Medieninformationen Exporttyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="391" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="387" />
         <source>CAN-BUS</source>
-        <translation type="unfinished" />
+        <translation>Can-Bus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="395" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="391" />
         <source>LVDS</source>
-        <translation type="unfinished" />
+        <translation>LVDs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="399" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="395" />
         <source>LVDS + CAN-BUS</source>
-        <translation type="unfinished" />
+        <translation>LVDS + CAN-BUS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="406" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="411" />
         <source>Audio informations export type on the CAN-BUS</source>
-        <translation type="unfinished" />
+        <translation>Audio-Informationen Exporttyp auf dem Can-Bus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="413" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="418" />
         <source>Gen1</source>
-        <translation type="unfinished" />
+        <translation>Gen1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="417" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="422" />
         <source>Gen2</source>
-        <translation type="unfinished" />
+        <translation>Gen2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="421" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="426" />
         <source>Gen3</source>
-        <translation type="unfinished" />
+        <translation>Gen3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="428" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="433" />
         <source>Central Speaker</source>
-        <translation type="unfinished" />
+        <translation>Zentraler Sprecher</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="437" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="442" />
         <source>Telecoding_Fct_AVP</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_avp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="445" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="459" />
         <source>Physical Button "Front Camera"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Frontkamera"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="454" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="450" />
         <source>Touch button Position "Front Camera"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Frontkamera"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="463" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="512" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="468" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="517" />
         <source>Presence of the panoramic visual assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Panoramablickkamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="472" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="477" />
         <source>Configuration of the panoramic visual assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration der Panoramablickkamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="481" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="486" />
         <source>Legal notice displayed on the multifunction touch screen (panoramic visual assistance camera)</source>
-        <translation type="unfinished" />
+        <translation>Rechtsnachweis auf dem Multifunktions -Touchscreen (Panoramic Visual Assistance Kamera)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="497" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="502" />
         <source>Panoramic visual assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Panoramablickkamera visueller Unterstützung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="501" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="506" />
         <source>Virtual reversing assistance camera 180°</source>
-        <translation type="unfinished" />
+        <translation>Virtual Reversing Assistance Kamera 180 °</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="505" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="529" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="510" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="534" />
         <source>Reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Hilfskamera umkehren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="521" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="526" />
         <source>Telecoding_Fct_AVR</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_avr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="538" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="543" />
         <source>Legal notice displayed on the multifunction touch screen (Reversing assistance camera)</source>
-        <translation type="unfinished" />
+        <translation>Rechtsberechtigte Mitteilung auf dem Multifunktions -Touchscreen (Umkehr -Assistenzkamera)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="547" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="552" />
         <source>Display of the manufacturer on the visual reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Anzeige des Herstellers auf der Visual Reversing Assistance Camera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="556" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="561" />
         <source>Telecoding_Fct_BT</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_BT</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="564" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="573" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="569" />
         <source>Bluetooth Function</source>
-        <translation type="unfinished" />
+        <translation>Bluetooth -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="582" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="578" />
         <source>Telecoding_Fct_BTEL</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_BTEL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="590" />
         <source>Display of outside temperature</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Außentemperaturen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="599" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="614" />
         <source>Vehicle power source</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugstromquelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="606" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="621" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="50" />
         <source>Petrol</source>
-        <translation type="unfinished" />
+        <translation>Benzin</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="610" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="625" />
         <source>Petrol Fuel (GPL)</source>
-        <translation type="unfinished" />
+        <translation>Benzinkraftstoff (GPL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="614" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="629" />
         <source>Petrol Fuel (GNV)</source>
-        <translation type="unfinished" />
+        <translation>Benzinkraftstoff (GNV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="618" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="633" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="38" />
         <source>Diesel</source>
-        <translation type="unfinished" />
+        <translation>Diesel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="622" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="637" />
         <source>Petrol et traction battery</source>
-        <translation type="unfinished" />
+        <translation>Benzin -et -Traktionsbatterie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="626" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="641" />
         <source>Petrol et Alcohol</source>
-        <translation type="unfinished" />
+        <translation>Benziner und Alkohol</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="630" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="645" />
         <source>Diesel et traction battery</source>
-        <translation type="unfinished" />
+        <translation>Diesel et Traction Battery</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="634" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="649" />
         <source>Traction battery</source>
-        <translation type="unfinished" />
+        <translation>Traktionsbatterie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="638" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="653" />
         <source>Hydrogen</source>
-        <translation type="unfinished" />
+        <translation>Wasserstoff</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="645" />
         <source>Main screen</source>
-        <translation type="unfinished" />
+        <translation>Hauptbildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="654" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="640" />
         <source>Detection of seat belt not fastened for the third row of seats</source>
-        <translation type="unfinished" />
+        <translation>Erkennung von Sicherheitsgurten, die nicht für die dritte Sitzreihe befestigt sind</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="663" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="712" />
         <source>Advanced Shutdown (Shutdown when the door is opened: information and sensor required !)</source>
-        <translation type="unfinished" />
+        <translation>Erweitertes Herunterfahren (Herunterfahren beim Öffnen der Tür: Informationen und Sensor erforderlich!)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="672" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="678" />
         <source>Manufacturer's brand</source>
-        <translation type="unfinished" />
+        <translation>Herstellermarke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="699" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="705" />
         <source>Vauxhall</source>
-        <translation type="unfinished" />
+        <translation>Vauxhall</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="706" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="660" />
         <source>"SMARTAPPS" Function</source>
-        <translation type="unfinished" />
+        <translation>"SmartApps" -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="715" />
         <source>Display of the "Adaptive cruise control" settings</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Einstellungen "Adaptive Tempomat"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="724" />
         <source>USB1 port</source>
-        <translation type="unfinished" />
+        <translation>USB1 -Port</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="733" />
         <source>USB2 port</source>
-        <translation type="unfinished" />
+        <translation>USB2 -Port</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="742" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="721" />
         <source>Default theme</source>
-        <translation type="unfinished" />
+        <translation>Standardthema</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="751" />
         <source>Current profile</source>
-        <translation type="unfinished" />
+        <translation>Aktuelles Profil</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="760" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="739" />
         <source>"MENU" button</source>
-        <translation type="unfinished" />
+        <translation>Schaltfläche "Menü"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="769" />
         <source>Displaying of the "MIRRORlink" touch button</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Touch -Taste "MirrorLink"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="780" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="759" />
         <source>Warning threshold for risk of ice</source>
-        <translation type="unfinished" />
+        <translation>Warnschwelle für Eisrisiko</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="789" />
         <source>Display of the warning log</source>
-        <translation type="unfinished" />
+        <translation>Anzeige des Warnprotokolls</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="798" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="797" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="806" />
         <source>"Apple Carplay" function</source>
-        <translation type="unfinished" />
+        <translation>"Apple CarPlay" -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="807" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="778" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="787" />
         <source>Driver Restriction function</source>
-        <translation type="unfinished" />
+        <translation>Treiberbeschränkungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="816" />
         <source>Carline</source>
-        <translation type="unfinished" />
+        <translation>Carline</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="847" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1187" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1196" />
         <source>Instrument panel personalization</source>
-        <translation type="unfinished" />
+        <translation>Personalisierung der Instrumententafel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="856" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1164" />
         <source>Type of obstacle detection system</source>
-        <translation type="unfinished" />
+        <translation>Art der Hinderniserkennungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="863" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1149" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1171" />
         <source>Rear</source>
-        <translation type="unfinished" />
+        <translation>Hinteren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="867" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1153" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1175" />
         <source>Front / Rear</source>
-        <translation type="unfinished" />
+        <translation>Vorne / hinten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="871" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1157" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1179" />
         <source>Front + Side / Rear + Side</source>
-        <translation type="unfinished" />
+        <translation>Vorne + Seite / hinten + Seite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="878" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1205" />
         <source>Telecoding_Fct_CAFR</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_cafr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="886" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1213" />
         <source>Display Touch button "Main beams assistant"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Main Beams Assistant" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="895" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1231" />
         <source>Physical Button "Main beams assistant"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Hauptbalkenassistent"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="904" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1222" />
         <source>Touch button Position "Main beams assistant"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Hauptbalkenassistent"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="913" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1266" />
         <source>Telecoding_Fct_HDC</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_hdc</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="921" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1274" />
         <source>Type of steering-mounted controls</source>
-        <translation type="unfinished" />
+        <translation>Art der steuermontierten Kontrollen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="928" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1281" />
         <source>State 1 - Absent</source>
-        <translation type="unfinished" />
+        <translation>Zustand 1 - abwesend</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="932" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1285" />
         <source>State 2 - C4 I - AEE2004</source>
-        <translation type="unfinished" />
+        <translation>Zustand 2 - C4 I - AEE2004</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="936" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1289" />
         <source>State 3 - 508 I - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 3 - 508 I - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="940" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1293" />
         <source>State 4 - 208 (A9) / 308 (T9) - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 4 - 208 (A9) / 308 (T9) - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="944" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1297" />
         <source>State 5 - Expert / Jumpy (K0) - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Staat 5 - Experte / Jumpy (K0) - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="948" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1301" />
         <source>State 6 - C4 II (B7) / DS4 2 Pads Type 1 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 6 - C4 II (B7) / DS4 2 Pads Typ 1 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="952" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1305" />
         <source>State 7 - C4 II (B7) / DS4 2 Pads Type 2 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 7 - C4 II (B7) / DS4 2 Pads Typ 2 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="956" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1309" />
         <source>State 8 - C4 II (B7) / DS4 4 Pads Type 1 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 8 - C4 II (B7) / DS4 4 Pads Typ 1 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="960" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1313" />
         <source>State 9 - C4 II (B7) / DS4 4 Pads Type 2 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 9 - C4 II (B7) / DS4 4 Pads Typ 2 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="964" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1317" />
         <source>State 10 - DS5 (B81) - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 10 - DS5 (B81) - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="968" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1321" />
         <source>State 11 - C4 Shijia (BZ3) - AEE2004 &amp; AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Staat 11 - C4 Shijia (BZ3) - AEE2004 &amp; AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="972" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1325" />
         <source>State 12 - Opel - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 12 - Opel - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="976" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1329" />
         <source>State 13 - Transversal - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 13 - Transversal - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="980" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1333" />
         <source>State 14 - DS3 (A55) - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 14 - DS3 (A55) - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="984" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1337" />
         <source>State 15 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 15 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="988" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1341" />
         <source>State 16 - C4 II (B7) / DS4 4 Pads Type 3 - AEE2010</source>
-        <translation type="unfinished" />
+        <translation>Zustand 16 - C4 II (B7) / DS4 4 Pads Typ 3 - AEE2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="995" />
         <source>TYPE_OF_VR_COMMAND</source>
-        <translation type="unfinished" />
+        <translation>Typ_of_vr_command</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1004" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1357" />
         <source>Telecoding_Fct_HY</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_HY</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1012" />
         <source>Presence of the Hybrid page</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Hybridseite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1021" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1482" />
         <source>Hybrid mode consumption</source>
-        <translation type="unfinished" />
+        <translation>Hybridmoduskonsum</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1030" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1464" />
         <source>Low hysteresis of hybrid consumption</source>
-        <translation type="unfinished" />
+        <translation>Geringe Hysterese des Hybridkonsums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1039" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1455" />
         <source>High hysteresis of hybrid consumption</source>
-        <translation type="unfinished" />
+        <translation>Hohe Hysterese des Hybridkonsums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1048" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1374" />
         <source>Battery level bargraph threshold 9</source>
-        <translation type="unfinished" />
+        <translation>Batteriepegel Bargraph Schwelle 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1057" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1383" />
         <source>Battery level bargraph threshold 8</source>
-        <translation type="unfinished" />
+        <translation>Batteriespiegel Bargraph Schwelle 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1066" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1392" />
         <source>Battery level bargraph threshold 7</source>
-        <translation type="unfinished" />
+        <translation>Batteriepegel Bargraph Schwelle 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1075" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1401" />
         <source>Battery level bargraph threshold 6</source>
-        <translation type="unfinished" />
+        <translation>Batteriespiegel Bargraph Schwelle 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1084" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1410" />
         <source>Battery level bargraph threshold 5</source>
-        <translation type="unfinished" />
+        <translation>Batteriepegel Bargraph Schwelle 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1093" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1419" />
         <source>Battery level bargraph threshold 4</source>
-        <translation type="unfinished" />
+        <translation>Batteriespiegel Bargraph Schwelle 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1102" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1428" />
         <source>Battery level bargraph threshold 3</source>
-        <translation type="unfinished" />
+        <translation>Batteriespiegel Bargraph Schwelle 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1111" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1437" />
         <source>Battery level bargraph threshold 2</source>
-        <translation type="unfinished" />
+        <translation>Batteriespiegel Bargraph Schwelle 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1120" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1446" />
         <source>Battery level bargraph threshold 1</source>
-        <translation type="unfinished" />
+        <translation>Batteriepegel Bargraph Schwelle 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1129" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1473" />
         <source>Battery bargraph threshold</source>
-        <translation type="unfinished" />
+        <translation>Batterie -Bargraph -Schwelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1491" />
         <source>Telecoding_Fct_INTERNET</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_internet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1146" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1499" />
         <source>Internet function</source>
-        <translation type="unfinished" />
+        <translation>Internetfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1155" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1517" />
         <source>Configuration of internet function</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration der Internetfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1162" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1524" />
         <source>Active internet and Intranet</source>
-        <translation type="unfinished" />
+        <translation>Aktives Internet und Intranet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1166" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1528" />
         <source>Inactive Internet and active Intranet</source>
-        <translation type="unfinished" />
+        <translation>Inaktives Internet und aktives Intranet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1170" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1532" />
         <source>Active internet and inactive Intranet</source>
-        <translation type="unfinished" />
+        <translation>Aktives Internet und inaktives Intranet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1177" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1539" />
         <source>Web portal configuration</source>
-        <translation type="unfinished" />
+        <translation>Webportalkonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1186" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1548" />
         <source>Telecoding_Fct_MPD</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_mpd</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1194" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1556" />
         <source>Display Touch button "Parking space measurement system"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Parkplatzmesssystem" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1203" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1565" />
         <source>Touch button Position "Parking space measurement system"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Parkplatzmesssystem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1212" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1574" />
         <source>Physical Button "Parking space measurement system"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Parkplatzmesssystem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1221" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1583" />
         <source>Telecoding_Fct_NAV</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_nav</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1229" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1591" />
         <source>Number of satellites required to activate GPS positioning information</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der Satelliten, die zur Aktivierung von GPS -Positionierungsinformationen erforderlich sind</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1238" />
         <source>Navigation function</source>
-        <translation type="unfinished" />
+        <translation>Navigationsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1247" />
         <source>GNSS_TYPE</source>
-        <translation type="unfinished" />
+        <translation>GNSS_TYPE</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1256" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1698" />
         <source>Telecoding_Fct_RADIO</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_radio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1264" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1780" />
         <source>Geographic area of use of the radio</source>
-        <translation type="unfinished" />
+        <translation>Geografisches Nutzungsgebiet des Radios</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1271" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1687" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1787" />
         <source>Europe</source>
-        <translation type="unfinished" />
+        <translation>Europa</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1275" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1791" />
         <source>Japan</source>
-        <translation type="unfinished" />
+        <translation>Japan</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1279" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1795" />
         <source>South America</source>
-        <translation type="unfinished" />
+        <translation>Südamerika</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1283" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1799" />
         <source>Asia and China</source>
-        <translation type="unfinished" />
+        <translation>Asien und China</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1287" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1803" />
         <source>Arabia</source>
-        <translation type="unfinished" />
+        <translation>Arabien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1291" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1807" />
         <source>USA</source>
-        <translation type="unfinished" />
+        <translation>USA</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1295" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1811" />
         <source>Korea</source>
-        <translation type="unfinished" />
+        <translation>Korea</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1299" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1815" />
         <source>Canada</source>
-        <translation type="unfinished" />
+        <translation>Kanada</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1306" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1706" />
         <source>AM Waveband activated</source>
-        <translation type="unfinished" />
+        <translation>Am Wellenband aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1315" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1715" />
         <source>2nd antenna presence</source>
-        <translation type="unfinished" />
+        <translation>2. Antennenpräsenz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1324" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1724" />
         <source>FM1/AM Antenna Activated</source>
-        <translation type="unfinished" />
+        <translation>FM1/Am -Antenne aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1333" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1733" />
         <source>FM2 Antenna Activated</source>
-        <translation type="unfinished" />
+        <translation>FM2 -Antenne aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1344" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1753" />
         <source>Threshold for detecting analog radio activity</source>
-        <translation type="unfinished" />
+        <translation>Schwellenwert zum Nachweis der analogen Funkaktivität</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1353" />
         <source>Station search function (RDS)</source>
-        <translation type="unfinished" />
+        <translation>Stationssuchfunktion (RDS)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1362" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1762" />
         <source>Radio export type</source>
-        <translation type="unfinished" />
+        <translation>Radioxporttyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1371" />
         <source>Radio Text</source>
-        <translation type="unfinished" />
+        <translation>Radixt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1380" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1822" />
         <source>Telecoding_Fct_RADIO_NUM</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_radio_num</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1390" />
         <source>Threshold for detecting radio activity</source>
-        <translation type="unfinished" />
+        <translation>Schwellenwert zum Erkennen der Funkaktivität</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1399" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1830" />
         <source>Digital radio</source>
-        <translation type="unfinished" />
+        <translation>Digitales Radio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1406" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1837" />
         <source>Digital radio disabled</source>
-        <translation type="unfinished" />
+        <translation>Digital Radio deaktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1410" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1841" />
         <source>Digital radio L waveband activated</source>
-        <translation type="unfinished" />
+        <translation>Digital Radio L Waveband aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1414" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1845" />
         <source>Digital radio 3 waveband activated</source>
-        <translation type="unfinished" />
+        <translation>Digital Radio 3 Wellenband aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1418" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1849" />
         <source>Digital radio all wavebands activated</source>
-        <translation type="unfinished" />
+        <translation>Digitales Radio Alle Wellenbänder aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1425" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1856" />
         <source>Telecoding_Fct_SAM</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_sam</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1433" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1864" />
         <source>Display Touch button "Blind spot monitoring"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Blind Spot Monitoring" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1442" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1873" />
         <source>Touch button Position "Blind spot monitoring"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Überwachung von Blind Spot"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1451" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1882" />
         <source>Physical Button "Blind spot monitoring"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Blind Spot Monitoring"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1460" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1891" />
         <source>Telecoding_Fct_LKA</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_lka</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1468" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1899" />
         <source>Display Touch button "Lane Guard system"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Lane Guard System" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1477" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1917" />
         <source>Physical Button "Lane Guard system"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Lane Guard System"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1486" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1908" />
         <source>Touch button Position "Lane Guard system"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Lane Guard System"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1495" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1926" />
         <source>Telecoding_Fct_ACV</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_acv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1503" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1934" />
         <source>Display Touch button "Automatic control of the volume "ACV""</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Automatische Steuerung des Volumens" ACV "" anzeigen "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1512" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1943" />
         <source>Touch button Position "Automatic control of the volume "ACV""</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Automatische Steuerung des Volumens" ACV ""</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1521" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1952" />
         <source>Physical Button "Automatic control of the volume "ACV""</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste "Automatische Steuerung des Volumens" ACV ""</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1530" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1961" />
         <source>Telecoding_Fct_ALERTS</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_alerts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1538" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1969" />
         <source>History of on-board computer alerts</source>
-        <translation type="unfinished" />
+        <translation>Historie von On-Board-Computerbenachrichtigungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1547" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1978" />
         <source>On-board computer alerts (Vehicle without matrix)</source>
-        <translation type="unfinished" />
+        <translation>Computerwarnungswarnungen an Bord (Fahrzeug ohne Matrix)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1556" />
         <source>CPUSH log alerts</source>
-        <translation type="unfinished" />
+        <translation>CPush -Protokoll -Warnungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1565" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1987" />
         <source>Telecoding_Fct_LUM</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_lum</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1573" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1995" />
         <source>Brightness adjustment</source>
-        <translation type="unfinished" />
+        <translation>Helligkeitsanpassung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1582" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2004" />
         <source>Telecoding_Fct_OBC</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_OBC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1590" />
         <source>Tyre pressures</source>
-        <translation type="unfinished" />
+        <translation>Reifendruck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1599" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2012" />
         <source>Urea solution level</source>
-        <translation type="unfinished" />
+        <translation>Harnstofflösungsstufe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1608" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1617" />
         <source>Trip computer display</source>
-        <translation type="unfinished" />
+        <translation>Trip Computer Display</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1626" />
         <source>Trip computer configuration</source>
-        <translation type="unfinished" />
+        <translation>Trip Computercomputerkonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1633" />
         <source>Current consumption</source>
-        <translation type="unfinished" />
+        <translation>Aktueller Verbrauch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1637" />
         <source>Route 1</source>
-        <translation type="unfinished" />
+        <translation>Route 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1641" />
         <source>Route 2</source>
-        <translation type="unfinished" />
+        <translation>Route 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1648" />
         <source>Trip mileage display</source>
-        <translation type="unfinished" />
+        <translation>Trip -Kilometerleistung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1673" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2055" />
         <source>UTC-11</source>
-        <translation type="unfinished" />
+        <translation>UTC-11</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1677" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2059" />
         <source>UTC-10</source>
-        <translation type="unfinished" />
+        <translation>UTC-10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1681" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2063" />
         <source>UTC-9</source>
-        <translation type="unfinished" />
+        <translation>UTC-9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1685" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2067" />
         <source>UTC-8</source>
-        <translation type="unfinished" />
+        <translation>UTC-8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1689" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2071" />
         <source>UTC-7</source>
-        <translation type="unfinished" />
+        <translation>UTC-7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1693" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2075" />
         <source>UTC-6</source>
-        <translation type="unfinished" />
+        <translation>UTC-6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1697" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2079" />
         <source>UTC-5</source>
-        <translation type="unfinished" />
+        <translation>UTC-5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1701" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2083" />
         <source>UTC-4h30</source>
-        <translation type="unfinished" />
+        <translation>UTC-4H30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1705" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2087" />
         <source>UTC-4</source>
-        <translation type="unfinished" />
+        <translation>UTC-4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1709" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2091" />
         <source>UTC-3h30</source>
-        <translation type="unfinished" />
+        <translation>UTC-3H30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1713" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2095" />
         <source>UTC-3</source>
-        <translation type="unfinished" />
+        <translation>UTC-3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1717" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2099" />
         <source>UTC-2</source>
-        <translation type="unfinished" />
+        <translation>UTC-2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1721" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2103" />
         <source>UTC-1</source>
-        <translation type="unfinished" />
+        <translation>UTC-1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1737" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2119" />
         <source>UTC+3</source>
-        <translation type="unfinished" />
+        <translation>UTC+3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1741" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2123" />
         <source>UTC+4</source>
-        <translation type="unfinished" />
+        <translation>UTC+4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1745" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2127" />
         <source>UTC+5</source>
-        <translation type="unfinished" />
+        <translation>UTC+5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1749" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2131" />
         <source>UTC+5h30</source>
-        <translation type="unfinished" />
+        <translation>UTC+5H30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1753" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2135" />
         <source>UTC+6</source>
-        <translation type="unfinished" />
+        <translation>UTC+6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1757" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2139" />
         <source>UTC+6h30</source>
-        <translation type="unfinished" />
+        <translation>UTC+6H30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1761" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2143" />
         <source>UTC+7</source>
-        <translation type="unfinished" />
+        <translation>UTC+7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1765" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2147" />
         <source>UTC+8</source>
-        <translation type="unfinished" />
+        <translation>UTC+8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1769" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2151" />
         <source>UTC+9</source>
-        <translation type="unfinished" />
+        <translation>UTC+9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1773" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2155" />
         <source>UTC+9h30</source>
-        <translation type="unfinished" />
+        <translation>UTC+9H30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1777" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2159" />
         <source>UTC+10</source>
-        <translation type="unfinished" />
+        <translation>UTC+10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1781" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2163" />
         <source>UTC+11</source>
-        <translation type="unfinished" />
+        <translation>UTC+11</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1785" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2167" />
         <source>UTC+12</source>
-        <translation type="unfinished" />
+        <translation>UTC+12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1789" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2171" />
         <source>UTC+13</source>
-        <translation type="unfinished" />
+        <translation>UTC+13</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1796" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2222" />
         <source>Time zone initialization</source>
-        <translation type="unfinished" />
+        <translation>Zeitzoneninitialisierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1814" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2178" />
         <source>Initial date format</source>
-        <translation type="unfinished" />
+        <translation>Anfangsdatumformat</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1823" />
         <source>Date display mode</source>
-        <translation type="unfinished" />
+        <translation>Datumsanzeigemodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1830" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2185" />
         <source>D/M/Y</source>
-        <translation type="unfinished" />
+        <translation>D/m/y</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1834" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2189" />
         <source>D.M.Y</source>
-        <translation type="unfinished" />
+        <translation>D.M.Y</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1838" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2193" />
         <source>D-M-Y</source>
-        <translation type="unfinished" />
+        <translation>D-M-y</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1842" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2197" />
         <source>M/D/Y</source>
-        <translation type="unfinished" />
+        <translation>M/d/y</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1849" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2204" />
         <source>Date synchronization</source>
-        <translation type="unfinished" />
+        <translation>Datumssynchronisation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1858" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2213" />
         <source>Initial date synchronization</source>
-        <translation type="unfinished" />
+        <translation>Anfangsdatumsynchronisation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1867" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2039" />
         <source>Date and time configuration</source>
-        <translation type="unfinished" />
+        <translation>Datums- und Zeitkonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1876" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2030" />
         <source>Date and time display</source>
-        <translation type="unfinished" />
+        <translation>Datums- und Uhrzeitanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1885" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2276" />
         <source>Display of information messages from the on-board computer on the touch screen while driving</source>
-        <translation type="unfinished" />
+        <translation>Zeigen Sie beim Fahren Informationsmeldungen vom On-Bord-Computer auf dem Touchscreen an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1894" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2285" />
         <source>On-board computer control button</source>
-        <translation type="unfinished" />
+        <translation>On-Board-Computersteuerungstaste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1903" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2316" />
         <source>Viewing maintenance data</source>
-        <translation type="unfinished" />
+        <translation>Wartungsdaten anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1912" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2325" />
         <source>Telecoding_Fct_CPUSH</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_cpush</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1920" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2333" />
         <source>Blackpanel button</source>
-        <translation type="unfinished" />
+        <translation>Blackpanel -Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1929" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2342" />
         <source>Instrument panel themes (iCockpit Amplify)</source>
-        <translation type="unfinished" />
+        <translation>Instrumenten -Panel -Themen (ICOCKPIT Amplify)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1938" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2351" />
         <source>"CHECK" button</source>
-        <translation type="unfinished" />
+        <translation>"Überprüfen Sie"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1947" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2360" />
         <source>CPUSH DOMELIGHT</source>
-        <translation type="unfinished" />
+        <translation>Drücken Sie Kuppel Licht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1964" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2377" />
         <source>Default Ambiance</source>
-        <translation type="unfinished" />
+        <translation>Standardambiente</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1973" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2386" />
         <source>Ambiance Menu 1</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1982" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2395" />
         <source>Ambiance Menu 2</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1991" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2404" />
         <source>Ambiance Menu 3</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2000" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2413" />
         <source>Ambiance Menu 4</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2009" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2422" />
         <source>Ambiance Menu 5</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2018" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2431" />
         <source>Ambiance Menu 6</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2027" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2440" />
         <source>Ambiance Menu 7</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2036" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2449" />
         <source>Ambiance Menu 8</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Menü 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2045" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2458" />
         <source>Vehicle Menu 1</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2052" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2090" />
@@ -7371,7 +7371,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8779" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10371" />
         <source>Disabled</source>
-        <translation type="unfinished" />
+        <translation>Deaktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2056" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3674" />
@@ -7382,7 +7382,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5705" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7323" />
         <source>Safety</source>
-        <translation type="unfinished" />
+        <translation>Sicherheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2060" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3678" />
@@ -7393,7 +7393,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5709" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7327" />
         <source>Vehicle access / Parking</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugzugang / Parkplatz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2064" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3682" />
@@ -7404,7 +7404,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5713" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7331" />
         <source>Headlights</source>
-        <translation type="unfinished" />
+        <translation>Scheinwerfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2068" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3686" />
@@ -7415,7 +7415,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5717" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7335" />
         <source>Driving lights</source>
-        <translation type="unfinished" />
+        <translation>Antrieblichter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2072" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3690" />
@@ -7426,7 +7426,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5721" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7339" />
         <source>Comfort lighting</source>
-        <translation type="unfinished" />
+        <translation>Komfortbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2076" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3694" />
@@ -7437,12 +7437,12 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5725" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7343" />
         <source>Comfort</source>
-        <translation type="unfinished" />
+        <translation>Komfort</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2083" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2496" />
         <source>Vehicule menu 1 Item 1</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2094" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2252" />
@@ -7525,7 +7525,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8625" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8783" />
         <source>Directional spotlights</source>
-        <translation type="unfinished" />
+        <translation>Richtungsstoffe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2098" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2256" />
@@ -7608,7 +7608,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8629" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8787" />
         <source>Automatic parking brake</source>
-        <translation type="unfinished" />
+        <translation>Automatische Feststellbremse</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2102" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2260" />
@@ -7691,7 +7691,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8633" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8791" />
         <source>Guide-me home lighting</source>
-        <translation type="unfinished" />
+        <translation>Guide-Me Home Lighting</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2106" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2264" />
@@ -7774,7 +7774,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8637" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8795" />
         <source>Ambiance lighting</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2110" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2268" />
@@ -7857,7 +7857,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8641" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8799" />
         <source>Daytime running lights</source>
-        <translation type="unfinished" />
+        <translation>Tagesläufe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2114" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2272" />
@@ -7940,7 +7940,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8645" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8803" />
         <source>Rear wiper in reverse</source>
-        <translation type="unfinished" />
+        <translation>Heckwischer in umgekehrt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2118" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2276" />
@@ -8023,7 +8023,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8649" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8807" />
         <source>Unlocking: Driver only</source>
-        <translation type="unfinished" />
+        <translation>Entsperren: Nur Fahrer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2122" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2280" />
@@ -8106,7 +8106,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8653" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8811" />
         <source>Driver welcome</source>
-        <translation type="unfinished" />
+        <translation>Fahrer Willkommen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2126" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2284" />
@@ -8189,7 +8189,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8657" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8815" />
         <source>Unlocking the trunk door only</source>
-        <translation type="unfinished" />
+        <translation>Nur die Kofferstür freischalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2130" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2288" />
@@ -8272,7 +8272,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8661" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8819" />
         <source>Adaptive Lighting</source>
-        <translation type="unfinished" />
+        <translation>Adaptive Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2296" />
@@ -8355,7 +8355,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8669" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8827" />
         <source>Automatic lighting of lights (MBA)</source>
-        <translation type="unfinished" />
+        <translation>Automatische Beleuchtung von Lichtern (MBA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2142" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2300" />
@@ -8438,7 +8438,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8673" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8831" />
         <source>Unlocking: Cabin</source>
-        <translation type="unfinished" />
+        <translation>Entsperren: Kabine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2146" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2304" />
@@ -8521,7 +8521,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8677" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8835" />
         <source>Blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der blinden Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2150" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2308" />
@@ -8604,7 +8604,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8681" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8839" />
         <source>Welcome lighting</source>
-        <translation type="unfinished" />
+        <translation>Willkommen Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2154" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2312" />
@@ -8687,7 +8687,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8685" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8843" />
         <source>Motorised tailgate / door</source>
-        <translation type="unfinished" />
+        <translation>Motorisierte Heckklappe / Tür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2158" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2162" />
@@ -8850,7 +8850,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8847" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8851" />
         <source>Active Safety Brake (Distance configuration)</source>
-        <translation type="unfinished" />
+        <translation>Aktive Sicherheitsbremse (Entfernungskonfiguration)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2166" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2324" />
@@ -8933,7 +8933,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8697" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8855" />
         <source>Active Safety Brake (Activation)</source>
-        <translation type="unfinished" />
+        <translation>Aktive Sicherheitsbremse (Aktivierung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2170" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2328" />
@@ -9016,7 +9016,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8701" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8859" />
         <source>Rearview mirrors indexed to reverse gear</source>
-        <translation type="unfinished" />
+        <translation>Rückspiegel, die zum Rückwärtsgang indiziert sind</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2174" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2332" />
@@ -9099,7 +9099,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8705" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8863" />
         <source>Speed recognition / recommendation</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitserkennung / Empfehlung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2178" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2336" />
@@ -9182,7 +9182,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8709" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8867" />
         <source>Hands-Free opening</source>
-        <translation type="unfinished" />
+        <translation>Freisprecheröffnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2182" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2340" />
@@ -9265,7 +9265,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8713" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8871" />
         <source>Hands-Free opening (self condemnation)</source>
-        <translation type="unfinished" />
+        <translation>Freisprecheröffnung (Selbstverurteilung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2186" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2344" />
@@ -9348,7 +9348,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8717" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8875" />
         <source>Driver attention alert</source>
-        <translation type="unfinished" />
+        <translation>Fahrer Aufmerksamkeitswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2190" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2348" />
@@ -9431,7 +9431,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8721" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8879" />
         <source>Permanent child safety deactivation</source>
-        <translation type="unfinished" />
+        <translation>Dauerhafte Kindersicherheit Deaktivierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2194" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2352" />
@@ -9514,7 +9514,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8725" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8883" />
         <source>Smartbeam - Driving Lights (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>SmartBeam - Antrieblichter (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2198" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2356" />
@@ -9597,7 +9597,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8729" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8887" />
         <source>Lumière polychrome - Ambiance lighting (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Lumière Polychrom - Ambiente Beleuchtung (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2202" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2360" />
@@ -9680,7 +9680,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8733" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8891" />
         <source>Polychromatic light, animation - Ambiance lighting (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Polychromatisches Licht, Animation - Ambiente Beleuchtung (nur Wave3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2206" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2364" />
@@ -9763,7 +9763,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8737" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8895" />
         <source>Polychromatic light, bloc - Ambiance lighting (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Polychromatisches Licht, Block - Ambiente (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2210" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2368" />
@@ -9846,7 +9846,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8741" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8899" />
         <source>Traffic Signs Recognition (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Verkehrszeichen Erkennung (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2214" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2372" />
@@ -9929,7 +9929,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8745" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8903" />
         <source>Blocking of door mirror folding (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Blockierung des Klappstierens des Türspiegels (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2218" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2376" />
@@ -10012,7 +10012,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8749" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8907" />
         <source>Adaptative Rear Lighting system - Driving Lights (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Adaptive hintere Beleuchtungssystem - Antrieblichter (nur Welle 3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2222" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2380" />
@@ -10095,7 +10095,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8753" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8911" />
         <source>Smart Device Access (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Zugriff auf Smart Device (nur Wave3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2226" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2384" />
@@ -10178,7 +10178,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8757" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8915" />
         <source>Hands-Free opening function (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Freisprecheröffnungsfunktion (nur Wave3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2230" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2388" />
@@ -10261,7 +10261,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8761" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8919" />
         <source>Sound When Speed Limit Changes (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Schall, wenn sich die Geschwindigkeitsbegrenzung ändert (nur Wave3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2234" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2392" />
@@ -10344,2944 +10344,2944 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8765" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8923" />
         <source>Excessive Speed Warning (Wave3/4 only)</source>
-        <translation type="unfinished" />
+        <translation>Übermäßige Geschwindigkeitswarnung (nur Welle3/4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2241" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2654" />
         <source>Vehicule menu 1 Item 2</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2399" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2812" />
         <source>Vehicule menu 1 Item 3</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2557" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2970" />
         <source>Vehicule menu 1 Item 4</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2715" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3128" />
         <source>Vehicule menu 1 Item 5</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="2873" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3286" />
         <source>Vehicule menu 1 Item 6</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3031" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3444" />
         <source>Vehicule menu 1 Item 7</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3189" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3602" />
         <source>Vehicule menu 1 Item 8</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3347" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3760" />
         <source>Vehicule menu 1 Item 9</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3505" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3918" />
         <source>Vehicule menu 1 Item 10</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 1 Artikel 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3663" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4076" />
         <source>Vehicle Menu 2</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3701" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4114" />
         <source>Vehicule menu 2 Item 1</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="3859" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4272" />
         <source>Vehicule menu 2 Item 2</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4017" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4430" />
         <source>Vehicule menu 2 Item 3</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4175" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4588" />
         <source>Vehicule menu 2 Item 4</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4333" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4746" />
         <source>Vehicule menu 2 Item 5</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4491" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="4904" />
         <source>Vehicule menu 2 Item 6</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4649" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5062" />
         <source>Vehicule menu 2 Item 7</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4807" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5220" />
         <source>Vehicule menu 2 Item 8</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="4965" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5378" />
         <source>Vehicule menu 2 Item 9</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5123" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5536" />
         <source>Vehicule menu 2 Item 10</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 2 Artikel 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5281" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5694" />
         <source>Vehicle Menu 3</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5319" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5732" />
         <source>Vehicule menu 3 Item 1</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5477" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="5890" />
         <source>Vehicule menu 3 Item 2</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5635" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6048" />
         <source>Vehicule menu 3 Item 3</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5793" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6206" />
         <source>Vehicule menu 3 Item 4</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="5951" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6364" />
         <source>Vehicule menu 3 Item 5</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6109" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6522" />
         <source>Vehicule menu 3 Item 6</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6267" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6680" />
         <source>Vehicule menu 3 Item 7</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6425" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6838" />
         <source>Vehicule menu 3 Item 8</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6583" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="6996" />
         <source>Vehicule menu 3 Item 9</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6741" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7154" />
         <source>Vehicule menu 3 Item 10</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 3 Artikel 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6899" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7312" />
         <source>Vehicle Menu 4</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="6937" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7350" />
         <source>Vehicule menu 4 Item 1</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7095" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7508" />
         <source>Vehicule menu 4 Item 2</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7253" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7666" />
         <source>Vehicule menu 4 Item 3</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7411" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7824" />
         <source>Vehicule menu 4 Item 4</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7569" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="7982" />
         <source>Vehicule menu 4 Item 5</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7727" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8140" />
         <source>Vehicule menu 4 Item 6</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="7885" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8298" />
         <source>Vehicule menu 4 Item 7</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8043" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8456" />
         <source>Vehicule menu 4 Item 8</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8201" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8614" />
         <source>Vehicule menu 4 Item 9</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8359" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8772" />
         <source>Vehicule menu 4 Item 10</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmenü 4 Artikel 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8517" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8930" />
         <source>Telecoding_Fct_SPY</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_spy</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8525" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8938" />
         <source>Expert menu activation</source>
-        <translation type="unfinished" />
+        <translation>Expertenmenüaktivierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8534" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8947" />
         <source>Telecoding_Fct_LVDS</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_lvds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8542" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8955" />
         <source>LVDS speed</source>
-        <translation type="unfinished" />
+        <translation>LVDS -Geschwindigkeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8549" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8962" />
         <source>115.2 kbits/s</source>
-        <translation type="unfinished" />
+        <translation>115.2 Kbit/s</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8553" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8966" />
         <source>500 kbits/s</source>
-        <translation type="unfinished" />
+        <translation>500 kbit/s</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8560" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8973" />
         <source>LVDS configuration</source>
-        <translation type="unfinished" />
+        <translation>LVDS -Konfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8567" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8980" />
         <source>18 bits</source>
-        <translation type="unfinished" />
+        <translation>18 Bit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8571" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8984" />
         <source>24 bits</source>
-        <translation type="unfinished" />
+        <translation>24 Bit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8578" />
         <source>SET ICC OUT1</source>
-        <translation type="unfinished" />
+        <translation>ICC OUT1 einstellen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8587" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9044" />
         <source>Telecoding_Fct_ANDROID</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_android</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8595" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9052" />
         <source>Android Auto</source>
-        <translation type="unfinished" />
+        <translation>Android Auto</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8604" />
         <source>Telecoding_Fct_IDVR_HMI/BTA</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_idvr_hmi/bta</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8613" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9070" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9460" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9566" />
         <source>Autonomous telematic box (BTA)</source>
-        <translation type="unfinished" />
+        <translation>Autonomous Telematic Box (BTA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8622" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9035" />
         <source>Remote control</source>
-        <translation type="unfinished" />
+        <translation>Fernbedienung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8631" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9017" />
         <source>Car speakers for assistance call (BCALL)</source>
-        <translation type="unfinished" />
+        <translation>Autosprecher für den Hilfsanruf (BCALL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8640" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9026" />
         <source>Car speakers for information call (ICALL)</source>
-        <translation type="unfinished" />
+        <translation>Autosprecher für Informationsanruf (ICall)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8649" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9139" />
         <source>Telecoding_Fct_WAVE3</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_wave3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8657" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9147" />
         <source>Air Conditioning Rear Lock</source>
-        <translation type="unfinished" />
+        <translation>Heckschloss Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8666" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9201" />
         <source>New Generation Obstacle detection system</source>
-        <translation type="unfinished" />
+        <translation>Hinderniserfassungssystem der neuen Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8675" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9192" />
         <source>Private mode configuration</source>
-        <translation type="unfinished" />
+        <translation>Private Moduskonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8684" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9183" />
         <source>Screen saver (on FMUX volume button)</source>
-        <translation type="unfinished" />
+        <translation>Bildschirmschoner (auf FMUX -Lautstärkeschaltfläche)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8693" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9210" />
         <source>Continuous City Park Assist</source>
-        <translation type="unfinished" />
+        <translation>Kontinuierlicher Stadtpark Assistent</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8702" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9219" />
         <source>City Park Assist - Manual Gearbox</source>
-        <translation type="unfinished" />
+        <translation>City Park Assist - Schaltgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8711" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9228" />
         <source>City Park Assist - Automatic Gearbox</source>
-        <translation type="unfinished" />
+        <translation>City Park Assist - Automatisches Getriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8720" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9237" />
         <source>City Park Assist Menu</source>
-        <translation type="unfinished" />
+        <translation>City Park Assist -Menü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8729" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9246" />
         <source>Heated seat configuration</source>
-        <translation type="unfinished" />
+        <translation>Erhitzte Sitzkonfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8738" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9255" />
         <source>Air Quality System</source>
-        <translation type="unfinished" />
+        <translation>Luftqualitätssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8747" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9264" />
         <source>Physical button for "Night Vision"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf für "Nachtsicht"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8756" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9433" />
         <source>Touch button Position "Night Vision"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Nachtsicht"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8765" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9442" />
         <source>Display Touch button "Night Vision"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Nachtsicht" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8775" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9310" />
         <source>Private mode for Mirrorlink</source>
-        <translation type="unfinished" />
+        <translation>Privatmodus für MirrorLink</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8784" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9320" />
         <source>Private mode for Apple Carplay</source>
-        <translation type="unfinished" />
+        <translation>Privatmodus für Apple CarPlay</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8793" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9330" />
         <source>Private mode for Android Auto</source>
-        <translation type="unfinished" />
+        <translation>Privatmodus für Android Auto</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8802" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9340" />
         <source>Normal mode - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Normaler Modus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8811" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9350" />
         <source>Sport mode - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Sportmodus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8820" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9360" />
         <source>Comfort mode - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Komfortmodus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8829" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9370" />
         <source>Eco mode - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Öko -Modus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8838" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9380" />
         <source>Mode Rename - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Umbenennung des Modus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8847" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9469" />
         <source>Eco Coaching</source>
-        <translation type="unfinished" />
+        <translation>Öko -Coaching</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8856" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9478" />
         <source>Eco Coaching Type</source>
-        <translation type="unfinished" />
+        <translation>ECO -Coaching -Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8874" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9451" />
         <source>Number of massage seats</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der Massagesitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8883" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9825" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10382" />
         <source>Telecoding_Fct_IDVR</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_idvr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8891" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9130" />
         <source>Display Touch button "Lateral Deviation Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Laterale Abweichung Warnung" (ConnectedCam) anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8900" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9110" />
         <source>Physical button for "Lateral Deviation Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste für "laterale Abweichungswarnung" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8909" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9120" />
         <source>Touch button Position "Lateral Deviation Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Laterale Abweichungswarnung" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8918" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9100" />
         <source>Display Touch button "Front Collision Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Touchs -Touch -Taste "Vorderkollisionswarnung" (ConnectedCam) anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8927" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9080" />
         <source>Physical button for "Front Collision Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf für "Vorderkollisionswarnung" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8936" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9090" />
         <source>Touch button Position "Front Collision Warning" (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Vorderkollisionswarnung" (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8945" />
         <source>Telecoding_Fct_ADAS</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_adas</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8953" />
         <source>ADAS_GSR_V2</source>
-        <translation type="unfinished" />
+        <translation>ADAS_GSR_V2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8962" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9575" />
         <source>Telecoding_Fct_BluetoothName</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_BLUETOTHNAME</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8969" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9582" />
         <source>Telecoding_Serial</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_Serial</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8977" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9590" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="40" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="57" />
         <source>ignore</source>
-        <translation type="unfinished" />
+        <translation>ignorieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8986" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9599" />
         <source>Telecoding_Fct_CHECK</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_Check</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8994" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9607" />
         <source>Display Touch button "Check"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Check" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9003" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9616" />
         <source>Telecoding_Fct_CD_CHARGER</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_cd_charger</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9011" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9624" />
         <source>CD Charger presence</source>
-        <translation type="unfinished" />
+        <translation>Präsenz von CD -Ladegerät</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9020" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9633" />
         <source>Telecoding_Fct_CITYPARK</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_CityPark</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9028" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9641" />
         <source>Semi-automatic parking system presence</source>
-        <translation type="unfinished" />
+        <translation>Semiautomatische Präsenz des Parksystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9035" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9648" />
         <source>Absent function</source>
-        <translation type="unfinished" />
+        <translation>Abwesende Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9039" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9652" />
         <source>Parallel parking function present</source>
-        <translation type="unfinished" />
+        <translation>Parallele Parkfunktion vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9043" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9656" />
         <source>Parallel and perpendicular parking function present</source>
-        <translation type="unfinished" />
+        <translation>Parallele und senkrechte Parkfunktion vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9050" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9663" />
         <source>Display Touch button "Semi-automatic parking system"</source>
-        <translation type="unfinished" />
+        <translation>Touch-Taste "Halbautomatisches Parksystem" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9059" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9672" />
         <source>Touch button Position "Semi-automatic parking system"</source>
-        <translation type="unfinished" />
+        <translation>Touch-Taste-Position "Halbautomatisches Parksystem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9077" />
         <source>Physical button for "Semi-automatic parking system"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf für "halbautomatisches Parksystem"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9086" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9690" />
         <source>Telecoding_Fct_CLIM</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_clim</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9094" />
         <source>Air conditioning function</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlagenfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9103" />
         <source>Type of air conditioning mixing</source>
-        <translation type="unfinished" />
+        <translation>Art der Klimaanlagenmischung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9110" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9705" />
         <source>Monozone</source>
-        <translation type="unfinished" />
+        <translation>Monozone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9114" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9709" />
         <source>Bi-zone</source>
-        <translation type="unfinished" />
+        <translation>Bi-Zone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9121" />
         <source>Presence of the passenger compartment ambient air measuring system</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Passagierkompartiments Umgebungsluftmesssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9130" />
         <source>Presence of the rear air conditioning control panel</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Heckklimaanlage Bedienfeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9139" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9716" />
         <source>Physical button for air recycling</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf zum Luftrecycling</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9148" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9770" />
         <source>Type of air conditioning control</source>
-        <translation type="unfinished" />
+        <translation>Art der Klimaanlagenkontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9157" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9805" />
         <source>Type of air distribution</source>
-        <translation type="unfinished" />
+        <translation>Art der Luftverteilung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9166" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9779" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1812" />
         <source>Type of air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Art der Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9173" />
         <source>Heating</source>
-        <translation type="unfinished" />
+        <translation>Heizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9177" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9790" />
         <source>Manual air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Manuelle Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9181" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9794" />
         <source>Automatic air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Automatische Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9185" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9798" />
         <source>Dual-Zone Automatic Air Conditioning</source>
-        <translation type="unfinished" />
+        <translation>Automatische Klimaanlage mit zwei Zonen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9192" />
         <source>Presence of the "Air conditioning temperature increase AC" touch button</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der "Klimaanlage Temperatur erhöhen den Wechselstrom" -Bouch -Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9201" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9823" />
         <source>Energy saving touch key</source>
-        <translation type="unfinished" />
+        <translation>Energiesparende Berührungsschlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9210" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9841" />
         <source>Touch button on the air blower control</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste der Luftgebläsesteuerung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9219" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9832" />
         <source>Air blower control increment Touch button</source>
-        <translation type="unfinished" />
+        <translation>Luftgebläsesteuerung Inkrement -Touch -Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9228" />
         <source>Air distribution adjustment</source>
-        <translation type="unfinished" />
+        <translation>Luftverteilungseinstellung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9237" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9868" />
         <source>Automatic climate control button</source>
-        <translation type="unfinished" />
+        <translation>Automatische Klimaregelungstaste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9246" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9850" />
         <source>Temperature control</source>
-        <translation type="unfinished" />
+        <translation>Temperaturregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9255" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9734" />
         <source>Touch button Position "Thermal preconditioning (Webasto)"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Wärme Vorkonditionierung (Webasto)" "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9264" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9886" />
         <source>Presence of the preconditioning menu</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Vorkonditionierungsmenüs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9752" />
         <source>Display Touch button "Thermal preconditioning (Webasto)"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Thermal Vorkonditionierung (Webasto)" anzeigen "</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9282" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9743" />
         <source>Physical Button "Thermal preconditioning (Webasto)"</source>
-        <translation type="unfinished" />
+        <translation>Physische Taste "Thermische Vorkonditionierung (Webasto)"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9291" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9895" />
         <source>Air conditioning information at the top of the screen</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlageninformationen oben auf dem Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9300" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9913" />
         <source>MONO button type</source>
-        <translation type="unfinished" />
+        <translation>Mono -Tastentyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9307" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9920" />
         <source>No button</source>
-        <translation type="unfinished" />
+        <translation>Kein Knopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9311" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9924" />
         <source>Physical button</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9315" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9928" />
         <source>Touch Button</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9322" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9904" />
         <source>Air conditioning stop Touch button</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlagen -Stopp -Touch -Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9331" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9935" />
         <source>Telecoding_Fct_DSG</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_dsg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9339" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9961" />
         <source>Under-inflation detection reset button</source>
-        <translation type="unfinished" />
+        <translation>Taste zur Erkennung der Erkennung Unterinflation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9348" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9952" />
         <source>Physical Button for Under-inflation detection</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste für die Erkennung unterer Inflation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9357" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9943" />
         <source>Under-inflation detection Position</source>
-        <translation type="unfinished" />
+        <translation>Unter-Inflationserkennungsposition</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9366" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9970" />
         <source>Telecoding_Fct_SCREEN</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_screen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9374" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9156" />
         <source>Audio covers export on the instrument panel</source>
-        <translation type="unfinished" />
+        <translation>Audio deckt den Export auf das Instrumentenfeld ab</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9383" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9978" />
         <source>Touch screen type (Dummy setting)</source>
-        <translation type="unfinished" />
+        <translation>Touchscreen -Typ (Dummy -Einstellung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9390" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9985" />
         <source>DG4TP Screen</source>
-        <translation type="unfinished" />
+        <translation>DG4TP -Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9394" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9989" />
         <source>DGT8C Screen</source>
-        <translation type="unfinished" />
+        <translation>DGT8C -Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9398" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9993" />
         <source>DGT7CFF Screen</source>
-        <translation type="unfinished" />
+        <translation>DGT7CFF -Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9402" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9997" />
         <source>DGT7C Screen</source>
-        <translation type="unfinished" />
+        <translation>DGT7C -Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9409" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10004" />
         <source>Telecoding_Fct_STT</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_stt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9417" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10030" />
         <source>Physical Button "Stop and Start"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Stoppen und Start"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9426" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10012" />
         <source>Display Touch button "Stop and Start"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Stop and Start" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9435" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10021" />
         <source>Touch button Position "Stop and Start"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Stoppen und Start"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9444" />
         <source>Physical Button "Stop and Start" (Panel)</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste "Stoppen und Start" (Panel)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9453" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10039" />
         <source>Telecoding_Fct_XVV</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_xvv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9461" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10146" />
         <source>Display Touch button "Adaptive Cruise control"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Adaptive Geschwindigkeitsregelung" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9470" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10128" />
         <source>Display of the vehicle cruise control and speed limiter instructions reminder</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Anweisungen für Fahrzeuggeschwindungs- und Geschwindigkeitsbegrenzer -Anweisungen zur Erinnerung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9479" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10110" />
         <source>Memorized speeds</source>
-        <translation type="unfinished" />
+        <translation>Auswendig geschwindige Geschwindigkeiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9488" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10119" />
         <source>Selected speeds</source>
-        <translation type="unfinished" />
+        <translation>Ausgewählte Geschwindigkeiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9506" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10137" />
         <source>Speed Adjustment of the cruise control and speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsanpassung des Geschwindigkeitsregelungs- und Geschwindigkeitsbegrenzers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9515" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10047" />
         <source>Maximum cruise control and speed limitation</source>
-        <translation type="unfinished" />
+        <translation>Maximale Geschwindigkeitsregelung und Geschwindigkeitsbeschränkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9524" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10056" />
         <source>Minimal cruise control and speed limitation</source>
-        <translation type="unfinished" />
+        <translation>Minimale Geschwindigkeitsregelung und Geschwindigkeitsbeschränkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9533" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10065" />
         <source>Maximum speed of the speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Maximale Geschwindigkeit des Geschwindigkeitsbegrenzers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9542" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10074" />
         <source>Minimum speed of the speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Mindestgeschwindigkeit des Geschwindigkeitsbegrenzers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9551" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10083" />
         <source>Maximum speed of the cruise control</source>
-        <translation type="unfinished" />
+        <translation>Höchstgeschwindigkeit der Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9560" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10092" />
         <source>Minimum speed of the cruise control</source>
-        <translation type="unfinished" />
+        <translation>Mindestgeschwindigkeit der Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9569" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10155" />
         <source>Physical Button "Adaptive Cruise Control"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Knopf "Adaptive Geschwindigkeitsregelung"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9578" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10164" />
         <source>Touch button Position "Adaptive Cruise Control"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position "Adaptive Geschwindigkeitsregelung"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9587" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10173" />
         <source>Telecoding_Fct_WIFI</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_wifi</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9595" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10181" />
         <source>Wi-Fi presence</source>
-        <translation type="unfinished" />
+        <translation>Wi-Fi-Präsenz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9604" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10190" />
         <source>Internet via Wi-Fi function</source>
-        <translation type="unfinished" />
+        <translation>Internet über Wi-Fi-Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9613" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10199" />
         <source>Wi-Fi Module</source>
-        <translation type="unfinished" />
+        <translation>Wi-Fi-Modul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9622" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10208" />
         <source>Wi-Fi Function</source>
-        <translation type="unfinished" />
+        <translation>Wi-Fi-Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9631" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10217" />
         <source>Telecoding_Fct_LANG</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_ILL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9639" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10225" />
         <source>Default Language</source>
-        <translation type="unfinished" />
+        <translation>Standardsprache</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9646" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10232" />
         <source>French</source>
-        <translation type="unfinished" />
+        <translation>Französisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9650" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10236" />
         <source>English</source>
-        <translation type="unfinished" />
+        <translation>Englisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9654" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10240" />
         <source>German</source>
-        <translation type="unfinished" />
+        <translation>Deutsch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9658" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10244" />
         <source>Spanish</source>
-        <translation type="unfinished" />
+        <translation>Spanisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9662" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10248" />
         <source>Italian</source>
-        <translation type="unfinished" />
+        <translation>Italienisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9666" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10252" />
         <source>Portuguese</source>
-        <translation type="unfinished" />
+        <translation>Portugiesisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9670" />
         <source>Dutch</source>
-        <translation type="unfinished" />
+        <translation>Niederländisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9674" />
         <source>Greek</source>
-        <translation type="unfinished" />
+        <translation>griechisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9678" />
         <source>Brazilian</source>
-        <translation type="unfinished" />
+        <translation>Brasilianer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9682" />
         <source>Polish</source>
-        <translation type="unfinished" />
+        <translation>Polieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9689" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10259" />
         <source>Display of languages and units</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Sprachen und Einheiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9698" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10268" />
         <source>Telecoding_Fct_ASR</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_asr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9706" />
         <source>Physical Button "Traction Control" (ASR+)</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste "Traktionskontrolle" (ASR+)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9715" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10276" />
         <source>Physical Button "Traction Control"</source>
-        <translation type="unfinished" />
+        <translation>Physischer Taste "Traktionskontrolle"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9724" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10294" />
         <source>Display Touch button "Traction Control"</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste "Traktionskontrolle" anzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9733" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10285" />
         <source>Touch button Position of Traction Control function (ASR+)</source>
-        <translation type="unfinished" />
+        <translation>Touch -Taste -Position der Traktionskontrollfunktion (ASR+)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9742" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10303" />
         <source>Telecoding_Fct_ION</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_ion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9750" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10311" />
         <source>Ionisor function</source>
-        <translation type="unfinished" />
+        <translation>Ionisorfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9759" />
         <source>Condition of the fragrance diffuser</source>
-        <translation type="unfinished" />
+        <translation>Bedingung des Duftendiffusors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9768" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10329" />
         <source>Air Conditioning Menu</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlagemenü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9777" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10338" />
         <source>Telecoding_Fct_PPS</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_PPS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9785" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10346" />
         <source>Dynamic mode - iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Dynamischer Modus - ICOCKPIT Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9794" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10355" />
         <source>Massage seat function</source>
-        <translation type="unfinished" />
+        <translation>Massage -Sitzfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9803" />
         <source>PPS Mode</source>
-        <translation type="unfinished" />
+        <translation>PPS -Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9814" />
         <source>Activated (01)</source>
-        <translation type="unfinished" />
+        <translation>Aktiviert (01)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9818" />
         <source>Activated (10)</source>
-        <translation type="unfinished" />
+        <translation>Aktiviert (10)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9833" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10390" />
         <source>Video recording function (ConnectedCAM)</source>
-        <translation type="unfinished" />
+        <translation>Videoaufzeichnungsfunktion (ConnectedCam)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9842" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10399" />
         <source>Telecoding_Fct_AUDIO2</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_audio2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9850" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9165" />
         <source>New generation Audio Configuration</source>
-        <translation type="unfinished" />
+        <translation>Audiokonfiguration der neuen Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9859" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10407" />
         <source>Auxiliary audio input (AUX)</source>
-        <translation type="unfinished" />
+        <translation>Auxiliary Audio Input (AUX)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9868" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9174" />
         <source>Loudness function</source>
-        <translation type="unfinished" />
+        <translation>Lautstärkefunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9877" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10416" />
         <source>MOOD GRIDFEATURE</source>
-        <translation type="unfinished" />
+        <translation>Stimmungsgitter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9886" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10425" />
         <source>Audio Preset Live</source>
-        <translation type="unfinished" />
+        <translation>Audio Preset Live</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9895" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10434" />
         <source>Telecoding_Fct_VISIOPARK</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_vissiopark</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9903" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10442" />
         <source>X Axis Position of the camera (-8000)rn0 &lt;&gt; 6000mm</source>
-        <translation type="unfinished" />
+        <translation>X-Achse-Position der Kamera (-8000) RN0 &lt;&gt; 6000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9912" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10451" />
         <source>Y Axis Position of the camera (-3000)rn0 &lt;&gt; 6000mm</source>
-        <translation type="unfinished" />
+        <translation>Y-Achsenposition der Kamera (-3000) RN0 &lt;&gt; 6000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9921" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10460" />
         <source>Z Axis Position of the camera (+100)rn0 &lt;&gt; 1900mm</source>
-        <translation type="unfinished" />
+        <translation>Z -Achsenposition der Kamera (+100) RN0 &lt;&gt; 1900 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9930" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10469" />
         <source>Camera Roll Angle  (Roll) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
-        <translation type="unfinished" />
+        <translation>Kamera-Rollenwinkel (Rollen) (-180) RN0 &lt;&gt; 3600 ° / 0,1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9939" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10478" />
         <source>Vertical angle of the camera (Pitch)rn0 &lt;&gt; 1800° / 0.1</source>
-        <translation type="unfinished" />
+        <translation>Vertikaler Winkel der Kamera (Tonhöhe) RN0 &lt;&gt; 1800 ° / 0,1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9948" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10487" />
         <source>Horizontal angle of the camera (Yaw) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
-        <translation type="unfinished" />
+        <translation>Horizontaler Winkel der Kamera (Gier) (-180) RN0 &lt;&gt; 3600 ° / 0,1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9957" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10496" />
         <source>Distance between front wheels and front of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
-        <translation type="unfinished" />
+        <translation>Abstand zwischen Vorderrädern und Vorderseite des Fahrzeugs (+150) RN0 &lt;&gt; 1850 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9966" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10505" />
         <source>Distance between rear wheels and rear of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
-        <translation type="unfinished" />
+        <translation>Abstand zwischen den Hinterrädern und der Rückseite des Fahrzeugs (+150) RN0 &lt;&gt; 1850 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9975" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10514" />
         <source>Distance between rear wheels and front wheels (+1000)rn0 &lt;&gt; 4000mm</source>
-        <translation type="unfinished" />
+        <translation>Abstand zwischen Hinterrädern und Vorderrädern (+1000) RN0 &lt;&gt; 4000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9984" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10523" />
         <source>Distance between ground and rear bumper edgern0 &lt;&gt; 1500mm</source>
-        <translation type="unfinished" />
+        <translation>Abstand zwischen gemahlenem und hinteren Stoßfänger edern0 &lt;&gt; 1500 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9993" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10532" />
         <source>Line 0 width in pixel (Bottom)rn1 &lt;&gt; 50px</source>
-        <translation type="unfinished" />
+        <translation>Linie 0 Breite in Pixel (unten) RN1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10002" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10541" />
         <source>Line 1 width in pixels (Middle)rn1 &lt;&gt; 50px</source>
-        <translation type="unfinished" />
+        <translation>Linie 1 Breite in Pixel (Mitte) RN1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10011" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10550" />
         <source>Line 2 width in pixels (Top)rn1 &lt;&gt; 50px</source>
-        <translation type="unfinished" />
+        <translation>Linie 2 Breite in Pixel (oben) RN1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10020" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10559" />
         <source>Width of trajectory line in pixelsrn1 &lt;&gt; 50px</source>
-        <translation type="unfinished" />
+        <translation>Breite der Flugbahnlinie in Pixelsrn1 &lt;&gt; 50px</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10029" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10568" />
         <source>Real Top View Height (if camera is too low)rn1000 &lt;&gt; 2550mm</source>
-        <translation type="unfinished" />
+        <translation>Real Top -Ansichtshöhe (wenn die Kamera zu niedrig ist) RN1000 &lt;&gt; 2550 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10038" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10577" />
         <source>Image Brightnessrn0 &lt;&gt; 255</source>
-        <translation type="unfinished" />
+        <translation>Bildhellnessrn0 &lt;&gt; 255</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10047" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10586" />
         <source>Brightness rangern0 &lt;&gt; 255</source>
-        <translation type="unfinished" />
+        <translation>Helligkeit Rangern0 &lt;&gt; 255</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10056" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10595" />
         <source>Vehicle width (+1500)rn0 &lt;&gt; 1000mm</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugbreite (+1500) RN0 &lt;&gt; 1000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10065" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10604" />
         <source>Trailer hook heightrn50 &lt;&gt; 1500mm</source>
-        <translation type="unfinished" />
+        <translation>Anhängerhaken heightrn50 &lt;&gt; 1500 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10074" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10613" />
         <source>Trailer hook lengthrn0 &lt;&gt; 2000mm</source>
-        <translation type="unfinished" />
+        <translation>Anhängerhaken Länge von 0 &lt;&gt; 2000 mm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10083" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10622" />
         <source>Vertical Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
-        <translation type="unfinished" />
+        <translation>Vertikaler Vergrößerungsverhältnis (Heckseitenansichtsmodus) RN100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10092" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10631" />
         <source>Horizontal Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
-        <translation type="unfinished" />
+        <translation>Horizontaler Vergrößerungsverhältnis (Heckseitenansichtsmodus) RN100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10101" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10640" />
         <source>Vertical Enlargement Origin (Rear side view mode)</source>
-        <translation type="unfinished" />
+        <translation>Vertikale Vergrößerung Herkunft (Heckseitenansichtsmodus)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10108" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10130" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10647" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10669" />
         <source>Bottom</source>
-        <translation type="unfinished" />
+        <translation>Unten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10134" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10651" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10673" />
         <source>Center</source>
-        <translation type="unfinished" />
+        <translation>Center</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10116" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10655" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10677" />
         <source>Top / Top</source>
-        <translation type="unfinished" />
+        <translation>Top / Top</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10123" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10662" />
         <source>Vertical Enlargement Origin (Standard mode)</source>
-        <translation type="unfinished" />
+        <translation>Vertikale Vergrößerung Herkunft (Standardmodus)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10145" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10684" />
         <source>Vertical Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
-        <translation type="unfinished" />
+        <translation>Vertikaler Vergrößerungsverhältnis (Standardmodus) RN100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10154" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10693" />
         <source>Horizontal Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
-        <translation type="unfinished" />
+        <translation>Horizontalvergrößerungsverhältnis (Standardmodus) RN100 &lt;&gt; 170</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3" />
         <source>NAC</source>
-        <translation type="unfinished" />
+        <translation>NAC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="402" />
         <source>Amplifier powered by CD Charger</source>
-        <translation type="unfinished" />
+        <translation>Vom CD -Ladegerät angetriebener Verstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="586" />
         <source>Display of external temperature</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der externen Temperatur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="596" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="605" />
         <source>Alerts history</source>
-        <translation type="unfinished" />
+        <translation>Benachrichtigt die Geschichte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="669" />
         <source>Home screen</source>
-        <translation type="unfinished" />
+        <translation>Startbildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="730" />
         <source>Hide camera lines</source>
-        <translation type="unfinished" />
+        <translation>Kamera Linien verbergen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="748" />
         <source>OUTLINE</source>
-        <translation type="unfinished" />
+        <translation>GLIEDERUNG</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="768" />
         <source>"MirrorLink" function</source>
-        <translation type="unfinished" />
+        <translation>"MirrorLink" -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="816" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1022" />
         <source>Vehicle model</source>
-        <translation type="unfinished" />
+        <translation>Fahrzeugmodell</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="823" />
         <source>0x00 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x00 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="827" />
         <source>0x01 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x01 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="831" />
         <source>0x02 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x02 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="835" />
         <source>0x03 - W4: Traveller / DS3</source>
-        <translation type="unfinished" />
+        <translation>0x03 - W4: Reisender / DS3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="839" />
         <source>0x04 - W4: Partner / DS3 Cabrio.</source>
-        <translation type="unfinished" />
+        <translation>0x04 - W4: Partner / DS3 Cabrio.</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="843" />
         <source>0x05 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x05 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="847" />
         <source>0x06 - W4_HD: Corsa F | W4: 3008</source>
-        <translation type="unfinished" />
+        <translation>0x06 - W4_HD: Corsa F | W4: 3008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="851" />
         <source>0x07 - W4: 5008</source>
-        <translation type="unfinished" />
+        <translation>0x07 - W4: 5008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="855" />
         <source>0x08 - W4: 508</source>
-        <translation type="unfinished" />
+        <translation>0x08 - W4: 508</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="859" />
         <source>0x09 - W4: 2008</source>
-        <translation type="unfinished" />
+        <translation>0x09 - W4: 2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="863" />
         <source>0x0A - W4: 208 / C3</source>
-        <translation type="unfinished" />
+        <translation>0x0a - W4: 208 / C3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="867" />
         <source>0x0B: 308 / C4 Cactus</source>
-        <translation type="unfinished" />
+        <translation>0x0b: 308 / C4 Kaktus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="871" />
         <source>0x0C - W4: 308 / C4 Cactus</source>
-        <translation type="unfinished" />
+        <translation>0x0c - W4: 308 / C4 Cactus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="875" />
         <source>0x0D - W4: 308 / C4 Cactus</source>
-        <translation type="unfinished" />
+        <translation>0x0d - W4: 308 / C4 Cactus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="879" />
         <source>0x0E - W4: 308 / Berlingo</source>
-        <translation type="unfinished" />
+        <translation>0x0e - W4: 308 / Berlingo</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="883" />
         <source>0x0F - W4: 308 SW / Berlingo</source>
-        <translation type="unfinished" />
+        <translation>0x0f - W4: 308 SW / Berlingo</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="887" />
         <source>0x10 - W4: Traveller / Jumpy</source>
-        <translation type="unfinished" />
+        <translation>0x10 - W4: Reisender / Jumpy</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="891" />
         <source>0x11 - Rifter / Jumpy</source>
-        <translation type="unfinished" />
+        <translation>0x11 - Rifter / Jumpy</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="895" />
         <source>0x12 - W4: Partner / C5 Aircross</source>
-        <translation type="unfinished" />
+        <translation>0x12 - W4: Partner / C5 -Flugcross</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="899" />
         <source>0x13 - W4: Partner</source>
-        <translation type="unfinished" />
+        <translation>0x13 - W4: Partner</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="903" />
         <source>0x14 - W4: New 508</source>
-        <translation type="unfinished" />
+        <translation>0x14 - W4: neu 508</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="907" />
         <source>0x15 - W4: New 508SW</source>
-        <translation type="unfinished" />
+        <translation>0x15 - W4: neu 508SW</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="911" />
         <source>0x16 - W4: New 208</source>
-        <translation type="unfinished" />
+        <translation>0x16 - W4: Neu 208</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="915" />
         <source>0x17 - W4: 2008</source>
-        <translation type="unfinished" />
+        <translation>0x17 - W4: 2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="919" />
         <source>0x18 - W4_HD: New 2008 | W4: e2008</source>
-        <translation type="unfinished" />
+        <translation>0x18 - W4_HD: New 2008 | W4: E2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="923" />
         <source>0x19 - W4: e208</source>
-        <translation type="unfinished" />
+        <translation>0x19 - W4: e208</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="927" />
         <source>0x1A - W4: 3008</source>
-        <translation type="unfinished" />
+        <translation>0x1a - W4: 3008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="931" />
         <source>0x1B - W4: 5008</source>
-        <translation type="unfinished" />
+        <translation>0x1b - W4: 5008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="935" />
         <source>0x1C - W4_HD: New 508 | W4: New 508</source>
-        <translation type="unfinished" />
+        <translation>0x1c - w4_hd: neu 508 | W4: Neu 508</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="939" />
         <source>0x1D - W4: New 508 (Partial)</source>
-        <translation type="unfinished" />
+        <translation>0x1d - W4: neu 508 (partiell)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="943" />
         <source>0x1E - W4_HD: New 3008 / DS7</source>
-        <translation type="unfinished" />
+        <translation>0x1e - W4_HD: Neu 3008 / DS7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="947" />
         <source>0x1F - W4_HD: New 5008</source>
-        <translation type="unfinished" />
+        <translation>0x1f - w4_hd: neu 5008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="951" />
         <source>0x20</source>
-        <translation type="unfinished" />
+        <translation>0x20</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="955" />
         <source>0x21</source>
-        <translation type="unfinished" />
+        <translation>0x21</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="959" />
         <source>0x22 - W4: 308 iCockpit</source>
-        <translation type="unfinished" />
+        <translation>0x22 - W4: 308 Icockpit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="963" />
         <source>0x23 - W4: 308SW iCockpit</source>
-        <translation type="unfinished" />
+        <translation>0x23 - W4: 308SW Icockpit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="967" />
         <source>0x24 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x24 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="971" />
         <source>0x25 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x25 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="975" />
         <source>0x26 - W4: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x26 - W4: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="979" />
         <source>0x27</source>
-        <translation type="unfinished" />
+        <translation>0x27</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="983" />
         <source>0x28</source>
-        <translation type="unfinished" />
+        <translation>0x28</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="987" />
         <source>0x29</source>
-        <translation type="unfinished" />
+        <translation>0x29</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="991" />
         <source>0x2A</source>
-        <translation type="unfinished" />
+        <translation>0x2a</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="995" />
         <source>0x2B</source>
-        <translation type="unfinished" />
+        <translation>0x2b</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="999" />
         <source>0x2C</source>
-        <translation type="unfinished" />
+        <translation>0x2c</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1003" />
         <source>0x2D</source>
-        <translation type="unfinished" />
+        <translation>0x2d</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1007" />
         <source>0x2E</source>
-        <translation type="unfinished" />
+        <translation>0x2e</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1011" />
         <source>0x2F</source>
-        <translation type="unfinished" />
+        <translation>0x2f</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1015" />
         <source>0x30</source>
-        <translation type="unfinished" />
+        <translation>0x30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1029" />
         <source>0x00</source>
-        <translation type="unfinished" />
+        <translation>0x00</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1033" />
         <source>0x02</source>
-        <translation type="unfinished" />
+        <translation>0x02</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1037" />
         <source>0x04 - W2: ProAce</source>
-        <translation type="unfinished" />
+        <translation>0x04 - W2: Proace</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1041" />
         <source>0x06 - W2: Traveller | W2CN: 308S</source>
-        <translation type="unfinished" />
+        <translation>0x06 - W2: Traveller | W2CN: 308s</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1045" />
         <source>0x08 - W2: Traveller</source>
-        <translation type="unfinished" />
+        <translation>0x08 - W2: Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1049" />
         <source>0x0A - W2: Traveller / Jumpy | W2CN: 408</source>
-        <translation type="unfinished" />
+        <translation>0x0a - W2: Traveller / Jumpy | W2CN: 408</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1053" />
         <source>0x0C - W2: 3008 / C4 Spac. | W2CN: 2008</source>
-        <translation type="unfinished" />
+        <translation>0x0c - W2: 3008 / C4 SPAC. | W2CN: 2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1057" />
         <source>0x0E - W2: 5008 / Grand C4 Spac. | W2CN: 508</source>
-        <translation type="unfinished" />
+        <translation>0x0e - W2: 5008 / Grand C4 SPAC. | W2CN: 508</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1061" />
         <source>0x10 - W2: 301 / C3</source>
-        <translation type="unfinished" />
+        <translation>0x10 - W2: 301 / C3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1065" />
         <source>0x12 - W2: 2008 / C-Elysée</source>
-        <translation type="unfinished" />
+        <translation>0x12 - W2: 2008 / C -Elysée</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1069" />
         <source>0x14 - W2: 208 / C3 Airc. | W2CN: 308</source>
-        <translation type="unfinished" />
+        <translation>0x14 - W2: 208 / C3 Airc. | W2CN: 308</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1073" />
         <source>0x16 - W2: 508 SW / C4 II</source>
-        <translation type="unfinished" />
+        <translation>0x16 - W2: 508 SW / C4 II</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1077" />
         <source>0x18 - W2: 508 / C4L | W2CN: 308S</source>
-        <translation type="unfinished" />
+        <translation>0x18 - W2: 508 / C4L | W2CN: 308s</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1081" />
         <source>0x1A - W2: 508 RHX / C4 Spac.</source>
-        <translation type="unfinished" />
+        <translation>0x1a - W2: 508 Rhx / C4 SPAC.</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1085" />
         <source>0x1C - W2: 308</source>
-        <translation type="unfinished" />
+        <translation>0x1c - W2: 308</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1089" />
         <source>0x1E - W2: 308 SW</source>
-        <translation type="unfinished" />
+        <translation>0x1e - W2: 308 SW</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1142" />
         <source>Location of the obstacle detection system</source>
-        <translation type="unfinished" />
+        <translation>Standort des Hinderniserkennungssystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1240" />
         <source>Telecoding_Fct_SCREEN2</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_screen2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1248" />
         <source>Type of secondary screen</source>
-        <translation type="unfinished" />
+        <translation>Art des sekundären Bildschirms</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1259" />
         <source>Present</source>
-        <translation type="unfinished" />
+        <translation>Gegenwärtig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1348" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1771" />
         <source>?</source>
-        <translation type="unfinished" />
+        <translation>?</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1365" />
         <source>Hybrid page presence</source>
-        <translation type="unfinished" />
+        <translation>Hybridseitenpräsenz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1508" />
         <source>VERR_INTERNET</source>
-        <translation type="unfinished" />
+        <translation>Verr_internet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1600" />
         <source>Display of alerts and "risk areas" on the multifunction screen</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Warnungen und "Risikobereichen" auf dem Multifunktionsbildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1609" />
         <source>Display of speed limit</source>
-        <translation type="unfinished" />
+        <translation>Anzeige der Geschwindigkeitsbegrenzung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1618" />
         <source>Display of navigation instructions without the name of the streets</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Navigationsanweisungen ohne den Namen der Straßen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1627" />
         <source>Display of navigation instructions with the name of the streets</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Navigationsanweisungen mit dem Namen der Straßen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1636" />
         <source>Display of navigation instructions with the name of the streets and intersections</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Navigationsanweisungen mit dem Namen der Straßen und Kreuzungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1645" />
         <source>Display of navigation instructions with the name of the streets and lanes changing</source>
-        <translation type="unfinished" />
+        <translation>Anzeige von Navigationsanweisungen mit dem Namen der Straßen und Gassen sich ändern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1654" />
         <source>Speed limitation from Multifunction Camera in the windshield</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsbeschränkung aus einer Multifunktionskamera in der Windschutzscheibe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1663" />
         <source>Display of risk areas</source>
-        <translation type="unfinished" />
+        <translation>Ausstellung von Risikobereichen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1672" />
         <source>Selection of the navigation maps</source>
-        <translation type="unfinished" />
+        <translation>Auswahl der Navigationskarten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1679" />
         <source>Continent</source>
-        <translation type="unfinished" />
+        <translation>Kontinent</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1683" />
         <source>Country</source>
-        <translation type="unfinished" />
+        <translation>Land</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1691" />
         <source>France</source>
-        <translation type="unfinished" />
+        <translation>Frankreich</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1742" />
         <source>Preferred SID (TMC automatic station)</source>
-        <translation type="unfinished" />
+        <translation>Bevorzugter SID (TMC Automatic Station)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2021" />
         <source>Tire pressure</source>
-        <translation type="unfinished" />
+        <translation>Reifendruck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2240" />
         <source>Permanent display of the on-board computer</source>
-        <translation type="unfinished" />
+        <translation>Permanente Anzeige des Onboard-Computers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2249" />
         <source>Partial mileage display</source>
-        <translation type="unfinished" />
+        <translation>Teilweise Kilometerleistung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2258" />
         <source>On-board computer display</source>
-        <translation type="unfinished" />
+        <translation>On-Bord-Computeranzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2294" />
         <source>Configuration of the on-board computer</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration des Onboard-Computers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2301" />
         <source>Instant consumption</source>
-        <translation type="unfinished" />
+        <translation>Sofortiger Verbrauch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2305" />
         <source>Routing 1</source>
-        <translation type="unfinished" />
+        <translation>Routing 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2309" />
         <source>Routing 2</source>
-        <translation type="unfinished" />
+        <translation>Routing 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="8991" />
         <source>Video display resolution 1</source>
-        <translation type="unfinished" />
+        <translation>Videoanzeigeauflösung 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9000" />
         <source>Video display resolution 2</source>
-        <translation type="unfinished" />
+        <translation>Videoanzeigeauflösung 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9009" />
         <source>Telecoding_Fct_BTA</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_BTA</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9061" />
         <source>Telecoding_Fct_IDVR_HMI/ATB</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_IDVR_HMI/ATB</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9283" />
         <source>LIST type button - High Digital Cockpit</source>
-        <translation type="unfinished" />
+        <translation>Taste Typtyp - Hoch digitales Cockpit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9292" />
         <source>SOURCE type button - High Digital Cockpit</source>
-        <translation type="unfinished" />
+        <translation>Quellentypknopf - High Digital Cockpit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9301" />
         <source>PHONE type button - High Digital Cockpit</source>
-        <translation type="unfinished" />
+        <translation>Taste vom Typ Telefon - Hoch digitales Cockpit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9389" />
         <source>LVDS #1 configuration</source>
-        <translation type="unfinished" />
+        <translation>LVDS #1 Konfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9396" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9418" />
         <source>30 GMSL Bits</source>
-        <translation type="unfinished" />
+        <translation>30 GMSL -Bits</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9400" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9422" />
         <source>40 GMSL Bits</source>
-        <translation type="unfinished" />
+        <translation>40 GMSL -Bits</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9404" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9426" />
         <source>30 GMSL Bits High Bandwidth</source>
-        <translation type="unfinished" />
+        <translation>30 GMSL -Bits hohe Bandbreite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9411" />
         <source>LVDS #2 configuration</source>
-        <translation type="unfinished" />
+        <translation>LVDS #2 Konfiguration</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9496" />
         <source>Telecoding_Fct_ELECTRIC</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_electric</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9504" />
         <source>Electrical engine</source>
-        <translation type="unfinished" />
+        <translation>Elektrikmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9513" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2079" />
         <source>Internal combustion engine</source>
-        <translation type="unfinished" />
+        <translation>Verbrennungsmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9522" />
         <source>Rear electric machine</source>
-        <translation type="unfinished" />
+        <translation>Hintere elektrische Maschine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9531" />
         <source>Battery Electric Vehicle</source>
-        <translation type="unfinished" />
+        <translation>Batterie -Elektrofahrzeug</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9540" />
         <source>Air conditioning mode</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlagenmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9549" />
         <source>Telecoding_Fct_AIO</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_FCT_AIO</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9698" />
         <source>Air distribution type</source>
-        <translation type="unfinished" />
+        <translation>Luftverteilungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9725" />
         <source>Rear air conditioning facade</source>
-        <translation type="unfinished" />
+        <translation>Heckklimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9761" />
         <source>Presence of the ambient air measurement system in the car</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Umgebungsluftmesssystems im Auto</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9786" />
         <source>No air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Keine Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9814" />
         <source>Presence of the "AC max" touch key</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des "AC Max" -Beuchschlüssels</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9859" />
         <source>Air distribution</source>
-        <translation type="unfinished" />
+        <translation>Luftverteilung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9877" />
         <source>Air conditioning Menu activation</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlagenmenü Aktivierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10320" />
         <source>Ambiance Perfume</source>
-        <translation type="unfinished" />
+        <translation>Ambiente Parfüm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10364" />
         <source>iCockpit Amplify / Neosense / Sensorial Drive</source>
-        <translation type="unfinished" />
+        <translation>Icockpit Amplify / NeoSense / Sensorial Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10375" />
         <source>Activated</source>
-        <translation type="unfinished" />
+        <translation>Aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="2" />
         <source>IVI_TEST</source>
-        <translation type="unfinished" />
+        <translation>Ivi_test</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="32" />
         <source>Telecoding_Serial?</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_Serial?</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/IVI.json" line="49" />
         <source>Telecoding_Fct_VIN</source>
-        <translation type="unfinished" />
+        <translation>Telecoding_fct_vin</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="2" />
         <source>ARTIV_UDS</source>
-        <translation type="unfinished" />
+        <translation>Artiv_uds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="31" />
         <source>Type of engine</source>
-        <translation type="unfinished" />
+        <translation>Motorart</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1670" />
         <source>Electric</source>
-        <translation type="unfinished" />
+        <translation>Elektrisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="56" />
         <source>Starting frequency (Megahertz)</source>
-        <translation type="unfinished" />
+        <translation>Startfrequenz (Megahertz)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="63" />
         <source>24150</source>
-        <translation type="unfinished" />
+        <translation>24150</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="67" />
         <source>24075</source>
-        <translation type="unfinished" />
+        <translation>24075</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="73" />
         <source>Type of cruise control</source>
-        <translation type="unfinished" />
+        <translation>Art der Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="80" />
         <source>Cruise control ABSENT</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung fehlen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="88" />
         <source>Adapted cruise control until the vehicle stops</source>
-        <translation type="unfinished" />
+        <translation>Adaptive Geschwindigkeitsregelung, bis das Fahrzeug stoppt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="94" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="78" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="169" />
         <source>Emergency collision braking function</source>
-        <translation type="unfinished" />
+        <translation>Bremsfunktion für Notfallkollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="111" />
         <source>Presence of the emergency collision braking function</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Notfallkollisionsbremsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/RADAR_AV4.json" line="2" />
         <source>RADAR_AV4</source>
-        <translation type="unfinished" />
+        <translation>Radar_av4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/RADAR_AV4.json" line="31" />
         <source>Type of speed regulator</source>
-        <translation type="unfinished" />
+        <translation>Art des Geschwindigkeitsreglers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="2" />
         <source>DAE_BVH2</source>
-        <translation type="unfinished" />
+        <translation>DAE_BVH2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="23" />
         <source>Presense of semi-automatic parking</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von halbautomatischen Parkplätzen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="40" />
         <source>Presense of steering angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Lenkwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="47" />
         <source>WITHOUT steering angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Ohne Lenkwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="51" />
         <source>With steering angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Mit Lenkwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="57" />
         <source>Presense of Start and Stop</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Start und Stopp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="64" />
         <source>Start and Stop with generator-starter</source>
-        <translation type="unfinished" />
+        <translation>Starten Sie und halten Sie mit Generator-Starter an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="68" />
         <source>Hybrid or Start and Stop with starter</source>
-        <translation type="unfinished" />
+        <translation>Hybrid oder Start und stoppen Sie mit Starter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="74" />
         <source>Presense of Lane Positioning Assist</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein einer Spurpositionierungserassistent</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_BVH2.json" line="91" />
         <source>Presense of Lane Keeping Assist</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Lane Heeping Assist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="2" />
         <source>DAE UDS</source>
-        <translation type="unfinished" />
+        <translation>Dae uds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="34" />
         <source>CONFIG_INDICE_TELECODAGE</source>
-        <translation type="unfinished" />
+        <translation>Config_indice_telecodage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="41" />
         <source>CONFIG_INDICE_TELECODAGE_01</source>
-        <translation type="unfinished" />
+        <translation>Config_indice_telecodage_01</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="45" />
         <source>CONFIG_INDICE_TELECODAGE_03</source>
-        <translation type="unfinished" />
+        <translation>Config_indice_telecodage_03</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="51" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3707" />
         <source>Full lane keeping assistance function</source>
-        <translation type="unfinished" />
+        <translation>Full Lane Heeard Assistance -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="58" />
         <source>With lane keeping assistance function</source>
-        <translation type="unfinished" />
+        <translation>Mit der Fahrspur -Hilfsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="62" />
         <source>Without lane keeping assistance function</source>
-        <translation type="unfinished" />
+        <translation>Ohne Fahren bei der Fahrspur -Hilfsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="75" />
         <source>With dynamic driving function</source>
-        <translation type="unfinished" />
+        <translation>Mit dynamischer Fahrfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="79" />
         <source>Without dynamic driving function</source>
-        <translation type="unfinished" />
+        <translation>Ohne dynamische Fahrfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="85" />
         <source>Stop and Start</source>
-        <translation type="unfinished" />
+        <translation>Stoppen Sie und beginnen Sie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="92" />
         <source>With Stop and Start</source>
-        <translation type="unfinished" />
+        <translation>Mit Stopp und Start</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="119" />
         <source>Type of steering wheel angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Art des Lenkradwinkelsensors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="126" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="130" />
         <source>Without steering wheel angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Ohne Lenkradwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="138" />
         <source>With virtual steering wheel angle sensor</source>
-        <translation type="unfinished" />
+        <translation>Mit virtuellem Lenkradwinkelsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="144" />
         <source>Type of tyre</source>
-        <translation type="unfinished" />
+        <translation>Art des Reifens</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="150" />
         <source>15 inches</source>
-        <translation type="unfinished" />
+        <translation>15 Zoll</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="154" />
         <source>16 inches</source>
-        <translation type="unfinished" />
+        <translation>16 Zoll</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="158" />
         <source>17 inches</source>
-        <translation type="unfinished" />
+        <translation>17 Zoll</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/DIRECTN/DAE_UDS.json" line="162" />
         <source>18 inches</source>
-        <translation type="unfinished" />
+        <translation>18 Zoll</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="2" />
         <source>cvm</source>
-        <translation type="unfinished" />
+        <translation>CVM</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="23" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="42" />
         <source>Type of lighting</source>
-        <translation type="unfinished" />
+        <translation>Art der Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="30" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="61" />
         <source>Halogen lamp</source>
-        <translation type="unfinished" />
+        <translation>Halogenlampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="34" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="53" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="846" />
         <source>Xenon lamp</source>
-        <translation type="unfinished" />
+        <translation>Xenon -Lampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="40" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="237" />
         <source>Speed limit indication</source>
-        <translation type="unfinished" />
+        <translation>Angabe der Geschwindigkeitsbegrenzung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="51" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="248" />
         <source>Function present with navigation system</source>
-        <translation type="unfinished" />
+        <translation>Funktion mit Navigationssystem vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="252" />
         <source>Function present without navigation system</source>
-        <translation type="unfinished" />
+        <translation>Funktion ohne Navigationssystem vorhanden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="61" />
         <source>Lane keeping assist</source>
-        <translation type="unfinished" />
+        <translation>Lane Heeard Assist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="95" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="186" />
         <source>Headlamp assistant function (HBA)</source>
-        <translation type="unfinished" />
+        <translation>Scheinwerfer Assistant -Funktion (HBA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="203" />
         <source>Lane departure warning system</source>
-        <translation type="unfinished" />
+        <translation>Warnsystem für Spurverlassen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="129" />
         <source>Type of alarm for lane keeping assistance</source>
-        <translation type="unfinished" />
+        <translation>Art des Alarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM2.json" line="140" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="231" />
         <source>With ACC</source>
-        <translation type="unfinished" />
+        <translation>Mit ACC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="2" />
         <source>CVM3</source>
-        <translation type="unfinished" />
+        <translation>CVM3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="49" />
         <source>Not specified</source>
-        <translation type="unfinished" />
+        <translation>Nicht angegeben</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="57" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="847" />
         <source>LED lamp</source>
-        <translation type="unfinished" />
+        <translation>LED -Lampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="67" />
         <source>Main beams assistant function improved</source>
-        <translation type="unfinished" />
+        <translation>Hauptstrahlen Assistant -Funktion verbesserte sich</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="84" />
         <source>Recognition of road signs</source>
-        <translation type="unfinished" />
+        <translation>Anerkennung von Straßenschildern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="101" />
         <source>Presence of the distance alert radar</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein des Abstandswarnradars</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="118" />
         <source>Adapted cruise control (ACC)</source>
-        <translation type="unfinished" />
+        <translation>Angepasste Geschwindigkeitsregelung (ACC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="135" />
         <source>Variable damping suspension</source>
-        <translation type="unfinished" />
+        <translation>Variable Dämpfungsfederung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="152" />
         <source>Lane keeping assistance function LKA/LPA and/or detection of reduced driver vigilance DAA3/DAA4</source>
-        <translation type="unfinished" />
+        <translation>Spurhaltehilfefunktion LKA/LPA und/oder Erkennung von reduzierter Fahrerwachung DAA3/DAA4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/CVM/CVM3.json" line="220" />
         <source>Type of lane departure warning</source>
-        <translation type="unfinished" />
+        <translation>Art der Spurverlassenswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="2" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="21" />
         <source>DGT Screen</source>
-        <translation type="unfinished" />
+        <translation>DGT -Bildschirm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="31" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="63" />
         <source>??? Button</source>
-        <translation type="unfinished" />
+        <translation>??? Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="47" />
         <source>Airco/Temperature Button</source>
-        <translation type="unfinished" />
+        <translation>Airco/Temperaturknopf</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="82" />
         <source>Configuration group data list 2110</source>
-        <translation type="unfinished" />
+        <translation>Konfigurationsgruppendatenliste 2110</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="86" />
         <source>Touch</source>
-        <translation type="unfinished" />
+        <translation>Berühren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="92" />
         <source>Single-Touch</source>
-        <translation type="unfinished" />
+        <translation>Single-Touch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AFFICHEUR_LVDS_BD/DGT_Screen.json" line="96" />
         <source>Multi-Touch</source>
-        <translation type="unfinished" />
+        <translation>Multi-Touch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BOITEVIT/BVA_AXN8.json" line="2" />
         <source>BVA_AXN8</source>
-        <translation type="unfinished" />
+        <translation>BVA_AXN8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3" />
         <source>bsi_2010</source>
-        <translation type="unfinished" />
+        <translation>BSI_2010</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="19" />
         <source>VIN CODE</source>
-        <translation type="unfinished" />
+        <translation>Vin -Code</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="20" />
         <source>ECUS PRESET</source>
-        <translation type="unfinished" />
+        <translation>ECUS Preset</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="21" />
         <source>MAINTENANCE</source>
-        <translation type="unfinished" />
+        <translation>WARTUNG</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="22" />
         <source>POWER UNIT</source>
-        <translation type="unfinished" />
+        <translation>Stromeinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="23" />
         <source>DRIVER INFORMATION</source>
-        <translation type="unfinished" />
+        <translation>Fahrerinformationen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="24" />
         <source>LIGHTING-SIGNALING</source>
-        <translation type="unfinished" />
+        <translation>Beleuchtungssignal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="25" />
         <source>WASHING AND WIPING</source>
-        <translation type="unfinished" />
+        <translation>Waschen und Wischen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="28" />
         <source>PROTECTION-ACCESSES-MECHANICAL ASSISTANCE</source>
-        <translation type="unfinished" />
+        <translation>Schutzhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="29" />
         <source>DRIVING COMFORT</source>
-        <translation type="unfinished" />
+        <translation>Fahrkomfort</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="30" />
         <source>MISCELLANEOUS</source>
-        <translation type="unfinished" />
+        <translation>VERSCHIEDENES</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="31" />
         <source>Unsorted</source>
-        <translation type="unfinished" />
+        <translation>Ich sortiert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="49" />
         <source>Mileage</source>
-        <translation type="unfinished" />
+        <translation>Kilometerstand</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="54" />
         <source>Gauging group data list</source>
-        <translation type="unfinished" />
+        <translation>Gruppendatenliste messen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="70" />
         <source>Maintenance group data list</source>
-        <translation type="unfinished" />
+        <translation>Datenliste für Wartungsgruppen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="78" />
         <source>Maintenance group data values</source>
-        <translation type="unfinished" />
+        <translation>Datenwerte für Wartungsgruppen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="86" />
         <source>Secured configuration settings group data list</source>
-        <translation type="unfinished" />
+        <translation>Gesicherte Konfigurationseinstellungen Gruppendatenliste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="94" />
         <source>Secured configuration settings data values</source>
-        <translation type="unfinished" />
+        <translation>Sicherungskonfigurationseinstellungen Datenwerte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="102" />
         <source>Secured configuration settings group data list 2</source>
-        <translation type="unfinished" />
+        <translation>Gesicherte Konfigurationseinstellungen Gruppendatenliste 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="114" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="180" />
         <source>Type 0</source>
-        <translation type="unfinished" />
+        <translation>Typ 0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="119" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="185" />
         <source>Type 5</source>
-        <translation type="unfinished" />
+        <translation>Typ 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="120" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="186" />
         <source>Type 6</source>
-        <translation type="unfinished" />
+        <translation>Typ 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="121" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="187" />
         <source>Type 7</source>
-        <translation type="unfinished" />
+        <translation>Typ 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="122" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="188" />
         <source>Type 8</source>
-        <translation type="unfinished" />
+        <translation>Typ 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="123" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="189" />
         <source>Type 9</source>
-        <translation type="unfinished" />
+        <translation>Typ 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="124" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="190" />
         <source>Type 10</source>
-        <translation type="unfinished" />
+        <translation>Typ 10</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="125" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="191" />
         <source>Type 11</source>
-        <translation type="unfinished" />
+        <translation>Typ 11</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="126" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="192" />
         <source>Type 12</source>
-        <translation type="unfinished" />
+        <translation>Typ 12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="127" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="193" />
         <source>Type 13</source>
-        <translation type="unfinished" />
+        <translation>Typ 13</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="128" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="194" />
         <source>Type 14</source>
-        <translation type="unfinished" />
+        <translation>Typ 14</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="129" />
         <source>Type 16</source>
-        <translation type="unfinished" />
+        <translation>Typ 16</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="131" />
         <source>Fuel level measurement algorithm</source>
-        <translation type="unfinished" />
+        <translation>Kraftstoffspiegel -Messalgorithmus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="139" />
         <source>Tank capacity in liters</source>
-        <translation type="unfinished" />
+        <translation>Tankkapazität in Litern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="148" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="160" />
         <source>0</source>
-        <translation type="unfinished" />
+        <translation>0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="149" />
         <source>350 Ohms</source>
-        <translation type="unfinished" />
+        <translation>350 Ohm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="151" />
         <source>The resistance of the fuel level sensor with an empty tank</source>
-        <translation type="unfinished" />
+        <translation>Der Widerstand des Kraftstoffpegelsensors mit einem leeren Tank</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="161" />
         <source>64 Ohms</source>
-        <translation type="unfinished" />
+        <translation>64 Ohm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="163" />
         <source>The resistance of the fuel level sensor with a full tank</source>
-        <translation type="unfinished" />
+        <translation>Der Widerstand des Kraftstoffniveaussensors mit einem vollen Tank</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="171" />
         <source>Gauging law (Alert level)</source>
-        <translation type="unfinished" />
+        <translation>Messgesetz (Alarmstufe)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="195" />
         <source>Type 15</source>
-        <translation type="unfinished" />
+        <translation>Typ 15</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="197" />
         <source>Selecting the mode of monitoring the level of motor oil</source>
-        <translation type="unfinished" />
+        <translation>Auswählen der Art der Überwachung des Motorölniveaus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="206" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="219" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="232" />
         <source>Motor service box</source>
-        <translation type="unfinished" />
+        <translation>Motorservice Box</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="207" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="220" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="233" />
         <source>Engine control computer</source>
-        <translation type="unfinished" />
+        <translation>Motorsteuerungscomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="208" />
         <source>No acquisition</source>
-        <translation type="unfinished" />
+        <translation>KEINE Erwerb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="210" />
         <source>Source of oil level</source>
-        <translation type="unfinished" />
+        <translation>Ölstandsquelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="221" />
         <source>Smart utility box</source>
-        <translation type="unfinished" />
+        <translation>Smart Utility Box</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="223" />
         <source>Source of oil pressure information</source>
-        <translation type="unfinished" />
+        <translation>Quelle für Öldruckinformationen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="235" />
         <source>Source of oil temperature</source>
-        <translation type="unfinished" />
+        <translation>Öltemperaturquelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="244" />
         <source>Pressure meter</source>
-        <translation type="unfinished" />
+        <translation>Druckmesser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="245" />
         <source>Analog sensor</source>
-        <translation type="unfinished" />
+        <translation>Analogsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="248" />
         <source>The presence and type of oil pressure sensor</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art des Öldrucksensors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="256" />
         <source>Critical fuel level</source>
-        <translation type="unfinished" />
+        <translation>Kritischer Kraftstoffspiegel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="264" />
         <source>Threshold Average life</source>
-        <translation type="unfinished" />
+        <translation>Schwellenwertdurchschnittleben</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2363" />
         <source>Without</source>
-        <translation type="unfinished" />
+        <translation>Ohne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="274" />
         <source>parking assistance rear</source>
-        <translation type="unfinished" />
+        <translation>Parkhilfe hinten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="275" />
         <source>Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Parkhilfe vorne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="276" />
         <source>front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="277" />
         <source>without parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="278" />
         <source>rear parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Heckparkhilfe + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="279" />
         <source>Front parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="280" />
         <source>With the front and rear parking assistance and with the available space measuring function managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Mit der vorderen und hinteren Parkhilfe und mit der verfügbaren Platzmessfunktion, die von der Parkhilfe ECU verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="281" />
         <source>without parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + verfügbare Platzmessung, die von der Überwachung der Blinde Spot verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="282" />
         <source>rear parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Heckparkhilfe + verfügbare Platzmessung, die von der Überwachung der Blinde Spot verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="283" />
         <source>Front parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="284" />
         <source>Front / rear parking assistance and available space measurement by blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- / Hinterparkhilfe und verfügbare Platzmessung mit der Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="285" />
         <source>Visual reversing assistance without parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Unterstützung bei der visuellen Umkehrung ohne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="286" />
         <source>Rear parking assistance and visual reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Heckparkhilfe und visuelle Umkehrungsunterstützungskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="287" />
         <source>Front parking assistance + reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + Umkehrungsunterstützungskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="288" />
         <source>With front and rear parking assistance and visual reversing assistance</source>
-        <translation type="unfinished" />
+        <translation>Mit vorderen und hinteren Parkhilfe und visuelle Umkehrung Hilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="289" />
         <source>without parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + Umkehrungsunterstützung Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="290" />
         <source>Rear parking assistance and visual reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Heckparkhilfe und visuelle Umkehrhilfekamera + verfügbare Raummessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="291" />
         <source>Front parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Front Parkhilfe + Umkehrhilfekamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="292" />
         <source>front and rear parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + Umkehr ASSERICHERCAMERA + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="293" />
         <source>without parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + Umkehr -Assistenzkamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="294" />
         <source>Rear parking assistance and visual reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Heckparkhilfe und visuelle Umkehrhilfekamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="295" />
         <source>Front parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Front Parkhilfe + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="296" />
         <source>front and rear parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="297" />
         <source>With front and rear parking assistance and with semi-automatic parking system</source>
-        <translation type="unfinished" />
+        <translation>Mit vorderen und hinteren Parkhilfe und mit halbautomatischem Parksystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="298" />
         <source>without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="299" />
         <source>rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="300" />
         <source>Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="301" />
         <source>front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatische Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="302" />
         <source>without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung durch die Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="303" />
         <source>rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung durch die Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="304" />
         <source>Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatisches Parkhilfesystem + verfügbare Platzmessung durch die Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="305" />
         <source>front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatische Parkhilfesystem + verfügbare Platzmessung durch die Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="306" />
         <source>With front and rear parking assistance, with visual reversing assistance and with semi-automatic parking system</source>
-        <translation type="unfinished" />
+        <translation>Mit vorderen und hinteren Parkhilfe, mit visueller Umkehrhilfe und mit halbautomatischem Parksystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="307" />
         <source>without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatische Parkhilfesystem + Umkehrungsunterstützung Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="308" />
         <source>rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatische Parkhilfesystem + Umkehrassistent Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="309" />
         <source>Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatische Parkhilfesystem + Umkehrhilfekamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="310" />
         <source>front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatische Parkhilfesystem + Umkehrassistent Kamera + verfügbare Raummessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="311" />
         <source>without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="312" />
         <source>rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatische Parkhilfesystem + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="313" />
         <source>Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Front Parkhilfe + halbautomatische Parkhilfesystem + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="314" />
         <source>front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatische Parkhilfesystem + Umkehrassistent Kamera + verfügbare Platzmessung von der Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="315" />
         <source>semi-automatic parking system with perpendicular parking option + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Semiautomatisches Parksystem mit senkrechter Parkoption + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="316" />
         <source>semi-automatic parking system with perpendicular parking option + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Semiautomatisches Parksystem mit senkrechter Parkoption + Umkehrungsunterstützungskamera + hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="317" />
         <source>semi-automatic parking system with perpendicular parking option + rear parking assistance + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Halbautomatisches Parksystem mit senkrechter Parkoption + hintere Parkhilfe + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="318" />
         <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkmöglichkeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="319" />
         <source>without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="320" />
         <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="321" />
         <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="322" />
         <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="323" />
         <source>without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung, die vom blinden Spotüberwachung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="324" />
         <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbarer Platzmess</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="325" />
         <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbarer Platzmess</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="326" />
         <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + verfügbare Platzmessung durch die Überwachung der Blinde Spot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="327" />
         <source>front and rear parking assistance + reversing assistance camera + semi-automatic parking system with perpendicular parking option</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + Umkehr-Unterstützung Kamera + halbautomatisches Parksystem mit senkrechter Parkmöglichkeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="328" />
         <source>without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrhilfekamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="329" />
         <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrhilfekamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="330" />
         <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorderparkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrhilfekamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="331" />
         <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrassistent Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="332" />
         <source>without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Ohne Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrhilfekamera + verfügbare Platzmessung, die vom Blind Spot-Überwachung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="333" />
         <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="334" />
         <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Front Parkhilfe + Halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrhilfekamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="335" />
         <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und hintere Parkhilfe + halbautomatisches Parksystem mit senkrechter Parkoption + Umkehrassistent Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="336" />
         <source>Side view through rear vision side camera + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch hintere Sichtseitenkamera + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="337" />
         <source>Side view through rear vision side camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="338" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + vorne und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="339" />
         <source>Side view through rear vision side camera + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + Umkehr -Assistenzkamera + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="340" />
         <source>Side view through rear vision side camera + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + Umkehr -Assistenzkamera + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="341" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehrungsunterstützung Kamera + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="342" />
         <source>Side view through rear vision side camera</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die Nebenkamera der hinteren Sicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="343" />
         <source>Side view through rear vision side camera + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="344" />
         <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="345" />
         <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch hintere Sichtseitenkamera + verfügbare Platzmessung mit der Parkhilfe ECU + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="346" />
         <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Platzmessung mit der Parkhilfe ECU + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="347" />
         <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Platzmessung mit der Parkhilfe ECU + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="348" />
         <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Raummessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="349" />
         <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Raummessung, die von der Überwachung der Blinde Spot verwaltet wird + hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="350" />
         <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Raummessung, die von der Überwachung der blinden Stelle verwaltet wird + vordere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="351" />
         <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + verfügbare Raummessung, die von der Überwachung der Blinde Spot + vordere und hintere Parkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="352" />
         <source>Side view through rear vision side camera + reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + Umkehr -Assistenzkamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="353" />
         <source>Side view through rear vision side camera + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + Umkehr -Assistenzkamera + vordere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="354" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr ASSERICHERKAMERA + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="355" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr Assistenzkamera + verfügbare Platzmessung durch die Parkhilfe ECU + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="356" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehrhilfekamera + verfügbare Platzmessung durch die Parkhilfe ECU + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="357" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr ASSERICHERCAMERA + VERFÜGBAR</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="358" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + Umkehr Assistenzkamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="359" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr Assistenzkamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="360" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr Assistenzkamera + verfügbare Platzmessung durch die Überwachung der blinden Stelle + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="361" />
         <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + Umkehr Assistenzkamera + verfügbare Platzmessung durch die Überwachung der blinden Stelle + vorne und hinten Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="362" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parkhilfesystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="363" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch hintere Sichtseitenkamera + halbautomatisches Parkhilfesystem + Heckparkunterstützung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="364" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="365" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="366" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parkhilfesystem + verfügbare Raummessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="367" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Platzmessung mit der Parkhilfe ECU + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="368" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Platzmessung mit der Parkhilfe ECU + Front Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="369" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Platzmessung mit der Parkhilfe ECU + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="370" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Raummessung, die vom blinden Spot-Überwachung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="371" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Raummessung, die von der Überwachung der blinden Stelle verwaltet wird + hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="372" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Raummessung, die von der Überwachung der blinden Stelle verwaltet wird + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="373" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + verfügbare Raummessung, die von der Überwachung der blinden Stelle + vordere und hintere Parkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="374" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehrungsunterstützungskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="375" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehrungsunterstützung Kamera + hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="376" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehrungsunterstützung Kamera + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="377" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehrungsunterstützung Kamera + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="378" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="379" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung durch die Parkhilfe ECU + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="380" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung durch die Parkhilfe ECU + Front Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="381" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Vision Side Camera + halbautomatische Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Platzmessung mit der Parkhilfe ECU + Front- und Heck-Parkhilfe verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="382" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung durch die Überwachung der Blinde Spot verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="383" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Raummessung verwaltet von der Überwachung der Blinde</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="384" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Platzmessung durch die Überwachung der blinden Stelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="385" />
         <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatische Parkhilfesystem + Umkehr Assistance Kamera + verfügbare Raummessung, die von der Überwachung der Blinde Spot verwaltet wird + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="386" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="387" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="388" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="389" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="390" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung, die von der Parkhilfe ECU + Heckunterstützung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="391" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung von der Parkhilfe ECU + Frontparkhilfe zur Verfügung gestellt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="392" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung, die von der Parkhilfe ECU + vorne und hinten Parkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="393" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Raummessung, die von der Blindpot-Überwachung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="394" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung, die von der Überwachung der Blinde Spot verwaltet wird + Heckparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="395" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung, die von der Überwachung der Blinde Spot verwaltet wird + vorne Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="396" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + verfügbare Platzmessung, die von der Überwachung der Blinde Spot verwaltet wird + vorne und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="397" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehrhilfekamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="398" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehrungsunterstützung Kamera + hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="399" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehrungsunterstützung Kamera + Frontparkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="400" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Platzmessung von der Parkhilfe ECU verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="401" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Platzmessung, die von der Parkhilfe von ECU + Heckunterstützung verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="402" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Platzmessung, die von der Parkhilfe von ECU + Frontparkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="403" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Raummessung, die von der Parkhilfe von ECU + Front- und Heck-Parkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="404" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr ASSERICHERCAMERATION + VERFÜGBAR</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="405" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Raummessung, die von der Überwachung der Blinde geleitet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="406" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Raummessung, die von der Blindpot-Überwachung + vordere Parkhilfe verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="407" />
         <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Seitenansicht durch die hintere Sichtseitenkamera + halbautomatisches Parksystem mit senkrechter Parkoption + halbautomatisches Parkhilfesystem + Umkehr-Unterstützung Kamera + verfügbare Raummessung, die von der Überwachung der Blinde geleitet wird + vordere und hintere Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="409" />
         <source>Type of parking assistance</source>
-        <translation type="unfinished" />
+        <translation>Art der Parkhilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="417" />
         <source>The presence of a trailer switching unit (TSB)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Anhängerschalteinheit (TSB)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="425" />
         <source>Parking assistance audible warning emitted by the switching module under the steering wheel</source>
-        <translation type="unfinished" />
+        <translation>Parkhilfe Audible Warnung, die vom Schaltmodul unter dem Lenkrad ausgestrahlt werden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="433" />
         <source>Parking system with visual alarm</source>
-        <translation type="unfinished" />
+        <translation>Parksystem mit visuellem Alarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="441" />
         <source>The presence of a passenger airbag</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Beifahrerairbags</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="450" />
         <source>Security alarm installed at the factory</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsalarm in der Fabrik installiert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="451" />
         <source>Security alarm, established additional</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsalarm, zusätzlich festgelegt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="453" />
         <source>Type of installation of security alarms</source>
-        <translation type="unfinished" />
+        <translation>Art der Installation von Sicherheitsalarmen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="462" />
         <source>Active</source>
-        <translation type="unfinished" />
+        <translation>Aktiv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="463" />
         <source>Inactive</source>
-        <translation type="unfinished" />
+        <translation>Inaktiv</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="465" />
         <source>Security alarm volume control system</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsalarm -Volumen -Steuerungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="475" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2066" />
         <source>1 hatch</source>
-        <translation type="unfinished" />
+        <translation>1 Luke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="476" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2067" />
         <source>2 hatch</source>
-        <translation type="unfinished" />
+        <translation>2 Luke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="477" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2068" />
         <source>3 hatch</source>
-        <translation type="unfinished" />
+        <translation>3 Luke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="479" />
         <source>The presence and number of hatches in the roof</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Anzahl der Luken im Dach</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="487" />
         <source>Car with right handside drive</source>
-        <translation type="unfinished" />
+        <translation>Auto mit rechter Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="497" />
         <source>Standard alarm</source>
-        <translation type="unfinished" />
+        <translation>Standardalarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="498" />
         <source>Belgium security alarm</source>
-        <translation type="unfinished" />
+        <translation>Belgien Sicherheitsalarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="499" />
         <source>Security alarm for Switzerland</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsalarm für die Schweiz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="500" />
         <source>Alarm for the UK</source>
-        <translation type="unfinished" />
+        <translation>Alarm für Großbritannien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="501" />
         <source>Sweden alarm</source>
-        <translation type="unfinished" />
+        <translation>Schweden Alarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="502" />
         <source>Alarm for China</source>
-        <translation type="unfinished" />
+        <translation>Alarm für China</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="504" />
         <source>Type of security alarm</source>
-        <translation type="unfinished" />
+        <translation>Art des Sicherheitsalarms</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="513" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="734" />
         <source>Mechanical key</source>
-        <translation type="unfinished" />
+        <translation>Mechanischer Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="514" />
         <source>Electronic key</source>
-        <translation type="unfinished" />
+        <translation>Elektronischer Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="515" />
         <source>Remote remote control "Free Hands"</source>
-        <translation type="unfinished" />
+        <translation>Fernbedienung der Fernbedienung "Freie Hände"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="517" />
         <source>Key type</source>
-        <translation type="unfinished" />
+        <translation>Schlüsseltyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="525" />
         <source>The number of warning signs that seat belts are not fastened</source>
-        <translation type="unfinished" />
+        <translation>Die Anzahl der Warnschilder, dass Sicherheitsgurte nicht befestigt sind</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="533" />
         <source>Front passenger presence sensor</source>
-        <translation type="unfinished" />
+        <translation>Beifahrerpräsenz -Sensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="541" />
         <source>The presence of a seat belt warning bar in the LIN network</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Sicherheitsgurtwarnleiste im LIN -Netzwerk</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="545" />
         <source>Driver's seat belt not fastened detection</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsgurt des Fahrers nicht befestigte Erkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="553" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="572" />
@@ -13290,7 +13290,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="629" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="648" />
         <source>YES</source>
-        <translation type="unfinished" />
+        <translation>JA</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="557" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="576" />
@@ -13299,384 +13299,384 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="633" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="652" />
         <source>NO</source>
-        <translation type="unfinished" />
+        <translation>NEIN</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="564" />
         <source>Front passenger's seat belt not fastened detection</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsgurt des Beifahrers nicht befestigte Erkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="583" />
         <source>Rear middle passenger's seat belt not fastened detection</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsgurt des hinteren mittleren Beifahrers nicht befestigte Erkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="602" />
         <source>Rear RH passenger's seat belt not fastened detection</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitsgurt des hinteren RH -Beifahrers nicht befestigte Erkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="621" />
         <source>Rear LH passenger's seat belt not fastened detection</source>
-        <translation type="unfinished" />
+        <translation>Heck -LH -Beifahrer -Sicherheitsgurt nicht befestigte Erkennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="663" />
         <source>Option: Multifunctional display</source>
-        <translation type="unfinished" />
+        <translation>Option: Multifunktionales Display</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="671" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3910" />
         <source>The presence of a matrix display</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Matrixanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="687" />
         <source>Display of information on fuel consumption without taking into account excess consumption due to regeneration of the particulate filter</source>
-        <translation type="unfinished" />
+        <translation>Informationen zum Kraftstoffverbrauch angezeigt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="696" />
         <source>-17 - +37</source>
-        <translation type="unfinished" />
+        <translation>-17 - +37</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="697" />
         <source>-25 - +37</source>
-        <translation type="unfinished" />
+        <translation>-25 - +37</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="698" />
         <source>-30 - +37</source>
-        <translation type="unfinished" />
+        <translation>-30 - +37</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="699" />
         <source>-17 - +45</source>
-        <translation type="unfinished" />
+        <translation>-17 - +45</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="700" />
         <source>-17 - +50</source>
-        <translation type="unfinished" />
+        <translation>-17 - +50</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="701" />
         <source>-30 - +45</source>
-        <translation type="unfinished" />
+        <translation>-30 - +45</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="703" />
         <source>Climate type</source>
-        <translation type="unfinished" />
+        <translation>Klimayp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="711" />
         <source>The presence of seats with heating</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Sitzen mit Heizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="720" />
         <source>Manual</source>
-        <translation type="unfinished" />
+        <translation>Handbuch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="721" />
         <source>Automatic</source>
-        <translation type="unfinished" />
+        <translation>Automatisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="722" />
         <source>Piloted manual</source>
-        <translation type="unfinished" />
+        <translation>Pilotiertes Handbuch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="723" />
         <source>Piloted double clutch</source>
-        <translation type="unfinished" />
+        <translation>Pilotierte Doppelkupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="735" />
         <source>Mechanical key in emergency mode</source>
-        <translation type="unfinished" />
+        <translation>Mechanischer Schlüssel im Notfallmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="736" />
         <source>Impulse signal from engine start switch</source>
-        <translation type="unfinished" />
+        <translation>Impulssignal vom Motorstartschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="737" />
         <source>Maintained by engine start-up switch</source>
-        <translation type="unfinished" />
+        <translation>Verwaltet durch Motorstartschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="739" />
         <source>Type of starting</source>
-        <translation type="unfinished" />
+        <translation>Art des Starts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="748" />
         <source>Petrol engine</source>
-        <translation type="unfinished" />
+        <translation>Benzinmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="749" />
         <source>Diesel engine</source>
-        <translation type="unfinished" />
+        <translation>Dieselmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="750" />
         <source>Bioflex engine</source>
-        <translation type="unfinished" />
+        <translation>Bioflex -Motor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="751" />
         <source>BioFlex engine with preheating</source>
-        <translation type="unfinished" />
+        <translation>Bioflex -Motor mit Vorheizen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="753" />
         <source>Type of combustion engine</source>
-        <translation type="unfinished" />
+        <translation>Art der Verbrennungsmotor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="763" />
         <source>Direct first generation (with a computer)</source>
-        <translation type="unfinished" />
+        <translation>Direkte erste Generation (mit einem Computer)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="764" />
         <source>Indirect using the ABS/ESP unit</source>
-        <translation type="unfinished" />
+        <translation>Indirekt unter Verwendung der ABS/ESP -Einheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="765" />
         <source>Direct second generation (with a computer)</source>
-        <translation type="unfinished" />
+        <translation>Direkte zweite Generation (mit einem Computer)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="767" />
         <source>Tire pressure control type</source>
-        <translation type="unfinished" />
+        <translation>Reifendruckregelungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="775" />
         <source>Light sensor</source>
-        <translation type="unfinished" />
+        <translation>Lichtsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="783" />
         <source>The presence of a lighting control knob with 4 positions</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Beleuchtungssteuerungsknaufs mit 4 Positionen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="791" />
         <source>Option: Track lighting</source>
-        <translation type="unfinished" />
+        <translation>Option: Verfolgung von Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="799" />
         <source>Option: Training car</source>
-        <translation type="unfinished" />
+        <translation>Option: Trainingsauto</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="809" />
         <source>Unique profile</source>
-        <translation type="unfinished" />
+        <translation>Einzigartiges Profil</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="810" />
         <source>Several profiles</source>
-        <translation type="unfinished" />
+        <translation>Mehrere Profile</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="812" />
         <source>Type of individual settings menu</source>
-        <translation type="unfinished" />
+        <translation>Art der individuellen Einstellungsmenü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="820" />
         <source>The presence of front fog lights</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von vorderen Nebellichtern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="829" />
         <source>No specific lighting</source>
-        <translation type="unfinished" />
+        <translation>Keine spezifische Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="830" />
         <source>Static lighting: controlled by intelligent switch box</source>
-        <translation type="unfinished" />
+        <translation>Statische Beleuchtung: gesteuert durch intelligente Schalterbox</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="831" />
         <source>Static lighting: computer controlled headlights</source>
-        <translation type="unfinished" />
+        <translation>Statische Beleuchtung: computergesteuerte Scheinwerfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="832" />
         <source>Dynamic lighting: guided headlights</source>
-        <translation type="unfinished" />
+        <translation>Dynamische Beleuchtung: Geführte Scheinwerfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="834" />
         <source>Type of cornering lighting</source>
-        <translation type="unfinished" />
+        <translation>Art der Kurvenbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="843" />
         <source>Standard lighting</source>
-        <translation type="unfinished" />
+        <translation>Standardbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="844" />
         <source>Single filament halogen lamp</source>
-        <translation type="unfinished" />
+        <translation>Einzelfilamenthalogenlampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="845" />
         <source>Double filament halogen lamp</source>
-        <translation type="unfinished" />
+        <translation>Doppelfilament -Halogenlampe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="849" />
         <source>Type of head lighting</source>
-        <translation type="unfinished" />
+        <translation>Art der Kopfbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="857" />
         <source>The presence of a feature of high-beam switching function: Smart-Beam lighting (HBA/CAFR)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Merkmals der Hochstrahl-Schaltfunktion: Smart-Beam-Beleuchtung (HBA/CAFR)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="865" />
         <source>The presence of the interior lighting and entry into the car function</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der Innenbeleuchtung und des Eintritts in die Autofunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="873" />
         <source>Rain sensor</source>
-        <translation type="unfinished" />
+        <translation>Regensensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="881" />
         <source>The presence of headlight washers</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Scheinwerferbädern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="891" />
         <source>Shared day running lights</source>
-        <translation type="unfinished" />
+        <translation>Shared Day Running Lights</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="892" />
         <source>Functional day lighting *1 lamps of type *1</source>
-        <translation type="unfinished" />
+        <translation>Funktionale Tagesbeleuchtung *1 Lampen vom Typ *1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="893" />
         <source>Dedicated day running lights</source>
-        <translation type="unfinished" />
+        <translation>Dedizierte Tag Lauflicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="894" />
         <source>Functional day lighting *1 lamps of type *2</source>
-        <translation type="unfinished" />
+        <translation>Funktionale Tagesbeleuchtung *1 Lampen vom Typ *2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="896" />
         <source>Type of daylight running lights</source>
-        <translation type="unfinished" />
+        <translation>Art der Tageslicht -Lauflicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="904" />
         <source>Simultaneous activation of daytime running lights and side lights</source>
-        <translation type="unfinished" />
+        <translation>Gleichzeitige Aktivierung von Tagesablaufleuchten und Seitenlichtern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="912" />
         <source>Lighting on the default daylight</source>
-        <translation type="unfinished" />
+        <translation>Beleuchtung am Standardtageslicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="922" />
         <source>A pump controlled by wired communication</source>
-        <translation type="unfinished" />
+        <translation>Eine Pumpe, die durch kabelgebundene Kommunikation gesteuert wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="925" />
         <source>Pump additives on the multiplex network Lin-1</source>
-        <translation type="unfinished" />
+        <translation>Pumpenadditive auf dem Multiplex-Netzwerk Lin-1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="929" />
         <source>Pump additives on the multiplex network Lin-2</source>
-        <translation type="unfinished" />
+        <translation>Pumpenadditive auf dem Multiplex-Netzwerk Lin-2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="931" />
         <source>Soot filter without adding additives</source>
-        <translation type="unfinished" />
+        <translation>Rußfilter ohne Additive hinzuzufügen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="933" />
         <source>The presence and type of additive in diesel fuel</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art des Additivs im Dieselkraftstoff</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="941" />
         <source>The presence of a special high-frequency receiver (Japan)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines speziellen Hochfrequenzempfängers (Japan)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="949" />
         <source>Passenger door lock</source>
-        <translation type="unfinished" />
+        <translation>Beifahrer -Türschloss</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="957" />
         <source>Option: Closing windows using a remote control and key</source>
-        <translation type="unfinished" />
+        <translation>Option: Schließen von Windows mithilfe einer Fernbedienung und Taste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="967" />
         <source>Thermoresistors 1000 watts</source>
-        <translation type="unfinished" />
+        <translation>Thermoresistoren 1000 Watt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="968" />
         <source>Autonomous heating</source>
-        <translation type="unfinished" />
+        <translation>Autonomes Erwärmen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="969" />
         <source>Programmable heating</source>
-        <translation type="unfinished" />
+        <translation>Programmierbares Erwärmen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="970" />
         <source>Thermoresistors 300 watts</source>
-        <translation type="unfinished" />
+        <translation>Thermoresistoren 300 Watt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="971" />
         <source>Thermoresistors 600 watts</source>
-        <translation type="unfinished" />
+        <translation>Thermoresistoren 600 Watt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="973" />
         <source>Type of additional heating system</source>
-        <translation type="unfinished" />
+        <translation>Art des zusätzlichen Heizsystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="983" />
         <source>Self-starting</source>
-        <translation type="unfinished" />
+        <translation>Selbststart</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="984" />
         <source>Controlled</source>
-        <translation type="unfinished" />
+        <translation>Kontrolliert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="985" />
         <source>Starter-generator</source>
-        <translation type="unfinished" />
+        <translation>Startergenerator</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="986" />
         <source>Controlled 2nd generation</source>
-        <translation type="unfinished" />
+        <translation>Kontrollierte 2. Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="988" />
         <source>Generator type</source>
-        <translation type="unfinished" />
+        <translation>Generatortyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="997" />
         <source>42 ah</source>
-        <translation type="unfinished" />
+        <translation>42 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="998" />
         <source>50 ah</source>
-        <translation type="unfinished" />
+        <translation>50 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="999" />
         <source>60 ah</source>
-        <translation type="unfinished" />
+        <translation>60 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1000" />
         <source>64 ah</source>
-        <translation type="unfinished" />
+        <translation>64 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1001" />
         <source>70 ah</source>
-        <translation type="unfinished" />
+        <translation>70 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1002" />
         <source>75 ah</source>
-        <translation type="unfinished" />
+        <translation>75 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1003" />
         <source>95 ah</source>
-        <translation type="unfinished" />
+        <translation>95 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1004" />
         <source>55 ah</source>
-        <translation type="unfinished" />
+        <translation>55 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1005" />
         <source>80 ah</source>
-        <translation type="unfinished" />
+        <translation>80 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1006" />
         <source>82 ah</source>
-        <translation type="unfinished" />
+        <translation>82 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1007" />
         <source>90 ah</source>
-        <translation type="unfinished" />
+        <translation>90 Ah</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1009" />
         <source>Type of battery</source>
-        <translation type="unfinished" />
+        <translation>Art der Batterie</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1019" />
         <source>Yes performed by the battery charge level control unit</source>
-        <translation type="unfinished" />
+        <translation>Ja, ausgeführt von der Batterieladungsstufesteuereinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1020" />
         <source>Yes performed by intelligent switching unit</source>
-        <translation type="unfinished" />
+        <translation>Ja, ausgeführt von intelligenter Schalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1022" />
         <source>Battery charge estimate function</source>
-        <translation type="unfinished" />
+        <translation>Batterieladungsschätzungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1031" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1713" />
@@ -13684,7 +13684,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1757" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1770" />
         <source>Ungovernable</source>
-        <translation type="unfinished" />
+        <translation>Unregierbar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1032" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1714" />
@@ -13693,7 +13693,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1771" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1805" />
         <source>Single-zone</source>
-        <translation type="unfinished" />
+        <translation>Einzelzone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1033" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1715" />
@@ -13702,3820 +13702,3820 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1772" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1806" />
         <source>Double-zone</source>
-        <translation type="unfinished" />
+        <translation>Doppelzone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1034" />
         <source>Four-zone</source>
-        <translation type="unfinished" />
+        <translation>Vier Zone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1036" />
         <source>Air mixing type</source>
-        <translation type="unfinished" />
+        <translation>Luftmischtyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1044" />
         <source>Option: Module for memorizing the position of the passenger seat</source>
-        <translation type="unfinished" />
+        <translation>Option: Modul zum Auswendiglernen der Position des Beifahrersitzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1052" />
         <source>Audio system amplifier</source>
-        <translation type="unfinished" />
+        <translation>Audiosystemverstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1060" />
         <source>The presence of a block of the corrector of the height of the rear part (pneumatic suspension)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Blocks des Korrektors der Höhe des hinteren Teils (pneumatische Suspension)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1068" />
         <source>The presence of air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1076" />
         <source>The presence of an auxiliary electric brake</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Hilfsbremse</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1084" />
         <source>Option: remembering driver's seat adjustments</source>
-        <translation type="unfinished" />
+        <translation>Option: Erinnern Sie die Sitzanpassungen des Fahrers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1092" />
         <source>The presence of a programmable cruise control system</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines programmierbaren Geschwindigkeitsregelungssystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1100" />
         <source>Option: a warning system for unintentional intersection of road marking lines</source>
-        <translation type="unfinished" />
+        <translation>Option: Ein Warnsystem für eine unbeabsichtigte Schnittstelle von Straßenmarkierungsleitungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1108" />
         <source>The presence of a system display system in the field of view of the driver</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Systems -Anzeigesystems im Sichtbereich des Treibers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1116" />
         <source>The presence of a telematics block</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Telematikblocks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1124" />
         <source>The presence of the parking lights (side marking)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der Parkleuchten (Seitenmarkierung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1132" />
         <source>Dynamic stabilization system (ESP)</source>
-        <translation type="unfinished" />
+        <translation>Dynamisches Stabilisierungssystem (ESP)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1140" />
         <source>The presence of an outdoor temperature sensor</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Outdoor -Temperatursensors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1148" />
         <source>Diesel-fuel water sensor</source>
-        <translation type="unfinished" />
+        <translation>Diesel-Brennstoff-Wassersensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1156" />
         <source>Correction of the difference between the speed set for cruise control, and speed by speedometer in km/h (multiply the value by 10)</source>
-        <translation type="unfinished" />
+        <translation>Korrektur der Differenz zwischen dem Geschwindigkeitssatz für die Tempomat und Geschwindigkeit durch Tachometer in km/h (multiplizieren Sie den Wert mit 10)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1166" />
         <source>Cruise control (RVV2)</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung (RVV2)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1167" />
         <source>Cruise control (RVV2) with speed limiter (LVV)</source>
-        <translation type="unfinished" />
+        <translation>Tempomat (RVV2) mit Geschwindigkeitsbegrenzer (LVV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1168" />
         <source>Automatic cruise control (ACC)</source>
-        <translation type="unfinished" />
+        <translation>Automatische Geschwindigkeitsregelung (ACC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1169" />
         <source>Automatic cruise control (ACC) with speed limiter (LVV)</source>
-        <translation type="unfinished" />
+        <translation>Automatische Geschwindigkeitsregelung (ACC) mit Geschwindigkeitsbegrenzer (LVV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1170" />
         <source>Automatic cruise control (ACC) with RVV2+LVV</source>
-        <translation type="unfinished" />
+        <translation>Automatische Tempomat (ACC) mit RVV2+LVV</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1171" />
         <source>Over-speed warning only</source>
-        <translation type="unfinished" />
+        <translation>Nur Übergeschwindigkeitswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1172" />
         <source>Cruise control (RVV2) with over-speed alert</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeitsregelung (RVV2) mit Übergeschwindigkeitswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1173" />
         <source>Automatic cruise control (ACC) with over-speed alert</source>
-        <translation type="unfinished" />
+        <translation>Automatische Geschwindigkeitsregelung (ACC) mit Übergeschwindigkeitswarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1174" />
         <source>Speed limiter (LVV) only</source>
-        <translation type="unfinished" />
+        <translation>Nur Geschwindigkeitsbegrenzer (LVV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1176" />
         <source>Presence of Speed Limiter / Cruise Control</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Geschwindigkeitsbegrenzer- / Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1184" />
         <source>Warning about speeding for countries of the Arabian Peninsula</source>
-        <translation type="unfinished" />
+        <translation>Warnung vor der Geschwindigkeitsüberschreitung für Länder der arabischen Halbinsel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1192" />
         <source>Multiplex front windows</source>
-        <translation type="unfinished" />
+        <translation>Multiplex -Vorderfenster</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1200" />
         <source>The presence of four power windows with anti-pinch function or two front windows with anti-pinch function (if the rear windows are not electric)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von vier elektrischen Fenstern mit Anti-Pinch-Funktion oder zwei Vorderfenstern mit Anti-Pinch-Funktion (wenn die hinteren Fenster nicht elektrisch sind)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1208" />
         <source>The presence of the driver's meeting</source>
-        <translation type="unfinished" />
+        <translation>Die Anwesenheit des Fahrersitzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1216" />
         <source>External mirrors with electric and folding, controlled by an intellectual switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Externe Spiegel mit elektrisch und faltbar, gesteuert von einer intellektuellen Schalteinheit (BSI)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1224" />
         <source>The presence of an massage option</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Massageoption</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1232" />
         <source>Automatic backlighting of the dashboard and multifunctional display, depending on the brightness of the outdoor lighting</source>
-        <translation type="unfinished" />
+        <translation>Automatische Hintergrundbeleuchtung des Armaturenbretts und des multifunktionalen Displays, abhängig von der Helligkeit der Außenbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1241" />
         <source>DS3</source>
-        <translation type="unfinished" />
+        <translation>DS3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1242" />
         <source>208 3-door (A9)</source>
-        <translation type="unfinished" />
+        <translation>208 3-Türer (A9)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1243" />
         <source>208 5-Door (A9)</source>
-        <translation type="unfinished" />
+        <translation>208 5-Türer (A9)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1244" />
         <source>208 5-Door (AI9) / 2008 (AI94)</source>
-        <translation type="unfinished" />
+        <translation>208 5-Türer (AI9) / 2008 (AI94)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1245" />
         <source>C4 CACTUS</source>
-        <translation type="unfinished" />
+        <translation>C4 Kaktus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1246" />
         <source>C4 Cactus (Mercosur)</source>
-        <translation type="unfinished" />
+        <translation>C4 Cactus (Mercosur)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1247" />
         <source>301 / C-Yelysee</source>
-        <translation type="unfinished" />
+        <translation>301 / c-yelysee</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1248" />
         <source>301 / c-elisee (Iran)</source>
-        <translation type="unfinished" />
+        <translation>301 / C-Elisee (Iran)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1249" />
         <source>301 / c-elisee (china)</source>
-        <translation type="unfinished" />
+        <translation>301 / C-Elisee (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1250" />
         <source>2008</source>
-        <translation type="unfinished" />
+        <translation>2008</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1251" />
         <source>2008 (China)</source>
-        <translation type="unfinished" />
+        <translation>2008 (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1252" />
         <source>C3-XR</source>
-        <translation type="unfinished" />
+        <translation>C3-XR</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1253" />
         <source>301 5-door</source>
-        <translation type="unfinished" />
+        <translation>301 5-Türer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1254" />
         <source>DS3 Cabrio</source>
-        <translation type="unfinished" />
+        <translation>DS3 Cabrio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1255" />
         <source>C4 Saloon 5-Door</source>
-        <translation type="unfinished" />
+        <translation>C4 Limousine 5-Türer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1256" />
         <source>DS5</source>
-        <translation type="unfinished" />
+        <translation>DS5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1257" />
         <source>2113</source>
-        <translation type="unfinished" />
+        <translation>2113</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1258" />
         <source>308 5-Door</source>
-        <translation type="unfinished" />
+        <translation>308 5-Türer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1259" />
         <source>2118</source>
-        <translation type="unfinished" />
+        <translation>2118</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1260" />
         <source>DS5 (China)</source>
-        <translation type="unfinished" />
+        <translation>DS5 (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1261" />
         <source>C4 Berline 5-Door (Iran)</source>
-        <translation type="unfinished" />
+        <translation>C4 Berline 5-Türer (Iran)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1262" />
         <source>DS4S</source>
-        <translation type="unfinished" />
+        <translation>DS4S</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1263" />
         <source>308 5-Door (China)</source>
-        <translation type="unfinished" />
+        <translation>308 5-Türer (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1264" />
         <source>308 SW</source>
-        <translation type="unfinished" />
+        <translation>308 SW</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1265" />
         <source>C4L (China)</source>
-        <translation type="unfinished" />
+        <translation>C4L (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1266" />
         <source>C4 Sedan (Russia)</source>
-        <translation type="unfinished" />
+        <translation>C4 Limousine (Russland)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1267" />
         <source>C4L (Iran)</source>
-        <translation type="unfinished" />
+        <translation>C4L (Iran)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1268" />
         <source>C4L (B73M)</source>
-        <translation type="unfinished" />
+        <translation>C4L (B73M)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1269" />
         <source>DS5 LS</source>
-        <translation type="unfinished" />
+        <translation>DS5 LS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1270" />
         <source>308 4-Door (China)</source>
-        <translation type="unfinished" />
+        <translation>308 4-Türer (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1271" />
         <source>L60 / C4 (BZ3)</source>
-        <translation type="unfinished" />
+        <translation>L60 / C4 (BZ3)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1272" />
         <source>DS6</source>
-        <translation type="unfinished" />
+        <translation>DS6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1273" />
         <source>DS4</source>
-        <translation type="unfinished" />
+        <translation>DS4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1274" />
         <source>2813</source>
-        <translation type="unfinished" />
+        <translation>2813</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1275" />
         <source>C4 Picasso 7-Eats</source>
-        <translation type="unfinished" />
+        <translation>C4 Picasso 7-EATS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1276" />
         <source>2818</source>
-        <translation type="unfinished" />
+        <translation>2818</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1277" />
         <source>C4 Picasso 5-Eats</source>
-        <translation type="unfinished" />
+        <translation>C4 Picasso 5-EATS</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1278" />
         <source>508 4-door</source>
-        <translation type="unfinished" />
+        <translation>508 4-Türer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1279" />
         <source>508 (China)</source>
-        <translation type="unfinished" />
+        <translation>508 (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1280" />
         <source>G95 4-Door (China)</source>
-        <translation type="unfinished" />
+        <translation>G95 4-Türer (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1281" />
         <source>508 rxh</source>
-        <translation type="unfinished" />
+        <translation>508 RXH</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1282" />
         <source>508 SW</source>
-        <translation type="unfinished" />
+        <translation>508 SW</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1283" />
         <source>308 4-door (tx9)</source>
-        <translation type="unfinished" />
+        <translation>308 4-Türer (TX9)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1284" />
         <source>C6 4-Door (China)</source>
-        <translation type="unfinished" />
+        <translation>C6 4-Türer (China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1285" />
         <source>C5 4-Door</source>
-        <translation type="unfinished" />
+        <translation>C5 4-Türer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1286" />
         <source>3008 (P84)</source>
-        <translation type="unfinished" />
+        <translation>3008 (P84)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1287" />
         <source>4008 (P84C)</source>
-        <translation type="unfinished" />
+        <translation>4008 (P84C)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1288" />
         <source>5406</source>
-        <translation type="unfinished" />
+        <translation>5406</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1289" />
         <source>C5 Aircons 5-Door (C84C)</source>
-        <translation type="unfinished" />
+        <translation>C5 Aircons 5-Türer (C84C)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1290" />
         <source>5008 (P87)</source>
-        <translation type="unfinished" />
+        <translation>5008 (P87)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1291" />
         <source>Jumpy/Expert</source>
-        <translation type="unfinished" />
+        <translation>Jumpy/Expert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1292" />
         <source>5008 (P87 China)</source>
-        <translation type="unfinished" />
+        <translation>5008 (P87 China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1293" />
         <source>Spacetourer/Traveller</source>
-        <translation type="unfinished" />
+        <translation>Spacetourer/Reisender</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1294" />
         <source>C3 (B618)</source>
-        <translation type="unfinished" />
+        <translation>C3 (B618)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1295" />
         <source>C3 Iran (B618)</source>
-        <translation type="unfinished" />
+        <translation>C3 Iran (B618)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1296" />
         <source>M44 Iran</source>
-        <translation type="unfinished" />
+        <translation>M44 Iran</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1297" />
         <source>6A01</source>
-        <translation type="unfinished" />
+        <translation>6a01</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1298" />
         <source>C3 AIRCROSS (A88)</source>
-        <translation type="unfinished" />
+        <translation>C3 Aircross (A88)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1299" />
         <source>C4 Aircons (A88 Chine)</source>
-        <translation type="unfinished" />
+        <translation>C4 Aircons (A88 Chine)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1300" />
         <source>508 5-Door (R8 Europe)</source>
-        <translation type="unfinished" />
+        <translation>508 5-Türer (R8 Europa)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1301" />
         <source>508L 5-door (R83 China)</source>
-        <translation type="unfinished" />
+        <translation>508L 5-Türer (R83 China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1302" />
         <source>508 Break (R8)</source>
-        <translation type="unfinished" />
+        <translation>508 Break (R8)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1303" />
         <source>DS7 Crossback (X74 Europe)</source>
-        <translation type="unfinished" />
+        <translation>DS7 Crossback (x74 Europa)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1304" />
         <source>C5 AIRCROSS (C84)</source>
-        <translation type="unfinished" />
+        <translation>C5 Aircross (C84)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1305" />
         <source>DS7 Crossback (X74 China)</source>
-        <translation type="unfinished" />
+        <translation>DS7 Crossback (x74 China)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1306" />
         <source>X83 Europe</source>
-        <translation type="unfinished" />
+        <translation>X83 Europa</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1307" />
         <source>Berlingo Utility (K9)</source>
-        <translation type="unfinished" />
+        <translation>Berlingo Utility (K9)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1308" />
         <source>X83 China</source>
-        <translation type="unfinished" />
+        <translation>X83 China</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1309" />
         <source>7904</source>
-        <translation type="unfinished" />
+        <translation>7904</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1310" />
         <source>Berlingo (K9)</source>
-        <translation type="unfinished" />
+        <translation>Berlingo (K9)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1311" />
         <source>7c04</source>
-        <translation type="unfinished" />
+        <translation>7c04</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1312" />
         <source>P21 Europe</source>
-        <translation type="unfinished" />
+        <translation>P21 Europa</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1313" />
         <source>P21 Berline 5 Portes</source>
-        <translation type="unfinished" />
+        <translation>P21 Berline 5 Portes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1314" />
         <source>C41 Europe</source>
-        <translation type="unfinished" />
+        <translation>C41 Europa</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1315" />
         <source>Corsa P2JO - Berlines 5 Porte</source>
-        <translation type="unfinished" />
+        <translation>Corsa P2JO - Berlines 5 Porte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1316" />
         <source>C43 China</source>
-        <translation type="unfinished" />
+        <translation>C43 China</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1317" />
         <source>C43 Mercosur</source>
-        <translation type="unfinished" />
+        <translation>C43 Mercosur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1318" />
         <source>D34</source>
-        <translation type="unfinished" />
+        <translation>D34</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1319" />
         <source>P24 China</source>
-        <translation type="unfinished" />
+        <translation>P24 China</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1320" />
         <source>P24 Europe</source>
-        <translation type="unfinished" />
+        <translation>P24 Europa</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1321" />
         <source>DS 3 Crossback China D34</source>
-        <translation type="unfinished" />
+        <translation>DS 3 Crossback China D34</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1322" />
         <source>P2Q0</source>
-        <translation type="unfinished" />
+        <translation>P2Q0</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1323" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2964" />
         <source>Unknown</source>
-        <translation type="unfinished" />
+        <translation>Unbekannt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1334" />
         <source>There is no, or there is a mechanical system for protecting children without information about the state of locks</source>
-        <translation type="unfinished" />
+        <translation>Es gibt keine oder es gibt ein mechanisches System zum Schutz von Kindern ohne Informationen über den Zustand der Schlösser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1335" />
         <source>Mechanical system of protecting children with information about the state of locks</source>
-        <translation type="unfinished" />
+        <translation>Mechanisches System zum Schutz von Kindern mit Informationen über den Zustand der Schlösser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1336" />
         <source>Electric system for protecting children with information on the state of locks</source>
-        <translation type="unfinished" />
+        <translation>Elektrisches System zum Schutz von Kindern mit Informationen über den Zustand der Schlösser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1338" />
         <source>Availability and type of function of the children's protection system</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit und Art der Funktion des Kinderschutzsystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1347" />
         <source>Lack of locking</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Sperren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1348" />
         <source>Simple blocking</source>
-        <translation type="unfinished" />
+        <translation>Einfache Blockierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1349" />
         <source>Superblock 2 times</source>
-        <translation type="unfinished" />
+        <translation>Superblock 2 Mal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1350" />
         <source>Super blocking 1 time</source>
-        <translation type="unfinished" />
+        <translation>Super blockieren 1 Mal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1352" />
         <source>Type of locking</source>
-        <translation type="unfinished" />
+        <translation>Art der Sperrung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1361" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2153" />
         <source>Lack of selectivity</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Selektivität</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1362" />
         <source>Choosing unlocking the driver's door</source>
-        <translation type="unfinished" />
+        <translation>Entschlossenheit der Fahrertür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1363" />
         <source>Selectivity of the front/rear opening elements of the body</source>
-        <translation type="unfinished" />
+        <translation>Selektivität der vorderen/hinteren Öffnungselemente des Körpers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1365" />
         <source>Type of locking/unlocking door locks</source>
-        <translation type="unfinished" />
+        <translation>Art der Verriegelung/Entsperren von Türschlössern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1374" />
         <source>Opening or unlocking trunk/5th door</source>
-        <translation type="unfinished" />
+        <translation>Öffnen oder Entsperren von Koffer/5. Tür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1375" />
         <source>Opening or unlocking rear window</source>
-        <translation type="unfinished" />
+        <translation>Heckfenster öffnen oder freischalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1376" />
         <source>Lighting / alarm</source>
-        <translation type="unfinished" />
+        <translation>Beleuchtung / Alarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1377" />
         <source>Unlocking the charging area</source>
-        <translation type="unfinished" />
+        <translation>Erschöpfen des Ladebereichs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1380" />
         <source>Opening / closing the front right sliding side door</source>
-        <translation type="unfinished" />
+        <translation>Öffnen / Schließen der vorderen rechten Schiebetür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1383" />
         <source>The function of the third button of the high-frequency remote control</source>
-        <translation type="unfinished" />
+        <translation>Die Funktion der dritten Taste der Hochfrequenzfernbedienung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1392" />
         <source>Short pressing</source>
-        <translation type="unfinished" />
+        <translation>Kurzes Pressen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1393" />
         <source>Long-term pressing</source>
-        <translation type="unfinished" />
+        <translation>Langfristiges Pressen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1394" />
         <source>Support maintained</source>
-        <translation type="unfinished" />
+        <translation>Unterstützung beibehalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1396" />
         <source>Type of pressing the third remote control button</source>
-        <translation type="unfinished" />
+        <translation>Art des Drückens der dritten Fernbedienungstaste</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1404" />
         <source>The presence of an additional head lighting function using fog lights</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer zusätzlichen Kopfbeleuchtungsfunktion mit Nebelscheinwerfern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1412" />
         <source>The presence of the function of turning on ventilation from the remote control</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der Funktion des Einschaltens der Lüftung von der Fernbedienung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1421" />
         <source>No signature lamps</source>
-        <translation type="unfinished" />
+        <translation>Keine Signaturlampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1422" />
         <source>Sidelamps and daytime lamps</source>
-        <translation type="unfinished" />
+        <translation>Nebenlampen und Tageslampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1423" />
         <source>Sidelamps</source>
-        <translation type="unfinished" />
+        <translation>Seitenlager</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1424" />
         <source>Day running lamps</source>
-        <translation type="unfinished" />
+        <translation>Tag Lauflampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1425" />
         <source>Automatic lighting of the daytime running lamps</source>
-        <translation type="unfinished" />
+        <translation>Automatische Beleuchtung der tagsüber Lauflampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1426" />
         <source>Side lamps,day running lamps and number plate lamps</source>
-        <translation type="unfinished" />
+        <translation>Seitenlampen, Tageslauflampen und Nummernschildlampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1428" />
         <source>Front lamps used for the signature lighting function</source>
-        <translation type="unfinished" />
+        <translation>Vorderlampen, die für die Signatur -Beleuchtungsfunktion verwendet werden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1436" />
         <source>The presence of power steering</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Servolenkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1444" />
         <source>Activating THATCHAM mode</source>
-        <translation type="unfinished" />
+        <translation>Aktivieren von Thatcham -Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1452" />
         <source>The presence of a service module (MDS) or autonomous telematics unit (BTA)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Servicemoduls (MDS) oder eines autonomen Telematik -Einheit (BTA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1460" />
         <source>The presence of rear fog lights</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von hinteren Nebellichtern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1468" />
         <source>The presence of the rear left fog light</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des hinteren linken Nebellichts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1476" />
         <source>The presence of the rear right fog light</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des hinteren rechten Nebellichts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1484" />
         <source>The presence of left reversing light</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des linken Umkehrlichts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1492" />
         <source>The presence of right reversing light</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von richtigem Umkehrlicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1500" />
         <source>The presence of a multifunctional camera (CMF)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer multifunktionalen Kamera (CMF)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1508" />
         <source>Presence of a rain/brightness sensor on the LIN</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein eines Regen-/Helligkeitsensors auf dem Lin</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1516" />
         <source>Presence of exterior side lighter</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von Außenseite leichter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1524" />
         <source>the presence of a computer switch</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Computerschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1532" />
         <source>The presence of an indicator of the recommended transmission (gearbox)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Indikators für das empfohlene Getriebe (Getriebe)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1540" />
         <source>The presence of a driver's seat with an electrical control included in the intellectual switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Fahrersitzes mit einer elektrischen Steuerung in der intellektuellen Schalteinheit (BSI) enthalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1548" />
         <source>The presence of a passenger seat with an electrical control included in the intellectual switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Beifahrersitzes mit einer elektrischen Steuerung, die in der intellektuellen Schalteinheit (BSI) enthalten ist, enthalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1558" />
         <source>Blind spot monitoring managed by a blind spot monitoring function ECU</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der Blinde Spot, die von einer Blindflecküberwachungsfunktion ECU verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1559" />
         <source>Lane departure warning system managed by the multifunction video camera</source>
-        <translation type="unfinished" />
+        <translation>Lane Departure Warning System, das von der Multifunktions -Videokamera verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1560" />
         <source>Blind spot monitoring managed by the blind spot monitoring ECU and lane departure warning system managed by the multifunction video camera</source>
-        <translation type="unfinished" />
+        <translation>Die Überwachung der Blinde Spot, die vom Blind Spot Monitoring ECU und der Lane Departure Warning System verwaltet wird, wird von der Multifunktions -Videokamera verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1561" />
         <source>Lane wandering alert (infrared)</source>
-        <translation type="unfinished" />
+        <translation>Spurwanderungswarnung (Infrarot)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1562" />
         <source>Blind spot monitoring managed by a blind spot monitoring ECU and presence of the lane departure warning system (infrared)</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der Blinde Spot, die von einem blinden Spot -Überwachung von ECU und Vorhandensein des Lane Departure Warning System (Infrarot) verwaltet wurde (Infrarot)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1563" />
         <source>Blind spot monitoring managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der Blinde Spot, die von der Parkhilfe -ECU verwaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1564" />
         <source>Blind spot monitoring managed by the parking assistance ECU and lane departure warning system managed by the multifunction video camera</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der Blinde Spot, die von der Parkhilfe von ECU und der Lane Departle Warning System verwaltet wird, wird von der Multifunktions -Videokamera verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1565" />
         <source>Blind spot monitoring managed by the parking assistance ECU and presence of the lane departure warning system (infrared)</source>
-        <translation type="unfinished" />
+        <translation>Überwachung der Blinde Spot, verwaltet von der Parkhilfe ECU und Präsenz des WARNUNGSYSTEM (Infrarot)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1567" />
         <source>The presence and type of driving aid (AFIL / SAM)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Fahrhilfe (AFIL / SAM)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1575" />
         <source>Preservation of braking (system of dynamic stabilization) for 2 seconds at the beginning of movement on the slope</source>
-        <translation type="unfinished" />
+        <translation>Erhaltung des Brems (System der dynamischen Stabilisierung) für 2 Sekunden zu Beginn der Bewegung am Hang für 2 Sekunden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1585" />
         <source>1 sensor</source>
-        <translation type="unfinished" />
+        <translation>1 Sensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1586" />
         <source>2 sensors in front</source>
-        <translation type="unfinished" />
+        <translation>2 Sensoren vorne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1587" />
         <source>1 sensor in front and 2 sensors behind</source>
-        <translation type="unfinished" />
+        <translation>1 Sensor vor und 2 Sensoren dahinter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1588" />
         <source>2 sensors in front and 2 sensors behind</source>
-        <translation type="unfinished" />
+        <translation>2 Sensoren vor und 2 Sensoren dahinter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1589" />
         <source>2 sensors behind</source>
-        <translation type="unfinished" />
+        <translation>2 Sensoren dahinter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1591" />
         <source>The presence and type of sensor of the supplied air</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art des Sensors der gelieferten Luft</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1601" />
         <source>Sunlight single-zone sensor</source>
-        <translation type="unfinished" />
+        <translation>Sonneneinstrahlung Single-Zone-Sensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1602" />
         <source>Sunlight double-zone sensor</source>
-        <translation type="unfinished" />
+        <translation>Sonnenlicht Doppelzonensensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1604" />
         <source>Sunlight sensor type</source>
-        <translation type="unfinished" />
+        <translation>Sonneneinstrahlungssensortyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1612" />
         <source>The presence of a pollution sensor</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Verschmutzungssensors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1620" />
         <source>The speed threshold for automatic locking when driving (km/h)</source>
-        <translation type="unfinished" />
+        <translation>Die Geschwindigkeitsschwelle für die automatische Verriegelung beim Fahren (km/h)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1630" />
         <source>Front sensor</source>
-        <translation type="unfinished" />
+        <translation>Frontsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1631" />
         <source>One front and one rear sensor</source>
-        <translation type="unfinished" />
+        <translation>Eine vordere und ein hinterer Sensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1633" />
         <source>The position of the temperature sensors of the evaporator</source>
-        <translation type="unfinished" />
+        <translation>Die Position der Temperatursensoren des Verdampfers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1642" />
         <source>Pressure sensor 30 bar</source>
-        <translation type="unfinished" />
+        <translation>Drucksensor 30 bar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1643" />
         <source>Pressure sensor 35 bar</source>
-        <translation type="unfinished" />
+        <translation>Drucksensor 35 bar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1645" />
         <source>Type of pressure sensor of the air conditioning system</source>
-        <translation type="unfinished" />
+        <translation>Art des Drucksensors des Klimaanlagensystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1656" />
         <source>Compressor with the internal control system with the coupling</source>
-        <translation type="unfinished" />
+        <translation>Kompressor mit dem internen Steuerungssystem mit der Kupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1660" />
         <source>Compressor with an external control system with a coupling</source>
-        <translation type="unfinished" />
+        <translation>Kompressor mit einem externen Steuerungssystem mit einer Kupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1664" />
         <source>Compressor with an external control system, without a coupling</source>
-        <translation type="unfinished" />
+        <translation>Kompressor mit einem externen Steuerungssystem ohne Kopplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1668" />
         <source>Compressor of permanent working volume with a drive clutch</source>
-        <translation type="unfinished" />
+        <translation>Kompressor des permanenten Arbeitsvolumens mit einer Antriebskupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1672" />
         <source>Type of air conditioning compressor</source>
-        <translation type="unfinished" />
+        <translation>Art des Klimaanlagenkompressors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1682" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3592" />
         <source>Seat heating</source>
-        <translation type="unfinished" />
+        <translation>Sitzheizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1683" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3593" />
         <source>Heated and ventilated seats</source>
-        <translation type="unfinished" />
+        <translation>Beheizte und belüftete Sitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1685" />
         <source>the presence of heated seats or heated ventilated seats</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein beheizter Sitze oder beheizter belüfteter Sitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1694" />
         <source>Not controlled</source>
-        <translation type="unfinished" />
+        <translation>Nicht kontrolliert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1697" />
         <source>Activated depending on the percentage of the closure</source>
-        <translation type="unfinished" />
+        <translation>Aktiviert abhängig vom Prozentsatz der Schließung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1701" />
         <source>Activated depending on the level (controlled recirculation)</source>
-        <translation type="unfinished" />
+        <translation>Aktiviert abhängig vom Pegel (kontrollierte Rezirkulation)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1704" />
         <source>Air supply type</source>
-        <translation type="unfinished" />
+        <translation>Luftversorgungsart</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1717" />
         <source>Air mixing type (front air conditioner)</source>
-        <translation type="unfinished" />
+        <translation>Luftmischtyp (vordere Klimaanlage)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1729" />
         <source>Three-zone</source>
-        <translation type="unfinished" />
+        <translation>Dreizone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1730" />
         <source>Single-zone dual drive</source>
-        <translation type="unfinished" />
+        <translation>Einzelzone Dual Drive</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1731" />
         <source>Double-wheel dual drive</source>
-        <translation type="unfinished" />
+        <translation>Doppelrad-Dual-Laufwerk</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1733" />
         <source>Air distribution system type</source>
-        <translation type="unfinished" />
+        <translation>Luftverteilungssystemtyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1742" />
         <source>Non-controlled electric fan or absent</source>
-        <translation type="unfinished" />
+        <translation>Nicht kontrollierter elektrischer Lüfter oder abwesend</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1743" />
         <source>Contained interior electric fan</source>
-        <translation type="unfinished" />
+        <translation>Enthaltender elektrischer Lüfter innenräumen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1744" />
         <source>Controlled right and left fans of the interior</source>
-        <translation type="unfinished" />
+        <translation>Kontrollierte rechte und linke Lüfter des Innenraums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1745" />
         <source>Separate air supply from the right and left side (relay for the front)</source>
-        <translation type="unfinished" />
+        <translation>Separate Luftversorgung von rechts und links (Relais für die Vorderseite)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1746" />
         <source>The rear fan with controlled power</source>
-        <translation type="unfinished" />
+        <translation>Der hintere Lüfter mit kontrollierter Leistung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1748" />
         <source>Rear interior fan type</source>
-        <translation type="unfinished" />
+        <translation>Heck -Innenraumlüftertyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1761" />
         <source>Air mixing type (rear air conditioner)</source>
-        <translation type="unfinished" />
+        <translation>Luftmischtyp (Heckklimaanlage)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1774" />
         <source>Distribution type: rear</source>
-        <translation type="unfinished" />
+        <translation>Verteilertyp: Heck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1784" />
         <source>Engine with "Stop and Start" function</source>
-        <translation type="unfinished" />
+        <translation>Motor mit "Stop and Start" -Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1785" />
         <source>Hybrid power unit</source>
-        <translation type="unfinished" />
+        <translation>Hybrid -Stromeinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1787" />
         <source>The presence of the "Stop and Start" engine or hybrid power unit</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des Motors "Stop and Start" oder "Hybrid)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1795" />
         <source>Using the heat of the exhaust gases to heating the interior</source>
-        <translation type="unfinished" />
+        <translation>Mit der Wärme der Abgase zum Erhitzen des Innenraums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1804" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="55" />
         <source>Without air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Ohne Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1809" />
         <source>The air conditioning air conditioning with the regulation of mixing air flows</source>
-        <translation type="unfinished" />
+        <translation>Die Klimaanlagenklimaanlage mit der Regulierung der Mischluftströme</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1821" />
         <source>The air conditioner is turned off</source>
-        <translation type="unfinished" />
+        <translation>Die Klimaanlage wird ausgeschaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1824" />
         <source>Air conditioning is turned on when the ignition is turned on</source>
-        <translation type="unfinished" />
+        <translation>Die Klimaanlage wird eingeschaltet, wenn die Zündung eingeschaltet wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1826" />
         <source>The function is restored</source>
-        <translation type="unfinished" />
+        <translation>Die Funktion wird wiederhergestellt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1828" />
         <source>The presence of a heater or air conditioner with a non-working engine</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Heizung oder einer Klimaanlage mit einem nicht arbeitenden Motor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1836" />
         <source>Information about the inclusion of air conditioning compressor</source>
-        <translation type="unfinished" />
+        <translation>Informationen über die Einbeziehung des Klimaanlagenkompressors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1844" />
         <source>The presence of a coolant pump with a drive clutch</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Kühlmittelpumpe mit einer Antriebskupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1852" />
         <source>The presence of an algorithm for combustion of the fuel mixture with a cold engine to accelerate the heating of the car interior</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Algorithmus zur Verbrennung des Kraftstoffgemisches mit einem kalten Motor, um die Erwärmung des Autos innen zu beschleunigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1864" />
         <source>Internal preliminary thermal preparation (with matrix and menu)</source>
-        <translation type="unfinished" />
+        <translation>Interne vorläufige thermische Vorbereitung (mit Matrix und Menü)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1868" />
         <source>External preliminary thermal training (additional installation)</source>
-        <translation type="unfinished" />
+        <translation>Externer vorläufiger thermischer Training (zusätzliche Installation)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1872" />
         <source>Internal and external preliminary thermal training (with a matrix, menu and remote control)</source>
-        <translation type="unfinished" />
+        <translation>Interne und externe vorläufige thermische Training (mit einer Matrix-, Menü- und Fernbedienung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1875" />
         <source>The presence and type of preliminary thermal training</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art des vorläufigen thermischen Trainings</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1883" />
         <source>Athermic windshield</source>
-        <translation type="unfinished" />
+        <translation>Athermische Windschutzscheibe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1891" />
         <source>Option: Natural gas (GNV)</source>
-        <translation type="unfinished" />
+        <translation>Option: Erdgas (GNV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1900" />
         <source>With the inclusion of rotation indicators</source>
-        <translation type="unfinished" />
+        <translation>Mit der Einbeziehung von Rotationsindikatoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1901" />
         <source>Without turning on the turning indicators</source>
-        <translation type="unfinished" />
+        <translation>Ohne die Drehungsindikatoren einzuschalten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1903" />
         <source>Configuration "Police"?</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration "Polizei"?</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1911" />
         <source>The presence of a handle with the switching button for the automatic wiper mode</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Griffs mit der Schalttaste für den automatischen Wischermodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1919" />
         <source>Availability of rear multimedia equipment</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit von hinteren Multimedia -Geräten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1929" />
         <source>Front multiplex panel (electric)</source>
-        <translation type="unfinished" />
+        <translation>Front Multiplex Panel (elektrisch)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1930" />
         <source>Front multiplex panel (mechanical)</source>
-        <translation type="unfinished" />
+        <translation>Front Multiplex Panel (mechanisch)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1932" />
         <source>Availability and type of multiplex control panel</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit und Art des Multiplex -Bedienfelds</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1941" />
         <source>Without a car radio</source>
-        <translation type="unfinished" />
+        <translation>Ohne Auto Radio</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1942" />
         <source>RD5</source>
-        <translation type="unfinished" />
+        <translation>Rd5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1943" />
         <source>CD car radio with a display (RDE)</source>
-        <translation type="unfinished" />
+        <translation>CD -Auto -Radio mit einem Display (RDE)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1944" />
         <source>RD45</source>
-        <translation type="unfinished" />
+        <translation>RD45</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1945" />
         <source>RD9</source>
-        <translation type="unfinished" />
+        <translation>RD9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1946" />
         <source>RD6</source>
-        <translation type="unfinished" />
+        <translation>RD6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1948" />
         <source>Type of radio receiver</source>
-        <translation type="unfinished" />
+        <translation>Art des Funkempfängers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1957" />
         <source>Without telematics</source>
-        <translation type="unfinished" />
+        <translation>Ohne Telematik</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1958" />
         <source>Rneg</source>
-        <translation type="unfinished" />
+        <translation>RNEG</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1959" />
         <source>NG4</source>
-        <translation type="unfinished" />
+        <translation>Ng4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1960" />
         <source>Smeg</source>
-        <translation type="unfinished" />
+        <translation>Smeg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1961" />
         <source>Smeg+</source>
-        <translation type="unfinished" />
+        <translation>Smeg+</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1962" />
         <source>MRN</source>
-        <translation type="unfinished" />
+        <translation>Mrn</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1963" />
         <source>NAC/RCC</source>
-        <translation type="unfinished" />
+        <translation>NAC/RCC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1964" />
         <source>Smeg Asia</source>
-        <translation type="unfinished" />
+        <translation>Smeg Asien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1965" />
         <source>RCE</source>
-        <translation type="unfinished" />
+        <translation>Rce</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1967" />
         <source>Type of telematics block</source>
-        <translation type="unfinished" />
+        <translation>Art des Telematikblocks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1975" />
         <source>Option: multiplex anti-lock system (ABS)</source>
-        <translation type="unfinished" />
+        <translation>Option: Multiplex Anti-Lock-System (ABS)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1983" />
         <source>Electrically adjustable exterior mirrors with position memory</source>
-        <translation type="unfinished" />
+        <translation>Elektrisch einstellbare Außenspiegel mit Positionsspeicher</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1991" />
         <source>The presence of a clock</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Uhr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1999" />
         <source>Option: on-board computer (ODB)</source>
-        <translation type="unfinished" />
+        <translation>Option: On-Board-Computer (ODB)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2007" />
         <source>Option: Black Panel mode</source>
-        <translation type="unfinished" />
+        <translation>Option: Schwarzer Panel -Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2017" />
         <source>Additional resistance CTP1</source>
-        <translation type="unfinished" />
+        <translation>Zusätzlicher Widerstand CTP1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2018" />
         <source>Additional resistance CTP2</source>
-        <translation type="unfinished" />
+        <translation>Zusätzlicher Widerstand CTP2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2019" />
         <source>Additional resistances CTP1 and CTP2</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Widerstände CTP1 und CTP2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2020" />
         <source>Additional resistances CTP1 and CTP2 (04)</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Widerstände CTP1 und CTP2 (04)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2021" />
         <source>Additional resistances CTP1 and CTP2 (05)</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Widerstände CTP1 und CTP2 (05)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2022" />
         <source>(06)</source>
-        <translation type="unfinished" />
+        <translation>(06)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2023" />
         <source>(07)</source>
-        <translation type="unfinished" />
+        <translation>(07)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2025" />
         <source>The presence and type of heating resistances</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art von Heizwiderständen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2035" />
         <source>Additional heater</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Heizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2036" />
         <source>Thermal preliminary preparation</source>
-        <translation type="unfinished" />
+        <translation>Vorläufige Vorbereitung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2039" />
         <source>Additional heater and thermal preliminary preparation</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Heizung und thermische Vorbereitung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2042" />
         <source>The presence and type of air heater</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Luftheizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2051" />
         <source>Lack of adjustment</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Anpassung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2052" />
         <source>Button (step by step increase)</source>
-        <translation type="unfinished" />
+        <translation>Taste (Schritt für Schritt erhöhen)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2053" />
         <source>Two buttons (more and less)</source>
-        <translation type="unfinished" />
+        <translation>Zwei Tasten (immer weniger)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2054" />
         <source>Using the menu</source>
-        <translation type="unfinished" />
+        <translation>Mit dem Menü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2056" />
         <source>The presence and type of adjustment of the brightness of the interior backlight</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Einstellung der Helligkeit der inneren Hintergrundbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2070" />
         <source>The presence and number of hatches</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Anzahl der Luken</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2082" />
         <source>Internal combustion engine and electric motor (hybrid power unit)</source>
-        <translation type="unfinished" />
+        <translation>Interner Verbrennungsmotor und Elektromotor (Hybrid -Stromeinheit)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2085" />
         <source>engine's type</source>
-        <translation type="unfinished" />
+        <translation>Motortyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2094" />
         <source>Standard</source>
-        <translation type="unfinished" />
+        <translation>Standard</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2095" />
         <source>Increased comfort</source>
-        <translation type="unfinished" />
+        <translation>Verbesserter Komfort</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2097" />
         <source>Thermal comfort for the "Stop and Start" system</source>
-        <translation type="unfinished" />
+        <translation>Wärmekomfort für das System "Stop and Start"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2107" />
         <source>Information from the ESP system</source>
-        <translation type="unfinished" />
+        <translation>Informationen aus dem ESP -System</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2110" />
         <source>Information coming from the parking brake with the electrical control</source>
-        <translation type="unfinished" />
+        <translation>Informationen von der Feststellbremse mit der elektrischen Kontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2114" />
         <source>Using ESP (with an electric support of calipers)</source>
-        <translation type="unfinished" />
+        <translation>Mit ESP (mit einer elektrischen Unterstützung von Bremssättel)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2118" />
         <source>Parking brake with an electrical control (with an electric support of calipers)</source>
-        <translation type="unfinished" />
+        <translation>Feststellbremse mit elektrischer Kontrolle (mit elektrischer Stützung von Bremssättel)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2121" />
         <source>The presence and type of parking brake with electrical control</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Feststellbremse mit elektrischer Kontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2129" />
         <source>The presence of a trunk door with an electric drive</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Kofferraumtür mit einem elektrischen Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2138" />
         <source>Using a pen</source>
-        <translation type="unfinished" />
+        <translation>Mit einem Stift</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2139" />
         <source>With 1 key</source>
-        <translation type="unfinished" />
+        <translation>Mit 1 Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2140" />
         <source>With 2 keys</source>
-        <translation type="unfinished" />
+        <translation>Mit 2 Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2141" />
         <source>With 3 keys</source>
-        <translation type="unfinished" />
+        <translation>Mit 3 Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2142" />
         <source>With 4 keys</source>
-        <translation type="unfinished" />
+        <translation>Mit 4 Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2144" />
         <source>Selecting vehicle speed limit or cruise control</source>
-        <translation type="unfinished" />
+        <translation>Auswahl der Fahrzeuggeschwindigkeitsbegrenzung oder der Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2154" />
         <source>Discovery</source>
-        <translation type="unfinished" />
+        <translation>Entdeckung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2155" />
         <source>Unlocking</source>
-        <translation type="unfinished" />
+        <translation>Entsperren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2157" />
         <source>Type of electoral opening of the rear door using a high-frequency remote control</source>
-        <translation type="unfinished" />
+        <translation>Art der Wahlöffnung der hinteren Tür unter Verwendung einer hochfrequenten Fernbedienung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2165" />
         <source>The presence of a curtain with an electric drive</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Vorhangs mit einem elektrischen Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2173" />
         <source>Rear seats with electric drive</source>
-        <translation type="unfinished" />
+        <translation>Rücksitze mit elektrischem Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2184" />
         <source>There is no electrical security system for children</source>
-        <translation type="unfinished" />
+        <translation>Es gibt kein elektrisches Sicherheitssystem für Kinder</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2188" />
         <source>Button associated with the intellectual switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Taste mit der intellektuellen Schalteinheit (BSI) verbunden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2192" />
         <source>Button associated with the driver's door panel and working as a 2-position switch</source>
-        <translation type="unfinished" />
+        <translation>Taste, die dem Fahrertür-Panel zugeordnet sind und als 2-Positionsschalter arbeiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2196" />
         <source>Button associated with the driver's door panel and working as a simple switch</source>
-        <translation type="unfinished" />
+        <translation>Taste, die mit der Fahrertürtafel zugeordnet sind und als einfacher Schalter arbeiten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2199" />
         <source>The presence and type of the children's safety system switch</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art des Kindersicherheitssystemschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2207" />
         <source>The presence of a 230V socket</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer 230 -V -Steckdose</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2215" />
         <source>Sound signal supplied by a steering wheel switch of type 2008</source>
-        <translation type="unfinished" />
+        <translation>Schallsignal, das von einem Lenkradschalter vom Typ 2008 geliefert wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2224" />
         <source>The computer is absent or does not receive power from the "plus" of the central power switch</source>
-        <translation type="unfinished" />
+        <translation>Der Computer fehlt oder erhält keine Leistung aus dem "Plus" des zentralen Netzschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2225" />
         <source>Receives power "+" from the central power switch</source>
-        <translation type="unfinished" />
+        <translation>Erhält Strom "+" aus dem zentralen Netzschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2227" />
         <source>Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)</source>
-        <translation type="unfinished" />
+        <translation>Leistungstyp des Anti-Lock-Bremssystems (ABS) oder dynamisches Stabilisierungssystem (ESP)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2236" />
         <source>The relay is not used</source>
-        <translation type="unfinished" />
+        <translation>Das Relais wird nicht verwendet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2237" />
         <source>Air supply pump to the exhaust system</source>
-        <translation type="unfinished" />
+        <translation>Luftversorgungspumpe zur Abgasanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2238" />
         <source>SCR heater (decrease in NOX content for Euro 6)</source>
-        <translation type="unfinished" />
+        <translation>SCR -Heizung (Abnahme des NOX -Inhalts für Euro 6)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2239" />
         <source>Liquid pump of the air conditioning system</source>
-        <translation type="unfinished" />
+        <translation>Flüssigpumpe des Klimaanlagensystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2240" />
         <source>reserve</source>
-        <translation type="unfinished" />
+        <translation>reservieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2242" />
         <source>The type of equipment connected to the relay of the electro-focus of the intelligent switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Die Art der Ausrüstung, die mit dem Relais des Elektrofokus der intelligenten Schalteinheit (BSI) verbunden ist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2250" />
         <source>Presence of the intersection lighting function</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein der Kreuzungsbeleuchtungsfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2259" />
         <source>Without relay</source>
-        <translation type="unfinished" />
+        <translation>Ohne Relais</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2260" />
         <source>With a relay</source>
-        <translation type="unfinished" />
+        <translation>Mit einem Relais</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2262" />
         <source>Type of control of front fog lights</source>
-        <translation type="unfinished" />
+        <translation>Art der Steuerung von vorderen Nebellichtern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2270" />
         <source>The presence of a function of headlights in the personal settings menu</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Funktion von Scheinwerfern im Menü "persönliche Einstellungen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2279" />
         <source>The Stop and Start function is absent or not taken into account</source>
-        <translation type="unfinished" />
+        <translation>Die Stopp- und Startfunktion fehlt oder nicht berücksichtigt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2280" />
         <source>It is taken into account</source>
-        <translation type="unfinished" />
+        <translation>Es wird berücksichtigt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2282" />
         <source>Accounting for Stop and Start function of air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Berücksichtigung der Stopp- und Startfunktion der Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2290" />
         <source>Air supply module in the motor compartment controlled by an intelligent switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>Luftversorgungsmodul im Motorraum, gesteuert von einer intelligenten Schalteinheit (BSI)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2298" />
         <source>The presence of a parking brake menu with an electrical control in the personal settings menu</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Parkbremsmenüs mit einer elektrischen Steuerung im Menü "persönliche Einstellungen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2306" />
         <source>Having a sound selection menu</source>
-        <translation type="unfinished" />
+        <translation>Ein Menü der Soundauswahl haben</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2314" />
         <source>The presence of a sun-roof without a curtain with an electric drive</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Sonnendaches ohne Vorhang mit einem elektrischen Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2322" />
         <source>the presence of an ultrasound module included in the LIN network of an intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Ultraschallmoduls, der im LIN -Netzwerk einer intellektuellen Schalteinheit enthalten ist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2330" />
         <source>The presence of a security alarm siren associated with the BSI LIN network</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer mit dem BSI Lin -Netzwerk verbundenen Sicherheitsalarmsirene</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2338" />
         <source>The presence of a block for re-equipment (auto-school and management for disabled people)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Blocks zur Neuausstattung (Autoschule und Management für behinderte Menschen)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2346" />
         <source>The presence of a warning function about the risk of a collision</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Warnfunktion über das Risiko einer Kollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2354" />
         <source>The presence of a rotation angle sensor of the steering wheel multiplex</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Drehwinkelsensors des Lenkrad -Multiplexes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2364" />
         <source>Type "ISTAR PHASE 1" with a starter</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie "Istar Phase 1" mit einem Starter ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2365" />
         <source>Type "Phase 2" with a starter</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie "Phase 2" mit einem Starter ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2366" />
         <source>Type "istar phase 2" with a starter</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie "Istar Phase 2" mit einem Starter ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2367" />
         <source>Type "istar phase 2" without a starter</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie "Istar Phase 2" ohne Vorspeise ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2369" />
         <source>Availability and type of function "Stop and Start"</source>
-        <translation type="unfinished" />
+        <translation>Verfügbarkeit und Art der Funktion "Stop and Start"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2377" />
         <source>The availability of a system for compliance with a safe distance</source>
-        <translation type="unfinished" />
+        <translation>Die Verfügbarkeit eines Systems zur Einhaltung einer sicheren Entfernung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2385" />
         <source>The presence of intellectual cruise control</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von intellektueller Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2394" />
         <source>discrete</source>
-        <translation type="unfinished" />
+        <translation>diskret</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2395" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2407" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3079" />
         <source>By changing the voltage</source>
-        <translation type="unfinished" />
+        <translation>Durch Ändern der Spannung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2397" />
         <source>Type of control of the front dimensions</source>
-        <translation type="unfinished" />
+        <translation>Art der Steuerung der vorderen Abmessungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2406" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3078" />
         <source>Discrete</source>
-        <translation type="unfinished" />
+        <translation>Diskret</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2409" />
         <source>Daytime running light control type</source>
-        <translation type="unfinished" />
+        <translation>Tagesrund -Lichtsteuerungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2417" />
         <source>The presence of a programmable speed value (Touch display)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines programmierbaren Geschwindigkeitswerts (Touch Display)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2426" />
         <source>The switching unit of the engine</source>
-        <translation type="unfinished" />
+        <translation>Die Schalteinheit des Motors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2427" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3163" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3439" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3945" />
         <source>Intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Intellektuelle Schalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2429" />
         <source>Type of control of front wiper</source>
-        <translation type="unfinished" />
+        <translation>Art der Steuerung der Vorderwischer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2437" />
         <source>The presence of the front wiper in the LIN network</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des vorderen Scheibenwischers im LIN -Netzwerk</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2447" />
         <source>There is on the front left</source>
-        <translation type="unfinished" />
+        <translation>Da ist vorne nach links</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2448" />
         <source>There is on the front right</source>
-        <translation type="unfinished" />
+        <translation>Auf der Vorderseite ist rechts</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2449" />
         <source>There is on the front left and right</source>
-        <translation type="unfinished" />
+        <translation>Es ist links und rechts vorne vorne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2451" />
         <source>The presence of a reversing inertial seat belt coil</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer umgekehrten Trägheitsgurtspule umgekehrt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2459" />
         <source>The presence of an option for automatic braking in the event of a risk of collision</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Option für das automatische Bremsen im Falle eines Kollisionsrisikos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2468" />
         <source>Without changes in current</source>
-        <translation type="unfinished" />
+        <translation>Ohne Änderungen des Stroms</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2469" />
         <source>With variable current power</source>
-        <translation type="unfinished" />
+        <translation>Mit variabler Stromleistung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2471" />
         <source>Type of interior lighting</source>
-        <translation type="unfinished" />
+        <translation>Art der Innenbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2479" />
         <source>Turning on daylight headlights on the steering wheel switch</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie die Tageslicht -Scheinwerfer am Lenkradschalter ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2487" />
         <source>The presence of daylight headlights on LEDs for the mode of showroom</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Tageslicht -Scheinwerfern auf LEDs für die Art des Ausstellungsraums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2496" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2844" />
         <source>using an intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Verwenden einer intellektuellen Schalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2497" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2832" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2845" />
         <source>Using the instrument panel</source>
-        <translation type="unfinished" />
+        <translation>Verwenden des Instrumentenfeldes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2498" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2833" />
         <source>Using a touch display</source>
-        <translation type="unfinished" />
+        <translation>Verwenden einer Touch -Anzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2499" />
         <source>Using the parameter menu</source>
-        <translation type="unfinished" />
+        <translation>Verwenden Sie das Parametermenü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2501" />
         <source>Obtaining a requirement of re-initialization of a system for detecting pressure in tires (from ABS/ESP)</source>
-        <translation type="unfinished" />
+        <translation>Erhalten einer Wiederinitialisierung eines Systems zum Erkennen von Druck in Reifen (von ABS/ESP)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2509" />
         <source>Stopping of diagnostics of the front dimensions of the car</source>
-        <translation type="unfinished" />
+        <translation>Stoppen der Diagnostik der vorderen Abmessungen des Autos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2517" />
         <source>Stopping of diagnostics of the vehicle daylight of the car</source>
-        <translation type="unfinished" />
+        <translation>Stoppen der Diagnostik des Fahrzeugs Tageslicht des Autos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2525" />
         <source>Electricity management resolution Stop and Start options</source>
-        <translation type="unfinished" />
+        <translation>Elektrizitätsmanagement -Auflösung Stopp- und Startoptionen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2534" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3517" />
         <source>Lack of decoding</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Dekodierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2535" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3518" />
         <source>Decoding type of simple blocking</source>
-        <translation type="unfinished" />
+        <translation>Decodierungstyp einfacher Blockieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2536" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3519" />
         <source>Decoding the type of superblock</source>
-        <translation type="unfinished" />
+        <translation>Dekodieren der Art des Superblocks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2537" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3520" />
         <source>Decoding type of low cost lock</source>
-        <translation type="unfinished" />
+        <translation>Dekodierung von kostengünstigen Schloss</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2538" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3221" />
         <source>The rear swing doors</source>
-        <translation type="unfinished" />
+        <translation>Die hinteren Schwungstüren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2539" />
         <source>Locking lock</source>
-        <translation type="unfinished" />
+        <translation>Verriegelungsschloss</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2541" />
         <source>Type of coding of information of front door locks and trunk lid or tailgate</source>
-        <translation type="unfinished" />
+        <translation>Art der Kodierung von Informationen von Haustürschlössern und Kofferraumdeckel oder Heckklappe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2549" />
         <source>Activation of the disconnect algorithm of the injection fan</source>
-        <translation type="unfinished" />
+        <translation>Aktivierung des Trennalgorithmus des Injektionsventilators</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2557" />
         <source>A car with a gas system (GNV, GPL)</source>
-        <translation type="unfinished" />
+        <translation>Ein Auto mit einem Gassystem (GNV, GPL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2565" />
         <source>The presence of air conditioner control panel via wired connection</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein des Klimaanlagen -Bedienfelds über kabelgebundene Verbindung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2573" />
         <source>The presence of a decrease in the release of nitrogen oxides</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Abnahme der Freisetzung von Stickstoffoxiden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2581" />
         <source>The presence of a security alarm with a vehicle lift-up protection function</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Sicherheitsalarms mit einer Fahrzeugaufhebungsschutzfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2589" />
         <source>The presence of heated front windshield washer jets</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von erhitzten vorderen Windschutzscheibenwaschanlagen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2598" />
         <source>No switchable coolant pump</source>
-        <translation type="unfinished" />
+        <translation>Keine schaltbare Kühlmittelpumpe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2599" />
         <source>The presence of coolant pump with drive coupling</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Kühlmittelpumpe mit Antriebskupplung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2600" />
         <source>Distribution and control of coolant supply is performed outside the engine</source>
-        <translation type="unfinished" />
+        <translation>Die Verteilung und Kontrolle der Kühlmittelversorgung erfolgt außerhalb des Motors</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2602" />
         <source>Features of the cooling circuit</source>
-        <translation type="unfinished" />
+        <translation>Merkmale des Kühlkreislaufs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2611" />
         <source>Lack of prohibition</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Verbot</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2614" />
         <source>Turning off the children's security system (if there is a child safety system)</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie das Sicherheitssystem der Kinder aus (wenn ein Kindersicherheitssystem vorhanden ist)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2616" />
         <source>Turning off the button</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie den Knopf aus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2618" />
         <source>Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)</source>
-        <translation type="unfinished" />
+        <translation>Art der Trennung des Treibers der hinteren Fenster (gesteuert von einer intelligenten Schalteinheit)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2628" />
         <source>Day lighting</source>
-        <translation type="unfinished" />
+        <translation>Tagesbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2629" />
         <source>Sound signal</source>
-        <translation type="unfinished" />
+        <translation>Schallsignal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2630" />
         <source>A warning signal</source>
-        <translation type="unfinished" />
+        <translation>Ein Warnsignal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2631" />
         <source>Telematics</source>
-        <translation type="unfinished" />
+        <translation>Telematik</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2632" />
         <source>Changing the displayed page of the on-board computer</source>
-        <translation type="unfinished" />
+        <translation>Ändern der angezeigten Seite des Onboard-Computers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2633" />
         <source>Function of Rear-view mirrors</source>
-        <translation type="unfinished" />
+        <translation>Funktion von Rückspiegeln</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2635" />
         <source>The function of the left button of the steering wheel switching module</source>
-        <translation type="unfinished" />
+        <translation>Die Funktion der linken Taste des Lenkradschaltmoduls</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2643" />
         <source>External mirrors with the position for movement in the rear</source>
-        <translation type="unfinished" />
+        <translation>Externe Spiegel mit der Position für die Bewegung im Heck</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2651" />
         <source>Option: Configuration of economical windshield washing (limited washing time and number of strokes)</source>
-        <translation type="unfinished" />
+        <translation>Option: Konfiguration der wirtschaftlichen Windschutzscheibenwäsche (begrenzte Waschzeit und Anzahl der Schlaganfälle)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2659" />
         <source>The presence of an electric vacuum pump</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer elektrischen Vakuumpumpe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2667" />
         <source>The presence of a solution optimization module</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Lösungsoptimierungsmoduls</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2675" />
         <source>The presence of dynamic driving function</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer dynamischen Fahrfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2683" />
         <source>Option: "Taxi"</source>
-        <translation type="unfinished" />
+        <translation>Option: "Taxi"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2692" />
         <source>Old legislation</source>
-        <translation type="unfinished" />
+        <translation>Alte Gesetzgebung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2693" />
         <source>New legislation</source>
-        <translation type="unfinished" />
+        <translation>Neue Gesetzgebung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2695" />
         <source>ESP certification type</source>
-        <translation type="unfinished" />
+        <translation>ESP -Zertifizierungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2703" />
         <source>Adjustment of the brightness of the interior backlight from the instrument panel</source>
-        <translation type="unfinished" />
+        <translation>Einstellung der Helligkeit der Innenrückbeleuchtung aus dem Instrumentenfeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2714" />
         <source>Vibration of the seat using a vibrator control unit</source>
-        <translation type="unfinished" />
+        <translation>Vibration des Sitzes mit einer Vibrator -Steuereinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2718" />
         <source>Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines</source>
-        <translation type="unfinished" />
+        <translation>Vibration des Sitz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2722" />
         <source>Vibration belts of safety belts from a computer with tensioners</source>
-        <translation type="unfinished" />
+        <translation>Schwingungsgürtel von Sicherheitsriemen von einem Computer mit Spannern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2725" />
         <source>Type of vibrators of the warning function of unintentional intersection of road marking lines</source>
-        <translation type="unfinished" />
+        <translation>Art der Vibratoren der Warnfunktion eines unbeabsichtigten Schnittpunkts der Straßenmarkierungslinien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2733" />
         <source>The presence of radiator cladding</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Kühlerverkleidungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2741" />
         <source>Option: Inclusion of light when unlocking a car</source>
-        <translation type="unfinished" />
+        <translation>Option: Einbeziehung von Licht beim Entsperren eines Autos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2749" />
         <source>The rear window washer option is located opposite the rear wiper brush</source>
-        <translation type="unfinished" />
+        <translation>Die Option Heckscheibenwaschmaschine befindet sich gegenüber dem hinteren Wischpinsel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2757" />
         <source>The presence of windshield heating</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Windschutzscheibenerwärmung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2767" />
         <source>The controlled first-generation generator</source>
-        <translation type="unfinished" />
+        <translation>Der kontrollierte Generator der ersten Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2768" />
         <source>Controlled second-generation generator</source>
-        <translation type="unfinished" />
+        <translation>Generator der zweiten Generation der zweiten Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2769" />
         <source>A controlled generator with the optimization of the charge of the service battery of generation 3</source>
-        <translation type="unfinished" />
+        <translation>Ein kontrollierter Generator mit der Optimierung der Ladung der Dienstbatterie der Generation 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2770" />
         <source>A controlled generator with the optimization of the battery of the generation 4</source>
-        <translation type="unfinished" />
+        <translation>Ein kontrollierter Generator mit der Optimierung der Batterie der Generation 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2772" />
         <source>Control type of controlled generator</source>
-        <translation type="unfinished" />
+        <translation>Steuerungstyp des kontrollierten Generators</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2780" />
         <source>The presence of a low pressure fuel pump</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Tiefdruck -Kraftstoffpumpe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2788" />
         <source>Option: To disable traction control function</source>
-        <translation type="unfinished" />
+        <translation>Option: Um die Funktionssteuerungsfunktion zu deaktivieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2798" />
         <source>Heating the front seats</source>
-        <translation type="unfinished" />
+        <translation>Erhitzen der Vordersitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2799" />
         <source>Heating of the rear seats</source>
-        <translation type="unfinished" />
+        <translation>Erhitzen der Rücksitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2800" />
         <source>heating the front and rear seats</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und Hintersitze erhitzen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2802" />
         <source>The presence of front and rear seats with heating</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Vorder- und Rücksitzen mit Heizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2810" />
         <source>Option: Automatic lighting on</source>
-        <translation type="unfinished" />
+        <translation>Option: Automatische Beleuchtung ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2819" />
         <source>Using the personal settings menu</source>
-        <translation type="unfinished" />
+        <translation>Verwenden Sie das Menü "persönliche Einstellungen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2820" />
         <source>Using the control module under the steering wheel</source>
-        <translation type="unfinished" />
+        <translation>Verwenden des Steuermoduls unter dem Lenkrad</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2822" />
         <source>Type of automatic inclusion of lighting</source>
-        <translation type="unfinished" />
+        <translation>Art der automatischen Einbeziehung der Beleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2835" />
         <source>Type of acquisition of the parking assistance deactivation switch</source>
-        <translation type="unfinished" />
+        <translation>Art der Übernahme des Parkenhilfe -Deaktivierungsschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2846" />
         <source>Bloc of telematics</source>
-        <translation type="unfinished" />
+        <translation>Block der Telematik</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2847" />
         <source>Using a multiplexed front panel</source>
-        <translation type="unfinished" />
+        <translation>Verwenden einer Multiplex -Frontplatte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2849" />
         <source>The type of information from the STOP and Start switch</source>
-        <translation type="unfinished" />
+        <translation>Die Art der Informationen vom Stopp- und Startschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2859" />
         <source>global</source>
-        <translation type="unfinished" />
+        <translation>global</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2860" />
         <source>Partial (Engine and gearbox management only)</source>
-        <translation type="unfinished" />
+        <translation>Partiell (nur Motor- und Getriebemanagement)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2871" />
         <source>Class 7</source>
-        <translation type="unfinished" />
+        <translation>Klasse 7</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2872" />
         <source>Class 8</source>
-        <translation type="unfinished" />
+        <translation>Klasse 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2873" />
         <source>Class 8+</source>
-        <translation type="unfinished" />
+        <translation>Klasse 8+</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2874" />
         <source>Class 9</source>
-        <translation type="unfinished" />
+        <translation>Klasse 9</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2875" />
         <source>Class 12</source>
-        <translation type="unfinished" />
+        <translation>Klasse 12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2876" />
         <source>Class 15</source>
-        <translation type="unfinished" />
+        <translation>Klasse 15</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2877" />
         <source>Class 18</source>
-        <translation type="unfinished" />
+        <translation>Klasse 18</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2878" />
         <source>Class 22</source>
-        <translation type="unfinished" />
+        <translation>Klasse 22</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2879" />
         <source>Class isstt50</source>
-        <translation type="unfinished" />
+        <translation>Klasse ISSTT50</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2880" />
         <source>Class istt51</source>
-        <translation type="unfinished" />
+        <translation>Klasse istt51</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2881" />
         <source>Class istt52</source>
-        <translation type="unfinished" />
+        <translation>Klasse istt52</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2882" />
         <source>Class istt6</source>
-        <translation type="unfinished" />
+        <translation>Klasse istt6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2883" />
         <source>Class isstt40</source>
-        <translation type="unfinished" />
+        <translation>Klasse isstt40</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2884" />
         <source>Class istt41</source>
-        <translation type="unfinished" />
+        <translation>Klasse ISTT41</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2885" />
         <source>Class istt53</source>
-        <translation type="unfinished" />
+        <translation>Klasse istt53</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2887" />
         <source>Generator class type</source>
-        <translation type="unfinished" />
+        <translation>Generatorklassentyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2895" />
         <source>The state of initialization of the warning function in the risk of collision</source>
-        <translation type="unfinished" />
+        <translation>Der Zustand der Initialisierung der Warnfunktion im Kollisionsrisiko</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2904" />
         <source>Level 1</source>
-        <translation type="unfinished" />
+        <translation>Stufe 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2905" />
         <source>Level 2</source>
-        <translation type="unfinished" />
+        <translation>Stufe 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2906" />
         <source>Level 3</source>
-        <translation type="unfinished" />
+        <translation>Stufe 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2907" />
         <source>Level 4</source>
-        <translation type="unfinished" />
+        <translation>Stufe 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2909" />
         <source>The state of initialization of the sensitivity of the warning function in the risk of a collision</source>
-        <translation type="unfinished" />
+        <translation>Der Zustand der Initialisierung der Empfindlichkeit der Warnfunktion im Risiko einer Kollision</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2917" />
         <source>The state of initialization of the automatic braking function at the risk of collision</source>
-        <translation type="unfinished" />
+        <translation>Der Initialisierungszustand der automatischen Bremsfunktion auf das Kollisionsrisiko</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2925" />
         <source>Using the rear fog lights for the function of the stop signal</source>
-        <translation type="unfinished" />
+        <translation>Verwenden der hinteren Nebellichter für die Funktion des Stoppsignals</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2933" />
         <source>The presence of a sound alarm exceeding the established speed limit</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Schallalarms, der die festgelegte Geschwindigkeitsbegrenzung überschreitet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2941" />
         <source>Stopping of diagnostics of the rear dimensions of the car</source>
-        <translation type="unfinished" />
+        <translation>Stoppen der Diagnostik der hinteren Abmessungen des Autos</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2949" />
         <source>Option: Protection from the rise of the car is controlled by an ultrasound module</source>
-        <translation type="unfinished" />
+        <translation>Option: Der Schutz vor dem Anstieg des Autos wird durch ein Ultraschallmodul gesteuert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2958" />
         <source>Euro 4</source>
-        <translation type="unfinished" />
+        <translation>Euro 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2959" />
         <source>Euro 5</source>
-        <translation type="unfinished" />
+        <translation>Euro 5</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2960" />
         <source>Euro 6</source>
-        <translation type="unfinished" />
+        <translation>Euro 6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2961" />
         <source>Euro 6.1</source>
-        <translation type="unfinished" />
+        <translation>Euro 6.1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2962" />
         <source>Euro 6.2</source>
-        <translation type="unfinished" />
+        <translation>Euro 6,2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2963" />
         <source>Euro 6.3</source>
-        <translation type="unfinished" />
+        <translation>Euro 6,3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2966" />
         <source>Type of gearbox moment</source>
-        <translation type="unfinished" />
+        <translation>Art des Getriebemoments</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2974" />
         <source>Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt</source>
-        <translation type="unfinished" />
+        <translation>Option: Schallalarm der Position des Hebels des automatisierten Getriebes, abhängig vom Zustand der Befestigung des Sicherheitsgurtes des Fahrers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2982" />
         <source>The presence of an automatic gearbox with a computer of an electric drive</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines automatischen Getriebe mit einem Computer eines elektrischen Laufwerks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2990" />
         <source>The presence of anti-slip mode switch (ASR)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Anti-Slip-Modusschalter (ASR)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2999" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3705" />
         <source>absent</source>
-        <translation type="unfinished" />
+        <translation>abwesend</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3000" />
         <source>simple</source>
-        <translation type="unfinished" />
+        <translation>einfach</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3001" />
         <source>urban</source>
-        <translation type="unfinished" />
+        <translation>urban</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3002" />
         <source>2 generation</source>
-        <translation type="unfinished" />
+        <translation>2 Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3003" />
         <source>3 generation</source>
-        <translation type="unfinished" />
+        <translation>3 Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3004" />
         <source>4 generation</source>
-        <translation type="unfinished" />
+        <translation>4 Generation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3006" />
         <source>Automatic braking type at risk of collision (FARC)</source>
-        <translation type="unfinished" />
+        <translation>Automatischer Bremstyp bei Kollisionsrisiko (FARC)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3015" />
         <source>Physical interface "Man-Machine"</source>
-        <translation type="unfinished" />
+        <translation>Physische Schnittstelle "Mann-Maschine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3016" />
         <source>Touch interface "Man-Machine"</source>
-        <translation type="unfinished" />
+        <translation>Berührungsschnittstelle "Man-Maschine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3017" />
         <source>Physical and Touch interface "Man-Machine"</source>
-        <translation type="unfinished" />
+        <translation>Physische und Berührungsschnittstelle "Man-Maschine"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3019" />
         <source>Type of obtaining information "Man-Machine" air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Art der Informationsinformation "Man-Machine" -Limimierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3029" />
         <source>Front and rear dimensions</source>
-        <translation type="unfinished" />
+        <translation>Vorder- und Heckabmessungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3030" />
         <source>The rear overall lanterns</source>
-        <translation type="unfinished" />
+        <translation>Die hinteren Gesamtlaternen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3032" />
         <source>Simultaneous inclusion of daylight and overall lanterns</source>
-        <translation type="unfinished" />
+        <translation>Gleichzeitige Einbeziehung von Tageslicht und Gesamtlaternen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3040" />
         <source>Permission of the discharge of electricity stored in the energy battery in the rear window heating network</source>
-        <translation type="unfinished" />
+        <translation>Erlaubnis der Entladung des in der Energiebatterie im Heckfensternheizungsnetzwerks gespeicherten Elektrizität</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3048" />
         <source>Clothing switching unit</source>
-        <translation type="unfinished" />
+        <translation>Kleidungsschalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3056" />
         <source>The presence of stop-signals on the rear bumper</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Stoppsignalen auf der hinteren Stoßstange</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3065" />
         <source>Electro-hydraulic power steering (GEP)</source>
-        <translation type="unfinished" />
+        <translation>Elektro-Hydraulik-Servolenkung (GEP)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3066" />
         <source>Variable power steering</source>
-        <translation type="unfinished" />
+        <translation>Variable Servolenkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3067" />
         <source>Electric power steering</source>
-        <translation type="unfinished" />
+        <translation>Elektrische Servolenkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3069" />
         <source>Type of power steering</source>
-        <translation type="unfinished" />
+        <translation>Art der Servolenkung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3081" />
         <source>Type of control of front indicators</source>
-        <translation type="unfinished" />
+        <translation>Art der Kontrolle der Frontindikatoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3090" />
         <source>Without adjustment</source>
-        <translation type="unfinished" />
+        <translation>Ohne Anpassung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3091" />
         <source>The adjustment requirement using the key controlled by the intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Die Einstellungsanforderung anhand des von der intellektuellen Schalteinheit gesteuerten Schlüssels, der gesteuert wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3092" />
         <source>The adjustment requirement using two plus and minus keys controlled by an intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Die Einstellungsanforderung unter Verwendung von zwei Plus- und Minusschlüssel, die von einer intellektuellen Schalteinheit gesteuert werden,</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3093" />
         <source>Adjustment requirement using the configuration menu</source>
-        <translation type="unfinished" />
+        <translation>Einstellungsanforderung mit dem Konfigurationsmenü</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3094" />
         <source>The requirement to adjust the key on the dashboard</source>
-        <translation type="unfinished" />
+        <translation>Die Anforderung, den Schlüssel auf dem Dashboard anzupassen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3095" />
         <source>Adjustment requirement using two keys on the dashboard</source>
-        <translation type="unfinished" />
+        <translation>Einstellungsanforderung mit zwei Schlüssel auf dem Dashboard</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3097" />
         <source>Front turn signal control type</source>
-        <translation type="unfinished" />
+        <translation>Vorderbeinsignalsteuerungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3105" />
         <source>The presence of a warning system about unintentional intersection of road marking lines</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Warnsystems über unbeabsichtigte Schnittpunkte der Straßenmarkierungslinien</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3114" />
         <source>Wired communication</source>
-        <translation type="unfinished" />
+        <translation>Kabelgebundene Kommunikation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3115" />
         <source>LIN network</source>
-        <translation type="unfinished" />
+        <translation>Lin -Netzwerk</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3117" />
         <source>The presence of diagnostics for LED low beam headlights</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein von Diagnostik für LED -Scheinwerfer mit schwachem Strahl</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3125" />
         <source>Diagnostics disconnection</source>
-        <translation type="unfinished" />
+        <translation>Diagnostik -Trennung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3133" />
         <source>Diagnosis of additional static head lighting</source>
-        <translation type="unfinished" />
+        <translation>Diagnose einer zusätzlichen statischen Kopfbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3142" />
         <source>Halogen lamps</source>
-        <translation type="unfinished" />
+        <translation>Halogenlampen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3143" />
         <source>Light-emitting diode</source>
-        <translation type="unfinished" />
+        <translation>Lichtemittierende Diode</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3145" />
         <source>Type of system of additional static head lighting</source>
-        <translation type="unfinished" />
+        <translation>Art des Systems zusätzlicher statischer Kopfbeleuchtung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3153" />
         <source>The presence of additional static head lighting (PLV)</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein zusätzlicher statischer Kopfbeleuchtung (PLV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3162" />
         <source>Alarm module</source>
-        <translation type="unfinished" />
+        <translation>Alarmmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3165" />
         <source>Computer controlling perimeter security alarm</source>
-        <translation type="unfinished" />
+        <translation>Computersteuerung des Perimeter -Sicherheitsalarms</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3175" />
         <source>Calling technical assistance</source>
-        <translation type="unfinished" />
+        <translation>Technische Unterstützung anrufen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3176" />
         <source>Remote diagnostic service</source>
-        <translation type="unfinished" />
+        <translation>Ferndiagnostischer Service</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3177" />
         <source>All options are activated</source>
-        <translation type="unfinished" />
+        <translation>Alle Optionen werden aktiviert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3179" />
         <source>Telematics options</source>
-        <translation type="unfinished" />
+        <translation>Telematikoptionen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3190" />
         <source>There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Das Lenkrad gibt keine Getriebekontrolle oder wird nicht von einer intellektuellen Schalteinheit gesteuert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3194" />
         <source>Driving control on the steering wheel is controlled by an intellectual switching unit</source>
-        <translation type="unfinished" />
+        <translation>Die Fahrsteuerung am Lenkrad wird von einer intellektuellen Schalteinheit gesteuert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3197" />
         <source>The presence and type of gear shift control on the steering wheel</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Zahnradverschiebung am Lenkrad</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3206" />
         <source>Short side door</source>
-        <translation type="unfinished" />
+        <translation>Kurze Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3207" />
         <source>Long side door</source>
-        <translation type="unfinished" />
+        <translation>Lange Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3209" />
         <source>The width of the side door</source>
-        <translation type="unfinished" />
+        <translation>Die Breite der Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3218" />
         <source>Without the back door</source>
-        <translation type="unfinished" />
+        <translation>Ohne die Hintertür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3219" />
         <source>Trunk / luggage department</source>
-        <translation type="unfinished" />
+        <translation>Koffer- / Gepäckabteilung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3220" />
         <source>The door of the luggage compartment</source>
-        <translation type="unfinished" />
+        <translation>Die Tür des Gepäckraums</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3223" />
         <source>The presence and type of rear door</source>
-        <translation type="unfinished" />
+        <translation>Die Anwesenheit und Art der Hintertür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3231" />
         <source>The presence of a switching unit for the re-equipment of the body</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Schalteinheit für die Neuausstattung des Körpers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3243" />
         <source>Type 1 and Type 3</source>
-        <translation type="unfinished" />
+        <translation>Typ 1 und Typ 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3245" />
         <source>Type 1 and Type 4</source>
-        <translation type="unfinished" />
+        <translation>Typ 1 und Typ 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3246" />
         <source>Type 3 and Type 4</source>
-        <translation type="unfinished" />
+        <translation>Typ 3 und Typ 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3247" />
         <source>Type 1, Type 3 and Type 4</source>
-        <translation type="unfinished" />
+        <translation>Typ 1, Typ 3 und Typ 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3249" />
         <source>The presence and type of determination of the driver's attentiveness</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Bestimmung der Aufmerksamkeit des Fahrers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3259" />
         <source>Acquisition by the multifunction video camera</source>
-        <translation type="unfinished" />
+        <translation>Akquisition durch die Multifunktions -Videokamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3260" />
         <source>Acquisition by the navigation</source>
-        <translation type="unfinished" />
+        <translation>Erwerb durch die Navigation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3261" />
         <source>Acquisition by the multifunction video camera and by the navigation</source>
-        <translation type="unfinished" />
+        <translation>Akquisition durch die Multifunktions -Videokamera und durch die Navigation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3263" />
         <source>The presence and type of road signalling acquisition</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der Erfassung von Straßensignalen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3287" />
         <source>The hollow door</source>
-        <translation type="unfinished" />
+        <translation>Die hohle Tür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3274" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3288" />
         <source>Mechanical side sliding door</source>
-        <translation type="unfinished" />
+        <translation>Mechanische Seitenschiebetür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3275" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3289" />
         <source>Light sliding door with electric drive</source>
-        <translation type="unfinished" />
+        <translation>Leichte Schiebetür mit elektrischem Antrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3277" />
         <source>The presence and type of the right rear side door</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein und die Art der rechten hinteren Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3291" />
         <source>The presence and type of left rear side door</source>
-        <translation type="unfinished" />
+        <translation>Die Anwesenheit und Art der linken hinteren Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3300" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3312" />
         <source>halogen headlights</source>
-        <translation type="unfinished" />
+        <translation>Halogenscheinwerfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3301" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3313" />
         <source>Led lights</source>
-        <translation type="unfinished" />
+        <translation>LED -Leuchten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3303" />
         <source>Type of front side lights</source>
-        <translation type="unfinished" />
+        <translation>Art der vorderen Seitenlichter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3315" />
         <source>Type of anterior rotation indicators</source>
-        <translation type="unfinished" />
+        <translation>Art der vorderen Rotationsindikatoren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3324" />
         <source>Lack of contactor</source>
-        <translation type="unfinished" />
+        <translation>Mangel an Schütze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3325" />
         <source>The presence of a contactor</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Schützs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3327" />
         <source>The presence of a switch between a simple cruise control system and an adaptive cruise control system</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Schalters zwischen einem einfachen Tempomat -Steuerungssystem und einem adaptiven Tempomat -Steuerungssystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3335" />
         <source>The presence of the front electric windows</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der vorderen elektrischen Fenster</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3343" />
         <source>The presence of a rear window cleaner</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Heckscheibenreinigers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3351" />
         <source>Option: Opening rear window</source>
-        <translation type="unfinished" />
+        <translation>Option: Heckfenster öffnen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3359" />
         <source>Electric ignition lock</source>
-        <translation type="unfinished" />
+        <translation>Elektrische Zündschloss</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3367" />
         <source>Option: "Hands-free access" for the right rear side door</source>
-        <translation type="unfinished" />
+        <translation>Option: "Freisprecher Zugriff" für die rechte hintere Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3375" />
         <source>Option: "Hands-free access" for the left rear side door</source>
-        <translation type="unfinished" />
+        <translation>Option: "Freisprecher Zugriff" für die linke hintere Seitentür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3383" />
         <source>Option: "Hands-free access" for the back door</source>
-        <translation type="unfinished" />
+        <translation>Option: "Freisprecher Zugriff" für die Hintertür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3392" />
         <source>Short air duct heating</source>
-        <translation type="unfinished" />
+        <translation>Kurzluftkanalerwärmung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3393" />
         <source>Long air duct heating</source>
-        <translation type="unfinished" />
+        <translation>Langluftkanalerwärmung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3395" />
         <source>Type of air duct heating the air conditioning system</source>
-        <translation type="unfinished" />
+        <translation>Art des Luftkanals Erhitzen des Klimaanlagensystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3406" />
         <source>Light or visual warning (seat belt, seat ...)</source>
-        <translation type="unfinished" />
+        <translation>Leichte oder visuelle Warnung (Sicherheitsgurt, Sitz ...)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3408" />
         <source>Sound and visual alarm</source>
-        <translation type="unfinished" />
+        <translation>Schall und visueller Alarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3410" />
         <source>Type of message Prevention function of crossing road marking lines</source>
-        <translation type="unfinished" />
+        <translation>Art der Nachrichtenpräventionsfunktion der Überquerung von Straßenmarkierungsleitungen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3419" />
         <source>Textile</source>
-        <translation type="unfinished" />
+        <translation>Textil</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3420" />
         <source>Leather</source>
-        <translation type="unfinished" />
+        <translation>Leder</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3422" />
         <source>Type of upholstery seats</source>
-        <translation type="unfinished" />
+        <translation>Art der Polsterplätze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3430" />
         <source>The availability of telematics receiver control</source>
-        <translation type="unfinished" />
+        <translation>Die Verfügbarkeit der Steuerung der Telematikempfänger -Kontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3440" />
         <source>Burning wires</source>
-        <translation type="unfinished" />
+        <translation>Brennen Kabel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3442" />
         <source>Type of control of rotation indicators with a smooth increase in brightness</source>
-        <translation type="unfinished" />
+        <translation>Art der Steuerung von Rotationsindikatoren mit einer reibungslosen Zunahme der Helligkeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3450" />
         <source>The presence of a control system for descent</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines Kontrollsystems für den Abstieg</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3459" />
         <source>Turn on the button by pressing</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie die Taste ein, indem Sie drücken</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3462" />
         <source>Turn on the rear window heating button (Luch) or button of visibility (VISI)</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie die Heckscheibenheiztaste (LUCH) oder die Sichtbarkeitsknopf (visi) ein.</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3466" />
         <source>Turning on the heating of the windshield on the multifunctional front panel</source>
-        <translation type="unfinished" />
+        <translation>Einschalten der Heizung der Windschutzscheibe auf der multifunktionalen Frontplatte</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3469" />
         <source>Type of button on windshield heating</source>
-        <translation type="unfinished" />
+        <translation>Art der Taste bei Windschutzscheibenheizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3480" />
         <source>Controlled air intake module with 2-position shutters</source>
-        <translation type="unfinished" />
+        <translation>Kontrolliertes Lufteinlassmodul mit 2-Positionenläden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3484" />
         <source>Controlled air intake module with multi-position damper</source>
-        <translation type="unfinished" />
+        <translation>Kontrolliertes Lufteinlassmodul mit mehreren Positionendämpfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3487" />
         <source>Type of controlled air intake module</source>
-        <translation type="unfinished" />
+        <translation>Art des kontrollierten Lufteinlassmoduls</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3499" />
         <source>Generation 1 (warning at the risk of a collision with a mobile object)</source>
-        <translation type="unfinished" />
+        <translation>Generation 1 (Warnung auf das Risiko einer Kollision mit einem mobilen Objekt)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3503" />
         <source>Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)</source>
-        <translation type="unfinished" />
+        <translation>Generation 2 (Warnung vor der Gefahr einer Kollision mit bewegenden, bewegungslosen Objekten und Fußgängern)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3505" />
         <source>Generation 3</source>
-        <translation type="unfinished" />
+        <translation>Generation 3</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3506" />
         <source>Generation 4</source>
-        <translation type="unfinished" />
+        <translation>Generation 4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3508" />
         <source>Type of warning in the risk of collision</source>
-        <translation type="unfinished" />
+        <translation>Art der Warnung im Kollisionsrisiko</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3523" />
         <source>Decoding of information from the opening unit of the rear open door</source>
-        <translation type="unfinished" />
+        <translation>Decodierung von Informationen aus der Öffnungseinheit der hinteren offenen Tür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3526" />
         <source>Type of information encoding from the locks of the rear swing doors</source>
-        <translation type="unfinished" />
+        <translation>Art der Informationskodierung aus den Schlösser der hinteren Schwungstüren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3534" />
         <source>The number of the calibration table antennas of the access function "Free Hands"</source>
-        <translation type="unfinished" />
+        <translation>Die Anzahl der Kalibrierungstabellenantennen der Zugangsfunktion "Freie Hände"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3542" />
         <source>Automatic blocking access to the cargo area when moving</source>
-        <translation type="unfinished" />
+        <translation>Automatischer Blockieren Zugang zum Frachtbereich beim Umzug</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3550" />
         <source>The presence of a help function in holding a car in the movement lane</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein einer Hilfefunktion beim Halten eines Autos in der Bewegungsspur</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3558" />
         <source>Lane Keeping Assist linked to Blind Spot Monitoring</source>
-        <translation type="unfinished" />
+        <translation>Lane Heeing Assist in Verbindung mit der blinden Spotüberwachung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3566" />
         <source>gradual shutdown of rotation indicators (while maintaining the blinking mode)</source>
-        <translation type="unfinished" />
+        <translation>Allmähliche Abschaltung der Rotationsindikatoren (beibehalten des Blinkmodus)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3575" />
         <source>AX6</source>
-        <translation type="unfinished" />
+        <translation>AX6</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3576" />
         <source>AT8 (AL4)</source>
-        <translation type="unfinished" />
+        <translation>AT8 (Al4)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3577" />
         <source>AXN8</source>
-        <translation type="unfinished" />
+        <translation>AXN8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3578" />
         <source>The hybrid automatic gearbox</source>
-        <translation type="unfinished" />
+        <translation>Das Hybridautomatikgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3579" />
         <source>Reduction gear with park finger locking actuator</source>
-        <translation type="unfinished" />
+        <translation>Reduktionsausrüstung mit Parkfingerverriegelungsantrieb</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3580" />
         <source>CVT</source>
-        <translation type="unfinished" />
+        <translation>CVT</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3582" />
         <source>Automatic gearbox type</source>
-        <translation type="unfinished" />
+        <translation>Automatischer Getriebe Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3595" />
         <source>The presence of heated seats or heated ventilated seats</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein beheizter Sitze oder beheizter belüfteter Sitze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3604" />
         <source>Choice with a pen</source>
-        <translation type="unfinished" />
+        <translation>Wahl mit einem Stift</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3605" />
         <source>Select by the switch</source>
-        <translation type="unfinished" />
+        <translation>Wählen Sie nach dem Switch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3607" />
         <source>Selecting the modes of operation of a hybrid drive</source>
-        <translation type="unfinished" />
+        <translation>Auswählen der Betriebsmodi eines Hybridantriebs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3615" />
         <source>Option: Comfortable polysensory package CFG_EBK_BSI_OPT_MODE_DYN_COMFORT_000</source>
-        <translation type="unfinished" />
+        <translation>Option: Bequemes polysensorisches Paket cfg_ebk_bsi_opt_mode_dyn_comfort_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3623" />
         <source>Option: Polisor Package CFG_EBL_BSI_POLSENSORIAL_PACK_000</source>
-        <translation type="unfinished" />
+        <translation>Option: Polisorpaket CFG_EBL_BSI_POLSENSORIARAL_PACK_000</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3631" />
         <source>Navigation option to provide radar points of interest with appropriate speed restrictions</source>
-        <translation type="unfinished" />
+        <translation>Navigationsoption, um Radarpunkte von Interesse mit geeigneten Geschwindigkeitsbeschränkungen bereitzustellen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3639" />
         <source>Option: Wireless charger</source>
-        <translation type="unfinished" />
+        <translation>Option: drahtloses Ladegerät</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3648" />
         <source>Simple pressing</source>
-        <translation type="unfinished" />
+        <translation>Einfaches Drücken</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3649" />
         <source>Double pressing</source>
-        <translation type="unfinished" />
+        <translation>Doppelt drücken</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3651" />
         <source>Type of trunk opening switch or baggage compartment door</source>
-        <translation type="unfinished" />
+        <translation>Art des Kofferöffnungsschalters oder Gepäckabteiltür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3659" />
         <source>Additional rear overall lantern</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche hintere Gesamtlaterne</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3667" />
         <source>Detection of the presence of a spare wheel</source>
-        <translation type="unfinished" />
+        <translation>Erkennung des Vorhandenseins eines Ersatzrads</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3675" />
         <source>Steering wheel with heating</source>
-        <translation type="unfinished" />
+        <translation>Lenkrad mit Heizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3683" />
         <source>Multifunction video recording camera</source>
-        <translation type="unfinished" />
+        <translation>Multifunktions -Videoaufzeichnungskamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3692" />
         <source>ABSENT of warning</source>
-        <translation type="unfinished" />
+        <translation>Abwesenheit von Warnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3693" />
         <source>Temporary warning</source>
-        <translation type="unfinished" />
+        <translation>Vorübergehende Warnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3694" />
         <source>Permanent warning</source>
-        <translation type="unfinished" />
+        <translation>Dauerwarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3696" />
         <source>Presence and duration of displaying of the overspeed warning</source>
-        <translation type="unfinished" />
+        <translation>Präsenz und Dauer der Anzeige der Überdrehzahlwarnung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3706" />
         <source>Function limited to the lane departure warning</source>
-        <translation type="unfinished" />
+        <translation>Funktion, beschränkt auf die WARNUNG</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3709" />
         <source>The presence and type of lane keeping assistance</source>
-        <translation type="unfinished" />
+        <translation>Die Anwesenheit und Art der Fahrspurhaltehilfe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3717" />
         <source>Additional head lighting functions: Cornering lights (AFS)</source>
-        <translation type="unfinished" />
+        <translation>Zusätzliche Kopfbeleuchtungsfunktionen: Kurvenleuchten (AFS)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3726" />
         <source>Full Auto Stop (BVA)</source>
-        <translation type="unfinished" />
+        <translation>Vollautomatischer Stopp (BVA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3727" />
         <source>30 (BVM)</source>
-        <translation type="unfinished" />
+        <translation>30 (BVM)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3728" />
         <source>Stop and Go (BVA)</source>
-        <translation type="unfinished" />
+        <translation>Stoppen Sie und gehen Sie (BVA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3730" />
         <source>Type of mode for ACC</source>
-        <translation type="unfinished" />
+        <translation>Art des Modus für ACC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3740" />
         <source>Radar</source>
-        <translation type="unfinished" />
+        <translation>Radar</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3741" />
         <source>Radar &amp; Camera</source>
-        <translation type="unfinished" />
+        <translation>Radar &amp; Kamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3742" />
         <source>Camera</source>
-        <translation type="unfinished" />
+        <translation>Kamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3744" />
         <source>Type of technologie for ACC</source>
-        <translation type="unfinished" />
+        <translation>Art der Technologie für ACC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3752" />
         <source>Turning on the power steering computer power relay, made by the BSI unit</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie das von der BSI -Einheit hergestellte Relais von Servolensen ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3760" />
         <source>Car with power saving for power windows</source>
-        <translation type="unfinished" />
+        <translation>Auto mit Stromeinsparung für elektrische Fenster</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3768" />
         <source>Block for maintaining the voltage of the on-board network</source>
-        <translation type="unfinished" />
+        <translation>Blockieren Sie die Spannung des On-Board-Netzwerks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3777" />
         <source>From the driver</source>
-        <translation type="unfinished" />
+        <translation>Vom Fahrer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3778" />
         <source>From the passenger</source>
-        <translation type="unfinished" />
+        <translation>Vom Passagier</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3779" />
         <source>side of the driver and passenger</source>
-        <translation type="unfinished" />
+        <translation>Seite des Fahrers und Fahrers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3781" />
         <source>Front seats with massage function</source>
-        <translation type="unfinished" />
+        <translation>Vordersitze mit Massagefunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3790" />
         <source>Coolating fluid heater control computer</source>
-        <translation type="unfinished" />
+        <translation>Kühlung von Flüssigkeitsheizungs -Steuercomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3791" />
         <source>Multiplewlex computer of coolant heater</source>
-        <translation type="unfinished" />
+        <translation>MultipleWlex -Computer der Kühlmittelheizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3793" />
         <source>Cooling liquid heater type</source>
-        <translation type="unfinished" />
+        <translation>Kühlflüssigkeitsheizungstyp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3802" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3842" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3855" />
         <source>There is no function</source>
-        <translation type="unfinished" />
+        <translation>Es gibt keine Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3805" />
         <source>The function is (the rear view camera with *3 rear images for Picasso)</source>
-        <translation type="unfinished" />
+        <translation>Die Funktion ist (die Rückansichtskamera mit *3 hinteren Bildern für Picasso)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3807" />
         <source>Rear view camera</source>
-        <translation type="unfinished" />
+        <translation>Rückfahrkamera</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3809" />
         <source>Rear-view mirrors</source>
-        <translation type="unfinished" />
+        <translation>Rückspiegel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3817" />
         <source>The presence of the interior lighting function in the personal settings menu</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der Innenbeleuchtungsfunktion im Menü "persönliche Einstellungen"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3825" />
         <source>Improved operation of the high beam switching function (Matrix Beam)</source>
-        <translation type="unfinished" />
+        <translation>Verbesserter Betrieb der Hochstrahlschaltfunktion (Matrixstrahl)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3833" />
         <source>LED/signaler indicates alarm activation status</source>
-        <translation type="unfinished" />
+        <translation>LED/Signalgebern gibt den Alarmaktivierungsstatus an</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3843" />
         <source>Warning about the ESP system malfunction</source>
-        <translation type="unfinished" />
+        <translation>Warnung vor der Fehlfunktion des ESP -Systems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3844" />
         <source>Brake system malfunction</source>
-        <translation type="unfinished" />
+        <translation>Bremssystem Fehlfunktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3846" />
         <source>Type of orange warning light to indicate a faulty brake booster</source>
-        <translation type="unfinished" />
+        <translation>Art der orangefarbenen Warnleuchte, um einen fehlerhaften Bremsscheibe anzuzeigen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3856" />
         <source>manufacturer</source>
-        <translation type="unfinished" />
+        <translation>Hersteller</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3857" />
         <source>European Union</source>
-        <translation type="unfinished" />
+        <translation>europäische Union</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3858" />
         <source>Russia</source>
-        <translation type="unfinished" />
+        <translation>Russland</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3860" />
         <source>The presence and type of emergency call</source>
-        <translation type="unfinished" />
+        <translation>Die Anwesenheit und Art des Notrufs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3869" />
         <source>No function</source>
-        <translation type="unfinished" />
+        <translation>Keine Funktion</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3870" />
         <source>Halogen</source>
-        <translation type="unfinished" />
+        <translation>Halogen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3871" />
         <source>LED</source>
-        <translation type="unfinished" />
+        <translation>LED</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3873" />
         <source>Type of overall tail lights</source>
-        <translation type="unfinished" />
+        <translation>Art der allgemeinen Rücklichter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3882" />
         <source>3 positional switch</source>
-        <translation type="unfinished" />
+        <translation>3 Positionsschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3883" />
         <source>Contactor</source>
-        <translation type="unfinished" />
+        <translation>Schütze</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3884" />
         <source>Pulse button with long and short press</source>
-        <translation type="unfinished" />
+        <translation>Impulstaste mit langer und kurzer Drücke</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3885" />
         <source>2 control buttons</source>
-        <translation type="unfinished" />
+        <translation>2 Steuertasten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3887" />
         <source>Type of lamp switch</source>
-        <translation type="unfinished" />
+        <translation>Art des Lampenschalters</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3896" />
         <source>----</source>
-        <translation type="unfinished" />
+        <translation>------</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3897" />
         <source>Simple instrument panel</source>
-        <translation type="unfinished" />
+        <translation>Einfaches Instrumentenfeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3898" />
         <source>CIROCCO instrument panel / Digital instrument panel</source>
-        <translation type="unfinished" />
+        <translation>Cirocco Instrument Panel / Digital Instrument Panel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3899" />
         <source>Instrument panel with multifunctional display functions</source>
-        <translation type="unfinished" />
+        <translation>Instrumententafel mit multifunktionalen Anzeigefunktionen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3900" />
         <source>Instrument panel with matrix display</source>
-        <translation type="unfinished" />
+        <translation>Instrumententafel mit Matrixanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3902" />
         <source>Type of dashboard</source>
-        <translation type="unfinished" />
+        <translation>Art des Dashboards</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3921" />
         <source>Manual adjustment directly on the headlights</source>
-        <translation type="unfinished" />
+        <translation>Manuelle Einstellung direkt an den Scheinwerfern</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3925" />
         <source>Manual correction using a regulator of the height of the headlight of the headlights in the cabin</source>
-        <translation type="unfinished" />
+        <translation>Manuelle Korrektur unter Verwendung eines Reglers der Höhe der Scheinwerfer der Scheinwerfer in der Kabine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3929" />
         <source>Static adjustment of headlights of the height</source>
-        <translation type="unfinished" />
+        <translation>Statische Einstellung der Scheinwerfer der Höhe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3933" />
         <source>Dynamic adjustment of the position of the light bundle of the headlight in height</source>
-        <translation type="unfinished" />
+        <translation>Dynamische Einstellung der Position des leichten Bündels des Scheinwerfers in der Höhe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3936" />
         <source>Headlight beam height corrector</source>
-        <translation type="unfinished" />
+        <translation>Korrektur der Scheinwerferstrahlhöhe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3946" />
         <source>Inner rear-view mirror</source>
-        <translation type="unfinished" />
+        <translation>Innerer Rückspiegel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3948" />
         <source>Management "day/night"</source>
-        <translation type="unfinished" />
+        <translation>Management "Tag/Nacht"</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3956" />
         <source>The presence of a LED to disable the state of work in ZEV mode</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein eines führte dazu, den Arbeitszustand im ZEV -Modus zu deaktivieren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3964" />
         <source>Turning on the security alarm when blocking locks using a mechanical key</source>
-        <translation type="unfinished" />
+        <translation>Schalten Sie den Sicherheitsalarm beim Blockieren von Schlösser mit einem mechanischen Schlüssel ein</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3972" />
         <source>The presence of the rear traction electric machine</source>
-        <translation type="unfinished" />
+        <translation>Das Vorhandensein der hinteren Traktionslaufmaschine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3981" />
         <source>Inclusion with a handle</source>
-        <translation type="unfinished" />
+        <translation>Einbeziehung mit einem Griff</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3982" />
         <source>Activation by a switch</source>
-        <translation type="unfinished" />
+        <translation>Aktivierung durch einen Schalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3984" />
         <source>Type of activation of the ASR+ Antibux system+</source>
-        <translation type="unfinished" />
+        <translation>Art der Aktivierung des ASR+ Antibux -Systems+</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3994" />
         <source>There is</source>
-        <translation type="unfinished" />
+        <translation>Es gibt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3996" />
         <source>The function of the heat pump</source>
-        <translation type="unfinished" />
+        <translation>Die Funktion der Wärmepumpe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4005" />
         <source>Normal mode</source>
-        <translation type="unfinished" />
+        <translation>Normaler Modus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4006" />
         <source>Sports mode</source>
-        <translation type="unfinished" />
+        <translation>Sportmodus</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4008" />
         <source>Mode of operation of the vehicle's steering and damping</source>
-        <translation type="unfinished" />
+        <translation>Betriebsart der Lenkung und Dämpfung des Fahrzeugs</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4017" />
         <source>Using the intellectual switching unit BSI</source>
-        <translation type="unfinished" />
+        <translation>Verwenden der intellektuellen Schalteinheit BSI</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4018" />
         <source>Another</source>
-        <translation type="unfinished" />
+        <translation>Ein anderer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4020" />
         <source>Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking</source>
-        <translation type="unfinished" />
+        <translation>Art der Annahme von Informationen vom Schütz des semi-automatischen Hilfesystems beim Parkplatz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4028" />
         <source>CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: Bolk Free Hands</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4036" />
         <source>CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: Lenkradschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4044" />
         <source>CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: Airbags</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4052" />
         <source>CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR4_BSI_UCECAN_UDS_LCE_000: Elektronischer Taste des Lesers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4060" />
         <source>CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR5_BSI_UCECAN_UDS_BRHF_000: Hochfrequenzempfänger</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4068" />
         <source>CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_AMJ_BSI_UCE_CAN_BSM_000: Motorschalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4076" />
         <source>CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR7_BSI_UCECAN_UDS_BDCP_000: Fußgängererkennungseinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4084" />
         <source>CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Treibertür -Bedienfeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4092" />
         <source>CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock</source>
-        <translation type="unfinished" />
+        <translation>CFG_BR9_BSI_UCECAN_UDS_AVE_000: ZIGNITION ELEKTRISCHE LOCK</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4100" />
         <source>CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellektuelle Schalteinheit (BSI)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4108" />
         <source>CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRB_BSI_UCECAN_PLC_000: Motorisierte Schiebetür</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4116" />
         <source>CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRC_BSI_UCECAN_UDS_BDMA_000: Speicherabdeckung auf den Rücksitzen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4124" />
         <source>CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRD_BSI_UCECAN_UDS_AUS_000: Sicherheitsalarm</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4132" />
         <source>CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parkhilfesystem</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4140" />
         <source>CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRF_BSI_UCECAN_UDS_MAE_000: Trainingsautomodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4148" />
         <source>CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRG_BSI_UCECAN_UDS_CMB_000: Instrumententafel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4156" />
         <source>CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRH_BSI_UCECAN_UDS_RADIO_000: Radioempfänger</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4164" />
         <source>CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)</source>
-        <translation type="unfinished" />
+        <translation>CFG_AN4_BSI_UCE_CAN_STL_000: Warnsystem über eine unbeabsichtigte Schnittstelle der Straßenmarkierungslinie (mit Infrarotsensoren)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4172" />
         <source>CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: Telematikblock oder Funknavigation</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4180" />
         <source>CFG_BRK_BSI_UCECAN_UDS_EMF_000: display</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRK_BSI_UCECAN_UDS_EMF_000: Anzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4188" />
         <source>CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRL_BSI_UCECAN_UDS_TE_000: FALTING DAU ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4196" />
         <source>CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: Chartal Electrica</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4204" />
         <source>CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: Anhängerschalter</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4212" />
         <source>CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRO_BSI_UCECAN_UDS_CLIM_000: Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4220" />
         <source>CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position</source>
-        <translation type="unfinished" />
+        <translation>CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: Fahrersitzposition</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4228" />
         <source>CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: Bolstier de Mémorisation du Siège Passager ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4236" />
         <source>CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRR_BSI_UCECAN_UDS_VTH_000: Kopf-up-Vision ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4244" />
         <source>CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-Changer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4252" />
         <source>CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRT_BSI_UCECAN_UDS_MATT_000: Matrixanzeige</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4260" />
         <source>CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT -Hauptlibres / Bolly Nomade ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4268" />
         <source>CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRV_BSI_UCECAN_UDS_DEF_000: Deffektor / Spoiler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4276" />
         <source>CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: Multifunktionale Frontplatte auf der Dose</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4284" />
         <source>CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRX_BSI_UCECAN_MDS_000: Autonome Telekommunikationseinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4292" />
         <source>CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRY_BSI_UCECAN_UDS_AMPLI_000: Audiosystemverstärker</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4300" />
         <source>CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain</source>
-        <translation type="unfinished" />
+        <translation>CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: Starter -Steuereinheit oder Hybrid -Traktionskette</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4308" />
         <source>CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS0_BSI_UCECAN_UDS_CAV_000: Lenkwinkelsensor Multiplex drehen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4316" />
         <source>CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: Steuereinheit einer hybriden Traktionskette</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4324" />
         <source>CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS2_BSI_UCECAN_UDS_CMM_000: Motorcomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4332" />
         <source>CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS3_BSI_UCECAN_UDS_BV_000: Automatisches Getriebe oder automatisiertes Schaltgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4340" />
         <source>CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: Anti-Lock-System (ABS) / Dynamisches Stabilisierungssystem (ESP)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4348" />
         <source>CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS5_BSI_UCECAN_UDS_DSG_000: Reifendrucksteuerungscomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4356" />
         <source>CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS6_BSI_UCECAN_UDS_CSS_000: Suspension Control Unit (CSS)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4364" />
         <source>CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS7_BSI_UCECAN_UDS_BHI_000: Box Hydraulice Intelligent (BHI) ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4372" />
         <source>CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake</source>
-        <translation type="unfinished" />
+        <translation>CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: Elektrische Feststellbremse</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4380" />
         <source>CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer</source>
-        <translation type="unfinished" />
+        <translation>CFG_BS9_BSI_UCECAN_UDA_DA_000: Servolenkungscomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4388" />
         <source>CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: Computersystem für die Einhaltung der Distanz zwischen Autos oder intellektuellen Tempomatkontrolle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4396" />
         <source>CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: Computer verwaltet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4404" />
         <source>CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSC_BSI_UCECAN_UDS_CAAR_000: Pneumatische Suspension</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4412" />
         <source>CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer</source>
-        <translation type="unfinished" />
+        <translation>CFG_AO1_BIC_GYR_ACC_000: Gyroskopsensoren und Beschleunigungsmesser</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4420" />
         <source>CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Molette de Sélection de L? Anti-Patinage ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4428" />
         <source>CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'LATION Réseau ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4436" />
         <source>CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE</source>
-        <translation type="unfinished" />
+        <translation>CFG_BTC_BSI_UCECAN_UDS_SAM_000: Strukturschließung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4444" />
         <source>CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508</source>
-        <translation type="unfinished" />
+        <translation>CFG_BTD_BSI_UCECAN_UDS_CAFR_000: Computersteuerungscomputer // 508</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4452" />
         <source>CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BTE_BSI_UCECAN_UDS_CMF_000: Multifunktionale Videokamera (CVM)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4460" />
         <source>CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_BTF_BSI_UCECAN_UDS_BPV_000: Sitze Vibratoren Steuereinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4468" />
         <source>CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers</source>
-        <translation type="unfinished" />
+        <translation>CFG_BZK_BSI_UCECAN_UDS_BEBA_000: Computer der aktiven Stoßdämpfer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4476" />
         <source>CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting Utility Box ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4484" />
         <source>CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1</source>
-        <translation type="unfinished" />
+        <translation>CFG_D1F_BSI_UCECAN_UDS_HCU1_000: Hybridsystem 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4492" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4500" />
         <source>CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2</source>
-        <translation type="unfinished" />
+        <translation>CFG_D1G_BSI_UCECAN_UDS_HCU2_000: Hybridsystem 2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4508" />
         <source>CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt</source>
-        <translation type="unfinished" />
+        <translation>CFG_D68_BSI_UCECAN_UDS_ECR_G_000: Umkehrung der Inertialspule des linken Sicherheitsgurtes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4516" />
         <source>CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt</source>
-        <translation type="unfinished" />
+        <translation>CFG_D69_BSI_UCECAN_UDS_ECR_D_000: Inertialspule des rechten Gürtelgürtels umkehren</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4524" />
         <source>CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network</source>
-        <translation type="unfinished" />
+        <translation>CFG_D9E_BSI_UCECAN_UDS_DMTR_000: Steuereinheit des On-Board-Netzwerks</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4532" />
         <source>CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)</source>
-        <translation type="unfinished" />
+        <translation>CFG_D9F_BSI_UCECAN_AVP_000: Panoramic Visual Control Unit (360 ° Kamera)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4540" />
         <source>CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module</source>
-        <translation type="unfinished" />
+        <translation>CFG_DBG_BSI_UCECAN_UDS_TBMU_000: Traktionsüberwachungsmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4548" />
         <source>CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)</source>
-        <translation type="unfinished" />
+        <translation>CFG_DGG_BSI_UCECAN_PIU_000: Panoramic Visual Control Unit (360 ° Kamera)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4556" />
         <source>CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER DE SERVADE D'ÉCLAIREGE ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4564" />
         <source>CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox</source>
-        <translation type="unfinished" />
+        <translation>CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: Computer Steuerungssteuerung Automatisches Getriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4572" />
         <source>CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever</source>
-        <translation type="unfinished" />
+        <translation>CFG_EG8_BSI_UCECAN_ESM_000: Impulsiver Ganghebel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4580" />
         <source>CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)</source>
-        <translation type="unfinished" />
+        <translation>CFG_EIP_BSI_UCECAN_IDVR_000: Intelligente Fahren von Videoaufzeichnungen (IDVR)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4588" />
         <source>CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system</source>
-        <translation type="unfinished" />
+        <translation>CFG_LQ_BSI_UCECAN_CLIM_AR_000: Computer des Heckklimaanlagensystems</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4596" />
         <source>CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)</source>
-        <translation type="unfinished" />
+        <translation>CFG_EN1_BSI_UCECAN_IVCD_000: Innere Videokamera für Treiber (IVCD)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4604" />
         <source>CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_EN2_BSI_UCECAN_BSG_S_000: Signalschalteinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4612" />
         <source>CFG_EY_BSI_UCECAN_BVN_000: night vision computer</source>
-        <translation type="unfinished" />
+        <translation>CFG_EY_BSI_UCECAN_BVN_000: Nachtsichtcomputer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4620" />
         <source>CFG_EWA_BSI_UCECAN_CGPL_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWA_BSI_UCECAN_CGPL_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4628" />
         <source>CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4636" />
         <source>CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4644" />
         <source>CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4652" />
         <source>CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4660" />
         <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @*(SDCM)</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWL_BSI_UCECAN_SDCM_000: @P53052-POLUXDATA @*(SDCM)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4668" />
         <source>CFG_EWM_BSI_UCECAN_WLC_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWM_BSI_UCECAN_WLC_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4676" />
         <source>CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWX_BSI_UCECAN_EBB_000: Masterzylinder mit elektrischem Bremsscheibe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4684" />
         <source>CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWY_BSI_UCECAN_AVAS_000: Fußgängerwarnsignal</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4692" />
         <source>CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox</source>
-        <translation type="unfinished" />
+        <translation>CFG_EWZ_BSI_UCECAN_VCU_000: Elektronischer Steuerungscomputer -Automatikgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4700" />
         <source>CFG_EX0_BSI_UCECAN_LVNSD_000: ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EX0_BSI_UCECAN_LVNSD_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4708" />
         <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</source>
-        <translation type="unfinished" />
+        <translation>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4716" />
         <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</source>
-        <translation type="unfinished" />
+        <translation>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4724" />
         <source>CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_GDJ_BSI_UCECAN_BSRF_000: Funkfrequenzsteuereinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4732" />
         <source>CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system</source>
-        <translation type="unfinished" />
+        <translation>CFG_GDK_BSI_UCECAN_PVS_000: Digital Panoramic Review -System</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4740" />
         <source>CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSG_BSI_UCELIN_UDDGO_000: Multiplex -Kraftstoffzusatzpumpe (Diesel)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4748" />
         <source>CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient Interior Lighting Box ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4756" />
         <source>CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light</source>
-        <translation type="unfinished" />
+        <translation>Cfg_bsi_bsi_ucelin_uds_tnb_bmf_000: Sicherheitsgurtwarnlicht</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4764" />
         <source>CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: Batterieladungseinheit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4772" />
         <source>CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor</source>
-        <translation type="unfinished" />
+        <translation>Cfg_bsk_bsi_ucelin_uds_cdpl_000: Regen / Lichtsensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4780" />
         <source>CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSL_BSI_UCELIN_UDS_ESV_000: Front -Wischer mit dem LIN -Netzwerk</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4788" />
         <source>CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Stromschutz- und Anordnungseinheit (BPGA)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4796" />
         <source>CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel</source>
-        <translation type="unfinished" />
+        <translation>CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: Klimaanlagen -Bedienfeld</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4804" />
         <source>CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key</source>
-        <translation type="unfinished" />
+        <translation>Cfg_bso_bsi_ucelin_uds_designtlm_000: konfigurierter Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4812" />
         <source>CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies</source>
-        <translation type="unfinished" />
+        <translation>Cfg_bsp_bsi_ucelin_uds_vci_000: Lenkrad mit eingebauten Regierungsbehörden</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4820" />
         <source>CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock</source>
-        <translation type="unfinished" />
+        <translation>CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: Uhr</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4828" />
         <source>CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module</source>
-        <translation type="unfinished" />
+        <translation>Cfg_d2k_bsi_ucelin_uds_meap_000: kontrolliertes Luftversorgungsmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4836" />
         <source>CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module</source>
-        <translation type="unfinished" />
+        <translation>CFG_D3B_BSI_UCELIN_UDS_MUS_001: Ultraschallmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4844" />
         <source>CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren</source>
-        <translation type="unfinished" />
+        <translation>Cfg_d3a_bsi_ucelin_uds_sir_000: Sirene</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4852" />
         <source>CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)</source>
-        <translation type="unfinished" />
+        <translation>CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: Panoramic Visual Control Unit (360 ° Kamera)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4860" />
         <source>CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module</source>
-        <translation type="unfinished" />
+        <translation>Cfg_dgc_bsi_ucelin_uds_ctp_air_000: kontrolliertes Luftversorgungsmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4868" />
         <source>CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_dgd_bsi_ucelin_uds_dgt_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4876" />
         <source>CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_dge_bsi_ucelin_uds_fmuxaudio_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4884" />
         <source>CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_dgf_bsi_ucelin_uds_bpca_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4892" />
         <source>CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side</source>
-        <translation type="unfinished" />
+        <translation>CFG_BBT_BSI_UCELIN_BAAS_R_000: Greifen Sie auf Computer zu, ohne die Hände auf der rechten Seite zu helfen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4900" />
         <source>CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side</source>
-        <translation type="unfinished" />
+        <translation>CFG_EBV_BSI_UCELIN_BAAS_L_000: Greifen Sie auf Computer ohne die Hände auf der linken Seite zu</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4908" />
         <source>CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind</source>
-        <translation type="unfinished" />
+        <translation>CFG_EBW_BSI_UCELIN_BAAS_T_000: Zugriff auf Computer ohne Hilfe von hinten zugreifen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4916" />
         <source>CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT Pneumatic Box -Treiber ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4924" />
         <source>CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer</source>
-        <translation type="unfinished" />
+        <translation>Cfg_eby_bsi_ucelin_scb_d_000: Fahrerkomfort Computer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4932" />
         <source>CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ebz_bsi_ucelin_brncv_d_000: Computereinstellung und Belüftung des linken Vordersitzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4940" />
         <source>CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ec0_bsi_ucelin_spb_p_000: lin seat pneumatischer Box Passagier ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4948" />
         <source>CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ec1_bsi_ucelin_scb_p_000: Computerkomfort Computer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4956" />
         <source>CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ebu_bsi_ucelin_brncv_p_000: Computereinstellung und Belüftung des vorderen rechten Sitzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4964" />
         <source>CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat</source>
-        <translation type="unfinished" />
+        <translation>Cfg_e_bsi_ucelin_brnc_arg_000: Computereinstellung und Belüftung des hinteren linken Sitzplatzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4972" />
         <source>Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat</source>
-        <translation type="unfinished" />
+        <translation>Cfg_elb_bsi_ucelin_brnc_ard_000: Computereinstellung und Belüftung des hinteren rechten Sitzplatzes</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4980" />
         <source>CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)</source>
-        <translation type="unfinished" />
+        <translation>Cfg_en4_bsi_ucelin_vab_000: lin boitier adaptation Video (Video -Adapter -Box)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4988" />
         <source>CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_lc_bsi_ucelin_ars_feu_cond_000: uce lin boitier système adaptatif d'Éclairage Arrière feu Directeur ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4996" />
         <source>CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE Lin Boitier Système adaptatif d'Éclairge Arrière feu passager ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5004" />
         <source>CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE Lin Boitier Système adaptatif d'Éclaire Arrière feu complementaire conduracteur ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5012" />
         <source>CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_elf_bsi_ucelin_ars_feu_c_p_000: uce lin boitier système adaptatif d'Éclaire Arrière feu complementaire passager ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5020" />
         <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @*lin ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxData @*lin ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5028" />
         <source>CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_elr_bsi_ucelin_plb_000: UCE lin Calculeter Maitra Eclairage Polychromatique ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5036" />
         <source>CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ez_bsi_ucelin_cce_000: Klimaanlagenkompressor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5044" />
         <source>CFG_EY0_BSI_UCELIN_OCS_000: ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_ey0_bsi_ucelin_ocs_000: ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5052" />
         <source>CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater</source>
-        <translation type="unfinished" />
+        <translation>CFG_EYG_BSI_UCELIN_CTPE_000: Kühlmittel -Elektroheizung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5060" />
         <source>CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer</source>
-        <translation type="unfinished" />
+        <translation>CFG_BH0_BSI_NS_PRESENCE_CDC_000: Vorhandensein des CD -Wechslers</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5068" />
         <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@*RD5 ???</source>
-        <translation type="unfinished" />
+        <translation>Cfg_bgy_bsi_ns_diag_sta_radio_000: p19132-poluxData@*rd5 ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5076" />
         <source>CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control</source>
-        <translation type="unfinished" />
+        <translation>CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Falten Sie die Rückspiegel mithilfe einer hochfrequenten Fernbedienung zusammen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5084" />
         <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @*1 ???</source>
-        <translation type="unfinished" />
+        <translation>CFG_BK2_BSI_NS_PREECEKMLUSBOX_000: @P4042-poluxData @*1 ???</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5093" />
         <source>12 months</source>
-        <translation type="unfinished" />
+        <translation>12 Monate</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5094" />
         <source>24 months</source>
-        <translation type="unfinished" />
+        <translation>24 Monate</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5096" />
         <source>Total period(time) before servicing (threshold)</source>
-        <translation type="unfinished" />
+        <translation>Gesamtperiode (Zeit) vor der Wartung (Schwellenwert)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5105" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5118" />
         <source>0KM</source>
-        <translation type="unfinished" />
+        <translation>0 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5106" />
         <source>Electric-12500KM</source>
-        <translation type="unfinished" />
+        <translation>Elektrisch-12500 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5107" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5124" />
         <source>Petrol-5000KM</source>
-        <translation type="unfinished" />
+        <translation>Benzin-5000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5109" />
         <source>First maintenance threshold</source>
-        <translation type="unfinished" />
+        <translation>Erste Wartungsschwelle</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5119" />
         <source>Electric-25000KM</source>
-        <translation type="unfinished" />
+        <translation>Elektrische 25000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5120" />
         <source>Petrol-20000KM</source>
-        <translation type="unfinished" />
+        <translation>Benzin-20000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5121" />
         <source>Petrol-15000KM</source>
-        <translation type="unfinished" />
+        <translation>Benzin-15000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5122" />
         <source>Petrol-10000KM</source>
-        <translation type="unfinished" />
+        <translation>Benzin-10000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5123" />
         <source>Petrol-7000KM</source>
-        <translation type="unfinished" />
+        <translation>Benzin-7000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5125" />
         <source>Diesel-30000KM</source>
-        <translation type="unfinished" />
+        <translation>Diesel-30000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5126" />
         <source>Diesel-40000KM</source>
-        <translation type="unfinished" />
+        <translation>Diesel-40000 km</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5128" />
         <source>Servicing threshold(marketing)</source>
-        <translation type="unfinished" />
+        <translation>Wartungsschwelle (Marketing)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5136" />
         <source>Duration before first service</source>
-        <translation type="unfinished" />
+        <translation>Dauer vor dem ersten Service</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5145" />
         <source>Distance-dependent maintenance</source>
-        <translation type="unfinished" />
+        <translation>Entfernungsabhängige Wartung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5146" />
         <source>Distance-based servicing weighted by time</source>
-        <translation type="unfinished" />
+        <translation>Entfernungsbasierte Wartung nach Zeit gewichtet</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5147" />
         <source>Distance and timebased servicing</source>
-        <translation type="unfinished" />
+        <translation>Entfernung und zeitbasierte Wartung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5149" />
         <source>Type of service</source>
-        <translation type="unfinished" />
+        <translation>Art des Service</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5158" />
         <source>Static</source>
-        <translation type="unfinished" />
+        <translation>Statisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5159" />
         <source>Dynamic</source>
-        <translation type="unfinished" />
+        <translation>Dynamisch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5160" />
         <source>Hybrid dynamic mantenance</source>
-        <translation type="unfinished" />
+        <translation>Hybrid dynamische Wartung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5162" />
         <source>Selection of the servicing managed by the engine</source>
-        <translation type="unfinished" />
+        <translation>Auswahl der vom Motor verwalteten Wartung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="2" />
         <source>CMM_VD56</source>
-        <translation type="unfinished" />
+        <translation>CMM_VD56</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="33" />
         <source>Engine cooling management</source>
-        <translation type="unfinished" />
+        <translation>Motorkühlungsmanagement</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="39" />
         <source>Dual speed Fan Assembly</source>
-        <translation type="unfinished" />
+        <translation>Doppelgeschwindigkeits -Lüfterbaugruppe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="45" />
         <source>Air conditioning pressure sensor</source>
-        <translation type="unfinished" />
+        <translation>Klimaanlage -Drucksensor</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="51" />
         <source>With air conditioning</source>
-        <translation type="unfinished" />
+        <translation>Mit Klimaanlage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="67" />
         <source>MB6 type manual gearbox</source>
-        <translation type="unfinished" />
+        <translation>MB6 Typ Schaltgetriebe Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="71" />
         <source>ATN8 type automatic gearbox</source>
-        <translation type="unfinished" />
+        <translation>ATN8 -Automatikgetriebe Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="75" />
         <source>AT6III type automatic gearbox</source>
-        <translation type="unfinished" />
+        <translation>AT6III -Typ Automatikgetriebe</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="81" />
         <source>Associated alternator class</source>
-        <translation type="unfinished" />
+        <translation>Assoziierte Lichtmaschinenklasse</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="87" />
         <source>Reversible alternator</source>
-        <translation type="unfinished" />
+        <translation>Reversible Lichtmaschine</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="91" />
         <source>category 8</source>
-        <translation type="unfinished" />
+        <translation>Kategorie 8</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="95" />
         <source>category 12</source>
-        <translation type="unfinished" />
+        <translation>Kategorie 12</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="99" />
         <source>category 15</source>
-        <translation type="unfinished" />
+        <translation>Kategorie 15</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="103" />
         <source>category 18</source>
-        <translation type="unfinished" />
+        <translation>Kategorie 18</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="107" />
         <source>category 22 </source>
-        <translation type="unfinished" />
+        <translation>Kategorie 22</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="113" />
         <source>Electric parking brake</source>
-        <translation type="unfinished" />
+        <translation>Elektrische Feststellbremse</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="120" />
         <source>With hill start assist</source>
-        <translation type="unfinished" />
+        <translation>Mit Hill Start Assist</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="124" />
         <source>Without hill start assist</source>
-        <translation type="unfinished" />
+        <translation>Ohne Bergstartassistenten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="130" />
         <source>ESP (stability control)</source>
-        <translation type="unfinished" />
+        <translation>ESP (Stabilitätskontrolle)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="137" />
         <source>With ESP</source>
-        <translation type="unfinished" />
+        <translation>Mit esp</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="141" />
         <source>Without ABS/ESP</source>
-        <translation type="unfinished" />
+        <translation>Ohne Bauchmuskeln/ESP</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="147" />
         <source>Presence of RVV</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von RVV</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="154" />
         <source>With vehicle speed regulation</source>
-        <translation type="unfinished" />
+        <translation>Mit Fahrzeuggeschwindigkeitsregulierung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="158" />
         <source>Without cruise control / With adaptive cruise control</source>
-        <translation type="unfinished" />
+        <translation>Ohne Tempomat / mit adaptiver Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="164" />
         <source>Presence of LVV</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von LVV</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="171" />
         <source>With speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Mit Geschwindigkeitsbegrenzer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="175" />
         <source>Without speed limiter</source>
-        <translation type="unfinished" />
+        <translation>Ohne Geschwindigkeitsbegrenzer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="181" />
         <source>Presence of ACC</source>
-        <translation type="unfinished" />
+        <translation>Vorhandensein von ACC</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="188" />
         <source>With adaptive cruise control</source>
-        <translation type="unfinished" />
+        <translation>Mit adaptiver Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="192" />
         <source>Without adaptive cruise control</source>
-        <translation type="unfinished" />
+        <translation>Ohne adaptive Geschwindigkeitsregelung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="198" />
         <source>Presence ACC 30</source>
-        <translation type="unfinished" />
+        <translation>Präsenz ACC 30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="205" />
         <source>With ACC 30</source>
-        <translation type="unfinished" />
+        <translation>Mit ACC 30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="209" />
         <source>Without ACC 30</source>
-        <translation type="unfinished" />
+        <translation>Ohne ACC 30</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="215" />
         <source>Presence ACC Stop and Go</source>
-        <translation type="unfinished" />
+        <translation>Präsenz Acc Stop and Go gehen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="222" />
         <source>With ACC Stop and Go</source>
-        <translation type="unfinished" />
+        <translation>Mit ACC Stop and Go gehen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="226" />
         <source>Without ACC Stop and Go</source>
-        <translation type="unfinished" />
+        <translation>Ohne ACC Halt und gehen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="232" />
         <source>Controlled air inlet module</source>
-        <translation type="unfinished" />
+        <translation>Kontrolliertes Lufteinlassmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="239" />
         <source>With controlled air inlet module</source>
-        <translation type="unfinished" />
+        <translation>Mit kontrolliertem Lufteinlassmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="243" />
         <source>Without controlled air inlet module</source>
-        <translation type="unfinished" />
+        <translation>Ohne kontrolliertes Lufteinlassmodul</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="249" />
         <source>Fuel GPL</source>
-        <translation type="unfinished" />
+        <translation>Kraftstoff GPL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="256" />
         <source>With GPL</source>
-        <translation type="unfinished" />
+        <translation>Mit GPL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="260" />
         <source>Without GPL</source>
-        <translation type="unfinished" />
+        <translation>Ohne GPL</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="266" />
         <source>Oil vapour recirculation circuit heater 1</source>
-        <translation type="unfinished" />
+        <translation>Öldampf -Rezirkulationsschaltung Heizung 1</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="273" />
         <source>Crankcase breather system (With reheater)</source>
-        <translation type="unfinished" />
+        <translation>Kurbelgehäuse -Entlüftungssystem (mit einem Rahmen)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/CMM_VD56.json" line="277" />
         <source>Crankcase breather system (Without heater)</source>
-        <translation type="unfinished" />
+        <translation>Kurbelgehäuse -Entlüftungssystem (ohne Heizung)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/MED17_4_4.json" line="2" />
         <source>MED17_4_4</source>
-        <translation type="unfinished" />
+        <translation>Med17_4_4</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="2" />
         <source>INJ_UDS_TEST</source>
-        <translation type="unfinished" />
+        <translation>IND_UDS_TEST</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="5" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="14" />
         <source>ZA Zone</source>
-        <translation type="unfinished" />
+        <translation>Za -Zone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="26" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="35" />
         <source>Type</source>
-        <translation type="unfinished" />
+        <translation>Typ</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="37" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="46" />
         <source>ZI Zone</source>
-        <translation type="unfinished" />
+        <translation>ZI -Zone</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="51" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="60" />
         <source>System</source>
-        <translation type="unfinished" />
+        <translation>System</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="58" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="67" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="113" />
         <source>Production Date</source>
-        <translation type="unfinished" />
+        <translation>Produktionsdatum</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="65" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="74" />
         <source>Download Counter</source>
-        <translation type="unfinished" />
+        <translation>Download der Zähler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="72" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="81" />
         <source>Download Date</source>
-        <translation type="unfinished" />
+        <translation>Download -Datum</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="79" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="88" />
         <source>Calibration Reference</source>
-        <translation type="unfinished" />
+        <translation>Kalibrierungsreferenz</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="93" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="102" />
         <source>Calibration Edition</source>
-        <translation type="unfinished" />
+        <translation>Kalibrierungs Edition</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="104" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="122" />
         <source>Serial Number</source>
-        <translation type="unfinished" />
+        <translation>Seriennummer</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="2" />
         <source>Service Non Supported</source>
-        <translation type="unfinished" />
+        <translation>Service nicht unterstützt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="3" />
         <source>Sub-Function Not Supported</source>
-        <translation type="unfinished" />
+        <translation>Unterfunktion nicht unterstützt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="4" />
         <source>Incorrect Message Length Or Invalid Format</source>
-        <translation type="unfinished" />
+        <translation>Falsche Nachrichtenlänge oder ungültiges Format</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="5" />
         <source>Answer Too Long</source>
-        <translation type="unfinished" />
+        <translation>Antworte zu lange</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="6" />
         <source>Busy-Repeat Request</source>
-        <translation type="unfinished" />
+        <translation>Anfrage für geschäftige Wiederholung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="7" />
         <source>Conditions Not Correct</source>
-        <translation type="unfinished" />
+        <translation>Bedingungen nicht korrekt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="8" />
         <source>Request Sequence Error</source>
-        <translation type="unfinished" />
+        <translation>Anforderungssequenzfehler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="9" />
         <source>No response from the ECU</source>
-        <translation type="unfinished" />
+        <translation>Keine Antwort aus der ECU</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="10" />
         <source>Failure To Execute Request</source>
-        <translation type="unfinished" />
+        <translation>Nichtausführung der Anfrage</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="11" />
         <source>Request Out Of Range</source>
-        <translation type="unfinished" />
+        <translation>Forderung außerhalb der Reichweite</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="12" />
         <source>Security Access Denied</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitszugriff verweigert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="13" />
         <source>Invalid Key</source>
-        <translation type="unfinished" />
+        <translation>Ungültiger Schlüssel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="14" />
         <source>Number of Attempts Exceeded</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der Versuche überschritten</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="15" />
         <source>Required Time Delay Not Expired</source>
-        <translation type="unfinished" />
+        <translation>Erforderliche Zeitverzögerung nicht abgelaufen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="16" />
         <source>Upload/Download Not Accepted</source>
-        <translation type="unfinished" />
+        <translation>Laden/Download nicht akzeptiert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="17" />
         <source>Transfer Data Suspended</source>
-        <translation type="unfinished" />
+        <translation>Übertragungsdaten suspendiert</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="18" />
         <source>General Programming Failure</source>
-        <translation type="unfinished" />
+        <translation>Allgemeiner Programmierfehler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="19" />
         <source>Wrong Block Sequence Counter</source>
-        <translation type="unfinished" />
+        <translation>Falsche Blocksequenzzähler</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="20" />
         <source>Request Correctly Received (Response Pending)</source>
-        <translation type="unfinished" />
+        <translation>Ordnungsgemäß empfangen (Antwort anhängig)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="21" />
         <source>Sub-Function Not Supported In Active Session</source>
-        <translation type="unfinished" />
+        <translation>Unterfunktion, die in der aktiven Sitzung nicht unterstützt wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="22" />
         <source>Service Not Supported In Active Session</source>
-        <translation type="unfinished" />
+        <translation>Service, der in der aktiven Sitzung nicht unterstützt wird</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="23" />
         <source>RPM Too High</source>
-        <translation type="unfinished" />
+        <translation>Drehzahl zu hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="24" />
         <source>RPM Too Low</source>
-        <translation type="unfinished" />
+        <translation>Drehzahl zu niedrig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="25" />
         <source>Engine Running</source>
-        <translation type="unfinished" />
+        <translation>Motor laufen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="26" />
         <source>Engine Not Running</source>
-        <translation type="unfinished" />
+        <translation>Motor nicht laufen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="27" />
         <source>Engine Running For a Short Time</source>
-        <translation type="unfinished" />
+        <translation>Motor läuft für kurze Zeit</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="28" />
         <source>Temperature Too High</source>
-        <translation type="unfinished" />
+        <translation>Temperatur zu hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="29" />
         <source>Temperature Too Low</source>
-        <translation type="unfinished" />
+        <translation>Temperatur zu niedrig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="30" />
         <source>Speed ​​Too High</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeit zu hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="31" />
         <source>Speed ​​Too Low</source>
-        <translation type="unfinished" />
+        <translation>Geschwindigkeit zu niedrig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="32" />
         <source>Order Too High</source>
-        <translation type="unfinished" />
+        <translation>Bestellen Sie zu hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="33" />
         <source>Order Too Low</source>
-        <translation type="unfinished" />
+        <translation>Zu niedrig bestellen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="34" />
         <source>Transmission Not In Neutral</source>
-        <translation type="unfinished" />
+        <translation>Übertragung nicht in neutral</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="35" />
         <source>Report Not Engaged</source>
-        <translation type="unfinished" />
+        <translation>Melden nicht verlobt</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="36" />
         <source>No pedal support</source>
-        <translation type="unfinished" />
+        <translation>Keine Pedalunterstützung</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="37" />
         <source>Lever Not In Park Position</source>
-        <translation type="unfinished" />
+        <translation>Hebel nicht in Parkposition</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="38" />
         <source>Clutch Not Locked</source>
-        <translation type="unfinished" />
+        <translation>Kupplung nicht verschlossen</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="39" />
         <source>Voltage Too High</source>
-        <translation type="unfinished" />
+        <translation>Spannung zu hoch</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="40" />
         <source>Voltage Too Low</source>
-        <translation type="unfinished" />
+        <translation>Spannung zu niedrig</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="5" />
         <source>Secure Traceability Value</source>
-        <translation type="unfinished" />
+        <translation>Sicherheitswert sicher</translation>
     </message></context>
 </TS>

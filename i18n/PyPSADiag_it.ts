@@ -94,190 +94,190 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="143" />
+        <location filename="../DiagnosticCommunication.py" line="154" />
         <source>** Skipping/Stripping **</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="149" />
+        <location filename="../DiagnosticCommunication.py" line="160" />
         <source>** Stripping **</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="163" />
+        <location filename="../DiagnosticCommunication.py" line="174" />
         <source>ECU Send keep-alive: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="170" />
+        <location filename="../DiagnosticCommunication.py" line="181" />
         <source>Reset ECU Keep Alive: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="182" />
+        <location filename="../DiagnosticCommunication.py" line="193" />
         <source>Open Diagnostic session: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="194" />
+        <location filename="../DiagnosticCommunication.py" line="205" />
         <source>Closing Diagnostic session: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="202" />
+        <location filename="../DiagnosticCommunication.py" line="213" />
         <source>ECU Seed Request: Waiting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="207" />
-        <location filename="../DiagnosticCommunication.py" line="284" />
+        <location filename="../DiagnosticCommunication.py" line="218" />
         <location filename="../DiagnosticCommunication.py" line="289" />
-        <location filename="../DiagnosticCommunication.py" line="313" />
+        <location filename="../DiagnosticCommunication.py" line="294" />
+        <location filename="../DiagnosticCommunication.py" line="318" />
         <source>Write Configuration Zone: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="219" />
+        <location filename="../DiagnosticCommunication.py" line="230" />
         <source>ECU Unlock Request: Retrying in 2 Seconds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="232" />
-        <location filename="../DiagnosticCommunication.py" line="257" />
+        <location filename="../DiagnosticCommunication.py" line="243" />
+        <location filename="../DiagnosticCommunication.py" line="265" />
         <source>ECU Unlock Failed:</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="240" />
-        <location filename="../DiagnosticCommunication.py" line="265" />
+        <location filename="../DiagnosticCommunication.py" line="248" />
+        <location filename="../DiagnosticCommunication.py" line="270" />
         <source>ECU Unlock Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="278" />
+        <location filename="../DiagnosticCommunication.py" line="283" />
         <source>Write Configuration Zone in progress</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="286" />
+        <location filename="../DiagnosticCommunication.py" line="291" />
         <source>Write Configuration Zone: Ok</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="311" />
+        <location filename="../DiagnosticCommunication.py" line="316" />
         <source>Write Configuration Zone: Failed (Incorrect Checksum)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="318" />
-        <location filename="../DiagnosticCommunication.py" line="456" />
+        <location filename="../DiagnosticCommunication.py" line="323" />
+        <location filename="../DiagnosticCommunication.py" line="461" />
         <source>Serial Port Not Open</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="323" />
+        <location filename="../DiagnosticCommunication.py" line="328" />
         <source>Selecting ECU: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="329" />
+        <location filename="../DiagnosticCommunication.py" line="334" />
         <source>Selecting LIN ECU: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="355" />
+        <location filename="../DiagnosticCommunication.py" line="360" />
         <source>Waiting 2 Sec...</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="385" />
+        <location filename="../DiagnosticCommunication.py" line="390" />
         <source>Configuration Write of Secure Traceability Zone: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="387" />
+        <location filename="../DiagnosticCommunication.py" line="392" />
         <source>NO Secure Traceability is Written!!</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="392" />
+        <location filename="../DiagnosticCommunication.py" line="397" />
         <source>Write Successful</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="396" />
+        <location filename="../DiagnosticCommunication.py" line="401" />
         <source>Reboot ECU...</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="399" />
-        <location filename="../DiagnosticCommunication.py" line="416" />
-        <location filename="../DiagnosticCommunication.py" line="438" />
+        <location filename="../DiagnosticCommunication.py" line="404" />
+        <location filename="../DiagnosticCommunication.py" line="421" />
+        <location filename="../DiagnosticCommunication.py" line="443" />
         <source>ECU Not selected!</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="408" />
+        <location filename="../DiagnosticCommunication.py" line="413" />
         <source>Reboot: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="412" />
+        <location filename="../DiagnosticCommunication.py" line="417" />
         <source>Read ECU Faults...</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="430" />
+        <location filename="../DiagnosticCommunication.py" line="435" />
         <source>Reading ECU Faults: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="434" />
+        <location filename="../DiagnosticCommunication.py" line="439" />
         <source>Clearing ECU Faults...</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="452" />
+        <location filename="../DiagnosticCommunication.py" line="457" />
         <source>Clearing ECU Faults: Failed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="489" />
+        <location filename="../DiagnosticCommunication.py" line="494" />
         <source>Requested zone different from received zone</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="495" />
+        <location filename="../DiagnosticCommunication.py" line="500" />
         <source>Communication closed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="497" />
+        <location filename="../DiagnosticCommunication.py" line="502" />
         <source>Download session opened</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="499" />
+        <location filename="../DiagnosticCommunication.py" line="504" />
         <source>Diagnostic session opened</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="501" />
+        <location filename="../DiagnosticCommunication.py" line="506" />
         <source>Unlocked successfully for download</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="503" />
+        <location filename="../DiagnosticCommunication.py" line="508" />
         <source>Unlocked successfully for configuration</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="559" />
+        <location filename="../DiagnosticCommunication.py" line="560" />
         <source>Open Diagnostic session: Failed/Stopping</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../DiagnosticCommunication.py" line="572" />
+        <location filename="../DiagnosticCommunication.py" line="573" />
         <source>Reading ECU Zones: Successful</source>
         <translation type="unfinished" />
     </message>
@@ -445,18 +445,26 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="40" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="44" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="53" />
         <source>Supplier</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="48" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="12" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="21" />
         <source>Equipment Part Number</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="55" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="19" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="28" />
         <source>Equipment Additional Reference</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="62" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="86" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="95" />
         <source>Calibration Version</source>
         <translation type="unfinished" />
     </message><message>
@@ -487,7 +495,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="55" />
-        <source>The presence of the function of monitoring the \"dead\" zones</source>
+        <source>The presence of the function of monitoring the "dead" zones</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/AAS/AAS_UDS_G5.json" line="66" />
@@ -1278,7 +1286,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="847" />
-        <source>Specifies if \"Check Page\" is available</source>
+        <source>Specifies if "Check Page" is available</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/COMBINE/COMBINE_UDS.json" line="864" />
@@ -2063,7 +2071,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="75" />
-        <source>Menu \"Car parameters\"</source>
+        <source>Menu "Car parameters"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/MATT/MATT2010.json" line="83" />
@@ -5858,17 +5866,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="37" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="86" />
-        <source>Display Touch button \"Parking assistance\"</source>
+        <source>Display Touch button "Parking assistance"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="46" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="68" />
-        <source>Physical Button \"Parking assistance\"</source>
+        <source>Physical Button "Parking assistance"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="55" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="77" />
-        <source>Touch button Position \"Parking assistance\"</source>
+        <source>Touch button Position "Parking assistance"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="64" />
@@ -5983,17 +5991,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="103" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="103" />
-        <source>Display Touch button \"Lane departure warning system (AFIL)\"</source>
+        <source>Display Touch button "Lane departure warning system (AFIL)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="112" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="121" />
-        <source>Physical Button \"Lane departure warning system (AFIL)\"</source>
+        <source>Physical Button "Lane departure warning system (AFIL)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="121" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="112" />
-        <source>Touch Button Position \"Lane departure warning system (AFIL)\"</source>
+        <source>Touch Button Position "Lane departure warning system (AFIL)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="130" />
@@ -6003,17 +6011,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="138" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="147" />
-        <source>Display Touch button \"Distance Alert (ARTIV)\"</source>
+        <source>Display Touch button "Distance Alert (ARTIV)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="147" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="156" />
-        <source>Physical Button \"Distance Alert (ARTIV)\"</source>
+        <source>Physical Button "Distance Alert (ARTIV)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="156" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="138" />
-        <source>Touch Button Position \"Distance Alert (ARTIV)\"\"</source>
+        <source>Touch Button Position "Distance Alert (ARTIV)""</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="165" />
@@ -6129,7 +6137,7 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="295" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="362" />
-        <source>Automatic Volume Control \"ACV\"</source>
+        <source>Automatic Volume Control "ACV"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="304" />
@@ -6239,12 +6247,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="445" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="459" />
-        <source>Physical Button \"Front Camera\"</source>
+        <source>Physical Button "Front Camera"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="454" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="450" />
-        <source>Touch button Position \"Front Camera\"</source>
+        <source>Touch button Position "Front Camera"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="463" />
@@ -6394,11 +6402,11 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="706" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="660" />
-        <source>\"SMARTAPPS\" Function</source>
+        <source>"SMARTAPPS" Function</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="715" />
-        <source>Display of the \"Adaptive cruise control\" settings</source>
+        <source>Display of the "Adaptive cruise control" settings</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="724" />
@@ -6420,11 +6428,11 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="760" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="739" />
-        <source>\"MENU\" button</source>
+        <source>"MENU" button</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="769" />
-        <source>Displaying of the \"MIRRORlink\" touch button</source>
+        <source>Displaying of the "MIRRORlink" touch button</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="780" />
@@ -6439,7 +6447,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="798" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="797" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="806" />
-        <source>\"Apple Carplay\" function</source>
+        <source>"Apple Carplay" function</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="807" />
@@ -6488,17 +6496,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="886" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1213" />
-        <source>Display Touch button \"Main beams assistant\"</source>
+        <source>Display Touch button "Main beams assistant"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="895" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1231" />
-        <source>Physical Button \"Main beams assistant\"</source>
+        <source>Physical Button "Main beams assistant"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="904" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1222" />
-        <source>Touch button Position \"Main beams assistant\"</source>
+        <source>Touch button Position "Main beams assistant"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="913" />
@@ -6711,17 +6719,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1194" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1556" />
-        <source>Display Touch button \"Parking space measurement system\"</source>
+        <source>Display Touch button "Parking space measurement system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1203" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1565" />
-        <source>Touch button Position \"Parking space measurement system\"</source>
+        <source>Touch button Position "Parking space measurement system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1212" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1574" />
-        <source>Physical Button \"Parking space measurement system\"</source>
+        <source>Physical Button "Parking space measurement system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1221" />
@@ -6872,17 +6880,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1433" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1864" />
-        <source>Display Touch button \"Blind spot monitoring\"</source>
+        <source>Display Touch button "Blind spot monitoring"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1442" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1873" />
-        <source>Touch button Position \"Blind spot monitoring\"</source>
+        <source>Touch button Position "Blind spot monitoring"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1451" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1882" />
-        <source>Physical Button \"Blind spot monitoring\"</source>
+        <source>Physical Button "Blind spot monitoring"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1460" />
@@ -6892,17 +6900,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1468" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1899" />
-        <source>Display Touch button \"Lane Guard system\"</source>
+        <source>Display Touch button "Lane Guard system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1477" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1917" />
-        <source>Physical Button \"Lane Guard system\"</source>
+        <source>Physical Button "Lane Guard system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1486" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1908" />
-        <source>Touch button Position \"Lane Guard system\"</source>
+        <source>Touch button Position "Lane Guard system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1495" />
@@ -6912,17 +6920,17 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1503" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1934" />
-        <source>Display Touch button \"Automatic control of the volume \"ACV\"\"</source>
+        <source>Display Touch button "Automatic control of the volume "ACV""</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1512" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1943" />
-        <source>Touch button Position \"Automatic control of the volume \"ACV\"\"</source>
+        <source>Touch button Position "Automatic control of the volume "ACV""</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1521" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1952" />
-        <source>Physical Button \"Automatic control of the volume \"ACV\"\"</source>
+        <source>Physical Button "Automatic control of the volume "ACV""</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1530" />
@@ -7214,7 +7222,7 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1938" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="2351" />
-        <source>\"CHECK\" button</source>
+        <source>"CHECK" button</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="1947" />
@@ -10690,18 +10698,18 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8747" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9264" />
-        <source>Physical button for \"Night Vision\"</source>
+        <source>Physical button for "Night Vision"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8756" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9433" />
-        <source>Touch button Position \"Night Vision\"</source>
+        <source>Touch button Position "Night Vision"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8765" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9442" />
-        <source>Display Touch button \"Night Vision\"</source>
+        <source>Display Touch button "Night Vision"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8775" />
@@ -10767,32 +10775,32 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8891" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9130" />
-        <source>Display Touch button \"Lateral Deviation Warning\" (ConnectedCAM)</source>
+        <source>Display Touch button "Lateral Deviation Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8900" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9110" />
-        <source>Physical button for \"Lateral Deviation Warning\" (ConnectedCAM)</source>
+        <source>Physical button for "Lateral Deviation Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8909" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9120" />
-        <source>Touch button Position \"Lateral Deviation Warning\" (ConnectedCAM)</source>
+        <source>Touch button Position "Lateral Deviation Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8918" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9100" />
-        <source>Display Touch button \"Front Collision Warning\" (ConnectedCAM)</source>
+        <source>Display Touch button "Front Collision Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8927" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9080" />
-        <source>Physical button for \"Front Collision Warning\" (ConnectedCAM)</source>
+        <source>Physical button for "Front Collision Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8936" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9090" />
-        <source>Touch button Position \"Front Collision Warning\" (ConnectedCAM)</source>
+        <source>Touch button Position "Front Collision Warning" (ConnectedCAM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8945" />
@@ -10827,7 +10835,7 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="8994" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9607" />
-        <source>Display Touch button \"Check\"</source>
+        <source>Display Touch button "Check"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9003" />
@@ -10867,16 +10875,16 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9050" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9663" />
-        <source>Display Touch button \"Semi-automatic parking system\"</source>
+        <source>Display Touch button "Semi-automatic parking system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9059" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9672" />
-        <source>Touch button Position \"Semi-automatic parking system\"</source>
+        <source>Touch button Position "Semi-automatic parking system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9077" />
-        <source>Physical button for \"Semi-automatic parking system\"</source>
+        <source>Physical button for "Semi-automatic parking system"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9086" />
@@ -10951,7 +10959,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9192" />
-        <source>Presence of the \"Air conditioning temperature increase AC\" touch button</source>
+        <source>Presence of the "Air conditioning temperature increase AC" touch button</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9201" />
@@ -10985,7 +10993,7 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9255" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9734" />
-        <source>Touch button Position \"Thermal preconditioning (Webasto)\"</source>
+        <source>Touch button Position "Thermal preconditioning (Webasto)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9264" />
@@ -10995,12 +11003,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9273" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9752" />
-        <source>Display Touch button \"Thermal preconditioning (Webasto)\"</source>
+        <source>Display Touch button "Thermal preconditioning (Webasto)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9282" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9743" />
-        <source>Physical Button \"Thermal preconditioning (Webasto)\"</source>
+        <source>Physical Button "Thermal preconditioning (Webasto)"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9291" />
@@ -11095,21 +11103,21 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9417" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10030" />
-        <source>Physical Button \"Stop and Start\"</source>
+        <source>Physical Button "Stop and Start"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9426" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10012" />
-        <source>Display Touch button \"Stop and Start\"</source>
+        <source>Display Touch button "Stop and Start"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9435" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10021" />
-        <source>Touch button Position \"Stop and Start\"</source>
+        <source>Touch button Position "Stop and Start"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9444" />
-        <source>Physical Button \"Stop and Start\" (Panel)</source>
+        <source>Physical Button "Stop and Start" (Panel)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9453" />
@@ -11119,7 +11127,7 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9461" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10146" />
-        <source>Display Touch button \"Adaptive Cruise control\"</source>
+        <source>Display Touch button "Adaptive Cruise control"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9470" />
@@ -11174,12 +11182,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9569" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10155" />
-        <source>Physical Button \"Adaptive Cruise Control\"</source>
+        <source>Physical Button "Adaptive Cruise Control"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9578" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10164" />
-        <source>Touch button Position \"Adaptive Cruise Control\"</source>
+        <source>Touch button Position "Adaptive Cruise Control"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9587" />
@@ -11274,17 +11282,17 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9706" />
-        <source>Physical Button \"Traction Control\" (ASR+)</source>
+        <source>Physical Button "Traction Control" (ASR+)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9715" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10276" />
-        <source>Physical Button \"Traction Control\"</source>
+        <source>Physical Button "Traction Control"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9724" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10294" />
-        <source>Display Touch button \"Traction Control\"</source>
+        <source>Display Touch button "Traction Control"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9733" />
@@ -11380,112 +11388,112 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9903" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10442" />
-        <source>X Axis Position of the camera (-8000)\r\n0 &lt;&gt; 6000mm</source>
+        <source>X Axis Position of the camera (-8000)rn0 &lt;&gt; 6000mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9912" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10451" />
-        <source>Y Axis Position of the camera (-3000)\r\n0 &lt;&gt; 6000mm</source>
+        <source>Y Axis Position of the camera (-3000)rn0 &lt;&gt; 6000mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9921" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10460" />
-        <source>Z Axis Position of the camera (+100)\r\n0 &lt;&gt; 1900mm</source>
+        <source>Z Axis Position of the camera (+100)rn0 &lt;&gt; 1900mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9930" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10469" />
-        <source>Camera Roll Angle  (Roll) (-180)\r\n0 &lt;&gt; 3600° / 0.1</source>
+        <source>Camera Roll Angle  (Roll) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9939" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10478" />
-        <source>Vertical angle of the camera (Pitch)\r\n0 &lt;&gt; 1800° / 0.1</source>
+        <source>Vertical angle of the camera (Pitch)rn0 &lt;&gt; 1800° / 0.1</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9948" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10487" />
-        <source>Horizontal angle of the camera (Yaw) (-180)\r\n0 &lt;&gt; 3600° / 0.1</source>
+        <source>Horizontal angle of the camera (Yaw) (-180)rn0 &lt;&gt; 3600° / 0.1</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9957" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10496" />
-        <source>Distance between front wheels and front of vehicle (+150)\r\n0 &lt;&gt; 1850mm</source>
+        <source>Distance between front wheels and front of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9966" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10505" />
-        <source>Distance between rear wheels and rear of vehicle (+150)\r\n0 &lt;&gt; 1850mm</source>
+        <source>Distance between rear wheels and rear of vehicle (+150)rn0 &lt;&gt; 1850mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9975" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10514" />
-        <source>Distance between rear wheels and front wheels (+1000)\r\n0 &lt;&gt; 4000mm</source>
+        <source>Distance between rear wheels and front wheels (+1000)rn0 &lt;&gt; 4000mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9984" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10523" />
-        <source>Distance between ground and rear bumper edge\r\n0 &lt;&gt; 1500mm</source>
+        <source>Distance between ground and rear bumper edgern0 &lt;&gt; 1500mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="9993" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10532" />
-        <source>Line 0 width in pixel (Bottom)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 0 width in pixel (Bottom)rn1 &lt;&gt; 50px</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10002" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10541" />
-        <source>Line 1 width in pixels (Middle)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 1 width in pixels (Middle)rn1 &lt;&gt; 50px</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10011" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10550" />
-        <source>Line 2 width in pixels (Top)\r\n1 &lt;&gt; 50px</source>
+        <source>Line 2 width in pixels (Top)rn1 &lt;&gt; 50px</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10020" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10559" />
-        <source>Width of trajectory line in pixels\r\n1 &lt;&gt; 50px</source>
+        <source>Width of trajectory line in pixelsrn1 &lt;&gt; 50px</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10029" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10568" />
-        <source>Real Top View Height (if camera is too low)\r\n1000 &lt;&gt; 2550mm</source>
+        <source>Real Top View Height (if camera is too low)rn1000 &lt;&gt; 2550mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10038" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10577" />
-        <source>Image Brightness\r\n0 &lt;&gt; 255</source>
+        <source>Image Brightnessrn0 &lt;&gt; 255</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10047" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10586" />
-        <source>Brightness range\r\n0 &lt;&gt; 255</source>
+        <source>Brightness rangern0 &lt;&gt; 255</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10056" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10595" />
-        <source>Vehicle width (+1500)\r\n0 &lt;&gt; 1000mm</source>
+        <source>Vehicle width (+1500)rn0 &lt;&gt; 1000mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10065" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10604" />
-        <source>Trailer hook height\r\n50 &lt;&gt; 1500mm</source>
+        <source>Trailer hook heightrn50 &lt;&gt; 1500mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10074" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10613" />
-        <source>Trailer hook length\r\n0 &lt;&gt; 2000mm</source>
+        <source>Trailer hook lengthrn0 &lt;&gt; 2000mm</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10083" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10622" />
-        <source>Vertical Enlargement Ratio (Rear side view mode)\r\n100 &lt;&gt; 170</source>
+        <source>Vertical Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10092" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10631" />
-        <source>Horizontal Enlargement Ratio (Rear side view mode)\r\n100 &lt;&gt; 170</source>
+        <source>Horizontal Enlargement Ratio (Rear side view mode)rn100 &lt;&gt; 170</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10101" />
@@ -11521,12 +11529,12 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10145" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10684" />
-        <source>Vertical Enlargement Ratio (Standard mode)\r\n100 &lt;&gt; 170</source>
+        <source>Vertical Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="10154" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="10693" />
-        <source>Horizontal Enlargement Ratio (Standard mode)\r\n100 &lt;&gt; 170</source>
+        <source>Horizontal Enlargement Ratio (Standard mode)rn100 &lt;&gt; 170</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="3" />
@@ -11559,7 +11567,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="768" />
-        <source>\"MirrorLink\" function</source>
+        <source>"MirrorLink" function</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="816" />
@@ -11857,7 +11865,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1600" />
-        <source>Display of alerts and \"risk areas\" on the multifunction screen</source>
+        <source>Display of alerts and "risk areas" on the multifunction screen</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="1609" />
@@ -12037,7 +12045,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9814" />
-        <source>Presence of the \"AC max\" touch key</source>
+        <source>Presence of the "AC max" touch key</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="9859" />
@@ -13252,7 +13260,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="515" />
-        <source>Remote remote control \"Free Hands\"</source>
+        <source>Remote remote control "Free Hands"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="517" />
@@ -14565,7 +14573,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1784" />
-        <source>Engine with \"Stop and Start\" function</source>
+        <source>Engine with "Stop and Start" function</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1785" />
@@ -14573,7 +14581,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1787" />
-        <source>The presence of the \"Stop and Start\" engine or hybrid power unit</source>
+        <source>The presence of the "Stop and Start" engine or hybrid power unit</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1795" />
@@ -14650,7 +14658,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1903" />
-        <source>Configuration \"Police\"?</source>
+        <source>Configuration "Police"?</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="1911" />
@@ -14850,7 +14858,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2097" />
-        <source>Thermal comfort for the \"Stop and Start\" system</source>
+        <source>Thermal comfort for the "Stop and Start" system</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2107" />
@@ -14950,11 +14958,11 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2224" />
-        <source>The computer is absent or does not receive power from the \"plus\" of the central power switch</source>
+        <source>The computer is absent or does not receive power from the "plus" of the central power switch</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2225" />
-        <source>Receives power \"+\" from the central power switch</source>
+        <source>Receives power "+" from the central power switch</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2227" />
@@ -15054,23 +15062,23 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2364" />
-        <source>Type \"ISTAR PHASE 1\" with a starter</source>
+        <source>Type "ISTAR PHASE 1" with a starter</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2365" />
-        <source>Type \"Phase 2\" with a starter</source>
+        <source>Type "Phase 2" with a starter</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2366" />
-        <source>Type \"istar phase 2\" with a starter</source>
+        <source>Type "istar phase 2" with a starter</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2367" />
-        <source>Type \"istar phase 2\" without a starter</source>
+        <source>Type "istar phase 2" without a starter</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2369" />
-        <source>Availability and type of function \"Stop and Start\"</source>
+        <source>Availability and type of function "Stop and Start"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2377" />
@@ -15341,7 +15349,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2683" />
-        <source>Option: \"Taxi\"</source>
+        <source>Option: "Taxi"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="2692" />
@@ -15654,19 +15662,19 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3015" />
-        <source>Physical interface \"Man-Machine\"</source>
+        <source>Physical interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3016" />
-        <source>Touch interface \"Man-Machine\"</source>
+        <source>Touch interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3017" />
-        <source>Physical and Touch interface \"Man-Machine\"</source>
+        <source>Physical and Touch interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3019" />
-        <source>Type of obtaining information \"Man-Machine\" air conditioning</source>
+        <source>Type of obtaining information "Man-Machine" air conditioning</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3029" />
@@ -15955,15 +15963,15 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3367" />
-        <source>Option: \"Hands-free access\" for the right rear side door</source>
+        <source>Option: "Hands-free access" for the right rear side door</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3375" />
-        <source>Option: \"Hands-free access\" for the left rear side door</source>
+        <source>Option: "Hands-free access" for the left rear side door</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3383" />
-        <source>Option: \"Hands-free access\" for the back door</source>
+        <source>Option: "Hands-free access" for the back door</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3392" />
@@ -16075,7 +16083,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3534" />
-        <source>The number of the calibration table antennas of the access function \"Free Hands\"</source>
+        <source>The number of the calibration table antennas of the access function "Free Hands"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3542" />
@@ -16425,7 +16433,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3948" />
-        <source>Management \"day/night\"</source>
+        <source>Management "day/night"</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="3956" />
@@ -16798,7 +16806,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4660" />
-        <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\\*(SDCM)</source>
+        <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @*(SDCM)</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4668" />
@@ -16822,11 +16830,11 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4708" />
-        <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\\*2</source>
+        <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4716" />
-        <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\\*1</source>
+        <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="4724" />
@@ -16978,7 +16986,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5020" />
-        <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\\*lin ???</source>
+        <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @*lin ???</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5028" />
@@ -17002,7 +17010,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5068" />
-        <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\\*RD5 ???</source>
+        <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@*RD5 ???</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5076" />
@@ -17010,7 +17018,7 @@
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5084" />
-        <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???</source>
+        <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @*1 ???</source>
         <translation type="unfinished" />
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BMF/BSI2010.json" line="5093" />
@@ -17297,6 +17305,217 @@
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/INJ/INJ_UDS.json" line="2" />
         <source>INJ_UDS_TEST</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="5" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="14" />
+        <source>ZA Zone</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="26" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="35" />
+        <source>Type</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="37" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="46" />
+        <source>ZI Zone</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="51" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="60" />
+        <source>System</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="58" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="67" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="113" />
+        <source>Production Date</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="65" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="74" />
+        <source>Download Counter</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="72" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="81" />
+        <source>Download Date</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="79" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="88" />
+        <source>Calibration Reference</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="93" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="102" />
+        <source>Calibration Edition</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentKWPECU.json" line="104" />
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="122" />
+        <source>Serial Number</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="2" />
+        <source>Service Non Supported</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="3" />
+        <source>Sub-Function Not Supported</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="4" />
+        <source>Incorrect Message Length Or Invalid Format</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="5" />
+        <source>Answer Too Long</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="6" />
+        <source>Busy-Repeat Request</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="7" />
+        <source>Conditions Not Correct</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="8" />
+        <source>Request Sequence Error</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="9" />
+        <source>No response from the ECU</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="10" />
+        <source>Failure To Execute Request</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="11" />
+        <source>Request Out Of Range</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="12" />
+        <source>Security Access Denied</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="13" />
+        <source>Invalid Key</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="14" />
+        <source>Number of Attempts Exceeded</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="15" />
+        <source>Required Time Delay Not Expired</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="16" />
+        <source>Upload/Download Not Accepted</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="17" />
+        <source>Transfer Data Suspended</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="18" />
+        <source>General Programming Failure</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="19" />
+        <source>Wrong Block Sequence Counter</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="20" />
+        <source>Request Correctly Received (Response Pending)</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="21" />
+        <source>Sub-Function Not Supported In Active Session</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="22" />
+        <source>Service Not Supported In Active Session</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="23" />
+        <source>RPM Too High</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="24" />
+        <source>RPM Too Low</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="25" />
+        <source>Engine Running</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="26" />
+        <source>Engine Not Running</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="27" />
+        <source>Engine Running For a Short Time</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="28" />
+        <source>Temperature Too High</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="29" />
+        <source>Temperature Too Low</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="30" />
+        <source>Speed ​​Too High</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="31" />
+        <source>Speed ​​Too Low</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="32" />
+        <source>Order Too High</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="33" />
+        <source>Order Too Low</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="34" />
+        <source>Transmission Not In Neutral</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="35" />
+        <source>Report Not Engaged</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="36" />
+        <source>No pedal support</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="37" />
+        <source>Lever Not In Park Position</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="38" />
+        <source>Clutch Not Locked</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="39" />
+        <source>Voltage Too High</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/ErrorResponse.json" line="40" />
+        <source>Voltage Too Low</source>
+        <translation type="unfinished" />
+    </message><message>
+        <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="5" />
+        <source>Secure Traceability Value</source>
         <translation type="unfinished" />
     </message></context>
 </TS>
