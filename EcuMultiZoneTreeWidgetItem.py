@@ -50,7 +50,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
 
     def addChildWidgetItem(self, tree: QTreeWidget, label, widget):
         level = EcuZoneTreeWidgetItem(self, None, "", label)
-        level.setToolTip(1, label)
+        level.setToolTip(1, i18n().tr(label))
         tree.setItemWidget(level, 2, widget)
         self.__setupConnections(widget)
 

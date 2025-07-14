@@ -115,6 +115,17 @@ class DiagnosticCommunication(QThread):
         #reply = "2704" + seed
         #print(reply)
 
+    def __openErrorResponseTranslated(self):
+        fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
+        file = open(fileName, 'r', encoding='utf-8')
+        jsonFile = file.read()
+        responseList = json.loads(jsonFile.encode("utf-8"))
+        # Build translated Error Dictionary
+        errorList = {}
+        for response in responseList:
+            errorList[response] = i18n().tr(responseList[response]["name"])
+        return errorList
+
     def stop(self):
         self.isRunning = False
         emptyQueue()
@@ -230,14 +241,11 @@ class DiagnosticCommunication(QThread):
         if tryCnt == 0:
             error = i18n().tr("ECU Unlock Failed:")
             if len(receiveData) >= 6 and receiveData[:2] == "7F":
-                fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
-                file = open(fileName, 'r', encoding='utf-8')
-                jsonFile = file.read()
-                errorList = json.loads(jsonFile.encode("utf-8"))
+                errorResponseList = self.__openErrorResponseTranslated()
                 error = receiveData[4:6]
                 cmd = receiveData[2:4]
-                if error in errorList:
-                    error = i18n().tr("ECU Unlock Failed") + " (" + cmd + "): " + errorList[error]
+                if error in errorResponseList:
+                    error = i18n().tr("ECU Unlock Failed") + " (" + cmd + "): " + errorResponseList[error]
 
             self.writeToOutputView(error, receiveData)
             return ""
@@ -255,14 +263,11 @@ class DiagnosticCommunication(QThread):
 
         error = i18n().tr("ECU Unlock Failed:")
         if len(receiveData) >= 6 and receiveData[:2] == "7F":
-            fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
-            file = open(fileName, 'r', encoding='utf-8')
-            jsonFile = file.read()
-            errorList = json.loads(jsonFile.encode("utf-8"))
+            errorResponseList = self.__openErrorResponseTranslated()
             error = receiveData[4:6]
             cmd = receiveData[2:4]
-            if error in errorList:
-                error = i18n().tr("ECU Unlock Failed") + " (" + cmd + "): " + errorList[error]
+            if error in errorResponseList:
+                error = i18n().tr("ECU Unlock Failed") + " (" + cmd + "): " + errorResponseList[error]
 
         self.writeToOutputView(error, receiveData)
         return False
@@ -502,16 +507,12 @@ class DiagnosticCommunication(QThread):
             elif decodedData[0: + 4] == "6704":
                 self.receivedPacketSignal.emit([self.ecuReadZone, i18n().tr("Unlocked successfully for configuration"), self.zoneName], time.time())
             elif decodedData[0: + 2] == "7F":
-                fileName = os.path.join(os.path.dirname(__file__), "data/ErrorResponse.json")
-                file = open(fileName, 'r', encoding='utf-8')
-                jsonFile = file.read()
-                errorList = json.loads(jsonFile.encode("utf-8"))
-
                 if len(decodedData) >= 6:
+                    errorResponseList = self.__openErrorResponseTranslated()
                     error = decodedData[4:6]
                     cmd = decodedData[2:4]
-                    if error in errorList:
-                        error = "Error: (" + cmd + ") " + errorList[error]
+                    if error in errorResponseList:
+                        error = "Error: (" + cmd + ") " + errorResponseList[error]
                         self.receivedPacketSignal.emit([self.ecuReadZone, error, self.zoneName], time.time())
                         self.updateZoneDataSignal.emit(self.ecuReadZone, error)
                     else:
