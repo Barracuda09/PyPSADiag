@@ -60,7 +60,7 @@ def processJSONFile(pathIn: str, i18nList: []):
             fileDict = {}
             fileDict["file"] = pathIn
             fileDict["line"] = linenr
-            i18nName = geti18nString(line)
+            i18nName = geti18nString(line).replace("\\", "")
             print(i18nName)
             added = False
             # i18n String already there? then add only file name and line number
@@ -130,9 +130,15 @@ if __name__ == "__main__":
     i18nList = []
 
     path = Path(os.path.join(os.path.dirname(__file__), "json"))
-
     for file in path.rglob("*.json"):
         if str(file).find("test") != -1 or str(file).find("SCAN") != -1:
+            continue
+        print(file)
+        processJSONFile(str(file), i18nList)
+
+    path = Path(os.path.join(os.path.dirname(__file__), "data"))
+    for file in path.rglob("*.json"):
+        if str(file).find("ECU_SUPPLIERS.json") != -1:
             continue
         print(file)
         processJSONFile(str(file), i18nList)

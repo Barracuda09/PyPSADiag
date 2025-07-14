@@ -21,7 +21,7 @@
 
 import xml.etree.ElementTree as ElementTree
 import subprocess
-import sys
+import sys, os
 
 from i18n import i18n
 
@@ -37,6 +37,10 @@ class FileTranslater:
             print("In and out paths are the same... ERROR")
             return
 
+        treeOut = ElementTree.parse(pathOut)
+        rootOut = treeOut.getroot()
+        messagesOut = rootOut.findall(".//message")
+
         tree = ElementTree.parse(pathIn)
         root = tree.getroot()
 
@@ -50,11 +54,28 @@ class FileTranslater:
         for message in messages:
             txt = message.find("source").text.replace("\\", "")
             if txt != None:
+                # Find if we already translated this i18n string
+                translated = False
+                for messageOut in messagesOut:
+                    if messageOut.find("source").text.replace("\\", "") == txt:
+                        translationOut = messageOut.find("translation")
+                        if translationOut == None or "type" not in translationOut.attrib:
+                            translated = True
+                        break
+
+                # Check if Input is correct
                 translation = message.find("translation")
                 if translation == None or "type" not in translation.attrib:
                     continue
 
-                txtTranslated = i18n().translate_text(str(txt), language).replace("\"", "\\\"")
+                # Already translated, transfer to input tree
+                if translated == True:
+                    translation.text = translationOut.text
+                    del translation.attrib["type"]
+                    print("Done: " + translation.text)
+                    continue
+
+                txtTranslated = i18n().translate_text(str(txt), language)
                 if txtTranslated != None:
                     translation.text = txtTranslated
                     del translation.attrib["type"]
@@ -98,6 +119,13 @@ if __name__ == "__main__":
         printUsage()
         exit()
     outputTSName = nameSplit[0] + "_translated_" + nameSplit[1]
+
+    # If output file does not exist, start with copy of input file
+    if os.path.isfile(outputTSName) == False:
+        print("Starting with 'empty' input file...")
+        open(outputTSName, 'x')
+        tree = ElementTree.parse(inputTSName)
+        tree.write(outputTSName, encoding='utf-8', xml_declaration=True)
 
     # Get output file name an
     nameSplit = dirSplit[2].split(".")
