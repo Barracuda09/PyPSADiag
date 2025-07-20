@@ -85,10 +85,11 @@ def addi18nListToTS(pathIn: str, i18nList: []):
     for item in i18nList:
         i18nSource = item.get("i18n")
         message = ElementTree.Element("message")
+        message.tail = "\n    "
         for file in item.get("file"):
-            name = file.get("file")
+            name = os.path.relpath(file.get("file"), start=os.getcwd())
             line = file.get("line")
-            location = ElementTree.SubElement(message, "location", filename = str(name), line = str(line))
+            location = ElementTree.SubElement(message, "location", filename = f"../{name}", line = str(line))
         source = ElementTree.SubElement(message, "source")
         source.text = i18nSource
         translation = ElementTree.SubElement(message, "translation", type = "unfinished")
