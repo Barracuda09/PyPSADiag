@@ -46,7 +46,7 @@
     <message>
         <location filename="../PyPSADiagGUI.py" line="266"/>
         <source>Disconnect</source>
-        <translation>Розірвати зв&amp;apos;язок</translation>
+        <translation>Розірвати зв&apos;язок</translation>
     </message>
     <message>
         <location filename="../PyPSADiagGUI.py" line="267"/>
@@ -137,7 +137,7 @@
     <message>
         <location filename="../DiagnosticCommunication.py" line="213"/>
         <source>ECU Seed Request: Waiting</source>
-        <translation>Запит на насіння ECU: очікує</translation>
+        <translation>Запит майстер-ключа блоку: очікування</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="218"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="../DiagnosticCommunication.py" line="392"/>
         <source>NO Secure Traceability is Written!!</source>
-        <translation>Жодна безпечна простежуваність не пишеться !!</translation>
+        <translation>Безпечний запис відсутній!!</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="397"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../DiagnosticCommunication.py" line="494"/>
         <source>Requested zone different from received zone</source>
-        <translation>Запитувана зона, відмінна від отриманої зони</translation>
+        <translation>Запитувана зона відрізняється від отриманої зони</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="500"/>
@@ -328,7 +328,7 @@
     <message>
         <location filename="../main.py" line="291"/>
         <source>Include Zone file not found: </source>
-        <translation>Включіть файл зони не знайдено:</translation>
+        <translation>Вкладенний файл зони не знайдено: </translation>
     </message>
     <message>
         <location filename="../main.py" line="348"/>
@@ -19957,12 +19957,12 @@
     <message>
         <location filename="../data/ErrorResponse.json" line="32"/>
         <source>Order Too High</source>
-        <translation>Замовити занадто високо</translation>
+        <translation>Сортування занадто високе</translation>
     </message>
     <message>
         <location filename="../data/ErrorResponse.json" line="33"/>
         <source>Order Too Low</source>
-        <translation>Замовити занадто низько</translation>
+        <translation>Сортування занадто низьке</translation>
     </message>
     <message>
         <location filename="../data/ErrorResponse.json" line="34"/>
@@ -20002,7 +20002,7 @@
     <message>
         <location filename="../data/IdentUDSECU.json" line="5"/>
         <source>Secure Traceability Value</source>
-        <translation>Забезпечення значення простежуваності</translation>
+        <translation>Безпечний запис</translation>
     </message>
     <message>
         <location filename="../data/IdentUDSECU.json" line="14"/>
