@@ -40,6 +40,11 @@ class FileTranslater:
         treeOut = ElementTree.parse(pathOut)
         rootOut = treeOut.getroot()
         messagesOut = rootOut.findall(".//message")
+        messages_out_map = {
+            m.find("source").text.replace("\\", ""): m.find("translation")
+            for m in messagesOut
+            if m.find("source") is not None
+        }
 
         tree = ElementTree.parse(pathIn)
         root = tree.getroot()
@@ -49,38 +54,45 @@ class FileTranslater:
             print("No destination language")
             return
 
+        translator = i18n()
         language = root.attrib["language"]
         messages = root.findall(".//message")
+
+        batch_size = 250
+        counter = 0
+
         for message in messages:
-            txt = message.find("source").text.replace("\\", "")
-            if txt != None:
-                # Find if we already translated this i18n string
-                translated = False
-                for messageOut in messagesOut:
-                    if messageOut.find("source").text.replace("\\", "") == txt:
-                        translationOut = messageOut.find("translation")
-                        if translationOut == None or "type" not in translationOut.attrib:
-                            translated = True
-                        break
+            source = message.find("source")
+            if source is None or source.text is None:
+                continue
 
-                # Check if Input is correct
-                translation = message.find("translation")
-                if translation == None or "type" not in translation.attrib:
-                    continue
+            # Check if Input is correct
+            translation = message.find("translation")
+            if translation == None or "type" not in translation.attrib:
+                continue
 
-                # Already translated, transfer to input tree
-                if translated == True:
-                    translation.text = translationOut.text
-                    del translation.attrib["type"]
-                    print("Done: " + translation.text)
-                    continue
+            txt = source.text.replace("\\", "")
+            translationOut = messages_out_map.get(txt)
+            translated = translationOut is not None and translationOut.text and translationOut.attrib.get("type") != "unfinished"
 
-                txtTranslated = i18n().translate_text(str(txt), language)
-                if txtTranslated != None:
-                    translation.text = txtTranslated
-                    del translation.attrib["type"]
+            # Already translated, transfer to input tree
+            if translated == True:
+                translation.text = translationOut.text
+                del translation.attrib["type"]
+                print(f"[DONE] {translation.text}")
+                continue
 
-                    print(txt + " - " + txtTranslated)
+            txtTranslated = translator.translate_text(str(txt), language)
+            if txtTranslated != None:
+                translation.text = txtTranslated
+                del translation.attrib["type"]
+
+                print(f"[{counter}] {txt} <-> {txtTranslated}")
+                counter += 1
+
+            if counter % batch_size == 0:
+                print(f"\n[{counter}] Entries was written\n")
+                tree.write(pathOut, encoding='utf-8', xml_declaration=True)
 
         # Write back
         tree.write(pathOut, encoding='utf-8', xml_declaration=True)
