@@ -18,6 +18,14 @@
     "hmi": "HMI Values"
   },
   "zones": {
+    "0200": {
+      "name": "Configuration 0200",
+      "tab": "tele",
+      "type": "raw",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "2100": {
       "id": "Configuration_Main_Values",
       "name": "Configuration Main Values",
