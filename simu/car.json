@@ -14,5 +14,13 @@
 	"6B5:695": {
 		"protocol": "kwp_is",
 		"file": "./simu/DAE_BVH2.csv"
+	},
+	"772:672": {
+		"protocol": "uds",
+		"file": "./simu/MATT.csv"
+	},
+	"75F:65F": {
+		"protocol": "uds",
+		"file": "./simu/COMBINE_UDS.csv"
 	}
 }

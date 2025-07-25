@@ -87,6 +87,7 @@ class EcuSimulation(QThread):
             self.ecuData = None
             return "500100C80014"
         if cmd == "2703":
+            #return "7F2722" # Return some error
             return "67036B0A71E0"
         if cmd[:4] == "2704":
             return "6704"
