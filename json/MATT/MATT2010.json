@@ -56,7 +56,7 @@
       },
       {
       "id": "CFG_BKR_MATT_CONF_LVV_000",
-      "name": "Cruise control and limiter (only limiter is possible depending on the display version)",
+      "name": "Vehicle speed limitation",
       "byte": 0,
       "type": "bool",
       "mask": "00001000",
@@ -96,7 +96,7 @@
       },
       {
       "id": "CFG_BKW_MATT_CONF_NIVHU_000",
-      "name": "Checking the oil level",
+      "name": "Oil Gauge",
       "byte": 1,
       "type": "bool",
       "mask": "01000000",
@@ -128,7 +128,7 @@
       },
       {
       "id": "CFG_BL0_MATT_CONF_RVV_000",
-      "name": "Cruise control",
+      "name": "Presence cruise control function",
       "byte": 1,
       "type": "bool",
       "mask": "00000100",
@@ -136,7 +136,7 @@
       },
       {
       "id": "CFG_BVT_MATT_CONF_STT_000",
-      "name": "Keyless access",
+      "name": "Stop and Start function",
       "byte": 1,
       "type": "bool",
       "mask": "00000010",
@@ -176,7 +176,7 @@
       },
       {
       "id": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
-      "name": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
+      "name": "Presence empty screen in Z0",
       "byte": 2,
       "type": "bool",
       "mask": "00010000",
@@ -184,7 +184,7 @@
       },
       {
       "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
-      "name": "Webasto Settings Menu",
+      "name": "Presence of the preconditioning menu (Webasto Settings Menu)",
       "byte": 2,
       "type": "bool",
       "mask": "00001000",
@@ -208,7 +208,7 @@
       },
       {
       "id": "CFG_BOZ_MATT_MENU_TCFG_000",
-      "name": "CFG_BOZ_MATT_MENU_TCFG",
+      "name": "Presence of the configurable button menu",
       "byte": 2,
       "type": "bool",
       "mask": "00000001",
@@ -216,7 +216,7 @@
       },
       {
       "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
-      "name": "Color theme",
+      "name": "Default colour scheme used on the matrix",
       "byte": 3,
       "type": "bool",
       "mask": "11100000",
@@ -239,7 +239,7 @@
       },
       {
         "id": "CFG_DBB_MATT_CONF_RVVI_000",
-        "name": "Adaptive cruise control",
+        "name": "Adaptive cruise control and speed limiter",
         "byte": 3,
         "type": "bool",
         "mask": "00001000",
@@ -277,10 +277,10 @@
         "mask": "11100000",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "0 - hacthback"},
+          { "mask": "00000000", "name": "hacthback"},
           { "mask": "00100000", "name": "sedan"},
           { "mask": "01000000", "name": "wagon"},
-          { "mask": "10000000", "name": "3 - ???"}
+          { "mask": "01100000", "name": "others"}
         ]
       },
       {
@@ -301,7 +301,7 @@
       },
       {
         "id": "CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000",
-        "name": "CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000",
+        "name": "Configuration of the presence of the instrument panel personalisation item on the configurable button menu",
         "byte": 4,
         "type": "bool",
         "mask": "00000100",
@@ -309,7 +309,7 @@
       },
       {
         "id": "CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000",
-        "name": "CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000",
+        "name": "Configuration of the presence of the instrument panel colour item on the configurable button menu",
         "byte": 4,
         "type": "bool",
         "mask": "00000010",
@@ -317,7 +317,7 @@
       },
       {
         "id": "CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000",
-        "name": "CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000",
+        "name": "Configuration of the presence of the courtesy light lighting item on the configurable button menu",
         "byte": 4,
         "type": "bool",
         "mask": "00000001",
@@ -325,7 +325,7 @@
       },
       {
         "id": "CFG_BQ3_MATT_CONF_ARTIV_ACC_000",
-        "name": "Adaptive cruise control mode",
+        "name": "Adaptive cruise control mode (ARTIV)",
         "byte": 5,
         "type": "bool",
         "mask": "11000000",
@@ -339,7 +339,7 @@
       },
       {
         "id": "CFG_BPB_MATT_MENU_UNIT_000",
-        "name": "CFG_BPB_MATT_MENU_UNIT_000",
+        "name": "Presence of the choice of distance and consumption units on the display menu",
         "byte": 5,
         "type": "bool",
         "mask": "00100000",
@@ -355,7 +355,7 @@
       },
       {
         "id": "CFG_BQA_MATT_CONF_COULEUR_RETRO_000",
-        "name": "CFG_BQA_MATT_CONF_COULEUR_RETRO_000",
+        "name": "Selection of the two-colour matrix backlighting colour",
         "byte": 5,
         "type": "bool",
         "mask": "00001000",
@@ -363,16 +363,16 @@
       },
       {
         "id": "CFG_BWA_MATT_CONF_HYBRIDE_000",
-        "name": "CFG_BWA_MATT_CONF_HYBRIDE_000",
+        "name": "Presence of the hybrid function",
         "byte": 5,
         "type": "bool",
         "mask": "00000110",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "00 - ???"},
-          { "mask": "00000010", "name": "01 - ???"},
-          { "mask": "00000100", "name": "10 - ???"},
-          { "mask": "00000110", "name": "11 - ???"}
+          { "mask": "00000000", "name": "Masked"},
+          { "mask": "00000010", "name": "2 Pages"},
+          { "mask": "00000100", "name": "Page 1"},
+          { "mask": "00000110", "name": "Page 2"}
         ]
       },
       {
@@ -385,7 +385,7 @@
       },
       {
         "id": "CFG_DC0_MATT_CONF_POI_RADAR_000",
-        "name": "CFG_DC0_MATT_CONF_POI_RADAR_000",
+        "name": "POI Radar Data management",
         "byte": 6,
         "type": "bool",
         "mask": "00001000",
@@ -393,7 +393,7 @@
       },
       {
         "id": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
-        "name": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
+        "name": "Recommended speed management",
         "byte": 6,
         "type": "bool",
         "mask": "00000100",
@@ -401,18 +401,10 @@
       },
       {
         "id": "CFG_DBR_MATT_CONF_AFF_DYN_000",
-        "name": "CFG_DBR_MATT_CONF_AFF_DYN_000",
+        "name": "Presence of Dynamic Pack (Status of the blind spot monitoring function)",
         "byte": 6,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
-      },
-      {
-        "id": "6_3",
-        "name": "6_3 UNKNOWN",
-        "byte": 6,
-        "type": "bool",
-        "mask": "00010000",
         "form_type": "checkbox"
       },
       {
@@ -425,7 +417,7 @@
       },
       {
         "id": "CFG_D8H_MATT_MARQUE_000",
-        "name": "CFG_D8H_MATT_MARQUE_000",
+        "name": "Vehicle brand",
         "byte": 6,
         "type": "bool",
         "mask": "11100000",
@@ -434,12 +426,13 @@
           { "mask": "00000000", "name": "Peugeot"},
           { "mask": "00100000", "name": "Citroen"},
           { "mask": "01000000", "name": "Fiat"},
+          { "mask": "01100000", "name": "Lancia"},
           { "mask": "10000000", "name": "DS"}
         ]
       },
       {
         "id": "CFG_DX8_MATT_GENERATION_RVVI_000",
-        "name": "CFG_DX8_MATT_GENERATION_RVVI_000",
+        "name": "Type of RVVI System",
         "byte": 7,
         "type": "bool",
         "mask": "00001000",
@@ -447,7 +440,7 @@
       },
       {
         "id": "CFG_E16_MATT_GENERATION_POI_RADAR_001",
-        "name": "CFG_E16_MATT_GENERATION_POI_RADAR_001",
+        "name": "Type of POI Radar data",
         "byte": 7,
         "type": "bool",
         "mask": "00010000",
@@ -455,7 +448,7 @@
       },
       {
         "id": "CFG_E13_MATT_TYPE_FM_002",
-        "name": "CFG_E13_MATT_TYPE_FM_002",
+        "name": "Indicates the of FM",
         "byte": 7,
         "type": "bool",
         "mask": "00100000",
@@ -487,7 +480,7 @@
       },
       {
         "id": "CFG_E12_MATT_TYPE_EXPORT_000",
-        "name": "CFG_E12_MATT_TYPE_EXPORT_000",
+        "name": "Indicates the type of export for audio function",
         "byte": 7,
         "type": "bool",
         "mask": "11000000",
@@ -501,6 +494,7 @@
       {
         "id": "CFG_EC3_MATT_CONF_LKA_000",
         "name": "Lane tracking system",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "10000000",
@@ -508,7 +502,8 @@
       },
       {
         "id": "CFG_EC4_MATT_CONF_ECO_COACHING_000",
-        "name": "CFG_EC4_MATT_CONF_ECO_COACHING_000",
+        "name": "Presence of ECO Coaching",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "01000000",
@@ -517,6 +512,7 @@
       {
         "id": "8_2",
         "name": "8_2 UNKNOWN",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00100000",
@@ -525,6 +521,7 @@
       {
         "id": "CFG_EC5_MATT_CONF_ALARM_GULF_COUN_000",
         "name": "CFG_EC6_MATT_CONF_SLI_ISA_000",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00010000",
@@ -533,6 +530,7 @@
       {
         "id": "CFG_EC7_MATT_CONF_ACC_000",
         "name": "CFG_EC7_MATT_CONF_ACC_000",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00001000",
@@ -541,6 +539,7 @@
       {
         "id": "8_5",
         "name": "8_5 UNKNOWN",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00000100",
@@ -549,6 +548,7 @@
       {
         "id": "8_6",
         "name": "8_6 UNKNOWN",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00000010",
@@ -557,6 +557,7 @@
       {
         "id": "8_7",
         "name": "8_7 UNKNOWN",
+        "zoneLength": 9,
         "byte": 8,
         "type": "bool",
         "mask": "00000001",
