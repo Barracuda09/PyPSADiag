@@ -19,6 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+import os
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -29,7 +30,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QHBoxLayout, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget, QMenuBar)
+    QTextEdit, QVBoxLayout, QWidget)
 
 from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
@@ -37,6 +38,7 @@ from i18n import i18n
 
 
 class PyPSADiagGUI(object):
+    currentDir = os.path.dirname(os.path.abspath(__file__))
     mainWindow = None
 
     def setFilePathInWindowsTitle(self, path: str()):
@@ -45,17 +47,12 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
-    def setupGUI(self, MainWindow, scan: bool()):
+    def setupGUI(self, MainWindow, scan: bool(), lang_code: str):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1100, 700)
         MainWindow.setSizeIncrement(QSize(1, 1))
-
-        #file_menu = self.mainWindow.menuBar().addMenu(i18n().tr("&File"))
-        #quit_action = file_menu.addAction(i18n().tr("Quit"))
-        #quit_action.setShortcut(i18n().tr("CTRL+Q"))
-
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
@@ -68,6 +65,9 @@ class PyPSADiagGUI(object):
         self.output = QTextEdit()
         self.output.setReadOnly(True)
 
+        # Setup languages
+        self.setupLanguages(lang_code)
+
         self.sendCommand = QPushButton()
         self.openCSVFile = QPushButton()
         self.saveCSVFile = QPushButton()
@@ -75,6 +75,7 @@ class PyPSADiagGUI(object):
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
         self.SearchConnectPort = QPushButton()
+
         self.DisconnectPort = QPushButton()
         self.openZoneFile = QPushButton()
         self.ecuComboBox = QComboBox()
@@ -88,10 +89,10 @@ class PyPSADiagGUI(object):
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
 #        self.useSketchSeedGenerator = QCheckBox()
+
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
-
 
         self.translateGUI(self)
 
@@ -101,6 +102,14 @@ class PyPSADiagGUI(object):
         self.topLeftLayout.addWidget(self.command)
         self.topLeftLayout.addWidget(self.output)
         ###################################################
+
+        ###################################################
+        # Setup Language Header Layout
+        self.languageHeaderLayout = QHBoxLayout()
+
+        self.languageHeaderLayout.addStretch()
+        self.languageHeaderLayout.setContentsMargins(0, 10, 10, 0)
+        self.languageHeaderLayout.addWidget(self.languageComboBox)
 
         ###################################################
         # Setup Top Right Layout
@@ -114,6 +123,7 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
+        self.topRightLayout.addWidget(self.languageComboBox)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
@@ -198,6 +208,7 @@ class PyPSADiagGUI(object):
             ###################################################
 
         self.frame = QFrame(self.centralwidget)
+        self.frame.setContentsMargins(10, 0, 10, 10)
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
@@ -208,11 +219,43 @@ class PyPSADiagGUI(object):
             self.frameLayout.addWidget(self.splitterTopBottom)
         self.frame.setLayout(self.frameLayout)
 
+        # Setup language Widget
+        self.languageWidget = QWidget()
+        self.languageWidget.setLayout(self.languageHeaderLayout)
+
         # Setup Main Frame
-        self.mainLayout = QHBoxLayout()
+        self.mainLayout = QVBoxLayout()
+        self.mainLayout.setSpacing(0)
+        self.mainLayout.setContentsMargins(0, 0, 0, 0)
+
+        self.mainLayout.addWidget(self.languageWidget)
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
         MainWindow.setCentralWidget(self.centralwidget)
+
+    def setupLanguages(self, lang_code: str):
+        self.languageComboBox = QComboBox()
+        self.languageComboBox.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
+        self.languageComboBox.setMinimumWidth(100)
+
+        flags_path = os.path.join(self.currentDir, "i18n", "flags")
+
+        languages = [
+            ("en", "English"),
+            ("it", "Italiano"),
+            ("de", "Deutsch"),
+            ("nl", "Nederlands"),
+            ("pl", "Polski"),
+            ("uk", "Українська"),
+        ]
+
+        for code, name in languages:
+            icon_path = os.path.join(flags_path, f"{code}.png")
+            self.languageComboBox.addItem(QIcon(icon_path), name, code)
+
+        index = self.languageComboBox.findData(lang_code)
+        if index != -1:
+            self.languageComboBox.setCurrentIndex(index)
 
     def translateGUI(self, MainWindow):
         self.sendCommand.setText(i18n().tr("Send Command"))
