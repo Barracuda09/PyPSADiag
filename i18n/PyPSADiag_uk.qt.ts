@@ -468,13 +468,13 @@
     </message>
     <message>
         <location filename="../json/INJ/CMM_VD56.json" line="55" />
-        <location filename="../json/BMF/BSI2010.json" line="1804" />
+        <location filename="../json/BMF/BSI2010.json" line="1786" />
         <source>Without air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/INJ/CMM_VD56.json" line="61" />
-        <location filename="../json/BMF/BSI2010.json" line="725" />
+        <location filename="../json/BMF/BSI2010.json" line="707" />
         <location filename="../json/AAS/AAS_UDS_G6.json" line="181" />
         <source>Type of gearbox</source>
         <translation type="unfinished" />
@@ -724,13 +724,13 @@
     <message>
         <location filename="../json/CVM/CVM3.json" line="53" />
         <location filename="../json/CVM/CVM2.json" line="34" />
-        <location filename="../json/BMF/BSI2010.json" line="846" />
+        <location filename="../json/BMF/BSI2010.json" line="828" />
         <source>Xenon lamp</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/CVM/CVM3.json" line="57" />
-        <location filename="../json/BMF/BSI2010.json" line="847" />
+        <location filename="../json/BMF/BSI2010.json" line="829" />
         <source>LED lamp</source>
         <translation type="unfinished" />
     </message>
@@ -761,58 +761,65 @@
         <location filename="../json/CVM/CVM2.json" line="85" />
         <location filename="../json/CVM/CVM2.json" line="102" />
         <location filename="../json/CVM/CVM2.json" line="119" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="35" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="52" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="69" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="86" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="103" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="120" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="137" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="154" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="204" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="221" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="238" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="255" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="272" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="289" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="306" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="348" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="365" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="382" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="399" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="437" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="454" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="470" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="486" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="522" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="538" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="555" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="572" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="589" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="606" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="656" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="673" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="718" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="735" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="752" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="769" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="786" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="803" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="820" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="837" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="854" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="871" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="888" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="905" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="922" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="939" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="971" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="988" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1012" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1029" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1046" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1063" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1080" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="43" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="60" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="77" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="94" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="111" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="128" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="145" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="162" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="212" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="229" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="246" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="263" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="280" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="297" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="314" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="356" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="373" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="390" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="407" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="445" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="462" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="478" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="494" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="530" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="546" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="563" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="580" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="597" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="614" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="664" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="681" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="726" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="743" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="760" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="777" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="794" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="811" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="828" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="845" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="862" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="879" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="896" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="913" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="930" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="947" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="979" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="996" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1020" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1037" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1054" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1071" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1088" />
+        <location filename="../json/BMF/BSI2010.json" line="279" />
+        <location filename="../json/BMF/BSI2010.json" line="303" />
+        <location filename="../json/BMF/BSI2010.json" line="319" />
+        <location filename="../json/BMF/BSI2010.json" line="335" />
+        <location filename="../json/BMF/BSI2010.json" line="351" />
+        <location filename="../json/BMF/BSI2010.json" line="367" />
+        <location filename="../json/BMF/BSI2010.json" line="383" />
         <location filename="../json/ARTIV/ARTIV_UDS.json" line="101" />
         <location filename="../json/ARTIV/ARTIV_UDS.json" line="118" />
         <location filename="../json/DIRECTN/DAE_BVH2.json" line="30" />
@@ -844,58 +851,64 @@
         <location filename="../json/CVM/CVM2.json" line="89" />
         <location filename="../json/CVM/CVM2.json" line="106" />
         <location filename="../json/CVM/CVM2.json" line="123" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="39" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="56" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="73" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="90" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="107" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="124" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="141" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="158" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="208" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="225" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="242" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="259" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="276" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="293" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="310" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="352" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="369" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="386" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="403" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="441" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="458" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="474" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="490" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="526" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="542" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="559" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="576" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="593" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="610" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="660" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="677" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="722" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="739" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="756" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="773" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="790" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="807" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="824" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="841" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="858" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="875" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="892" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="909" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="926" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="943" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="975" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="992" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1016" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1033" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1050" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1067" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1084" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="47" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="64" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="81" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="98" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="115" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="132" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="149" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="166" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="216" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="233" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="250" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="267" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="284" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="301" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="318" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="360" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="377" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="394" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="411" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="449" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="466" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="482" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="498" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="534" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="550" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="567" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="584" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="601" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="618" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="668" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="685" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="730" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="747" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="764" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="781" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="798" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="815" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="832" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="849" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="866" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="883" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="900" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="917" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="934" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="951" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="983" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1000" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1024" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1041" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1058" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1075" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1092" />
+        <location filename="../json/BMF/BSI2010.json" line="307" />
+        <location filename="../json/BMF/BSI2010.json" line="323" />
+        <location filename="../json/BMF/BSI2010.json" line="339" />
+        <location filename="../json/BMF/BSI2010.json" line="355" />
+        <location filename="../json/BMF/BSI2010.json" line="371" />
+        <location filename="../json/BMF/BSI2010.json" line="387" />
         <location filename="../json/ARTIV/ARTIV_UDS.json" line="105" />
         <location filename="../json/ARTIV/ARTIV_UDS.json" line="122" />
         <location filename="../json/DIRECTN/DAE_BVH2.json" line="34" />
@@ -1038,12 +1051,13 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="44" />
+        <location filename="../json/MATT/MATT2010.json" line="59" />
         <source>Vehicle speed limitation</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="53" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="62" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="70" />
         <location filename="../json/TELEMAT/NAC.json" line="9681" />
         <location filename="../json/TELEMAT/RCC.json" line="9068" />
         <source>Obstacle detection</source>
@@ -1061,7 +1075,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="80" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="265" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="273" />
         <source>Display of the alerts, POI and hazardous areas</source>
         <translation type="unfinished" />
     </message>
@@ -1077,13 +1091,13 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="107" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="392" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="400" />
         <source>Stop and Start system</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="116" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="409" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="417" />
         <location filename="../json/TELEMAT/NAC.json" line="1097" />
         <location filename="../json/TELEMAT/NAC.json" line="1119" />
         <location filename="../json/TELEMAT/RCC.json" line="825" />
@@ -1100,7 +1114,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="127" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="420" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="428" />
         <location filename="../json/TELEMAT/NAC.json" line="1108" />
         <location filename="../json/TELEMAT/NAC.json" line="1130" />
         <location filename="../json/TELEMAT/RCC.json" line="836" />
@@ -1117,7 +1131,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="138" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="316" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="324" />
         <source>Body shape type</source>
         <translation type="unfinished" />
     </message>
@@ -1128,13 +1142,13 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="149" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="327" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="335" />
         <source>Saloon</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="153" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="331" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="339" />
         <source>Monospace</source>
         <translation type="unfinished" />
     </message>
@@ -1145,13 +1159,13 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="164" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="447" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="455" />
         <source>Active Lane Departure function (LKA)</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="173" />
-        <location filename="../json/BMF/BSI2010.json" line="2862" />
+        <location filename="../json/BMF/BSI2010.json" line="2844" />
         <location filename="../json/DIRECTN/DAE_UDS.json" line="68" />
         <source>Dynamic driving function</source>
         <translation type="unfinished" />
@@ -1173,7 +1187,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="209" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="666" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="674" />
         <source>Onboard computer alerts</source>
         <translation type="unfinished" />
     </message>
@@ -1189,7 +1203,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="236" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="599" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="607" />
         <source>Hands free starting access</source>
         <translation type="unfinished" />
     </message>
@@ -1220,10 +1234,11 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="290" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="582" />
-        <location filename="../json/BMF/BSI2010.json" line="679" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="590" />
+        <location filename="../json/BMF/BSI2010.json" line="661" />
         <location filename="../json/TELEMAT/NAC.json" line="2267" />
         <location filename="../json/TELEMAT/RCC.json" line="1657" />
+        <location filename="../json/MATT/MATT2010.json" line="139" />
         <source>Stop and Start function</source>
         <translation type="unfinished" />
     </message>
@@ -1234,7 +1249,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="308" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="548" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="556" />
         <source>Speed limit indication function</source>
         <translation type="unfinished" />
     </message>
@@ -1279,7 +1294,7 @@
         <location filename="../json/COMBINE/CIROCCO.json" line="369" />
         <location filename="../json/BMF/BSI2010.json" line="115" />
         <location filename="../json/BMF/BSI2010.json" line="181" />
-        <location filename="../json/BMF/BSI2010.json" line="3241" />
+        <location filename="../json/BMF/BSI2010.json" line="3223" />
         <location filename="../json/TELEMAT/NAC.json" line="9485" />
         <location filename="../json/TELEMAT/RCC.json" line="8863" />
         <source>Type 1</source>
@@ -1298,7 +1313,7 @@
         <location filename="../json/COMBINE/CIROCCO.json" line="377" />
         <location filename="../json/BMF/BSI2010.json" line="117" />
         <location filename="../json/BMF/BSI2010.json" line="183" />
-        <location filename="../json/BMF/BSI2010.json" line="3242" />
+        <location filename="../json/BMF/BSI2010.json" line="3224" />
         <source>Type 3</source>
         <translation type="unfinished" />
     </message>
@@ -1306,7 +1321,7 @@
         <location filename="../json/COMBINE/CIROCCO.json" line="381" />
         <location filename="../json/BMF/BSI2010.json" line="118" />
         <location filename="../json/BMF/BSI2010.json" line="184" />
-        <location filename="../json/BMF/BSI2010.json" line="3244" />
+        <location filename="../json/BMF/BSI2010.json" line="3226" />
         <source>Type 4</source>
         <translation type="unfinished" />
     </message>
@@ -1345,7 +1360,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="442" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1039" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1047" />
         <source>Rev counter</source>
         <translation type="unfinished" />
     </message>
@@ -1362,7 +1377,7 @@
     </message>
     <message>
         <location filename="../json/COMBINE/CIROCCO.json" line="469" />
-        <location filename="../json/BMF/BSI2010.json" line="1325" />
+        <location filename="../json/BMF/BSI2010.json" line="1307" />
         <source>Type of car</source>
         <translation type="unfinished" />
     </message>
@@ -1950,383 +1965,387 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="23" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="22" />
+        <source>Configuration 0200</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="31" />
         <source>Configuration Main Values</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="28" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="36" />
         <source>The ECU stores the distance travelled between two regenerations</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="45" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="53" />
         <source>Request to display the partial (Speed) ODO-Meter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="79" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="87" />
         <source>Adaptive cruise control and speed limiter (RVVI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="96" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="104" />
         <source>Absence of oil level</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="113" />
-        <location filename="../json/MATT/MATT2010.json" line="131" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="121" />
         <source>Cruise control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="130" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="138" />
         <source>Cruise control/speed limiter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="147" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="155" />
         <source>Service indicator function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="164" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="172" />
         <source>Push Variant</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="171" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="179" />
         <source>000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="175" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="183" />
         <source>001</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="179" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="187" />
         <source>010</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="183" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="191" />
         <source>011</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="187" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="195" />
         <source>100</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="191" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="199" />
         <source>101</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="197" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="205" />
         <source>Vehicle</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="214" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="222" />
         <source>Soundharmony</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="231" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="239" />
         <source>Units Language</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="248" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="256" />
         <source>Presence display of recommended speeds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="282" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="290" />
         <source>Presence of internal switching Push button for RVVI</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="299" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="307" />
         <source>Presence of selection of RLVV</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="323" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="331" />
         <source>Tailgate</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="335" />
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="705" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="343" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="713" />
         <source>Others</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="341" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="349" />
         <source>Presence of on-board charger (OBC)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="358" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="366" />
         <source>Displaying of the ACC function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="375" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="383" />
         <source>Indicator if LPG information must be displayed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="416" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="424" />
         <source>Rear doors</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="424" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="432" />
         <source>2 sliding door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="430" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="438" />
         <source>Presence of Dynamic driving function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="464" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="472" />
         <source>Presence of Driver Attention Assist (DAA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="480" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="488" />
         <source>CFG_GBB_CMB_TELLTAL_PARK_BR_TYPE_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="496" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="504" />
         <source>Type of ACC Function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="502" />
-        <location filename="../json/MATT/MATT2010.json" line="496" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="510" />
+        <location filename="../json/MATT/MATT2010.json" line="489" />
         <source>00</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="506" />
-        <location filename="../json/MATT/MATT2010.json" line="497" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="514" />
+        <location filename="../json/MATT/MATT2010.json" line="490" />
         <source>01</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="510" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="518" />
         <source>02</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="516" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="524" />
         <source>Traffic sign recognition function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="532" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="540" />
         <source>Display ECO Coaching information</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="565" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="573" />
         <source>Empty Page</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="616" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="624" />
         <source>Brand Configuration</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="623" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="631" />
         <location filename="../json/TELEMAT/NAC.json" line="685" />
         <location filename="../json/TELEMAT/RCC.json" line="679" />
-        <location filename="../json/MATT/MATT2010.json" line="434" />
+        <location filename="../json/MATT/MATT2010.json" line="426" />
         <source>Peugeot</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="627" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="635" />
         <source>citroen</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="631" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="639" />
         <source>brand 010</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="635" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="643" />
         <location filename="../json/TELEMAT/NAC.json" line="697" />
         <location filename="../json/TELEMAT/RCC.json" line="691" />
         <source>Toyota</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="639" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="647" />
         <location filename="../json/TELEMAT/NAC.json" line="701" />
         <location filename="../json/TELEMAT/RCC.json" line="695" />
         <source>Opel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="643" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="651" />
         <source>brand 101</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="649" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="657" />
         <source>Urea warning light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="683" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="691" />
         <source>Indicates which Navigation data to display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="689" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="697" />
         <source>Without street R16</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="693" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="701" />
         <source>With street R16</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="697" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="705" />
         <source>JV and street R16</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="701" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="709" />
         <source>JV and street R32</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="711" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="719" />
         <source>Export Navigation display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="728" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="736" />
         <source>Tyre pressure</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="745" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="753" />
         <source>GBOX</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="762" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="770" />
         <source>State of Lane positioning assist (LPA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="779" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="787" />
         <source>Indicates if Pictograms List is Basic or Extended</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="796" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="804" />
         <source>Memorization of speed advisor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="813" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="821" />
         <source>Alarm function for gulf countries</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="830" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="838" />
         <source>Configuration of Driver restriction mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="847" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="855" />
         <source>Specifies if "Check Page" is available</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="864" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="872" />
         <source>Precense of internal combustion engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="881" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="889" />
         <source>Precense of rear electric motor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="898" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="906" />
         <source>Presence of Diagnostic indicator selection mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="915" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="923" />
         <source>CFG_EZB_CMB_OPTION_ADSD_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="932" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="940" />
         <source>Presence of HY Page</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="952" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="960" />
         <source>Configuration IO Values</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="959" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="967" />
         <source>Configuration Secondary Values</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="964" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="972" />
         <source>Presence of Data and Time Display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="981" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="989" />
         <source>Presence of Data and Time Menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1000" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1008" />
         <source>Configuration HMI Values</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1005" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1013" />
         <source>Popup-Page on-board charger (OBC)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1022" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1030" />
         <source>Presence of showing digital Coolant temperature</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1056" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1064" />
         <source>Presence of showing digital vehicle speed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1073" />
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="1081" />
         <source>Presence of permanent on-board charger page</source>
         <translation type="unfinished" />
     </message>
@@ -2712,44 +2731,44 @@
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="246" />
-        <location filename="../json/BMF/BSI2010.json" line="474" />
-        <location filename="../json/BMF/BSI2010.json" line="496" />
-        <location filename="../json/BMF/BSI2010.json" line="762" />
-        <location filename="../json/BMF/BSI2010.json" line="808" />
-        <location filename="../json/BMF/BSI2010.json" line="890" />
-        <location filename="../json/BMF/BSI2010.json" line="921" />
-        <location filename="../json/BMF/BSI2010.json" line="966" />
-        <location filename="../json/BMF/BSI2010.json" line="982" />
-        <location filename="../json/BMF/BSI2010.json" line="1018" />
-        <location filename="../json/BMF/BSI2010.json" line="1165" />
-        <location filename="../json/BMF/BSI2010.json" line="1557" />
-        <location filename="../json/BMF/BSI2010.json" line="1584" />
-        <location filename="../json/BMF/BSI2010.json" line="1600" />
-        <location filename="../json/BMF/BSI2010.json" line="1629" />
-        <location filename="../json/BMF/BSI2010.json" line="1681" />
-        <location filename="../json/BMF/BSI2010.json" line="1783" />
-        <location filename="../json/BMF/BSI2010.json" line="1861" />
-        <location filename="../json/BMF/BSI2010.json" line="1928" />
+        <location filename="../json/BMF/BSI2010.json" line="456" />
+        <location filename="../json/BMF/BSI2010.json" line="478" />
+        <location filename="../json/BMF/BSI2010.json" line="744" />
+        <location filename="../json/BMF/BSI2010.json" line="790" />
+        <location filename="../json/BMF/BSI2010.json" line="872" />
+        <location filename="../json/BMF/BSI2010.json" line="903" />
+        <location filename="../json/BMF/BSI2010.json" line="948" />
+        <location filename="../json/BMF/BSI2010.json" line="964" />
+        <location filename="../json/BMF/BSI2010.json" line="1000" />
+        <location filename="../json/BMF/BSI2010.json" line="1147" />
+        <location filename="../json/BMF/BSI2010.json" line="1539" />
+        <location filename="../json/BMF/BSI2010.json" line="1566" />
+        <location filename="../json/BMF/BSI2010.json" line="1582" />
+        <location filename="../json/BMF/BSI2010.json" line="1611" />
+        <location filename="../json/BMF/BSI2010.json" line="1663" />
+        <location filename="../json/BMF/BSI2010.json" line="1765" />
+        <location filename="../json/BMF/BSI2010.json" line="1843" />
+        <location filename="../json/BMF/BSI2010.json" line="1910" />
+        <location filename="../json/BMF/BSI2010.json" line="1998" />
         <location filename="../json/BMF/BSI2010.json" line="2016" />
-        <location filename="../json/BMF/BSI2010.json" line="2034" />
-        <location filename="../json/BMF/BSI2010.json" line="2065" />
-        <location filename="../json/BMF/BSI2010.json" line="2106" />
-        <location filename="../json/BMF/BSI2010.json" line="2446" />
-        <location filename="../json/BMF/BSI2010.json" line="2627" />
-        <location filename="../json/BMF/BSI2010.json" line="2766" />
-        <location filename="../json/BMF/BSI2010.json" line="2797" />
-        <location filename="../json/BMF/BSI2010.json" line="2831" />
-        <location filename="../json/BMF/BSI2010.json" line="2858" />
-        <location filename="../json/BMF/BSI2010.json" line="3028" />
-        <location filename="../json/BMF/BSI2010.json" line="3174" />
+        <location filename="../json/BMF/BSI2010.json" line="2047" />
+        <location filename="../json/BMF/BSI2010.json" line="2088" />
+        <location filename="../json/BMF/BSI2010.json" line="2428" />
+        <location filename="../json/BMF/BSI2010.json" line="2609" />
+        <location filename="../json/BMF/BSI2010.json" line="2748" />
+        <location filename="../json/BMF/BSI2010.json" line="2779" />
+        <location filename="../json/BMF/BSI2010.json" line="2813" />
+        <location filename="../json/BMF/BSI2010.json" line="2840" />
+        <location filename="../json/BMF/BSI2010.json" line="3010" />
+        <location filename="../json/BMF/BSI2010.json" line="3156" />
+        <location filename="../json/BMF/BSI2010.json" line="3222" />
         <location filename="../json/BMF/BSI2010.json" line="3240" />
-        <location filename="../json/BMF/BSI2010.json" line="3258" />
-        <location filename="../json/BMF/BSI2010.json" line="3272" />
-        <location filename="../json/BMF/BSI2010.json" line="3286" />
-        <location filename="../json/BMF/BSI2010.json" line="3496" />
-        <location filename="../json/BMF/BSI2010.json" line="3591" />
-        <location filename="../json/BMF/BSI2010.json" line="3739" />
-        <location filename="../json/BMF/BSI2010.json" line="3993" />
+        <location filename="../json/BMF/BSI2010.json" line="3254" />
+        <location filename="../json/BMF/BSI2010.json" line="3268" />
+        <location filename="../json/BMF/BSI2010.json" line="3478" />
+        <location filename="../json/BMF/BSI2010.json" line="3573" />
+        <location filename="../json/BMF/BSI2010.json" line="3721" />
+        <location filename="../json/BMF/BSI2010.json" line="3975" />
         <location filename="../json/AAS/AAS_UDS_G6.json" line="106" />
         <location filename="../json/AAS/AAS_UDS_G6.json" line="137" />
         <location filename="../json/AAS/AAS_UDS_G6.json" line="154" />
@@ -2773,5643 +2792,5104 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="273" />
-        <location filename="../json/BMF/BSI2010.json" line="2363" />
-        <source>Without</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="274" />
-        <source>parking assistance rear</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="275" />
-        <source>Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="276" />
-        <source>front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="277" />
-        <source>without parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="278" />
-        <source>rear parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="279" />
-        <source>Front parking assistance + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="280" />
-        <source>With the front and rear parking assistance and with the available space measuring function managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="281" />
-        <source>without parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="282" />
-        <source>rear parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="283" />
-        <source>Front parking assistance + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="284" />
-        <source>Front / rear parking assistance and available space measurement by blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="285" />
-        <source>Visual reversing assistance without parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="286" />
-        <source>Rear parking assistance and visual reversing assistance camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="287" />
-        <source>Front parking assistance + reversing assistance camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="288" />
-        <source>With front and rear parking assistance and visual reversing assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="289" />
-        <source>without parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="290" />
-        <source>Rear parking assistance and visual reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="291" />
-        <source>Front parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="292" />
-        <source>front and rear parking assistance + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="293" />
-        <source>without parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="294" />
-        <source>Rear parking assistance and visual reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="295" />
-        <source>Front parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="296" />
-        <source>front and rear parking assistance + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="297" />
-        <source>With front and rear parking assistance and with semi-automatic parking system</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="298" />
-        <source>without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="299" />
-        <source>rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="300" />
-        <source>Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="301" />
-        <source>front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="302" />
-        <source>without parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="303" />
-        <source>rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="304" />
-        <source>Front parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="305" />
-        <source>front and rear parking assistance + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="306" />
-        <source>With front and rear parking assistance, with visual reversing assistance and with semi-automatic parking system</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="307" />
-        <source>without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="308" />
-        <source>rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="309" />
-        <source>Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="310" />
-        <source>front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="311" />
-        <source>without parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="312" />
-        <source>rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="313" />
-        <source>Front parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="314" />
-        <source>front and rear parking assistance + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="315" />
-        <source>semi-automatic parking system with perpendicular parking option + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="316" />
-        <source>semi-automatic parking system with perpendicular parking option + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="317" />
-        <source>semi-automatic parking system with perpendicular parking option + rear parking assistance + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="318" />
-        <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="319" />
-        <source>without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="320" />
-        <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="321" />
-        <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="322" />
-        <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="323" />
-        <source>without parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="324" />
-        <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="325" />
-        <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="326" />
-        <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="327" />
-        <source>front and rear parking assistance + reversing assistance camera + semi-automatic parking system with perpendicular parking option</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="328" />
-        <source>without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="329" />
-        <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="330" />
-        <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="331" />
-        <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="332" />
-        <source>without parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="333" />
-        <source>rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="334" />
-        <source>Front parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="335" />
-        <source>front and rear parking assistance + semi-automatic parking system with perpendicular parking option + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="336" />
-        <source>Side view through rear vision side camera + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="337" />
-        <source>Side view through rear vision side camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="338" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="339" />
-        <source>Side view through rear vision side camera + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="340" />
-        <source>Side view through rear vision side camera + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="341" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="342" />
-        <source>Side view through rear vision side camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="343" />
-        <source>Side view through rear vision side camera + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="344" />
-        <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="345" />
-        <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="346" />
-        <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="347" />
-        <source>Side view through rear vision side camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="348" />
-        <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="349" />
-        <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="350" />
-        <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="351" />
-        <source>Side view through rear vision side camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="352" />
-        <source>Side view through rear vision side camera + reversing assistance camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="353" />
-        <source>Side view through rear vision side camera + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="354" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="355" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="356" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="357" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="358" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="359" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="360" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="361" />
-        <source>Side view through rear vision side camera + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="362" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="363" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="364" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="365" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="366" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="367" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="368" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="369" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="370" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="371" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="372" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="373" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="374" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="375" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="376" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="377" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="378" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="379" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="380" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="381" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="382" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="383" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="384" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="385" />
-        <source>Side view through rear vision side camera + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="386" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="387" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="388" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="389" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="390" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="391" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="392" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="393" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="394" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="395" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="396" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="397" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="398" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="399" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="400" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="401" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="402" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="403" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the parking assistance ECU + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="404" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="405" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="406" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + Front parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="407" />
-        <source>Side view through rear vision side camera + semi-automatic parking system with perpendicular parking option + Semi-automatic parking assistance system + reversing assistance camera + available space measurement managed by the blind spot monitoring + front and rear parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/BMF/BSI2010.json" line="409" />
+        <location filename="../json/BMF/BSI2010.json" line="268" />
         <source>Type of parking assistance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="417" />
+        <location filename="../json/BMF/BSI2010.json" line="273" />
+        <location filename="../json/TELEMAT/NAC.json" line="37" />
+        <location filename="../json/TELEMAT/NAC.json" line="2547" />
+        <location filename="../json/TELEMAT/NAC.json" line="2705" />
+        <location filename="../json/TELEMAT/NAC.json" line="2863" />
+        <location filename="../json/TELEMAT/NAC.json" line="3021" />
+        <location filename="../json/TELEMAT/NAC.json" line="3179" />
+        <location filename="../json/TELEMAT/NAC.json" line="3337" />
+        <location filename="../json/TELEMAT/NAC.json" line="3495" />
+        <location filename="../json/TELEMAT/NAC.json" line="3653" />
+        <location filename="../json/TELEMAT/NAC.json" line="3811" />
+        <location filename="../json/TELEMAT/NAC.json" line="3969" />
+        <location filename="../json/TELEMAT/NAC.json" line="4165" />
+        <location filename="../json/TELEMAT/NAC.json" line="4323" />
+        <location filename="../json/TELEMAT/NAC.json" line="4481" />
+        <location filename="../json/TELEMAT/NAC.json" line="4639" />
+        <location filename="../json/TELEMAT/NAC.json" line="4797" />
+        <location filename="../json/TELEMAT/NAC.json" line="4955" />
+        <location filename="../json/TELEMAT/NAC.json" line="5113" />
+        <location filename="../json/TELEMAT/NAC.json" line="5271" />
+        <location filename="../json/TELEMAT/NAC.json" line="5429" />
+        <location filename="../json/TELEMAT/NAC.json" line="5587" />
+        <location filename="../json/TELEMAT/NAC.json" line="5783" />
+        <location filename="../json/TELEMAT/NAC.json" line="5941" />
+        <location filename="../json/TELEMAT/NAC.json" line="6099" />
+        <location filename="../json/TELEMAT/NAC.json" line="6257" />
+        <location filename="../json/TELEMAT/NAC.json" line="6415" />
+        <location filename="../json/TELEMAT/NAC.json" line="6573" />
+        <location filename="../json/TELEMAT/NAC.json" line="6731" />
+        <location filename="../json/TELEMAT/NAC.json" line="6889" />
+        <location filename="../json/TELEMAT/NAC.json" line="7047" />
+        <location filename="../json/TELEMAT/NAC.json" line="7205" />
+        <location filename="../json/TELEMAT/NAC.json" line="7401" />
+        <location filename="../json/TELEMAT/NAC.json" line="7559" />
+        <location filename="../json/TELEMAT/NAC.json" line="7717" />
+        <location filename="../json/TELEMAT/NAC.json" line="7875" />
+        <location filename="../json/TELEMAT/NAC.json" line="8033" />
+        <location filename="../json/TELEMAT/NAC.json" line="8191" />
+        <location filename="../json/TELEMAT/NAC.json" line="8349" />
+        <location filename="../json/TELEMAT/NAC.json" line="8507" />
+        <location filename="../json/TELEMAT/NAC.json" line="8665" />
+        <location filename="../json/TELEMAT/NAC.json" line="8823" />
+        <location filename="../json/TELEMAT/RCC.json" line="64" />
+        <location filename="../json/TELEMAT/RCC.json" line="2134" />
+        <location filename="../json/TELEMAT/RCC.json" line="2292" />
+        <location filename="../json/TELEMAT/RCC.json" line="2450" />
+        <location filename="../json/TELEMAT/RCC.json" line="2608" />
+        <location filename="../json/TELEMAT/RCC.json" line="2766" />
+        <location filename="../json/TELEMAT/RCC.json" line="2924" />
+        <location filename="../json/TELEMAT/RCC.json" line="3082" />
+        <location filename="../json/TELEMAT/RCC.json" line="3240" />
+        <location filename="../json/TELEMAT/RCC.json" line="3398" />
+        <location filename="../json/TELEMAT/RCC.json" line="3556" />
+        <location filename="../json/TELEMAT/RCC.json" line="3752" />
+        <location filename="../json/TELEMAT/RCC.json" line="3910" />
+        <location filename="../json/TELEMAT/RCC.json" line="4068" />
+        <location filename="../json/TELEMAT/RCC.json" line="4226" />
+        <location filename="../json/TELEMAT/RCC.json" line="4384" />
+        <location filename="../json/TELEMAT/RCC.json" line="4542" />
+        <location filename="../json/TELEMAT/RCC.json" line="4700" />
+        <location filename="../json/TELEMAT/RCC.json" line="4858" />
+        <location filename="../json/TELEMAT/RCC.json" line="5016" />
+        <location filename="../json/TELEMAT/RCC.json" line="5174" />
+        <location filename="../json/TELEMAT/RCC.json" line="5370" />
+        <location filename="../json/TELEMAT/RCC.json" line="5528" />
+        <location filename="../json/TELEMAT/RCC.json" line="5686" />
+        <location filename="../json/TELEMAT/RCC.json" line="5844" />
+        <location filename="../json/TELEMAT/RCC.json" line="6002" />
+        <location filename="../json/TELEMAT/RCC.json" line="6160" />
+        <location filename="../json/TELEMAT/RCC.json" line="6318" />
+        <location filename="../json/TELEMAT/RCC.json" line="6476" />
+        <location filename="../json/TELEMAT/RCC.json" line="6634" />
+        <location filename="../json/TELEMAT/RCC.json" line="6792" />
+        <location filename="../json/TELEMAT/RCC.json" line="6988" />
+        <location filename="../json/TELEMAT/RCC.json" line="7146" />
+        <location filename="../json/TELEMAT/RCC.json" line="7304" />
+        <location filename="../json/TELEMAT/RCC.json" line="7462" />
+        <location filename="../json/TELEMAT/RCC.json" line="7620" />
+        <location filename="../json/TELEMAT/RCC.json" line="7778" />
+        <location filename="../json/TELEMAT/RCC.json" line="7936" />
+        <location filename="../json/TELEMAT/RCC.json" line="8094" />
+        <location filename="../json/TELEMAT/RCC.json" line="8252" />
+        <location filename="../json/TELEMAT/RCC.json" line="8410" />
+        <source>Parking assistance</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="283" />
+        <source>Rear Sensors</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="287" />
+        <source>Front Sensors</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="291" />
+        <source>Front and Rear Sensors</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="297" />
+        <source>Available space measurement managed by the parking assistance ECU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="313" />
+        <source>Available space measurement managed by the blind spot monitoring ECU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="329" />
+        <source>Visual reversing assistance</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="345" />
+        <source>Semi-automatic parking assistance system</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="361" />
+        <source>Semi-automatic parking system with perpendicular parking option</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="377" />
+        <source>Side view through rear vision side camera</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="399" />
         <source>The presence of a trailer switching unit (TSB)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="425" />
+        <location filename="../json/BMF/BSI2010.json" line="407" />
         <source>Parking assistance audible warning emitted by the switching module under the steering wheel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="433" />
+        <location filename="../json/BMF/BSI2010.json" line="415" />
         <source>Parking system with visual alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="441" />
+        <location filename="../json/BMF/BSI2010.json" line="423" />
         <source>The presence of a passenger airbag</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="450" />
+        <location filename="../json/BMF/BSI2010.json" line="432" />
         <source>Security alarm installed at the factory</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="451" />
+        <location filename="../json/BMF/BSI2010.json" line="433" />
         <source>Security alarm, established additional</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="453" />
+        <location filename="../json/BMF/BSI2010.json" line="435" />
         <source>Type of installation of security alarms</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="462" />
+        <location filename="../json/BMF/BSI2010.json" line="444" />
         <source>Active</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="463" />
+        <location filename="../json/BMF/BSI2010.json" line="445" />
         <source>Inactive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="465" />
+        <location filename="../json/BMF/BSI2010.json" line="447" />
         <source>Security alarm volume control system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="475" />
-        <location filename="../json/BMF/BSI2010.json" line="2066" />
+        <location filename="../json/BMF/BSI2010.json" line="457" />
+        <location filename="../json/BMF/BSI2010.json" line="2048" />
         <source>1 hatch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="476" />
-        <location filename="../json/BMF/BSI2010.json" line="2067" />
+        <location filename="../json/BMF/BSI2010.json" line="458" />
+        <location filename="../json/BMF/BSI2010.json" line="2049" />
         <source>2 hatch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="477" />
-        <location filename="../json/BMF/BSI2010.json" line="2068" />
+        <location filename="../json/BMF/BSI2010.json" line="459" />
+        <location filename="../json/BMF/BSI2010.json" line="2050" />
         <source>3 hatch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="479" />
+        <location filename="../json/BMF/BSI2010.json" line="461" />
         <source>The presence and number of hatches in the roof</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="487" />
+        <location filename="../json/BMF/BSI2010.json" line="469" />
         <source>Car with right handside drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="497" />
+        <location filename="../json/BMF/BSI2010.json" line="479" />
         <source>Standard alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="498" />
+        <location filename="../json/BMF/BSI2010.json" line="480" />
         <source>Belgium security alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="499" />
+        <location filename="../json/BMF/BSI2010.json" line="481" />
         <source>Security alarm for Switzerland</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="500" />
+        <location filename="../json/BMF/BSI2010.json" line="482" />
         <source>Alarm for the UK</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="501" />
+        <location filename="../json/BMF/BSI2010.json" line="483" />
         <source>Sweden alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="502" />
+        <location filename="../json/BMF/BSI2010.json" line="484" />
         <source>Alarm for China</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="504" />
+        <location filename="../json/BMF/BSI2010.json" line="486" />
         <source>Type of security alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="513" />
-        <location filename="../json/BMF/BSI2010.json" line="734" />
+        <location filename="../json/BMF/BSI2010.json" line="495" />
+        <location filename="../json/BMF/BSI2010.json" line="716" />
         <source>Mechanical key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="514" />
+        <location filename="../json/BMF/BSI2010.json" line="496" />
         <source>Electronic key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="515" />
+        <location filename="../json/BMF/BSI2010.json" line="497" />
         <source>Remote remote control "Free Hands"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="517" />
+        <location filename="../json/BMF/BSI2010.json" line="499" />
         <source>Key type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="525" />
+        <location filename="../json/BMF/BSI2010.json" line="507" />
         <source>The number of warning signs that seat belts are not fastened</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="533" />
+        <location filename="../json/BMF/BSI2010.json" line="515" />
         <source>Front passenger presence sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="541" />
+        <location filename="../json/BMF/BSI2010.json" line="523" />
         <source>The presence of a seat belt warning bar in the LIN network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="545" />
+        <location filename="../json/BMF/BSI2010.json" line="527" />
         <source>Driver's seat belt not fastened detection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="553" />
-        <location filename="../json/BMF/BSI2010.json" line="572" />
-        <location filename="../json/BMF/BSI2010.json" line="591" />
-        <location filename="../json/BMF/BSI2010.json" line="610" />
-        <location filename="../json/BMF/BSI2010.json" line="629" />
-        <location filename="../json/BMF/BSI2010.json" line="648" />
+        <location filename="../json/BMF/BSI2010.json" line="535" />
+        <location filename="../json/BMF/BSI2010.json" line="554" />
+        <location filename="../json/BMF/BSI2010.json" line="573" />
+        <location filename="../json/BMF/BSI2010.json" line="592" />
+        <location filename="../json/BMF/BSI2010.json" line="611" />
+        <location filename="../json/BMF/BSI2010.json" line="630" />
         <source>YES</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="557" />
-        <location filename="../json/BMF/BSI2010.json" line="576" />
-        <location filename="../json/BMF/BSI2010.json" line="595" />
-        <location filename="../json/BMF/BSI2010.json" line="614" />
-        <location filename="../json/BMF/BSI2010.json" line="633" />
-        <location filename="../json/BMF/BSI2010.json" line="652" />
+        <location filename="../json/BMF/BSI2010.json" line="539" />
+        <location filename="../json/BMF/BSI2010.json" line="558" />
+        <location filename="../json/BMF/BSI2010.json" line="577" />
+        <location filename="../json/BMF/BSI2010.json" line="596" />
+        <location filename="../json/BMF/BSI2010.json" line="615" />
+        <location filename="../json/BMF/BSI2010.json" line="634" />
         <source>NO</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="564" />
+        <location filename="../json/BMF/BSI2010.json" line="546" />
         <source>Front passenger's seat belt not fastened detection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="583" />
+        <location filename="../json/BMF/BSI2010.json" line="565" />
         <source>Rear middle passenger's seat belt not fastened detection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="602" />
+        <location filename="../json/BMF/BSI2010.json" line="584" />
         <source>Rear RH passenger's seat belt not fastened detection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="621" />
+        <location filename="../json/BMF/BSI2010.json" line="603" />
         <source>Rear LH passenger's seat belt not fastened detection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="640" />
+        <location filename="../json/BMF/BSI2010.json" line="622" />
         <location filename="../json/TELEMAT/RCC.json" line="654" />
         <source>Detection of seat belt not fastened for the third row of seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="663" />
+        <location filename="../json/BMF/BSI2010.json" line="645" />
         <source>Option: Multifunctional display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="671" />
-        <location filename="../json/BMF/BSI2010.json" line="3910" />
+        <location filename="../json/BMF/BSI2010.json" line="653" />
+        <location filename="../json/BMF/BSI2010.json" line="3892" />
         <source>The presence of a matrix display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="687" />
+        <location filename="../json/BMF/BSI2010.json" line="669" />
         <source>Display of information on fuel consumption without taking into account excess consumption due to regeneration of the particulate filter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="696" />
+        <location filename="../json/BMF/BSI2010.json" line="678" />
         <source>-17 - +37</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="697" />
+        <location filename="../json/BMF/BSI2010.json" line="679" />
         <source>-25 - +37</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="698" />
+        <location filename="../json/BMF/BSI2010.json" line="680" />
         <source>-30 - +37</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="699" />
+        <location filename="../json/BMF/BSI2010.json" line="681" />
         <source>-17 - +45</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="700" />
+        <location filename="../json/BMF/BSI2010.json" line="682" />
         <source>-17 - +50</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="701" />
+        <location filename="../json/BMF/BSI2010.json" line="683" />
         <source>-30 - +45</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="703" />
+        <location filename="../json/BMF/BSI2010.json" line="685" />
         <source>Climate type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="711" />
+        <location filename="../json/BMF/BSI2010.json" line="693" />
         <source>The presence of seats with heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="720" />
+        <location filename="../json/BMF/BSI2010.json" line="702" />
         <source>Manual</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="721" />
+        <location filename="../json/BMF/BSI2010.json" line="703" />
         <source>Automatic</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="722" />
+        <location filename="../json/BMF/BSI2010.json" line="704" />
         <source>Piloted manual</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="723" />
+        <location filename="../json/BMF/BSI2010.json" line="705" />
         <source>Piloted double clutch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="735" />
+        <location filename="../json/BMF/BSI2010.json" line="717" />
         <source>Mechanical key in emergency mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="736" />
+        <location filename="../json/BMF/BSI2010.json" line="718" />
         <source>Impulse signal from engine start switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="737" />
+        <location filename="../json/BMF/BSI2010.json" line="719" />
         <source>Maintained by engine start-up switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="739" />
+        <location filename="../json/BMF/BSI2010.json" line="721" />
         <source>Type of starting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="748" />
+        <location filename="../json/BMF/BSI2010.json" line="730" />
         <source>Petrol engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="749" />
+        <location filename="../json/BMF/BSI2010.json" line="731" />
         <source>Diesel engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="750" />
+        <location filename="../json/BMF/BSI2010.json" line="732" />
         <source>Bioflex engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="751" />
+        <location filename="../json/BMF/BSI2010.json" line="733" />
         <source>BioFlex engine with preheating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="753" />
+        <location filename="../json/BMF/BSI2010.json" line="735" />
         <source>Type of combustion engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="763" />
+        <location filename="../json/BMF/BSI2010.json" line="745" />
         <source>Direct first generation (with a computer)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="764" />
+        <location filename="../json/BMF/BSI2010.json" line="746" />
         <source>Indirect using the ABS/ESP unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="765" />
+        <location filename="../json/BMF/BSI2010.json" line="747" />
         <source>Direct second generation (with a computer)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="767" />
+        <location filename="../json/BMF/BSI2010.json" line="749" />
         <source>Tire pressure control type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="775" />
+        <location filename="../json/BMF/BSI2010.json" line="757" />
         <source>Light sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="783" />
+        <location filename="../json/BMF/BSI2010.json" line="765" />
         <source>The presence of a lighting control knob with 4 positions</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="791" />
+        <location filename="../json/BMF/BSI2010.json" line="773" />
         <source>Option: Track lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="799" />
+        <location filename="../json/BMF/BSI2010.json" line="781" />
         <source>Option: Training car</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="809" />
+        <location filename="../json/BMF/BSI2010.json" line="791" />
         <source>Unique profile</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="810" />
+        <location filename="../json/BMF/BSI2010.json" line="792" />
         <source>Several profiles</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="812" />
+        <location filename="../json/BMF/BSI2010.json" line="794" />
         <source>Type of individual settings menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="820" />
+        <location filename="../json/BMF/BSI2010.json" line="802" />
         <source>The presence of front fog lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="829" />
+        <location filename="../json/BMF/BSI2010.json" line="811" />
         <source>No specific lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="830" />
+        <location filename="../json/BMF/BSI2010.json" line="812" />
         <source>Static lighting: controlled by intelligent switch box</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="831" />
+        <location filename="../json/BMF/BSI2010.json" line="813" />
         <source>Static lighting: computer controlled headlights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="832" />
+        <location filename="../json/BMF/BSI2010.json" line="814" />
         <source>Dynamic lighting: guided headlights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="834" />
+        <location filename="../json/BMF/BSI2010.json" line="816" />
         <source>Type of cornering lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="843" />
+        <location filename="../json/BMF/BSI2010.json" line="825" />
         <source>Standard lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="844" />
+        <location filename="../json/BMF/BSI2010.json" line="826" />
         <source>Single filament halogen lamp</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="845" />
+        <location filename="../json/BMF/BSI2010.json" line="827" />
         <source>Double filament halogen lamp</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="849" />
+        <location filename="../json/BMF/BSI2010.json" line="831" />
         <source>Type of head lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="857" />
+        <location filename="../json/BMF/BSI2010.json" line="839" />
         <source>The presence of a feature of high-beam switching function: Smart-Beam lighting (HBA/CAFR)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="865" />
+        <location filename="../json/BMF/BSI2010.json" line="847" />
         <source>The presence of the interior lighting and entry into the car function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="873" />
+        <location filename="../json/BMF/BSI2010.json" line="855" />
         <source>Rain sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="881" />
+        <location filename="../json/BMF/BSI2010.json" line="863" />
         <source>The presence of headlight washers</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="891" />
+        <location filename="../json/BMF/BSI2010.json" line="873" />
         <source>Shared day running lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="892" />
+        <location filename="../json/BMF/BSI2010.json" line="874" />
         <source>Functional day lighting *1 lamps of type *1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="893" />
+        <location filename="../json/BMF/BSI2010.json" line="875" />
         <source>Dedicated day running lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="894" />
+        <location filename="../json/BMF/BSI2010.json" line="876" />
         <source>Functional day lighting *1 lamps of type *2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="896" />
+        <location filename="../json/BMF/BSI2010.json" line="878" />
         <source>Type of daylight running lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="904" />
+        <location filename="../json/BMF/BSI2010.json" line="886" />
         <source>Simultaneous activation of daytime running lights and side lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="912" />
+        <location filename="../json/BMF/BSI2010.json" line="894" />
         <source>Lighting on the default daylight</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="922" />
+        <location filename="../json/BMF/BSI2010.json" line="904" />
         <source>A pump controlled by wired communication</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="925" />
+        <location filename="../json/BMF/BSI2010.json" line="907" />
         <source>Pump additives on the multiplex network Lin-1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="929" />
+        <location filename="../json/BMF/BSI2010.json" line="911" />
         <source>Pump additives on the multiplex network Lin-2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="931" />
+        <location filename="../json/BMF/BSI2010.json" line="913" />
         <source>Soot filter without adding additives</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="933" />
+        <location filename="../json/BMF/BSI2010.json" line="915" />
         <source>The presence and type of additive in diesel fuel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="941" />
+        <location filename="../json/BMF/BSI2010.json" line="923" />
         <source>The presence of a special high-frequency receiver (Japan)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="949" />
+        <location filename="../json/BMF/BSI2010.json" line="931" />
         <source>Passenger door lock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="957" />
+        <location filename="../json/BMF/BSI2010.json" line="939" />
         <source>Option: Closing windows using a remote control and key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="967" />
+        <location filename="../json/BMF/BSI2010.json" line="949" />
         <source>Thermoresistors 1000 watts</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="968" />
+        <location filename="../json/BMF/BSI2010.json" line="950" />
         <source>Autonomous heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="969" />
+        <location filename="../json/BMF/BSI2010.json" line="951" />
         <source>Programmable heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="970" />
+        <location filename="../json/BMF/BSI2010.json" line="952" />
         <source>Thermoresistors 300 watts</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="971" />
+        <location filename="../json/BMF/BSI2010.json" line="953" />
         <source>Thermoresistors 600 watts</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="973" />
+        <location filename="../json/BMF/BSI2010.json" line="955" />
         <source>Type of additional heating system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="983" />
+        <location filename="../json/BMF/BSI2010.json" line="965" />
         <source>Self-starting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="984" />
+        <location filename="../json/BMF/BSI2010.json" line="966" />
         <source>Controlled</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="985" />
+        <location filename="../json/BMF/BSI2010.json" line="967" />
         <source>Starter-generator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="986" />
+        <location filename="../json/BMF/BSI2010.json" line="968" />
         <source>Controlled 2nd generation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="988" />
+        <location filename="../json/BMF/BSI2010.json" line="970" />
         <source>Generator type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="997" />
+        <location filename="../json/BMF/BSI2010.json" line="979" />
         <source>42 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="998" />
+        <location filename="../json/BMF/BSI2010.json" line="980" />
         <source>50 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="999" />
+        <location filename="../json/BMF/BSI2010.json" line="981" />
         <source>60 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1000" />
+        <location filename="../json/BMF/BSI2010.json" line="982" />
         <source>64 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1001" />
+        <location filename="../json/BMF/BSI2010.json" line="983" />
         <source>70 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1002" />
+        <location filename="../json/BMF/BSI2010.json" line="984" />
         <source>75 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1003" />
+        <location filename="../json/BMF/BSI2010.json" line="985" />
         <source>95 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1004" />
+        <location filename="../json/BMF/BSI2010.json" line="986" />
         <source>55 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1005" />
+        <location filename="../json/BMF/BSI2010.json" line="987" />
         <source>80 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1006" />
+        <location filename="../json/BMF/BSI2010.json" line="988" />
         <source>82 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1007" />
+        <location filename="../json/BMF/BSI2010.json" line="989" />
         <source>90 ah</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1009" />
+        <location filename="../json/BMF/BSI2010.json" line="991" />
         <source>Type of battery</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1019" />
+        <location filename="../json/BMF/BSI2010.json" line="1001" />
         <source>Yes performed by the battery charge level control unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1020" />
+        <location filename="../json/BMF/BSI2010.json" line="1002" />
         <source>Yes performed by intelligent switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1022" />
+        <location filename="../json/BMF/BSI2010.json" line="1004" />
         <source>Battery charge estimate function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1031" />
-        <location filename="../json/BMF/BSI2010.json" line="1713" />
-        <location filename="../json/BMF/BSI2010.json" line="1726" />
-        <location filename="../json/BMF/BSI2010.json" line="1757" />
-        <location filename="../json/BMF/BSI2010.json" line="1770" />
+        <location filename="../json/BMF/BSI2010.json" line="1013" />
+        <location filename="../json/BMF/BSI2010.json" line="1695" />
+        <location filename="../json/BMF/BSI2010.json" line="1708" />
+        <location filename="../json/BMF/BSI2010.json" line="1739" />
+        <location filename="../json/BMF/BSI2010.json" line="1752" />
         <source>Ungovernable</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1032" />
-        <location filename="../json/BMF/BSI2010.json" line="1714" />
-        <location filename="../json/BMF/BSI2010.json" line="1727" />
-        <location filename="../json/BMF/BSI2010.json" line="1758" />
-        <location filename="../json/BMF/BSI2010.json" line="1771" />
-        <location filename="../json/BMF/BSI2010.json" line="1805" />
+        <location filename="../json/BMF/BSI2010.json" line="1014" />
+        <location filename="../json/BMF/BSI2010.json" line="1696" />
+        <location filename="../json/BMF/BSI2010.json" line="1709" />
+        <location filename="../json/BMF/BSI2010.json" line="1740" />
+        <location filename="../json/BMF/BSI2010.json" line="1753" />
+        <location filename="../json/BMF/BSI2010.json" line="1787" />
         <source>Single-zone</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1033" />
-        <location filename="../json/BMF/BSI2010.json" line="1715" />
-        <location filename="../json/BMF/BSI2010.json" line="1728" />
-        <location filename="../json/BMF/BSI2010.json" line="1759" />
-        <location filename="../json/BMF/BSI2010.json" line="1772" />
-        <location filename="../json/BMF/BSI2010.json" line="1806" />
+        <location filename="../json/BMF/BSI2010.json" line="1015" />
+        <location filename="../json/BMF/BSI2010.json" line="1697" />
+        <location filename="../json/BMF/BSI2010.json" line="1710" />
+        <location filename="../json/BMF/BSI2010.json" line="1741" />
+        <location filename="../json/BMF/BSI2010.json" line="1754" />
+        <location filename="../json/BMF/BSI2010.json" line="1788" />
         <source>Double-zone</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1034" />
+        <location filename="../json/BMF/BSI2010.json" line="1016" />
         <source>Four-zone</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1036" />
+        <location filename="../json/BMF/BSI2010.json" line="1018" />
         <source>Air mixing type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1044" />
+        <location filename="../json/BMF/BSI2010.json" line="1026" />
         <source>Option: Module for memorizing the position of the passenger seat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1052" />
+        <location filename="../json/BMF/BSI2010.json" line="1034" />
         <source>Audio system amplifier</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1060" />
+        <location filename="../json/BMF/BSI2010.json" line="1042" />
         <source>The presence of a block of the corrector of the height of the rear part (pneumatic suspension)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1068" />
+        <location filename="../json/BMF/BSI2010.json" line="1050" />
         <source>The presence of air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1076" />
+        <location filename="../json/BMF/BSI2010.json" line="1058" />
         <source>The presence of an auxiliary electric brake</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1084" />
+        <location filename="../json/BMF/BSI2010.json" line="1066" />
         <source>Option: remembering driver's seat adjustments</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1092" />
+        <location filename="../json/BMF/BSI2010.json" line="1074" />
         <source>The presence of a programmable cruise control system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1100" />
+        <location filename="../json/BMF/BSI2010.json" line="1082" />
         <source>Option: a warning system for unintentional intersection of road marking lines</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1108" />
+        <location filename="../json/BMF/BSI2010.json" line="1090" />
         <source>The presence of a system display system in the field of view of the driver</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1116" />
+        <location filename="../json/BMF/BSI2010.json" line="1098" />
         <source>The presence of a telematics block</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1124" />
+        <location filename="../json/BMF/BSI2010.json" line="1106" />
         <source>The presence of the parking lights (side marking)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1132" />
+        <location filename="../json/BMF/BSI2010.json" line="1114" />
         <source>Dynamic stabilization system (ESP)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1140" />
+        <location filename="../json/BMF/BSI2010.json" line="1122" />
         <source>The presence of an outdoor temperature sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1148" />
+        <location filename="../json/BMF/BSI2010.json" line="1130" />
         <source>Diesel-fuel water sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1156" />
+        <location filename="../json/BMF/BSI2010.json" line="1138" />
         <source>Correction of the difference between the speed set for cruise control, and speed by speedometer in km/h (multiply the value by 10)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1166" />
+        <location filename="../json/BMF/BSI2010.json" line="1148" />
         <source>Cruise control (RVV2)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1167" />
+        <location filename="../json/BMF/BSI2010.json" line="1149" />
         <source>Cruise control (RVV2) with speed limiter (LVV)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1168" />
+        <location filename="../json/BMF/BSI2010.json" line="1150" />
         <source>Automatic cruise control (ACC)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1169" />
+        <location filename="../json/BMF/BSI2010.json" line="1151" />
         <source>Automatic cruise control (ACC) with speed limiter (LVV)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1170" />
+        <location filename="../json/BMF/BSI2010.json" line="1152" />
         <source>Automatic cruise control (ACC) with RVV2+LVV</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1171" />
+        <location filename="../json/BMF/BSI2010.json" line="1153" />
         <source>Over-speed warning only</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1172" />
+        <location filename="../json/BMF/BSI2010.json" line="1154" />
         <source>Cruise control (RVV2) with over-speed alert</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1173" />
+        <location filename="../json/BMF/BSI2010.json" line="1155" />
         <source>Automatic cruise control (ACC) with over-speed alert</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1174" />
+        <location filename="../json/BMF/BSI2010.json" line="1156" />
         <source>Speed limiter (LVV) only</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1176" />
+        <location filename="../json/BMF/BSI2010.json" line="1158" />
         <source>Presence of Speed Limiter / Cruise Control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1184" />
+        <location filename="../json/BMF/BSI2010.json" line="1166" />
         <source>Warning about speeding for countries of the Arabian Peninsula</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1192" />
+        <location filename="../json/BMF/BSI2010.json" line="1174" />
         <source>Multiplex front windows</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1200" />
+        <location filename="../json/BMF/BSI2010.json" line="1182" />
         <source>The presence of four power windows with anti-pinch function or two front windows with anti-pinch function (if the rear windows are not electric)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1208" />
+        <location filename="../json/BMF/BSI2010.json" line="1190" />
         <source>The presence of the driver's meeting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1216" />
+        <location filename="../json/BMF/BSI2010.json" line="1198" />
         <source>External mirrors with electric and folding, controlled by an intellectual switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1224" />
+        <location filename="../json/BMF/BSI2010.json" line="1206" />
         <source>The presence of an massage option</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1232" />
+        <location filename="../json/BMF/BSI2010.json" line="1214" />
         <source>Automatic backlighting of the dashboard and multifunctional display, depending on the brightness of the outdoor lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1241" />
+        <location filename="../json/BMF/BSI2010.json" line="1223" />
         <source>DS3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1242" />
+        <location filename="../json/BMF/BSI2010.json" line="1224" />
         <source>208 3-door (A9)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1243" />
+        <location filename="../json/BMF/BSI2010.json" line="1225" />
         <source>208 5-Door (A9)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1244" />
+        <location filename="../json/BMF/BSI2010.json" line="1226" />
         <source>208 5-Door (AI9) / 2008 (AI94)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1245" />
+        <location filename="../json/BMF/BSI2010.json" line="1227" />
         <source>C4 CACTUS</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1246" />
+        <location filename="../json/BMF/BSI2010.json" line="1228" />
         <source>C4 Cactus (Mercosur)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1247" />
+        <location filename="../json/BMF/BSI2010.json" line="1229" />
         <source>301 / C-Yelysee</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1248" />
+        <location filename="../json/BMF/BSI2010.json" line="1230" />
         <source>301 / c-elisee (Iran)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1249" />
+        <location filename="../json/BMF/BSI2010.json" line="1231" />
         <source>301 / c-elisee (china)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1250" />
+        <location filename="../json/BMF/BSI2010.json" line="1232" />
         <source>2008</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1251" />
+        <location filename="../json/BMF/BSI2010.json" line="1233" />
         <source>2008 (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1252" />
+        <location filename="../json/BMF/BSI2010.json" line="1234" />
         <source>C3-XR</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1253" />
+        <location filename="../json/BMF/BSI2010.json" line="1235" />
         <source>301 5-door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1254" />
+        <location filename="../json/BMF/BSI2010.json" line="1236" />
         <source>DS3 Cabrio</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1255" />
+        <location filename="../json/BMF/BSI2010.json" line="1237" />
         <source>C4 Saloon 5-Door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1256" />
+        <location filename="../json/BMF/BSI2010.json" line="1238" />
         <source>DS5</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1257" />
+        <location filename="../json/BMF/BSI2010.json" line="1239" />
         <source>2113</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1258" />
+        <location filename="../json/BMF/BSI2010.json" line="1240" />
         <source>308 5-Door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1259" />
+        <location filename="../json/BMF/BSI2010.json" line="1241" />
         <source>2118</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1260" />
+        <location filename="../json/BMF/BSI2010.json" line="1242" />
         <source>DS5 (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1261" />
+        <location filename="../json/BMF/BSI2010.json" line="1243" />
         <source>C4 Berline 5-Door (Iran)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1262" />
+        <location filename="../json/BMF/BSI2010.json" line="1244" />
         <source>DS4S</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1263" />
+        <location filename="../json/BMF/BSI2010.json" line="1245" />
         <source>308 5-Door (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1264" />
+        <location filename="../json/BMF/BSI2010.json" line="1246" />
         <source>308 SW</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1265" />
+        <location filename="../json/BMF/BSI2010.json" line="1247" />
         <source>C4L (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1266" />
+        <location filename="../json/BMF/BSI2010.json" line="1248" />
         <source>C4 Sedan (Russia)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1267" />
+        <location filename="../json/BMF/BSI2010.json" line="1249" />
         <source>C4L (Iran)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1268" />
+        <location filename="../json/BMF/BSI2010.json" line="1250" />
         <source>C4L (B73M)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1269" />
+        <location filename="../json/BMF/BSI2010.json" line="1251" />
         <source>DS5 LS</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1270" />
+        <location filename="../json/BMF/BSI2010.json" line="1252" />
         <source>308 4-Door (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1271" />
+        <location filename="../json/BMF/BSI2010.json" line="1253" />
         <source>L60 / C4 (BZ3)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1272" />
+        <location filename="../json/BMF/BSI2010.json" line="1254" />
         <source>DS6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1273" />
+        <location filename="../json/BMF/BSI2010.json" line="1255" />
         <source>DS4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1274" />
+        <location filename="../json/BMF/BSI2010.json" line="1256" />
         <source>2813</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1275" />
+        <location filename="../json/BMF/BSI2010.json" line="1257" />
         <source>C4 Picasso 7-Eats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1276" />
+        <location filename="../json/BMF/BSI2010.json" line="1258" />
         <source>2818</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1277" />
+        <location filename="../json/BMF/BSI2010.json" line="1259" />
         <source>C4 Picasso 5-Eats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1278" />
+        <location filename="../json/BMF/BSI2010.json" line="1260" />
         <source>508 4-door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1279" />
+        <location filename="../json/BMF/BSI2010.json" line="1261" />
         <source>508 (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1280" />
+        <location filename="../json/BMF/BSI2010.json" line="1262" />
         <source>G95 4-Door (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1281" />
+        <location filename="../json/BMF/BSI2010.json" line="1263" />
         <source>508 rxh</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1282" />
+        <location filename="../json/BMF/BSI2010.json" line="1264" />
         <source>508 SW</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1283" />
+        <location filename="../json/BMF/BSI2010.json" line="1265" />
         <source>308 4-door (tx9)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1284" />
+        <location filename="../json/BMF/BSI2010.json" line="1266" />
         <source>C6 4-Door (China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1285" />
+        <location filename="../json/BMF/BSI2010.json" line="1267" />
         <source>C5 4-Door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1286" />
+        <location filename="../json/BMF/BSI2010.json" line="1268" />
         <source>3008 (P84)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1287" />
+        <location filename="../json/BMF/BSI2010.json" line="1269" />
         <source>4008 (P84C)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1288" />
+        <location filename="../json/BMF/BSI2010.json" line="1270" />
         <source>5406</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1289" />
+        <location filename="../json/BMF/BSI2010.json" line="1271" />
         <source>C5 Aircons 5-Door (C84C)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1290" />
+        <location filename="../json/BMF/BSI2010.json" line="1272" />
         <source>5008 (P87)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1291" />
+        <location filename="../json/BMF/BSI2010.json" line="1273" />
         <source>Jumpy/Expert</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1292" />
+        <location filename="../json/BMF/BSI2010.json" line="1274" />
         <source>5008 (P87 China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1293" />
+        <location filename="../json/BMF/BSI2010.json" line="1275" />
         <source>Spacetourer/Traveller</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1294" />
+        <location filename="../json/BMF/BSI2010.json" line="1276" />
         <source>C3 (B618)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1295" />
+        <location filename="../json/BMF/BSI2010.json" line="1277" />
         <source>C3 Iran (B618)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1296" />
+        <location filename="../json/BMF/BSI2010.json" line="1278" />
         <source>M44 Iran</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1297" />
+        <location filename="../json/BMF/BSI2010.json" line="1279" />
         <source>6A01</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1298" />
+        <location filename="../json/BMF/BSI2010.json" line="1280" />
         <source>C3 AIRCROSS (A88)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1299" />
+        <location filename="../json/BMF/BSI2010.json" line="1281" />
         <source>C4 Aircons (A88 Chine)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1300" />
+        <location filename="../json/BMF/BSI2010.json" line="1282" />
         <source>508 5-Door (R8 Europe)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1301" />
+        <location filename="../json/BMF/BSI2010.json" line="1283" />
         <source>508L 5-door (R83 China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1302" />
+        <location filename="../json/BMF/BSI2010.json" line="1284" />
         <source>508 Break (R8)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1303" />
+        <location filename="../json/BMF/BSI2010.json" line="1285" />
         <source>DS7 Crossback (X74 Europe)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1304" />
+        <location filename="../json/BMF/BSI2010.json" line="1286" />
         <source>C5 AIRCROSS (C84)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1305" />
+        <location filename="../json/BMF/BSI2010.json" line="1287" />
         <source>DS7 Crossback (X74 China)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1306" />
+        <location filename="../json/BMF/BSI2010.json" line="1288" />
         <source>X83 Europe</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1307" />
+        <location filename="../json/BMF/BSI2010.json" line="1289" />
         <source>Berlingo Utility (K9)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1308" />
+        <location filename="../json/BMF/BSI2010.json" line="1290" />
         <source>X83 China</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1309" />
+        <location filename="../json/BMF/BSI2010.json" line="1291" />
         <source>7904</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1310" />
+        <location filename="../json/BMF/BSI2010.json" line="1292" />
         <source>Berlingo (K9)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1311" />
+        <location filename="../json/BMF/BSI2010.json" line="1293" />
         <source>7c04</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1312" />
+        <location filename="../json/BMF/BSI2010.json" line="1294" />
         <source>P21 Europe</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1313" />
+        <location filename="../json/BMF/BSI2010.json" line="1295" />
         <source>P21 Berline 5 Portes</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1314" />
+        <location filename="../json/BMF/BSI2010.json" line="1296" />
         <source>C41 Europe</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1315" />
+        <location filename="../json/BMF/BSI2010.json" line="1297" />
         <source>Corsa P2JO - Berlines 5 Porte</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1316" />
+        <location filename="../json/BMF/BSI2010.json" line="1298" />
         <source>C43 China</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1317" />
+        <location filename="../json/BMF/BSI2010.json" line="1299" />
         <source>C43 Mercosur</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1318" />
+        <location filename="../json/BMF/BSI2010.json" line="1300" />
         <source>D34</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1319" />
+        <location filename="../json/BMF/BSI2010.json" line="1301" />
         <source>P24 China</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1320" />
+        <location filename="../json/BMF/BSI2010.json" line="1302" />
         <source>P24 Europe</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1321" />
+        <location filename="../json/BMF/BSI2010.json" line="1303" />
         <source>DS 3 Crossback China D34</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1322" />
+        <location filename="../json/BMF/BSI2010.json" line="1304" />
         <source>P2Q0</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1323" />
-        <location filename="../json/BMF/BSI2010.json" line="2964" />
+        <location filename="../json/BMF/BSI2010.json" line="1305" />
+        <location filename="../json/BMF/BSI2010.json" line="2946" />
         <source>Unknown</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1334" />
+        <location filename="../json/BMF/BSI2010.json" line="1316" />
         <source>There is no, or there is a mechanical system for protecting children without information about the state of locks</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1335" />
+        <location filename="../json/BMF/BSI2010.json" line="1317" />
         <source>Mechanical system of protecting children with information about the state of locks</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1336" />
+        <location filename="../json/BMF/BSI2010.json" line="1318" />
         <source>Electric system for protecting children with information on the state of locks</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1338" />
+        <location filename="../json/BMF/BSI2010.json" line="1320" />
         <source>Availability and type of function of the children's protection system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1347" />
+        <location filename="../json/BMF/BSI2010.json" line="1329" />
         <source>Lack of locking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1348" />
+        <location filename="../json/BMF/BSI2010.json" line="1330" />
         <source>Simple blocking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1349" />
+        <location filename="../json/BMF/BSI2010.json" line="1331" />
         <source>Superblock 2 times</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1350" />
+        <location filename="../json/BMF/BSI2010.json" line="1332" />
         <source>Super blocking 1 time</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1352" />
+        <location filename="../json/BMF/BSI2010.json" line="1334" />
         <source>Type of locking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1361" />
-        <location filename="../json/BMF/BSI2010.json" line="2153" />
+        <location filename="../json/BMF/BSI2010.json" line="1343" />
+        <location filename="../json/BMF/BSI2010.json" line="2135" />
         <source>Lack of selectivity</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1362" />
+        <location filename="../json/BMF/BSI2010.json" line="1344" />
         <source>Choosing unlocking the driver's door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1363" />
+        <location filename="../json/BMF/BSI2010.json" line="1345" />
         <source>Selectivity of the front/rear opening elements of the body</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1365" />
+        <location filename="../json/BMF/BSI2010.json" line="1347" />
         <source>Type of locking/unlocking door locks</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1374" />
+        <location filename="../json/BMF/BSI2010.json" line="1356" />
         <source>Opening or unlocking trunk/5th door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1375" />
+        <location filename="../json/BMF/BSI2010.json" line="1357" />
         <source>Opening or unlocking rear window</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1376" />
+        <location filename="../json/BMF/BSI2010.json" line="1358" />
         <source>Lighting / alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1377" />
+        <location filename="../json/BMF/BSI2010.json" line="1359" />
         <source>Unlocking the charging area</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1380" />
+        <location filename="../json/BMF/BSI2010.json" line="1362" />
         <source>Opening / closing the front right sliding side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1383" />
+        <location filename="../json/BMF/BSI2010.json" line="1365" />
         <source>The function of the third button of the high-frequency remote control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1392" />
+        <location filename="../json/BMF/BSI2010.json" line="1374" />
         <source>Short pressing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1393" />
+        <location filename="../json/BMF/BSI2010.json" line="1375" />
         <source>Long-term pressing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1394" />
+        <location filename="../json/BMF/BSI2010.json" line="1376" />
         <source>Support maintained</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1396" />
+        <location filename="../json/BMF/BSI2010.json" line="1378" />
         <source>Type of pressing the third remote control button</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1404" />
+        <location filename="../json/BMF/BSI2010.json" line="1386" />
         <source>The presence of an additional head lighting function using fog lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1412" />
+        <location filename="../json/BMF/BSI2010.json" line="1394" />
         <source>The presence of the function of turning on ventilation from the remote control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1421" />
+        <location filename="../json/BMF/BSI2010.json" line="1403" />
         <source>No signature lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1422" />
+        <location filename="../json/BMF/BSI2010.json" line="1404" />
         <source>Sidelamps and daytime lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1423" />
+        <location filename="../json/BMF/BSI2010.json" line="1405" />
         <source>Sidelamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1424" />
+        <location filename="../json/BMF/BSI2010.json" line="1406" />
         <source>Day running lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1425" />
+        <location filename="../json/BMF/BSI2010.json" line="1407" />
         <source>Automatic lighting of the daytime running lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1426" />
+        <location filename="../json/BMF/BSI2010.json" line="1408" />
         <source>Side lamps,day running lamps and number plate lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1428" />
+        <location filename="../json/BMF/BSI2010.json" line="1410" />
         <source>Front lamps used for the signature lighting function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1436" />
+        <location filename="../json/BMF/BSI2010.json" line="1418" />
         <source>The presence of power steering</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1444" />
+        <location filename="../json/BMF/BSI2010.json" line="1426" />
         <source>Activating THATCHAM mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1452" />
+        <location filename="../json/BMF/BSI2010.json" line="1434" />
         <source>The presence of a service module (MDS) or autonomous telematics unit (BTA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1460" />
+        <location filename="../json/BMF/BSI2010.json" line="1442" />
         <source>The presence of rear fog lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1468" />
+        <location filename="../json/BMF/BSI2010.json" line="1450" />
         <source>The presence of the rear left fog light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1476" />
+        <location filename="../json/BMF/BSI2010.json" line="1458" />
         <source>The presence of the rear right fog light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1484" />
+        <location filename="../json/BMF/BSI2010.json" line="1466" />
         <source>The presence of left reversing light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1492" />
+        <location filename="../json/BMF/BSI2010.json" line="1474" />
         <source>The presence of right reversing light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1500" />
+        <location filename="../json/BMF/BSI2010.json" line="1482" />
         <source>The presence of a multifunctional camera (CMF)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1508" />
+        <location filename="../json/BMF/BSI2010.json" line="1490" />
         <source>Presence of a rain/brightness sensor on the LIN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1516" />
+        <location filename="../json/BMF/BSI2010.json" line="1498" />
         <source>Presence of exterior side lighter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1524" />
+        <location filename="../json/BMF/BSI2010.json" line="1506" />
         <source>the presence of a computer switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1532" />
+        <location filename="../json/BMF/BSI2010.json" line="1514" />
         <source>The presence of an indicator of the recommended transmission (gearbox)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1540" />
+        <location filename="../json/BMF/BSI2010.json" line="1522" />
         <source>The presence of a driver's seat with an electrical control included in the intellectual switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1548" />
+        <location filename="../json/BMF/BSI2010.json" line="1530" />
         <source>The presence of a passenger seat with an electrical control included in the intellectual switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1558" />
+        <location filename="../json/BMF/BSI2010.json" line="1540" />
         <source>Blind spot monitoring managed by a blind spot monitoring function ECU</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1559" />
+        <location filename="../json/BMF/BSI2010.json" line="1541" />
         <source>Lane departure warning system managed by the multifunction video camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1560" />
+        <location filename="../json/BMF/BSI2010.json" line="1542" />
         <source>Blind spot monitoring managed by the blind spot monitoring ECU and lane departure warning system managed by the multifunction video camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1561" />
+        <location filename="../json/BMF/BSI2010.json" line="1543" />
         <source>Lane wandering alert (infrared)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1562" />
+        <location filename="../json/BMF/BSI2010.json" line="1544" />
         <source>Blind spot monitoring managed by a blind spot monitoring ECU and presence of the lane departure warning system (infrared)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1563" />
+        <location filename="../json/BMF/BSI2010.json" line="1545" />
         <source>Blind spot monitoring managed by the parking assistance ECU</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1564" />
+        <location filename="../json/BMF/BSI2010.json" line="1546" />
         <source>Blind spot monitoring managed by the parking assistance ECU and lane departure warning system managed by the multifunction video camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1565" />
+        <location filename="../json/BMF/BSI2010.json" line="1547" />
         <source>Blind spot monitoring managed by the parking assistance ECU and presence of the lane departure warning system (infrared)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1567" />
+        <location filename="../json/BMF/BSI2010.json" line="1549" />
         <source>The presence and type of driving aid (AFIL / SAM)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1575" />
+        <location filename="../json/BMF/BSI2010.json" line="1557" />
         <source>Preservation of braking (system of dynamic stabilization) for 2 seconds at the beginning of movement on the slope</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1585" />
+        <location filename="../json/BMF/BSI2010.json" line="1567" />
         <source>1 sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1586" />
+        <location filename="../json/BMF/BSI2010.json" line="1568" />
         <source>2 sensors in front</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1587" />
+        <location filename="../json/BMF/BSI2010.json" line="1569" />
         <source>1 sensor in front and 2 sensors behind</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1588" />
+        <location filename="../json/BMF/BSI2010.json" line="1570" />
         <source>2 sensors in front and 2 sensors behind</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1589" />
+        <location filename="../json/BMF/BSI2010.json" line="1571" />
         <source>2 sensors behind</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1591" />
+        <location filename="../json/BMF/BSI2010.json" line="1573" />
         <source>The presence and type of sensor of the supplied air</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1601" />
+        <location filename="../json/BMF/BSI2010.json" line="1583" />
         <source>Sunlight single-zone sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1602" />
+        <location filename="../json/BMF/BSI2010.json" line="1584" />
         <source>Sunlight double-zone sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1604" />
+        <location filename="../json/BMF/BSI2010.json" line="1586" />
         <source>Sunlight sensor type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1612" />
+        <location filename="../json/BMF/BSI2010.json" line="1594" />
         <source>The presence of a pollution sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1620" />
+        <location filename="../json/BMF/BSI2010.json" line="1602" />
         <source>The speed threshold for automatic locking when driving (km/h)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1630" />
+        <location filename="../json/BMF/BSI2010.json" line="1612" />
         <source>Front sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1631" />
+        <location filename="../json/BMF/BSI2010.json" line="1613" />
         <source>One front and one rear sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1633" />
+        <location filename="../json/BMF/BSI2010.json" line="1615" />
         <source>The position of the temperature sensors of the evaporator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1642" />
+        <location filename="../json/BMF/BSI2010.json" line="1624" />
         <source>Pressure sensor 30 bar</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1643" />
+        <location filename="../json/BMF/BSI2010.json" line="1625" />
         <source>Pressure sensor 35 bar</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1645" />
+        <location filename="../json/BMF/BSI2010.json" line="1627" />
         <source>Type of pressure sensor of the air conditioning system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1656" />
+        <location filename="../json/BMF/BSI2010.json" line="1638" />
         <source>Compressor with the internal control system with the coupling</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1660" />
+        <location filename="../json/BMF/BSI2010.json" line="1642" />
         <source>Compressor with an external control system with a coupling</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1664" />
+        <location filename="../json/BMF/BSI2010.json" line="1646" />
         <source>Compressor with an external control system, without a coupling</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1668" />
+        <location filename="../json/BMF/BSI2010.json" line="1650" />
         <source>Compressor of permanent working volume with a drive clutch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1670" />
+        <location filename="../json/BMF/BSI2010.json" line="1652" />
         <location filename="../json/ARTIV/ARTIV_UDS.json" line="46" />
         <source>Electric</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1672" />
+        <location filename="../json/BMF/BSI2010.json" line="1654" />
         <source>Type of air conditioning compressor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1682" />
-        <location filename="../json/BMF/BSI2010.json" line="3592" />
+        <location filename="../json/BMF/BSI2010.json" line="1664" />
+        <location filename="../json/BMF/BSI2010.json" line="3574" />
         <source>Seat heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1683" />
-        <location filename="../json/BMF/BSI2010.json" line="3593" />
+        <location filename="../json/BMF/BSI2010.json" line="1665" />
+        <location filename="../json/BMF/BSI2010.json" line="3575" />
         <source>Heated and ventilated seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1685" />
+        <location filename="../json/BMF/BSI2010.json" line="1667" />
         <source>the presence of heated seats or heated ventilated seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1694" />
+        <location filename="../json/BMF/BSI2010.json" line="1676" />
         <source>Not controlled</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1697" />
+        <location filename="../json/BMF/BSI2010.json" line="1679" />
         <source>Activated depending on the percentage of the closure</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1701" />
+        <location filename="../json/BMF/BSI2010.json" line="1683" />
         <source>Activated depending on the level (controlled recirculation)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1704" />
+        <location filename="../json/BMF/BSI2010.json" line="1686" />
         <source>Air supply type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1717" />
+        <location filename="../json/BMF/BSI2010.json" line="1699" />
         <source>Air mixing type (front air conditioner)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1729" />
+        <location filename="../json/BMF/BSI2010.json" line="1711" />
         <source>Three-zone</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1730" />
+        <location filename="../json/BMF/BSI2010.json" line="1712" />
         <source>Single-zone dual drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1731" />
+        <location filename="../json/BMF/BSI2010.json" line="1713" />
         <source>Double-wheel dual drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1733" />
+        <location filename="../json/BMF/BSI2010.json" line="1715" />
         <source>Air distribution system type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1742" />
+        <location filename="../json/BMF/BSI2010.json" line="1724" />
         <source>Non-controlled electric fan or absent</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1743" />
+        <location filename="../json/BMF/BSI2010.json" line="1725" />
         <source>Contained interior electric fan</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1744" />
+        <location filename="../json/BMF/BSI2010.json" line="1726" />
         <source>Controlled right and left fans of the interior</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1745" />
+        <location filename="../json/BMF/BSI2010.json" line="1727" />
         <source>Separate air supply from the right and left side (relay for the front)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1746" />
+        <location filename="../json/BMF/BSI2010.json" line="1728" />
         <source>The rear fan with controlled power</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1748" />
+        <location filename="../json/BMF/BSI2010.json" line="1730" />
         <source>Rear interior fan type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1761" />
+        <location filename="../json/BMF/BSI2010.json" line="1743" />
         <source>Air mixing type (rear air conditioner)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1774" />
+        <location filename="../json/BMF/BSI2010.json" line="1756" />
         <source>Distribution type: rear</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1784" />
+        <location filename="../json/BMF/BSI2010.json" line="1766" />
         <source>Engine with "Stop and Start" function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1785" />
+        <location filename="../json/BMF/BSI2010.json" line="1767" />
         <source>Hybrid power unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1787" />
+        <location filename="../json/BMF/BSI2010.json" line="1769" />
         <source>The presence of the "Stop and Start" engine or hybrid power unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1795" />
+        <location filename="../json/BMF/BSI2010.json" line="1777" />
         <source>Using the heat of the exhaust gases to heating the interior</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1809" />
+        <location filename="../json/BMF/BSI2010.json" line="1791" />
         <source>The air conditioning air conditioning with the regulation of mixing air flows</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1812" />
+        <location filename="../json/BMF/BSI2010.json" line="1794" />
         <location filename="../json/TELEMAT/NAC.json" line="9779" />
         <location filename="../json/TELEMAT/RCC.json" line="9166" />
         <source>Type of air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1821" />
+        <location filename="../json/BMF/BSI2010.json" line="1803" />
         <source>The air conditioner is turned off</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1824" />
+        <location filename="../json/BMF/BSI2010.json" line="1806" />
         <source>Air conditioning is turned on when the ignition is turned on</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1826" />
+        <location filename="../json/BMF/BSI2010.json" line="1808" />
         <source>The function is restored</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1828" />
+        <location filename="../json/BMF/BSI2010.json" line="1810" />
         <source>The presence of a heater or air conditioner with a non-working engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1836" />
+        <location filename="../json/BMF/BSI2010.json" line="1818" />
         <source>Information about the inclusion of air conditioning compressor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1844" />
+        <location filename="../json/BMF/BSI2010.json" line="1826" />
         <source>The presence of a coolant pump with a drive clutch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1852" />
+        <location filename="../json/BMF/BSI2010.json" line="1834" />
         <source>The presence of an algorithm for combustion of the fuel mixture with a cold engine to accelerate the heating of the car interior</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1864" />
+        <location filename="../json/BMF/BSI2010.json" line="1846" />
         <source>Internal preliminary thermal preparation (with matrix and menu)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1868" />
+        <location filename="../json/BMF/BSI2010.json" line="1850" />
         <source>External preliminary thermal training (additional installation)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1872" />
+        <location filename="../json/BMF/BSI2010.json" line="1854" />
         <source>Internal and external preliminary thermal training (with a matrix, menu and remote control)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1875" />
+        <location filename="../json/BMF/BSI2010.json" line="1857" />
         <source>The presence and type of preliminary thermal training</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1883" />
+        <location filename="../json/BMF/BSI2010.json" line="1865" />
         <source>Athermic windshield</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1891" />
+        <location filename="../json/BMF/BSI2010.json" line="1873" />
         <source>Option: Natural gas (GNV)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1900" />
+        <location filename="../json/BMF/BSI2010.json" line="1882" />
         <source>With the inclusion of rotation indicators</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1901" />
+        <location filename="../json/BMF/BSI2010.json" line="1883" />
         <source>Without turning on the turning indicators</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1903" />
+        <location filename="../json/BMF/BSI2010.json" line="1885" />
         <source>Configuration "Police"?</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1911" />
+        <location filename="../json/BMF/BSI2010.json" line="1893" />
         <source>The presence of a handle with the switching button for the automatic wiper mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1919" />
+        <location filename="../json/BMF/BSI2010.json" line="1901" />
         <source>Availability of rear multimedia equipment</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1929" />
+        <location filename="../json/BMF/BSI2010.json" line="1911" />
         <source>Front multiplex panel (electric)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1930" />
+        <location filename="../json/BMF/BSI2010.json" line="1912" />
         <source>Front multiplex panel (mechanical)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1932" />
+        <location filename="../json/BMF/BSI2010.json" line="1914" />
         <source>Availability and type of multiplex control panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1941" />
+        <location filename="../json/BMF/BSI2010.json" line="1923" />
         <source>Without a car radio</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1942" />
+        <location filename="../json/BMF/BSI2010.json" line="1924" />
         <source>RD5</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1943" />
+        <location filename="../json/BMF/BSI2010.json" line="1925" />
         <source>CD car radio with a display (RDE)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1944" />
+        <location filename="../json/BMF/BSI2010.json" line="1926" />
         <source>RD45</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1945" />
+        <location filename="../json/BMF/BSI2010.json" line="1927" />
         <source>RD9</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1946" />
+        <location filename="../json/BMF/BSI2010.json" line="1928" />
         <source>RD6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1948" />
+        <location filename="../json/BMF/BSI2010.json" line="1930" />
         <source>Type of radio receiver</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1957" />
+        <location filename="../json/BMF/BSI2010.json" line="1939" />
         <source>Without telematics</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1958" />
+        <location filename="../json/BMF/BSI2010.json" line="1940" />
         <source>Rneg</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1959" />
+        <location filename="../json/BMF/BSI2010.json" line="1941" />
         <source>NG4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1960" />
+        <location filename="../json/BMF/BSI2010.json" line="1942" />
         <source>Smeg</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1961" />
+        <location filename="../json/BMF/BSI2010.json" line="1943" />
         <source>Smeg+</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1962" />
+        <location filename="../json/BMF/BSI2010.json" line="1944" />
         <source>MRN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1963" />
+        <location filename="../json/BMF/BSI2010.json" line="1945" />
         <source>NAC/RCC</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1964" />
+        <location filename="../json/BMF/BSI2010.json" line="1946" />
         <source>Smeg Asia</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1965" />
+        <location filename="../json/BMF/BSI2010.json" line="1947" />
         <source>RCE</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1967" />
+        <location filename="../json/BMF/BSI2010.json" line="1949" />
         <source>Type of telematics block</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1975" />
+        <location filename="../json/BMF/BSI2010.json" line="1957" />
         <source>Option: multiplex anti-lock system (ABS)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1983" />
+        <location filename="../json/BMF/BSI2010.json" line="1965" />
         <source>Electrically adjustable exterior mirrors with position memory</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1991" />
+        <location filename="../json/BMF/BSI2010.json" line="1973" />
         <source>The presence of a clock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="1999" />
+        <location filename="../json/BMF/BSI2010.json" line="1981" />
         <source>Option: on-board computer (ODB)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2007" />
+        <location filename="../json/BMF/BSI2010.json" line="1989" />
         <source>Option: Black Panel mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2017" />
+        <location filename="../json/BMF/BSI2010.json" line="1999" />
         <source>Additional resistance CTP1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2018" />
+        <location filename="../json/BMF/BSI2010.json" line="2000" />
         <source>Additional resistance CTP2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2019" />
+        <location filename="../json/BMF/BSI2010.json" line="2001" />
         <source>Additional resistances CTP1 and CTP2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2020" />
+        <location filename="../json/BMF/BSI2010.json" line="2002" />
         <source>Additional resistances CTP1 and CTP2 (04)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2021" />
+        <location filename="../json/BMF/BSI2010.json" line="2003" />
         <source>Additional resistances CTP1 and CTP2 (05)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2022" />
+        <location filename="../json/BMF/BSI2010.json" line="2004" />
         <source>(06)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2023" />
+        <location filename="../json/BMF/BSI2010.json" line="2005" />
         <source>(07)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2025" />
+        <location filename="../json/BMF/BSI2010.json" line="2007" />
         <source>The presence and type of heating resistances</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2035" />
+        <location filename="../json/BMF/BSI2010.json" line="2017" />
         <source>Additional heater</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2036" />
+        <location filename="../json/BMF/BSI2010.json" line="2018" />
         <source>Thermal preliminary preparation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2039" />
+        <location filename="../json/BMF/BSI2010.json" line="2021" />
         <source>Additional heater and thermal preliminary preparation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2042" />
+        <location filename="../json/BMF/BSI2010.json" line="2024" />
         <source>The presence and type of air heater</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2051" />
+        <location filename="../json/BMF/BSI2010.json" line="2033" />
         <source>Lack of adjustment</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2052" />
+        <location filename="../json/BMF/BSI2010.json" line="2034" />
         <source>Button (step by step increase)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2053" />
+        <location filename="../json/BMF/BSI2010.json" line="2035" />
         <source>Two buttons (more and less)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2054" />
+        <location filename="../json/BMF/BSI2010.json" line="2036" />
         <source>Using the menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2056" />
+        <location filename="../json/BMF/BSI2010.json" line="2038" />
         <source>The presence and type of adjustment of the brightness of the interior backlight</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2070" />
+        <location filename="../json/BMF/BSI2010.json" line="2052" />
         <source>The presence and number of hatches</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2079" />
+        <location filename="../json/BMF/BSI2010.json" line="2061" />
         <location filename="../json/TELEMAT/NAC.json" line="9513" />
         <source>Internal combustion engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2082" />
+        <location filename="../json/BMF/BSI2010.json" line="2064" />
         <source>Internal combustion engine and electric motor (hybrid power unit)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2085" />
+        <location filename="../json/BMF/BSI2010.json" line="2067" />
         <source>engine's type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2094" />
+        <location filename="../json/BMF/BSI2010.json" line="2076" />
         <source>Standard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2095" />
+        <location filename="../json/BMF/BSI2010.json" line="2077" />
         <source>Increased comfort</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2097" />
+        <location filename="../json/BMF/BSI2010.json" line="2079" />
         <source>Thermal comfort for the "Stop and Start" system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2107" />
+        <location filename="../json/BMF/BSI2010.json" line="2089" />
         <source>Information from the ESP system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2110" />
+        <location filename="../json/BMF/BSI2010.json" line="2092" />
         <source>Information coming from the parking brake with the electrical control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2114" />
+        <location filename="../json/BMF/BSI2010.json" line="2096" />
         <source>Using ESP (with an electric support of calipers)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2118" />
+        <location filename="../json/BMF/BSI2010.json" line="2100" />
         <source>Parking brake with an electrical control (with an electric support of calipers)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2121" />
+        <location filename="../json/BMF/BSI2010.json" line="2103" />
         <source>The presence and type of parking brake with electrical control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2129" />
+        <location filename="../json/BMF/BSI2010.json" line="2111" />
         <source>The presence of a trunk door with an electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2138" />
+        <location filename="../json/BMF/BSI2010.json" line="2120" />
         <source>Using a pen</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2139" />
+        <location filename="../json/BMF/BSI2010.json" line="2121" />
         <source>With 1 key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2140" />
+        <location filename="../json/BMF/BSI2010.json" line="2122" />
         <source>With 2 keys</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2141" />
+        <location filename="../json/BMF/BSI2010.json" line="2123" />
         <source>With 3 keys</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2142" />
+        <location filename="../json/BMF/BSI2010.json" line="2124" />
         <source>With 4 keys</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2144" />
+        <location filename="../json/BMF/BSI2010.json" line="2126" />
         <source>Selecting vehicle speed limit or cruise control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2154" />
+        <location filename="../json/BMF/BSI2010.json" line="2136" />
         <source>Discovery</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2155" />
+        <location filename="../json/BMF/BSI2010.json" line="2137" />
         <source>Unlocking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2157" />
+        <location filename="../json/BMF/BSI2010.json" line="2139" />
         <source>Type of electoral opening of the rear door using a high-frequency remote control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2165" />
+        <location filename="../json/BMF/BSI2010.json" line="2147" />
         <source>The presence of a curtain with an electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2173" />
+        <location filename="../json/BMF/BSI2010.json" line="2155" />
         <source>Rear seats with electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2184" />
+        <location filename="../json/BMF/BSI2010.json" line="2166" />
         <source>There is no electrical security system for children</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2188" />
+        <location filename="../json/BMF/BSI2010.json" line="2170" />
         <source>Button associated with the intellectual switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2192" />
+        <location filename="../json/BMF/BSI2010.json" line="2174" />
         <source>Button associated with the driver's door panel and working as a 2-position switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2196" />
+        <location filename="../json/BMF/BSI2010.json" line="2178" />
         <source>Button associated with the driver's door panel and working as a simple switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2199" />
+        <location filename="../json/BMF/BSI2010.json" line="2181" />
         <source>The presence and type of the children's safety system switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2207" />
+        <location filename="../json/BMF/BSI2010.json" line="2189" />
         <source>The presence of a 230V socket</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2215" />
+        <location filename="../json/BMF/BSI2010.json" line="2197" />
         <source>Sound signal supplied by a steering wheel switch of type 2008</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2224" />
+        <location filename="../json/BMF/BSI2010.json" line="2206" />
         <source>The computer is absent or does not receive power from the "plus" of the central power switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2225" />
+        <location filename="../json/BMF/BSI2010.json" line="2207" />
         <source>Receives power "+" from the central power switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2227" />
+        <location filename="../json/BMF/BSI2010.json" line="2209" />
         <source>Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2236" />
+        <location filename="../json/BMF/BSI2010.json" line="2218" />
         <source>The relay is not used</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2237" />
+        <location filename="../json/BMF/BSI2010.json" line="2219" />
         <source>Air supply pump to the exhaust system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2238" />
+        <location filename="../json/BMF/BSI2010.json" line="2220" />
         <source>SCR heater (decrease in NOX content for Euro 6)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2239" />
+        <location filename="../json/BMF/BSI2010.json" line="2221" />
         <source>Liquid pump of the air conditioning system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2240" />
+        <location filename="../json/BMF/BSI2010.json" line="2222" />
         <source>reserve</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2242" />
+        <location filename="../json/BMF/BSI2010.json" line="2224" />
         <source>The type of equipment connected to the relay of the electro-focus of the intelligent switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2250" />
+        <location filename="../json/BMF/BSI2010.json" line="2232" />
         <source>Presence of the intersection lighting function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2259" />
+        <location filename="../json/BMF/BSI2010.json" line="2241" />
         <source>Without relay</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2260" />
+        <location filename="../json/BMF/BSI2010.json" line="2242" />
         <source>With a relay</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2262" />
+        <location filename="../json/BMF/BSI2010.json" line="2244" />
         <source>Type of control of front fog lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2270" />
+        <location filename="../json/BMF/BSI2010.json" line="2252" />
         <source>The presence of a function of headlights in the personal settings menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2279" />
+        <location filename="../json/BMF/BSI2010.json" line="2261" />
         <source>The Stop and Start function is absent or not taken into account</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2280" />
+        <location filename="../json/BMF/BSI2010.json" line="2262" />
         <source>It is taken into account</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2282" />
+        <location filename="../json/BMF/BSI2010.json" line="2264" />
         <source>Accounting for Stop and Start function of air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2290" />
+        <location filename="../json/BMF/BSI2010.json" line="2272" />
         <source>Air supply module in the motor compartment controlled by an intelligent switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2298" />
+        <location filename="../json/BMF/BSI2010.json" line="2280" />
         <source>The presence of a parking brake menu with an electrical control in the personal settings menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2306" />
+        <location filename="../json/BMF/BSI2010.json" line="2288" />
         <source>Having a sound selection menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2314" />
+        <location filename="../json/BMF/BSI2010.json" line="2296" />
         <source>The presence of a sun-roof without a curtain with an electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2322" />
+        <location filename="../json/BMF/BSI2010.json" line="2304" />
         <source>the presence of an ultrasound module included in the LIN network of an intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2330" />
+        <location filename="../json/BMF/BSI2010.json" line="2312" />
         <source>The presence of a security alarm siren associated with the BSI LIN network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2338" />
+        <location filename="../json/BMF/BSI2010.json" line="2320" />
         <source>The presence of a block for re-equipment (auto-school and management for disabled people)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2346" />
+        <location filename="../json/BMF/BSI2010.json" line="2328" />
         <source>The presence of a warning function about the risk of a collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2354" />
+        <location filename="../json/BMF/BSI2010.json" line="2336" />
         <source>The presence of a rotation angle sensor of the steering wheel multiplex</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2364" />
+        <location filename="../json/BMF/BSI2010.json" line="2345" />
+        <source>Without</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/BMF/BSI2010.json" line="2346" />
         <source>Type "ISTAR PHASE 1" with a starter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2365" />
+        <location filename="../json/BMF/BSI2010.json" line="2347" />
         <source>Type "Phase 2" with a starter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2366" />
+        <location filename="../json/BMF/BSI2010.json" line="2348" />
         <source>Type "istar phase 2" with a starter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2367" />
+        <location filename="../json/BMF/BSI2010.json" line="2349" />
         <source>Type "istar phase 2" without a starter</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2369" />
+        <location filename="../json/BMF/BSI2010.json" line="2351" />
         <source>Availability and type of function "Stop and Start"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2377" />
+        <location filename="../json/BMF/BSI2010.json" line="2359" />
         <source>The availability of a system for compliance with a safe distance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2385" />
+        <location filename="../json/BMF/BSI2010.json" line="2367" />
         <source>The presence of intellectual cruise control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2394" />
+        <location filename="../json/BMF/BSI2010.json" line="2376" />
         <source>discrete</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2395" />
-        <location filename="../json/BMF/BSI2010.json" line="2407" />
-        <location filename="../json/BMF/BSI2010.json" line="3079" />
+        <location filename="../json/BMF/BSI2010.json" line="2377" />
+        <location filename="../json/BMF/BSI2010.json" line="2389" />
+        <location filename="../json/BMF/BSI2010.json" line="3061" />
         <source>By changing the voltage</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2397" />
+        <location filename="../json/BMF/BSI2010.json" line="2379" />
         <source>Type of control of the front dimensions</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2406" />
-        <location filename="../json/BMF/BSI2010.json" line="3078" />
+        <location filename="../json/BMF/BSI2010.json" line="2388" />
+        <location filename="../json/BMF/BSI2010.json" line="3060" />
         <source>Discrete</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2409" />
+        <location filename="../json/BMF/BSI2010.json" line="2391" />
         <source>Daytime running light control type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2417" />
+        <location filename="../json/BMF/BSI2010.json" line="2399" />
         <source>The presence of a programmable speed value (Touch display)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2426" />
+        <location filename="../json/BMF/BSI2010.json" line="2408" />
         <source>The switching unit of the engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2427" />
-        <location filename="../json/BMF/BSI2010.json" line="3163" />
-        <location filename="../json/BMF/BSI2010.json" line="3439" />
-        <location filename="../json/BMF/BSI2010.json" line="3945" />
+        <location filename="../json/BMF/BSI2010.json" line="2409" />
+        <location filename="../json/BMF/BSI2010.json" line="3145" />
+        <location filename="../json/BMF/BSI2010.json" line="3421" />
+        <location filename="../json/BMF/BSI2010.json" line="3927" />
         <source>Intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2429" />
+        <location filename="../json/BMF/BSI2010.json" line="2411" />
         <source>Type of control of front wiper</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2437" />
+        <location filename="../json/BMF/BSI2010.json" line="2419" />
         <source>The presence of the front wiper in the LIN network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2447" />
+        <location filename="../json/BMF/BSI2010.json" line="2429" />
         <source>There is on the front left</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2448" />
+        <location filename="../json/BMF/BSI2010.json" line="2430" />
         <source>There is on the front right</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2449" />
+        <location filename="../json/BMF/BSI2010.json" line="2431" />
         <source>There is on the front left and right</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2451" />
+        <location filename="../json/BMF/BSI2010.json" line="2433" />
         <source>The presence of a reversing inertial seat belt coil</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2459" />
+        <location filename="../json/BMF/BSI2010.json" line="2441" />
         <source>The presence of an option for automatic braking in the event of a risk of collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2468" />
+        <location filename="../json/BMF/BSI2010.json" line="2450" />
         <source>Without changes in current</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2469" />
+        <location filename="../json/BMF/BSI2010.json" line="2451" />
         <source>With variable current power</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2471" />
+        <location filename="../json/BMF/BSI2010.json" line="2453" />
         <source>Type of interior lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2479" />
+        <location filename="../json/BMF/BSI2010.json" line="2461" />
         <source>Turning on daylight headlights on the steering wheel switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2487" />
+        <location filename="../json/BMF/BSI2010.json" line="2469" />
         <source>The presence of daylight headlights on LEDs for the mode of showroom</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2496" />
-        <location filename="../json/BMF/BSI2010.json" line="2844" />
+        <location filename="../json/BMF/BSI2010.json" line="2478" />
+        <location filename="../json/BMF/BSI2010.json" line="2826" />
         <source>using an intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2497" />
-        <location filename="../json/BMF/BSI2010.json" line="2832" />
-        <location filename="../json/BMF/BSI2010.json" line="2845" />
+        <location filename="../json/BMF/BSI2010.json" line="2479" />
+        <location filename="../json/BMF/BSI2010.json" line="2814" />
+        <location filename="../json/BMF/BSI2010.json" line="2827" />
         <source>Using the instrument panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2498" />
-        <location filename="../json/BMF/BSI2010.json" line="2833" />
+        <location filename="../json/BMF/BSI2010.json" line="2480" />
+        <location filename="../json/BMF/BSI2010.json" line="2815" />
         <source>Using a touch display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2499" />
+        <location filename="../json/BMF/BSI2010.json" line="2481" />
         <source>Using the parameter menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2501" />
+        <location filename="../json/BMF/BSI2010.json" line="2483" />
         <source>Obtaining a requirement of re-initialization of a system for detecting pressure in tires (from ABS/ESP)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2509" />
+        <location filename="../json/BMF/BSI2010.json" line="2491" />
         <source>Stopping of diagnostics of the front dimensions of the car</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2517" />
+        <location filename="../json/BMF/BSI2010.json" line="2499" />
         <source>Stopping of diagnostics of the vehicle daylight of the car</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2525" />
+        <location filename="../json/BMF/BSI2010.json" line="2507" />
         <source>Electricity management resolution Stop and Start options</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2534" />
-        <location filename="../json/BMF/BSI2010.json" line="3517" />
+        <location filename="../json/BMF/BSI2010.json" line="2516" />
+        <location filename="../json/BMF/BSI2010.json" line="3499" />
         <source>Lack of decoding</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2535" />
-        <location filename="../json/BMF/BSI2010.json" line="3518" />
+        <location filename="../json/BMF/BSI2010.json" line="2517" />
+        <location filename="../json/BMF/BSI2010.json" line="3500" />
         <source>Decoding type of simple blocking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2536" />
-        <location filename="../json/BMF/BSI2010.json" line="3519" />
+        <location filename="../json/BMF/BSI2010.json" line="2518" />
+        <location filename="../json/BMF/BSI2010.json" line="3501" />
         <source>Decoding the type of superblock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2537" />
-        <location filename="../json/BMF/BSI2010.json" line="3520" />
+        <location filename="../json/BMF/BSI2010.json" line="2519" />
+        <location filename="../json/BMF/BSI2010.json" line="3502" />
         <source>Decoding type of low cost lock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2538" />
-        <location filename="../json/BMF/BSI2010.json" line="3221" />
+        <location filename="../json/BMF/BSI2010.json" line="2520" />
+        <location filename="../json/BMF/BSI2010.json" line="3203" />
         <source>The rear swing doors</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2539" />
+        <location filename="../json/BMF/BSI2010.json" line="2521" />
         <source>Locking lock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2541" />
+        <location filename="../json/BMF/BSI2010.json" line="2523" />
         <source>Type of coding of information of front door locks and trunk lid or tailgate</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2549" />
+        <location filename="../json/BMF/BSI2010.json" line="2531" />
         <source>Activation of the disconnect algorithm of the injection fan</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2557" />
+        <location filename="../json/BMF/BSI2010.json" line="2539" />
         <source>A car with a gas system (GNV, GPL)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2565" />
+        <location filename="../json/BMF/BSI2010.json" line="2547" />
         <source>The presence of air conditioner control panel via wired connection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2573" />
+        <location filename="../json/BMF/BSI2010.json" line="2555" />
         <source>The presence of a decrease in the release of nitrogen oxides</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2581" />
+        <location filename="../json/BMF/BSI2010.json" line="2563" />
         <source>The presence of a security alarm with a vehicle lift-up protection function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2589" />
+        <location filename="../json/BMF/BSI2010.json" line="2571" />
         <source>The presence of heated front windshield washer jets</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2598" />
+        <location filename="../json/BMF/BSI2010.json" line="2580" />
         <source>No switchable coolant pump</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2599" />
+        <location filename="../json/BMF/BSI2010.json" line="2581" />
         <source>The presence of coolant pump with drive coupling</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2600" />
+        <location filename="../json/BMF/BSI2010.json" line="2582" />
         <source>Distribution and control of coolant supply is performed outside the engine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2602" />
+        <location filename="../json/BMF/BSI2010.json" line="2584" />
         <source>Features of the cooling circuit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2611" />
+        <location filename="../json/BMF/BSI2010.json" line="2593" />
         <source>Lack of prohibition</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2614" />
+        <location filename="../json/BMF/BSI2010.json" line="2596" />
         <source>Turning off the children's security system (if there is a child safety system)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2616" />
+        <location filename="../json/BMF/BSI2010.json" line="2598" />
         <source>Turning off the button</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2618" />
+        <location filename="../json/BMF/BSI2010.json" line="2600" />
         <source>Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2628" />
+        <location filename="../json/BMF/BSI2010.json" line="2610" />
         <source>Day lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2629" />
+        <location filename="../json/BMF/BSI2010.json" line="2611" />
         <source>Sound signal</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2630" />
+        <location filename="../json/BMF/BSI2010.json" line="2612" />
         <source>A warning signal</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2631" />
+        <location filename="../json/BMF/BSI2010.json" line="2613" />
         <source>Telematics</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2632" />
+        <location filename="../json/BMF/BSI2010.json" line="2614" />
         <source>Changing the displayed page of the on-board computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2633" />
+        <location filename="../json/BMF/BSI2010.json" line="2615" />
         <source>Function of Rear-view mirrors</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2635" />
+        <location filename="../json/BMF/BSI2010.json" line="2617" />
         <source>The function of the left button of the steering wheel switching module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2643" />
+        <location filename="../json/BMF/BSI2010.json" line="2625" />
         <source>External mirrors with the position for movement in the rear</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2651" />
+        <location filename="../json/BMF/BSI2010.json" line="2633" />
         <source>Option: Configuration of economical windshield washing (limited washing time and number of strokes)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2659" />
+        <location filename="../json/BMF/BSI2010.json" line="2641" />
         <source>The presence of an electric vacuum pump</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2667" />
+        <location filename="../json/BMF/BSI2010.json" line="2649" />
         <source>The presence of a solution optimization module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2675" />
+        <location filename="../json/BMF/BSI2010.json" line="2657" />
         <source>The presence of dynamic driving function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2683" />
+        <location filename="../json/BMF/BSI2010.json" line="2665" />
         <source>Option: "Taxi"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2692" />
+        <location filename="../json/BMF/BSI2010.json" line="2674" />
         <source>Old legislation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2693" />
+        <location filename="../json/BMF/BSI2010.json" line="2675" />
         <source>New legislation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2695" />
+        <location filename="../json/BMF/BSI2010.json" line="2677" />
         <source>ESP certification type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2703" />
+        <location filename="../json/BMF/BSI2010.json" line="2685" />
         <source>Adjustment of the brightness of the interior backlight from the instrument panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2714" />
+        <location filename="../json/BMF/BSI2010.json" line="2696" />
         <source>Vibration of the seat using a vibrator control unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2718" />
+        <location filename="../json/BMF/BSI2010.json" line="2700" />
         <source>Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2722" />
+        <location filename="../json/BMF/BSI2010.json" line="2704" />
         <source>Vibration belts of safety belts from a computer with tensioners</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2725" />
+        <location filename="../json/BMF/BSI2010.json" line="2707" />
         <source>Type of vibrators of the warning function of unintentional intersection of road marking lines</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2733" />
+        <location filename="../json/BMF/BSI2010.json" line="2715" />
         <source>The presence of radiator cladding</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2741" />
+        <location filename="../json/BMF/BSI2010.json" line="2723" />
         <source>Option: Inclusion of light when unlocking a car</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2749" />
+        <location filename="../json/BMF/BSI2010.json" line="2731" />
         <source>The rear window washer option is located opposite the rear wiper brush</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2757" />
+        <location filename="../json/BMF/BSI2010.json" line="2739" />
         <source>The presence of windshield heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2767" />
+        <location filename="../json/BMF/BSI2010.json" line="2749" />
         <source>The controlled first-generation generator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2768" />
+        <location filename="../json/BMF/BSI2010.json" line="2750" />
         <source>Controlled second-generation generator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2769" />
+        <location filename="../json/BMF/BSI2010.json" line="2751" />
         <source>A controlled generator with the optimization of the charge of the service battery of generation 3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2770" />
+        <location filename="../json/BMF/BSI2010.json" line="2752" />
         <source>A controlled generator with the optimization of the battery of the generation 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2772" />
+        <location filename="../json/BMF/BSI2010.json" line="2754" />
         <source>Control type of controlled generator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2780" />
+        <location filename="../json/BMF/BSI2010.json" line="2762" />
         <source>The presence of a low pressure fuel pump</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2788" />
+        <location filename="../json/BMF/BSI2010.json" line="2770" />
         <source>Option: To disable traction control function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2798" />
+        <location filename="../json/BMF/BSI2010.json" line="2780" />
         <source>Heating the front seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2799" />
+        <location filename="../json/BMF/BSI2010.json" line="2781" />
         <source>Heating of the rear seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2800" />
+        <location filename="../json/BMF/BSI2010.json" line="2782" />
         <source>heating the front and rear seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2802" />
+        <location filename="../json/BMF/BSI2010.json" line="2784" />
         <source>The presence of front and rear seats with heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2810" />
+        <location filename="../json/BMF/BSI2010.json" line="2792" />
         <source>Option: Automatic lighting on</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2819" />
+        <location filename="../json/BMF/BSI2010.json" line="2801" />
         <source>Using the personal settings menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2820" />
+        <location filename="../json/BMF/BSI2010.json" line="2802" />
         <source>Using the control module under the steering wheel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2822" />
+        <location filename="../json/BMF/BSI2010.json" line="2804" />
         <source>Type of automatic inclusion of lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2835" />
+        <location filename="../json/BMF/BSI2010.json" line="2817" />
         <source>Type of acquisition of the parking assistance deactivation switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2846" />
+        <location filename="../json/BMF/BSI2010.json" line="2828" />
         <source>Bloc of telematics</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2847" />
+        <location filename="../json/BMF/BSI2010.json" line="2829" />
         <source>Using a multiplexed front panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2849" />
+        <location filename="../json/BMF/BSI2010.json" line="2831" />
         <source>The type of information from the STOP and Start switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2859" />
+        <location filename="../json/BMF/BSI2010.json" line="2841" />
         <source>global</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2860" />
+        <location filename="../json/BMF/BSI2010.json" line="2842" />
         <source>Partial (Engine and gearbox management only)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2871" />
+        <location filename="../json/BMF/BSI2010.json" line="2853" />
         <source>Class 7</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2872" />
+        <location filename="../json/BMF/BSI2010.json" line="2854" />
         <source>Class 8</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2873" />
+        <location filename="../json/BMF/BSI2010.json" line="2855" />
         <source>Class 8+</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2874" />
+        <location filename="../json/BMF/BSI2010.json" line="2856" />
         <source>Class 9</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2875" />
+        <location filename="../json/BMF/BSI2010.json" line="2857" />
         <source>Class 12</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2876" />
+        <location filename="../json/BMF/BSI2010.json" line="2858" />
         <source>Class 15</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2877" />
+        <location filename="../json/BMF/BSI2010.json" line="2859" />
         <source>Class 18</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2878" />
+        <location filename="../json/BMF/BSI2010.json" line="2860" />
         <source>Class 22</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2879" />
+        <location filename="../json/BMF/BSI2010.json" line="2861" />
         <source>Class isstt50</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2880" />
+        <location filename="../json/BMF/BSI2010.json" line="2862" />
         <source>Class istt51</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2881" />
+        <location filename="../json/BMF/BSI2010.json" line="2863" />
         <source>Class istt52</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2882" />
+        <location filename="../json/BMF/BSI2010.json" line="2864" />
         <source>Class istt6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2883" />
+        <location filename="../json/BMF/BSI2010.json" line="2865" />
         <source>Class isstt40</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2884" />
+        <location filename="../json/BMF/BSI2010.json" line="2866" />
         <source>Class istt41</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2885" />
+        <location filename="../json/BMF/BSI2010.json" line="2867" />
         <source>Class istt53</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2887" />
+        <location filename="../json/BMF/BSI2010.json" line="2869" />
         <source>Generator class type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2895" />
+        <location filename="../json/BMF/BSI2010.json" line="2877" />
         <source>The state of initialization of the warning function in the risk of collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2904" />
+        <location filename="../json/BMF/BSI2010.json" line="2886" />
         <source>Level 1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2905" />
+        <location filename="../json/BMF/BSI2010.json" line="2887" />
         <source>Level 2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2906" />
+        <location filename="../json/BMF/BSI2010.json" line="2888" />
         <source>Level 3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2907" />
+        <location filename="../json/BMF/BSI2010.json" line="2889" />
         <source>Level 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2909" />
+        <location filename="../json/BMF/BSI2010.json" line="2891" />
         <source>The state of initialization of the sensitivity of the warning function in the risk of a collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2917" />
+        <location filename="../json/BMF/BSI2010.json" line="2899" />
         <source>The state of initialization of the automatic braking function at the risk of collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2925" />
+        <location filename="../json/BMF/BSI2010.json" line="2907" />
         <source>Using the rear fog lights for the function of the stop signal</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2933" />
+        <location filename="../json/BMF/BSI2010.json" line="2915" />
         <source>The presence of a sound alarm exceeding the established speed limit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2941" />
+        <location filename="../json/BMF/BSI2010.json" line="2923" />
         <source>Stopping of diagnostics of the rear dimensions of the car</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2949" />
+        <location filename="../json/BMF/BSI2010.json" line="2931" />
         <source>Option: Protection from the rise of the car is controlled by an ultrasound module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2958" />
+        <location filename="../json/BMF/BSI2010.json" line="2940" />
         <source>Euro 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2959" />
+        <location filename="../json/BMF/BSI2010.json" line="2941" />
         <source>Euro 5</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2960" />
+        <location filename="../json/BMF/BSI2010.json" line="2942" />
         <source>Euro 6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2961" />
+        <location filename="../json/BMF/BSI2010.json" line="2943" />
         <source>Euro 6.1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2962" />
+        <location filename="../json/BMF/BSI2010.json" line="2944" />
         <source>Euro 6.2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2963" />
+        <location filename="../json/BMF/BSI2010.json" line="2945" />
         <source>Euro 6.3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2966" />
+        <location filename="../json/BMF/BSI2010.json" line="2948" />
         <source>Type of gearbox moment</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2974" />
+        <location filename="../json/BMF/BSI2010.json" line="2956" />
         <source>Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2982" />
+        <location filename="../json/BMF/BSI2010.json" line="2964" />
         <source>The presence of an automatic gearbox with a computer of an electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2990" />
+        <location filename="../json/BMF/BSI2010.json" line="2972" />
         <source>The presence of anti-slip mode switch (ASR)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="2999" />
-        <location filename="../json/BMF/BSI2010.json" line="3705" />
+        <location filename="../json/BMF/BSI2010.json" line="2981" />
+        <location filename="../json/BMF/BSI2010.json" line="3687" />
         <source>absent</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3000" />
+        <location filename="../json/BMF/BSI2010.json" line="2982" />
         <source>simple</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3001" />
+        <location filename="../json/BMF/BSI2010.json" line="2983" />
         <source>urban</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3002" />
+        <location filename="../json/BMF/BSI2010.json" line="2984" />
         <source>2 generation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3003" />
+        <location filename="../json/BMF/BSI2010.json" line="2985" />
         <source>3 generation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3004" />
+        <location filename="../json/BMF/BSI2010.json" line="2986" />
         <source>4 generation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3006" />
+        <location filename="../json/BMF/BSI2010.json" line="2988" />
         <source>Automatic braking type at risk of collision (FARC)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3015" />
+        <location filename="../json/BMF/BSI2010.json" line="2997" />
         <source>Physical interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3016" />
+        <location filename="../json/BMF/BSI2010.json" line="2998" />
         <source>Touch interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3017" />
+        <location filename="../json/BMF/BSI2010.json" line="2999" />
         <source>Physical and Touch interface "Man-Machine"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3019" />
+        <location filename="../json/BMF/BSI2010.json" line="3001" />
         <source>Type of obtaining information "Man-Machine" air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3029" />
+        <location filename="../json/BMF/BSI2010.json" line="3011" />
         <source>Front and rear dimensions</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3030" />
+        <location filename="../json/BMF/BSI2010.json" line="3012" />
         <source>The rear overall lanterns</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3032" />
+        <location filename="../json/BMF/BSI2010.json" line="3014" />
         <source>Simultaneous inclusion of daylight and overall lanterns</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3040" />
+        <location filename="../json/BMF/BSI2010.json" line="3022" />
         <source>Permission of the discharge of electricity stored in the energy battery in the rear window heating network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3048" />
+        <location filename="../json/BMF/BSI2010.json" line="3030" />
         <source>Clothing switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3056" />
+        <location filename="../json/BMF/BSI2010.json" line="3038" />
         <source>The presence of stop-signals on the rear bumper</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3065" />
+        <location filename="../json/BMF/BSI2010.json" line="3047" />
         <source>Electro-hydraulic power steering (GEP)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3066" />
+        <location filename="../json/BMF/BSI2010.json" line="3048" />
         <source>Variable power steering</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3067" />
+        <location filename="../json/BMF/BSI2010.json" line="3049" />
         <source>Electric power steering</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3069" />
+        <location filename="../json/BMF/BSI2010.json" line="3051" />
         <source>Type of power steering</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3081" />
+        <location filename="../json/BMF/BSI2010.json" line="3063" />
         <source>Type of control of front indicators</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3090" />
+        <location filename="../json/BMF/BSI2010.json" line="3072" />
         <source>Without adjustment</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3091" />
+        <location filename="../json/BMF/BSI2010.json" line="3073" />
         <source>The adjustment requirement using the key controlled by the intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3092" />
+        <location filename="../json/BMF/BSI2010.json" line="3074" />
         <source>The adjustment requirement using two plus and minus keys controlled by an intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3093" />
+        <location filename="../json/BMF/BSI2010.json" line="3075" />
         <source>Adjustment requirement using the configuration menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3094" />
+        <location filename="../json/BMF/BSI2010.json" line="3076" />
         <source>The requirement to adjust the key on the dashboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3095" />
+        <location filename="../json/BMF/BSI2010.json" line="3077" />
         <source>Adjustment requirement using two keys on the dashboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3097" />
+        <location filename="../json/BMF/BSI2010.json" line="3079" />
         <source>Front turn signal control type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3105" />
+        <location filename="../json/BMF/BSI2010.json" line="3087" />
         <source>The presence of a warning system about unintentional intersection of road marking lines</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3114" />
+        <location filename="../json/BMF/BSI2010.json" line="3096" />
         <source>Wired communication</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3115" />
+        <location filename="../json/BMF/BSI2010.json" line="3097" />
         <source>LIN network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3117" />
+        <location filename="../json/BMF/BSI2010.json" line="3099" />
         <source>The presence of diagnostics for LED low beam headlights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3125" />
+        <location filename="../json/BMF/BSI2010.json" line="3107" />
         <source>Diagnostics disconnection</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3133" />
+        <location filename="../json/BMF/BSI2010.json" line="3115" />
         <source>Diagnosis of additional static head lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3142" />
+        <location filename="../json/BMF/BSI2010.json" line="3124" />
         <source>Halogen lamps</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3143" />
+        <location filename="../json/BMF/BSI2010.json" line="3125" />
         <source>Light-emitting diode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3145" />
+        <location filename="../json/BMF/BSI2010.json" line="3127" />
         <source>Type of system of additional static head lighting</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3153" />
+        <location filename="../json/BMF/BSI2010.json" line="3135" />
         <source>The presence of additional static head lighting (PLV)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3162" />
+        <location filename="../json/BMF/BSI2010.json" line="3144" />
         <source>Alarm module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3165" />
+        <location filename="../json/BMF/BSI2010.json" line="3147" />
         <source>Computer controlling perimeter security alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3175" />
+        <location filename="../json/BMF/BSI2010.json" line="3157" />
         <source>Calling technical assistance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3176" />
+        <location filename="../json/BMF/BSI2010.json" line="3158" />
         <source>Remote diagnostic service</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3177" />
+        <location filename="../json/BMF/BSI2010.json" line="3159" />
         <source>All options are activated</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3179" />
+        <location filename="../json/BMF/BSI2010.json" line="3161" />
         <source>Telematics options</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3190" />
+        <location filename="../json/BMF/BSI2010.json" line="3172" />
         <source>There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3194" />
+        <location filename="../json/BMF/BSI2010.json" line="3176" />
         <source>Driving control on the steering wheel is controlled by an intellectual switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3197" />
+        <location filename="../json/BMF/BSI2010.json" line="3179" />
         <source>The presence and type of gear shift control on the steering wheel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3206" />
+        <location filename="../json/BMF/BSI2010.json" line="3188" />
         <source>Short side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3207" />
+        <location filename="../json/BMF/BSI2010.json" line="3189" />
         <source>Long side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3209" />
+        <location filename="../json/BMF/BSI2010.json" line="3191" />
         <source>The width of the side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3218" />
+        <location filename="../json/BMF/BSI2010.json" line="3200" />
         <source>Without the back door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3219" />
+        <location filename="../json/BMF/BSI2010.json" line="3201" />
         <source>Trunk / luggage department</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3220" />
+        <location filename="../json/BMF/BSI2010.json" line="3202" />
         <source>The door of the luggage compartment</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3223" />
+        <location filename="../json/BMF/BSI2010.json" line="3205" />
         <source>The presence and type of rear door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3231" />
+        <location filename="../json/BMF/BSI2010.json" line="3213" />
         <source>The presence of a switching unit for the re-equipment of the body</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3243" />
+        <location filename="../json/BMF/BSI2010.json" line="3225" />
         <source>Type 1 and Type 3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3245" />
+        <location filename="../json/BMF/BSI2010.json" line="3227" />
         <source>Type 1 and Type 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3246" />
+        <location filename="../json/BMF/BSI2010.json" line="3228" />
         <source>Type 3 and Type 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3247" />
+        <location filename="../json/BMF/BSI2010.json" line="3229" />
         <source>Type 1, Type 3 and Type 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3249" />
+        <location filename="../json/BMF/BSI2010.json" line="3231" />
         <source>The presence and type of determination of the driver's attentiveness</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3259" />
+        <location filename="../json/BMF/BSI2010.json" line="3241" />
         <source>Acquisition by the multifunction video camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3260" />
+        <location filename="../json/BMF/BSI2010.json" line="3242" />
         <source>Acquisition by the navigation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3261" />
+        <location filename="../json/BMF/BSI2010.json" line="3243" />
         <source>Acquisition by the multifunction video camera and by the navigation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3263" />
+        <location filename="../json/BMF/BSI2010.json" line="3245" />
         <source>The presence and type of road signalling acquisition</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3273" />
-        <location filename="../json/BMF/BSI2010.json" line="3287" />
+        <location filename="../json/BMF/BSI2010.json" line="3255" />
+        <location filename="../json/BMF/BSI2010.json" line="3269" />
         <source>The hollow door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3274" />
-        <location filename="../json/BMF/BSI2010.json" line="3288" />
+        <location filename="../json/BMF/BSI2010.json" line="3256" />
+        <location filename="../json/BMF/BSI2010.json" line="3270" />
         <source>Mechanical side sliding door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3275" />
-        <location filename="../json/BMF/BSI2010.json" line="3289" />
+        <location filename="../json/BMF/BSI2010.json" line="3257" />
+        <location filename="../json/BMF/BSI2010.json" line="3271" />
         <source>Light sliding door with electric drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3277" />
+        <location filename="../json/BMF/BSI2010.json" line="3259" />
         <source>The presence and type of the right rear side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3291" />
+        <location filename="../json/BMF/BSI2010.json" line="3273" />
         <source>The presence and type of left rear side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3300" />
-        <location filename="../json/BMF/BSI2010.json" line="3312" />
+        <location filename="../json/BMF/BSI2010.json" line="3282" />
+        <location filename="../json/BMF/BSI2010.json" line="3294" />
         <source>halogen headlights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3301" />
-        <location filename="../json/BMF/BSI2010.json" line="3313" />
+        <location filename="../json/BMF/BSI2010.json" line="3283" />
+        <location filename="../json/BMF/BSI2010.json" line="3295" />
         <source>Led lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3303" />
+        <location filename="../json/BMF/BSI2010.json" line="3285" />
         <source>Type of front side lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3315" />
+        <location filename="../json/BMF/BSI2010.json" line="3297" />
         <source>Type of anterior rotation indicators</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3324" />
+        <location filename="../json/BMF/BSI2010.json" line="3306" />
         <source>Lack of contactor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3325" />
+        <location filename="../json/BMF/BSI2010.json" line="3307" />
         <source>The presence of a contactor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3327" />
+        <location filename="../json/BMF/BSI2010.json" line="3309" />
         <source>The presence of a switch between a simple cruise control system and an adaptive cruise control system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3335" />
+        <location filename="../json/BMF/BSI2010.json" line="3317" />
         <source>The presence of the front electric windows</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3343" />
+        <location filename="../json/BMF/BSI2010.json" line="3325" />
         <source>The presence of a rear window cleaner</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3351" />
+        <location filename="../json/BMF/BSI2010.json" line="3333" />
         <source>Option: Opening rear window</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3359" />
+        <location filename="../json/BMF/BSI2010.json" line="3341" />
         <source>Electric ignition lock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3367" />
+        <location filename="../json/BMF/BSI2010.json" line="3349" />
         <source>Option: "Hands-free access" for the right rear side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3375" />
+        <location filename="../json/BMF/BSI2010.json" line="3357" />
         <source>Option: "Hands-free access" for the left rear side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3383" />
+        <location filename="../json/BMF/BSI2010.json" line="3365" />
         <source>Option: "Hands-free access" for the back door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3392" />
+        <location filename="../json/BMF/BSI2010.json" line="3374" />
         <source>Short air duct heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3393" />
+        <location filename="../json/BMF/BSI2010.json" line="3375" />
         <source>Long air duct heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3395" />
+        <location filename="../json/BMF/BSI2010.json" line="3377" />
         <source>Type of air duct heating the air conditioning system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3406" />
+        <location filename="../json/BMF/BSI2010.json" line="3388" />
         <source>Light or visual warning (seat belt, seat ...)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3408" />
+        <location filename="../json/BMF/BSI2010.json" line="3390" />
         <source>Sound and visual alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3410" />
+        <location filename="../json/BMF/BSI2010.json" line="3392" />
         <source>Type of message Prevention function of crossing road marking lines</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3419" />
+        <location filename="../json/BMF/BSI2010.json" line="3401" />
         <source>Textile</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3420" />
+        <location filename="../json/BMF/BSI2010.json" line="3402" />
         <source>Leather</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3422" />
+        <location filename="../json/BMF/BSI2010.json" line="3404" />
         <source>Type of upholstery seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3430" />
+        <location filename="../json/BMF/BSI2010.json" line="3412" />
         <source>The availability of telematics receiver control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3440" />
+        <location filename="../json/BMF/BSI2010.json" line="3422" />
         <source>Burning wires</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3442" />
+        <location filename="../json/BMF/BSI2010.json" line="3424" />
         <source>Type of control of rotation indicators with a smooth increase in brightness</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3450" />
+        <location filename="../json/BMF/BSI2010.json" line="3432" />
         <source>The presence of a control system for descent</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3459" />
+        <location filename="../json/BMF/BSI2010.json" line="3441" />
         <source>Turn on the button by pressing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3462" />
+        <location filename="../json/BMF/BSI2010.json" line="3444" />
         <source>Turn on the rear window heating button (Luch) or button of visibility (VISI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3466" />
+        <location filename="../json/BMF/BSI2010.json" line="3448" />
         <source>Turning on the heating of the windshield on the multifunctional front panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3469" />
+        <location filename="../json/BMF/BSI2010.json" line="3451" />
         <source>Type of button on windshield heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3480" />
+        <location filename="../json/BMF/BSI2010.json" line="3462" />
         <source>Controlled air intake module with 2-position shutters</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3484" />
+        <location filename="../json/BMF/BSI2010.json" line="3466" />
         <source>Controlled air intake module with multi-position damper</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3487" />
+        <location filename="../json/BMF/BSI2010.json" line="3469" />
         <source>Type of controlled air intake module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3499" />
+        <location filename="../json/BMF/BSI2010.json" line="3481" />
         <source>Generation 1 (warning at the risk of a collision with a mobile object)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3503" />
+        <location filename="../json/BMF/BSI2010.json" line="3485" />
         <source>Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3505" />
+        <location filename="../json/BMF/BSI2010.json" line="3487" />
         <source>Generation 3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3506" />
+        <location filename="../json/BMF/BSI2010.json" line="3488" />
         <source>Generation 4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3508" />
+        <location filename="../json/BMF/BSI2010.json" line="3490" />
         <source>Type of warning in the risk of collision</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3523" />
+        <location filename="../json/BMF/BSI2010.json" line="3505" />
         <source>Decoding of information from the opening unit of the rear open door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3526" />
+        <location filename="../json/BMF/BSI2010.json" line="3508" />
         <source>Type of information encoding from the locks of the rear swing doors</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3534" />
+        <location filename="../json/BMF/BSI2010.json" line="3516" />
         <source>The number of the calibration table antennas of the access function "Free Hands"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3542" />
+        <location filename="../json/BMF/BSI2010.json" line="3524" />
         <source>Automatic blocking access to the cargo area when moving</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3550" />
+        <location filename="../json/BMF/BSI2010.json" line="3532" />
         <source>The presence of a help function in holding a car in the movement lane</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3558" />
+        <location filename="../json/BMF/BSI2010.json" line="3540" />
         <source>Lane Keeping Assist linked to Blind Spot Monitoring</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3566" />
+        <location filename="../json/BMF/BSI2010.json" line="3548" />
         <source>gradual shutdown of rotation indicators (while maintaining the blinking mode)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3575" />
+        <location filename="../json/BMF/BSI2010.json" line="3557" />
         <source>AX6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3576" />
+        <location filename="../json/BMF/BSI2010.json" line="3558" />
         <source>AT8 (AL4)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3577" />
+        <location filename="../json/BMF/BSI2010.json" line="3559" />
         <source>AXN8</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3578" />
+        <location filename="../json/BMF/BSI2010.json" line="3560" />
         <source>The hybrid automatic gearbox</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3579" />
+        <location filename="../json/BMF/BSI2010.json" line="3561" />
         <source>Reduction gear with park finger locking actuator</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3580" />
+        <location filename="../json/BMF/BSI2010.json" line="3562" />
         <source>CVT</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3582" />
+        <location filename="../json/BMF/BSI2010.json" line="3564" />
         <source>Automatic gearbox type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3595" />
+        <location filename="../json/BMF/BSI2010.json" line="3577" />
         <source>The presence of heated seats or heated ventilated seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3604" />
+        <location filename="../json/BMF/BSI2010.json" line="3586" />
         <source>Choice with a pen</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3605" />
+        <location filename="../json/BMF/BSI2010.json" line="3587" />
         <source>Select by the switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3607" />
+        <location filename="../json/BMF/BSI2010.json" line="3589" />
         <source>Selecting the modes of operation of a hybrid drive</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3615" />
+        <location filename="../json/BMF/BSI2010.json" line="3597" />
         <source>Option: Comfortable polysensory package CFG_EBK_BSI_OPT_MODE_DYN_COMFORT_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3623" />
+        <location filename="../json/BMF/BSI2010.json" line="3605" />
         <source>Option: Polisor Package CFG_EBL_BSI_POLSENSORIAL_PACK_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3631" />
+        <location filename="../json/BMF/BSI2010.json" line="3613" />
         <source>Navigation option to provide radar points of interest with appropriate speed restrictions</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3639" />
+        <location filename="../json/BMF/BSI2010.json" line="3621" />
         <source>Option: Wireless charger</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3648" />
+        <location filename="../json/BMF/BSI2010.json" line="3630" />
         <source>Simple pressing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3649" />
+        <location filename="../json/BMF/BSI2010.json" line="3631" />
         <source>Double pressing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3651" />
+        <location filename="../json/BMF/BSI2010.json" line="3633" />
         <source>Type of trunk opening switch or baggage compartment door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3659" />
+        <location filename="../json/BMF/BSI2010.json" line="3641" />
         <source>Additional rear overall lantern</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3667" />
+        <location filename="../json/BMF/BSI2010.json" line="3649" />
         <source>Detection of the presence of a spare wheel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3675" />
+        <location filename="../json/BMF/BSI2010.json" line="3657" />
         <source>Steering wheel with heating</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3683" />
+        <location filename="../json/BMF/BSI2010.json" line="3665" />
         <source>Multifunction video recording camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3692" />
+        <location filename="../json/BMF/BSI2010.json" line="3674" />
         <source>ABSENT of warning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3693" />
+        <location filename="../json/BMF/BSI2010.json" line="3675" />
         <source>Temporary warning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3694" />
+        <location filename="../json/BMF/BSI2010.json" line="3676" />
         <source>Permanent warning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3696" />
+        <location filename="../json/BMF/BSI2010.json" line="3678" />
         <source>Presence and duration of displaying of the overspeed warning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3706" />
+        <location filename="../json/BMF/BSI2010.json" line="3688" />
         <source>Function limited to the lane departure warning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3707" />
+        <location filename="../json/BMF/BSI2010.json" line="3689" />
         <location filename="../json/DIRECTN/DAE_UDS.json" line="51" />
         <source>Full lane keeping assistance function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3709" />
+        <location filename="../json/BMF/BSI2010.json" line="3691" />
         <source>The presence and type of lane keeping assistance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3717" />
+        <location filename="../json/BMF/BSI2010.json" line="3699" />
         <source>Additional head lighting functions: Cornering lights (AFS)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3726" />
+        <location filename="../json/BMF/BSI2010.json" line="3708" />
         <source>Full Auto Stop (BVA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3727" />
+        <location filename="../json/BMF/BSI2010.json" line="3709" />
         <source>30 (BVM)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3728" />
+        <location filename="../json/BMF/BSI2010.json" line="3710" />
         <source>Stop and Go (BVA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3730" />
+        <location filename="../json/BMF/BSI2010.json" line="3712" />
         <source>Type of mode for ACC</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3740" />
+        <location filename="../json/BMF/BSI2010.json" line="3722" />
         <source>Radar</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3741" />
+        <location filename="../json/BMF/BSI2010.json" line="3723" />
         <source>Radar &amp; Camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3742" />
+        <location filename="../json/BMF/BSI2010.json" line="3724" />
         <source>Camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3744" />
+        <location filename="../json/BMF/BSI2010.json" line="3726" />
         <source>Type of technologie for ACC</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3752" />
+        <location filename="../json/BMF/BSI2010.json" line="3734" />
         <source>Turning on the power steering computer power relay, made by the BSI unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3760" />
+        <location filename="../json/BMF/BSI2010.json" line="3742" />
         <source>Car with power saving for power windows</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3768" />
+        <location filename="../json/BMF/BSI2010.json" line="3750" />
         <source>Block for maintaining the voltage of the on-board network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3777" />
+        <location filename="../json/BMF/BSI2010.json" line="3759" />
         <source>From the driver</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3778" />
+        <location filename="../json/BMF/BSI2010.json" line="3760" />
         <source>From the passenger</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3779" />
+        <location filename="../json/BMF/BSI2010.json" line="3761" />
         <source>side of the driver and passenger</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3781" />
+        <location filename="../json/BMF/BSI2010.json" line="3763" />
         <source>Front seats with massage function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3790" />
+        <location filename="../json/BMF/BSI2010.json" line="3772" />
         <source>Coolating fluid heater control computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3791" />
+        <location filename="../json/BMF/BSI2010.json" line="3773" />
         <source>Multiplewlex computer of coolant heater</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3793" />
+        <location filename="../json/BMF/BSI2010.json" line="3775" />
         <source>Cooling liquid heater type</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3802" />
-        <location filename="../json/BMF/BSI2010.json" line="3842" />
-        <location filename="../json/BMF/BSI2010.json" line="3855" />
+        <location filename="../json/BMF/BSI2010.json" line="3784" />
+        <location filename="../json/BMF/BSI2010.json" line="3824" />
+        <location filename="../json/BMF/BSI2010.json" line="3837" />
         <source>There is no function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3805" />
+        <location filename="../json/BMF/BSI2010.json" line="3787" />
         <source>The function is (the rear view camera with *3 rear images for Picasso)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3807" />
+        <location filename="../json/BMF/BSI2010.json" line="3789" />
         <source>Rear view camera</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3809" />
+        <location filename="../json/BMF/BSI2010.json" line="3791" />
         <source>Rear-view mirrors</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3817" />
+        <location filename="../json/BMF/BSI2010.json" line="3799" />
         <source>The presence of the interior lighting function in the personal settings menu</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3825" />
+        <location filename="../json/BMF/BSI2010.json" line="3807" />
         <source>Improved operation of the high beam switching function (Matrix Beam)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3833" />
+        <location filename="../json/BMF/BSI2010.json" line="3815" />
         <source>LED/signaler indicates alarm activation status</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3843" />
+        <location filename="../json/BMF/BSI2010.json" line="3825" />
         <source>Warning about the ESP system malfunction</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3844" />
+        <location filename="../json/BMF/BSI2010.json" line="3826" />
         <source>Brake system malfunction</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3846" />
+        <location filename="../json/BMF/BSI2010.json" line="3828" />
         <source>Type of orange warning light to indicate a faulty brake booster</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3856" />
+        <location filename="../json/BMF/BSI2010.json" line="3838" />
         <source>manufacturer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3857" />
+        <location filename="../json/BMF/BSI2010.json" line="3839" />
         <source>European Union</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3858" />
+        <location filename="../json/BMF/BSI2010.json" line="3840" />
         <source>Russia</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3860" />
+        <location filename="../json/BMF/BSI2010.json" line="3842" />
         <source>The presence and type of emergency call</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3869" />
+        <location filename="../json/BMF/BSI2010.json" line="3851" />
         <source>No function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3870" />
+        <location filename="../json/BMF/BSI2010.json" line="3852" />
         <source>Halogen</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3871" />
+        <location filename="../json/BMF/BSI2010.json" line="3853" />
         <source>LED</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3873" />
+        <location filename="../json/BMF/BSI2010.json" line="3855" />
         <source>Type of overall tail lights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3882" />
+        <location filename="../json/BMF/BSI2010.json" line="3864" />
         <source>3 positional switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3883" />
+        <location filename="../json/BMF/BSI2010.json" line="3865" />
         <source>Contactor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3884" />
+        <location filename="../json/BMF/BSI2010.json" line="3866" />
         <source>Pulse button with long and short press</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3885" />
+        <location filename="../json/BMF/BSI2010.json" line="3867" />
         <source>2 control buttons</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3887" />
+        <location filename="../json/BMF/BSI2010.json" line="3869" />
         <source>Type of lamp switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3896" />
+        <location filename="../json/BMF/BSI2010.json" line="3878" />
         <source>----</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3897" />
+        <location filename="../json/BMF/BSI2010.json" line="3879" />
         <source>Simple instrument panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3898" />
+        <location filename="../json/BMF/BSI2010.json" line="3880" />
         <source>CIROCCO instrument panel / Digital instrument panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3899" />
+        <location filename="../json/BMF/BSI2010.json" line="3881" />
         <source>Instrument panel with multifunctional display functions</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3900" />
+        <location filename="../json/BMF/BSI2010.json" line="3882" />
         <source>Instrument panel with matrix display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3902" />
+        <location filename="../json/BMF/BSI2010.json" line="3884" />
         <source>Type of dashboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3921" />
+        <location filename="../json/BMF/BSI2010.json" line="3903" />
         <source>Manual adjustment directly on the headlights</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3925" />
+        <location filename="../json/BMF/BSI2010.json" line="3907" />
         <source>Manual correction using a regulator of the height of the headlight of the headlights in the cabin</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3929" />
+        <location filename="../json/BMF/BSI2010.json" line="3911" />
         <source>Static adjustment of headlights of the height</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3933" />
+        <location filename="../json/BMF/BSI2010.json" line="3915" />
         <source>Dynamic adjustment of the position of the light bundle of the headlight in height</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3936" />
+        <location filename="../json/BMF/BSI2010.json" line="3918" />
         <source>Headlight beam height corrector</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3946" />
+        <location filename="../json/BMF/BSI2010.json" line="3928" />
         <source>Inner rear-view mirror</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3948" />
+        <location filename="../json/BMF/BSI2010.json" line="3930" />
         <source>Management "day/night"</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3956" />
+        <location filename="../json/BMF/BSI2010.json" line="3938" />
         <source>The presence of a LED to disable the state of work in ZEV mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3964" />
+        <location filename="../json/BMF/BSI2010.json" line="3946" />
         <source>Turning on the security alarm when blocking locks using a mechanical key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3972" />
+        <location filename="../json/BMF/BSI2010.json" line="3954" />
         <source>The presence of the rear traction electric machine</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3981" />
+        <location filename="../json/BMF/BSI2010.json" line="3963" />
         <source>Inclusion with a handle</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3982" />
+        <location filename="../json/BMF/BSI2010.json" line="3964" />
         <source>Activation by a switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3984" />
+        <location filename="../json/BMF/BSI2010.json" line="3966" />
         <source>Type of activation of the ASR+ Antibux system+</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3994" />
+        <location filename="../json/BMF/BSI2010.json" line="3976" />
         <source>There is</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="3996" />
+        <location filename="../json/BMF/BSI2010.json" line="3978" />
         <source>The function of the heat pump</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4005" />
+        <location filename="../json/BMF/BSI2010.json" line="3987" />
         <source>Normal mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4006" />
+        <location filename="../json/BMF/BSI2010.json" line="3988" />
         <source>Sports mode</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4008" />
+        <location filename="../json/BMF/BSI2010.json" line="3990" />
         <source>Mode of operation of the vehicle's steering and damping</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4017" />
+        <location filename="../json/BMF/BSI2010.json" line="3999" />
         <source>Using the intellectual switching unit BSI</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4018" />
+        <location filename="../json/BMF/BSI2010.json" line="4000" />
         <source>Another</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4020" />
+        <location filename="../json/BMF/BSI2010.json" line="4002" />
         <source>Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4028" />
+        <location filename="../json/BMF/BSI2010.json" line="4010" />
         <source>CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4036" />
+        <location filename="../json/BMF/BSI2010.json" line="4018" />
         <source>CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4044" />
+        <location filename="../json/BMF/BSI2010.json" line="4026" />
         <source>CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT: airbags</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4052" />
+        <location filename="../json/BMF/BSI2010.json" line="4034" />
         <source>CFG_BR4_BSI_UCECAN_UDS_LCE_000: reader electronic key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4060" />
+        <location filename="../json/BMF/BSI2010.json" line="4042" />
         <source>CFG_BR5_BSI_UCECAN_UDS_BRHF_000: high-frequency receiver</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4068" />
+        <location filename="../json/BMF/BSI2010.json" line="4050" />
         <source>CFG_AMJ_BSI_UCE_CAN_BSM_000: engine switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4076" />
+        <location filename="../json/BMF/BSI2010.json" line="4058" />
         <source>CFG_BR7_BSI_UCECAN_UDS_BDCP_000: pedestrian detection unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4084" />
+        <location filename="../json/BMF/BSI2010.json" line="4066" />
         <source>CFG_BR8_BSI_UCECAN_UDS_PDPC_EDPC_000: Driver door control panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4092" />
+        <location filename="../json/BMF/BSI2010.json" line="4074" />
         <source>CFG_BR9_BSI_UCECAN_UDS_AVE_000: Ignition electric lock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4100" />
+        <location filename="../json/BMF/BSI2010.json" line="4082" />
         <source>CFG_BRA_BSI_UCECAN_UDS_BSI_000: Intellectual switching unit (BSI)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4108" />
+        <location filename="../json/BMF/BSI2010.json" line="4090" />
         <source>CFG_BRB_BSI_UCECAN_PLC_000: motorized sliding side door</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4116" />
+        <location filename="../json/BMF/BSI2010.json" line="4098" />
         <source>CFG_BRC_BSI_UCECAN_UDS_BDMA_000: storage cover on the rear seats</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4124" />
+        <location filename="../json/BMF/BSI2010.json" line="4106" />
         <source>CFG_BRD_BSI_UCECAN_UDS_AUS_000: security alarm</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4132" />
+        <location filename="../json/BMF/BSI2010.json" line="4114" />
         <source>CFG_BRE_BSI_UCECAN_UDS_AAS_000: Parking Assistance System</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4140" />
+        <location filename="../json/BMF/BSI2010.json" line="4122" />
         <source>CFG_BRF_BSI_UCECAN_UDS_MAE_000: training car module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4148" />
+        <location filename="../json/BMF/BSI2010.json" line="4130" />
         <source>CFG_BRG_BSI_UCECAN_UDS_CMB_000: instrument panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4156" />
+        <location filename="../json/BMF/BSI2010.json" line="4138" />
         <source>CFG_BRH_BSI_UCECAN_UDS_RADIO_000: radio receiver</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4164" />
+        <location filename="../json/BMF/BSI2010.json" line="4146" />
         <source>CFG_AN4_BSI_UCE_CAN_STL_000: warning system about an unintentional intersection of the road marking line (with infrared sensors)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4172" />
+        <location filename="../json/BMF/BSI2010.json" line="4154" />
         <source>CFG_BRJ_BSI_UCECAN_UDS_BTEL_000: telematics block or radio navigation</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4180" />
+        <location filename="../json/BMF/BSI2010.json" line="4162" />
         <source>CFG_BRK_BSI_UCECAN_UDS_EMF_000: display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4188" />
+        <location filename="../json/BMF/BSI2010.json" line="4170" />
         <source>CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4196" />
+        <location filename="../json/BMF/BSI2010.json" line="4178" />
         <source>CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4204" />
+        <location filename="../json/BMF/BSI2010.json" line="4186" />
         <source>CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000: trailer switch</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4212" />
+        <location filename="../json/BMF/BSI2010.json" line="4194" />
         <source>CFG_BRO_BSI_UCECAN_UDS_CLIM_000: air conditioning</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4220" />
+        <location filename="../json/BMF/BSI2010.json" line="4202" />
         <source>CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4228" />
+        <location filename="../json/BMF/BSI2010.json" line="4210" />
         <source>CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4236" />
+        <location filename="../json/BMF/BSI2010.json" line="4218" />
         <source>CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4244" />
+        <location filename="../json/BMF/BSI2010.json" line="4226" />
         <source>CFG_BRS_BSI_UCECAN_UDS_CDC_000: CD-changer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4252" />
+        <location filename="../json/BMF/BSI2010.json" line="4234" />
         <source>CFG_BRT_BSI_UCECAN_UDS_MATT_000: matrix display</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4260" />
+        <location filename="../json/BMF/BSI2010.json" line="4242" />
         <source>CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4268" />
+        <location filename="../json/BMF/BSI2010.json" line="4250" />
         <source>CFG_BRV_BSI_UCECAN_UDS_DEF_000: deflector / spoiler</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4276" />
+        <location filename="../json/BMF/BSI2010.json" line="4258" />
         <source>CFG_BRW_BSI_UCECAN_UDS_FACADEMUX_000: multifunctional front panel on the Can</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4284" />
+        <location filename="../json/BMF/BSI2010.json" line="4266" />
         <source>CFG_BRX_BSI_UCECAN_MDS_000: Autonomous telecommunication unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4292" />
+        <location filename="../json/BMF/BSI2010.json" line="4274" />
         <source>CFG_Bry_BSI_UCECAN_UDS_AMPLI_000: audio system amplifier</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4300" />
+        <location filename="../json/BMF/BSI2010.json" line="4282" />
         <source>CFG_BRZ_BSI_UCECAN_UDS_AR2S_000_NEW: starter control unit or hybrid traction chain</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4308" />
+        <location filename="../json/BMF/BSI2010.json" line="4290" />
         <source>CFG_BS0_BSI_UCECAN_UDS_CAV_000: Turning steering angle sensor multiplex</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4316" />
+        <location filename="../json/BMF/BSI2010.json" line="4298" />
         <source>CFG_BS1_BSI_UCECAN_UDS_CTH_PTMU_000: control unit of a hybrid traction chain</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4324" />
+        <location filename="../json/BMF/BSI2010.json" line="4306" />
         <source>CFG_BS2_BSI_UCECAN_UDS_CMM_000: engine computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4332" />
+        <location filename="../json/BMF/BSI2010.json" line="4314" />
         <source>CFG_BS3_BSI_UCECAN_UDS_BV_000: automatic gearbox or automated manual gearbox</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4340" />
+        <location filename="../json/BMF/BSI2010.json" line="4322" />
         <source>CFG_BS4_BSI_UCECAN_UDS_UC_FREIN_000: anti-lock system (ABS) / Dynamic stabilization system (ESP)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4348" />
+        <location filename="../json/BMF/BSI2010.json" line="4330" />
         <source>CFG_BS5_BSI_UCECAN_UDS_DSG_000: tire pressure control computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4356" />
+        <location filename="../json/BMF/BSI2010.json" line="4338" />
         <source>CFG_BS6_BSI_UCECAN_UDS_CSS_000: suspension control unit (CSS)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4364" />
+        <location filename="../json/BMF/BSI2010.json" line="4346" />
         <source>CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4372" />
+        <location filename="../json/BMF/BSI2010.json" line="4354" />
         <source>CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4380" />
+        <location filename="../json/BMF/BSI2010.json" line="4362" />
         <source>CFG_BS9_BSI_UCECAN_UDA_DA_000: Power steering computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4388" />
+        <location filename="../json/BMF/BSI2010.json" line="4370" />
         <source>CFG_BSA_BSI_UCECAN_UDS_ARTIV_000: computer system for compliance with distance between cars or intellectual cruise control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4396" />
+        <location filename="../json/BMF/BSI2010.json" line="4378" />
         <source>CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4404" />
+        <location filename="../json/BMF/BSI2010.json" line="4386" />
         <source>CFG_BSC_BSI_UCECAN_UDS_CAAR_000: pneumatic suspension</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4412" />
+        <location filename="../json/BMF/BSI2010.json" line="4394" />
         <source>CFG_AO1_BIC_GYR_ACC_000: gyroscope sensors and accelerometer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4420" />
+        <location filename="../json/BMF/BSI2010.json" line="4402" />
         <source>CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4428" />
+        <location filename="../json/BMF/BSI2010.json" line="4410" />
         <source>CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4436" />
+        <location filename="../json/BMF/BSI2010.json" line="4418" />
         <source>CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4444" />
+        <location filename="../json/BMF/BSI2010.json" line="4426" />
         <source>CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4452" />
+        <location filename="../json/BMF/BSI2010.json" line="4434" />
         <source>CFG_BTE_BSI_UCECAN_UDS_CMF_000: multifunctional video camera (CVM)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4460" />
+        <location filename="../json/BMF/BSI2010.json" line="4442" />
         <source>CFG_BTF_BSI_UCECAN_UDS_BPV_000: seats vibrators control unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4468" />
+        <location filename="../json/BMF/BSI2010.json" line="4450" />
         <source>CFG_BZK_BSI_UCECAN_UDS_BEBA_000: computer of active shock absorbers</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4476" />
+        <location filename="../json/BMF/BSI2010.json" line="4458" />
         <source>CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4484" />
+        <location filename="../json/BMF/BSI2010.json" line="4466" />
         <source>CFG_D1F_BSI_UCECAN_UDS_HCU1_000: hybrid system 1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4492" />
-        <location filename="../json/BMF/BSI2010.json" line="4500" />
+        <location filename="../json/BMF/BSI2010.json" line="4474" />
+        <location filename="../json/BMF/BSI2010.json" line="4482" />
         <source>CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4508" />
+        <location filename="../json/BMF/BSI2010.json" line="4490" />
         <source>CFG_D68_BSI_UCECAN_UDS_ECR_G_000: reversing inertial coil of the left seat belt</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4516" />
+        <location filename="../json/BMF/BSI2010.json" line="4498" />
         <source>CFG_D69_BSI_UCECAN_UDS_ECR_D_000: reversing inertial coil of the right belt belt</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4524" />
+        <location filename="../json/BMF/BSI2010.json" line="4506" />
         <source>CFG_D9E_BSI_UCECAN_UDS_DMTR_000: control unit of the on-board network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4532" />
+        <location filename="../json/BMF/BSI2010.json" line="4514" />
         <source>CFG_D9F_BSI_UCECAN_AVP_000: panoramic visual control unit (360 ° camera)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4540" />
+        <location filename="../json/BMF/BSI2010.json" line="4522" />
         <source>CFG_DBG_BSI_UCECAN_UDS_TBMU_000: traction monitoring module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4548" />
+        <location filename="../json/BMF/BSI2010.json" line="4530" />
         <source>CFG_DGG_BSI_UCECAN_PIU_000: panoramic visual control unit (360 ° camera)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4556" />
+        <location filename="../json/BMF/BSI2010.json" line="4538" />
         <source>CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4564" />
+        <location filename="../json/BMF/BSI2010.json" line="4546" />
         <source>CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4572" />
+        <location filename="../json/BMF/BSI2010.json" line="4554" />
         <source>CFG_EG8_BSI_UCECAN_ESM_000: impulsive gear lever</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4580" />
+        <location filename="../json/BMF/BSI2010.json" line="4562" />
         <source>CFG_EIP_BSI_UCECAN_IDVR_000: Intelligent Driving Video Recording (IDVR)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4588" />
+        <location filename="../json/BMF/BSI2010.json" line="4570" />
         <source>CFG_LQ_BSI_UCECAN_CLIM_AR_000: computer of the rear air conditioning system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4596" />
+        <location filename="../json/BMF/BSI2010.json" line="4578" />
         <source>CFG_EN1_BSI_UCECAN_IVCD_000: Inside Video Camera for Driver (IVCD)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4604" />
+        <location filename="../json/BMF/BSI2010.json" line="4586" />
         <source>CFG_EN2_BSI_UCECAN_BSG_S_000: signaling switching unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4612" />
+        <location filename="../json/BMF/BSI2010.json" line="4594" />
         <source>CFG_EY_BSI_UCECAN_BVN_000: night vision computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4620" />
+        <location filename="../json/BMF/BSI2010.json" line="4602" />
         <source>CFG_EWA_BSI_UCECAN_CGPL_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4628" />
+        <location filename="../json/BMF/BSI2010.json" line="4610" />
         <source>CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4636" />
+        <location filename="../json/BMF/BSI2010.json" line="4618" />
         <source>CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4644" />
+        <location filename="../json/BMF/BSI2010.json" line="4626" />
         <source>CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4652" />
+        <location filename="../json/BMF/BSI2010.json" line="4634" />
         <source>CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4660" />
+        <location filename="../json/BMF/BSI2010.json" line="4642" />
         <source>CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @*(SDCM)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4668" />
+        <location filename="../json/BMF/BSI2010.json" line="4650" />
         <source>CFG_EWM_BSI_UCECAN_WLC_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4676" />
+        <location filename="../json/BMF/BSI2010.json" line="4658" />
         <source>CFG_EWX_BSI_UCECAN_EBB_000: Master cylinder with electric brake booster</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4684" />
+        <location filename="../json/BMF/BSI2010.json" line="4666" />
         <source>CFG_EWY_BSI_UCECAN_AVAS_000: pedestrian warning signal</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4692" />
+        <location filename="../json/BMF/BSI2010.json" line="4674" />
         <source>CFG_EWZ_BSI_UCECAN_VCU_000: electronic control computer automatic gearbox</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4700" />
+        <location filename="../json/BMF/BSI2010.json" line="4682" />
         <source>CFG_EX0_BSI_UCECAN_LVNSD_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4708" />
+        <location filename="../json/BMF/BSI2010.json" line="4690" />
         <source>CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @*2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4716" />
+        <location filename="../json/BMF/BSI2010.json" line="4698" />
         <source>CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @*1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4724" />
+        <location filename="../json/BMF/BSI2010.json" line="4706" />
         <source>CFG_GDJ_BSI_UCECAN_BSRF_000: radio frequency control unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4732" />
+        <location filename="../json/BMF/BSI2010.json" line="4714" />
         <source>CFG_GDK_BSI_UCECAN_PVS_000: digital panoramic review system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4740" />
+        <location filename="../json/BMF/BSI2010.json" line="4722" />
         <source>CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4748" />
+        <location filename="../json/BMF/BSI2010.json" line="4730" />
         <source>CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4756" />
+        <location filename="../json/BMF/BSI2010.json" line="4738" />
         <source>CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4764" />
+        <location filename="../json/BMF/BSI2010.json" line="4746" />
         <source>CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4772" />
+        <location filename="../json/BMF/BSI2010.json" line="4754" />
         <source>CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4780" />
+        <location filename="../json/BMF/BSI2010.json" line="4762" />
         <source>CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4788" />
+        <location filename="../json/BMF/BSI2010.json" line="4770" />
         <source>CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4796" />
+        <location filename="../json/BMF/BSI2010.json" line="4778" />
         <source>CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4804" />
+        <location filename="../json/BMF/BSI2010.json" line="4786" />
         <source>CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4812" />
+        <location filename="../json/BMF/BSI2010.json" line="4794" />
         <source>CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4820" />
+        <location filename="../json/BMF/BSI2010.json" line="4802" />
         <source>CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4828" />
+        <location filename="../json/BMF/BSI2010.json" line="4810" />
         <source>CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4836" />
+        <location filename="../json/BMF/BSI2010.json" line="4818" />
         <source>CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4844" />
+        <location filename="../json/BMF/BSI2010.json" line="4826" />
         <source>CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4852" />
+        <location filename="../json/BMF/BSI2010.json" line="4834" />
         <source>CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4860" />
+        <location filename="../json/BMF/BSI2010.json" line="4842" />
         <source>CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4868" />
+        <location filename="../json/BMF/BSI2010.json" line="4850" />
         <source>CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4876" />
+        <location filename="../json/BMF/BSI2010.json" line="4858" />
         <source>CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4884" />
+        <location filename="../json/BMF/BSI2010.json" line="4866" />
         <source>CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4892" />
+        <location filename="../json/BMF/BSI2010.json" line="4874" />
         <source>CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4900" />
+        <location filename="../json/BMF/BSI2010.json" line="4882" />
         <source>CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4908" />
+        <location filename="../json/BMF/BSI2010.json" line="4890" />
         <source>CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4916" />
+        <location filename="../json/BMF/BSI2010.json" line="4898" />
         <source>CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4924" />
+        <location filename="../json/BMF/BSI2010.json" line="4906" />
         <source>CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4932" />
+        <location filename="../json/BMF/BSI2010.json" line="4914" />
         <source>CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4940" />
+        <location filename="../json/BMF/BSI2010.json" line="4922" />
         <source>CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4948" />
+        <location filename="../json/BMF/BSI2010.json" line="4930" />
         <source>CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4956" />
+        <location filename="../json/BMF/BSI2010.json" line="4938" />
         <source>CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4964" />
+        <location filename="../json/BMF/BSI2010.json" line="4946" />
         <source>CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4972" />
+        <location filename="../json/BMF/BSI2010.json" line="4954" />
         <source>Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4980" />
+        <location filename="../json/BMF/BSI2010.json" line="4962" />
         <source>CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4988" />
+        <location filename="../json/BMF/BSI2010.json" line="4970" />
         <source>CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="4996" />
+        <location filename="../json/BMF/BSI2010.json" line="4978" />
         <source>CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5004" />
+        <location filename="../json/BMF/BSI2010.json" line="4986" />
         <source>CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5012" />
+        <location filename="../json/BMF/BSI2010.json" line="4994" />
         <source>CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5020" />
+        <location filename="../json/BMF/BSI2010.json" line="5002" />
         <source>Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @*lin ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5028" />
+        <location filename="../json/BMF/BSI2010.json" line="5010" />
         <source>CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5036" />
+        <location filename="../json/BMF/BSI2010.json" line="5018" />
         <source>CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5044" />
+        <location filename="../json/BMF/BSI2010.json" line="5026" />
         <source>CFG_EY0_BSI_UCELIN_OCS_000: ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5052" />
+        <location filename="../json/BMF/BSI2010.json" line="5034" />
         <source>CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5060" />
+        <location filename="../json/BMF/BSI2010.json" line="5042" />
         <source>CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5068" />
+        <location filename="../json/BMF/BSI2010.json" line="5050" />
         <source>CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@*RD5 ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5076" />
+        <location filename="../json/BMF/BSI2010.json" line="5058" />
         <source>CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5084" />
+        <location filename="../json/BMF/BSI2010.json" line="5066" />
         <source>CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @*1 ???</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5093" />
+        <location filename="../json/BMF/BSI2010.json" line="5075" />
         <source>12 months</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5094" />
+        <location filename="../json/BMF/BSI2010.json" line="5076" />
         <source>24 months</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5096" />
+        <location filename="../json/BMF/BSI2010.json" line="5078" />
         <source>Total period(time) before servicing (threshold)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5105" />
-        <location filename="../json/BMF/BSI2010.json" line="5118" />
+        <location filename="../json/BMF/BSI2010.json" line="5087" />
+        <location filename="../json/BMF/BSI2010.json" line="5100" />
         <source>0KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5106" />
+        <location filename="../json/BMF/BSI2010.json" line="5088" />
         <source>Electric-12500KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5107" />
-        <location filename="../json/BMF/BSI2010.json" line="5124" />
+        <location filename="../json/BMF/BSI2010.json" line="5089" />
+        <location filename="../json/BMF/BSI2010.json" line="5106" />
         <source>Petrol-5000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5109" />
+        <location filename="../json/BMF/BSI2010.json" line="5091" />
         <source>First maintenance threshold</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5119" />
+        <location filename="../json/BMF/BSI2010.json" line="5101" />
         <source>Electric-25000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5120" />
+        <location filename="../json/BMF/BSI2010.json" line="5102" />
         <source>Petrol-20000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5121" />
+        <location filename="../json/BMF/BSI2010.json" line="5103" />
         <source>Petrol-15000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5122" />
+        <location filename="../json/BMF/BSI2010.json" line="5104" />
         <source>Petrol-10000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5123" />
+        <location filename="../json/BMF/BSI2010.json" line="5105" />
         <source>Petrol-7000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5125" />
+        <location filename="../json/BMF/BSI2010.json" line="5107" />
         <source>Diesel-30000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5126" />
+        <location filename="../json/BMF/BSI2010.json" line="5108" />
         <source>Diesel-40000KM</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5128" />
+        <location filename="../json/BMF/BSI2010.json" line="5110" />
         <source>Servicing threshold(marketing)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5136" />
+        <location filename="../json/BMF/BSI2010.json" line="5118" />
         <source>Duration before first service</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5145" />
+        <location filename="../json/BMF/BSI2010.json" line="5127" />
         <source>Distance-dependent maintenance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5146" />
+        <location filename="../json/BMF/BSI2010.json" line="5128" />
         <source>Distance-based servicing weighted by time</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5147" />
+        <location filename="../json/BMF/BSI2010.json" line="5129" />
         <source>Distance and timebased servicing</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5149" />
+        <location filename="../json/BMF/BSI2010.json" line="5131" />
         <source>Type of service</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5158" />
+        <location filename="../json/BMF/BSI2010.json" line="5140" />
         <source>Static</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5159" />
+        <location filename="../json/BMF/BSI2010.json" line="5141" />
         <source>Dynamic</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5160" />
+        <location filename="../json/BMF/BSI2010.json" line="5142" />
         <source>Hybrid dynamic mantenance</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/BMF/BSI2010.json" line="5162" />
+        <location filename="../json/BMF/BSI2010.json" line="5144" />
         <source>Selection of the servicing managed by the engine</source>
         <translation type="unfinished" />
     </message>
@@ -8614,92 +8094,6 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/TELEMAT/NAC.json" line="37" />
-        <location filename="../json/TELEMAT/NAC.json" line="2547" />
-        <location filename="../json/TELEMAT/NAC.json" line="2705" />
-        <location filename="../json/TELEMAT/NAC.json" line="2863" />
-        <location filename="../json/TELEMAT/NAC.json" line="3021" />
-        <location filename="../json/TELEMAT/NAC.json" line="3179" />
-        <location filename="../json/TELEMAT/NAC.json" line="3337" />
-        <location filename="../json/TELEMAT/NAC.json" line="3495" />
-        <location filename="../json/TELEMAT/NAC.json" line="3653" />
-        <location filename="../json/TELEMAT/NAC.json" line="3811" />
-        <location filename="../json/TELEMAT/NAC.json" line="3969" />
-        <location filename="../json/TELEMAT/NAC.json" line="4165" />
-        <location filename="../json/TELEMAT/NAC.json" line="4323" />
-        <location filename="../json/TELEMAT/NAC.json" line="4481" />
-        <location filename="../json/TELEMAT/NAC.json" line="4639" />
-        <location filename="../json/TELEMAT/NAC.json" line="4797" />
-        <location filename="../json/TELEMAT/NAC.json" line="4955" />
-        <location filename="../json/TELEMAT/NAC.json" line="5113" />
-        <location filename="../json/TELEMAT/NAC.json" line="5271" />
-        <location filename="../json/TELEMAT/NAC.json" line="5429" />
-        <location filename="../json/TELEMAT/NAC.json" line="5587" />
-        <location filename="../json/TELEMAT/NAC.json" line="5783" />
-        <location filename="../json/TELEMAT/NAC.json" line="5941" />
-        <location filename="../json/TELEMAT/NAC.json" line="6099" />
-        <location filename="../json/TELEMAT/NAC.json" line="6257" />
-        <location filename="../json/TELEMAT/NAC.json" line="6415" />
-        <location filename="../json/TELEMAT/NAC.json" line="6573" />
-        <location filename="../json/TELEMAT/NAC.json" line="6731" />
-        <location filename="../json/TELEMAT/NAC.json" line="6889" />
-        <location filename="../json/TELEMAT/NAC.json" line="7047" />
-        <location filename="../json/TELEMAT/NAC.json" line="7205" />
-        <location filename="../json/TELEMAT/NAC.json" line="7401" />
-        <location filename="../json/TELEMAT/NAC.json" line="7559" />
-        <location filename="../json/TELEMAT/NAC.json" line="7717" />
-        <location filename="../json/TELEMAT/NAC.json" line="7875" />
-        <location filename="../json/TELEMAT/NAC.json" line="8033" />
-        <location filename="../json/TELEMAT/NAC.json" line="8191" />
-        <location filename="../json/TELEMAT/NAC.json" line="8349" />
-        <location filename="../json/TELEMAT/NAC.json" line="8507" />
-        <location filename="../json/TELEMAT/NAC.json" line="8665" />
-        <location filename="../json/TELEMAT/NAC.json" line="8823" />
-        <location filename="../json/TELEMAT/RCC.json" line="64" />
-        <location filename="../json/TELEMAT/RCC.json" line="2134" />
-        <location filename="../json/TELEMAT/RCC.json" line="2292" />
-        <location filename="../json/TELEMAT/RCC.json" line="2450" />
-        <location filename="../json/TELEMAT/RCC.json" line="2608" />
-        <location filename="../json/TELEMAT/RCC.json" line="2766" />
-        <location filename="../json/TELEMAT/RCC.json" line="2924" />
-        <location filename="../json/TELEMAT/RCC.json" line="3082" />
-        <location filename="../json/TELEMAT/RCC.json" line="3240" />
-        <location filename="../json/TELEMAT/RCC.json" line="3398" />
-        <location filename="../json/TELEMAT/RCC.json" line="3556" />
-        <location filename="../json/TELEMAT/RCC.json" line="3752" />
-        <location filename="../json/TELEMAT/RCC.json" line="3910" />
-        <location filename="../json/TELEMAT/RCC.json" line="4068" />
-        <location filename="../json/TELEMAT/RCC.json" line="4226" />
-        <location filename="../json/TELEMAT/RCC.json" line="4384" />
-        <location filename="../json/TELEMAT/RCC.json" line="4542" />
-        <location filename="../json/TELEMAT/RCC.json" line="4700" />
-        <location filename="../json/TELEMAT/RCC.json" line="4858" />
-        <location filename="../json/TELEMAT/RCC.json" line="5016" />
-        <location filename="../json/TELEMAT/RCC.json" line="5174" />
-        <location filename="../json/TELEMAT/RCC.json" line="5370" />
-        <location filename="../json/TELEMAT/RCC.json" line="5528" />
-        <location filename="../json/TELEMAT/RCC.json" line="5686" />
-        <location filename="../json/TELEMAT/RCC.json" line="5844" />
-        <location filename="../json/TELEMAT/RCC.json" line="6002" />
-        <location filename="../json/TELEMAT/RCC.json" line="6160" />
-        <location filename="../json/TELEMAT/RCC.json" line="6318" />
-        <location filename="../json/TELEMAT/RCC.json" line="6476" />
-        <location filename="../json/TELEMAT/RCC.json" line="6634" />
-        <location filename="../json/TELEMAT/RCC.json" line="6792" />
-        <location filename="../json/TELEMAT/RCC.json" line="6988" />
-        <location filename="../json/TELEMAT/RCC.json" line="7146" />
-        <location filename="../json/TELEMAT/RCC.json" line="7304" />
-        <location filename="../json/TELEMAT/RCC.json" line="7462" />
-        <location filename="../json/TELEMAT/RCC.json" line="7620" />
-        <location filename="../json/TELEMAT/RCC.json" line="7778" />
-        <location filename="../json/TELEMAT/RCC.json" line="7936" />
-        <location filename="../json/TELEMAT/RCC.json" line="8094" />
-        <location filename="../json/TELEMAT/RCC.json" line="8252" />
-        <location filename="../json/TELEMAT/RCC.json" line="8410" />
-        <source>Parking assistance</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../json/TELEMAT/NAC.json" line="44" />
         <location filename="../json/TELEMAT/RCC.json" line="71" />
         <source>Function absent or present at the rear</source>
@@ -8818,7 +8212,6 @@
         <location filename="../json/TELEMAT/NAC.json" line="10101" />
         <location filename="../json/TELEMAT/RCC.json" line="189" />
         <location filename="../json/TELEMAT/RCC.json" line="9497" />
-        <location filename="../json/MATT/MATT2010.json" line="242" />
         <source>Adaptive cruise control</source>
         <translation type="unfinished" />
     </message>
@@ -9223,14 +8616,14 @@
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="689" />
         <location filename="../json/TELEMAT/RCC.json" line="683" />
-        <location filename="../json/MATT/MATT2010.json" line="435" />
+        <location filename="../json/MATT/MATT2010.json" line="427" />
         <source>Citroen</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="693" />
         <location filename="../json/TELEMAT/RCC.json" line="687" />
-        <location filename="../json/MATT/MATT2010.json" line="437" />
+        <location filename="../json/MATT/MATT2010.json" line="430" />
         <source>DS</source>
         <translation type="unfinished" />
     </message>
@@ -15744,11 +15137,6 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="59" />
-        <source>Cruise control and limiter (only limiter is possible depending on the display version)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../json/MATT/MATT2010.json" line="67" />
         <source>Output of maintenance information when the ignition is switched on</source>
         <translation type="unfinished" />
@@ -15770,7 +15158,7 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="99" />
-        <source>Checking the oil level</source>
+        <source>Oil Gauge</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15789,8 +15177,8 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="139" />
-        <source>Keyless access</source>
+        <location filename="../json/MATT/MATT2010.json" line="131" />
+        <source>Presence cruise control function</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15815,12 +15203,12 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="179" />
-        <source>CFG_BL5_MATT_CONF_PAGE_VIDE_000</source>
+        <source>Presence empty screen in Z0</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="187" />
-        <source>Webasto Settings Menu</source>
+        <source>Presence of the preconditioning menu (Webasto Settings Menu)</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15835,12 +15223,12 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="211" />
-        <source>CFG_BOZ_MATT_MENU_TCFG</source>
+        <source>Presence of the configurable button menu</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="219" />
-        <source>Color theme</source>
+        <source>Default colour scheme used on the matrix</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15869,6 +15257,11 @@
         <translation type="unfinished" />
     </message>
     <message>
+        <location filename="../json/MATT/MATT2010.json" line="242" />
+        <source>Adaptive cruise control and speed limiter</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location filename="../json/MATT/MATT2010.json" line="250" />
         <source>Starting the engine with the Start button</source>
         <translation type="unfinished" />
@@ -15890,7 +15283,7 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="280" />
-        <source>0 - hacthback</source>
+        <source>hacthback</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15905,7 +15298,7 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="283" />
-        <source>3 - ???</source>
+        <source>others</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15920,51 +15313,47 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="304" />
-        <source>CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000</source>
+        <source>Configuration of the presence of the instrument panel personalisation item on the configurable button menu</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="312" />
-        <source>CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000</source>
+        <source>Configuration of the presence of the instrument panel colour item on the configurable button menu</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="320" />
-        <source>CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000</source>
+        <source>Configuration of the presence of the courtesy light lighting item on the configurable button menu</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="328" />
-        <source>Adaptive cruise control mode</source>
+        <source>Adaptive cruise control mode (ARTIV)</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="334" />
-        <location filename="../json/MATT/MATT2010.json" line="372" />
         <source>00 - ???</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="335" />
-        <location filename="../json/MATT/MATT2010.json" line="373" />
         <source>01 - ???</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="336" />
-        <location filename="../json/MATT/MATT2010.json" line="374" />
         <source>10 - ???</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="337" />
-        <location filename="../json/MATT/MATT2010.json" line="375" />
         <source>11 - ???</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="342" />
-        <source>CFG_BPB_MATT_MENU_UNIT_000</source>
+        <source>Presence of the choice of distance and consumption units on the display menu</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15974,12 +15363,32 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="358" />
-        <source>CFG_BQA_MATT_CONF_COULEUR_RETRO_000</source>
+        <source>Selection of the two-colour matrix backlighting colour</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="366" />
-        <source>CFG_BWA_MATT_CONF_HYBRIDE_000</source>
+        <source>Presence of the hybrid function</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/MATT/MATT2010.json" line="372" />
+        <source>Masked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/MATT/MATT2010.json" line="373" />
+        <source>2 Pages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/MATT/MATT2010.json" line="374" />
+        <source>Page 1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/MATT/MATT2010.json" line="375" />
+        <source>Page 2</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -15989,111 +15398,111 @@
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="388" />
-        <source>CFG_DC0_MATT_CONF_POI_RADAR_000</source>
+        <source>POI Radar Data management</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="396" />
-        <source>CFG_DC1_MATT_CONF_VIT_CONSEILLE_000</source>
+        <source>Recommended speed management</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="404" />
-        <source>CFG_DBR_MATT_CONF_AFF_DYN_000</source>
+        <source>Presence of Dynamic Pack (Status of the blind spot monitoring function)</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../json/MATT/MATT2010.json" line="412" />
-        <source>6_3 UNKNOWN</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../json/MATT/MATT2010.json" line="420" />
         <source>6_7 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="428" />
-        <source>CFG_D8H_MATT_MARQUE_000</source>
+        <location filename="../json/MATT/MATT2010.json" line="420" />
+        <source>Vehicle brand</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="436" />
+        <location filename="../json/MATT/MATT2010.json" line="428" />
         <source>Fiat</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="442" />
-        <source>CFG_DX8_MATT_GENERATION_RVVI_000</source>
+        <location filename="../json/MATT/MATT2010.json" line="429" />
+        <source>Lancia</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="450" />
-        <source>CFG_E16_MATT_GENERATION_POI_RADAR_001</source>
+        <location filename="../json/MATT/MATT2010.json" line="435" />
+        <source>Type of RVVI System</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="458" />
-        <source>CFG_E13_MATT_TYPE_FM_002</source>
+        <location filename="../json/MATT/MATT2010.json" line="443" />
+        <source>Type of POI Radar data</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="466" />
+        <location filename="../json/MATT/MATT2010.json" line="451" />
+        <source>Indicates the of FM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../json/MATT/MATT2010.json" line="459" />
         <source>7_5 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="474" />
+        <location filename="../json/MATT/MATT2010.json" line="467" />
         <source>7_6 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="482" />
+        <location filename="../json/MATT/MATT2010.json" line="475" />
         <source>7_7 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="490" />
-        <source>CFG_E12_MATT_TYPE_EXPORT_000</source>
+        <location filename="../json/MATT/MATT2010.json" line="483" />
+        <source>Indicates the type of export for audio function</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="498" />
+        <location filename="../json/MATT/MATT2010.json" line="491" />
         <source>10</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="503" />
+        <location filename="../json/MATT/MATT2010.json" line="496" />
         <source>Lane tracking system</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="511" />
-        <source>CFG_EC4_MATT_CONF_ECO_COACHING_000</source>
+        <location filename="../json/MATT/MATT2010.json" line="505" />
+        <source>Presence of ECO Coaching</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="519" />
+        <location filename="../json/MATT/MATT2010.json" line="514" />
         <source>8_2 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="527" />
+        <location filename="../json/MATT/MATT2010.json" line="523" />
         <source>CFG_EC6_MATT_CONF_SLI_ISA_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="535" />
+        <location filename="../json/MATT/MATT2010.json" line="532" />
         <source>CFG_EC7_MATT_CONF_ACC_000</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="543" />
+        <location filename="../json/MATT/MATT2010.json" line="541" />
         <source>8_5 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="551" />
+        <location filename="../json/MATT/MATT2010.json" line="550" />
         <source>8_6 UNKNOWN</source>
         <translation type="unfinished" />
     </message>
@@ -16103,127 +15512,127 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="568" />
+        <location filename="../json/MATT/MATT2010.json" line="569" />
         <source>Telecoding_MATT_0200</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="575" />
+        <location filename="../json/MATT/MATT2010.json" line="576" />
         <source>The current transfer pointer in the upper right corner (one character)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="583" />
+        <location filename="../json/MATT/MATT2010.json" line="584" />
         <source>The current transfer pointer in the upper right corner (PRND)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="591" />
+        <location filename="../json/MATT/MATT2010.json" line="592" />
         <source>Instant consumption and power reserve in the bottom line (to activate - disable this bit)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="599" />
+        <location filename="../json/MATT/MATT2010.json" line="600" />
         <source>Activation of the upper line (cruise, limiter, gear pointer)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="607" />
+        <location filename="../json/MATT/MATT2010.json" line="608" />
         <source>0-4 UNKONOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="615" />
+        <location filename="../json/MATT/MATT2010.json" line="616" />
         <source>0-5 UNKONOWN</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="623" />
+        <location filename="../json/MATT/MATT2010.json" line="624" />
         <source>Presence of Current speed display (main screen)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="632" />
+        <location filename="../json/MATT/MATT2010.json" line="633" />
         <source>The transfer pointer in the upper right corner (???)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="640" />
+        <location filename="../json/MATT/MATT2010.json" line="641" />
         <source>byte0F9hbit0</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="648" />
+        <location filename="../json/MATT/MATT2010.json" line="649" />
         <source>byte0F9hbit1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="656" />
+        <location filename="../json/MATT/MATT2010.json" line="657" />
         <source>byte0F9hbit2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="664" />
+        <location filename="../json/MATT/MATT2010.json" line="665" />
         <source>byte0F9hbit3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="672" />
+        <location filename="../json/MATT/MATT2010.json" line="673" />
         <source>byte0F9hbit4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="680" />
+        <location filename="../json/MATT/MATT2010.json" line="681" />
         <source>byte0F9hbit5</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="688" />
+        <location filename="../json/MATT/MATT2010.json" line="689" />
         <source>byte0F9hbit6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="696" />
+        <location filename="../json/MATT/MATT2010.json" line="697" />
         <source>byte0F9hbit7</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="704" />
+        <location filename="../json/MATT/MATT2010.json" line="705" />
         <source>byte0FAhbit0</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="712" />
+        <location filename="../json/MATT/MATT2010.json" line="713" />
         <source>byte0FAhbit1</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="720" />
+        <location filename="../json/MATT/MATT2010.json" line="721" />
         <source>byte0FAhbit2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="728" />
+        <location filename="../json/MATT/MATT2010.json" line="729" />
         <source>checkbox_byte0FAhbit3</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="736" />
+        <location filename="../json/MATT/MATT2010.json" line="737" />
         <source>byte0FAhbit4</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="744" />
+        <location filename="../json/MATT/MATT2010.json" line="745" />
         <source>checkbox_byte0FAhbit5</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="752" />
+        <location filename="../json/MATT/MATT2010.json" line="753" />
         <source>byte0FAhbit6</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../json/MATT/MATT2010.json" line="760" />
+        <location filename="../json/MATT/MATT2010.json" line="761" />
         <source>checkbox_byte0FAhbit7</source>
         <translation type="unfinished" />
     </message>
