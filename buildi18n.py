@@ -85,10 +85,11 @@ def addi18nListToTS(pathIn: str, i18nList: []):
     for item in i18nList:
         i18nSource = item.get("i18n")
         message = ElementTree.Element("message")
+        message.tail = "\n    "
         for file in item.get("file"):
-            name = file.get("file")
+            name = os.path.relpath(file.get("file"), start=os.getcwd())
             line = file.get("line")
-            location = ElementTree.SubElement(message, "location", filename = str(name), line = str(line))
+            location = ElementTree.SubElement(message, "location", filename = f"../{name}", line = str(line))
         source = ElementTree.SubElement(message, "source")
         source.text = i18nSource
         translation = ElementTree.SubElement(message, "translation", type = "unfinished")
@@ -125,7 +126,7 @@ if __name__ == "__main__":
         printUsage();
 
     files = "EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py DiagnosticCommunication.py main.py"
-    subprocess.run(f"pyside6-lupdate {files} -source-language en_EN -ts ./i18n/PyPSADiag_{langCode}.ts".split(" "))
+    subprocess.run(f"pyside6-lupdate {files} -source-language en_EN -ts ./i18n/PyPSADiag_{langCode}.qt.ts".split(" "))
 
     i18nList = []
 
@@ -143,4 +144,4 @@ if __name__ == "__main__":
         print(file)
         processJSONFile(str(file), i18nList)
 
-    addi18nListToTS(f"./i18n/PyPSADiag_{langCode}.ts", i18nList)
+    addi18nListToTS(f"./i18n/PyPSADiag_{langCode}.qt.ts", i18nList)
