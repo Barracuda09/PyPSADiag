@@ -51,15 +51,11 @@ Make Translations
 ------
 
 For example to make a translation for Dutch use this command:
-- `pyside6-lupdate EcuMultiZoneTreeWidgetItem.py EcuZoneTreeView.py EcuZoneTreeWidgetItem.py PyPSADiagGUI.py DiagnosticCommunication.py main.py  -source-language en_EN -ts ./i18n/PyPSADiag_nl.qt.ts`
-- `pyside6-linguist ./i18n/PyPSADiag_nl.qt.ts`
-- `pyside6-lrelease ./i18n/PyPSADiag_nl.qt.ts -qm ./i18n/translations/PyPSADiag_nl.qm`
-- `python main.py --lang nl`
-
-Manual Translations
-------
-For manual translation, you can use the desktop application [QT Linguist](https://github.com/lelegard/qtlinguist-installers/releases).<br>
-Open, for example, the `./i18n/translations/PyPSADiag_translated_nl.qt.ts` file, edit the sentences, and save the result.
+- `python buildi18n.py --lang nl` --> Build the qt.ts file
+- `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate
+- `pyside6-linguist ./i18n/PyPSADiag_translated_nl.qt.ts` --> Correct translation if required
+- `python translate.py --releaseonly --input ./i18n/PyPSADiag_nl.qt.ts` --> Only Release translation qm file
+- `python main.py --lang nl` --> Run with nl language
 
 Donate
 ------
