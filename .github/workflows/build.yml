@@ -1,0 +1,121 @@
+name: Cross-Platform Build and Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Enter the release version (e.g., v1.0.0)"
+        required: true
+        type: string
+
+jobs:
+  build:
+    # Define matrix for Operating Systems
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+        python-version: ['3.13']
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install PyInstaller and dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build executable
+        run: pyinstaller main.spec
+
+      - name: Rename executable
+        shell: bash
+        run: |
+          if [ "${{ matrix.os }}" == "windows-latest" ]; then
+            mv dist/PyPSADiag/PyPSADiag.exe dist/PyPSADiag/PyPSADiag-windows.exe
+          elif [ "${{ matrix.os }}" == "ubuntu-latest" ]; then
+            mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-linux
+            chmod +x dist/PyPSADiag/PyPSADiag-linux || true
+          elif [ "${{ matrix.os }}" == "macos-latest" ]; then
+            mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-macos
+            chmod +x dist/PyPSADiag/PyPSADiag-macos || true
+          fi
+
+      - name: Archive the release package
+        # We make seperate archives for every OS
+        run: |
+          if [ "${{ matrix.os }}" == "windows-latest" ]; then
+            tar -a -c -f PyPSADiag-Windows.zip -C dist/ .
+          elif [ "${{ matrix.os }}" == "macos-latest" ]; then
+            tar -a -c -f PyPSADiag-macOS.zip -C dist/ .
+          elif [ "${{ matrix.os }}" == "ubuntu-latest" ]; then
+            # .tar.gz is standard for Linux
+            tar -czf PyPSADiag-Linux.tar.gz -C dist/ .
+          fi
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}-build
+          path: |
+            PyPSADiag-Windows.zip
+            PyPSADiag-macOS.zip
+            PyPSADiag-Linux.tar.gz
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.event.inputs.release_version }}
+          release_name: Release ${{ github.event.inputs.release_version }}
+          draft: false
+          prerelease: false
+
+      - name: Download all build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Upload Windows Asset to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: artifacts/windows-latest-build/PyPSADiag-Windows.zip
+          asset_name: PyPSADiag-Windows.zip
+          asset_content_type: application/zip
+
+      - name: Upload macOS Asset to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: artifacts/macos-latest-build/PyPSADiag-macOS.zip
+          asset_name: PyPSADiag-macOS.zip
+          asset_content_type: application/zip
+
+      - name: Upload Linux Asset to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: artifacts/ubuntu-latest-build/PyPSADiag-Linux.tar.gz
+          asset_name: PyPSADiag-Linux.tar.gz
+          asset_content_type: application/gzip
