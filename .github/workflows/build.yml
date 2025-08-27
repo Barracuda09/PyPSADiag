@@ -36,29 +36,25 @@ jobs:
       - name: Build executable
         run: pyinstaller main.spec
 
-      - name: Rename executable
+      - name: Archive the release package (Windows)
+        if: ${{ matrix.os == 'windows-latest' }}
         run: |
-          if [ "${{ matrix.os }}" == "windows-latest" ]; then
-            mv dist/PyPSADiag/PyPSADiag.exe dist/PyPSADiag/PyPSADiag-windows.exe
-          elif [ "${{ matrix.os }}" == "ubuntu-latest" ]; then
-            mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-linux
-            chmod +x dist/PyPSADiag/PyPSADiag-linux || true
-          elif [ "${{ matrix.os }}" == "macos-latest" ]; then
-            mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-macos
-            chmod +x dist/PyPSADiag/PyPSADiag-macos || true
-          fi
+          mv dist/PyPSADiag/PyPSADiag.exe dist/PyPSADiag/PyPSADiag-windows.exe
+          tar -a -c -f PyPSADiag-Windows.zip -C dist/ .
 
-      - name: Archive the release package
-        # We make seperate archives for every OS
+      - name: Archive the release package (macOS)
+        if: ${{ matrix.os == 'macos-latest' }}
         run: |
-          if [ "${{ matrix.os }}" == "windows-latest" ]; then
-            tar -a -c -f PyPSADiag-Windows.zip -C dist/ .
-          elif [ "${{ matrix.os }}" == "macos-latest" ]; then
-            tar -a -c -f PyPSADiag-macOS.zip -C dist/ .
-          elif [ "${{ matrix.os }}" == "ubuntu-latest" ]; then
-            # .tar.gz is standard for Linux
-            tar -czf PyPSADiag-Linux.tar.gz -C dist/ .
-          fi
+          mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-macos
+          chmod +x dist/PyPSADiag/PyPSADiag-macos || true
+          tar -a -c -f PyPSADiag-macOS.zip -C dist/ .
+
+      - name: Archive the release package (Linux)
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: |
+          mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-linux
+          chmod +x dist/PyPSADiag/PyPSADiag-linux || true
+          tar -czf PyPSADiag-Linux.tar.gz -C dist/ .
 
       - name: Upload release artifact
         uses: actions/upload-artifact@v4
