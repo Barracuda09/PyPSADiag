@@ -14,7 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+#        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [windows-latest, ubuntu-latest]
         python-version: ['3.13']
     runs-on: ${{ matrix.os }}
 
@@ -36,7 +37,6 @@ jobs:
         run: pyinstaller main.spec
 
       - name: Rename executable
-        shell: bash
         run: |
           if [ "${{ matrix.os }}" == "windows-latest" ]; then
             mv dist/PyPSADiag/PyPSADiag.exe dist/PyPSADiag/PyPSADiag-windows.exe
