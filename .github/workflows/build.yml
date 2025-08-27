@@ -69,6 +69,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Create GitHub Release
         id: create_release
