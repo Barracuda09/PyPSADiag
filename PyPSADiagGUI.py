@@ -231,7 +231,13 @@ class PyPSADiagGUI(object):
         self.mainLayout.addWidget(self.languageWidget)
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
+
+        self.statusbar = QStatusBar()
+        self.mainLayout.addWidget(self.statusbar)
+        self.statusbar.showMessage("PyPSADiag  -  Copyright \u00A9 2025 by Barracuda09")
+
         MainWindow.setCentralWidget(self.centralwidget)
+
 
     def setupLanguages(self, lang_code: str):
         self.languageComboBox = QComboBox()
