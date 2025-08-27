@@ -3,7 +3,7 @@ name: Cross-Platform Build and Release
 on:
   workflow_dispatch:
     inputs:
-      version:
+      release_version:
         description: "Enter the release version (e.g., v1.0.0)"
         required: true
         type: string
