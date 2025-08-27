@@ -199,16 +199,26 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def markItemAsRootLevel(self, item):
         item.setBackground(0, QColor(0, 255, 0))
         item.setBackground(1, QColor(0, 255, 0))
+        item.setBackground(2, QColor(0, 255, 0))
 
     def markItemValueOutOfRange(self, item):
         item.setBackground(0, QColor(255, 128, 0))
         item.setBackground(1, QColor(255, 128, 0))
+        item.setBackground(2, QColor(255, 128, 0))
 
     def markItemNoResponse(self, item):
         widget = item.treeWidget().itemWidget(item, 2)
         widget.setDisabled(True);
         item.setBackground(0, QColor(255, 128, 128))
         item.setBackground(1, QColor(255, 128, 128))
+        item.setBackground(2, QColor(255, 128, 128))
+
+    def markItemAsNormal(self, item):
+        widget = item.treeWidget().itemWidget(item, 2)
+        widget.setDisabled(False);
+        item.setBackground(0, QColor(255, 255, 255))
+        item.setBackground(1, QColor(255, 255, 255))
+        item.setBackground(2, QColor(255, 255, 255))
 
     def hideNoResponseZones(self, hide: bool()):
         for index in range(self.topLevelItemCount()):
@@ -232,6 +242,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
             item.clearZoneListValues()
+            self.markItemAsNormal(item)
 
     def getZoneListOfHexValue(self, virginWrite: bool()):
         value = []
