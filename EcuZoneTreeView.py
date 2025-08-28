@@ -197,9 +197,9 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         self.setColumnWidth(2, 350)
 
     def markItemAsRootLevel(self, item):
-        item.setBackground(0, QColor(0, 255, 0))
-        item.setBackground(1, QColor(0, 255, 0))
-        item.setBackground(2, QColor(0, 255, 0))
+        item.setBackground(0, QColor(0, 255, 0).darker(200))
+        item.setBackground(1, QColor(0, 255, 0).darker(200))
+        item.setBackground(2, QColor(0, 255, 0).darker(200))
 
     def markItemValueOutOfRange(self, item):
         item.setBackground(0, QColor(255, 128, 0))
@@ -209,16 +209,17 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def markItemNoResponse(self, item):
         widget = item.treeWidget().itemWidget(item, 2)
         widget.setDisabled(True);
-        item.setBackground(0, QColor(255, 128, 128))
-        item.setBackground(1, QColor(255, 128, 128))
-        item.setBackground(2, QColor(255, 128, 128))
+        item.setBackground(0, QColor(255, 0, 0).darker(200))
+        item.setBackground(1, QColor(255, 0, 0).darker(200))
+        item.setBackground(2, QColor(255, 0, 0).darker(200))
 
     def markItemAsNormal(self, item):
         widget = item.treeWidget().itemWidget(item, 2)
-        widget.setDisabled(False);
-        item.setBackground(0, QColor(255, 255, 255))
-        item.setBackground(1, QColor(255, 255, 255))
-        item.setBackground(2, QColor(255, 255, 255))
+        if widget.isEnabled() == False:
+            widget.setDisabled(False);
+            item.setBackground(0, QColor(30, 30, 30).lighter(200))
+            item.setBackground(1, QColor(30, 30, 30).lighter(200))
+            item.setBackground(2, QColor(30, 30, 30).lighter(200))
 
     def hideNoResponseZones(self, hide: bool()):
         for index in range(self.topLevelItemCount()):

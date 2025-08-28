@@ -47,7 +47,45 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
+    def setupDarkMode(self):
+        GRAY = QColor(130, 130, 130)
+        DARK_GRAY = QColor(130, 130, 130)
+        black = QColor(30, 30, 30)
+        blue = QColor(42, 130, 218)
+        backGround = DARK_GRAY.lighter(200)
+        light = backGround.lighter(150)
+        mid = backGround.darker(130)
+        midLight = mid.lighter(110)
+        dark = backGround.darker(150)
+        base = black.lighter(200)
+        altbase = DARK_GRAY.darker(125)
+
+        darkPalette = QPalette()
+        darkPalette.setColor(QPalette.Window, DARK_GRAY)
+        darkPalette.setColor(QPalette.WindowText, Qt.white)
+        darkPalette.setColor(QPalette.Base, base)
+        darkPalette.setColor(QPalette.AlternateBase, altbase)
+        darkPalette.setColor(QPalette.ToolTipBase, blue)
+        darkPalette.setColor(QPalette.ToolTipText, Qt.white)
+        darkPalette.setColor(QPalette.Text, Qt.white)
+        darkPalette.setColor(QPalette.Button, DARK_GRAY)
+        darkPalette.setColor(QPalette.ButtonText, Qt.white)
+        darkPalette.setColor(QPalette.Link, blue)
+        darkPalette.setColor(QPalette.Highlight, GRAY.darker(150))
+        darkPalette.setColor(QPalette.HighlightedText, Qt.white)
+        darkPalette.setColor(QPalette.Light, light)
+        darkPalette.setColor(QPalette.Midlight, midLight)
+        darkPalette.setColor(QPalette.Mid, mid)
+        darkPalette.setColor(QPalette.Dark, dark)
+        darkPalette.setColor(QPalette.Active, QPalette.Highlight, blue)
+        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, GRAY.lighter(125))
+        darkPalette.setColor(QPalette.Disabled, QPalette.WindowText, GRAY.lighter(125))
+        darkPalette.setColor(QPalette.Disabled, QPalette.Text, GRAY.lighter(125))
+        darkPalette.setColor(QPalette.Disabled, QPalette.Light, DARK_GRAY)
+        QApplication.setPalette(darkPalette);
+
     def setupGUI(self, MainWindow, scan: bool(), lang_code: str):
+        self.setupDarkMode()
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
