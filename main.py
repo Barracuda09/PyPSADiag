@@ -70,11 +70,11 @@ class MainWindow(QMainWindow):
                 elif arg == "--checkcalc":
                     calc = SeedKeyAlgorithm()
                     calc.testCalculations()
-                    exit()
+                    sys.exit(1)
                 elif arg == "--help":
                     print("Use --simu      For simulation")
                     print("Use --lang nl   For NL translation")
-                    exit()
+                    sys.exit(1)
 
         self.addTranslators()
 
@@ -470,9 +470,9 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
+  app = QApplication(sys.argv)
 
-    window = MainWindow()
-    window.show()
+  window = MainWindow()
+  window.show()
 
-    sys.exit(app.exec())
+  sys.exit(app.exec())
