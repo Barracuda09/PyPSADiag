@@ -40,21 +40,24 @@ jobs:
         if: ${{ matrix.os == 'windows-latest' }}
         run: |
           mv dist/PyPSADiag/PyPSADiag.exe dist/PyPSADiag/PyPSADiag-windows.exe
-          tar -a -c -f PyPSADiag-Windows.zip -C dist/ .
+          cd dist
+          tar -a -c -f ../PyPSADiag-Windows.zip PyPSADiag
 
       - name: Archive the release package (macOS)
         if: ${{ matrix.os == 'macos-latest' }}
         run: |
           mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-macos
           chmod +x dist/PyPSADiag/PyPSADiag-macos || true
-          tar -a -c -f PyPSADiag-macOS.zip -C dist/ .
+          cd dist
+          tar -a -c -f ../PyPSADiag-macOS.zip PyPSADiag
 
       - name: Archive the release package (Linux)
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
           mv dist/PyPSADiag/PyPSADiag dist/PyPSADiag/PyPSADiag-linux
           chmod +x dist/PyPSADiag/PyPSADiag-linux || true
-          tar -czf PyPSADiag-Linux.tar.gz -C dist/ .
+          cd dist
+          tar -czf ../PyPSADiag-Linux.tar.gz PyPSADiag
 
       - name: Upload release artifact
         uses: actions/upload-artifact@v4
@@ -90,6 +93,7 @@ jobs:
           path: artifacts
 
       - name: Upload Windows Asset to Release
+        if: ${{ hashFiles('artifacts/windows-latest-build/PyPSADiag-Windows.zip') != '' }}
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -100,6 +104,7 @@ jobs:
           asset_content_type: application/zip
 
       - name: Upload macOS Asset to Release
+        if: ${{ hashFiles('artifacts/macos-latest-build/PyPSADiag-macOS.zip') != '' }}
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -110,6 +115,7 @@ jobs:
           asset_content_type: application/zip
 
       - name: Upload Linux Asset to Release
+        if: ${{ hashFiles('artifacts/ubuntu-latest-build/PyPSADiag-Linux.tar.gz') != '' }}
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
