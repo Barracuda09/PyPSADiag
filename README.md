@@ -32,7 +32,18 @@ contribute to the project, like:
 - test reports
 - spread the word!
 
-Build
+Use a Release
+-----
+- Get release a from [Download Release](https://github.com/Barracuda09/PyPSADiag/releases) There is Windows, Linux and macOS versions
+- Extract archive to your hardrive
+- Run with PyPSADiag-windows.exe or any other distibution you downloaded:
+	1. `PyPSADiag-windows.exe --lang nl`
+	2. `Open Zone File` and select an ECU JSON file
+	3. `Connect` to correct Arduino hardware
+	4. `Read` Zones
+	5. <b> **RISK:** You can save the Zones to the ECU by using the `Write` Button.<br/> **Always Check that these zones look correct** </b>
+
+Build Yourself
 -----
 - Install Python 3.12 or above
 - Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`<br>
@@ -46,6 +57,7 @@ Build
 	3. `Connect` to correct Arduino hardware
 	4. `Read` Zones
 	5. <b> **RISK:** You can save the Zones to the ECU by using the `Write` Button.<br/> **Always Check that these zones look correct** </b>
+
 
 Make Translations
 ------
