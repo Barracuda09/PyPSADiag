@@ -1,0 +1,35 @@
+{
+  "name": "MED17_4_4",
+  "tx_id": "6A8",
+  "rx_id": "688",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "key1": "2371"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+     "2100": {
+      "id": "Configuration_Group_Data_List_2100",
+      "tab": "tele",
+      "name": "Configuration group data list 2100",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Configuration_Group_Data_List_2101",
+      "tab": "tele",
+      "name": "Configuration group data list 2101",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
