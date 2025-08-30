@@ -140,6 +140,30 @@
           }
         ]
       },
+      "CFG_EP5_DAE_UDS_CPR_003": {
+        "name": "Bodywork",
+        "read_only": true,
+        "byte": 3,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      },
+      "CFG_EP6_DAE_UDS_MPR_003": {
+        "name": "Engine",
+        "read_only": true,
+        "byte": 5,
+        "byte_range": 4,
+        "type": "raw",
+        "form_type": "string"
+      },
+      "CFG_EP7_DAE_UDS_BVPR_003": {
+        "name": "Type of gearbox",
+        "read_only": true,
+        "byte": 9,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      },
       "CFG_EP8_DAE_UDS_DPPR_003": {
         "name": "Type of tyre",
         "byte": 11,
