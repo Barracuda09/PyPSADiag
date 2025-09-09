@@ -1,0 +1,33 @@
+{
+  "name": "BVA AMN8/ATN8",
+  "tx_id": "6A9",
+  "rx_id": "689",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "4854",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "tab": "tele",
+      "name": "Gauging group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
