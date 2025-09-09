@@ -48,8 +48,9 @@ Build Yourself
 - Install Python 3.12 or above
 - Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`<br>
   OR use this [Download ZIP](https://github.com/Barracuda09/PyPSADiag/archive/refs/heads/main.zip)
-- Create virtual enviroment `python -m venv /path/to/PyPSADiag/.venv`
-- Goto virtual enviroment with `/path/to/PyPSADiag/.venv/Script/activate`
+- Enter created directory `cd /path/to/PyPSADiag`
+- Create virtual environment `python -m venv .venv --prompt PyPSADiag`
+- Activate your virtual environment with `source .venv/Script/activate`
 - Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
 - Run with:
 	1. `python main.py --lang nl`

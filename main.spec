@@ -77,7 +77,12 @@ coll = COLLECT(
 
 app = BUNDLE(
     coll,
-    name=program_file,
-    icon=icon_path,
-    bundle_identifier="Barracuda09.PyPSADiag.py",
+    name='PyPSADiag.app',
+#    icon='icon_path/pypsadiag.icns',
+    bundle_identifier="com.barracuda09.pypsadiag.py",
+    info_plist={
+        'CFBundleShortVersionString': '1.0.0',
+        'CFBundleVersion': '1.0.0',
+        'NSHighResolutionCapable': True
+    }
 )
