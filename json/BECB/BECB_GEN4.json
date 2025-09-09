@@ -1,0 +1,42 @@
+{
+    "name": "BECB_GEN4",
+    "tx_id": "731",
+    "rx_id": "711",
+    "lin_id": "44",
+    "protocol": "uds",
+    "key_type": "single",
+    "keys": "****",
+    "coding": true,
+    "errors": true,
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Telecoding_Value",
+            "tab": "tele",
+            "name": "Telecoding",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "2101": {
+            "id": "Engine variant",
+            "tab": "tele",
+            "name": "Engine variant",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "2102": {
+            "id": "Status",
+            "tab": "tele",
+            "name": "Status",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        }
+    }
+}

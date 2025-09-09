@@ -158,6 +158,7 @@
       "form_type": "combobox",
       "params": [
         { "value": "00", "name": "0" },
+        { "value": "0038", "name": "56 Ohms" },
         { "value": "0040", "name": "64 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with a full tank"
@@ -1254,9 +1255,9 @@
         { "value": "241F", "name": "DS6" },
         { "value": "2509", "name": "DS4" },
         { "value": "2813", "name": "2813" },
-        { "value": "2814", "name": "C4 Picasso 7-Eats" },
+        { "value": "2814", "name": "C4 Picasso 7-seats" },
         { "value": "2818", "name": "2818" },
-        { "value": "2A14", "name": "C4 Picasso 5-Eats" },
+        { "value": "2A14", "name": "C4 Picasso 5-ats" },
         { "value": "3307", "name": "508 4-door" },
         { "value": "3308", "name": "508 (China)" },
         { "value": "330A", "name": "G95 4-Door (China)" },
@@ -2753,7 +2754,7 @@
       ],
       "name": "Control type of controlled generator"
     },
-    "23e6": {
+    "23E6": {
       "id": "CFG_DEU_BSI_PRES_POMPE_BASSE_PRE_000",
       "tab": "engine",
       "byte": 0,
@@ -2761,7 +2762,7 @@
       "form_type": "checkbox",
       "name": "The presence of a low pressure fuel pump"
     },
-    "23e7": {
+    "23E7": {
       "id": "CFG_DFB_BSI_OPT_DECONNEXION_ASR_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -2783,7 +2784,7 @@
       ],
       "name": "The presence of front and rear seats with heating"
     },
-    "23ea": {
+    "23EA": {
       "id": "CFG_A3N_BSI_AAF_000",
       "tab": "lights",
       "byte": 0,
@@ -2868,7 +2869,7 @@
       ],
       "name": "Generator class type"
     },
-    "23f2": {
+    "23F2": {
       "id": "CFG_DGL_BSI_ACTIVATION_FCT_ARC_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -2876,7 +2877,7 @@
       "form_type": "checkbox",
       "name": "The state of initialization of the warning function in the risk of collision"
     },
-    "23f3": {
+    "23F3": {
       "id": "CFG_DGM_BSI_TYPE_SENS_ARC_NIV_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -2890,7 +2891,7 @@
       ],
       "name": "The state of initialization of the sensitivity of the warning function in the risk of a collision"
     },
-    "23f4": {
+    "23F4": {
       "id": "CFG_DGN_BSI_ACTIVATION_FARC_FA_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -2898,7 +2899,7 @@
       "form_type": "checkbox",
       "name": "The state of initialization of the automatic braking function at the risk of collision"
     },
-    "23f5": {
+    "23F5": {
       "id": "CFG_DH4_BSI_OPT_FEUX_STOPPARABAR_000",
       "tab": "lights",
       "byte": 0,
@@ -2906,7 +2907,7 @@
       "form_type": "checkbox",
       "name": "Using the rear fog lights for the function of the stop signal"
     },
-    "23f6": {
+    "23F6": {
       "id": "CFG_DH5_BSI_ALRTDEPASSCONSVITLVV_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -2955,7 +2956,7 @@
       "form_type": "checkbox",
       "name": "Option: Sound alarm of the position of the lever of the automated gearbox, depending on the state of fastening the driver's seat belt"
     },
-    "23fb": {
+    "23FB": {
       "id": "CFG_B91_BSI_PRESENCE_SBW_000",
       "tab": "engine",
       "byte": 0,
@@ -2963,7 +2964,7 @@
       "form_type": "checkbox",
       "name": "The presence of an automatic gearbox with a computer of an electric drive"
     },
-    "23fc": {
+    "23FC": {
       "id": "CFG_BHG_BSI_PRESENCE_ASR_PLUS_000",
       "tab": "drive_assist",
       "byte": 0,
@@ -4721,7 +4722,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSG_BSI_UCELIN_UDDGO_000: multiplex fuel additive pump (diesel)"
     },
-    "d5a1": {
+    "D5A1": {
       "id": "CFG_BSH_BSI_UCELIN_UDS_BPL_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4729,7 +4730,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???"
     },
-    "d5a2": {
+    "D5A2": {
       "id": "CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4737,7 +4738,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000: Seat belt warning light"
     },
-    "d5a3": {
+    "D5A3": {
       "id": "CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4745,7 +4746,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSJ_BSI_UCELIN_UDS_SOC_BECB_000: battery charge unit"
     },
-    "d5a4": {
+    "D5A4": {
       "id": "CFG_BSK_BSI_UCELIN_UDS_CDPL_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4753,7 +4754,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSK_BSI_UCELIN_UDS_CDPL_000: rain / light sensor"
     },
-    "d5a5": {
+    "D5A5": {
       "id": "CFG_BSL_BSI_UCELIN_UDS_ESV_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4761,7 +4762,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSL_BSI_UCELIN_UDS_ESV_000: front wiper with the LIN network"
     },
-    "d5a6": {
+    "D5A6": {
       "id": "CFG_BSM_BSI_UCELIN_UDS_BPGA_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4769,7 +4770,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSM_BSI_UCELIN_UDS_BPGA_000: Power Protection and Arrangement Unit (BPGA)"
     },
-    "d5a7": {
+    "D5A7": {
       "id": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4777,7 +4778,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel"
     },
-    "d5a8": {
+    "D5A8": {
       "id": "CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4785,7 +4786,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000: configured key"
     },
-    "d5a9": {
+    "D5A9": {
       "id": "CFG_BSP_BSI_UCELIN_UDS_VCI_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4793,7 +4794,7 @@
       "form_type": "checkbox",
       "name": "CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies"
     },
-    "d5aa": {
+    "D5AA": {
       "id": "CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4801,7 +4802,7 @@
       "form_type": "checkbox",
       "name": "CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000: clock"
     },
-    "d5ab": {
+    "D5AB": {
       "id": "CFG_D2K_BSI_UCELIN_UDS_MEAP_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4809,7 +4810,7 @@
       "form_type": "checkbox",
       "name": "CFG_D2K_BSI_UCELIN_UDS_MEAP_000: controlled air supply module"
     },
-    "d5ac": {
+    "D5AC": {
       "id": "CFG_D3B_BSI_UCELIN_UDS_MUS_001",
       "tab": "all_computers",
       "byte": 0,
@@ -4817,7 +4818,7 @@
       "form_type": "checkbox",
       "name": "CFG_D3B_BSI_UCELIN_UDS_MUS_001: ultrasonic module"
     },
-    "d5ad": {
+    "D5AD": {
       "id": "CFG_D3A_BSI_UCELIN_UDS_SIR_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4825,7 +4826,7 @@
       "form_type": "checkbox",
       "name": "CFG_D3A_BSI_UCELIN_UDS_SIR_000: siren"
     },
-    "d5ae": {
+    "D5AE": {
       "id": "CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4833,7 +4834,7 @@
       "form_type": "checkbox",
       "name": "CFG_DGB_BSI_UCELIN_UDS_CPR_ELEC_000: panoramic visual control unit (360 ° camera)"
     },
-    "d5af": {
+    "D5AF": {
       "id": "CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4841,7 +4842,7 @@
       "form_type": "checkbox",
       "name": "CFG_DGC_BSI_UCELIN_UDS_CTP_AIR_000: controlled air supply module"
     },
-    "d5b0": {
+    "D5B0": {
       "id": "CFG_DGD_BSI_UCELIN_UDS_DGT_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4849,7 +4850,7 @@
       "form_type": "checkbox",
       "name": "CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???"
     },
-    "d5b1": {
+    "D5B1": {
       "id": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4857,7 +4858,7 @@
       "form_type": "checkbox",
       "name": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???"
     },
-    "d5b2": {
+    "D5B2": {
       "id": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4865,7 +4866,7 @@
       "form_type": "checkbox",
       "name": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???"
     },
-    "d5b3": {
+    "D5B3": {
       "id": "CFG_EBT_BSI_UCELIN_BAAS_R_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4873,7 +4874,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBT_BSI_UCELIN_BAAS_R_000: access computer without the help of hands on the right side"
     },
-    "d5b4": {
+    "D5B4": {
       "id": "CFG_EBV_BSI_UCELIN_BAAS_L_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4881,7 +4882,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBV_BSI_UCELIN_BAAS_L_000: access computer without the help of hands on the left side"
     },
-    "d5b5": {
+    "D5B5": {
       "id": "CFG_EBW_BSI_UCELIN_BAAS_T_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4889,7 +4890,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBW_BSI_UCELIN_BAAS_T_000: access computer without help from behind"
     },
-    "d5b6": {
+    "D5B6": {
       "id": "CFG_EBX_BSI_UCELIN_SPB_D_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4897,7 +4898,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???"
     },
-    "d5b7": {
+    "D5B7": {
       "id": "CFG_EBY_BSI_UCELIN_SCB_D_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4905,7 +4906,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer"
     },
-    "d5b8": {
+    "D5B8": {
       "id": "CFG_EBZ_BSI_UCELIN_BRNCV_D_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4913,7 +4914,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBZ_BSI_UCELIN_BRNCV_D_000: computer adjustment and ventilation of the front left seat"
     },
-    "d5b9": {
+    "D5B9": {
       "id": "CFG_EC0_BSI_UCELIN_SPB_P_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4921,7 +4922,7 @@
       "form_type": "checkbox",
       "name": "CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???"
     },
-    "d5ba": {
+    "D5BA": {
       "id": "CFG_EC1_BSI_UCELIN_SCB_P_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4929,7 +4930,7 @@
       "form_type": "checkbox",
       "name": "CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer"
     },
-    "d5bb": {
+    "D5BB": {
       "id": "CFG_EBU_BSI_UCELIN_BRNCV_P_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4937,7 +4938,7 @@
       "form_type": "checkbox",
       "name": "CFG_EBU_BSI_UCELIN_BRNCV_P_000: computer adjustment and ventilation of the front right seat"
     },
-    "d5bc": {
+    "D5BC": {
       "id": "CFG_ELA_BSI_UCELIN_BRNC_ARG_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4945,7 +4946,7 @@
       "form_type": "checkbox",
       "name": "CFG_e_BSI_UCELIN_BRNC_ARG_000: computer adjustment and ventilation of the rear left seat"
     },
-    "d5bd": {
+    "D5BD": {
       "id": "CFG_ELB_BSI_UCELIN_BRNC_ARD_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4953,7 +4954,7 @@
       "form_type": "checkbox",
       "name": "Cfg_elb_bsi_ucelin_brnc_ard_000: computer adjustment and ventilation of the rear right seat"
     },
-    "d5be": {
+    "D5BE": {
       "id": "CFG_EN4_BSI_UCELIN_VAB_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4961,7 +4962,7 @@
       "form_type": "checkbox",
       "name": "CFG_EN4_BSI_UCELIN_VAB_000: LIN Boitier Adaptation Video (Video Adaptor Box)"
     },
-    "d5bf": {
+    "D5BF": {
       "id": "CFG_ELC_BSI_UCELIN_ARS_FEU_COND_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4969,7 +4970,7 @@
       "form_type": "checkbox",
       "name": "CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???"
     },
-    "d5c0": {
+    "D5C0": {
       "id": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4977,7 +4978,7 @@
       "form_type": "checkbox",
       "name": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???"
     },
-    "d5c1": {
+    "D5C1": {
       "id": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4985,7 +4986,7 @@
       "form_type": "checkbox",
       "name": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???"
     },
-    "d5c2": {
+    "D5C2": {
       "id": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000",
       "tab": "all_computers",
       "byte": 0,
@@ -4993,7 +4994,7 @@
       "form_type": "checkbox",
       "name": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???"
     },
-    "d5c3": {
+    "D5C3": {
       "id": "CFG_ELG_BSI_UCELIN_TO_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5001,7 +5002,7 @@
       "form_type": "checkbox",
       "name": "Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\\*lin ???"
     },
-    "d5c4": {
+    "D5C4": {
       "id": "CFG_ELR_BSI_UCELIN_PLMB_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5009,7 +5010,7 @@
       "form_type": "checkbox",
       "name": "CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???"
     },
-    "d5c5": {
+    "D5C5": {
       "id": "CFG_EOZ_BSI_UCELIN_CCE_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5017,7 +5018,15 @@
       "form_type": "checkbox",
       "name": "CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor"
     },
-    "d5c7": {
+    "D5C6": {
+      "id": "CFG_EOZ_BSI_UCELIN_???_000",
+      "tab": "all_computers",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EZ_BSI_UCELIN_???_000: ????"
+    },
+    "D5C7": {
       "id": "CFG_EY0_BSI_UCELIN_OCS_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5025,7 +5034,7 @@
       "form_type": "checkbox",
       "name": "CFG_EY0_BSI_UCELIN_OCS_000: ???"
     },
-    "d5c8": {
+    "D5C8": {
       "id": "CFG_EYG_BSI_UCELIN_CTPE_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5033,7 +5042,7 @@
       "form_type": "checkbox",
       "name": "CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater"
     },
-    "d600": {
+    "D600": {
       "id": "CFG_BH0_BSI_NS_PRESENCE_CDC_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5041,7 +5050,7 @@
       "form_type": "checkbox",
       "name": "CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer"
     },
-    "d601": {
+    "D601": {
       "id": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000",
       "tab": "all_computers",
       "byte": 0,
@@ -5049,7 +5058,7 @@
       "form_type": "checkbox",
       "name": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\\*RD5 ???"
     },
-    "d602": {
+    "D602": {
       "id": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000",
       "tab": "other",
       "byte": 0,
@@ -5057,7 +5066,7 @@
       "form_type": "checkbox",
       "name": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000: Folding the rear-view mirrors using a high-frequency remote control"
     },
-    "d603": {
+    "D603": {
       "id": "CFG_BK2_BSI_NS_PRESENCEKMLUSBBOX_000",
       "tab": "all_computers",
       "byte": 0,
