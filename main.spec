@@ -27,6 +27,7 @@ added_files = [
     ('csv/*.csv', './csv'),
     ('data/*.json', './data'),
     ('json', './json'),
+    ('simu', './simu'),
     ('i18n/flags', './i18n/flags'),
     ('i18n/translations', './i18n/translations')
 ]

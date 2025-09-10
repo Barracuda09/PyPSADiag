@@ -1,0 +1,1 @@
+VERSION = "source"  # This will be updated by the build process

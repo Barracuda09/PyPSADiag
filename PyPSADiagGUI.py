@@ -20,6 +20,7 @@
 """
 
 import os
+from datetime import datetime
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -35,6 +36,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
 from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
 from i18n import i18n
+from version import VERSION
 
 
 class PyPSADiagGUI(object):
@@ -297,7 +299,7 @@ class PyPSADiagGUI(object):
 
         self.statusbar = QStatusBar()
         self.mainLayout.addWidget(self.statusbar)
-        self.statusbar.showMessage("PyPSADiag  -  Copyright \u00A9 2025 by Barracuda09")
+        self.statusbar.showMessage(f"PyPSADiag {VERSION} - Copyright \u00A9 {datetime.now().year} by Barracuda09")
 
         MainWindow.setCentralWidget(self.centralwidget)
 

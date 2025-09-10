@@ -35,6 +35,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Update build version
+        run: |
+          echo "VERSION = \"${{ github.event.inputs.release_version }}\"" > version.py
+          
       - name: Install PyInstaller and dependencies
         run: |
           python -m pip install --upgrade pip
@@ -44,6 +48,9 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+            python -m venv .venv --prompt PyPSADiag
+            source .venv/bin/activate
+            pip install -r requirements.txt
             arch -${{ matrix.arch }} pyinstaller main.spec
           else
             pyinstaller main.spec
