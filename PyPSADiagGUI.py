@@ -30,7 +30,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QHBoxLayout, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget)
+    QTextEdit, QVBoxLayout, QWidget, QStyleFactory)
 
 from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
@@ -47,7 +47,20 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
-    def setupDarkMode(self):
+    def setupGlobalColors(self):
+        # Global Color variables
+        global DARK_RED
+        global DARK_GREEN
+        global ORANGE
+
+        DARK_RED = QColor(255, 0, 0).darker(125)
+        DARK_GREEN = QColor(0, 255, 0).darker(150)
+        ORANGE = QColor(255, 128, 0)
+
+    def setupDarkMode(self, app: QApplication):
+        # Global Color variables
+        global BASE_COLOR
+
         GRAY = QColor(130, 130, 130)
         DARK_GRAY = QColor(130, 130, 130)
         black = QColor(30, 30, 30)
@@ -57,18 +70,18 @@ class PyPSADiagGUI(object):
         mid = backGround.darker(130)
         midLight = mid.lighter(110)
         dark = backGround.darker(150)
-        base = black.lighter(200)
-        altbase = DARK_GRAY.darker(125)
+        BASE_COLOR = black.lighter(200)
+        ALT_BASE_COLOR = DARK_GRAY.darker(125)
 
         darkPalette = QPalette()
         darkPalette.setColor(QPalette.Window, DARK_GRAY)
         darkPalette.setColor(QPalette.WindowText, Qt.white)
-        darkPalette.setColor(QPalette.Base, base)
-        darkPalette.setColor(QPalette.AlternateBase, altbase)
+        darkPalette.setColor(QPalette.Base, BASE_COLOR)
+        darkPalette.setColor(QPalette.AlternateBase, ALT_BASE_COLOR)
         darkPalette.setColor(QPalette.ToolTipBase, blue)
         darkPalette.setColor(QPalette.ToolTipText, Qt.white)
         darkPalette.setColor(QPalette.Text, Qt.white)
-        darkPalette.setColor(QPalette.Button, DARK_GRAY)
+        darkPalette.setColor(QPalette.Button, DARK_GRAY.lighter(100))
         darkPalette.setColor(QPalette.ButtonText, Qt.white)
         darkPalette.setColor(QPalette.Link, blue)
         darkPalette.setColor(QPalette.Highlight, GRAY.darker(150))
@@ -78,14 +91,14 @@ class PyPSADiagGUI(object):
         darkPalette.setColor(QPalette.Mid, mid)
         darkPalette.setColor(QPalette.Dark, dark)
         darkPalette.setColor(QPalette.Active, QPalette.Highlight, blue)
-        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, GRAY.lighter(125))
-        darkPalette.setColor(QPalette.Disabled, QPalette.WindowText, GRAY.lighter(125))
-        darkPalette.setColor(QPalette.Disabled, QPalette.Text, GRAY.lighter(125))
+        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, GRAY.lighter(150))
+        darkPalette.setColor(QPalette.Disabled, QPalette.WindowText, GRAY.lighter(150))
+        darkPalette.setColor(QPalette.Disabled, QPalette.Text, GRAY.lighter(150))
         darkPalette.setColor(QPalette.Disabled, QPalette.Light, DARK_GRAY)
-        QApplication.setPalette(darkPalette);
+        darkPalette.setColor(QPalette.Disabled, QPalette.Button, DARK_GRAY.lighter(75))
+        app.setPalette(darkPalette)
 
-    def setupGUI(self, MainWindow, scan: bool(), lang_code: str):
-        self.setupDarkMode()
+    def setupGUI(self, app: QApplication, MainWindow, scan: bool(), lang_code: str):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
@@ -98,6 +111,18 @@ class PyPSADiagGUI(object):
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
         self.centralwidget.setSizePolicy(sizePolicy)
+
+        print(QStyleFactory.keys())
+        app.setStyle(QStyleFactory.create('Fusion'))
+
+        self.setupGlobalColors()
+
+#        global globalPalette
+#        globalPalette = app.palette()
+#        global BASE_COLOR
+#        BASE_COLOR = globalPalette.color(QPalette.Base)
+
+        self.setupDarkMode(app)
 
         self.command = HistoryLineEdit()
         self.output = QTextEdit()

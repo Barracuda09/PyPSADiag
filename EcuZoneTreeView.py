@@ -29,6 +29,7 @@ from EcuZoneComboBox import EcuZoneComboBox
 from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 from EcuMultiZoneTreeWidgetItem import EcuMultiZoneTreeWidgetItem
 from i18n import i18n
+import PyPSADiagGUI
 
 class EcuZoneTreeView(QTabWidget):
     """
@@ -121,7 +122,7 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         headers = [i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")]
         self.setHeaderLabels(headers)
         self.setSelectionMode(QTreeWidget.NoSelection)
-        self.setFocusPolicy(Qt.NoFocus);
+        self.setFocusPolicy(Qt.NoFocus)
         self.setWordWrap(True)
         self.setAutoScroll(False)
         rowCount = 0
@@ -197,29 +198,29 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         self.setColumnWidth(2, 350)
 
     def markItemAsRootLevel(self, item):
-        item.setBackground(0, QColor(0, 255, 0).darker(200))
-        item.setBackground(1, QColor(0, 255, 0).darker(200))
-        item.setBackground(2, QColor(0, 255, 0).darker(200))
+        item.setBackground(0, PyPSADiagGUI.DARK_GREEN)
+        item.setBackground(1, PyPSADiagGUI.DARK_GREEN)
+        item.setBackground(2, PyPSADiagGUI.DARK_GREEN)
 
     def markItemValueOutOfRange(self, item):
-        item.setBackground(0, QColor(255, 128, 0))
-        item.setBackground(1, QColor(255, 128, 0))
-        item.setBackground(2, QColor(255, 128, 0))
+        item.setBackground(0, PyPSADiagGUI.ORANGE)
+        item.setBackground(1, PyPSADiagGUI.ORANGE)
+        item.setBackground(2, PyPSADiagGUI.ORANGE)
 
     def markItemNoResponse(self, item):
         widget = item.treeWidget().itemWidget(item, 2)
-        widget.setDisabled(True);
-        item.setBackground(0, QColor(255, 0, 0).darker(200))
-        item.setBackground(1, QColor(255, 0, 0).darker(200))
-        item.setBackground(2, QColor(255, 0, 0).darker(200))
+        widget.setDisabled(True)
+        item.setBackground(0, PyPSADiagGUI.DARK_RED)
+        item.setBackground(1, PyPSADiagGUI.DARK_RED)
+        item.setBackground(2, PyPSADiagGUI.DARK_RED)
 
     def markItemAsNormal(self, item):
         widget = item.treeWidget().itemWidget(item, 2)
         if widget.isEnabled() == False:
-            widget.setDisabled(False);
-            item.setBackground(0, QColor(30, 30, 30).lighter(200))
-            item.setBackground(1, QColor(30, 30, 30).lighter(200))
-            item.setBackground(2, QColor(30, 30, 30).lighter(200))
+            widget.setDisabled(False)
+            item.setBackground(0, PyPSADiagGUI.BASE_COLOR)
+            item.setBackground(1, PyPSADiagGUI.BASE_COLOR)
+            item.setBackground(2, PyPSADiagGUI.BASE_COLOR)
 
     def hideNoResponseZones(self, hide: bool()):
         for index in range(self.topLevelItemCount()):

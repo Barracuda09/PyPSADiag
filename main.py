@@ -52,7 +52,7 @@ class MainWindow(QMainWindow):
     stream = None
     csvWriter = None
 
-    def __init__(self):
+    def __init__(self, app: QApplication):
         super(MainWindow, self).__init__()
         self.lang_code = "en"
         self.lang = False
@@ -78,7 +78,7 @@ class MainWindow(QMainWindow):
 
         self.addTranslators()
 
-        self.ui.setupGUI(self, self.scan, self.lang_code)
+        self.ui.setupGUI(app, self, self.scan, self.lang_code)
         self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
         #converter = FileConverter()
@@ -472,7 +472,7 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
   app = QApplication(sys.argv)
 
-  window = MainWindow()
+  window = MainWindow(app)
   window.show()
 
   sys.exit(app.exec())
