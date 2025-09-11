@@ -10,30 +10,22 @@ on:
 
 jobs:
   build:
-    # Define matrix for Operating Systems
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.13']
-        include:
-          # Add architecture dimension only for macOS
-          # - os: macos-latest
-          #   arch: x86_64
-          #   python-version: '3.13'
-          - os: macos-latest
-            arch: arm64
-            python-version: '3.13'
     runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+          architecture: ${{ matrix.arch }}
 
       - name: Update build version
         run: |
@@ -45,16 +37,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build executables with PyInstaller
-        shell: bash
-        run: |
-          if [[ "${{ matrix.os }}" == "macos-latest" ]]; then
-            python -m venv .venv --prompt PyPSADiag
-            source .venv/bin/activate
-            pip install -r requirements.txt
-            arch -${{ matrix.arch }} pyinstaller main.spec
-          else
-            pyinstaller main.spec
-          fi
+        run: | 
+          pyinstaller main.spec
+          echo "Show artifacts:"
           ls dist/
 
       - name: Archive the release package (Windows)
@@ -68,7 +53,7 @@ jobs:
         if: ${{ matrix.os == 'macos-latest' }}
         run: |
           cd dist
-          zip -r ../PyPSADiag-macOS-${{ matrix.arch }}.zip PyPSADiag.app
+          zip -r ../PyPSADiag-macOS.zip PyPSADiag.app
 
       - name: Archive the release package (Linux)
         if: ${{ matrix.os == 'ubuntu-latest' }}
@@ -84,7 +69,7 @@ jobs:
           name: ${{ matrix.os }}-build
           path: |
             PyPSADiag-Windows.zip
-            PyPSADiag-macOS-*.zip
+            PyPSADiag-macOS.zip
             PyPSADiag-Linux.tar.gz
 
   release:
@@ -121,6 +106,6 @@ jobs:
           files: |
             artifacts/**/PyPSADiag-Windows.zip
             artifacts/**/PyPSADiag-Linux.tar.gz
-            artifacts/**/PyPSADiag-macOS-*.zip
+            artifacts/**/PyPSADiag-macOS.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
