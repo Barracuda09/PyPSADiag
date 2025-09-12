@@ -45,21 +45,33 @@ Use a Release
 
 Build Yourself
 -----
-- Install Python 3.12 or above
-- Get code `git clone https://github.com/Barracuda09/PyPSADiag.git`<br>
+To build and run **PyPSADiag** locally:
+
+- Install Python:
+   Make sure you have **Python 3.12 or newer** installed.  
+   You can check with:  `python --version`
+- Get the code:
+  Clone the repository: `git clone https://github.com/Barracuda09/PyPSADiag.git`
+  <br>
   OR use this [Download ZIP](https://github.com/Barracuda09/PyPSADiag/archive/refs/heads/main.zip)
-- Enter created directory `cd /path/to/PyPSADiag`
-- Create virtual environment `python -m venv .venv --prompt PyPSADiag`
-- Activate your virtual environment with `source .venv/Script/activate`
-- Install requirements, within path of PyPSADiag with `pip install -r requirements.txt`
+- Enter the project directory: `cd /path/to/PyPSADiag`
+- Create a virtual environment: `python -m venv .venv --prompt PyPSADiag`
+- Activate your virtual environment: 
+   <br>for Windows: `/path/to/PyPSADiag/.venv/Script/activate` 
+   <br>for Linux/MacOS: `source .venv/Script/activate`
+- Install required dependencies, within the path of PyPSADiag: `pip install -r requirements.txt`
 - Run with:
 	1. `python main.py --lang nl`
 	2. `Open Zone File` and select an ECU JSON file
 	3. `Connect` to correct Arduino hardware
 	4. `Read` Zones
 	5. <b> **RISK:** You can save the Zones to the ECU by using the `Write` Button.<br/> **Always Check that these zones look correct** </b>
-
-
+- On MacOs app bundle will be blocked  because it’s unsigned.
+  If you see a security warning, allow it via:<br>
+	`System Settings → Privacy & Security → Allow Anyway`
+    <br>Note: 
+	<br>`On macOS, the packaged .app will place resources inside the Contents/Resources directory, following Apple’s bundle structure.`
+	
 Make Translations
 ------
 

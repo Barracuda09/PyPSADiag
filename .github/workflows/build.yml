@@ -25,7 +25,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-          architecture: ${{ matrix.arch }}
 
       - name: Update build version
         run: |
@@ -36,11 +35,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build executables with PyInstaller
-        run: | 
-          pyinstaller main.spec
-          echo "Show artifacts:"
-          ls dist/
+      - name: Build executable
+        run: pyinstaller main.spec
 
       - name: Archive the release package (Windows)
         if: ${{ matrix.os == 'windows-latest' }}
