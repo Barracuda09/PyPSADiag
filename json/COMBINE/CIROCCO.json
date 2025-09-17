@@ -168,6 +168,14 @@
                     "available_logic": "active_high"
                 },
                 {
+                    "extra_name": "DQ6_CMB_SAM_PRESENCE",
+                    "name": "Presence of Blind Spot Monitoring",
+                    "byte": 3,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DQ7_CMB_DYN_PACK_PRESENCE",
                     "name_original": "DQ7",
                     "name": "Dynamic driving function",
