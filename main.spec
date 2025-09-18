@@ -4,46 +4,58 @@ import os
 import platform
 
 # general
+program_name = "PyPSADiag"
 root_dir = os.path.abspath(os.getcwd())
 platform_name = platform.system().lower()
 extras_dir = os.path.join(root_dir, "extras")
 
-# platform data
-program_name = "PyPSADiag"
-icon_path = None
-program_file = None
 
 if platform_name == "darwin":
     icon_path = os.path.join(extras_dir, "macos", "icon.icns")
-    program_file = "{0}.app".format(program_name)
+    program_file = f"{program_name}.app"
+    console_mode = False   # macOS GUI apps should not show a terminal
 elif platform_name == "linux":
     icon_path = os.path.join(extras_dir, "linux", "icon.png")
-    program_file = "{0}".format(program_name)
+    program_file = program_name
+    console_mode = True    # keep console for debug on Linux
 elif platform_name == "windows":
     icon_path = os.path.join(extras_dir, "windows", "icon.ico")
-    program_file = "{0}.exe".format(program_name)
+    program_file = f"{program_name}.exe"
+    console_mode = False
+else:
+    icon_path = None
+    program_file = program_name
+    console_mode = True
 
+# resource files
 added_files = [
-    ('csv/*.csv', './csv'),
-    ('data/*.json', './data'),
-    ('json', './json'),
-    ('simu', './simu'),
-    ('i18n/flags', './i18n/flags'),
-    ('i18n/translations', './i18n/translations')
+    ('csv/*.csv', 'csv'),
+    ('data/*.json', 'data'),
+    ('json/*', 'json'),
+    ('simu/*', 'simu'),
+    ('i18n/flags/*', 'i18n/flags'),
+    ('i18n/translations/*', 'i18n/translations'),
 ]
 
+# PyInstaller build pipeline
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[root_dir],
     binaries=[],
     datas=added_files,
-    hiddenimports=[],
+    hiddenimports=[
+        # list extra imports PyInstaller sometimes misses
+        "PySide6.QtCore",
+        "PySide6.QtGui",
+        "PySide6.QtWidgets",
+        "PySide6.QtNetwork",
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
     noarchive=False,
-    optimize=0,
+    optimize=1,
 )
 
 pyz = PYZ(a.pure)
@@ -56,34 +68,39 @@ exe = EXE(
     name=program_name,
     debug=False,
     bootloader_ignore_signals=False,
-    strip=False,
-    upx=True,
-    console=True,
+    strip=True,             # strip symbols to reduce size
+    upx=True,               # compress with UPX if available
+    console=console_mode,   # depends on platform
     disable_windowed_traceback=False,
-    argv_emulation=False,
+    argv_emulation=False,   # set to True if you need drag&drop args on macOS
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=icon_path,
 )
 
 coll = COLLECT(
     exe,
     a.binaries,
     a.datas,
-    strip=False,
+    strip=True,
     upx=True,
     upx_exclude=[],
     name=program_name,
 )
 
-app = BUNDLE(
-    coll,
-    name='PyPSADiag.app',
-#    icon='icon_path/pypsadiag.icns',
-    bundle_identifier="com.barracuda09.pypsadiag.py",
-    info_plist={
-        'CFBundleShortVersionString': '1.0.0',
-        'CFBundleVersion': '1.0.0',
-        'NSHighResolutionCapable': True
-    }
-)
+# bundle step for macos
+if platform_name == "darwin":
+    app = BUNDLE(
+        coll,
+        name=f"{program_name}.app",
+        icon=icon_path,
+        bundle_identifier="Barracuda09.PyPSADiag.py",
+        info_plist={
+            "NSHighResolutionCapable": "True",
+            "CFBundleShortVersionString": "0.1.0",
+            "CFBundleVersion": "0.1.0",
+            "CFBundleName": program_name,
+            "CFBundleDisplayName": program_name,
+        }
+    )
