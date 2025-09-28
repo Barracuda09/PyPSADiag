@@ -21,7 +21,7 @@ elif platform_name == "linux":
 elif platform_name == "windows":
     icon_path = os.path.join(extras_dir, "windows", "icon.ico")
     program_file = f"{program_name}.exe"
-    console_mode = False
+    console_mode = True    # keep console for debug on Windows
 else:
     icon_path = None
     program_file = program_name
