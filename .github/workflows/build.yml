@@ -26,7 +26,15 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Update build version
+      - name: Update build version (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $version = "${{ github.event.inputs.release_version }}"
+          "VERSION = `"$version`"" | Out-File -FilePath "version.py" -Encoding utf8
+
+      - name: Update build version (macOS/Linux)
+        if: runner.os != 'Windows'
         run: |
           echo "VERSION = \"${{ github.event.inputs.release_version }}\"" > version.py
 
@@ -67,6 +75,7 @@ jobs:
             PyPSADiag-Windows.zip
             PyPSADiag-macOS.zip
             PyPSADiag-Linux.tar.gz
+            version.py
 
   release:
     needs: build

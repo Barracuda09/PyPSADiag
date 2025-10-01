@@ -49,6 +49,7 @@ a = Analysis(
         "PySide6.QtGui",
         "PySide6.QtWidgets",
         "PySide6.QtNetwork",
+        "version",  # local version module
     ],
     hookspath=[],
     hooksconfig={},
@@ -68,7 +69,7 @@ exe = EXE(
     name=program_name,
     debug=False,
     bootloader_ignore_signals=False,
-    strip=True,             # strip symbols to reduce size
+    strip=False if platform_name == "windows" else True,  # disable strip on Windows
     upx=True,               # compress with UPX if available
     console=console_mode,   # depends on platform
     disable_windowed_traceback=False,
@@ -83,7 +84,7 @@ coll = COLLECT(
     exe,
     a.binaries,
     a.datas,
-    strip=True,
+    strip=False if platform_name == "windows" else True,  # disable strip on Windows
     upx=True,
     upx_exclude=[],
     name=program_name,
