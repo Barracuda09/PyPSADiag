@@ -35,12 +35,16 @@
         "mask": "11111111",
         "params": [
           {
-            "name": "ACC Stop&Go",
-            "mask": "11110111"
-          },
-          {
             "name": "Without ACC",
             "mask": "11111110"
+          },
+          {
+            "name": "ACC 30",
+            "mask": "11101111"
+          },
+          {
+            "name": "ACC Stop&Go",
+            "mask": "11110111"
           }
         ]
       }
