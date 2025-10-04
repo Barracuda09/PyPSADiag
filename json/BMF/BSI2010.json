@@ -146,6 +146,7 @@
       "form_type": "combobox",
       "params": [
         { "value": "00", "name": "0" },
+        { "value": "0154", "name": "340 Ohms?" },
         { "value": "015E", "name": "350 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with an empty tank"
@@ -157,8 +158,10 @@
       "type": "hex",
       "form_type": "combobox",
       "params": [
-        { "value": "00", "name": "0" },
+        { "value": "0000", "name": "0 Ohms" },
         { "value": "0038", "name": "56 Ohms" },
+        { "value": "003C", "name": "60 Ohms?" },
+        { "value": "003E", "name": "62 Ohms?" },
         { "value": "0040", "name": "64 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with a full tank"
@@ -4648,7 +4651,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWM_BSI_UCECAN_WLC_000: ???"
+      "name": "CFG_EWM_BSI_UCECAN_WLC_000: Wireless charger"
     },
     "D552": {
       "id": "CFG_EWX_BSI_UCECAN_EBB_000",
