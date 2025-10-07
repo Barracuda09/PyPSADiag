@@ -110,6 +110,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Type 0" },
         { "value": "1", "name": "Type 1" },
@@ -144,6 +145,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "1111111111111111",
       "params": [
         { "value": "00", "name": "0" },
         { "value": "0154", "name": "340 Ohms?" },
@@ -157,6 +159,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "1111111111111111",
       "params": [
         { "value": "0000", "name": "0 Ohms" },
         { "value": "0038", "name": "56 Ohms" },
@@ -180,6 +183,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Type 0" },
         { "value": "1", "name": "Type 1" },
@@ -206,6 +210,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Motor service box" },
         { "value": "1", "name": "Engine control computer" },
@@ -219,6 +224,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Motor service box" },
         { "value": "1", "name": "Engine control computer" },
@@ -232,6 +238,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Motor service box" },
         { "value": "1", "name": "Engine control computer" }
@@ -244,6 +251,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Pressure meter" },
         { "value": "1", "name": "Analog sensor" },
@@ -432,6 +440,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Security alarm installed at the factory" },
         { "value": "1", "name": "Security alarm, established additional" }
@@ -444,6 +453,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Active" },
         { "value": "1", "name": "Inactive" }
@@ -456,6 +466,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 hatch" },
@@ -478,6 +489,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Standard alarm" },
@@ -495,6 +507,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Mechanical key" },
         { "value": "1", "name": "Electronic key" },
@@ -541,7 +554,7 @@
         },
         {
           "name": "NO",
-          "mask": "01"
+          "value": "01"
         }
       ]
     },
@@ -678,6 +691,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "-17 - +37" },
         { "value": "1", "name": "-25 - +37" },
@@ -702,6 +716,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Manual" },
         { "value": "1", "name": "Automatic" },
@@ -716,6 +731,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Mechanical key" },
         { "value": "1", "name": "Mechanical key in emergency mode" },
@@ -730,6 +746,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Petrol engine" },
         { "value": "1", "name": "Diesel engine" },
@@ -744,6 +761,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Direct first generation (with a computer)" },
@@ -790,6 +808,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Unique profile" },
@@ -811,6 +830,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "No specific lighting" },
         { "value": "1", "name": "Static lighting: controlled by intelligent switch box" },
@@ -825,6 +845,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "1", "name": "Standard lighting" },
         { "value": "2", "name": "Single filament halogen lamp" },
@@ -872,6 +893,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "1", "name": "ABSENT" },
         { "value": "2", "name": "Shared day running lights" },
@@ -903,17 +925,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "A pump controlled by wired communication" },
-        {
-          "value": "2",
-          "name": "Pump additives on the multiplex network Lin-1"
-        },
-        {
-          "value": "3",
-          "name": "Pump additives on the multiplex network Lin-2"
-        },
+        { "value": "2", "name": "Pump additives on the multiplex network Lin-1" },
+        { "value": "3", "name": "Pump additives on the multiplex network Lin-2"},
         { "value": "4", "name": "Soot filter without adding additives" }
       ],
       "name": "The presence and type of additive in diesel fuel"
@@ -948,6 +965,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Thermoresistors 1000 watts" },
@@ -964,6 +982,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Self-starting" },
@@ -979,6 +998,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "42 ah" },
         { "value": "1", "name": "50 ah" },
@@ -1000,6 +1020,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Yes performed by the battery charge level control unit" },
@@ -1013,6 +1034,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Ungovernable" },
         { "value": "1", "name": "Single-zone" },
@@ -1147,6 +1169,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value":  "0", "name": "ABSENT" },
         { "value":  "2", "name": "Cruise control (RVV2)" },
@@ -1223,6 +1246,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "1111111111111111",
       "params": [
         { "value": "1008", "name": "DS3" },
         { "value": "100C", "name": "208 3-door (A9)" },
@@ -1316,6 +1340,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "There is no, or there is a mechanical system for protecting children without information about the state of locks" },
         { "value": "1", "name": "Mechanical system of protecting children with information about the state of locks" },
@@ -1329,6 +1354,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of locking" },
         { "value": "1", "name": "Simple blocking" },
@@ -1343,6 +1369,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value":  "0", "name": "Lack of selectivity" },
         { "value":  "1", "name": "Choosing unlocking the driver's door" },
@@ -1356,6 +1383,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Opening or unlocking trunk/5th door" },
         { "value": "1", "name": "Opening or unlocking rear window" },
@@ -1374,6 +1402,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Short pressing" },
         { "value": "1", "name": "Long-term pressing" },
@@ -1403,6 +1432,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "No signature lamps" },
         { "value": "1", "name": "Sidelamps and daytime lamps" },
@@ -1539,6 +1569,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Blind spot monitoring managed by a blind spot monitoring function ECU" },
@@ -1566,6 +1597,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 sensor" },
@@ -1582,6 +1614,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "2", "name": "Sunlight single-zone sensor" },
@@ -1611,6 +1644,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front sensor" },
@@ -1624,6 +1658,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Pressure sensor 30 bar" },
         { "value": "1", "name": "Pressure sensor 35 bar" }
@@ -1636,23 +1671,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "Compressor with the internal control system with the coupling"
-        },
-        {
-          "value": "1",
-          "name": "Compressor with an external control system with a coupling"
-        },
-        {
-          "value": "2",
-          "name": "Compressor with an external control system, without a coupling"
-        },
-        {
-          "value": "3",
-          "name": "Compressor of permanent working volume with a drive clutch"
-        },
+        { "value": "0", "name": "Compressor with the internal control system with the coupling" },
+        { "value": "1", "name": "Compressor with an external control system with a coupling" },
+        { "value": "2", "name": "Compressor with an external control system, without a coupling" },
+        { "value": "3", "name": "Compressor of permanent working volume with a drive clutch" },
         { "value": "4", "name": "Electric" }
       ],
       "name": "Type of air conditioning compressor"
@@ -1663,6 +1687,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Seat heating" },
@@ -1676,16 +1701,11 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Not controlled" },
-        {
-          "value": "1",
-          "name": "Activated depending on the percentage of the closure"
-        },
-        {
-          "value": "2",
-          "name": "Activated depending on the level (controlled recirculation)"
-        }
+        { "value": "1", "name": "Activated depending on the percentage of the closure" },
+        { "value": "2", "name": "Activated depending on the level (controlled recirculation)" }
       ],
       "name": "Air supply type"
     },
@@ -1695,6 +1715,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Ungovernable" },
         { "value": "1", "name": "Single-zone" },
@@ -1708,6 +1729,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Ungovernable" },
         { "value": "1", "name": "Single-zone" },
@@ -1724,6 +1746,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Non-controlled electric fan or absent" },
         { "value": "1", "name": "Contained interior electric fan" },
@@ -1739,6 +1762,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Ungovernable" },
         { "value": "1", "name": "Single-zone" },
@@ -1752,6 +1776,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Ungovernable" },
         { "value": "1", "name": "Single-zone" },
@@ -1765,6 +1790,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Engine with \"Stop and Start\" function" },
@@ -1786,6 +1812,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without air conditioning" },
         { "value": "1", "name": "Single-zone" },
@@ -1803,12 +1830,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "The air conditioner is turned off" },
-        {
-          "value": "1",
-          "name": "Air conditioning is turned on when the ignition is turned on"
-        },
+        { "value": "1", "name": "Air conditioning is turned on when the ignition is turned on" },
         { "value": "2", "name": "The function is restored" }
       ],
       "name": "The presence of a heater or air conditioner with a non-working engine"
@@ -1843,20 +1868,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
-        {
-          "value": "1",
-          "name": "Internal preliminary thermal preparation (with matrix and menu)"
-        },
-        {
-          "value": "2",
-          "name": "External preliminary thermal training (additional installation)"
-        },
-        {
-          "value": "3",
-          "name": "Internal and external preliminary thermal training (with a matrix, menu and remote control)"
-        }
+        { "value": "1", "name": "Internal preliminary thermal preparation (with matrix and menu)" },
+        { "value": "2", "name": "External preliminary thermal training (additional installation)" },
+        { "value": "3", "name": "Internal and external preliminary thermal training (with a matrix, menu and remote control)" }
       ],
       "name": "The presence and type of preliminary thermal training"
     },
@@ -1882,6 +1899,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "With the inclusion of rotation indicators" },
         { "value": "1", "name": "Without turning on the turning indicators" }
@@ -1910,6 +1928,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front multiplex panel (electric)" },
@@ -1923,6 +1942,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without a car radio" },
         { "value": "1", "name": "RD5" },
@@ -1939,6 +1959,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without telematics" },
         { "value": "1", "name": "Rneg" },
@@ -1998,6 +2019,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Additional resistance CTP1" },
@@ -2016,14 +2038,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Additional heater" },
         { "value": "2", "name": "Thermal preliminary preparation" },
-        {
-          "value": "3",
-          "name": "Additional heater and thermal preliminary preparation"
-        }
+        { "value": "3", "name": "Additional heater and thermal preliminary preparation" }
       ],
       "name": "The presence and type of air heater"
     },
@@ -2033,6 +2053,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of adjustment" },
         { "value": "1", "name": "Button (step by step increase)" },
@@ -2047,6 +2068,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "1 hatch" },
@@ -2061,12 +2083,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Internal combustion engine" },
-        {
-          "value": "1",
-          "name": "Internal combustion engine and electric motor (hybrid power unit)"
-        }
+        { "value": "1", "name": "Internal combustion engine and electric motor (hybrid power unit)" }
       ],
       "name": "engine's type"
     },
@@ -2076,6 +2096,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Standard" },
         { "value": "1", "name": "Increased comfort" }
@@ -2088,21 +2109,13 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Information from the ESP system" },
-        {
-          "value": "2",
-          "name": "Information coming from the parking brake with the electrical control"
-        },
-        {
-          "value": "3",
-          "name": "Using ESP (with an electric support of calipers)"
-        },
-        {
-          "value": "4",
-          "name": "Parking brake with an electrical control (with an electric support of calipers)"
-        }
+        { "value": "2", "name": "Information coming from the parking brake with the electrical control" },
+        { "value": "3", "name": "Using ESP (with an electric support of calipers)" },
+        { "value": "4", "name": "Parking brake with an electrical control (with an electric support of calipers)" }
       ],
       "name": "The presence and type of parking brake with electrical control"
     },
@@ -2120,6 +2133,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Using a pen" },
         { "value": "1", "name": "With 1 key" },
@@ -2135,6 +2149,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of selectivity" },
         { "value": "1", "name": "Discovery" },
@@ -2164,23 +2179,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "There is no electrical security system for children"
-        },
-        {
-          "value": "1",
-          "name": "Button associated with the intellectual switching unit (BSI)"
-        },
-        {
-          "value": "2",
-          "name": "Button associated with the driver's door panel and working as a 2-position switch"
-        },
-        {
-          "value": "3",
-          "name": "Button associated with the driver's door panel and working as a simple switch"
-        }
+        { "value": "0", "name": "There is no electrical security system for children" },
+        { "value": "1", "name": "Button associated with the intellectual switching unit (BSI)" },
+        { "value": "2", "name": "Button associated with the driver's door panel and working as a 2-position switch" },
+        { "value": "3", "name": "Button associated with the driver's door panel and working as a simple switch" }
       ],
       "name": "The presence and type of the children's safety system switch"
     },
@@ -2206,6 +2210,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "The computer is absent or does not receive power from the \"plus\" of the central power switch" },
         { "value": "1", "name": "Receives power \"+\" from the central power switch" }
@@ -2218,6 +2223,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "The relay is not used" },
         { "value": "1", "name": "Air supply pump to the exhaust system" },
@@ -2241,6 +2247,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without relay" },
         { "value": "1", "name": "With a relay" }
@@ -2261,6 +2268,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "The Stop and Start function is absent or not taken into account" },
         { "value": "1", "name": "It is taken into account" }
@@ -2345,6 +2353,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without" },
         { "value": "1", "name": "Type \"ISTAR PHASE 1\" with a starter" },
@@ -2376,6 +2385,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "discrete" },
         { "value": "1", "name": "By changing the voltage" }
@@ -2388,6 +2398,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Discrete" },
         { "value": "1", "name": "By changing the voltage" }
@@ -2408,6 +2419,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "The switching unit of the engine" },
         { "value": "1", "name": "Intellectual switching unit" }
@@ -2428,6 +2440,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "There is on the front left" },
@@ -2450,6 +2463,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without changes in current" },
         { "value": "1", "name": "With variable current power" }
@@ -2478,6 +2492,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "using an intellectual switching unit" },
         { "value": "1", "name": "Using the instrument panel" },
@@ -2516,6 +2531,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of decoding" },
         { "value": "1", "name": "Decoding type of simple blocking" },
@@ -2580,6 +2596,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "No switchable coolant pump" },
         { "value": "1", "name": "The presence of coolant pump with drive coupling" },
@@ -2593,12 +2610,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of prohibition" },
-        {
-          "value": "1",
-          "name": "Turning off the children's security system (if there is a child safety system)"
-        },
+        { "value": "1", "name": "Turning off the children's security system (if there is a child safety system)" },
         { "value": "2", "name": "Turning off the button" }
       ],
       "name": "Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)"
@@ -2609,6 +2624,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Day lighting" },
@@ -2674,6 +2690,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Old legislation" },
         { "value": "1", "name": "New legislation" }
@@ -2694,19 +2711,11 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "Vibration of the seat using a vibrator control unit"
-        },
-        {
-          "value": "1",
-          "name": "Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines"
-        },
-        {
-          "value": "2",
-          "name": "Vibration belts of safety belts from a computer with tensioners"
-        }
+        { "value": "0", "name": "Vibration of the seat using a vibrator control unit" },
+        { "value": "1", "name": "Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines" },
+        { "value": "2", "name": "Vibration belts of safety belts from a computer with tensioners" }
       ],
       "name": "Type of vibrators of the warning function of unintentional intersection of road marking lines"
     },
@@ -2748,6 +2757,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The controlled first-generation generator" },
@@ -2779,6 +2789,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Heating the front seats" },
@@ -2801,6 +2812,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Using the personal settings menu" },
         { "value": "1", "name": "Using the control module under the steering wheel" }
@@ -2813,6 +2825,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Using the instrument panel" },
@@ -2826,6 +2839,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "using an intellectual switching unit" },
         { "value": "1", "name": "Using the instrument panel" },
@@ -2840,6 +2854,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "global" },
@@ -2853,6 +2868,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Class 7" },
         { "value": "1", "name": "Class 8" },
@@ -2886,6 +2902,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Level 1" },
         { "value": "1", "name": "Level 2" },
@@ -2940,6 +2957,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Euro 4" },
         { "value": "1", "name": "Euro 5" },
@@ -2981,6 +2999,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "absent" },
         { "value": "1", "name": "simple" },
@@ -2997,6 +3016,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Physical interface \"Man-Machine\"" },
         { "value": "1", "name": "Touch interface \"Man-Machine\"" },
@@ -3010,6 +3030,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Front and rear dimensions" },
@@ -3047,6 +3068,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Electro-hydraulic power steering (GEP)" },
         { "value": "1", "name": "Variable power steering" },
@@ -3060,6 +3082,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Discrete" },
         { "value": "1", "name": "By changing the voltage" }
@@ -3072,6 +3095,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without adjustment" },
         { "value": "1", "name": "The adjustment requirement using the key controlled by the intellectual switching unit" },
@@ -3096,6 +3120,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Wired communication" },
         { "value": "1", "name": "LIN network" }
@@ -3124,6 +3149,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Halogen lamps" },
         { "value": "1", "name": "Light-emitting diode" }
@@ -3144,6 +3170,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Alarm module" },
         { "value": "1", "name": "Intellectual switching unit" }
@@ -3156,6 +3183,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Calling technical assistance" },
@@ -3170,15 +3198,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit"
-        },
-        {
-          "value": "1",
-          "name": "Driving control on the steering wheel is controlled by an intellectual switching unit"
-        }
+        { "value": "0", "name": "There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit" },
+        { "value": "1", "name": "Driving control on the steering wheel is controlled by an intellectual switching unit" }
       ],
       "name": "The presence and type of gear shift control on the steering wheel"
     },
@@ -3188,6 +3211,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Short side door" },
         { "value": "1", "name": "Long side door" }
@@ -3200,6 +3224,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Without the back door" },
         { "value": "1", "name": "Trunk / luggage department" },
@@ -3222,6 +3247,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Type 1" },
@@ -3240,6 +3266,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Acquisition by the multifunction video camera" },
@@ -3254,6 +3281,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The hollow door" },
@@ -3268,6 +3296,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "The hollow door" },
@@ -3282,6 +3311,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "halogen headlights" },
         { "value": "1", "name": "Led lights" }
@@ -3294,6 +3324,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "halogen headlights" },
         { "value": "1", "name": "Led lights" }
@@ -3306,6 +3337,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of contactor" },
         { "value": "1", "name": "The presence of a contactor" }
@@ -3374,6 +3406,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Short air duct heating" },
         { "value": "1", "name": "Long air duct heating" }
@@ -3386,11 +3419,9 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "Light or visual warning (seat belt, seat ...)"
-        },
+        { "value": "0", "name": "Light or visual warning (seat belt, seat ...)" },
         { "value": "1", "name": "Sound and visual alarm" }
       ],
       "name": "Type of message Prevention function of crossing road marking lines"
@@ -3401,6 +3432,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Textile" },
         { "value": "1", "name": "Leather" }
@@ -3421,6 +3453,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Intellectual switching unit" },
         { "value": "1", "name": "Burning wires" }
@@ -3441,16 +3474,11 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Turn on the button by pressing" },
-        {
-          "value": "1",
-          "name": "Turn on the rear window heating button (Luch) or button of visibility (VISI)"
-        },
-        {
-          "value": "2",
-          "name": "Turning on the heating of the windshield on the multifunctional front panel"
-        }
+        { "value": "1", "name": "Turn on the rear window heating button (Luch) or button of visibility (VISI)" },
+        { "value": "2", "name": "Turning on the heating of the windshield on the multifunctional front panel" }
       ],
       "name": "Type of button on windshield heating"
     },
@@ -3460,15 +3488,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "Controlled air intake module with 2-position shutters"
-        },
-        {
-          "value": "4",
-          "name": "Controlled air intake module with multi-position damper"
-        }
+        { "value": "0", "name": "Controlled air intake module with 2-position shutters" },
+        { "value": "4", "name": "Controlled air intake module with multi-position damper" }
       ],
       "name": "Type of controlled air intake module"
     },
@@ -3478,16 +3501,11 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
-        {
-          "value": "1",
-          "name": "Generation 1 (warning at the risk of a collision with a mobile object)"
-        },
-        {
-          "value": "2",
-          "name": "Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)"
-        },
+        { "value": "1", "name": "Generation 1 (warning at the risk of a collision with a mobile object)" },
+        { "value": "2", "name": "Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)" },
         { "value": "3", "name": "Generation 3" },
         { "value": "4", "name": "Generation 4" }
       ],
@@ -3499,15 +3517,13 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Lack of decoding" },
         { "value": "1", "name": "Decoding type of simple blocking" },
         { "value": "2", "name": "Decoding the type of superblock" },
         { "value": "3", "name": "Decoding type of low cost lock" },
-        {
-          "value": "4",
-          "name": "Decoding of information from the opening unit of the rear open door"
-        }
+        { "value": "4", "name": "Decoding of information from the opening unit of the rear open door" }
       ],
       "name": "Type of information encoding from the locks of the rear swing doors"
     },
@@ -3557,6 +3573,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "AX6" },
         { "value": "1", "name": "AT8 (AL4)" },
@@ -3573,6 +3590,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Seat heating" },
@@ -3586,6 +3604,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Choice with a pen" },
         { "value": "1", "name": "Select by the switch" }
@@ -3630,6 +3649,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Simple pressing" },
         { "value": "1", "name": "Double pressing" }
@@ -3674,6 +3694,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT of warning" },
         { "value": "1", "name": "Temporary warning" },
@@ -3687,6 +3708,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "absent" },
         { "value": "1", "name": "Function limited to the lane departure warning" },
@@ -3708,6 +3730,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Full Auto Stop (BVA)" },
         { "value": "1", "name": "30 (BVM)" },
@@ -3721,6 +3744,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "Radar" },
@@ -3759,6 +3783,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "From the driver" },
         { "value": "1", "name": "From the passenger" },
@@ -3772,6 +3797,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Coolating fluid heater control computer" },
         { "value": "1", "name": "Multiplewlex computer of coolant heater" }
@@ -3784,12 +3810,10 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "There is no function" },
-        {
-          "value": "1",
-          "name": "The function is (the rear view camera with *3 rear images for Picasso)"
-        },
+        { "value": "1", "name": "The function is (the rear view camera with *3 rear images for Picasso)" },
         { "value": "2", "name": "Rear view camera" }
       ],
       "name": "Rear-view mirrors"
@@ -3824,6 +3848,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "There is no function" },
         { "value": "1", "name": "Warning about the ESP system malfunction" },
@@ -3837,6 +3862,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "There is no function" },
         { "value": "1", "name": "manufacturer" },
@@ -3851,6 +3877,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "No function" },
         { "value": "1", "name": "Halogen" },
@@ -3864,6 +3891,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "3 positional switch" },
         { "value": "1", "name": "Contactor" },
@@ -3878,6 +3906,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "----" },
         { "value": "1", "name": "Simple instrument panel" },
@@ -3901,23 +3930,12 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
-        {
-          "value": "0",
-          "name": "Manual adjustment directly on the headlights"
-        },
-        {
-          "value": "1",
-          "name": "Manual correction using a regulator of the height of the headlight of the headlights in the cabin"
-        },
-        {
-          "value": "2",
-          "name": "Static adjustment of headlights of the height"
-        },
-        {
-          "value": "3",
-          "name": "Dynamic adjustment of the position of the light bundle of the headlight in height"
-        }
+        { "value": "0", "name": "Manual adjustment directly on the headlights" },
+        { "value": "1", "name": "Manual correction using a regulator of the height of the headlight of the headlights in the cabin" },
+        { "value": "2", "name": "Static adjustment of headlights of the height" },
+        { "value": "3", "name": "Dynamic adjustment of the position of the light bundle of the headlight in height" }
       ],
       "name": "Headlight beam height corrector"
     },
@@ -3927,6 +3945,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Intellectual switching unit" },
         { "value": "1", "name": "Inner rear-view mirror" }
@@ -3963,6 +3982,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Inclusion with a handle" },
         { "value": "1", "name": "Activation by a switch" }
@@ -3975,6 +3995,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "ABSENT" },
         { "value": "1", "name": "There is" }
@@ -3987,6 +4008,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Normal mode" },
         { "value": "1", "name": "Sports mode" }
@@ -3999,6 +4021,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Using the intellectual switching unit BSI" },
         { "value": "1", "name": "Another" }
@@ -5083,6 +5106,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0C", "name": "12 months" },
         { "value": "18", "name": "24 months" }
@@ -5095,6 +5119,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "00", "name": "0KM" },
         { "value": "7D", "name": "Electric-12500KM" },
@@ -5108,6 +5133,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "00", "name": "0KM" },
         { "value": "7D", "name": "Electric-25000KM" },
@@ -5135,6 +5161,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Distance-dependent maintenance" },
         { "value": "1", "name": "Distance-based servicing weighted by time" },
@@ -5148,6 +5175,7 @@
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
+      "mask": "11111111",
       "params": [
         { "value": "0", "name": "Static" },
         { "value": "1", "name": "Dynamic" },
