@@ -25,7 +25,7 @@
       {
         "name": "Type",
         "byte": 20,
-        "byte_range": 3,
+        "byte_range": 2,
         "type": "raw",
         "form_type": "string"
       }

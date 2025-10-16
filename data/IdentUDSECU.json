@@ -34,7 +34,7 @@
       {
         "name": "Type",
         "byte": 20,
-        "byte_range": 3,
+        "byte_range": 2,
         "type": "raw",
         "form_type": "string"
       }
@@ -82,6 +82,13 @@
         "byte": 13,
         "byte_range": 3,
         "type": "string_date",
+        "form_type": "string"
+      },
+      {
+        "name": "Teletransmission Tool ID / 020000 = Factory",
+        "byte": 17,
+        "byte_range": 3,
+        "type": "raw",
         "form_type": "string"
       },
       {

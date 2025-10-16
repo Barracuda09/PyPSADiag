@@ -200,15 +200,18 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connectPort(self):
-        self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
-        # Set button states
-        self.ui.ConnectPort.setEnabled(False)
-        self.ui.DisconnectPort.setEnabled(True)
-        # First send an Reset command
-        cmd = "R"
-        self.writeToOutputView("> " + cmd)
-        receiveData = self.serialController.sendReceive(cmd)
-        self.writeToOutputView("< " + receiveData)
+        if  self.ui.portNameComboBox.currentText()=="":
+            self.writeToOutputView("COM port not selected")
+        else:
+            self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
+            # Set button states
+            self.ui.ConnectPort.setEnabled(False)
+            self.ui.DisconnectPort.setEnabled(True)
+            # First send a Reset command
+            cmd = "R"
+            self.writeToOutputView("> " + cmd)
+            receiveData = self.serialController.sendReceive(cmd)
+            self.writeToOutputView("< " + receiveData)
 
     @Slot()
     def disconnectPort(self):
@@ -309,7 +312,7 @@ class MainWindow(QMainWindow):
 
             # Open CSV for writing
             self.ui.setFilePathInWindowsTitle(fileName[0])
-            self.stream = open(fileName[0], 'w', newline='')
+            self.stream = open(fileName[0], 'w', newline='', encoding="utf-8")
             self.csvWriter = csv.writer(self.stream)
 
             # Setup CAN_EMIT_ID

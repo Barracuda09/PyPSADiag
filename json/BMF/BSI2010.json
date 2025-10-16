@@ -1344,7 +1344,7 @@
       "params": [
         { "value": "0", "name": "There is no, or there is a mechanical system for protecting children without information about the state of locks" },
         { "value": "1", "name": "Mechanical system of protecting children with information about the state of locks" },
-        { "value": "10", "name": "Electric system for protecting children with information on the state of locks" }
+        { "value": "2", "name": "Electric system for protecting children with information on the state of locks" }
       ],
       "name": "Availability and type of function of the children's protection system"
     },
