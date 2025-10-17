@@ -103,9 +103,9 @@ class MainWindow(QMainWindow):
         # Connect Other/General signals to slots
         self.ui.command.returnPressed.connect(self.sendCommand)
 
-        # Setup serial controller
+        # Setup serial controller and Search for Ports
         self.serialController = SerialPort(self.simulation)
-        self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
+        self.searchConnectPort()
 
         # Set initial button states
         self.ui.DisconnectPort.setEnabled(False)
@@ -197,21 +197,38 @@ class MainWindow(QMainWindow):
     @Slot()
     def searchConnectPort(self):
         self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
+        if self.ui.portNameComboBox.count() > 0:
+            self.ui.ConnectPort.setEnabled(True)
+        else:
+            self.ui.ConnectPort.setEnabled(False)
 
     @Slot()
     def connectPort(self):
-        if  self.ui.portNameComboBox.currentText()=="":
-            self.writeToOutputView("COM port not selected")
-        else:
-            self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
-            # Set button states
+        error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
+        if error == "":
+            # Set begin connecting button states
             self.ui.ConnectPort.setEnabled(False)
-            self.ui.DisconnectPort.setEnabled(True)
-            # First send a Reset command
+            self.ui.DisconnectPort.setEnabled(False)
+
+            # First send an Version and Reset command
+            cmd = "V"
+            self.writeToOutputView("> " + cmd)
+            receiveData = self.serialController.sendReceive(cmd)
+            self.writeToOutputView("< " + receiveData)
+            if receiveData == "Timeout":
+                self.serialController.close()
+                self.ui.ConnectPort.setEnabled(True)
+                return
             cmd = "R"
             self.writeToOutputView("> " + cmd)
             receiveData = self.serialController.sendReceive(cmd)
             self.writeToOutputView("< " + receiveData)
+
+            # Set button states
+            self.ui.ConnectPort.setEnabled(False)
+            self.ui.DisconnectPort.setEnabled(True)
+        else:
+            self.writeToOutputView(error)
 
     @Slot()
     def disconnectPort(self):
@@ -264,7 +281,7 @@ class MainWindow(QMainWindow):
 
         # Open CSV for writing
         self.ui.setFilePathInWindowsTitle(fileName[0])
-        self.stream = open(fileName[0], 'w', newline='')
+        self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
         self.csvWriter = csv.writer(self.stream)
         if self.stream != None:
             valueList = self.ui.treeView.getValuesAsCSV()
@@ -312,7 +329,7 @@ class MainWindow(QMainWindow):
 
             # Open CSV for writing
             self.ui.setFilePathInWindowsTitle(fileName[0])
-            self.stream = open(fileName[0], 'w', newline='', encoding="utf-8")
+            self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
             self.csvWriter = csv.writer(self.stream)
 
             # Setup CAN_EMIT_ID

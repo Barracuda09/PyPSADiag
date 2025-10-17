@@ -23,6 +23,7 @@ import time
 import serial.tools.list_ports
 
 from EcuSimulation import EcuSimulation
+from i18n import i18n
 
 
 class SerialPort():
@@ -54,8 +55,9 @@ class SerialPort():
             self.serialPort.timeout = 5.0
             #self.serialController.setDTR(True)
             self.serialPort.open()
+            return ""
         except serial.SerialException as e:
-            print('Error opening port: ' + str(e))
+            return i18n().tr('Error opening port: ') + str(e)
 
     def write(self, data):
         #print(data)
@@ -63,7 +65,7 @@ class SerialPort():
 
     def readRawData(self):
         data = bytearray()
-        runLoop = 50
+        runLoop = 80
         while runLoop > 0:
             dataLen = self.serialPort.in_waiting
             if dataLen > 1:
@@ -86,6 +88,7 @@ class SerialPort():
         else:
             data = self.readRawData()
             if len(data) == 0:
+                # Do not translate
                 return "Timeout"
 
             i = data.find(b"\r")
