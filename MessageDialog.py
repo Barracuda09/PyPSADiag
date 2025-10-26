@@ -20,12 +20,13 @@
 """
 
 from PySide6.QtCore import Qt, Slot, QIODevice
-from PySide6.QtWidgets import QWidget, QFrame, QDialog, QTextEdit, QPushButton, QHBoxLayout, QVBoxLayout, QSizePolicy
+from PySide6.QtWidgets import QWidget, QFrame, QDialog, QTextEdit, QPushButton, QHBoxLayout, QVBoxLayout, QSizePolicy, QSpacerItem
 
 class MessageDialog(QDialog):
 
     def __init__(self, parent, title: str(), acceptTxt: str(), text: str()):
         super(MessageDialog, self).__init__(parent)
+        self.resize(500, 500)
         self.setWindowTitle(title)
         self.setModal(True)
 
@@ -51,6 +52,7 @@ class MessageDialog(QDialog):
         self.workFrameLayout.addWidget(self.output)
 
         self.buttontLayout = QHBoxLayout()
+        self.buttontLayout.addItem(QSpacerItem(20, 10, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
         self.buttontLayout.addWidget(self.acceptButton)
         self.buttontLayout.addWidget(self.rejectButton)
 
@@ -59,7 +61,6 @@ class MessageDialog(QDialog):
         self.frameLayout.addLayout(self.buttontLayout)
 
         self.setLayout(self.frameLayout)
-        self.resize(self.sizeHint());
 
     @Slot()
     def rejectCallback(self):
