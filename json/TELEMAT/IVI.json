@@ -4,7 +4,7 @@
     "rx_id": "664",
     "protocol": "uds",
     "key_type": "single",
-    "keys": "****",
+    "keys": "F4AA",
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
         "vin": "VIN",

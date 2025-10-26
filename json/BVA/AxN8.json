@@ -25,9 +25,42 @@
       "id": "Gauging_Group_Data_Values",
       "tab": "tele",
       "name": "Gauging group data values",
-      "byte": 0,
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "CFG_GEAR_SELECTOR": {
+        "name": "Type of gearbox selector",
+        "byte": 5,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00011000",
+        "params": [
+          {
+            "name": "e-toggle",
+            "mask": "00001000"
+          },
+          {
+            "name": "Joystick",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_ACC_PRESENCE": {
+        "name": "Adapted cruise control (ACC)",
+        "byte": 6,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000001"
+          }
+        ]
+      }
     }
   }
 }
