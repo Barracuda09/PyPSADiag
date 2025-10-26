@@ -31,6 +31,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBo
 
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
+from ParseDTC import ParseDTC
 from DiagnosticCommunication import DiagnosticCommunication
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
@@ -441,7 +442,8 @@ class MainWindow(QMainWindow):
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
             if self.ecuObjectList["protocol"] == "uds":
-                self.udsCommunication.readEcuFaults(ecu)
+                dtc = self.udsCommunication.readEcuFaults(ecu)
+                ParseDTC.parse(dtc)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return

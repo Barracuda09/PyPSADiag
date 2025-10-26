@@ -419,10 +419,10 @@ class DiagnosticCommunication(QThread):
             receiveData = self.writeECUCommand(ecuID)
             if receiveData != "OK":
                 self.writeToOutputView(i18n().tr("ECU Not selected!"))
-                return
+                return ""
 
             if not self.startDiagnosticMode():
-                return
+                return ""
 
             cmdOk = False
             receiveData = self.writeECUCommand(self.readEcuFaultsMode)
@@ -430,9 +430,10 @@ class DiagnosticCommunication(QThread):
                 cmdOk = True
 
             if self.stopDiagnosticMode() and cmdOk:
-                return
+                return receiveData
 
             self.writeToOutputView(i18n().tr("Reading ECU Faults: Failed"))
+            return ""
 
     def clearEcuFaults(self, ecuID: str):
         if self.serialPort.isOpen():
