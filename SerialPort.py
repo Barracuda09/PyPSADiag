@@ -53,8 +53,8 @@ class SerialPort():
             self.serialPort.port = portNr
             self.serialPort.baudrate = baudRate
             self.serialPort.timeout = 5.0
-            #self.serialController.setDTR(True)
             self.serialPort.open()
+            time.sleep(2)
             return ""
         except serial.SerialException as e:
             return i18n().tr('Error opening port: ') + str(e)
@@ -92,7 +92,7 @@ class SerialPort():
                 return "Timeout"
 
             i = data.find(b"\r")
-            decodedData = data[:i].decode("utf-8");
+            decodedData = data[:i].decode("utf-8")
             return decodedData
 
     def sendReceive(self, cmd: str):
@@ -101,4 +101,4 @@ class SerialPort():
         else:
             cmd += "\n"
             self.write(cmd.encode("utf-8"))
-            return self.readData();
+            return self.readData()
