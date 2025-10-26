@@ -53,8 +53,8 @@ class SerialPort():
             self.serialPort.port = portNr
             self.serialPort.baudrate = baudRate
             self.serialPort.timeout = 5.0
-            #self.serialController.setDTR(True)
             self.serialPort.open()
+            time.sleep(2)
             return ""
         except serial.SerialException as e:
             return i18n().tr('Error opening port: ') + str(e)
