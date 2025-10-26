@@ -163,6 +163,9 @@ class EcuSimulation(QThread):
                     item[1] = cmd[6:]
                     return "6E" + cmd[2:6]
             return "7F2E31"
+        elif cmd[:6] == "190209":
+            if self.txID == "752":
+                return "59020990030009D1488709DF548709DFA28709DF238709"
         elif cmd[:8] == "14FFFFFF":
             return "54"
 
