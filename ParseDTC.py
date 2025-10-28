@@ -19,11 +19,10 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-import csv
-import os
+import json, os
 
 from i18n import i18n
-from MessageDialog  import MessageDialog
+from SpreadsheetDialog  import SpreadsheetDialog
 
 class ParseDTC():
 
@@ -31,9 +30,25 @@ class ParseDTC():
         self.isRunning = True
 
     @classmethod
-    def parse(cls, dtc: str):
+    def __openDTCFileTranslated(cls, dtcFilePath: str):
+        fileName = os.path.join(os.path.dirname(__file__), dtcFilePath)
+        dtcDict = {}
+        if os.path.isfile(fileName):
+            file = open(fileName, 'r', encoding='utf-8')
+            jsonFile = file.read()
+            responseList = json.loads(jsonFile.encode("utf-8"))
+            # Build translated Dictionary
+            for response in responseList:
+                dtcDict[response] = i18n().tr(responseList[str(response)]["name"])
+        return dtcDict
+
+    @classmethod
+    def parse(cls, dtc: str, dtcFilePath: str):
         letterMap = {0: 'P', 1: 'C', 2: 'B', 3: 'U'}
-        dtcString = ""
+        fileName = os.path.join(os.path.dirname(__file__), "data/DTCFailureType.json")
+        dtcFailureTypes = cls.__openDTCFileTranslated(fileName);
+        dtcExplanations = cls.__openDTCFileTranslated(dtcFilePath);
+        dtcList = []
         if dtc[:4] == "5902":
             index = 6
             while index + 8 <= len(dtc):
@@ -50,27 +65,28 @@ class ParseDTC():
                 firstDigit = "%.1X" % ((H >> 4) & 0x3)
                 secondDigit = "%.1X" % (H & 0xF)
                 lowerDigit = M
-                dtcString += str(letter + firstDigit + secondDigit + lowerDigit + " (" + faultTypeByte + ") ")
+                dtcNumberStr = letter + firstDigit + secondDigit + lowerDigit
+                dtcExpl = dtcExplanations.get(dtcNumberStr, i18n().tr("Unknown"))
+                faultTypeStr = dtcFailureTypes.get(faultTypeByte, i18n().tr("Unknown"))
+                dtcStatusStr = ""
                 if status & 0x01:
-                    dtcString += i18n().tr("(Test Failed)")
+                    dtcStatusStr += i18n().tr("(Test Failed)")
                 if status & 0x02:
-                    dtcString += i18n().tr("(Test Failed This Operation Cycle)")
+                    dtcStatusStr += i18n().tr("(Test Failed This Operation Cycle)")
                 if status & 0x04:
-                    dtcString += i18n().tr("(Pending DTC)")
+                    dtcStatusStr += i18n().tr("(Pending DTC)")
                 if status & 0x08:
-                    dtcString += i18n().tr("(Confirmed DTC)")
+                    dtcStatusStr += i18n().tr("(Confirmed DTC)")
                 if status & 0x10:
-                    dtcString += i18n().tr("(Test Not Completed Since last Clear)")
+                    dtcStatusStr += i18n().tr("(Test Not Completed Since last Clear)")
                 if status & 0x20:
-                    dtcString += i18n().tr("(Test Failed Since last Clear)")
+                    dtcStatusStr += i18n().tr("(Test Failed Since last Clear)")
                 if status & 0x40:
-                    dtcString += i18n().tr("(Test Not Completed This OP Cycle)")
+                    dtcStatusStr += i18n().tr("(Test Not Completed This OP Cycle)")
                 if status & 0x80:
-                    dtcString += i18n().tr("(Warning Indicator Requested)")
-                dtcString += os.linesep
-        else:
-            dtcString = i18n().tr("None")
-        dtcdialog = MessageDialog(None, i18n().tr("DTC"), i18n().tr("Ok"), dtcString)
-        if MessageDialog.Rejected == dtcdialog.exec():
-            return
+                    dtcStatusStr += i18n().tr("(Warning Indicator Requested)")
 
+                dtcList.append([dtcNumberStr, faultTypeStr, dtcExpl, dtcStatusStr])
+
+        dtcdialog = SpreadsheetDialog(None, i18n().tr("DTC"), dtcList, [i18n().tr("Code"), i18n().tr("Fault"), i18n().tr("Explanation"), i18n().tr("Status")])
+        dtcdialog.exec()

@@ -205,12 +205,11 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connectPort(self):
+        # Set begin connecting button states
+        self.ui.ConnectPort.setEnabled(False)
+        self.ui.DisconnectPort.setEnabled(False)
         error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
         if error == "":
-            # Set begin connecting button states
-            self.ui.ConnectPort.setEnabled(False)
-            self.ui.DisconnectPort.setEnabled(False)
-
             # First send an Version and Reset command
             cmd = "V"
             self.writeToOutputView("> " + cmd)
@@ -229,6 +228,7 @@ class MainWindow(QMainWindow):
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
         else:
+            self.ui.ConnectPort.setEnabled(True)
             self.writeToOutputView(error)
 
     @Slot()
@@ -443,7 +443,7 @@ class MainWindow(QMainWindow):
 
             if self.ecuObjectList["protocol"] == "uds":
                 dtc = self.udsCommunication.readEcuFaults(ecu)
-                ParseDTC.parse(dtc)
+                ParseDTC.parse(dtc, self.ecuObjectList.get("dtc_lookup", ""))
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return

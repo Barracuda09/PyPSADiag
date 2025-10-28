@@ -12,7 +12,8 @@
   },
   "coding": true,
   "errors": true,
-  "include_zone_object": "./data/IdentUDSECU.json",
+  "dtc_lookup": "data/dtc/BSI2010_EV.json",
+  "include_zone_object": "data/IdentUDSECU.json",
   "tabs": {
     "ident": "Identification",
     "tele": "Telecoding",
@@ -4426,7 +4427,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: MOLETTE de Sélection de l? Anti-Patinage ???"
+      "name": "CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Selection Wheel for Anti-Skid ???"
     },
     "D533": {
       "id": "CFG_BSF_BSI_UCECAN_UDS_BIR_000",
