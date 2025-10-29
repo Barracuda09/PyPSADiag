@@ -86,7 +86,7 @@ class ParseDTC():
                 if status & 0x80:
                     dtcStatusStr += i18n().tr("(Warning Indicator Requested)")
 
-                dtcList.append([dtcNumberStr, faultTypeStr, dtcExpl, dtcStatusStr])
+                dtcList.append([dtcNumberStr + " - " + faultTypeByte, dtcExpl, faultTypeStr, dtcStatusStr])
 
-        dtcdialog = SpreadsheetDialog(None, i18n().tr("DTC"), dtcList, [i18n().tr("Code"), i18n().tr("Fault"), i18n().tr("Explanation"), i18n().tr("Status")])
+        dtcdialog = SpreadsheetDialog(None, i18n().tr("DTC"), dtcList, [i18n().tr("Code"), i18n().tr("Explanation"), i18n().tr("Fault"), i18n().tr("Status")])
         dtcdialog.exec()

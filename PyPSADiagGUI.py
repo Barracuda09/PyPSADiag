@@ -133,6 +133,8 @@ class PyPSADiagGUI(object):
         # Setup languages
         self.setupLanguages(lang_code)
 
+        self.syncZoneFiles = QPushButton()
+
         self.sendCommand = QPushButton()
         self.openCSVFile = QPushButton()
         self.saveCSVFile = QPushButton()
@@ -169,12 +171,14 @@ class PyPSADiagGUI(object):
         ###################################################
 
         ###################################################
-        # Setup Language Header Layout
-        self.languageHeaderLayout = QHBoxLayout()
+        # Setup Top Button Header Layout
+        self.topButtonHeaderLayout = QHBoxLayout()
 
-        self.languageHeaderLayout.addStretch()
-        self.languageHeaderLayout.setContentsMargins(0, 10, 10, 0)
-        self.languageHeaderLayout.addWidget(self.languageComboBox)
+        self.topButtonHeaderLayout.addStretch()
+        self.topButtonHeaderLayout.setContentsMargins(10, 10, 10, 0)
+        self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
+        self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topButtonHeaderLayout.addWidget(self.languageComboBox)
 
         ###################################################
         # Setup Top Right Layout
@@ -188,7 +192,6 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
-        self.topRightLayout.addWidget(self.languageComboBox)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
@@ -233,7 +236,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup splitter Vertical (Top-Bottom)
         self.splitterTopBottom = QSplitter()
-        self.splitterTopBottom.setStyleSheet("QSplitter::handle {background: gray;}")
+        self.splitterTopBottom.setStyleSheet("QSplitter::handle {background: darkGray;}")
         self.splitterTopBottom.setOrientation(Qt.Orientation.Vertical)
 
         self.topWidget = QWidget()
@@ -261,6 +264,7 @@ class PyPSADiagGUI(object):
             ###################################################
             # Setup splitter Horizontal (Left-Right)
             self.splitterLeftRight = QSplitter()
+            self.splitterLeftRight.setStyleSheet("QSplitter::handle {background: darkGray;}")
             self.splitterLeftRight.setOrientation(Qt.Orientation.Horizontal)
 
             self.mainLeftWidget = QWidget()
@@ -284,16 +288,16 @@ class PyPSADiagGUI(object):
             self.frameLayout.addWidget(self.splitterTopBottom)
         self.frame.setLayout(self.frameLayout)
 
-        # Setup language Widget
-        self.languageWidget = QWidget()
-        self.languageWidget.setLayout(self.languageHeaderLayout)
+        # Setup Top Button Widget
+        self.topButtonWidget = QWidget()
+        self.topButtonWidget.setLayout(self.topButtonHeaderLayout)
 
         # Setup Main Frame
         self.mainLayout = QVBoxLayout()
         self.mainLayout.setSpacing(0)
         self.mainLayout.setContentsMargins(0, 0, 0, 0)
 
-        self.mainLayout.addWidget(self.languageWidget)
+        self.mainLayout.addWidget(self.topButtonWidget)
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
 
@@ -329,6 +333,7 @@ class PyPSADiagGUI(object):
             self.languageComboBox.setCurrentIndex(index)
 
     def translateGUI(self, MainWindow):
+        self.syncZoneFiles.setText(i18n().tr("Sync Zone Files"))
         self.sendCommand.setText(i18n().tr("Send Command"))
         self.openCSVFile.setText(i18n().tr("Open CSV File"))
         self.saveCSVFile.setText(i18n().tr("Write CSV File"))
@@ -339,8 +344,8 @@ class PyPSADiagGUI(object):
         self.readZone.setText(i18n().tr("Read"))
         self.writeZone.setText(i18n().tr("Write"))
         self.rebootEcu.setText(i18n().tr("Reboot ECU"))
-        self.readEcuFaults.setText(i18n().tr("Read ECU Faults"))
-        self.clearEcuFaults.setText(i18n().tr("Clear ECU Faults"))
+        self.readEcuFaults.setText(i18n().tr("Read ECU Faults") + " " + i18n().tr("(DTC)"))
+        self.clearEcuFaults.setText(i18n().tr("Clear ECU Faults") + " " + i18n().tr(" (DTC)"))
         self.writeSecureTraceability.setText(i18n().tr("Write Secure Traceability"))
         self.virginWriteZone.setText(i18n().tr("Virgin Write"))
         self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))
