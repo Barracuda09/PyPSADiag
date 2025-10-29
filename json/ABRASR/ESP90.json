@@ -32,6 +32,69 @@
             "tab": "tele",
             "type": "raw",
             "form_type": "multi",
+            "CFG_000_FREIN_TIRES": {
+                "name": "Tire size",
+                "byte": 13,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00011111",
+                "params": [
+                    {
+                        "name": "215/70R16 (2196 mm)",
+                        "mask": "00011110"
+                    },
+                    {
+                        "name": "215/65R17 (2208 mm)",
+                        "mask": "00011101"
+                    },
+                    {
+                        "name": "225/55R18 (2181 mm)",
+                        "mask": "00011011"
+                    },
+                    {
+                        "name": "205/55R19 (2187 mm)",
+                        "mask": "00010111"
+                    },
+                    {
+                        "name": "235/50R19 (2223 mm)",
+                        "mask": "00001111"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_FRONT BRAKES": {
+                "name": "Front brakes",
+                "byte": 19,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "11100000",
+                "params": [
+                    {
+                        "name": "283X26-PHI60",
+                        "mask": "11000000"
+                    },
+                    {
+                        "name": "304X18-PHI60",
+                        "mask": "01100000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_REAR BRAKES": {
+                "name": "Rear brakes",
+                "byte": 21,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00011100",
+                "params": [
+                    {
+                        "name": "268X12-PHI38",
+                        "mask": "00011000"
+                    },
+                    {
+                        "name": "290X12-PHI42",
+                        "mask": "00001100"
+                    }
+                ]
+            },
             "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
                 "name": "ACC type",
                 "byte": 23,
