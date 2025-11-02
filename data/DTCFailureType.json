@@ -62,7 +62,7 @@
     "53": { "name": "Deactivated"},
     "54": { "name": "Missing Calibration"},
     "55": { "name": "Not Configured"},
-    "56": { "name": "Invalid / Incompatible"},
+    "56": { "name": "Invalid / Incompatible Configuration"},
     "57": { "name": "Invalid / Incompatible Software"},
     "61": { "name": "Signal Calculation Failure"},
     "62": { "name": "Signal Compare Failure"},
