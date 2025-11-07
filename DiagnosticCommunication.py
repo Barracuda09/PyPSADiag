@@ -43,6 +43,7 @@ class DiagnosticCommunication(QThread):
     protocol = ""
     keepAlive = ""
     stopKeepAlive = ""
+    startDownmode = ""
     startDiagmode = ""
     stopDiagmode = ""
     rebootECU = ""
@@ -64,9 +65,12 @@ class DiagnosticCommunication(QThread):
             #self.crcx25.testCrc()
             self.keepAlive = "KU"
             self.stopKeepAlive = "S"
+            self.startDownmode = "1002"
             self.startDiagmode = "1003"
             self.stopDiagmode = "1001"
             self.rebootECU = "1103"
+            self.unlockServiceDownload = "2701"
+            self.unlockResponseDownload = "2702"
             self.unlockServiceConfig = "2703"
             self.unlockResponseConfig = "2704"
             self.readSecureTraceability = "222901"
@@ -81,6 +85,8 @@ class DiagnosticCommunication(QThread):
             self.startDiagmode = "81"
             self.stopDiagmode = "82"
             self.rebootECU = ""
+            self.unlockServiceDownload = "2781"
+            self.unlockResponseDownload = "2782"
             self.unlockServiceConfig = "2783"
             self.unlockResponseConfig = "2784"
             self.readSecureTraceability = ""
@@ -95,8 +101,10 @@ class DiagnosticCommunication(QThread):
             self.startDiagmode = "10C0"
             self.stopDiagmode = "1081"
             self.rebootECU = "31A800"
-            self.unlockServiceConfig = ""
-            self.unlockResponseConfig = ""
+            self.unlockServiceDownload = "2781"
+            self.unlockResponseDownload = "2782"
+            self.unlockServiceConfig = "2783"
+            self.unlockResponseConfig = "2784"
             self.readSecureTraceability = ""
             self.secureTraceability = ""
             self.readEcuFaultsMode = "17FF00"
@@ -193,6 +201,24 @@ class DiagnosticCommunication(QThread):
         self.writeToOutputView(i18n().tr("Open Diagnostic session: Failed"), receiveData)
         return False
 
+    def startDownloadMode(self):
+        receiveData = self.writeECUCommand(self.startDownmode)
+        if len(receiveData) >= 4 and receiveData[:4] == "5002":
+            return True
+        self.writeToOutputView(i18n().tr("Open Download session: Failed"), receiveData)
+        return False
+
+    def startDiagnosticMode(self):
+        receiveData = self.writeECUCommand(self.startDiagmode)
+        if len(receiveData) >= 4 and receiveData[:4] == "5003":
+            return True
+        elif len(receiveData) == 6 and receiveData[:2] == "C1":
+            return True
+        elif len(receiveData) == 4 and receiveData[:4] == "50C0":
+            return True
+        self.writeToOutputView(i18n().tr("Open Diagnostic session: Failed"), receiveData)
+        return False
+
     def stopDiagnosticMode(self):
         self.stopSendingKeepAlive()
         receiveData = self.writeECUCommand(self.stopDiagmode)
@@ -237,7 +263,6 @@ class DiagnosticCommunication(QThread):
             elif len(receiveData) == 12:
                 if receiveData[:4] == "6703" or receiveData[:4] == "6783":
                     break;
-
         if tryCnt == 0:
             error = i18n().tr("ECU Unlock Failed:")
             if len(receiveData) >= 6 and receiveData[:2] == "7F":
