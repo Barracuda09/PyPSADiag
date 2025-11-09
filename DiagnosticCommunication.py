@@ -208,17 +208,6 @@ class DiagnosticCommunication(QThread):
         self.writeToOutputView(i18n().tr("Open Download session: Failed"), receiveData)
         return False
 
-    def startDiagnosticMode(self):
-        receiveData = self.writeECUCommand(self.startDiagmode)
-        if len(receiveData) >= 4 and receiveData[:4] == "5003":
-            return True
-        elif len(receiveData) == 6 and receiveData[:2] == "C1":
-            return True
-        elif len(receiveData) == 4 and receiveData[:4] == "50C0":
-            return True
-        self.writeToOutputView(i18n().tr("Open Diagnostic session: Failed"), receiveData)
-        return False
-
     def stopDiagnosticMode(self):
         self.stopSendingKeepAlive()
         receiveData = self.writeECUCommand(self.stopDiagmode)
