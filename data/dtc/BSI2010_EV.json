@@ -583,7 +583,6 @@
     "P0244": { "name": "Engine management ECU (Control of the turbocharger)"},
     "P0245": { "name": "Turbocharger control"},
     "P0246": { "name": "Turbocharger control"},
-    "P250A": { "name": "Engine oil level sensor fault"},
     "P0261": { "name": "Control of the cylinder 1 fuel injector"},
     "P0262": { "name": "Control of the cylinder 1 fuel injector"},
     "P0264": { "name": "Control of the cylinder 2 fuel injector"},
