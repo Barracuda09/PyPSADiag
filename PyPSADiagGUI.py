@@ -322,6 +322,7 @@ class PyPSADiagGUI(object):
             ("nl", "Nederlands"),
             ("pl", "Polski"),
             ("uk", "Українська"),
+            ("ru", "Русский"),   
         ]
 
         for code, name in languages:
