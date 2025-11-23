@@ -71,6 +71,13 @@ To build and run **PyPSADiag** locally:
 	`System Settings → Privacy & Security → Allow Anyway`
     <br>Note: 
 	<br>`On macOS, the packaged .app will place resources inside the Contents/Resources directory, following Apple’s bundle structure.`
+
+CAL/ULP File Information
+------
+To show information of a CAL or ULP File.
+- Run with one of these:
+	1. `python DecodeCalUlpFile.py --path ulp/9698105080.ulp` Show only S0 and S1 records
+	2. `python DecodeCalUlpFile.py --all --path cal/9694212680.cal` Show All S records
 	
 Make Translations
 ------
