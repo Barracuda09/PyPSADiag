@@ -2726,7 +2726,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "The presence of radiator cladding"
+      "name": "The presence of grille lights"
     },
     "23E0": {
       "id": "CFG_DE6_BSI_OPT_AC_DEC_FAIB_LUM_000",
@@ -3663,7 +3663,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Additional rear overall lantern"
+      "name": "Additional rear overall lights"
     },
     "2447": {
       "id": "CFG_EGB_BSI_OP_SPARE_WHEEL_DETEC_000",
