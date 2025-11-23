@@ -24,6 +24,7 @@ import numpy as np
 
 class CalcCRC16X25():
 
+    # Will return List for CRC16X25: [ crcLow, crcHigh ]
     def calcCRC16X25(self, data: str()):
         if len(data) & 1:
             return [ "BE", "EF"]
@@ -48,6 +49,7 @@ class CalcCRC16X25():
         match(t):
             case 0:
                 # Fails because of incorrect size
+                print("  ** Fails because of incorrect size")
                 data = "34A00000000605D8FD00000"
                 dataCmp = "34A00000000605D8FD000000A83E"
             case 1:
@@ -66,8 +68,8 @@ class CalcCRC16X25():
         crc = self.calcCRC16X25(data)
         data += crc[0]
         data += crc[1]
-        print("  " + data);
-        print("  " + dataCmp);
+        print("  Input: " + data);
+        print("  Comp : " + dataCmp);
         if data != dataCmp:
             print("    ** Failed CRC16.X25 **")
 
@@ -78,4 +80,6 @@ class CalcCRC16X25():
         self.__tryCRC(3)
         self.__tryCRC(4)
 
-
+if __name__ == "__main__":
+    calCRC = CalcCRC16X25()
+    calCRC.testCrc()
