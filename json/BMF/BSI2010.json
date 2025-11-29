@@ -166,7 +166,8 @@
         { "value": "0038", "name": "56 Ohms" },
         { "value": "003C", "name": "60 Ohms?" },
         { "value": "003E", "name": "62 Ohms?" },
-        { "value": "0040", "name": "64 Ohms" }
+        { "value": "0040", "name": "64 Ohms" },
+        { "value": "0046", "name": "70 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with a full tank"
     },

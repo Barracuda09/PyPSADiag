@@ -41,6 +41,10 @@
           {
             "name": "Joystick",
             "mask": "00010000"
+          },
+          {
+            "name": "Rotating knob",
+            "mask": "00011000"
           }
         ]
       },
