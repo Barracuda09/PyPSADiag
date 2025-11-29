@@ -22,5 +22,9 @@
 	"75F:65F": {
 		"protocol": "uds",
 		"file": "./simu/COMBINE_UDS.csv"
+	},
+	"764:664": {
+		"protocol": "uds",
+		"file": "./simu/RCC.csv"
 	}
 }
