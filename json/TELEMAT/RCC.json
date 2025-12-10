@@ -8965,23 +8965,6 @@
             "type": "string_ascii",
             "form_type": "string"
         },
-        "F18C": {
-            "name": "Telecoding_Serial",
-            "tab": "telemat",
-            "type": "raw",
-            "form_type": "multi",
-            "params": [
-                {
-                    "extra_name": "SN",
-                    "name_original": "SN",
-                    "name": "ignore",
-                    "byte": 0,
-                    "mask": "11111111",
-                    "type": "raw",
-                    "form_type": "string"
-                }
-            ]
-        },
         "210B": {
             "name": "Telecoding_Fct_CHECK",
             "tab": "telemat",

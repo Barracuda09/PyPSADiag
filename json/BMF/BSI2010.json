@@ -149,7 +149,7 @@
       "mask": "1111111111111111",
       "params": [
         { "value": "00", "name": "0" },
-        { "value": "0154", "name": "340 Ohms?" },
+        { "value": "0154", "name": "340 Ohms" },
         { "value": "015E", "name": "350 Ohms" }
       ],
       "name": "The resistance of the fuel level sensor with an empty tank"
@@ -2806,7 +2806,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Automatic lighting on"
+      "name": "Option: Automatic headlamp activation"
     },
     "23EB": {
       "id": "CFG_DFE_BSI_TYPE_ACTIVATION_AAF_000",
@@ -4375,12 +4375,12 @@
       "name": "CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???"
     },
     "D52C": {
-      "id": "CFG_000_TELE_BVA_DIVER_FREINELEC_temp",
+      "id": "CFG_000_TELE_BVA_DIVER_FREINELEC_TEMP",
       "tab": "all_computers",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_000_TELE_BVA_DIVER_FRENELEC_TEMP: electric parking brake"
+      "name": "CFG_000_TELE_BVA_DIVER_FREINELEC_TEMP: Electric parking brake"
     },
     "D52D": {
       "id": "CFG_BS9_BSI_UCECAN_UDS_DA_000",
@@ -4804,7 +4804,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: air conditioner control panel"
+      "name": "CFG_BSN_BSI_UCELIN_UDS_TDCAR_000: Rear air conditioning control panel"
     },
     "D5A8": {
       "id": "CFG_BSO_BSI_UCELIN_UDS_DESIGNTLM_000",
@@ -4820,7 +4820,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSP_BSI_UCELIN_UDS_VCI_000: steering wheel with built-in governing bodies"
+      "name": "CFG_BSP_BSI_UCELIN_UDS_VCI_000: Integral controls steering wheel"
     },
     "D5AA": {
       "id": "CFG_BTH_BSI_UCELIN_UDS_HORLOGE_000",
@@ -5028,7 +5028,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Cfg_elg_bsi_ucelin_to_000: @p35350-poluxdata @\\*lin ???"
+      "name": "CFG_ELG_BSI_UCELIN_TO_000: Sunroof on LIN"
     },
     "D5C4": {
       "id": "CFG_ELR_BSI_UCELIN_PLMB_000",
@@ -5036,7 +5036,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_elr_BSI_UCELIN_PLB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???"
+      "name": "CFG_ELR_BSI_UCELIN_PLMB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???"
     },
     "D5C5": {
       "id": "CFG_EOZ_BSI_UCELIN_CCE_000",
@@ -5084,7 +5084,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: P19132-POLUXDATA@\\*RD5 ???"
+      "name": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000: Presence of RD5 audio equipment"
     },
     "D602": {
       "id": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000",
@@ -5100,7 +5100,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BK2_BSI_ns_PRESECEKMLUSBOX_000: @p4042-PoluxData @\\*1 ???"
+      "name": "CFG_BK2_BSI_NS_PRESECEKMLUSBOX_000: Presence of a hands-free kit or a unit for USB connection (1st fit)"
     },
     "2281": {
       "id": "Total period(time) before servicing (threshold)",
