@@ -177,7 +177,7 @@ class PyPSADiagGUI(object):
         self.topButtonHeaderLayout.addStretch()
         self.topButtonHeaderLayout.setContentsMargins(10, 10, 10, 0)
         self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
-        self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed))
         self.topButtonHeaderLayout.addWidget(self.languageComboBox)
 
         ###################################################
