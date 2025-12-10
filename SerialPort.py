@@ -65,22 +65,16 @@ class SerialPort():
 
     def readRawData(self):
         data = bytearray()
-        runLoop = 80
-        while runLoop > 0:
-            dataLen = self.serialPort.in_waiting
-            if dataLen > 1:
-                subData = self.serialPort.read_until(expected=b"\r\n")
-                if len(subData) > 0:
-                    data.extend(subData)
-                    if data.find(b"\r") != -1:
-#                        print(data)
-                        break
-                    time.sleep(0.1)
-                    runLoop = 10
+        while True:
+            dataLen = max(1, min(250, self.serialPort.inWaiting()))
+            subData = self.serialPort.read(dataLen)
+            if len(subData) > 0:
+                data.extend(subData)
+                if data.find(b"\n") != -1:
+                    return data
             else:
-                time.sleep(0.1)
-                runLoop -= 1
-        return data
+                # Timeout
+                return data
 
     def readData(self):
         if self.simulation:
