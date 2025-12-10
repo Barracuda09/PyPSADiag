@@ -1,5 +1,5 @@
 pyinstaller>=6.12.0
-PySerial
+PySerial>=3.5
 PySide6>=6.9
 numpy
 googletrans>=4.0.2
