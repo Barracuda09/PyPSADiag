@@ -26,7 +26,7 @@ import csv
 import time
 import os
 from datetime import datetime
-from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator
+from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator, QEventLoop
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 
 from PyPSADiagGUI import PyPSADiagGUI
@@ -39,7 +39,7 @@ from FileConverter import FileConverter
 from EcuZoneTreeView  import EcuZoneTreeView
 from MessageDialog  import MessageDialog
 from i18n import i18n
-
+from DecodeCalUlpFile import DecodeCalUlpFile
 
 """
   - Change GUI in: PyPSADiagGUI.py
@@ -50,11 +50,14 @@ class MainWindow(QMainWindow):
     ecuObjectList = {}
     simulation = False
     scan = False
+    flashEnable = False
     stream = None
     csvWriter = None
+    app: QApplication
 
     def __init__(self, app: QApplication):
         super(MainWindow, self).__init__()
+        self.app = app
         self.lang_code = "en"
         self.lang = False
         if len(sys.argv) >= 2:
@@ -68,6 +71,8 @@ class MainWindow(QMainWindow):
                     self.simulation = True
                 elif arg == "--scan":
                     self.scan = True
+                elif arg == "--flash":
+                    self.flashEnable = True
                 elif arg == "--checkcalc":
                     calc = SeedKeyAlgorithm()
                     calc.testCalculations()
@@ -75,6 +80,7 @@ class MainWindow(QMainWindow):
                 elif arg == "--help":
                     print("Use --simu      For simulation")
                     print("Use --lang nl   For NL translation")
+                    print("Use --flash     Enable flash option (Work In Progress: use at your own risk!!)")
                     sys.exit(1)
 
         self.addTranslators()
@@ -82,9 +88,12 @@ class MainWindow(QMainWindow):
         self.ui.setupGUI(app, self, self.scan, self.lang_code)
         self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
-        #converter = FileConverter()
-        #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
-        #converter.convertCIROCCO("./json/test_CIROCCO_original.json", "./json/test_CIROCCO_conv.json")
+        # Disable Sync Zone files with github (Still Work In Progress)
+        self.ui.syncZoneFiles.setVisible(False)
+
+        # Disable flash when not explicit enabled at startup (Still Work In Progress use at your own risk)
+        if self.flashEnable == False:
+            self.ui.flashEcu.setVisible(False)
 
         # Connect button signals to slots
         self.ui.sendCommand.clicked.connect(self.sendCommand)
@@ -93,6 +102,7 @@ class MainWindow(QMainWindow):
         self.ui.openZoneFile.clicked.connect(self.openZoneFile)
         self.ui.readZone.clicked.connect(self.readZone)
         self.ui.writeZone.clicked.connect(self.writeZone)
+        self.ui.flashEcu.clicked.connect(self.flashEcu)
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
         self.ui.clearEcuFaults.clicked.connect(self.clearEcuFaults)
@@ -112,6 +122,7 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.setEnabled(False)
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
+        self.ui.flashEcu.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
@@ -208,6 +219,11 @@ class MainWindow(QMainWindow):
         # Set begin connecting button states
         self.ui.ConnectPort.setEnabled(False)
         self.ui.DisconnectPort.setEnabled(False)
+
+        # TODO: Make this more elegant
+        # Give time to Close Dialog and Repaint
+        QApplication.processEvents(QEventLoop.AllEvents, 1000)
+
         error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
         if error == "":
             # First send an Version and Reset command
@@ -240,7 +256,7 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.setEnabled(False)
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
-        self.ui.writeZone.setEnabled(False)
+        self.ui.flashEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
@@ -315,7 +331,7 @@ class MainWindow(QMainWindow):
         self.ui.setFilePathInWindowsTitle("")
         self.ui.readZone.setEnabled(True)
         self.ui.writeZone.setEnabled(True)
-        self.ui.writeZone.setEnabled(True)
+        self.ui.flashEcu.setEnabled(True)
         self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
@@ -367,7 +383,6 @@ class MainWindow(QMainWindow):
                     self.kwphabCommunication.setZonesToRead(ecu, lin, zone)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -414,7 +429,57 @@ class MainWindow(QMainWindow):
                 self.kwphabCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+
+    @Slot()
+    def flashEcu(self):
+        if self.serialController.isOpen():
+            if self.ecuObjectList["protocol"] != "uds":
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
+
+            path = os.path.join(os.path.dirname(__file__), "ulp")
+            fileName = QFileDialog.getOpenFileName(self, i18n().tr("CAUTION... Flash CAL/ULP File"), path, i18n().tr("CAL Files") + "(*.cal)" + ";;" + i18n().tr("ULP Files") + "(*.ulp)")
+            if fileName[0] == "":
+                return
+
+            # TODO: Make this more elegant
+            # Give time to Close Dialog and Repaint
+            QApplication.processEvents(QEventLoop.AllEvents, 1000)
+
+            flashFile = DecodeCalUlpFile()
+            fileOk = flashFile.decodeCalUlpFile(fileName[0], False)
+            if fileOk == False:
+                self.writeToOutputView(i18n().tr("File contains errors") + ": " + fileName[0])
+                return
+
+            # Give a warning and some option to cancel the Flash
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Warning)
+            msg.addButton(QMessageBox.Cancel)
+            msg.addButton(QMessageBox.Ok)
+            msg.setDefaultButton(QMessageBox.Cancel)
+            msg.setWindowTitle(i18n().tr("CAUTION: Use at your own RISK!!!"))
+            msg.setText(i18n().tr("Flashing ECU with:") + os.linesep + fileName[0] + os.linesep + os.linesep + i18n().tr("Do NOT Interrupt the flashing process!!!"))
+            if QMessageBox.Cancel == msg.exec():
+                return
+
+            # Disable UI to prevent interruption
+            self.setEnabled(False)
+
+            self.writeToOutputView(i18n().tr("Fashing file") + ":" + fileName[0] )
+
+            # Setup CAN_EMIT_ID
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.flashEcu(ecu, flashFile)
+            else:
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+
+            # Enable UI again
+            self.setEnabled(True)
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -431,7 +496,6 @@ class MainWindow(QMainWindow):
                 self.kwphabCommunication.rebootEcu(ecu)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -446,7 +510,6 @@ class MainWindow(QMainWindow):
                 ParseDTC.parse(dtc, self.ecuObjectList.get("dtc_lookup", ""))
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -465,7 +528,6 @@ class MainWindow(QMainWindow):
                 self.udsCommunication.clearEcuFaults(ecu)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -473,7 +535,7 @@ class MainWindow(QMainWindow):
     def csvReadCallback(self, value: list):
         # Did we had an empty line in CSV? Then skip it.
         if len(value) >= 2:
-            self.ui.treeView.changeZoneOption(value[0], value[1]);
+            self.ui.treeView.changeZoneOption(value[0], value[1])
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str):

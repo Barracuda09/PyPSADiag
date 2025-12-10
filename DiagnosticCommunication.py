@@ -19,16 +19,17 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-import time
+import time, datetime
 import queue
 import json
 import os
-from PySide6.QtCore import Qt, QThread, Signal
-from PySide6.QtWidgets import QTextEdit
+from PySide6.QtCore import Qt, QThread, Signal, QEventLoop
+from PySide6.QtWidgets import QApplication, QTextEdit
 
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from CalcCRC16X25 import CalcCRC16X25
 from i18n import i18n
+from DecodeCalUlpFile import DecodeCalUlpFile
 
 class DiagnosticCommunication(QThread):
     receivedPacketSignal = Signal(list, float)
@@ -150,8 +151,9 @@ class DiagnosticCommunication(QThread):
             text = text + " (" + reply + ")"
         self.outputToTextEditSignal.emit(text)
 
-    def writeECUCommand(self, cmd: str):
-        self.writeToOutputView("> " + cmd)
+    def writeECUCommand(self, cmd: str, log=True):
+        if log:
+            self.writeToOutputView("> " + cmd)
         receiveData = self.serialPort.sendReceive(cmd)
         # Check response we need to retry reading
         # 7F3E03 (Custom error)
@@ -173,7 +175,8 @@ class DiagnosticCommunication(QThread):
                 # Check did we receive again the custom error
                 i = receiveData.find("7F3E03")
 
-        self.writeToOutputView("< " + receiveData)
+        if log:
+            self.writeToOutputView("< " + receiveData)
         return receiveData
 
     def startSendingKeepAlive(self):
@@ -235,9 +238,15 @@ class DiagnosticCommunication(QThread):
         return True
 
     def unlockingServiceForConfiguration(self, key: str):
+        return self.__unlockingServiceWith(self.unlockServiceConfig, key)
+
+    def unlockingServiceForDownload(self, key: str):
+        return self.__unlockingServiceWith(self.unlockServiceDownload, key)
+
+    def __unlockingServiceWith(self, service: str, key: str):
         tryCnt = 8
         while tryCnt:
-            receiveData = self.writeECUCommand(self.unlockServiceConfig)
+            receiveData = self.writeECUCommand(service)
             if len(receiveData) != 12:
                 if len(receiveData) >= 6:
                     # Unlocking - Required time delay not expired
@@ -250,8 +259,15 @@ class DiagnosticCommunication(QThread):
                 else:
                     tryCnt = 0
             elif len(receiveData) == 12:
-                if receiveData[:4] == "6703" or receiveData[:4] == "6783":
+                serviceID = int(service, 16) | 0x4000
+                responseID = int(receiveData[:4], 16)
+                if serviceID == responseID:
                     break;
+                else:
+                    tryCnt = 0
+            else:
+                tryCnt = 0
+
         if tryCnt == 0:
             error = i18n().tr("ECU Unlock Failed:")
             if len(receiveData) >= 6 and receiveData[:2] == "7F":
@@ -269,10 +285,18 @@ class DiagnosticCommunication(QThread):
         return seed
 
     def sendUnlockingResponseForConfiguration(self, seed: str):
-        reply = self.unlockResponseConfig + seed
+        return self.__sendUnlockingResponseWith(self.unlockResponseConfig, seed)
+
+    def sendUnlockingResponseForDownload(self, seed: str):
+        return self.__sendUnlockingResponseWith(self.unlockResponseDownload, seed)
+
+    def __sendUnlockingResponseWith(self, service: str, seed: str):
+        reply = service + seed
         receiveData = self.writeECUCommand(reply)
         if len(receiveData) == 4:
-            if receiveData[:4] == "6704" or receiveData[:4] == "6784":
+            serviceID = int(service, 16) | 0x4000
+            responseID = int(receiveData[:4], 16)
+            if serviceID == responseID:
                 return True
 
         error = i18n().tr("ECU Unlock Failed:")
@@ -284,6 +308,60 @@ class DiagnosticCommunication(QThread):
                 error = i18n().tr("ECU Unlock Failed") + " (" + cmd + "): " + errorResponseList[error]
 
         self.writeToOutputView(error, receiveData)
+        return False
+
+    def __eraseEcuFlash(self, flashType: str):
+        if len(flashType) != 2:
+            return False
+        flashErase = "3101FF00"
+        receiveData = self.writeECUCommand(flashErase + flashType + "F05A")
+        tryCnt = 80
+        while tryCnt:
+            if len(receiveData) >= 10:
+                if receiveData[:10] == "7101FF0001" or receiveData[:10] == "7103FF0001":
+                    time.sleep(0.5)
+                    flashErase = "3103FF00"
+                    receiveData = self.writeECUCommand(flashErase)
+                elif receiveData[:10] == "7103FF0002":
+                    return True
+            tryCnt -= 1
+
+        return False
+
+    def __prepareEcuFlash(self, flashType: str):
+        if len(flashType) != 2:
+            return False
+        receiveData = self.writeECUCommand("34" + flashType + "110000")
+        tryCnt = 5
+        while tryCnt:
+            if len(receiveData) >= 6:
+                if receiveData[:6] == "741000":
+                    return True
+            time.sleep(0.5)
+            tryCnt -= 1
+
+        return False
+
+    def __eraseZI(self):
+        receiveData = self.writeECUCommand("3101FF04")
+        tryCnt = 80
+        while tryCnt:
+            if len(receiveData) >= 10:
+                if receiveData[:10] == "7101FF0401" or receiveData[:10] == "7103FF0401":
+                    time.sleep(0.5)
+                    receiveData = self.writeECUCommand("3103FF04")
+                elif receiveData[:10] == "7103FF0402":
+                    return True
+            tryCnt -= 1
+
+        return False
+
+    def __flashAutoControl(self):
+        receiveData = self.writeECUCommand("37")
+        if len(receiveData) >= 2:
+            if receiveData == "77":
+                return True
+
         return False
 
     def writeUDSZoneConfigurationCommand(self, zone: str(), data: str()):
@@ -347,9 +425,6 @@ class DiagnosticCommunication(QThread):
             if receiveData != "OK":
                 self.writeToOutputView(i18n().tr("Selecting LIN ECU: Failed"))
                 return
-# Not needed
-#        if not self.stopDiagnosticMode():
-#            return
 
         time.sleep(0.5)
 
@@ -409,6 +484,106 @@ class DiagnosticCommunication(QThread):
             return
 
         self.writeToOutputView(i18n().tr("Write Successful"))
+
+    def flashEcu(self, ecuID: str, flashFile: DecodeCalUlpFile):
+        if not self.serialPort.isOpen():
+            self.receivedPacketSignal.emit([i18n().tr("Serial Port Not Open"), "", ""], time.time())
+            return
+
+        if flashFile == None:
+            self.receivedPacketSignal.emit([i18n().tr("Flash File not correct"), "", ""], time.time())
+            return
+
+        receiveData = self.writeECUCommand(ecuID)
+        if receiveData != "OK":
+            self.writeToOutputView(i18n().tr("Selecting ECU: Failed"), receiveData)
+            return
+
+        time.sleep(0.5)
+
+        if not self.startSendingKeepAlive():
+            return
+
+        if not self.startDownloadMode():
+            return
+
+        time.sleep(0.5)
+
+        key = flashFile.getUnlockKey()
+        flashType = flashFile.getFlashType()
+        flashSize = flashFile.getFlashSize()
+
+        seed = self.unlockingServiceForDownload(key)
+        if len(seed) == 0:
+            self.stopDiagnosticMode()
+            return
+
+        self.writeToOutputView(i18n().tr("Waiting 2 Sec..."))
+        time.sleep(2)
+
+        if not self.sendUnlockingResponseForDownload(seed):
+            self.stopDiagnosticMode()
+            return
+
+        if not self.stopSendingKeepAlive():
+            return
+
+        if not self.__eraseEcuFlash(flashType):
+            self.stopDiagnosticMode()
+            return
+
+        if not self.__prepareEcuFlash(flashType):
+            self.stopDiagnosticMode()
+            return
+
+        # Start begin timer for statistics
+        a = datetime.datetime.now()
+
+        # Download/Flash SREC File
+        percPre = 0
+        line = ""
+        while line != "END":
+            data = flashFile.getFlashLines()
+            line = data[0]
+            if len(line) > 4:
+                receiveData = self.writeECUCommand(line, False)
+
+                if receiveData[2:4] != line[2:4]:
+                    self.writeToOutputView(i18n().tr("Flash line counters do not match...") + " (" + receiveData+ ")")
+
+                perc = int((data[1] / flashSize) * 100)
+                if perc != percPre:
+                    c = datetime.datetime.now()
+                    percPre = perc
+                    self.writeToOutputView(i18n().tr("Procent: ") + str(perc) + " - " + str(int(data[1] / (c-a).total_seconds())) + " " + i18n().tr("Lines/Sec"))
+                    # TODO: Make this more elegant
+                    QApplication.processEvents(QEventLoop.AllEvents, 1000)
+
+        # Stop timer for statistics
+        b = datetime.datetime.now()
+
+        if not self.__flashAutoControl():
+            self.stopDiagnosticMode()
+            return
+        if not self.__eraseZI():
+            self.stopDiagnosticMode()
+            return
+        if not self.__prepareEcuFlash("83"):
+            self.stopDiagnosticMode()
+            return
+
+        line = flashFile.getFlashZILine("01")  # Download counter
+        receiveData = self.writeECUCommand(line)
+
+        if not self.__flashAutoControl():
+            self.stopDiagnosticMode()
+            return
+
+        if not self.stopDiagnosticMode():
+            return
+
+        self.writeToOutputView(i18n().tr("Flashing Successful in:") + " " + str(int(flashSize / (b-a).total_seconds())) + " " + i18n().tr("Lines/Sec"))
+
 
     def rebootEcu(self, ecuID: str):
         if self.serialPort.isOpen():
