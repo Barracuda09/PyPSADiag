@@ -38,17 +38,18 @@ class EcuSimulation(QThread):
     ecuID = ""
     rxID = ""
     txID = ""
+    flashEraseDelay = 0
 
     def __init__(self):
         super(EcuSimulation, self).__init__()
 
     def receive(self):
-        time.sleep(0.2)
+        time.sleep(0.01)
         #return "2306230723082309230A230B230C230D230E230F"
         return ""
 
     def sendReceive(self, cmd: str):
-        time.sleep(0.2)
+        time.sleep(len(cmd) * 0.000087 + 0.002)
         return self.__simulateAnswer(cmd)
 
     def __simulateAnswer(self, cmd: str):
@@ -77,6 +78,11 @@ class EcuSimulation(QThread):
         # UDS
         if cmd == "1103":
             return "5103"
+        if cmd == "1002":
+            # Check if ECU is in car simulation and if correct protocol
+            if (self.ecuID in self.carECUList) and (self.carECUList[self.ecuID]["protocol"] == "uds"):
+                self.protocol = "uds"
+                return "500200C80014"
         if cmd == "1003":
             # Check if ECU is in car simulation and if correct protocol
             if (self.ecuID in self.carECUList) and (self.carECUList[self.ecuID]["protocol"] == "uds"):
@@ -86,10 +92,17 @@ class EcuSimulation(QThread):
             self.protocol = ""
             self.ecuData = None
             return "500100C80014"
+        if cmd == "2701":
+            #return "7F2722" # Return some error
+            return "670144716E50"
+        if cmd[:4] == "2702":
+            # We do not check Seed/Challange
+            return "6702"
         if cmd == "2703":
             #return "7F2722" # Return some error
             return "67036B0A71E0"
         if cmd[:4] == "2704":
+            # We do not check Seed/Challange
             return "6704"
 
         # KWP_IS
@@ -168,6 +181,30 @@ class EcuSimulation(QThread):
                 return "59020990030009D1488709DF548709DFA28709DF238709"
         elif cmd[:8] == "14FFFFFF":
             return "54"
+        elif cmd[:8] == "3101FF00" and cmd[10:14] == "F05A":
+            self.flashEraseDelay = 4
+            return "7101FF0001"
+        elif cmd[:8] == "3103FF00":
+            if self.flashEraseDelay > 0:
+                self.flashEraseDelay -= 1;
+                return "7103FF0001"
+            return "7103FF0002"
+
+        elif cmd[:8] == "3101FF04":
+            self.flashEraseDelay = 4
+            return "7101FF0401"
+        elif cmd[:8] == "3103FF04":
+            if self.flashEraseDelay > 0:
+                self.flashEraseDelay -= 1;
+                return "7103FF0401"
+            return "7103FF0402"
+
+        elif cmd[:2] == "34" and cmd[4:10] == "110000":
+            return "741000"
+        elif cmd[:2] == "36":
+            return "76" + cmd[2:4] + "02"
+        elif cmd[:2] == "37":
+            return "77"
 
         return "Timeout"
 
