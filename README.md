@@ -17,6 +17,7 @@ Currently supporting:
 - Reading Zones that are listed in JSON Configuration file
 - Saving Zones to CSV file
 - Saving changed Zones (as an list) to ECU
+- Flashing of CAL and ULP Files to ECU
 
 What I would like to support:
 - More ECU JSON Files
@@ -83,6 +84,8 @@ Make Translations
 ------
 
 For example to make a translation for Dutch use this command:
+- `i18n/Languages.json` Add the language code and name
+- `i18n/flags/nl.png` Add the flags for this language
 - `python buildi18n.py --lang nl` --> Build the qt.ts file
 - `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate
 - `pyside6-linguist ./i18n/PyPSADiag_translated_nl.qt.ts` --> Correct translation if required
