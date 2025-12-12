@@ -1,0 +1,9 @@
+{
+    "en": {"name": "English"},
+    "it": {"name": "Italiano"},
+    "de": {"name": "Deutsch"},
+    "nl": {"name": "Nederlands"},
+    "pl": {"name": "Polski"},
+    "uk": {"name": "Українська"},
+    "ru": {"name": "Русский"}
+}

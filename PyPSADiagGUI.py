@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-import os
+import os, json
 from datetime import datetime
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -315,21 +315,20 @@ class PyPSADiagGUI(object):
         self.languageComboBox.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
         self.languageComboBox.setMinimumWidth(100)
 
-        flags_path = os.path.join(self.currentDir, "i18n", "flags")
+        languagesPath = os.path.join(self.currentDir, "i18n", "Languages.json")
+        flagsPath = os.path.join(self.currentDir, "i18n", "flags")
 
-        languages = [
-            ("en", "English"),
-            ("it", "Italiano"),
-            ("de", "Deutsch"),
-            ("nl", "Nederlands"),
-            ("pl", "Polski"),
-            ("uk", "Українська"),
-            ("ru", "Русский"),   
-        ]
+        # Read the languages from json file
+        file = open(languagesPath, 'r', encoding='utf-8')
+        jsonFile = file.read()
+        languagesList = json.loads(jsonFile.encode("utf-8"))
+        languages = []
+        for language in languagesList:
+            languages.append((language ,languagesList[language]["name"]))
 
         for code, name in languages:
-            icon_path = os.path.join(flags_path, f"{code}.png")
-            self.languageComboBox.addItem(QIcon(icon_path), name, code)
+            iconPath = os.path.join(flagsPath, f"{code}.png")
+            self.languageComboBox.addItem(QIcon(iconPath), name, code)
 
         index = self.languageComboBox.findData(lang_code)
         if index != -1:
