@@ -6,7 +6,8 @@
     "protocol": "uds",
     "key_type": "multi",
     "keys": {
-        "CIROCCO": "FAFA"
+        "CIROCCO": "FAFA",
+        "CIROCCO 3D (2024)": "A13C"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
