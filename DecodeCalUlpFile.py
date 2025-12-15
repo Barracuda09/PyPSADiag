@@ -30,6 +30,7 @@ class DecodeCalUlpFile():
     flashSize = 0
     flashLineNr = 1
     beginFlash = False
+    familiesMUX = ""
     flashType = ""
     unlockKey = ""
     flashSign = ""
@@ -173,8 +174,18 @@ class DecodeCalUlpFile():
                         case '0':
                             calMap = {'81': '(.cal)', '82': '(.ulp)', '92': '(.ulp new Gen)'}
                             isoMap = {'00': '(CAN)', '01': '(LIN)', '05': '(ISO 5)',  '08': '(ISO 8)'}
+
+                            self.familiesMUX = line[ 8:10]
+
+                            file = open(os.path.join(os.path.dirname(__file__), "data/ECU_FAMILIES.json"), 'r', encoding='utf-8')
+                            jsonFile = file.read()
+                            familiesList = json.loads(jsonFile.encode("utf-8"))
+                            familiesTXT = "Unkown"
+                            if self.familiesMUX in familiesList:
+                                familiesTXT = familiesList[str(self.familiesMUX)]
+
                             print("S0 (Hardware info) - Line: " + str(self.fileLineNr))
-                            print("  FAMILY_MUX_CODE  : " + line[ 8:10])
+                            print("  FAMILY_MUX_CODE  : " + line[ 8:10] + " (" + familiesTXT + ")")
                             print("  ISO_LINE         : " + line[10:12] + " " + isoMap[line[10:12]])
                             print("  INTERBYTE_TX     : " + line[12:14])
                             print("  INTERBYTE_RX     : " + line[14:16])
