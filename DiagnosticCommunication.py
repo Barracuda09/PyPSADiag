@@ -35,6 +35,7 @@ class DiagnosticCommunication(QThread):
     receivedPacketSignal = Signal(list, float)
     outputToTextEditSignal = Signal(str)
     updateZoneDataSignal = Signal(str, str)
+    readZoneListDoneSignal = Signal()
     algo = SeedKeyAlgorithm()
     crcx25 = CalcCRC16X25()
     writeQ = queue.Queue()
@@ -761,4 +762,5 @@ class DiagnosticCommunication(QThread):
 
             else:
                 self.writeToOutputView(i18n().tr("Reading ECU Zones: Successful"))
+                self.readZoneListDoneSignal.emit()
                 self.isRunning = False

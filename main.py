@@ -135,18 +135,21 @@ class MainWindow(QMainWindow):
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.udsCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.udsCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
         # KWP_IS
         self.kwpisCommunication = DiagnosticCommunication(self.serialController, "kwp_is")
         self.kwpisCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.kwpisCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwpisCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.kwpisCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
         # KWP_HAB
         self.kwphabCommunication = DiagnosticCommunication(self.serialController, "kwp_hab")
         self.kwphabCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.kwphabCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwphabCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.kwphabCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
         # Open CSV reader, load file with method "enable(path)"
         self.fileLoaderThread = FileLoader.FileLoaderThread()
@@ -331,7 +334,7 @@ class MainWindow(QMainWindow):
         self.ui.setFilePathInWindowsTitle("")
         self.ui.readZone.setEnabled(True)
         self.ui.writeZone.setEnabled(True)
-        self.ui.flashEcu.setEnabled(True)
+        self.ui.flashEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
@@ -348,6 +351,9 @@ class MainWindow(QMainWindow):
             self.ui.setFilePathInWindowsTitle(fileName[0])
             self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
             self.csvWriter = csv.writer(self.stream)
+
+            # Disable UI to prevent interruption
+            self.setEnabled(False)
 
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
@@ -421,7 +427,6 @@ class MainWindow(QMainWindow):
                 lin = "L" + self.ecuObjectList["lin_id"]
 
             if self.ecuObjectList["protocol"] == "uds":
-#                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
                 self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             elif self.ecuObjectList["protocol"] == "kwp_is":
                 self.kwpisCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
@@ -536,6 +541,13 @@ class MainWindow(QMainWindow):
         # Did we had an empty line in CSV? Then skip it.
         if len(value) >= 2:
             self.ui.treeView.changeZoneOption(value[0], value[1])
+
+    @Slot()
+    def readZoneListDoneCallback(self):
+        self.ui.flashEcu.setEnabled(True)
+
+        # Enable UI again
+        self.setEnabled(True)
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str):
