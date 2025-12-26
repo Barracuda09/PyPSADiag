@@ -384,7 +384,15 @@ class DiagnosticCommunication(QThread):
             self.writeToOutputView(i18n().tr("Write Configuration Zone: Ok"), receiveData)
             return True
         else:
-            self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
+            message = i18n().tr("Write Configuration Zone: Failed")
+            if len(receiveData) >= 6 and receiveData[:2] == "7F":
+                errorResponseList = self.__openErrorResponseTranslated()
+                error = receiveData[4:6]
+                cmd = receiveData[2:4]
+                if error in errorResponseList:
+                    message = message + " (" + error + ") " + errorResponseList[error]
+
+            self.writeToOutputView(message, receiveData)
             return False
 
     def writeKWPisZoneConfigurationCommand(self, zone: str(), data: str()):
