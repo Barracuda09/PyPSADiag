@@ -191,6 +191,12 @@ class EcuZoneLineEdit(QLineEdit):
             if "type" in self.zoneObject:
                 if "zi_cal" == self.zoneObject["type"]:
                     txt = "96" + txt + "80"
+                elif "zi_tool" == self.zoneObject["type"]:
+                    file = open(os.path.join(os.path.dirname(__file__), "data/ToolType.json"), 'r', encoding='utf-8')
+                    jsonFile = file.read()
+                    tooltypeList = json.loads(jsonFile.encode("utf-8"))
+                    if txt in tooltypeList:
+                        txt = tooltypeList[str(txt)]
                 elif "zi_sup" == self.zoneObject["type"]:
                     file = open(os.path.join(os.path.dirname(__file__), "data/ECU_SUPPLIERS.json"), 'r', encoding='utf-8')
                     jsonFile = file.read()

@@ -85,6 +85,13 @@
         "form_type": "string"
       },
       {
+        "name": "Teletransmission Tool Type",
+        "byte": 16,
+        "byte_range": 1,
+        "type": "zi_tool",
+        "form_type": "string"
+      },
+      {
         "name": "Teletransmission Tool ID / 020000 = Factory",
         "byte": 17,
         "byte_range": 3,
