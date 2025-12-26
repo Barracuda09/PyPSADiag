@@ -19,7 +19,7 @@
       "tab": "tele",
       "type": "raw",
       "form_type": "multi",
-      "CFG_DAE_PARK_01": {
+      "CFG_DM7_DAE_UCPR_CITYPARK": {
         "name": "Presense of semi-automatic parking",
         "byte": 2,
         "type": "bool",
@@ -36,7 +36,7 @@
           }
         ]
       },
-      "CFG_DAE_STEER_02": {
+      "CFG_DM7_DAE_UCPR_CAV": {
         "name": "Presense of steering angle sensor",
         "byte": 2,
         "type": "bool",
@@ -53,7 +53,7 @@
           }
         ]
       },
-      "CFG_DAE_SST_0C": {
+      "CFG_DM7_DAE_UCPR_STT": {
         "name": "Presense of Start and Stop",
         "byte": 2,
         "type": "bool",
@@ -87,7 +87,7 @@
           }
         ]
       },
-      "CFG_DAE_LKA_20": {
+      "CFG_DM7_DAE_UCPR_LKA": {
         "name": "Presense of Lane Keeping Assist",
         "byte": 2,
         "type": "bool",

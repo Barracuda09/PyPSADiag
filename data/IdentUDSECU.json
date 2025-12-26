@@ -33,8 +33,8 @@
       },
       {
         "name": "Type",
-        "byte": 20,
-        "byte_range": 2,
+        "byte": 19,
+        "byte_range": 3,
         "type": "raw",
         "form_type": "string"
       }
