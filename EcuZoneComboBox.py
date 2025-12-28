@@ -41,10 +41,22 @@ class EcuZoneComboBox(QComboBox):
         for paramObject in self.zoneObject["params"]:
             name = i18n().tr(paramObject["name"])
             if "mask" in paramObject:
-                self.addItem(name, int(paramObject["mask"], 2))
+                # Store as string with "b:" prefix to avoid Qt int64 overflow
+                self.addItem(name, "b:" + paramObject["mask"])
             else:
-                self.addItem(name, int(paramObject["value"], 16))
+                # Store as string with "h:" prefix for hex values
+                self.addItem(name, "h:" + paramObject["value"])
         self.setCurrentIndex(0)
+
+    def getItemDataAsInt(self, index: int) -> int:
+        """Convert stored string data back to integer"""
+        data = self.itemData(index)
+        if isinstance(data, str):
+            if data.startswith("b:"):
+                return int(data[2:], 2)
+            elif data.startswith("h:"):
+                return int(data[2:], 16)
+        return int(data)
 
     def event(self, event: QEvent):
         if event.type() == QEvent.KeyPress:
@@ -69,11 +81,9 @@ class EcuZoneComboBox(QComboBox):
 
     def getCorrespondingByteSize(self):
         if "mask" in self.zoneObject:
-            bits = int(self.zoneObject["mask"], 2).bit_count()
-            if bits > 8 and bits <= 16:
-                return 2
-            elif bits > 16 and bits <= 32:
-                return 4
+            bits = int(self.zoneObject["mask"], 2).bit_length()
+            # round up to the nearest bit
+            return (bits + 7) // 8
         return 1
 
     def setCurrentIndex(self, val):
@@ -87,7 +97,7 @@ class EcuZoneComboBox(QComboBox):
         value = "Disabled"
         if self.isEnabled():
             index = self.currentIndex()
-            value = "%0.2X" % self.itemData(index)
+            value = "%0.2X" % self.getItemDataAsInt(index)
         return value
 
     def clearZoneValue(self):
@@ -98,13 +108,13 @@ class EcuZoneComboBox(QComboBox):
         value = "None"
         if self.isComboBoxChanged(virginWrite):
             index = self.currentIndex()
-            value = "%0.2X" % self.itemData(index)
+            value = "%0.2X" % self.getItemDataAsInt(index)
         return value
 
     def update(self, byte: str):
         index = self.currentIndex()
         mask = int(self.zoneObject["mask"], 2)
-        value = (int(byte, 16) & ~mask) | self.itemData(index)
+        value = (int(byte, 16) & ~mask) | self.getItemDataAsInt(index)
         size = self.getCorrespondingByteSize() * 2
         byte = f"%0.{size}X" % value
         return byte
@@ -144,7 +154,7 @@ class EcuZoneComboBox(QComboBox):
         # Find the Option (byte) from the ComboBox
         foundMatch = False
         for i in range(self.count()):
-            if self.itemData(i) == byte:
+            if self.getItemDataAsInt(i) == byte:
                 self.setCurrentIndex(i)
                 foundMatch = True
                 break
@@ -152,7 +162,7 @@ class EcuZoneComboBox(QComboBox):
         # Did we find item, else add it to combobox
         if foundMatch == False:
             print("** Add missing combobox item " + "0x%0.2X" % byte + " **")
-            self.addItem("** 0x%0.2X" % byte, int(byte))
+            self.addItem("** 0x%0.2X" % byte, "h:%X" % byte)
             self.setCurrentIndex(self.count() - 1)
 
-        return 0
+        return 0 
