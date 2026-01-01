@@ -601,6 +601,7 @@
                 },
                 {
                     "extra_name": "ATT_DG_JDA",
+                    "zoneLength": 9,
                     "name_original": "BSZ",
                     "name": "Alerts history",
                     "byte": 6,
@@ -783,6 +784,7 @@
                 },
                 {
                     "extra_name": "DRIVER_REST_CFG",
+                    "zoneLength": 9,
                     "name_original": "DZK",
                     "name": "Driver Restriction function",
                     "byte": 6,
@@ -802,6 +804,7 @@
                 },
                 {
                     "extra_name": "DIPO_ON_OFF",
+                    "zoneLength": 9,
                     "name_original": "DZR",
                     "name": "\"Apple Carplay\" function",
                     "byte": 6,
@@ -1018,6 +1021,7 @@
                 },
                 {
                     "extra_name": "DG_CARLINE",
+                    "zoneLength": 9,
                     "name_original": "E3W",
                     "name": "Vehicle model",
                     "byte": 6,
@@ -1115,6 +1119,7 @@
                 },
                 {
                     "extra_name": "DOORS_TYPE_001",
+                    "zoneLength": 9,
                     "name_original": "E5B",
                     "name": "Type of accesses",
                     "byte": 8,
@@ -1160,6 +1165,7 @@
                 },
                 {
                     "extra_name": "ODS_TYPE",
+                    "zoneLength": 9,
                     "name_original": "E88",
                     "name": "Type of obstacle detection system",
                     "byte": 8,
@@ -1192,6 +1198,7 @@
                 },
                 {
                     "extra_name": "PERSO_CFG",
+                    "zoneLength": 9,
                     "name_original": "EIO",
                     "name": "Instrument panel personalization",
                     "byte": 8,

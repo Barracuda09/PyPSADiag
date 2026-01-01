@@ -130,7 +130,7 @@ class EcuZoneComboBox(QComboBox):
             zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength > len(byteData):
+                if zoneLength != len(byteData):
                     return 2
 
             byteNr = self.zoneObject["byte"]
@@ -165,4 +165,4 @@ class EcuZoneComboBox(QComboBox):
             self.addItem("** 0x%0.2X" % byte, "h:%X" % byte)
             self.setCurrentIndex(self.count() - 1)
 
-        return 0 
+        return 0

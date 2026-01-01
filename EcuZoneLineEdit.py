@@ -165,7 +165,7 @@ class EcuZoneLineEdit(QLineEdit):
             zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength > len(byteData):
+                if zoneLength != len(byteData):
                     return 2
 
             byteNr = self.zoneObject["byte"]
