@@ -180,7 +180,7 @@ class DecodeCalUlpFile():
                             file = open(os.path.join(os.path.dirname(__file__), "data/ECU_FAMILIES.json"), 'r', encoding='utf-8')
                             jsonFile = file.read()
                             familiesList = json.loads(jsonFile.encode("utf-8"))
-                            familiesTXT = "Unkown"
+                            familiesTXT = "Unknown"
                             if self.familiesMUX in familiesList:
                                 familiesTXT = familiesList[str(self.familiesMUX)]
 
@@ -209,7 +209,7 @@ class DecodeCalUlpFile():
                             file = open(os.path.join(os.path.dirname(__file__), "data/ECU_SUPPLIERS.json"), 'r', encoding='utf-8')
                             jsonFile = file.read()
                             supplierList = json.loads(jsonFile.encode("utf-8"))
-                            supplierTXT = "Unkown"
+                            supplierTXT = "Unknown"
                             if self.supplier in supplierList:
                                 supplierTXT = supplierList[str(self.supplier)]
 
@@ -218,7 +218,7 @@ class DecodeCalUlpFile():
                             print("  FLASH_SIGNATURE  : " + line[ 8:12])
                             print("  UNLOCK_KEY       : " + line[12:16])
                             print("  SUPPLIER         : " + line[16:18] + " (" + supplierTXT + ")")
-                            print("  SYSTEM           : " + line[18:20])
+                            print("  SYSTEM           : " + line[18:20] + " (" + ")")
                             print("  APPLICATION      : " + line[20:22])
                             print("  SOFTWARE_VERSION : " + line[22:24])
                             print("  SOFTWARE_EDITION : " + line[24:28])
