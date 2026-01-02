@@ -472,7 +472,7 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
+            "CFG_000_FREIN_UDS_UCPR_ACC": {
                 "zoneLength": 28,
                 "name": "ACC type",
                 "byte": 23,
@@ -506,7 +506,7 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_UCPR_AMVARPR-38": {
+            "CFG_000_FREIN_UDS_UCPR_ACC-38": {
                 "zoneLength": 38,
                 "name": "ACC type",
                 "byte": 33,
@@ -540,7 +540,7 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_UCPR_ACC": {
+            "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
                 "zoneLength": 28,
                 "name": "Suspension type",
                 "byte": 23,
@@ -554,7 +554,7 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_UCPR_ACC-38": {
+            "CFG_000_FREIN_UDS_UCPR_AMVARPR-38": {
                 "zoneLength": 38,
                 "name": "Suspension type",
                 "byte": 33,
