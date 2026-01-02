@@ -8,7 +8,7 @@
         "key1": "60A5",
         "key2": "BC93",
         "key3": "2305",
-        "ESP81": "ABFB"
+        "key4": "ABFB"
     },
     "coding": true,
     "errors": true,
@@ -32,9 +32,99 @@
             "tab": "tele",
             "type": "raw",
             "form_type": "multi",
+            "CFG_000_FREIN_UDS_MPR": {
+                "zoneLength": 28,
+                "name": "Engine",
+                "byte": 1,
+                "type": "string",
+                "form_type": "combobox",
+                "mask": "111111111111111111111111111111111111111111111111",
+                "params": [
+                    {
+                        "name": "DV5RC EURO 6.2",
+                        "mask": "111110111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "DW10FCC or DW10FCD EURO 6.2",
+                        "mask": "101111111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EP6FADTXD EURO 6.2",
+                        "mask": "111111111101111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EB2ADTS EURO 6.2",
+                        "mask": "111111111111111110111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EP6FDTM or EP6FDT",
+                        "mask": "111111111011111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EP6FDTMD",
+                        "mask": "111111111111111111111111101111111111111111111111"
+                    },
+                    {
+                        "name": "DV6FC or DV6FCD",
+                        "mask": "111101111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "DV6FD",
+                        "mask": "111011111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "DW10FD or DW10FDD",
+                        "mask": "111111111111111011111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EB2DTS or EB2DTSD or EB2DTSM",
+                        "mask": "111111111111111111110111111111111111111111111111"
+                    },
+                    {
+                        "name": "DV6C",
+                        "mask": "111111101111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EP6C",
+                        "mask": "111111111111101111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "DV5RC EURO 6.3",
+                        "mask": "111111011111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EP6FDT",
+                        "mask": "111111111111111111111111111111111111111011111111"
+                    },
+                    {
+                        "name": "EB2ADTS EURO 6.3",
+                        "mask": "111111111111111111111111111111101111111111111111"
+                    },
+                    {
+                        "name": "EP6FADTXD EURO 6.3",
+                        "mask": "111111111110111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "EB2DTSM",
+                        "mask": "111111111111111111101111111111111111111111111111"
+                    },
+                    {
+                        "name": "DV6FCD",
+                        "mask": "111111111111111111111111111111111111011111111111"
+                    },
+                    {
+                        "name": "EP6FADTX EURO 6.3",
+                        "mask": "111111110111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "DW10FCC EURO 6.3",
+                        "mask": "011111111111111111111111111111111111111111111111"
+                    }
+                ]
+            },
             "CFG_000_FREIN_UDS_MPR-38": {
                 "zoneLength": 38,
-                "name": "Engine - 38",
+                "name": "Engine",
                 "byte": 1,
                 "type": "string",
                 "form_type": "combobox",
@@ -51,6 +141,10 @@
                     {
                         "name": "1.5HDI (DV5R EURO 6.2)",
                         "mask": "1111111111111111111111111111111111111111111111111111101111111111"
+                    },
+                    {
+                        "name": "???",
+                        "mask": "1111111111111111111111111111110111111111111111111111111111111111"
                     },
                     {
                         "name": "1.2t (EB2DTSM)",
@@ -70,9 +164,27 @@
                     }
                 ]
             },
+            "CFG_000_FREIN_UDS_CPR": {
+                "zoneLength": 28,
+                "name": "Car model",
+                "byte": 7,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "111111111111111111111111111111111111111111111111",
+                "params": [
+                    {
+                        "name": "Opel Grandland X",
+                        "mask": "111111111111111111111111111111011111111111111111"
+                    },
+                    {
+                        "name": "Citroen C3 III",
+                        "mask": "111111111111111111111111111110111111111111111111"
+                    }
+                ]
+            },
             "CFG_000_FREIN_UDS_CPR-38": {
                 "zoneLength": 38,
-                "name": "Car model - 38",
+                "name": "Car model",
                 "byte": 9,
                 "type": "bool",
                 "form_type": "combobox",
@@ -91,53 +203,69 @@
                         "mask": "11111111111111111111111111111111111111111101111111111111111111111111111111111111"
                     },
                     {
-                        "name": "Peugeot 3008 Plugin Hybrid",
+                        "name": "Peugeot 3008 Plug-in Hybrid",
                         "mask": "11111101111111111111111111111111111111111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "Opel Grandland Plug-in Hybrid",
+                        "mask": "01111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "Citroen C3 III",
+                        "mask": "11111111111111111111111111111111111111111111111111111111111111110111111111111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_DPPR": {
                 "zoneLength": 28,
-                "name": "Tire size - 28",
+                "name": "Tire size",
                 "byte": 13,
                 "type": "bool",
                 "form_type": "combobox",
-                "mask": "00011111",
+                "mask": "11111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "215/70R16 (2196 mm)",
-                        "mask": "00011110"
+                        "name": "215/70R16",
+                        "mask": "11111110111111111111111111111111"
                     },
                     {
-                        "name": "215/65R17 (2208 mm)",
-                        "mask": "00011101"
+                        "name": "215/65R17",
+                        "mask": "11111101111111111111111111111111"
                     },
                     {
-                        "name": "225/55R18 (2181 mm)",
-                        "mask": "00011011"
+                        "name": "225/45R18",
+                        "mask": "11111111111111110111111111111111"
                     },
                     {
-                        "name": "205/55R19 (2187 mm)",
-                        "mask": "00010111"
+                        "name": "225/55R18",
+                        "mask": "11111011111111111111111111111111"
                     },
                     {
-                        "name": "235/40R19",
-                        "mask": "00011111"
+                        "name": "235/55R18",
+                        "mask": "11111111011111111111111111111111"
                     },
                     {
-                        "name": "235/50R19 (2223 mm)",
-                        "mask": "00001111"
+                        "name": "205/55R19",
+                        "mask": "11110111111111111111111111111111"
+                    },
+                    {
+                        "name": "235/50R19",
+                        "mask": "11101111111111111111111111111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_DPPR-38": {
                 "zoneLength": 38,
-                "name": "Tire size - 38",
+                "name": "Tire size",
                 "byte": 19,
                 "type": "bool",
                 "form_type": "combobox",
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
+                    {
+                        "name": "195/65R15",
+                        "mask": "111111111011111111111111111111111111111111111111"
+                    },
                     {
                         "name": "195/55R16",
                         "mask": "111111111111101111111111111111111111111111111111"
@@ -145,6 +273,10 @@
                     {
                         "name": "215/65R17",
                         "mask": "111111011111111111111111111111111111111111111111"
+                    },
+                    {
+                        "name": "225/45R18 (2035MM)",
+                        "mask": "111111111111111101111111111111111111111111111111"
                     },
                     {
                         "name": "225/55R18",
@@ -164,9 +296,51 @@
                     }
                 ]
             },
+            "CFG_000_FREIN_UDS_BVPR": {
+                "zoneLength": 28,
+                "name": "Transmission",
+                "byte": 17,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "1111111111111111",
+                "params": [
+                    {
+                        "name": "AMN8 (AWF8G45)",
+                        "mask": "1111111111111011"
+                    },
+                    {
+                        "name": "ATN8 (AWF8G30)",
+                        "mask": "1111111111110111"
+                    },
+                    {
+                        "name": "AM6 III (TF-82SC)",
+                        "mask": "1110111111111111"
+                    },
+                    {
+                        "name": "AT6 III (TF-71SC)",
+                        "mask": "0111111111111111"
+                    },
+                    {
+                        "name": "BE (Manual)",
+                        "mask": "1111111011111111"
+                    },
+                    {
+                        "name": "MB6",
+                        "mask": "1111111111111101"
+                    },
+                    {
+                        "name": "MCM (Manual)",
+                        "mask": "1111110111111111"
+                    },
+                    {
+                        "name": "ML6C",
+                        "mask": "1111011111111111"
+                    }
+                ]
+            },
             "CFG_000_FREIN_UDS_BVPR-38": {
                 "zoneLength": 38,
-                "name": "Transmission - 38",
+                "name": "Transmission",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -193,40 +367,44 @@
                         "mask": "11111111111111110111111111111111"
                     },
                     {
-                        "name": "8 speed hybrid",
+                        "name": "E-ATN8",
                         "mask": "11111111011111111111111111111111"
                     },
                     {
-                        "name": "Manual",
+                        "name": "BE (Manual)",
                         "mask": "11111110111111111111111111111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_FRPR": {
                 "zoneLength": 28,
-                "name": "Front brakes - 28",
+                "name": "Front brakes",
                 "byte": 19,
                 "type": "bool",
                 "form_type": "combobox",
-                "mask": "11100000",
+                "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "283X26-PHI60",
-                        "mask": "11000000"
+                        "name": "304X28",
+                        "mask": "1111111111101111"
                     },
                     {
-                        "name": "304X18-PHI60",
-                        "mask": "01100000"
+                        "name": "302X26",
+                        "mask": "1111111101111111"
                     },
                     {
-                        "name": "330X30-PHI60 (PHEV)",
-                        "mask": "11100000"
+                        "name": "330X30-PHI60",
+                        "mask": "1111111111111110"
+                    },
+                    {
+                        "name": "??? - F7FF",
+                        "mask": "1111011111111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_FRPR-38": {
                 "zoneLength": 38,
-                "name": "Front brakes - 38",
+                "name": "Front brakes",
                 "byte": 29,
                 "type": "bool",
                 "form_type": "combobox",
@@ -243,34 +421,38 @@
                     {
                         "name": "330X30-PHI60",
                         "mask": "1111111111111110"
+                    },
+                    {
+                        "name": "???",
+                        "mask": "1111011111111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_REPR": {
                 "zoneLength": 28,
-                "name": "Rear brakes - 28",
+                "name": "Rear brakes",
                 "byte": 21,
                 "type": "bool",
                 "form_type": "combobox",
-                "mask": "00011100",
+                "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "268X12-PHI38",
-                        "mask": "00011000"
+                        "name": "268X12",
+                        "mask": "1111101111111111"
                     },
                     {
                         "name": "290X12-PHI42",
-                        "mask": "00001100"
+                        "mask": "1110111111111111"
                     },
                     {
-                        "name": "290X12-PHI42 (PHEV)",
-                        "mask": "00011100"
+                        "name": "???",
+                        "mask": "1111111110111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_REPR-38": {
                 "zoneLength": 38,
-                "name": "Rear brakes - 38",
+                "name": "Rear brakes",
                 "byte": 31,
                 "type": "bool",
                 "form_type": "combobox",
@@ -281,14 +463,18 @@
                         "mask": "1111101111111111"
                     },
                     {
-                        "name": "290X12",
+                        "name": "290X12-PHI42",
                         "mask": "1110111111111111"
+                    },
+                    {
+                        "name": "???",
+                        "mask": "1111111110111111"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_AMVARPR": {
                 "zoneLength": 28,
-                "name": "ACC type - 28",
+                "name": "ACC type",
                 "byte": 23,
                 "type": "bool",
                 "form_type": "combobox",
@@ -309,12 +495,20 @@
                     {
                         "name": "ACC Stop&Go",
                         "mask": "00101111"
+                    },
+                    {
+                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_110111",
+                        "mask": "00110111"
+                    },
+                    {
+                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_111101",
+                        "mask": "00111101"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_AMVARPR-38": {
                 "zoneLength": 38,
-                "name": "ACC type - 38",
+                "name": "ACC type",
                 "byte": 33,
                 "type": "bool",
                 "form_type": "combobox",
@@ -335,12 +529,20 @@
                     {
                         "name": "ACC Stop&Go",
                         "mask": "00101111"
+                    },
+                    {
+                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_110111",
+                        "mask": "00110111"
+                    },
+                    {
+                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_111101",
+                        "mask": "00111101"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_ACC": {
                 "zoneLength": 28,
-                "name": "Suspension type - 28",
+                "name": "Suspension type",
                 "byte": 23,
                 "type": "bool",
                 "form_type": "combobox",
@@ -354,7 +556,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_ACC-38": {
                 "zoneLength": 38,
-                "name": "Suspension type - 38",
+                "name": "Suspension type",
                 "byte": 33,
                 "type": "bool",
                 "form_type": "combobox",
@@ -368,7 +570,7 @@
             },
             "CFG_000_FREIN_UCPR_CITY_PARK": {
                 "zoneLength": 28,
-                "name": "Semi-automatic parking system - 28",
+                "name": "Semi-automatic parking system",
                 "byte": 24,
                 "type": "bool",
                 "form_type": "combobox",
@@ -386,7 +588,7 @@
             },
             "CFG_000_FREIN_UCPR_CITY_PARK-38": {
                 "zoneLength": 38,
-                "name": "Semi-automatic parking system - 38",
+                "name": "Semi-automatic parking system",
                 "byte": 34,
                 "type": "bool",
                 "form_type": "combobox",
@@ -404,51 +606,59 @@
             },
             "CFG_000_FREIN_UDS_UCPR_CAV": {
                 "zoneLength": 28,
-                "name": "Type of steering angle sensor - 28",
+                "name": "Type of steering angle sensor",
                 "byte": 24,
                 "type": "bool",
                 "form_type": "combobox",
                 "mask": "00111000",
                 "params": [
                     {
-                        "name": "With steering wheel angle sensor U+ 3",
+                        "name": "With steering wheel angle sensor type 1",
+                        "mask": "00110000"
+                    },
+                    {
+                        "name": "With steering wheel angle sensor type 2",
+                        "mask": "00111000"
+                    },
+                    {
+                        "name": "With steering wheel angle sensor type 3",
                         "mask": "00101000"
                     },
                     {
-                        "name": "With steering wheel angle sensor   1",
-                        "mask": "00111000"
+                        "name": "With steering wheel angle sensor type 4",
+                        "mask": "00011000"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_CAV-38": {
                 "zoneLength": 38,
-                "name": "Type of steering angle sensor - 38",
+                "name": "Type of steering angle sensor",
                 "byte": 34,
                 "type": "bool",
                 "form_type": "combobox",
                 "mask": "00111000",
                 "params": [
                     {
-                        "name": "With steering wheel angle sensor type 1 (CFG_000_FREIN_UDS_UCPR_CAV_110)",
+                        "name": "With steering wheel angle sensor type 1",
                         "mask": "00110000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 2 (CFG_000_FREIN_UDS_UCPR_CAV_111)",
+                        "name": "With steering wheel angle sensor type 2",
                         "mask": "00111000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 3 (CFG_000_FREIN_UDS_UCPR_CAV_101)",
+                        "name": "With steering wheel angle sensor type 3",
                         "mask": "00101000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 4 (CFG_000_FREIN_UDS_UCPR_CAV_011)",
+                        "name": "With steering wheel angle sensor type 4",
                         "mask": "00011000"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_ONE_CAN": {
                 "zoneLength": 28,
-                "name": "Type of steering angle sensor - 28",
+                "name": "Type of steering angle sensor",
                 "byte": 24,
                 "type": "bool",
                 "form_type": "combobox",
@@ -466,7 +676,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_ONE_CAN-38": {
                 "zoneLength": 38,
-                "name": "Type of multiplex system - 38",
+                "name": "Type of multiplex system",
                 "byte": 34,
                 "type": "bool",
                 "form_type": "combobox",
@@ -484,7 +694,7 @@
             },
             "CFG_000_FREIN_UCPR_ASR": {
                 "zoneLength": 28,
-                "name": "Type of traction control - 28",
+                "name": "Type of traction control",
                 "byte": 24,
                 "type": "bool",
                 "form_type": "combobox",
@@ -499,14 +709,14 @@
                         "mask": "00000010"
                     },
                     {
-                        "name": "With traction control  ( selector )",
+                        "name": "With traction control (selector)",
                         "mask": "00000001"
                     }
                 ]
             },
             "CFG_000_FREIN_UCPR_ASR-38": {
                 "zoneLength": 38,
-                "name": "Type of traction control - 38",
+                "name": "Type of traction control",
                 "byte": 34,
                 "type": "bool",
                 "form_type": "combobox",
@@ -521,14 +731,14 @@
                         "mask": "00000010"
                     },
                     {
-                        "name": "With traction control  ( selector )",
+                        "name": "With traction control (selector)",
                         "mask": "00000001"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_HADC": {
                 "zoneLength": 28,
-                "name": "Descent control system - 28",
+                "name": "Descent control system",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -546,7 +756,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_HADC-38": {
                 "zoneLength": 38,
-                "name": "Descent control system - 38",
+                "name": "Descent control system",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -564,7 +774,7 @@
             },
             "CFG_000_FREIN_UCPR_FARC": {
                 "zoneLength": 28,
-                "name": "Emergency collision braking - 28",
+                "name": "Emergency collision braking",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -575,18 +785,18 @@
                         "mask": "01110000"
                     },
                     {
-                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera only )",
+                        "name": "With automatic braking on risk of collision U+ (with multifunction video camera only)",
                         "mask": "00110000"
                     },
                     {
-                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera and distance alert radar )",
+                        "name": "With automatic braking on risk of collision U+ (with multifunction video camera and distance alert radar)",
                         "mask": "01010000"
                     }
                 ]
             },
             "CFG_000_FREIN_UCPR_FARC-38": {
                 "zoneLength": 38,
-                "name": "Emergency collision braking - 38",
+                "name": "Emergency collision braking",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -597,18 +807,18 @@
                         "mask": "01110000"
                     },
                     {
-                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera only )",
+                        "name": "With automatic braking on risk of collision U+ (with multifunction video camera only)",
                         "mask": "00110000"
                     },
                     {
-                        "name": "With automatic braking on risk of collision U+ ( with multifunction video camera and distance alert radar )",
+                        "name": "With automatic braking on risk of collision U+ (with multifunction video camera and distance alert radar)",
                         "mask": "01010000"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_UCPR_DIRECTION": {
                 "zoneLength": 28,
-                "name": "Side of steering wheel - 28",
+                "name": "Side of steering wheel",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -626,7 +836,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_DIRECTION-38": {
                 "zoneLength": 38,
-                "name": "Side of steering wheel - 38",
+                "name": "Side of steering wheel",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -644,7 +854,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_CVR": {
                 "zoneLength": 28,
-                "name": "Type of wheel speed sensors - 28",
+                "name": "Type of wheel speed sensors",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -662,7 +872,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_CVR-38": {
                 "zoneLength": 38,
-                "name": "Type of wheel speed sensors - 38",
+                "name": "Type of wheel speed sensors",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -680,7 +890,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_COMELEC": {
                 "zoneLength": 28,
-                "name": "Automatic gearbox electric control ECU - 28",
+                "name": "Automatic gearbox electric control ECU",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -698,7 +908,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_COMELEC-38": {
                 "zoneLength": 38,
-                "name": "Automatic gearbox electric control ECU - 38",
+                "name": "Automatic gearbox electric control ECU",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -716,7 +926,7 @@
             },
             "CFG_000_FREIN_UCPR_ADEC": {
                 "zoneLength": 28,
-                "name": "Hill start assistance system - 28",
+                "name": "Hill start assistance system",
                 "byte": 25,
                 "type": "bool",
                 "form_type": "combobox",
@@ -734,7 +944,7 @@
             },
             "CFG_000_FREIN_UCPR_ADEC-38": {
                 "zoneLength": 38,
-                "name": "Hill start assistance system - 38",
+                "name": "Hill start assistance system",
                 "byte": 35,
                 "type": "bool",
                 "form_type": "combobox",
@@ -752,7 +962,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_STT": {
                 "zoneLength": 28,
-                "name": "Stop & Start - 28",
+                "name": "Stop & Start",
                 "byte": 26,
                 "type": "bool",
                 "form_type": "combobox",
@@ -774,7 +984,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_STT-38": {
                 "zoneLength": 38,
-                "name": "Stop & Start - 38",
+                "name": "Stop & Start",
                 "byte": 36,
                 "type": "bool",
                 "form_type": "combobox",
@@ -796,7 +1006,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_MASTERVAC": {
                 "zoneLength": 28,
-                "name": "Type of brake servo - 28",
+                "name": "Type of brake servo",
                 "byte": 26,
                 "type": "bool",
                 "form_type": "combobox",
@@ -814,7 +1024,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_MASTERVAC-38": {
                 "zoneLength": 38,
-                "name": "Type of brake servo - 38",
+                "name": "Type of brake servo",
                 "byte": 36,
                 "type": "bool",
                 "form_type": "combobox",
@@ -836,7 +1046,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_ICB": {
                 "zoneLength": 28,
-                "name": "Automatic braking after collision - 28",
+                "name": "Automatic braking after collision",
                 "byte": 26,
                 "type": "bool",
                 "form_type": "combobox",
@@ -854,7 +1064,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_ICB-38": {
                 "zoneLength": 38,
-                "name": "Automatic braking after collision - 38",
+                "name": "Automatic braking after collision",
                 "byte": 36,
                 "type": "bool",
                 "form_type": "combobox",
@@ -872,7 +1082,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_CMA_CDA": {
                 "zoneLength": 28,
-                "name": "Hydraulic compensation system in case of braking failure - 28",
+                "name": "Hydraulic compensation system in case of braking failure",
                 "byte": 26,
                 "type": "bool",
                 "form_type": "combobox",
@@ -890,7 +1100,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_CMA_CDA-38": {
                 "zoneLength": 38,
-                "name": "Hydraulic compensation system in case of braking failure - 38",
+                "name": "Hydraulic compensation system in case of braking failure",
                 "byte": 36,
                 "type": "bool",
                 "form_type": "combobox",
@@ -908,7 +1118,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_DSG": {
                 "zoneLength": 28,
-                "name": "Presence of tyre under-inflation detection - 28",
+                "name": "Presence of tyre under-inflation detection",
                 "byte": 26,
                 "type": "bool",
                 "form_type": "combobox",
@@ -930,7 +1140,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_DSG-38": {
                 "zoneLength": 38,
-                "name": "Presence of tyre under-inflation detection - 38",
+                "name": "Presence of tyre under-inflation detection",
                 "byte": 36,
                 "type": "bool",
                 "form_type": "combobox",
@@ -952,7 +1162,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_TJA": {
                 "zoneLength": 28,
-                "name": "Heavy traffic driving assistance system) - 28",
+                "name": "Heavy traffic driving assistance system)",
                 "byte": 27,
                 "type": "bool",
                 "form_type": "combobox",
@@ -970,7 +1180,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_TJA-38": {
                 "zoneLength": 38,
-                "name": "Heavy traffic driving assistance system - 38",
+                "name": "Heavy traffic driving assistance system",
                 "byte": 37,
                 "type": "bool",
                 "form_type": "combobox",
