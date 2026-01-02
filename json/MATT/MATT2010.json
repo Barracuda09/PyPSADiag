@@ -56,7 +56,7 @@
       },
       {
       "id": "CFG_BKR_MATT_CONF_LVV_000",
-      "name": "Cruise control and limiter (only limiter is possible depending on the display version)",
+      "name": "Vehicle speed limitation",
       "byte": 0,
       "type": "bool",
       "mask": "00001000",
@@ -64,21 +64,19 @@
       },
       {
       "id": "CFG_BKS_MATT_CONF_MAINT_000",
-      "name": "Displaying maintenance information after turning ignition on",
+      "name": "Output of maintenance information when the ignition is switched on",
       "byte": 0,
       "type": "bool",
       "mask": "00000100",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id":"CFG_BVU_MATT_MENU_PARAM_FCT_000",
-      "name": "Presence of Vehicle parameters menu",
+      "name": "Menu \"Car parameters\"",
       "byte": 0,
       "type": "bool",
       "mask": "00000010",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id":"CFG_D2U_MATT_POP_NAV_VTH_000",
@@ -90,30 +88,27 @@
       },
       {
       "id": "CFG_BKV_MATT_CONF_NAV_000",
-      "name": "Presence of navigation information display",
+      "name": "Displaying navigation from the head unit",
       "byte": 1,
       "type": "bool",
       "mask": "10000000",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BKW_MATT_CONF_NIVHU_000",
-      "name": "Checking the oil level after turning ignition on",
+      "name": "Oil Gauge",
       "byte": 1,
       "type": "bool",
       "mask": "01000000",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BKX_MATT_CONF_ODB_000",
-      "name": "Presence of Trip data display",
+      "name": "Trip data",
       "byte": 1,
       "type": "bool",
       "mask": "00100000",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BKY_MATT_CONF_ODO_000",
@@ -121,21 +116,19 @@
       "byte": 1,
       "type": "bool",
       "mask": "00010000",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id":"CFG_BKZ_MATT_CONF_PAGE_T_EXT_000",
-      "name": "Presence of Outside Temperature display",
+      "name": "Display of the temperature screen",
       "byte": 1,
       "type": "bool",
       "mask": "00001000",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BL0_MATT_CONF_RVV_000",
-      "name": "Presence of Cruise control",
+      "name": "Presence cruise control function",
       "byte": 1,
       "type": "bool",
       "mask": "00000100",
@@ -143,12 +136,11 @@
       },
       {
       "id": "CFG_BVT_MATT_CONF_STT_000",
-      "name": "Presence of Keyless access",
+      "name": "Stop and Start function",
       "byte": 1,
       "type": "bool",
       "mask": "00000010",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BW9_MATT_CONF_RAPPEL_XVV_000",
@@ -160,7 +152,7 @@
       },
       {
       "id": "CFG_BL2_MATT_CONF_FCT_DESIGNATEUR_000",
-      "name": "Presence of a control stick connected to the display",
+      "name": "The presence of a control stick connected to the display",
       "byte": 2,
       "type": "bool",
       "mask": "10000000",
@@ -168,7 +160,7 @@
       },
       {
       "id": "CFG_BL3_MATT_CONF_MENU_TEMP_000",
-      "name": "Presence of unit selection menu",
+      "name": "The unit selection menu in the settings",
       "byte": 2,
       "type": "bool",
       "mask": "01000000",
@@ -176,7 +168,7 @@
       },
       {
       "id": "CFG_BP3_MATT_MENU_PARAM_UL_000",
-      "name": "Presence of language selection menu",
+      "name": "Language selection menu in settings",
       "byte": 2,
       "type": "bool",
       "mask": "00100000",
@@ -192,7 +184,7 @@
       },
       {
       "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
-      "name": "Presence of Webasto settings menu",
+      "name": "Presence of the preconditioning menu (Webasto Settings Menu)",
       "byte": 2,
       "type": "bool",
       "mask": "00001000",
@@ -200,16 +192,15 @@
       },
       {
       "id": "CFG_BQB_MATT_CONF_MENU_HARMONIE_000",
-      "name": "Presence of Colour theme selection menu",
+      "name": "Color theme selection menu in settings",
       "byte": 2,
       "type": "bool",
       "mask": "00000100",
-      "form_type": "checkbox",
-      "available_logic": "active_high"
+      "form_type": "checkbox"
       },
       {
       "id": "CFG_BPX_MATT_CONF_MENU_REG_HEURE_000",
-      "name": "Presence of time setting menu",
+      "name": "Time setting menu in settings",
       "byte": 2,
       "type": "bool",
       "mask": "00000010",
@@ -225,27 +216,26 @@
       },
       {
       "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
-      "name": "Color theme",
+      "name": "Default colour scheme used on the matrix",
       "byte": 3,
       "type": "bool",
       "mask": "11100000",
       "form_type": "combobox",
       "params": [
-          { "mask": "01000000", "name": "Orange ray"},
-          { "mask": "00100000", "name": "Black"},
-          { "mask": "00000000", "name": "Techno black"},
-          { "mask": "01100000", "name": "Blue flame"},
-          { "mask": "10000000", "name": "Toffee"}
+          { "mask": "01000000", "name": "orange"},
+          { "mask": "00100000", "name": "black"},
+          { "mask": "00000000", "name": "techno black"},
+          { "mask": "01100000", "name": "blue"},
+          { "mask": "10000000", "name": "toffee"}
         ]
       },
       {
         "id": "CFG_BPY_MATT_CONF_AFFICHAGE_HEURE_000",
-        "name": "Presence of Time display",
+        "name": "Time display",
         "byte": 3,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "CFG_DBB_MATT_CONF_RVVI_000",
@@ -257,12 +247,11 @@
       },
       {
         "id": "CFG_BPZ_MATT_CONF_TYPE_CLE_000",
-        "name": "Presence of Start/Stop engine button",
+        "name": "Starting the engine with the Start button",
         "byte": 3,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "CFG_DBQ_MATT_CONF_DSG_CHECK_000",
@@ -288,7 +277,7 @@
         "mask": "11100000",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "hatchback"},
+          { "mask": "00000000", "name": "hacthback"},
           { "mask": "00100000", "name": "sedan"},
           { "mask": "01000000", "name": "wagon"},
           { "mask": "01100000", "name": "others"}
@@ -358,12 +347,11 @@
       },
       {
         "id": "CFG_BOT_MATT_MENU_SONS_000",
-        "name": "Presence of menu choice of sounds in steering wheel switch",
+        "name": "The menu for selecting the tune of the steering wheel switch",
         "byte": 5,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "CFG_BQA_MATT_CONF_COULEUR_RETRO_000",
@@ -389,12 +377,11 @@
       },
       {
         "id": "CFG_D2V_MATT_PRES_AAS_000",
-        "name": "Presence of obstacle detection system display",
+        "name": "Availability of an obstacle detection system",
         "byte": 5,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "CFG_DC0_MATT_CONF_POI_RADAR_000",
@@ -406,12 +393,11 @@
       },
       {
         "id": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
-        "name": "Presence of Speed Limit Indicator on Current Speed Display",
+        "name": "Recommended speed management",
         "byte": 6,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "CFG_DBR_MATT_CONF_AFF_DYN_000",
@@ -419,14 +405,6 @@
         "byte": 6,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
-      },
-      {
-        "id": "6_3",
-        "name": "6_3 UNKNOWN",
-        "byte": 6,
-        "type": "bool",
-        "mask": "00010000",
         "form_type": "checkbox"
       },
       {
@@ -439,7 +417,7 @@
       },
       {
         "id": "CFG_D8H_MATT_MARQUE_000",
-        "name": "Welcome screen",
+        "name": "Vehicle brand",
         "byte": 6,
         "type": "bool",
         "mask": "11100000",
@@ -448,16 +426,12 @@
           { "mask": "00000000", "name": "Peugeot"},
           { "mask": "00100000", "name": "Citroen"},
           { "mask": "01000000", "name": "Fiat"},
-          { "mask": "01100000", "name": "Citroen"},
-          { "mask": "10000000", "name": "DS"},
-          { "mask": "10100000", "name": "Dong Feng"},
-          { "mask": "11000000", "name": "?"},
-          { "mask": "11100000", "name": "?"}
+          { "mask": "01100000", "name": "Lancia"},
+          { "mask": "10000000", "name": "DS"}
         ]
       },
       {
         "id": "CFG_DX8_MATT_GENERATION_RVVI_000",
-        "zoneLength": 8,
         "name": "Type of RVVI System",
         "byte": 7,
         "type": "bool",
@@ -466,7 +440,6 @@
       },
       {
         "id": "CFG_E16_MATT_GENERATION_POI_RADAR_001",
-        "zoneLength": 8,
         "name": "Type of POI Radar data",
         "byte": 7,
         "type": "bool",
@@ -475,7 +448,6 @@
       },
       {
         "id": "CFG_E13_MATT_TYPE_FM_002",
-        "zoneLength": 8,
         "name": "Indicates the of FM",
         "byte": 7,
         "type": "bool",
@@ -484,7 +456,6 @@
       },
       {
         "id": "7_5",
-        "zoneLength": 8,
         "name": "7_5 UNKNOWN",
         "byte": 7,
         "type": "bool",
@@ -493,7 +464,6 @@
       },
       {
         "id": "7_6",
-        "zoneLength": 8,
         "name": "7_6 UNKNOWN",
         "byte": 7,
         "type": "bool",
@@ -502,7 +472,6 @@
       },
       {
         "id": "7_7",
-        "zoneLength": 8,
         "name": "7_7 UNKNOWN",
         "byte": 7,
         "type": "bool",
@@ -511,7 +480,6 @@
       },
       {
         "id": "CFG_E12_MATT_TYPE_EXPORT_000",
-        "zoneLength": 8,
         "name": "Indicates the type of export for audio function",
         "byte": 7,
         "type": "bool",
@@ -525,7 +493,7 @@
       },
       {
         "id": "CFG_EC3_MATT_CONF_LKA_000",
-        "name": "Presence of Lane Keeping Assist display",
+        "name": "Lane tracking system",
         "zoneLength": 9,
         "byte": 8,
         "type": "bool",
@@ -605,31 +573,23 @@
       "params": [
       {
         "id": "checkbox_byte0F8hbit0",
-        "name": "Gear indicator in the upper right corner?",
+        "name": "The current transfer pointer in the upper right corner (one character)",
         "byte": 0,
         "type": "bool",
         "mask": "10000000",
-        "form_type": "combobox",
-        "params": [
-          { "mask": "00000000", "name": "0 - ?"},
-          { "mask": "10000000", "name": "1 - ?"}
-        ]
+        "form_type": "checkbox"
       },
       {
         "id": "checkbox_byte0F8hbit1",
-        "name": "OK - Gear indicator in the upper right corner",
+        "name": "The current transfer pointer in the upper right corner (PRND)",
         "byte": 0,
         "type": "bool",
         "mask": "01000000",
-        "form_type": "combobox",
-        "params": [
-          { "mask": "00000000", "name": "0 - (one character)"},
-          { "mask": "01000000", "name": "1 - (PRND)"}
-        ]
+        "form_type": "checkbox"
       },
       {
         "id": "checkbox_byte0F8hbit2",
-        "name": "Instant consumption and power reserve in the bottom line",
+        "name": "Instant consumption and power reserve in the bottom line (to activate - disable this bit)",
         "byte": 0,
         "type": "bool",
         "mask": "00100000",
@@ -637,12 +597,11 @@
       },
       {
         "id": "checkbox_byte0F8hbit3",
-        "name": "Presence of cruise, limiter, gear pointer in upper row",
+        "name": "Activation of the upper line (cruise, limiter, gear pointer)",
         "byte": 0,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "checkbox"
       },
       {
         "id": "checkbox_byte0F8hbit4",
@@ -695,7 +654,7 @@
       },
       {
         "id": "checkbox_byte0F9hbit2",
-        "name": "Presence of Gear selector display",
+        "name": "byte0F9hbit2",
         "byte": 1,
         "type": "bool",
         "mask": "00100000",
