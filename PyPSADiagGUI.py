@@ -51,17 +51,20 @@ class PyPSADiagGUI(object):
 
     def setupGlobalColors(self):
         # Global Color variables
+        global RED
         global DARK_RED
         global DARK_GREEN
         global ORANGE
 
-        DARK_RED = QColor(255, 0, 0).darker(125)
+        RED = QColor(255, 0, 0)
+        DARK_RED = RED.darker(125)
         DARK_GREEN = QColor(0, 255, 0).darker(150)
         ORANGE = QColor(255, 128, 0)
 
     def setupDarkMode(self, app: QApplication):
         # Global Color variables
         global BASE_COLOR
+        global BUTTON_COLOR
 
         GRAY = QColor(130, 130, 130)
         DARK_GRAY = QColor(130, 130, 130)
@@ -74,6 +77,7 @@ class PyPSADiagGUI(object):
         dark = backGround.darker(150)
         BASE_COLOR = black.lighter(200)
         ALT_BASE_COLOR = DARK_GRAY.darker(125)
+        BUTTON_COLOR = DARK_GRAY.lighter(100)
 
         darkPalette = QPalette()
         darkPalette.setColor(QPalette.Window, DARK_GRAY)
@@ -83,7 +87,7 @@ class PyPSADiagGUI(object):
         darkPalette.setColor(QPalette.ToolTipBase, blue)
         darkPalette.setColor(QPalette.ToolTipText, Qt.white)
         darkPalette.setColor(QPalette.Text, Qt.white)
-        darkPalette.setColor(QPalette.Button, DARK_GRAY.lighter(100))
+        darkPalette.setColor(QPalette.Button, BUTTON_COLOR)
         darkPalette.setColor(QPalette.ButtonText, Qt.white)
         darkPalette.setColor(QPalette.Link, blue)
         darkPalette.setColor(QPalette.Highlight, GRAY.darker(150))
@@ -118,11 +122,6 @@ class PyPSADiagGUI(object):
         app.setStyle(QStyleFactory.create('Fusion'))
 
         self.setupGlobalColors()
-
-#        global globalPalette
-#        globalPalette = app.palette()
-#        global BASE_COLOR
-#        BASE_COLOR = globalPalette.color(QPalette.Base)
 
         self.setupDarkMode(app)
 

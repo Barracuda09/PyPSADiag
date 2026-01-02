@@ -21,12 +21,14 @@
 
 from PySide6.QtCore import Qt, Slot
 from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget
+from PySide6.QtGui import QPalette, QColor
 
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
 from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 from i18n import i18n
+import PyPSADiagGUI
 
 
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
@@ -76,7 +78,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            widget.clearZoneValue()
+            self.__clearWidget(widget, cellItem)
 
     def getZoneAndHex(self, virginWrite: bool()):
         widget = self.treeWidget().itemWidget(self, 2)
@@ -100,7 +102,9 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 result = widget.changeZoneOption(data, valueType)
                 if result == 2:
                     print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
-                    widget.setStyleSheet("QComboBox{background-color: red;}")
+                    p = widget.palette()
+                    p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                    widget.setPalette(p)
                     widget.setEnabled(False)
                     cellItem.setHidden(True)
                 elif result == 1:
@@ -115,8 +119,19 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             for index in range(root.childCount()):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-                widget.setStyleSheet("QComboBox{background-color: red;}")
+                p = widget.palette()
+                p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                widget.setPalette(p)
                 widget.setEnabled(False)
+
+    def __clearWidget(self, widget, cellItem):
+        widget.clearZoneValue()
+        p = widget.palette()
+        p.setColor(QPalette.Button, PyPSADiagGUI.BUTTON_COLOR)
+        widget.setPalette(p)
+        widget.setEnabled(True)
+        cellItem.setHidden(False)
+
 
     def __update(self):
         # If we are "self" updating (By loading CSV file) do not call update
