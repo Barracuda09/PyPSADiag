@@ -58,11 +58,9 @@ class EcuZoneLineEdit(QLineEdit):
 
     def getCorrespondingByteSize(self):
         if "mask" in self.zoneObject:
-            bits = int(self.zoneObject["mask"], 2).bit_count()
-            if bits > 8 and bits <= 16:
-                return 2
-            elif bits > 16 and bits <= 32:
-                return 4
+            bits = int(self.zoneObject["mask"], 2).bit_length()
+            # round up to the nearest bit
+            return (bits + 7) // 8
         return 1
 
     def __setText(self, val):

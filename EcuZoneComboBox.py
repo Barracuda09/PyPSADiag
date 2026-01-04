@@ -120,7 +120,7 @@ class EcuZoneComboBox(QComboBox):
         return byte
 
     def changeZoneOption(self, data: str, valueType: str):
-        byte = int(data, 16)
+        value = int(data, 16)
         if "mask" in self.zoneObject:
             byteData = []
             for i in range(0, len(data), 2):
@@ -146,7 +146,7 @@ class EcuZoneComboBox(QComboBox):
             for i in range(len(currByteData)):
                 currData += currByteData[i]
 
-            byte = int(currData, 16) & mask
+            value = int(currData, 16) & mask
         else:
             print(" No mask")
             print("  Obj   : " + str(self.zoneObject))
@@ -154,15 +154,15 @@ class EcuZoneComboBox(QComboBox):
         # Find the Option (byte) from the ComboBox
         foundMatch = False
         for i in range(self.count()):
-            if self.getItemDataAsInt(i) == byte:
+            if self.getItemDataAsInt(i) == value:
                 self.setCurrentIndex(i)
                 foundMatch = True
                 break
 
         # Did we find item, else add it to combobox
         if foundMatch == False:
-            print("** Add missing combobox item " + "0x%0.2X" % byte + " **")
-            self.addItem("** 0x%0.2X" % byte, "h:%X" % byte)
+            print("** Add missing combobox item " + "0x%0.2X" % value + " **")
+            self.addItem("** 0x%0.2X" % value, "h:%X" % value)
             self.setCurrentIndex(self.count() - 1)
 
         return 0
