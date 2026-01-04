@@ -89,7 +89,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         return [self.zone, value]
 
     def changeZoneOption(self, root, data: str, valueType: str):
-        self.selfUpdate == True
+        self.selfUpdate = True
         try:
             # Set Root value of Multi Config zone
             widget = root.treeWidget().itemWidget(root, 2)
@@ -113,7 +113,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         except:
             print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption " + self.zone + " - " + widget.getDescriptionName())
 
-        self.selfUpdate == False
+        self.selfUpdate = False
         # Integrity wrong, disable the sub zones and coding
         if not self.integrity:
             for index in range(root.childCount()):
@@ -148,6 +148,12 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            # Is this widget used or disabled?
+            if widget.isEnabled() == False:
+#                print("Disabled widget - " + widget.getDescriptionName())
+                continue
+
+#            print("Enabled widget - " + widget.getDescriptionName())
 
             byteNr = widget.getCorrespondingByte()
             size = widget.getCorrespondingByteSize()
