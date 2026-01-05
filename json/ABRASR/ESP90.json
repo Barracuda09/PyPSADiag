@@ -36,89 +36,89 @@
                 "zoneLength": 28,
                 "name": "Engine",
                 "byte": 1,
-                "type": "string",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "DV5RC EURO 6.2",
-                        "mask": "111110111111111111111111111111111111111111111111"
+                        "name": "1.2t (EB2ADTS EURO 6.2)",
+                        "value": "FFFFBFFFFFFF"
                     },
                     {
-                        "name": "DW10FCC or DW10FCD EURO 6.2",
-                        "mask": "101111111111111111111111111111111111111111111111"
+                        "name": "1.2t (EB2DTS or EB2DTSD or EB2DTSM)",
+                        "value": "FFFFF7FFFFFF"
                     },
                     {
-                        "name": "EP6FADTXD EURO 6.2",
-                        "mask": "111111111101111111111111111111111111111111111111"
+                        "name": "1.2t (EB2ADTS EURO 6.3)",
+                        "value": "FFFFFFFEFFFF"
                     },
                     {
-                        "name": "EB2ADTS EURO 6.2",
-                        "mask": "111111111111111110111111111111111111111111111111"
+                        "name": "1.2t (EB2DTSM)",
+                        "value": "FFFFEFFFFFFF"
                     },
                     {
-                        "name": "EP6FDTM or EP6FDT",
-                        "mask": "111111111011111111111111111111111111111111111111"
+                        "name": "1.6t (EP6FADTX EURO 6.3)",
+                        "value": "FF7FFFFFFFFF"
                     },
                     {
-                        "name": "EP6FDTMD",
-                        "mask": "111111111111111111111111101111111111111111111111"
+                        "name": "1.6t (EP6FADTXD EURO 6.2)",
+                        "value": "FFDFFFFFFFFF"
                     },
                     {
-                        "name": "DV6FC or DV6FCD",
-                        "mask": "111101111111111111111111111111111111111111111111"
+                        "name": "1.6t (EP6FDTM or EP6FDT)",
+                        "value": "FFBFFFFFFFFF"
                     },
                     {
-                        "name": "DV6FD",
-                        "mask": "111011111111111111111111111111111111111111111111"
+                        "name": "1.6t (EP6FDTMD)",
+                        "value": "FFFFFFBFFFFF"
                     },
                     {
-                        "name": "DW10FD or DW10FDD",
-                        "mask": "111111111111111011111111111111111111111111111111"
+                        "name": "1.6t (EP6C)",
+                        "value": "FFFBFFFFFFFF"
                     },
                     {
-                        "name": "EB2DTS or EB2DTSD or EB2DTSM",
-                        "mask": "111111111111111111110111111111111111111111111111"
+                        "name": "1.6t (EP6FDT)",
+                        "value": "FFFFFFFFFEFF"
                     },
                     {
-                        "name": "DV6C",
-                        "mask": "111111101111111111111111111111111111111111111111"
+                        "name": "1.6t (EP6FADTXD EURO 6.3)",
+                        "value": "FFEFFFFFFFFF"
                     },
                     {
-                        "name": "EP6C",
-                        "mask": "111111111111101111111111111111111111111111111111"
+                        "name": "1.5HDI (DV5RC EURO 6.2)",
+                        "value": "FBFFFFFFFFFF"
                     },
                     {
-                        "name": "DV5RC EURO 6.3",
-                        "mask": "111111011111111111111111111111111111111111111111"
+                        "name": "1.5HDI (DV5RC EURO 6.3)",
+                        "value": "FDFFFFFFFFFF"
                     },
                     {
-                        "name": "EP6FDT",
-                        "mask": "111111111111111111111111111111111111111011111111"
+                        "name": "1.6HDI (DV6C)",
+                        "value": "FEFFFFFFFFFF"
                     },
                     {
-                        "name": "EB2ADTS EURO 6.3",
-                        "mask": "111111111111111111111111111111101111111111111111"
+                        "name": "1.6HDI (DV6FCD)",
+                        "value": "FFFFFFFFF7FF"
                     },
                     {
-                        "name": "EP6FADTXD EURO 6.3",
-                        "mask": "111111111110111111111111111111111111111111111111"
+                        "name": "1.6HDI (DV6FC or DV6FCD)",
+                        "value": "F7FFFFFFFFFF"
                     },
                     {
-                        "name": "EB2DTSM",
-                        "mask": "111111111111111111101111111111111111111111111111"
+                        "name": "1.6HDI (DV6FD)",
+                        "value": "EFFFFFFFFFFF"
                     },
                     {
-                        "name": "DV6FCD",
-                        "mask": "111111111111111111111111111111111111011111111111"
+                        "name": "2.0HDI (DW10FD or DW10FDD)",
+                        "value": "FFFEFFFFFFFF"
                     },
                     {
-                        "name": "EP6FADTX EURO 6.3",
-                        "mask": "111111110111111111111111111111111111111111111111"
+                        "name": "2.0HDI (DW10FCC or DW10FCD EURO 6.2)",
+                        "value": "BFFFFFFFFFFF"
                     },
                     {
-                        "name": "DW10FCC EURO 6.3",
-                        "mask": "011111111111111111111111111111111111111111111111"
+                        "name": "2.0HDI (DW10FCC EURO 6.3)",
+                        "value": "7FFFFFFFFFFF"
                     }
                 ]
             },
@@ -126,41 +126,41 @@
                 "zoneLength": 38,
                 "name": "Engine",
                 "byte": 1,
-                "type": "string",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "2.0HDI",
-                        "mask": "1111111111111111111111111111111111111111111111111111111111111101"
-                    },
-                    {
-                        "name": "1.5HDI (DV5R EURO 6.3)",
-                        "mask": "1111111111111111111111111111111111111111111111111111011111111111"
-                    },
-                    {
-                        "name": "1.5HDI (DV5R EURO 6.2)",
-                        "mask": "1111111111111111111111111111111111111111111111111111101111111111"
-                    },
-                    {
                         "name": "???",
-                        "mask": "1111111111111111111111111111110111111111111111111111111111111111"
+                        "value": "FFFFFFFDFFFFFFFF"
                     },
                     {
                         "name": "1.2t (EB2DTSM)",
-                        "mask": "1111111111111111111111111111111111101111111111111111111111111111"
+                        "value": "FFFFFFFFEFFFFFFF"
                     },
                     {
                         "name": "1.2t (EB2ADTS EURO 6.3)",
-                        "mask": "1111111111111111111111111111111111111111111111101111111111111111"
+                        "value": "FFFFFFFFFFFEFFFF"
                     },
                     {
                         "name": "1.6t (EP6FDT/EP6FADTXD or EP6FDTMD/EP6FDTM)",
-                        "mask": "1111111111101111111111111111111111111111111111111111111111111111"
+                        "value": "FFEFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.5HDI (DV5R EURO 6.3)",
+                        "value": "FFFFFFFFFFFFF7FF"
+                    },
+                    {
+                        "name": "1.5HDI (DV5R EURO 6.2)",
+                        "value": "FFFFFFFFFFFFFBFF"
+                    },
+                    {
+                        "name": "2.0HDI (DW10FCD)",
+                        "value": "FFFFFFFFFFFFFFFD"
                     },
                     {
                         "name": "Electric motor",
-                        "mask": "1111111011111111111111111111111111111111111111111111111111111111"
+                        "value": "FEFFFFFFFFFFFFFF"
                     }
                 ]
             },
@@ -168,17 +168,41 @@
                 "zoneLength": 28,
                 "name": "Car model",
                 "byte": 7,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "Opel Grandland X",
-                        "mask": "111111111111111111111111111111011111111111111111"
+                        "name": "Citroen C3 III",
+                        "value": "FFFFFFFBFFFF"
                     },
                     {
-                        "name": "Citroen C3 III",
-                        "mask": "111111111111111111111111111110111111111111111111"
+                        "name": "Citroen C5 Aircross (C84)",
+                        "value": "FFFFFFFF7FFF"
+                    },
+                    {
+                        "name": "DS7",
+                        "value": "FFFDFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Grandland X",
+                        "value": "FFFFFFFDFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508 (R8)",
+                        "value": "FFFFFEFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508 (R8) SW",
+                        "value": "FF7FFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 3008 (P84)",
+                        "value": "FEFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 5008 (P87)",
+                        "value": "FDFFFFFFFFFF"
                     }
                 ]
             },
@@ -186,33 +210,41 @@
                 "zoneLength": 38,
                 "name": "Car model",
                 "byte": 9,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111111111111111111111111111111111111111111111111111",
                 "params": [
                     {
                         "name": "Peugeot 3008 II Restyle",
-                        "mask": "11101111111111111111111111111111111111111111111111111111111111111111111111111111"
+                        "value": "EFFFFFFFFFFFFFFFFFFF"
                     },
                     {
                         "name": "Peugeot 5008 II Restyle",
-                        "mask": "11111111111111111111111111111011111111111111111111111111111111111111111111111111"
+                        "value": "FFFFFFFBFFFFFFFFFFFF"
                     },
                     {
                         "name": "Peugeot e208",
-                        "mask": "11111111111111111111111111111111111111111101111111111111111111111111111111111111"
+                        "value": "FFFFFFFFFFDFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot e2008",
+                        "value": "FFFFFFFFFFFEFFFFFFFF"
                     },
                     {
                         "name": "Peugeot 3008 Plug-in Hybrid",
-                        "mask": "11111101111111111111111111111111111111111111111111111111111111111111111111111111"
+                        "value": "FDFFFFFFFFFFFFFFFFFF"
                     },
                     {
                         "name": "Opel Grandland Plug-in Hybrid",
-                        "mask": "01111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                        "value": "7FFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Grandland X (P1UO) Plug-in Hybrid",
+                        "value": "BFFFFFFFFFFFFFFFFFFF"
                     },
                     {
                         "name": "Citroen C3 III",
-                        "mask": "11111111111111111111111111111111111111111111111111111111111111110111111111111111"
+                        "value": "FFFFFFFFFFFFFFFF7FFF"
                     }
                 ]
             },
@@ -220,37 +252,45 @@
                 "zoneLength": 28,
                 "name": "Tire size",
                 "byte": 13,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111",
                 "params": [
                     {
                         "name": "215/70R16",
-                        "mask": "11111110111111111111111111111111"
+                        "value": "FEFFFFFF"
                     },
                     {
                         "name": "215/65R17",
-                        "mask": "11111101111111111111111111111111"
+                        "value": "FDFFFFFF"
                     },
                     {
                         "name": "225/45R18",
-                        "mask": "11111111111111110111111111111111"
+                        "value": "FFFF7FFF"
                     },
                     {
                         "name": "225/55R18",
-                        "mask": "11111011111111111111111111111111"
+                        "value": "FBFFFFFF"
                     },
                     {
                         "name": "235/55R18",
-                        "mask": "11111111011111111111111111111111"
+                        "value": "FF7FFFFF"
                     },
                     {
                         "name": "205/55R19",
-                        "mask": "11110111111111111111111111111111"
+                        "value": "F7FFFFFF"
+                    },
+                    {
+                        "name": "235/40R19",
+                        "value": "FFFEFFFF"
+                    },
+                    {
+                        "name": "235/45R19",
+                        "value": "7FFFFFFF"
                     },
                     {
                         "name": "235/50R19",
-                        "mask": "11101111111111111111111111111111"
+                        "value": "EFFFFFFF"
                     }
                 ]
             },
@@ -258,41 +298,45 @@
                 "zoneLength": 38,
                 "name": "Tire size",
                 "byte": 19,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
                         "name": "195/65R15",
-                        "mask": "111111111011111111111111111111111111111111111111"
+                        "value": "FFBFFFFFFFFF"
                     },
                     {
                         "name": "195/55R16",
-                        "mask": "111111111111101111111111111111111111111111111111"
+                        "value": "FFFBFFFFFFFF"
+                    },
+                    {
+                        "name": "215/60R17",
+                        "value": "FFFFFFBFFFFF"
                     },
                     {
                         "name": "215/65R17",
-                        "mask": "111111011111111111111111111111111111111111111111"
+                        "value": "FDFFFFFFFFFF"
                     },
                     {
-                        "name": "225/45R18 (2035MM)",
-                        "mask": "111111111111111101111111111111111111111111111111"
+                        "name": "225/45R18",
+                        "value": "FFFF7FFFFFFF"
                     },
                     {
                         "name": "225/55R18",
-                        "mask": "111110111111111111111111111111111111111111111111"
+                        "value": "FBFFFFFFFFFF"
                     },
                     {
                         "name": "235/55R18",
-                        "mask": "111111110111111111111111111111111111111111111111"
+                        "value": "FF7FFFFFFFFF"
                     },
                     {
                         "name": "205/55R19",
-                        "mask": "111101111111111111111111111111111111111111111111"
+                        "value": "F7FFFFFFFFFF"
                     },
                     {
                         "name": "235/50R19",
-                        "mask": "111011111111111111111111111111111111111111111111"
+                        "value": "EFFFFFFFFFFF"
                     }
                 ]
             },
@@ -300,41 +344,41 @@
                 "zoneLength": 28,
                 "name": "Transmission",
                 "byte": 17,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
                     {
                         "name": "AMN8 (AWF8G45)",
-                        "mask": "1111111111111011"
+                        "value": "FFFB"
                     },
                     {
                         "name": "ATN8 (AWF8G30)",
-                        "mask": "1111111111110111"
+                        "value": "FFF7"
                     },
                     {
                         "name": "AM6 III (TF-82SC)",
-                        "mask": "1110111111111111"
+                        "value": "EFFF"
                     },
                     {
                         "name": "AT6 III (TF-71SC)",
-                        "mask": "0111111111111111"
+                        "value": "7FFF"
                     },
                     {
                         "name": "BE (Manual)",
-                        "mask": "1111111011111111"
+                        "value": "FEFF"
                     },
                     {
                         "name": "MB6",
-                        "mask": "1111111111111101"
+                        "value": "FFFD"
                     },
                     {
                         "name": "MCM (Manual)",
-                        "mask": "1111110111111111"
+                        "value": "FDFF"
                     },
                     {
                         "name": "ML6C",
-                        "mask": "1111011111111111"
+                        "value": "F7FF"
                     }
                 ]
             },
@@ -342,37 +386,41 @@
                 "zoneLength": 38,
                 "name": "Transmission",
                 "byte": 25,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111",
                 "params": [
                     {
                         "name": "AMN8 (AWF8G45)",
-                        "mask": "11111111111011111111111111111111"
+                        "value": "FFEFFFFF"
                     },
                     {
                         "name": "ATN8 (AWF8G30)",
-                        "mask": "11111111111101111111111111111111"
+                        "value": "FFF7FFFF"
                     },
                     {
                         "name": "AM6 III (TF-82SC)",
-                        "mask": "11111111111110111111111111111111"
+                        "value": "FFFBFFFF"
                     },
                     {
                         "name": "AT6 III (TF-71SC)",
-                        "mask": "11111111111111011111111111111111"
+                        "value": "FFFDFFFF"
                     },
                     {
-                        "name": "EV 1-speed Reductor Gear",
-                        "mask": "11111111111111110111111111111111"
+                        "name": "EV Reductor Gear type1",
+                        "value": "FFFF7FFF"
+                    },
+                    {
+                        "name": "EV Reductor Gear type2",
+                        "value": "FFDFFFFF"
                     },
                     {
                         "name": "E-ATN8",
-                        "mask": "11111111011111111111111111111111"
+                        "value": "FF7FFFFF"
                     },
                     {
                         "name": "BE (Manual)",
-                        "mask": "11111110111111111111111111111111"
+                        "value": "FEFFFFFF"
                     }
                 ]
             },
@@ -380,25 +428,25 @@
                 "zoneLength": 28,
                 "name": "Front brakes",
                 "byte": 19,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "304X28",
-                        "mask": "1111111111101111"
+                        "name": "302X26",
+                        "value": "FF7F"
                     },
                     {
-                        "name": "302X26",
-                        "mask": "1111111101111111"
+                        "name": "304x28",
+                        "value": "7FFF"
                     },
                     {
                         "name": "330X30-PHI60",
-                        "mask": "1111111111111110"
+                        "value": "FFFE"
                     },
                     {
-                        "name": "??? - F7FF",
-                        "mask": "1111011111111111"
+                        "name": "???",
+                        "value": "F7FF"
                     }
                 ]
             },
@@ -406,25 +454,25 @@
                 "zoneLength": 38,
                 "name": "Front brakes",
                 "byte": 29,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
-                "params": [
-                    {
-                        "name": "304X28",
-                        "mask": "1111111111101111"
-                    },
+                "params": [ 
                     {
                         "name": "302X26",
-                        "mask": "1111111101111111"
+                        "value": "FF7F"
+                    },
+                    {
+                        "name": "304x28",
+                        "value": "FFEF"
                     },
                     {
                         "name": "330X30-PHI60",
-                        "mask": "1111111111111110"
+                        "value": "FFFE"
                     },
                     {
                         "name": "???",
-                        "mask": "1111011111111111"
+                        "value": "F7FF"
                     }
                 ]
             },
@@ -432,21 +480,21 @@
                 "zoneLength": 28,
                 "name": "Rear brakes",
                 "byte": 21,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
                     {
                         "name": "268X12",
-                        "mask": "1111101111111111"
+                        "value": "FBFF"
                     },
                     {
                         "name": "290X12-PHI42",
-                        "mask": "1110111111111111"
+                        "value": "EFFF"
                     },
                     {
                         "name": "???",
-                        "mask": "1111111110111111"
+                        "value": "FFBF"
                     }
                 ]
             },
@@ -454,21 +502,21 @@
                 "zoneLength": 38,
                 "name": "Rear brakes",
                 "byte": 31,
-                "type": "bool",
+                "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
                     {
                         "name": "268X12",
-                        "mask": "1111101111111111"
+                        "value": "FBFF"
                     },
                     {
                         "name": "290X12-PHI42",
-                        "mask": "1110111111111111"
+                        "value": "EFFF"
                     },
                     {
                         "name": "???",
-                        "mask": "1111111110111111"
+                        "value": "FFBF"
                     }
                 ]
             },
@@ -658,7 +706,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_ONE_CAN": {
                 "zoneLength": 28,
-                "name": "Type of steering angle sensor",
+                "name": "Type of multiplex system",
                 "byte": 24,
                 "type": "bool",
                 "form_type": "combobox",
@@ -1162,7 +1210,7 @@
             },
             "CFG_000_FREIN_UDS_UCPR_TJA": {
                 "zoneLength": 28,
-                "name": "Heavy traffic driving assistance system)",
+                "name": "Heavy traffic driving assistance system",
                 "byte": 27,
                 "type": "bool",
                 "form_type": "combobox",
