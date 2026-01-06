@@ -139,8 +139,8 @@
                         "value": "FFFFFFFFEFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADTS EURO 6.3)",
-                        "value": "FFFFFFFFFFFEFFFF"
+                        "name": "1.2t (EB2ADT-EURO 6.3 / EB2ADTS-EURO6.3 / EB2ADT I-EURO6.3 / EB2ADTS I-EURO6.3 / EB2ADTS-CHINA6 / EB2ADT-EURO6.4 / EB2ADTS-EURO6.4 / EB2ADT I-EURO6.4)",
+                        "value": "FFFF7FFFFFFFFFFF"
                     },
                     {
                         "name": "1.6t (EP6FDT/EP6FADTXD or EP6FDTMD/EP6FDTM)",
@@ -243,7 +243,7 @@
                         "value": "BFFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Citroen C3 III",
+                        "name": "Citroen C3 III (B618)",
                         "value": "FFFFFFFFFFFFFFFF7FFF"
                     }
                 ]
@@ -256,6 +256,10 @@
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111",
                 "params": [
+                    {
+                        "name": "215/60R16",
+                        "value": "FFFFFEFF"
+                    },
                     {
                         "name": "215/70R16",
                         "value": "FEFFFFFF"
@@ -309,6 +313,10 @@
                     {
                         "name": "195/55R16",
                         "value": "FFFBFFFFFFFF"
+                    },
+                    {
+                        "name": "205/55R16",
+                        "value": "FFFFFFEFFFFF"
                     },
                     {
                         "name": "215/60R17",
@@ -421,6 +429,10 @@
                     {
                         "name": "BE (Manual)",
                         "value": "FEFFFFFF"
+                    },
+                    {
+                        "name": "MB6 TUNING2",
+                        "value": "BFFFFFFF"
                     }
                 ]
             },
@@ -457,7 +469,11 @@
                 "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
-                "params": [ 
+                "params": [
+                    {
+                        "name": "283X26-PHI54 or 266X22-PHI54",
+                        "value": "F7FF"
+                    },
                     {
                         "name": "302X26",
                         "value": "FF7F"
@@ -469,10 +485,6 @@
                     {
                         "name": "330X30-PHI60",
                         "value": "FFFE"
-                    },
-                    {
-                        "name": "???",
-                        "value": "F7FF"
                     }
                 ]
             },
@@ -506,6 +518,10 @@
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
+                    {
+                        "name": "249X9-PHI38",
+                        "value": "FEFF"
+                    },
                     {
                         "name": "268X12",
                         "value": "FBFF"
