@@ -121,7 +121,7 @@ class DecodeCalUlpFile():
         if len(line) == 0:
             return ["END", self.fileLineNr]
         line = line.rstrip()
-        if line[0] == 'S' and (line[1] == "2" or line[1] == "3"):
+        if len(line) >= 2 and line[0] == 'S' and (line[1] == "2" or line[1] == "3"):
             if line[1] == "2":
                 addr = line[ 4:10]
                 data = line[10:-2]
