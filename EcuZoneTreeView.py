@@ -19,9 +19,9 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt, Slot
-from PySide6.QtWidgets import QSizePolicy, QTabWidget, QTreeWidget
-from PySide6.QtGui import QColor
+from PySide6.QtCore import Qt, Slot, QEvent, QSize, QPoint
+from PySide6.QtWidgets import QSizePolicy, QMenu, QTabWidget, QTreeWidget, QTabBar, QStyle, QStylePainter, QStyleOptionTab
+from PySide6.QtGui import QColor, QPaintEvent
 
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
@@ -31,14 +31,55 @@ from EcuMultiZoneTreeWidgetItem import EcuMultiZoneTreeWidgetItem
 from i18n import i18n
 import PyPSADiagGUI
 
+class HorizontalTextTabBar(QTabBar):
+    """
+    Special Text TabBar, with always Horizontal text
+    """
+    def __init__(self, parent):
+        super(HorizontalTextTabBar, self).__init__(parent)
+
+    def paintEvent(self, event: QPaintEvent):
+        painter = QStylePainter(self)
+        option = QStyleOptionTab()
+        for index in range(self.count()):
+            self.initStyleOption(option, index)
+            painter.drawControl(QStyle.CE_TabBarTabShape, option)
+            painter.drawText(self.tabRect(index),
+                             Qt.AlignCenter | Qt.AlignLeft | Qt.TextDontClip,
+                             self.tabText(index))
+
+    def tabSizeHint(self, index):
+        size = QTabBar.tabSizeHint(self, index)
+        if size.width() < size.height():
+            size.transpose()
+        return size - QSize(5, 4)
+
 class EcuZoneTreeView(QTabWidget):
     """
     """
     def __init__(self, parent, ecuObjectList = None):
         super(EcuZoneTreeView, self).__init__(parent)
+        self.setTabBar(HorizontalTextTabBar(self))
         self.hideZones = False
         self.setSizePolicy(QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.MinimumExpanding))
         self.updateView(ecuObjectList)
+        self.setTabPosition(self.TabPosition.North)
+
+        self.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.customContextMenuRequested.connect(self.contextMenu)
+
+    @Slot()
+    def contextMenu(self, pos: QPoint):
+        contextMenu = QMenu(self)
+        tabsTop = contextMenu.addAction(i18n().tr("Tabs above the pages"))
+        tabsLeft = contextMenu.addAction(i18n().tr("Tabs to the left of the pages"))
+
+        action = contextMenu.exec_(self.mapToGlobal(pos))
+        if action == tabsTop:
+            self.setTabPosition(self.TabPosition.North)
+
+        if action == tabsLeft:
+            self.setTabPosition(self.TabPosition.West)
 
     def updateView(self, ecuObjectList):
         if ecuObjectList != None:
@@ -47,7 +88,7 @@ class EcuZoneTreeView(QTabWidget):
             elif "ecu" in ecuObjectList:
                 self.zoneObjectList = ecuObjectList["ecu"]
             else:
-                return;
+                return
 
             # Checking integrity of JSON file
             for zoneIDObject in self.zoneObjectList:

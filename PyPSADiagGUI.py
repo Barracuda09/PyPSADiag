@@ -108,7 +108,7 @@ class PyPSADiagGUI(object):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1100, 700)
+        MainWindow.resize(1300, 780)
         MainWindow.setSizeIncrement(QSize(1, 1))
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
