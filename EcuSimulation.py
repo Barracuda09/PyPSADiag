@@ -53,6 +53,8 @@ class EcuSimulation(QThread):
         return self.__simulateAnswer(cmd)
 
     def __simulateAnswer(self, cmd: str):
+        if cmd[:1] == "V":
+            return "1.9"
         if cmd[:1] == ">":
             # Open car simulation file
             file = open(os.path.join(os.path.dirname(__file__), "simu/car.json"), 'r', encoding='utf-8')
