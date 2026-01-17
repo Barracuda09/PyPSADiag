@@ -6,9 +6,9 @@
     "key_type": "multi",
     "keys": {
         "key1": "60A5",
-        "key2": "BC93",
+        "System 93": "BC93",
         "key3": "2305",
-        "key4": "ABFB"
+        "System 90/92/93": "ABFB"
     },
     "coding": true,
     "errors": true,
@@ -93,6 +93,10 @@
                         "value": "FDFFFFFFFFFF"
                     },
                     {
+                        "name": "1.5HDI (DV5RD EURO 6.2 / DV5RE EURO 6.2)",
+                        "value": "FFF7FFFFFFFF"
+                    },
+                    {
                         "name": "1.6HDI (DV6C)",
                         "value": "FEFFFFFFFFFF"
                     },
@@ -143,16 +147,16 @@
                         "value": "FFFF7FFFFFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FDT/EP6FADTXD or EP6FDTMD/EP6FDTM)",
+                        "name": "1.6t (EP6FDT/EP6FADTXD EURO 6.3 / EP6FADTXHP EURO6.3 / EP6FDTMD/EP6FDTM)",
                         "value": "FFEFFFFFFFFFFFFF"
-                    },
-                    {
-                        "name": "1.5HDI (DV5R EURO 6.3)",
-                        "value": "FFFFFFFFFFFFF7FF"
                     },
                     {
                         "name": "1.5HDI (DV5R EURO 6.2)",
                         "value": "FFFFFFFFFFFFFBFF"
+                    },
+                    {
+                        "name": "1.5HDI (DV5R EURO 6.3 / DV5RC EURO 6.3 / DV5RC EURO 6.4)",
+                        "value": "FFFFFFFFFFFFF7FF"
                     },
                     {
                         "name": "2.0HDI (DW10FCD)",
@@ -173,7 +177,11 @@
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "Citroen C3 III",
+                        "name": "Citroen Berlingo (K9)",
+                        "value": "FFFFF7FFFFFF"
+                    },
+                    {
+                        "name": "Citroen C3 III (B618)",
                         "value": "FFFFFFFBFFFF"
                     },
                     {
@@ -185,7 +193,7 @@
                         "value": "FFFDFFFFFFFF"
                     },
                     {
-                        "name": "Opel Grandland X",
+                        "name": "Opel Grandland X (P1UO)",
                         "value": "FFFFFFFDFFFF"
                     },
                     {
@@ -215,6 +223,30 @@
                 "mask": "11111111111111111111111111111111111111111111111111111111111111111111111111111111",
                 "params": [
                     {
+                        "name": "Citroen Berlingo (K9)",
+                        "value": "FFFFFFFFFFFDFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C3 III (B618)",
+                        "value": "FFFFFFFFFFFFFFFF7FFF"
+                    },
+                    {
+                        "name": "Citroen C5 Aircross (C84)",
+                        "value": "FFFFFFFF7FFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Grandland X (P1UO) 4x2 Plug-in Hybrid",
+                        "value": "7FFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Grandland X (P1UO) 4x4 Plug-in Hybrid",
+                        "value": "BFFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508 (R8) 4x2 Plug-in Hybrid",
+                        "value": "FFFFFEFFFFFFFFFFFFFF"
+                    },
+                    {
                         "name": "Peugeot 3008 II Restyle",
                         "value": "EFFFFFFFFFFFFFFFFFFF"
                     },
@@ -223,28 +255,16 @@
                         "value": "FFFFFFFBFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot e208",
+                        "name": "Peugeot e208 (P21)",
                         "value": "FFFFFFFFFFDFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot e2008",
+                        "name": "Peugeot e2008 (P24)",
                         "value": "FFFFFFFFFFFEFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 3008 Plug-in Hybrid",
+                        "name": "Peugeot 3008 Restyle Plug-in Hybrid",
                         "value": "FDFFFFFFFFFFFFFFFFFF"
-                    },
-                    {
-                        "name": "Opel Grandland Plug-in Hybrid",
-                        "value": "7FFFFFFFFFFFFFFFFFFF"
-                    },
-                    {
-                        "name": "Opel Grandland X (P1UO) Plug-in Hybrid",
-                        "value": "BFFFFFFFFFFFFFFFFFFF"
-                    },
-                    {
-                        "name": "Citroen C3 III (B618)",
-                        "value": "FFFFFFFFFFFFFFFF7FFF"
                     }
                 ]
             },
@@ -256,6 +276,10 @@
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111",
                 "params": [
+                    {
+                        "name": "205/60R16",
+                        "value": "DFFFFFFF"
+                    },
                     {
                         "name": "215/60R16",
                         "value": "FFFFFEFF"
@@ -319,6 +343,10 @@
                         "value": "FFFFFFEFFFFF"
                     },
                     {
+                        "name": "205/60R16",
+                        "value": "DFFFFFFFFFFF"
+                    },
+                    {
                         "name": "215/60R17",
                         "value": "FFFFFFBFFFFF"
                     },
@@ -333,6 +361,10 @@
                     {
                         "name": "225/55R18",
                         "value": "FBFFFFFFFFFF"
+                    },
+                    {
+                        "name": "235/45R18",
+                        "value": "7FFFFFFFFFFF"
                     },
                     {
                         "name": "235/55R18",
@@ -373,7 +405,7 @@
                         "value": "7FFF"
                     },
                     {
-                        "name": "BE (Manual)",
+                        "name": "BE / MB6 DV5RCF (Manual)",
                         "value": "FEFF"
                     },
                     {
@@ -431,8 +463,12 @@
                         "value": "FEFFFFFF"
                     },
                     {
-                        "name": "MB6 TUNING2",
+                        "name": "MB6 TUNING2 (Manual)",
                         "value": "BFFFFFFF"
+                    },
+                    {
+                        "name": "ML6C (Manual)",
+                        "value": "7FFFFFFF"
                     }
                 ]
             },
@@ -445,11 +481,15 @@
                 "mask": "1111111111111111",
                 "params": [
                     {
+                        "name": "283x26-PHI60",
+                        "value": "DFFF"
+                    },
+                    {
                         "name": "302X26",
                         "value": "FF7F"
                     },
                     {
-                        "name": "304x28",
+                        "name": "304x28-PHI60",
                         "value": "7FFF"
                     },
                     {
@@ -479,7 +519,7 @@
                         "value": "FF7F"
                     },
                     {
-                        "name": "304x28",
+                        "name": "304x28-PHI60",
                         "value": "FFEF"
                     },
                     {
@@ -497,7 +537,7 @@
                 "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "268X12",
+                        "name": "268X12-PHI38",
                         "value": "FBFF"
                     },
                     {
@@ -523,7 +563,7 @@
                         "value": "FEFF"
                     },
                     {
-                        "name": "268X12",
+                        "name": "268X12-PHI38",
                         "value": "FBFF"
                     },
                     {
