@@ -37,7 +37,7 @@
                 "mask": "11111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "DV5RC",
+                        "name": "DV5RC EURO6.3/ DV5RC EURO6.4",
                         "value": "FEFFFFFF"
                     },
                     {
@@ -142,6 +142,10 @@
                 "mask": "11111111111111111111111111111111",
                 "params": [
                     {
+                        "name": "Citroen C4 (C41)",
+                        "value": "EFFFFFFF"
+                    },
+                    {
                         "name": "208 (P21)",
                         "value": "DFFFFFFF"
                     },
@@ -203,6 +207,10 @@
                         "value": "DFFFFFFF"
                     },
                     {
+                        "name": "195/60R18",
+                        "value": "BFFFFFFF"
+                    },
+                    {
                         "name": "215/55R18",
                         "value": "FFFEFFFF"
                     }
@@ -259,18 +267,18 @@
                 "type": "hex",
                 "form_type": "combobox",
                 "mask": "1111111111111111",
-                "params": [ 
+                "params": [
                     {
+                        "name": "266x22",
+                        "value": "FDFF"
+                    }
+                    ,{
                         "name": "283x26",
                         "value": "FBFF"
                     },
                     {
                         "name": "302x26",
                         "value": "F7FF"
-                    },
-                    {
-                        "name": "266x22",
-                        "value": "FDFF"
                     }
                 ]
             },
