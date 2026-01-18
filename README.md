@@ -6,6 +6,7 @@ This application is as is, and you use it **at your own risk**.<br/>
 I am not responsible for any damages or injuries resulting from the use of this application.<br/>
 **VERY IMPORTANT:** This application is for **educational** purposes only **and should be used with care!.**
 
+If you need some help, try to look at the [Wiki](https://github.com/Barracuda09/PyPSADiag/wiki)
 -------
 
 PyPSADiag is an Python application for sending diagnostic frames over CAN-BUS to PSA/Stellantis based cars <br/>
@@ -22,7 +23,7 @@ Currently supporting:
 What I would like to support:
 - More ECU JSON Files
 
-Help
+Help the Project
 -------
 Help in any way is appreciated, just send me an email with anything you can
 contribute to the project, like:
