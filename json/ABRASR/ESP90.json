@@ -101,7 +101,7 @@
                         "value": "FEFFFFFFFFFF"
                     },
                     {
-                        "name": "1.6HDI (DV6FCD)",
+                        "name": "1.2t (EB2ADT EURO 6.3 / 1.6HDI (DV6FCD)",
                         "value": "FFFFFFFFF7FF"
                     },
                     {
@@ -117,7 +117,7 @@
                         "value": "FFFEFFFFFFFF"
                     },
                     {
-                        "name": "2.0HDI (DW10FCC or DW10FCD EURO 6.2)",
+                        "name": "2.0HDI (DW10FC EURO 6.2 / DW10FCC or DW10FCD EURO 6.2)",
                         "value": "BFFFFFFFFFFF"
                     },
                     {
@@ -177,12 +177,16 @@
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "Citroen Berlingo (K9)",
+                        "name": "Citroen Berlingo (K9) / Opel Combo (K9)",
                         "value": "FFFFF7FFFFFF"
                     },
                     {
                         "name": "Citroen C3 III (B618)",
                         "value": "FFFFFFFBFFFF"
+                    },
+                    {
+                        "name": "Citroen C3 Aircross (A88)",
+                        "value": "FFFFFFEFFFFF"
                     },
                     {
                         "name": "Citroen C5 Aircross (C84)",
@@ -195,6 +199,10 @@
                     {
                         "name": "Opel Grandland X (P1UO)",
                         "value": "FFFFFFFDFFFF"
+                    },
+                    {
+                        "name": "Peugeot 308 (T9)",
+                        "value": "EFFFFFFFFFFF"
                     },
                     {
                         "name": "Peugeot 508 (R8)",
@@ -247,11 +255,11 @@
                         "value": "FFFFFEFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 3008 II Restyle",
+                        "name": "Peugeot 3008 (P84) Restyle",
                         "value": "EFFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 5008 II Restyle",
+                        "name": "Peugeot 5008 (P87) Restyle",
                         "value": "FFFFFFFBFFFFFFFFFFFF"
                     },
                     {
@@ -263,8 +271,12 @@
                         "value": "FFFFFFFFFFFEFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 3008 Restyle Plug-in Hybrid",
+                        "name": "Peugeot 3008 (P84) Restyle 4X2 Plug-in Hybrid",
                         "value": "FDFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot Partner (K9) Restyle",
+                        "value": "FFFFFFFFFFEFFFFFFFFF"
                     }
                 ]
             },
@@ -276,6 +288,10 @@
                 "form_type": "combobox",
                 "mask": "11111111111111111111111111111111",
                 "params": [
+                    {
+                        "name": "205/55R16",
+                        "value": "FFFFFFEF"
+                    },
                     {
                         "name": "205/60R16",
                         "value": "DFFFFFFF"
@@ -335,6 +351,10 @@
                         "value": "FFBFFFFFFFFF"
                     },
                     {
+                        "name": "195/65R15 type2",
+                        "value": "FFFFFDFFFFFF"
+                    },
+                    {
                         "name": "195/55R16",
                         "value": "FFFBFFFFFFFF"
                     },
@@ -345,6 +365,10 @@
                     {
                         "name": "205/60R16",
                         "value": "DFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "205/45R17",
+                        "value": "FFF7FFFFFFFF"
                     },
                     {
                         "name": "215/60R17",
@@ -467,6 +491,10 @@
                         "value": "BFFFFFFF"
                     },
                     {
+                        "name": "MB6EW (Manual)",
+                        "value": "DFFFFFFF"
+                    },
+                    {
                         "name": "ML6C (Manual)",
                         "value": "7FFFFFFF"
                     }
@@ -480,6 +508,14 @@
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
+                    {
+                        "name": "266x22",
+                        "value": "FBFF"
+                    },
+                    {
+                        "name": "283x26",
+                        "value": "F7FF"
+                    },
                     {
                         "name": "283x26-PHI60",
                         "value": "DFFF"
@@ -495,10 +531,6 @@
                     {
                         "name": "330X30-PHI60",
                         "value": "FFFE"
-                    },
-                    {
-                        "name": "???",
-                        "value": "F7FF"
                     }
                 ]
             },
@@ -513,6 +545,10 @@
                     {
                         "name": "283X26-PHI54 or 266X22-PHI54",
                         "value": "F7FF"
+                    },
+                    {
+                        "name": "283X26 type2",
+                        "value": "FDFF"
                     },
                     {
                         "name": "302X26",
@@ -536,6 +572,14 @@
                 "form_type": "combobox",
                 "mask": "1111111111111111",
                 "params": [
+                    {
+                        "name": "244X9",
+                        "value": "FEFF"
+                    },
+                    {
+                        "name": "249X10",
+                        "value": "FDFF"
+                    },
                     {
                         "name": "268X12-PHI38",
                         "value": "FBFF"

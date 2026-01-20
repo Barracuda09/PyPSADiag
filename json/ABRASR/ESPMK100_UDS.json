@@ -41,7 +41,7 @@
                         "value": "FEFFFFFF"
                     },
                     {
-                        "name": "DV5RD/DV5RCF",
+                        "name": "DV5RD / DV5RCF",
                         "value": "FDFFFFFF"
                     },
                     {
@@ -49,11 +49,11 @@
                         "value": "FFFFFFFE"
                     },
                     {
-                        "name": "EB2ADT/EB2ADTD/EB2ADTD I/EB2ADTD B / EB2ADTMD",
+                        "name": "EB2ADT / EB2ADTD EURO6.4 / EB2ADTD I /EB2ADTD B / EB2ADTMD",
                         "value": "FFFFFEFF"
                     },
                     {
-                        "name": "EB2ADTS/EB2ADTS I/EB2ADTS+",
+                        "name": "EB2ADTS / EB2ADTS I / EB2ADTS+",
                         "value": "FFFFFBFF"
                     },
                     {
@@ -61,15 +61,15 @@
                         "value": "FFFFFFFD"
                     },
                     {
-                        "name": "EB2FA/EB2FAD/EB2FAFK",
+                        "name": "EB2FA / EB2FAD / EB2FAFK",
                         "value": "FFFFEFFF"
                     },
                     {
-                        "name": "EC5F/EC5",
+                        "name": "EC5F / EC5",
                         "value": "FFFF7FFF"
                     },
                     {
-                        "name": "DV6D/DV6DR",
+                        "name": "DV6D / DV6DR",
                         "value": "F7FFFFFF"
                     },
                     {
@@ -89,7 +89,7 @@
                         "value": "FFFFF7FF"
                     },
                     {
-                        "name": "EP6FADTX/EB2LTEDH2/EB2LTEDH2 S30",
+                        "name": "EP6FADTX / EB2LTEDH2 / EB2LTEDH2 S30",
                         "value": "FFFFFFEF"
                     },
                     {
@@ -101,11 +101,11 @@
                         "value": "EFFFFFFF"
                     },
                     {
-                        "name": "EB2FAM/EB2FAMK",
+                        "name": "EB2FAM / EB2FAMK",
                         "value": "FFFFFFBF"
                     },
                     {
-                        "name": "EB2FA/EB2FAFK",
+                        "name": "EB2FA / EB2FAFK",
                         "value": "FFFFDFFF"
                     },
                     {
@@ -117,7 +117,7 @@
                         "value": "FFDFFFFF"
                     },
                     {
-                        "name": "EB2LTDH2, EB2LTDH2 S30 1.2L ESS",
+                        "name": "EB2LTDH2 / EB2LTDH2 S30 1.2L ESS",
                         "value": "FFBFFFFF"
                     },
                     {
@@ -146,31 +146,31 @@
                         "value": "EFFFFFFF"
                     },
                     {
-                        "name": "208 (P21)",
+                        "name": "Peugeot 208 (P21)",
                         "value": "DFFFFFFF"
                     },
                     {
-                        "name": "2008 (P24)",
+                        "name": "Peugeot 2008 (P24)",
                         "value": "7FFFFFFF"
                     },
                     {
-                        "name": "208 Mercosur (P21)",
+                        "name": "Peugeot 208 Mercosur (P21)",
                         "value": "FFFEFFFF"
                     },
                     {
-                        "name": "2008 China (P24)",
+                        "name": "Peugeot 2008 China (P24)",
                         "value": "FFFFFBFF"
                     },
                     {
-                        "name": "208 Mercosur (P21)",
+                        "name": "Peugeot 208 Mercosur (P21)",
                         "value": "FFF7FFFF"
                     },
                     {
-                        "name": "2008 Malaysia (P24)",
+                        "name": "Peugeot 2008 Malaysia (P24)",
                         "value": "FFFFF7FF"
                     },
                     {
-                        "name": "2008 (P24)",
+                        "name": "Peugeot 2008 (P24)",
                         "value": "FFDFFFFF"
                     }
                 ]

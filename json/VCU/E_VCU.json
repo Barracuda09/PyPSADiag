@@ -1,0 +1,49 @@
+{
+  "name": "E_VCU_CTE1",
+  "tx_id": "6A2",
+  "rx_id": "682",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "0107",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "tab": "tele",
+      "name": "Gauging group data values",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_ACC_PRESENCE": {
+        "name": "Adapted cruise control (ACC)",
+        "byte": 3,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "10000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      }
+    }
+  }
+}
