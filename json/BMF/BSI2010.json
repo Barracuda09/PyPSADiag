@@ -19,7 +19,7 @@
     "tele": "Telecoding",
     "vin": "VIN CODE",
     "all_computers": "ECUS PRESET",
-    "thresthold": "MAINTENANCE",
+    "threshold": "MAINTENANCE",
     "engine": "POWER UNIT",
     "info": "DRIVER INFORMATION",
     "lights": "LIGHTING-SIGNALING",
@@ -4036,7 +4036,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: BOLK Free Hands"
+      "name": "CFG_BR1_BSI_UCECAN_UDS_BML_000_AABSENT: Hands-free unit (Access and start)"
     },
     "D502": {
       "id": "CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT",
@@ -4044,7 +4044,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: steering wheel switch"
+      "name": "CFG_BR2_BSI_UCECAN_UDS_HDC_000_ABSENT: Steering wheel switch module"
     },
     "D503": {
       "id": "CFG_BR3_BSI_UCECAN_UDS_RBG_000_ABSENT",
@@ -4196,7 +4196,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof ???"
+      "name": "CFG_BRL_BSI_UCECAN_UDS_TE_000: folding roof"
     },
     "D516": {
       "id": "CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000",
@@ -4204,7 +4204,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: CHARTAL ELECTRICA"
+      "name": "CFG_BRM_BSI_UCECAN_UDS_CATVM_BCM_000: Motorized trunk computer"
     },
     "D517": {
       "id": "CFG_BRN_BSI_UCECAN_UDS_BSGRQ_000",
@@ -4228,7 +4228,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: driver's seat position"
+      "name": "CFG_ANE_BSI_UCE_CAN_MEMO_S_COND_000: Driver seat memory unit"
     },
     "D51A": {
       "id": "CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000",
@@ -4236,7 +4236,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: BOLSTIER de mémorisation du siège passager ???"
+      "name": "CFG_BRQ_BSI_UCECAN_UDS_BDMPASS_000: Passenger seat memory unit"
     },
     "D51B": {
       "id": "CFG_BRR_BSI_UCECAN_UDS_VTH_000",
@@ -4244,7 +4244,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision ???"
+      "name": "CFG_BRR_BSI_UCECAN_UDS_VTH_000: Head-up vision display"
     },
     "D51C": {
       "id": "CFG_BRS_BSI_UCECAN_UDS_CDC_000",
@@ -4268,7 +4268,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: KIT MAINS LIBRES / BOLLY NOMADE ???"
+      "name": "CFG_BSR_BSI_UCECAN_UDS_KML_NOMAD_000: Hands-free kit / Portable unit"
     },
     "D51F": {
       "id": "CFG_BRV_BSI_UCECAN_UDS_DEF_000",
@@ -4372,7 +4372,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BS7_BSI_UCECAN_UDS_BHI_000: BOX HYDRAULILICE Intelligent (BHI) ???"
+      "name": "CFG_BS7_BSI_UCECAN_UDS_BHI_000: Intelligent Hydraulic Box (BHI)"
     },
     "D52C": {
       "id": "CFG_000_TELE_BVA_DIVER_FREINELEC_TEMP",
@@ -4404,7 +4404,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: computer managed"
+      "name": "CFG_BSB_BSI_UCECAN_UDS_AFS_BCP_000: Сontrolled headlights сomputer"
     },
     "D530": {
       "id": "CFG_BSC_BSI_UCECAN_UDS_CAAR_000",
@@ -4428,7 +4428,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Selection Wheel for Anti-Skid ???"
+      "name": "CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Hybrid Mode Selector / Traction Control Selector Knob"
     },
     "D533": {
       "id": "CFG_BSF_BSI_UCECAN_UDS_BIR_000",
@@ -4436,7 +4436,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSF_BSI_UCECAN_UDS_BIR_000: BOLEER D'OLATION Réseau ???"
+      "name": "CFG_BSF_BSI_UCECAN_UDS_BIR_000: Network isolation box"
     },
     "D534": {
       "id": "CFG_BTC_BSI_UCECAN_UDS_SAM_000",
@@ -4444,7 +4444,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BTC_BSI_UCECAN_UDS_SAM_000: STRUCTION CLOSE"
+      "name": "CFG_BTC_BSI_UCECAN_UDS_SAM_000: Blind spot monitoring"
     },
     "D535": {
       "id": "CFG_BTD_BSI_UCECAN_UDS_CAFR_000",
@@ -4452,7 +4452,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BTD_BSI_UCECAN_UDS_CAFR_000: computer control computer // 508"
+      "name": "CFG_BTD_BSI_UCECAN_UDS_CAFR_000: High beam switching system computer"
     },
     "D536": {
       "id": "CFG_BTE_BSI_UCECAN_UDS_CMF_000",
@@ -4484,7 +4484,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting utility box ???"
+      "name": "CFG_D1E_BSI_UCECAN_UDS_BSE_000: Lighting system switchboard"
     },
     "D53A": {
       "id": "CFG_D1F_BSI_UCECAN_UDS_HCU1_000",
@@ -4564,7 +4564,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: BOLEER de Servitude d'éclairege ???"
+      "name": "CFG_DKK_BSI_UCECAN_UDS_BSG_E_000: Lighting system switchboard"
     },
     "D544": {
       "id": "CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000",
@@ -4572,7 +4572,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: computer control computer automatic gearbox"
+      "name": "CFG_DLR_BSI_UCECAN_UDS_BVACOMELE_000: Automatic transmission electronic control computer"
     },
     "D545": {
       "id": "CFG_EG8_BSI_UCECAN_ESM_000",
@@ -4636,7 +4636,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWG_BSI_UCECAN_PFHM_FL_000: ???"
+      "name": "CFG_EWG_BSI_UCECAN_PFHM_FL_000: Front left sliding door outside opening control computer"
     },
     "D54D": {
       "id": "CFG_EWH_BSI_UCECAN_PFHM_FR_000",
@@ -4644,7 +4644,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWH_BSI_UCECAN_PFHM_FR_000: ???"
+      "name": "CFG_EWH_BSI_UCECAN_PFHM_FR_000: Front right sliding door outside opening control computer"
     },
     "D54E": {
       "id": "CFG_EWI_BSI_UCECAN_PFHM_RL_000",
@@ -4652,7 +4652,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWI_BSI_UCECAN_PFHM_RL_000: ???"
+      "name": "CFG_EWI_BSI_UCECAN_PFHM_RL_000: Rear left sliding door outside opening control computer"
     },
     "D54F": {
       "id": "CFG_EWK_BSI_UCECAN_PFHM_RR_000",
@@ -4660,7 +4660,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWK_BSI_UCECAN_PFHM_RR_000: ???"
+      "name": "CFG_EWK_BSI_UCECAN_PFHM_RR_000: Rear right sliding door outside opening control computer"
     },
     "D550": {
       "id": "CFG_EWL_BSI_UCECAN_SDCM_000",
@@ -4708,7 +4708,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EX0_BSI_UCECAN_LVNSD_000: ???"
+      "name": "CFG_EX0_BSI_UCECAN_LVNSD_000: Contactor of a service battery"
     },
     "D556": {
       "id": "CFG_FGJ_BSI_UCECAN_SWITCH_A_000",
@@ -4716,7 +4716,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_FGJ_BSI_UCECAN_SWITCH_A_000: @P53414-POLUXDATA @\\*2"
+      "name": "CFG_FGJ_BSI_UCECAN_SWITCH_A_000: Contactor of a service battery 2"
     },
     "D557": {
       "id": "CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000",
@@ -4724,7 +4724,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: @P53414-POLUXDATA @\\*1"
+      "name": "CFG_G85_BSI_UCECAN_AUTO_GEAR_BOX_000: Impulse shift lever"
     },
     "D558": {
       "id": "CFG_GDJ_BSI_UCECAN_BSRF_000",
@@ -4756,7 +4756,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting box ???"
+      "name": "CFG_BSH_BSI_UCELIN_UDS_BPL_000: Ambient interior lighting module"
     },
     "D5A2": {
       "id": "CFG_BSI_BSI_UCELIN_UDS_TNB_BMF_000",
@@ -4876,7 +4876,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_DGD_BSI_UCELIN_UDS_DGT_000: ???"
+      "name": "CFG_DGD_BSI_UCELIN_UDS_DGT_000: Sensor Display"
     },
     "D5B1": {
       "id": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000",
@@ -4884,7 +4884,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: ???"
+      "name": "CFG_DGE_BSI_UCELIN_UDS_FMUXAUDIO_000: Multifunctional front panel in LIN network"
     },
     "D5B2": {
       "id": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000",
@@ -4892,7 +4892,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000: ???"
+      "name": "CFG_DGF_BSI_UCELIN_UDS_BPCA_000: Block for protection of additional connections (BPCA)"
     },
     "D5B3": {
       "id": "CFG_EBT_BSI_UCELIN_BAAS_R_000",
@@ -4924,7 +4924,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EBX_BSI_UCELIN_SPB_D_000: LIN SEAT PNEUMATIC BOX Driver ???"
+      "name": "CFG_EBX_BSI_UCELIN_SPB_D_000: Driver seat pneumatic functions computer"
     },
     "D5B7": {
       "id": "CFG_EBY_BSI_UCELIN_SCB_D_000",
@@ -4932,7 +4932,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EBY_BSI_UCELIN_SCB_D_000: driver's comfort computer"
+      "name": "CFG_EBY_BSI_UCELIN_SCB_D_000: Driver seat comfort computer"
     },
     "D5B8": {
       "id": "CFG_EBZ_BSI_UCELIN_BRNCV_D_000",
@@ -4948,7 +4948,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EC0_BSI_UCELIN_SPB_P_000: LIN SEAT PNEUMATIC BOX Passenger ???"
+      "name": "CFG_EC0_BSI_UCELIN_SPB_P_000: Passenger seat pneumatic functions computer"
     },
     "D5BA": {
       "id": "CFG_EC1_BSI_UCELIN_SCB_P_000",
@@ -4956,7 +4956,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EC1_BSI_UCELIN_SCB_P_000: computer comfort computer"
+      "name": "CFG_EC1_BSI_UCELIN_SCB_P_000: Passenger seat comfort computer"
     },
     "D5BB": {
       "id": "CFG_EBU_BSI_UCELIN_BRNCV_P_000",
@@ -4996,7 +4996,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: UCE LIN Boitier Système Adaptatif d'éclaireage Arrière Feu Conducteur ???"
+      "name": "CFG_LC_BSI_UCELIN_ARS_FEU_COND_000: Adaptive Rear lighting system driver's light Control Unit"
     },
     "D5C0": {
       "id": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000",
@@ -5004,7 +5004,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: UCE LIN Boitier Système Adaptatif d'éclairge Arrière Feu Passager ???"
+      "name": "CFG_ELD_BSI_UCELIN_ARS_FEU_PAS_000: Adaptive Rear Lighting System Passenger Side Light Control Unit"
     },
     "D5C1": {
       "id": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000",
@@ -5012,7 +5012,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Conduracteur ???"
+      "name": "CFG_ELE_BSI_UCELIN_ARS_FEU_C_C_000: Adaptive Rear lighting system Auxiliary driver's light Control Unit"
     },
     "D5C2": {
       "id": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000",
@@ -5020,7 +5020,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: UCE LIN Boitier Système Adaptatif d'éclaire Arrière Feu Complementaire Passager ???"
+      "name": "CFG_ELF_BSI_UCELIN_ARS_FEU_C_P_000: Adaptive Rear Lighting System Passenger Side Auxiliary Light Control Unit"
     },
     "D5C3": {
       "id": "CFG_ELG_BSI_UCELIN_TO_000",
@@ -5036,7 +5036,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_ELR_BSI_UCELIN_PLMB_000: UCE LIN CALCULETER MAITRA ECLAIRAGE Polychromatique ???"
+      "name": "CFG_ELR_BSI_UCELIN_PLMB_000: Interior LED control computer"
     },
     "D5C5": {
       "id": "CFG_EOZ_BSI_UCELIN_CCE_000",
@@ -5044,15 +5044,15 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EZ_BSI_UCELIN_CCE_000: air conditioning compressor"
+      "name": "CFG_EZ_BSI_UCELIN_CCE_000: Air conditioning compressor"
     },
     "D5C6": {
-      "id": "CFG_EOZ_BSI_UCELIN_???_000",
+      "id": "CFG_EVC_BSI_UCELIN_BECH_000",
       "tab": "all_computers",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EZ_BSI_UCELIN_???_000: ????"
+      "name": "CFG_EVC_BSI_UCELIN_BECH_000: Coolant heater multiplex computer"
     },
     "D5C7": {
       "id": "CFG_EY0_BSI_UCELIN_OCS_000",
@@ -5060,7 +5060,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EY0_BSI_UCELIN_OCS_000: ???"
+      "name": "CFG_EY0_BSI_UCELIN_OCS_000: Seat occupancy recognition computer that allows automatic deactivation of the passenger airbag (OCS)"
     },
     "D5C8": {
       "id": "CFG_EYG_BSI_UCELIN_CTPE_000",
@@ -5068,7 +5068,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EYG_BSI_UCELIN_CTPE_000: coolant electric heater"
+      "name": "CFG_EYG_BSI_UCELIN_CTPE_000: Coolant electric heater"
     },
     "D600": {
       "id": "CFG_BH0_BSI_NS_PRESENCE_CDC_000",
@@ -5076,7 +5076,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_BH0_BSI_NS_PRESENCE_CDC_000: presence of CD changer"
+      "name": "CFG_BH0_BSI_NS_PRESENCE_CDC_000: Presence of CD changer"
     },
     "D601": {
       "id": "CFG_BGY_BSI_NS_DIAG_STA_RADIO_000",
@@ -5088,7 +5088,7 @@
     },
     "D602": {
       "id": "CFG_B0B_BSI_RABAT_RETRO_TELECOM_000",
-      "tab": "other",
+      "tab": "all_computers",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
@@ -5103,8 +5103,8 @@
       "name": "CFG_BK2_BSI_NS_PRESECEKMLUSBOX_000: Presence of a hands-free kit or a unit for USB connection (1st fit)"
     },
     "2281": {
-      "id": "Total period(time) before servicing (threshold)",
-      "tab": "thresthold",
+      "id": "Total period (time) before servicing (threshold)",
+      "tab": "threshold",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -5117,7 +5117,7 @@
     },
     "2283": {
       "id": "First maintenance threshold",
-      "tab": "thresthold",
+      "tab": "threshold",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -5130,8 +5130,8 @@
       "name": "First maintenance threshold"
     },
     "2282": {
-      "id": "Servicing threshold(marketing)",
-      "tab": "thresthold",
+      "id": "Servicing threshold (marketing)",
+      "tab": "threshold",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -5147,11 +5147,11 @@
         { "value": "96", "name": "Diesel-30000KM"},
         { "value": "C8", "name": "Diesel-40000KM"}
       ],
-      "name": "Servicing threshold(marketing)"
+      "name": "Servicing threshold (marketing)"
     },
     "2284": {
       "id": "Duration before first service",
-      "tab": "thresthold",
+      "tab": "threshold",
       "byte": 0,
       "type": "int",
       "form_type": "string",
@@ -5159,7 +5159,7 @@
     },
     "2280": {
       "id": "Type of service",
-      "tab": "thresthold",
+      "tab": "threshold",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -5173,7 +5173,7 @@
     },
     "2289": {
       "id": "Selection of the servicing managed by the engine",
-      "tab": "thresthold",
+      "tab": "threshold",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -5181,9 +5181,68 @@
       "params": [
         { "value": "0", "name": "Static" },
         { "value": "1", "name": "Dynamic" },
-        { "value": "2", "name": "Hybrid dynamic mantenance" }
+        { "value": "2", "name": "Hybrid dynamic maintenance" }
       ],
       "name": "Selection of the servicing managed by the engine"
+    },
+    "2307": {
+      "id": "Presence and number of sunroofs",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "0", "name": "No sunroofs" },
+        { "value": "1", "name": "1 sunroof" },
+        { "value": "2", "name": "2 sunroofs" },
+        { "value": "3", "name": "3 sunroofs" }
+      ],
+      "name": "Presence and number of sunroofs" 
+    },
+    "2477": {
+      "id": "Presence and number of motorised locks",
+      "tab": "security",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "0", "name": "No motorized locks" },
+        { "value": "1", "name": "Lock on the right" },
+        { "value": "2", "name": "Lock on the left" },
+        { "value": "3", "name": "Locks on left and right" }
+      ],
+      "name": "Presence and number of motorised locks" 
+    },
+    "2451": {
+      "id": "Option mode dynamique sport",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: dynamic sport mode" 
+    },
+    "243A": {
+      "id": "Fonction d'assistance de freinage conducteur par la partie hydraulique",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Driver braking assistance function via the hydraulic system" 
+    },
+    "249C": {
+      "id": "DIFFERENTIATION OF THE CLIMATE CONTROL CALIBRATION FILE USED",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "0", "name": "Not for Korea" },
+        { "value": "1", "name": "For Korea" }
+      ],
+      "name": "Climate Control Calibration"
     }
   }
 }
