@@ -19,16 +19,19 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent
-from PySide6.QtWidgets import QComboBox
+from PySide6.QtGui import QKeyEvent, QAction, QIcon, QPalette
+from PySide6.QtCore import Qt, Slot, QEvent, QSize, QPoint
+from PySide6.QtWidgets import QComboBox, QMenu
 
 from i18n import i18n
+import PyPSADiagGUI
 
 class EcuZoneComboBox(QComboBox):
     """
     """
-    value = 0
+    initialValue = 0
+    newValue = 0
+    style = ""
     zoneObject = {}
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
@@ -47,6 +50,37 @@ class EcuZoneComboBox(QComboBox):
                 # Store as string with "h:" prefix for hex values
                 self.addItem(name, "h:" + paramObject["value"])
         self.setCurrentIndex(0)
+
+        # Notify changes, to change color if changed
+        self.currentIndexChanged.connect(self.indexChanged)
+
+        # Make Undo possible
+        self.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.customContextMenuRequested.connect(self.contextMenu)
+
+        # Save current style-sheet
+        self.style = self.styleSheet()
+
+    @Slot()
+    def indexChanged(self, index):
+        if index != self.newValue:
+            self.newValue = index
+
+        if self.newValue == self.initialValue:
+            self.setStyleSheet(self.style)
+        else:
+            self.setStyleSheet("combobox-popup: 3; background-color: rgb(42, 130, 218)")
+
+    @Slot()
+    def contextMenu(self, pos: QPoint):
+        contextMenu = QMenu(self)
+        undoIcon = QIcon.fromTheme(QIcon.ThemeIcon.EditUndo)
+        undoAction = QAction(undoIcon, i18n().tr("&Undo"), contextMenu)
+        contextMenu.addAction(undoAction)
+
+        action = contextMenu.exec_(self.mapToGlobal(pos))
+        if action == undoAction:
+            self.setCurrentIndex(self.initialValue)
 
     def getItemDataAsInt(self, index: int) -> int:
         """Convert stored string data back to integer"""
@@ -87,11 +121,11 @@ class EcuZoneComboBox(QComboBox):
         return 1
 
     def setCurrentIndex(self, val):
-        self.value = val;
+        self.initialValue = val;
         super().setCurrentIndex(val)
 
-    def isComboBoxChanged(self, virginWrite: bool()):
-        return self.isEnabled() and not(self.itemReadOnly) and self.value != self.currentIndex()
+    def isComboBoxChanged(self, virginWrite: bool):
+        return self.isEnabled() and not(self.itemReadOnly) and self.initialValue != self.currentIndex()
 
     def getValuesAsCSV(self):
         value = "Disabled"
@@ -101,10 +135,10 @@ class EcuZoneComboBox(QComboBox):
         return value
 
     def clearZoneValue(self):
-        value = 0
+        self.initialValue = 0
         self.setCurrentIndex(0)
 
-    def getZoneAndHex(self, virginWrite: bool()):
+    def getZoneAndHex(self, virginWrite: bool):
         value = "None"
         if self.isComboBoxChanged(virginWrite):
             index = self.currentIndex()

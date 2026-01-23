@@ -22,7 +22,7 @@
 import json
 import os
 from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent
+from PySide6.QtCore import Qt, QEvent, Slot
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -31,14 +31,32 @@ class EcuZoneLineEdit(QLineEdit):
     """
     zoneObject = {}
     valueType = ""
-    initialValue = ""
+    initialLineValue = ""
+    newLineLineValue = ""
     initialRaw = ""
+    style = ""
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.itemReadOnly = readOnly
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
+
+        # Notify changes, to change color if changed
+        self.textEdited.connect(self.textChange)
+
+        # Save current style-sheet
+        self.style = self.styleSheet()
+
+    @Slot()
+    def textChange(self, text):
+        if text != self.newLineLineValue:
+            self.newLineLineValue = text
+
+        if self.newLineLineValue == self.initialLineValue:
+            self.setStyleSheet(self.style)
+        else:
+            self.setStyleSheet("background-color: rgb(42, 130, 218)")
 
     def event(self, event: QEvent):
         if event.type() == QEvent.KeyPress:
@@ -64,14 +82,14 @@ class EcuZoneLineEdit(QLineEdit):
         return 1
 
     def __setText(self, val):
-        self.initialValue = val;
+        self.initialLineValue = val;
         super().setText(val)
 
     def updateText(self, val):
         super().setText(val)
 
-    def isLineEditChanged(self, virginWrite: bool()):
-        return self.isEnabled() and not(self.itemReadOnly) and (self.initialValue != self.text() or virginWrite)
+    def isLineEditChanged(self, virginWrite: bool):
+        return self.isEnabled() and not(self.itemReadOnly) and (self.initialLineValue != self.text() or virginWrite)
 
     def __convertZoneData(self):
         if self.valueType == "string_ascii":
@@ -92,12 +110,12 @@ class EcuZoneLineEdit(QLineEdit):
         return "Disabled"
 
     def clearZoneValue(self):
-        valueType = ""
-        initialValue = ""
-        initialRaw = ""
+        self.initialLineValue = ""
+        self.valueType = ""
+        self.initialRaw = ""
         self.clear()
 
-    def getZoneAndHex(self, virginWrite: bool()):
+    def getZoneAndHex(self, virginWrite: bool):
         value = "None"
         if self.isLineEditChanged(virginWrite):
             return self.__convertZoneData()

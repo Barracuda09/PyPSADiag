@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, Slot
 from PySide6.QtWidgets import QCheckBox
 
 
@@ -27,12 +27,30 @@ class EcuZoneCheckBox(QCheckBox):
     """
     """
     initialValue = 0
+    newValue = 0
+    style = ""
     zoneObject = {}
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneCheckBox, self).__init__(parent)
         self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
+
+        # Notify changes, to change color if changed
+        self.checkStateChanged.connect(self.stateChange)
+
+        # Save current style-sheet
+        self.style = self.styleSheet()
+
+    @Slot()
+    def stateChange(self, state):
+        if state != self.newValue:
+            self.newValue = state
+
+        if self.newValue == self.initialValue or self.initialValue == 0:
+            self.setStyleSheet(self.style)
+        else:
+            self.setStyleSheet("background-color: rgb(42, 130, 218)")
 
     def getDescriptionName(self):
         return self.zoneObject["name"]
@@ -47,7 +65,7 @@ class EcuZoneCheckBox(QCheckBox):
         self.initialValue = val;
         super().setCheckState(val)
 
-    def isCheckBoxChanged(self, virginWrite: bool()):
+    def isCheckBoxChanged(self, virginWrite: bool):
         return self.isEnabled() and not(self.itemReadOnly) and self.initialValue != 0 and self.initialValue != self.checkState()
 
     def getValuesAsCSV(self):
@@ -60,10 +78,10 @@ class EcuZoneCheckBox(QCheckBox):
         return value
 
     def clearZoneValue(self):
-        initialValue = 0
+        self.initialValue = 0
         self.setCheckState(Qt.Unchecked)
 
-    def getZoneAndHex(self, virginWrite: bool()):
+    def getZoneAndHex(self, virginWrite: bool):
         value = "None"
         if "mask" in self.zoneObject:
             print("EcuZoneCheckBox.getZoneAndHex(..) has mask?")
