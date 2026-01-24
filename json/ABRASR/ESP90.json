@@ -251,6 +251,10 @@
                         "value": "BFFFFFFFFFFFFFFFFFFF"
                     },
                     {
+                        "name": "Peugeot 508 (R8)",
+                        "value": "FF7FFFFFFFFFFFFFFFFF"
+                    },
+                    {
                         "name": "Peugeot 508 (R8) 4x2 Plug-in Hybrid",
                         "value": "FFFFFEFFFFFFFFFFFFFF"
                     },
@@ -277,6 +281,10 @@
                     {
                         "name": "Peugeot Partner (K9) Restyle",
                         "value": "FFFFFFFFFFEFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot Rifter (K9)",
+                        "value": "FFFFFFFFFFF7FFFFFFFF"
                     }
                 ]
             },
@@ -367,8 +375,16 @@
                         "value": "DFFFFFFFFFFF"
                     },
                     {
+                        "name": "215/65R16",
+                        "value": "FFFFFFF7FFFF"
+                    },
+                    {
                         "name": "205/45R17",
                         "value": "FFF7FFFFFFFF"
+                    },
+                    {
+                        "name": "215/55R17",
+                        "value": "BFFFFFFFFFFF"
                     },
                     {
                         "name": "215/60R17",
