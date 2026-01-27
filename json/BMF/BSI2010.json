@@ -462,21 +462,6 @@
       ],
       "name": "Security alarm volume control system"
     },
-    "2307": {
-      "id": "CFG_BZC_BSI_PRESENCE_NB_TO_000",
-      "tab": "security",
-      "byte": 0,
-      "type": "hex",
-      "form_type": "combobox",
-      "mask": "11111111",
-      "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "1 hatch" },
-        { "value": "2", "name": "2 hatch" },
-        { "value": "3", "name": "3 hatch" }
-      ],
-      "name": "The presence and number of hatches in the roof"
-    },
     "2308": {
       "id": "LID_23_36_4_0",
       "tab": "other",
@@ -3275,7 +3260,7 @@
         { "value": "2", "name": "Acquisition by the navigation" },
         { "value": "3", "name": "Acquisition by the multifunction video camera and by the navigation" }
       ],
-      "name": "The presence and type of road signalling acquisition"
+      "name": "The presence and type of road speed signs acquisition"
     },
     "2416": {
       "id": "CFG_DY1_BSI_PRESENCE_PORTE_ARD_000",
@@ -3753,7 +3738,7 @@
         { "value": "2", "name": "Radar & Camera" },
         { "value": "3", "name": "Camera" }
       ],
-      "name": "Type of technologie for ACC"
+      "name": "Type of technology for ACC"
     },
     "245A": {
       "id": "CFG_EOW_BSI_PILOTAGE_RELAIS_DA_000",
@@ -5102,6 +5087,20 @@
       "form_type": "checkbox",
       "name": "CFG_BK2_BSI_NS_PRESECEKMLUSBOX_000: Presence of a hands-free kit or a unit for USB connection (1st fit)"
     },
+    "2280": {
+      "id": "Type of service",
+      "tab": "threshold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "0", "name": "Distance-dependent maintenance" },
+        { "value": "1", "name": "Distance-based servicing weighted by time" },
+        { "value": "2", "name": "Distance and timebased servicing" }
+      ],
+      "name": "Type of service"
+    },
     "2281": {
       "id": "Total period (time) before servicing (threshold)",
       "tab": "threshold",
@@ -5114,20 +5113,6 @@
         { "value": "18", "name": "24 months" }
       ],
       "name": "Total period(time) before servicing (threshold)"
-    },
-    "2283": {
-      "id": "First maintenance threshold",
-      "tab": "threshold",
-      "byte": 0,
-      "type": "hex",
-      "form_type": "combobox",
-      "mask": "11111111",
-      "params": [
-        { "value": "00", "name": "0KM" },
-        { "value": "7D", "name": "Electric-12500KM" },
-        { "value": "32", "name": "Petrol-5000KM" }
-      ],
-      "name": "First maintenance threshold"
     },
     "2282": {
       "id": "Servicing threshold (marketing)",
@@ -5149,6 +5134,20 @@
       ],
       "name": "Servicing threshold (marketing)"
     },
+    "2283": {
+      "id": "First maintenance threshold",
+      "tab": "threshold",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "00", "name": "0KM" },
+        { "value": "7D", "name": "Electric-12500KM" },
+        { "value": "32", "name": "Petrol-5000KM" }
+      ],
+      "name": "First maintenance threshold"
+    },
     "2284": {
       "id": "Duration before first service",
       "tab": "threshold",
@@ -5156,20 +5155,6 @@
       "type": "int",
       "form_type": "string",
       "name": "Duration before first service"
-    },
-    "2280": {
-      "id": "Type of service",
-      "tab": "threshold",
-      "byte": 0,
-      "type": "hex",
-      "form_type": "combobox",
-      "mask": "11111111",
-      "params": [
-        { "value": "0", "name": "Distance-dependent maintenance" },
-        { "value": "1", "name": "Distance-based servicing weighted by time" },
-        { "value": "2", "name": "Distance and timebased servicing" }
-      ],
-      "name": "Type of service"
     },
     "2289": {
       "id": "Selection of the servicing managed by the engine",
@@ -5200,8 +5185,93 @@
       ],
       "name": "Presence and number of sunroofs" 
     },
+    "243A": {
+      "id": "CFG_ED0_BSI_OPTION_HBB_HBC_000",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Driver braking assistance function via the hydraulic system" 
+    },
+    "243C": {
+      "id": "Option: Royal Mail",
+      "tab": "security",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Royal Mail" 
+    },
+    "2451": {
+      "id": "Option mode dynamique sport",
+      "tab": "comfort",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: dynamic sport mode" 
+    },
+    "2468": {
+      "id": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "0", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_00" },
+        { "value": "1", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_01" }
+      ],
+      "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001 ???" 
+    },
+    "2469": {
+      "id": "CFG_EW8_ACQUI_PRES_PASS_AV_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EW8_ACQUI_PRES_PASS_AV_000" 
+    },
+    "246A": {
+      "id": "CFG_EW9_BSI_OPT_PASS_AVC_DETECT_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "CFG_EW9_BSI_OPT_PASS_AVC_DETECT_000" 
+    },
+    "246C": {
+      "id": "CFG_EWB_BSI_PRESENCE_ETSR_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Advanced road signs detection" 
+    },
+    "246E": {
+      "id": "CFG_BHH_BSI_PRESENCE_BPGA_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Presence of a supply protection and management unit (BPGA)" 
+    },
+    "246F": {
+      "id": "CFG_EWE_BSI_OPTION_ECO_COACHING_000",
+      "tab": "drive_assist",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Eco Coaching" 
+    },
+    "2470": {
+      "id": "CFG_EVF_BSI_OPTION_ACPK_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "bool",
+      "form_type": "checkbox",
+      "name": "Option: Automatic City Park Assist ???" 
+    },
     "2477": {
-      "id": "Presence and number of motorised locks",
+      "id": "CFG_EYF_BSI_STRIKER_SLIDING_DOOR_000",
       "tab": "security",
       "byte": 0,
       "type": "hex",
@@ -5213,23 +5283,36 @@
         { "value": "2", "name": "Lock on the left" },
         { "value": "3", "name": "Locks on left and right" }
       ],
-      "name": "Presence and number of motorised locks" 
+      "name": "Presence and number of motorised locks on sliding doors" 
     },
-    "2451": {
-      "id": "Option mode dynamique sport",
-      "tab": "comfort",
+    "247C": {
+      "id": "Version de l'algorithme de diagnostique du contacteur frein",
+      "tab": "unsorted",
+      "name": "Brake switch diagnostic algorithm version",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "247D": {
+      "id": "CFG_EZG_BSI_PRESENCE_ML_OUVRANTS_000",
+      "tab": "unsorted",
+      "byte": 0,
+      "type": "hex",
+      "form_type": "combobox",
+      "mask": "11111111",
+      "params": [
+        { "value": "00", "name": "CFG_EZG_BSI_PRESENCE_ML_OUVRANTS_000_00" },
+        { "value": "1F", "name": "CFG_EZG_BSI_PRESENCE_ML_OUVRANTS_000_1F" }
+      ],
+      "name": "Indicates the presence of hands-free functionality at each opening" 
+    },
+    "2491": {
+      "id": "CFG_FGK_BSI_OPT_LIGHTING_ANIMAT_000",
+      "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: dynamic sport mode" 
-    },
-    "243A": {
-      "id": "Fonction d'assistance de freinage conducteur par la partie hydraulique",
-      "tab": "comfort",
-      "byte": 0,
-      "type": "bool",
-      "form_type": "checkbox",
-      "name": "Driver braking assistance function via the hydraulic system" 
+      "name": "Option: Ambient Lighting Animation ???" 
     },
     "249C": {
       "id": "DIFFERENTIATION OF THE CLIMATE CONTROL CALIBRATION FILE USED",
