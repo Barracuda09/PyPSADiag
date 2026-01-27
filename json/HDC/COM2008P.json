@@ -1,0 +1,233 @@
+{
+  "name": "COM2008P",
+  "tx_id": "742",
+  "rx_id": "642",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "****",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "0101": {
+      "id": "Configuration_0101",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0102": {
+      "id": "Configuration_0102",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0103": {
+      "id": "Configuration_0103",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0104": {
+      "id": "Configuration_0104",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0105": {
+      "id": "Configuration_0105",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0106": {
+      "id": "Configuration_0106",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0108": {
+      "id": "Configuration_0108",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0109": {
+      "id": "Configuration_0109",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0110": {
+      "id": "Configuration_0110",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0112": {
+      "id": "Configuration_0112",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0113": {
+      "id": "Configuration_0113",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0114": {
+      "id": "Configuration_0114",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0115": {
+      "id": "Configuration_0115",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0116": {
+      "id": "Configuration_0116",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0117": {
+      "id": "Configuration_0117",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0118": {
+      "id": "Configuration_0118",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0119": {
+      "id": "Configuration_0119",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0120": {
+      "id": "Configuration_0120",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0121": {
+      "id": "Configuration_0121",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0122": {
+      "id": "Configuration_0122",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0124": {
+      "id": "Configuration_0124",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0125": {
+      "id": "Configuration_0125",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0126": {
+      "id": "Configuration_0126",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0127": {
+      "id": "Configuration_0127",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0128": {
+      "id": "Configuration_0128",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0129": {
+      "id": "Configuration_0129",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0130": {
+      "id": "Configuration_0130",
+      "tab": "tele",
+      "name": "?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
