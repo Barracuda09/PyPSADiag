@@ -6,7 +6,6 @@ This application is as is, and you use it **at your own risk**.<br/>
 I am not responsible for any damages or injuries resulting from the use of this application.<br/>
 **VERY IMPORTANT:** This application is for **educational** purposes only **and should be used with care!.**
 
-If you need some help, try to look at the [Wiki](https://github.com/Barracuda09/PyPSADiag/wiki)
 
 -------
 
@@ -23,6 +22,11 @@ Currently supporting:
 
 What I would like to support:
 - More ECU JSON Files
+
+Need Help?
+-------
+If you need some help, try to look at the [Wiki](https://github.com/Barracuda09/PyPSADiag/wiki)
+
 
 Help the Project
 -------
@@ -87,7 +91,7 @@ Make Translations
 
 For example to make a translation for Dutch use this command:
 - `i18n/Languages.json` Add the language code and name
-- `i18n/flags/nl.png` Add the flags for this language
+- `i18n/flags/nl.png` Add the .PNG flag for this language (About 128 x 84 Pixels)
 - `python buildi18n.py --lang nl` --> Build the qt.ts file
 - `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate
 - `pyside6-linguist ./i18n/PyPSADiag_translated_nl.qt.ts` --> Correct translation if required
