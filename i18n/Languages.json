@@ -6,5 +6,6 @@
     "pl": {"name": "Polski"},
     "uk": {"name": "Українська"},
     "ru": {"name": "Русский"},
-    "gr": {"name": "Greek"}
+    "gr": {"name": "Greek"},
+    "tr": {"name": "Türkçe" }
 }
