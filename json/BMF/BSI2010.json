@@ -5191,7 +5191,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Driver braking assistance function via the hydraulic system" 
+      "name": "Hydraulic brake assist" 
     },
     "243C": {
       "id": "Option: Royal Mail",
@@ -5244,7 +5244,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Advanced road signs detection" 
+      "name": "Extended Traffic Signs Recognition" 
     },
     "246E": {
       "id": "CFG_BHH_BSI_PRESENCE_BPGA_000",
