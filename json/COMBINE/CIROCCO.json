@@ -1746,15 +1746,6 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "CFG_E6W_CMB_RESERVED_CONFIG3_CFG_000",
-                    "name_original": "E6W",
-                    "name": "Hidden Mode",
-                    "byte": 2,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
                     "extra_name": "CFG_E78_CMB_PERSO_POS_001",
                     "name_original": "CFG_E78_CMB_PERSO_POS_001",
                     "name": "Personal Mode position",
@@ -1808,14 +1799,6 @@
                     "name": "Computer Mode position",
                     "byte": 4,
                     "mask": "00011100",
-                    "form_type": "string"
-                },
-                {
-                    "extra_name": "CFG_E73_CMB_RESERVED_CONFIG3_POS_001",
-                    "name_original": "CFG_E73_CMB_RESERVED_CONFIG3_POS_001",
-                    "name": "Hidden Mode position",
-                    "byte": 4,
-                    "mask": "0000001110000000",
                     "form_type": "string"
                 },
                 {
