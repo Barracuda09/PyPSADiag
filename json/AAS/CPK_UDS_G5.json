@@ -18,14 +18,6 @@
     "E2": "AAS Metasystem"
   },
   "zones": {
-    "2100": {
-      "id": "Configuration_Group_Data_List",
-      "tab": "tele",
-      "name": "Configuration group data list",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
     "2101": {
       "id": "Configuration_Group_Data_Values",
       "name": "Configuration group data values",
