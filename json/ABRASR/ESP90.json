@@ -275,6 +275,10 @@
                         "value": "FFFFFFFFFFFEFFFFFFFF"
                     },
                     {
+                        "name": "Opel Corsa-e (P2JO)",
+                        "value": "FFFFFFFFFFBFFFFFFFFF"
+                    },
+                    {
                         "name": "Peugeot 3008 (P84) Restyle 4X2 Plug-in Hybrid",
                         "value": "FDFFFFFFFFFFFFFFFFFF"
                     },
@@ -417,6 +421,10 @@
                     {
                         "name": "235/50R19",
                         "value": "EFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "???",
+                        "value": "FFFFFFFBFFFF"
                     }
                 ]
             },
