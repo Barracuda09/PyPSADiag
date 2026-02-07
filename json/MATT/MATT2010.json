@@ -12,6 +12,7 @@
   },
   "coding": "true",
   "errors": "true",
+  "dtc_lookup": "data/dtc/MATT2010.json",
   "include_zone_object": "./data/IdentUDSECU.json",
   "zones": {
     "2100": {
@@ -35,7 +36,8 @@
       "byte": 0,
       "type": "bool",
       "mask": "01000000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BKP_MATT_CONF_AUDIO_000",
@@ -48,11 +50,12 @@
       },
       {
       "id": "CFG_BKQ_MATT_CONF_BVA_BVMP_000",
-      "name": "Gearbox transmission indicator (for display on a separate screen or in the upper right corner)",
+      "name": "Presence of Auto gearbox position indicator",
       "byte": 0,
       "type": "bool",
       "mask": "00010000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BKR_MATT_CONF_LVV_000",
@@ -60,7 +63,8 @@
       "byte": 0,
       "type": "bool",
       "mask": "00001000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BKS_MATT_CONF_MAINT_000",
@@ -86,7 +90,8 @@
       "byte": 0,
       "type": "bool",
       "mask": "00000001",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BKV_MATT_CONF_NAV_000",
@@ -139,7 +144,8 @@
       "byte": 1,
       "type": "bool",
       "mask": "00000100",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BVT_MATT_CONF_STT_000",
@@ -156,7 +162,8 @@
       "byte": 1,
       "type": "bool",
       "mask": "00000001",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BL2_MATT_CONF_FCT_DESIGNATEUR_000",
@@ -164,7 +171,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "10000000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BL3_MATT_CONF_MENU_TEMP_000",
@@ -172,7 +180,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "01000000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BP3_MATT_MENU_PARAM_UL_000",
@@ -180,7 +189,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "00100000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BL5_MATT_CONF_PAGE_VIDE_000",
@@ -188,7 +198,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "00010000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BQ2_MATT_CONF_MENU_PRECOND_000",
@@ -196,7 +207,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "00001000",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BQB_MATT_CONF_MENU_HARMONIE_000",
@@ -213,7 +225,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "00000010",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BOZ_MATT_MENU_TCFG_000",
@@ -221,7 +234,8 @@
       "byte": 2,
       "type": "bool",
       "mask": "00000001",
-      "form_type": "checkbox"
+      "form_type": "checkbox",
+      "available_logic": "active_high"
       },
       {
       "id": "CFG_BQC_MATT_CONF_HARMONIE_000",
@@ -253,16 +267,20 @@
         "byte": 3,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BPZ_MATT_CONF_TYPE_CLE_000",
-        "name": "Presence of Start/Stop engine button",
+        "name": "Type of ignition (key or Start/Stop button)",
         "byte": 3,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - Key"},
+          { "mask": "00000100", "name": "1 - Start/Stop button"}
+        ]
       },
       {
         "id": "CFG_DBQ_MATT_CONF_DSG_CHECK_000",
@@ -270,7 +288,8 @@
         "byte": 3,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_D0B_MATT_CONF_GSI_001",
@@ -278,7 +297,8 @@
         "byte": 3,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BQD_MATT_CONF_SILHOUETTE_000",
@@ -288,10 +308,10 @@
         "mask": "11100000",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "hatchback"},
-          { "mask": "00100000", "name": "sedan"},
-          { "mask": "01000000", "name": "wagon"},
-          { "mask": "01100000", "name": "others"}
+          { "mask": "00000000", "name": "Hatchback"},
+          { "mask": "00100000", "name": "Sedan"},
+          { "mask": "01000000", "name": "Wagon"},
+          { "mask": "01100000", "name": "Others"}
         ]
       },
       {
@@ -300,7 +320,8 @@
         "byte": 4,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BOX_MATT_ITEM_ACCESJDA_TCFG_000",
@@ -308,7 +329,8 @@
         "byte": 4,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BOW_MATT_ITEM_PERSOCMB_TCFG_000",
@@ -316,7 +338,8 @@
         "byte": 4,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BQ1_MATT_ITEM_COLORCMB_TCFG_000",
@@ -324,7 +347,8 @@
         "byte": 4,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BOU_MATT_ITEM_ECLAIPLAF_TCFG_000",
@@ -332,7 +356,8 @@
         "byte": 4,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BQ3_MATT_CONF_ARTIV_ACC_000",
@@ -342,10 +367,10 @@
         "mask": "11000000",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "00 - ???"},
-          { "mask": "01000000", "name": "01 - ???"},
-          { "mask": "10000000", "name": "10 - ???"},
-          { "mask": "11000000", "name": "11 - ???"}
+          { "mask": "00000000", "name": "00 - All hidden"},
+          { "mask": "01000000", "name": "01 - ARTIV displayed"},
+          { "mask": "10000000", "name": "10 - ACC displayed"},
+          { "mask": "11000000", "name": "11 - Unused"}
         ]
       },
       {
@@ -354,7 +379,8 @@
         "byte": 5,
         "type": "bool",
         "mask": "00100000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_BOT_MATT_MENU_SONS_000",
@@ -381,15 +407,15 @@
         "mask": "00000110",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "Masked"},
-          { "mask": "00000010", "name": "2 Pages"},
-          { "mask": "00000100", "name": "Page 1"},
-          { "mask": "00000110", "name": "Page 2"}
+          { "mask": "00000000", "name": "Disabled"},
+          { "mask": "00000010", "name": "Enabled - Page 1 & 2"},
+          { "mask": "00000100", "name": "Enabled - Page 1"},
+          { "mask": "00000110", "name": "Enabled - Page 2"}
         ]
       },
       {
         "id": "CFG_D2V_MATT_PRES_AAS_000",
-        "name": "Presence of obstacle detection system display",
+        "name": "Presence of parking aid display",
         "byte": 5,
         "type": "bool",
         "mask": "00000001",
@@ -402,7 +428,8 @@
         "byte": 6,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_DC1_MATT_CONF_VIT_CONSEILLE_000",
@@ -419,7 +446,8 @@
         "byte": 6,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "6_3",
@@ -427,7 +455,8 @@
         "byte": 6,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "6_7",
@@ -435,7 +464,8 @@
         "byte": 6,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_D8H_MATT_MARQUE_000",
@@ -489,7 +519,8 @@
         "byte": 7,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "7_6",
@@ -498,7 +529,8 @@
         "byte": 7,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "7_7",
@@ -507,7 +539,8 @@
         "byte": 7,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_E12_MATT_TYPE_EXPORT_000",
@@ -530,7 +563,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "10000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_EC4_MATT_CONF_ECO_COACHING_000",
@@ -539,7 +573,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "01000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "8_2",
@@ -548,7 +583,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00100000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_EC5_MATT_CONF_ALARM_GULF_COUN_000",
@@ -557,7 +593,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "CFG_EC7_MATT_CONF_ACC_000",
@@ -566,7 +603,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "8_5",
@@ -575,7 +613,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "8_6",
@@ -584,7 +623,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "8_7",
@@ -593,7 +633,8 @@
         "byte": 8,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       }
       ]
     },
@@ -604,20 +645,20 @@
       "form_type": "multi",
       "params": [
       {
-        "id": "checkbox_byte0F8hbit0",
-        "name": "Gear indicator in the upper right corner?",
+        "id": "CONF_ORIENT_DESIGNATEUR",
+        "name": "Orientation",
         "byte": 0,
         "type": "bool",
         "mask": "10000000",
         "form_type": "combobox",
         "params": [
-          { "mask": "00000000", "name": "0 - ?"},
-          { "mask": "10000000", "name": "1 - ?"}
+          { "mask": "00000000", "name": "0 - Vertical"},
+          { "mask": "10000000", "name": "1 - Horizontal"}
         ]
       },
       {
-        "id": "checkbox_byte0F8hbit1",
-        "name": "OK - Gear indicator in the upper right corner",
+        "id": "CONF_MODE_AFF_RAP",
+        "name": "Gear indicator in the upper right corner",
         "byte": 0,
         "type": "bool",
         "mask": "01000000",
@@ -628,7 +669,7 @@
         ]
       },
       {
-        "id": "checkbox_byte0F8hbit2",
+        "id": "CONF_EMPL_INF_INST",
         "name": "Instant consumption and power reserve in the bottom line",
         "byte": 0,
         "type": "bool",
@@ -636,32 +677,37 @@
         "form_type": "checkbox"
       },
       {
-        "id": "checkbox_byte0F8hbit3",
-        "name": "Presence of cruise, limiter, gear pointer in upper row",
+        "id": "CONF_EMPL_INF_LRVV",
+        "name": "Cruise control and limiter display position",
         "byte": 0,
         "type": "bool",
         "mask": "00010000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - Z1"},
+          { "mask": "00010000", "name": "1 - Z5 (upper row)"}
+        ]
+      },
+      {
+        "id": "CONF_LUMI",
+        "name": "Show popup when changing brightness",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00001000",
         "form_type": "checkbox",
         "available_logic": "active_high"
       },
       {
-        "id": "checkbox_byte0F8hbit4",
-        "name": "0-4 UNKONOWN",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox"
-      },
-      {
-        "id": "checkbox_byte0F8hbit5",
-        "name": "0-5 UNKONOWN",
+        "id": "CONF_PAGE_ACCUEIL",
+        "name": "Startup page displayed",
         "byte": 0,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
-        "id": "checkbox_byte0F8hbit6",
+        "id": "CONF_TACHY",
         "name": "Presence of Current speed display (main screen)",
         "byte": 0,
         "type": "bool",
@@ -670,52 +716,62 @@
         "available_logic": "active_high"
       },
       {
-        "id": "checkbox_byte0F8hbit7",
-        "name": "The transfer pointer in the upper right corner (???)",
+        "id": "CONF_AFF_CHIFFRE_RAP",
+        "name": "Gear number display style",
         "byte": 0,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
-      },
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - Simple (D or A or M only)"},
+          { "mask": "00000001", "name": "1 - Extended (Dx or Ax or Mx where x is the current gear)"}
+        ]      },
       {
-        "id": "checkbox_byte0F9hbit0",
-        "name": "byte0F9hbit0",
+        "id": "CONF_ACCUEIL_ANIMEE",
+        "name": "Animated startup page enabled",
         "byte": 1,
         "type": "bool",
         "mask": "10000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
-        "id": "checkbox_byte0F9hbit1",
-        "name": "byte0F9hbit1",
+        "id": "CONF_EMPL_INF_BV",
+        "name": "Gearbox information location",
         "byte": 1,
         "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox"
+        "mask": "01100000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "00 - Z0"},
+          { "mask": "00100000", "name": "01 - Z5"},
+          { "mask": "01000000", "name": "10 - Z0_Z5"},
+          { "mask": "01100000", "name": "11 - Reserved"}
+        ]
       },
       {
-        "id": "checkbox_byte0F9hbit2",
-        "name": "Presence of Gear selector display",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox"
-      },
-      {
-        "id": "checkbox_byte0F9hbit3",
-        "name": "byte0F9hbit3",
+        "id": "CONF_EMPL_INF_ODO",
+        "name": "Odometer information display location",
         "byte": 1,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - Displayed permanently (Z5)"},
+          { "mask": "00010000", "name": "1 - On tachometer page (Z0)"}
+        ]
       },
       {
-        "id": "checkbox_byte0F9hbit4",
-        "name": "byte0F9hbit4",
+        "id": "CONF_PAGE_DEM",
+        "name": "Page after startup",
         "byte": 1,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "0 - Last page displayed"},
+          { "mask": "00001000", "name": "1 - Instant info page"}
+        ]
       },
       {
         "id": "checkbox_byte0F9hbit5",
@@ -723,7 +779,8 @@
         "byte": 1,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0F9hbit6",
@@ -731,7 +788,8 @@
         "byte": 1,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0F9hbit7",
@@ -739,7 +797,8 @@
         "byte": 1,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit0",
@@ -747,7 +806,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "10000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit1",
@@ -755,7 +815,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "01000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit2",
@@ -763,7 +824,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00100000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit3",
@@ -771,7 +833,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit4",
@@ -779,7 +842,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit5",
@@ -787,7 +851,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit6",
@@ -795,7 +860,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       {
         "id": "checkbox_byte0FAhbit7",
@@ -803,7 +869,8 @@
         "byte": 2,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       }
       ]
     }
