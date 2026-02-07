@@ -56,6 +56,10 @@ def processJSONFile(pathIn: str, i18nList: []):
             elif line.find("\"name\"") == -1:
                 continue
 
+            # Check if the line has more then CR/LF
+            if len(line) <= 2:
+                continue
+
             # We found an i18n string we need to mark
             fileDict = {}
             fileDict["file"] = pathIn

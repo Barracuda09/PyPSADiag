@@ -82,7 +82,10 @@ class FileTranslater:
                 print(f"[DONE] {translation.text}")
                 continue
 
-            txtTranslated = translator.translate_text(str(txt), language)
+            txtTranslated = None
+            while txtTranslated == None:
+                txtTranslated = translator.translate_text(str(txt), language)
+
             if txtTranslated != None:
                 translation.text = txtTranslated
                 del translation.attrib["type"]

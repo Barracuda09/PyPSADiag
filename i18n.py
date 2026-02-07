@@ -28,7 +28,10 @@ class i18n():
     def translate_text(self, text, dest: str):
         #self.translator = GoogleTranslator(service_urls=['translate.google.com'])
         self.translator = GoogleTranslator()
-        return asyncio.run(self.__async_translate_text(text, dest))
+        try:
+            return asyncio.run(self.__async_translate_text(text, dest))
+        except:
+            return None
 
     async def __async_translate_text(self, text, dest: str):
         resultList = await self.translator.translate(text, dest=dest, src="en")
