@@ -24,22 +24,6 @@
       "type": "raw",
       "form_type": "string"
     },
-    "0101": {
-      "id": "Configuration_Group_Data_List_0101",
-      "tab": "tele",
-      "name": "Configuration group data list 0101",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "2100": {
-      "id": "Configuration_Group_Data_List_2100",
-      "tab": "tele",
-      "name": "Configuration group data list 2100",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
     "2101": {
       "id": "Configuration_Group_Data_List_2101",
       "tab": "tele",
@@ -294,14 +278,6 @@
           }
         ]
       }
-    },
-    "2102": {
-      "id": "Configuration_Group_Data_List_2102",
-      "tab": "tele",
-      "name": "Configuration group data list 2102",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
     }
   }
 }
