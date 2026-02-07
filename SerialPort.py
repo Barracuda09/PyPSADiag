@@ -61,27 +61,32 @@ class SerialPort():
 
     def write(self, data):
         #print(data)
+        self.serialPort.reset_input_buffer()
         self.serialPort.write(data)
+        self.serialPort.flush()
 
     def readRawData(self):
         data = bytearray()
-        while True:
-            dataLen = max(1, min(250, self.serialPort.inWaiting()))
-            subData = self.serialPort.read(dataLen)
-            if len(subData) > 0:
-                data.extend(subData)
-                if data.find(b"\n") != -1:
-                    return data
+        end = time.monotonic() + self.serialPort.timeout
+
+        while time.monotonic() < end:
+            n = self.serialPort.in_waiting
+            if n:
+                data.extend(self.serialPort.read(n))
+                end = time.monotonic() + self.serialPort.timeout
+                if b"\n" in data:
+                    break
             else:
-                # Timeout
-                return data
+                time.sleep(0.01)
+
+        return data
 
     def readData(self):
         if self.simulation:
             return self.ecuSimulation.receive()
         else:
             data = self.readRawData()
-            if len(data) == 0:
+            if not data:
                 # Do not translate
                 return "Timeout"
 
