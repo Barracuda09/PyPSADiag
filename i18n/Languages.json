@@ -7,5 +7,6 @@
     "uk": {"name": "Українська"},
     "ru": {"name": "Русский"},
     "gr": {"name": "Greek"},
-    "tr": {"name": "Türkçe" }
+    "tr": {"name": "Türkçe" },
+    "es": {"name": "España" }
 }
