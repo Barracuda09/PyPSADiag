@@ -4,7 +4,10 @@
   "rx_id": "67C",
   "protocol": "kwp_hab",
   "key_type": "single",
-  "keys":  "DC3B",
+  "keys":  {
+    "key1": "DC3B",
+    "BSRF": "B7A9"
+  },
   "coding": true,
   "errors": true,
   "tabs": {
