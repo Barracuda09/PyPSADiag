@@ -41,7 +41,7 @@
                 {
                     "extra_name": "G49_IVI_GAUGE_BATT_SOC_DIGIT",
                     "name_original": "G49",
-                    "name": "Цифровой указатель уровня заряда тяговой аккумуляторной батареи",
+                    "name": "Digital indicator of the charge level of the traction battery",
                     "byte": 89,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -50,7 +50,7 @@
                 {
                     "extra_name": "G4A_IVI_GAUGE_EN_CLIM_EL_DIG",
                     "name_original": "G4A",
-                    "name": "Цифровой индикатор энергопотребления",
+                    "name": "Digital Energy Consumption Indicator",
                     "byte": 89,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -59,7 +59,7 @@
                 {
                     "extra_name": "GT9_IVI_REGUL_ADAS_GSR_V2",
                     "name_original": "GT9",
-                    "name": "Режим безопасности",
+                    "name": "Security Mode",
                     "byte": 103,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -77,7 +77,7 @@
                 {
                     "extra_name": "ENGINEERING_MODE",
                     "name_original": "DTR",
-                    "name": "Включить диагностический режим",
+                    "name": "Enable diagnostic mode",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -95,7 +95,7 @@
                 {
                     "extra_name": "G4Z_IVI_LVDS_LVDS_OUT_1",
                     "name_original": "G4Z",
-                    "name": "Сенсорный многофункциональный дисплей IVI",
+                    "name": "IVI Touchscreen Display",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -104,7 +104,7 @@
                 {
                     "extra_name": "G50_IVI_LVDS_LVDS_OUT_2",
                     "name_original": "G50",
-                    "name": "Сенсорный многофункциональный дисплей (EDGE Screen)",
+                    "name": "Touchscreen Display (EDGE Screen)",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -113,7 +113,7 @@
                 {
                     "extra_name": "G4Y_IVI_LVDS_LVDS_IN",
                     "name_original": "G4Y",
-                    "name": "Видеовход LVDS для камеры визуальной помощи при движении задним ходом 180°",
+                    "name": "LVDS Video Input for 180° Reverse Camera",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -122,7 +122,7 @@
                 {
                     "extra_name": "G0V_IVI_LVDS_OUT_4_HUD_EHUD",
                     "name_original": "G0V",
-                    "name": "Функция информационной панели в поле зрения водителя",
+                    "name": "Function of the information panel in the driver's field of view",
                     "byte": 0,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -131,7 +131,7 @@
                 {
                     "extra_name": "G0W_IVI_LVDS_OUT_4_3D_CLUST",
                     "name_original": "G0W",
-                    "name": "Приборная панель 3D",
+                    "name": "3D Dashboard",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -140,7 +140,7 @@
                 {
                     "extra_name": "GB9_IVI_LVDS_LVDS_OUT_3_OBJE",
                     "name_original": "GB9",
-                    "name": "Связь LVDS выход 3",
+                    "name": "LVDS Communication Output 3",
                     "byte": 0,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -158,7 +158,7 @@
                 {
                     "extra_name": "G8O_IVI_OPTION_RECO_ECRITURE",
                     "name_original": "G8O",
-                    "name": "Функция распознавания рукописного ввода",
+                    "name": "Handwriting Recognition Function",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -167,29 +167,29 @@
                 {
                     "extra_name": "G81_IVI_TYPE_SPEECH_RECOGNIT",
                     "name_original": "G81",
-                    "name": "Тип ввода для распознавания голоса",
+                    "name": "Input type for voice recognition",
                     "byte": 0,
                     "mask": "00000110",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Распознавание голоса с помощью смартфона"
+                            "name": "Voice recognition using a smartphone"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Распознавание голоса с помощью автомобиля"
+                            "name": "Voice Recognition Using a car"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Распознавание голоса с помощью автомобиля и смартфона"
+                            "name": "Voice recognition using a car and smartphone"
                         }
                     ]
                 },
                 {
                     "extra_name": "G7K_IVI_EMBEDDED_RECOGNITION",
                     "name_original": "G7K",
-                    "name": "Распознавание голоса в автономном режиме",
+                    "name": "Offline Voice Recognition",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -207,7 +207,7 @@
                 {
                     "extra_name": "G5L_IVI_OBC_STT",
                     "name_original": "G5L",
-                    "name": "Отображение счетчика функции Stop and Start во всплывающем окне узла бортового зарядного устройства / преобразователя напряжения постоянного тока на цифровой панели приборов",
+                    "name": "Display Stop and Start function counter in the on-board charger/DC converter node pop-up window on the digital instrument cluster",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -216,7 +216,7 @@
                 {
                     "extra_name": "G5K_IVI_OBC_PUSH",
                     "name_original": "G5K",
-                    "name": "Орган управления на рулевом колесе (стрелка влево), позволяющий закрыть всплывающее окно узла бортового зарядного устройства / преобразователя напряжения постоянного тока на цифровой панели приборов",
+                    "name": "Steering wheel control (left arrow) to close the on-board charger/DC converter module pop-up window on the digital instrument cluster.",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -225,7 +225,7 @@
                 {
                     "extra_name": "G5J_IVI_OBC_POPUPPAGE",
                     "name_original": "G5J",
-                    "name": "Отображение всплывающего окна узла бортового зарядного устройства / преобразователя напряжения постоянного тока на цифровой панели приборов",
+                    "name": "Display the on-board charger/DC converter node pop-up window on the digital instrument cluster",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -234,7 +234,7 @@
                 {
                     "extra_name": "G5I_IVI_OBC_PERMANENTPAGE",
                     "name_original": "G5I",
-                    "name": "Постоянное отображение страницы узла бортового зарядного устройства / преобразователя напряжения постоянного тока",
+                    "name": "Permanent display of the on-board charger/DC converter node page",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -243,7 +243,7 @@
                 {
                     "extra_name": "G5H_IVI_OBC",
                     "name_original": "G5H",
-                    "name": "Функция узла бортового зарядного устройства/преобразователя напряжения постоянного тока",
+                    "name": "On-Board Charger/DC Converter Unit Function",
                     "byte": 0,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -252,16 +252,16 @@
                 {
                     "extra_name": "G78_IVI_DAT_DG_UREA",
                     "name_original": "G78",
-                    "name": "Уровень раствора карбамида",
+                    "name": "Urea solution level",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "G75_IVI_DAT_DG_TYRES_PRES",
+                    "extra_name": "G75_IVI_DAT_DG_TIRES_PRES",
                     "name_original": "G75",
-                    "name": "Отображение давления в шинах",
+                    "name": "Tire Pressure Display",
                     "byte": 0,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -270,7 +270,7 @@
                 {
                     "extra_name": "G3V_IVI_ECOACH",
                     "name_original": "G3V",
-                    "name": "Вывод на дисплей режима вождения ECO",
+                    "name": "ECO driving mode display",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -279,7 +279,7 @@
                 {
                     "extra_name": "G5P_IVI_OIL_LEVEL",
                     "name_original": "G5P",
-                    "name": "Индикация уровня масла",
+                    "name": "Oil level indicator",
                     "byte": 1,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -288,7 +288,7 @@
                 {
                     "extra_name": "G52_IVI_MAINTENANCE",
                     "name_original": "G52",
-                    "name": "Вывод данных технического обслуживания",
+                    "name": "Maintenance Data Output",
                     "byte": 1,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -306,7 +306,7 @@
                 {
                     "extra_name": "G17_IVI_DAT_DG_ALARM",
                     "name_original": "G17",
-                    "name": "Показ предупреждающих сообщений",
+                    "name": "Show warning messages",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -315,7 +315,7 @@
                 {
                     "extra_name": "G18_IVI_ALARM_CLUSTER",
                     "name_original": "G18",
-                    "name": "Отображение предупреждающих сообщений на цифровой панели приборов",
+                    "name": "Display warning messages on the digital instrument cluster",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -333,7 +333,7 @@
                 {
                     "extra_name": "G7P_IVI_OPTION_BLUETOOTH",
                     "name_original": "G7P",
-                    "name": "Функция Bluetooth",
+                    "name": "Bluetooth function",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -351,40 +351,40 @@
                 {
                     "extra_name": "G74_IVI_TYPE_HUD",
                     "name_original": "G74",
-                    "name": "Доступность и тип блока отображения информации в поле зрения водителя",
+                    "name": "Availability and type of information display unit in the driver's field of view",
                     "byte": 0,
                     "mask": "11000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Доступен блок типа S_HUD"
+                            "name": "S_HUD type block available"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Доступен блок типа E_HUD"
+                            "name": "E_HUD type block available"
                         },
                         {
                             "mask": "10000000",
-                            "name": "Блок недоступен"
+                            "name": "Block unavailable"
                         }
                     ]
                 },
                 {
                     "extra_name": "G1C_IVI_ALERT_DISPLAY",
                     "name_original": "G1C",
-                    "name": "Экран отображения предупреждений",
+                    "name": "Warning Display Screen",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сенсорный многофункциональный дисплей IVI"
+                            "name": "IVI Touch Multifunctional Display"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Цифровая панель приборов"
+                            "name": "Digital instrument cluster"
                         }
                     ]
                 }
@@ -400,7 +400,7 @@
                 {
                     "extra_name": "G4L_IVI_ATT_DG_HY_PRESENT",
                     "name_original": "G4L",
-                    "name": "Наличие страницы \"Гибридный привод\"",
+                    "name": "Hybrid Drive Page Availability",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -409,7 +409,7 @@
                 {
                     "extra_name": "G4K_IVI_DAT_DG_HY_MTH",
                     "name_original": "G4K",
-                    "name": "Двигатель внутреннего сгорания",
+                    "name": "Internal combustion engine",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -418,7 +418,7 @@
                 {
                     "extra_name": "G4J_IVI_DAT_DG_HY_MEL_AR",
                     "name_original": "G4J",
-                    "name": "Наличие задней тяговой электромашины",
+                    "name": "Presence of rear traction electric machine",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -427,7 +427,7 @@
                 {
                     "extra_name": "GF6_IVI_HY_TYPE_HY",
                     "name_original": "GF6",
-                    "name": "Тип гибридного привода",
+                    "name": "Hybrid Drive Type",
                     "byte": 0,
                     "mask": "00010000",
                     "zoneLength": 1,
@@ -455,57 +455,57 @@
                 {
                     "extra_name": "G73_IVI_TYPE_ENERGIE",
                     "name_original": "G73",
-                    "name": "Двигатель автомобиля",
+                    "name": "Car Engine",
                     "byte": 0,
                     "mask": "00011110",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Бензиновый"
+                            "name": "Gasoline"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Использование двух видов топлива: бензин (пропан GPL)"
+                            "name": "Dual Fuel Gasoline (GPL Propane)"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Использование двух видов топлива: бензин (метан GNV)"
+                            "name": "Dual Fuel Gasoline (GNV)"
                         },
                         {
                             "mask": "00000110",
-                            "name": "Дизельный"
+                            "name": "Diesel"
                         },
                         {
                             "mask": "00001000",
-                            "name": "Бензин и тяговая аккумуляторная батарея"
+                            "name": "Gasoline and traction battery"
                         },
                         {
                             "mask": "00001010",
-                            "name": "Бензин и этиловый спирт"
+                            "name": "Gasoline and ethyl alcohol"
                         },
                         {
                             "mask": "00001100",
-                            "name": "Дизель и тяговая аккумуляторная батарея"
+                            "name": "Diesel and traction battery"
                         },
                         {
                             "mask": "00001110",
-                            "name": "Тяговая аккумуляторная батарея"
+                            "name": "Traction battery"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Водород"
+                            "name": "Hydrogen"
                         },
                         {
                             "mask": "00010010",
-                            "name": "Не определен"
+                            "name": "Undefined"
                         }
                     ]
                 },
                 {
                     "extra_name": "G7J_IVI_ATT_DG_EXP_NAV_ILV",
                     "name_original": "G7J",
-                    "name": "Экспорт данных о навигации на индикатор ограничителя скорости автомобиля",
+                    "name": "Export navigation data to vehicle speed limiter indicator",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -514,14 +514,14 @@
                 {
                     "extra_name": "G88_IVI_TYPE_PLUGIN",
                     "name_original": "G88",
-                    "name": "Тип опоры электропитания автомобиля",
+                    "name": "Vehicle Power Pole Type",
                     "byte": 1,
                     "mask": "11100000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Без опоры"
+                            "name": "Without support"
                         },
                         {
                             "mask": "00100000",
@@ -556,7 +556,7 @@
                 {
                     "extra_name": "G8A_IVI_OPTION_NAV",
                     "name_original": "G8A",
-                    "name": "Функция навигационной системы",
+                    "name": "Navigation system function",
                     "byte": 1,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -565,7 +565,7 @@
                 {
                     "extra_name": "G89_IVI_OPTION_NAV_CONNECTEE",
                     "name_original": "G89",
-                    "name": "Навигационная система с выходом в Интернет",
+                    "name": "Navigation system with Internet access",
                     "byte": 1,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -574,14 +574,14 @@
                 {
                     "extra_name": "GQT_IVI_TYPE_SC",
                     "name_original": "GQT",
-                    "name": "Тип евронормы",
+                    "name": "European norm type",
                     "byte": 1,
                     "mask": "00000111",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Не определен"
+                            "name": "Undefined"
                         },
                         {
                             "mask": "00000001",
@@ -625,7 +625,7 @@
                 {
                     "extra_name": "G4N_IVI_INIT_DSGI",
                     "name_original": "G4N",
-                    "name": "Меню отображения функции непрямого обнаружения падения давления в шинах",
+                    "name": "Indirect Tire Pressure Loss Detection Function Display Menu",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -634,7 +634,7 @@
                 {
                     "extra_name": "G0Y_IVI_DIPO_PRIVACY_ACTIVAT",
                     "name_original": "G0Y",
-                    "name": "Функция CARPLAY в скрытом режиме",
+                    "name": "CARPLAY function in hidden mode",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -643,7 +643,7 @@
                 {
                     "extra_name": "G0X_IVI_AAP_PRIVACY_ACTIVATI",
                     "name_original": "G0X",
-                    "name": "Функция Android Auto в скрытом режиме",
+                    "name": "Android Auto feature in stealth mode",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -652,7 +652,7 @@
                 {
                     "extra_name": "G1M_IVI_AUTO_RR_WIP_REV_GEAR",
                     "name_original": "G1M",
-                    "name": "Меню очистки заднего стекла при движении задним ходом",
+                    "name": "Rear window cleaning menu when reversing",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -661,7 +661,7 @@
                 {
                     "extra_name": "G1N_IVI_AUTO_FOLDING_MIRRORS",
                     "name_original": "G1N",
-                    "name": "Тип складывающихся наружных зеркал заднего вида",
+                    "name": "Type of folding outside rearview mirrors",
                     "byte": 0,
                     "mask": "00000010",
                     "zoneLength": 2,
@@ -669,18 +669,18 @@
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Наружные зеркала заднего вида с ручной регулировкой"
+                            "name": "Manually adjustable exterior rearview mirrors"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Наружные зеркала заднего вида с электроприводом"
+                            "name": "Power outside rearview mirrors"
                         }
                     ]
                 },
                 {
                     "extra_name": "G1W_IVI_BUSY_ARMS_ACCESS",
                     "name_original": "G1W",
-                    "name": "Функция доступа с занятыми руками",
+                    "name": "Hands-Busy Access Feature",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -689,7 +689,7 @@
                 {
                     "extra_name": "G35_IVI_DATE_TIME_MENU",
                     "name_original": "G35",
-                    "name": "Выбор конфигурации даты и времени",
+                    "name": "Select date and time configuration",
                     "byte": 1,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -698,7 +698,7 @@
                 {
                     "extra_name": "G14_IVI_DAT_DG_ADML",
                     "name_original": "G14",
-                    "name": "Присутствие доступа к запуску двигателя с помощью системы «свободные руки»",
+                    "name": "Hands-free engine start access",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -707,7 +707,7 @@
                 {
                     "extra_name": "G3A_IVI_DOORS_TYPE",
                     "name_original": "G3A",
-                    "name": "Тип дверей",
+                    "name": "Door type",
                     "byte": 2,
                     "mask": "11000000",
                     "zoneLength": 2,
@@ -715,22 +715,22 @@
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Классический"
+                            "name": "Classic"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Сдвижная дверь"
+                            "name": "Sliding door"
                         },
                         {
                             "mask": "10000000",
-                            "name": "2 сдвижных двери"
+                            "name": "2 sliding doors"
                         }
                     ]
                 },
                 {
                     "extra_name": "G77_IVI_UNITS_LANGUAGE",
                     "name_original": "G77",
-                    "name": "Вывод языков и единиц измерения",
+                    "name": "Output of languages and units of measurement",
                     "byte": 2,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -739,7 +739,7 @@
                 {
                     "extra_name": "G1J_IVI_ASR_PUSH_LED",
                     "name_original": "G1J",
-                    "name": "Вывод на экран сенсорной клавиши функции противобуксовочной системы (ASR+)",
+                    "name": "Display of the traction control system (ASR+) function on the touch key screen",
                     "byte": 2,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -748,7 +748,7 @@
                 {
                     "extra_name": "G34_IVI_DATE_TIME_DISP",
                     "name_original": "G34",
-                    "name": "Отображение конфигурации даты и времени",
+                    "name": "Display date and time configuration",
                     "byte": 2,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -757,7 +757,7 @@
                 {
                     "extra_name": "G43_IVI_EXT_TEMP",
                     "name_original": "G43",
-                    "name": "Вывод температуры наружного воздуха",
+                    "name": "Outdoor air temperature display",
                     "byte": 3,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -766,7 +766,7 @@
                 {
                     "extra_name": "G6H_IVI_SEAT_NB",
                     "name_original": "G6H",
-                    "name": "Обнаружение непристегнутого ремня безопасности третьего ряда сидений",
+                    "name": "Third Row Seat Belt Detection",
                     "byte": 3,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -775,7 +775,7 @@
                 {
                     "extra_name": "G7D_IVI_DAT_DG_WELCOMEPAGE_C",
                     "name_original": "G7D",
-                    "name": "Основной экран (приветствие)",
+                    "name": "Main screen (welcome)",
                     "byte": 3,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -784,7 +784,7 @@
                 {
                     "extra_name": "G6V_IVI_ATT_DG_STT_PUSH",
                     "name_original": "G6V",
-                    "name": "Вывод сенсорной клавиши системы \"Stop and Start\"",
+                    "name": "System Touch Key Output \"Stop and Start\"",
                     "byte": 3,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -793,7 +793,7 @@
                 {
                     "extra_name": "G1T_IVI_DAT_DG_BRAND_CFG",
                     "name_original": "G1T",
-                    "name": "Марка производителя (OLD IVI)",
+                    "name": "Manufacturer's brand (OLD IVI)",
                     "byte": 3,
                     "mask": "00000111",
                     "form_type": "combobox",
@@ -828,14 +828,14 @@
                         },
                         {
                             "mask": "00000111",
-                            "name": "Другие"
+                            "name": "Other"
                         }
                     ]
                 },
                 {
                     "extra_name": "G21_IVI_DAT_DG_CHECK_PUS",
                     "name_original": "G21",
-                    "name": "Вывод сенсорной клавиши \"CHECK\"",
+                    "name": "Check touch key output",
                     "byte": 4,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -844,7 +844,7 @@
                 {
                     "extra_name": "G32_IVI_NOT_DATE",
                     "name_original": "G32",
-                    "name": "Формат даты",
+                    "name": "Date Format",
                     "byte": 4,
                     "mask": "01100000",
                     "zoneLength": 2,
@@ -867,7 +867,7 @@
                 {
                     "extra_name": "G33_IVI_DATE_FORMAT_INIT",
                     "name_original": "G33",
-                    "name": "Режим отображения даты",
+                    "name": "Date display mode",
                     "byte": 4,
                     "mask": "00011000",
                     "zoneLength": 2,
@@ -890,7 +890,7 @@
                 {
                     "extra_name": "G4U_IVI_DAT_DG_LKA_PUSH_LED",
                     "name_original": "G4U",
-                    "name": "Сенсорная клавиша функции помощи в удержании автомобиля на полосе движения",
+                    "name": "Lane Keeping Assistance Touch Key",
                     "byte": 4,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -899,7 +899,7 @@
                 {
                     "extra_name": "G5G_IVI_NV_PUSH_LED",
                     "name_original": "G5G",
-                    "name": "Сенсорная клавиша включения/выключения системы ночного видения",
+                    "name": "Night Vision System On/Off Touch Key",
                     "byte": 4,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -908,7 +908,7 @@
                 {
                     "extra_name": "G6W_IVI_DAT_DG_STT",
                     "name_original": "G6W",
-                    "name": "Функция Stop and Start",
+                    "name": "Stop and Start function",
                     "byte": 4,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -917,7 +917,7 @@
                 {
                     "extra_name": "G1X_IVI_BUSY_ARMS_AC_AUTOLOC",
                     "name_original": "G1X",
-                    "name": "Меню доступа с занятыми руками",
+                    "name": "Hands-Busy Access Menu",
                     "byte": 7,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -926,7 +926,7 @@
                 {
                     "extra_name": "G2R_IVI_CMD_VTH",
                     "name_original": "G2R",
-                    "name": "Меню информационной панели в поле зрения водителя",
+                    "name": "Information panel menu in the driver's field of view",
                     "byte": 7,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -935,7 +935,7 @@
                 {
                     "extra_name": "G7C_IVI_WELC_BYE_ANIM",
                     "name_original": "G7C",
-                    "name": "Меню управления домашней страницей",
+                    "name": "Homepage Control Menu",
                     "byte": 8,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -944,25 +944,25 @@
                 {
                     "extra_name": "G6Y_IVI_TEMP_UNIT_INIT",
                     "name_original": "G6Y",
-                    "name": "Первоначально установленная единица измерения температуры",
+                    "name": "Initially set temperature unit",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Единица температуры \"°C\""
+                            "name": "Temperature unit \"°C\""
                         },
                         {
                             "mask": "01000000",
-                            "name": "Единица температуры \"F\""
+                            "name": "Temperature unit \"F\""
                         }
                     ]
                 },
                 {
                     "extra_name": "G6R_IVI_SMART_BEAM",
                     "name_original": "G6R",
-                    "name": "Выборочное наружное освещение",
+                    "name": "Selective Outdoor Lighting",
                     "byte": 8,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -971,7 +971,7 @@
                 {
                     "extra_name": "G6K_IVI_SEL_RR_HINGE_PA_PLIP",
                     "name_original": "G6K",
-                    "name": "Функция избирательного управления дверью багажного отделения",
+                    "name": "Selective control function of the tailgate",
                     "byte": 8,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -980,7 +980,7 @@
                 {
                     "extra_name": "G6J_IVI_SEL_HINGE_PAN_PLIP",
                     "name_original": "G6J",
-                    "name": "Функция селективности дверей и крышек",
+                    "name": "Door and lid selectivity function",
                     "byte": 8,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -989,7 +989,7 @@
                 {
                     "extra_name": "G6C_IVI_RELEASE_LIGHTING",
                     "name_original": "G6C",
-                    "name": "Подсветка встречи при разблокировании автомобиля",
+                    "name": "Meeting light when unlocking the car",
                     "byte": 8,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -998,7 +998,7 @@
                 {
                     "extra_name": "G6B_IVI_REAR_FLAP_MOTOR",
                     "name_original": "G6B",
-                    "name": "Открытие багажника кнопкой электропривода",
+                    "name": "Opening the trunk with the electric button",
                     "byte": 8,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1007,7 +1007,7 @@
                 {
                     "extra_name": "G69_IVI_RCTA_INIT",
                     "name_original": "G69",
-                    "name": "Функция предупреждения о риске столкновения на передаче заднего хода",
+                    "name": "Reverse Collision Warning Function",
                     "byte": 8,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1016,7 +1016,7 @@
                 {
                     "extra_name": "G68_IVI_RCTA",
                     "name_original": "G68",
-                    "name": "Меню функции предупреждения о риске столкновения на передаче заднего хода",
+                    "name": "Reverse Collision Warning Function Menu",
                     "byte": 9,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1025,7 +1025,7 @@
                 {
                     "extra_name": "G60_IVI_POLYCH_PACK_COLOR",
                     "name_original": "G60",
-                    "name": "Меню управления освещением салона",
+                    "name": "Interior lighting control menu",
                     "byte": 10,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1034,7 +1034,7 @@
                 {
                     "extra_name": "G5T_IVI_PARKING_AID_SYSTEM",
                     "name_original": "G5T",
-                    "name": "Меню функции помощи при парковке",
+                    "name": "Parking assistance function menu",
                     "byte": 11,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1043,7 +1043,7 @@
                 {
                     "extra_name": "G4O_IVI_INVIO_ADSD",
                     "name_original": "G4O",
-                    "name": "Меню управления функцией доступа и запуска с помощью мобильного телефона",
+                    "name": "Mobile Phone Access and Launch Function Control Menu",
                     "byte": 12,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1052,7 +1052,7 @@
                 {
                     "extra_name": "G4M_IVI_INDEX_REAR_DRIVING",
                     "name_original": "G4M",
-                    "name": "Меню управления функцией установки наружных зеркал заднего вида при движении на передаче заднего хода",
+                    "name": "Menu for controlling the function of setting the outside rearview mirrors when driving in reverse gear",
                     "byte": 12,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1061,7 +1061,7 @@
                 {
                     "extra_name": "G4H_IVI_HIGHWAY_LIGHTING",
                     "name_original": "G4H",
-                    "name": "Меню освещения для автодороги",
+                    "name": "Road Lighting Menu",
                     "byte": 12,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1070,7 +1070,7 @@
                 {
                     "extra_name": "G4B_IVI_GAV_AMLA",
                     "name_original": "G4B",
-                    "name": "Меню функции доступа в салон и запуска двигателя без помощи ключа",
+                    "name": "Keyless entry and engine start menu",
                     "byte": 13,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1079,7 +1079,7 @@
                 {
                     "extra_name": "G46_IVI_FOLLOW_ME_HOME",
                     "name_original": "G46",
-                    "name": "Меню управления функцией освещения сопровождения",
+                    "name": "Tracking Lighting Function Control Menu",
                     "byte": 13,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1088,7 +1088,7 @@
                 {
                     "extra_name": "G41_IVI_ETSR",
                     "name_original": "G41",
-                    "name": "Меню функции распознавания дорожных знаков",
+                    "name": "Road sign recognition function menu",
                     "byte": 14,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1097,7 +1097,7 @@
                 {
                     "extra_name": "G3H_IVI_DRIVER_ALERT_ASSIST",
                     "name_original": "G41",
-                    "name": "Меню управления функцией обнаружения снижения внимания водителя",
+                    "name": "Driver Attention Deficit Detection Function Control Menu",
                     "byte": 14,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1106,7 +1106,7 @@
                 {
                     "extra_name": "G38_IVI_DAYLIGHT",
                     "name_original": "G38",
-                    "name": "Меню дневного освещения",
+                    "name": "Daylight Menu",
                     "byte": 14,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1115,7 +1115,7 @@
                 {
                     "extra_name": "G2S_IVI_COLLISION_CRASH_WARN",
                     "name_original": "G2S",
-                    "name": "Меню предупреждения о риске столкновения",
+                    "name": "Collision Risk Warning Menu",
                     "byte": 15,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1124,7 +1124,7 @@
                 {
                     "extra_name": "G20_IVI_CAB_SELECT_PLIP",
                     "name_original": "G20",
-                    "name": "Кнопка, чтобы разблокировать только двери автомобиля",
+                    "name": "Button to unlock car doors only",
                     "byte": 15,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1133,7 +1133,7 @@
                 {
                     "extra_name": "G1L_IVI_AUTO_LIGHTS",
                     "name_original": "G1L",
-                    "name": "Меню управления автоматическим освещением",
+                    "name": "Automatic Lighting Control Menu",
                     "byte": 16,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1142,7 +1142,7 @@
                 {
                     "extra_name": "G1K_IVI_AUTO_EL_PARK_BRAKE",
                     "name_original": "G1K",
-                    "name": "Меню стояночного тормоза с электроприводом",
+                    "name": "Electric Parking Brake Menu",
                     "byte": 16,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -1151,7 +1151,7 @@
                 {
                     "extra_name": "G1I_IVI_ARS",
                     "name_original": "G1I",
-                    "name": "Меню адаптивного заднего освещения",
+                    "name": "Adaptive rear lighting menu",
                     "byte": 16,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1160,7 +1160,7 @@
                 {
                     "extra_name": "G15_IVI_AFS",
                     "name_original": "G15",
-                    "name": "Управляемая фара (AFS)",
+                    "name": "Automatic Headlight System (AFS)",
                     "byte": 17,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1169,7 +1169,7 @@
                 {
                     "extra_name": "G66_IVI_PRIVACY_MODE_CFG",
                     "name_original": "G66",
-                    "name": "Меню управления настройками приватности (Privacy Mode)",
+                    "name": "Privacy Mode Management Menu",
                     "byte": 17,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -1178,7 +1178,7 @@
                 {
                     "extra_name": "G6U_IVI_SPEED_ADVISOR",
                     "name_original": "G6U",
-                    "name": "Меню управления функцией отображения заданной скорости",
+                    "name": "Set speed display function control menu",
                     "byte": 17,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1187,33 +1187,33 @@
                 {
                     "extra_name": "G5R_IVI_OUTLINE",
                     "name_original": "G5R",
-                    "name": "Тип кузова",
+                    "name": "Body type",
                     "byte": 17,
                     "mask": "00000110",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Двухобъемный кузов"
+                            "name": "Two-volume body"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Трехобъемный"
+                            "name": "Three-volume"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Однообъемный"
+                            "name": "Single-volume"
                         },
                         {
                             "mask": "00000110",
-                            "name": "Другое"
+                            "name": "Other"
                         }
                     ]
                 },
                 {
                     "extra_name": "G79_IVI_VEHICLE",
                     "name_original": "G79",
-                    "name": "Клавиша \"МЕНЮ\"",
+                    "name": "MENU key",
                     "byte": 17,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1222,7 +1222,7 @@
                 {
                     "extra_name": "G3G_IVI_DRIVER_REST",
                     "name_original": "G3G",
-                    "name": "Функция ограничения действий водителя",
+                    "name": "Driver Action Restriction Function",
                     "byte": 18,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1231,7 +1231,7 @@
                 {
                     "extra_name": "G3I_IVI_DRIVER_RECEPTION",
                     "name_original": "G3I",
-                    "name": "Меню управления функцией сохранения в памяти положения для вождения",
+                    "name": "Driving Position Memory Function Control Menu",
                     "byte": 18,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1240,7 +1240,7 @@
                 {
                     "extra_name": "G1S_IVI_BLIND_SPOT_MONI_INIT",
                     "name_original": "G1S",
-                    "name": "Функция наблюдения за \"мертвой\" зоной",
+                    "name": "Dead Zone Monitoring Function",
                     "byte": 21,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1249,7 +1249,7 @@
                 {
                     "extra_name": "G1S_IVI_BLIND_SPOT_MONI_INIT",
                     "name_original": "G1S",
-                    "name": "Меню наблюдения за \"мертвыми\" зонами",
+                    "name": "Dead Zone Monitoring Menu",
                     "byte": 21,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1258,7 +1258,7 @@
                 {
                     "extra_name": "G2H_IVI_CLIM_PRECOND_PHEV",
                     "name_original": "G1S",
-                    "name": "Наличие меню предварительной тепловой подготовки",
+                    "name": "Pre-heat preparation menu availability",
                     "byte": 21,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1267,7 +1267,7 @@
                 {
                     "extra_name": "G1G_IVI_AMBIANCE_LIGHTING",
                     "name_original": "G1G",
-                    "name": "Меню конфигурации подсветки салона",
+                    "name": "Interior lighting configuration menu",
                     "byte": 21,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1276,7 +1276,7 @@
                 {
                     "extra_name": "G13_IVI_ADAPTATIVE_LIGHTING",
                     "name_original": "G13",
-                    "name": "Функция фары с направленным светораспределением",
+                    "name": "Headlamp function with directional light distribution",
                     "byte": 21,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1285,7 +1285,7 @@
                 {
                     "extra_name": "G8S_IVI_AMB_LIGHT_INI_SPORT",
                     "name_original": "G8S",
-                    "name": "Функция подсветки салона в режиме \"Спорт\"",
+                    "name": "Interior lighting function in Sport mode",
                     "byte": 24,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1294,7 +1294,7 @@
                 {
                     "extra_name": "G8T_IVI_AMB_LIGHT_INI_NORMAL",
                     "name_original": "G8T",
-                    "name": "Функция подсветки салона в нормальном режиме",
+                    "name": "Interior lighting function in normal mode",
                     "byte": 24,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1303,7 +1303,7 @@
                 {
                     "extra_name": "G8R_IVI_AMB_LIGHT_INI_ECO",
                     "name_original": "G8R",
-                    "name": "Функция подсветки салона в экономичном режиме",
+                    "name": "Interior lighting function in economy mode",
                     "byte": 24,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -1312,7 +1312,7 @@
                 {
                     "extra_name": "G8Q_IVI_AMB_LIGHT_INI_COMFOR",
                     "name_original": "G8Q",
-                    "name": "Функция подсветки салона в динамическом режиме",
+                    "name": "Interior lighting function in dynamic mode",
                     "byte": 24,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1321,7 +1321,7 @@
                 {
                     "extra_name": "G8I_IVI_2D3D_QCLUSTER_CFG",
                     "name_original": "G8I",
-                    "name": "Меню управления цифровой панелью приборов 3D",
+                    "name": "3D Digital Instrument Cluster Control Menu",
                     "byte": 27,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1330,7 +1330,7 @@
                 {
                     "extra_name": "G8U_IVI_CARLINE",
                     "name_original": "G8U",
-                    "name": "Тип кузова автомобиля",
+                    "name": "Car body type",
                     "byte": 28,
                     "mask": "11111110",
                     "form_type": "combobox",
@@ -1341,7 +1341,7 @@
                         },
                         {
                             "mask": "00000010",
-                            "name": "0x01 - IVI: P54E / DS4 CROSSBACK / ASTRA SW(Sports Tourer) / C4 ( C43- Средний Восток)"
+                            "name": "0x01 - IVI: P54E / DS4 CROSSBACK / ASTRA SW (Sports Tourer) / C4 (C43 - Middle East)"
                         },
                         {
                             "mask": "00000110",
@@ -1361,26 +1361,26 @@
                         },
                         {
                             "mask": "00001100",
-                            "name": "0x06 - IVI: 508 (R8)хэтчбек"
+                            "name": "0x06 - IVI: 508 (R8) hatchback"
                         },
                         {
                             "mask": "00001110",
-                            "name": "0x07 - IVI: 508 (R8) универсал/SW"
+                            "name": "0x07 - IVI: 508 (R8) station wagon/SW"
                         },
                         {
                             "mask": "00100110",
-                            "name": "0x13 - IVI: 508 (R8)хэтчбек PERFO 4X4"
+                            "name": "0x13 - IVI: 508 (R8) hatchback PERFO 4X4"
                         },
                         {
                             "mask": "00101000",
-                            "name": "0x14 - IVI: 508 (R8) универсал/SW PERFO 4X4"
+                            "name": "0x14 - IVI: 508 (R8) station wagon/SW PERFO 4X4"
                         }
                     ]
                 },
                 {
                     "extra_name": "GGA_IVI_ATT_DG_ECRAN_SECOND",
                     "name_original": "GGA",
-                    "name": "Тип второго дисплея",
+                    "name": "Second display type",
                     "byte": 28,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1389,7 +1389,7 @@
                 {
                     "extra_name": "GQR_IVI_DAT_DG_BRAND",
                     "name_original": "GQR",
-                    "name": "Марка производителя (NEW IVI)",
+                    "name": "Manufacturer's brand (NEW IVI)",
                     "byte": 31,
                     "mask": "11111000",
                     "form_type": "combobox",
@@ -1436,87 +1436,87 @@
                         },
                         {
                             "mask": "01010000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "01011000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "01100000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "01101000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "01110000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "01111000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10000000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10001000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10010000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10011000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10100000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10101000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10110000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "10111000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11000000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11001000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11010000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11011000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11100000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11101000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11110000",
-                            "name": "Другие"
+                            "name": "Other"
                         },
                         {
                             "mask": "11111000",
@@ -1553,29 +1553,29 @@
                 {
                     "extra_name": "G54_IVI_MASS_SEAT_OPT_CFG",
                     "name_original": "G54",
-                    "name": "Наличие сидений с функцией массажа",
+                    "name": "Availability of seats with massage function",
                     "byte": 0,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сиденье водителя"
+                            "name": "Driver's seat"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Сиденье пассажира"
+                            "name": "Passenger seat"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Сиденья водителя и пассажира"
+                            "name": "Driver and passenger seats"
                         }
                     ]
                 },
                 {
                     "extra_name": "G53_IVI_MASSAGING_SEAT_CFG",
                     "name_original": "G53",
-                    "name": "Функция сиденья с массажным устройством",
+                    "name": "Seat function with massage device",
                     "byte": 0,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1584,7 +1584,7 @@
                 {
                     "extra_name": "G3K_IVI_DYN_PACK_PRESENCE",
                     "name_original": "G3K",
-                    "name": "Функция динамического вождения",
+                    "name": "Dynamic Driving Function",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1593,7 +1593,7 @@
                 {
                     "extra_name": "G6I_IVI_SELECT_MODE_VHL_CFG",
                     "name_original": "G6I",
-                    "name": "Селектор режима вождения",
+                    "name": "Driving mode selector",
                     "byte": 0,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1602,7 +1602,7 @@
                 {
                     "extra_name": "G3W_IVI_ENGINE_COLOR",
                     "name_original": "G3W",
-                    "name": "Персонализированная конфигурация функции динамического вождения",
+                    "name": "Personalized Dynamic Driving Function Configuration",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1611,7 +1611,7 @@
                 {
                     "extra_name": "G3X_IVI_ENGINE_COLOR_INIT",
                     "name_original": "G3X",
-                    "name": "Заводская конфигурация функции динамического вождения",
+                    "name": "Factory configuration of the dynamic driving function",
                     "byte": 2,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1620,7 +1620,7 @@
                 {
                     "extra_name": "G1O_IVI_AVN_PRESENCE",
                     "name_original": "G1O",
-                    "name": "Помощь при ночном видении",
+                    "name": "Night Vision Aid",
                     "byte": 2,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1629,7 +1629,7 @@
                 {
                     "extra_name": "GLP_IVI_BOLSTER_SEAT_PASSAGE",
                     "name_original": "GLP",
-                    "name": "Усиление сиденья пассажира*",
+                    "name": "Passenger seat reinforcement*",
                     "byte": 3,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1638,7 +1638,7 @@
                 {
                     "extra_name": "GLO_IVI_BOLSTER_SEAT_DRIVER",
                     "name_original": "GLO",
-                    "name": "Усиление сиденья водителя*",
+                    "name": "Driver's seat reinforcement*",
                     "byte": 3,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1647,14 +1647,14 @@
                 {
                     "extra_name": "G9I_IVI_MAS_SEAT_TYP_OPT_CFG",
                     "name_original": "G9I",
-                    "name": "Тип функции массажа сидений",
+                    "name": "Seat massage function type",
                     "byte": 3,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Стандартный массаж"
+                            "name": "Standard massage"
                         },
                         {
                             "mask": "00010000",
@@ -1662,7 +1662,7 @@
                         },
                         {
                             "mask": "00100000",
-                            "name": "Многоточечный массаж"
+                            "name": "Multi-point massage"
                         },
                         {
                             "mask": "00110000",
@@ -1673,7 +1673,7 @@
                 {
                     "extra_name": "G5W_IVI_PLVA_CFG",
                     "name_original": "G5W",
-                    "name": "Функция требования ограничения скорости автомобиля",
+                    "name": "Vehicle Speed Limit Request Function",
                     "byte": 3,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1682,7 +1682,7 @@
                 {
                     "extra_name": "G55_IVI_MAW_CFG",
                     "name_original": "G55",
-                    "name": "Функция требования ограничения скорости автомобиля",
+                    "name": "Vehicle Speed Limit Request Function",
                     "byte": 3,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1691,7 +1691,7 @@
                 {
                     "extra_name": "G4V_IVI_LKA_VAL_PRESENCE",
                     "name_original": "G4V",
-                    "name": "Наличие функции помощи в удержании автомобиля на полосе движения (LKA)",
+                    "name": "Lane Keeping Assist (LKA) availability",
                     "byte": 3,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1700,7 +1700,7 @@
                 {
                     "extra_name": "G0P_IVI_ESE_ACTIVATION_MODE",
                     "name_original": "G0P",
-                    "name": "Режим функции динамического вождения",
+                    "name": "Dynamic Driving Function Mode",
                     "byte": 3,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1718,7 +1718,7 @@
                 {
                     "extra_name": "G2A_IVI_ATT_DG_TYPE_DIST",
                     "name_original": "G2A",
-                    "name": "Тип системы распределения воздуха",
+                    "name": "Air distribution system type",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1727,7 +1727,7 @@
                 {
                     "extra_name": "G28_IVI_CLIM_AUTO",
                     "name_original": "G28",
-                    "name": "Кнопка климат-контроля",
+                    "name": "Climate control button",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1736,33 +1736,33 @@
                 {
                     "extra_name": "G16_IVI_AIRQUALITY_CFG",
                     "name_original": "G16",
-                    "name": "Тип очистителя воздуха в салоне",
+                    "name": "Cabin Air Purifier Type",
                     "byte": 0,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Функция отсутствует"
+                            "name": "Function missing"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Очиститель воздуха в салоне 0"
+                            "name": "Cabin Air Purifier 0"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Очиститель воздуха в салоне 1"
+                            "name": "Cabin Air Purifier 1"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Очиститель воздуха в салоне 2"
+                            "name": "Cabin Air Purifier 2"
                         }
                     ]
                 },
                 {
                     "extra_name": "G25_IVI_AIRFLOW_BY_LEVEL",
                     "name_original": "G25",
-                    "name": "Сенсорная клавиша на уровне управления вентилятором салона",
+                    "name": "Touch key at the cabin fan control level",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1771,7 +1771,7 @@
                 {
                     "extra_name": "G23_IVI_CLIM_ACTIVATION",
                     "name_original": "G23",
-                    "name": "Функция кондиционирования",
+                    "name": "Air conditioning function",
                     "byte": 0,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1780,7 +1780,7 @@
                 {
                     "extra_name": "G24_IVI_AIRFLOW_BY_INC",
                     "name_original": "G24",
-                    "name": "Сенсорная клавиша увеличения скорости вентилятора салона",
+                    "name": "Touch key for increasing the speed of the cabin fan",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1789,25 +1789,25 @@
                 {
                     "extra_name": "G2L_IVI_CLIM_SELECT_MOD",
                     "name_original": "G2L",
-                    "name": "Наличие обогреваемых сидений или обогреваемых вентилируемых сидений",
+                    "name": "Presence of heated seats or heated and ventilated seats",
                     "byte": 1,
                     "mask": "01000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Обогрев сидений"
+                            "name": "Heated Seats"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Подогреваемые и вентилируемые сиденья"
+                            "name": "Heated and ventilated seats"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2B_IVI_HEAT_STEERING_WHEEL",
                     "name_original": "G2B",
-                    "name": "Переключатель управления обогревом рулевого колеса",
+                    "name": "Steering Wheel Heating Control Switch",
                     "byte": 1,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1816,7 +1816,7 @@
                 {
                     "extra_name": "G2B_IVI_HEAT_STEERING_WHEEL",
                     "name_original": "G2B",
-                    "name": "Наличие обогреваемых сидений или обогреваемых вентилируемых сидений",
+                    "name": "Presence of heated seats or heated and ventilated seats",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1825,7 +1825,7 @@
                 {
                     "extra_name": "G2N_IVI_TEMP_ADJUST",
                     "name_original": "G2N",
-                    "name": "Проверка температуры",
+                    "name": "Temperature Check",
                     "byte": 2,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1834,51 +1834,51 @@
                 {
                     "extra_name": "G2O_IVI_ATT_DG_TYPE_MIX",
                     "name_original": "G2O",
-                    "name": "Тип смесителя воздуха в системе кондиционирования",
+                    "name": "Type of air mixer in the air conditioning system",
                     "byte": 1,
                     "mask": "00100000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Однозонный"
+                            "name": "Single-zone"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Двухзонный"
+                            "name": "Dual-zone"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2P_IVI_ATT_DG_TYPE_CLIM",
                     "name_original": "G2P",
-                    "name": "Тип кондиционера",
+                    "name": "Air conditioner type",
                     "byte": 1,
                     "mask": "00011100",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Отопление"
+                            "name": "Heating"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Простая система кондиционирования"
+                            "name": "Simple Air Conditioning System"
                         },
                         {
                             "mask": "00001000",
-                            "name": "Кондиционер с регулировкой температуры"
+                            "name": "Air conditioner with temperature control"
                         },
                         {
                             "mask": "00001100",
-                            "name": "Автоматический кондиционер"
+                            "name": "Automatic air conditioner"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2Q_IVI_ATT_DG_PRES_TYPAGE",
                     "name_original": "G2Q",
-                    "name": "Тип управления системой кондиционирования",
+                    "name": "Air conditioning control type",
                     "byte": 2,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -1887,7 +1887,7 @@
                 {
                     "extra_name": "G2J_IVI_ATT_DG_PRES_CLIM_AR",
                     "name_original": "G2J",
-                    "name": "Плата управления задним кондиционером",
+                    "name": "Rear air conditioner control board",
                     "byte": 2,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -1896,7 +1896,7 @@
                 {
                     "extra_name": "G2I_IVI_REAR_LOCK",
                     "name_original": "G2I",
-                    "name": "Кнопка блокировки управления задним кондиционером",
+                    "name": "Rear air conditioner control lock button",
                     "byte": 3,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1905,25 +1905,25 @@
                 {
                     "extra_name": "G29_IVI_CLIM_DISPLAY_CFG",
                     "name_original": "G29",
-                    "name": "Тип кнопок кондиционера",
+                    "name": "Air Conditioner Button Type",
                     "byte": 3,
                     "mask": "01000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сенсорные кнопки"
+                            "name": "Touch buttons"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Физические и сенсорные клавиши"
+                            "name": "Physical and touch keys"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2G_IVI_CLIM_OFF_SEAT_STRW",
                     "name_original": "G2G",
-                    "name": "Управление отоплением сидений и / или рулевым колесом",
+                    "name": "Seat heating and/or steering wheel control",
                     "byte": 3,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -1932,7 +1932,7 @@
                 {
                     "extra_name": "G27_IVI_ATT_DG_PRES_AQS",
                     "name_original": "G27",
-                    "name": "Наличие системы оценки воздуха в салоне",
+                    "name": "Availability of cabin air quality assessment system",
                     "byte": 3,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -1950,7 +1950,7 @@
                 {
                     "extra_name": "IVI_OPTION_EXPORT_MEDIA",
                     "name_original": "OEM",
-                    "name": "Вывод информации аудиосистемы на панель приборов",
+                    "name": "Output of audio system information to the instrument panel",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1959,7 +1959,7 @@
                 {
                     "extra_name": "G7S_IVI_AM",
                     "name_original": "G7S",
-                    "name": "Частотный диапазон AM",
+                    "name": "AM Frequency Range",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -1968,7 +1968,7 @@
                 {
                     "extra_name": "G7Q_IVI_AAP_ON_OFF",
                     "name_original": "G7Q",
-                    "name": "Функция Android Auto",
+                    "name": "Android Auto feature",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -1977,29 +1977,29 @@
                 {
                     "extra_name": "G7W_IVI_NB_MICRO",
                     "name_original": "G7W",
-                    "name": "Число микрофонов",
+                    "name": "Number of microphones",
                     "byte": 0,
                     "mask": "00011000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Микрофон отсутствует"
+                            "name": "Microphone missing"
                         },
                         {
                             "mask": "00001000",
-                            "name": "1 Микрофон"
+                            "name": "1 Microphone"
                         },
                         {
                             "mask": "00010000",
-                            "name": "2 Микрофона"
+                            "name": "2 Microphones"
                         }
                     ]
                 },
                 {
                     "extra_name": "G7T_IVI_ATT_DG_RADIO",
                     "name_original": "G7T",
-                    "name": "Цифровой радиоприемник",
+                    "name": "Digital radio receiver",
                     "byte": 0,
                     "mask": "00000110",
                     "form_type": "checkbox",
@@ -2008,7 +2008,7 @@
                 {
                     "extra_name": "G7U_IVI_FADER",
                     "name_original": "G7U",
-                    "name": "Функция Fader",
+                    "name": "Fader Function",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2017,96 +2017,96 @@
                 {
                     "extra_name": "G84_IVI_TYPE_CLUSTER",
                     "name_original": "G84",
-                    "name": "Тип цифровой панели приборов",
+                    "name": "Digital instrument cluster type",
                     "byte": 1,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "5 дюймов"
+                            "name": "5 inches"
                         },
                         {
                             "mask": "00010000",
-                            "name": "7 дюймов"
+                            "name": "7 inches"
                         },
                         {
                             "mask": "00100000",
-                            "name": "10 дюймов"
+                            "name": "10 inches"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Цифровой"
+                            "name": "Digital"
                         }
                     ]
                 },
                 {
                     "extra_name": "G7Z_IVI_TYPE_EXPORT_MEDIA",
                     "name_original": "G7Z",
-                    "name": "Тип экспортирования мультимедийных данных на цифровую панель приборов",
+                    "name": "Type of exporting multimedia data to the digital instrument cluster",
                     "byte": 1,
                     "mask": "00001100",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сеть CAN"
+                            "name": "CAN Network"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Связь LVDS"
+                            "name": "LVDS Communication"
                         },
                         {
                             "mask": "00001000",
-                            "name": "Сеть CAN и соединение LVDS"
+                            "name": "CAN Network and LVDS Connection"
                         }
                     ]
                 },
                 {
                     "extra_name": "G80_IVI_TYPE_EXP_MEDIA_CAN",
                     "name_original": "G80",
-                    "name": "Тип создания экспортирования медиафайлов на цифровую панель приборов",
+                    "name": "Type of creating export media files to the digital instrument cluster",
                     "byte": 1,
                     "mask": "00000011",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Поколение 1"
+                            "name": "Generation 1"
                         },
                         {
                             "mask": "00000001",
-                            "name": "Поколение 2"
+                            "name": "Generation 2"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Поколение 3"
+                            "name": "Generation 3"
                         }
                     ]
                 },
                 {
                     "extra_name": "G10_IVI_AUDIO_CONFIGURATION",
                     "name_original": "G10",
-                    "name": "Конфигурация громкоговорителей",
+                    "name": "Speaker Configuration",
                     "byte": 2,
                     "mask": "11110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00010000",
-                            "name": "Классический вход (4)"
+                            "name": "Classic Entrance (4)"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Классический вход HP+(4)"
+                            "name": "Classic Entrance HP+(4)"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Классический качественный (6)"
+                            "name": "Classic Quality (6)"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Классический качественный HP+(8)"
+                            "name": "Classic High-Quality HP+(8)"
                         },
                         {
                             "mask": "01010000",
@@ -2137,25 +2137,25 @@
                 {
                     "extra_name": "G0N_IVI_BROAD_FM_LIST_DISPL",
                     "name_original": "G0N",
-                    "name": "Сортировка списка радиостанций FM",
+                    "name": "Sorting the list of FM radio stations",
                     "byte": 2,
                     "mask": "00001000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сортировка по названию станции"
+                            "name": "Sort by station name"
                         },
                         {
                             "mask": "00001000",
-                            "name": "Сортировка по частоте"
+                            "name": "Sort by frequency"
                         }
                     ]
                 },
                 {
                     "extra_name": "G0J_IVI_BROADCAST_DAB_BAND",
                     "name_original": "G0J",
-                    "name": "Диапазон DAB(Цифровой радиоприемник)",
+                    "name": "DAB Band (Digital Radio)",
                     "byte": 2,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -2164,37 +2164,37 @@
                 {
                     "extra_name": "G0I_IVI_BROADCAST_DAB_AREA",
                     "name_original": "G0I",
-                    "name": "Тюнер DAB(Цифровой радиоприемник)",
+                    "name": "DAB Tuner (Digital Radio Receiver)",
                     "byte": 3,
                     "mask": "11111111",
                     "form_type": "combobox",
                     "params": [
                         {
                             "value": "01",
-                            "name": "По всему миру"
+                            "name": "Around the world"
                         },
                         {
                             "value": "02",
-                            "name": "Корея"
+                            "name": "Korea"
                         },
                         {
                             "value": "03",
-                            "name": "Китай"
+                            "name": "China"
                         },
                         {
                             "value": "04",
-                            "name": "Новая Зеландия"
+                            "name": "New Zealand"
                         },
                         {
                             "value": "05",
-                            "name": "Австралия"
+                            "name": "Australia"
                         }
                     ]
                 },
                 {
                     "extra_name": "G0G_IVI_DIAG_CON_WIFI_MIRR_C",
                     "name_original": "G0G",
-                    "name": "Функция Mirror Screen",
+                    "name": "Mirror Screen Function",
                     "byte": 4,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2203,29 +2203,29 @@
                 {
                     "extra_name": "G7X_IVI_SOUND_QUALITY",
                     "name_original": "G7X",
-                    "name": "Тип динамиков",
+                    "name": "Speaker Type",
                     "byte": 4,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Без усилителя HIFI"
+                            "name": "Without HIFI amplifier"
                         },
                         {
                             "mask": "00010000",
-                            "name": "С усилителем HIFI PSA"
+                            "name": "With HIFI PSA amplifier"
                         },
                         {
                             "mask": "00100000",
-                            "name": "С усилителем HIFI PREMIUM"
+                            "name": "With HIFI PREMIUM amplifier"
                         }
                     ]
                 },
                 {
                     "extra_name": "GQO_IVI_MIRROR_SCREEN_BAIDU",
                     "name_original": "GQO",
-                    "name": "Общий доступ к экрану (BAIDU CarLife)",
+                    "name": "Screen Sharing (BAIDU CarLife)",
                     "byte": 4,
                     "mask": "00001100",
                     "form_type": "checkbox",
@@ -2234,85 +2234,85 @@
                 {
                     "extra_name": "G7O_IVI_MIRROR_SCREEN_SDL",
                     "name_original": "G7O",
-                    "name": "Общий доступ к экрану (SDL)",
+                    "name": "Screen Sharing (SDL)",
                     "byte": 4,
                     "mask": "00000011",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Общий доступ отключен"
+                            "name": "Public access disabled"
                         },
                         {
                             "mask": "00000001",
-                            "name": "Общий доступ через USB"
+                            "name": "USB Sharing"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Общий доступ через USB и Wi-Fi"
+                            "name": "USB and Wi-Fi Sharing"
                         },
                         {
                             "mask": "00000011",
-                            "name": "Общий доступ через Wi-Fi"
+                            "name": "Wi-Fi Sharing"
                         }
                     ]
                 },
                 {
                     "extra_name": "GQP_IVI_MIR_SCR_APPLE_CARPL",
                     "name_original": "GQP",
-                    "name": "Общий доступ к экрану(Apple CarPlay)",
+                    "name": "Screen Sharing (Apple CarPlay)",
                     "byte": 5,
                     "mask": "11000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Общий доступ отключен"
+                            "name": "Public access disabled"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Общий доступ через USB"
+                            "name": "USB Sharing"
                         },
                         {
                             "mask": "10000000",
-                            "name": "Общий доступ через USB и Wi-Fi"
+                            "name": "USB and Wi-Fi Sharing"
                         },
                         {
                             "mask": "11000000",
-                            "name": "Общий доступ через Wi-Fi"
+                            "name": "Wi-Fi Sharing"
                         }
                     ]
                 },
                 {
                     "extra_name": "GQQ_IVI_MIR_SCR_ANDROID_AUTO",
                     "name_original": "GQQ",
-                    "name": "Общий доступ к экрану(android auto)",
+                    "name": "Screen sharing (android auto)",
                     "byte": 5,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Общий доступ отключен"
+                            "name": "Public access disabled"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Общий доступ через USB"
+                            "name": "USB Sharing"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Общий доступ через USB и Wi-Fi"
+                            "name": "USB and Wi-Fi Sharing"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Общий доступ через Wi-Fi"
+                            "name": "Wi-Fi Sharing"
                         }
                     ]
                 },
                 {
                     "extra_name": "G0O_IVI_BROADCAST_FOLLOWING",
                     "name_original": "G0O",
-                    "name": "Автоматическое отслеживание радио FM",
+                    "name": "Automatic FM Radio Tracking",
                     "byte": 5,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2321,7 +2321,7 @@
                 {
                     "extra_name": "G0M_IVI_BROADCAST_TA",
                     "name_original": "G0M",
-                    "name": "Функция информации о дорожной ситуации (TA)",
+                    "name": "Traffic Information (TA) function",
                     "byte": 5,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -2330,7 +2330,7 @@
                 {
                     "extra_name": "G0H_IVI_BROAD_RDS_DECODING",
                     "name_original": "G0H",
-                    "name": "Функции RDS",
+                    "name": "RDS Features",
                     "byte": 5,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -2339,7 +2339,7 @@
                 {
                     "extra_name": "GI7_IVI_CARPLAY_DRV_DIST_PAR",
                     "name_original": "GI7",
-                    "name": "Функция ограничения запросов пользователя через CARPLAY",
+                    "name": "Function to limit user requests via CARPLAY",
                     "byte": 6,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2348,18 +2348,18 @@
                 {
                     "extra_name": "GI6_IVI_TYPE_CULSTER_DIAG",
                     "name_original": "GI6",
-                    "name": "Тип соединения цифровой панели приборов",
+                    "name": "Digital Instrument Cluster Connection Type",
                     "byte": 6,
                     "mask": "01000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сеть CAN"
+                            "name": "CAN Network"
                         },
                         {
                             "mask": "01000000",
-                            "name": "Связь LVDS"
+                            "name": "LVDS Communication"
                         }
                     ]
                 }
@@ -2375,7 +2375,7 @@
                 {
                     "extra_name": "G4X_IVI_DAT_DG_LUM_MANAG",
                     "name_original": "G4X",
-                    "name": "Регулировка яркости свечения",
+                    "name": "Adjusting the brightness of the glow",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2384,7 +2384,7 @@
                 {
                     "extra_name": "H2Q_IVI_OPTION_DARK_MODE",
                     "name_original": "H2Q",
-                    "name": "Опция черный экран",
+                    "name": "Black screen option",
                     "byte": 0,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2402,7 +2402,7 @@
                 {
                     "extra_name": "G19_IVI_ALARM_GULF_COUNTRIES",
                     "name_original": "G19",
-                    "name": "Функция предупреждения о высокой скорости для стран Персидского залива",
+                    "name": "Gulf High Speed Warning Feature",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2411,7 +2411,7 @@
                 {
                     "extra_name": "G7E_IVI_XVV_PRESENCE_ACC",
                     "name_original": "G7E",
-                    "name": "Функция адаптивного круиз-контроля",
+                    "name": "Adaptive Cruise Control Function",
                     "byte": 1,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2420,7 +2420,7 @@
                 {
                     "extra_name": "G7G_IVI_XVV_PRESENCE_RVV",
                     "name_original": "G7G",
-                    "name": "Функция регулирования скорости автомобиля",
+                    "name": "Vehicle speed control function",
                     "byte": 1,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2429,7 +2429,7 @@
                 {
                     "extra_name": "G7F_IVI_XVV_PRESENCE_LVV",
                     "name_original": "G7F",
-                    "name": "Функция ограничения скорости автомобиля",
+                    "name": "Vehicle speed limit function",
                     "byte": 1,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2438,7 +2438,7 @@
                 {
                     "extra_name": "G6O_IVI_SLI_ENCAP",
                     "name_original": "G6O",
-                    "name": "Индикация ограничения скорости",
+                    "name": "Speed limit display",
                     "byte": 1,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2447,7 +2447,7 @@
                 {
                     "extra_name": "G6G_IVI_SALC_CFG",
                     "name_original": "G6G",
-                    "name": "Функция адаптации скорости на поворотах (CSA)",
+                    "name": "Curve Speed Adaptation (CSA)",
                     "byte": 1,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2456,7 +2456,7 @@
                 {
                     "extra_name": "G4W_IVI_LPA_CFG",
                     "name_original": "G6G",
-                    "name": "Функция помощи в сохранении траектории автомобиля в пределах полосы движения (LPA)",
+                    "name": "Lane Following Assist (LPA)",
                     "byte": 1,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -2465,7 +2465,7 @@
                 {
                     "extra_name": "G42_IVI_ETSR_CFG",
                     "name_original": "G42",
-                    "name": "Функция распознавания дорожных знаков",
+                    "name": "Road sign recognition function",
                     "byte": 1,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -2474,7 +2474,7 @@
                 {
                     "extra_name": "G3D_IVI_DRIVE_IVTRA_SET",
                     "name_original": "G3D",
-                    "name": "Отображение заданного значения адаптивного круиз-контроля",
+                    "name": "Adaptive Cruise Control Setpoint Display",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2483,7 +2483,7 @@
                 {
                     "extra_name": "G3C_IVI_DRIVE_ICC_SET",
                     "name_original": "G3C",
-                    "name": "Вывод требуемой скорости адаптивного круиз-контроля",
+                    "name": "Adaptive Cruise Control Required Speed Output",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2492,7 +2492,7 @@
                 {
                     "extra_name": "G6N_IVI_DAT_DG_SLI",
                     "name_original": "G6N",
-                    "name": "Индикация ограничения скорости",
+                    "name": "Speed limit display",
                     "byte": 2,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2501,7 +2501,7 @@
                 {
                     "extra_name": "G2Y_IVI_CSA_CFG",
                     "name_original": "G2Y",
-                    "name": "Функция адаптации скорости на поворотах (CSA)",
+                    "name": "Curve Speed Adaptation (CSA)",
                     "byte": 2,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2510,22 +2510,22 @@
                 {
                     "extra_name": "G11_IVI_ACC_TYPE",
                     "name_original": "G11",
-                    "name": "Тип адаптивного круиз-контроля",
+                    "name": "Adaptive Cruise Control Type",
                     "byte": 2,
                     "mask": "00011000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Адаптивный круиз-контроль с замедлением до 30 км/ч"
+                            "name": "Adaptive cruise control with deceleration up to 30 km/h"
                         },
                         {
                             "mask": "00001000",
-                            "name": "Адаптивный круиз-контроль с замедлением до остановки автомобиля"
+                            "name": "Adaptive cruise control with slowdown to a stop"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Адаптивный круиз-контроль с замедлением до остановки автомобиля и автоматическим началом движения"
+                            "name": "Adaptive cruise control with slowing down to a stop and automatic restart"
                         }
                     ]
                 }
@@ -2540,7 +2540,7 @@
                 {
                     "extra_name": "G0F_IVI_LOUDNESS_BY_USER",
                     "name_original": "G0F",
-                    "name": "Функция уменьшения громкости в меню параметров",
+                    "name": "Volume down function in the options menu",
                     "byte": 0,
                     "mask": "00010000",
                     "zoneLength": 1,
@@ -2559,7 +2559,7 @@
                 {
                     "extra_name": "G87_IVI_BRAKE_MODE_MEMORIZAT",
                     "name_original": "G87",
-                    "name": "Сохранение в памяти режима торможения",
+                    "name": "Saving the braking mode in memory",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2568,7 +2568,7 @@
                 {
                     "extra_name": "G4D_IVI_GEARBOX_US",
                     "name_original": "G4D",
-                    "name": "Тип отображения переключения передач",
+                    "name": "Gear Shift Display Type",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2577,7 +2577,7 @@
                 {
                     "extra_name": "G4C_IVI_GEARBOX",
                     "name_original": "G4C",
-                    "name": "Индикация передач",
+                    "name": "Gear indicator",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2595,7 +2595,7 @@
                 {
                     "extra_name": "GPH_IVI_GBOX_DCLRATION_LEVEL",
                     "name_original": "GPH",
-                    "name": "Уровень замедления",
+                    "name": "Slowdown Level",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2613,7 +2613,7 @@
                 {
                     "extra_name": "G5Q_IVI_OPT_SMARTDEV_BY_SDCM",
                     "name_original": "G5Q",
-                    "name": "Функция доступа и запуска с помощью мобильного телефона",
+                    "name": "Access and launch function using a mobile phone",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2622,7 +2622,7 @@
                 {
                     "extra_name": "GP7_IVI_ONOFF_REMOTE_PRECOND",
                     "name_original": "GP7",
-                    "name": "TBTfonction de  prйconditionnement а distance",
+                    "name": "TBTfonction de prеconditionnement а distance",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2631,7 +2631,7 @@
                 {
                     "extra_name": "GYL_IVI_GAUGE_PREHEATING",
                     "name_original": "GYL",
-                    "name": "Состояние предварительного подогрева",
+                    "name": "Preheat State",
                     "byte": 2,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -2640,7 +2640,7 @@
                 {
                     "extra_name": "GYI_IVI_MECHANICAL_KEY",
                     "name_original": "GYI",
-                    "name": "Механический ключ",
+                    "name": "Mechanical key",
                     "byte": 2,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -2649,7 +2649,7 @@
                 {
                     "extra_name": "GYG_IVI_OPTION_START_DELAYED",
                     "name_original": "GYG",
-                    "name": "Функция E-CATA",
+                    "name": "E-CATA Function",
                     "byte": 2,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2667,14 +2667,14 @@
                 {
                     "extra_name": "G7I_IVI_HOTSP_SECURITY_AUTH",
                     "name_original": "G7I",
-                    "name": "Тип безопасности Wi-Fi",
+                    "name": "Wi-Fi Security Type",
                     "byte": 0,
                     "mask": "11000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Без"
+                            "name": "Without"
                         },
                         {
                             "mask": "01000000",
@@ -2689,26 +2689,26 @@
                 {
                     "extra_name": "G7H_IVI_WIFI_SERVICE_CONNECT",
                     "name_original": "G7H",
-                    "name": "Разрешенный тип интернет-сервиса",
+                    "name": "Allowed Internet service type",
                     "byte": 0,
                     "mask": "00110000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Сервис отключен"
+                            "name": "Service Disabled"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Точка доступа"
+                            "name": "Access Point"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Клиент"
+                            "name": "Client"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Точка доступа и клиент"
+                            "name": "Access Point and Client"
                         }
                     ]
                 }
@@ -2724,7 +2724,7 @@
                 {
                     "extra_name": "G8B_IVI_DIGITAL_HELP",
                     "name_original": "G8B",
-                    "name": "Приложение Digital Help",
+                    "name": "Digital Help Application",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2733,7 +2733,7 @@
                 {
                     "extra_name": "GB7_IVI_VIDEO_TUTORIALS",
                     "name_original": "GB7",
-                    "name": "Видеоруководства для функции Digital Help",
+                    "name": "Video tutorials for the Digital Help feature",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2742,7 +2742,7 @@
                 {
                     "extra_name": "GB6_IVI_SPEECH_HELP",
                     "name_original": "GB6",
-                    "name": "Функция голосовой помощи приложения Digital Help",
+                    "name": "Digital Help app voice assistance feature",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2751,7 +2751,7 @@
                 {
                     "extra_name": "GB8_IVI_HANDBOOK",
                     "name_original": "GB8",
-                    "name": "Ручная конфигурация функции Digital Help",
+                    "name": "Manual configuration of the Digital Help function",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2769,7 +2769,7 @@
                 {
                     "extra_name": "G8D_IVI_VISIOPARK_AUTO_ZOOM",
                     "name_original": "G8D",
-                    "name": "Увеличение изображения системы визуальной помощи при движении задним ходом",
+                    "name": "Zoom in the image of the visual assistance system when reversing",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2778,7 +2778,7 @@
                 {
                     "extra_name": "GHG_IVI_SPECIF_VPARK_DEACT",
                     "name_original": "GHG",
-                    "name": "Выключение функции визуальной помощи при движении задним ходом 180",
+                    "name": "Disabling the visual assistance function when reversing 180",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2796,7 +2796,7 @@
                 {
                     "extra_name": "GBA_IVI_PVC_PUSH",
                     "name_original": "GBA",
-                    "name": "Вывод сенсорной клавиши \"Помощь в панорамном обзоре\"",
+                    "name": "Display of the touch key \"Help in panoramic view\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2814,7 +2814,7 @@
                 {
                     "extra_name": "G5M_IVI_CONF_DOP",
                     "name_original": "G5M",
-                    "name": "Обнаружение препятствия",
+                    "name": "Obstacle Detection",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2823,7 +2823,7 @@
                 {
                     "extra_name": "G6A_IVI_REAR_VC",
                     "name_original": "G6A",
-                    "name": "Видеокамера помощи при движении на передаче заднего хода",
+                    "name": "Reverse Assistance Camera",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2832,7 +2832,7 @@
                 {
                     "extra_name": "G22_IVI_CITYPARK_AS",
                     "name_original": "G22",
-                    "name": "Отображение инструкций функции помощи при полуавтоматической парковке",
+                    "name": "Displaying the instructions for the semi-automated parking assistance function",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2841,7 +2841,7 @@
                 {
                     "extra_name": "G7B_IVI_DAT_DG_VP_LEGAL_MESS",
                     "name_original": "G7B",
-                    "name": "Отображение предупреждающего сообщения визуальной помощи при движении задним ходом 180°",
+                    "name": "Display visual assistance warning message when reversing 180°",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2850,7 +2850,7 @@
                 {
                     "extra_name": "G5S_IVI_PANORAMIC_VC",
                     "name_original": "G5S",
-                    "name": "Наличие камеры панорамного обзора",
+                    "name": "Presence of a panoramic camera",
                     "byte": 0,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2859,47 +2859,47 @@
                 {
                     "extra_name": "G5O_IVI_ODS_TYPE",
                     "name_original": "G5O",
-                    "name": "Тип системы помощи при парковке",
+                    "name": "Parking assistance system type",
                     "byte": 0,
                     "mask": "00000110",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Задняя система помощи при парковке"
+                            "name": "Rear Parking Assist"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Передняя и задняя система помощи при парковке"
+                            "name": "Front and rear parking assistance system"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Передняя, задняя и боковая системы помощи при парковке"
+                            "name": "Front, rear and side parking assistance systems"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2W_IVI_CPK_HMI_GEN",
                     "name_original": "G2W",
-                    "name": "Конфигурация интерфейса \"человек-машина\" функции помощи при полуавтоматической парковке",
+                    "name": "Semi-automated parking assistance function human-machine interface configuration",
                     "byte": 1,
                     "mask": "10000000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Поколение 1"
+                            "name": "Generation 1"
                         },
                         {
                             "mask": "10000000",
-                            "name": "Поколение 2"
+                            "name": "Generation 2"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2U_IVI_CONTINUOUS_CPK",
                     "name_original": "G2U",
-                    "name": "Кнопка функции автоматической помощи при парковке",
+                    "name": "Automatic Parking Assistance Button",
                     "byte": 1,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2908,7 +2908,7 @@
                 {
                     "extra_name": "G12_IVI_ACPK",
                     "name_original": "G12",
-                    "name": "Система полуавтоматической помощи при парковке",
+                    "name": "Semi-automatic parking assistance system",
                     "byte": 1,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2917,7 +2917,7 @@
                 {
                     "extra_name": "G8J_IVI_FRADAR",
                     "name_original": "G8J",
-                    "name": "Наличие фронтального радара",
+                    "name": "Frontal radar presence",
                     "byte": 1,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2926,7 +2926,7 @@
                 {
                     "extra_name": "G8M_IVI_ESSLUNET",
                     "name_original": "G8M",
-                    "name": "Наличие очистителя заднего стекла",
+                    "name": "Rear window wiper presence",
                     "byte": 1,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2935,7 +2935,7 @@
                 {
                     "extra_name": "G67_IVI_PVC_TYPE",
                     "name_original": "G67",
-                    "name": "Тип камеры панорамного обзора",
+                    "name": "Panoramic camera type",
                     "byte": 2,
                     "mask": "11100000",
                     "form_type": "combobox",
@@ -2970,36 +2970,36 @@
                         },
                         {
                             "mask": "11100000",
-                            "name": "Отсутствует"
+                            "name": "Missing"
                         }
                     ]
                 },
                 {
                     "extra_name": "G5N_IVI_ODS_GEN",
                     "name_original": "G5N",
-                    "name": "Тип отображения системы помощи при парковке",
+                    "name": "Parking Assistance Display Type",
                     "byte": 2,
                     "mask": "00011000",
                     "form_type": "combobox",
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Поколение 1"
+                            "name": "Generation 1"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Поколение 2"
+                            "name": "Generation 2"
                         },
                         {
                             "mask": "00100000",
-                            "name": "Поколение 3"
+                            "name": "Generation 3"
                         }
                     ]
                 },
                 {
                     "extra_name": "G2V_IVI_ATT_DG_CITYPARK_PUSH",
                     "name_original": "G2V",
-                    "name": "Вывод сенсорной клавиши \"Система полуавтоматической парковки\"",
+                    "name": "Semi-automatic parking system touch key output",
                     "byte": 2,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -3008,7 +3008,7 @@
                 {
                     "extra_name": "G83_IVI_CLEAN_CAMERA",
                     "name_original": "G83",
-                    "name": "Функция омывателя камеры",
+                    "name": "Camera washer function",
                     "byte": 2,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -3017,7 +3017,7 @@
                 {
                     "extra_name": "G8C_IVI_RCW",
                     "name_original": "G8C",
-                    "name": "Функция омывателя задней камеры",
+                    "name": "Rear camera washer function",
                     "byte": 2,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -3026,7 +3026,7 @@
                 {
                     "extra_name": "G9H_IVI_TRAJECTORY_DISPLAY",
                     "name_original": "G9H",
-                    "name": "Отображение траектории и размера функции автоматической помощи при парковке",
+                    "name": "Display the trajectory and size of the automatic parking assistance function",
                     "byte": 3,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -3181,7 +3181,7 @@
         "011A": {
             "id": "Calibration_Fct_WIFI",
             "tab": "cal",
-            "name": "Calibration WIFI?",
+            "name": "WIFI Calibration?",
             "byte": 0,
             "type": "raw",
             "form_type": "string"
@@ -3242,7 +3242,7 @@
             "type": "raw",
             "form_type": "string"
         },
-        "С000": {
+        "C000": {
             "id": "Gauging_Group_Data_Values",
             "tab": "cal",
             "name": "Unknown zone",
@@ -3250,7 +3250,7 @@
             "type": "raw",
             "form_type": "string"
         },
-        "С002": {
+        "C002": {
             "id": "Gauging_Group_Data_Values",
             "tab": "cal",
             "name": "Unknown zone",
