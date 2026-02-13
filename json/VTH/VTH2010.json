@@ -1,0 +1,390 @@
+{
+  "_comment": "-",
+  "name": "VTH_2010",
+  "tx_id": "770",
+  "rx_id": "670",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "F7F7",
+  "tabs": {
+        "ident": "Identification",
+        "coding": "Telecoding"
+  },
+  "coding": "true",
+  "errors": "true",
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "zones": {
+    "2100": {
+      "name": "Telecoding_VTH_2100",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+      {
+        "id": "RESERVED1",
+        "name": "RESERVED1",
+        "byte": 0,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "RESERVED2",
+        "name": "RESERVED2",
+        "byte": 0,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_D0H_VTH_CONF_HYBRIDE_000",
+        "name": "Presence of hybrid information display",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_BPK_VTH_CONF_RVV_LVV_000",
+        "name": "Presence of limiter and cruise control information display",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_BQG_VTH_CONF_NAVIGATION_000",
+        "name": "Presence of navigation information display",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_BQH_VTH_CONF_TYP_DESIGNATEUR_000",
+        "name": "CFG_BQH_VTH_CONF_TYP_DESIGNATEUR_000",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_BQ4_VTH_CONF_ARTIV_ACC_000",
+        "name": "Adaptive cruise control mode (ARTIV)",
+        "byte": 0,
+        "type": "bool",
+        "mask": "00000011",
+          "form_type": "combobox",
+          "params": [
+            { "mask": "00000000", "name": "00 - All hidden"},
+            { "mask": "00000001", "name": "01 - ARTIV displayed"},
+            { "mask": "00000010", "name": "10 - ACC displayed"},
+            { "mask": "00000011", "name": "11 - Unused"}
+          ]
+      },
+      {
+        "id":"CFG_DVF_VTH_CONF_ICC_TIME_SET_000",
+        "name": "CFG_DVF_VTH_CONF_ICC_TIME_SET_000",
+        "byte": 1,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id":"CFG_DVG_VTH_CONF_ICC_000",
+        "name": "CFG_DVG_VTH_CONF_ICC_000",
+        "byte": 1,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_DVH_VTH_CONF_ALERTES_000",
+        "name": "Presence of On-board computer warnings",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00100000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_DVI_VTH_CONF_SLI_000",
+        "name": "Presence of speed limit information display (SLI)",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00010000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "CFG_DVJ_VTH_CONF_LKA_000",
+        "name": "Presence of lane keeping assistance information display (LKA)",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00001000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "RESERV_2100_3",
+        "name": "RESERV_2100_3",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000100",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "RESERV_2100_2",
+        "name": "RESERV_2100_2",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000010",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "RESERV_2100_1",
+        "name": "RESERV_2100_1",
+        "byte": 1,
+        "type": "bool",
+        "mask": "00000001",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      }
+      ]
+    },
+    "0400": {
+      "name": "0400 - Development time parameters (read only ?)",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+      {
+        "id": "TFiltreAffichage_2",
+        "name": "Filtering time on brightness change on VTH (ms)",
+        "byte": 0,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "TempoSynchroAffTACHY_2",
+        "name": "Synchronization delay for the tachometer display (ms)",
+        "byte": 1,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "TempoSynchroAffLVVRVV_2",
+        "name": "Synchronization delay for displaying the LVVRVV function (ms)",
+        "byte": 3,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "TempoSynchroAffARTIV_1",
+        "name": "Synchronization delay for displaying the ARTIV function (ms)",
+        "byte": 3,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA0_1",
+        "name": "DELTA0 (s)",
+        "byte": 4,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA1_1",
+        "name": "DELTA1 (s)",
+        "byte": 5,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "TempoSynchroAffNAV_1",
+        "name": "TEMPOSYNCHROAFFNAV (ms)",
+        "byte": 6,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "FiltreTIV_1",
+        "name": "Filtering the TIV value",
+        "byte": 7,
+        "type": "bool",
+        "mask": "10000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "AffichageCoinsVTH_1",
+        "name": "Display of the 4 corners on the VTH blade",
+        "byte": 7,
+        "type": "bool",
+        "mask": "01000000",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      {
+        "id": "MP_VTH_ETAT_SELECT_ARTIV",
+        "name": "Retrieving the state of the ARTIV function",
+        "byte": 7,
+        "type": "bool",
+        "mask": "00110000",
+        "form_type": "combobox",
+        "params": [
+          { "mask": "00000000", "name": "00 - Not selected"},
+          { "mask": "00010000", "name": "01 - Selected 1"},
+          { "mask": "00100000", "name": "10 - Selected 2"},
+          { "mask": "00110000", "name": "11 - unused"}
+        ]
+      },
+      {
+        "id": "TempoMiniAffTIVcons_1",
+        "name": "T_MIN_AFF_TIV_CONS (s)",
+        "byte": 7,
+        "type": "raw",
+        "mask": "00001111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA2_1",
+        "name": "DELTA2 (s)",
+        "byte": 8,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA3_1",
+        "name": "DELTA3 (s)",
+        "byte": 9,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA4_1",
+        "name": "DELTA4 (s)",
+        "byte": 10,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA5_1",
+        "name": "DELTA5 (s)",
+        "byte": 11,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "DELTA6_1",
+        "name": "DELTA6 (s)",
+        "byte": 12,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T1_1",
+        "name": "VTH_T1 (s)",
+        "byte": 13,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T2_1",
+        "name": "VTH_T2 (s)",
+        "byte": 14,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T3_1",
+        "name": "VTH_T3 (s)",
+        "byte": 15,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T4_1",
+        "name": "VTH_T4 (s)",
+        "byte": 16,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T5_1",
+        "name": "VTH_T5 (s)",
+        "byte": 17,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T6_1",
+        "name": "VTH_T6 (s)",
+        "byte": 18,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "VTH_T7_1",
+        "name": "VTH_T7 (s)",
+        "byte": 19,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "NB_PAS_HT_LAME_1",
+        "name": "NB_PAS_HT_LAME",
+        "byte": 20,
+        "type": "raw",
+        "mask": "11111111",
+        "form_type": "string"
+      },
+      {
+        "id": "TempoMiniAffNAV_1",
+        "name": "T_MIN_AFF_NAV (s)",
+        "byte": 21,
+        "type": "raw",
+        "mask": "11110000",
+        "form_type": "string"
+      },
+      {
+        "id": "T_MIN_AFF_ACC (s)",
+        "name": "TempoMiniAffACC_1",
+        "byte": 21,
+        "type": "raw",
+        "mask": "00001111",
+        "form_type": "string"
+      }
+      ]
+    }
+  }
+}
