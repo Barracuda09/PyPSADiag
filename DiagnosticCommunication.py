@@ -98,8 +98,8 @@ class DiagnosticCommunication(QThread):
             self.readZoneTag = "21"
             self.writeZoneTag = "34"
         elif self.protocol == "kwp_hab":
-            self.keepAlive = ""
-            self.stopKeepAlive = ""
+            self.keepAlive = "KK"
+            self.stopKeepAlive = "S"
             self.startDiagmode = "10C0"
             self.stopDiagmode = "1081"
             self.rebootECU = "31A800"
@@ -138,7 +138,7 @@ class DiagnosticCommunication(QThread):
 
     def stop(self):
         self.isRunning = False
-        emptyQueue()
+        self.emptyQueue()
 
     def emptyQueue(self):
         while not self.writeQ.empty():
@@ -419,6 +419,15 @@ class DiagnosticCommunication(QThread):
         self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
         return False
 
+    def writeKWPhabZoneConfigurationCommand(self, zone: str(), data: str()):
+        writeCmd = self.writeZoneTag + zone + data
+        receiveData = self.writeECUCommand(writeCmd)
+        if len(receiveData) == 4 and receiveData[:2] == "7B":
+            return True
+
+        self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
+        return False
+
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
         if not self.serialPort.isOpen():
             self.receivedPacketSignal.emit([i18n().tr("Serial Port Not Open"), "", ""], time.time())
@@ -477,6 +486,8 @@ class DiagnosticCommunication(QThread):
                     self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
                 elif self.protocol == "kwp_is":
                     self.writeKWPisZoneConfigurationCommand(zone[0], zone[1])
+                elif self.protocol == "kwp_hab":
+                    self.writeKWPhabZoneConfigurationCommand(zone[0], zone[1])
                 time.sleep(0.2)
                 receiveData = self.writeECUCommand(readCmd)
 
