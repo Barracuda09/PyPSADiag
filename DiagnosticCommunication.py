@@ -454,25 +454,26 @@ class DiagnosticCommunication(QThread):
 
         time.sleep(0.5)
 
-        if useSketchSeed:
-            if not self.setupSketchSeedForDiagnoticMode(key):
-                self.stopDiagnosticMode()
-                return
-        else:
-            seed = self.unlockingServiceForConfiguration(key)
-            if len(seed) == 0:
-                self.stopDiagnosticMode()
-                return
+        if len(key) > 0:
+            if useSketchSeed:
+                if not self.setupSketchSeedForDiagnoticMode(key):
+                    self.stopDiagnosticMode()
+                    return
+            else:
+                seed = self.unlockingServiceForConfiguration(key)
+                if len(seed) == 0:
+                    self.stopDiagnosticMode()
+                    return
 
-            self.writeToOutputView(i18n().tr("Waiting 2 Sec..."))
-            time.sleep(2)
+                self.writeToOutputView(i18n().tr("Waiting 2 Sec..."))
+                time.sleep(2)
 
-            if not self.sendUnlockingResponseForConfiguration(seed):
-                self.stopDiagnosticMode()
-                return
+                if not self.sendUnlockingResponseForConfiguration(seed):
+                    self.stopDiagnosticMode()
+                    return
 
-            if not self.stopSendingKeepAlive():
-                return
+                if not self.stopSendingKeepAlive():
+                    return
 
         # Write Zones
         for tabList in valueList:
