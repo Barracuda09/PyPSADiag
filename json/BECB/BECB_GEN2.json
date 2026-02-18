@@ -128,11 +128,11 @@
                         "mask": "00000000"
                     },
                     {
-                        "name": "Exide",
+                        "name": "VARTA",
                         "mask": "00000001"
                     },
                     {
-                        "name": "VARTA",
+                        "name": "EXIDE",
                         "mask": "00000010"
                     },
                     {
