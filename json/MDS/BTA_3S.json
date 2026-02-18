@@ -5,8 +5,7 @@
   "protocol": "kwp_hab",
   "key_type": "single",
   "keys":  {
-    "key1": "DC3B",
-    "BSRF": "B7A9"
+    "BTA_3S": "DC3B"
   },
   "coding": true,
   "errors": true,
