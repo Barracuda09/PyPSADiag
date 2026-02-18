@@ -32,6 +32,33 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "AAS_PUSH_LED",
+                    "name_original": "DUL",
+                    "name": "Driving Functions: display touch button \"Parking sensors\"",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DG_AAS_PUSH_POS",
+                    "name_original": "DMM",
+                    "name": "Touch button Position \"Parking assistance\"",
+                    "byte": 0,
+                    "mask": "00111110",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "ATT_DG_AAS_PUSH",
+                    "name_original": "D8R",
+                    "name": "Physical Button \"Parking assistance\"",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "AAS",
                     "name_original": "AKS",
                     "name": "Parking assistance",
@@ -61,33 +88,6 @@
                     "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "ATT_DG_AAS_PUSH",
-                    "name_original": "D8R",
-                    "name": "Physical Button \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "DG_AAS_PUSH_POS",
-                    "name_original": "DMM",
-                    "name": "Touch button Position \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "00111110",
-                    "type": "raw",
-                    "form_type": "string"
-                },
-                {
-                    "extra_name": "AAS_PUSH_LED",
-                    "name_original": "DUL",
-                    "name": "Display Touch button \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "00000001",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 }
             ]
         },
@@ -100,7 +100,7 @@
                 {
                     "extra_name": "ATT_DG_AFIL_PUSH",
                     "name_original": "D8N",
-                    "name": "Display Touch button \"Lane departure warning system (AFIL)\"",
+                    "name": "Driving Functions: display touch button \"Lane departure warning system (AFIL)\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -133,6 +133,15 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "ATT_DG_ARTIV_PUSH",
+                    "name_original": "D8M",
+                    "name": "Driving Functions: display touch button \"Distance Alert (ARTIV)\"",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DG_ARTIV_PUSH_POS",
                     "name_original": "DMX",
                     "name": "Touch Button Position \"Distance Alert (ARTIV)\"\"",
@@ -140,15 +149,6 @@
                     "mask": "00011111",
                     "type": "raw",
                     "form_type": "string"
-                },
-                {
-                    "extra_name": "ATT_DG_ARTIV_PUSH",
-                    "name_original": "D8M",
-                    "name": "Display Touch button \"Distance Alert (ARTIV)\"",
-                    "byte": 0,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 },
                 {
                     "extra_name": "DG_ARTIV_PUSH_PANEL",
@@ -593,7 +593,7 @@
                     "extra_name": "ATT_DG_JDA",
                     "zoneLength": 10,
                     "name_original": "BSZ",
-                    "name": "Alerts history",
+                    "name": "Security system alerts history",
                     "byte": 7,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -737,7 +737,7 @@
                 {
                     "extra_name": "VEHICLE",
                     "name_original": "DSF",
-                    "name": "\"MENU\" button",
+                    "name": "Presense of \"Vehicle Settings\" menu button",
                     "byte": 4,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1190,7 +1190,7 @@
                     "extra_name": "PERSO_CFG",
                     "zoneLength": 10,
                     "name_original": "EIO",
-                    "name": "Instrument panel personalization",
+                    "name": "Presence of dashboard personalization menu",
                     "byte": 9,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1217,7 +1217,7 @@
                 {
                     "extra_name": "DG_CAFR_PUSH",
                     "name_original": "D8L",
-                    "name": "Display Touch button \"Main beams assistant\"",
+                    "name": "Driving Functions: display touch button \"Main beams assistant\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1560,7 +1560,7 @@
                 {
                     "extra_name": "ATT_DG_MPD_PUSH_POS",
                     "name_original": "D8O",
-                    "name": "Display Touch button \"Parking space measurement system\"",
+                    "name": "Driving Functions: display touch button \"Parking space measurement system\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1868,7 +1868,7 @@
                 {
                     "extra_name": "ATT_DG_SAM_PUSH",
                     "name_original": "D8P",
-                    "name": "Display Touch button \"Blind spot monitoring\"",
+                    "name": "Driving Functions: display touch button \"Blind spot monitoring\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1903,7 +1903,7 @@
                 {
                     "extra_name": "DAT_DG_LKA_PUSH_LED",
                     "name_original": "DM9",
-                    "name": "Display Touch button \"Lane Guard system\"",
+                    "name": "Driving Functions: display touch button \"Lane Guard system\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1938,7 +1938,7 @@
                 {
                     "extra_name": "DAT_DG_ACV_PUSH_LED",
                     "name_original": "DMA",
-                    "name": "Display Touch button \"Automatic control of the volume \"ACV\"\"",
+                    "name": "Driving Functions: display Touch button \"Automatic control of the volume \"ACV\"\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1971,20 +1971,29 @@
             "form_type": "multi",
             "params": [
                 {
-                    "extra_name": "DAT_DG_ALARM_HISTORY",
-                    "name_original": "DNL",
-                    "name": "History of on-board computer alerts",
+                    "extra_name": "CFG_DNM_BTEL_DAT_DG_ALARM_HISTORY_000",
+                    "name_original": "CFG_DNM_BTEL_DAT_DG_ALARM_HISTORY_000",
+                    "name": "Driving functions: Display \"Diagnostics\" button with vehicle alerts history (overwrites 210B)",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DAT_DG_ALARM",
-                    "name_original": "DNM",
+                    "extra_name": "CFG_DNM_BTEL_DAT_DG_ALARM_000",
+                    "name_original": "CFG_DNM_BTEL_DAT_DG_ALARM_000",
                     "name": "On-board computer alerts (Vehicle without matrix)",
                     "byte": 0,
                     "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_DR6_BTEL_CPUSH_ALARMLOG_000",
+                    "name_original": "CFG_DR6_BTEL_CPUSH_ALARMLOG_000",
+                    "name": "Presence of physical \"Alerts History\" button",
+                    "byte": 0,
+                    "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -2025,7 +2034,7 @@
                 {
                     "extra_name": "DAT_DG_TYRES_PRES",
                     "name_original": "DNF",
-                    "name": "Tire pressure",
+                    "name": "Driving Functions: add \"Tyre\" to \"Diagnostics\" button",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -2271,7 +2280,7 @@
                 {
                     "extra_name": "OBC_STT",
                     "name_original": "DUI",
-                    "name": "Stop and Start function",
+                    "name": "Stop&Start statistics in on-board computer",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -2309,18 +2318,18 @@
                         },
                         {
                             "mask": "00000001",
-                            "name": "Routing 1"
+                            "name": "Route 1"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Routing 2"
+                            "name": "Route 2"
                         }
                     ]
                 },
                 {
                     "extra_name": "MAINTEANCE",
                     "name_original": "DUQ",
-                    "name": "Viewing maintenance data",
+                    "name": "Driving Functions: add \"Maintenance\" to \"Diagnostics\" button",
                     "byte": 4,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2337,7 +2346,7 @@
                 {
                     "extra_name": "CPUSH_BLACK_PANEL",
                     "name_original": "DR7",
-                    "name": "Blackpanel button",
+                    "name": "Presense of physical \"Blackpanel\" button",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2346,7 +2355,7 @@
                 {
                     "extra_name": "CPUSH_COLORCLUST",
                     "name_original": "DR8",
-                    "name": "Instrument panel themes (iCockpit Amplify)",
+                    "name": "Presense of physical \"iCockpit Amplify\" button",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2355,7 +2364,7 @@
                 {
                     "extra_name": "CPUSH_CHECK",
                     "name_original": "DR9",
-                    "name": "\"CHECK\" button",
+                    "name": "Presense of physical \"CHECK\" button",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2364,7 +2373,7 @@
                 {
                     "extra_name": "CPUSH_DOMELIGHT",
                     "name_original": "DRB",
-                    "name": "CPUSH DOMELIGHT",
+                    "name": "Presense of physical \"DOMELIGHT\" button",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -9277,7 +9286,7 @@
                 {
                     "extra_name": "NV_PUSH_LED_1",
                     "name_original": "EO9",
-                    "name": "Display Touch button \"Night Vision\"",
+                    "name": "Driving Functions: display touch button \"Night Vision\"",
                     "zoneLength": 7,
                     "byte": 6,
                     "mask": "00000001",
@@ -9594,7 +9603,7 @@
                 {
                     "extra_name": "CHECK_PUSH",
                     "name_original": "ERG",
-                    "name": "Display Touch button \"Check\"",
+                    "name": "Driving Functions: display touch button \"Vehicle check service\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -9650,7 +9659,7 @@
                 {
                     "extra_name": "ATT_DG_CITYPARK_PUSH",
                     "name_original": "D8Q",
-                    "name": "Display Touch button \"Semi-automatic parking system\"",
+                    "name": "Driving Functions: display touch button \"Park assist\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -9659,7 +9668,7 @@
                 {
                     "extra_name": "DG_CPAS_PUSH_POS",
                     "name_original": "DMH",
-                    "name": "Touch button Position \"Semi-automatic parking system\"",
+                    "name": "Touch button Position \"Park Assist\"",
                     "byte": 0,
                     "mask": "00011111",
                     "type": "raw",
@@ -9928,9 +9937,18 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "INIT_DSGI_001",
+                    "name_original": "DRG",
+                    "name": "Driving Functions: display tyres under-inflation initialisation button",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DG_DGSI_PUSH_POS",
                     "name_original": "DMI",
-                    "name": "Under-inflation detection Position",
+                    "name": "Under-inflation initialisation button Position",
                     "byte": 0,
                     "mask": "00111110",
                     "type": "raw",
@@ -9939,18 +9957,9 @@
                 {
                     "extra_name": "DG_DGSI_PUSH_PANEL",
                     "name_original": "DMT",
-                    "name": "Physical Button for Under-inflation detection",
+                    "name": "Physical Button for Under-inflation initialisation",
                     "byte": 0,
                     "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "INIT_DSGI_001",
-                    "name_original": "DRG",
-                    "name": "Under-inflation detection reset button",
-                    "byte": 0,
-                    "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -9999,7 +10008,7 @@
                 {
                     "extra_name": "ATT_DG_STT_PUSH",
                     "name_original": "D8T",
-                    "name": "Display Touch button \"Stop and Start\"",
+                    "name": "Driving functions: display touch button \"Stop and Start\"",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -10097,7 +10106,7 @@
                 {
                     "extra_name": "RLVV_MEMORIZATION",
                     "name_original": "DSW",
-                    "name": "Memorized speeds",
+                    "name": "Driving functions: display touch button \"Memorized Speeds\"",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -10106,7 +10115,7 @@
                 {
                     "extra_name": "RLVV_SELECTION",
                     "name_original": "DSX",
-                    "name": "Selected speeds",
+                    "name": "Display Memorized Speeds menu after MEM button is pressed",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -10133,7 +10142,7 @@
                 {
                     "extra_name": "RVV_RVVI_PUSH_LED",
                     "name_original": "E09",
-                    "name": "Display Touch button \"Adaptive Cruise control\"",
+                    "name": "Driving Functions: display touch button \"Adaptive Cruise Control\"",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -10261,11 +10270,11 @@
             "form_type": "multi",
             "params": [
                 {
-                    "extra_name": "ASR_PUSH_LED_PANEL",
-                    "name_original": "E7X",
-                    "name": "Physical Button \"Traction Control\"",
+                    "extra_name": "ASR_PUSH_LED",
+                    "name_original": "E7Z",
+                    "name": "Driving Functions:: display touch button \"Traction Control\"",
                     "byte": 0,
-                    "mask": "01000000",
+                    "mask": "00000001",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
@@ -10279,11 +10288,11 @@
                     "form_type": "string"
                 },
                 {
-                    "extra_name": "ASR_PUSH_LED",
-                    "name_original": "E7Z",
-                    "name": "Display Touch button \"Traction Control\"",
+                    "extra_name": "ASR_PUSH_LED_PANEL",
+                    "name_original": "E7X",
+                    "name": "Physical Button \"Traction Control\"",
                     "byte": 0,
-                    "mask": "00000001",
+                    "mask": "01000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
