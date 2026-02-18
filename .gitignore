@@ -7,3 +7,5 @@
 /.git
 /csv/test*.csv
 /json/test*.json
+csv/**
+.DS_Store
