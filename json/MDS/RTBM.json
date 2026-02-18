@@ -1,0 +1,37 @@
+{
+  "name": "RTBM ",
+  "tx_id": "77C",
+  "rx_id": "67C",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "RTBM": "DE6B",
+    "BSRF Dual-Can": "B7A9"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "2100": {
+      "id": "variant_coding_zone",
+      "tab": "tele",
+      "name": "Variant Coding Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
