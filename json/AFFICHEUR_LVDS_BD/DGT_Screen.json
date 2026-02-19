@@ -1,8 +1,7 @@
 {
   "name": "DGT Screen",
-  "tx_id": "736",
-  "rx_id": "716",
-  "lin_id": "47",
+  "tx_id": "743",
+  "rx_id": "643",
   "protocol": "uds",
   "key_type": "multi",
   "keys": {
@@ -21,82 +20,38 @@
     "dgt_screen": "DGT Screen"
   },
   "zones": {
-    "2100": {
-      "id": "Configuration_Group_Data_List_2100",
-      "tab": "dgt_screen",
-      "name": "Configuration group data list 2100",
-      "type": "raw",
-      "form_type": "multi",
-      "CFG_2100_4": {
-        "name": "??? Button",
-        "byte": 0,
-        "form_type": "combobox",
-        "mask": "00010000",
-        "params": [
-          {
-            "name": "Function ABSENT",
-            "mask": "00000000"
-          },
-          {
-            "name": "Function present",
-            "mask": "00010000"
-          }
-        ]
-      },
-      "CFG_2100_5": {
-        "name": "Airco/Temperature Button",
-        "byte": 0,
-        "form_type": "combobox",
-        "mask": "00100000",
-        "params": [
-          {
-            "name": "Function ABSENT",
-            "mask": "00000000"
-          },
-          {
-            "name": "Function present",
-            "mask": "00100000"
-          }
-        ]
-      },
-      "CFG_2100_6": {
-        "name": "??? Button",
-        "byte": 0,
-        "form_type": "combobox",
-        "mask": "01000000",
-        "params": [
-          {
-            "name": "Function ABSENT",
-            "mask": "00000000"
-          },
-          {
-            "name": "Function present",
-            "mask": "01000000"
-          }
-        ]
-      }
-    },
     "2110": {
       "id": "Configuration_Group_Data_List_2110",
       "tab": "dgt_screen",
       "name": "Configuration group data list 2110",
       "type": "raw",
       "form_type": "multi",
-      "CFG_2110_0": {
-        "name": "Touch",
+      "CFG_DM8_EMF_TYPE_DETECTION_MULTI_000": {
+        "name": "Touch type",
         "byte": 0,
         "form_type": "combobox",
-        "mask": "10000000",
+        "mask": "11000000",
         "params": [
           {
             "name": "Single-Touch",
             "mask": "00000000"
           },
           {
+            "name": "Dual-Touch",
+            "mask": "01000000"
+          },
+          {
             "name": "Multi-Touch",
             "mask": "10000000"
           }
         ]
+      },
+      "CFG_DU1_EMF_PICTURE_REVERSED_000": {
+        "name": "Reversed picture mode",
+        "byte": 0,
+        "mask": "00000010",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       }
     }
   }
