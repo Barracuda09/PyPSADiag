@@ -169,6 +169,7 @@ class MainWindow(QMainWindow):
             self.ui.translateGUI(self)
             if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
                 self.updateEcuZonesAndKeys(self.ecuObjectList)
+            self.updateEcuTxRxLabel()
 
     def loadTranslator(self):
             qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
@@ -204,6 +205,17 @@ class MainWindow(QMainWindow):
             self.ui.ecuComboBox.addItem(str(zoneObject))
 
         self.ui.treeView.updateView(ecuObjectList)
+
+    def updateEcuTxRxLabel(self):
+        txId = "-"
+        rxId = "-"
+        protocol = "-"
+        if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
+            txId = self.ecuObjectList.get("tx_id", "-")
+            rxId = self.ecuObjectList.get("rx_id", "-")
+            protocol = self.ecuObjectList.get("protocol", "-")
+
+        self.ui.setEcuTxRxText(txId, rxId, protocol)
 
     def writeToOutputView(self, text: str):
         self.ui.output.append(str(datetime.now()) + " --|  " + text)
@@ -338,6 +350,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
+        self.updateEcuTxRxLabel()
 
     @Slot()
     def readZone(self):

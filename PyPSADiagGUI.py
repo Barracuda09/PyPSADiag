@@ -29,7 +29,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
-    QHBoxLayout, QLineEdit, QMainWindow, QPushButton,
+    QHBoxLayout, QLabel, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
     QTextEdit, QVBoxLayout, QWidget, QStyleFactory)
 
@@ -152,6 +152,7 @@ class PyPSADiagGUI(object):
         self.rebootEcu = QPushButton()
         self.readEcuFaults = QPushButton()
         self.clearEcuFaults = QPushButton()
+        self.ecuTxRxLabel = QLabel()
         self.writeSecureTraceability = QCheckBox()
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
@@ -205,6 +206,7 @@ class PyPSADiagGUI(object):
         # Setup Bottom Right Layout (Buttons)
         self.bottomRightLayout = QVBoxLayout()
         self.bottomRightLayout.addWidget(self.openZoneFile)
+        self.bottomRightLayout.addWidget(self.ecuTxRxLabel)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
         self.bottomRightLayout.addWidget(self.readZone)
@@ -352,3 +354,7 @@ class PyPSADiagGUI(object):
         self.virginWriteZone.setText(i18n().tr("Virgin Write"))
         self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))
 #        self.useSketchSeedGenerator.setText(i18n().tr("Use Sketch Seed Generator"))
+        self.setEcuTxRxText("-", "-", "-")
+
+    def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))

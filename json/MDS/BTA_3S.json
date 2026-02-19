@@ -3,8 +3,9 @@
   "tx_id": "77C",
   "rx_id": "67C",
   "protocol": "kwp_hab",
-  "key_type": "single",
+  "key_type": "multi",
   "keys":  {
+    "key1": "DC3B"
     "BTA_3S": "DC3B"
   },
   "coding": true,

@@ -1924,6 +1924,15 @@
                     "mask": "00000001",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "UNKNOWN_2200_B7_BIT0",
+                    "name_original": "U2200_B7_0",
+                    "name": "IVI Theme",
+                    "byte": 7,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_low"
                 }
             ]
         },

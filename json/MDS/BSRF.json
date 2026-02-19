@@ -1,12 +1,11 @@
 {
-  "name": "RTBM ",
+  "name": "BSRF",
   "tx_id": "77C",
-  "rx_id": "77F",
+  "rx_id": "67C",
   "protocol": "uds",
   "key_type": "multi",
   "keys":  {
-    "RTBM": "DE6B",
-    "BSRF Dual-Can": "B7A9"
+    "BSRF": "B7A9"
   },
   "coding": true,
   "errors": true,
