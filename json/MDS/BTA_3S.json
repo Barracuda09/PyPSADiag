@@ -5,7 +5,6 @@
   "protocol": "kwp_hab",
   "key_type": "multi",
   "keys":  {
-    "key1": "DC3B"
     "BTA_3S": "DC3B"
   },
   "coding": true,
