@@ -1,0 +1,100 @@
+{
+  "name": "EMF_DGT_UDS_GP",
+  "tx_id": "736",
+  "rx_id": "716",
+  "lin_id": "47",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "EMF_DGT_UDS_GP (DGT7CFF)": "FD69",
+    "EMF_C": "F6C4"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding",
+    "dgt_screen": "DGT Screen"
+  },
+  "zones": {
+    "2100": {
+      "id": "Configuration_Group_Data_List_2100",
+      "tab": "dgt_screen",
+      "name": "Configuration group data list 2100",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_2100_4": {
+        "name": "??? Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "CFG_2100_5": {
+        "name": "Airco/Temperature Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "CFG_2100_6": {
+        "name": "??? Button",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "00000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "01000000"
+          }
+        ]
+      }
+    },
+    "2110": {
+      "id": "Configuration_Group_Data_List_2110",
+      "tab": "dgt_screen",
+      "name": "Configuration group data list 2110",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_2110_0": {
+        "name": "Touch",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Single-Touch",
+            "mask": "00000000"
+          },
+          {
+            "name": "Multi-Touch",
+            "mask": "10000000"
+          }
+        ]
+      }
+    }
+  }
+}
