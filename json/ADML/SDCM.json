@@ -1,0 +1,28 @@
+{
+  "name": "SDCM",
+  "tx_id": "741",
+  "rx_id": "641",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "SDCM": "A8EE"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    }
+  }
+}
