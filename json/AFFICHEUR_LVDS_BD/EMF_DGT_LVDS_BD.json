@@ -1,0 +1,56 @@
+{
+  "name": "EMF_DGT_LVDS_BD",
+  "tx_id": "743",
+  "rx_id": "643",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "EMF_DGT_LVDS_BD   (Key 1)": "16FB",
+    "EMF_DGT_LVDS_BD-8 (Key 2)": "DF69",
+    "EMF_DGT_LVDS_BD   (Key 3)": "CF52"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding",
+    "dgt_screen": "DGT Screen"
+  },
+  "zones": {
+    "2110": {
+      "id": "Configuration_Group_Data_List_2110",
+      "tab": "dgt_screen",
+      "name": "Configuration group data list 2110",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DM8_EMF_TYPE_DETECTION_MULTI_000": {
+        "name": "Touch type",
+        "byte": 0,
+        "form_type": "combobox",
+        "mask": "11000000",
+        "params": [
+          {
+            "name": "Single-Touch",
+            "mask": "00000000"
+          },
+          {
+            "name": "Dual-Touch",
+            "mask": "01000000"
+          },
+          {
+            "name": "Multi-Touch",
+            "mask": "10000000"
+          }
+        ]
+      },
+      "CFG_DU1_EMF_PICTURE_REVERSED_000": {
+        "name": "Reversed picture mode",
+        "byte": 0,
+        "mask": "00000010",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      }
+    }
+  }
+}
