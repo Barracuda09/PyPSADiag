@@ -240,23 +240,27 @@
                     {
                         "name": "DT20",
                         "mask": "00010101"
+                    },
+                    {
+                        "name": "DW10FC",
+                        "mask": "00011010"
                     }
                 ]
             },
             "CFG_D37_BECB_FLAG_NEW_BAT_000": {
-                "name": "Is battery new?",
+                "name": "Battery Flag",
                 "byte": 3,
                 "type": "hex",
                 "form_type": "combobox",
                 "mask": "00100000",
                 "params": [
                     {
-                        "name": "YES",
-                        "mask": "00000000"
+                        "name": "New battery",
+                        "mask": "00100000"
                     },
                     {
-                        "name": "NO",
-                        "mask": "00100000"
+                        "name": "Old battery",
+                        "mask": "00000000"
                     }
                 ]
             }
