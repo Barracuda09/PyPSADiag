@@ -23,6 +23,22 @@
       "type": "string_ascii",
       "form_type": "string",
       "name": "VIN"
+    },
+    "2100": {
+      "id": "variant_coding_zone",
+      "tab": "tele",
+      "name": "Variant Coding Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "configuration_data_values",
+      "tab": "tele",
+      "name": "Configuration data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
     }
   }
 }
