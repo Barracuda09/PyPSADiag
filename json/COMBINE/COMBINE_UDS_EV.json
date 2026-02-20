@@ -5,8 +5,6 @@
     "protocol": "uds",
     "key_type": "multi",
     "keys": {
-        "Key1": "50A6",
-        "Key2": "DA33",
         "I-Cockpit 3D (2024)": "A13C"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
@@ -218,7 +216,7 @@
                 },
                 {
                     "extra_name": "DQ5_CMB_DAA_PRESENCE",
-                    "name": "Presence of Driver Attention Assist (DAA) well in Personal Mode",
+                    "name": "Presence of Driver Attention Assist (DAA)",
                     "byte": 3,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -227,7 +225,7 @@
                 {
                     "extra_name": "DQ6_CMB_LKA_VAL_PRESENCE",
                     "name_original": "DQ6",
-                    "name": "Presence of Lane Keeping Assist (LKA) well in Personal Mode",
+                    "name": "Presence of Lane Keeping Assist (LKA)",
                     "byte": 3,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -236,7 +234,7 @@
                 {
                     "extra_name": "DQ7_CMB_DYN_PACK_PRESENCE",
                     "name_original": "DQ7",
-                    "name": "Presence of Dynamic Metrics well in Personal Mode",
+                    "name": "Presence of Dynamic Metrics",
                     "byte": 3,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1853,6 +1851,7 @@
                 },
                 {
                     "extra_name": "CFG_G1Z_CMB_WIRE_IN_HSW_PUSH_000",
+                    "zoneLength": 28,
                     "name_original": "CFG_G1Z_CMB_WIRE_IN_HSW_PUSH_000",
                     "name": "Heated Steering Wheel PUSH input",
                     "byte": 27,
@@ -1861,6 +1860,7 @@
                 },
                 {
                     "extra_name": "CFG_G1Y_CMB_WIRE_OUT_HSW_LED_000",
+                    "zoneLength": 28,
                     "name_original": "CFG_G1Y_CMB_WIRE_OUT_HSW_LED_000",
                     "name": "Heated Steering Wheel LED output",
                     "byte": 27,
@@ -1945,7 +1945,7 @@
                 {
                     "extra_name": "CFG_E78_CMB_PERSO_POS_001",
                     "name_original": "CFG_E78_CMB_PERSO_POS_001",
-                    "name": "Personal Mode position",
+                    "name": "Personal 1 mode list position",
                     "byte": 0,
                     "mask": "11100000",
                     "form_type": "string"
@@ -1969,7 +1969,7 @@
                 {
                     "extra_name": "E6S_CMB_RESERVED_CONFIG1_CFG_000",
                     "name_original": "E6S",
-                    "name": "Hybrid Mode",
+                    "name": "Personal 2 display mode",
                     "byte": 1,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -1978,7 +1978,7 @@
                 {
                     "extra_name": "E6U_CMB_RESERVED_CONFIG2_CFG_000",
                     "name_original": "E6U",
-                    "name": "Computer Mode",
+                    "name": "Energy display mode",
                     "byte": 1,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1987,7 +1987,7 @@
                 {
                     "extra_name": "CFG_F4R_CMB_HY_PERSO_ACG_PRESENT_000",
                     "name_original": "CFG_F4R_CMB_HY_PERSO_ACG_PRESENT_000",
-                    "name": "Hybrid Mode 2",
+                    "name": "Hybrid personal display mode ?",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
@@ -2005,7 +2005,7 @@
                 {
                     "extra_name": "CFG_E6D_CMB_PERSO_CFG_000",
                     "name_original": "CFG_E6D_CMB_PERSO_CFG_000",
-                    "name": "Personal Mode",
+                    "name": "Personal 1 display mode",
                     "byte": 2,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2014,7 +2014,7 @@
                 {
                     "extra_name": "E6K_CMB_DAT_DG_CLASSIC_CFG",
                     "name_original": "E6K",
-                    "name": "Dials Mode",
+                    "name": "Dials display mode",
                     "byte": 2,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2023,7 +2023,7 @@
                 {
                     "extra_name": "E6M_CMB_ADAS_CFG",
                     "name_original": "E6M",
-                    "name": "Driving Mode",
+                    "name": "Driving display mode",
                     "byte": 2,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2032,7 +2032,7 @@
                 {
                     "extra_name": "E6O_CMB_CARTO_CFG",
                     "name_original": "E6O",
-                    "name": "Navigation Mode",
+                    "name": "Navigation display mode",
                     "byte": 2,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2041,7 +2041,7 @@
                 {
                     "extra_name": "E6Q_CMB_LIGHT_CFG",
                     "name_original": "E6Q",
-                    "name": "Minimal Mode",
+                    "name": "Minimal display mode",
                     "byte": 2,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -2058,7 +2058,7 @@
                 {
                     "extra_name": "CFG_E77_CMB_DAT_DG_CLASSIC_POS_001",
                     "name_original": "CFG_E77_CMB_DAT_DG_CLASSIC_POS_001",
-                    "name": "Dials Mode position",
+                    "name": "Dials mode list position",
                     "byte": 3,
                     "mask": "00001110",
                     "form_type": "string"
@@ -2066,7 +2066,7 @@
                 {
                     "extra_name": "CFG_E76_CMB_ADAS_POS_001",
                     "name_original": "CFG_E76_CMB_ADAS_POS_001",
-                    "name": "Driving Mode position",
+                    "name": "Driving mode list position",
                     "byte": 3,
                     "mask": "0000000111000000",
                     "form_type": "string"
@@ -2074,7 +2074,7 @@
                 {
                     "extra_name": "CFG_E75_CMB_CARTO_POS_001",
                     "name_original": "CFG_E75_CMB_CARTO_POS_001",
-                    "name": "Navigation Mode position",
+                    "name": "Navigation mode list position",
                     "byte": 4,
                     "mask": "00111000",
                     "form_type": "string"
@@ -2082,7 +2082,7 @@
                 {
                     "extra_name": "CFG_E74_CMB_LIGHT_POS_001",
                     "name_original": "CFG_E74_CMB_LIGHT_POS_001",
-                    "name": "Minimal Mode position",
+                    "name": "Minimal mode list position",
                     "byte": 4,
                     "mask": "00000111",
                     "form_type": "string"
@@ -2090,7 +2090,7 @@
                 {
                     "extra_name": "CFG_E71_CMB_RESERVED_CONFIG1_POS_001",
                     "name_original": "CFG_E71_CMB_RESERVED_CONFIG1_POS_001",
-                    "name": "Hybrid Mode position",
+                    "name": "Personal 2 mode list position",
                     "byte": 5,
                     "mask": "11100000",
                     "form_type": "string"
@@ -2098,19 +2098,10 @@
                 {
                     "extra_name": "CFG_E72_CMB_RESERVED_CONFIG2_POS_001",
                     "name_original": "CFG_E72_CMB_RESERVED_CONFIG2_POS_001",
-                    "name": "Computer Mode position",
+                    "name": "Energy mode list position",
                     "byte": 5,
                     "mask": "00011100",
                     "form_type": "string"
-                },
-                {
-                    "extra_name": "CFG_E6Y_CMB_BLACK_PRESENCE_000",
-                    "name_original": "CFG_E6Y_CMB_BLACK_PRESENCE_000",
-                    "name": "Empty well in Personal Mode",
-                    "byte": 6,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 },
                 {
                     "extra_name": "CFG_DOL_CMB_GAUGE_VHL_SPD_DIGIT_000",

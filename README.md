@@ -89,13 +89,17 @@ To show information of a CAL or ULP File.
 Make Translations
 ------
 
-For example to make a translation for Dutch use this command:
-- `i18n/Languages.json` Add the language code and name
-- `i18n/flags/nl.png` Add the .PNG flag for this language (About 128 x 84 Pixels)
-- `python buildi18n.py --lang nl` --> Build the qt.ts file
-- `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate
+For example to make a translation for Dutch NL use these commands:
+- `i18n/Languages.json` Add the language code and name like: `"nl": {"name": "Nederlands"}`
+- `i18n/flags/nl.png` Add the .PNG flag for the NL language (About 128 x 84 Pixels)
+- `python buildi18n.py --lang nl` --> Build the NL qt.ts file
+- `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate to NL and release qm file
+
+Only for translation corrections use this:
 - `pyside6-linguist ./i18n/PyPSADiag_translated_nl.qt.ts` --> Correct translation if required
 - `python translate.py --releaseonly --input ./i18n/PyPSADiag_nl.qt.ts` --> Only Release translation qm file
+
+Start PyPSADiag with a specific language:
 - `python main.py --lang nl` --> Run with nl language
 
 Donate

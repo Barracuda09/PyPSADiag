@@ -1,5 +1,5 @@
 {
-  "name": "DGT Screen",
+  "name": "EMF_DGT_UDS_GP",
   "tx_id": "736",
   "rx_id": "716",
   "lin_id": "47",
@@ -7,10 +7,7 @@
   "key_type": "multi",
   "keys": {
     "EMF_DGT_UDS_GP (DGT7CFF)": "FD69",
-    "EMF_C": "F6C4",
-    "EMF_DGT_LVDS_BD   (Key 1)": "16FB",
-    "EMF_DGT_LVDS_BD-8 (Key 2)": "DF69",
-    "EMF_DGT_LVDS_BD   (Key 3)": "CF52"
+    "EMF_C": "F6C4"
   },
   "coding": true,
   "errors": true,

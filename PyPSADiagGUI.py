@@ -152,11 +152,13 @@ class PyPSADiagGUI(object):
         self.rebootEcu = QPushButton()
         self.readEcuFaults = QPushButton()
         self.clearEcuFaults = QPushButton()
-        self.ecuTxRxLabel = QLabel()
         self.writeSecureTraceability = QCheckBox()
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
 #        self.useSketchSeedGenerator = QCheckBox()
+        self.ecuTxRxLabel = QLabel()
+        self.statusbar = QStatusBar()
+        self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
 
         self.treeView = EcuZoneTreeView(None)
         if scan:
@@ -206,7 +208,6 @@ class PyPSADiagGUI(object):
         # Setup Bottom Right Layout (Buttons)
         self.bottomRightLayout = QVBoxLayout()
         self.bottomRightLayout.addWidget(self.openZoneFile)
-        self.bottomRightLayout.addWidget(self.ecuTxRxLabel)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
         self.bottomRightLayout.addWidget(self.readZone)
@@ -304,7 +305,6 @@ class PyPSADiagGUI(object):
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
 
-        self.statusbar = QStatusBar()
         self.mainLayout.addWidget(self.statusbar)
         self.statusbar.showMessage(f"PyPSADiag {VERSION} - Copyright \u00A9 {datetime.now().year} by Barracuda09")
 
