@@ -13,7 +13,8 @@
   "tabs": {
     "ident": "Identification",
     "vin": "VIN",
-    "tele": "Telecoding"
+    "tele": "Telecoding",
+    "config": "Configuration"
   },
   "zones": {
     "F190": {
@@ -26,19 +27,21 @@
     },
     "2100": {
       "id": "variant_coding_zone",
-      "tab": "tele",
+      "tab": "config",
       "name": "Variant Coding Zone",
       "byte": 0,
       "type": "raw",
-      "form_type": "string"
-    },
-    "2101": {
-      "id": "configuration_data_values",
-      "tab": "tele",
-      "name": "Configuration data values",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
+      "form_type": "combobox",
+      "params": [
+        {
+          "value": "00",
+          "name": "Hands-free start only"
+        },
+        {
+          "value": "01",
+          "name": "Hands-free access + hands-free start"
+        }
+      ]
     }
   }
 }
