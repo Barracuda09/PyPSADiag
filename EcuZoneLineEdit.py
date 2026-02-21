@@ -42,6 +42,7 @@ class EcuZoneLineEdit(QLineEdit):
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
 
+
         # Notify changes, to change color if changed
         self.textEdited.connect(self.textChange)
 

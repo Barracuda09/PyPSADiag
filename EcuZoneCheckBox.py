@@ -36,6 +36,7 @@ class EcuZoneCheckBox(QCheckBox):
         self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
 
+
         # Notify changes, to change color if changed
         self.checkStateChanged.connect(self.stateChange)
 

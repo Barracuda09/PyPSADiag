@@ -4,7 +4,7 @@
 
 /* ── Global ─────────────────────────────────────────────────── */
 * {
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 QMainWindow, QWidget {
@@ -12,14 +12,12 @@ QMainWindow, QWidget {
     color: #1E1E2E;
 }
 
-/* ── Buttons ────────────────────────────────────────────────── */
 QPushButton {
     background-color: #FFFFFF;
     color: #1E1E2E;
     border: 1px solid #D8D8E4;
     border-radius: 6px;
     padding: 6px 14px;
-    min-height: 18px;
 }
 
 QPushButton:hover {
@@ -48,8 +46,8 @@ QComboBox {
     color: #1E1E2E;
     border: 1px solid #D8D8E4;
     border-radius: 6px;
-    padding: 6px 12px;
-    min-height: 22px;
+    padding: 6px 14px;
+    combobox-popup: 0;
 }
 
 QComboBox:hover {
@@ -109,8 +107,7 @@ QLineEdit {
     color: #1E1E2E;
     border: 1px solid #D8D8E4;
     border-radius: 6px;
-    padding: 6px 10px;
-    min-height: 22px;
+    padding: 6px 12px;
     selection-background-color: #E94560;
     selection-color: #FFFFFF;
 }
@@ -141,7 +138,7 @@ QTextEdit {
     border-radius: 6px;
     padding: 8px;
     font-family: "SF Mono", "Menlo", "Consolas", monospace;
-    font-size: 9pt;
+    font-size: 10pt;
     selection-background-color: #E94560;
     selection-color: #FFFFFF;
 }
@@ -220,7 +217,7 @@ QTreeWidget, QTreeView {
 }
 
 QTreeWidget::item, QTreeView::item {
-    padding: 4px 2px;
+    padding: 6px 4px;
     border-bottom: 1px solid #F0F0F6;
 }
 
@@ -234,7 +231,7 @@ QHeaderView::section {
     border: none;
     border-bottom: 2px solid #E94560;
     padding: 6px 10px;
-    font-size: 9pt;
+    font-size: 10pt;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -277,7 +274,7 @@ QStatusBar {
     color: #707088;
     border-top: 1px solid rgba(233, 69, 96, 0.15);
     padding: 4px 12px;
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 QStatusBar QLabel {
@@ -346,7 +343,7 @@ QToolTip {
     border: 1px solid #D8D8E4;
     border-radius: 4px;
     padding: 6px 10px;
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 /* ── Table Widget (Spreadsheet Dialog) ──────────────────────── */
@@ -415,7 +412,7 @@ QMessageBox QLabel {
 /* ── Section Labels ─────────────────────────────────────────── */
 QLabel[class="section-header"] {
     color: #E94560;
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: bold;
     padding: 4px 0 2px 0;
     text-transform: uppercase;

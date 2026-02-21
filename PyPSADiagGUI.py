@@ -188,7 +188,6 @@ class PyPSADiagGUI(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1300, 780)
-        MainWindow.setSizeIncrement(QSize(1, 1))
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
@@ -272,13 +271,15 @@ class PyPSADiagGUI(object):
         self.topButtonHeaderLayout.addWidget(self.themeToggleButton)
 
         ###################################################
-        # Setup Top Right Layout (responsive)
+        # Setup Top Right Layout (responsive, fills viewport)
         self.topRightLayout = QVBoxLayout()
-        self.topRightLayout.setSpacing(4)
+        self.topRightLayout.setSpacing(2)
         self.topRightLayout.setContentsMargins(4, 2, 4, 2)
         self.topRightLayout.addWidget(self.sendCommand)
+        self.topRightLayout.addStretch(1)
         self.topRightLayout.addWidget(self.openCSVFile)
         self.topRightLayout.addWidget(self.saveCSVFile)
+        self.topRightLayout.addStretch(1)
         # -- Connection section --
         self.connectionLabel = QLabel(i18n().tr("Connection"))
         self.connectionLabel.setProperty("class", "section-header")
@@ -287,12 +288,12 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
-        self.topRightLayout.addStretch()
+        self.topRightLayout.addStretch(1)
 
         self.topRightWidget = QWidget()
         self.topRightWidget.setLayout(self.topRightLayout)
-        self.topRightWidget.setMaximumWidth(220)
-        self.topRightWidget.setMinimumWidth(160)
+        self.topRightWidget.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.topRightWidget.setFixedWidth(200)
         ###################################################
 
         ###################################################
@@ -302,13 +303,14 @@ class PyPSADiagGUI(object):
         ###################################################
 
         ###################################################
-        # Setup Bottom Right Layout (responsive)
+        # Setup Bottom Right Layout (responsive, fills viewport)
         self.bottomRightLayout = QVBoxLayout()
-        self.bottomRightLayout.setSpacing(4)
+        self.bottomRightLayout.setSpacing(2)
         self.bottomRightLayout.setContentsMargins(4, 2, 4, 2)
         self.bottomRightLayout.addWidget(self.openZoneFile)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
+        self.bottomRightLayout.addStretch(1)
         # -- ECU Operations section --
         self.ecuOpsLabel = QLabel(i18n().tr("ECU Operations"))
         self.ecuOpsLabel.setProperty("class", "section-header")
@@ -319,6 +321,7 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.readEcuFaults)
         self.bottomRightLayout.addWidget(self.clearEcuFaults)
         self.bottomRightLayout.addWidget(self.rebootEcu)
+        self.bottomRightLayout.addStretch(1)
         # -- Options section --
         self.optionsLabel = QLabel(i18n().tr("Options"))
         self.optionsLabel.setProperty("class", "section-header")
@@ -327,12 +330,12 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
         self.bottomRightLayout.addWidget(self.hideNoResponseZone)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
-        self.bottomRightLayout.addStretch()
+        self.bottomRightLayout.addStretch(1)
 
         self.bottomRightWidget = QWidget()
         self.bottomRightWidget.setLayout(self.bottomRightLayout)
-        self.bottomRightWidget.setMaximumWidth(220)
-        self.bottomRightWidget.setMinimumWidth(160)
+        self.bottomRightWidget.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.bottomRightWidget.setFixedWidth(200)
         ###################################################
 
         ###################################################
