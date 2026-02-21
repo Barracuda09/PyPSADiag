@@ -1,0 +1,46 @@
+{
+  "name": "VCI",
+  "tx_id": "6C8",
+  "rx_id": "628",
+  "lin_id": "48",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "VCI": "****"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding",
+    "config": "Configuration"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "2100": {
+      "id": "Configuration group data list",
+      "tab": "config",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging group data values",
+      "tab": "config",
+      "name": "Gauging group data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
