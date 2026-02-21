@@ -161,6 +161,10 @@ class PyPSADiagGUI(object):
         self.statusbar = QStatusBar()
         self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
 
+        self.searchZoneLineEdit = QLineEdit()
+        self.searchZoneLineEdit.setPlaceholderText(i18n().tr("Search Zones..."))
+        self.searchZoneLineEdit.setClearButtonEnabled(True)
+
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
@@ -203,6 +207,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup Bottom Left Layout (TreeView)
         self.bottomLeftLayout = QVBoxLayout()
+        self.bottomLeftLayout.addWidget(self.searchZoneLineEdit)
         self.bottomLeftLayout.addWidget(self.treeView)
         ###################################################
 
