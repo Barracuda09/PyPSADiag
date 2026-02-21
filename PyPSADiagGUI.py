@@ -42,6 +42,8 @@ from version import VERSION
 class PyPSADiagGUI(object):
     currentDir = os.path.dirname(os.path.abspath(__file__))
     mainWindow = None
+    isDarkMode = True
+    _app = None
 
     def setFilePathInWindowsTitle(self, path: str()):
         if path == "":
@@ -49,7 +51,7 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
-    def setupGlobalColors(self):
+    def setupGlobalColors(self, dark: bool = True):
         # Global Color variables – 2026 modern palette
         global RED
         global DARK_RED
@@ -65,7 +67,10 @@ class PyPSADiagGUI(object):
 
         RED = ERROR_COLOR
         DARK_RED = ERROR_COLOR.darker(130)
-        DARK_GREEN = SUCCESS_COLOR.darker(140)
+        if dark:
+            DARK_GREEN = SUCCESS_COLOR.darker(140)
+        else:
+            DARK_GREEN = SUCCESS_COLOR.darker(120)
         ORANGE = WARNING_COLOR
 
     def setupDarkMode(self, app: QApplication):
@@ -117,6 +122,67 @@ class PyPSADiagGUI(object):
             with open(qssPath, 'r', encoding='utf-8') as f:
                 app.setStyleSheet(f.read())
 
+    def setupLightMode(self, app: QApplication):
+        # Global Color variables – 2026 light palette
+        global BASE_COLOR
+        global BUTTON_COLOR
+
+        window_bg   = QColor(0xF5, 0xF5, 0xFA)   # soft lavender-white
+        surface     = QColor(0xFF, 0xFF, 0xFF)   # pure white cards
+        base        = QColor(0xFF, 0xFF, 0xFF)   # inputs / tree bg
+        alt_base    = QColor(0xF8, 0xF8, 0xFC)   # alternate row
+        accent      = QColor(0xE9, 0x45, 0x60)   # coral-red accent
+        text_main   = QColor(0x1E, 0x1E, 0x2E)   # dark text
+        text_muted  = QColor(0x70, 0x70, 0x88)   # secondary text
+        disabled_fg = QColor(0xB0, 0xB0, 0xC0)   # disabled text
+
+        BASE_COLOR   = base
+        BUTTON_COLOR = surface
+
+        lightPalette = QPalette()
+        lightPalette.setColor(QPalette.Window, window_bg)
+        lightPalette.setColor(QPalette.WindowText, text_main)
+        lightPalette.setColor(QPalette.Base, base)
+        lightPalette.setColor(QPalette.AlternateBase, alt_base)
+        lightPalette.setColor(QPalette.ToolTipBase, surface)
+        lightPalette.setColor(QPalette.ToolTipText, text_main)
+        lightPalette.setColor(QPalette.Text, text_main)
+        lightPalette.setColor(QPalette.Button, surface)
+        lightPalette.setColor(QPalette.ButtonText, text_main)
+        lightPalette.setColor(QPalette.Link, accent)
+        lightPalette.setColor(QPalette.Highlight, accent)
+        lightPalette.setColor(QPalette.HighlightedText, Qt.white)
+        lightPalette.setColor(QPalette.Light, surface)
+        lightPalette.setColor(QPalette.Midlight, window_bg)
+        lightPalette.setColor(QPalette.Mid, QColor(0xD8, 0xD8, 0xE4))
+        lightPalette.setColor(QPalette.Dark, QColor(0xC0, 0xC0, 0xD0))
+        lightPalette.setColor(QPalette.Active, QPalette.Highlight, accent)
+        lightPalette.setColor(QPalette.Disabled, QPalette.ButtonText, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.WindowText, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Text, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Light, window_bg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Button, QColor(0xEE, 0xEE, 0xF4))
+        app.setPalette(lightPalette)
+
+        # Load external light QSS stylesheet
+        qssPath = os.path.join(self.currentDir, "style_light.qss")
+        if os.path.exists(qssPath):
+            with open(qssPath, 'r', encoding='utf-8') as f:
+                app.setStyleSheet(f.read())
+
+    def toggleTheme(self):
+        """Switch between dark and light mode at runtime."""
+        self.isDarkMode = not self.isDarkMode
+        self.setupGlobalColors(self.isDarkMode)
+        if self.isDarkMode:
+            self.setupDarkMode(self._app)
+            self.themeToggleButton.setText("☀️")
+            self.themeToggleButton.setToolTip(i18n().tr("Switch to Light Mode"))
+        else:
+            self.setupLightMode(self._app)
+            self.themeToggleButton.setText("🌙")
+            self.themeToggleButton.setToolTip(i18n().tr("Switch to Dark Mode"))
+
     def setupGUI(self, app: QApplication, MainWindow, scan: bool(), lang_code: str):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
@@ -133,7 +199,9 @@ class PyPSADiagGUI(object):
 
         app.setStyle(QStyleFactory.create('Fusion'))
 
-        self.setupGlobalColors()
+        self._app = app
+
+        self.setupGlobalColors(True)
 
         self.setupDarkMode(app)
 
@@ -195,6 +263,13 @@ class PyPSADiagGUI(object):
         self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
         self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed))
         self.topButtonHeaderLayout.addWidget(self.languageComboBox)
+        # -- Theme toggle button --
+        self.themeToggleButton = QPushButton("☀️")
+        self.themeToggleButton.setToolTip(i18n().tr("Switch to Light Mode"))
+        self.themeToggleButton.setFixedSize(36, 36)
+        self.themeToggleButton.setStyleSheet("font-size: 16px; padding: 0;")
+        self.themeToggleButton.clicked.connect(self.toggleTheme)
+        self.topButtonHeaderLayout.addWidget(self.themeToggleButton)
 
         ###################################################
         # Setup Top Right Layout
