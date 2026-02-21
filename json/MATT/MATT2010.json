@@ -481,6 +481,7 @@
           { "mask": "01100000", "name": "Citroen"},
           { "mask": "10000000", "name": "DS"},
           { "mask": "10100000", "name": "Dong Feng"},
+          { "mask": "10100000", "name": "**0xA0"},
           { "mask": "11000000", "name": "?"},
           { "mask": "11100000", "name": "?"}
         ]
