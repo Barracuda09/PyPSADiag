@@ -103,7 +103,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 if result == 2:
                     print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
                     p = widget.palette()
-                    p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                    p.setColor(QPalette.Button, PyPSADiagGUI.ERROR_COLOR)
                     widget.setPalette(p)
                     widget.setEnabled(False)
                     cellItem.setHidden(True)
@@ -120,7 +120,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
                 p = widget.palette()
-                p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                p.setColor(QPalette.Button, PyPSADiagGUI.ERROR_COLOR)
                 widget.setPalette(p)
                 widget.setEnabled(False)
 
