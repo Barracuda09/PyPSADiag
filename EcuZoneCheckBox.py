@@ -50,7 +50,7 @@ class EcuZoneCheckBox(QCheckBox):
         if self.newValue == self.initialValue or self.initialValue == 0:
             self.setStyleSheet(self.style)
         else:
-            self.setStyleSheet("background-color: rgb(233, 69, 96)")
+            self.setStyleSheet("background-color: rgb(233, 69, 96); color: white;")
 
     def getDescriptionName(self):
         return self.zoneObject["name"]

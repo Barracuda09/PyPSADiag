@@ -69,7 +69,7 @@ class EcuZoneComboBox(QComboBox):
         if self.newValue == self.initialValue:
             self.setStyleSheet(self.style)
         else:
-            self.setStyleSheet("combobox-popup: 3; background-color: rgb(233, 69, 96)")
+            self.setStyleSheet("combobox-popup: 3; background-color: rgb(233, 69, 96); color: white;")
 
     @Slot()
     def contextMenu(self, pos: QPoint):

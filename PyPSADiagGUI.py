@@ -272,14 +272,13 @@ class PyPSADiagGUI(object):
         self.topButtonHeaderLayout.addWidget(self.themeToggleButton)
 
         ###################################################
-        # Setup Top Right Layout
+        # Setup Top Right Layout (responsive)
         self.topRightLayout = QVBoxLayout()
-        self.topRightLayout.setSpacing(6)
+        self.topRightLayout.setSpacing(4)
+        self.topRightLayout.setContentsMargins(4, 2, 4, 2)
         self.topRightLayout.addWidget(self.sendCommand)
-        self.topRightLayout.addItem(QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         self.topRightLayout.addWidget(self.openCSVFile)
         self.topRightLayout.addWidget(self.saveCSVFile)
-        self.topRightLayout.addItem(QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         # -- Connection section --
         self.connectionLabel = QLabel(i18n().tr("Connection"))
         self.connectionLabel.setProperty("class", "section-header")
@@ -288,7 +287,12 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
-        self.topRightLayout.addItem(QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addStretch()
+
+        self.topRightWidget = QWidget()
+        self.topRightWidget.setLayout(self.topRightLayout)
+        self.topRightWidget.setMaximumWidth(220)
+        self.topRightWidget.setMinimumWidth(160)
         ###################################################
 
         ###################################################
@@ -298,9 +302,10 @@ class PyPSADiagGUI(object):
         ###################################################
 
         ###################################################
-        # Setup Bottom Right Layout (Buttons)
+        # Setup Bottom Right Layout (responsive)
         self.bottomRightLayout = QVBoxLayout()
-        self.bottomRightLayout.setSpacing(6)
+        self.bottomRightLayout.setSpacing(4)
+        self.bottomRightLayout.setContentsMargins(4, 2, 4, 2)
         self.bottomRightLayout.addWidget(self.openZoneFile)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
@@ -322,21 +327,26 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
         self.bottomRightLayout.addWidget(self.hideNoResponseZone)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
-        self.bottomRightLayout.addItem(QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.bottomRightLayout.addStretch()
+
+        self.bottomRightWidget = QWidget()
+        self.bottomRightWidget.setLayout(self.bottomRightLayout)
+        self.bottomRightWidget.setMaximumWidth(220)
+        self.bottomRightWidget.setMinimumWidth(160)
         ###################################################
 
         ###################################################
         # Add Top Left, Right Layout -> Main Top Layout
         self.topLayout = QHBoxLayout()
-        self.topLayout.addLayout(self.topLeftLayout)
-        self.topLayout.addLayout(self.topRightLayout)
+        self.topLayout.addLayout(self.topLeftLayout, 1)
+        self.topLayout.addWidget(self.topRightWidget, 0)
         ###################################################
 
         ###################################################
         # Add Bottom Left, Right Layout -> Main Bottom Layout
         self.bottomLayout = QHBoxLayout()
-        self.bottomLayout.addLayout(self.bottomLeftLayout)
-        self.bottomLayout.addLayout(self.bottomRightLayout)
+        self.bottomLayout.addLayout(self.bottomLeftLayout, 1)
+        self.bottomLayout.addWidget(self.bottomRightWidget, 0)
         ###################################################
 
         ###################################################
