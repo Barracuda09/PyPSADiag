@@ -1,0 +1,45 @@
+{
+  "name": "PLMB",
+  "tx_id": "733",
+  "rx_id": "713",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "PLMB": "****"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding",
+    "config": "Configuration"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "2100": {
+      "id": "variant_coding_zone",
+      "tab": "config",
+      "name": "Variant Coding Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "configuration_data_values",
+      "tab": "config",
+      "name": "Configuration data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    }
+  }
+}
