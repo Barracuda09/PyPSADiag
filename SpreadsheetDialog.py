@@ -73,8 +73,6 @@ class SpreadsheetDialog(QDialog):
 
         # Add Layouts to Main layout
         self.frameLayout = QVBoxLayout()
-        self.frameLayout.setContentsMargins(16, 16, 16, 16)
-        self.frameLayout.setSpacing(12)
         self.frameLayout.addLayout(self.workFrameLayout)
         self.frameLayout.addLayout(self.buttontLayout)
         self.setLayout(self.frameLayout)
