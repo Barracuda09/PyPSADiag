@@ -42,6 +42,7 @@ class EcuZoneLineEdit(QLineEdit):
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
 
+
         # Notify changes, to change color if changed
         self.textEdited.connect(self.textChange)
 
@@ -56,7 +57,7 @@ class EcuZoneLineEdit(QLineEdit):
         if self.newLineLineValue == self.initialLineValue:
             self.setStyleSheet(self.style)
         else:
-            self.setStyleSheet("background-color: rgb(42, 130, 218)")
+            self.setStyleSheet("background-color: rgb(233, 69, 96); color: white;")
 
     def event(self, event: QEvent):
         if event.type() == QEvent.KeyPress:

@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt, Slot
+from PySide6.QtCore import Qt, Slot, QSize
 from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget
 from PySide6.QtGui import QPalette, QColor
 
@@ -53,6 +53,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     def addChildWidgetItem(self, tree: QTreeWidget, label, widget):
         level = EcuZoneTreeWidgetItem(self, None, "", label)
         level.setToolTip(1, i18n().tr(label))
+        level.setSizeHint(0, QSize(0, 36))
         tree.setItemWidget(level, 2, widget)
         self.__setupConnections(widget)
 
@@ -103,7 +104,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 if result == 2:
                     print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
                     p = widget.palette()
-                    p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                    p.setColor(QPalette.Button, PyPSADiagGUI.ERROR_COLOR)
                     widget.setPalette(p)
                     widget.setEnabled(False)
                     cellItem.setHidden(True)
@@ -120,7 +121,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
                 p = widget.palette()
-                p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                p.setColor(QPalette.Button, PyPSADiagGUI.ERROR_COLOR)
                 widget.setPalette(p)
                 widget.setEnabled(False)
 

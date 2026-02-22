@@ -42,6 +42,8 @@ from version import VERSION
 class PyPSADiagGUI(object):
     currentDir = os.path.dirname(os.path.abspath(__file__))
     mainWindow = None
+    isDarkMode = True
+    _app = None
 
     def setFilePathInWindowsTitle(self, path: str()):
         if path == "":
@@ -49,67 +51,143 @@ class PyPSADiagGUI(object):
         else:
             self.mainWindow.setWindowTitle("PyPSADiag (" + path + ")")
 
-    def setupGlobalColors(self):
-        # Global Color variables
+    def setupGlobalColors(self, dark: bool = True):
+        # Global Color variables – 2026 modern palette
         global RED
         global DARK_RED
         global DARK_GREEN
         global ORANGE
+        global ERROR_COLOR
+        global SUCCESS_COLOR
+        global WARNING_COLOR
 
-        RED = QColor(255, 0, 0)
-        DARK_RED = RED.darker(125)
-        DARK_GREEN = QColor(0, 255, 0).darker(150)
-        ORANGE = QColor(255, 128, 0)
+        ERROR_COLOR = QColor(233, 69, 96)       # coral-red
+        SUCCESS_COLOR = QColor(0, 214, 143)      # teal-green
+        WARNING_COLOR = QColor(255, 170, 0)      # warm amber
+
+        RED = ERROR_COLOR
+        DARK_RED = ERROR_COLOR.darker(130)
+        if dark:
+            DARK_GREEN = SUCCESS_COLOR.darker(140)
+        else:
+            DARK_GREEN = SUCCESS_COLOR.darker(120)
+        ORANGE = WARNING_COLOR
 
     def setupDarkMode(self, app: QApplication):
-        # Global Color variables
+        # Global Color variables – 2026 modern palette
         global BASE_COLOR
         global BUTTON_COLOR
 
-        GRAY = QColor(130, 130, 130)
-        DARK_GRAY = QColor(130, 130, 130)
-        black = QColor(30, 30, 30)
-        blue = QColor(42, 130, 218)
-        backGround = DARK_GRAY.lighter(200)
-        light = backGround.lighter(150)
-        mid = backGround.darker(130)
-        midLight = mid.lighter(110)
-        dark = backGround.darker(150)
-        BASE_COLOR = black.lighter(200)
-        ALT_BASE_COLOR = DARK_GRAY.darker(125)
-        BUTTON_COLOR = DARK_GRAY.lighter(100)
+        # Core palette colors
+        window_bg   = QColor(0x1A, 0x1A, 0x2E)   # deep navy-charcoal
+        surface     = QColor(0x16, 0x21, 0x3E)   # card / surface
+        base        = QColor(0x0F, 0x34, 0x60)   # inputs / tree bg
+        alt_base    = QColor(0x0D, 0x2D, 0x54)   # alternate row
+        accent      = QColor(0xE9, 0x45, 0x60)   # coral-red accent
+        text_main   = QColor(0xE0, 0xE0, 0xE0)   # primary text
+        text_muted  = QColor(0xA0, 0xA0, 0xB0)   # secondary text
+        disabled_fg = QColor(0x55, 0x55, 0x68)   # disabled text
+
+        BASE_COLOR   = base
+        BUTTON_COLOR = surface
 
         darkPalette = QPalette()
-        darkPalette.setColor(QPalette.Window, DARK_GRAY)
-        darkPalette.setColor(QPalette.WindowText, Qt.white)
-        darkPalette.setColor(QPalette.Base, BASE_COLOR)
-        darkPalette.setColor(QPalette.AlternateBase, ALT_BASE_COLOR)
-        darkPalette.setColor(QPalette.ToolTipBase, blue)
-        darkPalette.setColor(QPalette.ToolTipText, Qt.white)
-        darkPalette.setColor(QPalette.Text, Qt.white)
-        darkPalette.setColor(QPalette.Button, BUTTON_COLOR)
-        darkPalette.setColor(QPalette.ButtonText, Qt.white)
-        darkPalette.setColor(QPalette.Link, blue)
-        darkPalette.setColor(QPalette.Highlight, GRAY.darker(150))
+        darkPalette.setColor(QPalette.Window, window_bg)
+        darkPalette.setColor(QPalette.WindowText, text_main)
+        darkPalette.setColor(QPalette.Base, base)
+        darkPalette.setColor(QPalette.AlternateBase, alt_base)
+        darkPalette.setColor(QPalette.ToolTipBase, surface)
+        darkPalette.setColor(QPalette.ToolTipText, text_main)
+        darkPalette.setColor(QPalette.Text, text_main)
+        darkPalette.setColor(QPalette.Button, surface)
+        darkPalette.setColor(QPalette.ButtonText, text_main)
+        darkPalette.setColor(QPalette.Link, accent)
+        darkPalette.setColor(QPalette.Highlight, accent)
         darkPalette.setColor(QPalette.HighlightedText, Qt.white)
-        darkPalette.setColor(QPalette.Light, light)
-        darkPalette.setColor(QPalette.Midlight, midLight)
-        darkPalette.setColor(QPalette.Mid, mid)
-        darkPalette.setColor(QPalette.Dark, dark)
-        darkPalette.setColor(QPalette.Active, QPalette.Highlight, blue)
-        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, GRAY.lighter(150))
-        darkPalette.setColor(QPalette.Disabled, QPalette.WindowText, GRAY.lighter(150))
-        darkPalette.setColor(QPalette.Disabled, QPalette.Text, GRAY.lighter(150))
-        darkPalette.setColor(QPalette.Disabled, QPalette.Light, DARK_GRAY)
-        darkPalette.setColor(QPalette.Disabled, QPalette.Button, DARK_GRAY.lighter(75))
+        darkPalette.setColor(QPalette.Light, surface.lighter(150))
+        darkPalette.setColor(QPalette.Midlight, surface.lighter(120))
+        darkPalette.setColor(QPalette.Mid, surface.darker(130))
+        darkPalette.setColor(QPalette.Dark, window_bg.darker(150))
+        darkPalette.setColor(QPalette.Active, QPalette.Highlight, accent)
+        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, disabled_fg)
+        darkPalette.setColor(QPalette.Disabled, QPalette.WindowText, disabled_fg)
+        darkPalette.setColor(QPalette.Disabled, QPalette.Text, disabled_fg)
+        darkPalette.setColor(QPalette.Disabled, QPalette.Light, window_bg)
+        darkPalette.setColor(QPalette.Disabled, QPalette.Button, surface.darker(120))
         app.setPalette(darkPalette)
+
+        # Load external QSS stylesheet
+        qssPath = os.path.join(self.currentDir, "style.qss")
+        if os.path.exists(qssPath):
+            with open(qssPath, 'r', encoding='utf-8') as f:
+                app.setStyleSheet(f.read())
+
+    def setupLightMode(self, app: QApplication):
+        # Global Color variables – 2026 light palette
+        global BASE_COLOR
+        global BUTTON_COLOR
+
+        window_bg   = QColor(0xF5, 0xF5, 0xFA)   # soft lavender-white
+        surface     = QColor(0xFF, 0xFF, 0xFF)   # pure white cards
+        base        = QColor(0xFF, 0xFF, 0xFF)   # inputs / tree bg
+        alt_base    = QColor(0xF8, 0xF8, 0xFC)   # alternate row
+        accent      = QColor(0xE9, 0x45, 0x60)   # coral-red accent
+        text_main   = QColor(0x1E, 0x1E, 0x2E)   # dark text
+        text_muted  = QColor(0x70, 0x70, 0x88)   # secondary text
+        disabled_fg = QColor(0xB0, 0xB0, 0xC0)   # disabled text
+
+        BASE_COLOR   = base
+        BUTTON_COLOR = surface
+
+        lightPalette = QPalette()
+        lightPalette.setColor(QPalette.Window, window_bg)
+        lightPalette.setColor(QPalette.WindowText, text_main)
+        lightPalette.setColor(QPalette.Base, base)
+        lightPalette.setColor(QPalette.AlternateBase, alt_base)
+        lightPalette.setColor(QPalette.ToolTipBase, surface)
+        lightPalette.setColor(QPalette.ToolTipText, text_main)
+        lightPalette.setColor(QPalette.Text, text_main)
+        lightPalette.setColor(QPalette.Button, surface)
+        lightPalette.setColor(QPalette.ButtonText, text_main)
+        lightPalette.setColor(QPalette.Link, accent)
+        lightPalette.setColor(QPalette.Highlight, accent)
+        lightPalette.setColor(QPalette.HighlightedText, Qt.white)
+        lightPalette.setColor(QPalette.Light, surface)
+        lightPalette.setColor(QPalette.Midlight, window_bg)
+        lightPalette.setColor(QPalette.Mid, QColor(0xD8, 0xD8, 0xE4))
+        lightPalette.setColor(QPalette.Dark, QColor(0xC0, 0xC0, 0xD0))
+        lightPalette.setColor(QPalette.Active, QPalette.Highlight, accent)
+        lightPalette.setColor(QPalette.Disabled, QPalette.ButtonText, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.WindowText, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Text, disabled_fg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Light, window_bg)
+        lightPalette.setColor(QPalette.Disabled, QPalette.Button, QColor(0xEE, 0xEE, 0xF4))
+        app.setPalette(lightPalette)
+
+        # Load external light QSS stylesheet
+        qssPath = os.path.join(self.currentDir, "style_light.qss")
+        if os.path.exists(qssPath):
+            with open(qssPath, 'r', encoding='utf-8') as f:
+                app.setStyleSheet(f.read())
+
+    def toggleTheme(self):
+        """Switch between dark and light mode at runtime."""
+        self.isDarkMode = not self.isDarkMode
+        self.setupGlobalColors(self.isDarkMode)
+        if self.isDarkMode:
+            self.setupDarkMode(self._app)
+            self.themeToggleButton.setText("☀️")
+            self.themeToggleButton.setToolTip(i18n().tr("Switch to Light Mode"))
+        else:
+            self.setupLightMode(self._app)
+            self.themeToggleButton.setText("🌙")
+            self.themeToggleButton.setToolTip(i18n().tr("Switch to Dark Mode"))
 
     def setupGUI(self, app: QApplication, MainWindow, scan: bool(), lang_code: str):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1300, 780)
-        MainWindow.setSizeIncrement(QSize(1, 1))
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
@@ -118,10 +196,11 @@ class PyPSADiagGUI(object):
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
         self.centralwidget.setSizePolicy(sizePolicy)
 
-        print(QStyleFactory.keys())
         app.setStyle(QStyleFactory.create('Fusion'))
 
-        self.setupGlobalColors()
+        self._app = app
+
+        self.setupGlobalColors(True)
 
         self.setupDarkMode(app)
 
@@ -160,6 +239,10 @@ class PyPSADiagGUI(object):
         self.statusbar = QStatusBar()
         self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
 
+        self.searchZoneLineEdit = QLineEdit()
+        self.searchZoneLineEdit.setPlaceholderText(i18n().tr("Search Zones..."))
+        self.searchZoneLineEdit.setClearButtonEnabled(True)
+
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
@@ -169,6 +252,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup Top Left Layout
         self.topLeftLayout = QVBoxLayout()
+        self.topLeftLayout.setSpacing(6)
         self.topLeftLayout.addWidget(self.command)
         self.topLeftLayout.addWidget(self.output)
         ###################################################
@@ -178,69 +262,104 @@ class PyPSADiagGUI(object):
         self.topButtonHeaderLayout = QHBoxLayout()
 
         self.topButtonHeaderLayout.addStretch()
-        self.topButtonHeaderLayout.setContentsMargins(10, 10, 10, 0)
+        self.topButtonHeaderLayout.setContentsMargins(16, 12, 16, 0)
         self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
         self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed))
         self.topButtonHeaderLayout.addWidget(self.languageComboBox)
+        # -- Theme toggle button --
+        self.themeToggleButton = QPushButton("☀️")
+        self.themeToggleButton.setToolTip(i18n().tr("Switch to Light Mode"))
+        self.themeToggleButton.setFixedSize(36, 36)
+        self.themeToggleButton.setStyleSheet("font-size: 16px; padding: 0;")
+        self.themeToggleButton.clicked.connect(self.toggleTheme)
+        self.topButtonHeaderLayout.addWidget(self.themeToggleButton)
 
         ###################################################
-        # Setup Top Right Layout
+        # Setup Top Right Layout (responsive, fills viewport)
         self.topRightLayout = QVBoxLayout()
+        self.topRightLayout.setSpacing(2)
+        self.topRightLayout.setContentsMargins(4, 2, 4, 2)
         self.topRightLayout.addWidget(self.sendCommand)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addStretch(1)
         self.topRightLayout.addWidget(self.openCSVFile)
         self.topRightLayout.addWidget(self.saveCSVFile)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addStretch(1)
+        # -- Connection section --
+        self.connectionLabel = QLabel(i18n().tr("Connection"))
+        self.connectionLabel.setProperty("class", "section-header")
+        self.topRightLayout.addWidget(self.connectionLabel)
         self.topRightLayout.addWidget(self.portNameComboBox)
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addStretch(1)
+
+        self.topRightWidget = QWidget()
+        self.topRightWidget.setLayout(self.topRightLayout)
+        self.topRightWidget.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.topRightWidget.setFixedWidth(200)
         ###################################################
 
         ###################################################
         # Setup Bottom Left Layout (TreeView)
         self.bottomLeftLayout = QVBoxLayout()
+        self.bottomLeftLayout.addWidget(self.searchZoneLineEdit)
         self.bottomLeftLayout.addWidget(self.treeView)
         ###################################################
 
         ###################################################
-        # Setup Bottom Right Layout (Buttons)
+        # Setup Bottom Right Layout (responsive, fills viewport)
         self.bottomRightLayout = QVBoxLayout()
+        self.bottomRightLayout.setSpacing(2)
+        self.bottomRightLayout.setContentsMargins(4, 2, 4, 2)
         self.bottomRightLayout.addWidget(self.openZoneFile)
         self.bottomRightLayout.addWidget(self.ecuComboBox)
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
+        self.bottomRightLayout.addStretch(1)
+        # -- ECU Operations section --
+        self.ecuOpsLabel = QLabel(i18n().tr("ECU Operations"))
+        self.ecuOpsLabel.setProperty("class", "section-header")
+        self.bottomRightLayout.addWidget(self.ecuOpsLabel)
         self.bottomRightLayout.addWidget(self.readZone)
         self.bottomRightLayout.addWidget(self.writeZone)
         self.bottomRightLayout.addWidget(self.flashEcu)
         self.bottomRightLayout.addWidget(self.readEcuFaults)
         self.bottomRightLayout.addWidget(self.clearEcuFaults)
         self.bottomRightLayout.addWidget(self.rebootEcu)
+        self.bottomRightLayout.addStretch(1)
+        # -- Options section --
+        self.optionsLabel = QLabel(i18n().tr("Options"))
+        self.optionsLabel.setProperty("class", "section-header")
+        self.bottomRightLayout.addWidget(self.optionsLabel)
         self.bottomRightLayout.addWidget(self.virginWriteZone)
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
         self.bottomRightLayout.addWidget(self.hideNoResponseZone)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
-        self.bottomRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.bottomRightLayout.addStretch(1)
+
+        self.bottomRightWidget = QWidget()
+        self.bottomRightWidget.setLayout(self.bottomRightLayout)
+        self.bottomRightWidget.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        self.bottomRightWidget.setFixedWidth(200)
         ###################################################
 
         ###################################################
         # Add Top Left, Right Layout -> Main Top Layout
         self.topLayout = QHBoxLayout()
-        self.topLayout.addLayout(self.topLeftLayout)
-        self.topLayout.addLayout(self.topRightLayout)
+        self.topLayout.addLayout(self.topLeftLayout, 1)
+        self.topLayout.addWidget(self.topRightWidget, 0)
         ###################################################
 
         ###################################################
         # Add Bottom Left, Right Layout -> Main Bottom Layout
         self.bottomLayout = QHBoxLayout()
-        self.bottomLayout.addLayout(self.bottomLeftLayout)
-        self.bottomLayout.addLayout(self.bottomRightLayout)
+        self.bottomLayout.addLayout(self.bottomLeftLayout, 1)
+        self.bottomLayout.addWidget(self.bottomRightWidget, 0)
         ###################################################
 
         ###################################################
         # Setup splitter Vertical (Top-Bottom)
         self.splitterTopBottom = QSplitter()
-        self.splitterTopBottom.setStyleSheet("QSplitter::handle {background: darkGray;}")
         self.splitterTopBottom.setOrientation(Qt.Orientation.Vertical)
 
         self.topWidget = QWidget()
@@ -268,7 +387,6 @@ class PyPSADiagGUI(object):
             ###################################################
             # Setup splitter Horizontal (Left-Right)
             self.splitterLeftRight = QSplitter()
-            self.splitterLeftRight.setStyleSheet("QSplitter::handle {background: darkGray;}")
             self.splitterLeftRight.setOrientation(Qt.Orientation.Horizontal)
 
             self.mainLeftWidget = QWidget()
@@ -281,7 +399,7 @@ class PyPSADiagGUI(object):
             ###################################################
 
         self.frame = QFrame(self.centralwidget)
-        self.frame.setContentsMargins(10, 0, 10, 10)
+        self.frame.setContentsMargins(16, 8, 16, 16)
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
