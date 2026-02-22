@@ -61,7 +61,6 @@ class EcuZoneTreeView(QTabWidget):
         super(EcuZoneTreeView, self).__init__(parent)
         self.setTabBar(HorizontalTextTabBar(self))
         self.hideZones = False
-        self.searchText = ""
         self.setSizePolicy(QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.MinimumExpanding))
         self.updateView(ecuObjectList)
         self.setTabPosition(self.TabPosition.North)
@@ -109,25 +108,13 @@ class EcuZoneTreeView(QTabWidget):
                 self.tabs.append([tabs, index])
 
             self.hideNoResponseZones(self.hideZones)
-            if hasattr(self, 'searchText') and self.searchText:
-                self.filterZones(self.searchText)
 
     def hideNoResponseZones(self, hide: bool()):
         # Take over the hide flag, so we know for next update/change
         self.hideZones = hide
         for tab in self.tabs:
-            index = tab[1]
-            widget = self.widget(index)
-            has_visible = widget.hideNoResponseZones(hide)
-            self.setTabVisible(index, has_visible)
-
-    def filterZones(self, text: str):
-        self.searchText = text
-        for tab in self.tabs:
-            index = tab[1]
-            widget = self.widget(index)
-            has_visible = widget.setFilterText(text)
-            self.setTabVisible(index, has_visible)
+            widget = self.widget(tab[1])
+            widget.hideNoResponseZones(hide)
 
     def getValuesAsCSV(self):
         value = []
@@ -172,8 +159,6 @@ class EcuZoneTreeView(QTabWidget):
 class EcuZoneTreeViewWidget(QTreeWidget):
     def __init__(self, parent, zoneObjectList, tabName: str):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
-        self.hideZones = False
-        self.searchText = ""
         self.setColumnCount(3)
         headers = [i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")]
         self.setHeaderLabels(headers)
@@ -279,37 +264,14 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             item.setBackground(2, PyPSADiagGUI.BASE_COLOR)
 
     def hideNoResponseZones(self, hide: bool()):
-        self.hideZones = hide
-        return self.applyFilters()
-
-    def setFilterText(self, text: str):
-        self.searchText = text
-        return self.applyFilters()
-
-    def applyFilters(self):
-        search_lower = self.searchText.lower()
-        visible_count = 0
-        
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
-            
-            hide_item = False
-            if self.hideZones:
+            if hide:
                 widget = item.treeWidget().itemWidget(item, 2)
-                if widget and widget.isEnabled() == False:
-                    hide_item = True
-                    
-            if not hide_item and self.searchText:
-                zone_id = item.text(0).lower()
-                zone_desc = item.text(1).lower()
-                if search_lower not in zone_id and search_lower not in zone_desc:
-                    hide_item = True
-                    
-            item.setHidden(hide_item)
-            if not hide_item:
-                visible_count += 1
-                
-        return visible_count > 0
+                if widget.isEnabled() == False:
+                    item.setHidden(True)
+            else:
+                item.setHidden(False)
 
     def getValuesAsCSV(self):
         value = []

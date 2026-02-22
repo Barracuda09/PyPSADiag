@@ -36,7 +36,6 @@ class EcuZoneCheckBox(QCheckBox):
         self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
 
-
         # Notify changes, to change color if changed
         self.checkStateChanged.connect(self.stateChange)
 
@@ -51,7 +50,7 @@ class EcuZoneCheckBox(QCheckBox):
         if self.newValue == self.initialValue or self.initialValue == 0:
             self.setStyleSheet(self.style)
         else:
-            self.setStyleSheet("background-color: rgb(233, 69, 96); color: white;")
+            self.setStyleSheet("background-color: rgb(42, 130, 218)")
 
     def getDescriptionName(self):
         return self.zoneObject["name"]

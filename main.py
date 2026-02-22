@@ -113,7 +113,6 @@ class MainWindow(QMainWindow):
 
         # Connect Other/General signals to slots
         self.ui.command.returnPressed.connect(self.sendCommand)
-        self.ui.searchZoneLineEdit.textChanged.connect(self.searchZones)
 
         # Setup serial controller and Search for Ports
         self.serialController = SerialPort(self.simulation)
@@ -282,10 +281,6 @@ class MainWindow(QMainWindow):
     @Slot()
     def hideNoResponseZones(self, state):
         self.ui.treeView.hideNoResponseZones(state == 2)
-
-    @Slot(str)
-    def searchZones(self, text):
-        self.ui.treeView.filterZones(text)
 
     @Slot()
     def sendCommand(self):

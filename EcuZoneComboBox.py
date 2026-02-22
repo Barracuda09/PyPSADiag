@@ -36,7 +36,7 @@ class EcuZoneComboBox(QComboBox):
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneComboBox, self).__init__(parent)
-        self.setStyleSheet("combobox-popup: 0;")
+        self.setStyleSheet("combobox-popup: 3;")
         self.setFocusPolicy(Qt.StrongFocus)
         self.itemReadOnly = readOnly
         self.zoneObject = zoneObject
@@ -69,7 +69,7 @@ class EcuZoneComboBox(QComboBox):
         if self.newValue == self.initialValue:
             self.setStyleSheet(self.style)
         else:
-            self.setStyleSheet("combobox-popup: 0; background-color: rgb(233, 69, 96); color: white;")
+            self.setStyleSheet("combobox-popup: 3; background-color: rgb(42, 130, 218)")
 
     @Slot()
     def contextMenu(self, pos: QPoint):

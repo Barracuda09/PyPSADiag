@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt, QSize
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget, QLabel, QFrame
 
 from EcuZoneLineEdit import EcuZoneLineEdit
@@ -36,7 +36,6 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
         if isinstance(parent, QTreeWidget):
             parent.insertTopLevelItem(row, self)
         self.setToolTip(1, i18n().tr(description))
-        self.setSizeHint(0, QSize(0, 36))
         self.zone = zone.upper()
         self.zoneDescription = description
 
