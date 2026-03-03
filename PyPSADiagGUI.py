@@ -152,6 +152,7 @@ class PyPSADiagGUI(object):
         self.rebootEcu = QPushButton()
         self.readEcuFaults = QPushButton()
         self.clearEcuFaults = QPushButton()
+        self.disableEcoMode = QPushButton()
         self.writeSecureTraceability = QCheckBox()
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
@@ -195,6 +196,7 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
+        self.topRightLayout.addWidget(self.disableEcoMode)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
@@ -350,6 +352,7 @@ class PyPSADiagGUI(object):
         self.rebootEcu.setText(i18n().tr("Reboot ECU"))
         self.readEcuFaults.setText(i18n().tr("Read ECU Faults") + " " + i18n().tr("(DTC)"))
         self.clearEcuFaults.setText(i18n().tr("Clear ECU Faults") + " " + i18n().tr(" (DTC)"))
+        self.disableEcoMode.setText(i18n().tr("Disable Eco Mode"))
         self.writeSecureTraceability.setText(i18n().tr("Write Secure Traceability"))
         self.virginWriteZone.setText(i18n().tr("Virgin Write"))
         self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))

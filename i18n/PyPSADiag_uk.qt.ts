@@ -79,6 +79,11 @@
         <translation type="unfinished" />
     </message>
     <message>
+        <location filename="../PyPSADiagGUI.py" line="355" />
+        <source>Disable Eco Mode</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location filename="../PyPSADiagGUI.py" line="273" />
         <source>Write Secure Traceability</source>
         <translation type="unfinished" />

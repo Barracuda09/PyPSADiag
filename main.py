@@ -106,6 +106,7 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
         self.ui.clearEcuFaults.clicked.connect(self.clearEcuFaults)
+        self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
@@ -126,6 +127,7 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
+        self.ui.disableEcoMode.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -258,6 +260,7 @@ class MainWindow(QMainWindow):
             # Set button states
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
+            self.ui.disableEcoMode.setEnabled(True)
         else:
             self.ui.ConnectPort.setEnabled(True)
             self.writeToOutputView(error)
@@ -275,6 +278,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
+        self.ui.disableEcoMode.setEnabled(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 #        self.ui.useSketchSeedGenerator.setEnabled(True)
 
@@ -350,6 +354,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
+        self.ui.disableEcoMode.setEnabled(True)
         self.updateEcuTxRxLabel()
 
     @Slot()
@@ -555,6 +560,19 @@ class MainWindow(QMainWindow):
                 self.udsCommunication.clearEcuFaults(ecu)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+    @Slot()
+    def disableEcoMode(self):
+        if self.serialController.isOpen():
+            commands = [">752:652", ":B4E0:03:03", "3101DF0A3C"]
+            for cmd in commands:
+                self.writeToOutputView("> " + cmd)
+                receiveData = self.serialController.sendReceive(cmd)
+                self.writeToOutputView("< " + receiveData)
+                if receiveData == "Timeout":
+                    break
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 

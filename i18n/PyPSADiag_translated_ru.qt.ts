@@ -79,6 +79,11 @@
         <translation>Очистить ошибки ЭБУ</translation>
     </message>
     <message>
+        <location filename="../PyPSADiagGUI.py" line="355" />
+        <source>Disable Eco Mode</source>
+        <translation>Отключить режим Eco</translation>
+    </message>
+    <message>
         <location filename="../PyPSADiagGUI.py" line="230" />
         <source>Write Secure Traceability</source>
         <translation>Безопасная запись</translation>

@@ -80,6 +80,11 @@
         <translation>Очистити помилки блоку</translation>
     </message>
     <message>
+        <location filename="../PyPSADiagGUI.py" line="355" />
+        <source>Disable Eco Mode</source>
+        <translation>Вимкнути режим Eco</translation>
+    </message>
+    <message>
         <location filename="../PyPSADiagGUI.py" line="273"/>
         <source>Write Secure Traceability</source>
         <translation>Безпечний запис</translation>
