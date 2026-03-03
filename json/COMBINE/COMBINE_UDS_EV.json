@@ -1996,7 +1996,7 @@
                 {
                     "extra_name": "CFG_F4R_CMB_HY_PERSO_ACG_PRESENT_000",
                     "name_original": "CFG_F4R_CMB_HY_PERSO_ACG_PRESENT_000",
-                    "name": "Hybrid personal display mode ?",
+                    "name": "Climate consumption in personal mode (electric only)",
                     "byte": 1,
                     "mask": "00000001",
                     "form_type": "checkbox",
