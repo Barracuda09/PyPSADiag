@@ -11,7 +11,8 @@
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
         "ident": "Identification",
-        "cmb": "Instrument Panel CIROCCO"
+        "cmb": "Instrument Panel CIROCCO",
+        "cal": "Calibrations"
     },
     "zones": {
         "2100": {
@@ -333,7 +334,7 @@
                 {
                     "extra_name": "DQG_CMB_OPTION_EXPORT_AUDIO",
                     "name_original": "DQG",
-                    "name": "Display audio informations",
+                    "name": "Presence of Media well in Personal Mode",
                     "byte": 12,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -376,13 +377,27 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DW7_TYPE_EXPORT_MEDIA",
+                    "extra_name": "CFG_DW7_CMB_TYPE_EXPORT_MEDIA_000",
                     "name_original": "DW7",
                     "name": "Type of media export",
                     "byte": 15,
                     "mask": "01100000",
                     "type": "raw",
-                    "form_type": "string" 
+                    "form_type": "combobox" ,
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "0"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "1"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "2"
+                        }
+                    ]
                 }, 
                 {
                     "extra_name": "E2F_TYPE_LISTE_PICTO",
@@ -1418,7 +1433,6 @@
                 },
                 {
                     "extra_name": "EQJ_CMB_WIRE_IN_STT",
-                    "zoneLength": 19,
                     "name_original": "EQJ",
                     "name": "Start&Stop (STT) PUSH input",
                     "byte": 16,
@@ -1461,7 +1475,6 @@
                 },
                 {
                     "extra_name": "EQK_CMB_WIRE_OUT_STT",
-                    "zoneLength": 19,
                     "name_original": "EQK",
                     "name": "Start&Stop (STT) LED output",
                     "byte": 17,
@@ -1504,10 +1517,179 @@
                 },
                 {
                     "extra_name": "ERH_CMB_WIRE_OUT_XDOME",
-                    "zoneLength": 19,
                     "name_original": "ERH",
                     "name": "XDOME LED output",
                     "byte": 18,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_EQL_CMB_WIRE_IN_ECO_MODE_000",
+                    "name_original": "CFG_EQL_CMB_WIRE_IN_ECO_MODE_000",
+                    "name": "Eco Mode PUSH input",
+                    "byte": 19,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "FG_EQM_CMB_WIRE_OUT_ECO_MODE_000",
+                    "name_original": "FG_EQM_CMB_WIRE_OUT_ECO_MODE_000",
+                    "name": "Eco Mode LED output",
+                    "byte": 20,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 3)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 5)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 10)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 12)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 14)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 16)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 18)"
+                        }
+                    ]
+                },
+                                {
+                    "extra_name": "CFG_EQH_CMB_WIRE_IN_IAF_000",
+                    "name_original": "CFG_EQH_CMB_WIRE_IN_IAF_000",
+                    "zoneLength": 23,
+                    "name": "IAF PUSH input",
+                    "byte": 21,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Absent"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Position 1 (CIROCCO: PIN 2)"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Position 2 (CIROCCO: PIN 4)"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "Position 3 (CIROCCO: PIN 6)"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Position 4 (CIROCCO: PIN 11)"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "Position 5 (CIROCCO: PIN 13)"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "Position 6 (CIROCCO: PIN 15)"
+                        },
+                        {
+                            "mask": "00000111",
+                            "name": "Position 7 (CIROCCO: PIN 17)"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_EQI_CMB_WIRE_OUT_IAF_000",
+                    "name_original": "CFG_EQI_CMB_WIRE_OUT_IAF_000",
+                    "zoneLength": 23,
+                    "name": "IAF LED output",
+                    "byte": 22,
                     "mask": "11111111",
                     "form_type": "combobox",
                     "params": [
@@ -1983,7 +2165,7 @@
         },
         "0200": {
             "name": "Calibration_Fct_Main",
-            "tab": "cmb",
+            "tab": "cal",
             "type": "raw",
             "form_type": "multi",
             "params": [
@@ -1997,6 +2179,76 @@
                     "form_type": "string"
                 }
             ]
+        },
+        "0201": {
+            "name": "Calibration_0201",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0202": {
+            "name": "Calibration_0202",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0203": {
+            "name": "Calibration_Fct_0203",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0204": {
+            "name": "Calibration_Fct_0204",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0205": {
+            "name": "Calibration_Fct_0205",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0206": {
+            "name": "Calibration_Fct_0206",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0900": {
+            "name": "Calibration_Fct_0900",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0A00": {
+            "name": "Calibration_Fct_0A00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0B00": {
+            "name": "Calibration_Fct_0B00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D600": {
+            "name": "Calibration_Fct_D600",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
         }
     }
 }
