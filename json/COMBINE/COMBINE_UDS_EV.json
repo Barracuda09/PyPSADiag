@@ -10,7 +10,8 @@
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
         "ident": "Identification",
-        "cmb": "Instrument Panel VISTEON"
+        "cmb": "Instrument Panel VISTEON",
+        "cal": "Calibrations"
     },
     "zones": {
         "2100": {
@@ -2257,6 +2258,83 @@
                     "form_type": "string"
                 }
             ]
+        },
+        "0200": {
+            "name": "Calibration_Fct_Main",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0201": {
+            "name": "Calibration_0201",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0202": {
+            "name": "Calibration_0202",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0203": {
+            "name": "Calibration_Fct_0203",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0204": {
+            "name": "Calibration_Fct_0204",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0205": {
+            "name": "Calibration_Fct_0205",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0206": {
+            "name": "Calibration_Fct_0206",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0900": {
+            "name": "Calibration_Fct_0900",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0A00": {
+            "name": "Calibration_Fct_0A00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0B00": {
+            "name": "Calibration_Fct_0B00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D600": {
+            "name": "Calibration_Fct_D600",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
         }
     }
 }
