@@ -113,130 +113,130 @@
         "mask": "00000001",
         "params": [
           {
-            "name": "Without Stop and Start",
-            "mask": "00000001"
-          },
-          {
             "name": "With Stop and Start",
             "mask": "00000000"
+          },
+          {
+            "name": "Without Stop and Start",
+            "mask": "00000001"
           }
         ]
       },
       "CFG_EKV_BVA_UDS_BPSPR_004": {
-        "name": "CFG_EKV_BVA_UDS_BPSPR_004",
+        "name": "Experimental: Source of the \"Brake pedal status\" information",
         "byte": 7,
         "type": "bool",
         "form_type": "combobox",
         "mask": "01000000",
         "params": [
           {
-            "name": "CFG_EKV_BVA_UDS_BPSPR_004_0",
+            "name": "BSI",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKV_BVA_UDS_BPSPR_004_1",
+            "name": "ESP",
             "mask": "01000000"
           }
         ]
       },
       "CFG_EKW_BVA_UDS_TIPPR_004": {
-        "name": "CFG_EKW_BVA_UDS_TIPPR_004",
+        "name": "Experimental: Manual shifting mode on the lever (\"Tiptronic\")",
         "byte": 7,
         "type": "bool",
         "form_type": "combobox",
         "mask": "10000000",
         "params": [
           {
-            "name": "CFG_EKW_BVA_UDS_TIPPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKW_BVA_UDS_TIPPR_004_1",
+            "name": "Absent",
             "mask": "10000000"
           }
         ]
       },
       "CFG_EKZ_BVA_UDS_SBWPR_004": {
-        "name": "CFG_EKZ_BVA_UDS_SBWPR_004",
+        "name": "Experimental: Shift-by-Wire on simple lever",
         "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000010",
         "params": [
           {
-            "name": "CFG_EKZ_BVA_UDS_SBWPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKZ_BVA_UDS_SBWPR_004_1",
+            "name": "Absent",
             "mask": "00000010"
           }
         ]
       },
       "CFG_EKQ_BVA_UDS_WUMPR_004": {
-        "name": "CCFG_EKQ_BVA_UDS_WUMPR_004",
+        "name": "Experimental: Warm-up mode",
         "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00001000",
         "params": [
           {
-            "name": "CFG_EKQ_BVA_UDS_WUMPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKQ_BVA_UDS_WUMPR_004_1",
+            "name": "Absent",
             "mask": "00001000"
           }
         ]
       },
       "CFG_EKR_BVA_UDS_ESPPR_004": {
-        "name": "CFG_EKR_BVA_UDS_ESPPR_004",
+        "name": "Experimental: ESP presence",
         "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00010000",
         "params": [
           {
-            "name": "CFG_EKR_BVA_UDS_ESPPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKR_BVA_UDS_ESPPR_004_1",
+            "name": "Absent",
             "mask": "00010000"
           }
         ]
       },
       "CFG_EKS_BVA_UDS_PADPR_004": {
-        "name": "CFG_EKS_BVA_UDS_PADPR_004",
+        "name": "Experimental: Paddle shifters presence",
         "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00100000",
         "params": [
           {
-            "name": "CFG_EKS_BVA_UDS_PADPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKS_BVA_UDS_PADPR_004_1",
+            "name": "Absent",
             "mask": "00100000"
           }
         ]
       },
       "CFG_EKT_BVA_UDS_XVVPR_004": {
-        "name": "CFG_EKT_BVA_UDS_XVVPR_004",
+        "name": "Experimental: speed regulation mode",
         "byte": 8,
         "type": "bool",
         "form_type": "combobox",
         "mask": "01000000",
         "params": [
           {
-            "name": "CFG_EKT_BVA_UDS_XVVPR_004_0",
+            "name": "Present",
             "mask": "00000000"
           },
           {
-            "name": "CFG_EKT_BVA_UDS_XVVPR_004_1",
+            "name": "Absent",
             "mask": "01000000"
           }
         ]
