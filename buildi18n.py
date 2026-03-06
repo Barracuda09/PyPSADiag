@@ -86,20 +86,97 @@ def addi18nListToTS(pathIn: str, i18nList: []):
     tree = ElementTree.parse(pathIn)
     root = tree.getroot()
     context = root.find(".//context")
+    # Build a map of existing messages by source text for quick lookup
+    existing_messages_map = {}
+    for existing_message in context.findall("message"):
+        source_elem = existing_message.find("source")
+        if source_elem is not None and source_elem.text:
+            source_text = source_elem.text
+            existing_messages_map[source_text] = existing_message
+
     for item in i18nList:
         i18nSource = item.get("i18n")
-        message = ElementTree.Element("message")
-        message.tail = "\n    "
-        for file in item.get("file"):
-            name = os.path.relpath(file.get("file"), start=os.getcwd())
-            line = file.get("line")
-            location = ElementTree.SubElement(message, "location", filename = f"../{name}", line = str(line))
-        source = ElementTree.SubElement(message, "source")
-        source.text = i18nSource
-        translation = ElementTree.SubElement(message, "translation", type = "unfinished")
-        ElementTree.indent(message, space="    ", level=1)
+        # Check if this i18n source already exists in the TS file
+        # For example, both EcuZoneTreeView.py and jsonTELEMATIVI1.json contain Options,
+        # and the .ts file will have two options.
+        existing_message = existing_messages_map.get(i18nSource)
 
-        context.append(message)
+        if existing_message is not None:
+            # Update existing message - add missing locations if needed
+            existing_locations = set()
+            for loc in existing_message.findall("location"):
+                loc_sig = f"{loc.attrib.get('filename')}:{loc.attrib.get('line')}"
+                existing_locations.add(loc_sig)
+
+            # Add new locations that don't exist yet
+            for file in item.get("file"):
+                name = os.path.relpath(file.get("file"), start=os.getcwd())
+                line = file.get("line")
+                # Convert forward slashes to backslashes for Windows path format
+                name = name.replace("/", "\\")
+                new_loc_sig = f"..\\{name}:{line}"
+
+                if new_loc_sig not in existing_locations:
+                    location = ElementTree.SubElement(existing_message, "location",
+                                                     filename=f"..\\{name}", line=str(line))
+                    location.tail = "\n        "
+                    existing_locations.add(new_loc_sig)
+
+            # Sort all location elements by filename and line number
+            locations = existing_message.findall("location")
+            sorted_locations = sorted(locations, key=lambda loc: (
+                loc.attrib.get("filename", ""),
+                int(loc.attrib.get("line", 0))
+            ))
+
+            # Remove old locations and insert sorted ones after source element
+            for loc in locations:
+                existing_message.remove(loc)
+
+            # Find position after source element
+            source_elem = existing_message.find("source")
+            if source_elem is not None:
+                insert_idx = list(existing_message).index(source_elem) + 1
+            else:
+                insert_idx = 0
+
+            # Re-insert locations in sorted order
+            for i, loc in enumerate(sorted_locations):
+                if i < len(sorted_locations) - 1:
+                    loc.tail = "\n        "
+                else:
+                    loc.tail = "\n    "
+                existing_message.insert(insert_idx + i, loc)
+
+            # Ensure translation element has consistent indentation
+            translation_elem = existing_message.find("translation")
+            if translation_elem is not None:
+                translation_elem.tail = "\n"
+        else:
+            # Create new message element
+            message = ElementTree.Element("message")
+            message.tail = "\n    "
+            for file in item.get("file"):
+                name = os.path.relpath(file.get("file"), start=os.getcwd())
+                line = file.get("line")
+                # Convert forward slashes to backslashes for Windows path format
+                name = name.replace("/", "\\")
+                location = ElementTree.SubElement(message, "location",
+                                                 filename=f"..\\{name}", line=str(line))
+            source = ElementTree.SubElement(message, "source")
+            # Check for empty strings. If an empty string was written, translate.py will throw an error.
+            # For example, data/dtc/MATT2010.json
+            if not i18nSource:
+                print(f"[ERROR] Empty string in File {item['file'][0].get('file')} line {item['file'][0].get('line')}.")
+                break
+            source.text = i18nSource
+            translation = ElementTree.SubElement(message, "translation", type="unfinished")
+            translation.tail = "\n"
+            ElementTree.indent(message, space="    ", level=1)
+
+            context.append(message)
+            # Add to map so we don't duplicate within the same run
+            existing_messages_map[i18nSource] = message
 
     # Write back
     tree.write(pathIn, encoding='utf-8', xml_declaration=True)
