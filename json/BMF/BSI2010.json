@@ -4487,14 +4487,6 @@
       "form_type": "checkbox",
       "name": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2"
     },
-    "D53C": {
-      "id": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000",
-      "tab": "all_computers",
-      "byte": 0,
-      "type": "bool",
-      "form_type": "checkbox",
-      "name": "CFG_D1G_BSI_UCECAN_UDS_HCU2_000: hybrid system 2"
-    },
     "D53D": {
       "id": "CFG_D68_BSI_UCECAN_UDS_ECR_G_000",
       "tab": "all_computers",
@@ -4613,7 +4605,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWA_BSI_UCECAN_CGPL_000: ???"
+      "name": "CFG_EWA_BSI_UCECAN_CGPL_000: GPL/LPG fuel system control computer"
     },
     "D54C": {
       "id": "CFG_EWG_BSI_UCECAN_PFHM_FL_000",
@@ -4653,7 +4645,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EWL_BSI_UCECAN_SDCM_000: @p53052-poluxData @\\*(SDCM)"
+      "name": "CFG_EWL_BSI_UCECAN_SDCM_000: Steering & Direction Column Module"
     },
     "D551": {
       "id": "CFG_EWM_BSI_UCECAN_WLC_000",
@@ -5220,7 +5212,7 @@
         { "value": "0", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_00" },
         { "value": "1", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_01" }
       ],
-      "name": "Type of traction chain" 
+      "name": "Experimental: Type of traction chain" 
     },
     "2469": {
       "id": "CFG_EW8_ACQUI_PRES_PASS_AV_000",
@@ -5228,7 +5220,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EW8_ACQUI_PRES_PASS_AV_000" 
+      "name": "Experimental: Front passenger presence acquisition" 
     },
     "246A": {
       "id": "CFG_EW9_BSI_OPT_PASS_AVC_DETECT_000",
@@ -5236,7 +5228,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EW9_BSI_OPT_PASS_AVC_DETECT_000" 
+      "name": "Experimental: Option: Advanced passenger detection" 
     },
     "246C": {
       "id": "CFG_EWB_BSI_PRESENCE_ETSR_000",
@@ -5252,7 +5244,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Presence of a supply protection and management unit (BPGA)" 
+      "name": "Experimental: Presence of a supply protection and management unit (BPGA)" 
     },
     "246F": {
       "id": "CFG_EWE_BSI_OPTION_ECO_COACHING_000",
@@ -5283,7 +5275,7 @@
         { "value": "2", "name": "Lock on the left" },
         { "value": "3", "name": "Locks on left and right" }
       ],
-      "name": "Presence and number of motorised locks on sliding doors" 
+      "name": "Experimental: Presence and number of motorised locks on sliding doors" 
     },
     "247C": {
       "id": "Version de l'algorithme de diagnostique du contacteur frein",
@@ -5301,10 +5293,11 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "CFG_EZG_BSI_PRESENCE_ML_OUVRANTS_000_00" },
-        { "value": "1F", "name": "CFG_EZG_BSI_PRESENCE_ML_OUVRANTS_000_1F" }
+        { "value": "00", "name": "No hands-free access" },
+        { "value": "13", "name": "Hands-free access to front doors and boot door" },
+        { "value": "1F", "name": "Hands-free access to all 4 doors and boot door" }
       ],
-      "name": "Indicates the presence of hands-free functionality at each opening" 
+      "name": "Experimental: Hands-free system presence" 
     },
     "2491": {
       "id": "CFG_FGK_BSI_OPT_LIGHTING_ANIMAT_000",
@@ -5312,7 +5305,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Ambient Lighting Animation ???" 
+      "name": "Experimental: Option: Ambient Lighting Animation ???" 
     },
     "249C": {
       "id": "DIFFERENTIATION OF THE CLIMATE CONTROL CALIBRATION FILE USED",
@@ -5325,7 +5318,7 @@
         { "value": "0", "name": "Not for Korea" },
         { "value": "1", "name": "For Korea" }
       ],
-      "name": "Climate Control Calibration"
+      "name": "Experimental: Climate Control Calibration"
     },
     "23E3": {
       "id": "CFG_DEL_BSI_PRESENCE_FMUX_AUDIO_000",
@@ -5338,7 +5331,7 @@
         { "value": "0", "name": "Absence of multiplex control panel" },
         { "value": "1", "name": "Presence of multiplex control panel" }
       ],
-      "name": "Type of acquisition architecture of the radio ON/OFF button"
+      "name": "Experimental: Type of acquisition architecture of the radio ON/OFF button"
     },
     "23E4": {
       "id": "CFG_DES_BSI_TYPE_ALT_STANDARD_000",
@@ -5351,7 +5344,7 @@
         { "value": "0", "name": "Self primed" },
         { "value": "1", "name": "L-line excited" }
       ],
-      "name": "Type of uncontrolled alternator"
+      "name": "Experimental: Type of uncontrolled alternator"
     },
     "23E9": {
       "id": "CFG_DFL_BSI_TYPE_OPT_VIDE_001",
@@ -5365,7 +5358,7 @@
         { "value": "01", "name": "1st level of load shedding" },
         { "value": "02", "name": "2nd level of load shedding" }
       ],
-      "name": "Type of vacuum optimisation module (Vacuum shedding)"
+      "name": "Experimental: Type of vacuum optimisation module (Vacuum shedding)"
     },
     "244A": {
       "id": "CFG_EJK_BSI_TYPE_BAA_AUTOLOCKING_000",
@@ -5380,7 +5373,7 @@
         { "value": "02", "name": "Activation via switch" },
         { "value": "03", "name": "CFG_EJK_BSI_TYPE_BAA_AUTOLOCKING_000_03" }
       ],
-      "name": "Presence and type of activation of the locking after closing a door controlled by the hands full access function"
+      "name": "Experimental: Presence and type of activation of the locking after closing a door controlled by the hands full access function"
     },
     "244E": {
       "id": "CFG_EL6_BSI_BOITIER_SIEG_CLIM_AV_000",
@@ -5395,7 +5388,7 @@
         { "value": "02", "name": "BRNC_FIL" },
         { "value": "03", "name": "BRNC_MUX" }
       ],
-      "name": "Front seat heating or ventilation control unit type"
+      "name": "Experimental: Front seat heating or ventilation control unit type"
     },
     "2455": {
       "id": "CFG_ENI_BSI_OPT_POLYCHROME_AMBIA_000",
@@ -5403,7 +5396,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Presence of polychromatic ambiance light" 
+      "name": "Experimental: Presence of polychromatic ambiance light" 
     },
     "2456": {
       "id": "CFG_ENJ_BSI_OPTION_ACRC_000",
@@ -5416,7 +5409,7 @@
         { "value": "00", "name": "Absent" },
         { "value": "01", "name": "Present" }
       ],
-      "name": "Presence and type of anti change report code"
+      "name": "Experimental: Presence and type of anti change report code"
     },
       "2457": {
       "id": "CFG_ENL_BSI_OPTION_PLACE_POI_SCR_000",
@@ -5424,7 +5417,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Allows the display of POI alert on multifunctional screen" 
+      "name": "Experimental: Allows the display of POI alert on multifunctional screen" 
     },
       "2459": {
       "id": "CFG_ENW_BSI_OPT_COUPURE_MEDIA_EV_000",
@@ -5437,7 +5430,7 @@
         { "value": "0", "name": "Media shutdown during contact switchover" },
         { "value": "1", "name": "Media shuts off when the driver's door is opened" }
       ],
-      "name": "Radio/BTEL media cut-off type option"
+      "name": "Experimental: Multimedia system shutdown mode"
     },
       "245D": {
       "id": "CFG_ERA_BSI_OPT_CABIN_AIR_FILTER_000",
@@ -5451,7 +5444,7 @@
         { "value": "01", "name": "Clean cabin" },
         { "value": "02", "name": "Clean cabin and self-contained cabin filter" }
       ],
-      "name": "Indicates a presence and type of cabin air filter"
+      "name": "Experimental: Indicates a presence and type of cabin air filter"
     },
       "2463": {
       "id": "CFG_ERF_BSI_OPT_VISION_NOCTURNE_000",
@@ -5459,7 +5452,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Presence of Night Vision function" 
+      "name": "Option: Night Vision function presence" 
     },
       "2467": {
       "id": "CFG_EW6_BSI_OPT_DISTRACTION_MODE_000",
@@ -5467,7 +5460,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Distraction mode" 
+      "name": "Option: Driver Attention Alert (DAA) presence" 
     },
       "246B": {
       "id": "CFG_EVG_BSI_OPTION_OLVI_000",
@@ -5475,7 +5468,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: OLVI" 
+      "name": "Experimental: Option: Child left in vehicle alert (rear seat reminder)" 
     },
       "246D": {
       "id": "CFG_EWC_BSI_AMORTISEMENT_EE_000",
@@ -5483,7 +5476,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Deprecation of ???" 
+      "name": "Experimental: Energy recuperation system presence" 
     },
       "2474": {
       "id": "CFG_EXY_BSI_INH_MOD_ACCUEIL_ECLX_000",
@@ -5491,7 +5484,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "CFG_EXY_BSI_INH_MOD_ACCUEIL_ECLX_000" 
+      "name": "Experimental: Inhibit welcome lighting mode (exterior)" 
     },
       "2476": {
       "id": "CFG_EYB_ORANG_BRAKE_TELLTALE_000",
@@ -5499,7 +5492,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Orange brake indicator" 
+      "name": "Experimental: Presence of orange brake warning indicator (for electric brake booster fault)" 
     },
       "247E": {
       "id": "CFG_EZH_BSI_FREEWHEELING_INHIB_000",
@@ -5507,7 +5500,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Presence of freewheeling option on the vehicle"
+      "name": "Experimental: Inhibition of freewheeling on the vehicle"
     },
       "248C": {
       "id": "CFG_F7T_BSI_TYPE_VERSION_ILV_000",
@@ -5517,10 +5510,10 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "CFG_F7T_BSI_TYPE_VERSION_ILV_000_00" },
-        { "value": "01", "name": "CFG_F7T_BSI_TYPE_VERSION_ILV_000_01" }
+        { "value": "00", "name": "V1: Camera-based speed sign recognition only" },
+        { "value": "01", "name": "V2: Camera + navigation map data (ISA-compliant)" }
       ],
-      "name": "Version of road speed signs aquisition"
+      "name": "Experimental: Speed Limit Indication (ILV) acquisition version support"
     },
       "2496": {
       "id": "CFG_FU0_BSI_TYPE_DIAG_ECL_AV_LED_001",
@@ -5535,7 +5528,7 @@
         { "value": "02", "name": "Without diagnostics" },
         { "value": "03", "name": "Diagnostics by current measurement" }
       ],
-      "name": "Presence and type of LED front lighting diagnostics"
+      "name": "Experimental: Presence and type of LED front lighting diagnostics"
     },
       "2497": {
       "id": "CFG_GAI_BSI_TYPE_EDR_REGULATION_000",
@@ -5552,7 +5545,7 @@
         { "value": "04", "name": "CHINA_V2" },
         { "value": "05", "name": "EUROPE_V2" }
       ],
-      "name": "Type of Event Data Recording regulation"
+      "name": "Experimental: Type of Event Data Recording regulation"
     },
       "24A1": {
       "id": "CFG_GGD_BSI_TYPE_HMI_ADVCNP_000",
@@ -5562,11 +5555,11 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "CFG_GGD_BSI_TYPE_HMI_ADVCNP_000_00" },
-        { "value": "01", "name": "CFG_GGD_BSI_TYPE_HMI_ADVCNP_000_01" },
-        { "value": "02", "name": "CFG_GGD_BSI_TYPE_HMI_ADVCNP_000_02" }
+        { "value": "00", "name": "No ISA cascading warning (pre-GSR2)" },
+        { "value": "01", "name": "Visual + cascaded audible warning" },
+        { "value": "02", "name": "Visual + cascaded haptic warning (pedal feedback)" }
       ],
-      "name": "Type of overspeed warning"
+      "name": "Experimental: Type of overspeed warning"
     }
   }
 }
