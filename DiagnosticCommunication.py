@@ -781,6 +781,8 @@ class DiagnosticCommunication(QThread):
                         receiveData = self.writeECUCommand(self.ecuReadZone)
 
             else:
-                self.writeToOutputView(i18n().tr("Reading ECU Zones: Successful"))
-                self.readZoneListDoneSignal.emit()
+                self.writeToOutputView(i18n().tr("Reading ECU Zones: Finished"))
                 self.isRunning = False
+
+        # Always emit "Done" Signal
+        self.readZoneListDoneSignal.emit()
