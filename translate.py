@@ -44,6 +44,7 @@ class FileTranslater:
             m.find("source").text.replace("\\", ""): m.find("translation")
             for m in messagesOut
             if m.find("source") is not None
+            #and m.find("source").text is not None
         }
 
         tree = ElementTree.parse(pathIn)
@@ -73,8 +74,8 @@ class FileTranslater:
 
             txt = source.text.replace("\\", "")
             translationOut = messages_out_map.get(txt)
-            translated = translationOut is not None and translationOut.text and translationOut.attrib.get("type") != "unfinished"
-
+            translated = (translationOut is not None and translationOut.text and
+                          translationOut.attrib.get("type") != "unfinished")
             # Already translated, transfer to input tree
             if translated == True:
                 translation.text = translationOut.text
@@ -85,13 +86,12 @@ class FileTranslater:
             txtTranslated = None
             while txtTranslated == None:
                 txtTranslated = translator.translate_text(str(txt), language)
-
+            # Counts are more in line with human reading.
             if txtTranslated != None:
+                counter += 1
                 translation.text = txtTranslated
                 del translation.attrib["type"]
-
                 print(f"[{counter}] {txt} <-> {txtTranslated}")
-                counter += 1
 
             if counter % batch_size == 0:
                 print(f"\n[{counter}] Entries was written\n")
@@ -99,6 +99,7 @@ class FileTranslater:
 
         # Write back
         tree.write(pathOut, encoding='utf-8', xml_declaration=True)
+
 
 def printUsage():
     print("Usage: translate [OPTIONS]")
