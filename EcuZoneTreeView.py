@@ -57,6 +57,8 @@ class HorizontalTextTabBar(QTabBar):
 class EcuZoneTreeView(QTabWidget):
     """
     """
+    tabs = []
+
     def __init__(self, parent, ecuObjectList = None):
         super(EcuZoneTreeView, self).__init__(parent)
         self.setTabBar(HorizontalTextTabBar(self))
@@ -122,6 +124,9 @@ class EcuZoneTreeView(QTabWidget):
             self.setTabVisible(index, has_visible)
 
     def filterZones(self, text: str):
+        if len(self.tabs) == 0:
+            return
+
         self.searchText = text
         for tab in self.tabs:
             index = tab[1]
@@ -289,26 +294,24 @@ class EcuZoneTreeViewWidget(QTreeWidget):
     def applyFilters(self):
         search_lower = self.searchText.lower()
         visible_count = 0
-        
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
-            
             hide_item = False
             if self.hideZones:
                 widget = item.treeWidget().itemWidget(item, 2)
                 if widget and widget.isEnabled() == False:
                     hide_item = True
-                    
+
             if not hide_item and self.searchText:
                 zone_id = item.text(0).lower()
                 zone_desc = item.text(1).lower()
                 if search_lower not in zone_id and search_lower not in zone_desc:
                     hide_item = True
-                    
+
             item.setHidden(hide_item)
             if not hide_item:
                 visible_count += 1
-                
+
         return visible_count > 0
 
     def getValuesAsCSV(self):

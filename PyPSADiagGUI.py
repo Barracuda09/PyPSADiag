@@ -162,7 +162,6 @@ class PyPSADiagGUI(object):
         self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
 
         self.searchZoneLineEdit = QLineEdit()
-        self.searchZoneLineEdit.setPlaceholderText(i18n().tr("Search Zones..."))
         self.searchZoneLineEdit.setClearButtonEnabled(True)
 
         self.treeView = EcuZoneTreeView(None)
@@ -362,6 +361,7 @@ class PyPSADiagGUI(object):
         self.virginWriteZone.setText(i18n().tr("Virgin Write"))
         self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))
 #        self.useSketchSeedGenerator.setText(i18n().tr("Use Sketch Seed Generator"))
+        self.searchZoneLineEdit.setPlaceholderText(i18n().tr("Search Zones..."))
         self.setEcuTxRxText("-", "-", "-")
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
