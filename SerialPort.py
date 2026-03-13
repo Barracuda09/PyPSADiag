@@ -30,9 +30,10 @@ class SerialPort():
     ecuSimulation = EcuSimulation()
     simulation = False
 
-    def __init__(self, simulation: bool()):
+    def __init__(self, logger=None, simulation: bool = False):
         self.serialPort = serial.Serial()
         self.simulation = simulation
+        self.logger = logger
 
     # Get available Serial ports and put it in Combobox
     def fillPortNameCombobox(self, combobox):
@@ -58,6 +59,21 @@ class SerialPort():
             return ""
         except serial.SerialException as e:
             return i18n().tr('Error opening port: ') + str(e)
+
+    def configure(self, tx_id, rx_id, protocol="uds", bus="DIAG", target=None, dialog_type="0"):
+        # First send an Version and Reset command
+        cmd = "V"
+        self.logger("> " + cmd)
+        receiveData = self.sendReceive(cmd)
+        self.logger("< " + receiveData)
+        if receiveData == "Timeout":
+            return False
+        cmd = "R"
+        self.logger("> " + cmd)
+        receiveData = self.sendReceive(cmd)
+        self.logger("< " + receiveData)
+
+        return True
 
     def write(self, data):
         #print(data)
