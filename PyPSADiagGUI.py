@@ -135,6 +135,7 @@ class PyPSADiagGUI(object):
         self.openCSVFile = QPushButton()
         self.saveCSVFile = QPushButton()
 
+        self.diagtoolTypeComboBox = QComboBox()
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
         self.SearchConnectPort = QPushButton()
@@ -211,6 +212,7 @@ class PyPSADiagGUI(object):
         self.connectionBox = QGroupBox()
         self.connectionBoxLayout = QVBoxLayout(self.connectionBox)
         self.connectionBoxLayout.setContentsMargins(5, 5, 5, 5)
+        self.connectionBoxLayout.addWidget(self.diagtoolTypeComboBox)
         self.connectionBoxLayout.addWidget(self.portNameComboBox)
         self.connectionBoxLayout.addWidget(self.SearchConnectPort)
         self.connectionBoxLayout.addWidget(self.ConnectPort)

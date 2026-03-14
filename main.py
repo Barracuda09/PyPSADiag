@@ -40,6 +40,7 @@ from EcuZoneTreeView  import EcuZoneTreeView
 from MessageDialog  import MessageDialog
 from i18n import i18n
 from DecodeCalUlpFile import DecodeCalUlpFile
+from DiagnosticAdapter import DiagnosticAdapter
 
 """
   - Change GUI in: PyPSADiagGUI.py
@@ -87,6 +88,9 @@ class MainWindow(QMainWindow):
 
         self.ui.setupGUI(app, self, self.scan, self.lang_code)
 
+        self.ui.diagtoolTypeComboBox.currentIndexChanged.connect(self.changeDiagtoolType)
+
+
         # Disable Sync Zone files with github (Still Work In Progress)
         self.ui.syncZoneFiles.setVisible(False)
 
@@ -117,8 +121,11 @@ class MainWindow(QMainWindow):
         self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
         self.ui.languageActionGroup.triggered.connect(self.changeLanguage)
 
+        self.ui.diagtoolTypeComboBox.addItem("Arduino", "serial")
+        self.ui.diagtoolTypeComboBox.addItem("VCI", "vci")
+
         # Setup serial controller and Search for Ports
-        self.serialController = SerialPort(self.simulation)
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode="serial", simulation=self.simulation)
         self.searchConnectPort()
 
         # Set initial button states
@@ -134,6 +141,13 @@ class MainWindow(QMainWindow):
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
+        self.setupCommunication()
+
+        # Open CSV reader, load file with method "enable(path)"
+        self.fileLoaderThread = FileLoader.FileLoaderThread()
+        self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
+
+    def setupCommunication(self):
         # UDS
         self.udsCommunication = DiagnosticCommunication(self.serialController, "uds")
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
@@ -155,10 +169,6 @@ class MainWindow(QMainWindow):
         self.kwphabCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
         self.kwphabCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
-        # Open CSV reader, load file with method "enable(path)"
-        self.fileLoaderThread = FileLoader.FileLoaderThread()
-        self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
-
     def addTranslators(self):
         self.translator = QTranslator()
         self.loadTranslator()
@@ -175,6 +185,18 @@ class MainWindow(QMainWindow):
         if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
             self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.updateEcuTxRxLabel()
+
+    def changeDiagtoolType(self, index):
+            diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+            if diagtool_type.lower() == "serial":
+                self.ui.portNameComboBox.setEnabled(True)
+                self.ui.SearchConnectPort.setEnabled(True)
+            else:
+                self.ui.portNameComboBox.setEnabled(False)
+                self.ui.SearchConnectPort.setEnabled(False)
+
+            self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
+            self.setupCommunication()
 
     def loadTranslator(self):
         qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
@@ -226,6 +248,31 @@ class MainWindow(QMainWindow):
         self.ui.output.append(str(datetime.now()) + " --|  " + text)
         self.ui.output.viewport().repaint()
 
+    def configureCommunication(self):
+        if self.serialController.isOpen():
+            success = self.serialController.configure(
+                self.ecuObjectList.get("tx_id", ""),
+                self.ecuObjectList.get("rx_id", ""),
+                self.ecuObjectList.get("protocol", "")
+            )
+            ecuName = self.ecuObjectList.get("name", "")
+
+            if not success:
+                if ecuName != "":
+                    self.writeToOutputView("Diag tool configuration failed for ECU: " + ecuName)
+                else:
+                    self.writeToOutputView("Diag tool configuration failed")
+            else:
+                if ecuName != "":
+                    self.writeToOutputView("Diag tool configuration successful for ECU: " + ecuName)
+                else:
+                    self.writeToOutputView("Diag tool configuration successful")
+                return True
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+        return False
+
     @Slot()
     def searchConnectPort(self):
         self.serialController.fillPortNameCombobox(self.ui.portNameComboBox)
@@ -246,19 +293,12 @@ class MainWindow(QMainWindow):
 
         error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
         if error == "":
-            # First send an Version and Reset command
-            cmd = "V"
-            self.writeToOutputView("> " + cmd)
-            receiveData = self.serialController.sendReceive(cmd)
-            self.writeToOutputView("< " + receiveData)
-            if receiveData == "Timeout":
+            success = self.configureCommunication()
+
+            if not success:
                 self.serialController.close()
                 self.ui.ConnectPort.setEnabled(True)
                 return
-            cmd = "R"
-            self.writeToOutputView("> " + cmd)
-            receiveData = self.serialController.sendReceive(cmd)
-            self.writeToOutputView("< " + receiveData)
 
             # Set button states
             self.ui.ConnectPort.setEnabled(False)
@@ -353,16 +393,19 @@ class MainWindow(QMainWindow):
             else:
                 self.writeToOutputView(i18n().tr("Include Zone file not found: ") + includeZonePath)
 
-        self.updateEcuZonesAndKeys(self.ecuObjectList)
-        self.ui.setFilePathInWindowsTitle("")
-        self.ui.readZone.setEnabled(True)
-        self.ui.writeZone.setEnabled(True)
-        self.ui.flashEcu.setEnabled(False)
-        self.ui.clearEcuFaults.setEnabled(True)
-        self.ui.readEcuFaults.setEnabled(True)
-        self.ui.rebootEcu.setEnabled(True)
-        self.ui.commandsMenu.setEnabled(True)
-        self.updateEcuTxRxLabel()
+        success = self.configureCommunication()
+
+        if success:
+            self.updateEcuZonesAndKeys(self.ecuObjectList)
+            self.ui.setFilePathInWindowsTitle("")
+            self.ui.readZone.setEnabled(True)
+            self.ui.writeZone.setEnabled(True)
+            self.ui.flashEcu.setEnabled(False)
+            self.ui.clearEcuFaults.setEnabled(True)
+            self.ui.readEcuFaults.setEnabled(True)
+            self.ui.rebootEcu.setEnabled(True)
+            self.ui.commandsMenu.setEnabled(True)
+            self.updateEcuTxRxLabel()
 
     @Slot()
     def readZone(self):
