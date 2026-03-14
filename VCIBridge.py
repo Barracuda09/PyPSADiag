@@ -4,7 +4,7 @@
    32-bit Python subprocess bridge for Evolution XS VCI DLL access
    This module runs in a separate 32-bit Python process to access the VCIAccess.dll
 
-   Copyright (C) 2025 Marc Postema (mpostema09 -at- gmail.com)
+   The code  has been borrowed from here: https://github.com/halloworld007/PyPSADiag-VCI and sligthly modified to our needs.
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License

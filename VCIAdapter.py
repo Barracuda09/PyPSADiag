@@ -4,7 +4,7 @@
    Evolution XS VCI Adapter for PyPSADiag
    Uses subprocess bridge to communicate with 32-bit VCI DLL
 
-   Copyright (C) 2025 Marc Postema (mpostema09 -at- gmail.com)
+   The code  has been borrowed from here: https://github.com/halloworld007/PyPSADiag-VCI and sligthly modified to our needs.
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
