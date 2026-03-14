@@ -86,7 +86,6 @@ class MainWindow(QMainWindow):
         self.addTranslators()
 
         self.ui.setupGUI(app, self, self.scan, self.lang_code)
-        self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
         # Disable Sync Zone files with github (Still Work In Progress)
         self.ui.syncZoneFiles.setVisible(False)
@@ -106,7 +105,6 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
         self.ui.clearEcuFaults.clicked.connect(self.clearEcuFaults)
-        self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
@@ -115,6 +113,9 @@ class MainWindow(QMainWindow):
         # Connect Other/General signals to slots
         self.ui.command.returnPressed.connect(self.sendCommand)
         self.ui.searchZoneLineEdit.textChanged.connect(self.searchZones)
+
+        self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
+        self.ui.languageActionGroup.triggered.connect(self.changeLanguage)
 
         # Setup serial controller and Search for Ports
         self.serialController = SerialPort(self.simulation)
@@ -128,7 +129,7 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
-        self.ui.disableEcoMode.setEnabled(False)
+        self.ui.commandsMenu.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -159,24 +160,25 @@ class MainWindow(QMainWindow):
         self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
 
     def addTranslators(self):
-            self.translator = QTranslator()
-            self.loadTranslator()
-            QApplication.instance().installTranslator(self.translator)
+        self.translator = QTranslator()
+        self.loadTranslator()
+        QApplication.instance().installTranslator(self.translator)
 
-    def changeLanguage(self, index):
-            lang_code = self.ui.languageComboBox.itemData(index)
-            if lang_code:
-                self.lang_code = lang_code
+    def changeLanguage(self, action):
+        # Action data returns variant [code, language, iconPath]
+        lang_code = action.data()[0]
+        if lang_code:
+            self.lang_code = lang_code
 
-            self.loadTranslator()
-            self.ui.translateGUI(self)
-            if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
-                self.updateEcuZonesAndKeys(self.ecuObjectList)
-            self.updateEcuTxRxLabel()
+        self.loadTranslator()
+        self.ui.translateGUI()
+        if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
+            self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.updateEcuTxRxLabel()
 
     def loadTranslator(self):
-            qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
-            self.translator.load(qm_path)
+        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
+        self.translator.load(qm_path)
 
     # Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZonesAndKeys(self, ecuObjectList: dict):
@@ -261,7 +263,7 @@ class MainWindow(QMainWindow):
             # Set button states
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
-            self.ui.disableEcoMode.setEnabled(True)
+            self.ui.commandsMenu.setEnabled(True)
         else:
             self.ui.ConnectPort.setEnabled(True)
             self.writeToOutputView(error)
@@ -279,7 +281,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
-        self.ui.disableEcoMode.setEnabled(False)
+        self.ui.commandsMenu.setEnabled(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 #        self.ui.useSketchSeedGenerator.setEnabled(True)
 
@@ -359,7 +361,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(True)
         self.ui.readEcuFaults.setEnabled(True)
         self.ui.rebootEcu.setEnabled(True)
-        self.ui.disableEcoMode.setEnabled(True)
+        self.ui.commandsMenu.setEnabled(True)
         self.updateEcuTxRxLabel()
 
     @Slot()
