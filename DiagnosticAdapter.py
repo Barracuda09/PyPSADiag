@@ -1,6 +1,5 @@
 
 from SerialPort import SerialPort
-from WebSocketClientTransport import WebSocketClientTransport
 from VCIAdapter import VCIAdapter
 
 class DiagnosticAdapter:
