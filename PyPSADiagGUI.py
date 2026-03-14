@@ -129,9 +129,6 @@ class PyPSADiagGUI(object):
         self.output = QTextEdit()
         self.output.setReadOnly(True)
 
-        # Setup languages
-        self.setupLanguages(lang_code)
-
         self.syncZoneFiles = QPushButton()
 
         self.sendCommand = QPushButton()
@@ -177,6 +174,11 @@ class PyPSADiagGUI(object):
 
         self.disableEcoModeAction = QAction(self.commandsMenu)
         self.commandsMenu.addAction(self.disableEcoModeAction)
+        ###################################################
+
+        ###################################################
+        # Setup languages
+        self.setupLanguages(lang_code)
         ###################################################
 
         ###################################################
