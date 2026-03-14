@@ -118,7 +118,6 @@ class MainWindow(QMainWindow):
         self.ui.command.returnPressed.connect(self.sendCommand)
         self.ui.searchZoneLineEdit.textChanged.connect(self.searchZones)
 
-        self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
         self.ui.languageActionGroup.triggered.connect(self.changeLanguage)
 
         self.ui.diagtoolTypeComboBox.addItem("Arduino", "serial")
@@ -185,6 +184,18 @@ class MainWindow(QMainWindow):
         if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
             self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.updateEcuTxRxLabel()
+
+    def changeDiagtoolType(self, index):
+            diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+            if diagtool_type.lower() == "serial":
+                self.ui.portNameComboBox.setEnabled(True)
+                self.ui.SearchConnectPort.setEnabled(True)
+            else:
+                self.ui.portNameComboBox.setEnabled(False)
+                self.ui.SearchConnectPort.setEnabled(False)
+
+            self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
+            self.setupCommunication()
 
     def changeDiagtoolType(self, index):
             diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
