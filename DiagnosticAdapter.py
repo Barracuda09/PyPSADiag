@@ -1,4 +1,3 @@
-
 from SerialPort import SerialPort
 from VCIAdapter import VCIAdapter
 
@@ -12,8 +11,7 @@ class DiagnosticAdapter:
             self.transport = SerialPort(logger=self.logger, simulation=simulation)
 
         elif mode == "vci":
-            url = kwargs.get("url", "ws://localhost:8765")
-            self.transport = VCIAdapter(logger=self.logger, url=url)
+            self.transport = VCIAdapter(logger=self.logger)
 
         else:
             raise ValueError("Unknown transport")
