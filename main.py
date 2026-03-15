@@ -184,18 +184,6 @@ class MainWindow(QMainWindow):
         if diagtool_type.lower() == "serial":
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
-        else:
-            self.ui.portNameComboBox.setEnabled(False)
-            self.ui.SearchConnectPort.setEnabled(False)
-
-        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
-        self.setupCommunication()
-
-    def changeDiagtoolType(self, index):
-        diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-        if diagtool_type.lower() == "serial":
-            self.ui.portNameComboBox.setEnabled(True)
-            self.ui.SearchConnectPort.setEnabled(True)
             if self.ui.portNameComboBox.count() > 0:
                 self.ui.ConnectPort.setEnabled(True)
             else:
@@ -311,9 +299,16 @@ class MainWindow(QMainWindow):
                 return
 
             # Set button states
+            self.ui.diagtoolTypeComboBox.setEnabled(False)
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
+
+            if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
+                self.setEcuCommandsState(True)
+
         else:
             self.ui.ConnectPort.setEnabled(True)
             self.writeToOutputView(error)
@@ -323,17 +318,24 @@ class MainWindow(QMainWindow):
         if self.stream != None:
             self.stream.close()
         self.serialController.close()
+        self.ui.diagtoolTypeComboBox.setEnabled(True)
+        self.ui.portNameComboBox.setEnabled(True)
+        self.ui.SearchConnectPort.setEnabled(True)
         self.ui.ConnectPort.setEnabled(True)
         self.ui.DisconnectPort.setEnabled(False)
-        self.ui.readZone.setEnabled(False)
-        self.ui.writeZone.setEnabled(False)
-        self.ui.flashEcu.setEnabled(False)
-        self.ui.clearEcuFaults.setEnabled(False)
-        self.ui.readEcuFaults.setEnabled(False)
-        self.ui.rebootEcu.setEnabled(False)
-        self.ui.commandsMenu.setEnabled(False)
+
+        self.setEcuCommandsState(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 #        self.ui.useSketchSeedGenerator.setEnabled(True)
+
+    def setEcuCommandsState(self, enabled):
+        self.ui.readZone.setEnabled(enabled)
+        self.ui.writeZone.setEnabled(enabled)
+        self.ui.flashEcu.setEnabled(enabled)
+        self.ui.clearEcuFaults.setEnabled(enabled)
+        self.ui.readEcuFaults.setEnabled(enabled)
+        self.ui.rebootEcu.setEnabled(enabled)
+        self.ui.commandsMenu.setEnabled(enabled)
 
     @Slot()
     def hideNoResponseZones(self, state):
@@ -424,6 +426,8 @@ class MainWindow(QMainWindow):
             fileName = QFileDialog.getSaveFileName(self, i18n().tr("Save CSV Zone File"), path, i18n().tr("CSV Files") + "(*.csv)")
             if fileName[0] == "":
                 return
+
+            self.ui.treeView.clearZoneListValues()
 
             # Open CSV for writing
             self.ui.setFilePathInWindowsTitle(fileName[0])
