@@ -88,9 +88,6 @@ class MainWindow(QMainWindow):
 
         self.ui.setupGUI(app, self, self.scan, self.lang_code)
 
-        self.ui.diagtoolTypeComboBox.currentIndexChanged.connect(self.changeDiagtoolType)
-
-
         # Disable Sync Zone files with github (Still Work In Progress)
         self.ui.syncZoneFiles.setVisible(False)
 
@@ -117,11 +114,8 @@ class MainWindow(QMainWindow):
         # Connect Other/General signals to slots
         self.ui.command.returnPressed.connect(self.sendCommand)
         self.ui.searchZoneLineEdit.textChanged.connect(self.searchZones)
-
+        self.ui.diagtoolTypeComboBox.currentIndexChanged.connect(self.changeDiagtoolType)
         self.ui.languageActionGroup.triggered.connect(self.changeLanguage)
-
-        self.ui.diagtoolTypeComboBox.addItem("Arduino", "serial")
-        self.ui.diagtoolTypeComboBox.addItem("VCI", "vci")
 
         # Setup serial controller and Search for Ports
         self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode="serial", simulation=self.simulation)
@@ -186,28 +180,33 @@ class MainWindow(QMainWindow):
         self.updateEcuTxRxLabel()
 
     def changeDiagtoolType(self, index):
-            diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-            if diagtool_type.lower() == "serial":
-                self.ui.portNameComboBox.setEnabled(True)
-                self.ui.SearchConnectPort.setEnabled(True)
-            else:
-                self.ui.portNameComboBox.setEnabled(False)
-                self.ui.SearchConnectPort.setEnabled(False)
+        diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+        if diagtool_type.lower() == "serial":
+            self.ui.portNameComboBox.setEnabled(True)
+            self.ui.SearchConnectPort.setEnabled(True)
+        else:
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
 
-            self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
-            self.setupCommunication()
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
+        self.setupCommunication()
 
     def changeDiagtoolType(self, index):
-            diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-            if diagtool_type.lower() == "serial":
-                self.ui.portNameComboBox.setEnabled(True)
-                self.ui.SearchConnectPort.setEnabled(True)
+        diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+        if diagtool_type.lower() == "serial":
+            self.ui.portNameComboBox.setEnabled(True)
+            self.ui.SearchConnectPort.setEnabled(True)
+            if self.ui.portNameComboBox.count() > 0:
+                self.ui.ConnectPort.setEnabled(True)
             else:
-                self.ui.portNameComboBox.setEnabled(False)
-                self.ui.SearchConnectPort.setEnabled(False)
+                self.ui.ConnectPort.setEnabled(False)
+        else:
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
+            self.ui.ConnectPort.setEnabled(True)
 
-            self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
-            self.setupCommunication()
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
+        self.setupCommunication()
 
     def loadTranslator(self):
         qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
@@ -404,11 +403,11 @@ class MainWindow(QMainWindow):
             else:
                 self.writeToOutputView(i18n().tr("Include Zone file not found: ") + includeZonePath)
 
-        success = self.configureCommunication()
+        self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.ui.setFilePathInWindowsTitle("")
 
+        success = self.configureCommunication()
         if success:
-            self.updateEcuZonesAndKeys(self.ecuObjectList)
-            self.ui.setFilePathInWindowsTitle("")
             self.ui.readZone.setEnabled(True)
             self.ui.writeZone.setEnabled(True)
             self.ui.flashEcu.setEnabled(False)

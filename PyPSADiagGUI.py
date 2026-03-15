@@ -108,7 +108,7 @@ class PyPSADiagGUI(object):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1300, 780)
+        MainWindow.resize(1200, 750)
         MainWindow.setSizeIncrement(QSize(1, 1))
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
@@ -166,6 +166,12 @@ class PyPSADiagGUI(object):
             self.scanTreeView = EcuZoneTreeView(None)
 
         ###################################################
+        # Fill Diagnostic-Tool Combobox
+        self.diagtoolTypeComboBox.addItem("Arduino", "serial")
+        self.diagtoolTypeComboBox.addItem("VCI", "vci")
+        ###################################################
+
+        ###################################################
         # Setup Menu bar
         self.mainMenu = QMenuBar()
         self.commandsMenu = self.mainMenu.addMenu("")
@@ -192,7 +198,6 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup Top Button Header Layout
         self.topButtonHeaderLayout = QHBoxLayout()
-
         self.topButtonHeaderLayout.addStretch()
         self.topButtonHeaderLayout.setContentsMargins(5, 5, 5, 0)
         self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
