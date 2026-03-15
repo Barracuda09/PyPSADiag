@@ -184,18 +184,6 @@ class MainWindow(QMainWindow):
         if diagtool_type.lower() == "serial":
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
-        else:
-            self.ui.portNameComboBox.setEnabled(False)
-            self.ui.SearchConnectPort.setEnabled(False)
-
-        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
-        self.setupCommunication()
-
-    def changeDiagtoolType(self, index):
-        diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-        if diagtool_type.lower() == "serial":
-            self.ui.portNameComboBox.setEnabled(True)
-            self.ui.SearchConnectPort.setEnabled(True)
             if self.ui.portNameComboBox.count() > 0:
                 self.ui.ConnectPort.setEnabled(True)
             else:
