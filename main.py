@@ -427,6 +427,8 @@ class MainWindow(QMainWindow):
             if fileName[0] == "":
                 return
 
+            self.ui.treeView.clearZoneListValues()
+
             # Open CSV for writing
             self.ui.setFilePathInWindowsTitle(fileName[0])
             self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
