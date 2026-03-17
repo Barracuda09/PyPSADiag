@@ -17,6 +17,7 @@ import json
 import ctypes
 import time
 import re
+import os
 from datetime import datetime
 
 class VCIBridge:
@@ -55,7 +56,16 @@ class VCIBridge:
         self.pd_UDS_PSA = "0B"
         
         try:
-            self.vci = ctypes.CDLL("C:\\AWRoot\\drv\\VCIAccess.dll")
+            # VCIAccess.dll internally resolves paths relative to the drive root
+            # (e.g. /AWRoot/dtrd/comm/data). When CWD is on a different drive,
+            # these paths resolve to the wrong location. Fix: temporarily switch
+            # CWD to C:\ for DLL loading.
+            saved_cwd = os.getcwd()
+            try:
+                os.chdir("C:\\")
+                self.vci = ctypes.CDLL("C:\\AWRoot\\drv\\VCIAccess.dll")
+            finally:
+                os.chdir(saved_cwd)
             self.log("VCI DLL loaded successfully")
         except Exception as e:
             self.log(f"Failed to load VCI DLL: {e}")
@@ -114,46 +124,55 @@ class VCIBridge:
             return False
             
         try:
-            vciOpenSession = self.vci["_openSession"]
-            vciOpenSession.restype = ctypes.c_int
-            result = vciOpenSession()
-            
-            if result == 0 or result == 1:
-                self.log("Connected to Evolution XS VCI successfully")
-                self.connected = True
-                
-                # Get version info - this returns the actual version number, not a status code
-                vciGetVersion = self.vci["_getVersion"]
-                vciGetVersion.restype = ctypes.c_int
-                version = vciGetVersion()
-                if version > 0:
-                    # Convert version number to readable format (e.g. 322 might be v3.22)
-                    major = version // 100
-                    minor = version % 100
-                    self.log(f"VCI API Version: {major}.{minor:02d}")
+            # All DLL calls in connect() need CWD on C:\ because the DLL
+            # internally resolves paths relative to the drive root.
+            saved_cwd = os.getcwd()
+            try:
+                os.chdir("C:\\")
+
+                vciOpenSession = self.vci["_openSession"]
+                vciOpenSession.restype = ctypes.c_int
+                result = vciOpenSession()
+
+                if result == 0 or result == 1:
+                    self.log("Connected to Evolution XS VCI successfully")
+                    self.connected = True
+
+                    # Get version info - this returns the actual version number, not a status code
+                    vciGetVersion = self.vci["_getVersion"]
+                    vciGetVersion.restype = ctypes.c_int
+                    version = vciGetVersion()
+                    if version > 0:
+                        # Convert version number to readable format (e.g. 322 might be v3.22)
+                        major = version // 100
+                        minor = version % 100
+                        self.log(f"VCI API Version: {major}.{minor:02d}")
+                    else:
+                        self.log(f"VCI API Version: Unknown ({version})")
+
+                    # Get firmware version
+                    vciGetFirmwareVersion = self.vci["_getFirmwareVersion"]
+                    vciGetFirmwareVersion.restype = ctypes.c_int
+                    vciGetFirmwareVersion.argtypes = [ctypes.c_char_p, ctypes.c_int]
+                    outputBuffer = ctypes.create_string_buffer(40)
+                    fw_result = vciGetFirmwareVersion(outputBuffer, ctypes.c_int(len(outputBuffer)))
+
+                    if fw_result > 0:
+                        fw_version = ""
+                        for i in range(0, fw_result):
+                            fw_version += chr(outputBuffer.raw[i])
+                        self.log(f"VCI Firmware Version: {fw_version}")
+                    else:
+                        self.log("VCI Firmware Version not available")
+
+                    return True
                 else:
-                    self.log(f"VCI API Version: Unknown ({version})")
-                
-                # Get firmware version
-                vciGetFirmwareVersion = self.vci["_getFirmwareVersion"]
-                vciGetFirmwareVersion.restype = ctypes.c_int
-                vciGetFirmwareVersion.argtypes = [ctypes.c_char_p, ctypes.c_int]
-                outputBuffer = ctypes.create_string_buffer(40)
-                fw_result = vciGetFirmwareVersion(outputBuffer, ctypes.c_int(len(outputBuffer)))
-                
-                if fw_result > 0:
-                    fw_version = ""
-                    for i in range(0, fw_result):
-                        fw_version += chr(outputBuffer.raw[i])
-                    self.log(f"VCI Firmware Version: {fw_version}")
-                else:
-                    self.log("VCI Firmware Version not available")
-                
-                return True
-            else:
-                self.log(f"VCI connection failed: {self.statusToStr(result)}")
-                return False
-                
+                    self.log(f"VCI connection failed: {self.statusToStr(result)}")
+                    return False
+
+            finally:
+                os.chdir(saved_cwd)
+
         except Exception as e:
             self.log(f"VCI connection error: {e}")
             return False
@@ -164,9 +183,15 @@ class VCIBridge:
             try:
                 vciCloseSession = self.vci["_closeSession"]
                 vciCloseSession.restype = ctypes.c_int
-                result = vciCloseSession()
+                # _closeSession needs CWD on C:\ just like _openSession
+                saved_cwd = os.getcwd()
+                try:
+                    os.chdir("C:\\")
+                    result = vciCloseSession()
+                finally:
+                    os.chdir(saved_cwd)
                 self.connected = False
-                
+
                 if result >= 0:
                     self.log("VCI disconnected")
                     return True
