@@ -183,9 +183,15 @@ class VCIBridge:
             try:
                 vciCloseSession = self.vci["_closeSession"]
                 vciCloseSession.restype = ctypes.c_int
-                result = vciCloseSession()
+                # _closeSession needs CWD on C:\ just like _openSession
+                saved_cwd = os.getcwd()
+                try:
+                    os.chdir("C:\\")
+                    result = vciCloseSession()
+                finally:
+                    os.chdir(saved_cwd)
                 self.connected = False
-                
+
                 if result >= 0:
                     self.log("VCI disconnected")
                     return True
