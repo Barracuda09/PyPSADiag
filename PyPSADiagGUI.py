@@ -19,7 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-import os, json
+import os, json, sys
 from datetime import datetime
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -168,7 +168,8 @@ class PyPSADiagGUI(object):
         ###################################################
         # Fill Diagnostic-Tool Combobox
         self.diagtoolTypeComboBox.addItem("Arduino", "serial")
-        self.diagtoolTypeComboBox.addItem("VCI", "vci")
+        if sys.platform == "win32":
+            self.diagtoolTypeComboBox.addItem("VCI", "vci")
         ###################################################
 
         ###################################################

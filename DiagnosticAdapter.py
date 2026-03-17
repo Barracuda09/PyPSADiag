@@ -1,3 +1,4 @@
+import sys
 from SerialPort import SerialPort
 from VCIAdapter import VCIAdapter
 
@@ -10,7 +11,7 @@ class DiagnosticAdapter:
             simulation = kwargs.get("simulation", False)
             self.transport = SerialPort(logger=self.logger, simulation=simulation)
 
-        elif mode == "vci":
+        elif mode == "vci" and sys.platform == "win32":
             self.transport = VCIAdapter(logger=self.logger)
 
         else:
