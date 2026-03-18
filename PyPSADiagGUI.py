@@ -136,6 +136,7 @@ class PyPSADiagGUI(object):
         self.saveCSVFile = QPushButton()
 
         self.diagtoolTypeComboBox = QComboBox()
+        self.canPinsComboBox = QComboBox()
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
         self.SearchConnectPort = QPushButton()
@@ -170,6 +171,11 @@ class PyPSADiagGUI(object):
         self.diagtoolTypeComboBox.addItem("Arduino", "serial")
         if sys.platform == "win32":
             self.diagtoolTypeComboBox.addItem("VCI", "vci")
+
+        # Fill CAN Pins Combobox (VCI only)
+        self.canPinsComboBox.addItem("Pins 3/8 (AEE)", "DIAG")
+        self.canPinsComboBox.addItem("Pins 6/14 (NEA)", "IS")
+        self.canPinsComboBox.setVisible(False)
         ###################################################
 
         ###################################################
@@ -219,6 +225,7 @@ class PyPSADiagGUI(object):
         self.connectionBoxLayout = QVBoxLayout(self.connectionBox)
         self.connectionBoxLayout.setContentsMargins(5, 5, 5, 5)
         self.connectionBoxLayout.addWidget(self.diagtoolTypeComboBox)
+        self.connectionBoxLayout.addWidget(self.canPinsComboBox)
         self.connectionBoxLayout.addWidget(self.portNameComboBox)
         self.connectionBoxLayout.addWidget(self.SearchConnectPort)
         self.connectionBoxLayout.addWidget(self.ConnectPort)
@@ -404,4 +411,4 @@ class PyPSADiagGUI(object):
         self.languageMenu.setTitle(i18n().tr("Language"))
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
-        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol)) 
