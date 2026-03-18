@@ -184,6 +184,7 @@ class MainWindow(QMainWindow):
         if diagtool_type.lower() == "serial":
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
+            self.ui.canPinsComboBox.setVisible(False)
             if self.ui.portNameComboBox.count() > 0:
                 self.ui.ConnectPort.setEnabled(True)
             else:
@@ -191,6 +192,7 @@ class MainWindow(QMainWindow):
         else:
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
+            self.ui.canPinsComboBox.setVisible(True)
             self.ui.ConnectPort.setEnabled(True)
 
         self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
@@ -248,10 +250,12 @@ class MainWindow(QMainWindow):
 
     def configureCommunication(self):
         if self.serialController.isOpen():
+            bus = self.ui.canPinsComboBox.currentData() or "DIAG"
             success = self.serialController.configure(
                 self.ecuObjectList.get("tx_id", ""),
                 self.ecuObjectList.get("rx_id", ""),
-                self.ecuObjectList.get("protocol", "")
+                self.ecuObjectList.get("protocol", ""),
+                bus=bus
             )
             ecuName = self.ecuObjectList.get("name", "")
 
@@ -300,6 +304,7 @@ class MainWindow(QMainWindow):
 
             # Set button states
             self.ui.diagtoolTypeComboBox.setEnabled(False)
+            self.ui.canPinsComboBox.setEnabled(False)
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
             self.ui.ConnectPort.setEnabled(False)
@@ -319,6 +324,7 @@ class MainWindow(QMainWindow):
             self.stream.close()
         self.serialController.close()
         self.ui.diagtoolTypeComboBox.setEnabled(True)
+        self.ui.canPinsComboBox.setEnabled(True)
         self.ui.portNameComboBox.setEnabled(True)
         self.ui.SearchConnectPort.setEnabled(True)
         self.ui.ConnectPort.setEnabled(True)
@@ -675,4 +681,4 @@ if __name__ == "__main__":
   window = MainWindow(app)
   window.show()
 
-  sys.exit(app.exec())
+  sys.exit(app.exec()) 
