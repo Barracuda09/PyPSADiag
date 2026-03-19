@@ -1,0 +1,55 @@
+{
+  "name": "SDCM",
+  "tx_id": "741",
+  "rx_id": "641",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys":  {
+    "SDCM": "A8EE"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding",
+    "config": "Configuration"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "2100": {
+      "name": "Variant Coding Zone",
+      "tab": "config",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+          { 
+              "extra_name": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
+              "name_original": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
+              "name": "Access type",
+              "byte": 0,
+              "mask": "00001100",
+              "form_type": "combobox",
+              "params": [
+                  {
+                      "mask": "00000000",
+                      "name": "Hands-free start only"
+                  },
+                  {
+                      "mask": "00000100",
+                      "name": "Hands-free access + hands-free start"
+                  }
+              ]
+          }
+      ]
+    }
+  }
+}
