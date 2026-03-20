@@ -41,10 +41,6 @@
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "1.2t (EB2ADT EURO 6.2)",
-                        "value": "FFFFDFFFFFFF"
-                    },
-                    {
                         "name": "1.2t (EB2ADTS EURO 6.2)",
                         "value": "FFFFBFFFFFFF"
                     },
@@ -139,10 +135,6 @@
                 "mask": "1111111111111111111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "???",
-                        "value": "FFFFFFFDFFFFFFFF"
-                    },
-                    {
                         "name": "1.2t (EB2DTSM)",
                         "value": "FFFFFFFFEFFFFFFF"
                     },
@@ -151,7 +143,11 @@
                         "value": "FFFF7FFFFFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FDT/EP6FADTXD EURO 6.3 / EP6FADTXHP EURO6.3 / EP6FDTMD/EP6FDTM)",
+                        "name": "1.6t (EP6FDTM)",
+                        "value": "FFFFFFFDFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6FDT/EP6FADTXD EURO 6.3 / EP6FADTXHP EURO6.3 / EP6FDTMD)",
                         "value": "FFEFFFFFFFFFFFFF"
                     },
                     {
@@ -163,7 +159,7 @@
                         "value": "FFFFFFFFFFFFF7FF"
                     },
                     {
-                        "name": "2.0HDI (DW10FC EURO 6.2 / DW10FCD)",
+                        "name": "2.0HDI (DW10 all types - DW10FC / DW10FD / DW10FC E6.3 / DW10F)",
                         "value": "FFFFFFFFFFFFFFFD"
                     },
                     {
@@ -301,12 +297,16 @@
                     {
                         "name": "Peugeot Rifter (K9)",
                         "value": "FFFFFFFFFFF7FFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 408 (P54)",
+                        "value": "FFFFFFFEFFFFFFFFFFFF"
                     }
                 ]
             },
             "CFG_000_FREIN_UDS_DPPR": {
                 "zoneLength": 28,
-                "name": "Tire size",
+                "name": "Tyre size",
                 "byte": 13,
                 "type": "hex",
                 "form_type": "combobox",
@@ -368,7 +368,7 @@
             },
             "CFG_000_FREIN_UDS_DPPR-38": {
                 "zoneLength": 38,
-                "name": "Tire size",
+                "name": "Tyre size",
                 "byte": 19,
                 "type": "hex",
                 "form_type": "combobox",
@@ -403,6 +403,10 @@
                         "value": "FFF7FFFFFFFF"
                     },
                     {
+                        "name": "205/55R17",
+                        "value": "FFFFBFFFFFFF"
+                    },
+                    {
                         "name": "215/55R17",
                         "value": "BFFFFFFFFFFF"
                     },
@@ -427,6 +431,10 @@
                         "value": "7FFFFFFFFFFF"
                     },
                     {
+                        "name": "235/50R18",
+                        "value": "FFFFFBFFFFFF"
+                    },
+                    {
                         "name": "235/55R18",
                         "value": "FF7FFFFFFFFF"
                     },
@@ -435,8 +443,16 @@
                         "value": "F7FFFFFFFFFF"
                     },
                     {
+                        "name": "235/45R19",
+                        "value": "FFFFFFFEFFFF"
+                    },
+                    {
                         "name": "235/50R19",
                         "value": "EFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "245/40R20",
+                        "value": "FFFFFFFFFBFF"
                     },
                     {
                         "name": "???",
@@ -601,6 +617,26 @@
                     {
                         "name": "330X30-PHI60",
                         "value": "FFFE"
+                    },
+                    {
+                        "name": "304X28-PHI60",
+                        "value": "7FFF"
+                    },
+                    {
+                        "name": "283X26-PHI60",
+                        "value": "DFFF"
+                    },
+                    {
+                        "name": "340X30-PHI60",
+                        "value": "FFFD"
+                    },
+                    {
+                        "name": "340X30",
+                        "value": "BFFF"
+                    },
+                    {
+                        "name": "304X28",
+                        "value": "FBFF"
                     }
                 ]
             },
@@ -685,7 +721,7 @@
                         "mask": "00101111"
                     },
                     {
-                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_110111",
+                        "name": "ACC 30 v2",
                         "mask": "00110111"
                     },
                     {
@@ -719,7 +755,7 @@
                         "mask": "00101111"
                     },
                     {
-                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_110111",
+                        "name": "ACC 30 v2",
                         "mask": "00110111"
                     },
                     {
@@ -1380,6 +1416,42 @@
                     },
                     {
                         "name": "With heavy traffic driving assistance system",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_LXAPR": {
+                "zoneLength": 28,
+                "name": "Full lane keeping assistance system",
+                "byte": 27,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Without lane keeping assistance function",
+                        "mask": "00000001"
+                    },
+                    {
+                        "name": "With lane keeping assistance function",
+                        "mask": "00000000"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_LXAPR-38": {
+                "zoneLength": 38,
+                "name": "Full lane keeping assistance system",
+                "byte": 37,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Without lane keeping assistance function",
+                        "mask": "00000001"
+                    },
+                    {
+                        "name": "With lane keeping assistance function",
                         "mask": "00000000"
                     }
                 ]
