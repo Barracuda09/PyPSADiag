@@ -30,23 +30,6 @@
       "tab": "tele",
       "type": "raw",
       "form_type": "multi",
-      "CONFIG_INDICE_TELECODAGE": {
-        "name": "CONFIG_INDICE_TELECODAGE",
-        "byte": 0,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "11111111",
-        "params": [
-          {
-            "name": "CONFIG_INDICE_TELECODAGE_01",
-            "mask": "00000001"
-          },
-          {
-            "name": "CONFIG_INDICE_TELECODAGE_03",
-            "mask": "00000011"
-          }
-        ]
-      },
       "CFG_EP0_DAE_UDS_LXA_003": {
         "name": "Full lane keeping assistance function",
         "byte": 1,
@@ -118,25 +101,25 @@
       "CFG_EP4_DAE_UDS_CAV_003": {
         "name": "Type of steering wheel angle sensor",
         "byte": 2,
-        "type": "bool",
+        "type": "hex",
         "form_type": "combobox",
         "mask": "11111111",
         "params": [
           {
             "name": "Without steering wheel angle sensor",
-            "mask": "11111110"
+            "value": "FE"
           },
           {
-            "name": "Without steering wheel angle sensor",
-            "mask": "11111101"
+            "name": "With steering wheel angle estimator",
+            "value": "FD"
           },
           {
             "name": "With steering wheel angle sensor",
-            "mask": "11111011"
+            "value": "FB"
           },
           {
             "name": "With virtual steering wheel angle sensor",
-            "mask": "11110111"
+            "value": "F7"
           }
         ]
       },
@@ -144,50 +127,93 @@
         "name": "Bodywork",
         "read_only": true,
         "byte": 3,
-        "byte_range": 2,
-        "type": "raw",
-        "form_type": "string"
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "1111111111111111",
+        "params": [
+          {
+            "name": "Peugeot 408",
+            "value": "FFFB"
+          }
+        ]
       },
       "CFG_EP6_DAE_UDS_MPR_003": {
         "name": "Engine",
         "read_only": true,
         "byte": 5,
-        "byte_range": 4,
-        "type": "raw",
-        "form_type": "string"
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "11111111111111111111111111111111",
+        "params": [
+          {
+            "name": "1.2t (EB2ADTS)",
+            "value": "FFFEFFFF"
+          },
+          {
+            "name": "1.6t",
+            "value": "FFFFFFFB"
+          }
+        ]
       },
       "CFG_EP7_DAE_UDS_BVPR_003": {
         "name": "Type of gearbox",
         "read_only": true,
         "byte": 9,
-        "byte_range": 2,
-        "type": "raw",
-        "form_type": "string"
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "1111111111111111",
+        "params": [
+          {
+            "name": "ATN8",
+            "value": "FF7F"
+          }
+        ]
       },
       "CFG_EP8_DAE_UDS_DPPR_003": {
-        "name": "Type of tyre",
+        "name": "Tyre size",
         "byte": 11,
+        "type": "hex",
         "form_type": "combobox",
-        "mask": "11111111",
+        "mask": "11111111111111111111111111111111",
         "params": [
           {
             "name": "15 inches",
-            "mask": "11111110"
+            "value": "FEFFFFFF"
           },
           {
             "name": "16 inches",
-            "mask": "11111101"
+            "value": "FDFFFFFF"
           },
           {
             "name": "17 inches",
-            "mask": "11111011"
+            "value": "FBFFFFFF"
           },
           {
             "name": "18 inches",
-            "mask": "11110111"
+            "value": "F7FFFFFF"
+          },
+          {
+            "name": "FFFEFFFF",
+            "value": "FFFEFFFF"
+          },
+          {
+            "name": "FFFFFEFF",
+            "value": "FFFFFEFF"
+          },
+          {
+            "name": "EFFFFFFF",
+            "value": "EFFFFFFF"
+          },
+          {
+            "name": "20 inches",
+            "value": "DFFFFFFF"
+          },
+          {
+            "name": "FFFFFF7F",
+            "value": "FFFFFF7F"
           }
         ]
       }
     }
   }
-}
+} 
