@@ -109,6 +109,8 @@ class MainWindow(QMainWindow):
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
+        self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
+        self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
         self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
         # Connect Other/General signals to slots
@@ -130,6 +132,7 @@ class MainWindow(QMainWindow):
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.commandsMenu.setEnabled(False)
+        self.ui.disableEcoMode.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -310,6 +313,7 @@ class MainWindow(QMainWindow):
             self.ui.ConnectPort.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
+            self.ui.disableEcoMode.setEnabled(True)
 
             if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
                 self.setEcuCommandsState(True)
@@ -342,6 +346,7 @@ class MainWindow(QMainWindow):
         self.ui.readEcuFaults.setEnabled(enabled)
         self.ui.rebootEcu.setEnabled(enabled)
         self.ui.commandsMenu.setEnabled(enabled)
+        self.ui.disableEcoMode.setEnabled(enabled)
 
     @Slot()
     def hideNoResponseZones(self, state):
@@ -423,6 +428,7 @@ class MainWindow(QMainWindow):
             self.ui.readEcuFaults.setEnabled(True)
             self.ui.rebootEcu.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
+            self.ui.disableEcoMode.setEnabled(True)
             self.updateEcuTxRxLabel()
 
     @Slot()
@@ -592,7 +598,16 @@ class MainWindow(QMainWindow):
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
-            if self.ecuObjectList["protocol"] == "uds":
+            if self.ecuObjectList.get("name") == "IVI":
+                # IVI requires extended session and DTC read before reboot
+                commands = [ecu, "1003", "190209", "1103"]
+                for cmd in commands:
+                    self.writeToOutputView("> " + cmd)
+                    receiveData = self.serialController.sendReceive(cmd)
+                    self.writeToOutputView("< " + receiveData)
+                    if receiveData == "Timeout":
+                        break
+            elif self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.rebootEcu(ecu)
             elif self.ecuObjectList["protocol"] == "kwp_hab":
                 self.kwphabCommunication.rebootEcu(ecu)
@@ -681,4 +696,4 @@ if __name__ == "__main__":
   window = MainWindow(app)
   window.show()
 
-  sys.exit(app.exec()) 
+  sys.exit(app.exec())  
