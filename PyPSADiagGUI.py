@@ -152,6 +152,7 @@ class PyPSADiagGUI(object):
         self.readEcuFaults = QPushButton()
         self.clearEcuFaults = QPushButton()
         self.disableEcoMode = QPushButton()
+        self.disableEcoMode.setVisible(False)
         self.writeSecureTraceability = QCheckBox()
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
