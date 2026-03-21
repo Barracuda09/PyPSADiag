@@ -651,13 +651,37 @@ class MainWindow(QMainWindow):
     @Slot()
     def disableEcoMode(self):
         if self.serialController.isOpen():
-            commands = [">752:652", ":B4E0:03:03", "3101DF0A3C"]
-            for cmd in commands:
-                self.writeToOutputView("> " + cmd)
-                receiveData = self.serialController.sendReceive(cmd)
-                self.writeToOutputView("< " + receiveData)
-                if receiveData == "Timeout":
-                    break
+            ecu = ">752:652"
+            key = "B4E0"
+
+            # Select BSI
+            self.writeToOutputView("> " + ecu)
+            receiveData = self.serialController.sendReceive(ecu)
+            self.writeToOutputView("< " + receiveData)
+            if receiveData == "Timeout":
+                return
+
+            # Start diagnostic session (1003)
+            if not self.udsCommunication.startDiagnosticMode():
+                return
+
+            # Unlock ECU with BSI key (2703 -> compute seed -> 2704)
+            seed = self.udsCommunication.unlockingServiceForConfiguration(key)
+            if len(seed) == 0:
+                self.udsCommunication.stopDiagnosticMode()
+                return
+
+            time.sleep(2)
+
+            if not self.udsCommunication.sendUnlockingResponseForConfiguration(seed):
+                self.udsCommunication.stopDiagnosticMode()
+                return
+
+            # Send Disable Eco Mode routine
+            self.udsCommunication.writeECUCommand("3101DF0A3C")
+
+            # Stop diagnostic session (1001)
+            self.udsCommunication.stopDiagnosticMode()
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
