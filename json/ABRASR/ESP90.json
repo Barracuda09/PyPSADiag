@@ -251,6 +251,10 @@
                         "value": "FFFFFFFF7FFFFFFFFFFF"
                     },
                     {
+                        "name": "Opel Grandland X (P1UO) ICE",
+                        "value": "FFFFFFFFFDFFFFFFFFFF"
+                    },
+                    {
                         "name": "Opel Grandland X (P1UO) 4x2 Plug-in Hybrid",
                         "value": "7FFFFFFFFFFFFFFFFFFF"
                     },
