@@ -109,7 +109,7 @@
                 {
                     "extra_name": "CFG_GK9_IVI_LVDS_OUT_1_SELECTION_002",
                     "name_original": "CFG_GK9_IVI_LVDS_OUT_1_SELECTION_002",
-                    "name": "CFG_GK9_IVI_LVDS_OUT_1_SELECTION_002",
+                    "name": "LVDS_OUT_1: Type of connected touchscreen",
                     "byte": 1,
                     "type": "hex",
                     "mask": "11111111",
@@ -146,7 +146,7 @@
                 {
                     "extra_name": "CFG_GKB_IVI_LVDS_OUT_2_SELECTION_002",
                     "name_original": "CFG_GKB_IVI_LVDS_OUT_2_SELECTION_002",
-                    "name": "CFG_GKB_IVI_LVDS_OUT_2_SELECTION_002",
+                    "name": "LVDS_OUT_2: Type of connected EDGE display",
                     "byte": 2,
                     "type": "hex",
                     "mask": "11111111",
@@ -183,7 +183,7 @@
                 {
                     "extra_name": "CFG_GKC_IVI_LVDS_OUT_3_SELECTION_002",
                     "name_original": "CFG_GKC_IVI_LVDS_OUT_3_SELECTION_002",
-                    "name": "CFG_GKC_IVI_LVDS_OUT_3_SELECTION_002",
+                    "name": "LVDS_OUT_3: Type of connected digital instrument panel",
                     "byte": 3,
                     "type": "hex",
                     "mask": "11111111",
@@ -220,7 +220,7 @@
                 {
                     "extra_name": "CFG_GKA_IVI_LVDS_OUT_4_SELECTION_002",
                     "name_original": "CFG_GKA_IVI_LVDS_OUT_4_SELECTION_002",
-                    "name": "CFG_GKA_IVI_LVDS_OUT_4 _SELECTION_002",
+                    "name": "LVDS_OUT_4: Type of connected HUD / 3D cluster",
                     "byte": 4,
                     "type": "hex",
                     "mask": "11111111",
@@ -4725,9 +4725,9 @@
             "form_type": "string"
         },
         "011A": {
-            "id": "Calibration_Fct_WIFI",
+            "id": "Calibration_Fct_VISIOPARK",
             "tab": "cal",
-            "name": "WIFI Calibration?",
+            "name": "CALIBRATION VISIOPARK",
             "byte": 0,
             "type": "raw",
             "form_type": "string"
@@ -4862,11 +4862,17 @@
         },
         "D70A": {
             "id": "Gauging_Group_Data_Values",
-            "tab": "cal",
-            "name": "Unknown zone",
-            "byte": 0,
+            "tab": "vin",
+            "name": "Calibration Mileage",
             "type": "raw",
-            "form_type": "string"
+            "form_type": "multi",
+            "Mileage": {
+                "name": "Mileage",
+                "byte": 1,
+                "mask": "111111111111111111111111",
+                "type": "mileage",
+                "form_type": "string"                
+            }
         },
         "F016": {
             "id": "Gauging_Group_Data_Values",
@@ -4927,9 +4933,15 @@
         "F181": {
             "name": "Telecoding_Reference",
             "tab": "ident",
-            "byte": 0,
             "type": "raw",
-            "form_type": "string"
+            "form_type": "multi",
+            "Reference number": {
+                "name": "Reference Number",
+                "byte": 2,
+                "byte_range": 10,
+                "type": "raw",
+                "form_type": "string"                
+            }
         },
         "2123": {
             "id": "CFG_G82_IVI_VAR_CAN_EN_FUEL_TYPE_000",

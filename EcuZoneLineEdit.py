@@ -198,7 +198,10 @@ class EcuZoneLineEdit(QLineEdit):
                 currData += currByteData[i]
 
             byte = (int(currData, 16) & mask) >> self.__shift(mask)
-            self.__setText(str(byte))
+            if "type" in self.zoneObject and self.zoneObject["type"] == "mileage":
+                self.__setText(str(byte / 10))
+            else:
+                self.__setText(str(byte))
 
         elif "byte_range" in self.zoneObject:
             byteNr = self.zoneObject["byte"] * 2
@@ -242,4 +245,4 @@ class EcuZoneLineEdit(QLineEdit):
 
             self.__setText(txt)
 
-        return 0
+        return 0 
