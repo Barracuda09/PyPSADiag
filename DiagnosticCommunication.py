@@ -690,7 +690,7 @@ class DiagnosticCommunication(QThread):
 
         decodedData = data;
         if len(decodedData) > 4:
-            if (decodedData[0:2] == "62" or decodedData[0:2] == "61") and len(decodedData) > 6:
+            if (decodedData[0:2] == "62" or decodedData[0:2] == "61") and len(decodedData) >= 6:
                 # Get only response data
                 answerZone = ""
                 answer = ""
