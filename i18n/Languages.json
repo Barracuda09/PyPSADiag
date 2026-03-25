@@ -8,5 +8,6 @@
     "ru": {"name": "Русский"},
     "gr": {"name": "Greek"},
     "tr": {"name": "Türkçe" },
-    "es": {"name": "España" }
+    "es": {"name": "España" },
+    "zh-CN": {"name": "简体中文"}
 }
