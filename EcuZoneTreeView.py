@@ -195,6 +195,8 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                 continue
             if "read_only" in zoneObject:
                 itemReadOnly = zoneObject["read_only"]
+            else:
+                itemReadOnly = False
 
             itemName = i18n().tr(zoneObject["name"])
             formType = zoneObject["form_type"]
@@ -345,4 +347,4 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unknown Error" or data == "Timeout" or (len(data) >= 6 and data[0:6] == "Error:"):
                 self.markItemNoResponse(cellItem)
                 return
-            cellItem.changeZoneOption(cellItem, data, valueType)
+            cellItem.changeZoneOption(cellItem, data, valueType) 
