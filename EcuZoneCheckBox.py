@@ -119,11 +119,14 @@ class EcuZoneCheckBox(QCheckBox):
                 byteData.append(data[i:i + 2])
 
             # Is this option used for this Zone (NAC/RCC JSON Files)
-            zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength != len(byteData):
-                    return 2
+                if isinstance(zoneLength, list):
+                    if len(byteData) not in zoneLength:
+                        return 2
+                else:
+                    if zoneLength != len(byteData):
+                        return 2
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
@@ -150,4 +153,4 @@ class EcuZoneCheckBox(QCheckBox):
                 self.setCheckState(Qt.Unchecked)
 
         return 0
-
+ 
