@@ -184,7 +184,8 @@ class MainWindow(QMainWindow):
 
     def changeDiagtoolType(self, index):
         diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-        if diagtool_type.lower() == "serial":
+        if diagtool_type.lower() == "serial" or diagtool_type.lower() == "bluetooth":
+            # Arduino and Bluetooth both use COM port selection
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
             self.ui.canPinsComboBox.setVisible(False)
@@ -193,6 +194,7 @@ class MainWindow(QMainWindow):
             else:
                 self.ui.ConnectPort.setEnabled(False)
         else:
+            # VCI mode - no COM port needed, show CAN pins
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
             self.ui.canPinsComboBox.setVisible(True)
@@ -296,7 +298,8 @@ class MainWindow(QMainWindow):
         # Give time to Close Dialog and Repaint
         QApplication.processEvents(QEventLoop.AllEvents, 1000)
 
-        error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
+        portName = self.ui.portNameComboBox.currentData() or self.ui.portNameComboBox.currentText()
+        error = self.serialController.open(portName, 115200)
         if error == "":
             success = self.configureCommunication()
 
@@ -720,4 +723,4 @@ if __name__ == "__main__":
   window = MainWindow(app)
   window.show()
 
-  sys.exit(app.exec())  
+  sys.exit(app.exec())   
