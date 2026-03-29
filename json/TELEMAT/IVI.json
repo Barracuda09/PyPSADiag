@@ -565,6 +565,46 @@
               "name": "19"
             }
           ]
+        },
+        {
+          "extra_name": "CFG_GID_IVI_LVDS_OUT_WIDE_PLUS_000",
+          "name_original": "CFG_GID_IVI_LVDS_OUT_WIDE_PLUS_000",
+          "name": "LVDS_OUT_WIDE_PLUS: Widescreen connection",
+          "zoneLength": 7,
+          "byte": 5,
+          "type": "hex",
+          "mask": "11111111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "CFG_GID_IVI_LVDS_OUT_WIDE_PLUS_000_0"
+            },
+            {
+              "value": "1",
+              "name": "CFG_GID_IVI_LVDS_OUT_WIDE_PLUS_000_1"
+            }
+          ]
+        },
+        {
+          "extra_name": "CFG_GTG_IVI_CLUSTER_SIZE_DIVERSI_000",
+          "name_original": "CFG_GTG_IVI_CLUSTER_SIZE_DIVERSI_000",
+          "name": "Instrument combination size",
+          "zoneLength": 7,
+          "byte": 6,
+          "type": "hex",
+          "mask": "11111111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "CFG_GTG_IVI_CLUSTER_SIZE_DIVERSI_000_0"
+            },
+            {
+              "value": "1",
+              "name": "CFG_GTG_IVI_CLUSTER_SIZE_DIVERSI_000_1"
+            }
+          ]
         }
       ]
     },
@@ -865,7 +905,7 @@
         {
           "extra_name": "CFG_G4T_IVI_HY_HYDRO_000",
           "name_original": "CFG_G4T_IVI_HY_HYDRO_000",
-          "name": "TBTpile � combustible � hydrog�nes",
+          "name": "Hydrogen fuel cell",
           "zoneLength": 2,
           "byte": 1,
           "mask": "00000001",
@@ -3318,7 +3358,7 @@
             },
             {
               "mask": "00100100",
-              "name": "0x12 - IVI: pek"
+              "name": "0x12 - IVI: Rifter"
             },
             {
               "mask": "00100110",
@@ -3369,8 +3409,8 @@
         },
         {
           "extra_name": "CFG_GIL_IVI_SPEED_THRESHOLD_LOCK_000",
-          "name_original": "SPEED_THRESHOLD_LOCK",
-          "name": "TBTverrouillage automatique au seuil de vitesse v�hicle",
+          "name_original": "CFG_GIL_IVI_SPEED_THRESHOLD_LOCK_000",
+          "name": "Automatic locking at vehicle speed threshold",
           "zoneLength": 37,
           "byte": 30,
           "mask": "10000000",
@@ -3379,8 +3419,8 @@
         },
         {
           "extra_name": "CFG_GIK_IVI_TYPE_GALLON_INIT_000",
-          "name_original": "TYPE_GALLON_INIT",
-          "name": "TBTtype de carburant requis",
+          "name_original": "CFG_GIK_IVI_TYPE_GALLON_INIT_000",
+          "name": "Type of fuel unit required",
           "zoneLength": 37,
           "byte": 30,
           "type": "bool",
@@ -3400,7 +3440,7 @@
         {
           "extra_name": "CFG_GIG_IVI_PARK_DISENG_LOCK_000",
           "name_original": "CFG_GIG_IVI_PARK_DISENG_LOCK_000",
-          "name": "TBTmenu de verrouillage automatique en stationnement",
+          "name": "Automatic locking when leaving car menu",
           "zoneLength": 37,
           "byte": 30,
           "mask": "00100000",
@@ -3410,7 +3450,7 @@
         {
           "extra_name": "CFG_GIF_IVI_PARK_ENG_UNLOCK_000",
           "name_original": "CFG_GIF_IVI_PARK_ENG_UNLOCK_000",
-          "name": "TBTmenu de d�verrouillage automatique en mode stationnement",
+          "name": "Automatic unlocking when approaching car menu",
           "zoneLength": 37,
           "byte": 30,
           "mask": "00010000",
@@ -3420,7 +3460,7 @@
         {
           "extra_name": "CFG_GIE_IVI_SMART_SEATS_REC_MEMO_000",
           "name_original": "CFG_GIE_IVI_SMART_SEATS_REC_MEMO_000",
-          "name": "TBTmenu de r�glage de si�ge intelligent",
+          "name": "Smart seats adjustment menu",
           "zoneLength": 37,
           "byte": 30,
           "mask": "00001000",
@@ -3655,7 +3695,7 @@
         {
           "extra_name": "CFG_GLM_IVI_FORGOT_CHILD_ALERT_000-37",
           "name_original": "CFG_GLM_IVI_FORGOT_CHILD_ALERT_000-37",
-          "name": "TBTalerte de d�tection d'enfant oubli�",
+          "name": "Alert for forgotten child detection",
           "zoneLength": 37,
           "byte": 33,
           "mask": "10000000",
@@ -3665,7 +3705,7 @@
         {
           "extra_name": "CFG_GLN_IVI_WRONG_PEDAL_PREVENT_000-37",
           "name_original": "CFG_GLN_IVI_WRONG_PEDAL_PREVENT_000-37",
-          "name": "TBTmenu de pr�vention des mauvais p�dales",
+          "name": "Wrong pedal pressing prevention menu",
           "zoneLength": 37,
           "byte": 33,
           "mask": "01000000",
@@ -3705,7 +3745,7 @@
         {
           "extra_name": "CFG_GNJ_IVI_AUTO_DIMMING_000-37",
           "name_original": "CFG_GNJ_IVI_AUTO_DIMMING_000-37",
-          "name": "TBTmenu de gradation automatique",
+          "name": "Automatic dimming menu",
           "zoneLength": 37,
           "byte": 34,
           "mask": "00010000",
@@ -3715,7 +3755,7 @@
         {
           "extra_name": "CFG_GNI_IVI_HD_SYMBOL_PROJECTION_000-37",
           "name_original": "CFG_GNI_IVI_HD_SYMBOL_PROJECTION_000-37",
-          "name": "TBTmenu de projection de lumi�re num�rique",
+          "name": "Digital light projection menu",
           "zoneLength": 37,
           "byte": 34,
           "mask": "00001000",
@@ -3725,7 +3765,7 @@
         {
           "extra_name": "CFG_GNH_IVI_GUIDELINES_LIGHT_PRO_000-37",
           "name_original": "CFG_GNH_GUIDELINES_LIGHT_PRO_000-37",
-          "name": "TBTmenu de projection de lignes directrices",
+          "name": "Guideline projection menu",
           "zoneLength": 37,
           "byte": 34,
           "mask": "00000100",
@@ -3735,7 +3775,7 @@
         {
           "extra_name": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-35",
           "name_original": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-35",
-          "name": "TBTmenu d'alerte de limitation de la charge de la batterie",
+          "name": "Battery charge limitation alert menu",
           "zoneLength": 35,
           "byte": 34,
           "mask": "00000001",
@@ -3745,7 +3785,7 @@
         {
           "extra_name": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-37",
           "name_original": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-37",
-          "name": "TBTmenu d'alerte de limitation de la charge de la batterie",
+          "name": "Battery charge limitation alert menu",
           "zoneLength": 37,
           "byte": 34,
           "mask": "00000010",
@@ -3755,7 +3795,7 @@
         {
           "extra_name": "CFG_GNF_IVI_LOCK_SETTINGS_EDGE_CFG_000-37",
           "name_original": "CFG_GNF_IVI_LOCK_SETTINGS_EDGE_CFG_000-37",
-          "name": "TBTfonction de verrouillage de r�glage de bord",
+          "name": "Edge adjustment lock function",
           "zoneLength": 37,
           "byte": 34,
           "mask": "00000001",
@@ -3765,7 +3805,7 @@
         {
           "extra_name": "CFG_GQW_IVI_PURE_MODE_SETTINGS_000-37",
           "name_original": "CFG_GQW_IVI_PURE_MODE_SETTINGS_000-37",
-          "name": "TBTMenu de r�glage du mode �lectrique/�co",
+          "name": "Electric/eco mode setting menu",
           "zoneLength": 37,
           "byte": 35,
           "mask": "10000000",
@@ -3775,7 +3815,7 @@
         {
           "extra_name": "CFG_GQV_IVI_CMD_PURE_MODE_000-37",
           "name_original": "CFG_GQV_IVI_CMD_PURE_MODE_000-37",
-          "name": "TBTMode �lectrique/�co",
+          "name": "Mode Electric / Eco",
           "zoneLength": 37,
           "byte": 35,
           "mask": "01000000",
@@ -3785,7 +3825,7 @@
         {
           "extra_name": "CFG_GQX_IVI_TYPE_DOW_000-37",
           "name_original": "CFG_GQX_IVI_TYPE_DOW_000-37",
-          "name": "TBTType d'alerte d'ouverture de porte",
+          "name": "Type of Door opening warning",
           "zoneLength": 37,
           "byte": 35,
           "mask": "00110000",
@@ -3808,7 +3848,7 @@
         {
           "extra_name": "CFG_GQU_IVI_DOW_000-37",
           "name_original": "CFG_GQU_IVI_DOW_000-37",
-          "name": "TBTfonction d'avertissement d'ouverture de porte",
+          "name": "Door opening warning function",
           "zoneLength": 37,
           "byte": 35,
           "mask": "00001000",
@@ -3818,7 +3858,7 @@
         {
           "extra_name": "CFG_GQS_IVI_RCTB_000-37",
           "name_original": "CFG_GQS_IVI_RCTB_000-37",
-          "name": "TBTfonction de freinage en cas de risque de collision en marche arri�re",
+          "name": "Reverse movement automatic braking at the risk of collision",
           "zoneLength": 37,
           "byte": 35,
           "mask": "00000100",
@@ -3838,7 +3878,7 @@
         {
           "extra_name": "CFG_GTE_IVI_DIGITAL_KEY_AUTHENT_000-37",
           "name_original": "CFG_GTE_IVI_DIGITAL_KEY_AUTHENT_000-37",
-          "name": "TBTProcessus d'authentification de la cl� num�rique",
+          "name": "Digital Key Authentication Process",
           "zoneLength": 37,
           "byte": 36,
           "mask": "00000010",
@@ -3848,7 +3888,7 @@
         {
           "extra_name": "CFG_GTD_IVI_DIGITAL_KEY_000-37",
           "name_original": "CFG_GTD_IVI_DIGITAL_KEY_000-37",
-          "name": "TBTmenu de r�glage des touches num�riques",
+          "name": "Menu for setting the numeric keys",
           "zoneLength": 37,
           "byte": 36,
           "mask": "00000001",
@@ -4008,7 +4048,7 @@
             },
             {
               "name": "Permanent mode",
-              "mask": "10000000"
+              "mask": "00000001"
             }
           ]
         }
@@ -4825,6 +4865,49 @@
               "name": "LVDS Communication"
             }
           ]
+        },
+        {
+          "extra_name": "CFG_GTI_IVI_MIR_AUX_DISP_000",
+          "name_original": "CFG_GTI_IVI_MIR_AUX_DISP_000",
+          "name": "AA/Carplay navi map mirroring to the auxiliary display",
+          "zoneLength": 8,
+          "byte": 7,
+          "mask": "00001000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
+        },
+        {
+          "extra_name": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000",
+          "name_original": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000",
+          "name": "AA/Carplay navi map mirroring to the digital cluster",
+          "zoneLength": 8,
+          "byte": 7,
+          "mask": "00000110",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000_00"
+            },
+            {
+              "mask": "00000010",
+              "name": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000_01"
+            },
+            {
+              "mask": "00000100",
+              "name": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000_10"
+            }
+          ]
+        },
+        {
+          "extra_name": "CFG_GTF_IVI_MIR_CLUST_DISP_000",
+          "name_original": "CFG_GTF_IVI_MIR_CLUST_DISP_000",
+          "name": "Digital cluster mirroring settings menu",
+          "zoneLength": 8,
+          "byte": 7,
+          "mask": "00000001",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         }
       ]
     },
@@ -5531,7 +5614,7 @@
     "0100": {
       "id": "Calibration_Fct_AAS",
       "tab": "cal",
-      "name": "Calibration AAS",
+      "name": "Calibration_Fct_AAS",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
@@ -5539,7 +5622,23 @@
     "0103": {
       "id": "Calibration_Fct_AUDIO",
       "tab": "cal",
-      "name": "Calibration AUDIO",
+      "name": "Calibration_Fct_AUDIO",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0104": {
+      "id": "Calibration_Fct_AVP",
+      "tab": "cal",
+      "name": "Calibration_Fct_AVP",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0105": {
+      "id": "Calibration_Fct_AVR",
+      "tab": "cal",
+      "name": "Calibration_Fct_AVR",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
@@ -5547,7 +5646,15 @@
     "0106": {
       "id": "Calibration_Fct_BT",
       "tab": "cal",
-      "name": "Calibration BT",
+      "name": "Calibration_Fct_BT",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0107": {
+      "id": "Calibration_Fct_BTEL",
+      "tab": "cal",
+      "name": "Calibration_Fct_BTEL",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
@@ -5648,6 +5755,14 @@
       "type": "raw",
       "form_type": "string"
     },
+    "0116": {
+      "id": "Calibration_Fct_XVV",
+      "tab": "cal",
+      "name": "Calibration_Fct_XVV",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "0117": {
       "id": "Calibration_Fct_LUM",
       "tab": "cal",
@@ -5680,6 +5795,14 @@
       "type": "raw",
       "form_type": "string"
     },
+    "0120": {
+      "id": "Calibration_Fct_?",
+      "tab": "cal",
+      "name": "Calibration_Fct_?",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "0121": {
       "id": "Calibration_Fct_ION",
       "tab": "cal",
@@ -5704,6 +5827,125 @@
       "type": "raw",
       "form_type": "string"
     },
+    "0124": {
+            "id": "0124",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_LVDS_EXPORT"
+        },
+        "0125": {
+            "id": "0125",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_HW_VERSION"
+        },
+        "0126": {
+            "id": "0126",
+            "name": "BEIDOU",
+            "tab": "cal",
+            "type": "raw",
+            "form_type": "string"
+        },
+        "0127": {
+            "id": "0127",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_DGT"
+        },
+        "0128": {
+            "id": "0128",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_MASS"
+        },
+        "0129": {
+            "id": "0129",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_PPS2"
+        },
+        "012A": {
+            "id": "012A",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_VP1_HW"
+        },
+        "012B": {
+            "id": "012B",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_USB"
+        },
+        "012C": {
+            "id": "012C",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_WAVE4 (Hybrid)"
+        },
+        "FFF1": {
+            "id": "FFF1",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_COLOR_CORRECTION"
+        },
+        "FFF2": {
+            "id": "FFF2",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ECNR"
+        },
+        "FFF3": {
+            "id": "FFF3",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_SOUND_TUNING_DATA"
+        },
+        "FFF4": {
+            "id": "FFF4",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ENGINE_SOUND_DATA"
+        },
+        "FFF5": {
+            "id": "FFF5",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AUDIO_FUNCTIONAL_EQUALIZER"
+        },
+        "FFF6": {
+            "id": "FFF6",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_SOUND_EPICS_DATA"
+        },
     "00DE": {
       "id": "Calibration_Fct_PUSH_LUM",
       "tab": "cal",
@@ -5723,10 +5965,16 @@
     "C000": {
       "id": "Gauging_Group_Data_Values",
       "tab": "cal",
-      "name": "Unknown zone",
-      "byte": 0,
+      "name": "Calibration_Configuration_count",
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "Telecode amount": {
+        "name": "Telecode amount",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "int",
+        "form_type": "string"
+      }
     },
     "C002": {
       "id": "Gauging_Group_Data_Values",
@@ -5736,29 +5984,116 @@
       "type": "raw",
       "form_type": "string"
     },
-    "d400": {
+    "D400": {
       "id": "Gauging_Group_Data_Values",
       "tab": "cal",
-      "name": "Unknown zone",
-      "byte": 0,
+      "name": "Calibration_Peripherals",
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "MP_FONCTION_APPAIRAGE_WIFI": {
+        "name": "Wi-Fi pairing function",
+        "byte": 0,
+        "mask": "10000000",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      "MP_FONCTION_ENTREE_USB": {
+        "name": "Function of USB input N° 1",
+        "byte": 0,
+        "mask": "01000000",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      "MP_FONCTION_ENTREE_USB_02": {
+        "name": "Function of USB input N° 2",
+        "byte": 0,
+        "mask": "00100000",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      "MP_FONCTION_APPAIRAGE_BLUETOOTH": {
+        "name": "Bluetooth pairing function",
+        "byte": 0,
+        "mask": "00010000",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      "MP_FONCTION_ACTIVITE_MICRO_02": {
+        "name": "Microphone no. 2 activity function",
+        "byte": 0,
+        "mask": "00001000",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      },
+      "MP_FONCTION_ACTIVITE_MICRO_01": {
+        "name": "Microphone no. 1 activity function",
+        "byte": 0,
+        "mask": "00000100",
+        "type": "bool",
+        "form_type": "checkbox",
+        "available_logic": "active_high"
+      }
     },
     "D401": {
       "id": "Gauging_Group_Data_Values",
       "tab": "cal",
-      "name": "Unknown zone",
-      "byte": 0,
+      "name": "Calibration_USB1",
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "MP_ETAT_PRISE_USB": {
+        "name": "Status of USB port no. 1",
+        "byte": 0,
+        "mask": "00000011",
+        "type": "bool",
+        "form_type": "combobox",
+        "params": [
+          {
+            "name": "MP_ETAT_PRISE_USB_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_ETAT_PRISE_USB_1",
+            "mask": "00000001"
+          },
+          {
+            "name": "MP_ETAT_PRISE_USB_2",
+            "mask": "00000010"
+          }
+        ]
+      }
     },
     "D402": {
       "id": "Gauging_Group_Data_Values",
       "tab": "cal",
-      "name": "Unknown zone",
-      "byte": 0,
+      "name": "Calibration_USB2",
       "type": "raw",
-      "form_type": "string"
+      "form_type": "multi",
+      "MP_ETAT_PRISE_USB_02": {
+        "name": "Status of USB port no. 2",
+        "byte": 0,
+        "mask": "00000011",
+        "type": "bool",
+        "form_type": "combobox",
+        "params": [
+          {
+            "name": "MP_ETAT_PRISE_USB_02_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_ETAT_PRISE_USB_02_1",
+            "mask": "00000001"
+          },
+          {
+            "name": "MP_ETAT_PRISE_USB_02_2",
+            "mask": "00000010"
+          }
+        ]
+      }
     },
     "D408": {
       "id": "Gauging_Group_Data_Values",
