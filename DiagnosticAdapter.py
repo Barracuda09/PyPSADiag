@@ -1,6 +1,7 @@
 import sys
 from SerialPort import SerialPort
 from VCIAdapter import VCIAdapter
+from BluetoothAdapter import BluetoothAdapter
 
 class DiagnosticAdapter:
 
@@ -14,8 +15,11 @@ class DiagnosticAdapter:
         elif mode == "vci" and sys.platform == "win32":
             self.transport = VCIAdapter(logger=self.logger)
 
+        elif mode == "bluetooth":
+            self.transport = BluetoothAdapter(logger=self.logger)
+
         else:
             raise ValueError("Unknown transport")
 
     def __getattr__(self, name):
-        return getattr(self.transport, name)
+        return getattr(self.transport, name) 
