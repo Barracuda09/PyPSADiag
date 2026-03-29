@@ -171,6 +171,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Fill Diagnostic-Tool Combobox
         self.diagtoolTypeComboBox.addItem("Arduino", "serial")
+        self.diagtoolTypeComboBox.addItem("OBDII", "bluetooth")
         if sys.platform == "win32":
             self.diagtoolTypeComboBox.addItem("VCI", "vci")
 
@@ -415,4 +416,4 @@ class PyPSADiagGUI(object):
         self.languageMenu.setTitle(i18n().tr("Language"))
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
-        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))  
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))   
