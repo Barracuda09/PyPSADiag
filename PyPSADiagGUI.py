@@ -171,7 +171,7 @@ class PyPSADiagGUI(object):
         ###################################################
         # Fill Diagnostic-Tool Combobox
         self.diagtoolTypeComboBox.addItem("Arduino", "serial")
-        self.diagtoolTypeComboBox.addItem("OBDII", "bluetooth")
+        self.diagtoolTypeComboBox.addItem("ELM327", "bluetooth")
         if sys.platform == "win32":
             self.diagtoolTypeComboBox.addItem("VCI", "vci")
 
