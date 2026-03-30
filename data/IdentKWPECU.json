@@ -16,6 +16,13 @@
         "form_type": "string"
       },
       {
+        "name": "Name of the Supplier",
+        "byte": 6,
+        "byte_range": 1,
+        "type": "zi_sup",
+        "form_type": "string"
+      },
+      {
         "name": "Equipment Additional Reference",
         "byte": 7,
         "byte_range": 5,
@@ -23,9 +30,44 @@
         "form_type": "string"
       },
       {
-        "name": "Type",
-        "byte": 19,
-        "byte_range": 3,
+        "name": "Software version",
+        "byte": 12,
+        "byte_range": 2,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Calibration Version",
+        "byte": 14,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Calibration Edition",
+        "byte": 15,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Messaging index",
+        "byte": 16,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "NBPARAMFLT",
+        "byte": 17,
+        "byte_range": 1,
+        "type": "raw",
+        "form_type": "string"
+      },
+      {
+        "name": "Diagnostics e-mail",
+        "byte": 18,
+        "byte_range": 4,
         "type": "raw",
         "form_type": "string"
       }
@@ -112,6 +154,39 @@
       }
     ]
   },
+  "81": {
+    "id": "ZF_ZONE",
+    "tab": "ident",
+    "name": "ZF Zone",
+    "read_only": true,
+    "byte": 0,
+    "type": "raw",
+    "form_type": "multi",
+    "params": [
+      {
+        "name": "Traceability Part serial number",
+        "byte": 0,
+        "byte_range": 4,
+        "type": "string",
+        "form_type": "string"
+      },
+      {
+        "name": "Traceability Production date",
+        "byte": 4,
+        "byte_range": 3,
+        "type": "string_date",
+        "form_type": "string"
+      },
+      {
+        "name": "SPE",
+        "byte": 7,
+        "byte_range": 1,
+        "type": "string_date",
+        "form_type": "string"
+      }
+    ]
+  },
+
   "82": {
     "id": "Serial_Number",
     "tab": "ident",
