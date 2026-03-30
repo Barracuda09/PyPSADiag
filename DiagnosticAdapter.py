@@ -22,4 +22,4 @@ class DiagnosticAdapter:
             raise ValueError("Unknown transport")
 
     def __getattr__(self, name):
-        return getattr(self.transport, name) 
+        return getattr(self.transport, name)
