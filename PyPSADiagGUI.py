@@ -416,4 +416,4 @@ class PyPSADiagGUI(object):
         self.languageMenu.setTitle(i18n().tr("Language"))
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
-        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))   
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))
