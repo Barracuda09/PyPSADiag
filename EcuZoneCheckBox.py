@@ -153,4 +153,3 @@ class EcuZoneCheckBox(QCheckBox):
                 self.setCheckState(Qt.Unchecked)
 
         return 0
- 

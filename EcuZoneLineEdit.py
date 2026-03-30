@@ -248,4 +248,4 @@ class EcuZoneLineEdit(QLineEdit):
 
             self.__setText(txt)
 
-        return 0  
+        return 0

@@ -152,10 +152,19 @@ class DiagnosticCommunication(QThread):
             text = text + " (" + reply + ")"
         self.outputToTextEditSignal.emit(text)
 
-    def writeECUCommand(self, cmd: str, log=True):
+    def writeECUCommand(self, cmd: str, log=True, retries=1):
         if log:
             self.writeToOutputView("> " + cmd)
         receiveData = self.serialPort.sendReceive(cmd)
+
+        # Retry on Timeout
+        retry = 0
+        while receiveData == "Timeout" and retry < retries:
+            retry += 1
+            self.writeToOutputView("< Timeout  ** Retry " + str(retry) + "/" + str(retries) + " **")
+            time.sleep(0.3)
+            receiveData = self.serialPort.sendReceive(cmd)
+
         # Check response we need to retry reading
         # 7F3E03 (Custom error)
         # 7Fxx78 (Request Correctly Received - Response Pending)
