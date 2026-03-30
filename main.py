@@ -723,4 +723,4 @@ if __name__ == "__main__":
   window = MainWindow(app)
   window.show()
 
-  sys.exit(app.exec())   
+  sys.exit(app.exec())
