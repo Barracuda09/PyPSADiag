@@ -202,4 +202,4 @@ class EcuZoneComboBox(QComboBox):
             self.addItem("** 0x%0.2X" % value, "h:%X" % value)
             self.setCurrentIndex(self.count() - 1)
 
-        return 0 
+        return 0
