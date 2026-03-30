@@ -276,11 +276,15 @@ class BluetoothAdapter:
             self.log(f"Failed to set TX ID: {tx_id}")
             return False
 
-        # Set receive CAN ID filter
+        # Set receive CAN ID filter (software) + hardware CAN filter/mask
         response = self._send_at(f"AT CRA {rx_id}")
         if response is None or "ERROR" in (response or ""):
             self.log(f"Failed to set RX filter: {rx_id}")
             return False
+        # Hardware CAN acceptance filter — blocks non-matching frames at chip level,
+        # critical on busy CAN buses (e.g. BSI body CAN) to prevent buffer overflow
+        self._send_at(f"AT CF {rx_id}")   # CAN Filter = exact RX ID
+        self._send_at("AT CM 7FF")        # CAN Mask = all 11 bits must match
 
         # Flow control is handled manually in _send_uds / _parse_isotp_response
         # (AT CFC0 set in init — ELM327 auto-FC doesn't work for non-OBD CAN IDs)
@@ -416,23 +420,46 @@ class BluetoothAdapter:
         """Send UDS hex data to ECU via ELM327 with manual ISO-TP framing.
            AT CAF0 + AT CFC0: we build SF frames and handle FC ourselves."""
         try:
-            self.serialPort.reset_input_buffer()
             data_len = len(data) // 2
             read_timeout = max(timeout / 1000.0, 3.0)
 
-            if data_len <= 7:
-                # ── Single Frame: PCI(1 byte) + data, padded to 8 bytes ──
-                sf_pci = f"{data_len:02X}"
-                raw_frame = (sf_pci + data).ljust(16, '0')
+            for attempt in range(5):  # up to 4 retries on incomplete multi-frame
+                self.serialPort.reset_input_buffer()
+                self._multiframe_incomplete = False
 
-                self.serialPort.write((raw_frame + "\r").encode("utf-8"))
-                self.serialPort.flush()
-            else:
-                # ── Multi-frame send: First Frame + wait FC + Consecutive Frames ──
-                return self._send_uds_multiframe(data, data_len, read_timeout)
+                if data_len <= 7:
+                    # ── Single Frame: PCI(1 byte) + data, padded to 8 bytes ──
+                    sf_pci = f"{data_len:02X}"
+                    raw_frame = (sf_pci + data).ljust(16, '0')
 
-            response = self._read_elm_response(read_timeout)
-            return self._check_and_parse(response, read_timeout)
+                    self.serialPort.write((raw_frame + "\r").encode("utf-8"))
+                    self.serialPort.flush()
+
+                    response = self._read_elm_response(read_timeout)
+                    result = self._check_and_parse(response, read_timeout)
+                else:
+                    # ── Multi-frame send: First Frame + wait FC + Consecutive Frames ──
+                    result = self._send_uds_multiframe(data, data_len, read_timeout)
+
+                # Retry on incomplete multi-frame read OR NO DATA on multi-frame send
+                should_retry = self._multiframe_incomplete
+                if data_len > 7 and result in ("", "Timeout"):
+                    should_retry = True
+
+                if should_retry and attempt < 4:
+                    self.log(f"Retrying multi-frame for {data} "
+                             f"(attempt {attempt + 2}/5)...")
+                    time.sleep(0.15 * (attempt + 1))
+                    continue
+
+                if attempt > 0:
+                    if should_retry:
+                        self.log(f"All retries failed for {data}")
+                        return ""
+                    else:
+                        self.log(f"Retry OK for {data}")
+
+                return result
 
         except Exception as e:
             self.log(f"UDS send error: {e}")
@@ -446,6 +473,7 @@ class BluetoothAdapter:
             ff_data = data[:12]                   # first 6 bytes = 12 hex chars
             ff_frame = (ff_pci + ff_data).ljust(16, '0')
 
+            self.serialPort.reset_input_buffer()
             self.serialPort.write((ff_frame + "\r").encode("utf-8"))
             self.serialPort.flush()
 
@@ -613,9 +641,10 @@ class BluetoothAdapter:
                 total_len = ((first_byte & 0x0F) << 8) | int(frame[2:4], 16)
                 ff_data = frame[4:]  # up to 6 bytes (12 hex chars)
 
-                # Send Flow Control: CTS(30), BlockSize=0, STmin=0, padded to 8 bytes
+                # Send Flow Control immediately — no AT commands between FF and FC
+                # to minimize latency (AT ST 32 ~200ms is enough for CF collection)
                 self.serialPort.reset_input_buffer()
-                self.serialPort.write(b"3000000000000000\r")
+                self.serialPort.write(b"3000050000000000\r")
                 self.serialPort.flush()
 
                 # Read Consecutive Frames
@@ -640,6 +669,7 @@ class BluetoothAdapter:
                 got = len(result) // 2
                 if got < total_len:
                     self.log(f"Multi-frame incomplete: {got}/{total_len} bytes")
+                    self._multiframe_incomplete = True
                 return result
 
         # Fallback: return longest hex line as raw data
