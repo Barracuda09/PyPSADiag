@@ -794,4 +794,4 @@ class DiagnosticCommunication(QThread):
                 self.isRunning = False
 
         # Always emit "Done" Signal
-        self.readZoneListDoneSignal.emit() 
+        self.readZoneListDoneSignal.emit()
