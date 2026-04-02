@@ -38,7 +38,7 @@ added_files = [
     ('i18n/translations/*', 'i18n/translations'),
 ]
 
-platform_name == "windows":
+if platform_name == "windows":
     added_files += [ ('VCIBridge.py', 'VCIBridge.py') ]
 
 # PyInstaller build pipeline
