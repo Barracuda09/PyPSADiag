@@ -39,7 +39,7 @@ added_files = [
 ]
 
 if platform_name == "windows":
-    added_files += [ ('VCIBridge.py', '') ]
+    added_files += [ ('VCIBridge.py', './') ]
 
 # PyInstaller build pipeline
 a = Analysis(
