@@ -1,0 +1,505 @@
+{
+  "_comment": "-",
+  "name": "RD4",
+  "tx_id": "760",
+  "rx_id": "660",
+  "protocol": "kwp_hab",
+  "key_type": "single",
+  "keys": "",
+  "tabs": {
+        "ident": "Identification",
+        "coding": "Telecoding",
+        "vin": "VIN"
+  },
+  "coding": "true",
+  "errors": "true",
+  "include_zone_object": "./data/IdentKWPECU.json",
+  "zones": {
+    "80": {
+        "id": "ZA_ZONE",
+        "tab": "ident",
+        "name": "ZA Zone",
+        "read_only": true,
+        "byte": 0,
+        "type": "raw",
+        "form_type": "multi",
+        "params": [
+            {
+                "name": "Equipment Part Number",
+                "byte": 0,
+                "byte_range": 5,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Equipment Additional Reference",
+                "byte": 7,
+                "byte_range": 5,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Supplier",
+                "byte": 5,
+                "byte_range": 2,
+                "type": "zi_sup",
+                "form_type": "string"
+            },
+            {
+                "name": "Software edition",
+                "byte": 12,
+                "byte_range": 2,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Diagnostics e-mail",
+                "byte": 18,
+                "byte_range": 4,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Messaging index",
+                "byte": 16,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    },
+    "CC": {
+        "id": "VIN",
+        "tab": "vin",
+        "byte": 0,
+        "type": "string_ascii",
+        "form_type": "string",
+        "name": "VIN"
+    },
+    "C0": {
+      "name": "Telecoding_RD4_C0",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id":"RESERVE3_7",
+            "name": "RESERVE3_7",
+            "byte": 0,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AGH_RADIO_COUNTRY_000",
+            "name": "Geographical area of use",
+            "byte": 0,
+            "type": "bool",
+            "mask": "01110000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "000 - Western Europe"},
+                { "mask": "00010000", "name": "001 - Japan"},
+                { "mask": "00100000", "name": "010 - Latin America"},
+                { "mask": "00110000", "name": "011 - Asia"},
+                { "mask": "01000000", "name": "100 - USA"},
+                { "mask": "01100000", "name": "110 - Saudi Arabia"},
+                { "mask": "01110000", "name": "111 - China"}
+            ]
+        },
+        {
+            "id": "CFG_AL0_RADIO_CDC_000",
+            "name": "CD changer or USB BOX active",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AGJ_RADIO_DESACTIVATION_FADER_000",
+            "name": "Fader function active",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AGI_RADIO_DESACTIVATION_AM_000",
+            "name": "AM waveband active",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AGB_RADIO_ACTIVATION_VOL_000",
+            "name": "Volume linked to the vehicle speed active",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id":"CFG_AGV_RADIO_HI_FI_000",
+            "name": "HIFI amplifier active (standard)",
+            "byte": 1,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AH0_RADIO_LOI_VOL_AUTO_000",
+            "name": "Volume level correction pattern",
+            "byte": 1,
+            "type": "bool",
+            "mask": "01111000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0000 - Pattern N° 1"},
+                { "mask": "00001000", "name": "0001 - Pattern N° 2"},
+                { "mask": "00010000", "name": "0010 - Pattern N° 3"},
+                { "mask": "00011000", "name": "0011 - Pattern N° 4"},
+                { "mask": "00100000", "name": "0100 - Pattern N° 5"}
+            ]
+        },
+        {
+            "id": "CFG_AGZ_RADIO_LOI_LODX_000",
+            "name": "LO/DX sensitivity curve",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000110",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - Curve N° 1"},
+                { "mask": "00000010", "name": "01 - Curve N° 2"},
+                { "mask": "00000100", "name": "10 - Curve N° 3"}
+            ]
+        },
+        {
+            "id": "CFG_ALA_RADIO_PANNE_ANTE_000",
+            "name": "Detection of a fault on one or more of the antennas",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AH2_RADIO_NB_ANTENNE_000",
+            "name": "Number of aerials",
+            "byte": 2,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - One"},
+                { "mask": "10000000", "name": "1 - Two"}
+            ]
+        },
+        {
+            "id": "CFG_AIQ_RADIO_TYPE_ANTENNE_1_000",
+            "name": "Configuration of the type of aerial 1",
+            "byte": 2,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - Passive"},
+                { "mask": "01000000", "name": "1 - Active"}
+            ]
+        },
+        {
+            "id": "CFG_AIR_RADIO_TYPE_ANTENNE_2_000",
+            "name": "Configuration of the type of aerial 2",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - Passive"},
+                { "mask": "01000000", "name": "1 - Active"}
+            ]
+        },
+        {
+            "id": "CFG_ALC_RADIO_RADIO_TEXT_000",
+            "name": "Radio text active",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AKZ_RADIO_CD_TEXTE_000",
+            "name": "CD text active",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AHQ_RADIO_PARK_AID_000",
+            "name": "Parking aid active",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "RESERVE5_10",
+            "name": "RESERVE5_10",
+            "byte": 2,
+            "type": "raw",
+            "mask": "00000011",
+            "form_type": "string"
+        },
+        {
+            "id": "MP_ENTREE_AUX_1",
+            "name": "Auxiliary input n° 1",
+            "byte": 3,
+            "type": "bool",
+            "mask": "11000000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - Absent"},
+                { "mask": "01000000", "name": "01 - User"},
+                { "mask": "10000000", "name": "10 - With external mute"},
+                { "mask": "11000000", "name": "11 - Hands-free kit mute"}
+            ]
+        },
+        {
+            "id": "MP_ENTREE_AUX_2",
+            "name": "Auxiliary input n° 2",
+            "byte": 3,
+            "type": "bool",
+            "mask": "00110000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - Absent"},
+                { "mask": "00010000", "name": "01 - User"},
+                { "mask": "00100000", "name": "10 - With external mute"},
+                { "mask": "00110000", "name": "11 - Hands-free kit mute"}
+            ]
+        },
+        {
+            "id": "CFG_B4W_RADIO_HIFI_MUX_000",
+            "name": "HIFI amplifier active (multiplexed)",
+            "byte": 3,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_D79_RADIO_EMF_TYP_CARCT_000",
+            "name": "Type of character set used by the radio",
+            "byte": 3,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - Displaying of characters other than Russian"},
+                { "mask": "00000100", "name": "1 - Displaying of Russian characters"}
+            ]
+        },
+        {
+            "id": "RESERVE6_10",
+            "name": "RESERVE6_10",
+            "byte": 3,
+            "type": "raw",
+            "mask": "00000011",
+            "form_type": "string"
+        },
+        {
+            "id": "RESERVE7_76",
+            "name": "RESERVE7_76",
+            "byte": 4,
+            "type": "raw",
+            "mask": "11000000",
+            "form_type": "string"
+        },
+        {
+            "id": "CFG_B4Z_RADIO_VOLUME_AAS_AV_000",
+            "name": "Volume of the front parking aid",
+            "byte": 4,
+            "type": "raw",
+            "mask": "00111000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "000 - Volume N° 0"},
+                { "mask": "00001000", "name": "001 - Volume N° 1"},
+                { "mask": "00010000", "name": "010 - Volume N° 2"},
+                { "mask": "00011000", "name": "011 - Volume N° 3"},
+                { "mask": "00100000", "name": "100 - Volume N° 4"},
+                { "mask": "00101000", "name": "101 - Volume N° 5"},
+                { "mask": "00110000", "name": "110 - Volume N° 6"},
+                { "mask": "00111000", "name": "111 - Volume N° 7"}
+            ]
+        },
+        {
+            "id": "CFG_B4Y_RADIO_VOLUME_AAS_AR_000",
+            "name": "Volume of the rear parking aid",
+            "byte": 4,
+            "type": "raw",
+            "mask": "00000111",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "000 - Volume N° 0"},
+                { "mask": "00000001", "name": "001 - Volume N° 1"},
+                { "mask": "00000010", "name": "010 - Volume N° 2"},
+                { "mask": "00000011", "name": "011 - Volume N° 3"},
+                { "mask": "00000100", "name": "100 - Volume N° 4"},
+                { "mask": "00000101", "name": "101 - Volume N° 5"},
+                { "mask": "00000110", "name": "110 - Volume N° 6"},
+                { "mask": "00000111", "name": "111 - Volume N° 7"}
+            ]
+        }
+      ]
+    },
+    "B0": {
+        "name": "Lighting table (B0)",
+        "tab": "coding",
+        "type": "raw",
+        "form_type": "multi",
+        "_comment": "Value range is 00-FF (in hexadecimal) where 00 represents 0% and FF represents 100%.",
+        "params": [
+            {
+                "id":"CFG_AHU_RADIO_TAB_ECL01_000",
+                "name": "Button brightness on Level 1 (in %)",
+                "byte": 0,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AHW_RADIO_TAB_ECL02_000",
+                "name": "Button brightness on Level 2 (in %)",
+                "byte": 1,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AHY_RADIO_TAB_ECL03_000",
+                "name": "Button brightness on Level 3 (in %)",
+                "byte": 2,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AI0_RADIO_TAB_ECL04_000",
+                "name": "Button brightness on Level 4 (in %)",
+                "byte": 3,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AI2_RADIO_TAB_ECL05_000",
+                "name": "Button brightness on Level 5 (in %)",
+                "byte": 4,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AI4_RADIO_TAB_ECL06_000",
+                "name": "Button brightness on Level 6 (in %)",
+                "byte": 5,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AI6_RADIO_TAB_ECL07_000",
+                "name": "Button brightness on Level 7 (in %)",
+                "byte": 6,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AI8_RADIO_TAB_ECL08_000",
+                "name": "Button brightness on Level 8 (in %)",
+                "byte": 7,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIA_RADIO_TAB_ECL09_000",
+                "name": "Button brightness on Level 9 (in %)",
+                "byte": 8,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIC_RADIO_TAB_ECL10_000",
+                "name": "Button brightness on Level 10 (in %)",
+                "byte": 9,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIE_RADIO_TAB_ECL11_000",
+                "name": "Button brightness on Level 11 (in %)",
+                "byte": 10,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIG_RADIO_TAB_ECL12_000",
+                "name": "Button brightness on Level 12 (in %)",
+                "byte": 11,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AII_RADIO_TAB_ECL13_000",
+                "name": "Button brightness on Level 13 (in %)",
+                "byte": 12,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIK_RADIO_TAB_ECL14_000",
+                "name": "Button brightness on Level 14 (in %)",
+                "byte": 13,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIM_RADIO_TAB_ECL15_000",
+                "name": "Button brightness on Level 15 (in %)",
+                "byte": 14,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"CFG_AIO_RADIO_TAB_ECL16_000",
+                "name": "Button brightness on Level 16 (in %)",
+                "byte": 15,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    }
+  }
+}
