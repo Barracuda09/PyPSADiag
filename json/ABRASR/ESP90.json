@@ -155,19 +155,19 @@
                         "value": "FFFFFFFFEFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADTS-EURO6.3 / EB2ADT-EURO6.3 / EB2ADTSI-EURO6.3 / SULEV 50 / EB2ADTS-EURO6.4 / EB2ADTS I-EURO6.4)",
+                        "name": "1.2t (EB2ADT-EURO6.3 / EB2ADTS-EURO6.3 / EB2ADT I-EURO6.3 / EB2ADTS I-EURO6.3 / EB2ADTS I E6.4 / EB2ADTS E6.4 / EB2ADTS / EB2ADT I-E6.4 / EB2ADT-E6.4 / EB2ADTS-CHINA6 / EB2ADTS S50)",
                         "value": "FFFF7FFFFFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADTS EURO6.2 / SULEV 50 / EB2ADT EURO6.2)",
+                        "name": "1.2t (EB2ADTS EURO6.2 / SULEV 50 / EB2ADT EURO6.2 / EB2ADTSM EURO6.1)",
                         "value": "FFFFBFFFFFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2DTSM or EB2DTS)",
+                        "name": "1.2t (EB2DTSM / EB2DTS / M4 BEV FWD SHORT RANGE / M4 BEV FWD STANDARD RANGE / EB2LTDM EURO6)",
                         "value": "FFFFDFFFFFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2LTDH2-EURO6.4)",
+                        "name": "1.2t (EB2LTDH2 / EB2LTDH2-EURO6.4 / EB2LTDH2-EURO7 /  EB2LTDH2 S30 1.2L ESS / EB2LTDH2 UE64)",
                         "value": "FFFFFFBFFFFFFFFF"
                     },  
                     {
@@ -183,7 +183,7 @@
                         "value": "FFEFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FADTXHP)",
+                        "name": "1.6t (EP6FADTXHP / EP6FADTXHPE / EP6FADTXHPD E6.4 / EP6FADTXHPE E6.4 / EP6FADTXHPD / EP6FADTXHPE (PHEV) / EP6FADTXHPE E6.4 (PHEV) / EP6FADTXHP E6.4 / EP6FADTXHPD E6.3 / EP6FADTXHPE E6.3 / EP6FADTXHP (PHEV) / EP6FADTXHP 1.6L ESS / EP6FADTXHPD UE64 1.6L ESS / EP6FADTXHP 1.6L ESS CHINE / EP6FADTXHPE UE64 1.6L ESS / EB2LTEM EURO5)",
                         "value": "FFBFFFFFFFFFFFFF"
                     },
                     {
@@ -195,7 +195,7 @@
                         "value": "FFFFFFDFFFFFFFFF"
                     },
                     {
-                        "name": "1.8t (EP8F)",
+                        "name": "1.8t (EP8F) / 1.6t (195 EP6LTCHPD PHEV FWD / EB2LTEDH2 EURO7)",
                         "value": "FFFFFBFFFFFFFFFF"
                     },
                     {
@@ -219,12 +219,92 @@
                         "value": "FFFFFFFFFFFFFFFD"
                     },
                     {
-                        "name": "Electric motor",
+                        "name": "Electric motor / EB2FAFK / EB2FAMK / 150 EP6LTCM / 150 EP6LTCME",
                         "value": "FEFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "1.2t MHEV",
+                        "name": "1.2t (EB2LTDH MHEV P2 / EB2LTEDH2 EURO6.4)",
                         "value": "7FFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2FAMK EURO5)",
+                        "value": "FFFEFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6LTC PHEV FWD MULTI-BRAS / EB2LTDH2 EURO7)",
+                        "value": "FFFFFDFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (BEV 300WLTP / 220 OU 225 EP6LTC PHEV FWD)",
+                        "value": "DFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6HDI (DV6D)",
+                        "value": "FFFFFFFFFFFFDFFF"
+                    },
+                    {
+                        "name": "1.2t (EC5 / EB2LTDH2 EURO6.4)",
+                        "value": "FFFFF7FFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2LTEM / EB2FAMK EURO6.1)",
+                        "value": "BFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "M4 BEV FWD LONG RANGE",
+                        "value": "FFFFEFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6LTCH HPE-EURO6.4 / EP6LTCH HP-EURO6.4 / EP6LTCH HPE-EURO7 / EP6LTCH HPE)",
+                        "value": "FFFFFFFFFDFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6LTCH HP-EURO6.4 / EP6LTCH HP-EURO7 / EP6LTCH HP / EP6LTCHP S UE64 1.6L EES)",
+                        "value": "FFFFFFFFFEFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2FAFK / EB2FAMK / EB2LTED EURO6.4)",
+                        "value": "FDFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EC5 / 180 EP6LTC PHEV FWD)",
+                        "value": "FBFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6LTC-CHINA7)",
+                        "value": "FFFFFF7FFFFFFFFF"
+                    },
+                    {
+                        "name": "N3 / EB2LTEM EURO6 / EP6LTC PHEV AWD",
+                        "value": "FFFDFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "T3 / EP6LTCM PHEV AWD",
+                        "value": "FFFBFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "EB2ADTM / 200 EP6LTCM / 180 EP6LTCM",
+                        "value": "F7FFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "EB2FAD / BEV 200WLTP",
+                        "value": "F7FFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "EDPE  / Electric ZLE",
+                        "value": "FFFFFFFFFBFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2ADTS)",
+                        "value": "FFDFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "M3 M4 BEV AWD / M4 BEV AWD STANDARD RANGE-ERAD2 / BEV 400WLTP",
+                        "value": "FFF7FFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6FADTX ICE)",
+                        "value": "FFFFFEFFFFFFFFFF"
                     }
                 ]
             },
@@ -861,6 +941,10 @@
                     {
                         "name": "304X28 / 300X24-PHI54 / 283X26-PHI54",
                         "value": "FBFF"
+                    },
+                    {
+                        "name": "252X22-PHI51 / 283X26-PHI54 / 304X28-PHI60",
+                        "value": "FEFF"
                     }
                 ]
             },
