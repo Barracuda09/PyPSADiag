@@ -1012,24 +1012,6 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_UCPR_SAFESTOP_0-38": {
-                "zoneLength": 38,
-                "name": "ACC type",
-                "byte": 33,
-                "type": "bool",
-                "form_type": "combobox",
-                "mask": "01000000",
-                "params": [
-                    {
-                        "name": "With Safe Stop",
-                        "mask": "00000000"
-                    },
-                    {
-                        "name": "Without Safe Stop",
-                        "mask": "01000000"
-                    }
-                ]
-            },
             "CFG_000_FREIN_UDS_UCPR_ACC": {
                 "zoneLength": 28,
                 "name": "ACC type",
