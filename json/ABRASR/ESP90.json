@@ -41,7 +41,7 @@
                 "mask": "111111111111111111111111111111111111111111111111",
                 "params": [
                     {
-                        "name": "1.2t (EB2ADTS EURO 6.2)",
+                        "name": "1.2t (EB2ADTS EURO6.2)",
                         "value": "FFFFBFFFFFFF"
                     },
                     {
@@ -49,19 +49,23 @@
                         "value": "FFFFF7FFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADTS EURO 6.3)",
+                        "name": "1.2t (EB2ADTS EURO6.3)",
                         "value": "FFFFFFFEFFFF"
                     },
                     {
-                        "name": "1.2t (EB2DTSM)",
+                        "name": "1.2t (EB2ADT EURO6.3)",
                         "value": "FFFFEFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FADTX EURO 6.3)",
+                        "name": "1.2t (EB2ADT EURO6.2)",
+                        "value": "FFFFDFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t (EP6FADTX EURO6.3)",
                         "value": "FF7FFFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FADTXD EURO 6.2)",
+                        "name": "1.6t (EP6FADTXD EURO6.2)",
                         "value": "FFDFFFFFFFFF"
                     },
                     {
@@ -81,19 +85,31 @@
                         "value": "FFFFFFFFFEFF"
                     },
                     {
-                        "name": "1.6t (EP6FADTXD EURO 6.3)",
+                        "name": "1.6t (EP6FADTXD EURO6.3)",
                         "value": "FFEFFFFFFFFF"
                     },
                     {
-                        "name": "1.5HDI (DV5RC EURO 6.2)",
+                        "name": "1.6t (EP6FDTX)",
+                        "value": "FFFFFFFFFBFF"
+                    },
+                    {
+                        "name": "1.8t (EP8FDT or EP8FDTM)",
+                        "value": "FFFFFFFDFFFF"
+                    },
+                    {
+                        "name": "1.8t (EP8FADTX)",
+                        "value": "FFFFFFFFFFFB"
+                    },
+                    {
+                        "name": "1.5HDI (DV5RC EURO6.2)",
                         "value": "FBFFFFFFFFFF"
                     },
                     {
-                        "name": "1.5HDI (DV5RC EURO 6.3)",
+                        "name": "1.5HDI (DV5RC EURO6.3)",
                         "value": "FDFFFFFFFFFF"
                     },
                     {
-                        "name": "1.5HDI (DV5RD EURO 6.2 / DV5RE EURO 6.2)",
+                        "name": "1.5HDI (DV5RD EURO6.2 / DV5RE EURO6.2)",
                         "value": "FFF7FFFFFFFF"
                     },
                     {
@@ -101,7 +117,7 @@
                         "value": "FEFFFFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADT EURO 6.3 / 1.6HDI (DV6FCD)",
+                        "name": "1.2t (EB2ADT EURO6.3 / 1.6HDI (DV6FCD)",
                         "value": "FFFFFFFFF7FF"
                     },
                     {
@@ -117,11 +133,11 @@
                         "value": "FFFEFFFFFFFF"
                     },
                     {
-                        "name": "2.0HDI (DW10FC EURO 6.2 / DW10FCC or DW10FCD EURO 6.2)",
+                        "name": "2.0HDI (DW10FC EURO6.2 / DW10FCC or DW10FCD EURO6.2)",
                         "value": "BFFFFFFFFFFF"
                     },
                     {
-                        "name": "2.0HDI (DW10FCC EURO 6.3)",
+                        "name": "2.0HDI (DW10FCC EURO6.3)",
                         "value": "7FFFFFFFFFFF"
                     }
                 ]
@@ -139,24 +155,64 @@
                         "value": "FFFFFFFFEFFFFFFF"
                     },
                     {
-                        "name": "1.2t (EB2ADT-EURO 6.3 / EB2ADTS-EURO6.3 / EB2ADT I-EURO6.3 / EB2ADTS I-EURO6.3 / EB2ADTS-CHINA6 / EB2ADT-EURO6.4 / EB2ADTS-EURO6.4 / EB2ADT I-EURO6.4)",
+                        "name": "1.2t (EB2ADTS-EURO6.3 / EB2ADT-EURO6.3 / EB2ADTSI-EURO6.3 / SULEV 50 / EB2ADTS-EURO6.4 / EB2ADTS I-EURO6.4)",
                         "value": "FFFF7FFFFFFFFFFF"
                     },
+                    {
+                        "name": "1.2t (EB2ADTS EURO6.2 / SULEV 50 / EB2ADT EURO6.2)",
+                        "value": "FFFFBFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2DTSM or EB2DTS)",
+                        "value": "FFFFDFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.2t (EB2LTDH2-EURO6.4)",
+                        "value": "FFFFFFBFFFFFFFFF"
+                    },  
                     {
                         "name": "1.6t (EP6FDTM)",
                         "value": "FFFFFFFDFFFFFFFF"
                     },
                     {
-                        "name": "1.6t (EP6FDT/EP6FADTXD EURO 6.3 / EP6FADTXHP EURO6.3 / EP6FDTMD)",
+                        "name": "1.6t (EP6FDTX)",
+                        "value": "FFFFFFF7FFFFFFFF"
+                    },
+                    {
+                        "name": "1.6t EP6F all types (EP6FADTXD/EP6FDTM/EP6FDTMD-150CV/ EP6FADTX-EURO6.3/EP6FDT/EP6FDTMD/EP6FDTMPL7/EP6FADTX-EURO6.4)",
                         "value": "FFEFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "1.5HDI (DV5R EURO 6.2)",
+                        "name": "1.6t (EP6FADTXHP)",
+                        "value": "FFBFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.8t (EP8FADTX)",
+                        "value": "FFFFFFEFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.8t (EP8FDT)",
+                        "value": "FFFFFFDFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.8t (EP8F)",
+                        "value": "FFFFFBFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.5HDI (DV5RC - ALL DV5R BEFORE EURO6.3)",
                         "value": "FFFFFFFFFFFFFBFF"
                     },
                     {
-                        "name": "1.5HDI (DV5R EURO 6.3 / DV5RC EURO 6.3 / DV5RC EURO 6.4)",
+                        "name": "1.5HDI (DV5RC-EURO6.3 / DV5R E6.3 / DV5RC-E6.4)",
                         "value": "FFFFFFFFFFFFF7FF"
+                    },
+                    {
+                        "name": "1.6HDI (DV6FD)",
+                        "value": "FFFFFFFFFFFF7FFF"
+                    },
+                    {
+                        "name": "1.6HDI (DV6FC)",
+                        "value": "FFFFFFFFFFFFBFFF"
                     },
                     {
                         "name": "2.0HDI (DW10 all types - DW10FC / DW10FD / DW10FC E6.3 / DW10F)",
@@ -165,6 +221,10 @@
                     {
                         "name": "Electric motor",
                         "value": "FEFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "1.2t MHEV",
+                        "value": "7FFFFFFFFFFFFFFF"
                     }
                 ]
             },
@@ -243,7 +303,7 @@
                         "value": "FFFFFFFFFFFDFFFFFFFF"
                     },
                     {
-                        "name": "Citroen C3 III (B618)",
+                        "name": "Citroen C3 III (B618) / Opel Astra SW (Sports Tourer) PHEV",
                         "value": "FFFFFFFFFFFFFFFF7FFF"
                     },
                     {
@@ -255,15 +315,15 @@
                         "value": "FFFFFFFFFDFFFFFFFFFF"
                     },
                     {
-                        "name": "Opel Grandland X (P1UO) 4x2 Plug-in Hybrid",
+                        "name": "Opel Grandland X (P1UO) 4x2 Plug-in Hybrid / Citroen C3 electric  / Opel Frontera electric",
                         "value": "7FFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Opel Grandland X (P1UO) 4x4 Plug-in Hybrid",
+                        "name": "Opel Grandland X (P1UO) 4x4 Plug-in Hybrid / Opel Grandland / Opel Frontera 7 seats",
                         "value": "BFFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 508 (R8)",
+                        "name": "Peugeot 508 (R8) / Citroen C3 Aircross(CC24) 7 seats",
                         "value": "FF7FFFFFFFFFFFFFFFFF"
                     },
                     {
@@ -271,11 +331,11 @@
                         "value": "FFFFFEFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 3008 (P84) Restyle",
+                        "name": "Peugeot 3008 (P84) Restyle / Citroen C3 Aircross(CC24) electrical",
                         "value": "EFFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 5008 (P87) Restyle",
+                        "name": "Peugeot 5008 (P87) Restyle / Opel Crossland X Electric",
                         "value": "FFFFFFFBFFFFFFFFFFFF"
                     },
                     {
@@ -291,7 +351,7 @@
                         "value": "FFFFFFFFFFBFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 3008 (P84) Restyle 4X2 Plug-in Hybrid",
+                        "name": "Peugeot 3008 (P84) Restyle 4X2 Plug-in Hybrid / Citroen C3 electric / Citroen C5 Aircross (CR3)",
                         "value": "FDFFFFFFFFFFFFFFFFFF"
                     },
                     {
@@ -303,8 +363,112 @@
                         "value": "FFFFFFFFFFF7FFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 408 (P54)",
+                        "name": "Peugeot 408 (P54) / Opel Frontera 5 seats",
                         "value": "FFFFFFFEFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "3008 (P64) / 3008 (P64) electrical / C3 Aircross(CC24) 7 seats",
+                        "value": "FFFDFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C3",
+                        "value": "FEFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Frontera 5 seats",
+                        "value": "DFFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen Basalt (CC22-Inde)",
+                        "value": "FFF7FFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C3 Aircross(CC24) 5 seats",
+                        "value": "FBFFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Astra Sedan Electric",
+                        "value": "FFFFFFFFFFFFFFFDFFFF"
+                    },
+                    {
+                        "name": "Peugeot 308 Electric",
+                        "value": "FFFFFFFFFFFFFFFEFFFF"
+                    },
+                    {
+                        "name": "Opel Astra SW (Sports Tourer) GSE",
+                        "value": "FFFFFFFFFFFFFFFFFFFD"
+                    },
+                    {
+                        "name": "Peugeot 308 SW",
+                        "value": "FFFF7FFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 308",
+                        "value": "FFFFBFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Astra SW (Sports Tourer)",
+                        "value": "FFFFFFFFFFFFFFFFF7FF"
+                    },
+                    {
+                        "name": "Peugeot 408 (P54) / Peugeot 408X(P54C) / Opel Crossland X 7 seats",
+                        "value": "FFFFFFFDFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS4 with a chinese internal combustion engine",
+                        "value": "FFFFFF7FFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS4 with a non-chinese combustion engine / Citroen C3 Aircross (CC24) electric",
+                        "value": "FFFFF7FFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Astra sedan",
+                        "value": "FFFFFFFFFFFFFFFFFBFF"
+                    },
+                    {
+                        "name": "Opel Astra SW (Sports Tourer) Electric",
+                        "value": "FFFFFFFFFFFFFFF7FFFF"
+                    },
+                    {
+                        "name": "Opel Astra sedan GSE",
+                        "value": "FFFFFFFFFFFFFFFFFFFE"
+                    },
+                    {
+                        "name": "Opel Astra sedan PHEV",
+                        "value": "FFFFFFFFFFFFFFFFBFFF"
+                    },
+                    {
+                        "name": "Peugeot 308 SW Electric",
+                        "value": "FFFFFFFFFFFFFFFBFFFF"
+                    },
+                    {
+                        "name": "Citroen C5 X (E43C)",
+                        "value": "FFFFDFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C5 X (E43C) EXPORT",
+                        "value": "FFFFEFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 408 (P54) Electric",
+                        "value": "FFFFFFFFFFFFFFFFFFDF"
+                    },
+                    {
+                        "name": "Citroen C3(CC21) / Citroen C3 Aircross(CC24) 7 seats",
+                        "value": "F7FFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS4 (D41) electric",
+                        "value": "FFFFFFFFFFFFFFFFFFEF"
+                    },
+                    {
+                        "name": "Citroen Basalt (CC22-Merco)",
+                        "value": "FFEFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C3 Aircross(CC24) 5 seats",
+                        "value": "FFBFFFFFFFFFFFFFFFFF"
                     }
                 ]
             },
@@ -403,6 +567,10 @@
                         "value": "FFFFFFF7FFFF"
                     },
                     {
+                        "name": "215/70R16",
+                        "value": "FEFFFFFFFFFF"
+                    },
+                    {
                         "name": "205/45R17",
                         "value": "FFF7FFFFFFFF"
                     },
@@ -447,6 +615,10 @@
                         "value": "F7FFFFFFFFFF"
                     },
                     {
+                        "name": "225/50R19",
+                        "value": "FFFFFFFFEFFF"
+                    },
+                    {
                         "name": "235/45R19",
                         "value": "FFFFFFFEFFFF"
                     },
@@ -489,7 +661,7 @@
                         "value": "7FFF"
                     },
                     {
-                        "name": "BE / MB6 DV5RCF (Manual)",
+                        "name": "BE (Manual)",
                         "value": "FEFF"
                     },
                     {
@@ -497,8 +669,20 @@
                         "value": "FFFD"
                     },
                     {
+                        "name": "MB6 TUNING2",
+                        "value": "FF7F"
+                    },
+                    {
+                        "name": "ML6C TBC",
+                        "value": "BFFF"
+                    },
+                    {
                         "name": "MCM (Manual)",
                         "value": "FDFF"
+                    },
+                    {
+                        "name": "MCM TBC",
+                        "value": "FBFF"
                     },
                     {
                         "name": "ML6C",
@@ -543,20 +727,56 @@
                         "value": "FF7FFFFF"
                     },
                     {
-                        "name": "BE (Manual)",
-                        "value": "FEFFFFFF"
+                        "name": "BE / MB6 / AT6III",
+                        "value": "FBFFFFFF"
                     },
                     {
-                        "name": "MB6 TUNING2 (Manual)",
+                        "name": "MCM / MA4LO / EDCT",
+                        "value": "EFFFFFFF"
+                    },
+                    {
+                        "name": "MB6 VIE SERIE / MB6 TUNING / 5N / E-DCT VITESCO / 300WLTP",
                         "value": "BFFFFFFF"
                     },
                     {
-                        "name": "MB6EW (Manual)",
+                        "name": "MB6 / MT5 / 200WLTP",
                         "value": "DFFFFFFF"
                     },
                     {
-                        "name": "ML6C (Manual)",
+                        "name": "ML6C / CVT / 400WLTP",
                         "value": "7FFFFFFF"
+                    },
+                    {
+                        "name": "EDCT / EDCT 6speed (MHEV) / EDCT 7speed (PHEV)",
+                        "value": "FFFFFDFF"
+                    },
+                    {
+                        "name": "MA2L3O / ATN8",
+                        "value": "F7FFFFFF"
+                    },
+                    {
+                        "name": "MA / E-DCT NIDEC/PHEV EDCT",
+                        "value": "FEFFFFFF"
+                    },
+                    {
+                        "name": "AT6III / RGM",
+                        "value": "FDFFFFFF"
+                    },
+                    {
+                        "name": "6DCT200",
+                        "value": "FFFFFFBF"
+                    },
+                    {
+                        "name": "EDPE / RG1L / RGML",
+                        "value": "FFFFFFFE"
+                    },
+                    {
+                        "name": "BE4L",
+                        "value": "FFFFFBFF"
+                    },
+                    {
+                        "name": "BE4N",
+                        "value": "FFFFF7FF"
                     }
                 ]
             },
@@ -603,11 +823,11 @@
                 "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "283X26-PHI54 or 266X22-PHI54",
+                        "name": "283X26-PHI54 / 266X22-PHI54 / 284X22-PHI54 / 365X37-PHI44 44-LM / 302X26-PHI57",
                         "value": "F7FF"
                     },
                     {
-                        "name": "283X26 type2",
+                        "name": "283X26-PHI57 / 330X30-PHI60 / 266X22-PHI54",
                         "value": "FDFF"
                     },
                     {
@@ -627,7 +847,7 @@
                         "value": "7FFF"
                     },
                     {
-                        "name": "283X26-PHI60",
+                        "name": "283X26-PHI60 / 330X30-PHI63 (China) / 274X22-PHI54",
                         "value": "DFFF"
                     },
                     {
@@ -639,7 +859,7 @@
                         "value": "BFFF"
                     },
                     {
-                        "name": "304X28",
+                        "name": "304X28 / 300X24-PHI54 / 283X26-PHI54",
                         "value": "FBFF"
                     }
                 ]
@@ -667,10 +887,6 @@
                     {
                         "name": "290X12-PHI42",
                         "value": "EFFF"
-                    },
-                    {
-                        "name": "???",
-                        "value": "FFBF"
                     }
                 ]
             },
@@ -683,7 +899,7 @@
                 "mask": "1111111111111111",
                 "params": [
                     {
-                        "name": "249X9-PHI38",
+                        "name": "268X12 / DRUM8 / 249X9-PHI38 / 290X12-PHI42",
                         "value": "FEFF"
                     },
                     {
@@ -695,8 +911,38 @@
                         "value": "EFFF"
                     },
                     {
-                        "name": "???",
-                        "value": "FFBF"
+                        "name": "290X12-PHI38 (thermal) / 268X12-PHI38",
+                        "value": "F7FF"
+                    },
+                    {
+                        "name": "356X26-PHI48",
+                        "value": "DFFF"
+                    },
+                    {
+                        "name": "DRUM9",
+                        "value": "FF7F"
+                    },
+                    {
+                        "name": "330X14-PHI45 / DRUM9-CR20,64 / DRUM9",
+                        "value": "FDFF"
+                    }
+                ]
+            },
+            "CFG_000_FREIN_UDS_UCPR_SAFESTOP_0-38": {
+                "zoneLength": 38,
+                "name": "ACC type",
+                "byte": 33,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01000000",
+                "params": [
+                    {
+                        "name": "With Safe Stop",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Without Safe Stop",
+                        "mask": "01000000"
                     }
                 ]
             },
@@ -727,10 +973,6 @@
                     {
                         "name": "ACC 30 v2",
                         "mask": "00110111"
-                    },
-                    {
-                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_111101",
-                        "mask": "00111101"
                     }
                 ]
             },
@@ -845,7 +1087,7 @@
                         "mask": "00110000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 2",
+                        "name": "Without steering wheel angle sensor",
                         "mask": "00111000"
                     },
                     {
@@ -853,7 +1095,7 @@
                         "mask": "00101000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 4",
+                        "name": "With virtual steering wheel angle sensor 3",
                         "mask": "00011000"
                     }
                 ]
@@ -871,7 +1113,7 @@
                         "mask": "00110000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 2",
+                        "name": "Without steering wheel angle sensor",
                         "mask": "00111000"
                     },
                     {
@@ -879,7 +1121,7 @@
                         "mask": "00101000"
                     },
                     {
-                        "name": "With steering wheel angle sensor type 4",
+                        "name": "With virtual steering wheel angle sensor 3",
                         "mask": "00011000"
                     }
                 ]
@@ -1267,7 +1509,7 @@
                         "mask": "00100000"
                     },
                     {
-                        "name": "With multiplexed brake servo (EV vehicle)",
+                        "name": "With multiplexed brake servo (with Stop and Start system)",
                         "mask": "00010000"
                     }
                 ]
@@ -1353,15 +1595,15 @@
                 "mask": "00000011",
                 "params": [
                     {
-                        "name": "With indirect tyre under-inflation detection U+ (TPMF)",
+                        "name": "With indirect tyre under-inflation detection",
                         "mask": "00000010"
                     },
                     {
-                        "name": "With direct tyre under-inflation detection",
+                        "name": "Without indirect tyre under-inflation detection (TPMF)",
                         "mask": "00000011"
                     },
                     {
-                        "name": "With indirect tyre under-inflation detection U+ (TPMC)",
+                        "name": "With indirect tyre under-inflation detection (EP6FDTX engine, power 130 KW and EURO 4 or EURO 5 emission control standard)",
                         "mask": "00000001"
                     }
                 ]
@@ -1375,15 +1617,15 @@
                 "mask": "00000011",
                 "params": [
                     {
-                        "name": "With indirect tyre under-inflation detection U+ (TPMF)",
+                        "name": "With indirect tyre under-inflation detection",
                         "mask": "00000010"
                     },
                     {
-                        "name": "With direct tyre under-inflation detection",
+                        "name": "Without indirect tyre under-inflation detection (TPMF)",
                         "mask": "00000011"
                     },
                     {
-                        "name": "With indirect tyre under-inflation detection U+ (TPMC)",
+                        "name": "With indirect tyre under-inflation detection (EP6FDTX engine, power 130 KW and EURO 4 or EURO 5 emission control standard)",
                         "mask": "00000001"
                     }
                 ]
@@ -1424,24 +1666,6 @@
                     }
                 ]
             },
-            "CFG_000_FREIN_UDS_LXAPR": {
-                "zoneLength": 28,
-                "name": "Full lane keeping assistance system",
-                "byte": 27,
-                "type": "bool",
-                "form_type": "combobox",
-                "mask": "00000001",
-                "params": [
-                    {
-                        "name": "Without lane keeping assistance function",
-                        "mask": "00000001"
-                    },
-                    {
-                        "name": "With lane keeping assistance function",
-                        "mask": "00000000"
-                    }
-                ]
-            },
             "CFG_000_FREIN_UDS_LXAPR-38": {
                 "zoneLength": 38,
                 "name": "Full lane keeping assistance system",
@@ -1451,15 +1675,15 @@
                 "mask": "00000001",
                 "params": [
                     {
-                        "name": "Without lane keeping assistance function",
+                        "name": "Without full lane keeping assistance function",
                         "mask": "00000001"
                     },
                     {
-                        "name": "With lane keeping assistance function",
+                        "name": "With full lane keeping assistance function",
                         "mask": "00000000"
                     }
                 ]
             }
         }
     }
-}
+} 
