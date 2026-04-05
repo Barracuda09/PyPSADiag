@@ -27,7 +27,8 @@ import time
 import os
 from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator, QEventLoop
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QDialog, QVBoxLayout, QLabel, QPushButton, QHBoxLayout
+from PySide6.QtCore import QTimer
 
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
@@ -46,6 +47,99 @@ from DiagnosticAdapter import DiagnosticAdapter
   - Change GUI in: PyPSADiagGUI.py
   - Run with: python main.py
 """
+
+
+class VisioparkCalibrationDialog(QDialog):
+    """Dialog for Visiopark dynamic camera calibration with status polling."""
+
+    STATUS_MESSAGES = {
+        "0101": "Waiting for white lines to be visible...",
+        "0102": "Get out of parking spot (max 5km/h)...",
+        "0103": "Get back in parking spot (max 5km/h)...",
+    }
+
+    def __init__(self, udsCommunication, writeToOutputView, parent=None):
+        super().__init__(parent)
+        self.udsCommunication = udsCommunication
+        self.writeToOutputView = writeToOutputView
+        self.setWindowTitle("Visiopark Calibration")
+        self.setMinimumWidth(400)
+        self.setModal(True)
+
+        # Layout
+        layout = QVBoxLayout(self)
+
+        self.statusLabel = QLabel("Calibration started. Polling ECU...")
+        self.statusLabel.setWordWrap(True)
+        self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px;")
+        layout.addWidget(self.statusLabel)
+
+        self.stepLabel = QLabel("")
+        self.stepLabel.setStyleSheet("font-size: 11px; color: gray; padding: 0 10px;")
+        layout.addWidget(self.stepLabel)
+
+        # Buttons
+        btnLayout = QHBoxLayout()
+        btnLayout.addStretch()
+        self.cancelBtn = QPushButton("Cancel")
+        self.cancelBtn.clicked.connect(self.onCancel)
+        btnLayout.addWidget(self.cancelBtn)
+        layout.addLayout(btnLayout)
+
+        # Polling timer — every 1 second
+        self.pollTimer = QTimer(self)
+        self.pollTimer.timeout.connect(self.pollStatus)
+        self.pollTimer.start(1000)
+
+    def pollStatus(self):
+        """Send 3103DF0C and interpret response."""
+        receiveData = self.udsCommunication.writeECUCommand("3103DF0C")
+
+        if receiveData == "Timeout" or len(receiveData) < 12:
+            self.stepLabel.setText("Response: " + receiveData)
+            return
+
+        # Expected: 7103DF0C + status (2 bytes = 4 hex chars)
+        if receiveData[:8] != "7103DF0C":
+            self.stepLabel.setText("Unexpected: " + receiveData)
+            return
+
+        status = receiveData[8:12]
+        statusByte1 = receiveData[8:10]
+        statusCode = receiveData[8:12]
+
+        self.stepLabel.setText("Status: " + receiveData)
+
+        # Check known status codes
+        if statusCode in self.STATUS_MESSAGES:
+            self.statusLabel.setText(self.STATUS_MESSAGES[statusCode])
+            self.writeToOutputView("[Visiopark] " + self.STATUS_MESSAGES[statusCode])
+
+        elif statusByte1 == "02":
+            # Procedure completed (7103DF0C02XX)
+            self.pollTimer.stop()
+            msg = "Visiopark calibration completed successfully!"
+            self.statusLabel.setText(msg)
+            self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px; color: green;")
+            self.writeToOutputView("[Visiopark] " + msg)
+            self.cancelBtn.setText("Close")
+
+        elif statusByte1 == "03":
+            # Procedure failed (7103DF0C03XX)
+            self.pollTimer.stop()
+            msg = "Visiopark calibration failed."
+            self.statusLabel.setText(msg)
+            self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px; color: red;")
+            self.writeToOutputView("[Visiopark] " + msg)
+            self.cancelBtn.setText("Close")
+
+    def onCancel(self):
+        self.pollTimer.stop()
+        if self.cancelBtn.text() == "Cancel":
+            self.writeToOutputView("[Visiopark] Calibration cancelled by user.")
+        self.accept()
+
+
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
     ecuObjectList = {}
@@ -111,6 +205,7 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
         self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
         self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
+        self.ui.visioparkCalibrationAction.triggered.connect(self.visioparkCalibration)
         self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
         # Connect Other/General signals to slots
@@ -133,6 +228,7 @@ class MainWindow(QMainWindow):
         self.ui.readEcuFaults.setEnabled(False)
         self.ui.commandsMenu.setEnabled(False)
         self.ui.disableEcoMode.setEnabled(False)
+        self.ui.visioparkCalibrationAction.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -317,6 +413,7 @@ class MainWindow(QMainWindow):
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
             self.ui.disableEcoMode.setEnabled(True)
+            self.ui.visioparkCalibrationAction.setEnabled(True)
 
             if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
                 self.setEcuCommandsState(True)
@@ -350,6 +447,7 @@ class MainWindow(QMainWindow):
         self.ui.rebootEcu.setEnabled(enabled)
         self.ui.commandsMenu.setEnabled(enabled)
         self.ui.disableEcoMode.setEnabled(enabled)
+        self.ui.visioparkCalibrationAction.setEnabled(enabled)
 
     @Slot()
     def hideNoResponseZones(self, state):
@@ -432,6 +530,7 @@ class MainWindow(QMainWindow):
             self.ui.rebootEcu.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
             self.ui.disableEcoMode.setEnabled(True)
+            self.ui.visioparkCalibrationAction.setEnabled(True)
             self.updateEcuTxRxLabel()
 
     @Slot()
@@ -687,6 +786,59 @@ class MainWindow(QMainWindow):
             self.udsCommunication.stopDiagnosticMode()
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
+
+    @Slot()
+    def visioparkCalibration(self):
+        if not self.serialController.isOpen():
+            self.writeToOutputView(i18n().tr("Port not open!"))
+            return
+
+        # Get key from currently loaded JSON
+        index = self.ui.ecuKeyComboBox.currentIndex()
+        if index < 0:
+            self.writeToOutputView("No ECU key selected. Load NAC or RCC zone file first.")
+            return
+        key = self.ui.ecuKeyComboBox.itemData(index)
+
+        ecu = ">764:664"
+
+        # Select NAC/RCC ECU
+        self.writeToOutputView("> " + ecu)
+        receiveData = self.serialController.sendReceive(ecu)
+        self.writeToOutputView("< " + receiveData)
+        if receiveData == "Timeout":
+            return
+
+        # Start diagnostic session (1003)
+        if not self.udsCommunication.startDiagnosticMode():
+            return
+
+        # Unlock ECU with key from JSON (2703 -> compute seed -> 2704)
+        seed = self.udsCommunication.unlockingServiceForConfiguration(key)
+        if len(seed) == 0:
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        time.sleep(2)
+
+        if not self.udsCommunication.sendUnlockingResponseForConfiguration(seed):
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        # Start dynamic Visiopark calibration routine
+        self.writeToOutputView("Starting Visiopark dynamic calibration...")
+        receiveData = self.udsCommunication.writeECUCommand("3101DF0C")
+        if len(receiveData) < 4 or receiveData[:4] != "7101":
+            self.writeToOutputView("Failed to start calibration: " + receiveData)
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        # Open polling dialog
+        dialog = VisioparkCalibrationDialog(self.udsCommunication, self.writeToOutputView, self)
+        dialog.exec()
+
+        # Stop diagnostic session (1001)
+        self.udsCommunication.stopDiagnosticMode()
 
     @Slot()
     def csvReadCallback(self, value: list):
