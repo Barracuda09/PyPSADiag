@@ -395,7 +395,7 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connectPort(self):
-        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=self.diagtool_type, simulation=self.simulation, url=self.ui.wsIpInput.text())
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=self.diagtool_type, simulation=self.simulation, ipAddress=self.ui.wsIpInput.text())
         self.setupCommunication()
 
         # Set begin connecting button states

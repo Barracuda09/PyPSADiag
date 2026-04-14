@@ -21,7 +21,7 @@ class DiagnosticAdapter:
             self.transport = BluetoothAdapter(logger=self.logger)
 
         elif mode == "websocket":
-            ipAddress = kwargs.get("url", "192.168.100.1")
+            ipAddress = kwargs.get("ipAddress", "192.168.100.1")
             url = "ws://" + ipAddress + "/ws"
             print(f"Using WebSocket URL: {url}")
             self.transport = WebSocketClientTransport(logger=self.logger, url=url)
