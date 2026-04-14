@@ -285,6 +285,7 @@ class MainWindow(QMainWindow):
             # Arduino and Bluetooth both use COM port selection
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
+            self.ui.portNameComboBox.setVisible(True)
             self.ui.canPinsComboBox.setVisible(False)
             self.ui.wsIpInput.setVisible(False)
             if self.ui.portNameComboBox.count() > 0:
@@ -303,6 +304,7 @@ class MainWindow(QMainWindow):
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
             self.ui.canPinsComboBox.setVisible(False)
+            self.ui.portNameComboBox.setVisible(False)
             self.ui.wsIpInput.setVisible(True)
             self.ui.ConnectPort.setEnabled(True)
 
@@ -420,6 +422,7 @@ class MainWindow(QMainWindow):
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
             self.ui.ConnectPort.setEnabled(False)
+            self.ui.wsIpInput.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
             self.ui.commandsMenu.setEnabled(True)
             self.ui.disableEcoMode.setEnabled(True)
@@ -442,6 +445,7 @@ class MainWindow(QMainWindow):
         self.ui.portNameComboBox.setEnabled(True)
         self.ui.SearchConnectPort.setEnabled(True)
         self.ui.ConnectPort.setEnabled(True)
+        self.ui.wsIpInput.setEnabled(True)
         self.ui.DisconnectPort.setEnabled(False)
 
         self.setEcuCommandsState(False)
