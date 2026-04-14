@@ -143,6 +143,7 @@ class VisioparkCalibrationDialog(QDialog):
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
     ecuObjectList = {}
+    diagtool_type = "serial"
     simulation = False
     scan = False
     flashEnable = False
@@ -279,25 +280,31 @@ class MainWindow(QMainWindow):
         self.updateEcuTxRxLabel()
 
     def changeDiagtoolType(self, index):
-        diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
-        if diagtool_type.lower() == "serial" or diagtool_type.lower() == "bluetooth":
+        self.diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+        if self.diagtool_type.lower() == "serial" or self.diagtool_type.lower() == "bluetooth":
             # Arduino and Bluetooth both use COM port selection
             self.ui.portNameComboBox.setEnabled(True)
             self.ui.SearchConnectPort.setEnabled(True)
             self.ui.canPinsComboBox.setVisible(False)
+            self.ui.wsIpInput.setVisible(False)
             if self.ui.portNameComboBox.count() > 0:
                 self.ui.ConnectPort.setEnabled(True)
             else:
                 self.ui.ConnectPort.setEnabled(False)
-        else:
+        elif self.diagtool_type.lower() == "vci":
             # VCI mode - no COM port needed, show CAN pins
             self.ui.portNameComboBox.setEnabled(False)
             self.ui.SearchConnectPort.setEnabled(False)
             self.ui.canPinsComboBox.setVisible(True)
+            self.ui.wsIpInput.setVisible(False)
             self.ui.ConnectPort.setEnabled(True)
-
-        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=diagtool_type, simulation=self.simulation)
-        self.setupCommunication()
+        elif self.diagtool_type.lower() == "websocket":
+            # Websocket mode - no COM port needed, show IP input
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
+            self.ui.canPinsComboBox.setVisible(False)
+            self.ui.wsIpInput.setVisible(True)
+            self.ui.ConnectPort.setEnabled(True)
 
     def loadTranslator(self):
         qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
@@ -386,6 +393,9 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connectPort(self):
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=self.diagtool_type, simulation=self.simulation, url=self.ui.wsIpInput.text())
+        self.setupCommunication()
+
         # Set begin connecting button states
         self.ui.ConnectPort.setEnabled(False)
         self.ui.DisconnectPort.setEnabled(False)

@@ -23,11 +23,11 @@ import os, json, sys
 from datetime import datetime
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+    QSize, QTime, QUrl, Qt, QRegularExpression)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform, QAction, QActionGroup)
+    QPalette, QPixmap, QRadialGradient, QTransform, QAction, QActionGroup, QRegularExpressionValidator)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QHBoxLayout, QLabel, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
@@ -137,6 +137,7 @@ class PyPSADiagGUI(object):
 
         self.diagtoolTypeComboBox = QComboBox()
         self.canPinsComboBox = QComboBox()
+        self.wsIpInput = QLineEdit()
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
         self.SearchConnectPort = QPushButton()
@@ -174,6 +175,16 @@ class PyPSADiagGUI(object):
         self.diagtoolTypeComboBox.addItem("ELM327", "bluetooth")
         if sys.platform == "win32":
             self.diagtoolTypeComboBox.addItem("VCI", "vci")
+        self.diagtoolTypeComboBox.addItem("Websocket", "websocket")
+
+        ip_regex = QRegularExpression(r"^(\d{1,3}\.){3}\d{1,3}$")
+        self.wsIpInput.setValidator(QRegularExpressionValidator(ip_regex))
+        self.wsIpInput.setMaxLength(15)
+        fm = self.wsIpInput.fontMetrics()
+        self.wsIpInput.setFixedWidth(fm.horizontalAdvance("0") * 15 + 10)
+        self.wsIpInput.setText("192.168.100.1")
+        self.wsIpInput.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        self.wsIpInput.setVisible(False)
 
         # Fill CAN Pins Combobox (VCI only)
         self.canPinsComboBox.addItem("Pins 3/8 (AEE)", "DIAG")
@@ -233,6 +244,7 @@ class PyPSADiagGUI(object):
         self.connectionBoxLayout.addWidget(self.diagtoolTypeComboBox)
         self.connectionBoxLayout.addWidget(self.canPinsComboBox)
         self.connectionBoxLayout.addWidget(self.portNameComboBox)
+        self.connectionBoxLayout.addWidget(self.wsIpInput)
         self.connectionBoxLayout.addWidget(self.SearchConnectPort)
         self.connectionBoxLayout.addWidget(self.ConnectPort)
         self.connectionBoxLayout.addWidget(self.DisconnectPort)
@@ -420,4 +432,4 @@ class PyPSADiagGUI(object):
         self.languageMenu.setTitle(i18n().tr("Language"))
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
-        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol)) 
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))

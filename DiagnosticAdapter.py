@@ -1,4 +1,5 @@
 import sys
+from WebSocketClientTransport import WebSocketClientTransport
 from SerialPort import SerialPort
 from VCIAdapter import VCIAdapter
 from BluetoothAdapter import BluetoothAdapter
@@ -6,6 +7,7 @@ from BluetoothAdapter import BluetoothAdapter
 class DiagnosticAdapter:
 
     def __init__(self, logger=None, mode="serial", **kwargs):
+        print(f"Initializing DiagnosticAdapter with mode: {mode}")
         self.logger = logger
 
         if mode == "serial":
@@ -17,6 +19,12 @@ class DiagnosticAdapter:
 
         elif mode == "bluetooth":
             self.transport = BluetoothAdapter(logger=self.logger)
+
+        elif mode == "websocket":
+            ipAddress = kwargs.get("url", "192.168.100.1")
+            url = "ws://" + ipAddress + "/ws"
+            print(f"Using WebSocket URL: {url}")
+            self.transport = WebSocketClientTransport(logger=self.logger, url=url)
 
         else:
             raise ValueError("Unknown transport")
