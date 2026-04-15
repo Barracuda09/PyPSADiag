@@ -64,7 +64,7 @@ class VCIAdapter(QObject):
                     timeout=5
                 )
                 if test_result.returncode == 0:
-                    bridge_args = ["py", "-3-32", "VCIBridge.py"]
+                    bridge_args = ["py", "-3-32", "-I", "VCIBridge.py"]
                     self.log("Using py launcher for 32-bit Python")
                 else:
                     raise subprocess.SubprocessError("py -3-32 not available")
@@ -173,24 +173,29 @@ class VCIAdapter(QObject):
         """Read output from bridge subprocess"""
         try:
             while self.bridge_process and self.bridge_process.poll() is None:
-                line = self.bridge_process.stdout.readline()
-                if not line:
+                lines, errors = self.bridge_process.communicate()
+                if errors:
+                    for error in errors.splitlines():
+                        self.log(error)
+
+                if not lines:
                     break
 
-                try:
-                    response = json.loads(line.strip())
-                    command = response.get("command")
-                    data = response.get("data", {})
+                for line in lines.splitlines():
+                    try:
+                        response = json.loads(line.strip())
+                        command = response.get("command")
+                        data = response.get("data", {})
 
-                    if command == "log":
-                        self.log(data.get("message", ""))
-                    else:
-                        self.response_queue.put(response)
+                        if command == "log":
+                            self.log(data.get("message", ""))
+                        else:
+                            self.response_queue.put(response)
 
-                except json.JSONDecodeError:
-                    continue
-                except Exception as e:
-                    self.log(f"Error processing bridge response: {e}")
+                    except json.JSONDecodeError:
+                        continue
+                    except Exception as e:
+                        self.log(f"Error processing bridge response: {e}")
 
         except Exception as e:
             self.log(f"Bridge reader thread error: {e}")
