@@ -1,0 +1,268 @@
+{
+  "name": "AMPLI_AUDIO",
+  "tx_id": "77D",
+  "rx_id": "67D",
+  "protocol": "kwp_hab",
+  "key_type": "single",
+  "keys": "A7D8",
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "LID_B0": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "LID_B0_TELE_XX": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "B0": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "B0_TELE_XX": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2100": {
+      "id": "Configuration_Group_Data_List",
+      "tab": "tele",
+      "name": "Configuration group data list",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_GPD_FRRAD_FUNC_PACK_003": {
+        "name": "Functions supported",
+        "byte": 1,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "1111111111111111",
+        "params": [
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFEF",
+            "value": "FFEF"
+          },
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFF7",
+            "value": "FFF7"
+          },
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFFB",
+            "value": "FFFB"
+          },
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFFD",
+            "value": "FFFD"
+          },
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFFE",
+            "value": "FFFE"
+          },
+          {
+            "name": "CFG_GPD_FRRAD_FUNC_PACK_003_FFDF",
+            "value": "FFDF"
+          }
+        ]
+      },
+      "CFG_GPC_FRRAD_ENGI_TYPE_003": {
+        "name": "Engine type",
+        "byte": 3,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "111111111111111111111111",
+        "params": [
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFBF",
+            "value": "FFFFBF"
+          },
+          {
+            "name": "1.6t",
+            "value": "FFFFDF"
+          },
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFEF",
+            "value": "FFFFEF"
+          },
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFF7",
+            "value": "FFFFF7"
+          },
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFFB",
+            "value": "FFFFFB"
+          },
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFFD",
+            "value": "FFFFFD"
+          },
+          {
+            "name": "CFG_GPC_FRRAD_ENGI_TYPE_003_FFFFFE",
+            "value": "FFFFFE"
+          }
+        ]
+      },
+      "CFG_GPE_FRRAD_GBOX_TYPE_003": {
+        "name": "Gearbox type",
+        "byte": 6,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00000010",
+        "params": [
+          {
+            "name": "Automatic",
+            "mask": "00000000"
+          },
+          {
+            "name": "Manual",
+            "mask": "00000010"
+          }
+        ]
+      },
+      "CFG_GPF_FRRAD_TYPE_LKA_003": {
+        "name": "Lane keeping assist type",
+        "byte": 6,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00000001",
+        "params": [
+          {
+            "name": "Curve Speed Adaptation (CSA) support",
+            "mask": "00000000"
+          },
+          {
+            "name": "No Curve Speed Adaptation (CSA) support",
+            "mask": "00000001"
+          }
+        ]
+      }
+    },
+    "2102": {
+      "id": "Gauging_Group_Data_Values",
+      "name": "Gauging group data values",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_FONCTION_AEB": {
+        "name": "Automatic Emergency braking function",
+        "byte": 0,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "01000000",
+        "params": [
+          {
+            "name": "MP_FONCTION_AEB_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_FONCTION_AEB_1",
+            "mask": "01000000"
+          }
+        ]
+      },
+      "MP_FONCTION_LCA": {
+        "name": "Lane change assistant function",
+        "byte": 0,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00100000",
+        "params": [
+          {
+            "name": "MP_FONCTION_LCA_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_FONCTION_LCA_1",
+            "mask": "00100000"
+          }
+        ]
+      },
+      "MP_FONCTION_RCTA": {
+        "name": "Collision risk alert in reverse gear function",
+        "byte": 0,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00010000",
+        "params": [
+          {
+            "name": "MP_FONCTION_RCTA_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_FONCTION_RCTA_1",
+            "mask": "00010000"
+          }
+        ]
+      },
+      "MP_FONCTION_LKA": {
+        "name": "Lane keeping assistant function",
+        "byte": 0,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00001000",
+        "params": [
+          {
+            "name": "MP_FONCTION_LKA_0",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_FONCTION_LKA_1",
+            "mask": "00001000"
+          }
+        ]
+      },
+      "MP_FONCTION_AIDE_CONDUITE": {
+        "name": "Driving aid functions",
+        "byte": 0,
+        "type": "hex",
+        "form_type": "combobox",
+        "mask": "00000111",
+        "params": [
+          {
+            "name": "MP_FONCTION_AIDE_CONDUITE_0000",
+            "mask": "00000000"
+          },
+          {
+            "name": "MP_FONCTION_AIDE_CONDUITE_0001",
+            "mask": "00000001"
+          },
+          {
+            "name": "MP_FONCTION_AIDE_CONDUITE_0010",
+            "mask": "00000010"
+          },
+          {
+            "name": "MP_FONCTION_AIDE_CONDUITE_0011",
+            "mask": "00000011"
+          }
+        ]
+      }
+    }
+  }
+} 
