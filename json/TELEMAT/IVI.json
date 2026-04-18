@@ -368,7 +368,7 @@
             },
             {
               "value": "05",
-              "name": "05 - written!"
+              "name": "05"
             },
             {
               "value": "06",
@@ -5294,11 +5294,10 @@
         {
           "extra_name": "G4X_IVI_DAT_DG_LUM_MANAG",
           "name_original": "G4X",
-          "name": "Adjusting the brightness of the glow",
+          "name": "Adjustment of the brightness for multifunctional screen + digital cluster",
           "byte": 0,
           "mask": "10000000",
-          "form_type": "checkbox",
-          "available_logic": "active_high"
+          "form_type": "checkbox"
         },
         {
           "extra_name": "H2Q_IVI_OPTION_DARK_MODE",
