@@ -327,7 +327,7 @@
         "name": "Rear left wheel speed sensor signal fault"
     },
     "C1025": {
-        "name": "fonction de contrôle de reprogrammation du calculateur ABS / ESP"
+        "name": "ABS / ESP ECU reprogramming control function"
     },
     "C1027": {
         "name": "Rear left wheel speed sensor signal fault"
@@ -375,10 +375,10 @@
         "name": "Fault  rear LH wheel speed sensor gap"
     },
     "C1048": {
-        "name": "Fault  de  rear RH wheel monitoring during pressure phase"
+        "name": "Rear RH wheel monitoring fault during pressure phase"
     },
     "C1049": {
-        "name": "Fault  de  rear LH wheel monitoring during pressure phase"
+        "name": "Rear LH wheel monitoring fault during pressure phase"
     },
     "C104B": {
         "name": "Front left inlet electrovalve control fault"
@@ -636,7 +636,7 @@
         "name": "Stability control system sensors programming fault"
     },
     "C123B": {
-        "name": "Fault  de  ESP function extension"
+        "name": "ESP function extension fault"
     },
     "C123C": {
         "name": "Fault  gyroscope accelerometer signal"
@@ -942,7 +942,7 @@
         "name": "ESP status word not valid or absent on communication with the BSI"
     },
     "C1501": {
-        "name": "Non coherence between the ESP status word and the actual situation"
+        "name": "Inconsistency between the ESP status word and the actual situation"
     },
     "C1502": {
         "name": "Longitudinal acceleration sensor signal fault"
@@ -1029,7 +1029,7 @@
         "name": "Electric parking brake (EPB) right-hand actuator"
     },
     "C1566": {
-        "name": "Non-coherent load reduction request from the built-in systems interface"
+        "name": "Inconsistent load reduction request from the built-in systems interface"
     },
     "C1567": {
         "name": "Emergency collision braking"
@@ -1215,7 +1215,7 @@
         "name": "Hydraulic block solenoid valves calibration fault"
     },
     "C2003": {
-        "name": "Configuration fault  du  BSI"
+        "name": "BSI configuration fault"
     },
     "C2100": {
         "name": "Fault  :  ECU supply under-voltage"
@@ -1227,13 +1227,13 @@
         "name": "Electrovalves supply voltage fault  ABS/ESP"
     },
     "C2111": {
-        "name": "Sensor supply fault.  de  braking pressure"
+        "name": "Braking pressure sensor supply fault"
     },
     "C2112": {
-        "name": "Sensor supply fault.  de  braking pressure"
+        "name": "Braking pressure sensor supply fault"
     },
     "C2114": {
-        "name": "Fault  de  gyroscope accelerometer dual sensor low supply voltage"
+        "name": "Gyroscope-accelerometer dual sensor low supply voltage fault"
     },
     "C2115": {
         "name": "Fault  gyroscope accelerometer dual sensor excess supply voltage"
@@ -1254,7 +1254,7 @@
         "name": "Fault  :  inside gyroscope accelerometer dual sensor"
     },
     "C2205": {
-        "name": "Internal fault  au  steering wheel angle sensor"
+        "name": "Internal fault on the steering wheel angle sensor"
     },
     "C2206": {
         "name": "Fault  vehicle configuration different to previous values"
@@ -1602,7 +1602,7 @@
         "name": "Absence of communication with the BSI"
     },
     "U1110": {
-        "name": "Fault - absence de communication with the automatic gearbox electric control ECU"
+        "name": "No communication with the automatic gearbox electric control ECU"
     },
     "U1116": {
         "name": "Fault: no communication with the controlled variable damping suspension ECU"
@@ -1704,7 +1704,7 @@
         "name": "Communication with auto gearbox ECU"
     },
     "U1210": {
-        "name": "Fault - absence de communication with the automatic gearbox electric control ECU"
+        "name": "No communication with the automatic gearbox electric control ECU"
     },
     "U1216": {
         "name": "Communication with the AMVAR ECU fault"
@@ -1773,13 +1773,13 @@
         "name": "Automatic gearbox operating fault"
     },
     "U1310": {
-        "name": "Fault - absence de communication with the automatic gearbox electric control ECU"
+        "name": "No communication with the automatic gearbox electric control ECU"
     },
     "U1313": {
         "name": "CAN not communicating fault"
     },
     "U1316": {
-        "name": "Non coherent data from the electronically controlled variable suspension (AMVAR) ECU"
+        "name": "Inconsistent data from the electronically controlled variable suspension (AMVAR) ECU"
     },
     "U1317": {
         "name": "Fault: no communication with Built-in Hydraulics Interface ."
@@ -1812,7 +1812,7 @@
         "name": "Erroneous data from the pressure sensor on the brake servo"
     },
     "U135D": {
-        "name": "CAN  ( traction control plus )"
+        "name": "CAN (traction control plus)"
     },
     "U135E": {
         "name": "Communication with the electric drive machine ECU  ( CAN )"
