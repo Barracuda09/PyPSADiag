@@ -60,7 +60,7 @@
         "name": "Focussing the multifunction video camera"
     },
     "B1298": {
-        "name": "Incohérence entre la demande d'activation de la fonction de collision frontale envoyée par le boîtier de servitude intelligent , et la fonction de collision frontale du radar frontal"
+        "name": "Inconsistency between the frontal-collision activation request sent by the smart service box and the frontal-collision function of the front radar"
     },
     "B129A": {
         "name": "Lack of coherence between the activation request for the adaptive cruise control and the status of the cruise control selection sent by the built-in systems interface"
@@ -105,25 +105,25 @@
         "name": "Signal from the automatic gearbox/piloted manual gearbox"
     },
     "B165B": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "B17F6": {
-        "name": "problème VAEB"
+        "name": "VAEB issue"
     },
     "B1918": {
-        "name": "fonction d'assistance au maintien de voie"
+        "name": "Lane-keeping assist function"
     },
     "B19BA": {
         "name": "Adaptive cruise control"
     },
     "B1F00": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "B2E0E": {
         "name": "VIN incorrect"
     },
     "B2F04": {
-        "name": "défaillance du contrôle des feux stop"
+        "name": "Brake light control failure"
     },
     "C1025": {
         "name": "ECU internal fault"
@@ -144,7 +144,7 @@
         "name": "2 high speed network"
     },
     "U0115": {
-        "name": "communication avec le calculateur contrôle moteur sur le réseau can high speed 2"
+        "name": "Communication with the engine management ECU on the CAN High Speed 2 network"
     },
     "U0121": {
         "name": "Communication with the ESP ECU"
@@ -153,7 +153,7 @@
         "name": "Communication with the steering wheel angle sensor"
     },
     "U0129": {
-        "name": "absence de communication avec le calculateur sur le réseau CAN high speed 2"
+        "name": "No communication with the ECU on the CAN High Speed 2 network"
     },
     "U0140": {
         "name": "Communication with the BSI"
@@ -165,7 +165,7 @@
         "name": "Communication with the motorised boot unit"
     },
     "U0146": {
-        "name": "absence de communication avec le VSM sur le réseau CAN High Speed 2"
+        "name": "No communication with the VSM on the CAN High Speed 2 network"
     },
     "U0147": {
         "name": "No communication with the built-in systems interface on the high speed CAN 1"
@@ -174,37 +174,37 @@
         "name": "No communication with the multifunction video camera on the CAN High Speed 1"
     },
     "U0301": {
-        "name": "réception de données erronées ou de trame trop courte en provenance du moteur pour TH ou HY et de l'EVCU pour EV"
+        "name": "Invalid data or too-short frame received from the engine (TH/HY) or from the EVCU (EV)"
     },
     "U0315": {
-        "name": "réception de données erronées ou de trame trop courte en provenance du calculateur de contrôle des freins"
+        "name": "Invalid data or too-short frame received from the brake control ECU"
     },
     "U0320": {
-        "name": "réception de données erronées ou de trame trop courte en provenance du calculateur de direction assistée électrique"
+        "name": "Invalid data or too-short frame received from the electric power-steering ECU"
     },
     "U0322": {
-        "name": "donnée erronée ou trame trop courte reçue du boîtier de servitude intelligent (VSM)"
+        "name": "Invalid data or too-short frame received from the smart service box (VSM)"
     },
     "U0328": {
         "name": "Communication with the steering wheel angle sensor"
     },
     "U0401": {
-        "name": "les données provenantes  du calculateur de boîtiers de servitude intelligents sur le réseau CAN est invalide"
+        "name": "Data received from the smart service box ECU on the CAN network is invalid"
     },
     "U0402": {
-        "name": "communication avec le calculateur de boîte de vitesses automatique sur le réseau CAN"
+        "name": "Communication with the automatic gearbox ECU on the CAN network"
     },
     "U0415": {
-        "name": "communication avec calculateur de contrôle des freins sur le réseau CAN est invalide"
+        "name": "Communication with the brake control ECU on the CAN network is invalid"
     },
     "U0420": {
-        "name": "les données provenantes  du calculateur de direction assistée electrique sur le réseau CAN est invalide"
+        "name": "Data received from the electric power-steering ECU on the CAN network is invalid"
     },
     "U0422": {
-        "name": "les données provenantes  du calculateur de boîtiers de servitude intelligents sur le réseau CAN est invalide"
+        "name": "Data received from the smart service box ECU on the CAN network is invalid"
     },
     "U0452": {
-        "name": "calculateur airbag"
+        "name": "Airbag ECU"
     },
     "U1000": {
         "name": "Multifunction video camera ECU not communicating"
@@ -240,7 +240,7 @@
         "name": "Communication with the engine management ECU on the 2 high speed network"
     },
     "U1150": {
-        "name": "absence de communication avec le calculateur de système de contrôle électronique sur le réseau CAN high speed 2"
+        "name": "No communication with the electronic control system ECU on the CAN High Speed 2 network"
     },
     "U1153": {
         "name": "Communication with the ESP ECU"
@@ -270,13 +270,13 @@
         "name": "Communication with the distance alert ECU"
     },
     "U1276": {
-        "name": "les données provenantes sur le réseau CAN est invalide"
+        "name": "Data received on the CAN network is invalid"
     },
     "U1305": {
         "name": "Communication with the steering wheel angle sensor"
     },
     "U1308": {
-        "name": "réception de données erronées ou de trame trop courte en provenance du moteur pour TH ou HY et de l'EVCU pour EV"
+        "name": "Invalid data or too-short frame received from the engine (TH/HY) or from the EVCU (EV)"
     },
     "U1309": {
         "name": "Communication with the gearbox ECU"
@@ -291,19 +291,19 @@
         "name": "Communication with the ESP ECU"
     },
     "U1354": {
-        "name": "communication avec le calculateur de la pile à comustible assemblée sur le réseau CAN"
+        "name": "Communication with the assembled fuel-cell ECU on the CAN network"
     },
     "U1538": {
-        "name": "communication avec le boîtier télématique autonome sur le réseau CAN"
+        "name": "Communication with the standalone telematics box on the CAN network"
     },
     "U1806": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "U1807": {
         "name": "Park information fault"
     },
     "U1937": {
-        "name": "communication avec le boîtier télématique autonome sur le réseau CAN"
+        "name": "Communication with the standalone telematics box on the CAN network"
     },
     "U1EF4": {
         "name": "Absence of communication with the BSI"
