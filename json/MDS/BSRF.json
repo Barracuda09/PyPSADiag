@@ -4,12 +4,12 @@
   "rx_id": "67C",
   "protocol": "uds",
   "key_type": "multi",
-  "keys":  {
+  "keys": {
     "BSRF": "B7A9"
   },
   "coding": true,
   "errors": true,
-  "dtc_lookup": "data/dtc/BSRF.json",
+  "dtc_lookup": "data/dtc/MDS.json",
   "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
     "ident": "Identification",
@@ -61,15 +61,42 @@
           "mask": "1111111111000000",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000000000", "name": "Type not defined" },
-            { "mask": "0000000001000000", "name": "Petrol" },
-            { "mask": "0000000010000000", "name": "Diesel" },
-            { "mask": "0000000011000000", "name": "Compressed natural gas (CNG)" },
-            { "mask": "0000000100000000", "name": "Propane gas" },
-            { "mask": "0000000101000000", "name": "Electrical power" },
-            { "mask": "0000000110000000", "name": "Hydrogen energy" },
-            { "mask": "0000000111000000", "name": "Hybrid vehicle  ( petrol / electrical )" },
-            { "mask": "0000001000000000", "name": "Hybrid vehicle  ( diesel / electrical )" }
+            {
+              "mask": "0000000000000000",
+              "name": "Type not defined"
+            },
+            {
+              "mask": "0000000001000000",
+              "name": "Petrol"
+            },
+            {
+              "mask": "0000000010000000",
+              "name": "Diesel"
+            },
+            {
+              "mask": "0000000011000000",
+              "name": "Compressed natural gas (CNG)"
+            },
+            {
+              "mask": "0000000100000000",
+              "name": "Propane gas"
+            },
+            {
+              "mask": "0000000101000000",
+              "name": "Electrical power"
+            },
+            {
+              "mask": "0000000110000000",
+              "name": "Hydrogen energy"
+            },
+            {
+              "mask": "0000000111000000",
+              "name": "Hybrid vehicle  ( petrol / electrical )"
+            },
+            {
+              "mask": "0000001000000000",
+              "name": "Hybrid vehicle  ( diesel / electrical )"
+            }
           ]
         },
         {
@@ -80,11 +107,26 @@
           "mask": "0111111111111111",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000000000", "name": "Type not defined" },
-            { "mask": "0000000000000001", "name": "Passenger vehicle  (category M1)" },
-            { "mask": "0000000000000010", "name": "Bus  (category M2)" },
-            { "mask": "0000000000000011", "name": "Bus  (category M3)" },
-            { "mask": "0000000000000100", "name": "Light truck  (category N1)" }
+            {
+              "mask": "0000000000000000",
+              "name": "Type not defined"
+            },
+            {
+              "mask": "0000000000000001",
+              "name": "Passenger vehicle  (category M1)"
+            },
+            {
+              "mask": "0000000000000010",
+              "name": "Bus  (category M2)"
+            },
+            {
+              "mask": "0000000000000011",
+              "name": "Bus  (category M3)"
+            },
+            {
+              "mask": "0000000000000100",
+              "name": "Light truck  (category N1)"
+            }
           ]
         },
         {
@@ -95,13 +137,34 @@
           "mask": "0011111111100000",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000000000", "name": "Deactivated" },
-            { "mask": "0000000000100000", "name": "Table 1 : 153 - 279 kHz (A:3 kHz-M:1 kHz)" },
-            { "mask": "0000000001000000", "name": "Table 2 : 531 - 1602 kHz(A:9 kHz-M:1 kHz)" },
-            { "mask": "0000000001100000", "name": "Table 3 : 531 - 1629 kHz(A:9 kHz-M:1 kHz)" },
-            { "mask": "0000000010000000", "name": "Table 4 : 531 - 1701 kHz(A:9 kHz-M:1 kHz)" },
-            { "mask": "0000000010100000", "name": "Table 5 : 530 - 1710 kHz(A:10 kHz-M:1 kHz)" },
-            { "mask": "0000000011000000", "name": "Table 6 : 153 - 279 kHz (A:3 kHz-M:1 kHz) and 531 - 1602 kHz(A:9 kHz-M:1 kHz)" }
+            {
+              "mask": "0000000000000000",
+              "name": "Deactivated"
+            },
+            {
+              "mask": "0000000000100000",
+              "name": "Table 1 : 153 - 279 kHz (A:3 kHz-M:1 kHz)"
+            },
+            {
+              "mask": "0000000001000000",
+              "name": "Table 2 : 531 - 1602 kHz(A:9 kHz-M:1 kHz)"
+            },
+            {
+              "mask": "0000000001100000",
+              "name": "Table 3 : 531 - 1629 kHz(A:9 kHz-M:1 kHz)"
+            },
+            {
+              "mask": "0000000010000000",
+              "name": "Table 4 : 531 - 1701 kHz(A:9 kHz-M:1 kHz)"
+            },
+            {
+              "mask": "0000000010100000",
+              "name": "Table 5 : 530 - 1710 kHz(A:10 kHz-M:1 kHz)"
+            },
+            {
+              "mask": "0000000011000000",
+              "name": "Table 6 : 153 - 279 kHz (A:3 kHz-M:1 kHz) and 531 - 1602 kHz(A:9 kHz-M:1 kHz)"
+            }
           ]
         },
         {
@@ -112,8 +175,14 @@
           "mask": "01100000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "50 µs  (outside the United States)" },
-            { "mask": "00100000", "name": "75 µs  (United States)" }
+            {
+              "mask": "00000000",
+              "name": "50 µs  (outside the United States)"
+            },
+            {
+              "mask": "00100000",
+              "name": "75 µs  (United States)"
+            }
           ]
         },
         {
@@ -124,9 +193,18 @@
           "mask": "00011100",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Switching deactivated" },
-            { "mask": "00000100", "name": "Switching pending synchronisation" },
-            { "mask": "00001000", "name": "Switching without synchronisation" }
+            {
+              "mask": "00000000",
+              "name": "Switching deactivated"
+            },
+            {
+              "mask": "00000100",
+              "name": "Switching pending synchronisation"
+            },
+            {
+              "mask": "00001000",
+              "name": "Switching without synchronisation"
+            }
           ]
         },
         {
@@ -137,8 +215,14 @@
           "mask": "00000010",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Button absent" },
-            { "mask": "00000010", "name": "Button present" }
+            {
+              "mask": "00000000",
+              "name": "Button absent"
+            },
+            {
+              "mask": "00000010",
+              "name": "Button present"
+            }
           ]
         },
         {
@@ -149,14 +233,38 @@
           "mask": "0000000111111111",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000000000", "name": "Deactivated" },
-            { "mask": "0000000000000001", "name": "Table 1 : 76.0-95.0 MHz (A:100kHz-M: 50KHz)" },
-            { "mask": "0000000000000010", "name": "Table 2 : 76.0-108MHz (A:100kHz-M: 50KHz)" },
-            { "mask": "0000000000000011", "name": "Table 3 : 76.0-108MHz (A:200kHz-M: 50KHz)" },
-            { "mask": "0000000000000100", "name": "Table 4 : 87.5-108MHz (A:100kHz-M: 50KHz)" },
-            { "mask": "0000000000000101", "name": "Table 5 : 87.5-108MHz (A:250kHz-M: 50KHz)" },
-            { "mask": "0000000000000110", "name": "Table 6 : 87.9-108MHz (A:100kHz-M: 50KHz)" },
-            { "mask": "0000000000000111", "name": "Table 7 : 87.9-108MHz (A:200kHz-M: 50KHz)" }
+            {
+              "mask": "0000000000000000",
+              "name": "Deactivated"
+            },
+            {
+              "mask": "0000000000000001",
+              "name": "Table 1 : 76.0-95.0 MHz (A:100kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000010",
+              "name": "Table 2 : 76.0-108MHz (A:100kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000011",
+              "name": "Table 3 : 76.0-108MHz (A:200kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000100",
+              "name": "Table 4 : 87.5-108MHz (A:100kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000101",
+              "name": "Table 5 : 87.5-108MHz (A:250kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000110",
+              "name": "Table 6 : 87.9-108MHz (A:100kHz-M: 50KHz)"
+            },
+            {
+              "mask": "0000000000000111",
+              "name": "Table 7 : 87.9-108MHz (A:200kHz-M: 50KHz)"
+            }
           ]
         },
         {
@@ -167,8 +275,14 @@
           "mask": "1000000000000000",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000000000", "name": "1 antenna" },
-            { "mask": "1000000000000000", "name": "2 antennas" }
+            {
+              "mask": "0000000000000000",
+              "name": "1 antenna"
+            },
+            {
+              "mask": "1000000000000000",
+              "name": "2 antennas"
+            }
           ]
         },
         {
@@ -179,20 +293,62 @@
           "mask": "0111111111111111",
           "form_type": "combobox",
           "params": [
-            { "mask": "0000000000001101", "name": "CFG_GFW_BSRF_VEHICLE_TYPE_002_D" },
-            { "mask": "0000000000000000", "name": "Type not defined" },
-            { "mask": "0000000000000001", "name": "Passenger vehicle  (category M1)" },
-            { "mask": "0000000000000010", "name": "Bus  (category M2)" },
-            { "mask": "0000000000000011", "name": "Bus  (category M3)" },
-            { "mask": "0000000000000100", "name": "Light truck  (category N1)" },
-            { "mask": "0000000000000101", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_5" },
-            { "mask": "0000000000000110", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_6" },
-            { "mask": "0000000000000111", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_7" },
-            { "mask": "0000000000001000", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_8" },
-            { "mask": "0000000000001001", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_9" },
-            { "mask": "0000000000001010", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_A" },
-            { "mask": "0000000000001011", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_B" },
-            { "mask": "0000000000001100", "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_C" }
+            {
+              "mask": "0000000000001101",
+              "name": "CFG_GFW_BSRF_VEHICLE_TYPE_002_D"
+            },
+            {
+              "mask": "0000000000000000",
+              "name": "Type not defined"
+            },
+            {
+              "mask": "0000000000000001",
+              "name": "Passenger vehicle  (category M1)"
+            },
+            {
+              "mask": "0000000000000010",
+              "name": "Bus  (category M2)"
+            },
+            {
+              "mask": "0000000000000011",
+              "name": "Bus  (category M3)"
+            },
+            {
+              "mask": "0000000000000100",
+              "name": "Light truck  (category N1)"
+            },
+            {
+              "mask": "0000000000000101",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_5"
+            },
+            {
+              "mask": "0000000000000110",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_6"
+            },
+            {
+              "mask": "0000000000000111",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_7"
+            },
+            {
+              "mask": "0000000000001000",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_8"
+            },
+            {
+              "mask": "0000000000001001",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_9"
+            },
+            {
+              "mask": "0000000000001010",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_A"
+            },
+            {
+              "mask": "0000000000001011",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_B"
+            },
+            {
+              "mask": "0000000000001100",
+              "name": "CFG_GJU_BSRF_VEHICLE_TYPE_003_C"
+            }
           ]
         },
         {
@@ -203,10 +359,22 @@
           "mask": "1111111111111111",
           "form_type": "combobox",
           "params": [
-            { "value": "FFFB", "name": "TPS" },
-            { "value": "FFFD", "name": "Russia" },
-            { "value": "FFFE", "name": "European Union" },
-            { "value": "FFFF", "name": "Absent" }
+            {
+              "value": "FFFB",
+              "name": "TPS"
+            },
+            {
+              "value": "FFFD",
+              "name": "Russia"
+            },
+            {
+              "value": "FFFE",
+              "name": "European Union"
+            },
+            {
+              "value": "FFFF",
+              "name": "Absent"
+            }
           ]
         },
         {
@@ -217,9 +385,18 @@
           "mask": "11111111",
           "form_type": "combobox",
           "params": [
-            { "value": "00", "name": "Digital radio deactivated" },
-            { "value": "01", "name": "Europe" },
-            { "value": "05", "name": "Outside Europe" }
+            {
+              "value": "00",
+              "name": "Digital radio deactivated"
+            },
+            {
+              "value": "01",
+              "name": "Europe"
+            },
+            {
+              "value": "05",
+              "name": "Outside Europe"
+            }
           ]
         },
         {
@@ -230,9 +407,18 @@
           "mask": "11000000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "2020 electrical and electronic architecture" },
-            { "mask": "01000000", "name": "2010 electrical and electronic architecture" },
-            { "mask": "10000000", "name": "Not specified" }
+            {
+              "mask": "00000000",
+              "name": "2020 electrical and electronic architecture"
+            },
+            {
+              "mask": "01000000",
+              "name": "2010 electrical and electronic architecture"
+            },
+            {
+              "mask": "10000000",
+              "name": "Not specified"
+            }
           ]
         },
         {
@@ -243,10 +429,22 @@
           "mask": "00111111",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Signal deactivated" },
-            { "mask": "00000001", "name": "Low signal" },
-            { "mask": "00000010", "name": "Medium signal" },
-            { "mask": "00000011", "name": "High signal" }
+            {
+              "mask": "00000000",
+              "name": "Signal deactivated"
+            },
+            {
+              "mask": "00000001",
+              "name": "Low signal"
+            },
+            {
+              "mask": "00000010",
+              "name": "Medium signal"
+            },
+            {
+              "mask": "00000011",
+              "name": "High signal"
+            }
           ]
         },
         {
@@ -257,9 +455,18 @@
           "mask": "11100000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Low" },
-            { "mask": "00100000", "name": "Average" },
-            { "mask": "01000000", "name": "Top" }
+            {
+              "mask": "00000000",
+              "name": "Low"
+            },
+            {
+              "mask": "00100000",
+              "name": "Average"
+            },
+            {
+              "mask": "01000000",
+              "name": "Top"
+            }
           ]
         },
         {
@@ -270,8 +477,14 @@
           "mask": "00010000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Function deactivated" },
-            { "mask": "00010000", "name": "Function activated" }
+            {
+              "mask": "00000000",
+              "name": "Function deactivated"
+            },
+            {
+              "mask": "00010000",
+              "name": "Function activated"
+            }
           ]
         },
         {
@@ -282,8 +495,14 @@
           "mask": "00001000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Function deactivated" },
-            { "mask": "00001000", "name": "Function activated" }
+            {
+              "mask": "00000000",
+              "name": "Function deactivated"
+            },
+            {
+              "mask": "00001000",
+              "name": "Function activated"
+            }
           ]
         },
         {
@@ -294,9 +513,18 @@
           "mask": "00000111",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Low" },
-            { "mask": "00000001", "name": "Average" },
-            { "mask": "00000010", "name": "Top" }
+            {
+              "mask": "00000000",
+              "name": "Low"
+            },
+            {
+              "mask": "00000001",
+              "name": "Average"
+            },
+            {
+              "mask": "00000010",
+              "name": "Top"
+            }
           ]
         },
         {
@@ -307,12 +535,21 @@
           "mask": "11100000",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Low" },
-            { "mask": "00100000", "name": "Average" },
-            { "mask": "01000000", "name": "Top" }
+            {
+              "mask": "00000000",
+              "name": "Low"
+            },
+            {
+              "mask": "00100000",
+              "name": "Average"
+            },
+            {
+              "mask": "01000000",
+              "name": "Top"
+            }
           ]
         },
-          {
+        {
           "extra_name": "CFG_GK3_BSRF_BROADCAST_FM_FOLLOW_003",
           "name_original": "CFG_GK3_BSRF_BROADCAST_FM_FOLLOW_003",
           "name": "FM radio status",
@@ -320,10 +557,22 @@
           "mask": "00011110",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Signal deactivated" },
-            { "mask": "00000010", "name": "Low signal" },
-            { "mask": "00000100", "name": "Medium signal" },
-            { "mask": "00000110", "name": "High signal" }
+            {
+              "mask": "00000000",
+              "name": "Signal deactivated"
+            },
+            {
+              "mask": "00000010",
+              "name": "Low signal"
+            },
+            {
+              "mask": "00000100",
+              "name": "Medium signal"
+            },
+            {
+              "mask": "00000110",
+              "name": "High signal"
+            }
           ]
         },
         {
@@ -334,8 +583,14 @@
           "mask": "00000001",
           "form_type": "combobox",
           "params": [
-            { "mask": "00000000", "name": "Function deactivated" },
-            { "mask": "00000001", "name": "Function activated" }
+            {
+              "mask": "00000000",
+              "name": "Function deactivated"
+            },
+            {
+              "mask": "00000001",
+              "name": "Function activated"
+            }
           ]
         }
       ]

@@ -3,8 +3,9 @@
   "tx_id": "77C",
   "rx_id": "67C",
   "protocol": "kwp_hab",
+  "dtc_lookup": "data/dtc/MDS.json",
   "key_type": "multi",
-  "keys":  {
+  "keys": {
     "BTA_3S": "DC3B"
   },
   "coding": true,
@@ -14,119 +15,119 @@
     "tele": "Telecoding"
   },
   "zones": {
-  "80": {
-    "id": "ZA_ZONE",
-    "tab": "ident",
-    "name": "ZA Zone",
-    "read_only": true,
-    "byte": 0,
-    "type": "raw",
-    "form_type": "multi",
-    "params": [
-      {
-        "name": "Equipment Part Number",
-        "byte": 0,
-        "byte_range": 5,
-        "type": "raw",
-        "form_type": "string"
-      },
-      {
-        "name": "Equipment Additional Reference",
-        "byte": 7,
-        "byte_range": 5,
-        "type": "raw",
-        "form_type": "string"
-      },
-      {
-        "name": "Type",
-        "byte": 19,
-        "byte_range": 3,
-        "type": "raw",
-        "form_type": "string"
-      }
-    ]
-  },
-  "FE": {
-    "id": "ZI_ZONE",
-    "tab": "ident",
-    "name": "ZI Zone",
-    "read_only": true,
-    "byte": 0,
-    "type": "raw",
-    "form_type": "multi",
-    "params": [
-      {
-        "name": "Supplier",
-        "byte": 4,
-        "byte_range": 1,
-        "type": "zi_sup",
-        "form_type": "string"
-      },
-      {
-        "name": "System",
-        "byte": 5,
-        "byte_range": 1,
-        "type": "zi_sys",
-        "form_type": "string"
-      },
-      {
-        "name": "Production Date",
-        "byte": 6,
-        "byte_range": 3,
-        "type": "string_date",
-        "form_type": "string"
-      },
-      {
-        "name": "Download Counter",
-        "byte": 20,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
-      },
-      {
-        "name": "Download Date",
-        "byte": 13,
-        "byte_range": 3,
-        "type": "string_date",
-        "form_type": "string"
-      },
-      {
-        "name": "Teletransmission Tool Type",
-        "byte": 16,
-        "byte_range": 1,
-        "type": "zi_tool",
-        "form_type": "string"
-      },
-      {
-        "name": "Teletransmission Tool ID / 020000 = Factory",
-        "byte": 17,
-        "byte_range": 3,
-        "type": "raw",
-        "form_type": "string"
-      },
-      {
-        "name": "Calibration Reference",
-        "byte": 21,
-        "byte_range": 3,
-        "type": "zi_cal",
-        "form_type": "string"
-      },
-      {
-        "name": "Calibration Version",
-        "byte": 10,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
-      },
-      {
-        "name": "Calibration Edition",
-        "byte": 11,
-        "byte_range": 2,
-        "type": "raw",
-        "form_type": "string"
-      }
-    ]
-  },
+    "80": {
+      "id": "ZA_ZONE",
+      "tab": "ident",
+      "name": "ZA Zone",
+      "read_only": true,
+      "byte": 0,
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Equipment Part Number",
+          "byte": 0,
+          "byte_range": 5,
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Equipment Additional Reference",
+          "byte": 7,
+          "byte_range": 5,
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Type",
+          "byte": 19,
+          "byte_range": 3,
+          "type": "raw",
+          "form_type": "string"
+        }
+      ]
+    },
+    "FE": {
+      "id": "ZI_ZONE",
+      "tab": "ident",
+      "name": "ZI Zone",
+      "read_only": true,
+      "byte": 0,
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+          "name": "Supplier",
+          "byte": 4,
+          "byte_range": 1,
+          "type": "zi_sup",
+          "form_type": "string"
+        },
+        {
+          "name": "System",
+          "byte": 5,
+          "byte_range": 1,
+          "type": "zi_sys",
+          "form_type": "string"
+        },
+        {
+          "name": "Production Date",
+          "byte": 6,
+          "byte_range": 3,
+          "type": "string_date",
+          "form_type": "string"
+        },
+        {
+          "name": "Download Counter",
+          "byte": 20,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Download Date",
+          "byte": 13,
+          "byte_range": 3,
+          "type": "string_date",
+          "form_type": "string"
+        },
+        {
+          "name": "Teletransmission Tool Type",
+          "byte": 16,
+          "byte_range": 1,
+          "type": "zi_tool",
+          "form_type": "string"
+        },
+        {
+          "name": "Teletransmission Tool ID / 020000 = Factory",
+          "byte": 17,
+          "byte_range": 3,
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration Reference",
+          "byte": 21,
+          "byte_range": 3,
+          "type": "zi_cal",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration Version",
+          "byte": 10,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
+        },
+        {
+          "name": "Calibration Edition",
+          "byte": 11,
+          "byte_range": 2,
+          "type": "raw",
+          "form_type": "string"
+        }
+      ]
+    },
     "B0": {
       "id": "VIN",
       "name": "VIN",
