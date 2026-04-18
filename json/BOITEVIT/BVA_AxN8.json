@@ -3,6 +3,7 @@
   "tx_id": "6A9",
   "rx_id": "689",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/BOITEVIT.json",
   "key_type": "single",
   "keys": "4854",
   "coding": true,
@@ -53,8 +54,6 @@
           }
         ]
       },
-
-
       "CFG_EKY_BVA_UDS_LVPR_004": {
         "name": "Type of gearbox selector",
         "byte": 5,

@@ -1,279 +1,280 @@
-  {
+{
     "name": "BVA_AM6_AT6_UDS",
     "tx_id": "6A9",
     "rx_id": "689",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/BOITEVIT.json",
     "key_type": "single",
     "keys": "1702",
     "coding": true,
     "errors": true,
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
-      "ident": "Identification",
-      "tele": "Telecoding"
+        "ident": "Identification",
+        "tele": "Telecoding"
     },
     "zones": {
-      "2100": {
-        "id": "Configuration_Group_Data_List",
-        "tab": "tele",
-        "name": "Configuration group data list",
-        "byte": 0,
-        "type": "raw",
-        "form_type": "string"
-      },
-      "2101": {
-        "id": "Gauging_Group_Data_Values",
-        "tab": "tele",
-        "name": "Gauging group data values",
-        "type": "raw",
-        "form_type": "multi",
-        "CFG_000_BVA_UDS_MPR": {
-          "name": "Engine",
-          "byte": 1,
-          "type": "hex",
-          "form_type": "combobox",
-          "mask": "1111111111111111",
-          "params": [
-            {
-              "name": "Any type",
-              "value": "FEFF"
-            }
-          ]
+        "2100": {
+            "id": "Configuration_Group_Data_List",
+            "tab": "tele",
+            "name": "Configuration group data list",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
         },
-        "CFG_000_BVA_UDS_CPR": {
-          "name": "Car model",
-          "byte": 3,
-          "type": "hex",
-          "form_type": "combobox",
-          "mask": "1111111111111111",
-          "params": [
-            {
-              "name": "Any type",
-              "value": "FEFF"
-            }
-          ]
-        },
-        "CFG_000_BVA_UDS_UCPR_PLATFORM": {
-          "name": "Vehicle platform",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "10000000",
-          "params": [
-            {
-              "name": "Other",
-              "mask": "00000000"
+        "2101": {
+            "id": "Gauging_Group_Data_Values",
+            "tab": "tele",
+            "name": "Gauging group data values",
+            "type": "raw",
+            "form_type": "multi",
+            "CFG_000_BVA_UDS_MPR": {
+                "name": "Engine",
+                "byte": 1,
+                "type": "hex",
+                "form_type": "combobox",
+                "mask": "1111111111111111",
+                "params": [
+                    {
+                        "name": "Any type",
+                        "value": "FEFF"
+                    }
+                ]
             },
-            {
-              "name": "BVH2",
-              "mask": "10000000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UDS_UCPR_RVV": {
-          "name": "Cruise control - type 4",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "01000000",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UDS_CPR": {
+                "name": "Car model",
+                "byte": 3,
+                "type": "hex",
+                "form_type": "combobox",
+                "mask": "1111111111111111",
+                "params": [
+                    {
+                        "name": "Any type",
+                        "value": "FEFF"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "01000000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_CMD_VIT_VOLANT": {
-          "name": "Gear control at the steering wheel",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00100000",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UDS_UCPR_PLATFORM": {
+                "name": "Vehicle platform",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Other",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "BVH2",
+                        "mask": "10000000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00100000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_ESP": {
-          "name": "Experimantal: ESP Presence",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00010000",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UDS_UCPR_RVV": {
+                "name": "Cruise control - type 4",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01000000",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "01000000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00010000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_REVEIL_RCD": {
-          "name": "Experimental: Wake-up via RCD line",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00001000",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_CMD_VIT_VOLANT": {
+                "name": "Gear control at the steering wheel",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00100000",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00100000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00001000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_KEY_LOCK": {
-          "name": "Experimental: Key-lock interlock presence",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00000100",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_ESP": {
+                "name": "Experimantal: ESP Presence",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00010000",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00010000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00000100"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_CMD_ELEC_BVA": {
-          "name": "Gearbox electrical control",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00000010",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_REVEIL_RCD": {
+                "name": "Experimental: Wake-up via RCD line",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00001000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00000010"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_DEV_CAN": {
-          "name": "Experimental: remote CAN network configuration",
-          "byte": 5,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00000001",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_KEY_LOCK": {
+                "name": "Experimental: Key-lock interlock presence",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00000100"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00000001"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_CMD_IMPULSION": {
-          "name": "Experimental: Gearbox Impulse shifter",
-          "byte": 6,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "10000000",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_CMD_ELEC_BVA": {
+                "name": "Gearbox electrical control",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000010",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00000010"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "10000000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_PEDALE_FREIN": {
-          "name": "Source of the \"Brake pedal status\" information",
-          "byte": 6,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "01000000",
-          "params": [
-            {
-              "name": "BSI",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_DEV_CAN": {
+                "name": "Experimental: remote CAN network configuration",
+                "byte": 5,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00000001"
+                    }
+                ]
             },
-            {
-              "name": "ESP",
-              "mask": "01000000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UCPR_VIT_VEH_RESEAU": {
-          "name": "Experimental: Source of speed signal",
-          "byte": 6,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00100000",
-          "params": [
-            {
-              "name": "ESP",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_CMD_IMPULSION": {
+                "name": "Experimental: Gearbox Impulse shifter",
+                "byte": 6,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "10000000"
+                    }
+                ]
             },
-            {
-              "name": "Gearbox speed sensor",
-              "mask": "00100000"
-            }
-          ]
-        },
-        "CFG_000_BVA_UDS_UCPR_HY": {
-          "name": "Hybrid powertrain",
-          "byte": 6,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00000010",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_PEDALE_FREIN": {
+                "name": "Source of the \"Brake pedal status\" information",
+                "byte": 6,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01000000",
+                "params": [
+                    {
+                        "name": "BSI",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "ESP",
+                        "mask": "01000000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00000010"
-            }
-          ]
-        },
-        "CFG_000_BVA_UDS_UCPR_STT": {
-          "name": "Stop and Start",
-          "byte": 6,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "00000001",
-          "params": [
-            {
-              "name": "Present",
-              "mask": "00000000"
+            "CFG_000_BVA_UCPR_VIT_VEH_RESEAU": {
+                "name": "Experimental: Source of speed signal",
+                "byte": 6,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00100000",
+                "params": [
+                    {
+                        "name": "ESP",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Gearbox speed sensor",
+                        "mask": "00100000"
+                    }
+                ]
             },
-            {
-              "name": "Absent",
-              "mask": "00000001"
+            "CFG_000_BVA_UDS_UCPR_HY": {
+                "name": "Hybrid powertrain",
+                "byte": 6,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000010",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00000010"
+                    }
+                ]
+            },
+            "CFG_000_BVA_UDS_UCPR_STT": {
+                "name": "Stop and Start",
+                "byte": 6,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Present",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Absent",
+                        "mask": "00000001"
+                    }
+                ]
             }
-          ]
         }
-      }
     }
-  }
+}
