@@ -4,6 +4,7 @@
     "tx_id": "764",
     "rx_id": "664",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/TELEMAT.json",
     "key_type": "multi",
     "keys": {
         "RCC": "F107"
@@ -8769,7 +8770,6 @@
                     "type": "raw",
                     "form_type": "string"
                 },
-
                 {
                     "extra_name": "ML_PRIVACY_ACTIVATIO_1",
                     "name_original": "EOD",

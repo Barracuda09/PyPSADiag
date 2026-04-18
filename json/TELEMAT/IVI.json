@@ -7,7 +7,7 @@
   "keys": {
     "IVI": "F4AA"
   },
-  "dtc_lookup": "data/dtc/IVI.json",
+  "dtc_lookup": "data/dtc/TELEMAT.json",
   "include_zone_object": "./data/IdentUDSECU.json",
   "tabs": {
     "vin": "VIN",
@@ -1045,7 +1045,10 @@
           "extra_name": "CFG_GQT_IVI_TYPE_SC_000",
           "name_original": "CFG_GQT_IVI_TYPE_SC_000",
           "name": "Type of generation of the gearbox torque",
-          "zoneLength": [3, 4],
+          "zoneLength": [
+            3,
+            4
+          ],
           "byte": 2,
           "mask": "00000111",
           "form_type": "combobox",
@@ -3428,7 +3431,16 @@
           "extra_name": "GGA_IVI_ATT_DG_ECRAN_SECOND",
           "name_original": "GGA",
           "name": "Type of secondary screen",
-          "zoneLength": [30, 32, 34, 35, 37, 38, 39, 40],
+          "zoneLength": [
+            30,
+            32,
+            34,
+            35,
+            37,
+            38,
+            39,
+            40
+          ],
           "byte": 28,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -3438,7 +3450,16 @@
           "extra_name": "CFG_GF7_IVI_OPT_PERS_MOD_CLST_000",
           "name_original": "CFG_GF7_IVI_OPT_PERS_MOD_CLST_000",
           "name": "Digital instrument panel configuration",
-          "zoneLength": [30, 32, 34, 35, 37, 38, 39, 40],
+          "zoneLength": [
+            30,
+            32,
+            34,
+            35,
+            37,
+            38,
+            39,
+            40
+          ],
           "byte": 29,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3457,7 +3478,12 @@
           "extra_name": "CFG_GKD_IVI_RTAB_ENERGY_RECOVER_000",
           "name_original": "CFG_GKD_IVI_RTAB_ENERGY_RECOVER_000",
           "name": "(e-save) energy reserve function",
-          "zoneLength": [32, 34, 35, 37],
+          "zoneLength": [
+            32,
+            34,
+            35,
+            37
+          ],
           "byte": 30,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3467,7 +3493,12 @@
           "extra_name": "CFG_GIL_IVI_SPEED_THRESHOLD_LOCK_000",
           "name_original": "CFG_GIL_IVI_SPEED_THRESHOLD_LOCK_000",
           "name": "Automatic locking at vehicle speed threshold",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 30,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3477,7 +3508,12 @@
           "extra_name": "CFG_GIK_IVI_TYPE_GALLON_INIT_000",
           "name_original": "CFG_GIK_IVI_TYPE_GALLON_INIT_000",
           "name": "Type of fuel unit required",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 30,
           "type": "bool",
           "form_type": "combobox",
@@ -3497,7 +3533,12 @@
           "extra_name": "CFG_GIG_IVI_PARK_DISENG_LOCK_000",
           "name_original": "CFG_GIG_IVI_PARK_DISENG_LOCK_000",
           "name": "Automatic locking when leaving car menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 30,
           "mask": "00100000",
           "form_type": "checkbox",
@@ -3507,7 +3548,12 @@
           "extra_name": "CFG_GIF_IVI_PARK_ENG_UNLOCK_000",
           "name_original": "CFG_GIF_IVI_PARK_ENG_UNLOCK_000",
           "name": "Automatic unlocking when approaching car menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 30,
           "mask": "00010000",
           "form_type": "checkbox",
@@ -3517,7 +3563,12 @@
           "extra_name": "CFG_GIE_IVI_SMART_SEATS_REC_MEMO_000",
           "name_original": "CFG_GIE_IVI_SMART_SEATS_REC_MEMO_000",
           "name": "Smart seats adjustment menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 30,
           "mask": "00001000",
           "form_type": "checkbox",
@@ -3527,7 +3578,12 @@
           "extra_name": "CFG_GKD_IVI_RTAB_ENERGY_RECOVER_000-41",
           "name_original": "CFG_GKD_IVI_RTAB_ENERGY_RECOVER_000-41",
           "name": "(e-save) energy reserve function",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 31,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3537,7 +3593,12 @@
           "extra_name": "CFG_GKH_IVI_DAT_DG_BRAND_CFG_001",
           "name_original": "CFG_GKH_IVI_DAT_DG_BRAND_CFG_001",
           "name": "Manufacturer's brand",
-          "zoneLength": [32, 34, 35, 37],
+          "zoneLength": [
+            32,
+            34,
+            35,
+            37
+          ],
           "byte": 31,
           "mask": "11111000",
           "form_type": "combobox",
@@ -3676,7 +3737,11 @@
           "extra_name": "CFG_GNE_IVI_COUNTRY_CODE_000-34,35",
           "name_original": "CFG_GNE_IVI_COUNTRY_CODE_000",
           "name": "Country selection menu",
-          "zoneLength": [34, 35, 37],
+          "zoneLength": [
+            34,
+            35,
+            37
+          ],
           "byte": 32,
           "mask": "00000100",
           "form_type": "checkbox",
@@ -3686,7 +3751,11 @@
           "extra_name": "CFG_GND_IVI_OVERSPEED_SOUND_000-34,35",
           "name_original": "CFG_GND_IVI_OVERSPEED_SOUND_000",
           "name": "Overspeed warning menu",
-          "zoneLength": [34, 35, 37],
+          "zoneLength": [
+            34,
+            35,
+            37
+          ],
           "byte": 32,
           "mask": "00000010",
           "form_type": "checkbox",
@@ -3696,7 +3765,11 @@
           "extra_name": "CFG_GNC_IVI_CHANGE_PANEL_SOUND_000-34,35",
           "name_original": "CFG_GNC_IVI_CHANGE_PANEL_SOUND_000",
           "name": "Speed limiter warning menu",
-          "zoneLength": [34, 35, 37],
+          "zoneLength": [
+            34,
+            35,
+            37
+          ],
           "byte": 32,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -3706,7 +3779,11 @@
           "extra_name": "CFG_GP6_DATE_TIME_SYNC_INIT_001-34,35",
           "name_original": "CFG_GP6_DATE_TIME_SYNC_INIT_001",
           "name": "Automatic synchronisation of the time",
-          "zoneLength": [34, 35, 37],
+          "zoneLength": [
+            34,
+            35,
+            37
+          ],
           "byte": 33,
           "mask": "00000011",
           "form_type": "combobox",
@@ -3729,7 +3806,12 @@
           "extra_name": "CFG_GQR_IVI_DAT_DG_BRAND_CFG_002",
           "name_original": "CFG_GQR_IVI_DAT_DG_BRAND_CFG_002",
           "name": "Manufacturer's brand",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 32,
           "mask": "11111000",
           "form_type": "combobox",
@@ -3752,7 +3834,12 @@
           "extra_name": "CFG_GLM_IVI_FORGOT_CHILD_ALERT_000",
           "name_original": "CFG_GLM_IVI_FORGOT_CHILD_ALERT_000",
           "name": "Alert for forgotten child detection",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 33,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3762,7 +3849,12 @@
           "extra_name": "CFG_GLN_IVI_WRONG_PEDAL_PREVENT_000",
           "name_original": "CFG_GLN_IVI_WRONG_PEDAL_PREVENT_000",
           "name": "Wrong pedal pressing prevention menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 33,
           "mask": "01000000",
           "form_type": "checkbox",
@@ -3772,7 +3864,12 @@
           "extra_name": "CFG_GNE_IVI_COUNTRY_CODE_000",
           "name_original": "CFG_GNE_IVI_COUNTRY_CODE_000",
           "name": "Country selection menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3782,7 +3879,12 @@
           "extra_name": "CFG_GND_IVI_OVERSPEED_SOUND_000-41",
           "name_original": "CFG_GND_IVI_OVERSPEED_SOUND_000-41",
           "name": "Overspeed warning menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "01000000",
           "form_type": "checkbox",
@@ -3792,7 +3894,12 @@
           "extra_name": "CFG_GNC_IVI_CHANGE_PANEL_SOUND_000-41",
           "name_original": "CFG_GNC_IVI_CHANGE_PANEL_SOUND_000-41",
           "name": "Speed limiter warning menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "00100000",
           "form_type": "checkbox",
@@ -3802,7 +3909,12 @@
           "extra_name": "CFG_GNJ_IVI_AUTO_DIMMING_000-41",
           "name_original": "CFG_GNJ_IVI_AUTO_DIMMING_000-41",
           "name": "Automatic dimming menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "00010000",
           "form_type": "checkbox",
@@ -3812,7 +3924,11 @@
           "extra_name": "CFG_GNI_IVI_HD_SYMBOL_PROJECTION_000-37",
           "name_original": "CFG_GNI_IVI_HD_SYMBOL_PROJECTION_000-37",
           "name": "Digital light projection menu",
-          "zoneLength": [38, 39, 40],
+          "zoneLength": [
+            38,
+            39,
+            40
+          ],
           "byte": 34,
           "mask": "00001000",
           "form_type": "checkbox",
@@ -3822,7 +3938,11 @@
           "extra_name": "CFG_GNH_IVI_GUIDELINES_LIGHT_PRO_000-37",
           "name_original": "CFG_GNH_GUIDELINES_LIGHT_PRO_000-37",
           "name": "Guideline projection menu",
-          "zoneLength": [38, 39, 40],
+          "zoneLength": [
+            38,
+            39,
+            40
+          ],
           "byte": 34,
           "mask": "00000100",
           "form_type": "checkbox",
@@ -3832,7 +3952,10 @@
           "extra_name": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-35",
           "name_original": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-35",
           "name": "Battery charge limitation alert menu",
-          "zoneLength": [35, 37],
+          "zoneLength": [
+            35,
+            37
+          ],
           "byte": 34,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -3842,7 +3965,12 @@
           "extra_name": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-41",
           "name_original": "CFG_GNG_IVI_RTAB_RECHARGE_LIMIT_000-41",
           "name": "Battery charge limitation alert menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "00000010",
           "form_type": "checkbox",
@@ -3852,7 +3980,12 @@
           "extra_name": "CFG_GNF_IVI_LOCK_SETTING_EDGE_CFG_000",
           "name_original": "CFG_GNF_IVI_LOCK_SETTING_EDGE_CFG_000",
           "name": "Edge adjustment lock function",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 34,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -3872,7 +4005,12 @@
           "extra_name": "CFG_GQW_IVI_PURE_MODE_SETTINGS_000",
           "name_original": "CFG_GQW_IVI_PURE_MODE_SETTINGS_000",
           "name": "Electric/eco mode setting menu",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -3882,7 +4020,12 @@
           "extra_name": "CFG_GQV_IVI_CMD_PURE_MODE_000",
           "name_original": "CFG_GQV_IVI_CMD_PURE_MODE_000",
           "name": "Mode Electric / Eco",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "01000000",
           "form_type": "checkbox",
@@ -3892,7 +4035,12 @@
           "extra_name": "CFG_GQX_IVI_TYPE_DOW_000-37",
           "name_original": "CFG_GQX_IVI_TYPE_DOW_000-37",
           "name": "Type of Door opening warning",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "00110000",
           "form_type": "combobox",
@@ -3915,7 +4063,12 @@
           "extra_name": "CFG_GQU_IVI_DOW_000-37",
           "name_original": "CFG_GQU_IVI_DOW_000-37",
           "name": "Door opening warning function",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "00001000",
           "form_type": "checkbox",
@@ -3925,7 +4078,12 @@
           "extra_name": "CFG_GQS_IVI_RCTB_000-37",
           "name_original": "CFG_GQS_IVI_RCTB_000-37",
           "name": "Reverse movement automatic braking at the risk of collision",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "00000100",
           "form_type": "checkbox",
@@ -3935,7 +4093,12 @@
           "extra_name": "CFG_GP6_IVI_DATE_TIME_SYNC_INIT_001-37",
           "name_original": "CFG_GP6_IVI_DATE_TIME_SYNC_INIT_001-37",
           "name": "Automatic synchronisation of the time",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 35,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -4022,7 +4185,12 @@
           "extra_name": "CFG_GTE_IVI_DIGITAL_KEY_AUTHENT_000-37",
           "name_original": "CFG_GTE_IVI_DIGITAL_KEY_AUTHENT_000-37",
           "name": "Digital Key Authentication Process",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 36,
           "mask": "00000010",
           "form_type": "checkbox",
@@ -4032,7 +4200,12 @@
           "extra_name": "CFG_GTD_IVI_DIGITAL_KEY_000-37",
           "name_original": "CFG_GTD_IVI_DIGITAL_KEY_000-37",
           "name": "Menu for setting the numeric keys",
-          "zoneLength": [38, 39, 40, 41],
+          "zoneLength": [
+            38,
+            39,
+            40,
+            41
+          ],
           "byte": 36,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -5013,7 +5186,11 @@
           "extra_name": "CFG_GTI_IVI_MIR_AUX_DISP_000",
           "name_original": "CFG_GTI_IVI_MIR_AUX_DISP_000",
           "name": "Auxiliary display mirroring settings menu",
-          "zoneLength": [8, 9, 10],
+          "zoneLength": [
+            8,
+            9,
+            10
+          ],
           "byte": 7,
           "mask": "00001000",
           "form_type": "checkbox",
@@ -5023,7 +5200,11 @@
           "extra_name": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000",
           "name_original": "CFG_GTH_IVI_MIR_CLUS_DISP_NAV_TY_000",
           "name": "Data type to display in the digital cluster",
-          "zoneLength": [8, 9, 10],
+          "zoneLength": [
+            8,
+            9,
+            10
+          ],
           "byte": 7,
           "mask": "00000110",
           "form_type": "combobox",
@@ -5046,7 +5227,11 @@
           "extra_name": "CFG_GTF_IVI_MIR_CLUST_DISP_000",
           "name_original": "CFG_GTF_IVI_MIR_CLUST_DISP_000",
           "name": "Digital cluster mirroring settings menu",
-          "zoneLength": [8, 9, 10],
+          "zoneLength": [
+            8,
+            9,
+            10
+          ],
           "byte": 7,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -5056,7 +5241,10 @@
           "extra_name": "CFG_H2S_IVI_3D_SOUND_SPEAKER_000",
           "name_original": "CFG_H2S_IVI_3D_SOUND_SPEAKER_000",
           "name": "3D sound speaker",
-          "zoneLength": [9, 10],
+          "zoneLength": [
+            9,
+            10
+          ],
           "byte": 8,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -5066,7 +5254,10 @@
           "extra_name": "CFG_H2U_IVI_MIR_AUX_NAV_DISP_TYP_000",
           "name_original": "CFG_H2U_IVI_MIR_AUX_NAV_DISP_TYP_000",
           "name": "Data type to display in the auxiliary display",
-          "zoneLength": [9, 10],
+          "zoneLength": [
+            9,
+            10
+          ],
           "byte": 8,
           "mask": "00000010",
           "form_type": "combobox",
@@ -5340,7 +5531,10 @@
           "extra_name": "CFG_GYH_IVI_POWER_LIMITATION_000",
           "name_original": "CFG_GYH_IVI_POWER_LIMITATION_000",
           "name": "Power limitation",
-          "zoneLength": [1, 2],
+          "zoneLength": [
+            1,
+            2
+          ],
           "byte": 0,
           "mask": "00100000",
           "form_type": "checkbox",
@@ -5426,7 +5620,10 @@
           "extra_name": "GTJ_IVI_GBOX_ONE_PEDAL",
           "name_original": "GTJ",
           "name": "Gearbox one pedal mode",
-          "zoneLength": [2, 3],
+          "zoneLength": [
+            2,
+            3
+          ],
           "byte": 1,
           "mask": "00000010",
           "form_type": "checkbox",
@@ -5436,7 +5633,10 @@
           "extra_name": "GPH_IVI_GBOX_DCLRATION_LEVEL",
           "name_original": "GPH",
           "name": "Gearbox deceleration level",
-          "zoneLength": [2, 3],
+          "zoneLength": [
+            2,
+            3
+          ],
           "byte": 1,
           "mask": "00000001",
           "form_type": "checkbox",
@@ -6125,124 +6325,124 @@
       "form_type": "string"
     },
     "0124": {
-            "id": "0124",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_LVDS_EXPORT"
-        },
-        "0125": {
-            "id": "0125",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_HW_VERSION"
-        },
-        "0126": {
-            "id": "0126",
-            "name": "BEIDOU",
-            "tab": "cal",
-            "type": "raw",
-            "form_type": "string"
-        },
-        "0127": {
-            "id": "0127",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_DGT"
-        },
-        "0128": {
-            "id": "0128",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_MASS"
-        },
-        "0129": {
-            "id": "0129",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_PPS2"
-        },
-        "012A": {
-            "id": "012A",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_VP1_HW"
-        },
-        "012B": {
-            "id": "012B",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_USB"
-        },
-        "012C": {
-            "id": "012C",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_WAVE4 (Hybrid)"
-        },
-        "FFF1": {
-            "id": "FFF1",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_COLOR_CORRECTION"
-        },
-        "FFF2": {
-            "id": "FFF2",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_ECNR"
-        },
-        "FFF3": {
-            "id": "FFF3",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_SOUND_TUNING_DATA"
-        },
-        "FFF4": {
-            "id": "FFF4",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_ENGINE_SOUND_DATA"
-        },
-        "FFF5": {
-            "id": "FFF5",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_AUDIO_FUNCTIONAL_EQUALIZER"
-        },
-        "FFF6": {
-            "id": "FFF6",
-            "tab": "cal",
-            "byte": 0,
-            "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_SOUND_EPICS_DATA"
-        },
+      "id": "0124",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_LVDS_EXPORT"
+    },
+    "0125": {
+      "id": "0125",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_HW_VERSION"
+    },
+    "0126": {
+      "id": "0126",
+      "name": "BEIDOU",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0127": {
+      "id": "0127",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_DGT"
+    },
+    "0128": {
+      "id": "0128",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_MASS"
+    },
+    "0129": {
+      "id": "0129",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_PPS2"
+    },
+    "012A": {
+      "id": "012A",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_VP1_HW"
+    },
+    "012B": {
+      "id": "012B",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_USB"
+    },
+    "012C": {
+      "id": "012C",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_WAVE4 (Hybrid)"
+    },
+    "FFF1": {
+      "id": "FFF1",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_COLOR_CORRECTION"
+    },
+    "FFF2": {
+      "id": "FFF2",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_ECNR"
+    },
+    "FFF3": {
+      "id": "FFF3",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_SOUND_TUNING_DATA"
+    },
+    "FFF4": {
+      "id": "FFF4",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_ENGINE_SOUND_DATA"
+    },
+    "FFF5": {
+      "id": "FFF5",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_AUDIO_FUNCTIONAL_EQUALIZER"
+    },
+    "FFF6": {
+      "id": "FFF6",
+      "tab": "cal",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string",
+      "name": "Calibration_Fct_SOUND_EPICS_DATA"
+    },
     "00DE": {
       "id": "Calibration_Fct_PUSH_LUM",
       "tab": "cal",
