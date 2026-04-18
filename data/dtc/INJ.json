@@ -1221,10 +1221,10 @@
         "name": "Fuel level information received from the BSI fault"
     },
     "P0467": {
-        "name": "capteur de flux de purge canister"
+        "name": "Canister purge flow sensor"
     },
     "P0468": {
-        "name": "capteur de flux de purge canister"
+        "name": "Canister purge flow sensor"
     },
     "P046C": {
         "name": "Control of the EGR valve"
@@ -1323,10 +1323,10 @@
         "name": "Detection of a fuel vapour leak"
     },
     "P04F0": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P04F1": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P0500": {
         "name": "Vehicle speed sensor"
@@ -1446,10 +1446,10 @@
         "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
     },
     "P0545": {
-        "name": "capteur de température 1 des gaz d'échappement"
+        "name": "Exhaust gas temperature sensor 1"
     },
     "P0546": {
-        "name": "capteur de température 1 des gaz d'échappement"
+        "name": "Exhaust gas temperature sensor 1"
     },
     "P0547": {
         "name": "Particle emission filter downstream temperature sensor"
@@ -1926,7 +1926,7 @@
         "name": "Engine management ECU"
     },
     "P06B8": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P06DA": {
         "name": "Control of the engine oil pressure regulation"
@@ -2304,19 +2304,19 @@
         "name": "Variable valve lift system  ( actuator jammed )"
     },
     "P1032": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1033": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1034": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1035": {
         "name": "End-of-life of the piston linked to self-ignition before spark (Rumble)"
     },
     "P1036": {
-        "name": "Non-optimal piston protection linked to self-ignition before spark (Rumble)  ( premature engine failure )"
+        "name": "Non-optimal piston protection linked to self-ignition before spark (Rumble - premature engine failure)"
     },
     "P1037": {
         "name": "Unprotected piston linked to self-ignition before spark (Rumble)  ( premature engine failure )"
@@ -2835,13 +2835,13 @@
         "name": "Control of the cylinder 3 fuel injector"
     },
     "P1262": {
-        "name": "Commande de l'injecteur carburant cylindre 2"
+        "name": "Fuel injector control, cylinder 2"
     },
     "P1263": {
-        "name": "Commande de l'injecteur carburant cylindre 3"
+        "name": "Fuel injector control, cylinder 3"
     },
     "P1264": {
-        "name": "Commande de l'injecteur carburant cylindre 4"
+        "name": "Fuel injector control, cylinder 4"
     },
     "P126A": {
         "name": "Coolant pump  ( high pressure circuit )"
@@ -2874,7 +2874,7 @@
         "name": "Fuel vapour leak measuring device valve and sensor assembly"
     },
     "P1285": {
-        "name": "capteur de flux de purge canister"
+        "name": "Canister purge flow sensor"
     },
     "P1286": {
         "name": "Upstream NOx sensor"
@@ -2952,10 +2952,10 @@
         "name": "Fuel pressure measured in the fuel high pressure common rail"
     },
     "P12C2": {
-        "name": "tuyau de recyclage des gaz d'échappement"
+        "name": "Exhaust gas recirculation pipe"
     },
     "P12C3": {
-        "name": "tuyau de recyclage des gaz d'échappement"
+        "name": "Exhaust gas recirculation pipe"
     },
     "P12E0": {
         "name": "Particle emission filter pressure sensor"
@@ -2973,10 +2973,10 @@
         "name": "Programming of the crankshaft position"
     },
     "P1301": {
-        "name": "pompe à eau électrique (fonctionnement à vide)"
+        "name": "Electric water pump (no-load running)"
     },
     "P1302": {
-        "name": "pompe à eau électrique (vitesse trop faible)"
+        "name": "Electric water pump (speed too low)"
     },
     "P1303": {
         "name": "Fault  pinking sensor signal"
@@ -2985,13 +2985,13 @@
         "name": "Spark length for cylinder 1"
     },
     "P1305": {
-        "name": "pompe à eau électrique (surchauffe)"
+        "name": "Electric water pump (overheat)"
     },
     "P1307": {
         "name": "Spark length for cylinder 2"
     },
     "P1308": {
-        "name": "pompe à eau électrique (blocage)"
+        "name": "Electric water pump (blocked)"
     },
     "P1310": {
         "name": "Spark length for cylinder 3"
@@ -3006,25 +3006,25 @@
         "name": "Control of motorised butterfly unit"
     },
     "P1320": {
-        "name": "module d'entrée d'air piloté (actionneur bloqué)"
+        "name": "Controlled air intake module (actuator stuck)"
     },
     "P1321": {
-        "name": "commande du module d'entrée d'air piloté (actionneur bloqué)"
+        "name": "Controlled air intake module control (actuator stuck)"
     },
     "P1322": {
-        "name": "commande du module d'entrée d'air piloté (moteur)"
+        "name": "Controlled air intake module control (motor)"
     },
     "P1323": {
-        "name": "communication du module d'entrée d'air piloté"
+        "name": "Controlled air intake module communication"
     },
     "P1324": {
-        "name": "module d'entrée d'air piloté (surchauffe)"
+        "name": "Controlled air intake module (overheat)"
     },
     "P1325": {
-        "name": "module d'entrée d'air piloté (surtension)"
+        "name": "Controlled air intake module (overvoltage)"
     },
     "P1326": {
-        "name": "module d'entrée d'air piloté (sous-tension)"
+        "name": "Controlled air intake module (undervoltage)"
     },
     "P132E": {
         "name": "Motorised throttle housing auto-adaptive value at its maximum stop"
@@ -3135,7 +3135,7 @@
         "name": "Electric drive machine locking system"
     },
     "P1380": {
-        "name": "capteur de pression et de température de suralimentation"
+        "name": "Boost pressure and temperature sensor"
     },
     "P1382": {
         "name": "Ancillary drive belt"
@@ -3231,28 +3231,28 @@
         "name": "Additional heating control 1"
     },
     "P1409": {
-        "name": "grille d'entrée d'air"
+        "name": "Air-intake grille"
     },
     "P140B": {
-        "name": "grille d'entrée d'air"
+        "name": "Air-intake grille"
     },
     "P1410": {
         "name": "Control of the EGR valve"
     },
     "P1411": {
-        "name": "communication avec le calculateur EBS sur le réseau LIN"
+        "name": "Communication with the EBS ECU on the LIN network"
     },
     "P1412": {
         "name": "Particulate emission filter overloaded"
     },
     "P1413": {
-        "name": "communication avec le calculateur EBS sur le réseau LIN"
+        "name": "Communication with the EBS ECU on the LIN network"
     },
     "P1415": {
-        "name": "absence de communication entre le calculateur contrôle moteur et l'alternateur piloté sur le réseau LIN"
+        "name": "No communication between the engine management ECU and the controlled alternator on the LIN network"
     },
     "P1417": {
-        "name": "absence de communication entre le calculateur contrôle moteur et l'alternateur piloté sur le réseau LIN"
+        "name": "No communication between the engine management ECU and the controlled alternator on the LIN network"
     },
     "P141B": {
         "name": "Starter relay 1"
@@ -3273,7 +3273,7 @@
         "name": "Cat. converter upstream temperature sensor"
     },
     "P1428": {
-        "name": "réseau LIN 1"
+        "name": "LIN 1 network"
     },
     "P1430": {
         "name": "Insulation resistance of the electric air conditioning compressor"
@@ -3282,7 +3282,7 @@
         "name": "Insulation resistance of the electric drive train components"
     },
     "P1432": {
-        "name": "communication avec le calculateur EBS sur le réseau LIN"
+        "name": "Communication with the EBS ECU on the LIN network"
     },
     "P1434": {
         "name": "Multiplexed additive pump"
@@ -3354,19 +3354,19 @@
         "name": "Programming of the stops of the turbocharger"
     },
     "P14A3": {
-        "name": "à ne pas afficher"
+        "name": "Do not display"
     },
     "P14A4": {
-        "name": "à ne pas afficher"
+        "name": "Do not display"
     },
     "P14A5": {
-        "name": "à ne pas afficher"
+        "name": "Do not display"
     },
     "P14A7": {
         "name": "Programming the EGR valve stops"
     },
     "P14A8": {
-        "name": "Coolant pump  ( TBTcircuit haute température )"
+        "name": "Coolant pump (high-temperature circuit)"
     },
     "P14A9": {
         "name": "Turbocharging pressure regulating solenoid valve"
@@ -3384,7 +3384,7 @@
         "name": "Fuel high pressure common rail pressure sensor"
     },
     "P14AF": {
-        "name": "alimentation du démarreur"
+        "name": "Starter supply"
     },
     "P14B0": {
         "name": "Soot sensor"
@@ -3447,7 +3447,7 @@
         "name": "Anti-bubbling strategy activated"
     },
     "P1510": {
-        "name": "capteur de détonation"
+        "name": "Knock sensor"
     },
     "P1515": {
         "name": "Starter motor relay circuit"
@@ -3528,7 +3528,7 @@
         "name": "Motorised throttle housing"
     },
     "P1555": {
-        "name": "boîtier papillon motorisé"
+        "name": "Motorised throttle body"
     },
     "P1556": {
         "name": "Motorised throttle valve programming"
@@ -4356,7 +4356,7 @@
         "name": "Collision detected by the traction battery"
     },
     "P1B11": {
-        "name": "convertisseur de couple à quantité pas strictement monotone (défaillance calibrage / mémoire de paramètre)"
+        "name": "Torque converter with non-monotonic quantity (calibration / parameter memory failure)"
     },
     "P1B40": {
         "name": "Engine management ECU"
@@ -4431,7 +4431,7 @@
         "name": "Cylinder 3 fuel injector"
     },
     "P1F00": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1F03": {
         "name": "Fault code to be ignored"
@@ -4716,7 +4716,7 @@
         "name": "Urea pump - gauge module"
     },
     "P20E2": {
-        "name": "capteur de température 1 des gaz d'échappement"
+        "name": "Exhaust gas temperature sensor 1"
     },
     "P20E8": {
         "name": "Pressure of the urea solution"
@@ -4953,13 +4953,13 @@
         "name": "Engine cooling circuit"
     },
     "P2183": {
-        "name": "capteur de température de liquide de refroidissement moteur 2"
+        "name": "Engine coolant temperature sensor 2"
     },
     "P2184": {
-        "name": "capteur de température de liquide de refroidissement moteur 2"
+        "name": "Engine coolant temperature sensor 2"
     },
     "P2185": {
-        "name": "capteur de température de liquide de refroidissement moteur 2"
+        "name": "Engine coolant temperature sensor 2"
     },
     "P2187": {
         "name": "Mixture in the circuit  ( concentration of oxygen too high at idle )"
@@ -5451,10 +5451,10 @@
         "name": "Exhaust gas cooler discharge circuit control  ( high pressure circuit )"
     },
     "P2460": {
-        "name": "le capteur de pression du filtre à particules 2"
+        "name": "Particulate filter pressure sensor 2"
     },
     "P2461": {
-        "name": "le capteur de pression du filtre à particules 2"
+        "name": "Particulate filter pressure sensor 2"
     },
     "P2463": {
         "name": "Particulate emission filter overloaded"
@@ -5499,7 +5499,7 @@
         "name": "Coolant pump  ( low pressure circuit )"
     },
     "P24AA": {
-        "name": "Coolant pump  ( TBTcircuit basse température )"
+        "name": "Coolant pump (low-temperature circuit)"
     },
     "P24AE": {
         "name": "Soot sensor"
@@ -5823,16 +5823,16 @@
         "name": "Starter relay control"
     },
     "P26F0": {
-        "name": "commande du relais 1 du démarreur"
+        "name": "Starter relay 1 control"
     },
     "P26F1": {
-        "name": "commande du relais 1 du démarreur"
+        "name": "Starter relay 1 control"
     },
     "P26F2": {
-        "name": "commande du relais 2 du démarreur"
+        "name": "Starter relay 2 control"
     },
     "P26F3": {
-        "name": "commande du relais 2 du démarreur"
+        "name": "Starter relay 2 control"
     },
     "P26F9": {
         "name": "Turbocharger additional coolant pump"
@@ -6231,7 +6231,7 @@
         "name": "Engine management ECU"
     },
     "P3075": {
-        "name": "Capteur de pression du répartiteur d'admission d'air (réseau SENT)"
+        "name": "Intake manifold pressure sensor (SENT network)"
     },
     "P307C": {
         "name": "Thermostatic regulator"
@@ -6372,7 +6372,7 @@
         "name": "Built-in systems interface"
     },
     "U0159": {
-        "name": "à ne pas afficher"
+        "name": "Do not display"
     },
     "U015B": {
         "name": "Communication with the electric power steering ECU"
@@ -6390,7 +6390,7 @@
         "name": "Gearbox ECU"
     },
     "U01B0": {
-        "name": "absence de communication avec le calculateur EBS"
+        "name": "No communication with the EBS ECU"
     },
     "U01B4": {
         "name": "Master cylinder pressure"
@@ -6621,10 +6621,10 @@
         "name": "Engine oil pressure and temperature sensor signal"
     },
     "U0601": {
-        "name": "signal 1 du capteur de pression différentielle du filtre à particules"
+        "name": "Particulate filter differential pressure sensor signal 1"
     },
     "U0602": {
-        "name": "signal 2 du capteur de pression différentielle du filtre à particules"
+        "name": "Particulate filter differential pressure sensor signal 2"
     },
     "U0603": {
         "name": "Fuel pressure sensor"
@@ -7266,7 +7266,7 @@
         "name": "Remote controlled triggering fault"
     },
     "U2FFF": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "U3002": {
         "name": "Vehicle configuration (PROXI)"
@@ -7284,6 +7284,6 @@
         "name": "CAN supply voltage"
     },
     "U3FFF": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     }
 }
