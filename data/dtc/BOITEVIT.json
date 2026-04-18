@@ -1653,7 +1653,7 @@
         "name": "Inconsistency between the gear sent on the CANs by the hybrid automatic gearbox ECU and the gear engaged by the hybrid automatic gearbox"
     },
     "U1F00": {
-        "name": "demande de déclenchement principale reçue par le CAN depuis l'interface système intégrée"
+        "name": "Main triggering request received on CAN from the integrated system interface"
     },
     "U1FC6": {
         "name": "Communication on the CAN"
