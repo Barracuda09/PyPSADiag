@@ -12,23 +12,23 @@
   },
   "coding": true,
   "errors": true,
-  "dtc_lookup": "data/dtc/BSI2010_EV.json",
+  "dtc_lookup": "data/dtc/BMF.json",
   "include_zone_object": "data/IdentUDSECU.json",
   "tabs": {
     "ident": "Identification",
     "tele": "Telecoding",
-    "vin": "VIN CODE",
-    "all_computers": "ECUS PRESET",
-    "threshold": "MAINTENANCE",
-    "engine": "POWER UNIT",
-    "info": "DRIVER INFORMATION",
-    "lights": "LIGHTING-SIGNALING",
-    "wipers":  "WASHING AND WIPING",
-    "drive_assist": "DRIVER ASSISTANCE",
+    "vin": "VIN",
+    "all_computers": "Available Computers",
+    "threshold": "Maintenance",
+    "engine": "Engine and fuel system",
+    "info": "Driver information",
+    "lights": "Lighting",
+    "wipers": "Washers and Wipers",
+    "drive_assist": "Driving assistance",
     "media": "Media",
-    "security": "PROTECTION-ACCESSES-MECHANICAL ASSISTANCE",
-    "comfort": "DRIVING COMFORT",
-    "other": "MISCELLANEOUS",
+    "security": "Safety",
+    "comfort": "Comfort",
+    "other": "Miscellaneous",
     "unsorted": "Unsorted"
   },
   "zones": {
@@ -113,22 +113,70 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Type 0" },
-        { "value": "1", "name": "Type 1" },
-        { "value": "2", "name": "Type 2" },
-        { "value": "3", "name": "Type 3" },
-        { "value": "4", "name": "Type 4" },
-        { "value": "5", "name": "Type 5" },
-        { "value": "6", "name": "Type 6" },
-        { "value": "7", "name": "Type 7" },
-        { "value": "8", "name": "Type 8" },
-        { "value": "9", "name": "Type 9" },
-        { "value": "0A", "name": "Type 10" },
-        { "value": "0B", "name": "Type 11" },
-        { "value": "0C", "name": "Type 12" },
-        { "value": "0D", "name": "Type 13" },
-        { "value": "0E", "name": "Type 14" },
-        { "value": "0F", "name": "Type 16" }
+        {
+          "value": "0",
+          "name": "Type 0"
+        },
+        {
+          "value": "1",
+          "name": "Type 1"
+        },
+        {
+          "value": "2",
+          "name": "Type 2"
+        },
+        {
+          "value": "3",
+          "name": "Type 3"
+        },
+        {
+          "value": "4",
+          "name": "Type 4"
+        },
+        {
+          "value": "5",
+          "name": "Type 5"
+        },
+        {
+          "value": "6",
+          "name": "Type 6"
+        },
+        {
+          "value": "7",
+          "name": "Type 7"
+        },
+        {
+          "value": "8",
+          "name": "Type 8"
+        },
+        {
+          "value": "9",
+          "name": "Type 9"
+        },
+        {
+          "value": "0A",
+          "name": "Type 10"
+        },
+        {
+          "value": "0B",
+          "name": "Type 11"
+        },
+        {
+          "value": "0C",
+          "name": "Type 12"
+        },
+        {
+          "value": "0D",
+          "name": "Type 13"
+        },
+        {
+          "value": "0E",
+          "name": "Type 14"
+        },
+        {
+          "value": "0F",
+          "name": "Type 16"
+        }
       ],
       "name": "Fuel level measurement algorithm"
     },
@@ -148,9 +196,18 @@
       "form_type": "combobox",
       "mask": "1111111111111111",
       "params": [
-        { "value": "00", "name": "0" },
-        { "value": "0154", "name": "340 Ohms" },
-        { "value": "015E", "name": "350 Ohms" }
+        {
+          "value": "00",
+          "name": "0"
+        },
+        {
+          "value": "0154",
+          "name": "340 Ohms"
+        },
+        {
+          "value": "015E",
+          "name": "350 Ohms"
+        }
       ],
       "name": "The resistance of the fuel level sensor with an empty tank"
     },
@@ -162,12 +219,30 @@
       "form_type": "combobox",
       "mask": "1111111111111111",
       "params": [
-        { "value": "0000", "name": "0 Ohms" },
-        { "value": "0038", "name": "56 Ohms" },
-        { "value": "003C", "name": "60 Ohms?" },
-        { "value": "003E", "name": "62 Ohms?" },
-        { "value": "0040", "name": "64 Ohms" },
-        { "value": "0046", "name": "70 Ohms" }
+        {
+          "value": "0000",
+          "name": "0 Ohms"
+        },
+        {
+          "value": "0038",
+          "name": "56 Ohms"
+        },
+        {
+          "value": "003C",
+          "name": "60 Ohms?"
+        },
+        {
+          "value": "003E",
+          "name": "62 Ohms?"
+        },
+        {
+          "value": "0040",
+          "name": "64 Ohms"
+        },
+        {
+          "value": "0046",
+          "name": "70 Ohms"
+        }
       ],
       "name": "The resistance of the fuel level sensor with a full tank"
     },
@@ -187,22 +262,70 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Type 0" },
-        { "value": "1", "name": "Type 1" },
-        { "value": "2", "name": "Type 2" },
-        { "value": "3", "name": "Type 3" },
-        { "value": "4", "name": "Type 4" },
-        { "value": "5", "name": "Type 5" },
-        { "value": "6", "name": "Type 6" },
-        { "value": "7", "name": "Type 7" },
-        { "value": "8", "name": "Type 8" },
-        { "value": "9", "name": "Type 9" },
-        { "value": "0A", "name": "Type 10" },
-        { "value": "0B", "name": "Type 11" },
-        { "value": "0C", "name": "Type 12" },
-        { "value": "0D", "name": "Type 13" },
-        { "value": "0E", "name": "Type 14" },
-        { "value": "0F", "name": "Type 15" }
+        {
+          "value": "0",
+          "name": "Type 0"
+        },
+        {
+          "value": "1",
+          "name": "Type 1"
+        },
+        {
+          "value": "2",
+          "name": "Type 2"
+        },
+        {
+          "value": "3",
+          "name": "Type 3"
+        },
+        {
+          "value": "4",
+          "name": "Type 4"
+        },
+        {
+          "value": "5",
+          "name": "Type 5"
+        },
+        {
+          "value": "6",
+          "name": "Type 6"
+        },
+        {
+          "value": "7",
+          "name": "Type 7"
+        },
+        {
+          "value": "8",
+          "name": "Type 8"
+        },
+        {
+          "value": "9",
+          "name": "Type 9"
+        },
+        {
+          "value": "0A",
+          "name": "Type 10"
+        },
+        {
+          "value": "0B",
+          "name": "Type 11"
+        },
+        {
+          "value": "0C",
+          "name": "Type 12"
+        },
+        {
+          "value": "0D",
+          "name": "Type 13"
+        },
+        {
+          "value": "0E",
+          "name": "Type 14"
+        },
+        {
+          "value": "0F",
+          "name": "Type 15"
+        }
       ],
       "name": "Selecting the mode of monitoring the level of motor oil"
     },
@@ -214,9 +337,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Motor service box" },
-        { "value": "1", "name": "Engine control computer" },
-        { "value": "2", "name": "No acquisition" }
+        {
+          "value": "0",
+          "name": "Motor service box"
+        },
+        {
+          "value": "1",
+          "name": "Engine control computer"
+        },
+        {
+          "value": "2",
+          "name": "No acquisition"
+        }
       ],
       "name": "Source of oil level"
     },
@@ -228,9 +360,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Motor service box" },
-        { "value": "1", "name": "Engine control computer" },
-        { "value": "2", "name": "Smart utility box" }
+        {
+          "value": "0",
+          "name": "Motor service box"
+        },
+        {
+          "value": "1",
+          "name": "Engine control computer"
+        },
+        {
+          "value": "2",
+          "name": "Smart utility box"
+        }
       ],
       "name": "Source of oil pressure information"
     },
@@ -242,8 +383,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Motor service box" },
-        { "value": "1", "name": "Engine control computer" }
+        {
+          "value": "0",
+          "name": "Motor service box"
+        },
+        {
+          "value": "1",
+          "name": "Engine control computer"
+        }
       ],
       "name": "Source of oil temperature"
     },
@@ -255,9 +402,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Pressure meter" },
-        { "value": "1", "name": "Analog sensor" },
-        { "value": "2", "name": "ABSENT" }
+        {
+          "value": "0",
+          "name": "Pressure meter"
+        },
+        {
+          "value": "1",
+          "name": "Analog sensor"
+        },
+        {
+          "value": "2",
+          "name": "ABSENT"
+        }
       ],
       "name": "The presence and type of oil pressure sensor"
     },
@@ -444,8 +600,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Security alarm installed at the factory" },
-        { "value": "1", "name": "Security alarm, established additional" }
+        {
+          "value": "0",
+          "name": "Security alarm installed at the factory"
+        },
+        {
+          "value": "1",
+          "name": "Security alarm, established additional"
+        }
       ],
       "name": "Type of installation of security alarms"
     },
@@ -457,8 +619,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Active" },
-        { "value": "1", "name": "Inactive" }
+        {
+          "value": "0",
+          "name": "Active"
+        },
+        {
+          "value": "1",
+          "name": "Inactive"
+        }
       ],
       "name": "Security alarm volume control system"
     },
@@ -478,13 +646,34 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Standard alarm" },
-        { "value": "2", "name": "Belgium security alarm" },
-        { "value": "3", "name": "Security alarm for Switzerland" },
-        { "value": "4", "name": "Alarm for the UK" },
-        { "value": "5", "name": "Sweden alarm" },
-        { "value": "6", "name": "Alarm for China" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Standard alarm"
+        },
+        {
+          "value": "2",
+          "name": "Belgium security alarm"
+        },
+        {
+          "value": "3",
+          "name": "Security alarm for Switzerland"
+        },
+        {
+          "value": "4",
+          "name": "Alarm for the UK"
+        },
+        {
+          "value": "5",
+          "name": "Sweden alarm"
+        },
+        {
+          "value": "6",
+          "name": "Alarm for China"
+        }
       ],
       "name": "Type of security alarm"
     },
@@ -496,9 +685,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Mechanical key" },
-        { "value": "1", "name": "Electronic key" },
-        { "value": "2", "name": "Remote remote control \"Free Hands\"" }
+        {
+          "value": "0",
+          "name": "Mechanical key"
+        },
+        {
+          "value": "1",
+          "name": "Electronic key"
+        },
+        {
+          "value": "2",
+          "name": "Remote remote control \"Free Hands\""
+        }
       ],
       "name": "Key type"
     },
@@ -680,12 +878,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Moderate (-17 - +37)" },
-        { "value": "1", "name": "Cold (-25 - +37)" },
-        { "value": "2", "name": "Very cold (-30 - +37)" },
-        { "value": "4", "name": "Hot (-17 - +45)" },
-        { "value": "8", "name": "Very hot (-17 - +50)" },
-        { "value": "10", "name": "Cold and hot (-30 - +45)" }
+        {
+          "value": "0",
+          "name": "Moderate (-17 - +37)"
+        },
+        {
+          "value": "1",
+          "name": "Cold (-25 - +37)"
+        },
+        {
+          "value": "2",
+          "name": "Very cold (-30 - +37)"
+        },
+        {
+          "value": "4",
+          "name": "Hot (-17 - +45)"
+        },
+        {
+          "value": "8",
+          "name": "Very hot (-17 - +50)"
+        },
+        {
+          "value": "10",
+          "name": "Cold and hot (-30 - +45)"
+        }
       ],
       "name": "Climate type"
     },
@@ -705,10 +921,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Manual" },
-        { "value": "1", "name": "Automatic" },
-        { "value": "2", "name": "Piloted manual" },
-        { "value": "3", "name": "Piloted double clutch" }
+        {
+          "value": "0",
+          "name": "Manual"
+        },
+        {
+          "value": "1",
+          "name": "Automatic"
+        },
+        {
+          "value": "2",
+          "name": "Piloted manual"
+        },
+        {
+          "value": "3",
+          "name": "Piloted double clutch"
+        }
       ],
       "name": "Type of gearbox"
     },
@@ -720,10 +948,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Mechanical key" },
-        { "value": "1", "name": "Mechanical key in emergency mode" },
-        { "value": "2", "name": "Impulse signal from engine start switch" },
-        { "value": "3", "name": "Maintained by engine start-up switch" }
+        {
+          "value": "0",
+          "name": "Mechanical key"
+        },
+        {
+          "value": "1",
+          "name": "Mechanical key in emergency mode"
+        },
+        {
+          "value": "2",
+          "name": "Impulse signal from engine start switch"
+        },
+        {
+          "value": "3",
+          "name": "Maintained by engine start-up switch"
+        }
       ],
       "name": "Type of starting"
     },
@@ -735,10 +975,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Petrol engine" },
-        { "value": "1", "name": "Diesel engine" },
-        { "value": "2", "name": "Bioflex engine" },
-        { "value": "3", "name": "BioFlex engine with preheating" }
+        {
+          "value": "0",
+          "name": "Petrol engine"
+        },
+        {
+          "value": "1",
+          "name": "Diesel engine"
+        },
+        {
+          "value": "2",
+          "name": "Bioflex engine"
+        },
+        {
+          "value": "3",
+          "name": "BioFlex engine with preheating"
+        }
       ],
       "name": "Type of combustion engine"
     },
@@ -750,10 +1002,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Direct first generation (with a computer)" },
-        { "value": "2", "name": "Indirect using the ABS/ESP unit" },
-        { "value": "3", "name": "Direct second generation (with a computer)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Direct first generation (with a computer)"
+        },
+        {
+          "value": "2",
+          "name": "Indirect using the ABS/ESP unit"
+        },
+        {
+          "value": "3",
+          "name": "Direct second generation (with a computer)"
+        }
       ],
       "name": "Tire pressure control type"
     },
@@ -797,9 +1061,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Unique profile" },
-        { "value": "2", "name": "Several profiles" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Unique profile"
+        },
+        {
+          "value": "2",
+          "name": "Several profiles"
+        }
       ],
       "name": "Type of individual settings menu"
     },
@@ -819,10 +1092,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No specific lighting" },
-        { "value": "1", "name": "Static lighting: controlled by intelligent switch box" },
-        { "value": "2", "name": "Static lighting: computer controlled headlights" },
-        { "value": "3", "name": "Dynamic lighting: guided headlights" }
+        {
+          "value": "0",
+          "name": "No specific lighting"
+        },
+        {
+          "value": "1",
+          "name": "Static lighting: controlled by intelligent switch box"
+        },
+        {
+          "value": "2",
+          "name": "Static lighting: computer controlled headlights"
+        },
+        {
+          "value": "3",
+          "name": "Dynamic lighting: guided headlights"
+        }
       ],
       "name": "Type of cornering lighting"
     },
@@ -834,11 +1119,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "1", "name": "Standard lighting" },
-        { "value": "2", "name": "Single filament halogen lamp" },
-        { "value": "4", "name": "Double filament halogen lamp" },
-        { "value": "8", "name": "Xenon lamp" },
-        { "value": "10", "name": "LED lamp" }
+        {
+          "value": "1",
+          "name": "Standard lighting"
+        },
+        {
+          "value": "2",
+          "name": "Single filament halogen lamp"
+        },
+        {
+          "value": "4",
+          "name": "Double filament halogen lamp"
+        },
+        {
+          "value": "8",
+          "name": "Xenon lamp"
+        },
+        {
+          "value": "10",
+          "name": "LED lamp"
+        }
       ],
       "name": "Type of head lighting"
     },
@@ -882,11 +1182,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "1", "name": "ABSENT" },
-        { "value": "2", "name": "Shared day running lights" },
-        { "value": "3", "name": "Functional day lighting *1 lamps of type *1" },
-        { "value": "4", "name": "Dedicated day running lights" },
-        { "value": "5", "name": "Functional day lighting *1 lamps of type *2" }
+        {
+          "value": "1",
+          "name": "ABSENT"
+        },
+        {
+          "value": "2",
+          "name": "Shared day running lights"
+        },
+        {
+          "value": "3",
+          "name": "Functional day lighting *1 lamps of type *1"
+        },
+        {
+          "value": "4",
+          "name": "Dedicated day running lights"
+        },
+        {
+          "value": "5",
+          "name": "Functional day lighting *1 lamps of type *2"
+        }
       ],
       "name": "Type of daylight running lights"
     },
@@ -914,11 +1229,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "A pump controlled by wired communication" },
-        { "value": "2", "name": "Pump additives on the multiplex network Lin-1" },
-        { "value": "3", "name": "Pump additives on the multiplex network Lin-2"},
-        { "value": "4", "name": "Soot filter without adding additives" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "A pump controlled by wired communication"
+        },
+        {
+          "value": "2",
+          "name": "Pump additives on the multiplex network Lin-1"
+        },
+        {
+          "value": "3",
+          "name": "Pump additives on the multiplex network Lin-2"
+        },
+        {
+          "value": "4",
+          "name": "Soot filter without adding additives"
+        }
       ],
       "name": "The presence and type of additive in diesel fuel"
     },
@@ -954,12 +1284,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Thermoresistors 1000 watts" },
-        { "value": "2", "name": "Autonomous heating" },
-        { "value": "3", "name": "Programmable heating" },
-        { "value": "4", "name": "Thermoresistors 300 watts" },
-        { "value": "5", "name": "Thermoresistors 600 watts" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Thermoresistors 1000 watts"
+        },
+        {
+          "value": "2",
+          "name": "Autonomous heating"
+        },
+        {
+          "value": "3",
+          "name": "Programmable heating"
+        },
+        {
+          "value": "4",
+          "name": "Thermoresistors 300 watts"
+        },
+        {
+          "value": "5",
+          "name": "Thermoresistors 600 watts"
+        }
       ],
       "name": "Type of additional heating system"
     },
@@ -971,11 +1319,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Self-starting" },
-        { "value": "2", "name": "Controlled" },
-        { "value": "3", "name": "Starter-generator" },
-        { "value": "4", "name": "Controlled 2nd generation" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Self-starting"
+        },
+        {
+          "value": "2",
+          "name": "Controlled"
+        },
+        {
+          "value": "3",
+          "name": "Starter-generator"
+        },
+        {
+          "value": "4",
+          "name": "Controlled 2nd generation"
+        }
       ],
       "name": "Generator type"
     },
@@ -987,17 +1350,50 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "42 ah" },
-        { "value": "1", "name": "50 ah" },
-        { "value": "2", "name": "60 ah" },
-        { "value": "3", "name": "64 ah" },
-        { "value": "4", "name": "70 ah" },
-        { "value": "5", "name": "75 ah" },
-        { "value": "6", "name": "95 ah" },
-        { "value": "7", "name": "55 ah" },
-        { "value": "8", "name": "80 ah" },
-        { "value": "9", "name": "82 ah" },
-        { "value": "A", "name": "90 ah" }
+        {
+          "value": "0",
+          "name": "42 ah"
+        },
+        {
+          "value": "1",
+          "name": "50 ah"
+        },
+        {
+          "value": "2",
+          "name": "60 ah"
+        },
+        {
+          "value": "3",
+          "name": "64 ah"
+        },
+        {
+          "value": "4",
+          "name": "70 ah"
+        },
+        {
+          "value": "5",
+          "name": "75 ah"
+        },
+        {
+          "value": "6",
+          "name": "95 ah"
+        },
+        {
+          "value": "7",
+          "name": "55 ah"
+        },
+        {
+          "value": "8",
+          "name": "80 ah"
+        },
+        {
+          "value": "9",
+          "name": "82 ah"
+        },
+        {
+          "value": "A",
+          "name": "90 ah"
+        }
       ],
       "name": "Type of battery"
     },
@@ -1009,9 +1405,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Yes performed by the battery charge level control unit" },
-        { "value": "2", "name": "Yes performed by intelligent switching unit" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Yes performed by the battery charge level control unit"
+        },
+        {
+          "value": "2",
+          "name": "Yes performed by intelligent switching unit"
+        }
       ],
       "name": "Battery charge estimate function"
     },
@@ -1023,10 +1428,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Ungovernable" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" },
-        { "value": "4", "name": "Four-zone" }
+        {
+          "value": "0",
+          "name": "Ungovernable"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        },
+        {
+          "value": "4",
+          "name": "Four-zone"
+        }
       ],
       "name": "Air mixing type"
     },
@@ -1158,16 +1575,46 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value":  "0", "name": "ABSENT" },
-        { "value":  "2", "name": "Cruise control (RVV2)" },
-        { "value":  "3", "name": "Cruise control (RVV2) with speed limiter (LVV)" },
-        { "value":  "4", "name": "Automatic cruise control (ACC)" },
-        { "value":  "5", "name": "Automatic cruise control (ACC) with speed limiter (LVV)" },
-        { "value":  "7", "name": "Automatic cruise control (ACC) with RVV2+LVV" },
-        { "value":  "8", "name": "Over-speed warning only" },
-        { "value": "0A", "name": "Cruise control (RVV2) with over-speed alert" },
-        { "value": "0C", "name": "Automatic cruise control (ACC) with over-speed alert" },
-        { "value": "10", "name": "Speed limiter (LVV) only" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "2",
+          "name": "Cruise control (RVV2)"
+        },
+        {
+          "value": "3",
+          "name": "Cruise control (RVV2) with speed limiter (LVV)"
+        },
+        {
+          "value": "4",
+          "name": "Automatic cruise control (ACC)"
+        },
+        {
+          "value": "5",
+          "name": "Automatic cruise control (ACC) with speed limiter (LVV)"
+        },
+        {
+          "value": "7",
+          "name": "Automatic cruise control (ACC) with RVV2+LVV"
+        },
+        {
+          "value": "8",
+          "name": "Over-speed warning only"
+        },
+        {
+          "value": "0A",
+          "name": "Cruise control (RVV2) with over-speed alert"
+        },
+        {
+          "value": "0C",
+          "name": "Automatic cruise control (ACC) with over-speed alert"
+        },
+        {
+          "value": "10",
+          "name": "Speed limiter (LVV) only"
+        }
       ],
       "name": "Presence of Speed Limiter / Cruise Control"
     },
@@ -1235,89 +1682,338 @@
       "form_type": "combobox",
       "mask": "1111111111111111",
       "params": [
-        { "value": "1008", "name": "DS3" },
-        { "value": "100C", "name": "208 3-door (A9)" },
-        { "value": "110C", "name": "208 5-Door (A9)" },
-        { "value": "1111", "name": "208 5-Door (AI9) / 2008 (AI94)" },
-        { "value": "1113", "name": "C4 CACTUS" },
-        { "value": "1116", "name": "C4 Cactus (Mercosur)" },
-        { "value": "130D", "name": "301 / C-Yelysee" },
-        { "value": "1310", "name": "301 / c-elisee (Iran)" },
-        { "value": "1312", "name": "301 / c-elisee (china)" },
-        { "value": "140F", "name": "2008" },
-        { "value": "1414", "name": "2008 (China)" },
-        { "value": "1415", "name": "C3-XR" },
-        { "value": "1419", "name": "301 5-door" },
-        { "value": "170E", "name": "DS3 Cabrio" },
-        { "value": "2109", "name": "C4 Saloon 5-Door" },
-        { "value": "210A", "name": "DS5" },
-        { "value": "2113", "name": "2113" },
-        { "value": "2115", "name": "308 5-Door" },
-        { "value": "2118", "name": "2118" },
-        { "value": "211A", "name": "DS5 (China)" },
-        { "value": "211C", "name": "C4 Berline 5-Door (Iran)" },
-        { "value": "211F", "name": "DS4S" },
-        { "value": "2120", "name": "308 5-Door (China)" },
-        { "value": "2215", "name": "308 SW" },
-        { "value": "2312", "name": "C4L (China)" },
-        { "value": "231B", "name": "C4 Sedan (Russia)" },
-        { "value": "231C", "name": "C4L (Iran)" },
-        { "value": "231E", "name": "C4L (B73M)" },
-        { "value": "231F", "name": "DS5 LS" },
-        { "value": "2320", "name": "308 4-Door (China)" },
-        { "value": "2321", "name": "L60 / C4 (BZ3)" },
-        { "value": "241F", "name": "DS6" },
-        { "value": "2509", "name": "DS4" },
-        { "value": "2813", "name": "2813" },
-        { "value": "2814", "name": "C4 Picasso 7-seats" },
-        { "value": "2818", "name": "2818" },
-        { "value": "2A14", "name": "C4 Picasso 5-ats" },
-        { "value": "3307", "name": "508 4-door" },
-        { "value": "3308", "name": "508 (China)" },
-        { "value": "330A", "name": "G95 4-Door (China)" },
-        { "value": "3407", "name": "508 rxh" },
-        { "value": "3B07", "name": "508 SW" },
-        { "value": "5303", "name": "308 4-door (tx9)" },
-        { "value": "5304", "name": "C6 4-Door (China)" },
-        { "value": "5308", "name": "C5 4-Door" },
-        { "value": "5402", "name": "3008 (P84)" },
-        { "value": "5405", "name": "4008 (P84C)" },
-        { "value": "5406", "name": "5406" },
-        { "value": "5407", "name": "C5 Aircons 5-Door (C84C)" },
-        { "value": "5802", "name": "5008 (P87)" },
-        { "value": "5901", "name": "Jumpy/Expert" },
-        { "value": "5902", "name": "5008 (P87 China)" },
-        { "value": "5C01", "name": "Spacetourer/Traveller" },
-        { "value": "6103", "name": "C3 (B618)" },
-        { "value": "6106", "name": "C3 Iran (B618)" },
-        { "value": "6405", "name": "M44 Iran" },
-        { "value": "6A01", "name": "6A01" },
-        { "value": "6A02", "name": "C3 AIRCROSS (A88)" },
-        { "value": "6A04", "name": "C4 Aircons (A88 Chine)" },
-        { "value": "7101", "name": "508 5-Door (R8 Europe)" },
-        { "value": "7105", "name": "508L 5-door (R83 China)" },
-        { "value": "7201", "name": "508 Break (R8)" },
-        { "value": "7403", "name": "DS7 Crossback (X74 Europe)" },
-        { "value": "7406", "name": "C5 AIRCROSS (C84)" },
-        { "value": "7407", "name": "DS7 Crossback (X74 China)" },
-        { "value": "7803", "name": "X83 Europe" },
-        { "value": "7902", "name": "Berlingo Utility (K9)" },
-        { "value": "7903", "name": "X83 China" },
-        { "value": "7904", "name": "7904" },
-        { "value": "7C02", "name": "Berlingo (K9)" },
-        { "value": "7C04", "name": "7c04" },
-        { "value": "8102", "name": "P21 Europe" },
-        { "value": "8104", "name": "P21 Berline 5 Portes" },
-        { "value": "8105", "name": "C41 Europe" },
-        { "value": "810D", "name": "Corsa P2JO - Berlines 5 Porte" },
-        { "value": "8306", "name": "C43 China" },
-        { "value": "8307", "name": "C43 Mercosur" },
-        { "value": "8401", "name": "D34" },
-        { "value": "8403", "name": "P24 China" },
-        { "value": "8404", "name": "P24 Europe" },
-        { "value": "8407", "name": "DS 3 Crossback China D34" },
-        { "value": "840E", "name": "P2Q0" },
-        { "value": "0000", "name": "Unknown" }
+        {
+          "value": "1008",
+          "name": "DS3"
+        },
+        {
+          "value": "100C",
+          "name": "208 3-door (A9)"
+        },
+        {
+          "value": "110C",
+          "name": "208 5-Door (A9)"
+        },
+        {
+          "value": "1111",
+          "name": "208 5-Door (AI9) / 2008 (AI94)"
+        },
+        {
+          "value": "1113",
+          "name": "C4 CACTUS"
+        },
+        {
+          "value": "1116",
+          "name": "C4 Cactus (Mercosur)"
+        },
+        {
+          "value": "130D",
+          "name": "301 / C-Yelysee"
+        },
+        {
+          "value": "1310",
+          "name": "301 / c-elisee (Iran)"
+        },
+        {
+          "value": "1312",
+          "name": "301 / c-elisee (china)"
+        },
+        {
+          "value": "140F",
+          "name": "2008"
+        },
+        {
+          "value": "1414",
+          "name": "2008 (China)"
+        },
+        {
+          "value": "1415",
+          "name": "C3-XR"
+        },
+        {
+          "value": "1419",
+          "name": "301 5-door"
+        },
+        {
+          "value": "170E",
+          "name": "DS3 Cabrio"
+        },
+        {
+          "value": "2109",
+          "name": "C4 Saloon 5-Door"
+        },
+        {
+          "value": "210A",
+          "name": "DS5"
+        },
+        {
+          "value": "2113",
+          "name": "2113"
+        },
+        {
+          "value": "2115",
+          "name": "308 5-Door"
+        },
+        {
+          "value": "2118",
+          "name": "2118"
+        },
+        {
+          "value": "211A",
+          "name": "DS5 (China)"
+        },
+        {
+          "value": "211C",
+          "name": "C4 Berline 5-Door (Iran)"
+        },
+        {
+          "value": "211F",
+          "name": "DS4S"
+        },
+        {
+          "value": "2120",
+          "name": "308 5-Door (China)"
+        },
+        {
+          "value": "2215",
+          "name": "308 SW"
+        },
+        {
+          "value": "2312",
+          "name": "C4L (China)"
+        },
+        {
+          "value": "231B",
+          "name": "C4 Sedan (Russia)"
+        },
+        {
+          "value": "231C",
+          "name": "C4L (Iran)"
+        },
+        {
+          "value": "231E",
+          "name": "C4L (B73M)"
+        },
+        {
+          "value": "231F",
+          "name": "DS5 LS"
+        },
+        {
+          "value": "2320",
+          "name": "308 4-Door (China)"
+        },
+        {
+          "value": "2321",
+          "name": "L60 / C4 (BZ3)"
+        },
+        {
+          "value": "241F",
+          "name": "DS6"
+        },
+        {
+          "value": "2509",
+          "name": "DS4"
+        },
+        {
+          "value": "2813",
+          "name": "2813"
+        },
+        {
+          "value": "2814",
+          "name": "C4 Picasso 7-seats"
+        },
+        {
+          "value": "2818",
+          "name": "2818"
+        },
+        {
+          "value": "2A14",
+          "name": "C4 Picasso 5-ats"
+        },
+        {
+          "value": "3307",
+          "name": "508 4-door"
+        },
+        {
+          "value": "3308",
+          "name": "508 (China)"
+        },
+        {
+          "value": "330A",
+          "name": "G95 4-Door (China)"
+        },
+        {
+          "value": "3407",
+          "name": "508 rxh"
+        },
+        {
+          "value": "3B07",
+          "name": "508 SW"
+        },
+        {
+          "value": "5303",
+          "name": "308 4-door (tx9)"
+        },
+        {
+          "value": "5304",
+          "name": "C6 4-Door (China)"
+        },
+        {
+          "value": "5308",
+          "name": "C5 4-Door"
+        },
+        {
+          "value": "5402",
+          "name": "3008 (P84)"
+        },
+        {
+          "value": "5405",
+          "name": "4008 (P84C)"
+        },
+        {
+          "value": "5406",
+          "name": "5406"
+        },
+        {
+          "value": "5407",
+          "name": "C5 Aircons 5-Door (C84C)"
+        },
+        {
+          "value": "5802",
+          "name": "5008 (P87)"
+        },
+        {
+          "value": "5901",
+          "name": "Jumpy/Expert"
+        },
+        {
+          "value": "5902",
+          "name": "5008 (P87 China)"
+        },
+        {
+          "value": "5C01",
+          "name": "Spacetourer/Traveller"
+        },
+        {
+          "value": "6103",
+          "name": "C3 (B618)"
+        },
+        {
+          "value": "6106",
+          "name": "C3 Iran (B618)"
+        },
+        {
+          "value": "6405",
+          "name": "M44 Iran"
+        },
+        {
+          "value": "6A01",
+          "name": "6A01"
+        },
+        {
+          "value": "6A02",
+          "name": "C3 AIRCROSS (A88)"
+        },
+        {
+          "value": "6A04",
+          "name": "C4 Aircons (A88 Chine)"
+        },
+        {
+          "value": "7101",
+          "name": "508 5-Door (R8 Europe)"
+        },
+        {
+          "value": "7105",
+          "name": "508L 5-door (R83 China)"
+        },
+        {
+          "value": "7201",
+          "name": "508 Break (R8)"
+        },
+        {
+          "value": "7403",
+          "name": "DS7 Crossback (X74 Europe)"
+        },
+        {
+          "value": "7406",
+          "name": "C5 AIRCROSS (C84)"
+        },
+        {
+          "value": "7407",
+          "name": "DS7 Crossback (X74 China)"
+        },
+        {
+          "value": "7803",
+          "name": "X83 Europe"
+        },
+        {
+          "value": "7902",
+          "name": "Berlingo Utility (K9)"
+        },
+        {
+          "value": "7903",
+          "name": "X83 China"
+        },
+        {
+          "value": "7904",
+          "name": "7904"
+        },
+        {
+          "value": "7C02",
+          "name": "Berlingo (K9)"
+        },
+        {
+          "value": "7C04",
+          "name": "7c04"
+        },
+        {
+          "value": "8102",
+          "name": "P21 Europe"
+        },
+        {
+          "value": "8104",
+          "name": "P21 Berline 5 Portes"
+        },
+        {
+          "value": "8105",
+          "name": "C41 Europe"
+        },
+        {
+          "value": "810D",
+          "name": "Corsa P2JO - Berlines 5 Porte"
+        },
+        {
+          "value": "8306",
+          "name": "C43 China"
+        },
+        {
+          "value": "8307",
+          "name": "C43 Mercosur"
+        },
+        {
+          "value": "8401",
+          "name": "D34"
+        },
+        {
+          "value": "8403",
+          "name": "P24 China"
+        },
+        {
+          "value": "8404",
+          "name": "P24 Europe"
+        },
+        {
+          "value": "8407",
+          "name": "DS 3 Crossback China D34"
+        },
+        {
+          "value": "840E",
+          "name": "P2Q0"
+        },
+        {
+          "value": "0000",
+          "name": "Unknown"
+        }
       ],
       "name": "Type of car"
     },
@@ -1329,9 +2025,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no, or there is a mechanical system for protecting children without information about the state of locks" },
-        { "value": "1", "name": "Mechanical system of protecting children with information about the state of locks" },
-        { "value": "2", "name": "Electric system for protecting children with information on the state of locks" }
+        {
+          "value": "0",
+          "name": "There is no, or there is a mechanical system for protecting children without information about the state of locks"
+        },
+        {
+          "value": "1",
+          "name": "Mechanical system of protecting children with information about the state of locks"
+        },
+        {
+          "value": "2",
+          "name": "Electric system for protecting children with information on the state of locks"
+        }
       ],
       "name": "Availability and type of function of the children's protection system"
     },
@@ -1343,10 +2048,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of locking" },
-        { "value": "1", "name": "Simple blocking" },
-        { "value": "2", "name": "Superblock 2 times" },
-        { "value": "3", "name": "Super blocking 1 time" }
+        {
+          "value": "0",
+          "name": "Lack of locking"
+        },
+        {
+          "value": "1",
+          "name": "Simple blocking"
+        },
+        {
+          "value": "2",
+          "name": "Superblock 2 times"
+        },
+        {
+          "value": "3",
+          "name": "Super blocking 1 time"
+        }
       ],
       "name": "Type of locking"
     },
@@ -1358,9 +2075,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value":  "0", "name": "Lack of selectivity" },
-        { "value":  "1", "name": "Choosing unlocking the driver's door" },
-        { "value": "10", "name": "Selectivity of the front/rear opening elements of the body" }
+        {
+          "value": "0",
+          "name": "Lack of selectivity"
+        },
+        {
+          "value": "1",
+          "name": "Choosing unlocking the driver's door"
+        },
+        {
+          "value": "10",
+          "name": "Selectivity of the front/rear opening elements of the body"
+        }
       ],
       "name": "Type of locking/unlocking door locks"
     },
@@ -1372,10 +2098,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Opening or unlocking trunk/5th door" },
-        { "value": "1", "name": "Opening or unlocking rear window" },
-        { "value": "2", "name": "Lighting / alarm" },
-        { "value": "06", "name": "Unlocking the charging area" },
+        {
+          "value": "0",
+          "name": "Opening or unlocking trunk/5th door"
+        },
+        {
+          "value": "1",
+          "name": "Opening or unlocking rear window"
+        },
+        {
+          "value": "2",
+          "name": "Lighting / alarm"
+        },
+        {
+          "value": "06",
+          "name": "Unlocking the charging area"
+        },
         {
           "value": "07",
           "name": "Opening / closing the front right sliding side door"
@@ -1391,9 +2129,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Short pressing" },
-        { "value": "1", "name": "Long-term pressing" },
-        { "value": "2", "name": "Support maintained" }
+        {
+          "value": "0",
+          "name": "Short pressing"
+        },
+        {
+          "value": "1",
+          "name": "Long-term pressing"
+        },
+        {
+          "value": "2",
+          "name": "Support maintained"
+        }
       ],
       "name": "Type of pressing the third remote control button"
     },
@@ -1421,12 +2168,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No signature lamps" },
-        { "value": "1", "name": "Sidelamps and daytime lamps" },
-        { "value": "2", "name": "Sidelamps" },
-        { "value": "3", "name": "Day running lamps" },
-        { "value": "4", "name": "Automatic lighting of the daytime running lamps" },
-        { "value": "5", "name": "Side lamps,day running lamps and number plate lamps" }
+        {
+          "value": "0",
+          "name": "No signature lamps"
+        },
+        {
+          "value": "1",
+          "name": "Sidelamps and daytime lamps"
+        },
+        {
+          "value": "2",
+          "name": "Sidelamps"
+        },
+        {
+          "value": "3",
+          "name": "Day running lamps"
+        },
+        {
+          "value": "4",
+          "name": "Automatic lighting of the daytime running lamps"
+        },
+        {
+          "value": "5",
+          "name": "Side lamps,day running lamps and number plate lamps"
+        }
       ],
       "name": "Front lamps used for the signature lighting function"
     },
@@ -1558,15 +2323,42 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Blind spot monitoring managed by a blind spot monitoring function ECU" },
-        { "value": "2", "name": "Lane departure warning system managed by the multifunction video camera" },
-        { "value": "3", "name": "Blind spot monitoring managed by the blind spot monitoring ECU and lane departure warning system managed by the multifunction video camera" },
-        { "value": "4", "name": "Lane wandering alert (infrared)" },
-        { "value": "5", "name": "Blind spot monitoring managed by a blind spot monitoring ECU and presence of the lane departure warning system (infrared)" },
-        { "value": "8", "name": "Blind spot monitoring managed by the parking assistance ECU" },
-        { "value": "A", "name": "Blind spot monitoring managed by the parking assistance ECU and lane departure warning system managed by the multifunction video camera" },
-        { "value": "C", "name": "Blind spot monitoring managed by the parking assistance ECU and presence of the lane departure warning system (infrared)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Blind spot monitoring managed by a blind spot monitoring function ECU"
+        },
+        {
+          "value": "2",
+          "name": "Lane departure warning system managed by the multifunction video camera"
+        },
+        {
+          "value": "3",
+          "name": "Blind spot monitoring managed by the blind spot monitoring ECU and lane departure warning system managed by the multifunction video camera"
+        },
+        {
+          "value": "4",
+          "name": "Lane wandering alert (infrared)"
+        },
+        {
+          "value": "5",
+          "name": "Blind spot monitoring managed by a blind spot monitoring ECU and presence of the lane departure warning system (infrared)"
+        },
+        {
+          "value": "8",
+          "name": "Blind spot monitoring managed by the parking assistance ECU"
+        },
+        {
+          "value": "A",
+          "name": "Blind spot monitoring managed by the parking assistance ECU and lane departure warning system managed by the multifunction video camera"
+        },
+        {
+          "value": "C",
+          "name": "Blind spot monitoring managed by the parking assistance ECU and presence of the lane departure warning system (infrared)"
+        }
       ],
       "name": "The presence and type of driving aid (AFIL / SAM)"
     },
@@ -1586,12 +2378,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "1 sensor" },
-        { "value": "2", "name": "2 sensors in front" },
-        { "value": "3", "name": "1 sensor in front and 2 sensors behind" },
-        { "value": "4", "name": "2 sensors in front and 2 sensors behind" },
-        { "value": "5", "name": "2 sensors behind" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "1 sensor"
+        },
+        {
+          "value": "2",
+          "name": "2 sensors in front"
+        },
+        {
+          "value": "3",
+          "name": "1 sensor in front and 2 sensors behind"
+        },
+        {
+          "value": "4",
+          "name": "2 sensors in front and 2 sensors behind"
+        },
+        {
+          "value": "5",
+          "name": "2 sensors behind"
+        }
       ],
       "name": "The presence and type of sensor of the supplied air"
     },
@@ -1603,9 +2413,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "2", "name": "Sunlight single-zone sensor" },
-        { "value": "3", "name": "Sunlight double-zone sensor" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "2",
+          "name": "Sunlight single-zone sensor"
+        },
+        {
+          "value": "3",
+          "name": "Sunlight double-zone sensor"
+        }
       ],
       "name": "Sunlight sensor type"
     },
@@ -1633,9 +2452,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Front sensor" },
-        { "value": "2", "name": "One front and one rear sensor" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Front sensor"
+        },
+        {
+          "value": "2",
+          "name": "One front and one rear sensor"
+        }
       ],
       "name": "The position of the temperature sensors of the evaporator"
     },
@@ -1647,8 +2475,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Pressure sensor 30 bar" },
-        { "value": "1", "name": "Pressure sensor 35 bar" }
+        {
+          "value": "0",
+          "name": "Pressure sensor 30 bar"
+        },
+        {
+          "value": "1",
+          "name": "Pressure sensor 35 bar"
+        }
       ],
       "name": "Type of pressure sensor of the air conditioning system"
     },
@@ -1660,11 +2494,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Compressor with the internal control system with the coupling" },
-        { "value": "1", "name": "Compressor with an external control system with a coupling" },
-        { "value": "2", "name": "Compressor with an external control system, without a coupling" },
-        { "value": "3", "name": "Compressor of permanent working volume with a drive clutch" },
-        { "value": "4", "name": "Electric" }
+        {
+          "value": "0",
+          "name": "Compressor with the internal control system with the coupling"
+        },
+        {
+          "value": "1",
+          "name": "Compressor with an external control system with a coupling"
+        },
+        {
+          "value": "2",
+          "name": "Compressor with an external control system, without a coupling"
+        },
+        {
+          "value": "3",
+          "name": "Compressor of permanent working volume with a drive clutch"
+        },
+        {
+          "value": "4",
+          "name": "Electric"
+        }
       ],
       "name": "Type of air conditioning compressor"
     },
@@ -1676,9 +2525,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Seat heating" },
-        { "value": "2", "name": "Heated and ventilated seats" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Seat heating"
+        },
+        {
+          "value": "2",
+          "name": "Heated and ventilated seats"
+        }
       ],
       "name": "the presence of heated seats or heated ventilated seats"
     },
@@ -1690,9 +2548,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Not controlled" },
-        { "value": "1", "name": "Activated depending on the percentage of the closure" },
-        { "value": "2", "name": "Activated depending on the level (controlled recirculation)" }
+        {
+          "value": "0",
+          "name": "Not controlled"
+        },
+        {
+          "value": "1",
+          "name": "Activated depending on the percentage of the closure"
+        },
+        {
+          "value": "2",
+          "name": "Activated depending on the level (controlled recirculation)"
+        }
       ],
       "name": "Air supply type"
     },
@@ -1704,9 +2571,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Ungovernable" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" }
+        {
+          "value": "0",
+          "name": "Ungovernable"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        }
       ],
       "name": "Air mixing type (front air conditioner)"
     },
@@ -1718,12 +2594,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Ungovernable" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" },
-        { "value": "3", "name": "Three-zone" },
-        { "value": "4", "name": "Single-zone dual drive" },
-        { "value": "5", "name": "Double-wheel dual drive" }
+        {
+          "value": "0",
+          "name": "Ungovernable"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        },
+        {
+          "value": "3",
+          "name": "Three-zone"
+        },
+        {
+          "value": "4",
+          "name": "Single-zone dual drive"
+        },
+        {
+          "value": "5",
+          "name": "Double-wheel dual drive"
+        }
       ],
       "name": "Air distribution system type"
     },
@@ -1735,11 +2629,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Non-controlled electric fan or absent" },
-        { "value": "1", "name": "Contained interior electric fan" },
-        { "value": "2", "name": "Controlled right and left fans of the interior" },
-        { "value": "3", "name": "Separate air supply from the right and left side (relay for the front)" },
-        { "value": "4", "name": "The rear fan with controlled power" }
+        {
+          "value": "0",
+          "name": "Non-controlled electric fan or absent"
+        },
+        {
+          "value": "1",
+          "name": "Contained interior electric fan"
+        },
+        {
+          "value": "2",
+          "name": "Controlled right and left fans of the interior"
+        },
+        {
+          "value": "3",
+          "name": "Separate air supply from the right and left side (relay for the front)"
+        },
+        {
+          "value": "4",
+          "name": "The rear fan with controlled power"
+        }
       ],
       "name": "Rear interior fan type"
     },
@@ -1751,9 +2660,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Ungovernable" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" }
+        {
+          "value": "0",
+          "name": "Ungovernable"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        }
       ],
       "name": "Air mixing type (rear air conditioner)"
     },
@@ -1765,9 +2683,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Ungovernable" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" }
+        {
+          "value": "0",
+          "name": "Ungovernable"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        }
       ],
       "name": "Distribution type: rear"
     },
@@ -1779,9 +2706,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Engine with \"Stop and Start\" function" },
-        { "value": "2", "name": "Hybrid power unit" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Engine with \"Stop and Start\" function"
+        },
+        {
+          "value": "2",
+          "name": "Hybrid power unit"
+        }
       ],
       "name": "The presence of the \"Stop and Start\" engine or hybrid power unit"
     },
@@ -1801,9 +2737,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without air conditioning" },
-        { "value": "1", "name": "Single-zone" },
-        { "value": "2", "name": "Double-zone" },
+        {
+          "value": "0",
+          "name": "Without air conditioning"
+        },
+        {
+          "value": "1",
+          "name": "Single-zone"
+        },
+        {
+          "value": "2",
+          "name": "Double-zone"
+        },
         {
           "value": "3",
           "name": "The air conditioning air conditioning with the regulation of mixing air flows"
@@ -1819,9 +2764,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "The air conditioner is turned off" },
-        { "value": "1", "name": "Air conditioning is turned on when the ignition is turned on" },
-        { "value": "2", "name": "The function is restored" }
+        {
+          "value": "0",
+          "name": "The air conditioner is turned off"
+        },
+        {
+          "value": "1",
+          "name": "Air conditioning is turned on when the ignition is turned on"
+        },
+        {
+          "value": "2",
+          "name": "The function is restored"
+        }
       ],
       "name": "The presence of a heater or air conditioner with a non-working engine"
     },
@@ -1857,10 +2811,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Internal preliminary thermal preparation (with matrix and menu)" },
-        { "value": "2", "name": "External preliminary thermal training (additional installation)" },
-        { "value": "3", "name": "Internal and external preliminary thermal training (with a matrix, menu and remote control)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Internal preliminary thermal preparation (with matrix and menu)"
+        },
+        {
+          "value": "2",
+          "name": "External preliminary thermal training (additional installation)"
+        },
+        {
+          "value": "3",
+          "name": "Internal and external preliminary thermal training (with a matrix, menu and remote control)"
+        }
       ],
       "name": "The presence and type of preliminary thermal training"
     },
@@ -1888,8 +2854,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "With the inclusion of rotation indicators" },
-        { "value": "1", "name": "Without turning on the turning indicators" }
+        {
+          "value": "0",
+          "name": "With the inclusion of rotation indicators"
+        },
+        {
+          "value": "1",
+          "name": "Without turning on the turning indicators"
+        }
       ],
       "name": "Configuration \"Police\"?"
     },
@@ -1917,9 +2889,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Front multiplex panel (electric)" },
-        { "value": "2", "name": "Front multiplex panel (mechanical)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Front multiplex panel (electric)"
+        },
+        {
+          "value": "2",
+          "name": "Front multiplex panel (mechanical)"
+        }
       ],
       "name": "Availability and type of multiplex control panel"
     },
@@ -1931,12 +2912,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without a car radio" },
-        { "value": "1", "name": "RD5" },
-        { "value": "2", "name": "CD car radio with a display (RDE)" },
-        { "value": "4", "name": "RD45" },
-        { "value": "8", "name": "RD9" },
-        { "value": "10", "name": "RD6" }
+        {
+          "value": "0",
+          "name": "Without a car radio"
+        },
+        {
+          "value": "1",
+          "name": "RD5"
+        },
+        {
+          "value": "2",
+          "name": "CD car radio with a display (RDE)"
+        },
+        {
+          "value": "4",
+          "name": "RD45"
+        },
+        {
+          "value": "8",
+          "name": "RD9"
+        },
+        {
+          "value": "10",
+          "name": "RD6"
+        }
       ],
       "name": "Type of radio receiver"
     },
@@ -1948,15 +2947,42 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without telematics" },
-        { "value": "1", "name": "Rneg" },
-        { "value": "2", "name": "NG4" },
-        { "value": "4", "name": "Smeg" },
-        { "value": "8", "name": "Smeg+" },
-        { "value": "10", "name": "MRN" },
-        { "value": "20", "name": "NAC/RCC" },
-        { "value": "40", "name": "Smeg Asia" },
-        { "value": "80", "name": "RCE" }
+        {
+          "value": "0",
+          "name": "Without telematics"
+        },
+        {
+          "value": "1",
+          "name": "Rneg"
+        },
+        {
+          "value": "2",
+          "name": "NG4"
+        },
+        {
+          "value": "4",
+          "name": "Smeg"
+        },
+        {
+          "value": "8",
+          "name": "Smeg+"
+        },
+        {
+          "value": "10",
+          "name": "MRN"
+        },
+        {
+          "value": "20",
+          "name": "NAC/RCC"
+        },
+        {
+          "value": "40",
+          "name": "Smeg Asia"
+        },
+        {
+          "value": "80",
+          "name": "RCE"
+        }
       ],
       "name": "Type of telematics block"
     },
@@ -2008,14 +3034,38 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Additional resistance CTP1" },
-        { "value": "2", "name": "Additional resistance CTP2" },
-        { "value": "3", "name": "Additional resistances CTP1 and CTP2" },
-        { "value": "4", "name": "Additional resistances CTP1 and CTP2 (04)" },
-        { "value": "5", "name": "Additional resistances CTP1 and CTP2 (05)" },
-        { "value": "6", "name": "(06)" },
-        { "value": "7", "name": "(07)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Additional resistance CTP1"
+        },
+        {
+          "value": "2",
+          "name": "Additional resistance CTP2"
+        },
+        {
+          "value": "3",
+          "name": "Additional resistances CTP1 and CTP2"
+        },
+        {
+          "value": "4",
+          "name": "Additional resistances CTP1 and CTP2 (04)"
+        },
+        {
+          "value": "5",
+          "name": "Additional resistances CTP1 and CTP2 (05)"
+        },
+        {
+          "value": "6",
+          "name": "(06)"
+        },
+        {
+          "value": "7",
+          "name": "(07)"
+        }
       ],
       "name": "The presence and type of heating resistances"
     },
@@ -2027,10 +3077,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Additional heater" },
-        { "value": "2", "name": "Thermal preliminary preparation" },
-        { "value": "3", "name": "Additional heater and thermal preliminary preparation" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Additional heater"
+        },
+        {
+          "value": "2",
+          "name": "Thermal preliminary preparation"
+        },
+        {
+          "value": "3",
+          "name": "Additional heater and thermal preliminary preparation"
+        }
       ],
       "name": "The presence and type of air heater"
     },
@@ -2042,10 +3104,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of adjustment" },
-        { "value": "1", "name": "Button (step by step increase)" },
-        { "value": "2", "name": "Two buttons (more and less)" },
-        { "value": "3", "name": "Using the menu" }
+        {
+          "value": "0",
+          "name": "Lack of adjustment"
+        },
+        {
+          "value": "1",
+          "name": "Button (step by step increase)"
+        },
+        {
+          "value": "2",
+          "name": "Two buttons (more and less)"
+        },
+        {
+          "value": "3",
+          "name": "Using the menu"
+        }
       ],
       "name": "The presence and type of adjustment of the brightness of the interior backlight"
     },
@@ -2057,10 +3131,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "1 hatch" },
-        { "value": "2", "name": "2 hatch" },
-        { "value": "3", "name": "3 hatch" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "1 hatch"
+        },
+        {
+          "value": "2",
+          "name": "2 hatch"
+        },
+        {
+          "value": "3",
+          "name": "3 hatch"
+        }
       ],
       "name": "The presence and number of hatches"
     },
@@ -2072,8 +3158,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Internal combustion engine" },
-        { "value": "1", "name": "Internal combustion engine and electric motor (hybrid power unit)" }
+        {
+          "value": "0",
+          "name": "Internal combustion engine"
+        },
+        {
+          "value": "1",
+          "name": "Internal combustion engine and electric motor (hybrid power unit)"
+        }
       ],
       "name": "engine's type"
     },
@@ -2085,8 +3177,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Standard" },
-        { "value": "1", "name": "Increased comfort" }
+        {
+          "value": "0",
+          "name": "Standard"
+        },
+        {
+          "value": "1",
+          "name": "Increased comfort"
+        }
       ],
       "name": "Thermal comfort for the \"Stop and Start\" system"
     },
@@ -2098,11 +3196,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Information from the ESP system" },
-        { "value": "2", "name": "Information coming from the parking brake with the electrical control" },
-        { "value": "3", "name": "Using ESP (with an electric support of calipers)" },
-        { "value": "4", "name": "Parking brake with an electrical control (with an electric support of calipers)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Information from the ESP system"
+        },
+        {
+          "value": "2",
+          "name": "Information coming from the parking brake with the electrical control"
+        },
+        {
+          "value": "3",
+          "name": "Using ESP (with an electric support of calipers)"
+        },
+        {
+          "value": "4",
+          "name": "Parking brake with an electrical control (with an electric support of calipers)"
+        }
       ],
       "name": "The presence and type of parking brake with electrical control"
     },
@@ -2122,11 +3235,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Using a pen" },
-        { "value": "1", "name": "With 1 key" },
-        { "value": "2", "name": "With 2 keys" },
-        { "value": "3", "name": "With 3 keys" },
-        { "value": "4", "name": "With 4 keys" }
+        {
+          "value": "0",
+          "name": "Using a pen"
+        },
+        {
+          "value": "1",
+          "name": "With 1 key"
+        },
+        {
+          "value": "2",
+          "name": "With 2 keys"
+        },
+        {
+          "value": "3",
+          "name": "With 3 keys"
+        },
+        {
+          "value": "4",
+          "name": "With 4 keys"
+        }
       ],
       "name": "Selecting vehicle speed limit or cruise control"
     },
@@ -2138,9 +3266,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of selectivity" },
-        { "value": "1", "name": "Discovery" },
-        { "value": "2", "name": "Unlocking" }
+        {
+          "value": "0",
+          "name": "Lack of selectivity"
+        },
+        {
+          "value": "1",
+          "name": "Discovery"
+        },
+        {
+          "value": "2",
+          "name": "Unlocking"
+        }
       ],
       "name": "Type of electoral opening of the rear door using a high-frequency remote control"
     },
@@ -2168,10 +3305,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no electrical security system for children" },
-        { "value": "1", "name": "Button associated with the intellectual switching unit (BSI)" },
-        { "value": "2", "name": "Button associated with the driver's door panel and working as a 2-position switch" },
-        { "value": "3", "name": "Button associated with the driver's door panel and working as a simple switch" }
+        {
+          "value": "0",
+          "name": "There is no electrical security system for children"
+        },
+        {
+          "value": "1",
+          "name": "Button associated with the intellectual switching unit (BSI)"
+        },
+        {
+          "value": "2",
+          "name": "Button associated with the driver's door panel and working as a 2-position switch"
+        },
+        {
+          "value": "3",
+          "name": "Button associated with the driver's door panel and working as a simple switch"
+        }
       ],
       "name": "The presence and type of the children's safety system switch"
     },
@@ -2199,8 +3348,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "The computer is absent or does not receive power from the \"plus\" of the central power switch" },
-        { "value": "1", "name": "Receives power \"+\" from the central power switch" }
+        {
+          "value": "0",
+          "name": "The computer is absent or does not receive power from the \"plus\" of the central power switch"
+        },
+        {
+          "value": "1",
+          "name": "Receives power \"+\" from the central power switch"
+        }
       ],
       "name": "Power type of anti-lock braking system (ABS) or dynamic stabilization system (ESP)"
     },
@@ -2212,11 +3367,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "The relay is not used" },
-        { "value": "1", "name": "Air supply pump to the exhaust system" },
-        { "value": "2", "name": "SCR heater (decrease in NOX content for Euro 6)" },
-        { "value": "3", "name": "Liquid pump of the air conditioning system" },
-        { "value": "4", "name": "reserve" }
+        {
+          "value": "0",
+          "name": "The relay is not used"
+        },
+        {
+          "value": "1",
+          "name": "Air supply pump to the exhaust system"
+        },
+        {
+          "value": "2",
+          "name": "SCR heater (decrease in NOX content for Euro 6)"
+        },
+        {
+          "value": "3",
+          "name": "Liquid pump of the air conditioning system"
+        },
+        {
+          "value": "4",
+          "name": "reserve"
+        }
       ],
       "name": "The type of equipment connected to the relay of the electro-focus of the intelligent switching unit (BSI)"
     },
@@ -2236,8 +3406,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without relay" },
-        { "value": "1", "name": "With a relay" }
+        {
+          "value": "0",
+          "name": "Without relay"
+        },
+        {
+          "value": "1",
+          "name": "With a relay"
+        }
       ],
       "name": "Type of control of front fog lights"
     },
@@ -2257,8 +3433,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "The Stop and Start function is absent or not taken into account" },
-        { "value": "1", "name": "It is taken into account" }
+        {
+          "value": "0",
+          "name": "The Stop and Start function is absent or not taken into account"
+        },
+        {
+          "value": "1",
+          "name": "It is taken into account"
+        }
       ],
       "name": "Accounting for Stop and Start function of air conditioning"
     },
@@ -2342,11 +3524,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without" },
-        { "value": "1", "name": "Type \"ISTAR PHASE 1\" with a starter" },
-        { "value": "2", "name": "Type \"Phase 2\" with a starter" },
-        { "value": "3", "name": "Type \"istar phase 2\" with a starter" },
-        { "value": "4", "name": "Type \"istar phase 2\" without a starter" }
+        {
+          "value": "0",
+          "name": "Without"
+        },
+        {
+          "value": "1",
+          "name": "Type \"ISTAR PHASE 1\" with a starter"
+        },
+        {
+          "value": "2",
+          "name": "Type \"Phase 2\" with a starter"
+        },
+        {
+          "value": "3",
+          "name": "Type \"istar phase 2\" with a starter"
+        },
+        {
+          "value": "4",
+          "name": "Type \"istar phase 2\" without a starter"
+        }
       ],
       "name": "Availability and type of function \"Stop and Start\""
     },
@@ -2374,8 +3571,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "discrete" },
-        { "value": "1", "name": "By changing the voltage" }
+        {
+          "value": "0",
+          "name": "discrete"
+        },
+        {
+          "value": "1",
+          "name": "By changing the voltage"
+        }
       ],
       "name": "Type of control of the front dimensions"
     },
@@ -2387,8 +3590,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Discrete" },
-        { "value": "1", "name": "By changing the voltage" }
+        {
+          "value": "0",
+          "name": "Discrete"
+        },
+        {
+          "value": "1",
+          "name": "By changing the voltage"
+        }
       ],
       "name": "Daytime running light control type"
     },
@@ -2408,8 +3617,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "The switching unit of the engine" },
-        { "value": "1", "name": "Intellectual switching unit" }
+        {
+          "value": "0",
+          "name": "The switching unit of the engine"
+        },
+        {
+          "value": "1",
+          "name": "Intellectual switching unit"
+        }
       ],
       "name": "Type of control of front wiper"
     },
@@ -2429,10 +3644,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "There is on the front left" },
-        { "value": "2", "name": "There is on the front right" },
-        { "value": "3", "name": "There is on the front left and right" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "There is on the front left"
+        },
+        {
+          "value": "2",
+          "name": "There is on the front right"
+        },
+        {
+          "value": "3",
+          "name": "There is on the front left and right"
+        }
       ],
       "name": "The presence of a reversing inertial seat belt coil"
     },
@@ -2452,8 +3679,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without changes in current" },
-        { "value": "1", "name": "With variable current power" }
+        {
+          "value": "0",
+          "name": "Without changes in current"
+        },
+        {
+          "value": "1",
+          "name": "With variable current power"
+        }
       ],
       "name": "Type of interior lighting"
     },
@@ -2481,10 +3714,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "using an intellectual switching unit" },
-        { "value": "1", "name": "Using the instrument panel" },
-        { "value": "2", "name": "Using a touch display" },
-        { "value": "3", "name": "Using the parameter menu" }
+        {
+          "value": "0",
+          "name": "using an intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Using the instrument panel"
+        },
+        {
+          "value": "2",
+          "name": "Using a touch display"
+        },
+        {
+          "value": "3",
+          "name": "Using the parameter menu"
+        }
       ],
       "name": "Obtaining a requirement of re-initialization of a system for detecting pressure in tires (from ABS/ESP)"
     },
@@ -2520,12 +3765,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of decoding" },
-        { "value": "1", "name": "Decoding type of simple blocking" },
-        { "value": "2", "name": "Decoding the type of superblock" },
-        { "value": "3", "name": "Decoding type of low cost lock" },
-        { "value": "4", "name": "The rear swing doors" },
-        { "value": "5", "name": "Locking lock" }
+        {
+          "value": "0",
+          "name": "Lack of decoding"
+        },
+        {
+          "value": "1",
+          "name": "Decoding type of simple blocking"
+        },
+        {
+          "value": "2",
+          "name": "Decoding the type of superblock"
+        },
+        {
+          "value": "3",
+          "name": "Decoding type of low cost lock"
+        },
+        {
+          "value": "4",
+          "name": "The rear swing doors"
+        },
+        {
+          "value": "5",
+          "name": "Locking lock"
+        }
       ],
       "name": "Type of coding of information of front door locks and trunk lid or tailgate"
     },
@@ -2585,9 +3848,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No switchable coolant pump" },
-        { "value": "1", "name": "The presence of coolant pump with drive coupling" },
-        { "value": "2", "name": "Distribution and control of coolant supply is performed outside the engine" }
+        {
+          "value": "0",
+          "name": "No switchable coolant pump"
+        },
+        {
+          "value": "1",
+          "name": "The presence of coolant pump with drive coupling"
+        },
+        {
+          "value": "2",
+          "name": "Distribution and control of coolant supply is performed outside the engine"
+        }
       ],
       "name": "Features of the cooling circuit"
     },
@@ -2599,9 +3871,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of prohibition" },
-        { "value": "1", "name": "Turning off the children's security system (if there is a child safety system)" },
-        { "value": "2", "name": "Turning off the button" }
+        {
+          "value": "0",
+          "name": "Lack of prohibition"
+        },
+        {
+          "value": "1",
+          "name": "Turning off the children's security system (if there is a child safety system)"
+        },
+        {
+          "value": "2",
+          "name": "Turning off the button"
+        }
       ],
       "name": "Type of disconnecting the driver of the rear windows (controlled by an intelligent switching unit)"
     },
@@ -2613,13 +3894,34 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Day lighting" },
-        { "value": "2", "name": "Sound signal" },
-        { "value": "3", "name": "A warning signal" },
-        { "value": "4", "name": "Telematics" },
-        { "value": "5", "name": "Changing the displayed page of the on-board computer" },
-        { "value": "6", "name": "Function of Rear-view mirrors" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Day lighting"
+        },
+        {
+          "value": "2",
+          "name": "Sound signal"
+        },
+        {
+          "value": "3",
+          "name": "A warning signal"
+        },
+        {
+          "value": "4",
+          "name": "Telematics"
+        },
+        {
+          "value": "5",
+          "name": "Changing the displayed page of the on-board computer"
+        },
+        {
+          "value": "6",
+          "name": "Function of Rear-view mirrors"
+        }
       ],
       "name": "The function of the left button of the steering wheel switching module"
     },
@@ -2679,8 +3981,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Old legislation" },
-        { "value": "1", "name": "New legislation" }
+        {
+          "value": "0",
+          "name": "Old legislation"
+        },
+        {
+          "value": "1",
+          "name": "New legislation"
+        }
       ],
       "name": "ESP certification type"
     },
@@ -2700,9 +4008,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Vibration of the seat using a vibrator control unit" },
-        { "value": "1", "name": "Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines" },
-        { "value": "2", "name": "Vibration belts of safety belts from a computer with tensioners" }
+        {
+          "value": "0",
+          "name": "Vibration of the seat using a vibrator control unit"
+        },
+        {
+          "value": "1",
+          "name": "Vibration of the seat, included by the Warning Warning computer about the unintentional intersection of road marking lines"
+        },
+        {
+          "value": "2",
+          "name": "Vibration belts of safety belts from a computer with tensioners"
+        }
       ],
       "name": "Type of vibrators of the warning function of unintentional intersection of road marking lines"
     },
@@ -2746,11 +4063,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "The controlled first-generation generator" },
-        { "value": "2", "name": "Controlled second-generation generator" },
-        { "value": "3", "name": "A controlled generator with the optimization of the charge of the service battery of generation 3" },
-        { "value": "4", "name": "A controlled generator with the optimization of the battery of the generation 4" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "The controlled first-generation generator"
+        },
+        {
+          "value": "2",
+          "name": "Controlled second-generation generator"
+        },
+        {
+          "value": "3",
+          "name": "A controlled generator with the optimization of the charge of the service battery of generation 3"
+        },
+        {
+          "value": "4",
+          "name": "A controlled generator with the optimization of the battery of the generation 4"
+        }
       ],
       "name": "Control type of controlled generator"
     },
@@ -2778,10 +4110,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Heating the front seats" },
-        { "value": "2", "name": "Heating of the rear seats" },
-        { "value": "3", "name": "heating the front and rear seats" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Heating the front seats"
+        },
+        {
+          "value": "2",
+          "name": "Heating of the rear seats"
+        },
+        {
+          "value": "3",
+          "name": "heating the front and rear seats"
+        }
       ],
       "name": "The presence of front and rear seats with heating"
     },
@@ -2801,8 +4145,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Using the personal settings menu" },
-        { "value": "1", "name": "Using the control module under the steering wheel" }
+        {
+          "value": "0",
+          "name": "Using the personal settings menu"
+        },
+        {
+          "value": "1",
+          "name": "Using the control module under the steering wheel"
+        }
       ],
       "name": "Type of automatic inclusion of lighting"
     },
@@ -2814,9 +4164,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Using the instrument panel" },
-        { "value": "2", "name": "Using a touch display" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Using the instrument panel"
+        },
+        {
+          "value": "2",
+          "name": "Using a touch display"
+        }
       ],
       "name": "Type of acquisition of the parking assistance deactivation switch"
     },
@@ -2828,10 +4187,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "using an intellectual switching unit" },
-        { "value": "1", "name": "Using the instrument panel" },
-        { "value": "2", "name": "Bloc of telematics" },
-        { "value": "3", "name": "Using a multiplexed front panel" }
+        {
+          "value": "0",
+          "name": "using an intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Using the instrument panel"
+        },
+        {
+          "value": "2",
+          "name": "Bloc of telematics"
+        },
+        {
+          "value": "3",
+          "name": "Using a multiplexed front panel"
+        }
       ],
       "name": "The type of information from the STOP and Start switch"
     },
@@ -2843,9 +4214,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "global" },
-        { "value": "2", "name": "Partial (Engine and gearbox management only)" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "global"
+        },
+        {
+          "value": "2",
+          "name": "Partial (Engine and gearbox management only)"
+        }
       ],
       "name": "Dynamic driving function"
     },
@@ -2857,21 +4237,66 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Class 7" },
-        { "value": "1", "name": "Class 8" },
-        { "value": "2", "name": "Class 8+" },
-        { "value": "3", "name": "Class 9" },
-        { "value": "4", "name": "Class 12" },
-        { "value": "5", "name": "Class 15" },
-        { "value": "6", "name": "Class 18" },
-        { "value": "7", "name": "Class 22" },
-        { "value": "8", "name": "Class isstt50" },
-        { "value": "9", "name": "Class istt51" },
-        { "value": "A", "name": "Class istt52" },
-        { "value": "B", "name": "Class istt6" },
-        { "value": "C", "name": "Class isstt40" },
-        { "value": "D", "name": "Class istt41" },
-        { "value": "E", "name": "Class istt53" }
+        {
+          "value": "0",
+          "name": "Class 7"
+        },
+        {
+          "value": "1",
+          "name": "Class 8"
+        },
+        {
+          "value": "2",
+          "name": "Class 8+"
+        },
+        {
+          "value": "3",
+          "name": "Class 9"
+        },
+        {
+          "value": "4",
+          "name": "Class 12"
+        },
+        {
+          "value": "5",
+          "name": "Class 15"
+        },
+        {
+          "value": "6",
+          "name": "Class 18"
+        },
+        {
+          "value": "7",
+          "name": "Class 22"
+        },
+        {
+          "value": "8",
+          "name": "Class isstt50"
+        },
+        {
+          "value": "9",
+          "name": "Class istt51"
+        },
+        {
+          "value": "A",
+          "name": "Class istt52"
+        },
+        {
+          "value": "B",
+          "name": "Class istt6"
+        },
+        {
+          "value": "C",
+          "name": "Class isstt40"
+        },
+        {
+          "value": "D",
+          "name": "Class istt41"
+        },
+        {
+          "value": "E",
+          "name": "Class istt53"
+        }
       ],
       "name": "Generator class type"
     },
@@ -2891,10 +4316,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Level 1" },
-        { "value": "1", "name": "Level 2" },
-        { "value": "2", "name": "Level 3" },
-        { "value": "3", "name": "Level 4" }
+        {
+          "value": "0",
+          "name": "Level 1"
+        },
+        {
+          "value": "1",
+          "name": "Level 2"
+        },
+        {
+          "value": "2",
+          "name": "Level 3"
+        },
+        {
+          "value": "3",
+          "name": "Level 4"
+        }
       ],
       "name": "The state of initialization of the sensitivity of the warning function in the risk of a collision"
     },
@@ -2946,13 +4383,34 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Euro 4" },
-        { "value": "1", "name": "Euro 5" },
-        { "value": "2", "name": "Euro 6" },
-        { "value": "3", "name": "Euro 6.1" },
-        { "value": "4", "name": "Euro 6.2" },
-        { "value": "5", "name": "Euro 6.3" },
-        { "value": "6", "name": "Unknown" }
+        {
+          "value": "0",
+          "name": "Euro 4"
+        },
+        {
+          "value": "1",
+          "name": "Euro 5"
+        },
+        {
+          "value": "2",
+          "name": "Euro 6"
+        },
+        {
+          "value": "3",
+          "name": "Euro 6.1"
+        },
+        {
+          "value": "4",
+          "name": "Euro 6.2"
+        },
+        {
+          "value": "5",
+          "name": "Euro 6.3"
+        },
+        {
+          "value": "6",
+          "name": "Unknown"
+        }
       ],
       "name": "Type of gearbox moment"
     },
@@ -2988,12 +4446,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "absent" },
-        { "value": "1", "name": "simple" },
-        { "value": "2", "name": "urban" },
-        { "value": "3", "name": "2 generation" },
-        { "value": "4", "name": "3 generation" },
-        { "value": "5", "name": "4 generation" }
+        {
+          "value": "0",
+          "name": "absent"
+        },
+        {
+          "value": "1",
+          "name": "simple"
+        },
+        {
+          "value": "2",
+          "name": "urban"
+        },
+        {
+          "value": "3",
+          "name": "2 generation"
+        },
+        {
+          "value": "4",
+          "name": "3 generation"
+        },
+        {
+          "value": "5",
+          "name": "4 generation"
+        }
       ],
       "name": "Automatic braking type at risk of collision (FARC)"
     },
@@ -3005,9 +4481,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Physical interface \"Man-Machine\"" },
-        { "value": "1", "name": "Touch interface \"Man-Machine\"" },
-        { "value": "2", "name": "Physical and Touch interface \"Man-Machine\"" }
+        {
+          "value": "0",
+          "name": "Physical interface \"Man-Machine\""
+        },
+        {
+          "value": "1",
+          "name": "Touch interface \"Man-Machine\""
+        },
+        {
+          "value": "2",
+          "name": "Physical and Touch interface \"Man-Machine\""
+        }
       ],
       "name": "Type of obtaining information \"Man-Machine\" air conditioning"
     },
@@ -3019,9 +4504,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Front and rear dimensions" },
-        { "value": "2", "name": "The rear overall lanterns" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Front and rear dimensions"
+        },
+        {
+          "value": "2",
+          "name": "The rear overall lanterns"
+        }
       ],
       "name": "Simultaneous inclusion of daylight and overall lanterns"
     },
@@ -3057,9 +4551,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Electro-hydraulic power steering (GEP)" },
-        { "value": "1", "name": "Variable power steering" },
-        { "value": "2", "name": "Electric power steering" }
+        {
+          "value": "0",
+          "name": "Electro-hydraulic power steering (GEP)"
+        },
+        {
+          "value": "1",
+          "name": "Variable power steering"
+        },
+        {
+          "value": "2",
+          "name": "Electric power steering"
+        }
       ],
       "name": "Type of power steering"
     },
@@ -3071,8 +4574,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Discrete" },
-        { "value": "1", "name": "By changing the voltage" }
+        {
+          "value": "0",
+          "name": "Discrete"
+        },
+        {
+          "value": "1",
+          "name": "By changing the voltage"
+        }
       ],
       "name": "Type of control of front indicators"
     },
@@ -3084,12 +4593,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without adjustment" },
-        { "value": "1", "name": "The adjustment requirement using the key controlled by the intellectual switching unit" },
-        { "value": "2", "name": "The adjustment requirement using two plus and minus keys controlled by an intellectual switching unit" },
-        { "value": "3", "name": "Adjustment requirement using the configuration menu" },
-        { "value": "4", "name": "The requirement to adjust the key on the dashboard" },
-        { "value": "5", "name": "Adjustment requirement using two keys on the dashboard" }
+        {
+          "value": "0",
+          "name": "Without adjustment"
+        },
+        {
+          "value": "1",
+          "name": "The adjustment requirement using the key controlled by the intellectual switching unit"
+        },
+        {
+          "value": "2",
+          "name": "The adjustment requirement using two plus and minus keys controlled by an intellectual switching unit"
+        },
+        {
+          "value": "3",
+          "name": "Adjustment requirement using the configuration menu"
+        },
+        {
+          "value": "4",
+          "name": "The requirement to adjust the key on the dashboard"
+        },
+        {
+          "value": "5",
+          "name": "Adjustment requirement using two keys on the dashboard"
+        }
       ],
       "name": "Front turn signal control type"
     },
@@ -3109,8 +4636,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Wired communication" },
-        { "value": "1", "name": "LIN network" }
+        {
+          "value": "0",
+          "name": "Wired communication"
+        },
+        {
+          "value": "1",
+          "name": "LIN network"
+        }
       ],
       "name": "The presence of diagnostics for LED low beam headlights"
     },
@@ -3138,8 +4671,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Halogen lamps" },
-        { "value": "1", "name": "Light-emitting diode" }
+        {
+          "value": "0",
+          "name": "Halogen lamps"
+        },
+        {
+          "value": "1",
+          "name": "Light-emitting diode"
+        }
       ],
       "name": "Type of system of additional static head lighting"
     },
@@ -3159,8 +4698,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Alarm module" },
-        { "value": "1", "name": "Intellectual switching unit" }
+        {
+          "value": "0",
+          "name": "Alarm module"
+        },
+        {
+          "value": "1",
+          "name": "Intellectual switching unit"
+        }
       ],
       "name": "Computer controlling perimeter security alarm"
     },
@@ -3172,10 +4717,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Calling technical assistance" },
-        { "value": "2", "name": "Remote diagnostic service" },
-        { "value": "3", "name": "All options are activated" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Calling technical assistance"
+        },
+        {
+          "value": "2",
+          "name": "Remote diagnostic service"
+        },
+        {
+          "value": "3",
+          "name": "All options are activated"
+        }
       ],
       "name": "Telematics options"
     },
@@ -3187,8 +4744,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit" },
-        { "value": "1", "name": "Driving control on the steering wheel is controlled by an intellectual switching unit" }
+        {
+          "value": "0",
+          "name": "There is no transmission control on the steering wheel or is not controlled by an intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Driving control on the steering wheel is controlled by an intellectual switching unit"
+        }
       ],
       "name": "The presence and type of gear shift control on the steering wheel"
     },
@@ -3200,8 +4763,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Short side door" },
-        { "value": "1", "name": "Long side door" }
+        {
+          "value": "0",
+          "name": "Short side door"
+        },
+        {
+          "value": "1",
+          "name": "Long side door"
+        }
       ],
       "name": "The width of the side door"
     },
@@ -3213,10 +4782,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Without the back door" },
-        { "value": "1", "name": "Trunk / luggage department" },
-        { "value": "2", "name": "The door of the luggage compartment" },
-        { "value": "3", "name": "The rear swing doors" }
+        {
+          "value": "0",
+          "name": "Without the back door"
+        },
+        {
+          "value": "1",
+          "name": "Trunk / luggage department"
+        },
+        {
+          "value": "2",
+          "name": "The door of the luggage compartment"
+        },
+        {
+          "value": "3",
+          "name": "The rear swing doors"
+        }
       ],
       "name": "The presence and type of rear door"
     },
@@ -3236,14 +4817,38 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Type 1" },
-        { "value": "2", "name": "Type 3" },
-        { "value": "3", "name": "Type 1 and Type 3" },
-        { "value": "4", "name": "Type 4" },
-        { "value": "5", "name": "Type 1 and Type 4" },
-        { "value": "6", "name": "Type 3 and Type 4" },
-        { "value": "7", "name": "Type 1, Type 3 and Type 4" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Type 1"
+        },
+        {
+          "value": "2",
+          "name": "Type 3"
+        },
+        {
+          "value": "3",
+          "name": "Type 1 and Type 3"
+        },
+        {
+          "value": "4",
+          "name": "Type 4"
+        },
+        {
+          "value": "5",
+          "name": "Type 1 and Type 4"
+        },
+        {
+          "value": "6",
+          "name": "Type 3 and Type 4"
+        },
+        {
+          "value": "7",
+          "name": "Type 1, Type 3 and Type 4"
+        }
       ],
       "name": "The presence and type of determination of the driver's attentiveness"
     },
@@ -3255,10 +4860,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Acquisition by the multifunction video camera" },
-        { "value": "2", "name": "Acquisition by the navigation" },
-        { "value": "3", "name": "Acquisition by the multifunction video camera and by the navigation" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Acquisition by the multifunction video camera"
+        },
+        {
+          "value": "2",
+          "name": "Acquisition by the navigation"
+        },
+        {
+          "value": "3",
+          "name": "Acquisition by the multifunction video camera and by the navigation"
+        }
       ],
       "name": "The presence and type of road speed signs acquisition"
     },
@@ -3270,10 +4887,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "The hollow door" },
-        { "value": "2", "name": "Mechanical side sliding door" },
-        { "value": "3", "name": "Light sliding door with electric drive" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "The hollow door"
+        },
+        {
+          "value": "2",
+          "name": "Mechanical side sliding door"
+        },
+        {
+          "value": "3",
+          "name": "Light sliding door with electric drive"
+        }
       ],
       "name": "The presence and type of the right rear side door"
     },
@@ -3285,10 +4914,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "The hollow door" },
-        { "value": "2", "name": "Mechanical side sliding door" },
-        { "value": "3", "name": "Light sliding door with electric drive" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "The hollow door"
+        },
+        {
+          "value": "2",
+          "name": "Mechanical side sliding door"
+        },
+        {
+          "value": "3",
+          "name": "Light sliding door with electric drive"
+        }
       ],
       "name": "The presence and type of left rear side door"
     },
@@ -3300,8 +4941,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "halogen headlights" },
-        { "value": "1", "name": "Led lights" }
+        {
+          "value": "0",
+          "name": "halogen headlights"
+        },
+        {
+          "value": "1",
+          "name": "Led lights"
+        }
       ],
       "name": "Type of front side lights"
     },
@@ -3313,8 +4960,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "halogen headlights" },
-        { "value": "1", "name": "Led lights" }
+        {
+          "value": "0",
+          "name": "halogen headlights"
+        },
+        {
+          "value": "1",
+          "name": "Led lights"
+        }
       ],
       "name": "Type of anterior rotation indicators"
     },
@@ -3326,8 +4979,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of contactor" },
-        { "value": "1", "name": "The presence of a contactor" }
+        {
+          "value": "0",
+          "name": "Lack of contactor"
+        },
+        {
+          "value": "1",
+          "name": "The presence of a contactor"
+        }
       ],
       "name": "The presence of a switch between a simple cruise control system and an adaptive cruise control system"
     },
@@ -3395,8 +5054,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Short air duct heating" },
-        { "value": "1", "name": "Long air duct heating" }
+        {
+          "value": "0",
+          "name": "Short air duct heating"
+        },
+        {
+          "value": "1",
+          "name": "Long air duct heating"
+        }
       ],
       "name": "Type of air duct heating the air conditioning system"
     },
@@ -3408,8 +5073,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Light or visual warning (seat belt, seat ...)" },
-        { "value": "1", "name": "Sound and visual alarm" }
+        {
+          "value": "0",
+          "name": "Light or visual warning (seat belt, seat ...)"
+        },
+        {
+          "value": "1",
+          "name": "Sound and visual alarm"
+        }
       ],
       "name": "Type of message Prevention function of crossing road marking lines"
     },
@@ -3421,8 +5092,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Textile" },
-        { "value": "1", "name": "Leather" }
+        {
+          "value": "0",
+          "name": "Textile"
+        },
+        {
+          "value": "1",
+          "name": "Leather"
+        }
       ],
       "name": "Type of upholstery seats"
     },
@@ -3442,8 +5119,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Intellectual switching unit" },
-        { "value": "1", "name": "Burning wires" }
+        {
+          "value": "0",
+          "name": "Intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Burning wires"
+        }
       ],
       "name": "Type of control of rotation indicators with a smooth increase in brightness"
     },
@@ -3463,9 +5146,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Turn on the button by pressing" },
-        { "value": "1", "name": "Turn on the rear window heating button (Luch) or button of visibility (VISI)" },
-        { "value": "2", "name": "Turning on the heating of the windshield on the multifunctional front panel" }
+        {
+          "value": "0",
+          "name": "Turn on the button by pressing"
+        },
+        {
+          "value": "1",
+          "name": "Turn on the rear window heating button (Luch) or button of visibility (VISI)"
+        },
+        {
+          "value": "2",
+          "name": "Turning on the heating of the windshield on the multifunctional front panel"
+        }
       ],
       "name": "Type of button on windshield heating"
     },
@@ -3477,8 +5169,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Controlled air intake module with 2-position shutters" },
-        { "value": "4", "name": "Controlled air intake module with multi-position damper" }
+        {
+          "value": "0",
+          "name": "Controlled air intake module with 2-position shutters"
+        },
+        {
+          "value": "4",
+          "name": "Controlled air intake module with multi-position damper"
+        }
       ],
       "name": "Type of controlled air intake module"
     },
@@ -3490,11 +5188,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Generation 1 (warning at the risk of a collision with a mobile object)" },
-        { "value": "2", "name": "Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)" },
-        { "value": "3", "name": "Generation 3" },
-        { "value": "4", "name": "Generation 4" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Generation 1 (warning at the risk of a collision with a mobile object)"
+        },
+        {
+          "value": "2",
+          "name": "Generation 2 (warning about the danger of a collision with moving, motionless objects and pedestrians)"
+        },
+        {
+          "value": "3",
+          "name": "Generation 3"
+        },
+        {
+          "value": "4",
+          "name": "Generation 4"
+        }
       ],
       "name": "Type of warning in the risk of collision"
     },
@@ -3506,11 +5219,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Lack of decoding" },
-        { "value": "1", "name": "Decoding type of simple blocking" },
-        { "value": "2", "name": "Decoding the type of superblock" },
-        { "value": "3", "name": "Decoding type of low cost lock" },
-        { "value": "4", "name": "Decoding of information from the opening unit of the rear open door" }
+        {
+          "value": "0",
+          "name": "Lack of decoding"
+        },
+        {
+          "value": "1",
+          "name": "Decoding type of simple blocking"
+        },
+        {
+          "value": "2",
+          "name": "Decoding the type of superblock"
+        },
+        {
+          "value": "3",
+          "name": "Decoding type of low cost lock"
+        },
+        {
+          "value": "4",
+          "name": "Decoding of information from the opening unit of the rear open door"
+        }
       ],
       "name": "Type of information encoding from the locks of the rear swing doors"
     },
@@ -3562,12 +5290,30 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "AX6" },
-        { "value": "1", "name": "AT8 (AL4)" },
-        { "value": "2", "name": "AXN8" },
-        { "value": "3", "name": "The hybrid automatic gearbox" },
-        { "value": "4", "name": "Reduction gear with park finger locking actuator" },
-        { "value": "5", "name": "CVT" }
+        {
+          "value": "0",
+          "name": "AX6"
+        },
+        {
+          "value": "1",
+          "name": "AT8 (AL4)"
+        },
+        {
+          "value": "2",
+          "name": "AXN8"
+        },
+        {
+          "value": "3",
+          "name": "The hybrid automatic gearbox"
+        },
+        {
+          "value": "4",
+          "name": "Reduction gear with park finger locking actuator"
+        },
+        {
+          "value": "5",
+          "name": "CVT"
+        }
       ],
       "name": "Automatic gearbox type"
     },
@@ -3579,9 +5325,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Seat heating" },
-        { "value": "2", "name": "Heated and ventilated seats" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Seat heating"
+        },
+        {
+          "value": "2",
+          "name": "Heated and ventilated seats"
+        }
       ],
       "name": "The presence of heated seats or heated ventilated seats"
     },
@@ -3593,8 +5348,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Choice with a pen" },
-        { "value": "1", "name": "Select by the switch" }
+        {
+          "value": "0",
+          "name": "Choice with a pen"
+        },
+        {
+          "value": "1",
+          "name": "Select by the switch"
+        }
       ],
       "name": "Selecting the modes of operation of a hybrid drive"
     },
@@ -3638,8 +5399,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Simple pressing" },
-        { "value": "1", "name": "Double pressing" }
+        {
+          "value": "0",
+          "name": "Simple pressing"
+        },
+        {
+          "value": "1",
+          "name": "Double pressing"
+        }
       ],
       "name": "Type of trunk opening switch or baggage compartment door"
     },
@@ -3683,9 +5450,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT of warning" },
-        { "value": "1", "name": "Temporary warning" },
-        { "value": "2", "name": "Permanent warning" }
+        {
+          "value": "0",
+          "name": "ABSENT of warning"
+        },
+        {
+          "value": "1",
+          "name": "Temporary warning"
+        },
+        {
+          "value": "2",
+          "name": "Permanent warning"
+        }
       ],
       "name": "Presence and duration of displaying of the overspeed warning"
     },
@@ -3697,9 +5473,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "absent" },
-        { "value": "1", "name": "Function limited to the lane departure warning" },
-        { "value": "2", "name": "Full lane keeping assistance function" }
+        {
+          "value": "0",
+          "name": "absent"
+        },
+        {
+          "value": "1",
+          "name": "Function limited to the lane departure warning"
+        },
+        {
+          "value": "2",
+          "name": "Full lane keeping assistance function"
+        }
       ],
       "name": "The presence and type of lane keeping assistance"
     },
@@ -3719,9 +5504,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Full Auto Stop (BVA)" },
-        { "value": "1", "name": "30 (BVM)" },
-        { "value": "2", "name": "Stop and Go (BVA)" }
+        {
+          "value": "0",
+          "name": "Full Auto Stop (BVA)"
+        },
+        {
+          "value": "1",
+          "name": "30 (BVM)"
+        },
+        {
+          "value": "2",
+          "name": "Stop and Go (BVA)"
+        }
       ],
       "name": "Type of mode for ACC"
     },
@@ -3733,10 +5527,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "Radar" },
-        { "value": "2", "name": "Radar & Camera" },
-        { "value": "3", "name": "Camera" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "Radar"
+        },
+        {
+          "value": "2",
+          "name": "Radar & Camera"
+        },
+        {
+          "value": "3",
+          "name": "Camera"
+        }
       ],
       "name": "Type of technology for ACC"
     },
@@ -3772,9 +5578,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "From the driver" },
-        { "value": "1", "name": "From the passenger" },
-        { "value": "2", "name": "side of the driver and passenger" }
+        {
+          "value": "0",
+          "name": "From the driver"
+        },
+        {
+          "value": "1",
+          "name": "From the passenger"
+        },
+        {
+          "value": "2",
+          "name": "side of the driver and passenger"
+        }
       ],
       "name": "Front seats with massage function"
     },
@@ -3786,8 +5601,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Coolating fluid heater control computer" },
-        { "value": "1", "name": "Multiplewlex computer of coolant heater" }
+        {
+          "value": "0",
+          "name": "Coolating fluid heater control computer"
+        },
+        {
+          "value": "1",
+          "name": "Multiplewlex computer of coolant heater"
+        }
       ],
       "name": "Cooling liquid heater type"
     },
@@ -3799,9 +5620,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no function" },
-        { "value": "1", "name": "The function is (the rear view camera with *3 rear images for Picasso)" },
-        { "value": "2", "name": "Rear view camera" }
+        {
+          "value": "0",
+          "name": "There is no function"
+        },
+        {
+          "value": "1",
+          "name": "The function is (the rear view camera with *3 rear images for Picasso)"
+        },
+        {
+          "value": "2",
+          "name": "Rear view camera"
+        }
       ],
       "name": "Rear-view mirrors"
     },
@@ -3837,9 +5667,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no function" },
-        { "value": "1", "name": "Warning about the ESP system malfunction" },
-        { "value": "2", "name": "Brake system malfunction" }
+        {
+          "value": "0",
+          "name": "There is no function"
+        },
+        {
+          "value": "1",
+          "name": "Warning about the ESP system malfunction"
+        },
+        {
+          "value": "2",
+          "name": "Brake system malfunction"
+        }
       ],
       "name": "Type of orange warning light to indicate a faulty brake booster"
     },
@@ -3851,10 +5690,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "There is no function" },
-        { "value": "1", "name": "manufacturer" },
-        { "value": "2", "name": "European Union" },
-        { "value": "3", "name": "Russia" }
+        {
+          "value": "0",
+          "name": "There is no function"
+        },
+        {
+          "value": "1",
+          "name": "manufacturer"
+        },
+        {
+          "value": "2",
+          "name": "European Union"
+        },
+        {
+          "value": "3",
+          "name": "Russia"
+        }
       ],
       "name": "The presence and type of emergency call"
     },
@@ -3866,9 +5717,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No function" },
-        { "value": "1", "name": "Halogen" },
-        { "value": "2", "name": "LED" }
+        {
+          "value": "0",
+          "name": "No function"
+        },
+        {
+          "value": "1",
+          "name": "Halogen"
+        },
+        {
+          "value": "2",
+          "name": "LED"
+        }
       ],
       "name": "Type of overall tail lights"
     },
@@ -3880,10 +5740,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "3 positional switch" },
-        { "value": "1", "name": "Contactor" },
-        { "value": "2", "name": "Pulse button with long and short press" },
-        { "value": "3", "name": "2 control buttons" }
+        {
+          "value": "0",
+          "name": "3 positional switch"
+        },
+        {
+          "value": "1",
+          "name": "Contactor"
+        },
+        {
+          "value": "2",
+          "name": "Pulse button with long and short press"
+        },
+        {
+          "value": "3",
+          "name": "2 control buttons"
+        }
       ],
       "name": "Type of lamp switch"
     },
@@ -3895,11 +5767,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "----" },
-        { "value": "1", "name": "Simple instrument panel" },
-        { "value": "2", "name": "CIROCCO instrument panel / Digital instrument panel" },
-        { "value": "3", "name": "Instrument panel with multifunctional display functions" },
-        { "value": "4", "name": "Instrument panel with matrix display" }
+        {
+          "value": "0",
+          "name": "----"
+        },
+        {
+          "value": "1",
+          "name": "Simple instrument panel"
+        },
+        {
+          "value": "2",
+          "name": "CIROCCO instrument panel / Digital instrument panel"
+        },
+        {
+          "value": "3",
+          "name": "Instrument panel with multifunctional display functions"
+        },
+        {
+          "value": "4",
+          "name": "Instrument panel with matrix display"
+        }
       ],
       "name": "Type of dashboard"
     },
@@ -3919,10 +5806,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Manual adjustment directly on the headlights" },
-        { "value": "1", "name": "Manual correction using a regulator of the height of the headlight of the headlights in the cabin" },
-        { "value": "2", "name": "Static adjustment of headlights of the height" },
-        { "value": "3", "name": "Dynamic adjustment of the position of the light bundle of the headlight in height" }
+        {
+          "value": "0",
+          "name": "Manual adjustment directly on the headlights"
+        },
+        {
+          "value": "1",
+          "name": "Manual correction using a regulator of the height of the headlight of the headlights in the cabin"
+        },
+        {
+          "value": "2",
+          "name": "Static adjustment of headlights of the height"
+        },
+        {
+          "value": "3",
+          "name": "Dynamic adjustment of the position of the light bundle of the headlight in height"
+        }
       ],
       "name": "Headlight beam height corrector"
     },
@@ -3934,8 +5833,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Intellectual switching unit" },
-        { "value": "1", "name": "Inner rear-view mirror" }
+        {
+          "value": "0",
+          "name": "Intellectual switching unit"
+        },
+        {
+          "value": "1",
+          "name": "Inner rear-view mirror"
+        }
       ],
       "name": "Management \"day/night\""
     },
@@ -3971,8 +5876,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Inclusion with a handle" },
-        { "value": "1", "name": "Activation by a switch" }
+        {
+          "value": "0",
+          "name": "Inclusion with a handle"
+        },
+        {
+          "value": "1",
+          "name": "Activation by a switch"
+        }
       ],
       "name": "Type of activation of the ASR+ Antibux system+"
     },
@@ -3984,8 +5895,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "ABSENT" },
-        { "value": "1", "name": "There is" }
+        {
+          "value": "0",
+          "name": "ABSENT"
+        },
+        {
+          "value": "1",
+          "name": "There is"
+        }
       ],
       "name": "The function of the heat pump"
     },
@@ -3997,8 +5914,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Normal mode" },
-        { "value": "1", "name": "Sports mode" }
+        {
+          "value": "0",
+          "name": "Normal mode"
+        },
+        {
+          "value": "1",
+          "name": "Sports mode"
+        }
       ],
       "name": "Mode of operation of the vehicle's steering and damping"
     },
@@ -4010,8 +5933,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Using the intellectual switching unit BSI" },
-        { "value": "1", "name": "Another" }
+        {
+          "value": "0",
+          "name": "Using the intellectual switching unit BSI"
+        },
+        {
+          "value": "1",
+          "name": "Another"
+        }
       ],
       "name": "Type of acceptance of information from the contactor of the semi-automatic system of assistance in parking"
     },
@@ -5087,9 +7016,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Distance-dependent maintenance" },
-        { "value": "1", "name": "Distance-based servicing weighted by time" },
-        { "value": "2", "name": "Distance and timebased servicing" }
+        {
+          "value": "0",
+          "name": "Distance-dependent maintenance"
+        },
+        {
+          "value": "1",
+          "name": "Distance-based servicing weighted by time"
+        },
+        {
+          "value": "2",
+          "name": "Distance and timebased servicing"
+        }
       ],
       "name": "Type of service"
     },
@@ -5101,8 +7039,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0C", "name": "12 months" },
-        { "value": "18", "name": "24 months" }
+        {
+          "value": "0C",
+          "name": "12 months"
+        },
+        {
+          "value": "18",
+          "name": "24 months"
+        }
       ],
       "name": "Total period(time) before servicing (threshold)"
     },
@@ -5114,15 +7058,42 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "0KM" },
-        { "value": "7D", "name": "Electric-25000KM" },
-        { "value": "64", "name": "Petrol-20000KM" },
-        { "value": "4B", "name": "Petrol-15000KM" },
-        { "value": "32", "name": "Petrol-10000KM" },
-        { "value": "23", "name": "Petrol-7000KM" },
-        { "value": "19", "name": "Petrol-5000KM" },
-        { "value": "96", "name": "Diesel-30000KM"},
-        { "value": "C8", "name": "Diesel-40000KM"}
+        {
+          "value": "00",
+          "name": "0KM"
+        },
+        {
+          "value": "7D",
+          "name": "Electric-25000KM"
+        },
+        {
+          "value": "64",
+          "name": "Petrol-20000KM"
+        },
+        {
+          "value": "4B",
+          "name": "Petrol-15000KM"
+        },
+        {
+          "value": "32",
+          "name": "Petrol-10000KM"
+        },
+        {
+          "value": "23",
+          "name": "Petrol-7000KM"
+        },
+        {
+          "value": "19",
+          "name": "Petrol-5000KM"
+        },
+        {
+          "value": "96",
+          "name": "Diesel-30000KM"
+        },
+        {
+          "value": "C8",
+          "name": "Diesel-40000KM"
+        }
       ],
       "name": "Servicing threshold (marketing)"
     },
@@ -5134,9 +7105,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "0KM" },
-        { "value": "7D", "name": "Electric-12500KM" },
-        { "value": "32", "name": "Petrol-5000KM" }
+        {
+          "value": "00",
+          "name": "0KM"
+        },
+        {
+          "value": "7D",
+          "name": "Electric-12500KM"
+        },
+        {
+          "value": "32",
+          "name": "Petrol-5000KM"
+        }
       ],
       "name": "First maintenance threshold"
     },
@@ -5156,9 +7136,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Static" },
-        { "value": "1", "name": "Dynamic" },
-        { "value": "2", "name": "Hybrid dynamic maintenance" }
+        {
+          "value": "0",
+          "name": "Static"
+        },
+        {
+          "value": "1",
+          "name": "Dynamic"
+        },
+        {
+          "value": "2",
+          "name": "Hybrid dynamic maintenance"
+        }
       ],
       "name": "Selection of the servicing managed by the engine"
     },
@@ -5170,12 +7159,24 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No sunroofs" },
-        { "value": "1", "name": "1 sunroof" },
-        { "value": "2", "name": "2 sunroofs" },
-        { "value": "3", "name": "3 sunroofs" }
+        {
+          "value": "0",
+          "name": "No sunroofs"
+        },
+        {
+          "value": "1",
+          "name": "1 sunroof"
+        },
+        {
+          "value": "2",
+          "name": "2 sunroofs"
+        },
+        {
+          "value": "3",
+          "name": "3 sunroofs"
+        }
       ],
-      "name": "Presence and number of sunroofs" 
+      "name": "Presence and number of sunroofs"
     },
     "243A": {
       "id": "CFG_ED0_BSI_OPTION_HBB_HBC_000",
@@ -5183,7 +7184,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Hydraulic brake assist" 
+      "name": "Hydraulic brake assist"
     },
     "243C": {
       "id": "Option: Royal Mail",
@@ -5191,7 +7192,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Royal Mail" 
+      "name": "Option: Royal Mail"
     },
     "2451": {
       "id": "Option mode dynamique sport",
@@ -5199,7 +7200,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: dynamic sport mode" 
+      "name": "Option: dynamic sport mode"
     },
     "2468": {
       "id": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001",
@@ -5209,10 +7210,16 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_00" },
-        { "value": "1", "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_01" }
+        {
+          "value": "0",
+          "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_00"
+        },
+        {
+          "value": "1",
+          "name": "CFG_EW7_BSI_TYPE_CHAINE_TRACTION_001_01"
+        }
       ],
-      "name": "Experimental: Type of traction chain" 
+      "name": "Experimental: Type of traction chain"
     },
     "2469": {
       "id": "CFG_EW8_ACQUI_PRES_PASS_AV_000",
@@ -5220,7 +7227,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Front passenger presence acquisition" 
+      "name": "Experimental: Front passenger presence acquisition"
     },
     "246A": {
       "id": "CFG_EW9_BSI_OPT_PASS_AVC_DETECT_000",
@@ -5228,7 +7235,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Option: Advanced passenger detection" 
+      "name": "Experimental: Option: Advanced passenger detection"
     },
     "246C": {
       "id": "CFG_EWB_BSI_PRESENCE_ETSR_000",
@@ -5236,7 +7243,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Extended Traffic Signs Recognition" 
+      "name": "Extended Traffic Signs Recognition"
     },
     "246E": {
       "id": "CFG_BHH_BSI_PRESENCE_BPGA_000",
@@ -5244,7 +7251,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Presence of a supply protection and management unit (BPGA)" 
+      "name": "Experimental: Presence of a supply protection and management unit (BPGA)"
     },
     "246F": {
       "id": "CFG_EWE_BSI_OPTION_ECO_COACHING_000",
@@ -5252,7 +7259,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Eco Coaching" 
+      "name": "Option: Eco Coaching"
     },
     "2470": {
       "id": "CFG_EVF_BSI_OPTION_ACPK_000",
@@ -5260,7 +7267,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Automatic City Park Assist" 
+      "name": "Option: Automatic City Park Assist"
     },
     "2477": {
       "id": "CFG_EYF_BSI_STRIKER_SLIDING_DOOR_000",
@@ -5270,12 +7277,24 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "No motorized locks" },
-        { "value": "1", "name": "Lock on the right" },
-        { "value": "2", "name": "Lock on the left" },
-        { "value": "3", "name": "Locks on left and right" }
+        {
+          "value": "0",
+          "name": "No motorized locks"
+        },
+        {
+          "value": "1",
+          "name": "Lock on the right"
+        },
+        {
+          "value": "2",
+          "name": "Lock on the left"
+        },
+        {
+          "value": "3",
+          "name": "Locks on left and right"
+        }
       ],
-      "name": "Experimental: Presence and number of motorised locks on sliding doors" 
+      "name": "Experimental: Presence and number of motorised locks on sliding doors"
     },
     "247C": {
       "id": "Version de l'algorithme de diagnostique du contacteur frein",
@@ -5293,11 +7312,20 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "No hands-free access" },
-        { "value": "13", "name": "Hands-free access to front doors and boot door" },
-        { "value": "1F", "name": "Hands-free access to all 4 doors and boot door" }
+        {
+          "value": "00",
+          "name": "No hands-free access"
+        },
+        {
+          "value": "13",
+          "name": "Hands-free access to front doors and boot door"
+        },
+        {
+          "value": "1F",
+          "name": "Hands-free access to all 4 doors and boot door"
+        }
       ],
-      "name": "Experimental: Hands-free system presence" 
+      "name": "Experimental: Hands-free system presence"
     },
     "2491": {
       "id": "CFG_FGK_BSI_OPT_LIGHTING_ANIMAT_000",
@@ -5305,7 +7333,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Option: Ambient Lighting Animation ???" 
+      "name": "Experimental: Option: Ambient Lighting Animation ???"
     },
     "249C": {
       "id": "DIFFERENTIATION OF THE CLIMATE CONTROL CALIBRATION FILE USED",
@@ -5315,8 +7343,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Not for Korea" },
-        { "value": "1", "name": "For Korea" }
+        {
+          "value": "0",
+          "name": "Not for Korea"
+        },
+        {
+          "value": "1",
+          "name": "For Korea"
+        }
       ],
       "name": "Experimental: Climate Control Calibration"
     },
@@ -5328,8 +7362,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Absence of multiplex control panel" },
-        { "value": "1", "name": "Presence of multiplex control panel" }
+        {
+          "value": "0",
+          "name": "Absence of multiplex control panel"
+        },
+        {
+          "value": "1",
+          "name": "Presence of multiplex control panel"
+        }
       ],
       "name": "Experimental: Type of acquisition architecture of the radio ON/OFF button"
     },
@@ -5341,8 +7381,14 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Self primed" },
-        { "value": "1", "name": "L-line excited" }
+        {
+          "value": "0",
+          "name": "Self primed"
+        },
+        {
+          "value": "1",
+          "name": "L-line excited"
+        }
       ],
       "name": "Experimental: Type of uncontrolled alternator"
     },
@@ -5354,9 +7400,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "Absent" },
-        { "value": "01", "name": "1st level of load shedding" },
-        { "value": "02", "name": "2nd level of load shedding" }
+        {
+          "value": "00",
+          "name": "Absent"
+        },
+        {
+          "value": "01",
+          "name": "1st level of load shedding"
+        },
+        {
+          "value": "02",
+          "name": "2nd level of load shedding"
+        }
       ],
       "name": "Experimental: Type of vacuum optimisation module (Vacuum shedding)"
     },
@@ -5368,10 +7423,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "Function absent" },
-        { "value": "01", "name": "Activation via menu on multifunctional screen" },
-        { "value": "02", "name": "Activation via switch" },
-        { "value": "03", "name": "CFG_EJK_BSI_TYPE_BAA_AUTOLOCKING_000_03" }
+        {
+          "value": "00",
+          "name": "Function absent"
+        },
+        {
+          "value": "01",
+          "name": "Activation via menu on multifunctional screen"
+        },
+        {
+          "value": "02",
+          "name": "Activation via switch"
+        },
+        {
+          "value": "03",
+          "name": "CFG_EJK_BSI_TYPE_BAA_AUTOLOCKING_000_03"
+        }
       ],
       "name": "Experimental: Presence and type of activation of the locking after closing a door controlled by the hands full access function"
     },
@@ -5383,10 +7450,22 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "TCU" },
-        { "value": "01", "name": "BGNCT" },
-        { "value": "02", "name": "BRNC_FIL" },
-        { "value": "03", "name": "BRNC_MUX" }
+        {
+          "value": "00",
+          "name": "TCU"
+        },
+        {
+          "value": "01",
+          "name": "BGNCT"
+        },
+        {
+          "value": "02",
+          "name": "BRNC_FIL"
+        },
+        {
+          "value": "03",
+          "name": "BRNC_MUX"
+        }
       ],
       "name": "Experimental: Front seat heating or ventilation control unit type"
     },
@@ -5396,7 +7475,7 @@
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Presence of polychromatic ambiance light" 
+      "name": "Experimental: Presence of polychromatic ambiance light"
     },
     "2456": {
       "id": "CFG_ENJ_BSI_OPTION_ACRC_000",
@@ -5406,20 +7485,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "Absent" },
-        { "value": "01", "name": "Present" }
+        {
+          "value": "00",
+          "name": "Absent"
+        },
+        {
+          "value": "01",
+          "name": "Present"
+        }
       ],
       "name": "Experimental: Presence and type of anti change report code"
     },
-      "2457": {
+    "2457": {
       "id": "CFG_ENL_BSI_OPTION_PLACE_POI_SCR_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Allows the display of POI alert on multifunctional screen" 
+      "name": "Experimental: Allows the display of POI alert on multifunctional screen"
     },
-      "2459": {
+    "2459": {
       "id": "CFG_ENW_BSI_OPT_COUPURE_MEDIA_EV_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5427,12 +7512,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "0", "name": "Media shutdown during contact switchover" },
-        { "value": "1", "name": "Media shuts off when the driver's door is opened" }
+        {
+          "value": "0",
+          "name": "Media shutdown during contact switchover"
+        },
+        {
+          "value": "1",
+          "name": "Media shuts off when the driver's door is opened"
+        }
       ],
       "name": "Experimental: Multimedia system shutdown mode"
     },
-      "245D": {
+    "245D": {
       "id": "CFG_ERA_BSI_OPT_CABIN_AIR_FILTER_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5440,61 +7531,70 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "Absent" },
-        { "value": "01", "name": "Clean cabin" },
-        { "value": "02", "name": "Clean cabin and self-contained cabin filter" }
+        {
+          "value": "00",
+          "name": "Absent"
+        },
+        {
+          "value": "01",
+          "name": "Clean cabin"
+        },
+        {
+          "value": "02",
+          "name": "Clean cabin and self-contained cabin filter"
+        }
       ],
       "name": "Experimental: Indicates a presence and type of cabin air filter"
     },
-      "2463": {
+    "2463": {
       "id": "CFG_ERF_BSI_OPT_VISION_NOCTURNE_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Night Vision function presence" 
+      "name": "Option: Night Vision function presence"
     },
-      "2467": {
+    "2467": {
       "id": "CFG_EW6_BSI_OPT_DISTRACTION_MODE_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Option: Driver Attention Alert (DAA) presence" 
+      "name": "Option: Driver Attention Alert (DAA) presence"
     },
-      "246B": {
+    "246B": {
       "id": "CFG_EVG_BSI_OPTION_OLVI_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Option: Child left in vehicle alert (rear seat reminder)" 
+      "name": "Experimental: Option: Child left in vehicle alert (rear seat reminder)"
     },
-      "246D": {
+    "246D": {
       "id": "CFG_EWC_BSI_AMORTISEMENT_EE_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Energy recuperation system presence" 
+      "name": "Experimental: Energy recuperation system presence"
     },
-      "2474": {
+    "2474": {
       "id": "CFG_EXY_BSI_INH_MOD_ACCUEIL_ECLX_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Inhibit welcome lighting mode (exterior)" 
+      "name": "Experimental: Inhibit welcome lighting mode (exterior)"
     },
-      "2476": {
+    "2476": {
       "id": "CFG_EYB_ORANG_BRAKE_TELLTALE_000",
       "tab": "unsorted",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
-      "name": "Experimental: Presence of orange brake warning indicator (for electric brake booster fault)" 
+      "name": "Experimental: Presence of orange brake warning indicator (for electric brake booster fault)"
     },
-      "247E": {
+    "247E": {
       "id": "CFG_EZH_BSI_FREEWHEELING_INHIB_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5502,7 +7602,7 @@
       "form_type": "checkbox",
       "name": "Experimental: Inhibition of freewheeling on the vehicle"
     },
-      "248C": {
+    "248C": {
       "id": "CFG_F7T_BSI_TYPE_VERSION_ILV_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5510,12 +7610,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "V1: Camera-based speed sign recognition only" },
-        { "value": "01", "name": "V2: Camera + navigation map data (ISA-compliant)" }
+        {
+          "value": "00",
+          "name": "V1: Camera-based speed sign recognition only"
+        },
+        {
+          "value": "01",
+          "name": "V2: Camera + navigation map data (ISA-compliant)"
+        }
       ],
       "name": "Experimental: Speed Limit Indication (ILV) acquisition version support"
     },
-      "2496": {
+    "2496": {
       "id": "CFG_FU0_BSI_TYPE_DIAG_ECL_AV_LED_001",
       "tab": "unsorted",
       "byte": 0,
@@ -5523,14 +7629,26 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "Diagnostics via pulse-width modulated communication line" },
-        { "value": "01", "name": "Diagnostics via LIN communication line" },
-        { "value": "02", "name": "Without diagnostics" },
-        { "value": "03", "name": "Diagnostics by current measurement" }
+        {
+          "value": "00",
+          "name": "Diagnostics via pulse-width modulated communication line"
+        },
+        {
+          "value": "01",
+          "name": "Diagnostics via LIN communication line"
+        },
+        {
+          "value": "02",
+          "name": "Without diagnostics"
+        },
+        {
+          "value": "03",
+          "name": "Diagnostics by current measurement"
+        }
       ],
       "name": "Experimental: Presence and type of LED front lighting diagnostics"
     },
-      "2497": {
+    "2497": {
       "id": "CFG_GAI_BSI_TYPE_EDR_REGULATION_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5538,16 +7656,34 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "No regulation" },
-        { "value": "01", "name": "US_V1" },
-        { "value": "02", "name": "EUROPE_V1" },
-        { "value": "03", "name": "CHINA_V1" },
-        { "value": "04", "name": "CHINA_V2" },
-        { "value": "05", "name": "EUROPE_V2" }
+        {
+          "value": "00",
+          "name": "No regulation"
+        },
+        {
+          "value": "01",
+          "name": "US_V1"
+        },
+        {
+          "value": "02",
+          "name": "EUROPE_V1"
+        },
+        {
+          "value": "03",
+          "name": "CHINA_V1"
+        },
+        {
+          "value": "04",
+          "name": "CHINA_V2"
+        },
+        {
+          "value": "05",
+          "name": "EUROPE_V2"
+        }
       ],
       "name": "Experimental: Type of Event Data Recording regulation"
     },
-      "24A1": {
+    "24A1": {
       "id": "CFG_GGD_BSI_TYPE_HMI_ADVCNP_000",
       "tab": "unsorted",
       "byte": 0,
@@ -5555,9 +7691,18 @@
       "form_type": "combobox",
       "mask": "11111111",
       "params": [
-        { "value": "00", "name": "No ISA cascading warning (pre-GSR2)" },
-        { "value": "01", "name": "Visual + cascaded audible warning" },
-        { "value": "02", "name": "Visual + cascaded haptic warning (pedal feedback)" }
+        {
+          "value": "00",
+          "name": "No ISA cascading warning (pre-GSR2)"
+        },
+        {
+          "value": "01",
+          "name": "Visual + cascaded audible warning"
+        },
+        {
+          "value": "02",
+          "name": "Visual + cascaded haptic warning (pedal feedback)"
+        }
       ],
       "name": "Experimental: Type of overspeed warning"
     }

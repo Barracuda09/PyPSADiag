@@ -714,8 +714,8 @@ class MainWindow(QMainWindow):
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
-            if self.ecuObjectList.get("name") == "IVI":
-                # IVI requires extended session and DTC read before reboot
+            if self.ecuObjectList.get("name") in ("IVI", "BSRF", "RTBM"):
+                # IVI/BSRF/RTBM require extended session and DTC read before reboot
                 commands = [ecu, "1003", "190209", "1103"]
                 for cmd in commands:
                     self.writeToOutputView("> " + cmd)

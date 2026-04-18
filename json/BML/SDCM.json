@@ -3,8 +3,9 @@
   "tx_id": "741",
   "rx_id": "641",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/BML.json",
   "key_type": "multi",
-  "keys":  {
+  "keys": {
     "SDCM": "A8EE"
   },
   "coding": true,
@@ -31,24 +32,24 @@
       "type": "raw",
       "form_type": "multi",
       "params": [
-          { 
-              "extra_name": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
-              "name_original": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
-              "name": "Access type",
-              "byte": 0,
-              "mask": "00001100",
-              "form_type": "combobox",
-              "params": [
-                  {
-                      "mask": "00000000",
-                      "name": "Hands-free start only"
-                  },
-                  {
-                      "mask": "00000100",
-                      "name": "Hands-free access + hands-free start"
-                  }
-              ]
-          }
+        {
+          "extra_name": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
+          "name_original": "CFG_EWO_SDCM_TYPE_FONCT_DML_ADML_000",
+          "name": "Access type",
+          "byte": 0,
+          "mask": "00001100",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "Hands-free start only"
+            },
+            {
+              "mask": "00000100",
+              "name": "Hands-free access + hands-free start"
+            }
+          ]
+        }
       ]
     }
   }

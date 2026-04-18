@@ -3,6 +3,7 @@
   "tx_id": "742",
   "rx_id": "642",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/HDC.json",
   "key_type": "single",
   "keys": "****",
   "coding": true,

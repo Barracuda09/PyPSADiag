@@ -1,0 +1,359 @@
+{
+    "_comment": {
+        "name": "COMBINE DTC Codes grabbed from Diagbox FDB. ECUTYPE union: CIROCCO, COMBINE, COMBINE_UDS, COMBINE_UDS_3, COMBINE_UDS_EV. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration downloading fault"
+    },
+    "B1001": {
+        "name": "Internal LED fault"
+    },
+    "B1002": {
+        "name": "Fault: unexpected reinitialisation of the ECU"
+    },
+    "B1003": {
+        "name": "Configuration fault  ( warning, this fault may be a phantom fault )"
+    },
+    "B1004": {
+        "name": "ECU internal fault"
+    },
+    "B100B": {
+        "name": "Internal operating temperature fault"
+    },
+    "B100C": {
+        "name": "ECU supply fault"
+    },
+    "B1014": {
+        "name": "USB download"
+    },
+    "B1200": {
+        "name": "Configuration incorrect"
+    },
+    "B1201": {
+        "name": "Fuel level information"
+    },
+    "B1202": {
+        "name": "Fuel level information"
+    },
+    "B1208": {
+        "name": "Display temperature"
+    },
+    "B1209": {
+        "name": "Malfunction of the Test mode"
+    },
+    "B120C": {
+        "name": "Video input CVBS"
+    },
+    "B121B": {
+        "name": "Tyre under-inflation detection button fault"
+    },
+    "B125C": {
+        "name": "Ambience lighting button"
+    },
+    "B128C": {
+        "name": "Status of the ECO mode"
+    },
+    "B128D": {
+        "name": "Stop and Start switch"
+    },
+    "B12BC": {
+        "name": "Lane positioning assist button"
+    },
+    "B1336": {
+        "name": "Fault  -  Ambience lighting"
+    },
+    "B13AA": {
+        "name": "Steering wheel heating control"
+    },
+    "B1516": {
+        "name": "USB socket fault"
+    },
+    "B151C": {
+        "name": "Video connection fault"
+    },
+    "B151D": {
+        "name": "Backlighting fault"
+    },
+    "B1534": {
+        "name": "Displaying of the theme on the instrument panel and on the telematic unit"
+    },
+    "B1549": {
+        "name": "Instrument panel backlighting"
+    },
+    "B154A": {
+        "name": "Semi-automatic parking assistance button"
+    },
+    "B154B": {
+        "name": "Main beam headlamps assistant button"
+    },
+    "B1559": {
+        "name": "Status of the lane keeping assistance function"
+    },
+    "B1564": {
+        "name": "Inner right button"
+    },
+    "B1565": {
+        "name": "Outer right button"
+    },
+    "B1566": {
+        "name": "Inner left button"
+    },
+    "B1567": {
+        "name": "Outer left button"
+    },
+    "B17F9": {
+        "name": "Trip computer button"
+    },
+    "B2203": {
+        "name": "VIN not configured"
+    },
+    "B2463": {
+        "name": "Brightness control button jammed"
+    },
+    "B2464": {
+        "name": "External button jammed"
+    },
+    "B2465": {
+        "name": "Ignition information"
+    },
+    "B2467": {
+        "name": "Malfunction of the indicator stepper motors"
+    },
+    "B2E00": {
+        "name": "Fault: \"Activation\" button jammed"
+    },
+    "B2E01": {
+        "name": "Fault: \"Escape\" button jammed"
+    },
+    "B2E02": {
+        "name": "Fault: \"Minus\" button jammed"
+    },
+    "B2E03": {
+        "name": "\"Plus\" button jammed fault"
+    },
+    "B2E0C": {
+        "name": "Telematic navigator present but configured \"Absent\" fault"
+    },
+    "B2E0D": {
+        "name": "Navigator fault"
+    },
+    "B2E12": {
+        "name": "Dynamic driving function button jammed"
+    },
+    "B2E20": {
+        "name": "Odometer zero reset button fault"
+    },
+    "B2E21": {
+        "name": "Fault on the rheostat button n° 1"
+    },
+    "B2E22": {
+        "name": "Brightness minus adjustment button fault"
+    },
+    "B2E24": {
+        "name": "Parking assistance button"
+    },
+    "B2E25": {
+        "name": "Fault: available space measurement button jammed"
+    },
+    "B2E26": {
+        "name": "ESP button fault"
+    },
+    "B2E2B": {
+        "name": "Heated rear screen button fault"
+    },
+    "B2E2D": {
+        "name": "CHECK button fault"
+    },
+    "B2E30": {
+        "name": "Lane departure warning button"
+    },
+    "B2E31": {
+        "name": "Blind spot monitoring function button fault"
+    },
+    "B2E32": {
+        "name": "LCD screens colour adjustment button fault"
+    },
+    "B2E33": {
+        "name": "Instrument panel dial colour adjustment button fault"
+    },
+    "B2E36": {
+        "name": "Fault in the automatic inversion button of the lamps"
+    },
+    "U0019": {
+        "name": "CAN fault"
+    },
+    "U0100": {
+        "name": "Fault: no communication with engine ECU"
+    },
+    "U0141": {
+        "name": "Fault: no communication with BSI"
+    },
+    "U0151": {
+        "name": "Fault: no communication with airbag ECU"
+    },
+    "U0153": {
+        "name": "No communication with the parking assistance ECU"
+    },
+    "U0154": {
+        "name": "No communication with occupant load detection ECU"
+    },
+    "U0159": {
+        "name": "Fault: no communication with the parking assistance ECU"
+    },
+    "U0162": {
+        "name": "Fault: no communication with telematic ECU"
+    },
+    "U0163": {
+        "name": "No communication with navigation ECU"
+    },
+    "U0164": {
+        "name": "Fault: no communication with air conditioning ECU"
+    },
+    "U0168": {
+        "name": "No communication with the immobiliser ECU"
+    },
+    "U0184": {
+        "name": "No communication with the audio system"
+    },
+    "U0191": {
+        "name": "No communication with television ECU"
+    },
+    "U0195": {
+        "name": "No communication with separate radio control"
+    },
+    "U0196": {
+        "name": "No communication with multimedia ECU"
+    },
+    "U0197": {
+        "name": "Absence of communication with the hands-free kit"
+    },
+    "U0201": {
+        "name": "No communication with LH sliding side door ECU"
+    },
+    "U0202": {
+        "name": "No communication with RH sliding side door ECU"
+    },
+    "U0209": {
+        "name": "No communication with seat memorising unit"
+    },
+    "U0230": {
+        "name": "No communication with boot relay unit"
+    },
+    "U0245": {
+        "name": "No communication with navigation screen"
+    },
+    "U0F00": {
+        "name": "Event not recorded fault"
+    },
+    "U0F03": {
+        "name": "Fault: no communication with the built-in systems interface"
+    },
+    "U0F0A": {
+        "name": "CAN fault"
+    },
+    "U0F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1415": {
+        "name": "Configuration: configuration incomplete"
+    },
+    "U1602": {
+        "name": "Malfunction of the CAN"
+    },
+    "U1700": {
+        "name": "Absence of communication with the BSI ECU"
+    },
+    "U171A": {
+        "name": "Fault: no communication with airbag ECU"
+    },
+    "U1724": {
+        "name": "No communication with the parking assistance ECU"
+    },
+    "U1726": {
+        "name": "Fault: no communication with airbag ECU"
+    },
+    "U1733": {
+        "name": "Fault: no communication with telematic ECU"
+    },
+    "U1802": {
+        "name": "Vehicle speed information"
+    },
+    "U1803": {
+        "name": "Oil level information fault"
+    },
+    "U1808": {
+        "name": "Coolant temperature data fault"
+    },
+    "U1809": {
+        "name": "Oil temperature information fault"
+    },
+    "U1812": {
+        "name": "Communication on the LVDS network"
+    },
+    "U1F00": {
+        "name": "Fault not recorded in the built-in systems interface faults log"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F40": {
+        "name": "Vehicle speed information coming from the engine management ECU fault"
+    },
+    "U1F42": {
+        "name": "Fault in the information sent by the 4WD transmission module"
+    },
+    "U1F43": {
+        "name": "BSI status"
+    },
+    "U1F44": {
+        "name": "Configuration of the BSI"
+    },
+    "U1F45": {
+        "name": "BSI supply"
+    },
+    "U1F46": {
+        "name": "Information from the airbag ECU"
+    },
+    "U1F47": {
+        "name": "Information from the immobiliser ECU"
+    },
+    "U1F48": {
+        "name": "Information from the occupant load detection ECU"
+    },
+    "U1F60": {
+        "name": "Interruption of the configuration"
+    },
+    "U1F71": {
+        "name": "Engine speed data fault"
+    },
+    "U1F72": {
+        "name": "Fuel level information fault"
+    },
+    "U1F76": {
+        "name": "Hybrid counter information fault"
+    },
+    "U1FA0": {
+        "name": "LVDS signal response time incorrect"
+    },
+    "U1FA1": {
+        "name": "Communication on the LVDS network"
+    },
+    "U1FB5": {
+        "name": "High speed CAN 4"
+    },
+    "U1FBA": {
+        "name": "Instrument panel not communicating on the high speed CAN 4"
+    },
+    "U1FBB": {
+        "name": "Built-in systems interface (VSM1) on the high speed CAN 4"
+    },
+    "U1FFF": {
+        "name": "Default configuration"
+    }
+}

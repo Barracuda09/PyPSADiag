@@ -4,6 +4,7 @@
   "rx_id": "716",
   "lin_id": "47",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/AFFICHEUR_LIN.json",
   "key_type": "multi",
   "keys": {
     "EMF_DGT_UDS_GP (DGT7CFF)": "FD69",

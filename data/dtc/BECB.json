@@ -1,0 +1,59 @@
+{
+    "_comment": {
+        "name": "BECB DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BECB_GEN2, BECB_GEN2_VE. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1605": {
+        "name": "Battery charge status unit  :  Battery charge status unit reset fault"
+    },
+    "B1606": {
+        "name": "Battery charge status unit  :  configuration fault"
+    },
+    "B1607": {
+        "name": "Battery charge status unit  :  ECU memory area fault"
+    },
+    "B1612": {
+        "name": "Fault in the memory of the battery charge status unit"
+    },
+    "B1613": {
+        "name": "Battery charge status unit"
+    },
+    "B1614": {
+        "name": "Ancillaries battery temperature signal fault"
+    },
+    "B1615": {
+        "name": "Ancillaries battery temperature signal fault"
+    },
+    "B1616": {
+        "name": "Battery voltage sensor fault"
+    },
+    "B1617": {
+        "name": "Battery voltage sensor fault"
+    },
+    "B1618": {
+        "name": "Battery voltage sensor fault"
+    },
+    "B1619": {
+        "name": "Battery current sensor fault"
+    },
+    "B161A": {
+        "name": "Battery current sensor fault"
+    },
+    "B161B": {
+        "name": "Battery current sensor fault"
+    },
+    "B1627": {
+        "name": "Battery charge status unit  :  voltage sensor fault"
+    },
+    "B1628": {
+        "name": "Battery charge status unit  :  current sensor fault"
+    },
+    "B1629": {
+        "name": "Battery charge status unit  :  temperature sensor fault"
+    },
+    "U1419": {
+        "name": "Fault in communication on the LIN"
+    },
+    "U141A": {
+        "name": "Battery charge status unit configuration fault"
+    }
+}

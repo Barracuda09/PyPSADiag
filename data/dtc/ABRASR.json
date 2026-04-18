@@ -1,0 +1,1937 @@
+{
+    "_comment": {
+        "name": "ABRASR DTC Codes grabbed from Diagbox FDB. ECUTYPE union: ABS, ABS80, ABS81, ABS8_BOSCH, ABS90_D, ABS90_F, ABS93, ABSMK100, ABSMK100_UDS, ABSMK70_1, ABS_4x4, ABS_KP1, ESP, ESP80, ESP81, ESP8_BOSCH, ESP90, ESP90_D, ESP90_F, ESPMK100, ESPMK100_UDS, ESPMK60_O, ESP_4x4, ESP_EBC_440_CAN, ESP_EBC_440_K, ESP_KP1, ESP_MOBIS_51. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1400": {
+        "name": "ABS ECU electrical supply"
+    },
+    "C0001": {
+        "name": "Switching electrovalve 1"
+    },
+    "C0002": {
+        "name": "Switching electrovalve 2"
+    },
+    "C0003": {
+        "name": "Limiting electrovalve 1"
+    },
+    "C0004": {
+        "name": "Limiting electrovalve 2"
+    },
+    "C0010": {
+        "name": "Front left inlet solenoid valve"
+    },
+    "C0011": {
+        "name": "Front LH exhaust electrovalve"
+    },
+    "C0014": {
+        "name": "Front RH intake solenoid valve"
+    },
+    "C0015": {
+        "name": "Front RH exhaust electrovalve"
+    },
+    "C0018": {
+        "name": "Rear LH inlet electrovalve"
+    },
+    "C0019": {
+        "name": "Rear LH exhaust electrovalve"
+    },
+    "C001C": {
+        "name": "Rear RH inlet electrovalve"
+    },
+    "C001D": {
+        "name": "Rear RH exhaust electrovalve"
+    },
+    "C0020": {
+        "name": "Recirculation pump"
+    },
+    "C0021": {
+        "name": "Brake servo"
+    },
+    "C0030": {
+        "name": "Front LH wheel speed sensor gap"
+    },
+    "C0031": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0032": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0033": {
+        "name": "Front RH wheel speed sensor gap"
+    },
+    "C0034": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0035": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0036": {
+        "name": "Rear LH wheel speed sensor gap"
+    },
+    "C0037": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0038": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0039": {
+        "name": "Rear RH wheel speed sensor gap"
+    },
+    "C003A": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C003B": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C003C": {
+        "name": "Wheel speed sensor supply"
+    },
+    "C0040": {
+        "name": "Brake pedal sensor"
+    },
+    "C0042": {
+        "name": "Main brake switch signal"
+    },
+    "C0043": {
+        "name": "Brake switch signal redundant"
+    },
+    "C0044": {
+        "name": "Braking pressure sensor inside the hydraulic block"
+    },
+    "C0046": {
+        "name": "Braking pressure sensor inside the hydraulic block"
+    },
+    "C0047": {
+        "name": "Braking pressure sensor signal"
+    },
+    "C0049": {
+        "name": "Brake fluid level"
+    },
+    "C0051": {
+        "name": "Steering wheel angle sensor"
+    },
+    "C0061": {
+        "name": "Lateral acceleration sensor signal fault"
+    },
+    "C0062": {
+        "name": "Longitudinal acceleration sensor"
+    },
+    "C0063": {
+        "name": "Yaw sensor signal"
+    },
+    "C006A": {
+        "name": "Yaw speed sensor signal"
+    },
+    "C006B": {
+        "name": "Check of the stability control"
+    },
+    "C0075": {
+        "name": "Brake pedal sensor"
+    },
+    "C0077": {
+        "name": "Tyre pressure(s) too low"
+    },
+    "C0078": {
+        "name": "Spare wheel of small diameter detected on the vehicle"
+    },
+    "C0203": {
+        "name": "Front left wheel speed sensor signal"
+    },
+    "C0211": {
+        "name": "ESP ECU"
+    },
+    "C0501": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0502": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0503": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0504": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0507": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0508": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0509": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C050A": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C050D": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C050E": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C050F": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0510": {
+        "name": "Rear left wheel speed sensor signal"
+    },
+    "C0513": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0514": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0515": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0516": {
+        "name": "Rear right wheel speed sensor signal"
+    },
+    "C0518": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0519": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C051A": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C051B": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C051C": {
+        "name": "Dynamic stability control gyrometer-accelerometer sensor"
+    },
+    "C051D": {
+        "name": "Yaw speed sensor"
+    },
+    "C051F": {
+        "name": "Yaw speed sensor signal"
+    },
+    "C052B": {
+        "name": "Recirculation pump"
+    },
+    "C052C": {
+        "name": "Recirculation pump"
+    },
+    "C052F": {
+        "name": "Recirculation pump supply"
+    },
+    "C053A": {
+        "name": "Inlet electrovalves"
+    },
+    "C053C": {
+        "name": "Wheel speed sensors"
+    },
+    "C053D": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "C053E": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "C053F": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "C0540": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "C0547": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C0548": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C054A": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C054B": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C054C": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C0552": {
+        "name": "Longitudinal acceleration sensor"
+    },
+    "C0555": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0556": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0557": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0558": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C055A": {
+        "name": "Recirculation pump supply"
+    },
+    "C055B": {
+        "name": "Recirculation pump supply"
+    },
+    "C0563": {
+        "name": "Electronic stability program (ESP)"
+    },
+    "C0564": {
+        "name": "Control module (ABS)"
+    },
+    "C0565": {
+        "name": "Control module (ABS)"
+    },
+    "C056D": {
+        "name": "Brake pedal position sensor"
+    },
+    "C056E": {
+        "name": "Brake pedal position sensor"
+    },
+    "C05B2": {
+        "name": "Steering wheel angle sensor signal"
+    },
+    "C05C9": {
+        "name": "Braking pressure sensor inside the hydraulic block"
+    },
+    "C0609": {
+        "name": "Handbrake switch"
+    },
+    "C1000": {
+        "name": "ABS ECU"
+    },
+    "C1001": {
+        "name": "ESP ECU"
+    },
+    "C1009": {
+        "name": "Brake fluid level low fault"
+    },
+    "C100A": {
+        "name": "Front LH wheel speed sensor signal fault"
+    },
+    "C1011": {
+        "name": "Front LH wheel speed sensor signal fault"
+    },
+    "C1014": {
+        "name": "Front LH wheel speed sensor signal fault"
+    },
+    "C1015": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C101C": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C101F": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C1020": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C1025": {
+        "name": "ABS / ESP ECU reprogramming control function"
+    },
+    "C1027": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C102A": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C102B": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1032": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1035": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1036": {
+        "name": "Front LH wheel speed sensor signal fault"
+    },
+    "C1037": {
+        "name": "Fault  front LH wheel speed sensor gap"
+    },
+    "C1040": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C1041": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C1042": {
+        "name": "Fault  front RH wheel speed sensor gap"
+    },
+    "C1043": {
+        "name": "Fault  rear LH speed sensor periodic signal"
+    },
+    "C1044": {
+        "name": "Fault  rear RH speed sensor periodic signal"
+    },
+    "C1045": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C1046": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C1047": {
+        "name": "Fault  rear LH wheel speed sensor gap"
+    },
+    "C1048": {
+        "name": "Rear RH wheel monitoring fault during pressure phase"
+    },
+    "C1049": {
+        "name": "Rear LH wheel monitoring fault during pressure phase"
+    },
+    "C104B": {
+        "name": "Front left inlet electrovalve control fault"
+    },
+    "C104F": {
+        "name": "Front right inlet electrovalve control fault"
+    },
+    "C1050": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1051": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1052": {
+        "name": "Fault  rear RH wheel speed sensor gap"
+    },
+    "C1053": {
+        "name": "Rear left inlet electrovalve fault"
+    },
+    "C1057": {
+        "name": "Rear right inlet electrovalve control fault"
+    },
+    "C105B": {
+        "name": "Rear right exhaust electrovalve control fault"
+    },
+    "C105F": {
+        "name": "Front left exhaust electrovalve control fault"
+    },
+    "C1060": {
+        "name": "Left front output solenoid valve"
+    },
+    "C1063": {
+        "name": "Front right exhaust electrovalve control fault"
+    },
+    "C1065": {
+        "name": "Left front intake solenoid valve"
+    },
+    "C1067": {
+        "name": "Rear left exhaust electrovalve control fault"
+    },
+    "C1070": {
+        "name": "Right front output solenoid valve"
+    },
+    "C1073": {
+        "name": "Recirculation pump fault  ABS/ASR"
+    },
+    "C1075": {
+        "name": "Right front intake solenoid valve"
+    },
+    "C1080": {
+        "name": "Left rear output solenoid valve"
+    },
+    "C1085": {
+        "name": "Left rear intake solenoid valve"
+    },
+    "C1090": {
+        "name": "Right rear output solenoid valve"
+    },
+    "C1095": {
+        "name": "Right rear intake solenoid valve"
+    },
+    "C1098": {
+        "name": "Electrovalve overheating"
+    },
+    "C10AE": {
+        "name": "Initialisation fault - gyroscope accelerometer sensor"
+    },
+    "C1100": {
+        "name": "Fault - absence of programming of the ECU at the factory"
+    },
+    "C1101": {
+        "name": "Communication fault with engine ECU"
+    },
+    "C1102": {
+        "name": "Voltage low"
+    },
+    "C1103": {
+        "name": "Fault - incorrect programming of the ECU at the factory"
+    },
+    "C1105": {
+        "name": "Lateral acceleration sensor signal"
+    },
+    "C1107": {
+        "name": "ABS / ESP / ASR warning lamp fault"
+    },
+    "C110A": {
+        "name": "ESP ECU downloading"
+    },
+    "C110C": {
+        "name": "ESP ECU"
+    },
+    "C110D": {
+        "name": "Electric parking brake"
+    },
+    "C1110": {
+        "name": "Recirculation pump"
+    },
+    "C1112": {
+        "name": "Steering wheel angle sensor signal"
+    },
+    "C1115": {
+        "name": "Lateral acceleration sensor signal"
+    },
+    "C111A": {
+        "name": "ESP ECU"
+    },
+    "C1120": {
+        "name": "Wheel speed sensor"
+    },
+    "C1121": {
+        "name": "Solenoid valves supply relay"
+    },
+    "C1131": {
+        "name": "Fault  braking pressure sensor signal"
+    },
+    "C1133": {
+        "name": "Clutch pedal switch signal"
+    },
+    "C1134": {
+        "name": "ESP activation / deactivation button fault"
+    },
+    "C1135": {
+        "name": "Steering wheel angle sensor signal fault"
+    },
+    "C1136": {
+        "name": "Steering wheel angle sensor signal fault"
+    },
+    "C1137": {
+        "name": "Steering wheel angle sensor signal fault"
+    },
+    "C1141": {
+        "name": "Primary solenoid valve 1"
+    },
+    "C1146": {
+        "name": "Control solenoid valve 1"
+    },
+    "C1151": {
+        "name": "Primary solenoid valve 2"
+    },
+    "C1156": {
+        "name": "Control solenoid valve 2"
+    },
+    "C1161": {
+        "name": "Fault  stop lamps switch signal"
+    },
+    "C118F": {
+        "name": "Brake pedal programming not completed"
+    },
+    "C119D": {
+        "name": "Traction control mode selector fault"
+    },
+    "C119E": {
+        "name": "ASR+ selector fault without loss of communication"
+    },
+    "C119F": {
+        "name": "ESP ASR+ fault"
+    },
+    "C11AD": {
+        "name": "Lighting of the ESP warning lamp after temporary deactivation of the traction control function (ASR)"
+    },
+    "C1200": {
+        "name": "Voltage of the ancillaries battery"
+    },
+    "C1201": {
+        "name": "FL  TBTWheel  Front left wheel speed sensor"
+    },
+    "C1202": {
+        "name": "FL  TBTWheel  Incorrect fitting of the front left-hand wheel speed sensor"
+    },
+    "C1203": {
+        "name": "FR  wheel speed sensor signal  Ancillaries battery or alternator voltage too low"
+    },
+    "C1204": {
+        "name": "The number of keys to be programmed cannot exceed"
+    },
+    "C1205": {
+        "name": "Solenoid valves supply relay"
+    },
+    "C1206": {
+        "name": "Switching electrovalve 1"
+    },
+    "C1207": {
+        "name": "Switching electrovalve 2"
+    },
+    "C1208": {
+        "name": "Limiting electrovalve 1"
+    },
+    "C1209": {
+        "name": "Limiting electrovalve 2"
+    },
+    "C120A": {
+        "name": "Electric parking brake activation / deactivation control"
+    },
+    "C120B": {
+        "name": "Speed control when travelling downhill"
+    },
+    "C120C": {
+        "name": "Steering wheel angle sensor"
+    },
+    "C120F": {
+        "name": "Brake servo pressure system"
+    },
+    "C1210": {
+        "name": "Transverse and longitudinal acceleration sensor supply fault"
+    },
+    "C1211": {
+        "name": "ABS or ESP ECU"
+    },
+    "C1212": {
+        "name": "Configuration fault"
+    },
+    "C1213": {
+        "name": "Incorrect programming of the ABS/ESP ECU at the factory"
+    },
+    "C1215": {
+        "name": "Brake pedal switch"
+    },
+    "C1217": {
+        "name": "Reverse gear switch"
+    },
+    "C1218": {
+        "name": "ECU overheating"
+    },
+    "C1219": {
+        "name": "Steering wheel angle sensor signal fault"
+    },
+    "C121A": {
+        "name": "Fault  steering wheel angle sensor calibration"
+    },
+    "C121C": {
+        "name": "Fault  engine torque request signal rejected"
+    },
+    "C121D": {
+        "name": "Braking circuit pressure sensor fault"
+    },
+    "C121E": {
+        "name": "Braking circuit pressure sensor output signal fault"
+    },
+    "C1220": {
+        "name": "Wheel speed sensor inverted"
+    },
+    "C1221": {
+        "name": "No acknowledgement of engine torque"
+    },
+    "C1222": {
+        "name": "Calculated vehicle speed"
+    },
+    "C1235": {
+        "name": "Master cylinder internal fault"
+    },
+    "C1237": {
+        "name": "Master cylinder signal interference"
+    },
+    "C123A": {
+        "name": "Stability control system sensors programming fault"
+    },
+    "C123B": {
+        "name": "ESP function extension fault"
+    },
+    "C123C": {
+        "name": "Fault  gyroscope accelerometer signal"
+    },
+    "C1242": {
+        "name": "Fault  longitudinal acceleration information output signal from the gyroscope accelerometer dual sensor"
+    },
+    "C1250": {
+        "name": "Vehicle speed data fault"
+    },
+    "C1255": {
+        "name": "Wheel speed sensor inverted"
+    },
+    "C1260": {
+        "name": "Steering wheel angle measurement outside the range"
+    },
+    "C1261": {
+        "name": "Steering wheel angle sensor not calibratedor incorrectly calibrated"
+    },
+    "C1264": {
+        "name": "Steering wheel angle sensor signal interference"
+    },
+    "C1282": {
+        "name": "Yaw sensor initialisation error"
+    },
+    "C1283": {
+        "name": "Lateral acceleration sensor signal / Longitudinal acceleration sensor signal / Abnormal yaw sensor signal"
+    },
+    "C1285": {
+        "name": "Longitudinal acceleration sensor signal"
+    },
+    "C1286": {
+        "name": "Sensor fault"
+    },
+    "C1290": {
+        "name": "Fault: CAN"
+    },
+    "C1300": {
+        "name": "Pressure sensor signal"
+    },
+    "C1301": {
+        "name": "Braking pressure sensor"
+    },
+    "C1302": {
+        "name": "Incoherence between the stoplamp switch and the pressure sensor"
+    },
+    "C1304": {
+        "name": "Pressure sensor signal"
+    },
+    "C1306": {
+        "name": "Longitudinal acceleration sensor signal"
+    },
+    "C1310": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1311": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1312": {
+        "name": "Gyroscope accelerometer signal ."
+    },
+    "C1313": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1314": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1315": {
+        "name": "Lateral acceleration sensor signal"
+    },
+    "C1316": {
+        "name": "Lateral acceleration sensor signal fault"
+    },
+    "C1317": {
+        "name": "Gyroscope accelerometer signal ."
+    },
+    "C1320": {
+        "name": "Left-hand front wheel sensor signal fault"
+    },
+    "C1321": {
+        "name": "Left-hand front wheel sensor signal fault"
+    },
+    "C1322": {
+        "name": "Front LH wheel speed sensor signal fault"
+    },
+    "C1325": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "C1326": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "C1327": {
+        "name": "Rear left wheel speed sensor signal fault"
+    },
+    "C1330": {
+        "name": "Right-hand front wheel sensor signal fault"
+    },
+    "C1331": {
+        "name": "Right-hand front wheel sensor signal fault"
+    },
+    "C1332": {
+        "name": "Front RH wheel speed sensor signal fault"
+    },
+    "C1335": {
+        "name": "Right-hand rear wheel sensor signal fault"
+    },
+    "C1336": {
+        "name": "Right-hand rear wheel sensor signal fault"
+    },
+    "C1337": {
+        "name": "Rear RH wheel speed sensor signal fault"
+    },
+    "C1341": {
+        "name": "Rear left inlet electrovalve fault"
+    },
+    "C1343": {
+        "name": "Rear LH exhaust electrovalve fault"
+    },
+    "C1346": {
+        "name": "Rear right inlet electrovalve fault"
+    },
+    "C1348": {
+        "name": "Rear right exhaust electrovalve fault"
+    },
+    "C134D": {
+        "name": "Erroneous data from the pressure sensor on the brake servo"
+    },
+    "C1350": {
+        "name": "Solenoid valve fault"
+    },
+    "C1351": {
+        "name": "Front left inlet electrovalve fault"
+    },
+    "C1353": {
+        "name": "Front left exhaust electrovalve fault"
+    },
+    "C1356": {
+        "name": "Front RH inlet electrovalve fault"
+    },
+    "C1358": {
+        "name": "Front right exhaust electrovalve fault"
+    },
+    "C1362": {
+        "name": "Switching electrovalve 1 fault"
+    },
+    "C1367": {
+        "name": "Switching electrovalve 2 fault"
+    },
+    "C1372": {
+        "name": "Limiting electrovalve 1 fault"
+    },
+    "C1377": {
+        "name": "Limiting electrovalve 2 fault"
+    },
+    "C1380": {
+        "name": "Recirculation pump fault"
+    },
+    "C1381": {
+        "name": "Recirculation pump supply fault"
+    },
+    "C1382": {
+        "name": "Recirculation pump supply relay"
+    },
+    "C1383": {
+        "name": "Fault: brake fluid level information"
+    },
+    "C1384": {
+        "name": "Brake pedal switch"
+    },
+    "C1385": {
+        "name": "Solenoid valves supply relay"
+    },
+    "C1386": {
+        "name": "Electrovalves supply relay fault"
+    },
+    "C1387": {
+        "name": "Speed sensor signals"
+    },
+    "C1388": {
+        "name": "Steering wheel angle sensor fault  :  calibration impossible"
+    },
+    "C1389": {
+        "name": "Brake fluid level low fault"
+    },
+    "C138A": {
+        "name": "Vacuum pump emergency supply"
+    },
+    "C1390": {
+        "name": "Fault  regulation of engine torque"
+    },
+    "C1391": {
+        "name": "Engine torque not cleared fault"
+    },
+    "C1392": {
+        "name": "ESP system fault"
+    },
+    "C1393": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "C1394": {
+        "name": "Fault with the initialisation of the yaw and lateral acceleration sensor or the braking pressure sensor"
+    },
+    "C1395": {
+        "name": "Brake fluid level low fault"
+    },
+    "C1396": {
+        "name": "Fault  :  clutch pedal sensor signal"
+    },
+    "C1398": {
+        "name": "Vehicle configuration fault"
+    },
+    "C1399": {
+        "name": "Hill start assist (easy move)"
+    },
+    "C139A": {
+        "name": "Automatic release of the electric parking brake"
+    },
+    "C139B": {
+        "name": "Dynamic stability control gyrometer-accelerometer sensor signal"
+    },
+    "C139C": {
+        "name": "Fault  clutch pedal sensor calibration"
+    },
+    "C139D": {
+        "name": "Fault in the calibration of the longitudinal acceleration sensor : impossible"
+    },
+    "C139E": {
+        "name": "Fault  MCI solenoid valve calibration"
+    },
+    "C139F": {
+        "name": "Fault  :  clutch pedal sensor signal"
+    },
+    "C13A1": {
+        "name": "Fault  :  clutch pedal sensor signal"
+    },
+    "C13A2": {
+        "name": "Fault  :  clutch pedal sensor signal"
+    },
+    "C13A4": {
+        "name": "Factory fault (rolling road)"
+    },
+    "C13A6": {
+        "name": "Traction control function (ASR+)"
+    },
+    "C13A7": {
+        "name": "Brake pedal position sensor"
+    },
+    "C1412": {
+        "name": "Fault  :  calibration of the steering wheel angle sensor"
+    },
+    "C1418": {
+        "name": "Steering wheel angle sensor"
+    },
+    "C141B": {
+        "name": "Left-hand motorised brake caliper control electrical circuit"
+    },
+    "C141C": {
+        "name": "Right-hand motorised brake caliper control electrical circuit"
+    },
+    "C141D": {
+        "name": "ECU internal fault"
+    },
+    "C141E": {
+        "name": "Semi-automatic parking system"
+    },
+    "C141F": {
+        "name": "Semi-automatic parking system"
+    },
+    "C1420": {
+        "name": "Semi-automatic parking system"
+    },
+    "C1425": {
+        "name": "Poor brake fluid quality"
+    },
+    "C1427": {
+        "name": "Braking system"
+    },
+    "C1428": {
+        "name": "Braking system"
+    },
+    "C1429": {
+        "name": "Deactivation of the adaptive cruise control function"
+    },
+    "C142A": {
+        "name": "Deactivation of the emergency collision braking function"
+    },
+    "C142C": {
+        "name": "Fault internal to the parking assistance ECU"
+    },
+    "C142D": {
+        "name": "Deactivation of the automatic post-collision braking function"
+    },
+    "C1431": {
+        "name": "Steering wheel angle information"
+    },
+    "C1435": {
+        "name": "Fault   longitudinal acceleration sensor calibration impossible"
+    },
+    "C1440": {
+        "name": "Vehicle configuration"
+    },
+    "C1500": {
+        "name": "ESP status word not valid or absent on communication with the BSI"
+    },
+    "C1501": {
+        "name": "Inconsistency between the ESP status word and the actual situation"
+    },
+    "C1502": {
+        "name": "Longitudinal acceleration sensor signal fault"
+    },
+    "C1503": {
+        "name": "Longitudinal acceleration sensor signal fault"
+    },
+    "C1508": {
+        "name": "Vehicle speed fault ."
+    },
+    "C1510": {
+        "name": "CAN bus and open circuit detection"
+    },
+    "C1511": {
+        "name": "Principal torque sensor"
+    },
+    "C1512": {
+        "name": "Fault ? steering wheel angle sensor adjustment not carried out"
+    },
+    "C1520": {
+        "name": "Voltage of the clutch switch signal"
+    },
+    "C1525": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1527": {
+        "name": "Open circuit, short circuit to earth or short circuit to positive on the sequential gear lever  reverse gear position"
+    },
+    "C1535": {
+        "name": "Yaw sensor signal fault"
+    },
+    "C1539": {
+        "name": "Open circuit, short circuit to earth or short circuit to positive on the sequential gear lever  neutral position"
+    },
+    "C1542": {
+        "name": "Open circuit, short circuit to earth, short circuit to positive or problem on the brake pedal sensor"
+    },
+    "C1544": {
+        "name": "Electric parking brake (FSE) inhibited for change of brake pads"
+    },
+    "C1545": {
+        "name": "ESP: Dynamic braking situation detected"
+    },
+    "C1546": {
+        "name": "Front right wheel pressure receiver sensor"
+    },
+    "C1547": {
+        "name": "Front left wheel pressure receiver sensor"
+    },
+    "C1548": {
+        "name": "Electric parking brake (EPB) actuators"
+    },
+    "C1549": {
+        "name": "Electric parking brake (EPB) right-hand actuator"
+    },
+    "C154A": {
+        "name": "Electric parking brake (EPB) left-hand actuator"
+    },
+    "C1550": {
+        "name": "Control unit"
+    },
+    "C1555": {
+        "name": "Electric parking brake activation / deactivation control"
+    },
+    "C155C": {
+        "name": "Electric parking brake activation / deactivation control"
+    },
+    "C155D": {
+        "name": "Automatic application function inhibited"
+    },
+    "C1560": {
+        "name": "Electric parking brake (EPB) left-hand actuator"
+    },
+    "C1561": {
+        "name": "Electric parking brake (EPB) right-hand actuator"
+    },
+    "C1562": {
+        "name": "Electric parking brake (EPB) actuator sensors"
+    },
+    "C1564": {
+        "name": "Electric parking brake (EPB) left-hand actuator"
+    },
+    "C1565": {
+        "name": "Electric parking brake (EPB) right-hand actuator"
+    },
+    "C1566": {
+        "name": "Inconsistent load reduction request from the built-in systems interface"
+    },
+    "C1567": {
+        "name": "Emergency collision braking"
+    },
+    "C1568": {
+        "name": "Emergency collision braking"
+    },
+    "C1569": {
+        "name": "Emergency collision braking"
+    },
+    "C156A": {
+        "name": "Electric parking brake (EPB) actuator sensors"
+    },
+    "C156B": {
+        "name": "EEPROM memory"
+    },
+    "C156C": {
+        "name": "Electric parking brake (EPB) actuator sensors"
+    },
+    "C156D": {
+        "name": "Electric parking brake (EPB) actuator sensors"
+    },
+    "C156E": {
+        "name": "Wheel speed sensors"
+    },
+    "C1570": {
+        "name": "Brake servo pressure sensor"
+    },
+    "C1571": {
+        "name": "Vacuum in the brake servo unit"
+    },
+    "C1572": {
+        "name": "Brake servo pressure sensor"
+    },
+    "C1573": {
+        "name": "Vacuum in the brake servo unit"
+    },
+    "C15FF": {
+        "name": "ECU internal fault"
+    },
+    "C1604": {
+        "name": "Electric parking brake"
+    },
+    "C1608": {
+        "name": "Anti-lock braking system (ABS) module internal fault"
+    },
+    "C160E": {
+        "name": "Power train CAN"
+    },
+    "C1613": {
+        "name": "Fault"
+    },
+    "C162A": {
+        "name": "Vacuum in the brake servo unit"
+    },
+    "C162F": {
+        "name": "Electric parking brake operating times too long"
+    },
+    "C1635": {
+        "name": "Vacuum pump relay control fault"
+    },
+    "C1636": {
+        "name": "Vacuum pump relay control fault"
+    },
+    "C1637": {
+        "name": "Vacuum pump relay control fault"
+    },
+    "C1638": {
+        "name": "Steering wheel angle information"
+    },
+    "C1639": {
+        "name": "Lack of coherence between ignition positive and main triggering transmitted by the BSI"
+    },
+    "C163B": {
+        "name": "Right-hand rear wheel sensor signal fault"
+    },
+    "C163C": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "C163D": {
+        "name": "Yaw speed sensor"
+    },
+    "C1640": {
+        "name": "Direction of the travel of the wheel speed sensors"
+    },
+    "C1641": {
+        "name": "Fault on the pairing: ABS/ESP electrovalves / hydraulic valve block"
+    },
+    "C1642": {
+        "name": "Gyroscopic sensor fault"
+    },
+    "C1649": {
+        "name": "Hydraulic pump motor specification fault"
+    },
+    "C164A": {
+        "name": "Programming of the tyre under-inflation detection function"
+    },
+    "C164B": {
+        "name": "Compatibility of the tyres"
+    },
+    "C1651": {
+        "name": "Tyre under-inflation detection reset request signal fault"
+    },
+    "C1652": {
+        "name": "Tyre under-inflation detection button fault"
+    },
+    "C1653": {
+        "name": "ESP in reinitialisation mode"
+    },
+    "C1654": {
+        "name": "Status of the emergency collision braking function"
+    },
+    "C1655": {
+        "name": "Electronic stability program (ESP)"
+    },
+    "C1657": {
+        "name": "Right-hand motorised brake caliper"
+    },
+    "C1658": {
+        "name": "Left-hand motorised brake caliper"
+    },
+    "C1660": {
+        "name": "Dynamic stability control activation/deactivation  ( button blocked )"
+    },
+    "C1662": {
+        "name": "Electric parking brake switch LED"
+    },
+    "C1663": {
+        "name": "Under-inflation detection function"
+    },
+    "C1664": {
+        "name": "Status of the emergency collision braking function"
+    },
+    "C1665": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C1666": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C1667": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C1668": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C1669": {
+        "name": "Tyre under-inflation detection system  ( Calibration incomplete )"
+    },
+    "C166A": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C166B": {
+        "name": "Tyre under-inflation detection system  ( Calibration incomplete )"
+    },
+    "C166C": {
+        "name": "Tyre under-inflation detection system"
+    },
+    "C166F": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "C1702": {
+        "name": "In-line coding Error"
+    },
+    "C1710": {
+        "name": "Electric parking brake fitting not verified"
+    },
+    "C1711": {
+        "name": "EEPROM internal fault"
+    },
+    "C1712": {
+        "name": "Electric parking brake in maintenance mode"
+    },
+    "C1750": {
+        "name": "Gyroscope accelerometer signal"
+    },
+    "C1800": {
+        "name": "Control unit supply voltage"
+    },
+    "C1881": {
+        "name": "Fault - absence of programming of the ECU in after sales"
+    },
+    "C2002": {
+        "name": "Hydraulic block solenoid valves calibration fault"
+    },
+    "C2003": {
+        "name": "BSI configuration fault"
+    },
+    "C2100": {
+        "name": "Fault  :  ECU supply under-voltage"
+    },
+    "C2101": {
+        "name": "ECU supply overvoltage fault"
+    },
+    "C2104": {
+        "name": "Electrovalves supply voltage fault  ABS/ESP"
+    },
+    "C2111": {
+        "name": "Braking pressure sensor supply fault"
+    },
+    "C2112": {
+        "name": "Braking pressure sensor supply fault"
+    },
+    "C2114": {
+        "name": "Gyroscope-accelerometer dual sensor low supply voltage fault"
+    },
+    "C2115": {
+        "name": "Fault  gyroscope accelerometer dual sensor excess supply voltage"
+    },
+    "C2116": {
+        "name": "Recirculation pump supply fault"
+    },
+    "C2200": {
+        "name": "Anti-lock braking system (ABS) module internal fault"
+    },
+    "C2202": {
+        "name": "Electric parking brake faulty"
+    },
+    "C2203": {
+        "name": "VIN not entered"
+    },
+    "C2204": {
+        "name": "Fault  :  inside gyroscope accelerometer dual sensor"
+    },
+    "C2205": {
+        "name": "Internal fault on the steering wheel angle sensor"
+    },
+    "C2206": {
+        "name": "Fault  vehicle configuration different to previous values"
+    },
+    "C2227": {
+        "name": "Brake disc temperature too high"
+    },
+    "C2234": {
+        "name": "Braking circuit vacuum too low"
+    },
+    "C2244": {
+        "name": "Electric parking brake / ESP ECU unexpected shutdown"
+    },
+    "C2380": {
+        "name": "Solenoid of the hydraulic block solenoid valves in open circuit or short-circuited to earth / solenoid of the hydraulic block solenoid valves in open circuit, short-circuited to positive or leaking current"
+    },
+    "C2402": {
+        "name": "Hydraulic block pump relay in open circuit or short-circuited to earth / hydraulic block pump in open circuit or short-circuited to positive / hydraulic block pump blocked / hydraulic block pump in open circuit or short-circuited to earth / blown fuse in the hydraulic block pump"
+    },
+    "C2416": {
+        "name": "LEFT    Electric parking brake (EPB) left-hand actuator   Electric parking brake (EPB) right-hand actuator"
+    },
+    "C2417": {
+        "name": "RIGHT    Electric parking brake (EPB) left-hand actuator   Electric parking brake (EPB) right-hand actuator"
+    },
+    "C2418": {
+        "name": "Electric parking brake (EPB) left-hand actuator"
+    },
+    "C2419": {
+        "name": "Electric parking brake (EPB) right-hand actuator"
+    },
+    "C2420": {
+        "name": "Electric parking brake left-hand actuator activation too late"
+    },
+    "C2421": {
+        "name": "Electric parking brake right-hand actuator activation too late"
+    },
+    "C2422": {
+        "name": "No response from the electric parking brake left-hand actuator"
+    },
+    "C2423": {
+        "name": "No response from the electric parking brake right-hand actuator"
+    },
+    "C2424": {
+        "name": "Current too high on the electric parking brake left-hand actuator"
+    },
+    "C2425": {
+        "name": "Current too high on the electric parking brake right-hand actuator"
+    },
+    "C2426": {
+        "name": "Electric parking brake left-hand actuator supply voltage too high"
+    },
+    "C2427": {
+        "name": "Electric parking brake right-hand actuator supply voltage too high"
+    },
+    "C2428": {
+        "name": "Electric parking brake actuator faulty"
+    },
+    "C2430": {
+        "name": "Electric parking brake (EPB) left-hand actuator"
+    },
+    "C2431": {
+        "name": "Electric parking brake (EPB) right-hand actuator"
+    },
+    "P0000": {
+        "name": "Vacuum pump sensor"
+    },
+    "P0513": {
+        "name": "Coded engine immobiliser code"
+    },
+    "P0555": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "P0560": {
+        "name": "ESP ECU electrical supply"
+    },
+    "P0562": {
+        "name": "ESP ECU electrical supply"
+    },
+    "P0563": {
+        "name": "ECU supply overvoltage fault"
+    },
+    "P05E0": {
+        "name": "Lack of coherence between the two brake sensors detected"
+    },
+    "P05FF": {
+        "name": "Comparison of signals between the braking circuit pressure sensor and the brake pedal position sensor"
+    },
+    "P0601": {
+        "name": "ECU fault"
+    },
+    "P0602": {
+        "name": "ECU fault"
+    },
+    "P0603": {
+        "name": "ESP ECU"
+    },
+    "P0604": {
+        "name": "ECU fault"
+    },
+    "P0605": {
+        "name": "ECU fault"
+    },
+    "P0606": {
+        "name": "ECU fault"
+    },
+    "P0607": {
+        "name": "ECU fault"
+    },
+    "P062F": {
+        "name": "EEPROM memory"
+    },
+    "P0652": {
+        "name": "Power supply 5 V"
+    },
+    "P0657": {
+        "name": "Clutch and braking circuit vacuum sensors electrical supply"
+    },
+    "P06B1": {
+        "name": "Sensors electrical supply"
+    },
+    "P0701": {
+        "name": "Gear selection actuator control"
+    },
+    "P0C04": {
+        "name": "ECU fault"
+    },
+    "P0C13": {
+        "name": "Traction control (ASR)"
+    },
+    "P0C19": {
+        "name": "Front electric drive machine torque"
+    },
+    "P110A": {
+        "name": "Air flow volume"
+    },
+    "P1181": {
+        "name": "Brake servo unit pressure sensor fault"
+    },
+    "P1182": {
+        "name": "Consistency error between both brake servo unit pressure sensors"
+    },
+    "P1183": {
+        "name": "Brake servo unit pressure sensor fault"
+    },
+    "P1184": {
+        "name": "Brake servo unit pressure sensor fault"
+    },
+    "P11B6": {
+        "name": "Electric vacuum pump: definitive loss of control"
+    },
+    "P1509": {
+        "name": "IGN+ voltage signal fault"
+    },
+    "P160A": {
+        "name": "Calibration reference"
+    },
+    "P160E": {
+        "name": "Fault: cutting of supply during the power latch"
+    },
+    "P160F": {
+        "name": "Approval reference"
+    },
+    "P1613": {
+        "name": "ECU configuration fault"
+    },
+    "P1632": {
+        "name": "Monitoring device repair"
+    },
+    "P1702": {
+        "name": "Power latch not carried out"
+    },
+    "P17E0": {
+        "name": "ECU fault"
+    },
+    "P2670": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "U0001": {
+        "name": "Fault: CAN"
+    },
+    "U0046": {
+        "name": "CAN  :  ECU not communicating"
+    },
+    "U0073": {
+        "name": "Intersystems CAN"
+    },
+    "U0076": {
+        "name": "Suspension and wheels CAN"
+    },
+    "U007C": {
+        "name": "Suspension and wheels CAN"
+    },
+    "U0100": {
+        "name": "Fault: no communication with the engine ECU"
+    },
+    "U0101": {
+        "name": "No communication with gearbox ECU"
+    },
+    "U0103": {
+        "name": "Communication with gearbox calculator missing."
+    },
+    "U0104": {
+        "name": "Loss of communication with the ESP ECU  (  emergency collision braking function  )  / Loss of communication with the ESP ECU  (  adaptive cruise control/speed limiter function  )"
+    },
+    "U0114": {
+        "name": "Fault  -  absence of communication with the rear final drive controlled clutch ECU"
+    },
+    "U0115": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U0125": {
+        "name": "No communication with gyroscope accelerometer dual sensor"
+    },
+    "U0126": {
+        "name": "Absence of communication with the steering wheel angle sensor"
+    },
+    "U0136": {
+        "name": "Fault  absence of communication with the rear final drive controlled clutch ECU"
+    },
+    "U013D": {
+        "name": "No communication with the braking circuit vacuum sensor"
+    },
+    "U0140": {
+        "name": "No communication with Built-in Systems Interface ECU"
+    },
+    "U0141": {
+        "name": "Fault: absence of communication with the Built-in Systems Interface"
+    },
+    "U0142": {
+        "name": "No communication with the built-in systems interface (BSI1 / VSM1)"
+    },
+    "U0146": {
+        "name": "No communication with the built-in systems interface (BSI1 / VSM1)"
+    },
+    "U0147": {
+        "name": "No communication with the built-in systems interface (BSI1 / VSM1)"
+    },
+    "U015B": {
+        "name": "No communication with power steering ECU"
+    },
+    "U01B4": {
+        "name": "No communication with the electric brake servo master cylinder on the high speed CAN 2"
+    },
+    "U025E": {
+        "name": "Communication with the electric brake servo master cylinder ECU"
+    },
+    "U0293": {
+        "name": "No communication with the electric/hybrid drive train supervisor ECU on the high speed CAN 1"
+    },
+    "U0294": {
+        "name": "No communication with the electric/hybrid drive train supervisor ECU on the high speed CAN 2"
+    },
+    "U0300": {
+        "name": "ABS/ESP stability control ECU"
+    },
+    "U0301": {
+        "name": "CAN  ( engine management ECU )"
+    },
+    "U0302": {
+        "name": "CAN  ( automatic gearbox ECU )"
+    },
+    "U0304": {
+        "name": "CAN  ( automatic gearbox ECU )"
+    },
+    "U0322": {
+        "name": "CAN  ( built-in systems interface BSI1 / VSM1 )"
+    },
+    "U0336": {
+        "name": "CAN  ( airbags and pretensioners ECU )"
+    },
+    "U034B": {
+        "name": "CAN  ( Electrical brake servo master cylinder )"
+    },
+    "U0401": {
+        "name": "Fault  information from the engine management ECU"
+    },
+    "U0402": {
+        "name": "CAN  ( automatic gearbox ECU )"
+    },
+    "U0404": {
+        "name": "Stop and start function configuration fault"
+    },
+    "U0422": {
+        "name": "CAN  ( built-in systems interface BSI1 / VSM1 )"
+    },
+    "U0428": {
+        "name": "Information invalid from steering wheel angle sensor"
+    },
+    "U0452": {
+        "name": "CAN  ( airbags and pretensioners ECU )"
+    },
+    "U04B5": {
+        "name": "CAN  ( Electrical brake servo master cylinder )"
+    },
+    "U0592": {
+        "name": "CAN  ( automatic gearbox ECU )"
+    },
+    "U0594": {
+        "name": "CAN  ( electric/hybrid drive train supervisor ECU )"
+    },
+    "U1000": {
+        "name": "Fault: ECU not communicating"
+    },
+    "U1003": {
+        "name": "Fault: absence of communication on the CAN network"
+    },
+    "U1004": {
+        "name": "Communication fault with engine ECU"
+    },
+    "U1007": {
+        "name": "Suspension and wheels CAN or high speed 2"
+    },
+    "U1008": {
+        "name": "General fault on the suspensions and wheels CAN network"
+    },
+    "U1009": {
+        "name": "Suspension and wheels CAN or high speed 2"
+    },
+    "U100E": {
+        "name": "Absence of communication with the drive train interface ECU"
+    },
+    "U1010": {
+        "name": "Absence of communication with the drive train interface ECU"
+    },
+    "U1100": {
+        "name": "Communication with the engine management ECU  ( CAN FD 8 )"
+    },
+    "U1103": {
+        "name": "No communication with gearbox ECU"
+    },
+    "U1105": {
+        "name": "Fault: lack of communication with the steering wheel angle sensor"
+    },
+    "U1107": {
+        "name": "Absence of communication with the hybrid management ECU 1"
+    },
+    "U1108": {
+        "name": "Fault: no communication with the engine ECU"
+    },
+    "U1109": {
+        "name": "Communication with auto gearbox ECU"
+    },
+    "U110F": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1110": {
+        "name": "No communication with the automatic gearbox electric control ECU"
+    },
+    "U1116": {
+        "name": "Fault: no communication with the controlled variable damping suspension ECU"
+    },
+    "U1117": {
+        "name": "Fault: no communication with Built-in Hydraulics Interface ."
+    },
+    "U1118": {
+        "name": "Communication with the BSI"
+    },
+    "U1119": {
+        "name": "Communication with the electric parking brake ECU"
+    },
+    "U111D": {
+        "name": "Communication with the parking assistance ECU"
+    },
+    "U1121": {
+        "name": "Fault absence of communication with the electric power steering ECU"
+    },
+    "U1122": {
+        "name": "Communication with the cruise control ECU"
+    },
+    "U1124": {
+        "name": "Fault: absence of communication with the pneumatic suspension ECU"
+    },
+    "U1125": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "U112A": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U113A": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U113D": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U1141": {
+        "name": "Communication with the hands-free unit (SDCM)"
+    },
+    "U1146": {
+        "name": "No communication with the electric/hybrid drive train supervisor ECU on the high speed CAN 2"
+    },
+    "U1148": {
+        "name": "Communication with the engine management ECU"
+    },
+    "U1149": {
+        "name": "Communication with the automatic gearbox ECU  ( High speed CAN 2 )"
+    },
+    "U1150": {
+        "name": "Communication with the power steering ECU  ( CAN )"
+    },
+    "U1157": {
+        "name": "No communication with the hybrid management ECU 1 over the suspension and wheels CAN network"
+    },
+    "U1158": {
+        "name": "Absence of communication on the suspensions and wheels CAN network with the engine ECU"
+    },
+    "U115D": {
+        "name": "Traction control mode selector"
+    },
+    "U1162": {
+        "name": "The distance alert ECU is causing operating faults"
+    },
+    "U1165": {
+        "name": "Communication with the detection device (radar or camera)"
+    },
+    "U1176": {
+        "name": "Multifunction touch screen  ( CAN )"
+    },
+    "U11A2": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U11D4": {
+        "name": "Fault in communication with the drive train supervisor"
+    },
+    "U11D5": {
+        "name": "Absence of communication with the electric vehicle management ECU"
+    },
+    "U11D6": {
+        "name": "Absence of communication with the drive train interface ECU"
+    },
+    "U11D7": {
+        "name": "Traction control (ASR)"
+    },
+    "U1201": {
+        "name": "Communication with the electric brake servo master cylinder ECU  ( CAN )"
+    },
+    "U1205": {
+        "name": "Fault: lack of communication with the steering wheel angle sensor"
+    },
+    "U1207": {
+        "name": "Absence of communication with the hybrid management ECU 1"
+    },
+    "U1208": {
+        "name": "Fault: no communication with the engine ECU"
+    },
+    "U1209": {
+        "name": "Communication with auto gearbox ECU"
+    },
+    "U1210": {
+        "name": "No communication with the automatic gearbox electric control ECU"
+    },
+    "U1216": {
+        "name": "Communication with the AMVAR ECU fault"
+    },
+    "U1217": {
+        "name": "Fault: no communication with Built-in Hydraulics Interface ."
+    },
+    "U1218": {
+        "name": "Communication with the BSI"
+    },
+    "U1219": {
+        "name": "Communication with the electric parking brake ECU"
+    },
+    "U121D": {
+        "name": "Communication with the parking assistance ECU"
+    },
+    "U1221": {
+        "name": "Fault absence of communication with the electric power steering ECU"
+    },
+    "U1222": {
+        "name": "Communication with the cruise control ECU"
+    },
+    "U1224": {
+        "name": "Fault: absence of communication with the pneumatic suspension ECU"
+    },
+    "U1225": {
+        "name": "Communication with gyroscope accelerometer sensor"
+    },
+    "U125D": {
+        "name": "Communication with the traction control ASR+ selector"
+    },
+    "U1262": {
+        "name": "Distance alert ECU emitting prohibited data"
+    },
+    "U1286": {
+        "name": "Rear electric drive machine ECU"
+    },
+    "U12A2": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U12D4": {
+        "name": "Fault in communication with the drive train supervisor"
+    },
+    "U12D5": {
+        "name": "Absence of communication with the electric vehicle management ECU"
+    },
+    "U12D6": {
+        "name": "Traction control (ASR)"
+    },
+    "U12F0": {
+        "name": "Communication on the CAN with the dynamic stability control ECU"
+    },
+    "U1305": {
+        "name": "Fault: lack of communication with the steering wheel angle sensor"
+    },
+    "U1306": {
+        "name": "CAN hybrid network  ( electric/hybrid drive train supervisor ECU )"
+    },
+    "U1307": {
+        "name": "Absence of communication with the hybrid management ECU 1"
+    },
+    "U1308": {
+        "name": "Engine ECU operating fault"
+    },
+    "U1309": {
+        "name": "Automatic gearbox operating fault"
+    },
+    "U1310": {
+        "name": "No communication with the automatic gearbox electric control ECU"
+    },
+    "U1313": {
+        "name": "CAN not communicating fault"
+    },
+    "U1316": {
+        "name": "Inconsistent data from the electronically controlled variable suspension (AMVAR) ECU"
+    },
+    "U1317": {
+        "name": "Fault: no communication with Built-in Hydraulics Interface ."
+    },
+    "U1318": {
+        "name": "Communication with the BSI"
+    },
+    "U1319": {
+        "name": "Communication with the electric parking brake ECU"
+    },
+    "U131D": {
+        "name": "Communication with the parking assistance ECU"
+    },
+    "U1321": {
+        "name": "Electric power steering operating fault"
+    },
+    "U1322": {
+        "name": "Communication with the cruise control ECU"
+    },
+    "U1324": {
+        "name": "Fault: absence of communication with the pneumatic suspension ECU"
+    },
+    "U1325": {
+        "name": "Left-hand rear wheel sensor signal fault"
+    },
+    "U132A": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U134D": {
+        "name": "Erroneous data from the pressure sensor on the brake servo"
+    },
+    "U135D": {
+        "name": "CAN (traction control plus)"
+    },
+    "U135E": {
+        "name": "Communication with the electric drive machine ECU  ( CAN )"
+    },
+    "U1362": {
+        "name": "The distance alert ECU is causing operating faults"
+    },
+    "U1376": {
+        "name": "CAN  ( Multifunction touch screen ECU )"
+    },
+    "U1386": {
+        "name": "Rear electric drive machine ECU"
+    },
+    "U1387": {
+        "name": "Communication with the engine management ECU or with the electric drive train supervisor ECU on the CAN"
+    },
+    "U13A2": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U13D4": {
+        "name": "Fault in communication with the drive train supervisor"
+    },
+    "U13D5": {
+        "name": "Absence of communication with the electric vehicle management ECU"
+    },
+    "U13D6": {
+        "name": "Traction control (ASR)"
+    },
+    "U13F0": {
+        "name": "Airbag ECU"
+    },
+    "U1415": {
+        "name": "Configuration fault (Absence of configuration)"
+    },
+    "U1417": {
+        "name": "Configuration fault (Absence of configuration)"
+    },
+    "U1420": {
+        "name": "Configuration parameter not authorised"
+    },
+    "U1508": {
+        "name": "Software not compatible with the engine management ECU"
+    },
+    "U1601": {
+        "name": "CAN fault"
+    },
+    "U1700": {
+        "name": "Fault in communication with the built-in systems interface (BSI)"
+    },
+    "U1701": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U1711": {
+        "name": "No communication with automatic gearbox ECU"
+    },
+    "U1712": {
+        "name": "Absence of communication with the steering wheel angle sensor"
+    },
+    "U1715": {
+        "name": "Fault in communication with the accelerometer-gyrometer sensor"
+    },
+    "U1935": {
+        "name": "CAN   :  communication with the electric drive train supervisor ECU"
+    },
+    "U1939": {
+        "name": "No communication with the hybrid/electric drive train supervisor ECU  ( CAN )"
+    },
+    "U1942": {
+        "name": "Built-in systems interface  ( High speed CAN 1 )"
+    },
+    "U1943": {
+        "name": "CAN  :  Communication with the engine management ECU"
+    },
+    "U1944": {
+        "name": "CAN  :  ECU not communicating"
+    },
+    "U1945": {
+        "name": "\"Bus off\" ECU"
+    },
+    "U1948": {
+        "name": "CAN  ( airbags and pretensioners ECU )"
+    },
+    "U1953": {
+        "name": "CAN  :  piloted manual gearbox ECU"
+    },
+    "U1F00": {
+        "name": "No recording in the faults log (JDD / DEH)"
+    },
+    "U1FC6": {
+        "name": "ECU mute on the CAN"
+    },
+    "U2000": {
+        "name": "Trigger mode"
+    },
+    "U2002": {
+        "name": "Triggering mode fault"
+    },
+    "U2003": {
+        "name": "Lack of coherence between the status of the vehicle and the main triggering request information"
+    },
+    "U2107": {
+        "name": "ESP stability control ECU"
+    },
+    "U2118": {
+        "name": "Partial wake-up message"
+    },
+    "U2119": {
+        "name": "Transmission of the partial wake-up message"
+    },
+    "U2213": {
+        "name": "Electric parking brake automatic release function wake-up status word reception problem"
+    },
+    "U3000": {
+        "name": "ABS/ESP stability control ECU"
+    },
+    "U3003": {
+        "name": "Voltage of the ancillaries battery"
+    },
+    "U3FFF": {
+        "name": "Power train"
+    }
+}

@@ -1,0 +1,158 @@
+{
+    "_comment": {
+        "name": "CSR DTC Codes grabbed from Diagbox FDB. ECUTYPE union: VCI. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1009": {
+        "name": "Internal fault in the ECU"
+    },
+    "B10F8": {
+        "name": "Integral controls steering wheel lower right module fault"
+    },
+    "B10F9": {
+        "name": "Integral controls steering wheel lower left module fault"
+    },
+    "B10FA": {
+        "name": "Integral controls steering wheel upper right module fault"
+    },
+    "B10FB": {
+        "name": "Integral controls steering wheel upper left module fault"
+    },
+    "B10FC": {
+        "name": "Integral controls steering wheel lower right module dial fault"
+    },
+    "B10FD": {
+        "name": "Integral controls steering wheel upper right module dial fault"
+    },
+    "B10FE": {
+        "name": "Integral controls steering wheel lower left module dial fault"
+    },
+    "B10FF": {
+        "name": "Integral controls steering wheel upper left module dial fault"
+    },
+    "B1190": {
+        "name": "Courtesy lamp button fault"
+    },
+    "B1260": {
+        "name": "Integral controls steering wheel lower right dial validation button fault"
+    },
+    "B1261": {
+        "name": "ESCAPE button fault"
+    },
+    "B1262": {
+        "name": "Menu button"
+    },
+    "B1263": {
+        "name": "MODE button fault"
+    },
+    "B1264": {
+        "name": "Integral controls steering wheel lower left dial validation button fault"
+    },
+    "B1265": {
+        "name": "Instrument panel navigation button ESCAPE"
+    },
+    "B1266": {
+        "name": "Speed setting increase button fault"
+    },
+    "B1267": {
+        "name": "Speed setting decrease button fault"
+    },
+    "B1268": {
+        "name": "Cruise control/speed limiter standby button fault"
+    },
+    "B1269": {
+        "name": "Button ACC+/TIV+"
+    },
+    "B126A": {
+        "name": "Button ACC-/TIV-"
+    },
+    "B126B": {
+        "name": "Button ARTIV"
+    },
+    "B126C": {
+        "name": "Available space measurement function activation button fault"
+    },
+    "B126D": {
+        "name": "Button CONFIG"
+    },
+    "B126E": {
+        "name": "Button LVV/RVV"
+    },
+    "B126F": {
+        "name": "Cruise control/speed limiter stop button fault"
+    },
+    "B1270": {
+        "name": "Black panel function activation button fault"
+    },
+    "B1271": {
+        "name": "Speed limiter activation button fault"
+    },
+    "B1272": {
+        "name": "Cruise control activation button fault"
+    },
+    "B1273": {
+        "name": "Memorised speeds recall button fault"
+    },
+    "B1330": {
+        "name": "Air recirculation button"
+    },
+    "B1520": {
+        "name": "Button RECHERCHE+"
+    },
+    "B1521": {
+        "name": "Button RECHERCHE-"
+    },
+    "B1522": {
+        "name": "Volume increase button fault"
+    },
+    "B1523": {
+        "name": "Volume decrease button fault"
+    },
+    "B1524": {
+        "name": "TEL/SRC button fault"
+    },
+    "B1525": {
+        "name": "LIST button fault"
+    },
+    "B1526": {
+        "name": "Integral controls steering wheel upper right dial validation button fault"
+    },
+    "B1527": {
+        "name": "SOURCE button fault"
+    },
+    "B1528": {
+        "name": "Voice recognition button"
+    },
+    "B1529": {
+        "name": "Hands-free kit button fault"
+    },
+    "B152A": {
+        "name": "MUTE button fault"
+    },
+    "B1551": {
+        "name": "Button on the left-hand side of the steering wheel with integrated controls"
+    },
+    "B1552": {
+        "name": "Knob on the right-hand side of the steering wheel with integrated controls"
+    },
+    "B1553": {
+        "name": "Button on the left-hand side of the steering wheel with integrated controls"
+    },
+    "B1554": {
+        "name": "Button on the left-hand side of the steering wheel with integrated controls"
+    },
+    "B1555": {
+        "name": "Knob on the left-hand side of the steering wheel with integrated controls"
+    },
+    "B1556": {
+        "name": "Button on the right-hand side of the steering wheel with integrated controls"
+    },
+    "B1557": {
+        "name": "Button on the right-hand side of the steering wheel with integrated controls"
+    },
+    "B1558": {
+        "name": "Button on the right-hand side of the steering wheel with integrated controls"
+    },
+    "U1F1A": {
+        "name": "Top-of-column transmission failure on the LIN"
+    }
+}

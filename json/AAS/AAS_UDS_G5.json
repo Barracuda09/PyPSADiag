@@ -3,6 +3,7 @@
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/AAS.json",
   "key_type": "multi",
   "keys": {
     "key 1": "D1F5",
@@ -16,7 +17,7 @@
     "tele": "Telecoding"
   },
   "zones": {
-   "2102": {
+    "2102": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
       "tab": "tele",

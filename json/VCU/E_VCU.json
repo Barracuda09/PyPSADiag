@@ -3,6 +3,7 @@
   "tx_id": "6A2",
   "rx_id": "682",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/VCU.json",
   "key_type": "single",
   "keys": "0107",
   "coding": true,

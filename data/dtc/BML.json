@@ -1,0 +1,143 @@
+{
+    "_comment": {
+        "name": "BML DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BML, SDCM. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration downloading fault"
+    },
+    "B1003": {
+        "name": "Fault: secure configuration faulty"
+    },
+    "B1004": {
+        "name": "Hands-free unit internal fault"
+    },
+    "B1723": {
+        "name": "Accesses unlocking sensor fault  ( front left-hand door )"
+    },
+    "B1724": {
+        "name": "Accesses unlocking sensor fault  ( front right-hand door )"
+    },
+    "B1725": {
+        "name": "Accesses unlocking sensor fault  ( rear left-hand door )"
+    },
+    "B1726": {
+        "name": "Accesses unlocking sensor fault  ( rear right-hand door )"
+    },
+    "B1727": {
+        "name": "Front left door handle fault"
+    },
+    "B1728": {
+        "name": "Front right door handle fault"
+    },
+    "B1729": {
+        "name": "Rear left door handle fault"
+    },
+    "B172A": {
+        "name": "Rear right door handle fault"
+    },
+    "B172B": {
+        "name": "Boot unlocking control fault"
+    },
+    "B172C": {
+        "name": "Fault in one or more of the dashboard interior aerials"
+    },
+    "B172D": {
+        "name": "Central interior aerial fault"
+    },
+    "B172E": {
+        "name": "Boot interior aerial fault"
+    },
+    "B172F": {
+        "name": "Boot exterior aerial fault"
+    },
+    "B1730": {
+        "name": "Locking/deadlocking motors shared output fault"
+    },
+    "B1731": {
+        "name": "Locking/unlocking motors control fault"
+    },
+    "B1732": {
+        "name": "Rear doors deadlocking/child lock motors control fault"
+    },
+    "B1733": {
+        "name": "Hands-free unlocking priority control fault"
+    },
+    "B1734": {
+        "name": "Accesses locking sensor fault  ( front left-hand door )"
+    },
+    "B1735": {
+        "name": "Accesses locking sensor fault  ( front right-hand door )"
+    },
+    "B1736": {
+        "name": "Accesses locking sensor fault  ( rear left-hand door )"
+    },
+    "B1737": {
+        "name": "Accesses locking sensor fault  ( rear right-hand door )"
+    },
+    "B17AE": {
+        "name": "Dashboard interior aerial"
+    },
+    "B17AF": {
+        "name": "Passenger compartment interior aerial"
+    },
+    "B17B6": {
+        "name": "Rear right-hand door exterior aerial or boot interior aerial"
+    },
+    "B17B7": {
+        "name": "Rear left door exterior aerial"
+    },
+    "B17B8": {
+        "name": "Front bumper exterior aerial"
+    },
+    "B17B9": {
+        "name": "Hands-free unit buzzer (SDCM)"
+    },
+    "B17BA": {
+        "name": "Interior NFC aerial"
+    },
+    "B17BB": {
+        "name": "Exterior NFC aerial"
+    },
+    "B17BF": {
+        "name": "Failure of the programming of secure exchanges between the hands-free unit (SDCM) and the built-in systems interface"
+    },
+    "B17C0": {
+        "name": "Error in the secure exchanges between the hands-free unit (SDCM) and the built-in systems interface"
+    },
+    "B17C1": {
+        "name": "Driver's door exterior opening control locking/unlocking sensor"
+    },
+    "B17C2": {
+        "name": "Front passenger door exterior opening control locking/unlocking sensor"
+    },
+    "B17C3": {
+        "name": "Secure configuration of the hands-free unit (SDCM)"
+    },
+    "B17D4": {
+        "name": "Hands-free identifiers accelerometer number 1"
+    },
+    "B17D5": {
+        "name": "Hands-free identifiers accelerometer number 2"
+    },
+    "B17D6": {
+        "name": "Hands-free identifiers accelerometer number 3"
+    },
+    "B17D7": {
+        "name": "Hands-free identifiers accelerometer number 4"
+    },
+    "B17D8": {
+        "name": "Hands-free identifiers accelerometer number 5"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Fault: no communication with the built-in systems interface"
+    },
+    "U1F0A": {
+        "name": "Fault: CAN"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    }
+}

@@ -3,8 +3,9 @@
     "tx_id": "76B",
     "rx_id": "66B",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/BCM.json",
     "key_type": "multi",
-    "keys":  {
+    "keys": {
         "VERINS_MOTORISES": "****"
     },
     "coding": true,

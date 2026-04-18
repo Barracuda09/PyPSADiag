@@ -1,0 +1,47 @@
+{
+    "_comment": {
+        "name": "AFFICHEUR_LIN DTC Codes grabbed from Diagbox FDB. ECUTYPE union: EMF_DGT_UDS, EMF_DGT_UDS_GP. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1003": {
+        "name": "Secure configuration fault"
+    },
+    "B1004": {
+        "name": "Touch screen internal fault"
+    },
+    "B133F": {
+        "name": "Touch button"
+    },
+    "B151D": {
+        "name": "Backlighting of the touch buttons"
+    },
+    "B1572": {
+        "name": "Multifunction touch screen backlighting"
+    },
+    "B1573": {
+        "name": "Multifunction touch screen touch pad"
+    },
+    "B1574": {
+        "name": "Multifunction touch screen ECU"
+    },
+    "B1575": {
+        "name": "Unexpected restarting of the multifunction touch screen ECU"
+    },
+    "B1576": {
+        "name": "Secure configuration of the multifunction touch screen"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F18": {
+        "name": "Touch screen not communicating on the multimedia CAN"
+    },
+    "U1F3E": {
+        "name": "Absence of communication with the telematic unit"
+    },
+    "U1F80": {
+        "name": "Telematic receiver control LIN"
+    },
+    "U1FA0": {
+        "name": "LVDS response time incorrect  ( LVDS : Low Voltage Differential Signalling )"
+    }
+}

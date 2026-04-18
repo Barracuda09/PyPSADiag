@@ -4,6 +4,7 @@
   "tx_id": "760",
   "rx_id": "660",
   "protocol": "kwp_hab",
+  "dtc_lookup": "data/dtc/AUTORADIO.json",
   "key_type": "single",
   "keys": "",
   "tabs": {

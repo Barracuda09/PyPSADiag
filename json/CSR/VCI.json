@@ -4,8 +4,9 @@
     "rx_id": "628",
     "lin_id": "48",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/CSR.json",
     "key_type": "multi",
-    "keys":  {
+    "keys": {
         "VCI": "****"
     },
     "coding": true,
@@ -16,7 +17,7 @@
         "tele": "Telecoding"
     },
     "zones": {
-        "2100": {
+        "D400": {
             "id": "Configuration group data list",
             "tab": "tele",
             "name": "Configuration group data list",
@@ -24,10 +25,266 @@
             "type": "raw",
             "form_type": "string"
         },
-        "2101": {
+        "D401": {
+            "id": "Configuration group data list",
+            "tab": "tele",
+            "name": "Configuration group data list",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D409": {
             "id": "Gauging group data values",
             "tab": "tele",
             "name": "Gauging group data values",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D432": {
+            "id": "Configuration_0101",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D434": {
+            "id": "Configuration_0102",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D435": {
+            "id": "Configuration_0103",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D414": {
+            "id": "Configuration_0104",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "0405": {
+            "id": "Configuration_0105",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D40D": {
+            "id": "Configuration_0106",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D40A": {
+            "id": "Configuration_0108",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D40B": {
+            "id": "Configuration_0109",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D40F": {
+            "id": "Configuration_0110",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D42F": {
+            "id": "Configuration_0112",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D431": {
+            "id": "Configuration_0113",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D433": {
+            "id": "Configuration_0114",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D42C": {
+            "id": "Configuration_0115",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D430": {
+            "id": "Configuration_0116",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D415": {
+            "id": "Configuration_0117",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D416": {
+            "id": "Configuration_0118",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D417": {
+            "id": "Configuration_0119",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D418": {
+            "id": "Configuration_0120",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D437": {
+            "id": "Configuration_0121",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D440": {
+            "id": "MP_AUGMENTATION_VOLUME_SONORE",
+            "tab": "tele",
+            "name": "Volume increase",
+            "type": "bool",
+            "form_type": "multi",
+            "MP_AUGMENTATION_VOLUME_SONORE": {
+                "name": "Volume Increase",
+                "byte": 0,
+                "type": "hex",
+                "form_type": "combobox",
+                "mask": "01000000",
+                "params": [
+                    {
+                        "name": "MP_AUGMENTATION_VOLUME_SONORE_0",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "MP_AUGMENTATION_VOLUME_SONORE_1",
+                        "mask": "01000000"
+                    }
+                ]
+            }
+        },
+        "D441": {
+            "id": "Configuration_0124",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D442": {
+            "id": "Configuration_0125",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D443": {
+            "id": "Configuration_0126",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D444": {
+            "id": "Configuration_0127",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D445": {
+            "id": "Configuration_0128",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D446": {
+            "id": "Configuration_0129",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D447": {
+            "id": "Configuration_0130",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D448": {
+            "id": "Configuration_0129",
+            "tab": "tele",
+            "name": "?",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "D449": {
+            "id": "Configuration_0130",
+            "tab": "tele",
+            "name": "?",
             "byte": 0,
             "type": "raw",
             "form_type": "string"

@@ -10,6 +10,7 @@
    of the License, or (at your option) any later version.
 """
 
+import threading
 import time
 import serial
 import serial.tools.list_ports
@@ -35,11 +36,29 @@ class BluetoothAdapter:
         self.detected_baud = None
         self._raw_can_supported = True
 
+        # ─── Keep-alive infrastructure ──────────────────────────────
+        # RLock so sendReceive → configure nests cleanly (both take the
+        # lock, same thread is allowed to re-enter). Serializes ALL
+        # serialPort I/O between the GUI worker thread
+        # (sendReceive/readData/configure) and the background keep-alive
+        # thread. Low-level helpers (_send_at, _send_uds) do NOT re-acquire.
+        self._io_lock = threading.RLock()
+        self._ka_thread = None
+        self._ka_stop = threading.Event()
+        self._ka_period = 2.0  # seconds — covers UDS S3 (5s), BT idle, ELM sleep
+
     def log(self, message, ui=False):
-        """Log message. ui=True sends to GUI (main thread only)"""
+        """Log message. ui=True forwards to GUI logger, but ONLY from the
+        main thread — the logger (writeToOutputView) calls
+        QTextEdit.append() + viewport().repaint() synchronously, which
+        corrupts Qt paint state and crashes if invoked from a worker
+        thread (e.g. DiagnosticCommunication's QThread during a read).
+        From worker threads we silently drop the UI forward and keep the
+        console print."""
         log_msg = f"[BT] {message}"
         print(log_msg)
-        if ui and self.logger:
+        if ui and self.logger and \
+                threading.current_thread() is threading.main_thread():
             self.logger(log_msg)
 
     # ─── Port Management ─────────────────────────────────────────
@@ -194,6 +213,9 @@ class BluetoothAdapter:
 
     def close(self):
         """Disconnect from ELM327"""
+        # Stop keep-alive thread BEFORE touching the serial port, so we don't
+        # race with a keep-alive tick that's mid-write.
+        self._stop_keep_alive()
         if self.serialPort.isOpen():
             try:
                 # Reset ELM327 before closing
@@ -248,114 +270,134 @@ class BluetoothAdapter:
                 return False
             self.log(f"OK: {description}")
 
+        # Disable ELM327 low-power mode (non-fatal — many clones answer '?').
+        # Prevents the adapter from auto-sleeping after ~15 min of idle,
+        # which is one of the root causes of post-idle Write timeout.
+        lp_resp = self._send_at("AT LP 0")
+        if lp_resp is None or "?" in (lp_resp or ""):
+            self.log("AT LP 0 not supported (clone) — ignoring")
+        else:
+            self.log("OK: Low-power mode disabled")
+
         return True
 
     # ─── Configuration ────────────────────────────────────────────
 
     def configure(self, tx_id, rx_id, protocol="uds", bus="DIAG", target=None, dialog_type="0"):
-        """Configure ELM327 for ECU communication"""
+        """Configure ELM327 for ECU communication.
+
+        Takes self._io_lock so the background keep-alive thread can't
+        interleave writes. RLock lets sendReceive('R') re-enter safely."""
         if not self.connected:
             self.log("Not connected")
             return False
 
-        self.current_tx_id = tx_id
-        self.current_rx_id = rx_id
+        with self._io_lock:
+            self.current_tx_id = tx_id
+            self.current_rx_id = rx_id
 
-        # Set CAN protocol based on PyPSADiag protocol
-        protocol_lower = protocol.lower()
-        if protocol_lower in ("uds", "kwp_is", "kwp_hab"):
-            # ISO 15765-4 CAN 500kbps 11-bit
-            self._send_at("AT SP 6")
-        elif protocol_lower in ("kwp2000", "psa2000"):
-            # User-defined protocol may be needed
-            self._send_at("AT SP B")
+            # Set CAN protocol based on PyPSADiag protocol
+            protocol_lower = protocol.lower()
+            if protocol_lower in ("uds", "kwp_is", "kwp_hab"):
+                # ISO 15765-4 CAN 500kbps 11-bit
+                self._send_at("AT SP 6")
+            elif protocol_lower in ("kwp2000", "psa2000"):
+                # User-defined protocol may be needed
+                self._send_at("AT SP B")
 
-        # Set transmit CAN ID (header)
-        response = self._send_at(f"AT SH {tx_id}")
-        if response is None or "ERROR" in (response or ""):
-            self.log(f"Failed to set TX ID: {tx_id}")
-            return False
+            # Set transmit CAN ID (header)
+            response = self._send_at(f"AT SH {tx_id}")
+            if response is None or "ERROR" in (response or ""):
+                self.log(f"Failed to set TX ID: {tx_id}")
+                return False
 
-        # Set receive CAN ID filter (software) + hardware CAN filter/mask
-        response = self._send_at(f"AT CRA {rx_id}")
-        if response is None or "ERROR" in (response or ""):
-            self.log(f"Failed to set RX filter: {rx_id}")
-            return False
-        # Hardware CAN acceptance filter — blocks non-matching frames at chip level,
-        # critical on busy CAN buses (e.g. BSI body CAN) to prevent buffer overflow
-        self._send_at(f"AT CF {rx_id}")   # CAN Filter = exact RX ID
-        self._send_at("AT CM 7FF")        # CAN Mask = all 11 bits must match
+            # Set receive CAN ID filter (software) + hardware CAN filter/mask
+            response = self._send_at(f"AT CRA {rx_id}")
+            if response is None or "ERROR" in (response or ""):
+                self.log(f"Failed to set RX filter: {rx_id}")
+                return False
+            # Hardware CAN acceptance filter — blocks non-matching frames at chip level,
+            # critical on busy CAN buses (e.g. BSI body CAN) to prevent buffer overflow
+            self._send_at(f"AT CF {rx_id}")   # CAN Filter = exact RX ID
+            self._send_at("AT CM 7FF")        # CAN Mask = all 11 bits must match
 
-        # Flow control is handled manually in _send_uds / _parse_isotp_response
-        # (AT CFC0 set in init — ELM327 auto-FC doesn't work for non-OBD CAN IDs)
+            # Flow control is handled manually in _send_uds / _parse_isotp_response
+            # (AT CFC0 set in init — ELM327 auto-FC doesn't work for non-OBD CAN IDs)
 
-        # Timing: short ST so ELM327 quickly returns First Frame to us,
-        # leaving enough time to send Flow Control before ECU's N_BS timeout (1000ms).
-        # AT ST 32 = 50 × 4.096ms ≈ 200ms — enough for ECU P2 response time.
-        self._send_at("AT AT0")   # Adaptive timing OFF
-        self._send_at("AT ST 32") # ~200ms timeout per frame
+            # Timing: short ST so ELM327 quickly returns First Frame to us,
+            # leaving enough time to send Flow Control before ECU's N_BS timeout (1000ms).
+            # AT ST 32 = 50 × 4.096ms ≈ 200ms — enough for ECU P2 response time.
+            self._send_at("AT AT0")   # Adaptive timing OFF
+            self._send_at("AT ST 32") # ~200ms timeout per frame
 
-        self.configured = True
-        self.log(f"Configured: TX={tx_id} RX={rx_id} protocol={protocol}")
-        return True
+            self.configured = True
+            self.log(f"Configured: TX={tx_id} RX={rx_id} protocol={protocol}")
+            return True
 
     # ─── Communication ────────────────────────────────────────────
 
     def sendReceive(self, data, timeout=1500):
-        """Send command to ECU and receive response"""
+        """Send command to ECU and receive response.
+
+        All serial I/O goes through self._io_lock so the background
+        keep-alive thread can safely interleave TesterPresent writes
+        between user commands."""
         if not self.connected:
             return ""
 
-        # Handle Arduino-specific commands (same approach as VCIAdapter)
-        if data.startswith(">") and ":" in data:
-            # Arduino ECU selection ">6B4:694" - already configured via configure()
-            self.log("ECU already configured, skipping Arduino command")
+        # K*/S are keep-alive life-cycle signals from DiagnosticCommunication.
+        # Handle them OUTSIDE the lock so _start/_stop can manage the thread
+        # cleanly (stop joins the thread, which itself needs the lock briefly).
+        if data.startswith("K"):
+            self._start_keep_alive()
             return "OK"
-        elif data.startswith("L"):
-            self.log("LIN not supported on ELM327 OBD")
-            return "OK"
-        elif data == "R":
-            # Reset - re-init ELM327
-            self._init_elm327()
-            if self.current_tx_id and self.current_rx_id:
-                self.configure(self.current_tx_id, self.current_rx_id)
-            return "OK"
-        elif data.startswith("K"):
-            # Keep-alive: send TesterPresent (3E 00)
-            response = self._send_uds("3E00", timeout)
-            # PyPSADiag expects "OK", not the UDS response "7E00"
-            if response.startswith("7E"):
-                return "OK"
-            return response
         elif data == "S":
-            # Stop keep-alive - nothing to do
+            self._stop_keep_alive()
             return "OK"
-        elif data == "V":
-            # Version request
-            return self.elm_version or "ELM327 Bluetooth"
 
-        # Regular UDS command
-        return self._send_uds(data, timeout)
+        with self._io_lock:
+            # Handle Arduino-specific commands (same approach as VCIAdapter)
+            if data.startswith(">") and ":" in data:
+                # Arduino ECU selection ">6B4:694" - already configured via configure()
+                self.log("ECU already configured, skipping Arduino command")
+                return "OK"
+            elif data.startswith("L"):
+                self.log("LIN not supported on ELM327 OBD")
+                return "OK"
+            elif data == "R":
+                # Reset - re-init ELM327. configure() re-acquires the
+                # RLock safely (same thread → recursive allow).
+                self._init_elm327()
+                if self.current_tx_id and self.current_rx_id:
+                    self.configure(self.current_tx_id, self.current_rx_id)
+                return "OK"
+            elif data == "V":
+                # Version request
+                return self.elm_version or "ELM327 Bluetooth"
+
+            # Regular UDS command
+            return self._send_uds(data, timeout)
 
     def readData(self):
         """Read next response from ECU (for Response Pending / NRC 78 handling).
            Uses AT MA to monitor CAN bus for the ECU's delayed response."""
-        try:
-            self.serialPort.reset_input_buffer()
-            self.serialPort.write(b"ATMA\r")
-            self.serialPort.flush()
+        with self._io_lock:
+            try:
+                self.serialPort.reset_input_buffer()
+                self.serialPort.write(b"ATMA\r")
+                self.serialPort.flush()
 
-            frame = self._read_monitor_frame(timeout=6.0)
-            self._stop_monitor()
+                frame = self._read_monitor_frame(timeout=6.0)
+                self._stop_monitor()
 
-            if frame is None:
+                if frame is None:
+                    return "Timeout"
+
+                return self._parse_isotp_response(frame, 3.0)
+            except Exception as e:
+                self.log(f"readData error: {e}")
+                self._stop_monitor()
                 return "Timeout"
-
-            return self._parse_isotp_response(frame, 3.0)
-        except Exception as e:
-            self.log(f"readData error: {e}")
-            self._stop_monitor()
-            return "Timeout"
 
     def _read_monitor_frame(self, timeout=6.0):
         """Read a single valid ISO-TP response frame from AT MA monitor mode.
@@ -674,6 +716,91 @@ class BluetoothAdapter:
 
         # Fallback: return longest hex line as raw data
         return max(hex_lines, key=len)
+
+    # ─── Keep-alive ───────────────────────────────────────────────
+
+    def _start_keep_alive(self):
+        """Start the background TesterPresent thread (idempotent).
+
+        Purpose:
+          - Keeps BT RFCOMM link warm (prevents OS 10-min idle drop)
+          - Keeps ELM327 out of low-power sleep
+          - Keeps ECU UDS session alive (resets S3 timer)
+
+        Called when DiagnosticCommunication sends 'KK' / 'KU' at the
+        start of a diagnostic session."""
+        if self._ka_thread is not None and self._ka_thread.is_alive():
+            return  # already running
+        self._ka_stop.clear()
+        self._ka_thread = threading.Thread(
+            target=self._keep_alive_loop,
+            name="ELM327-KeepAlive",
+            daemon=True,
+        )
+        self._ka_thread.start()
+        self.log(f"Keep-alive started (period={self._ka_period}s)")
+
+    def _stop_keep_alive(self):
+        """Signal the keep-alive thread to stop and wait briefly for it."""
+        if self._ka_thread is None:
+            return
+        self._ka_stop.set()
+        if self._ka_thread.is_alive():
+            self._ka_thread.join(timeout=self._ka_period + 1.0)
+        self._ka_thread = None
+        self.log("Keep-alive stopped")
+
+    def _keep_alive_loop(self):
+        """Periodic TesterPresent sender, runs in its own daemon thread.
+
+        Sends UDS `3E 80` (TesterPresent with suppressPosRspMsgIndicationBit
+        — ECU stays silent, minimum bus traffic). Acquires self._io_lock
+        for the full tick so it never interleaves with a user command."""
+        while not self._ka_stop.wait(self._ka_period):
+            if not self.connected or not self.configured:
+                # Nothing useful to send yet; just keep looping so the
+                # user can start a session later without restarting us.
+                continue
+            # Try-lock with short timeout: if the main thread is in the
+            # middle of a long multi-frame read, skip this tick rather
+            # than pile up. Next tick will likely succeed.
+            if not self._io_lock.acquire(timeout=0.5):
+                continue
+            try:
+                if not self.serialPort.isOpen():
+                    continue
+                self._send_uds_no_response("3E80")
+            except serial.SerialTimeoutException:
+                # BT write deadline — link looks dead. We don't reconnect
+                # from the keep-alive thread (the user-initiated path in
+                # _send_uds will handle it on the next real command).
+                self.log("Keep-alive: write timeout (link may be dead)")
+            except Exception as e:
+                # Any other transient error — log and keep looping.
+                self.log(f"Keep-alive tick error (ignored): {e}")
+            finally:
+                self._io_lock.release()
+
+    def _send_uds_no_response(self, data):
+        """Send a single ISO-TP Single Frame without parsing a response.
+
+        Used by keep-alive: we only care that the bytes leave the BT link
+        (keeps RFCOMM + ELM + ECU session alive). Caller MUST hold
+        self._io_lock."""
+        data_len = len(data) // 2
+        if data_len > 7:
+            return  # keep-alive payloads are always tiny
+        sf_pci = f"{data_len:02X}"
+        raw_frame = (sf_pci + data).ljust(16, '0')
+        try:
+            self.serialPort.reset_input_buffer()
+            self.serialPort.write((raw_frame + "\r").encode("utf-8"))
+            self.serialPort.flush()
+            # Drain the ELM prompt so the next real read starts clean.
+            # Short timeout — with 3E 80 there's no UDS response, only '>'.
+            self._read_elm_response(timeout=0.5)
+        except serial.SerialTimeoutException:
+            raise  # bubble up to _keep_alive_loop
 
     # ─── Info ─────────────────────────────────────────────────────
 
