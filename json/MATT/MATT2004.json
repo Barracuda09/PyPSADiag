@@ -7,13 +7,13 @@
   "key_type": "single",
   "keys": "ECEC",
   "tabs": {
-        "ident": "Identification",
-        "coding": "Telecoding"
+    "ident": "Identification",
+    "coding": "Telecoding"
   },
   "coding": "true",
   "errors": "true",
   "include_zone_object": "./data/IdentKWPECU.json",
-  "dtc_lookup": "data/dtc/MATT2010.json",
+  "dtc_lookup": "data/dtc/MATT.json",
   "zones": {
     "A0": {
       "name": "Telecoding_MATT_A0",
@@ -22,68 +22,68 @@
       "form_type": "multi",
       "params": [
         {
-        "id": "RESERVE_A0_1",
-        "name": "RESERVE_A0_1",
-        "byte": 0,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "RESERVE_A0_1",
+          "name": "RESERVE_A0_1",
+          "byte": 0,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "SITE_TLC",
-        "name": "SITE_TLC",
-        "byte": 1,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "SITE_TLC",
+          "name": "SITE_TLC",
+          "byte": 1,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "SIGNA_TLC",
-        "name": "SIGNA_TLC",
-        "byte": 2,
-        "byte_range": 3,
-        "type": "raw",
-        "form_type": "string"
+          "id": "SIGNA_TLC",
+          "name": "SIGNA_TLC",
+          "byte": 2,
+          "byte_range": 3,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "JOUR_TLC_UNM",
-        "name": "JOUR_TLC_UNM",
-        "byte": 5,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "JOUR_TLC_UNM",
+          "name": "JOUR_TLC_UNM",
+          "byte": 5,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "MOIS_TLC_UNM",
-        "name": "MOIS_TLC_UNM",
-        "byte": 6,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "MOIS_TLC_UNM",
+          "name": "MOIS_TLC_UNM",
+          "byte": 6,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "ANNEE_TLC_UNM",
-        "name": "ANNEE_TLC_UNM",
-        "byte": 7,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "ANNEE_TLC_UNM",
+          "name": "ANNEE_TLC_UNM",
+          "byte": 7,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "NB_TLC_UNM",
-        "name": "NB_TLC_UNM",
-        "byte": 8,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "NB_TLC_UNM",
+          "name": "NB_TLC_UNM",
+          "byte": 8,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         },
         {
-        "id": "SAISIE_TEL",
-        "name": "SAISIE_TEL",
-        "byte": 9,
-        "byte_range": 1,
-        "type": "raw",
-        "form_type": "string"
+          "id": "SAISIE_TEL",
+          "name": "SAISIE_TEL",
+          "byte": 9,
+          "byte_range": 1,
+          "type": "raw",
+          "form_type": "string"
         }
       ]
     },
@@ -94,243 +94,279 @@
       "form_type": "multi",
       "params": [
         {
-        "id": "TELAFFALERT",
-        "name": "Display of vehicle warning messages",
-        "byte": 0,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFALERT",
+          "name": "Display of vehicle warning messages",
+          "byte": 0,
+          "type": "bool",
+          "mask": "10000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFARTIV",
-        "name": "Distance alert",
-        "byte": 0,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFARTIV",
+          "name": "Distance alert",
+          "byte": 0,
+          "type": "bool",
+          "mask": "01000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFINFAUDIO",
-        "name": "Reminder of audio information",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFINFAUDIO",
+          "name": "Reminder of audio information",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00100000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_BKQ_MATT_CONF_BVA_BVMP_000",
-        "name": "Presence of Auto gearbox position indicator",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_BKQ_MATT_CONF_BVA_BVMP_000",
+          "name": "Presence of Auto gearbox position indicator",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00010000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFLVV",
-        "name": "Speed limiter",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFLVV",
+          "name": "Speed limiter",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00001000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFINDMAINT",
-        "name": "Service indicator",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFINDMAINT",
+          "name": "Service indicator",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00000100",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_BKT_MATT_CONF_MENU_000",
-        "name": "Parameter setting menu",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000010",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_BKT_MATT_CONF_MENU_000",
+          "name": "Parameter setting menu",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00000010",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFRAPP",
-        "name": "Gear ratio display mode",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00000001",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFRAPP",
+          "name": "Gear ratio display mode",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00000001",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFNAV",
-        "name": "Navigation function",
-        "byte": 1,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFNAV",
+          "name": "Navigation function",
+          "byte": 1,
+          "type": "bool",
+          "mask": "10000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFHUILE",
-        "name": "Oil gauge",
-        "byte": 1,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFHUILE",
+          "name": "Oil gauge",
+          "byte": 1,
+          "type": "bool",
+          "mask": "01000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFODB",
-        "name": "Trip computer",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFODB",
+          "name": "Trip computer",
+          "byte": 1,
+          "type": "bool",
+          "mask": "00100000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFODO",
-        "name": "Distance recorder",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFODO",
+          "name": "Distance recorder",
+          "byte": 1,
+          "type": "bool",
+          "mask": "00010000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFF",
-        "name": "Exterior temperature",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFF",
+          "name": "Exterior temperature",
+          "byte": 1,
+          "type": "bool",
+          "mask": "00001000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_BLO_MATT_CONF_RVV_000",
-        "name": "Cruise control",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_BLO_MATT_CONF_RVV_000",
+          "name": "Cruise control",
+          "byte": 1,
+          "type": "bool",
+          "mask": "00000100",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELUNITES",
-        "name": "Volume and distance units",
-        "byte": 1,
-        "type": "bool",
-        "mask": "00000011",
-        "form_type": "combobox",
-        "params": [
-            { "mask": "00000000", "name": "00 - "},
-            { "mask": "00000001", "name": "01 - "},
-            { "mask": "00000010", "name": "10 - "},
-            { "mask": "00000011", "name": "11 - "}
-            ]
+          "id": "TELUNITES",
+          "name": "Volume and distance units",
+          "byte": 1,
+          "type": "bool",
+          "mask": "00000011",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "00 - "
+            },
+            {
+              "mask": "00000001",
+              "name": "01 - "
+            },
+            {
+              "mask": "00000010",
+              "name": "10 - "
+            },
+            {
+              "mask": "00000011",
+              "name": "11 - "
+            }
+          ]
         },
         {
-        "id": "TELAFFDESIGN",
-        "name": "Wire navigator",
-        "byte": 2,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFDESIGN",
+          "name": "Wire navigator",
+          "byte": 2,
+          "type": "bool",
+          "mask": "10000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "TELAFFUNITEMP",
-        "name": "Display of units of temperature",
-        "byte": 2,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "combobox",
-        "params": [
-            { "mask": "00000000", "name": "0 - Celsius"},
-            { "mask": "01000000", "name": "1 - Fahrenheit"}
-            ]
+          "id": "TELAFFUNITEMP",
+          "name": "Display of units of temperature",
+          "byte": 2,
+          "type": "bool",
+          "mask": "01000000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "0 - Celsius"
+            },
+            {
+              "mask": "01000000",
+              "name": "1 - Fahrenheit"
+            }
+          ]
         },
         {
-        "id": "TELUNITEMP",
-        "name": "Temperature unit",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "combobox",
-        "params": [
-            { "mask": "00000000", "name": "0 - Celsius"},
-            { "mask": "00100000", "name": "1 - Fahrenheit"}
-            ]
+          "id": "TELUNITEMP",
+          "name": "Temperature unit",
+          "byte": 2,
+          "type": "bool",
+          "mask": "00100000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "0 - Celsius"
+            },
+            {
+              "mask": "00100000",
+              "name": "1 - Fahrenheit"
+            }
+          ]
         },
         {
-        "id": "TELAFFPAGEVD",
-        "name": "Display of empty page",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "TELAFFPAGEVD",
+          "name": "Display of empty page",
+          "byte": 2,
+          "type": "bool",
+          "mask": "00010000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_D0B_MATT_CONF_GSI_001",
-        "name": "Tire pressure drop detection system / gear indicator in the upper right corner",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_D0B_MATT_CONF_GSI_001",
+          "name": "Tire pressure drop detection system / gear indicator in the upper right corner",
+          "byte": 2,
+          "type": "bool",
+          "mask": "00001000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_BVT_MATT_CONF_STT_000",
-        "name": "Presence of Keyless access",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00000100",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_BVT_MATT_CONF_STT_000",
+          "name": "Presence of Keyless access",
+          "byte": 2,
+          "type": "bool",
+          "mask": "00000100",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "CFG_BWA_MATT_CONF_HYBRIDE_000",
-        "name": "Presence of the hybrid function",
-        "byte": 2,
-        "type": "bool",
-        "mask": "00000011",
-        "form_type": "combobox",
-        "params": [
-            { "mask": "00000000", "name": "00"},
-            { "mask": "00000001", "name": "01"},
-            { "mask": "00000010", "name": "10"},
-            { "mask": "00000011", "name": "11"}
-            ]
+          "id": "CFG_BWA_MATT_CONF_HYBRIDE_000",
+          "name": "Presence of the hybrid function",
+          "byte": 2,
+          "type": "bool",
+          "mask": "00000011",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "00"
+            },
+            {
+              "mask": "00000001",
+              "name": "01"
+            },
+            {
+              "mask": "00000010",
+              "name": "10"
+            },
+            {
+              "mask": "00000011",
+              "name": "11"
+            }
+          ]
         },
         {
-        "id": "CFG_DBQ_MATT_CONF_DSG_CHECK_000",
-        "name": "Request to display the tyre under-inflation detection parameters by pressing the \"CHECK\" button on the instrument panel",
-        "byte": 3,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "CFG_DBQ_MATT_CONF_DSG_CHECK_000",
+          "name": "Request to display the tyre under-inflation detection parameters by pressing the \"CHECK\" button on the instrument panel",
+          "byte": 3,
+          "type": "bool",
+          "mask": "10000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "LIBRE_B2_67_60",
-        "name": "LIBRE_B2_67_60",
-        "byte": 3,
-        "type": "raw",
-        "mask": "01111111",
-        "form_type": "string"
+          "id": "LIBRE_B2_67_60",
+          "name": "LIBRE_B2_67_60",
+          "byte": 3,
+          "type": "raw",
+          "mask": "01111111",
+          "form_type": "string"
         },
         {
-        "id": "LIBRE_B2_77_70",
-        "name": "LIBRE_B2_77_70",
-        "byte": 4,
-        "type": "raw",
-        "mask": "11111111",
-        "form_type": "string"
+          "id": "LIBRE_B2_77_70",
+          "name": "LIBRE_B2_77_70",
+          "byte": 4,
+          "type": "raw",
+          "mask": "11111111",
+          "form_type": "string"
         }
       ]
     },
@@ -341,28 +377,64 @@
       "form_type": "multi",
       "params": [
         {
-        "id": "TELANGCLI",
-        "name": "Driver language",
-        "byte": 0,
-        "type": "raw",
-        "mask": "11111111",
-        "form_type": "combobox",
-        "params": [
-            { "mask": "00000000", "name": "00 - French"},
-            { "mask": "00000001", "name": "01 - English"},
-            { "mask": "00000010", "name": "02 - Allemand"},
-            { "mask": "00000011", "name": "03 - Spanish"},
-            { "mask": "00000100", "name": "04 - Italian"},
-            { "mask": "00000101", "name": "05 - Portuguese"},
-            { "mask": "00000110", "name": "06 - Dutch"},
-            { "mask": "00001000", "name": "08 - Brasil"},
-            { "mask": "00001010", "name": "0A - Traditional Chinese"},
-            { "mask": "00001011", "name": "0B - Simplified Chinese"},
-            { "mask": "00001100", "name": "0C - Turkish"},
-            { "mask": "00001110", "name": "0E - Russian"}
-            ]
+          "id": "TELANGCLI",
+          "name": "Driver language",
+          "byte": 0,
+          "type": "raw",
+          "mask": "11111111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "mask": "00000000",
+              "name": "00 - French"
+            },
+            {
+              "mask": "00000001",
+              "name": "01 - English"
+            },
+            {
+              "mask": "00000010",
+              "name": "02 - Allemand"
+            },
+            {
+              "mask": "00000011",
+              "name": "03 - Spanish"
+            },
+            {
+              "mask": "00000100",
+              "name": "04 - Italian"
+            },
+            {
+              "mask": "00000101",
+              "name": "05 - Portuguese"
+            },
+            {
+              "mask": "00000110",
+              "name": "06 - Dutch"
+            },
+            {
+              "mask": "00001000",
+              "name": "08 - Brasil"
+            },
+            {
+              "mask": "00001010",
+              "name": "0A - Traditional Chinese"
+            },
+            {
+              "mask": "00001011",
+              "name": "0B - Simplified Chinese"
+            },
+            {
+              "mask": "00001100",
+              "name": "0C - Turkish"
+            },
+            {
+              "mask": "00001110",
+              "name": "0E - Russian"
+            }
+          ]
         }
-    ]
+      ]
     },
     "C1": {
       "name": "Telecoding_MATT_C1",
@@ -371,51 +443,51 @@
       "form_type": "multi",
       "params": [
         {
-        "id": "MPTACTIV",
-        "name": "\"Activation\" button",
-        "byte": 0,
-        "type": "bool",
-        "mask": "10000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "MPTACTIV",
+          "name": "\"Activation\" button",
+          "byte": 0,
+          "type": "bool",
+          "mask": "10000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "MP_TOUCHE_ESC",
-        "name": "\"ESC\" button",
-        "byte": 0,
-        "type": "bool",
-        "mask": "01000000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "MP_TOUCHE_ESC",
+          "name": "\"ESC\" button",
+          "byte": 0,
+          "type": "bool",
+          "mask": "01000000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "MPTPLUS",
-        "name": "\"Plus\" button",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00100000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "MPTPLUS",
+          "name": "\"Plus\" button",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00100000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "MPTMOINS",
-        "name": "\"Minus\" button",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00010000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "MPTMOINS",
+          "name": "\"Minus\" button",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00010000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         },
         {
-        "id": "MPDESIGN",
-        "name": "\"Design\" button",
-        "byte": 0,
-        "type": "bool",
-        "mask": "00001000",
-        "form_type": "checkbox",
-        "available_logic": "active_high"
+          "id": "MPDESIGN",
+          "name": "\"Design\" button",
+          "byte": 0,
+          "type": "bool",
+          "mask": "00001000",
+          "form_type": "checkbox",
+          "available_logic": "active_high"
         }
-        ]
+      ]
     }
   }
 }
