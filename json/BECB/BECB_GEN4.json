@@ -4,6 +4,7 @@
     "rx_id": "711",
     "lin_id": "44",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/BECB.json",
     "key_type": "single",
     "keys": "****",
     "coding": true,
