@@ -3,8 +3,9 @@
   "tx_id": "74A",
   "rx_id": "64A",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/CVM.json",
   "key_type": "single",
-  "keys":  "E2E5",
+  "keys": "E2E5",
   "coding": true,
   "errors": true,
   "include_zone_object": "data/IdentUDSECU.json",
@@ -131,23 +132,23 @@
           }
         ]
       },
-        "CFG_EU2_CVM_AMVAR_PRESENT_004": {
-          "name": "Variable damping suspension",
-          "byte": 2,
-          "type": "bool",
-          "form_type": "combobox",
-          "mask": "10000000",
-          "params": [
-            {
-              "name": "Function ABSENT",
-              "mask": "10000000"
-            },
-            {
-              "name": "Function present",
-              "mask": "00000000"
-            }
-          ]
-        },
+      "CFG_EU2_CVM_AMVAR_PRESENT_004": {
+        "name": "Variable damping suspension",
+        "byte": 2,
+        "type": "bool",
+        "form_type": "combobox",
+        "mask": "10000000",
+        "params": [
+          {
+            "name": "Function ABSENT",
+            "mask": "10000000"
+          },
+          {
+            "name": "Function present",
+            "mask": "00000000"
+          }
+        ]
+      },
       "CFG_ETY_CVM_LKA_PRESENT_004": {
         "name": "Lane keeping assistance function LKA/LPA and/or detection of reduced driver vigilance DAA3/DAA4",
         "byte": 1,
