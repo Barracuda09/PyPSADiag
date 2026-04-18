@@ -480,7 +480,7 @@
         "name": "Driving school module: Sticking of the horn button"
     },
     "B1186": {
-        "name": "Short-circuit to the battery plus"
+        "name": "Short-circuit to the battery positive"
     },
     "B1191": {
         "name": "Fault: engine ECU faulty or incorrect configuring of the BSI for the Stop and Start function"
@@ -1023,10 +1023,10 @@
         "name": "Interior lighting control"
     },
     "B1924": {
-        "name": "relais de klaxon"
+        "name": "Horn relay"
     },
     "B1925": {
-        "name": "Commutateur de klaxon"
+        "name": "Horn switch"
     },
     "B1926": {
         "name": "Compressor with clutch"
@@ -1749,7 +1749,7 @@
         "name": "Communication with the independent telematic unit on the CAN"
     },
     "U160B": {
-        "name": "information du capteur d'aide au stationnement avant sur le réseau LIN 1"
+        "name": "Front parking assistance sensor information on LIN 1 network"
     },
     "U160D": {
         "name": "No communication with the rain and brightness sensor on the LIN 2"
