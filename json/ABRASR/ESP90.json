@@ -3,6 +3,7 @@
     "tx_id": "6AD",
     "rx_id": "68D",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/ABRASR.json",
     "key_type": "multi",
     "keys": {
         "key1": "60A5",
@@ -169,7 +170,7 @@
                     {
                         "name": "1.2t (EB2LTDH2 / EB2LTDH2-EURO6.4 / EB2LTDH2-EURO7 /  EB2LTDH2 S30 1.2L ESS / EB2LTDH2 UE64)",
                         "value": "FFFFFFBFFFFFFFFF"
-                    },  
+                    },
                     {
                         "name": "1.6t (EP6FDTM)",
                         "value": "FFFFFFFDFFFFFFFF"
@@ -1752,4 +1753,4 @@
             }
         }
     }
-} 
+}
