@@ -24,7 +24,7 @@
         "name": "Fault: \"Minus\" button jammed"
     },
     "B2E03": {
-        "name": "Fault: \"Plus\" button jammed"
+        "name": "\"Plus\" button jammed fault"
     },
     "B2E0C": {
         "name": "Fault in the coherence of the navigator configuration"
