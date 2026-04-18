@@ -3,6 +3,7 @@
     "tx_id": "75F",
     "rx_id": "65F",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/COMBINE.json",
     "key_type": "multi",
     "keys": {
         "VISTEON": "A13C"
@@ -263,7 +264,7 @@
                         }
                     ]
                 },
-                {  
+                {
                     "extra_name": "CFG_DQY_CMB_DAT_DG_BRAND_CFG_001",
                     "name_original": "CFG_DQY_CMB_DAT_DG_BRAND_CFG_001",
                     "name": "Brand configuration",
@@ -418,7 +419,7 @@
                             "name": "1"
                         }
                     ]
-                }, 
+                },
                 {
                     "extra_name": "E2F_TYPE_LISTE_PICTO",
                     "name_original": "E2F",
@@ -687,7 +688,7 @@
                     "mask": "00000100",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                },                
+                },
                 {
                     "extra_name": "CFG_GIZ_CMB_SLI_ENCAP_2020_000",
                     "zoneLength": 24,
@@ -697,7 +698,7 @@
                     "mask": "00000010",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                },                
+                },
                 {
                     "extra_name": "CFG_GN6_CMB_DAT_DG_HY_TYPE_HY_000",
                     "zoneLength": 24,
@@ -715,8 +716,8 @@
                             "mask": "00000001",
                             "name": "MHEV"
                         }
-                    ]    
-                }   
+                    ]
+                }
             ]
         },
         "2101": {
@@ -1876,7 +1877,7 @@
                     "byte": 27,
                     "mask": "00011100",
                     "form_type": "string"
-                }           
+                }
             ]
         },
         "2200": {
@@ -2121,7 +2122,7 @@
                     "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                }, 
+                },
                 {
                     "extra_name": "CFG_DOM_CMB_GAUGE_FUEL_LVL_DIGIT_000",
                     "name_original": "CFG_DOM_CMB_GAUGE_FUEL_LVL_DIGIT_000",
