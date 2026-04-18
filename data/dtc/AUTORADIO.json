@@ -1,0 +1,215 @@
+{
+    "_comment": {
+        "name": "AUTORADIO DTC Codes grabbed from Diagbox FDB. ECUTYPE union: AUTORADIO, AUTORADIO_3, RD5. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration downloading fault"
+    },
+    "B1003": {
+        "name": "Secure configuration fault"
+    },
+    "B1004": {
+        "name": "RD5 audio system ECU internal fault"
+    },
+    "B1021": {
+        "name": "Fault of configuration coherence \\n if a confidential code error occurs, programming will be prohibited"
+    },
+    "B1022": {
+        "name": "Configuration coherence fault: aerial activated and configured passive"
+    },
+    "B1501": {
+        "name": "Fault on the left-hand front audio output"
+    },
+    "B1502": {
+        "name": "Fault on the right-hand front audio output"
+    },
+    "B1503": {
+        "name": "Fault on the left-hand rear audio output"
+    },
+    "B1504": {
+        "name": "Fault on the right-hand rear audio output"
+    },
+    "B1505": {
+        "name": "Microphone input fault"
+    },
+    "B1507": {
+        "name": "Aerial no. 1 input fault"
+    },
+    "B1508": {
+        "name": "Aerial no. 2 input fault"
+    },
+    "B1509": {
+        "name": "Aerial no. 3 input fault"
+    },
+    "B150D": {
+        "name": "Left-hand analogue auxiliary audio input 1 fault"
+    },
+    "B150E": {
+        "name": "Right-hand analogue auxiliary audio input 1 fault"
+    },
+    "B150F": {
+        "name": "Left-hand analogue auxiliary audio input 2 fault"
+    },
+    "B1510": {
+        "name": "Right-hand analogue auxiliary audio input 2 fault"
+    },
+    "B1512": {
+        "name": "CD player operation fault"
+    },
+    "B1513": {
+        "name": "Audio equipment internal amplifier fault"
+    },
+    "B1514": {
+        "name": "Tuner operation fault"
+    },
+    "B1515": {
+        "name": "Digital tuner operating fault"
+    },
+    "B1516": {
+        "name": "USB module operating fault"
+    },
+    "B1517": {
+        "name": "Bluetooth module operating fault"
+    },
+    "B1519": {
+        "name": "Audio equipment internal amplifier fault"
+    },
+    "B151A": {
+        "name": "CD player operation fault"
+    },
+    "B2420": {
+        "name": "ECU supply fault"
+    },
+    "B2421": {
+        "name": "Tuner operation fault"
+    },
+    "B2422": {
+        "name": "MD (Mini-Disc) player operation fault"
+    },
+    "B2423": {
+        "name": "6 CD player operation fault"
+    },
+    "B2424": {
+        "name": "CD player operation fault"
+    },
+    "B2450": {
+        "name": "Fault  no communication with audio front panel"
+    },
+    "B2451": {
+        "name": "Fault in the information from the multifunction display"
+    },
+    "P023": {
+        "name": "Fault: absence of communication with the multifunction display"
+    },
+    "P370": {
+        "name": "Remote control input"
+    },
+    "P900": {
+        "name": "Fault on the aerial input"
+    },
+    "P903": {
+        "name": "CD changer audio inputs fault"
+    },
+    "P917": {
+        "name": "Fault on the left-hand front audio output"
+    },
+    "P918": {
+        "name": "Fault on the right-hand front audio output"
+    },
+    "P919": {
+        "name": "Fault on the left-hand rear audio output"
+    },
+    "P91A": {
+        "name": "Fault on the right-hand rear audio output"
+    },
+    "U0019": {
+        "name": "Fault  of the CAN"
+    },
+    "U0141": {
+        "name": "Fault: no communication with the built-in systems interface"
+    },
+    "U0151": {
+        "name": "Fault  no communication with the airbag ECU"
+    },
+    "U0154": {
+        "name": "Fault  no communication with occupant load detection ECU"
+    },
+    "U0155": {
+        "name": "Fault: absence of communication with the instrument panel"
+    },
+    "U0164": {
+        "name": "Fault: absence of communication with the air conditioning"
+    },
+    "U0168": {
+        "name": "Fault  no communication with engine immobiliser ECU"
+    },
+    "U0195": {
+        "name": "Fault  no communication with separate radio control"
+    },
+    "U0196": {
+        "name": "Fault  no communication with multimedia ECU"
+    },
+    "U0197": {
+        "name": "Fault: absence of communication with the hands-free kit"
+    },
+    "U0201": {
+        "name": "Fault  no communication with LH sliding side door ECU"
+    },
+    "U0202": {
+        "name": "Fault  no communication with RH sliding side door ECU"
+    },
+    "U0209": {
+        "name": "Fault  no communication with seat memorising unit"
+    },
+    "U0230": {
+        "name": "Fault  absence of communication with the boot fuse box"
+    },
+    "U1415": {
+        "name": "Configuration fault: configuration incomplete"
+    },
+    "U1420": {
+        "name": "Configuration fault: automatic configuration not authorised"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Fault: absence of communication with the Built-in Systems Interface"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F22": {
+        "name": "Fault: no communication with the parking assistance ECU"
+    },
+    "U1F23": {
+        "name": "Fault  no communication with the multifunction display"
+    },
+    "U3023": {
+        "name": "Fault: absence of communication with the multifunction display"
+    },
+    "U3370": {
+        "name": "Remote control input"
+    },
+    "U3900": {
+        "name": "Fault on the aerial input"
+    },
+    "U3903": {
+        "name": "CD changer audio inputs fault"
+    },
+    "U3917": {
+        "name": "Fault on the left-hand front audio output"
+    },
+    "U3918": {
+        "name": "Fault on the right-hand front audio output"
+    },
+    "U3919": {
+        "name": "Fault on the left-hand rear audio output"
+    },
+    "U391A": {
+        "name": "Fault on the right-hand rear audio output"
+    }
+}

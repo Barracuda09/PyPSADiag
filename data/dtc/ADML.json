@@ -1,0 +1,83 @@
+{
+    "_comment": {
+        "name": "ADML DTC Codes grabbed from Diagbox FDB. ECUTYPE union: SDCM. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1003": {
+        "name": "Secure configuration of the hands-free unit (SDCM)"
+    },
+    "B1004": {
+        "name": "Hands-free access and starting electronic unit (SDCM)"
+    },
+    "B172B": {
+        "name": "Boot opening control locking/unlocking sensor"
+    },
+    "B172F": {
+        "name": "Boot hands-free locking sensor"
+    },
+    "B17AE": {
+        "name": "Dashboard interior aerial"
+    },
+    "B17AF": {
+        "name": "Passenger compartment interior aerial"
+    },
+    "B17B6": {
+        "name": "Rear right-hand door exterior aerial or boot interior aerial"
+    },
+    "B17B7": {
+        "name": "Rear left door exterior aerial"
+    },
+    "B17B8": {
+        "name": "Front bumper exterior aerial"
+    },
+    "B17B9": {
+        "name": "Hands-free unit buzzer (SDCM)"
+    },
+    "B17BA": {
+        "name": "Interior NFC aerial"
+    },
+    "B17BB": {
+        "name": "Exterior NFC aerial"
+    },
+    "B17BF": {
+        "name": "Failure of the programming of secure exchanges between the hands-free unit (SDCM) and the built-in systems interface"
+    },
+    "B17C0": {
+        "name": "Error in the secure exchanges between the hands-free unit (SDCM) and the built-in systems interface"
+    },
+    "B17C1": {
+        "name": "Driver's door exterior opening control locking/unlocking sensor"
+    },
+    "B17C2": {
+        "name": "Front passenger door exterior opening control locking/unlocking sensor"
+    },
+    "B17C3": {
+        "name": "Secure configuration of the hands-free unit (SDCM)"
+    },
+    "B17D4": {
+        "name": "Hands-free identifiers accelerometer number 1"
+    },
+    "B17D5": {
+        "name": "Hands-free identifiers accelerometer number 2"
+    },
+    "B17D6": {
+        "name": "Hands-free identifiers accelerometer number 3"
+    },
+    "B17D7": {
+        "name": "Hands-free identifiers accelerometer number 4"
+    },
+    "B17D8": {
+        "name": "Hands-free identifiers accelerometer number 5"
+    },
+    "U1F00": {
+        "name": "Fault not recorded in the built-in systems interface faults log"
+    },
+    "U1F03": {
+        "name": "Loss of communication with the built-in systems interface on the LS CAN"
+    },
+    "U1F0A": {
+        "name": "LS CAN error"
+    },
+    "U1F0F": {
+        "name": "Hands-free unit (SDCM) not communicating on the LS CAN"
+    }
+}

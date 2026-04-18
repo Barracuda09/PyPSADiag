@@ -1,0 +1,53 @@
+{
+    "_comment": {
+        "name": "MATT DTC Codes grabbed from Diagbox FDB. ECUTYPE union: MATT_C_2010, MATT_M_2010, MATT_P_2010. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration file downloading fault"
+    },
+    "B1002": {
+        "name": "Fault internal to the instrument panel dot matrix display"
+    },
+    "B1003": {
+        "name": "Secure configuration fault"
+    },
+    "B1004": {
+        "name": "internal fault"
+    },
+    "B2E00": {
+        "name": "Fault: \"Activation\" button jammed"
+    },
+    "B2E01": {
+        "name": "Fault: \"Escape\" button jammed"
+    },
+    "B2E02": {
+        "name": "Fault: \"Minus\" button jammed"
+    },
+    "B2E03": {
+        "name": "Fault: \"Plus\" button jammed"
+    },
+    "B2E0C": {
+        "name": "Fault in the coherence of the navigator configuration"
+    },
+    "B2E0D": {
+        "name": "Fault internal to the navigator"
+    },
+    "U1802": {
+        "name": "Vehicle speed information not valid fault"
+    },
+    "U1803": {
+        "name": "Engine oil level information fault"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI fault"
+    },
+    "U1F0A": {
+        "name": "Fault: CAN"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    }
+}

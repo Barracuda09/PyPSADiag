@@ -1,0 +1,1685 @@
+{
+    "_comment": {
+        "name": "BOITEVIT DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BVA_AL4, BVA_AM6, BVA_AM6_AT6_EURO5, BVA_AM6_AT6_UDS, BVA_AXN8, BVA_AXN8L, BVA_EATN8, BVA_TCU, BVA_ZF, COMELBVA. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "C1325": {
+        "name": "Fault in communication with the ABS ECU"
+    },
+    "C1335": {
+        "name": "Fault in communication with the ABS ECU"
+    },
+    "C1395": {
+        "name": "Kick-down switch signal fault ."
+    },
+    "C164C": {
+        "name": "Brake pedal information"
+    },
+    "P0000": {
+        "name": "Kick-down contact ."
+    },
+    "P0001": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0002": {
+        "name": "Clutch slip ."
+    },
+    "P0003": {
+        "name": "Sensors supply fault ."
+    },
+    "P0004": {
+        "name": "Automatic gearbox oil temperature signal error"
+    },
+    "P0005": {
+        "name": "Oil pressure signal fault"
+    },
+    "P0006": {
+        "name": "Pressure regulation fault (difference / reference value)"
+    },
+    "P0007": {
+        "name": "Oil pressure deficit fault ."
+    },
+    "P0010": {
+        "name": "Display serial supply ."
+    },
+    "P0011": {
+        "name": "Display serial supply ."
+    },
+    "P0012": {
+        "name": "Fault  :  Air conditioning or Key-lock control"
+    },
+    "P0013": {
+        "name": "Fault  :  Air conditioning or Key-lock control"
+    },
+    "P0014": {
+        "name": "Sequence solenoid 4 output fault"
+    },
+    "P0015": {
+        "name": "Sequence solenoid 1 output fault ."
+    },
+    "P0016": {
+        "name": "Supply to solenoid valves and regulators ."
+    },
+    "P0017": {
+        "name": "Supply to solenoid valves and regulators ."
+    },
+    "P0020": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P0021": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P0022": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P0023": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P0024": {
+        "name": "Fault  Engine temperature ( CAN )"
+    },
+    "P0025": {
+        "name": "Engine speed signal ."
+    },
+    "P0026": {
+        "name": "Fault  :  accelerator pedal position"
+    },
+    "P0027": {
+        "name": "Accelerator pedal initialisation  not done"
+    },
+    "P0031": {
+        "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)"
+    },
+    "P0032": {
+        "name": "Communication error between the automatic gearbox and the engine management"
+    },
+    "P0033": {
+        "name": "Automatic gearbox communication fault with ABS (ESP)"
+    },
+    "P0034": {
+        "name": "Automatic gearbox communication fault with BSI ."
+    },
+    "P0035": {
+        "name": "Fault in the front left wheel vehicle speed transmitted by the ABS ECU (CAN)"
+    },
+    "P0036": {
+        "name": "Fault in the front right wheel speed transmitted by the ABS ECU (CAN)"
+    },
+    "P0037": {
+        "name": "CAN communication (Absence / Interference)"
+    },
+    "P0040": {
+        "name": "Sequence solenoid 1 output fault ."
+    },
+    "P0041": {
+        "name": "Sequence solenoid 2 output fault"
+    },
+    "P0042": {
+        "name": "Sequence solenoid 3 output fault"
+    },
+    "P0043": {
+        "name": "Sequence solenoid 4 output fault"
+    },
+    "P0044": {
+        "name": "Sequence solenoid 5 output fault"
+    },
+    "P0045": {
+        "name": "Sequence solenoid 6 output fault"
+    },
+    "P0046": {
+        "name": "Exchanger flow control solenoid valve output fault"
+    },
+    "P0047": {
+        "name": "Shift-lock output"
+    },
+    "P0050": {
+        "name": "Sequence solenoid 1 output fault ."
+    },
+    "P0051": {
+        "name": "Sequence solenoid 2 output fault"
+    },
+    "P0052": {
+        "name": "Sequence solenoid 3 output fault"
+    },
+    "P0053": {
+        "name": "Sequence solenoid 4 output fault"
+    },
+    "P0054": {
+        "name": "Sequence solenoid 5 output fault"
+    },
+    "P0055": {
+        "name": "Sequence solenoid 6 output fault"
+    },
+    "P0056": {
+        "name": "Exchanger flow control solenoid valve output fault"
+    },
+    "P0057": {
+        "name": "Shift-lock output"
+    },
+    "P0060": {
+        "name": "ECU fault ."
+    },
+    "P0061": {
+        "name": "ECU fault ."
+    },
+    "P0062": {
+        "name": "ECU fault ."
+    },
+    "P0063": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0064": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0065": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0066": {
+        "name": "One-touch control signal fault ."
+    },
+    "P0067": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0070": {
+        "name": "Converter lock-up ."
+    },
+    "P0071": {
+        "name": "Converter bridging solenoid valve fault"
+    },
+    "P0072": {
+        "name": "Converter bridging solenoid valve fault"
+    },
+    "P0073": {
+        "name": "Controlled converter sliding ."
+    },
+    "P0074": {
+        "name": "Controlled converter sliding ."
+    },
+    "P0075": {
+        "name": "Fault  :  Fault: oil wear through controlled converter slip ."
+    },
+    "P0076": {
+        "name": "Line pressure modulation electrovalve output fault"
+    },
+    "P0077": {
+        "name": "Line pressure modulation electrovalve output fault"
+    },
+    "P0080": {
+        "name": "Clutch release when stationary ."
+    },
+    "P0081": {
+        "name": "Fault: activation time of one touch control ."
+    },
+    "P0082": {
+        "name": "ESP function ."
+    },
+    "P0083": {
+        "name": "ESP function ."
+    },
+    "P0084": {
+        "name": "Brake signal (switch / CAN) ."
+    },
+    "P0085": {
+        "name": "Incorrect rear right-hand wheel speed transmitted by the ABS/ESP ECU."
+    },
+    "P0086": {
+        "name": "Incorrect rear left-hand wheel speed transmitted by the EBS/ESP ECU"
+    },
+    "P0087": {
+        "name": "Vehicle speed transmitted by the ABS ."
+    },
+    "P0090": {
+        "name": "Vehicle speed information ."
+    },
+    "P0091": {
+        "name": "Gearbox input speed signal ."
+    },
+    "P0092": {
+        "name": "Gearbox output speed signal fault"
+    },
+    "P0093": {
+        "name": "Gearbox input speed signal ."
+    },
+    "P0094": {
+        "name": "Gearbox output speed signal fault"
+    },
+    "P0095": {
+        "name": "Communication error between the automatic gearbox and the engine management"
+    },
+    "P0096": {
+        "name": "Fault in the transverse acceleration information emitted by the ABS"
+    },
+    "P0097": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P00A0": {
+        "name": "Communication with the automatic gearbox electric control ECU ."
+    },
+    "P00A1": {
+        "name": "Automatic gearbox electric control ."
+    },
+    "P00A2": {
+        "name": "Torque request acknowledgement fault"
+    },
+    "P00A3": {
+        "name": "Clutch release when stationary ."
+    },
+    "P00A4": {
+        "name": "Automatic gearbox fault"
+    },
+    "P00A5": {
+        "name": "Brake signal (switch / CAN) ."
+    },
+    "P00A6": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P00A7": {
+        "name": "Fault: engine torque information (CAN)"
+    },
+    "P00B0": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B1": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B2": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B3": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B4": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B5": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P00B6": {
+        "name": "One-touch control signal fault ."
+    },
+    "P00B7": {
+        "name": "One-touch control signal fault ."
+    },
+    "P00C0": {
+        "name": "One-touch control signal fault ."
+    },
+    "P00C1": {
+        "name": "Automatic gearbox electric control fault ."
+    },
+    "P00C2": {
+        "name": "ECU fault ."
+    },
+    "P00C3": {
+        "name": "Wired brake fault"
+    },
+    "P00C4": {
+        "name": "ECU fault ."
+    },
+    "P00C5": {
+        "name": "ECU fault ."
+    },
+    "P00C6": {
+        "name": "ECU fault ."
+    },
+    "P00C7": {
+        "name": "Gear lever fault ."
+    },
+    "P00D0": {
+        "name": "Fault: controlled converter slip ."
+    },
+    "P0115": {
+        "name": "Engine coolant temperature signal fault"
+    },
+    "P0218": {
+        "name": "Gearbox oil temperature too high (thermal protection pattern 3) with request for reduction of the engine torque"
+    },
+    "P0298": {
+        "name": "Oil wear counter fault"
+    },
+    "P0504": {
+        "name": "Wired brake fault"
+    },
+    "P0513": {
+        "name": "Built-in systems interface"
+    },
+    "P0555": {
+        "name": "Braking circuit pressure sensor"
+    },
+    "P0560": {
+        "name": "Battery +ve supply to control unit"
+    },
+    "P0561": {
+        "name": "ECU ignition positive supply"
+    },
+    "P0562": {
+        "name": "Control unit supply voltage"
+    },
+    "P0563": {
+        "name": "Control unit supply voltage"
+    },
+    "P0601": {
+        "name": "ECU fault"
+    },
+    "P0602": {
+        "name": "Downloading"
+    },
+    "P0603": {
+        "name": "ECU fault"
+    },
+    "P0604": {
+        "name": "ECU fault"
+    },
+    "P0605": {
+        "name": "ECU fault"
+    },
+    "P0606": {
+        "name": "ECU fault"
+    },
+    "P060A": {
+        "name": "Automatic gearbox ECU"
+    },
+    "P060B": {
+        "name": "Hybrid automatic gearbox ECU"
+    },
+    "P0610": {
+        "name": "Configuration"
+    },
+    "P0613": {
+        "name": "ECU internal fault"
+    },
+    "P062F": {
+        "name": "ECU"
+    },
+    "P0634": {
+        "name": "ECU"
+    },
+    "P064F": {
+        "name": "Customer modification to the programming of the hybrid automatic gearbox ECU"
+    },
+    "P0658": {
+        "name": "Actuator supply"
+    },
+    "P0659": {
+        "name": "Actuator supply"
+    },
+    "P0667": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P0668": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P0669": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P06AC": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P06AD": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P06AE": {
+        "name": "ECU internal temperature sensor"
+    },
+    "P06B8": {
+        "name": "Hybrid automatic gearbox ECU"
+    },
+    "P06EF": {
+        "name": "Starter motor"
+    },
+    "P0701": {
+        "name": "Fault control of the gear selection actuator electric motor"
+    },
+    "P0702": {
+        "name": "Control of the hydraulic block solenoid valves"
+    },
+    "P0703": {
+        "name": "Brake signal"
+    },
+    "P0705": {
+        "name": "Multifunction switch signal"
+    },
+    "P0706": {
+        "name": "Multi-function switch"
+    },
+    "P0709": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P0710": {
+        "name": "Oil temperature sensor"
+    },
+    "P0711": {
+        "name": "Automatic gearbox oil temperature sensor"
+    },
+    "P0712": {
+        "name": "Automatic gearbox oil temperature sensor"
+    },
+    "P0713": {
+        "name": "Automatic gearbox oil temperature sensor"
+    },
+    "P0715": {
+        "name": "Automatic gearbox input speed sensor signal"
+    },
+    "P0716": {
+        "name": "Automatic gearbox input speed sensor signal"
+    },
+    "P0717": {
+        "name": "Fault on the circuit of the gearbox input speed sensor"
+    },
+    "P0718": {
+        "name": "Hybrid automatic gearbox input speed sensor signal"
+    },
+    "P0720": {
+        "name": "Automatic gearbox output speed sensor signal"
+    },
+    "P0721": {
+        "name": "Automatic gearbox output speed sensor signal"
+    },
+    "P0722": {
+        "name": "Fault on the circuit of the gearbox output speed sensor"
+    },
+    "P0723": {
+        "name": "Hybrid automatic gearbox output speed sensor signal"
+    },
+    "P0726": {
+        "name": "Engine excessive speeds check"
+    },
+    "P0727": {
+        "name": "Fault on the engine speed information not received by the CAN (Engine ECU)"
+    },
+    "P0729": {
+        "name": "Automatic gearbox  ( ratio 6 )"
+    },
+    "P072F": {
+        "name": "Fault: controlled converter slip ."
+    },
+    "P0730": {
+        "name": "Transmission gear incorrect"
+    },
+    "P0731": {
+        "name": "Automatic gearbox  ( ratio 1 )"
+    },
+    "P0732": {
+        "name": "Automatic gearbox  ( ratio 2 )"
+    },
+    "P0733": {
+        "name": "Automatic gearbox  ( ratio 3 )"
+    },
+    "P0734": {
+        "name": "Automatic gearbox  ( ratio 4 )"
+    },
+    "P0735": {
+        "name": "Automatic gearbox  ( ratio 5 )"
+    },
+    "P0736": {
+        "name": "Automatic gearbox  ( reverse gear )"
+    },
+    "P073D": {
+        "name": "Problem engaging the neutral position of the hybrid automatic gearbox"
+    },
+    "P073E": {
+        "name": "Selection reverse position"
+    },
+    "P0740": {
+        "name": "Fault: controlled converter slip ."
+    },
+    "P0741": {
+        "name": "Converter lock-up pressure modulating electrovalve"
+    },
+    "P0742": {
+        "name": "Converter lock-up pressure modulating electrovalve"
+    },
+    "P0743": {
+        "name": "Converter bridging solenoid valve fault"
+    },
+    "P0745": {
+        "name": "Clutch pressure regulation solenoid valve C1 control  (SL1)"
+    },
+    "P0746": {
+        "name": "Control of the clutch pressure modulating solenoid valve C1"
+    },
+    "P0747": {
+        "name": "Control of the clutch pressure modulating solenoid valve C1"
+    },
+    "P0751": {
+        "name": "Mechanical or hydraulic fault on the engine brake function in the first sequential mode"
+    },
+    "P0752": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P0753": {
+        "name": "Sequence solenoid 1 output fault"
+    },
+    "P0756": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P0758": {
+        "name": "Sequence solenoid 2 output fault"
+    },
+    "P075B": {
+        "name": "Control actuator of the locking finger in position ‎P on the hybrid automatic gearbox"
+    },
+    "P0761": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P0763": {
+        "name": "Sequence solenoid 3 output fault"
+    },
+    "P0765": {
+        "name": "General fault on the reduction of drag in mode D (neutral)"
+    },
+    "P0766": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P0768": {
+        "name": "Sequence solenoid 4 output fault"
+    },
+    "P076F": {
+        "name": "Automatic gearbox  ( ratio 7 )"
+    },
+    "P0770": {
+        "name": "Gear selection actuator"
+    },
+    "P0771": {
+        "name": "Gear selection actuator"
+    },
+    "P0772": {
+        "name": "Gear selection actuator"
+    },
+    "P0773": {
+        "name": "Sequence solenoid 5 output fault"
+    },
+    "P0776": {
+        "name": "Control of the clutch pressure modulating solenoid valve C2"
+    },
+    "P0777": {
+        "name": "Control of the clutch pressure modulating solenoid valve C2"
+    },
+    "P077A": {
+        "name": "Hybrid automatic gearbox output speed sensor signal"
+    },
+    "P077B": {
+        "name": "Gear selection actuator"
+    },
+    "P077C": {
+        "name": "Hybrid automatic gearbox output speed sensor signal"
+    },
+    "P077D": {
+        "name": "Hybrid automatic gearbox output speed sensor signal"
+    },
+    "P0780": {
+        "name": "Unwanted change of gear fault"
+    },
+    "P0781": {
+        "name": "Gear change control"
+    },
+    "P0782": {
+        "name": "Gear change control"
+    },
+    "P0783": {
+        "name": "Gear change control"
+    },
+    "P0796": {
+        "name": "Control of the clutch pressure modulating solenoid valve C3"
+    },
+    "P0797": {
+        "name": "Control of the clutch pressure modulating solenoid valve C3"
+    },
+    "P07BF": {
+        "name": "Hybrid automatic gearbox input speed sensor signal"
+    },
+    "P07C0": {
+        "name": "Hybrid automatic gearbox input speed sensor signal"
+    },
+    "P07D9": {
+        "name": "Automatic gearbox  ( ratio 8 )"
+    },
+    "P07E4": {
+        "name": "Gear selection actuator"
+    },
+    "P07E6": {
+        "name": "Gear selection actuator"
+    },
+    "P080A": {
+        "name": "Hybrid automatic gearbox internal clutch position not programmed"
+    },
+    "P0811": {
+        "name": "Disengagement fault when the vehicle is stationary ."
+    },
+    "P0815": {
+        "name": "One-touch control signal fault"
+    },
+    "P0816": {
+        "name": "One-touch control signal fault"
+    },
+    "P0819": {
+        "name": "One-touch control signal fault"
+    },
+    "P081C": {
+        "name": "Gear selection actuator"
+    },
+    "P081D": {
+        "name": "Securing request for the hybrid automatic gearbox (switch to neutral position) via the front electric drive machine ECU"
+    },
+    "P0826": {
+        "name": "One-touch control signal fault"
+    },
+    "P0842": {
+        "name": "Oil pressure switch"
+    },
+    "P0843": {
+        "name": "Oil pressure switch"
+    },
+    "P0847": {
+        "name": "Oil pressure switch"
+    },
+    "P0848": {
+        "name": "Oil pressure switch"
+    },
+    "P0863": {
+        "name": "Communication between the front electric drive machine ECU and the hybrid automatic gearbox ECU"
+    },
+    "P0871": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P0872": {
+        "name": "Pressure modulation solenoid valve"
+    },
+    "P0873": {
+        "name": "Oil pressure sensor"
+    },
+    "P0875": {
+        "name": "Oil pressure sensor signal 1"
+    },
+    "P0877": {
+        "name": "Pressure modulation solenoid valve"
+    },
+    "P0878": {
+        "name": "Pressure modulation solenoid valve"
+    },
+    "P0882": {
+        "name": "ECU supply voltage  ( In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine )"
+    },
+    "P0883": {
+        "name": "ECU supply voltage  ( In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine )"
+    },
+    "P0893": {
+        "name": "Automatic gearbox jammed"
+    },
+    "P0897": {
+        "name": "Oil wear counter"
+    },
+    "P0928": {
+        "name": "Control of the gear lever locking solenoid valve"
+    },
+    "P0930": {
+        "name": "Gear control lever locking solenoid control"
+    },
+    "P0931": {
+        "name": "Fault on the lever locking actuator circuit (shift-lock)"
+    },
+    "P0932": {
+        "name": "Oil pressure signal fault"
+    },
+    "P0937": {
+        "name": "Oil temperature sensor"
+    },
+    "P0938": {
+        "name": "Oil temperature sensor"
+    },
+    "P0939": {
+        "name": "Oil thermistor fault"
+    },
+    "P093B": {
+        "name": "Pressure-modulating solenoid valve for management of the oil pressure accumulator  ( AMN8 gearbox )"
+    },
+    "P093C": {
+        "name": "Pressure-modulating solenoid valve for management of the oil pressure accumulator  ( AMN8 gearbox )"
+    },
+    "P0940": {
+        "name": "Oil thermistor fault"
+    },
+    "P0960": {
+        "name": "Control of the clutch pressure modulating solenoid valve C1"
+    },
+    "P0961": {
+        "name": "SLT solenoid locking fault"
+    },
+    "P0962": {
+        "name": "Control of the clutch pressure modulating solenoid valve C1"
+    },
+    "P0963": {
+        "name": "Control of the clutch pressure modulating solenoid valve C1"
+    },
+    "P0964": {
+        "name": "Control of the clutch pressure modulating solenoid valve C2"
+    },
+    "P0965": {
+        "name": "SLB1 solenoid locking fault   (  gear shift control  )"
+    },
+    "P0966": {
+        "name": "Control of the clutch pressure modulating solenoid valve C2"
+    },
+    "P0967": {
+        "name": "Control of the clutch pressure modulating solenoid valve C2"
+    },
+    "P0968": {
+        "name": "Control of the clutch pressure modulating solenoid valve C3"
+    },
+    "P0969": {
+        "name": "SLC1 solenoid locking fault   (  gear shift control  )"
+    },
+    "P0970": {
+        "name": "Control of the clutch pressure modulating solenoid valve C3"
+    },
+    "P0971": {
+        "name": "Control of the clutch pressure modulating solenoid valve C3"
+    },
+    "P0972": {
+        "name": "Control of the sequence solenoid valve 1"
+    },
+    "P0973": {
+        "name": "Gear change solenoid valve SC2"
+    },
+    "P0974": {
+        "name": "Gear change solenoid valve SC2"
+    },
+    "P0975": {
+        "name": "Control of the sequence solenoid valve 2"
+    },
+    "P0976": {
+        "name": "Gear change solenoid valve SC3"
+    },
+    "P0977": {
+        "name": "Gear change solenoid valve SC3"
+    },
+    "P0979": {
+        "name": "Gear change solenoid valve SC4"
+    },
+    "P0980": {
+        "name": "Gear change solenoid valve SC4"
+    },
+    "P0982": {
+        "name": "Gear change solenoid valve SC5"
+    },
+    "P0983": {
+        "name": "Gear change solenoid valve SC5"
+    },
+    "P0985": {
+        "name": "Automatic gearbox lubrication control solenoid valve"
+    },
+    "P0986": {
+        "name": "Automatic gearbox lubrication control solenoid valve"
+    },
+    "P0987": {
+        "name": "Oil pressure sensor signal 9"
+    },
+    "P0988": {
+        "name": "Control of the gear change control solenoid valve SC6"
+    },
+    "P0989": {
+        "name": "Pressure modulation solenoid valve"
+    },
+    "P0990": {
+        "name": "Pressure modulation solenoid valve"
+    },
+    "P0997": {
+        "name": "Control of the lubrication solenoid valve SR"
+    },
+    "P0998": {
+        "name": "Converter lock-up pressure control solenoid valve"
+    },
+    "P0999": {
+        "name": "Converter lock-up pressure control solenoid valve"
+    },
+    "P099B": {
+        "name": "Control solenoid valve of the finger for locking the automatic gearbox in position P"
+    },
+    "P099C": {
+        "name": "Control solenoid valve of the finger for locking the automatic gearbox in position P"
+    },
+    "P0C0C": {
+        "name": "Hybrid automatic gearbox ECU supply voltage or internal fault"
+    },
+    "P0E81": {
+        "name": "Signal from the oil temperature sensor on the clutch cooling circuit inside the hybrid automatic gearbox"
+    },
+    "P0E82": {
+        "name": "Signal from the oil temperature sensor on the clutch cooling circuit inside the hybrid automatic gearbox"
+    },
+    "P0E83": {
+        "name": "Signal from the oil temperature sensor on the clutch cooling circuit inside the hybrid automatic gearbox"
+    },
+    "P0E84": {
+        "name": "Signal from the oil temperature sensor on the clutch cooling circuit inside the hybrid automatic gearbox"
+    },
+    "P1042": {
+        "name": "Ancillaries battery switch ‎1 or ‎2"
+    },
+    "P1167": {
+        "name": "Pressure regulation fault (difference / reference value) ."
+    },
+    "P1213": {
+        "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU"
+    },
+    "P142A": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P1526": {
+        "name": "Fault control of the gear selection actuator electric motor"
+    },
+    "P1544": {
+        "name": "Fault control of the gear selection actuator electric motor"
+    },
+    "P1585": {
+        "name": "Fault supply to the gear selection actuator position  sensor"
+    },
+    "P1588": {
+        "name": "Fault supply to the gear selection actuator position  sensor"
+    },
+    "P1592": {
+        "name": "Fault  supply to solenoid valves and regulators ."
+    },
+    "P1593": {
+        "name": "Fault  supply to solenoid valves and regulators ."
+    },
+    "P1594": {
+        "name": "ECU fault"
+    },
+    "P1596": {
+        "name": "Fault control of the gear selection actuator electric motor"
+    },
+    "P159A": {
+        "name": "Position signal fault in the gear selection actuator"
+    },
+    "P159B": {
+        "name": "Position signal fault in the gear selection actuator"
+    },
+    "P159C": {
+        "name": "Fault control of the gear selection actuator electric motor"
+    },
+    "P1604": {
+        "name": "Engine speed signal"
+    },
+    "P1605": {
+        "name": "Engine torque required by the driver information not received by the CAN fault (Engine ECU)"
+    },
+    "P160A": {
+        "name": "Automatic gearbox ECU"
+    },
+    "P160E": {
+        "name": "Ignition positive supply  ( ignition off )"
+    },
+    "P160F": {
+        "name": "Approval reference"
+    },
+    "P1611": {
+        "name": "Oil pressure deficit fault ."
+    },
+    "P1612": {
+        "name": "Coded engine immobiliser code"
+    },
+    "P1613": {
+        "name": "Configuration not carried out"
+    },
+    "P162C": {
+        "name": "Automatic gearbox ECU"
+    },
+    "P16A3": {
+        "name": "Automatic gearbox ECU"
+    },
+    "P16C8": {
+        "name": "Restarting authorisation  ( In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine )"
+    },
+    "P16C9": {
+        "name": "Starting authorised"
+    },
+    "P16CC": {
+        "name": "Restarting authorisation  ( In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine )"
+    },
+    "P16CD": {
+        "name": "Starting authorised"
+    },
+    "P1700": {
+        "name": "ECU fault"
+    },
+    "P1701": {
+        "name": "Pressure regulators power supply"
+    },
+    "P1702": {
+        "name": "Power latch"
+    },
+    "P1703": {
+        "name": "Fault on the accelerator pedal position information not received by the CAN (Engine ECU)"
+    },
+    "P1706": {
+        "name": "One-touch controlled sensor"
+    },
+    "P1707": {
+        "name": "Gear lever signal"
+    },
+    "P1708": {
+        "name": "Gear lever signal"
+    },
+    "P1709": {
+        "name": "Gear lever signal"
+    },
+    "P170A": {
+        "name": "Gear displayed on control panel"
+    },
+    "P1710": {
+        "name": "Sensors supply fault ."
+    },
+    "P1716": {
+        "name": "Gear lever signal fault"
+    },
+    "P1718": {
+        "name": "Gear lever position sensor"
+    },
+    "P1720": {
+        "name": "ECU fault"
+    },
+    "P1722": {
+        "name": "Timing rpm"
+    },
+    "P1723": {
+        "name": "Rev counter output"
+    },
+    "P1725": {
+        "name": "Fault - gear selection actuator position signal"
+    },
+    "P1727": {
+        "name": "Engine torque data"
+    },
+    "P1728": {
+        "name": "CAN engine torque information"
+    },
+    "P1730": {
+        "name": "ECU fault"
+    },
+    "P1732": {
+        "name": "Fault on the gear lever position sensor"
+    },
+    "P1733": {
+        "name": "Fault on the gear lever position sensor"
+    },
+    "P1737": {
+        "name": "Fault on the gear lever position sensor"
+    },
+    "P1744": {
+        "name": "Pressure regulator nø 4"
+    },
+    "P1745": {
+        "name": "Pressure regulator nø 5"
+    },
+    "P1746": {
+        "name": "Pressure regulator nø 6"
+    },
+    "P1747": {
+        "name": "Sequence solenoid 6 output fault"
+    },
+    "P1748": {
+        "name": "Exchanger flow control solenoid valve output fault"
+    },
+    "P1749": {
+        "name": "Fault gear selection actuator target position not reached"
+    },
+    "P1750": {
+        "name": "Steering wheel gear shift control signal fault ."
+    },
+    "P1751": {
+        "name": "Steering wheel speed control signal"
+    },
+    "P1752": {
+        "name": "Steering wheel speed control signal"
+    },
+    "P1753": {
+        "name": "Steering wheel speed control signal"
+    },
+    "P1755": {
+        "name": "Coupling (internal combustion engine/gearbox)"
+    },
+    "P1760": {
+        "name": "Line pressure modulation electrovalve output fault"
+    },
+    "P1761": {
+        "name": "Line pressure modulation electrovalve output fault"
+    },
+    "P1762": {
+        "name": "Instrument panel display standard line fault ."
+    },
+    "P1763": {
+        "name": "Keylock output"
+    },
+    "P1767": {
+        "name": "Fault gear selection actuator position variation"
+    },
+    "P1768": {
+        "name": "Shift-lock command"
+    },
+    "P1770": {
+        "name": "Fault: oil wear through controlled converter slip ."
+    },
+    "P1771": {
+        "name": "Fault with the drive reduction motor in mode D"
+    },
+    "P1781": {
+        "name": "Gear change control"
+    },
+    "P1782": {
+        "name": "Gear change control"
+    },
+    "P1783": {
+        "name": "Gear change control"
+    },
+    "P1784": {
+        "name": "Gear change control"
+    },
+    "P1785": {
+        "name": "Gear change control"
+    },
+    "P1794": {
+        "name": "ESP communication fault"
+    },
+    "P1795": {
+        "name": "Communication cut off"
+    },
+    "P1796": {
+        "name": "Communication cut off"
+    },
+    "P1797": {
+        "name": "Automatic gearbox communication fault with the engine management"
+    },
+    "P1798": {
+        "name": "Communication with the BSI"
+    },
+    "P1799": {
+        "name": "Multifunction switch signal fault"
+    },
+    "P179A": {
+        "name": "Fault - gear selection actuator solenoid"
+    },
+    "P179B": {
+        "name": "Fault - gear selection actuator solenoid"
+    },
+    "P17A0": {
+        "name": "Fault on the key locking control circuit (key lock)"
+    },
+    "P17A1": {
+        "name": "Fault on the key locking control circuit (key lock)"
+    },
+    "P17A2": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P17A3": {
+        "name": "Automatic gearbox  ( reverse gear )"
+    },
+    "P17A5": {
+        "name": "Automatic gearbox  ( ratio 1 ) :  manual mode"
+    },
+    "P17A6": {
+        "name": "Gear lever fault ."
+    },
+    "P17A9": {
+        "name": "Fault with the drive reduction in mode D"
+    },
+    "P17AA": {
+        "name": "Fault with the drive reduction motor in mode D"
+    },
+    "P17CD": {
+        "name": "Control of the additional oil pump  ( ATN8 gearbox )"
+    },
+    "P17CE": {
+        "name": "Additional oil pump  ( Stop and Start )"
+    },
+    "P17E0": {
+        "name": "Ancillaries battery switch ‎1 or ‎2"
+    },
+    "P1800": {
+        "name": "Fault: initialisation of position N"
+    },
+    "P1828": {
+        "name": "Start lock"
+    },
+    "P1829": {
+        "name": "Start lock"
+    },
+    "P182E": {
+        "name": "Gearbox internal gear selector lever"
+    },
+    "P1830": {
+        "name": "Fault on the front wheels speed information not received by the CAN (Anti-lock braking system ECU)"
+    },
+    "P1837": {
+        "name": "Gear control at the steering wheel"
+    },
+    "P1838": {
+        "name": "Mechanical or hydraulic fault on the engine brake function in the first sequential mode"
+    },
+    "P1839": {
+        "name": "Reduction of drag in mode D activation fault"
+    },
+    "P1844": {
+        "name": "Inconsistency between the hybrid automatic gearbox gear change information received from the multiplexed networks and the actual status of the hybrid automatic gearbox gear change"
+    },
+    "P1876": {
+        "name": "One-touch control signal fault"
+    },
+    "P1907": {
+        "name": "Ancillaries battery switch ‎1 or ‎2"
+    },
+    "P1915": {
+        "name": "Gearbox internal gear selector lever"
+    },
+    "P2537": {
+        "name": "\"accessories positive\" signal"
+    },
+    "P258F": {
+        "name": "Request for engine torque and engine speed transmitted by the automatic gearbox"
+    },
+    "P26CA": {
+        "name": "Electrical circuit of the hybrid automatic gearbox electric coolant pump"
+    },
+    "P26CB": {
+        "name": "Communication problem with the hybrid automatic gearbox electric coolant pump"
+    },
+    "P26CC": {
+        "name": "Electrical circuit of the hybrid automatic gearbox electric coolant pump"
+    },
+    "P26CD": {
+        "name": "Electrical circuit of the hybrid automatic gearbox electric coolant pump"
+    },
+    "P26CE": {
+        "name": "Hybrid drive train cooling circuit coolant pump not bled"
+    },
+    "P26D2": {
+        "name": "Overheating of the hybrid drive train cooling circuit coolant pump when it has not been bled"
+    },
+    "P26D3": {
+        "name": "Electrical circuit of the hybrid automatic gearbox electric coolant pump control relay"
+    },
+    "P26D4": {
+        "name": "Electrical supply of the hybrid automatic gearbox electric coolant pump"
+    },
+    "P26D5": {
+        "name": "Electrical supply of the hybrid automatic gearbox electric coolant pump"
+    },
+    "P2707": {
+        "name": "Gearbox hydraulic or mechanical fault"
+    },
+    "P2711": {
+        "name": "Automatic gearbox"
+    },
+    "P2714": {
+        "name": "Control of the clutch pressure modulating solenoid valve C4"
+    },
+    "P2715": {
+        "name": "Control of the clutch pressure modulating solenoid valve C4"
+    },
+    "P2718": {
+        "name": "Control of the clutch pressure modulating solenoid valve C4"
+    },
+    "P2719": {
+        "name": "SLC2 solenoid locking fault   (  gear shift control  )"
+    },
+    "P2720": {
+        "name": "Control of the clutch pressure modulating solenoid valve C4"
+    },
+    "P2721": {
+        "name": "Control of the clutch pressure modulating solenoid valve C4"
+    },
+    "P2723": {
+        "name": "Control of the brake pressure modulating solenoid valve B1"
+    },
+    "P2724": {
+        "name": "Control of the brake pressure modulating solenoid valve B1"
+    },
+    "P2727": {
+        "name": "Control of the brake pressure modulating solenoid valve B1"
+    },
+    "P2728": {
+        "name": "SLC3 solenoid locking fault   (  gear shift control  )"
+    },
+    "P2729": {
+        "name": "Control of the brake pressure modulating solenoid valve B1"
+    },
+    "P2730": {
+        "name": "Control of the brake pressure modulating solenoid valve B1"
+    },
+    "P2731": {
+        "name": "Brake pressure regulation solenoid valve B2 control  (SL6)"
+    },
+    "P2732": {
+        "name": "Control of the brake pressure modulating solenoid valve B2"
+    },
+    "P2733": {
+        "name": "Control of the brake pressure modulating solenoid valve B2"
+    },
+    "P2736": {
+        "name": "Control of the brake pressure modulating solenoid valve B2"
+    },
+    "P2738": {
+        "name": "Control of the brake pressure modulating solenoid valve B2"
+    },
+    "P2739": {
+        "name": "Control of the brake pressure modulating solenoid valve B2"
+    },
+    "P2761": {
+        "name": "Control of the converter lock-up pressure modulation solenoid valve"
+    },
+    "P2762": {
+        "name": "Fault on the control circuit of the torque converter lock-up pressure modulation electrovalve (SLU)"
+    },
+    "P2763": {
+        "name": "Fault on the control circuit of the \"SLU\" solenoid valve (Control of the converter or lock-up)"
+    },
+    "P2764": {
+        "name": "Fault on the control circuit of the \"SLU\" solenoid valve (Control of the converter or lock-up)"
+    },
+    "P2775": {
+        "name": "One-touch control switch S1"
+    },
+    "P2776": {
+        "name": "Fault in the sequential signal + or the sensor"
+    },
+    "P2777": {
+        "name": "Fault in the sequential signal + or the sensor"
+    },
+    "P2779": {
+        "name": "One-touch control switch S2"
+    },
+    "P2780": {
+        "name": "One-touch control switch S2"
+    },
+    "P2781": {
+        "name": "One-touch control switch S2"
+    },
+    "P2782": {
+        "name": "One-touch control switch S2"
+    },
+    "P2783": {
+        "name": "Automatic gearbox oil temperature"
+    },
+    "P27B2": {
+        "name": "Inconsistency between the gear sent on the CANs by the hybrid automatic gearbox ECU and the gear engaged by the hybrid automatic gearbox"
+    },
+    "P2800": {
+        "name": "Gear lever position sensor"
+    },
+    "P2805": {
+        "name": "Gear lever position sensor"
+    },
+    "P2807": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2808": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2812": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2814": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2815": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2816": {
+        "name": "Control of the line pressure modulation solenoid valve"
+    },
+    "P2817": {
+        "name": "Control of the converter lock-up pressure modulation solenoid valve"
+    },
+    "P281B": {
+        "name": "Control of the converter lock-up pressure modulation solenoid valve"
+    },
+    "P281D": {
+        "name": "Control of the converter lock-up pressure modulation solenoid valve"
+    },
+    "P281E": {
+        "name": "Control of the converter lock-up pressure modulation solenoid valve"
+    },
+    "P2853": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P2855": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P2871": {
+        "name": "Unwanted coupling disengagement (internal combustion engine/gearbox)"
+    },
+    "P2872": {
+        "name": "Coupling (internal combustion engine/gearbox)"
+    },
+    "P28CC": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P28CD": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P28CE": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P28CF": {
+        "name": "Electric supply to the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P28D0": {
+        "name": "Signal from the clutch oil pressure sensor inside the hybrid automatic gearbox"
+    },
+    "P2B85": {
+        "name": "Cooling system coolant pump of an engine fitted with a hybrid automatic gearbox"
+    },
+    "P2BA2": {
+        "name": "Cooling system coolant pump of an engine fitted with a hybrid automatic gearbox"
+    },
+    "P3028": {
+        "name": "Customer modification to the programming of the hybrid automatic gearbox ECU"
+    },
+    "U0001": {
+        "name": "No communication on the CAN"
+    },
+    "U0037": {
+        "name": "Communication on the CAN"
+    },
+    "U0046": {
+        "name": "Communication on the CAN"
+    },
+    "U0073": {
+        "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network"
+    },
+    "U0076": {
+        "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network"
+    },
+    "U0077": {
+        "name": "Communication on the CAN inside the hybrid automatic gearbox between the hybrid automatic gearbox ECU and the front electric drive machine ECU"
+    },
+    "U007C": {
+        "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network"
+    },
+    "U0100": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U0102": {
+        "name": "Communication on the CAN with the transfer box control"
+    },
+    "U0103": {
+        "name": "Fault in communication on the CAN with the ESP ECU"
+    },
+    "U0110": {
+        "name": "Communication on the CAN inside the hybrid automatic gearbox between the hybrid automatic gearbox ECU and the front electric drive machine ECU"
+    },
+    "U0111": {
+        "name": "Communication with the ancillaries battery switch ‎1 on the high speed CAN ‎1 or the ancillaries battery switch ‎2 on the high speed CAN ‎2"
+    },
+    "U0115": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U0121": {
+        "name": "Fault in communication on the CAN with the ESP ECU"
+    },
+    "U0126": {
+        "name": "Communication on the CAN with the steering wheel angle sensor"
+    },
+    "U0129": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0140": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0141": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U015B": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0167": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0287": {
+        "name": "Communication with the electric oil pump inside the hybrid automatic gearbox"
+    },
+    "U0301": {
+        "name": "Fault in communication with the engine ECU on the CAN network"
+    },
+    "U0312": {
+        "name": "Communication with the ancillaries battery switch ‎1 on the high speed CAN ‎1 or the ancillaries battery switch ‎2 on the high speed CAN ‎2"
+    },
+    "U0315": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0318": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0322": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0328": {
+        "name": "Communication on the CAN with the steering wheel angle sensor"
+    },
+    "U0331": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0400": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U0401": {
+        "name": "Communication with the engine management ECU on the high speed CAN ‎1 or ‎2"
+    },
+    "U0411": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U0415": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0418": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0422": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0431": {
+        "name": "Information received from the hybrid drive train supervisor ECU on the High Speed CAN 2"
+    },
+    "U0442": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U064C": {
+        "name": "Brake pedal information"
+    },
+    "U1000": {
+        "name": "Communication cut off"
+    },
+    "U1003": {
+        "name": "Communication cut off"
+    },
+    "U1013": {
+        "name": "Communication on the CAN inside the hybrid automatic gearbox between the hybrid automatic gearbox ECU and the front electric drive machine ECU"
+    },
+    "U1014": {
+        "name": "Communication on the CAN inside the hybrid automatic gearbox between the hybrid automatic gearbox ECU and the front electric drive machine ECU"
+    },
+    "U1105": {
+        "name": "Fault in communication on the CAN network with the steering wheel angle sensor"
+    },
+    "U1108": {
+        "name": "Fault in communication on the CAN with the engine management ECU"
+    },
+    "U1109": {
+        "name": "Fault - communication with the automatic gearbox ECU"
+    },
+    "U110B": {
+        "name": "Communication on the CAN inside the hybrid automatic gearbox between the hybrid automatic gearbox ECU and the front electric drive machine ECU"
+    },
+    "U110F": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U1110": {
+        "name": "Fault in communication with the gearbox electrical control ECU"
+    },
+    "U1111": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U1113": {
+        "name": "Fault in communication on the CAN with the ESP ECU"
+    },
+    "U1118": {
+        "name": "Communication fault with the built-in Systems Interface"
+    },
+    "U1120": {
+        "name": "Built-in systems interface on the high speed CAN 2"
+    },
+    "U1128": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U112A": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U1147": {
+        "name": "Communication with the ancillaries battery switch ‎2 on the high speed CAN ‎2"
+    },
+    "U1148": {
+        "name": "Communication with the engine management ECU on the high speed CAN 2"
+    },
+    "U1153": {
+        "name": "Communication with the ESP ECU on the high speed CAN 2"
+    },
+    "U1158": {
+        "name": "Communication with the built-in systems interface on the high speed CAN 2"
+    },
+    "U1162": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U1187": {
+        "name": "Communication with the ancillaries battery 2 switch on the CAN"
+    },
+    "U118A": {
+        "name": "Information received from the ancillaries battery 1 switch on the CAN"
+    },
+    "U118B": {
+        "name": "Information received from the ancillaries battery 1 switch on the CAN"
+    },
+    "U11A2": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U1205": {
+        "name": "STEERING WHEEL ANGLE SENSOR INFORMATION"
+    },
+    "U1207": {
+        "name": "Communication with the hybrid drive train supervisor ECU on the CAN"
+    },
+    "U1208": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U1209": {
+        "name": "Fault - communication with the automatic gearbox ECU"
+    },
+    "U1213": {
+        "name": "Incorrect information transmitted by the ABS ECU"
+    },
+    "U1218": {
+        "name": "Communication fault with the built-in Systems Interface"
+    },
+    "U122A": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U1262": {
+        "name": "Cruise Control information"
+    },
+    "U12A2": {
+        "name": "Communication with the sequential gear lever on the high speed CAN 1"
+    },
+    "U1305": {
+        "name": "Fault in communication on the CAN network with the steering wheel angle sensor"
+    },
+    "U1308": {
+        "name": "Fault in the gearbox electrical control on the CAN network"
+    },
+    "U1309": {
+        "name": "Information received from the ancillaries battery 1 switch on the CAN"
+    },
+    "U1310": {
+        "name": "Fault in the gearbox electrical control on the CAN network"
+    },
+    "U1313": {
+        "name": "Fault in the gearbox electrical control on the CAN network"
+    },
+    "U1318": {
+        "name": "Fault in the gearbox electrical control on the CAN network"
+    },
+    "U1320": {
+        "name": "Built-in systems interface on the high speed CAN 2"
+    },
+    "U132A": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U133A": {
+        "name": "Information received from the engine management ECU on the CAN Flexray"
+    },
+    "U133B": {
+        "name": "Information received from the engine management ECU on the CAN Flexray"
+    },
+    "U1347": {
+        "name": "Information received from the hybrid drive train supervisor ECU on the CAN"
+    },
+    "U1348": {
+        "name": "Communication with the engine management ECU on the high speed CAN 2"
+    },
+    "U1353": {
+        "name": "Communication with the ESP ECU on the high speed CAN 2"
+    },
+    "U1358": {
+        "name": "Communication with the built-in systems interface on the high speed CAN 2"
+    },
+    "U1362": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U138A": {
+        "name": "Information received from the ancillaries battery 1 switch on the CAN"
+    },
+    "U138B": {
+        "name": "Information received from the ancillaries battery 2 switch on the CAN"
+    },
+    "U13A2": {
+        "name": "Communication on the CAN with the sequential gear lever"
+    },
+    "U1404": {
+        "name": "CAN network Flexray"
+    },
+    "U1406": {
+        "name": "CAN network Flexray"
+    },
+    "U1407": {
+        "name": "CAN network Flexray"
+    },
+    "U1718": {
+        "name": "Inconsistency between the gear sent on the CANs by the hybrid automatic gearbox ECU and the gear engaged by the hybrid automatic gearbox"
+    },
+    "U1F00": {
+        "name": "demande de déclenchement principale reçue par le CAN depuis l'interface système intégrée"
+    },
+    "U1FC6": {
+        "name": "Communication on the CAN"
+    },
+    "U2000": {
+        "name": "Fault in synchronisation of the main controlled reawakening request received by the CAN (BSI ECU) and the controlled reawakening control by wire"
+    },
+    "U2002": {
+        "name": "Remote controlled triggering signal"
+    },
+    "U2003": {
+        "name": "Coherence fault between the status of the vehicle and the main controlled triggering request received by the CAN"
+    },
+    "U2109": {
+        "name": "Fault in synchronisation of the partial controlled reawakening request received by the CAN (BSI ECU) and the controlled reawakening control by wire"
+    },
+    "U2118": {
+        "name": "Fault reception of the partial wake-up request status on the CAN"
+    },
+    "U3006": {
+        "name": "Check of the supply"
+    },
+    "U3009": {
+        "name": "Check of the supply"
+    },
+    "U3017": {
+        "name": "Check of the clock"
+    }
+}

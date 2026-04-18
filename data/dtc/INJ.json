@@ -1,0 +1,7289 @@
+{
+    "_comment": {
+        "name": "INJ DTC Codes grabbed from Diagbox FDB. ECUTYPE union: CMM_10GP, CMM_4A92, CMM_DCM71, CMM_DCM71_EURO6_4, CMM_DCM71_F, CMM_DCM71_F_EURO6_4, CMM_DCM71_P, CMM_ECM_MD1CS069, CMM_EDC_17C81, CMM_GPEC, CMM_GPEC_PL8, CMM_MD1CS003_EURO5, CMM_MD1CS003_EURO6_2, CMM_MD1CS003_EURO6_3, CMM_MD1CS003_EURO6_4, CMM_MD1CS199, CMM_MD1CS199_CQCA_E5, CMM_MD1CS199_F, CMM_MD1CS199_KP1_B22, CMM_MG1CA940, CMM_MG1CS032, CMM_MG1CS042, CMM_MG1CS042_EURO6_3, CMM_MG1CS042_PHEV, CMM_MG1CS051, CMM_MG1CS051_MHEV, CMM_MG1CS051_PHEV, CMM_MG1US008, CMM_MT62_1, CMM_V56, CMM_VD56, MED17_4_2, MED17_4_4, MED17_4_4_EP8, MED17_4_EURO4, MED17_4_EURO5. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B0050": {
+        "name": "Driver's seat belt sensor"
+    },
+    "B1810": {
+        "name": "Driver's door switch"
+    },
+    "B1811": {
+        "name": "Driver's door switch"
+    },
+    "B193C": {
+        "name": "Driver's door switch"
+    },
+    "B208E": {
+        "name": "DeNOx system circuit"
+    },
+    "B20F5": {
+        "name": "Excessive consumption of additive"
+    },
+    "C0031": {
+        "name": "Front left wheel speed calculated by the dynamic stability control ECU"
+    },
+    "C0034": {
+        "name": "Front right wheel speed calculated by the dynamic stability control ECU"
+    },
+    "C0037": {
+        "name": "Rear left wheel speed calculated by the dynamic stability control ECU"
+    },
+    "C003A": {
+        "name": "Rear right wheel speed calculated by the dynamic stability control ECU"
+    },
+    "C003D": {
+        "name": "Rear wheel speed sensor"
+    },
+    "C0061": {
+        "name": "Dynamic stability control ECU"
+    },
+    "C0062": {
+        "name": "Longitudinal acceleration sensor"
+    },
+    "C0073": {
+        "name": "Engine torque given"
+    },
+    "C0074": {
+        "name": "Engine torque requested"
+    },
+    "C0500": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0501": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0502": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0503": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0504": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0505": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C0506": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0507": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0508": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0509": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C050A": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C050B": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C050C": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C050D": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C050E": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C050F": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0510": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0511": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0512": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0513": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0514": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0515": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0516": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C0517": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C053C": {
+        "name": "Dynamic stability control ECU"
+    },
+    "C0572": {
+        "name": "Master cylinder pressure sensor"
+    },
+    "P0001": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P0002": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P0003": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P0004": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P000A": {
+        "name": "Inlet camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P000B": {
+        "name": "Exhaust camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P0010": {
+        "name": "Inlet camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P0011": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P0012": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P0013": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0014": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0015": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0016": {
+        "name": "Crankshaft - camshaft synchronising"
+    },
+    "P0017": {
+        "name": "Starting monitoring"
+    },
+    "P0019": {
+        "name": "CAN"
+    },
+    "P0026": {
+        "name": "Intake Valve Control Solenoid Circuit Range/Performance Bank 1"
+    },
+    "P0027": {
+        "name": "Exhaust Valve Control Solenoid Circuit Range/Performance (Bank 1)"
+    },
+    "P0030": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0031": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0032": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0033": {
+        "name": "Control of the wastegate"
+    },
+    "P0034": {
+        "name": "Control of the wastegate"
+    },
+    "P0035": {
+        "name": "Control of the wastegate"
+    },
+    "P0036": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0037": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0038": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0039": {
+        "name": "Discharge solenoid valve"
+    },
+    "P003A": {
+        "name": "Position of the turbocharger"
+    },
+    "P003C": {
+        "name": "Control of the inlet camshaft dephaser command  ( Performance of the control )"
+    },
+    "P003D": {
+        "name": "Inlet camshaft position sensor"
+    },
+    "P0045": {
+        "name": "Turbocharger wastegate valve"
+    },
+    "P0046": {
+        "name": "Turbocharger wastegate valve"
+    },
+    "P0047": {
+        "name": "Turbocharger wastegate valve"
+    },
+    "P0048": {
+        "name": "Turbocharger wastegate valve"
+    },
+    "P004C": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P004D": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P0053": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0054": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P005A": {
+        "name": "Control of the exhaust camshaft dephaser command  ( Performance of the control )"
+    },
+    "P0068": {
+        "name": "Inlet manifold pressure signal fault"
+    },
+    "P0069": {
+        "name": "Air turbocharging pressure"
+    },
+    "P006C": {
+        "name": "Correlation between the pressure in the air inlet manifold and the turbocharger intake pressure"
+    },
+    "P006D": {
+        "name": "Correlation between the atmospheric pressure and the turbocharger inlet pressure"
+    },
+    "P006E": {
+        "name": "Turbocharging pressure regulation solenoid valve control"
+    },
+    "P0070": {
+        "name": "Outside air temperature sensor"
+    },
+    "P0071": {
+        "name": "Inlet air temperature sensor at the air flow sensor (diesel engine) or exterior air temperature sensor (petrol engine)"
+    },
+    "P0072": {
+        "name": "Inlet air temperature sensor at the air flow sensor (diesel engine) or exterior air temperature sensor (petrol engine)"
+    },
+    "P0073": {
+        "name": "Inlet air temperature sensor at the air flow sensor (diesel engine) or exterior air temperature sensor (petrol engine)"
+    },
+    "P0074": {
+        "name": "Ambient air temperature information received from the BSI fault"
+    },
+    "P0075": {
+        "name": "Intake Valve Control Solenoid Circuit Bank 1"
+    },
+    "P0076": {
+        "name": "Intake Valve Control Solenoid Circuit Low Bank 1"
+    },
+    "P0077": {
+        "name": "Intake Valve Control Solenoid Circuit High Bank 1"
+    },
+    "P0078": {
+        "name": "Exhaus Valve Control Solenoid Circuit Bank 1"
+    },
+    "P0079": {
+        "name": "Exhaust Valve Control Solenoid Circuit Low (Bank 1)"
+    },
+    "P007B": {
+        "name": "Turbocharging air cooler temperature sensor"
+    },
+    "P007C": {
+        "name": "Turbocharging air cooler temperature sensor"
+    },
+    "P007D": {
+        "name": "Turbocharging air cooler temperature sensor"
+    },
+    "P0080": {
+        "name": "Exhaust Valve Control Solenoid Circuit High (Bank 1)"
+    },
+    "P0087": {
+        "name": "High pressure fuel circuit pressure  ( pressure too low )"
+    },
+    "P0088": {
+        "name": "High pressure fuel circuit pressure  ( pressure too high )"
+    },
+    "P0089": {
+        "name": "Fuel pressure regulator opening counter"
+    },
+    "P008A": {
+        "name": "Low pressure fuel circuit"
+    },
+    "P008B": {
+        "name": "Low pressure fuel circuit  ( pressure )"
+    },
+    "P0090": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P0093": {
+        "name": "High pressure fuel circuit pressure  ( large leak detected )"
+    },
+    "P0094": {
+        "name": "High pressure fuel circuit pressure  ( leak detected )"
+    },
+    "P0095": {
+        "name": "Inlet air temperature sensor  ( downstream of the motorised throttle housing  /  air mixer unit )"
+    },
+    "P0096": {
+        "name": "Inlet air temperature sensor  ( downstream of the motorised throttle housing  /  air mixer unit )"
+    },
+    "P0097": {
+        "name": "Inlet air temperature sensor  ( downstream of the motorised throttle housing  /  air mixer unit )"
+    },
+    "P0098": {
+        "name": "Inlet air temperature sensor  ( downstream of the motorised throttle housing  /  air mixer unit )"
+    },
+    "P0099": {
+        "name": "Inlet air temperature sensor  ( downstream of the motorised throttle housing  /  air mixer unit )"
+    },
+    "P009A": {
+        "name": "Inconsistency between the inlet air temperature and the outside air temperature"
+    },
+    "P009B": {
+        "name": "Turbocharger actuator control"
+    },
+    "P00A7": {
+        "name": "Inlet air temperature sensor"
+    },
+    "P00A8": {
+        "name": "Inlet air temperature sensor"
+    },
+    "P00AA": {
+        "name": "Inlet air temperature sensor 1"
+    },
+    "P00AF": {
+        "name": "Turbocharger actuator control"
+    },
+    "P00BA": {
+        "name": "Low pressure fuel circuit"
+    },
+    "P00BB": {
+        "name": "Engine management ECU  ( injection control )"
+    },
+    "P00BC": {
+        "name": "Air inlet circuit"
+    },
+    "P00BD": {
+        "name": "Air inlet circuit  ( air flow )"
+    },
+    "P00C6": {
+        "name": "Fuel pressure measured in the fuel high pressure common rail too low when starting"
+    },
+    "P00C7": {
+        "name": "Measurement of the manifold inlet pressure"
+    },
+    "P00CB": {
+        "name": "Control of the fuel flow regulator"
+    },
+    "P00CE": {
+        "name": "Measurement of the manifold inlet air temperature"
+    },
+    "P00D1": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P00D2": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P00E3": {
+        "name": "Exhaust gas recirculation valve gas cooling circuit valve"
+    },
+    "P00E9": {
+        "name": "Inlet air temperature sensor 3"
+    },
+    "P00EA": {
+        "name": "Inlet air temperature sensor 3"
+    },
+    "P00EB": {
+        "name": "Inlet air temperature sensor 3"
+    },
+    "P0100": {
+        "name": "Air flow sensor"
+    },
+    "P0101": {
+        "name": "Air flow sensor"
+    },
+    "P0102": {
+        "name": "Air flow sensor"
+    },
+    "P0103": {
+        "name": "Air flow sensor"
+    },
+    "P0104": {
+        "name": "Air flow sensor"
+    },
+    "P0105": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P0106": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P0107": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P0108": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P0109": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P010B": {
+        "name": "Air flow sensor"
+    },
+    "P0110": {
+        "name": "Inlet air temperature sensor at the air flow sensor"
+    },
+    "P0111": {
+        "name": "Inlet air temperature sensor at the air flow sensor"
+    },
+    "P0112": {
+        "name": "Inlet air temperature sensor 1"
+    },
+    "P0113": {
+        "name": "Inlet air temperature sensor 1"
+    },
+    "P0114": {
+        "name": "Inlet air temperature sensor at the air flow sensor"
+    },
+    "P0115": {
+        "name": "Engine coolant temperature sensor"
+    },
+    "P0116": {
+        "name": "Engine coolant temperature sensor"
+    },
+    "P0117": {
+        "name": "Engine coolant temperature sensor"
+    },
+    "P0118": {
+        "name": "Engine coolant temperature sensor"
+    },
+    "P0119": {
+        "name": "Engine coolant temperature sensor"
+    },
+    "P011A": {
+        "name": "Engine coolant temperature signal"
+    },
+    "P0120": {
+        "name": "Accelerator pedal potentiometer 1"
+    },
+    "P0121": {
+        "name": "Accelerator pedal position sensor track 1"
+    },
+    "P0122": {
+        "name": "Accelerator pedal position sensor track 1"
+    },
+    "P0123": {
+        "name": "Air mixer position signal"
+    },
+    "P0125": {
+        "name": "Engine coolant temperature sensor signal fault"
+    },
+    "P0126": {
+        "name": "Absence of communication with the steering wheel angle sensor ECU"
+    },
+    "P0127": {
+        "name": "EGR valve  ( high pressure circuit )"
+    },
+    "P0128": {
+        "name": "Engine coolant temperature below the temperature of the thermostatic regulator"
+    },
+    "P0129": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P012A": {
+        "name": "Turbocharger inlet air pressure sensor"
+    },
+    "P012C": {
+        "name": "Turbocharger inlet air pressure sensor"
+    },
+    "P012D": {
+        "name": "Turbocharger inlet air pressure sensor"
+    },
+    "P0130": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P0131": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P0132": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P0133": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P0134": {
+        "name": "NOx content upstream of the deNOx catalytic converter signal"
+    },
+    "P0135": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P0136": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P0137": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P0138": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P0139": {
+        "name": "NOx content downstream of the deNOx catalytic converter"
+    },
+    "P013A": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P013B": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P013E": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P013F": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P0140": {
+        "name": "Oxygen rate signal from the downstream oxygen sensor  /  downstream NOx sensor"
+    },
+    "P0141": {
+        "name": "Fault  downstream oxygen sensor heating control"
+    },
+    "P0142": {
+        "name": "Oxygen sensor 3"
+    },
+    "P0146": {
+        "name": "Lost Communication With Gateway &quot;A&quot;"
+    },
+    "P014C": {
+        "name": "NOx content upstream of the deNOx catalytic converter signal"
+    },
+    "P014D": {
+        "name": "NOx content upstream of the deNOx catalytic converter signal"
+    },
+    "P0151": {
+        "name": "No communication with the airbag ECU"
+    },
+    "P015A": {
+        "name": "Upstream oxygen sensor signal"
+    },
+    "P0168": {
+        "name": "Fuel temperature too high"
+    },
+    "P0169": {
+        "name": "Fuel composition"
+    },
+    "P016E": {
+        "name": "High pressure fuel circuit pressure  ( pressure too high )"
+    },
+    "P016F": {
+        "name": "High pressure fuel circuit pressure  ( pressure too low )"
+    },
+    "P0170": {
+        "name": "Mixture regulation"
+    },
+    "P0171": {
+        "name": "Mixture regulation  ( mixture too lean )"
+    },
+    "P0172": {
+        "name": "Mixture regulation  ( mixture too rich )"
+    },
+    "P0176": {
+        "name": "Fuel composition sensor"
+    },
+    "P0177": {
+        "name": "Fuel composition sensor"
+    },
+    "P0178": {
+        "name": "Fuel composition sensor"
+    },
+    "P0179": {
+        "name": "Fuel composition sensor"
+    },
+    "P017F": {
+        "name": "Fuel vapour leak measuring device air filter"
+    },
+    "P0180": {
+        "name": "Fuel temperature sensor signal in the low pressure fuel circuit"
+    },
+    "P0181": {
+        "name": "Fuel temperature sensor signal in the low pressure fuel circuit"
+    },
+    "P0182": {
+        "name": "Fuel temperature sensor signal in the low pressure fuel circuit"
+    },
+    "P0183": {
+        "name": "Fuel temperature sensor signal in the low pressure fuel circuit"
+    },
+    "P0187": {
+        "name": "Temperature sensor signal from the fuel heater"
+    },
+    "P0188": {
+        "name": "Temperature sensor signal from the fuel heater"
+    },
+    "P018F": {
+        "name": "High pressure fuel circuit pressure  pressure too low"
+    },
+    "P0190": {
+        "name": "Fuel high pressure sensor"
+    },
+    "P0191": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P0192": {
+        "name": "Fuel high pressure sensor"
+    },
+    "P0193": {
+        "name": "Fuel high pressure sensor"
+    },
+    "P0194": {
+        "name": "Fuel high pressure sensor"
+    },
+    "P0195": {
+        "name": "Engine oil temperature sensor"
+    },
+    "P0196": {
+        "name": "Engine oil temperature sensor"
+    },
+    "P0197": {
+        "name": "Engine oil temperature sensor"
+    },
+    "P0198": {
+        "name": "Engine oil temperature sensor"
+    },
+    "P0199": {
+        "name": "Engine oil temperature sensor"
+    },
+    "P01BA": {
+        "name": "Engine oil temperature and level sensor"
+    },
+    "P01C3": {
+        "name": "Fuel pressure sensor"
+    },
+    "P01F1": {
+        "name": "Oxygen sensor 4"
+    },
+    "P0201": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P0202": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P0203": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P0204": {
+        "name": "Control of the cylinder 4 fuel injector"
+    },
+    "P0215": {
+        "name": "Principal relay control"
+    },
+    "P0217": {
+        "name": "Engine coolant temperature sensor signal"
+    },
+    "P0219": {
+        "name": "Detection of over-revving of the internal combustion engine"
+    },
+    "P0220": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P0221": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P0222": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P0223": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P0224": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P0225": {
+        "name": "Accelerator pedal position sensor track 3"
+    },
+    "P0227": {
+        "name": "Accelerator pedal track 2 sensor signal fault"
+    },
+    "P0228": {
+        "name": "Accelerator pedal track 2 sensor signal fault"
+    },
+    "P0230": {
+        "name": "Fuel pump relay control fault"
+    },
+    "P0231": {
+        "name": "Fuel pump relay control fault"
+    },
+    "P0232": {
+        "name": "Fuel pump relay control fault"
+    },
+    "P0234": {
+        "name": "Air turbocharging pressure"
+    },
+    "P0235": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P0236": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P0237": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P0238": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P023A": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P023B": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P023C": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P0241": {
+        "name": "The turbocharging pressure sensor voltage signal is below the lower limit"
+    },
+    "P0242": {
+        "name": "The turbocharging pressure sensor voltage signal is above the upper limit"
+    },
+    "P0243": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P0244": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P0245": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P0246": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P0251": {
+        "name": "Fuel pump"
+    },
+    "P0252": {
+        "name": "Overheating of the fuel flow regulator"
+    },
+    "P0253": {
+        "name": "Fuel pump"
+    },
+    "P0254": {
+        "name": "Fuel pump"
+    },
+    "P0257": {
+        "name": "Fuel pump"
+    },
+    "P0259": {
+        "name": "High pressure fuel pump"
+    },
+    "P025A": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P025B": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P025C": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P025D": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P025E": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P0261": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P0262": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P0263": {
+        "name": "Combustion of cylinder N° 1  ( fuel )"
+    },
+    "P0264": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P0265": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P0266": {
+        "name": "Combustion of cylinder N° 2  ( fuel )"
+    },
+    "P0267": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P0268": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P0269": {
+        "name": "Combustion of cylinder N° 3  ( fuel )"
+    },
+    "P026A": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "P026B": {
+        "name": "Injection problem during heating of the catalytic converter"
+    },
+    "P026E": {
+        "name": "Turbocharger air cooler"
+    },
+    "P026F": {
+        "name": "Piloted thermostat control fault"
+    },
+    "P0270": {
+        "name": "Control of the cylinder 4 fuel injector"
+    },
+    "P0271": {
+        "name": "Control of the cylinder 4 fuel injector"
+    },
+    "P0272": {
+        "name": "Combustion of cylinder N° 4  ( fuel )"
+    },
+    "P028D": {
+        "name": "1 fan assembly"
+    },
+    "P028E": {
+        "name": "1 fan assembly"
+    },
+    "P0298": {
+        "name": "Engine oil temperature"
+    },
+    "P0299": {
+        "name": "Charge pressure regulation"
+    },
+    "P029A": {
+        "name": "Combustion of cylinder N° 1  ( richness )"
+    },
+    "P029B": {
+        "name": "Combustion of cylinder N° 1  ( richness )"
+    },
+    "P029C": {
+        "name": "Fuel injector 1 flow correction too high"
+    },
+    "P029D": {
+        "name": "Correction of fuel injector 1 flow too low"
+    },
+    "P029E": {
+        "name": "Combustion of cylinder N° 2  ( richness )"
+    },
+    "P029F": {
+        "name": "Combustion of cylinder N° 2  ( richness )"
+    },
+    "P02A0": {
+        "name": "Fuel injector 2 flow correction too high"
+    },
+    "P02A1": {
+        "name": "Correction of fuel injector 2 flow too low"
+    },
+    "P02A2": {
+        "name": "Combustion of cylinder N° 3  ( richness )"
+    },
+    "P02A3": {
+        "name": "Combustion of cylinder N° 3  ( richness )"
+    },
+    "P02A4": {
+        "name": "Fuel injector 3 flow correction too high"
+    },
+    "P02A5": {
+        "name": "Correction of fuel injector 3 flow too low"
+    },
+    "P02A6": {
+        "name": "Combustion of cylinder N° 1  ( mixture )"
+    },
+    "P02A7": {
+        "name": "Combustion of cylinder N° 4  ( richness )"
+    },
+    "P02A8": {
+        "name": "Fuel injector 1 flow correction too high"
+    },
+    "P02CC": {
+        "name": "Combustion of cylinder N° 1  ( richness )"
+    },
+    "P02CD": {
+        "name": "Combustion of cylinder N° 1  ( richness )"
+    },
+    "P02CE": {
+        "name": "Combustion of cylinder N° 2  ( richness )"
+    },
+    "P02CF": {
+        "name": "Combustion of cylinder N° 2  ( richness )"
+    },
+    "P02D0": {
+        "name": "Combustion of cylinder N° 3  ( richness )"
+    },
+    "P02D1": {
+        "name": "Combustion of cylinder N° 3  ( richness )"
+    },
+    "P02D2": {
+        "name": "Combustion of cylinder N° 4  ( richness )"
+    },
+    "P02D3": {
+        "name": "Combustion of cylinder N° 4  ( richness )"
+    },
+    "P02E1": {
+        "name": "Air mixer unit"
+    },
+    "P02EC": {
+        "name": "Air mixer unit  ( air flow )"
+    },
+    "P02ED": {
+        "name": "Air flow"
+    },
+    "P02EE": {
+        "name": "Cylinder 1 fuel injector"
+    },
+    "P02EF": {
+        "name": "Cylinder 2 fuel injector"
+    },
+    "P02F0": {
+        "name": "Cylinder 3 fuel injector"
+    },
+    "P02F1": {
+        "name": "Cylinder 4 fuel injector"
+    },
+    "P0300": {
+        "name": "Ignition misfiring on one or more cylinders"
+    },
+    "P0301": {
+        "name": "Cylinder 1 misfirings"
+    },
+    "P0302": {
+        "name": "Cylinder 2 misfirings"
+    },
+    "P0303": {
+        "name": "Cylinder 3 misfirings"
+    },
+    "P0304": {
+        "name": "Cylinder 4 misfirings"
+    },
+    "P0305": {
+        "name": "CAN network"
+    },
+    "P0313": {
+        "name": "Combustion misfiring  ( Level in the fuel tank )"
+    },
+    "P0314": {
+        "name": "Combustion misfiring"
+    },
+    "P0315": {
+        "name": "Crankshaft position sensor signal"
+    },
+    "P0316": {
+        "name": "Combustion misfiring"
+    },
+    "P0318": {
+        "name": "ABS/ESP ECU  ( uneven road detection )"
+    },
+    "P0322": {
+        "name": "Engine speed sensor"
+    },
+    "P0324": {
+        "name": "Knock detector"
+    },
+    "P0325": {
+        "name": "Fault  pinking sensor signal"
+    },
+    "P0326": {
+        "name": "Knock detector"
+    },
+    "P0327": {
+        "name": "Knock detector"
+    },
+    "P0328": {
+        "name": "Knock detector"
+    },
+    "P0329": {
+        "name": "Knock detector"
+    },
+    "P0335": {
+        "name": "Crankshaft position sensor signal"
+    },
+    "P0336": {
+        "name": "Crankshaft position sensor signal"
+    },
+    "P0339": {
+        "name": "Crankshaft position sensor signal"
+    },
+    "P0340": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P0341": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P0342": {
+        "name": "Inlet camshaft position sensor"
+    },
+    "P0343": {
+        "name": "Inlet camshaft position sensor"
+    },
+    "P0344": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P0345": {
+        "name": "Inlet camshaft position sensor"
+    },
+    "P034A": {
+        "name": "Camshaft position sensor"
+    },
+    "P0350": {
+        "name": "Ignition coil signal"
+    },
+    "P0351": {
+        "name": "Cylinder 1 ignition coil control"
+    },
+    "P0352": {
+        "name": "Cylinder 2 ignition coil control"
+    },
+    "P0353": {
+        "name": "Cylinder 3 ignition coil control"
+    },
+    "P0354": {
+        "name": "Cylinder 4 ignition coil control"
+    },
+    "P0363": {
+        "name": "Engine misfires with risk of destroying the catalytic converter"
+    },
+    "P0365": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0366": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0367": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0368": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0369": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P0380": {
+        "name": "Pre-heat glow plugs control circuit"
+    },
+    "P0382": {
+        "name": "Fuel heater 2 control"
+    },
+    "P0383": {
+        "name": "Pre-heat unit relay control"
+    },
+    "P0384": {
+        "name": "Pre-heat unit relay control"
+    },
+    "P0400": {
+        "name": "EGR valve flow"
+    },
+    "P0401": {
+        "name": "Air flow in the EGR valve circuit"
+    },
+    "P0402": {
+        "name": "Air flow in the EGR valve circuit"
+    },
+    "P0403": {
+        "name": "Control of the EGR valve"
+    },
+    "P0404": {
+        "name": "EGR valve"
+    },
+    "P0405": {
+        "name": "EGR valve position signal"
+    },
+    "P0406": {
+        "name": "EGR valve position signal"
+    },
+    "P0407": {
+        "name": "EGR valve position signal  ( low pressure circuit )"
+    },
+    "P0408": {
+        "name": "EGR valve position signal  ( low pressure circuit )"
+    },
+    "P0409": {
+        "name": "EGR valve position sensor  ( high pressure circuit )"
+    },
+    "P040A": {
+        "name": "EGR temperature sensor"
+    },
+    "P040B": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( high pressure circuit )"
+    },
+    "P040C": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( high pressure circuit )"
+    },
+    "P040D": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( high pressure circuit )"
+    },
+    "P041A": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( low pressure circuit )"
+    },
+    "P041C": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( low pressure circuit )"
+    },
+    "P041D": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( low pressure circuit )"
+    },
+    "P0420": {
+        "name": "Pre-catalytic converter  ( Efficiency too low )"
+    },
+    "P0421": {
+        "name": "Pre-catalytic converter  ( component detected absent )"
+    },
+    "P0425": {
+        "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
+    },
+    "P0426": {
+        "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
+    },
+    "P0427": {
+        "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
+    },
+    "P0428": {
+        "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
+    },
+    "P042E": {
+        "name": "EGR valve"
+    },
+    "P042F": {
+        "name": "EGR valve"
+    },
+    "P0441": {
+        "name": "Canister purge solenoid valve control"
+    },
+    "P0442": {
+        "name": "Detection of a small leak by the fuel vapour leak measuring device"
+    },
+    "P0443": {
+        "name": "Canister purge solenoid valve control"
+    },
+    "P0444": {
+        "name": "Canister purge solenoid valve control"
+    },
+    "P0445": {
+        "name": "Canister purge solenoid valve control"
+    },
+    "P0447": {
+        "name": "Fuel vapour leak measuring device"
+    },
+    "P0449": {
+        "name": "Solenoid valve of the fuel vapour leak measuring device"
+    },
+    "P0450": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P0451": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P0452": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P0453": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P0455": {
+        "name": "Detection of a large leak by the fuel vapour leak measuring device"
+    },
+    "P0456": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly  ( leak detected )"
+    },
+    "P0457": {
+        "name": "Fuel filler cap  ( detection of a fuel vapour leak )"
+    },
+    "P0458": {
+        "name": "Purge canister solenoid valve control"
+    },
+    "P0459": {
+        "name": "Purge canister solenoid valve control"
+    },
+    "P045A": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P045B": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P045C": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P045D": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P0460": {
+        "name": "Fuel tank level sensor"
+    },
+    "P0461": {
+        "name": "Fuel tank level sensor"
+    },
+    "P0462": {
+        "name": "Fuel tank level sensor"
+    },
+    "P0463": {
+        "name": "Fuel level information (received by the CAN)"
+    },
+    "P0464": {
+        "name": "Fuel level information received from the BSI fault"
+    },
+    "P0467": {
+        "name": "capteur de flux de purge canister"
+    },
+    "P0468": {
+        "name": "capteur de flux de purge canister"
+    },
+    "P046C": {
+        "name": "Control of the EGR valve"
+    },
+    "P046E": {
+        "name": "EGR valve position signal  ( low pressure circuit )"
+    },
+    "P046F": {
+        "name": "EGR valve position sensor  ( low pressure circuit )"
+    },
+    "P0480": {
+        "name": "Fan assembly speed control 1"
+    },
+    "P0481": {
+        "name": "Fan assembly speed control 2"
+    },
+    "P0482": {
+        "name": "Fan assembly"
+    },
+    "P0483": {
+        "name": "Fan assembly"
+    },
+    "P0484": {
+        "name": "Fan assembly"
+    },
+    "P0485": {
+        "name": "Fan assembly"
+    },
+    "P0486": {
+        "name": "EGR valve position sensor  ( low pressure circuit )"
+    },
+    "P0489": {
+        "name": "Control of the EGR valve"
+    },
+    "P048A": {
+        "name": "Control of the EGR valve"
+    },
+    "P0490": {
+        "name": "Control of the EGR valve  ( high pressure circuit )"
+    },
+    "P0491": {
+        "name": "Fan assembly"
+    },
+    "P0493": {
+        "name": "Fan assembly"
+    },
+    "P0494": {
+        "name": "Fan assembly"
+    },
+    "P0495": {
+        "name": "Fan assembly  -  lack of coherence between the speed detected and the reference speed"
+    },
+    "P0496": {
+        "name": "Fuel vapour leak measuring device"
+    },
+    "P0497": {
+        "name": "Fuel vapour leak measuring device"
+    },
+    "P0498": {
+        "name": "Solenoid valve of the fuel vapour leak measuring device"
+    },
+    "P0499": {
+        "name": "Solenoid valve of the fuel vapour leak measuring device"
+    },
+    "P049A": {
+        "name": "Jamming of the exhaust gas recirculation valve  ( low pressure circuit )"
+    },
+    "P04B0": {
+        "name": "Recirculation valve solenoid valve control"
+    },
+    "P04B1": {
+        "name": "Recirculation valve solenoid valve control"
+    },
+    "P04B2": {
+        "name": "Recirculation valve solenoid valve control"
+    },
+    "P04B3": {
+        "name": "Recirculation valve solenoid valve control"
+    },
+    "P04B4": {
+        "name": "Recirculation valve solenoid valve control"
+    },
+    "P04D9": {
+        "name": "Control of the EGR valve"
+    },
+    "P04DA": {
+        "name": "Control of the EGR valve"
+    },
+    "P04DF": {
+        "name": "Canister purge solenoid valve"
+    },
+    "P04E0": {
+        "name": "Canister purge solenoid valve"
+    },
+    "P04EA": {
+        "name": "Detection of a fuel vapour leak"
+    },
+    "P04F0": {
+        "name": "A ne pas afficher"
+    },
+    "P04F1": {
+        "name": "A ne pas afficher"
+    },
+    "P0500": {
+        "name": "Vehicle speed sensor"
+    },
+    "P0501": {
+        "name": "Vehicle speed sensor"
+    },
+    "P0503": {
+        "name": "Vehicle speed sensor"
+    },
+    "P0505": {
+        "name": "Idle control system at cold starting"
+    },
+    "P0506": {
+        "name": "Idle control system at cold starting  ( Slower than expected )"
+    },
+    "P0507": {
+        "name": "Idle control system at cold starting  ( Quicker than expected )"
+    },
+    "P050A": {
+        "name": "Idle control system at cold starting"
+    },
+    "P050B": {
+        "name": "Starting monitoring"
+    },
+    "P050C": {
+        "name": "Engine coolant temperature sensor signal"
+    },
+    "P050F": {
+        "name": "Inadequate braking assistance"
+    },
+    "P0513": {
+        "name": "Coded immobiliser"
+    },
+    "P0515": {
+        "name": "Ancillaries battery temperature signal fault"
+    },
+    "P051A": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "P051B": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "P051C": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "P051D": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "P051E": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "P0520": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P0521": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P0522": {
+        "name": "Engine oil pressure sensor signal"
+    },
+    "P0523": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P0524": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P0525": {
+        "name": "Engine management ECU  ( vehicle speed information )"
+    },
+    "P0527": {
+        "name": "Fan assembly"
+    },
+    "P052A": {
+        "name": "Inlet camshaft position sensor signal"
+    },
+    "P052B": {
+        "name": "Inlet camshaft position on cold starting  (retard excessif )"
+    },
+    "P0530": {
+        "name": "Refrigerant pressure sensor"
+    },
+    "P0531": {
+        "name": "Refrigerant pressure sensor"
+    },
+    "P0532": {
+        "name": "Refrigerant pressure sensor"
+    },
+    "P0533": {
+        "name": "Refrigerant pressure sensor"
+    },
+    "P0537": {
+        "name": "Evaporator temperature sensor"
+    },
+    "P0538": {
+        "name": "Evaporator temperature sensor"
+    },
+    "P053A": {
+        "name": "Oil vapours recirculation circuit heater relay control"
+    },
+    "P053B": {
+        "name": "Oil vapours recirculation circuit heater relay control"
+    },
+    "P053C": {
+        "name": "Oil vapours recirculation circuit heater relay control"
+    },
+    "P053D": {
+        "name": "Oil vapour recirculation circuit heater"
+    },
+    "P053F": {
+        "name": "Fuel pressure on cold starting"
+    },
+    "P0540": {
+        "name": "Additional heating ECU  (AHCU)"
+    },
+    "P0544": {
+        "name": "Pre-catalyst upstream exhaust gas temperature sensor signal"
+    },
+    "P0545": {
+        "name": "capteur de température 1 des gaz d'échappement"
+    },
+    "P0546": {
+        "name": "capteur de température 1 des gaz d'échappement"
+    },
+    "P0547": {
+        "name": "Particle emission filter downstream temperature sensor"
+    },
+    "P0548": {
+        "name": "Particle emission filter downstream temperature sensor"
+    },
+    "P0549": {
+        "name": "Particle emission filter downstream temperature sensor"
+    },
+    "P054A": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P054B": {
+        "name": "Exhaust camshaft position on cold starting  (retard excessif )"
+    },
+    "P0555": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0557": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0558": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0559": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0560": {
+        "name": "Ancillaries battery"
+    },
+    "P0561": {
+        "name": "Battery voltage fault"
+    },
+    "P0562": {
+        "name": "Ancillaries battery"
+    },
+    "P0563": {
+        "name": "Ancillaries battery"
+    },
+    "P0564": {
+        "name": "Cruise control switch"
+    },
+    "P0565": {
+        "name": "Cruise control switch"
+    },
+    "P0566": {
+        "name": "Cruise control switch"
+    },
+    "P0567": {
+        "name": "Cruise control switch"
+    },
+    "P0568": {
+        "name": "Cruise control switch"
+    },
+    "P0569": {
+        "name": "Cruise control switch"
+    },
+    "P056C": {
+        "name": "Cruise control switch"
+    },
+    "P0570": {
+        "name": "Speed limiter activation button"
+    },
+    "P0571": {
+        "name": "Brake contact"
+    },
+    "P0572": {
+        "name": "Brake switch signal"
+    },
+    "P0573": {
+        "name": "Brake contact"
+    },
+    "P0575": {
+        "name": "Speed limiter control"
+    },
+    "P0576": {
+        "name": "Cruise control switch"
+    },
+    "P0577": {
+        "name": "Cruise control switch"
+    },
+    "P0578": {
+        "name": "Cruise control/speed limiter button"
+    },
+    "P0579": {
+        "name": "Cruise control"
+    },
+    "P057F": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P0580": {
+        "name": "Speed limiter control"
+    },
+    "P0581": {
+        "name": "Speed limiter control"
+    },
+    "P0585": {
+        "name": "Speed limiter control"
+    },
+    "P058A": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P058B": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P058C": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P058D": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P0591": {
+        "name": "Vehicle speed limitation"
+    },
+    "P0597": {
+        "name": "Piloted thermostat control fault"
+    },
+    "P0598": {
+        "name": "Piloted thermostat control fault"
+    },
+    "P0599": {
+        "name": "Piloted thermostat control fault"
+    },
+    "P059B": {
+        "name": "Controlled air inlet module position sensor"
+    },
+    "P059F": {
+        "name": "Controlled air inlet module"
+    },
+    "P05A3": {
+        "name": "Control of the controlled air intake module  -  position 1"
+    },
+    "P05A7": {
+        "name": "Controlled air inlet module"
+    },
+    "P05A8": {
+        "name": "Controlled air inlet module"
+    },
+    "P05B2": {
+        "name": "Control of the controlled air intake module  -  position 2"
+    },
+    "P05BD": {
+        "name": "Stop and Start switch"
+    },
+    "P05BE": {
+        "name": "Stop and Start switch"
+    },
+    "P05BF": {
+        "name": "Stop and Start switch"
+    },
+    "P05C0": {
+        "name": "Controlled air inlet module"
+    },
+    "P05CB": {
+        "name": "Configuration"
+    },
+    "P05CC": {
+        "name": "Inlet camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P05CE": {
+        "name": "Exhaust camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P05D3": {
+        "name": "Built-in systems interface"
+    },
+    "P05E3": {
+        "name": "Handbrake switch"
+    },
+    "P05EC": {
+        "name": "Starting monitoring"
+    },
+    "P05ED": {
+        "name": "Urea ECU supply voltage  (SCRM)"
+    },
+    "P05F3": {
+        "name": "Control of the urea injector"
+    },
+    "P05F8": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "P05FF": {
+        "name": "Brake pedal position sensor"
+    },
+    "P0600": {
+        "name": "Engine management ECU"
+    },
+    "P0601": {
+        "name": "Engine management ECU"
+    },
+    "P0602": {
+        "name": "Engine management ECU"
+    },
+    "P0603": {
+        "name": "Engine management ECU"
+    },
+    "P0604": {
+        "name": "Engine management ECU"
+    },
+    "P0606": {
+        "name": "Engine management ECU"
+    },
+    "P0607": {
+        "name": "Engine management ECU"
+    },
+    "P060A": {
+        "name": "Engine management ECU"
+    },
+    "P060B": {
+        "name": "Engine management ECU"
+    },
+    "P060C": {
+        "name": "Engine management ECU"
+    },
+    "P060D": {
+        "name": "Engine management ECU  ( accelerator pedal position sensor signal )"
+    },
+    "P060E": {
+        "name": "Engine management ECU  ( signal from the position sensor of the motorised throttle housing (petrol)/air metering unit (Diesel) )"
+    },
+    "P060F": {
+        "name": "Engine management ECU  ( Engine coolant temperature sensor signal )"
+    },
+    "P0610": {
+        "name": "Engine management ECU"
+    },
+    "P0611": {
+        "name": "Engine management ECU"
+    },
+    "P0612": {
+        "name": "Engine management ECU"
+    },
+    "P0615": {
+        "name": "Starter relay control"
+    },
+    "P0616": {
+        "name": "Starter relay control"
+    },
+    "P0617": {
+        "name": "Starter relay control"
+    },
+    "P061A": {
+        "name": "Engine management ECU"
+    },
+    "P061B": {
+        "name": "Engine management ECU"
+    },
+    "P061C": {
+        "name": "Engine management ECU"
+    },
+    "P061D": {
+        "name": "Engine management ECU"
+    },
+    "P061E": {
+        "name": "Handbrake switch"
+    },
+    "P061F": {
+        "name": "Engine management ECU"
+    },
+    "P0620": {
+        "name": "Alternator"
+    },
+    "P0622": {
+        "name": "Information fault of the alternator charge: not characterized."
+    },
+    "P0627": {
+        "name": "Control of the low pressure fuel supply pump"
+    },
+    "P0628": {
+        "name": "Control of the low pressure fuel supply pump"
+    },
+    "P0629": {
+        "name": "Control of the low pressure fuel supply pump"
+    },
+    "P062A": {
+        "name": "Low-pressure fuel pump"
+    },
+    "P062B": {
+        "name": "Fuel injector"
+    },
+    "P062C": {
+        "name": "Vehicle Speed limitation"
+    },
+    "P062D": {
+        "name": "Injector bank 1"
+    },
+    "P062E": {
+        "name": "Injector bank 2"
+    },
+    "P062F": {
+        "name": "Injection ECU  fault"
+    },
+    "P0630": {
+        "name": "VIN fault  not stored"
+    },
+    "P0632": {
+        "name": "Milometer not programmed"
+    },
+    "P0633": {
+        "name": "Immobiliser code not programmed"
+    },
+    "P0634": {
+        "name": "Engine management ECU"
+    },
+    "P0638": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P0641": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0642": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0643": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0645": {
+        "name": "Air conditioning compressor clutch relay"
+    },
+    "P0646": {
+        "name": "Air conditioning compressor clutch relay"
+    },
+    "P0647": {
+        "name": "Air conditioning compressor clutch relay"
+    },
+    "P064A": {
+        "name": "Low-pressure fuel pump"
+    },
+    "P064D": {
+        "name": "Engine management ECU"
+    },
+    "P0651": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P0652": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P0653": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P0655": {
+        "name": "Coolant temperature sensor"
+    },
+    "P0656": {
+        "name": "Fuel level"
+    },
+    "P0657": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0658": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0659": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P065A": {
+        "name": "Controlled alternator"
+    },
+    "P065B": {
+        "name": "Controlled alternator"
+    },
+    "P065C": {
+        "name": "Controlled alternator"
+    },
+    "P0666": {
+        "name": "Temperature sensor internal to the engine ECU"
+    },
+    "P0667": {
+        "name": "Temperature sensor internal to the engine ECU"
+    },
+    "P0668": {
+        "name": "ECU internal fault"
+    },
+    "P0669": {
+        "name": "ECU internal fault"
+    },
+    "P066A": {
+        "name": "Pre-heat glow plug N° 1"
+    },
+    "P066B": {
+        "name": "Pre-heat glow plug N° 1"
+    },
+    "P066C": {
+        "name": "Pre-heat glow plug N° 2"
+    },
+    "P066D": {
+        "name": "Pre-heat glow plug N° 2"
+    },
+    "P066E": {
+        "name": "Pre-heat glow plug N° 3"
+    },
+    "P066F": {
+        "name": "Pre-heat glow plug N° 3"
+    },
+    "P0670": {
+        "name": "Control of the pre-heat unit"
+    },
+    "P0671": {
+        "name": "Pre-heat glow plug N° 1"
+    },
+    "P0672": {
+        "name": "Pre-heat glow plug N° 2"
+    },
+    "P0673": {
+        "name": "Pre-heat glow plug N° 3"
+    },
+    "P0674": {
+        "name": "Pre-heat glow plug N° 4"
+    },
+    "P067A": {
+        "name": "Pre-heat glow plug N° 4"
+    },
+    "P067B": {
+        "name": "Pre-heat glow plug N° 4"
+    },
+    "P0683": {
+        "name": "Control of the pre-heat unit"
+    },
+    "P0685": {
+        "name": "Power relay control"
+    },
+    "P0686": {
+        "name": "Power relay control"
+    },
+    "P0687": {
+        "name": "Power relay control"
+    },
+    "P068A": {
+        "name": "Main relay control"
+    },
+    "P068B": {
+        "name": "Main relay jammed"
+    },
+    "P0691": {
+        "name": "Fan assembly control  -  Fast Speed"
+    },
+    "P0692": {
+        "name": "Fan assembly control  -  Fast Speed"
+    },
+    "P0693": {
+        "name": "Fan assembly control  -  slow speed"
+    },
+    "P0694": {
+        "name": "Fan assembly control  -  slow speed"
+    },
+    "P0695": {
+        "name": "Cooling fan supply relay  ( high speed of the left-hand fan )"
+    },
+    "P0696": {
+        "name": "Cooling fan supply relay  ( high speed of the left-hand fan )"
+    },
+    "P0697": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P0698": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P0699": {
+        "name": "Sensor supplies 3 fault"
+    },
+    "P06A0": {
+        "name": "Air con compressor"
+    },
+    "P06A1": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P06A2": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P06A6": {
+        "name": "Engine management ECU electronic supply"
+    },
+    "P06AF": {
+        "name": "Engine management ECU"
+    },
+    "P06B8": {
+        "name": "A ne pas afficher"
+    },
+    "P06DA": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P06DB": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P06DC": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P06DD": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P06DE": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P06DF": {
+        "name": "Pre-post heating unit"
+    },
+    "P06E5": {
+        "name": "Pre-post heating unit"
+    },
+    "P06E9": {
+        "name": "Starter motor  ( Maximum number of activations reached )"
+    },
+    "P06EA": {
+        "name": "Upstream NOx sensor"
+    },
+    "P06EB": {
+        "name": "Downstream NOx sensor"
+    },
+    "P06EF": {
+        "name": "Incoherent internal combustion engine status when requesting internal combustion engine automatic stop  ( Stop and Start )"
+    },
+    "P06F1": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "P0700": {
+        "name": "Request for lighting of the MIL indicator lamp by the gearbox ECU"
+    },
+    "P0703": {
+        "name": "Brake switch 2"
+    },
+    "P0704": {
+        "name": "Fault  :  clutch pedal switch signal"
+    },
+    "P0711": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "P0725": {
+        "name": "Engine speed sensor"
+    },
+    "P0726": {
+        "name": "Engine speed information"
+    },
+    "P072A": {
+        "name": "Detection of a problem originating from the hybrid automatic gearbox"
+    },
+    "P0741": {
+        "name": "Status of the clutch"
+    },
+    "P077E": {
+        "name": "Transmission oil temperature sensor"
+    },
+    "P0780": {
+        "name": "Gear change"
+    },
+    "P0805": {
+        "name": "Clutch pedal position sensor signal"
+    },
+    "P0806": {
+        "name": "Clutch master cylinder position signal"
+    },
+    "P0807": {
+        "name": "Clutch pedal position sensor"
+    },
+    "P0808": {
+        "name": "Clutch pedal position sensor"
+    },
+    "P080A": {
+        "name": "Clutch pedal position"
+    },
+    "P0810": {
+        "name": "Clutch pedal position sensor signal"
+    },
+    "P0812": {
+        "name": "Reverse lamp switch"
+    },
+    "P0817": {
+        "name": "Stop and Start function restarting authorisation information"
+    },
+    "P081A": {
+        "name": "Stop and Start function restarting authorisation information"
+    },
+    "P081B": {
+        "name": "Starter relay"
+    },
+    "P081D": {
+        "name": "Gearbox neutral sensor"
+    },
+    "P0820": {
+        "name": "Clutch pedal angle position sensor signal"
+    },
+    "P0830": {
+        "name": "Clutch pedal position sensor signal"
+    },
+    "P0831": {
+        "name": "Clutch pedal position sensor   short circuit to earth"
+    },
+    "P0832": {
+        "name": "Clutch pedal position sensor   short-circuit to positive"
+    },
+    "P0850": {
+        "name": "Gearbox neutral sensor"
+    },
+    "P0856": {
+        "name": "Gearbox ECU"
+    },
+    "P086A": {
+        "name": "Gearbox neutral sensor signal"
+    },
+    "P086B": {
+        "name": "Gearbox neutral sensor signal"
+    },
+    "P086C": {
+        "name": "Gearbox neutral sensor"
+    },
+    "P086D": {
+        "name": "Gearbox neutral sensor"
+    },
+    "P086E": {
+        "name": "Gearbox neutral sensor signal"
+    },
+    "P086F": {
+        "name": "Programming of the neutral position"
+    },
+    "P0897": {
+        "name": "Oil degradation counter"
+    },
+    "P0901": {
+        "name": "Clutch pedal"
+    },
+    "P0914": {
+        "name": "Neutral sensor signal"
+    },
+    "P0915": {
+        "name": "Gear lever position signal"
+    },
+    "P0929": {
+        "name": "Actuator of the gearstick locking"
+    },
+    "P0945": {
+        "name": "Oil pressure regulation solenoid valve control"
+    },
+    "P0947": {
+        "name": "Oil pressure regulation solenoid valve control"
+    },
+    "P0948": {
+        "name": "Oil pressure regulation solenoid valve control"
+    },
+    "P0A08": {
+        "name": "View the on-board charger/direct voltage transformer assembly fault codes"
+    },
+    "P0A0B": {
+        "name": "Circuit breaker connector locking"
+    },
+    "P0A1A": {
+        "name": "Controlled alternator"
+    },
+    "P0A23": {
+        "name": "Controlled alternator"
+    },
+    "P0A3B": {
+        "name": "Controlled alternator"
+    },
+    "P0A3E": {
+        "name": "View the rear electric drive machine inverter fault codes"
+    },
+    "P0A7A": {
+        "name": "View the rear electric drive machine inverter fault codes"
+    },
+    "P0AA1": {
+        "name": "Traction battery internal power switch"
+    },
+    "P0AA6": {
+        "name": "View the traction battery fault codes"
+    },
+    "P0AD9": {
+        "name": "Traction battery internal power switch"
+    },
+    "P0AFA": {
+        "name": "Traction battery voltage"
+    },
+    "P0AFB": {
+        "name": "Traction battery voltage"
+    },
+    "P0C00": {
+        "name": "View the hybrid automatic gearbox fault codes"
+    },
+    "P0C32": {
+        "name": "Traction battery cooling circuit"
+    },
+    "P0C43": {
+        "name": "Traction battery cooling circuit temperature sensor"
+    },
+    "P0C46": {
+        "name": "Traction battery cooling circuit temperature sensor"
+    },
+    "P0C47": {
+        "name": "Traction battery cooling circuit coolant pump control"
+    },
+    "P0C49": {
+        "name": "Traction battery cooling circuit coolant pump control"
+    },
+    "P0C4A": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0C4D": {
+        "name": "Traction battery cooling circuit coolant pump control"
+    },
+    "P0CBD": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0CC0": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0CE9": {
+        "name": "Control of the drive train cooling circuit electric coolant pump"
+    },
+    "P0CEA": {
+        "name": "Waterpump of the drive train cooling circuit"
+    },
+    "P0CEB": {
+        "name": "Control of the drive train cooling circuit electric coolant pump"
+    },
+    "P0CEC": {
+        "name": "Control of the drive train cooling circuit electric coolant pump"
+    },
+    "P0CEF": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF0": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF1": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF2": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0CFF": {
+        "name": "Traction battery cooling circuit coolant pump"
+    },
+    "P0D15": {
+        "name": "Circuit breaker connector locking"
+    },
+    "P0D1F": {
+        "name": "Time counter"
+    },
+    "P0D29": {
+        "name": "On-board charger/direct voltage transformer assembly input current"
+    },
+    "P0E13": {
+        "name": "Electric coolant heater"
+    },
+    "P0E14": {
+        "name": "Electric coolant heater"
+    },
+    "P0E15": {
+        "name": "Electric coolant heater"
+    },
+    "P0E1F": {
+        "name": "Traction battery cooling circuit coolant pump"
+    },
+    "P0EA7": {
+        "name": "Turbocharger air cooler"
+    },
+    "P0EE3": {
+        "name": "Refrigerant distribution valve control circuit"
+    },
+    "P0EE4": {
+        "name": "Refrigerant distribution valve control circuit"
+    },
+    "P0EE5": {
+        "name": "Refrigerant distribution valve control circuit"
+    },
+    "P1000": {
+        "name": "Engine performance limitation fault"
+    },
+    "P1004": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1005": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1007": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1008": {
+        "name": "Request to switch off the fuel injection"
+    },
+    "P1012": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1013": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1014": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1015": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1016": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1017": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1018": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1019": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P101A": {
+        "name": "Variable valve lift system"
+    },
+    "P101B": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P101C": {
+        "name": "Variable valve lift system"
+    },
+    "P101D": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P101E": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P101F": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1020": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1023": {
+        "name": "Variable valve lift system  ( programming of the low stops )"
+    },
+    "P1024": {
+        "name": "Variable valve lift system  ( programming )"
+    },
+    "P1025": {
+        "name": "Variable valve lift system  ( programming )"
+    },
+    "P102A": {
+        "name": "Ancillaries battery"
+    },
+    "P102B": {
+        "name": "Ancillaries battery"
+    },
+    "P102C": {
+        "name": "Ancillaries battery"
+    },
+    "P102D": {
+        "name": "Ancillaries battery"
+    },
+    "P102F": {
+        "name": "Battery charge status unit"
+    },
+    "P1030": {
+        "name": "Variable valve lift system"
+    },
+    "P1031": {
+        "name": "Variable valve lift system  ( actuator jammed )"
+    },
+    "P1032": {
+        "name": "A ne pas afficher"
+    },
+    "P1033": {
+        "name": "A ne pas afficher"
+    },
+    "P1034": {
+        "name": "A ne pas afficher"
+    },
+    "P1035": {
+        "name": "End-of-life of the piston linked to self-ignition before spark (Rumble)"
+    },
+    "P1036": {
+        "name": "Non-optimal piston protection linked to self-ignition before spark (Rumble)  ( premature engine failure )"
+    },
+    "P1037": {
+        "name": "Unprotected piston linked to self-ignition before spark (Rumble)  ( premature engine failure )"
+    },
+    "P1038": {
+        "name": "Slight limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)"
+    },
+    "P1039": {
+        "name": "Severe limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)"
+    },
+    "P103A": {
+        "name": "Cylinder 2 oil distribution solenoid valve control"
+    },
+    "P103B": {
+        "name": "Cylinder 3 oil distribution solenoid valve control"
+    },
+    "P103C": {
+        "name": "Cylinder 3 oil distribution solenoid valve control"
+    },
+    "P103D": {
+        "name": "Cylinder 3 oil distribution solenoid valve control"
+    },
+    "P1041": {
+        "name": "Cylinder oil timing solenoid valve 1"
+    },
+    "P1042": {
+        "name": "Cylinder oil timing solenoid valve 2"
+    },
+    "P1043": {
+        "name": "Cylinder oil timing solenoid valve 3"
+    },
+    "P1045": {
+        "name": "Cylinder oil timing solenoid valve 1"
+    },
+    "P1046": {
+        "name": "Stop and Start function"
+    },
+    "P1047": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1048": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1049": {
+        "name": "Alternator test"
+    },
+    "P104A": {
+        "name": "Cylinder oil timing solenoid valve 3"
+    },
+    "P1050": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1051": {
+        "name": "Heated urea pipe"
+    },
+    "P1052": {
+        "name": "DeNOx system"
+    },
+    "P1053": {
+        "name": "Frozen pipes detected on the particle filter differential pressure sensor  ( level 2 )"
+    },
+    "P1054": {
+        "name": "Frozen pipes detected on the particle filter differential pressure sensor  ( level 1 )"
+    },
+    "P1055": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1056": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1057": {
+        "name": "Variable valve lift system relay"
+    },
+    "P1058": {
+        "name": "Ancillaries battery 1 switch"
+    },
+    "P1059": {
+        "name": "Ancillaries battery 2 switch"
+    },
+    "P105A": {
+        "name": "Cylinder ‎1 ignition coil current"
+    },
+    "P105B": {
+        "name": "Cylinder ‎3 ignition coil current"
+    },
+    "P105C": {
+        "name": "Cylinder ‎2 ignition coil current"
+    },
+    "P1061": {
+        "name": "Cylinder oil timing solenoid valve 1"
+    },
+    "P1062": {
+        "name": "Variable valve lift system position sensor"
+    },
+    "P1063": {
+        "name": "Cylinder oil timing solenoid valve 3"
+    },
+    "P1064": {
+        "name": "Variable valve lift system  ( programming )"
+    },
+    "P1065": {
+        "name": "Opening time of the cylinder 1 oil distribution solenoid valve"
+    },
+    "P1066": {
+        "name": "Closing duration of the cylinder 1 oil distribution solenoid valve"
+    },
+    "P1067": {
+        "name": "Variable valve lift system"
+    },
+    "P1068": {
+        "name": "First warning level of the traction battery"
+    },
+    "P1069": {
+        "name": "Second warning level of the traction battery"
+    },
+    "P106A": {
+        "name": "Third warning level of the traction battery"
+    },
+    "P106C": {
+        "name": "Status of the electric circuit breaker connector"
+    },
+    "P1077": {
+        "name": "Variable valve lift system  ( actuator )"
+    },
+    "P1078": {
+        "name": "Variable valve lift system"
+    },
+    "P107A": {
+        "name": "Air turbocharging pressure"
+    },
+    "P107B": {
+        "name": "Air turbocharging pressure"
+    },
+    "P1081": {
+        "name": "First fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P1082": {
+        "name": "2nd-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P1083": {
+        "name": "3rd-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P108B": {
+        "name": "First warning level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108C": {
+        "name": "Second warning level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108D": {
+        "name": "Third warning level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108E": {
+        "name": "View the ABS / ESP ECU fault codes"
+    },
+    "P108F": {
+        "name": "View the built-in systems interface BSI1 / VSM1 fault codes"
+    },
+    "P1090": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1091": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1092": {
+        "name": "Fuel pressure measured in the fuel high pressure common rail above the reference value"
+    },
+    "P1094": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1096": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1098": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109C": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P10A9": {
+        "name": "Heating circuit electric coolant heater temperature sensor"
+    },
+    "P10AB": {
+        "name": "Under-bonnet air temperature sensor"
+    },
+    "P10B6": {
+        "name": "Charging the traction battery"
+    },
+    "P10C2": {
+        "name": "Ancillaries battery"
+    },
+    "P10C3": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P10D9": {
+        "name": "48 V starter"
+    },
+    "P10DA": {
+        "name": "Partial unavailability of the hybrid automatic gearbox"
+    },
+    "P10DB": {
+        "name": "Total unavailability of the hybrid automatic gearbox"
+    },
+    "P10DC": {
+        "name": "Partial unavailability of the electric drive machine"
+    },
+    "P10DD": {
+        "name": "Total unavailability of the electric drive machine"
+    },
+    "P10DE": {
+        "name": "Speed limitation request via the electric drive machine"
+    },
+    "P10E1": {
+        "name": "Request to switch off the electric drive machine"
+    },
+    "P10E2": {
+        "name": "Starting of the engine"
+    },
+    "P10E3": {
+        "name": "Reversible alternator  -  restarting of the internal combustion engine impossible"
+    },
+    "P10E4": {
+        "name": "Front electric drive machine  -  restarting of the internal combustion engine impossible"
+    },
+    "P10EE": {
+        "name": "Presence of ethanol in the fuel"
+    },
+    "P10EF": {
+        "name": "Air conditioning circuit pressure too low"
+    },
+    "P10F1": {
+        "name": "Air conditioning circuit pressure too high"
+    },
+    "P10F2": {
+        "name": "Drive train cooling circuit coolant"
+    },
+    "P10F3": {
+        "name": "Overheating of the traction battery cooling circuit"
+    },
+    "P10F7": {
+        "name": "Traction battery charging system connector safety circuit"
+    },
+    "P10FE": {
+        "name": "Presence of diesel in the fuel"
+    },
+    "P10FF": {
+        "name": "Presence of diesel in the fuel"
+    },
+    "P1101": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P1103": {
+        "name": "Coolant pump  ( high pressure circuit )"
+    },
+    "P1104": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "P110A": {
+        "name": "performance limiter for level 0"
+    },
+    "P110B": {
+        "name": "performance limiter for level 1"
+    },
+    "P110C": {
+        "name": "performance limiter for level 2"
+    },
+    "P110D": {
+        "name": "performance limiter for level 3"
+    },
+    "P110E": {
+        "name": "performance limiter is active"
+    },
+    "P1113": {
+        "name": "High pressure fuel circuit pressure  ( pressure too low )"
+    },
+    "P1115": {
+        "name": "Plausibility of the internal combustion engine temperature sensors"
+    },
+    "P112A": {
+        "name": "Lack of coherence between the mileage recorded in the engine management ECU and in the built-in systems interface (BSI1 / VSM1)"
+    },
+    "P112B": {
+        "name": "Particle emission filter differential pressure sensor signal"
+    },
+    "P112C": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P113C": {
+        "name": "\"STOP\" and \"SERVICE\" warning lamps switched by the hybrid double-clutch piloted manual gearbox ECU"
+    },
+    "P113F": {
+        "name": "Request to flash the warning lamps from the electric drive machine ECU"
+    },
+    "P114A": {
+        "name": "Request to flash the warning lamps from the on-board charger/direct voltage transformer assembly ECU"
+    },
+    "P114B": {
+        "name": "Request to flash the warning lamps from the traction battery ECU"
+    },
+    "P1152": {
+        "name": "Motorised throttle motor control fault"
+    },
+    "P1153": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P1161": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1163": {
+        "name": "Fuel injectors programming"
+    },
+    "P1164": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P1165": {
+        "name": "Particle emission filter differential pressure sensor signal"
+    },
+    "P1166": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P1167": {
+        "name": "Supplier fault code"
+    },
+    "P1171": {
+        "name": "Manufacturer Controlled DTC"
+    },
+    "P1181": {
+        "name": "Braking vacuum circuit"
+    },
+    "P1182": {
+        "name": "Braking vacuum circuit"
+    },
+    "P1185": {
+        "name": "Plausibility of the internal combustion engine pressure sensors"
+    },
+    "P1186": {
+        "name": "Combustion misfiring on unspecified cylinders fault"
+    },
+    "P1188": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P1191": {
+        "name": "PEF upstream temperature sensor"
+    },
+    "P1192": {
+        "name": "Priming the fuel circuit"
+    },
+    "P1193": {
+        "name": "Fuel injector 1"
+    },
+    "P1194": {
+        "name": "Fuel injector 2"
+    },
+    "P1195": {
+        "name": "Fuel injector 3"
+    },
+    "P1196": {
+        "name": "Fuel injector 4"
+    },
+    "P1199": {
+        "name": "Fuel circuit  ( fuel level on reserve )"
+    },
+    "P119A": {
+        "name": "Fuel circuit  ( fuel level on reserve )"
+    },
+    "P119F": {
+        "name": "Deterioration of the engine oil"
+    },
+    "P11A3": {
+        "name": "Crankshaft - camshaft synchronising"
+    },
+    "P11A4": {
+        "name": "Fitting of the inlet camshaft dephaser"
+    },
+    "P11A6": {
+        "name": "Lighting of the \"STOP\" and \"SERVICE\" warning lamps by the hybrid drive train sub-systems"
+    },
+    "P11A8": {
+        "name": "Exhaust camshaft dephaser"
+    },
+    "P11A9": {
+        "name": "Inlet camshaft dephaser"
+    },
+    "P11AA": {
+        "name": "Air turbocharging pressure"
+    },
+    "P11AB": {
+        "name": "Air turbocharging pressure"
+    },
+    "P11AD": {
+        "name": "Pressure of the fuel in the high pressure fuel circuit"
+    },
+    "P11B4": {
+        "name": "Accelerator pedal potentiometer sensor"
+    },
+    "P11B7": {
+        "name": "Damage to the high pressure fuel pump"
+    },
+    "P11BB": {
+        "name": "Vacuum pump relay"
+    },
+    "P11BC": {
+        "name": "Vacuum pump relay"
+    },
+    "P11BE": {
+        "name": "Lighting of the \"STOP\" and \"SERVICE\" warning lamps by the hybrid drive train sub-systems"
+    },
+    "P11C0": {
+        "name": "Fuel heater"
+    },
+    "P11C2": {
+        "name": "Control of the fuel heater"
+    },
+    "P11C4": {
+        "name": "Fuel heater 1"
+    },
+    "P11C5": {
+        "name": "Fuel heater 2"
+    },
+    "P11D2": {
+        "name": "Front electric drive machine coolant temperature"
+    },
+    "P1200": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P1201": {
+        "name": "Urea converter upstream temperature sensor"
+    },
+    "P1202": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P1203": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P1204": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P1205": {
+        "name": "Air turbocharging pressure sensor signal"
+    },
+    "P1209": {
+        "name": "Petrol high pressure regulation fault"
+    },
+    "P1210": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P1212": {
+        "name": "Temperature of the engine oil"
+    },
+    "P1214": {
+        "name": "Fuel tank isolation solenoid valve"
+    },
+    "P1215": {
+        "name": "Fuel tank isolation solenoid valve"
+    },
+    "P1216": {
+        "name": "Engine management ECU"
+    },
+    "P1217": {
+        "name": "Engine management ECU"
+    },
+    "P1219": {
+        "name": "Engine management ECU"
+    },
+    "P121E": {
+        "name": "Control of the relay in the sealed fuse and relay box"
+    },
+    "P1231": {
+        "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU"
+    },
+    "P1234": {
+        "name": "Turbocharger fault  pressure too high"
+    },
+    "P1238": {
+        "name": "Inlet manifold pressure signal fault"
+    },
+    "P1239": {
+        "name": "Temperature of the engine oil"
+    },
+    "P123F": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P1240": {
+        "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU"
+    },
+    "P1242": {
+        "name": "Engine speed signal in down-grade mode fault"
+    },
+    "P1243": {
+        "name": "Injection ECU  fault"
+    },
+    "P124A": {
+        "name": "Programming of the motorised throttle housing/air mixer unit"
+    },
+    "P124B": {
+        "name": "Motorised throttle housing"
+    },
+    "P124C": {
+        "name": "Programming of the motorised throttle housing/air mixer unit"
+    },
+    "P124D": {
+        "name": "Programming of the motorised throttle housing/air mixer unit"
+    },
+    "P124E": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P124F": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1259": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P1260": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P1261": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P1262": {
+        "name": "Commande de l'injecteur carburant cylindre 2"
+    },
+    "P1263": {
+        "name": "Commande de l'injecteur carburant cylindre 3"
+    },
+    "P1264": {
+        "name": "Commande de l'injecteur carburant cylindre 4"
+    },
+    "P126A": {
+        "name": "Coolant pump  ( high pressure circuit )"
+    },
+    "P126F": {
+        "name": "Overheating of the motorised throttle housing"
+    },
+    "P1270": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P1275": {
+        "name": "Air conditioning compressor clutch relay"
+    },
+    "P1277": {
+        "name": "Starter motor relay circuit"
+    },
+    "P1278": {
+        "name": "Starter motor relay circuit"
+    },
+    "P1279": {
+        "name": "Starter motor relay circuit"
+    },
+    "P1280": {
+        "name": "Signal from the motorised throttle housing position sensor  ( air mixer unit )"
+    },
+    "P1282": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P1283": {
+        "name": "Fuel vapour leak measuring device valve and sensor assembly"
+    },
+    "P1285": {
+        "name": "capteur de flux de purge canister"
+    },
+    "P1286": {
+        "name": "Upstream NOx sensor"
+    },
+    "P1287": {
+        "name": "Upstream NOx sensor"
+    },
+    "P1288": {
+        "name": "Fuel high pressure common rail fuel pressure reference value"
+    },
+    "P1289": {
+        "name": "Downstream NOx sensor"
+    },
+    "P128A": {
+        "name": "Motorised throttle housing negative track control"
+    },
+    "P128B": {
+        "name": "Motorised throttle housing positive track control"
+    },
+    "P128C": {
+        "name": "Motorised throttle housing negative track control"
+    },
+    "P128D": {
+        "name": "Motorised throttle housing positive track control"
+    },
+    "P128E": {
+        "name": "Motorised throttle housing negative track control"
+    },
+    "P128F": {
+        "name": "Motorised throttle housing positive track control"
+    },
+    "P1290": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P1291": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P1293": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P1294": {
+        "name": "Petrol high pressure regulation fault"
+    },
+    "P1297": {
+        "name": "High pressure fuel circuit pressure  ( maximum pressure )"
+    },
+    "P12A1": {
+        "name": "Cylinder 1 fuel injector"
+    },
+    "P12A2": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P12A3": {
+        "name": "Particle filter"
+    },
+    "P12A4": {
+        "name": "Cylinder 2 fuel injector"
+    },
+    "P12A7": {
+        "name": "Cylinder 3 fuel injector"
+    },
+    "P12AA": {
+        "name": "Cylinder 4 fuel injector"
+    },
+    "P12B3": {
+        "name": "EGR valve position"
+    },
+    "P12B4": {
+        "name": "EGR valve position"
+    },
+    "P12B5": {
+        "name": "Fuel pressure measured in the fuel high pressure common rail"
+    },
+    "P12B6": {
+        "name": "Fuel pressure measured in the fuel high pressure common rail"
+    },
+    "P12C2": {
+        "name": "tuyau de recyclage des gaz d'échappement"
+    },
+    "P12C3": {
+        "name": "tuyau de recyclage des gaz d'échappement"
+    },
+    "P12E0": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P12E1": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P12E3": {
+        "name": "Particle emission filter pressure sensor"
+    },
+    "P12ED": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P1300": {
+        "name": "Programming of the crankshaft position"
+    },
+    "P1301": {
+        "name": "pompe à eau électrique (fonctionnement à vide)"
+    },
+    "P1302": {
+        "name": "pompe à eau électrique (vitesse trop faible)"
+    },
+    "P1303": {
+        "name": "Fault  pinking sensor signal"
+    },
+    "P1304": {
+        "name": "Spark length for cylinder 1"
+    },
+    "P1305": {
+        "name": "pompe à eau électrique (surchauffe)"
+    },
+    "P1307": {
+        "name": "Spark length for cylinder 2"
+    },
+    "P1308": {
+        "name": "pompe à eau électrique (blocage)"
+    },
+    "P1310": {
+        "name": "Spark length for cylinder 3"
+    },
+    "P1313": {
+        "name": "Spark length for cylinder 4"
+    },
+    "P131A": {
+        "name": "Motorised throttle housing"
+    },
+    "P131E": {
+        "name": "Control of motorised butterfly unit"
+    },
+    "P1320": {
+        "name": "module d'entrée d'air piloté (actionneur bloqué)"
+    },
+    "P1321": {
+        "name": "commande du module d'entrée d'air piloté (actionneur bloqué)"
+    },
+    "P1322": {
+        "name": "commande du module d'entrée d'air piloté (moteur)"
+    },
+    "P1323": {
+        "name": "communication du module d'entrée d'air piloté"
+    },
+    "P1324": {
+        "name": "module d'entrée d'air piloté (surchauffe)"
+    },
+    "P1325": {
+        "name": "module d'entrée d'air piloté (surtension)"
+    },
+    "P1326": {
+        "name": "module d'entrée d'air piloté (sous-tension)"
+    },
+    "P132E": {
+        "name": "Motorised throttle housing auto-adaptive value at its maximum stop"
+    },
+    "P132F": {
+        "name": "Motorised throttle housing auto-adaptive value at its lower stop"
+    },
+    "P1336": {
+        "name": "Engine misfires with risk of destroying the catalytic converter"
+    },
+    "P1337": {
+        "name": "Combustion of cylinder N° 1"
+    },
+    "P1338": {
+        "name": "Combustion of cylinder N° 2"
+    },
+    "P1339": {
+        "name": "Combustion of cylinder N° 3"
+    },
+    "P1340": {
+        "name": "Combustion misfiring (impact on catalytic converter)"
+    },
+    "P1341": {
+        "name": "Inlet camshaft position sensor"
+    },
+    "P1349": {
+        "name": "Control of the pre-heat unit"
+    },
+    "P134A": {
+        "name": "Mixture auto-adaptive value at the limit  ( mixture too lean )"
+    },
+    "P134B": {
+        "name": "Mixture auto-adaptive value at the limit  ( mixture too rich )"
+    },
+    "P134D": {
+        "name": "Turbocharger actuator control"
+    },
+    "P1350": {
+        "name": "Control of the pre-heat unit"
+    },
+    "P1351": {
+        "name": "Pre-heating relay"
+    },
+    "P135A": {
+        "name": "2-way valve"
+    },
+    "P135C": {
+        "name": "Traction battery cooling circuit electric coolant heater"
+    },
+    "P135D": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P135E": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P1363": {
+        "name": "Longitudinal acceleration sensor"
+    },
+    "P1366": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P1367": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P1368": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P1369": {
+        "name": "Control of the cylinder 4 fuel injector"
+    },
+    "P136A": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P136B": {
+        "name": "Air conditioning compressor"
+    },
+    "P136E": {
+        "name": "Temperature sensor of the traction battery cooling circuit electric coolant heater"
+    },
+    "P136F": {
+        "name": "Traction battery cooling circuit electric coolant heater"
+    },
+    "P1370": {
+        "name": "Ancillaries battery switch 2 input power LED"
+    },
+    "P1372": {
+        "name": "Control of the cylinder 1 fuel injector"
+    },
+    "P1373": {
+        "name": "Control of the cylinder 2 fuel injector"
+    },
+    "P1374": {
+        "name": "Control of the cylinder 3 fuel injector"
+    },
+    "P1376": {
+        "name": "Coherence of the motorised throttle housing signals  /  air mixer unit"
+    },
+    "P1377": {
+        "name": "Programming of the engine flywheel target"
+    },
+    "P1378": {
+        "name": "Combustion misfiring on unspecified cylinders fault"
+    },
+    "P137C": {
+        "name": "Request to flash the warning lamps from the 48 V reversible alternator"
+    },
+    "P137D": {
+        "name": "Electric drive machine locking system"
+    },
+    "P1380": {
+        "name": "capteur de pression et de température de suralimentation"
+    },
+    "P1382": {
+        "name": "Ancillary drive belt"
+    },
+    "P1383": {
+        "name": "Broken accessory drive belt"
+    },
+    "P1385": {
+        "name": "Super-knock information"
+    },
+    "P1388": {
+        "name": "Outside air temperature sensor"
+    },
+    "P1393": {
+        "name": "Combustion engine starting inhibited by the gearbox"
+    },
+    "P1395": {
+        "name": "Super knock sensor"
+    },
+    "P1396": {
+        "name": "Super-knock information"
+    },
+    "P13A7": {
+        "name": "Engine management ECU  ( Duration of stopping of the internal combustion engine incorrect )"
+    },
+    "P13A8": {
+        "name": "Atmospheric pressure sensor  ( before starting )"
+    },
+    "P13A9": {
+        "name": "Intake manifold pressure sensor  ( before starting )"
+    },
+    "P13AA": {
+        "name": "Inlet air pressure sensor  ( At full load )"
+    },
+    "P13B4": {
+        "name": "Engine management ECU"
+    },
+    "P13BA": {
+        "name": "Ancillaries battery"
+    },
+    "P13BB": {
+        "name": "Current on the ancillaries battery during the last start or automatic restart"
+    },
+    "P13BD": {
+        "name": "Voltage maintaining device"
+    },
+    "P13BE": {
+        "name": "Ancillaries battery voltage regulation"
+    },
+    "P13BF": {
+        "name": "Overload by the reversible alternator"
+    },
+    "P13C0": {
+        "name": "Starter control interface unit"
+    },
+    "P13C1": {
+        "name": "Starter control interface unit"
+    },
+    "P13C2": {
+        "name": "Network voltage maintaining device"
+    },
+    "P13C3": {
+        "name": "Network voltage maintaining device"
+    },
+    "P13C4": {
+        "name": "Network voltage maintaining device"
+    },
+    "P13E1": {
+        "name": "Air flow sensor"
+    },
+    "P13E2": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P13E4": {
+        "name": "DeNOx system relay"
+    },
+    "P13E5": {
+        "name": "Upstream NOx sensor"
+    },
+    "P13E6": {
+        "name": "Upstream NOx sensor"
+    },
+    "P13FD": {
+        "name": "EGR valve  ( low pressure circuit )"
+    },
+    "P1403": {
+        "name": "Additional heating control 1"
+    },
+    "P1404": {
+        "name": "Additional heating control 2"
+    },
+    "P1408": {
+        "name": "Additional heating control 1"
+    },
+    "P1409": {
+        "name": "grille d'entrée d'air"
+    },
+    "P140B": {
+        "name": "grille d'entrée d'air"
+    },
+    "P1410": {
+        "name": "Control of the EGR valve"
+    },
+    "P1411": {
+        "name": "communication avec le calculateur EBS sur le réseau LIN"
+    },
+    "P1412": {
+        "name": "Particulate emission filter overloaded"
+    },
+    "P1413": {
+        "name": "communication avec le calculateur EBS sur le réseau LIN"
+    },
+    "P1415": {
+        "name": "absence de communication entre le calculateur contrôle moteur et l'alternateur piloté sur le réseau LIN"
+    },
+    "P1417": {
+        "name": "absence de communication entre le calculateur contrôle moteur et l'alternateur piloté sur le réseau LIN"
+    },
+    "P141B": {
+        "name": "Starter relay 1"
+    },
+    "P141C": {
+        "name": "Starter relay control"
+    },
+    "P141D": {
+        "name": "Starter relay return signal"
+    },
+    "P1420": {
+        "name": "CAN"
+    },
+    "P1421": {
+        "name": "LIN"
+    },
+    "P1423": {
+        "name": "Cat. converter upstream temperature sensor"
+    },
+    "P1428": {
+        "name": "réseau LIN 1"
+    },
+    "P1430": {
+        "name": "Insulation resistance of the electric air conditioning compressor"
+    },
+    "P1431": {
+        "name": "Insulation resistance of the electric drive train components"
+    },
+    "P1432": {
+        "name": "communication avec le calculateur EBS sur le réseau LIN"
+    },
+    "P1434": {
+        "name": "Multiplexed additive pump"
+    },
+    "P1435": {
+        "name": "Fuel additive pump"
+    },
+    "P1438": {
+        "name": "Power relay"
+    },
+    "P1441": {
+        "name": "Electric coolant heater locking system"
+    },
+    "P1442": {
+        "name": "Diesel additive pump"
+    },
+    "P1443": {
+        "name": "Diesel additive pump"
+    },
+    "P1444": {
+        "name": "Diesel additive pump"
+    },
+    "P1446": {
+        "name": "Fuel additive tank"
+    },
+    "P1448": {
+        "name": "Particle filter regeneration"
+    },
+    "P144C": {
+        "name": "Engine management ECU"
+    },
+    "P1450": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P1451": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P1461": {
+        "name": "Programming the EGR valve stops"
+    },
+    "P1462": {
+        "name": "Programming of the upper stop of the EGR valve"
+    },
+    "P1483": {
+        "name": "DeNOx system relay"
+    },
+    "P1489": {
+        "name": "Control of the EGR valve  ( high pressure circuit )"
+    },
+    "P1490": {
+        "name": "Control of the EGR valve  ( high pressure circuit )"
+    },
+    "P1495": {
+        "name": "Front left-hand seat belt not fastened switch"
+    },
+    "P1496": {
+        "name": "Position of the turbocharger"
+    },
+    "P1497": {
+        "name": "Position of the turbocharger"
+    },
+    "P1498": {
+        "name": "Position of the air mixer"
+    },
+    "P1499": {
+        "name": "Position of the air mixer"
+    },
+    "P149C": {
+        "name": "Programming of the stops of the turbocharger"
+    },
+    "P14A3": {
+        "name": "à ne pas afficher"
+    },
+    "P14A4": {
+        "name": "à ne pas afficher"
+    },
+    "P14A5": {
+        "name": "à ne pas afficher"
+    },
+    "P14A7": {
+        "name": "Programming the EGR valve stops"
+    },
+    "P14A8": {
+        "name": "Coolant pump  ( TBTcircuit haute température )"
+    },
+    "P14A9": {
+        "name": "Turbocharging pressure regulating solenoid valve"
+    },
+    "P14AA": {
+        "name": "Programming the air mixer stops"
+    },
+    "P14AC": {
+        "name": "Fuel high pressure common rail pressure sensor"
+    },
+    "P14AD": {
+        "name": "Control of the starter"
+    },
+    "P14AE": {
+        "name": "Fuel high pressure common rail pressure sensor"
+    },
+    "P14AF": {
+        "name": "alimentation du démarreur"
+    },
+    "P14B0": {
+        "name": "Soot sensor"
+    },
+    "P14B1": {
+        "name": "Soot sensor"
+    },
+    "P14B3": {
+        "name": "Soot sensor"
+    },
+    "P14BF": {
+        "name": "View the built-in systems interface BSI1 / VSM1 fault codes (passenger compartment heating resistors)"
+    },
+    "P14CA": {
+        "name": "Fourth warning level of the traction battery"
+    },
+    "P14CB": {
+        "name": "Fifth warning level of the traction battery"
+    },
+    "P14CC": {
+        "name": "On-board charger locking system (alternating current)"
+    },
+    "P14CD": {
+        "name": "On-board charger locking system (direct current)"
+    },
+    "P14CE": {
+        "name": "Electric coolant heater locking system"
+    },
+    "P14CF": {
+        "name": "Electric air conditioning compressor locking system"
+    },
+    "P14D0": {
+        "name": "Upstream NOx sensor"
+    },
+    "P14D1": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P14D2": {
+        "name": "Downstream NOx sensor"
+    },
+    "P14D3": {
+        "name": "Upstream NOx sensor"
+    },
+    "P14D4": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P14D5": {
+        "name": "Downstream NOx sensor"
+    },
+    "P1500": {
+        "name": "Collision signal"
+    },
+    "P1501": {
+        "name": "View the electric power steering ECU fault codes"
+    },
+    "P1505": {
+        "name": "Collision detected"
+    },
+    "P1507": {
+        "name": "Anti-bubbling strategy activated"
+    },
+    "P1510": {
+        "name": "capteur de détonation"
+    },
+    "P1515": {
+        "name": "Starter motor relay circuit"
+    },
+    "P1516": {
+        "name": "Supplier fault code"
+    },
+    "P1518": {
+        "name": "Starter motor relay circuit"
+    },
+    "P151A": {
+        "name": "Coded immobiliser"
+    },
+    "P151B": {
+        "name": "The encryption type of the coded immobiliser cannot be read in the non-volatile memory"
+    },
+    "P1520": {
+        "name": "Engine management ECU"
+    },
+    "P1521": {
+        "name": "Engine management ECU"
+    },
+    "P1522": {
+        "name": "Engine management ECU"
+    },
+    "P1523": {
+        "name": "Oil pressure in the MultiAir actuator unit"
+    },
+    "P1524": {
+        "name": "Oil pressure in the MultiAir actuator unit"
+    },
+    "P1527": {
+        "name": "Engine management ECU"
+    },
+    "P1528": {
+        "name": "Engine management ECU"
+    },
+    "P1529": {
+        "name": "Engine management ECU"
+    },
+    "P1530": {
+        "name": "Engine management ECU"
+    },
+    "P1531": {
+        "name": "Engine management ECU"
+    },
+    "P1535": {
+        "name": "Engine management ECU"
+    },
+    "P1536": {
+        "name": "Brake pedal position signal"
+    },
+    "P1537": {
+        "name": "Engine management ECU"
+    },
+    "P1538": {
+        "name": "Engine management ECU"
+    },
+    "P1539": {
+        "name": "Engine management ECU"
+    },
+    "P153A": {
+        "name": "Secondary ancillaries battery disconnected"
+    },
+    "P153C": {
+        "name": "Ancillaries battery 2  ( during the first few kilometres )"
+    },
+    "P154A": {
+        "name": "Loss of the insulation resistance of the electric air conditioning compressor or the electric coolant heater"
+    },
+    "P1550": {
+        "name": "Motorised throttle housing"
+    },
+    "P1551": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1554": {
+        "name": "Motorised throttle housing"
+    },
+    "P1555": {
+        "name": "boîtier papillon motorisé"
+    },
+    "P1556": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1557": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1558": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1559": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P155A": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P155B": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1560": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1561": {
+        "name": "Motorised throttle valve programming"
+    },
+    "P1570": {
+        "name": "Cruise control switch   button jammed"
+    },
+    "P1571": {
+        "name": "Engine management ECU"
+    },
+    "P1572": {
+        "name": "Brake pedal"
+    },
+    "P1573": {
+        "name": "Brake pedal"
+    },
+    "P1574": {
+        "name": "Engine management ECU"
+    },
+    "P1575": {
+        "name": "Engine management ECU"
+    },
+    "P1580": {
+        "name": "Supplier fault code"
+    },
+    "P1581": {
+        "name": "Oil vapours recirculation circuit heater relay return"
+    },
+    "P1582": {
+        "name": "Oil vapours recirculation circuit heater relay return"
+    },
+    "P1586": {
+        "name": "Fault in the 5V supply of the petrol high pressure sensor"
+    },
+    "P1593": {
+        "name": "Cruise control switches"
+    },
+    "P15A0": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A1": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A2": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A3": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P15A4": {
+        "name": "Control of the engine oil pressure regulation"
+    },
+    "P15A5": {
+        "name": "Engine oil circuit pressure  ( regulation valve )"
+    },
+    "P15A6": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A7": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A8": {
+        "name": "Engine oil circuit pressure"
+    },
+    "P15A9": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P15AA": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P15AB": {
+        "name": "Engine oil pressure sensor"
+    },
+    "P15AC": {
+        "name": "Engine management ECU"
+    },
+    "P15AD": {
+        "name": "Engine management ECU"
+    },
+    "P15AE": {
+        "name": "Engine management ECU"
+    },
+    "P15AF": {
+        "name": "Engine management ECU"
+    },
+    "P15B0": {
+        "name": "Engine management ECU"
+    },
+    "P15B1": {
+        "name": "Engine management ECU"
+    },
+    "P15B2": {
+        "name": "Engine management ECU"
+    },
+    "P15B3": {
+        "name": "Fuel additive tank"
+    },
+    "P15B4": {
+        "name": "Position of the accelerator pedal"
+    },
+    "P15B5": {
+        "name": "Engine management ECU"
+    },
+    "P15B6": {
+        "name": "Engine management ECU"
+    },
+    "P15B7": {
+        "name": "Engine management ECU"
+    },
+    "P15B8": {
+        "name": "Engine management ECU"
+    },
+    "P15B9": {
+        "name": "Engine management ECU"
+    },
+    "P15BA": {
+        "name": "Engine management ECU"
+    },
+    "P15BB": {
+        "name": "Engine management ECU"
+    },
+    "P15BC": {
+        "name": "Engine management ECU"
+    },
+    "P15BD": {
+        "name": "Engine management ECU"
+    },
+    "P15BE": {
+        "name": "Engine management ECU"
+    },
+    "P15BF": {
+        "name": "Engine management ECU"
+    },
+    "P15C0": {
+        "name": "Engine management ECU"
+    },
+    "P15C1": {
+        "name": "Engine management ECU"
+    },
+    "P15C2": {
+        "name": "Engine management ECU"
+    },
+    "P15C3": {
+        "name": "Engine management ECU"
+    },
+    "P15C4": {
+        "name": "Engine management ECU"
+    },
+    "P15C5": {
+        "name": "Engine management ECU"
+    },
+    "P15C6": {
+        "name": "Engine management ECU"
+    },
+    "P15C7": {
+        "name": "Engine management ECU"
+    },
+    "P15C8": {
+        "name": "Engine management ECU"
+    },
+    "P15C9": {
+        "name": "Engine management ECU"
+    },
+    "P15CA": {
+        "name": "Engine management ECU"
+    },
+    "P15CB": {
+        "name": "Engine management ECU"
+    },
+    "P15CC": {
+        "name": "Engine management ECU"
+    },
+    "P15CD": {
+        "name": "Engine management ECU"
+    },
+    "P15CE": {
+        "name": "Engine management ECU"
+    },
+    "P15CF": {
+        "name": "Engine management ECU"
+    },
+    "P15D0": {
+        "name": "Engine management ECU"
+    },
+    "P15D1": {
+        "name": "Engine management ECU"
+    },
+    "P15D2": {
+        "name": "Engine management ECU"
+    },
+    "P15D3": {
+        "name": "Engine management ECU"
+    },
+    "P15D4": {
+        "name": "Engine management ECU"
+    },
+    "P15D5": {
+        "name": "Engine management ECU"
+    },
+    "P15D6": {
+        "name": "Engine management ECU"
+    },
+    "P15D7": {
+        "name": "Engine management ECU"
+    },
+    "P15D8": {
+        "name": "Engine management ECU"
+    },
+    "P15D9": {
+        "name": "Engine management ECU"
+    },
+    "P15DA": {
+        "name": "Engine management ECU"
+    },
+    "P15DB": {
+        "name": "Engine management ECU"
+    },
+    "P15DC": {
+        "name": "Engine management ECU"
+    },
+    "P15DD": {
+        "name": "Engine management ECU"
+    },
+    "P15DE": {
+        "name": "Engine management ECU"
+    },
+    "P15DF": {
+        "name": "Engine management ECU"
+    },
+    "P15E0": {
+        "name": "Engine management ECU"
+    },
+    "P1600": {
+        "name": "Fuel injectors configuration"
+    },
+    "P1601": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1603": {
+        "name": "Engine management ECU supply fault"
+    },
+    "P1605": {
+        "name": "Engine management ECU  internal fault"
+    },
+    "P1608": {
+        "name": "Engine control ECU internal fault"
+    },
+    "P1609": {
+        "name": "Engine management ECU  ( temperature of the engine oil )"
+    },
+    "P160A": {
+        "name": "Calibration reference"
+    },
+    "P160C": {
+        "name": "Engine management ECU"
+    },
+    "P160E": {
+        "name": "Supply cut-off of the engine management ECU during the power latch"
+    },
+    "P160F": {
+        "name": "Approval reference"
+    },
+    "P1610": {
+        "name": "Engine management ECU"
+    },
+    "P1612": {
+        "name": "EEPROM memory  ( coded immobiliser )"
+    },
+    "P1613": {
+        "name": "Configuration"
+    },
+    "P1614": {
+        "name": "Status of the hard point of the accelerator pedal"
+    },
+    "P1615": {
+        "name": "Coded immobiliser programming"
+    },
+    "P1616": {
+        "name": "Engine oil pressure and temperature sensor"
+    },
+    "P1618": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P161A": {
+        "name": "Starter inhibitor relay"
+    },
+    "P161D": {
+        "name": "Engine management ECU"
+    },
+    "P161E": {
+        "name": "Engine management ECU"
+    },
+    "P161F": {
+        "name": "Engine management ECU"
+    },
+    "P1621": {
+        "name": "Engine management ECU"
+    },
+    "P1622": {
+        "name": "Upstream or downstream oxygen sensor"
+    },
+    "P1623": {
+        "name": "ECU internal fault"
+    },
+    "P1624": {
+        "name": "Petrol high pressure regulation fault"
+    },
+    "P1625": {
+        "name": "ECU internal fault"
+    },
+    "P1626": {
+        "name": "ECU internal fault"
+    },
+    "P1627": {
+        "name": "Engine management ECU  ( Safety level 2 )"
+    },
+    "P1628": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P162C": {
+        "name": "Engine management ECU"
+    },
+    "P162D": {
+        "name": "Engine management ECU  ( safety level 2  :  clutch )"
+    },
+    "P162F": {
+        "name": "Engine management ECU  ( Safety level 2 )"
+    },
+    "P1631": {
+        "name": "Engine management ECU"
+    },
+    "P1632": {
+        "name": "Engine management ECU"
+    },
+    "P1643": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P1644": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P1648": {
+        "name": "Engine management ECU"
+    },
+    "P1649": {
+        "name": "Pre-post heating unit"
+    },
+    "P1650": {
+        "name": "Reversible alternator"
+    },
+    "P1653": {
+        "name": "Engine management ECU"
+    },
+    "P1655": {
+        "name": "Engine running information"
+    },
+    "P1656": {
+        "name": "Engine running information"
+    },
+    "P1657": {
+        "name": "Engine running information"
+    },
+    "P165B": {
+        "name": "Controlled alternator"
+    },
+    "P1664": {
+        "name": "Engine torque coherence fault"
+    },
+    "P1667": {
+        "name": "Engine management ECU"
+    },
+    "P166A": {
+        "name": "Engine management ECU  ( safety level 2  :  clutch )"
+    },
+    "P166B": {
+        "name": "Ancillaries battery"
+    },
+    "P166F": {
+        "name": "Request from the Stop and Start function to stop the internal combustion engine"
+    },
+    "P1674": {
+        "name": "Controlled alternator fault"
+    },
+    "P1675": {
+        "name": "Controlled alternator fault"
+    },
+    "P1676": {
+        "name": "Controlled alternator fault"
+    },
+    "P1678": {
+        "name": "Heat exchanger water pump command"
+    },
+    "P1679": {
+        "name": "Heat exchanger water pump command"
+    },
+    "P167A": {
+        "name": "Speed limiter / cruise control function"
+    },
+    "P167B": {
+        "name": "Inconsistency between the cruise control reference value and the actual speed"
+    },
+    "P167C": {
+        "name": "Vehicle speed limitation"
+    },
+    "P1680": {
+        "name": "Cruise control indicator lamp"
+    },
+    "P1681": {
+        "name": "Cruise control indicator lamp"
+    },
+    "P1688": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P1689": {
+        "name": "Control of the EGR valve  ( low pressure circuit )"
+    },
+    "P168A": {
+        "name": "Inconsistency between the brake servo pressure sensor and the master cylinder pressure sensor"
+    },
+    "P168B": {
+        "name": "Monitoring of nominal vacuum level"
+    },
+    "P1693": {
+        "name": "Fault: Stop and Start system control reception anomaly"
+    },
+    "P1694": {
+        "name": "Coherence fault between the request for engine starting and the engine speed information"
+    },
+    "P1695": {
+        "name": "Coherence fault between the request for engine starting and the engine speed information"
+    },
+    "P1696": {
+        "name": "Starting request information"
+    },
+    "P1697": {
+        "name": "Engine management ECU"
+    },
+    "P169A": {
+        "name": "Engine management ECU  ( Injector bank 1 )"
+    },
+    "P169B": {
+        "name": "Engine management ECU  ( Injector bank 2 )"
+    },
+    "P16A0": {
+        "name": "Internal combustion engine  ( oil ingestion )"
+    },
+    "P16A3": {
+        "name": "Engine management ECU"
+    },
+    "P16A5": {
+        "name": "Control of the crankcase fumes heater"
+    },
+    "P16A6": {
+        "name": "Control of the crankcase fumes heater"
+    },
+    "P16A7": {
+        "name": "Control of the crankcase fumes heater"
+    },
+    "P16A8": {
+        "name": "Oil vapour recirculation circuit heater"
+    },
+    "P16A9": {
+        "name": "Oil vapour recirculation circuit heater"
+    },
+    "P16AA": {
+        "name": "Deactivation of the cruise control/speed limiter due to excessive acceleration"
+    },
+    "P16AB": {
+        "name": "Wear of the ancillary drive belt"
+    },
+    "P16AF": {
+        "name": "Engine management ECU  ( sensors internal electrical supply )"
+    },
+    "P16B1": {
+        "name": "Control of the controlled air intake module  ( actuator jammed )"
+    },
+    "P16B2": {
+        "name": "Control of the controlled air intake module  ( actuator jammed )"
+    },
+    "P16B3": {
+        "name": "Control of the controlled air intake module  ( actuator jammed )"
+    },
+    "P16BA": {
+        "name": "Starter control interface unit information return signal"
+    },
+    "P16BB": {
+        "name": "Starter control interface unit information return signal"
+    },
+    "P16C7": {
+        "name": "Cruise control, speed limiter and vehicle speed curbing"
+    },
+    "P16CE": {
+        "name": "Braking circuit vacuum sensor signal"
+    },
+    "P16CF": {
+        "name": "Reversible alternator"
+    },
+    "P16D0": {
+        "name": "Damage to the double damping flywheel"
+    },
+    "P16D1": {
+        "name": "Invalid internal combustion engine stop position"
+    },
+    "P16D2": {
+        "name": "Control of the motorised coolant outlet housing"
+    },
+    "P16D3": {
+        "name": "Motorised coolant outlet housing position sensor signal"
+    },
+    "P16D4": {
+        "name": "Motorised coolant outlet housing position sensor signal"
+    },
+    "P16D5": {
+        "name": "Motorised coolant outlet housing position sensor signal"
+    },
+    "P16D6": {
+        "name": "Deterioration of the engine oil  ( Presence of carbon )"
+    },
+    "P16D7": {
+        "name": "Vehicle time counter sent by the built-in systems interface"
+    },
+    "P16D8": {
+        "name": "Control of the starter"
+    },
+    "P16D9": {
+        "name": "Control of the starter"
+    },
+    "P16DA": {
+        "name": "5-V electrical supply for the sensors"
+    },
+    "P16DB": {
+        "name": "Sensors N° 4 5 volt electrical supply"
+    },
+    "P16DC": {
+        "name": "Sensors N° 5 5 volt electrical supply"
+    },
+    "P16DD": {
+        "name": "Motorised coolant outlet housing  ( Heater matrix closed position )"
+    },
+    "P16DE": {
+        "name": "Motorised coolant outlet housing  ( Heater matrix open and bypass closed position )"
+    },
+    "P16DF": {
+        "name": "Motorised coolant outlet housing  ( Bypass open and engine cooling radiator closed )"
+    },
+    "P16E0": {
+        "name": "Motorised coolant outlet housing  ( Engine cooling radiator open )"
+    },
+    "P16E4": {
+        "name": "Vehicle speed limitation"
+    },
+    "P16E5": {
+        "name": "Cruise control"
+    },
+    "P16E6": {
+        "name": "Engine management ECU  ( Powerlatch )"
+    },
+    "P16E8": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P16E9": {
+        "name": "Number of simultaneous injections exceeded"
+    },
+    "P16EA": {
+        "name": "Depollution of the deNOx system  ( ammonia concentration )"
+    },
+    "P16EB": {
+        "name": "High pressure fuel circuit pressure  ( Excess pressure detected )"
+    },
+    "P16ED": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P16EE": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P16F1": {
+        "name": "Semi-automatic parking system  /  automatic"
+    },
+    "P16F2": {
+        "name": "Semi-automatic parking system  /  automatic"
+    },
+    "P16F3": {
+        "name": "Semi-automatic parking system  /  automatic"
+    },
+    "P1703": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P170B": {
+        "name": "Gear change gate"
+    },
+    "P1711": {
+        "name": "Fault  :  clutch pedal switch signal"
+    },
+    "P1718": {
+        "name": "Engine management ECU"
+    },
+    "P171B": {
+        "name": "Detection of incorrect pressing on the brake pedal"
+    },
+    "P171C": {
+        "name": "Detection of incorrect release of the brake pedal"
+    },
+    "P1727": {
+        "name": "Engine torque data"
+    },
+    "P172E": {
+        "name": "Vehicle speed curbing reference value inconsistent"
+    },
+    "P1732": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1733": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1734": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1735": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P1737": {
+        "name": "Gear information fault"
+    },
+    "P1771": {
+        "name": "Clutch temperature"
+    },
+    "P1799": {
+        "name": "Starter motor relay circuit"
+    },
+    "P17AE": {
+        "name": "Vehicle speed"
+    },
+    "P17B2": {
+        "name": "Internal combustion engine direction of rotation incorrect"
+    },
+    "P17CD": {
+        "name": "Engine management ECU  ( Control of the oil pump )"
+    },
+    "P17E0": {
+        "name": "Engine management ECU"
+    },
+    "P17ED": {
+        "name": "Stalling of the internal combustion engine"
+    },
+    "P17EE": {
+        "name": "Ancillaries battery  2"
+    },
+    "P17EF": {
+        "name": "Fuse between the ancillaries battery ‎2 and the direct voltage transformer"
+    },
+    "P17F0": {
+        "name": "Traction circuit"
+    },
+    "P17F1": {
+        "name": "View the hybrid automatic gearbox fault codes"
+    },
+    "P17F2": {
+        "name": "Ancillary drive belt dynamic hanging tensioner  ( partial wear )"
+    },
+    "P17F3": {
+        "name": "Ancillary drive belt dynamic hanging tensioner  ( Critical wear )"
+    },
+    "P17F4": {
+        "name": "View the ancillaries battery 1 switch fault codes"
+    },
+    "P17F6": {
+        "name": "View the hybrid automatic gearbox fault codes"
+    },
+    "P17F7": {
+        "name": "Temperature in the exhaust line  :  excessive condensation"
+    },
+    "P17F8": {
+        "name": "2-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P17F9": {
+        "name": "2-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P17FA": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P17FB": {
+        "name": "Electric drive machine inverter cooling circuit coolant pump"
+    },
+    "P17FC": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P17FF": {
+        "name": "Heater matrix water pump fault"
+    },
+    "P186F": {
+        "name": "Gearbox neutral sensor"
+    },
+    "P188F": {
+        "name": "Vehicle impact detected"
+    },
+    "P191C": {
+        "name": "Additional heating relay"
+    },
+    "P1946": {
+        "name": "Fuel supply cut-off system in the event of collision"
+    },
+    "P19A9": {
+        "name": "Front electric drive machine inverter with traction battery internal power switches closed"
+    },
+    "P19AA": {
+        "name": "Vehicle collision detected with traction battery internal power switches closed"
+    },
+    "P19CE": {
+        "name": "Unexpected resetting of the ECU"
+    },
+    "P1A54": {
+        "name": "Principal relay control"
+    },
+    "P1A57": {
+        "name": "Anomaly on the traction battery internal pre-charging power switches"
+    },
+    "P1A78": {
+        "name": "The internal combustion engine does not start or restart"
+    },
+    "P1A83": {
+        "name": "Reversible alternator"
+    },
+    "P1A89": {
+        "name": "Voltage maintaining device"
+    },
+    "P1A8A": {
+        "name": "Voltage maintaining device ( Temperature incorrect )"
+    },
+    "P1A8D": {
+        "name": "Authorisation line for restarting"
+    },
+    "P1A8E": {
+        "name": "Authorisation line for restarting"
+    },
+    "P1A90": {
+        "name": "Reversible alternator"
+    },
+    "P1A92": {
+        "name": "Reversible alternator"
+    },
+    "P1A93": {
+        "name": "Reversible alternator"
+    },
+    "P1A94": {
+        "name": "Reversible alternator"
+    },
+    "P1A96": {
+        "name": "Reversible alternator"
+    },
+    "P1A98": {
+        "name": "Reversible alternator"
+    },
+    "P1A99": {
+        "name": "Reversible alternator"
+    },
+    "P1A9B": {
+        "name": "Reversible alternator"
+    },
+    "P1A9C": {
+        "name": "Power accumulator  ( state of health )"
+    },
+    "P1AA2": {
+        "name": "Voltage maintaining device"
+    },
+    "P1AA3": {
+        "name": "Voltage maintaining device"
+    },
+    "P1AA4": {
+        "name": "Voltage of the power accumulator or of the voltage maintaining device"
+    },
+    "P1AA5": {
+        "name": "Voltage maintaining device"
+    },
+    "P1AA6": {
+        "name": "Voltage maintaining device"
+    },
+    "P1AB3": {
+        "name": "Rear electric drive machine dog"
+    },
+    "P1AB9": {
+        "name": "Coupling of the rear electric drive machine dog"
+    },
+    "P1ABE": {
+        "name": "Uncoupling of the rear electric drive machine dog"
+    },
+    "P1ABF": {
+        "name": "Coupling of the rear electric drive machine dog"
+    },
+    "P1AC0": {
+        "name": "Uncoupling of the rear electric drive machine dog"
+    },
+    "P1AC2": {
+        "name": "Synchronisation problem between the rear electric drive machine speed and the speed of the rear wheels"
+    },
+    "P1ACD": {
+        "name": "Electric coolant pump"
+    },
+    "P1ACF": {
+        "name": "Voltage or control current of the rear electric drive machine too high"
+    },
+    "P1AEA": {
+        "name": "Traction battery electric circuit breaker connector"
+    },
+    "P1AEF": {
+        "name": "Collision detected by the traction battery"
+    },
+    "P1B11": {
+        "name": "convertisseur de couple à quantité pas strictement monotone (défaillance calibrage / mémoire de paramètre)"
+    },
+    "P1B40": {
+        "name": "Engine management ECU"
+    },
+    "P1B41": {
+        "name": "Engine management ECU"
+    },
+    "P1B42": {
+        "name": "Engine management ECU"
+    },
+    "P1B43": {
+        "name": "Engine management ECU"
+    },
+    "P1C07": {
+        "name": "Electric drive train cooling circuit temperature"
+    },
+    "P1C5F": {
+        "name": "Engine oil too viscous"
+    },
+    "P1D30": {
+        "name": "Engine oil too viscous"
+    },
+    "P1D38": {
+        "name": "Engine management ECU"
+    },
+    "P1D39": {
+        "name": "Engine management ECU"
+    },
+    "P1D3D": {
+        "name": "Engine management ECU"
+    },
+    "P1D45": {
+        "name": "Engine management ECU"
+    },
+    "P1D49": {
+        "name": "Engine management ECU"
+    },
+    "P1D4A": {
+        "name": "Engine management ECU"
+    },
+    "P1D4C": {
+        "name": "Engine management ECU"
+    },
+    "P1D55": {
+        "name": "Engine management ECU"
+    },
+    "P1D57": {
+        "name": "Engine management ECU"
+    },
+    "P1D65": {
+        "name": "Cylinder oil timing solenoid valve 1"
+    },
+    "P1D66": {
+        "name": "Cylinder oil timing solenoid valve 2"
+    },
+    "P1D67": {
+        "name": "Cylinder oil timing solenoid valve 3"
+    },
+    "P1DB6": {
+        "name": "Vehicle speed signal"
+    },
+    "P1E14": {
+        "name": "Slow speed cooling fan control"
+    },
+    "P1E7D": {
+        "name": "Cylinder 1 fuel injector"
+    },
+    "P1E7E": {
+        "name": "Cylinder 2 fuel injector"
+    },
+    "P1E7F": {
+        "name": "Cylinder 3 fuel injector"
+    },
+    "P1F00": {
+        "name": "A ne pas afficher"
+    },
+    "P1F03": {
+        "name": "Fault code to be ignored"
+    },
+    "P1F04": {
+        "name": "Fault code to be ignored"
+    },
+    "P1F05": {
+        "name": "Fault code to be ignored"
+    },
+    "P1F06": {
+        "name": "Fault code to be ignored"
+    },
+    "P1F61": {
+        "name": "Pressure in the fuel high pressure common rail is not satisfactory"
+    },
+    "P2002": {
+        "name": "Particle filter  ( Efficiency too low )"
+    },
+    "P2004": {
+        "name": "Actuator SWIRL"
+    },
+    "P2006": {
+        "name": "Actuator SWIRL"
+    },
+    "P2008": {
+        "name": "SWIRL actuator control"
+    },
+    "P2009": {
+        "name": "SWIRL actuator control"
+    },
+    "P200A": {
+        "name": "Actuator SWIRL"
+    },
+    "P2010": {
+        "name": "SWIRL actuator control"
+    },
+    "P2011": {
+        "name": "Air inlet manifold"
+    },
+    "P2013": {
+        "name": "Air inlet manifold"
+    },
+    "P2014": {
+        "name": "SWIRL actuator control"
+    },
+    "P2015": {
+        "name": "Air inlet manifold pressure sensor"
+    },
+    "P2016": {
+        "name": "Actuator SWIRL"
+    },
+    "P2017": {
+        "name": "Actuator SWIRL"
+    },
+    "P2018": {
+        "name": "Actuator SWIRL"
+    },
+    "P201B": {
+        "name": "Actuator SWIRL"
+    },
+    "P201E": {
+        "name": "Actuator SWIRL"
+    },
+    "P2024": {
+        "name": "Fuel vapours temperature sensor"
+    },
+    "P2025": {
+        "name": "Fuel vapours temperature sensor"
+    },
+    "P2026": {
+        "name": "Fuel vapours temperature sensor"
+    },
+    "P2027": {
+        "name": "Fuel vapours temperature sensor"
+    },
+    "P2028": {
+        "name": "Fuel vapours temperature sensor"
+    },
+    "P202A": {
+        "name": "Control of the urea reservoir heating"
+    },
+    "P202B": {
+        "name": "Control of the urea reservoir heating"
+    },
+    "P202C": {
+        "name": "Control of the urea reservoir heating"
+    },
+    "P202D": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P202E": {
+        "name": "Urea injector 1"
+    },
+    "P2031": {
+        "name": "Pre-catalyst downstream exhaust gas temperature sensor signal"
+    },
+    "P2032": {
+        "name": "Pre-catalyst downstream exhaust gas temperature sensor signal"
+    },
+    "P2033": {
+        "name": "Pre-catalyst downstream exhaust gas temperature sensor signal"
+    },
+    "P203A": {
+        "name": "Urea solution level sensor"
+    },
+    "P203B": {
+        "name": "Urea solution level sensor 1"
+    },
+    "P203C": {
+        "name": "Urea solution level sensor 1"
+    },
+    "P203D": {
+        "name": "Urea solution level sensor 1"
+    },
+    "P203F": {
+        "name": "Urea solution level"
+    },
+    "P2042": {
+        "name": "Urea reservoir temperature sensor"
+    },
+    "P2043": {
+        "name": "Urea solution temperature signal"
+    },
+    "P2044": {
+        "name": "Urea solution temperature signal"
+    },
+    "P2045": {
+        "name": "DeNOx catalytic converter upstream temperature sensor"
+    },
+    "P2046": {
+        "name": "Urea pump - gauge module  ( Urea fluid temperature )"
+    },
+    "P2047": {
+        "name": "Control of the urea injector"
+    },
+    "P2048": {
+        "name": "Control of the urea injector"
+    },
+    "P2049": {
+        "name": "Control of the urea injector"
+    },
+    "P204A": {
+        "name": "Urea pump - gauge module  ( Pressure of the urea solution )"
+    },
+    "P204E": {
+        "name": "Pressure of the urea solution"
+    },
+    "P204F": {
+        "name": "DeNOx catalytic converter and particle filter assembly damaged"
+    },
+    "P2053": {
+        "name": "Urea injector 1"
+    },
+    "P2054": {
+        "name": "Urea injector 1"
+    },
+    "P2055": {
+        "name": "Urea injector 1"
+    },
+    "P205B": {
+        "name": "Urea reservoir temperature sensor"
+    },
+    "P2062": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P2063": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P2064": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P206A": {
+        "name": "Urea quality sensor"
+    },
+    "P206B": {
+        "name": "Urea quality sensor"
+    },
+    "P206C": {
+        "name": "Urea quality sensor"
+    },
+    "P206D": {
+        "name": "Urea quality sensor"
+    },
+    "P2072": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P2073": {
+        "name": "Signal between the inlet air pressure sensor and the motorised throttle housing position at idle"
+    },
+    "P2074": {
+        "name": "Inlet pressure regulation"
+    },
+    "P207F": {
+        "name": "Urea solution"
+    },
+    "P2080": {
+        "name": "DeNOx catalytic converter upstream temperature sensor"
+    },
+    "P2082": {
+        "name": "Pre-catalyst downstream exhaust gas temperature sensor signal"
+    },
+    "P2084": {
+        "name": "Pre-catalyst downstream exhaust gas temperature sensor signal"
+    },
+    "P2088": {
+        "name": "Inlet camshaft dephaser"
+    },
+    "P2089": {
+        "name": "Inlet camshaft dephaser"
+    },
+    "P208A": {
+        "name": "Urea pump - gauge module"
+    },
+    "P208B": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P208C": {
+        "name": "Urea pump - gauge module"
+    },
+    "P208D": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P208E": {
+        "name": "DeNOx system circuit"
+    },
+    "P2090": {
+        "name": "Exhaust camshaft dephaser"
+    },
+    "P2091": {
+        "name": "Exhaust camshaft dephaser"
+    },
+    "P2096": {
+        "name": "Correction of the post-catalytic converter mixture"
+    },
+    "P2097": {
+        "name": "Correction of the post-catalytic converter mixture"
+    },
+    "P209F": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20A2": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20B6": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20B9": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P20BA": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P20BB": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20BC": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P20BD": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20BE": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20BF": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20C0": {
+        "name": "Urea reservoir heating circuit"
+    },
+    "P20C1": {
+        "name": "Urea pump - gauge module"
+    },
+    "P20C2": {
+        "name": "Urea pump - gauge module"
+    },
+    "P20C3": {
+        "name": "Urea pump - gauge module"
+    },
+    "P20C4": {
+        "name": "Urea pump - gauge module"
+    },
+    "P20E2": {
+        "name": "capteur de température 1 des gaz d'échappement"
+    },
+    "P20E8": {
+        "name": "Pressure of the urea solution"
+    },
+    "P20E9": {
+        "name": "Pressure of the urea solution"
+    },
+    "P20EE": {
+        "name": "Depollution of the deNOx system  ( effectiveness )"
+    },
+    "P20EF": {
+        "name": "Lack of urea solution injection flow"
+    },
+    "P20F2": {
+        "name": "Depollution of the deNOx system  ( effectiveness )"
+    },
+    "P20F3": {
+        "name": "Depollution of the deNOx system  ( effectiveness )"
+    },
+    "P20F4": {
+        "name": "Low urea solution consumption"
+    },
+    "P20F5": {
+        "name": "High urea solution consumption"
+    },
+    "P20F6": {
+        "name": "DeNOx system circuit"
+    },
+    "P20F8": {
+        "name": "Actuator SWIRL"
+    },
+    "P20FA": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20FB": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20FC": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20FD": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P20FE": {
+        "name": "Urea pump - gauge module"
+    },
+    "P20FF": {
+        "name": "Engine management ECU"
+    },
+    "P2100": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2101": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2102": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2103": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2104": {
+        "name": "Motorised throttle housing"
+    },
+    "P2105": {
+        "name": "Motorised throttle housing"
+    },
+    "P2106": {
+        "name": "Motorised throttle housing"
+    },
+    "P2107": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2108": {
+        "name": "Control of motorised butterfly unit  /  air mixer unit"
+    },
+    "P2109": {
+        "name": "Programming of the motorised throttle housing lower stop  ( air mixer unit )"
+    },
+    "P2110": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2111": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2112": {
+        "name": "Motorised throttle housing control  ( air mixer unit )"
+    },
+    "P2113": {
+        "name": "Programming of the motorised throttle housing lower stop  ( air mixer unit )"
+    },
+    "P2115": {
+        "name": "Accelerator pedal position sensor 1"
+    },
+    "P2116": {
+        "name": "Accelerator pedal position sensor 2"
+    },
+    "P2118": {
+        "name": "Control of the air mixer"
+    },
+    "P2119": {
+        "name": "Signal from the motorised throttle housing position sensor  ( air mixer unit )"
+    },
+    "P2120": {
+        "name": "Accelerator pedal potentiometer 1"
+    },
+    "P2121": {
+        "name": "Accelerator pedal position sensor track 1"
+    },
+    "P2122": {
+        "name": "Accelerator pedal position sensor track 1"
+    },
+    "P2123": {
+        "name": "Accelerator pedal position sensor track 1"
+    },
+    "P2124": {
+        "name": "Accelerator pedal position sensor signal"
+    },
+    "P2125": {
+        "name": "Accelerator pedal potentiometer 2"
+    },
+    "P2126": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P2127": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P2128": {
+        "name": "Accelerator pedal position sensor track 2"
+    },
+    "P2132": {
+        "name": "Accelerator pedal point of resistance switch signal fault"
+    },
+    "P2133": {
+        "name": "Accelerator pedal point of resistance switch signal fault"
+    },
+    "P2134": {
+        "name": "Accelerator pedal point of resistance switch signal fault"
+    },
+    "P2135": {
+        "name": "Inconsistency between position sensors 1 and 2 of the accelerator pedal"
+    },
+    "P2136": {
+        "name": "Motorised butterfly fault: incoherence of signals 1 and 2"
+    },
+    "P2137": {
+        "name": "Inconsistency between position sensors 1 and 2 of the accelerator pedal"
+    },
+    "P2138": {
+        "name": "Inconsistency between position sensors 1 and 2 of the accelerator pedal"
+    },
+    "P213A": {
+        "name": "EGR valve"
+    },
+    "P213B": {
+        "name": "EGR valve position signal  ( low pressure circuit )"
+    },
+    "P213C": {
+        "name": "Short circuit to ground on EGR H-bridge Out2 error"
+    },
+    "P213D": {
+        "name": "Short circuit to battery on EGR H-bridge Out2 error"
+    },
+    "P2140": {
+        "name": "Accelerator pedal point of resistance switch signal fault"
+    },
+    "P2141": {
+        "name": "Short circuit to ground on EGR H-bridge Out1 error"
+    },
+    "P2142": {
+        "name": "Short circuit to battery on EGR H-bridge Out1 error"
+    },
+    "P2146": {
+        "name": "Electrical supply of the fuel injectors"
+    },
+    "P2147": {
+        "name": "Bank N° 1 of fuel injectors"
+    },
+    "P2148": {
+        "name": "Bank N° 1 of fuel injectors"
+    },
+    "P214F": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P2150": {
+        "name": "Bank N° 2 of fuel injectors"
+    },
+    "P2151": {
+        "name": "Bank N° 2 of fuel injectors"
+    },
+    "P2154": {
+        "name": "Bank N° 3 of fuel injectors"
+    },
+    "P2157": {
+        "name": "Bank of fuel injectors"
+    },
+    "P215A": {
+        "name": "Vehicle speed information"
+    },
+    "P215B": {
+        "name": "Vehicle speed information"
+    },
+    "P2163": {
+        "name": "Programming of the motorised throttle housing upper stop  ( air mixer unit )"
+    },
+    "P2166": {
+        "name": "Accelerator pedal position sensor 1"
+    },
+    "P2167": {
+        "name": "Accelerator pedal position sensor 2"
+    },
+    "P2172": {
+        "name": "Inlet manifold absolute pressure sensor"
+    },
+    "P2173": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P2174": {
+        "name": "Inlet manifold absolute pressure sensor"
+    },
+    "P2175": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P2176": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P2177": {
+        "name": "Mixture regulation fault"
+    },
+    "P2178": {
+        "name": "Mixture regulation fault"
+    },
+    "P2181": {
+        "name": "Engine cooling circuit"
+    },
+    "P2183": {
+        "name": "capteur de température de liquide de refroidissement moteur 2"
+    },
+    "P2184": {
+        "name": "capteur de température de liquide de refroidissement moteur 2"
+    },
+    "P2185": {
+        "name": "capteur de température de liquide de refroidissement moteur 2"
+    },
+    "P2187": {
+        "name": "Mixture in the circuit  ( concentration of oxygen too high at idle )"
+    },
+    "P2188": {
+        "name": "Mixture in the circuit  ( concentration of oxygen too low at idle )"
+    },
+    "P2191": {
+        "name": "Mixture regulation"
+    },
+    "P2192": {
+        "name": "Mixture regulation"
+    },
+    "P2195": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P2196": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P219A": {
+        "name": "Air/fuel ratio of the cylinders"
+    },
+    "P219C": {
+        "name": "Air/fuel ratio of cylinder 1"
+    },
+    "P219D": {
+        "name": "Air/fuel ratio of cylinder 2"
+    },
+    "P219E": {
+        "name": "Air/fuel ratio of cylinder 3"
+    },
+    "P219F": {
+        "name": "Air/fuel ratio of cylinder 4"
+    },
+    "P21C5": {
+        "name": "Urea solution level signal"
+    },
+    "P21C7": {
+        "name": "DeNOx system relay"
+    },
+    "P21C8": {
+        "name": "DeNOx system relay"
+    },
+    "P21C9": {
+        "name": "DeNOx system relay"
+    },
+    "P21CB": {
+        "name": "DeNOx system relay"
+    },
+    "P21CC": {
+        "name": "DeNOx system relay"
+    },
+    "P21CE": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P21DD": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P2200": {
+        "name": "Upstream NOx sensor"
+    },
+    "P2201": {
+        "name": "Upstream NOx sensor  ( NOx information signal )"
+    },
+    "P2202": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2203": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2204": {
+        "name": "Upstream NOx sensor  ( NOx information signal )"
+    },
+    "P2205": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2207": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P220A": {
+        "name": "Upstream NOx sensor  ( NOX sensor supply )"
+    },
+    "P220B": {
+        "name": "Downstream NOx sensor  ( NOX sensor supply )"
+    },
+    "P220E": {
+        "name": "Upstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P220F": {
+        "name": "Downstream oxygen sensor  ( Oxygen sensor heating )"
+    },
+    "P2210": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2211": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2213": {
+        "name": "Downstream NOx sensor"
+    },
+    "P2214": {
+        "name": "Downstream NOx sensor"
+    },
+    "P221C": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P221D": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P2220": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2223": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2224": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2226": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2227": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2228": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2229": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2230": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2231": {
+        "name": "Upstream oxygen sensor signal"
+    },
+    "P2232": {
+        "name": "Downstream oxygen sensor"
+    },
+    "P2237": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P223C": {
+        "name": "Upstream oxygen sensor signal"
+    },
+    "P2243": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P2244": {
+        "name": "Fault  upstream oxygen sensor signal"
+    },
+    "P2246": {
+        "name": "Fault  upstream oxygen sensor signal"
+    },
+    "P224A": {
+        "name": "Upstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P224B": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P2251": {
+        "name": "Upstream oxygen sensor"
+    },
+    "P2252": {
+        "name": "Upstream oxygen sensor signal or downstream oxygen sensor signal fault"
+    },
+    "P2253": {
+        "name": "Upstream oxygen sensor signal or downstream oxygen sensor signal fault"
+    },
+    "P225C": {
+        "name": "Upstream NOx sensor"
+    },
+    "P225D": {
+        "name": "Upstream NOx sensor"
+    },
+    "P225E": {
+        "name": "Upstream NOx sensor"
+    },
+    "P225F": {
+        "name": "Upstream NOx sensor"
+    },
+    "P2261": {
+        "name": "Turbine discharge electrovalve"
+    },
+    "P2262": {
+        "name": "Turbocharging air circuit"
+    },
+    "P2263": {
+        "name": "Turbocharging pressure regulation fault"
+    },
+    "P2264": {
+        "name": "Water in fuel sensor"
+    },
+    "P2265": {
+        "name": "Water in fuel sensor signal"
+    },
+    "P2269": {
+        "name": "Detection of water in the fuel"
+    },
+    "P226A": {
+        "name": "Limitation of the engine torque due to excessive driving time with detection of water in the fuel"
+    },
+    "P226B": {
+        "name": "Air turbocharging pressure"
+    },
+    "P226D": {
+        "name": "Particle emission filter faulty"
+    },
+    "P2270": {
+        "name": "Downstream oxygen sensor signal"
+    },
+    "P2271": {
+        "name": "Downstream oxygen sensor signal"
+    },
+    "P2279": {
+        "name": "Turbocharging air circuit"
+    },
+    "P227B": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2291": {
+        "name": "Starting monitoring  ( Fuel pressure measured in the fuel high pressure common rail )"
+    },
+    "P2294": {
+        "name": "Fuel pressure regulator"
+    },
+    "P2295": {
+        "name": "Fuel pressure regulator"
+    },
+    "P2296": {
+        "name": "Fuel pressure regulator"
+    },
+    "P2297": {
+        "name": "Turbocharging circuit"
+    },
+    "P2298": {
+        "name": "Crankcase breather system"
+    },
+    "P2299": {
+        "name": "Accelerator pedal jammed or depressed at the same time as the brake pedal"
+    },
+    "P229A": {
+        "name": "Crankcase breather system"
+    },
+    "P229E": {
+        "name": "Downstream NOx sensor"
+    },
+    "P229F": {
+        "name": "Downstream NOx sensor  ( NOx information signal )"
+    },
+    "P22A0": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P22A1": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P22A2": {
+        "name": "Downstream NOx sensor  ( NOx information signal )"
+    },
+    "P22A3": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P22A5": {
+        "name": "Downstream NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P22C5": {
+        "name": "Turbocharger discharge solenoid valve control"
+    },
+    "P22C9": {
+        "name": "Turbocharger discharge solenoid valve"
+    },
+    "P22F9": {
+        "name": "Upstream NOx sensor"
+    },
+    "P22FA": {
+        "name": "Upstream NOx sensor"
+    },
+    "P22FB": {
+        "name": "Upstream NOx sensor"
+    },
+    "P22FC": {
+        "name": "Downstream NOx sensor"
+    },
+    "P22FD": {
+        "name": "Downstream NOx sensor"
+    },
+    "P22FE": {
+        "name": "Downstream NOx sensor"
+    },
+    "P2300": {
+        "name": "Ignition coil cylinder   short circuit to earth"
+    },
+    "P2301": {
+        "name": "Ignition coil cylinder 1"
+    },
+    "P2302": {
+        "name": "Primary/secondary circuit of the ignition coil 1"
+    },
+    "P2303": {
+        "name": "Ignition coil cylinder   short circuit to earth"
+    },
+    "P2304": {
+        "name": "Ignition coil cylinder 2"
+    },
+    "P2305": {
+        "name": "Primary/secondary circuit of the ignition coil 2"
+    },
+    "P2306": {
+        "name": "Ignition coil cylinder   short circuit to earth"
+    },
+    "P2307": {
+        "name": "Ignition coil cylinder 3"
+    },
+    "P2308": {
+        "name": "Primary/secondary circuit of the ignition coil 3"
+    },
+    "P2309": {
+        "name": "Ignition coil cylinder   short circuit to earth"
+    },
+    "P2310": {
+        "name": "Bank N° 4 of fuel injectors"
+    },
+    "P2336": {
+        "name": "Detection of super knock cylinder no. 1"
+    },
+    "P2337": {
+        "name": "Detection of super knock cylinder no. 2"
+    },
+    "P2338": {
+        "name": "Detection of super knock cylinder no. 3"
+    },
+    "P2339": {
+        "name": "Detection of super knock cylinder no. 4"
+    },
+    "P23AB": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23AC": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23AD": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23AE": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23AF": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23B1": {
+        "name": "Intermediate NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P23B2": {
+        "name": "Intermediate NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P23B5": {
+        "name": "Intermediate NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P23B6": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23B7": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23BB": {
+        "name": "Intermediate NOx sensor  ( Heating of the NOx sensor )"
+    },
+    "P23BE": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23BF": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23C0": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P23C1": {
+        "name": "Intermediate NOx sensor"
+    },
+    "P2401": {
+        "name": "Fuel vapour leak measuring device pump control circuit"
+    },
+    "P2404": {
+        "name": "Fuel vapour leak measuring device pump control circuit"
+    },
+    "P240A": {
+        "name": "Fuel vapour leak measuring device pump heater control circuit"
+    },
+    "P2413": {
+        "name": "EGR valve circuit clogged"
+    },
+    "P2414": {
+        "name": "Upstream oxygen sensor signal"
+    },
+    "P2419": {
+        "name": "Fuel tank isolation solenoid valve control circuit"
+    },
+    "P241D": {
+        "name": "Internal combustion engine starter inhibitor  ( deNOx system )"
+    },
+    "P2422": {
+        "name": "Canister purge solenoid valve"
+    },
+    "P2425": {
+        "name": "EGR exchanger bypass control"
+    },
+    "P2426": {
+        "name": "EGR exchanger bypass control"
+    },
+    "P2427": {
+        "name": "EGR exchanger bypass control"
+    },
+    "P2428": {
+        "name": "EGR exchanger bypass control"
+    },
+    "P242A": {
+        "name": "Temperature of the exhaust gas upstream of the turbocharger"
+    },
+    "P242B": {
+        "name": "Temperature of the exhaust gas upstream of the turbocharger"
+    },
+    "P242C": {
+        "name": "Temperature of the exhaust gas upstream of the turbocharger"
+    },
+    "P242D": {
+        "name": "Temperature of the exhaust gas upstream of the turbocharger"
+    },
+    "P242F": {
+        "name": "Maximum additive threshold of additive in the particle filter"
+    },
+    "P2430": {
+        "name": "Air flow sensor"
+    },
+    "P2431": {
+        "name": "Intake manifold pressure sensor"
+    },
+    "P2448": {
+        "name": "Air inlet circuit  ( air flow )"
+    },
+    "P244A": {
+        "name": "Particle filter differential pressure too low"
+    },
+    "P244B": {
+        "name": "Particle filter differential pressure too high"
+    },
+    "P244C": {
+        "name": "Particle emission filter upstream temperature sensor fault"
+    },
+    "P244D": {
+        "name": "Particle emission filter upstream temperature sensor fault"
+    },
+    "P2451": {
+        "name": "Fuel tank isolation solenoid valve"
+    },
+    "P2452": {
+        "name": "Particle emission filter differential pressure sensor signal  ( plausibility )"
+    },
+    "P2453": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P2454": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P2455": {
+        "name": "Particle filter clogged"
+    },
+    "P2456": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P2457": {
+        "name": "Exhaust gas cooler"
+    },
+    "P2458": {
+        "name": "Particle filter regeneration not completed"
+    },
+    "P2459": {
+        "name": "Particle filter regeneration"
+    },
+    "P245A": {
+        "name": "Exhaust gas cooler discharge circuit control  ( high pressure circuit )"
+    },
+    "P245B": {
+        "name": "Engine management ECU  ( Control of the EGR exchanger bypass )"
+    },
+    "P245C": {
+        "name": "Exhaust gas cooler discharge circuit control  ( high pressure circuit )"
+    },
+    "P245D": {
+        "name": "Exhaust gas cooler discharge circuit control  ( high pressure circuit )"
+    },
+    "P2460": {
+        "name": "le capteur de pression du filtre à particules 2"
+    },
+    "P2461": {
+        "name": "le capteur de pression du filtre à particules 2"
+    },
+    "P2463": {
+        "name": "Particulate emission filter overloaded"
+    },
+    "P2464": {
+        "name": "Particle filter differential pressure sensor"
+    },
+    "P246B": {
+        "name": "Particle filter  ( arduous use )"
+    },
+    "P246C": {
+        "name": "Particle filter clogged"
+    },
+    "P246E": {
+        "name": "Temperature of the exhaust gas downstream of the turbocharger"
+    },
+    "P246F": {
+        "name": "PEF upstream temperature sensor"
+    },
+    "P2493": {
+        "name": "EGR exchanger bypass position signal"
+    },
+    "P2494": {
+        "name": "EGR exchanger bypass position signal"
+    },
+    "P2495": {
+        "name": "EGR exchanger bypass position signal"
+    },
+    "P249C": {
+        "name": "Urea injector injection duration"
+    },
+    "P24A4": {
+        "name": "Particle filter blocked"
+    },
+    "P24A5": {
+        "name": "EGR heat exchanger by-pass"
+    },
+    "P24A7": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "P24A8": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "P24AA": {
+        "name": "Coolant pump  ( TBTcircuit basse température )"
+    },
+    "P24AE": {
+        "name": "Soot sensor"
+    },
+    "P24AF": {
+        "name": "Soot sensor"
+    },
+    "P24B0": {
+        "name": "Soot sensor"
+    },
+    "P24B1": {
+        "name": "Soot sensor"
+    },
+    "P24B2": {
+        "name": "Soot sensor"
+    },
+    "P24B3": {
+        "name": "Soot sensor"
+    },
+    "P24B6": {
+        "name": "Soot sensor"
+    },
+    "P24B7": {
+        "name": "Soot sensor"
+    },
+    "P24BD": {
+        "name": "Fuel vapour leak measuring device pump solenoid valve control circuit"
+    },
+    "P24BE": {
+        "name": "Fuel vapour leak measuring device pump solenoid valve control circuit"
+    },
+    "P24BF": {
+        "name": "Fuel vapour leak measuring device pump solenoid valve control circuit"
+    },
+    "P24C2": {
+        "name": "Signals from the exhaust gas temperature sensors"
+    },
+    "P24C6": {
+        "name": "Soot sensor"
+    },
+    "P24C7": {
+        "name": "Soot sensor"
+    },
+    "P24CA": {
+        "name": "Soot sensor"
+    },
+    "P24D0": {
+        "name": "Soot sensor"
+    },
+    "P24D1": {
+        "name": "Soot sensor self-cleaning incomplete"
+    },
+    "P24D3": {
+        "name": "Soot sensor"
+    },
+    "P24F2": {
+        "name": "Exhaust gas cooler downstream temperature sensor  ( high pressure circuit )"
+    },
+    "P250A": {
+        "name": "Engine oil level sensor signal"
+    },
+    "P250B": {
+        "name": "Engine oil level"
+    },
+    "P250C": {
+        "name": "Fault  :  oil level sensor signal"
+    },
+    "P250D": {
+        "name": "Fault  :  oil level sensor signal"
+    },
+    "P250F": {
+        "name": "Engine oil temperature and level sensor"
+    },
+    "P2510": {
+        "name": "Power relay"
+    },
+    "P252F": {
+        "name": "Engine oil temperature and level sensor"
+    },
+    "P2530": {
+        "name": "Fault: positive ignition on signal (+IGN)"
+    },
+    "P2539": {
+        "name": "Low pressure fuel circuit fuel pressure sensor signal"
+    },
+    "P253F": {
+        "name": "Deterioration of the engine oil"
+    },
+    "P2540": {
+        "name": "Low pressure fuel circuit fuel pressure sensor signal"
+    },
+    "P2541": {
+        "name": "Low pressure fuel circuit fuel pressure sensor signal"
+    },
+    "P2542": {
+        "name": "Low pressure fuel circuit fuel pressure sensor signal"
+    },
+    "P2544": {
+        "name": "Engine torque request signal"
+    },
+    "P2545": {
+        "name": "Gearbox ECU"
+    },
+    "P2549": {
+        "name": "Engine torque"
+    },
+    "P2562": {
+        "name": "Position of the turbocharger"
+    },
+    "P2563": {
+        "name": "Position of the turbocharger"
+    },
+    "P2564": {
+        "name": "Turbocharger position signal"
+    },
+    "P2565": {
+        "name": "Turbocharger position signal"
+    },
+    "P2566": {
+        "name": "Turbocharger position signal"
+    },
+    "P2583": {
+        "name": "Distance alert information"
+    },
+    "P258A": {
+        "name": "Electric vacuum pump"
+    },
+    "P258C": {
+        "name": "Electric vacuum pump"
+    },
+    "P258D": {
+        "name": "Electric vacuum pump"
+    },
+    "P258F": {
+        "name": "Engine torque reference value"
+    },
+    "P2598": {
+        "name": "Turbocharger position signal"
+    },
+    "P2599": {
+        "name": "Turbocharger position signal"
+    },
+    "P25A9": {
+        "name": "refroidissement huile moteur"
+    },
+    "P25AA": {
+        "name": "refroidissement huile moteur"
+    },
+    "P25AB": {
+        "name": "refroidissement huile moteur"
+    },
+    "P25B0": {
+        "name": "Fuel level sensor signal"
+    },
+    "P25DE": {
+        "name": "Inlet camshaft position sensor signal  ( camshaft dephasure )"
+    },
+    "P25DF": {
+        "name": "Position of the inlet camshaft dephaser position sensor"
+    },
+    "P25E4": {
+        "name": "Exhaust camshaft position sensor signal"
+    },
+    "P25E5": {
+        "name": "Position of the exhaust camshaft dephaser position sensor"
+    },
+    "P25F0": {
+        "name": "Excessive distance travelled since the engine oil replacement warning"
+    },
+    "P25F3": {
+        "name": "Excessive distance travelled since the engine oil replacement warning"
+    },
+    "P2600": {
+        "name": "Electric coolant pump"
+    },
+    "P2601": {
+        "name": "(Electric) turbo additional coolant pump control fault"
+    },
+    "P2602": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P2603": {
+        "name": "Control of the deNOx system relay"
+    },
+    "P2610": {
+        "name": "Internal counter for ECUs in dormant mode"
+    },
+    "P2611": {
+        "name": "Air conditioning evaporator solenoid valve control"
+    },
+    "P2612": {
+        "name": "Air conditioning evaporator solenoid valve control"
+    },
+    "P2613": {
+        "name": "Air conditioning evaporator solenoid valve control"
+    },
+    "P2617": {
+        "name": "Camshaft position sensor"
+    },
+    "P2618": {
+        "name": "Camshaft position sensor"
+    },
+    "P2619": {
+        "name": "Camshaft position sensor"
+    },
+    "P261A": {
+        "name": "Coolant pump relay  ( low pressure circuit )"
+    },
+    "P261B": {
+        "name": "Coolant pump relay  ( low pressure circuit )"
+    },
+    "P261C": {
+        "name": "Coolant pump relay  ( low pressure circuit )"
+    },
+    "P261D": {
+        "name": "Coolant pump relay  ( low pressure circuit )"
+    },
+    "P2620": {
+        "name": "Motorised throttle position sensor signal"
+    },
+    "P2622": {
+        "name": "Oxygen sensor"
+    },
+    "P2626": {
+        "name": "Upstream oxygen sensor pump current signal fault"
+    },
+    "P2632": {
+        "name": "Fuel low pressure supply pump relay"
+    },
+    "P2633": {
+        "name": "Fuel low pressure supply pump relay"
+    },
+    "P2634": {
+        "name": "Fuel low pressure supply pump relay"
+    },
+    "P2635": {
+        "name": "Low-pressure fuel pump"
+    },
+    "P2636": {
+        "name": "Fuel low pressure supply pump relay"
+    },
+    "P2638": {
+        "name": "Clutch torque reference value"
+    },
+    "P263D": {
+        "name": "Control of the urea pipe heating"
+    },
+    "P263E": {
+        "name": "Pre-heat unit relay control"
+    },
+    "P265F": {
+        "name": "Air conditioning compressor"
+    },
+    "P2669": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P2670": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P2671": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P2681": {
+        "name": "Control of the motorised coolant outlet housing"
+    },
+    "P2682": {
+        "name": "Control of the motorised coolant outlet housing"
+    },
+    "P2683": {
+        "name": "Control of the motorised coolant outlet housing"
+    },
+    "P2684": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P2685": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P2686": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P2687": {
+        "name": "Control of the fuel heater"
+    },
+    "P2688": {
+        "name": "Control of the fuel heater"
+    },
+    "P2689": {
+        "name": "Control of the fuel heater"
+    },
+    "P268C": {
+        "name": "Classification of injector 1"
+    },
+    "P268D": {
+        "name": "Classification of injector 2"
+    },
+    "P268E": {
+        "name": "Classification of injector 3"
+    },
+    "P268F": {
+        "name": "Classification of injector 4"
+    },
+    "P269A": {
+        "name": "Control of the urea injector"
+    },
+    "P26A5": {
+        "name": "Motorised coolant outlet housing position sensor signal"
+    },
+    "P26C4": {
+        "name": "contacteurs embrayage"
+    },
+    "P26CA": {
+        "name": "Hybrid automatic gearbox cooling circuit electric coolant pump"
+    },
+    "P26E4": {
+        "name": "Starter relay control"
+    },
+    "P26E5": {
+        "name": "Starter relay control"
+    },
+    "P26E6": {
+        "name": "Starter relay control"
+    },
+    "P26F0": {
+        "name": "commande du relais 1 du démarreur"
+    },
+    "P26F1": {
+        "name": "commande du relais 1 du démarreur"
+    },
+    "P26F2": {
+        "name": "commande du relais 2 du démarreur"
+    },
+    "P26F3": {
+        "name": "commande du relais 2 du démarreur"
+    },
+    "P26F9": {
+        "name": "Turbocharger additional coolant pump"
+    },
+    "P26FD": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P2711": {
+        "name": "Automatic gearbox indicator"
+    },
+    "P278B": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P278C": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P278D": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P278E": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P2793": {
+        "name": "Gear change direction"
+    },
+    "P27B6": {
+        "name": "Gearbox ECU"
+    },
+    "P2871": {
+        "name": "View the hybrid automatic gearbox fault codes"
+    },
+    "P2872": {
+        "name": "View the hybrid automatic gearbox fault codes"
+    },
+    "P2879": {
+        "name": "Clutch pedal switch 2"
+    },
+    "P29DB": {
+        "name": "Urea injector 1"
+    },
+    "P29DC": {
+        "name": "Urea injector 2"
+    },
+    "P2A00": {
+        "name": "Upstream NOx sensor  ( oxygen information signal )"
+    },
+    "P2A01": {
+        "name": "Downstream NOx sensor  ( oxygen information signal )"
+    },
+    "P2A0F": {
+        "name": "Control of the fuel heater"
+    },
+    "P2AB0": {
+        "name": "Soot sensor"
+    },
+    "P2AB8": {
+        "name": "Turbocharging pressure regulation solenoid valve position sensor"
+    },
+    "P2AB9": {
+        "name": "Turbocharging pressure regulation solenoid valve position sensor"
+    },
+    "P2ADB": {
+        "name": "Urea reservoir temperature sensor"
+    },
+    "P2ADC": {
+        "name": "Urea reservoir temperature sensor"
+    },
+    "P2B29": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P2B2A": {
+        "name": "Waterpump of the drive train cooling circuit"
+    },
+    "P2B2F": {
+        "name": "Fan assembly"
+    },
+    "P2B63": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P2B64": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P2B65": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P2B6B": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P2B86": {
+        "name": "Turbocharger additional coolant pump"
+    },
+    "P2B96": {
+        "name": "Injection problem during heating of the catalytic converter"
+    },
+    "P2B9C": {
+        "name": "Turbocharger additional coolant pump"
+    },
+    "P2B9D": {
+        "name": "Turbocharger additional coolant pump"
+    },
+    "P2B9E": {
+        "name": "Turbocharger additional coolant pump"
+    },
+    "P2B9F": {
+        "name": "Passenger compartment heating circuit electric coolant pump"
+    },
+    "P2BA3": {
+        "name": "Control of the starter"
+    },
+    "P2BA9": {
+        "name": "Urea solution quality"
+    },
+    "P2BAA": {
+        "name": "Low urea solution consumption"
+    },
+    "P2BAD": {
+        "name": "DeNOx catalytic converter"
+    },
+    "P2BC3": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P2C66": {
+        "name": "Waterpump of the drive train cooling circuit"
+    },
+    "P2C68": {
+        "name": "Waterpump of the drive train cooling circuit"
+    },
+    "P2C99": {
+        "name": "Control of motorised butterfly unit  /  air mixer unit"
+    },
+    "P2CAD": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P2CB0": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P2CB3": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P2CB5": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "P2CFC": {
+        "name": "Air conditioning compressor clutch control circuit"
+    },
+    "P2D1D": {
+        "name": "DeNOx catalytic converter and particle filter assembly damaged"
+    },
+    "P2D20": {
+        "name": "DeNOx system"
+    },
+    "P2D2D": {
+        "name": "Air inlet manifold damaged"
+    },
+    "P2D87": {
+        "name": "Fan assembly"
+    },
+    "P2D89": {
+        "name": "Fan assembly"
+    },
+    "P2D9E": {
+        "name": "Cutting out of the internal combustion engine with a traction battery charge status that is too low"
+    },
+    "P2DD9": {
+        "name": "Fuel vapour leak measuring device pump"
+    },
+    "P2DF2": {
+        "name": "Variable valve lift intake system"
+    },
+    "P2E11": {
+        "name": "Gear lever position signal"
+    },
+    "P2EAD": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P2EAE": {
+        "name": "Urea injector 2"
+    },
+    "P2EAF": {
+        "name": "Urea injector 2"
+    },
+    "P2EB3": {
+        "name": "Air inlet manifold pressure sensor"
+    },
+    "P3000": {
+        "name": "Fuel pressure regulator  ( error detection )"
+    },
+    "P3001": {
+        "name": "Fuel pressure regulator"
+    },
+    "P3002": {
+        "name": "Fuel pressure regulator"
+    },
+    "P3007": {
+        "name": "Air circuit"
+    },
+    "P3008": {
+        "name": "Turbocharging air circuit"
+    },
+    "P300E": {
+        "name": "Air flow sensor"
+    },
+    "P3010": {
+        "name": "Fault: difference between the reference value and actual value of the throttle or throttle stuck"
+    },
+    "P3011": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P3012": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P3013": {
+        "name": "Motorised throttle housing"
+    },
+    "P3014": {
+        "name": "Motorised throttle housing"
+    },
+    "P3015": {
+        "name": "Position sensor of the motorised throttle housing  ( air mixer unit )"
+    },
+    "P3019": {
+        "name": "Upstream oxygen sensor signal"
+    },
+    "P3025": {
+        "name": "Control of the high pressure fuel flow regulator"
+    },
+    "P3026": {
+        "name": "Air inlet circuit  ( air flow )"
+    },
+    "P3027": {
+        "name": "Air inlet circuit  ( air flow )"
+    },
+    "P3028": {
+        "name": "Customer modification of the programming of the engine management ECU"
+    },
+    "P3032": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P3034": {
+        "name": "Motorised throttle housing  ( air mixer unit )"
+    },
+    "P3035": {
+        "name": "Fuel injectors programming"
+    },
+    "P3036": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P3037": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P3038": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P3039": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P303A": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P303B": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P303C": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P303D": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P303E": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P303F": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P3040": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P3041": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P3042": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P3043": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P3044": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P3045": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P3046": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P3047": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P3048": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P3049": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P304A": {
+        "name": "Fuel injector 1  ( resetting )"
+    },
+    "P304B": {
+        "name": "Fuel injector 2  ( resetting )"
+    },
+    "P304C": {
+        "name": "Fuel injector 3  ( resetting )"
+    },
+    "P304D": {
+        "name": "Fuel injector 4  ( resetting )"
+    },
+    "P304F": {
+        "name": "DeNOx system relay"
+    },
+    "P3051": {
+        "name": "DeNOx system circuit  ( urea pump - gauge module )"
+    },
+    "P3053": {
+        "name": "Pressure of the urea solution"
+    },
+    "P3054": {
+        "name": "Pressure of the urea solution"
+    },
+    "P3057": {
+        "name": "Estimation of the particle filter charge in relation to a calculation"
+    },
+    "P3059": {
+        "name": "Engine management ECU  ( Stop and Start function )"
+    },
+    "P305A": {
+        "name": "Engine management ECU  ( Stop and Start function )"
+    },
+    "P305B": {
+        "name": "Engine management ECU  ( speed limiter / cruise control function )"
+    },
+    "P305C": {
+        "name": "Engine management ECU  ( fuel injection )"
+    },
+    "P3060": {
+        "name": "Number of self-ignitions before spark (Rumble) too high over the last few miles (kilometres) travelled"
+    },
+    "P3061": {
+        "name": "High number of self-ignitions before spark (Rumble) over the last few miles (kilometres) travelled"
+    },
+    "P3064": {
+        "name": "Adaptation threshold of the motorised throttle housing reached  ( Cylinder 1 )"
+    },
+    "P3065": {
+        "name": "Adaptation threshold of the motorised throttle housing reached  ( Cylinder 2 )"
+    },
+    "P3066": {
+        "name": "Adaptation threshold of the motorised throttle housing reached  ( Cylinder 3 )"
+    },
+    "P3067": {
+        "name": "Adaptation threshold of the motorised throttle housing reached  ( 3 cylinders )"
+    },
+    "P3068": {
+        "name": "Adaptation threshold reached in the exhaust variable valve lift system"
+    },
+    "P3069": {
+        "name": "Monitoring of the ageing of the fuel supply system 1"
+    },
+    "P306A": {
+        "name": "Monitoring of the ageing of the fuel supply system 2"
+    },
+    "P306B": {
+        "name": "Adaptation threshold reached in the exhaust variable valve lift inlet system"
+    },
+    "P306C": {
+        "name": "Injection time"
+    },
+    "P306D": {
+        "name": "Coherence between the position of the motorised throttle housing (air mixer) and the inlet air pressure"
+    },
+    "P306E": {
+        "name": "Engine management ECU"
+    },
+    "P306F": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P3070": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P3071": {
+        "name": "Fuel high pressure sensor signal"
+    },
+    "P3072": {
+        "name": "Engine management ECU"
+    },
+    "P3073": {
+        "name": "Engine management ECU"
+    },
+    "P3075": {
+        "name": "Capteur de pression du répartiteur d'admission d'air (réseau SENT)"
+    },
+    "P307C": {
+        "name": "Thermostatic regulator"
+    },
+    "P3336": {
+        "name": "KNOD_LowOctFuelCyl_11"
+    },
+    "P3337": {
+        "name": "KNOD_LowOctFuelCyl_22"
+    },
+    "P3338": {
+        "name": "KNOD_LowOctFuelCyl_33"
+    },
+    "P3339": {
+        "name": "KNOD_LowOctFuelCyl_44"
+    },
+    "U0001": {
+        "name": "Engine management ECU not communicating on the CAN"
+    },
+    "U0002": {
+        "name": "High speed CAN 1"
+    },
+    "U0019": {
+        "name": "Body CAN  ( built-in systems interface )"
+    },
+    "U0028": {
+        "name": "CAN  ( Loss of communication between the BSI and the instrument panel )"
+    },
+    "U0037": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( engine ECU mute )"
+    },
+    "U0046": {
+        "name": "Suspension and wheels CAN  ( engine ECU mute )"
+    },
+    "U0055": {
+        "name": "COMFORT CAN  ( built-in systems interface )"
+    },
+    "U0073": {
+        "name": "Intersystems CAN  /  High speed CAN 1"
+    },
+    "U0074": {
+        "name": "Emissions control CAN network"
+    },
+    "U0075": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "U0076": {
+        "name": "Suspension and wheels CAN"
+    },
+    "U0080": {
+        "name": "Emissions control CAN network  ( engine ECU mute )"
+    },
+    "U0101": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U0103": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( gearbox ECU )"
+    },
+    "U0104": {
+        "name": "Gearbox ECU"
+    },
+    "U0106": {
+        "name": "Pre-post heating unit  ( loss of communication )"
+    },
+    "U010C": {
+        "name": "Fault: CAN"
+    },
+    "U010E": {
+        "name": "Emissions control CAN network  ( urea pump - gauge module )"
+    },
+    "U010F": {
+        "name": "Air conditioning ECU"
+    },
+    "U0110": {
+        "name": "Engine management ECU"
+    },
+    "U0114": {
+        "name": "Driving mode ECU ‎(AWD)"
+    },
+    "U0118": {
+        "name": "Multiplexed additive pump"
+    },
+    "U011D": {
+        "name": "Rear final drive controlled clutch ECU"
+    },
+    "U0120": {
+        "name": "Controlled alternator  (IAM)"
+    },
+    "U0121": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( ESP ECU )"
+    },
+    "U0122": {
+        "name": "Communication with the ABS/ESP ECU"
+    },
+    "U0125": {
+        "name": "Three-function sensor"
+    },
+    "U0126": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U0128": {
+        "name": "Hill start assistance (Easymove) system information fault"
+    },
+    "U0129": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U012D": {
+        "name": "Controlled alternator  (IAM)"
+    },
+    "U0131": {
+        "name": "Electric power steering ECU  ( CAN )"
+    },
+    "U0140": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( built-in systems interface )"
+    },
+    "U0141": {
+        "name": "Communication with the BSI"
+    },
+    "U0142": {
+        "name": "Built-in systems interface"
+    },
+    "U0146": {
+        "name": "Communication with the BSI"
+    },
+    "U014F": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U0151": {
+        "name": "Airbags and pretensioners ECU"
+    },
+    "U0154": {
+        "name": "Airbags and pretensioners ECU"
+    },
+    "U0155": {
+        "name": "Instrument panel (IPC)"
+    },
+    "U0156": {
+        "name": "Built-in systems interface"
+    },
+    "U0159": {
+        "name": "à ne pas afficher"
+    },
+    "U015B": {
+        "name": "Communication with the electric power steering ECU"
+    },
+    "U0166": {
+        "name": "Additional heating ECU"
+    },
+    "U0167": {
+        "name": "Communication with the built-in systems interface on request for unlocking of the engine management ECU"
+    },
+    "U0168": {
+        "name": "Coded immobiliser"
+    },
+    "U019E": {
+        "name": "Gearbox ECU"
+    },
+    "U01B0": {
+        "name": "absence de communication avec le calculateur EBS"
+    },
+    "U01B4": {
+        "name": "Master cylinder pressure"
+    },
+    "U01BC": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "U01C5": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "U0216": {
+        "name": "Status of the driver's door from the built-in systems interface  (BCM_F)"
+    },
+    "U025E": {
+        "name": "Communication with the electric brake servo ECU"
+    },
+    "U025F": {
+        "name": "Communication with the electric brake servo ECU"
+    },
+    "U0284": {
+        "name": "Controlled air inlet module"
+    },
+    "U0287": {
+        "name": "Automatic gearbox oil pump"
+    },
+    "U0291": {
+        "name": "Hybrid automatic gearbox/front electric drive machine ECU (hybrid CAN)"
+    },
+    "U029D": {
+        "name": "Emissions control CAN network  ( downstream NOx sensor )"
+    },
+    "U029E": {
+        "name": "Emissions control CAN network  ( upstream NOx sensor )"
+    },
+    "U029F": {
+        "name": "Detection of a leak from the degassing system"
+    },
+    "U02A1": {
+        "name": "Downstream NOx sensor"
+    },
+    "U02A3": {
+        "name": "Communication with the soot sensor"
+    },
+    "U02A5": {
+        "name": "DeNOx system  ( CAN )"
+    },
+    "U02A9": {
+        "name": "Turbocharging air cooler pump  ( CAN )"
+    },
+    "U02AA": {
+        "name": "Gearbox ECU"
+    },
+    "U0302": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( gearbox ECU )"
+    },
+    "U0304": {
+        "name": "Gearbox ECU"
+    },
+    "U0305": {
+        "name": "Cruise control"
+    },
+    "U0315": {
+        "name": "ECUs ABS / ESP"
+    },
+    "U0318": {
+        "name": "Urea fluid pressure too high"
+    },
+    "U0322": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( built-in systems interface )"
+    },
+    "U0326": {
+        "name": "Coded immobiliser"
+    },
+    "U0331": {
+        "name": "Communication with the BSI"
+    },
+    "U0333": {
+        "name": "Hybrid automatic gearbox/front electric drive machine ECU (hybrid CAN)"
+    },
+    "U0336": {
+        "name": "Airbags and pretensioners ECU"
+    },
+    "U03A2": {
+        "name": "Turbocharger additional coolant pump actuator control"
+    },
+    "U03FB": {
+        "name": "Odometer signal"
+    },
+    "U0402": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U0403": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U0404": {
+        "name": "Gearbox ECU"
+    },
+    "U0405": {
+        "name": "Communication with the built-in systems interface concerning cruise control or speed limiter information"
+    },
+    "U040A": {
+        "name": "Fan assembly"
+    },
+    "U040F": {
+        "name": "Urea ECU  ( CAN network DEPOL )"
+    },
+    "U0411": {
+        "name": "Engine management ECU"
+    },
+    "U0414": {
+        "name": "Rear final drive controlled clutch ECU"
+    },
+    "U0415": {
+        "name": "ECUs ABS / ESP"
+    },
+    "U0416": {
+        "name": "ECUs ABS/ESP  ( CAN )"
+    },
+    "U0417": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U0418": {
+        "name": "ECUs ABS/ESP  ( CAN )"
+    },
+    "U041E": {
+        "name": "Rear final drive controlled clutch ECU"
+    },
+    "U0420": {
+        "name": "ABS/ESP ECU"
+    },
+    "U0422": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U0423": {
+        "name": "Instrument panel (IPC)"
+    },
+    "U0426": {
+        "name": "Engine immobiliser ECU"
+    },
+    "U0427": {
+        "name": "Coded immobiliser"
+    },
+    "U0428": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U0431": {
+        "name": "Communication with the BSI"
+    },
+    "U0432": {
+        "name": "ECUs ABS/ESP  ( CAN )"
+    },
+    "U0433": {
+        "name": "Instrument panel (IPC)"
+    },
+    "U0443": {
+        "name": "Built-in systems interface"
+    },
+    "U0444": {
+        "name": "Additional heating ECU  (AHCU)"
+    },
+    "U0447": {
+        "name": "Built-in systems interface"
+    },
+    "U0452": {
+        "name": "Airbags and pretensioners ECU  (ORC)"
+    },
+    "U0457": {
+        "name": "Built-in systems interface"
+    },
+    "U0469": {
+        "name": "Controlled alternator  (IAM)"
+    },
+    "U049F": {
+        "name": "Gearbox ECU"
+    },
+    "U04A1": {
+        "name": "Traction battery ECU"
+    },
+    "U04A4": {
+        "name": "Soot sensor"
+    },
+    "U04B5": {
+        "name": "Dynamic stability control ECU"
+    },
+    "U04B6": {
+        "name": "Catalytic converter heating"
+    },
+    "U04C6": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "U0516": {
+        "name": "Passenger's door switch"
+    },
+    "U0536": {
+        "name": "Lateral acceleration sensor"
+    },
+    "U0588": {
+        "name": "Automatic gearbox oil pump"
+    },
+    "U0594": {
+        "name": "Hybrid drive train supervisor ECU  ( CAN )"
+    },
+    "U059E": {
+        "name": "Downstream NOx sensor  ( CAN )"
+    },
+    "U059F": {
+        "name": "Upstream NOx sensor  ( CAN )"
+    },
+    "U05A3": {
+        "name": "Urea pump - gauge module"
+    },
+    "U05A4": {
+        "name": "Soot sensor"
+    },
+    "U05A6": {
+        "name": "DeNOx system  ( CAN )"
+    },
+    "U05A8": {
+        "name": "Intermediate NOx sensor"
+    },
+    "U05AA": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "U05AB": {
+        "name": "Gearbox ECU"
+    },
+    "U0600": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U0601": {
+        "name": "signal 1 du capteur de pression différentielle du filtre à particules"
+    },
+    "U0602": {
+        "name": "signal 2 du capteur de pression différentielle du filtre à particules"
+    },
+    "U0603": {
+        "name": "Fuel pressure sensor"
+    },
+    "U0609": {
+        "name": "Inlet air pressure sensor  ( network SENT )"
+    },
+    "U060E": {
+        "name": "Oil vapours recirculation circuit pressure sensor 1"
+    },
+    "U060F": {
+        "name": "Inlet air temperature sensor at the air flow sensor"
+    },
+    "U0623": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "U0624": {
+        "name": "Coolant pump"
+    },
+    "U0667": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U0670": {
+        "name": "Fuel temperature sensor"
+    },
+    "U0676": {
+        "name": "Built-in systems interface"
+    },
+    "U1000": {
+        "name": "CAN network IS/HS1"
+    },
+    "U1003": {
+        "name": "CAN network IS/HS1"
+    },
+    "U1004": {
+        "name": "Fault in communication with the stop and start ECU"
+    },
+    "U1005": {
+        "name": "Airbags and pretensioners ECU  (ORC)"
+    },
+    "U1006": {
+        "name": "Electric parking brake status from the dynamic stability control ECU  (BSM)"
+    },
+    "U1007": {
+        "name": "LAS CAN /HS2"
+    },
+    "U1009": {
+        "name": "LAS CAN /HS2"
+    },
+    "U100A": {
+        "name": "CAN hybrid network"
+    },
+    "U100B": {
+        "name": "CAN hybrid network"
+    },
+    "U1012": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U1017": {
+        "name": "Traction battery CAN"
+    },
+    "U1018": {
+        "name": "Engine management ECU not communicating on the traction battery CAN"
+    },
+    "U1045": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1046": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1073": {
+        "name": "CAN"
+    },
+    "U1101": {
+        "name": "Electrical brake servo master cylinder  ( CAN network LAS/HS2 )"
+    },
+    "U1103": {
+        "name": "Communication with the hybrid automatic gearbox ECU"
+    },
+    "U1105": {
+        "name": "Steering wheel angle sensor  ( CAN )"
+    },
+    "U1109": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U110C": {
+        "name": "Fuel level signal  ( CAN )"
+    },
+    "U110E": {
+        "name": "External air temperature signal  ( CAN )"
+    },
+    "U110F": {
+        "name": "Communication with the BSI  (VSM1)"
+    },
+    "U1111": {
+        "name": "Communication with the ABS/ESP ECU"
+    },
+    "U1113": {
+        "name": "ECUs ABS / ESP  ( CAN )"
+    },
+    "U1118": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U111D": {
+        "name": "Parking assistance ECU"
+    },
+    "U1121": {
+        "name": "Power steering ECU  ( CAN )"
+    },
+    "U1122": {
+        "name": "Adaptive cruise control (ACC)"
+    },
+    "U1127": {
+        "name": "Particle filter differential pressure sensor  ( network SENT )"
+    },
+    "U112D": {
+        "name": "Communication with the electric drive machine ECU"
+    },
+    "U112E": {
+        "name": "Communication with the electric power steering ECU"
+    },
+    "U1133": {
+        "name": "Reversible alternator  ( CAN )"
+    },
+    "U1134": {
+        "name": "Centralised voltage maintaining device  ( CAN )"
+    },
+    "U1136": {
+        "name": "Communication with the ancillaries battery switch"
+    },
+    "U1139": {
+        "name": "Fuel pressure and temperature sensor signal"
+    },
+    "U113B": {
+        "name": "Communications with the dynamic stability control ECU"
+    },
+    "U113E": {
+        "name": "Communication with the 48 V reversible alternator"
+    },
+    "U1146": {
+        "name": "Drive train supervisor ECU  ( CAN network LAS/HS2 )"
+    },
+    "U1149": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U114B": {
+        "name": "Communication with the traction battery ECU"
+    },
+    "U1153": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U1158": {
+        "name": "Communication with the BSI"
+    },
+    "U1162": {
+        "name": "Vehicle Distance Assistance  ( CAN )"
+    },
+    "U116C": {
+        "name": "Gateway wiring housing"
+    },
+    "U1180": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U1186": {
+        "name": "Rear electric drive machine ECU  ( CAN hybrid network )"
+    },
+    "U1187": {
+        "name": "Drive train supervisor ECU  ( CAN hybrid network )"
+    },
+    "U118A": {
+        "name": "Ancillaries battery 1 switch  ( CAN network LAS/HS1 )"
+    },
+    "U118B": {
+        "name": "Ancillaries battery 2 switch  ( CAN network LAS/HS2 )"
+    },
+    "U1199": {
+        "name": "Bonnet status from the built-in systems interface (BCM_F)"
+    },
+    "U11A0": {
+        "name": "Traction battery ECU  ( CAN hybrid network )"
+    },
+    "U11A2": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U11C2": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U11DD": {
+        "name": "Fault in communication with the network voltage maintaining device ECU"
+    },
+    "U11DE": {
+        "name": "On-board charger/direct voltage transformer assembly  ( CAN hybrid network )"
+    },
+    "U1200": {
+        "name": "DeNOx system  ( CAN )"
+    },
+    "U1203": {
+        "name": "Downstream NOx sensor  ( CAN )"
+    },
+    "U1205": {
+        "name": "Steering wheel angle sensor  ( CAN )"
+    },
+    "U1206": {
+        "name": "Electric parking brake status from the dynamic stability control ECU  (BSM)"
+    },
+    "U1207": {
+        "name": "Drive train supervisor ECU  ( CAN )"
+    },
+    "U1208": {
+        "name": "Engine management ECU  ( CAN )"
+    },
+    "U1209": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U120F": {
+        "name": "Controlled alternator  (IAM)"
+    },
+    "U1211": {
+        "name": "Upstream NOx sensor  ( CAN )"
+    },
+    "U1213": {
+        "name": "ECUs ABS / ESP  ( CAN )"
+    },
+    "U1218": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U1219": {
+        "name": "Fault in the information sent by the gearbox ECU"
+    },
+    "U121E": {
+        "name": "Particle emission filter differential pressure sensor signal  ( network SENT )"
+    },
+    "U1221": {
+        "name": "Power steering ECU  ( CAN )"
+    },
+    "U1222": {
+        "name": "Adaptive cruise control (ACC)"
+    },
+    "U1228": {
+        "name": "Network voltage maintaining device ECU  ( CAN )"
+    },
+    "U1233": {
+        "name": "Reversible alternator  ( CAN )"
+    },
+    "U1234": {
+        "name": "Centralised voltage maintaining device  ( CAN )"
+    },
+    "U1236": {
+        "name": "Circuit breaker of the 12 V ancillaries circuit  ( CAN )"
+    },
+    "U1239": {
+        "name": "Fuel pressure and temperature sensor signal"
+    },
+    "U123E": {
+        "name": "48 V starter  ( CAN )"
+    },
+    "U1240": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U124B": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U125E": {
+        "name": "Electric drive machine ECU  ( CAN )"
+    },
+    "U1262": {
+        "name": "Vehicle Distance Assistance  ( CAN )"
+    },
+    "U126C": {
+        "name": "Gateway wiring housing"
+    },
+    "U1286": {
+        "name": "Rear electric drive machine ECU  ( CAN )"
+    },
+    "U1287": {
+        "name": "Hybrid drive train supervisor ECU  ( CAN hybrid network )"
+    },
+    "U128A": {
+        "name": "Ancillaries battery 1 switch  ( CAN )"
+    },
+    "U128B": {
+        "name": "Ancillaries battery 2 switch  ( CAN )"
+    },
+    "U12A0": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U12A2": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U12A3": {
+        "name": "Soot sensor  ( CAN )"
+    },
+    "U12A6": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U12D9": {
+        "name": "Communication with the network voltage maintaining device ECU"
+    },
+    "U12DE": {
+        "name": "On-board charger/direct voltage transformer assembly  ( CAN )"
+    },
+    "U1300": {
+        "name": "DeNOx system  ( CAN )"
+    },
+    "U1303": {
+        "name": "Fuel pressure and temperature sensor signal"
+    },
+    "U1305": {
+        "name": "Steering wheel angle sensor  ( CAN )"
+    },
+    "U1308": {
+        "name": "Engine management ECU  ( CAN )"
+    },
+    "U1309": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U1311": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U1313": {
+        "name": "ECUs ABS / ESP  ( CAN )"
+    },
+    "U1318": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U131D": {
+        "name": "ECUs ABS / ESP  ( CAN )"
+    },
+    "U131E": {
+        "name": "Particle filter differential pressure sensor  ( network SENT )"
+    },
+    "U1321": {
+        "name": "Power steering ECU  ( CAN )"
+    },
+    "U1322": {
+        "name": "CAN"
+    },
+    "U1328": {
+        "name": "Network voltage maintaining device ECU  ( CAN )"
+    },
+    "U132A": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U1333": {
+        "name": "Reversible alternator"
+    },
+    "U1334": {
+        "name": "Centralised voltage maintaining device  ( CAN )"
+    },
+    "U1339": {
+        "name": "Fuel pressure and temperature sensor signal"
+    },
+    "U133B": {
+        "name": "Hybrid drive train supervisor ECU  ( CAN network Flexray )"
+    },
+    "U133C": {
+        "name": "Hybrid automatic gearbox ECU  ( CAN network Flexray )"
+    },
+    "U133D": {
+        "name": "Rear electric drive machine ECU  ( CAN network Flexray )"
+    },
+    "U133E": {
+        "name": "48 V starter  ( CAN )"
+    },
+    "U1340": {
+        "name": "Engine oil pressure and temperature sensor signal"
+    },
+    "U1349": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U1353": {
+        "name": "ECUs ABS / ESP  ( CAN )"
+    },
+    "U1358": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U135E": {
+        "name": "Electric drive machine ECU  ( CAN )"
+    },
+    "U1362": {
+        "name": "Vehicle Distance Assistance  ( CAN )"
+    },
+    "U1380": {
+        "name": "Particle filter differential pressure sensor  ( network SENT )"
+    },
+    "U1381": {
+        "name": "Inlet air pressure and temperature sensor  ( SENT )"
+    },
+    "U1382": {
+        "name": "Inlet air pressure and temperature sensor  ( SENT )"
+    },
+    "U1386": {
+        "name": "Rear electric drive machine ECU  ( CAN )"
+    },
+    "U1387": {
+        "name": "Drive train supervisor ECU  ( CAN )"
+    },
+    "U138A": {
+        "name": "Ancillaries battery 1 switch  ( CAN )"
+    },
+    "U138B": {
+        "name": "Ancillaries battery 2 switch  ( CAN )"
+    },
+    "U13A0": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U13A2": {
+        "name": "Sequential gear lever ECU  ( CAN )"
+    },
+    "U13A3": {
+        "name": "Communication of the soot sensor on the CAN"
+    },
+    "U13D9": {
+        "name": "Communication with the network voltage maintaining device ECU"
+    },
+    "U13DE": {
+        "name": "On-board charger/direct voltage transformer assembly  ( CAN )"
+    },
+    "U1400": {
+        "name": "LIN"
+    },
+    "U1401": {
+        "name": "Authorisation line for restarting"
+    },
+    "U1402": {
+        "name": "Fault: CAN"
+    },
+    "U1403": {
+        "name": "Fault: CAN"
+    },
+    "U1404": {
+        "name": "Flexray"
+    },
+    "U1406": {
+        "name": "Flexray"
+    },
+    "U1407": {
+        "name": "Flexray"
+    },
+    "U1408": {
+        "name": "Fault: CAN"
+    },
+    "U1409": {
+        "name": "Front left wheel speed sensor signal"
+    },
+    "U140A": {
+        "name": "Front right wheel speed sensor signal"
+    },
+    "U140B": {
+        "name": "Rear left wheel speed sensor signal"
+    },
+    "U140C": {
+        "name": "Rear right wheel speed sensor signal"
+    },
+    "U1410": {
+        "name": "Fault: CAN"
+    },
+    "U1411": {
+        "name": "Fault: CAN"
+    },
+    "U1412": {
+        "name": "Vehicle speed signal"
+    },
+    "U1413": {
+        "name": "Fault: CAN"
+    },
+    "U1414": {
+        "name": "Gateway wiring housing"
+    },
+    "U141F": {
+        "name": "Coolant pump  ( low pressure circuit )"
+    },
+    "U142F": {
+        "name": "Coolant pump  ( high pressure circuit )"
+    },
+    "U1460": {
+        "name": "Electric air conditioning compressor  ( LIN )"
+    },
+    "U1461": {
+        "name": "Communication with the air conditioning ECU"
+    },
+    "U1462": {
+        "name": "Electric coolant heater  ( LIN )"
+    },
+    "U1468": {
+        "name": "Automatic gearbox electric control ECU  (AGSM)"
+    },
+    "U1497": {
+        "name": "Traction battery ECU on the CAN"
+    },
+    "U1498": {
+        "name": "Electric coolant heater  ( LIN )"
+    },
+    "U1499": {
+        "name": "48 V traction battery fan or heating circuit electric coolant heater  ( LIN )"
+    },
+    "U149A": {
+        "name": "Controlled alternator"
+    },
+    "U149B": {
+        "name": "Electric coolant heater  ( LIN )"
+    },
+    "U149C": {
+        "name": "Electric coolant heater  ( LIN )"
+    },
+    "U1506": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U150A": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1535": {
+        "name": "Downstream NOx sensor  ( CAN )"
+    },
+    "U1536": {
+        "name": "Upstream NOx sensor  ( CAN )"
+    },
+    "U15AA": {
+        "name": "Coolant pump  ( high pressure circuit )"
+    },
+    "U1623": {
+        "name": "Coolant pump  ( high pressure circuit )"
+    },
+    "U1741": {
+        "name": "Urea ECU  (SCRM)"
+    },
+    "U1802": {
+        "name": "Vehicle speed information"
+    },
+    "U180B": {
+        "name": "Collision detected"
+    },
+    "U1930": {
+        "name": "Engine management ECU"
+    },
+    "U1932": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1933": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1935": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U1936": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U1938": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U193A": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U193C": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U193D": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U1941": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U1950": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U1952": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U1956": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U1958": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U197A": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U197C": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U197E": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U1986": {
+        "name": "Built-in systems interface (BCM_F)"
+    },
+    "U19A3": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19A4": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19A7": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U19A8": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U19A9": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U19AA": {
+        "name": "Automatic gearbox ECU  (TCM)"
+    },
+    "U19AB": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19AE": {
+        "name": "Inlet air temperature sensor at the air flow sensor"
+    },
+    "U19B0": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19CD": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19CE": {
+        "name": "Dynamic stability control ECU  (BSM)"
+    },
+    "U19D1": {
+        "name": "Instrument panel (IPC)"
+    },
+    "U19D2": {
+        "name": "Instrument panel (IPC)"
+    },
+    "U1FC6": {
+        "name": "Engine management ECU not communicating on the CAN"
+    },
+    "U2000": {
+        "name": "Remote controlled triggering line  ( Request for principal wake-up of the ECU not plausible or absent )"
+    },
+    "U2002": {
+        "name": "Remote controlled triggering line"
+    },
+    "U2003": {
+        "name": "Request for ECU wake-up (wire signal) inconsistent with the CAN data"
+    },
+    "U2118": {
+        "name": "Remote controlled triggering fault"
+    },
+    "U2FFF": {
+        "name": "A ne pas afficher"
+    },
+    "U3002": {
+        "name": "Vehicle configuration (PROXI)"
+    },
+    "U3003": {
+        "name": "Ancillary circuit"
+    },
+    "U3017": {
+        "name": "Check of the clock"
+    },
+    "U3501": {
+        "name": "CAN supply voltage"
+    },
+    "U3502": {
+        "name": "CAN supply voltage"
+    },
+    "U3FFF": {
+        "name": "A ne pas afficher"
+    }
+}

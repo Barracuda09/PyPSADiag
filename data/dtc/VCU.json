@@ -1,0 +1,2945 @@
+{
+    "_comment": {
+        "name": "VCU DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BVCU, EVCU_F, E_VCU_CTE1, E_VCU_CTE2, VCU_EMS8000, VCU_SEA, VCU_SEA_E. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B0050": {
+        "name": "Driver's seat belt sensor"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1150": {
+        "name": "Headlamp washer switch"
+    },
+    "B1182": {
+        "name": "Windscreen wash control"
+    },
+    "B11E2": {
+        "name": "Left-hand direction indicator"
+    },
+    "B11ED": {
+        "name": "Right-hand direction indicator"
+    },
+    "B1205": {
+        "name": "Instrument panel ECU"
+    },
+    "B1271": {
+        "name": "Indicateur de niveau de charge interne"
+    },
+    "B12B4": {
+        "name": "Module interne indicateur de staut de charge"
+    },
+    "B134D": {
+        "name": "Passenger compartment ventilation switch"
+    },
+    "B1400": {
+        "name": "Electric vehicle ECU supply voltage"
+    },
+    "B1634": {
+        "name": "Traction battery voltage"
+    },
+    "B1635": {
+        "name": "Current of the traction battery"
+    },
+    "B165C": {
+        "name": "Electric vehicle ECU"
+    },
+    "B165D": {
+        "name": "Starter switch"
+    },
+    "B165E": {
+        "name": "Switch  &quot;N&quot;"
+    },
+    "B165F": {
+        "name": "Switch  &quot;D&quot;"
+    },
+    "B1660": {
+        "name": "Switch  &quot;R&quot;"
+    },
+    "B1661": {
+        "name": "Prolonged depression of the brake pedal  ( vehicle moving )"
+    },
+    "B1662": {
+        "name": "Deceleration  ( No press on the brake )"
+    },
+    "B1663": {
+        "name": "Passenger compartment heating switch"
+    },
+    "B1665": {
+        "name": "Wiper controls under the steering wheel"
+    },
+    "B175C": {
+        "name": "Suspected failure of the door open switch on the driver's side"
+    },
+    "B1819": {
+        "name": "Brake fluid level"
+    },
+    "B273C": {
+        "name": "Entrée plantage numérique"
+    },
+    "B2F29": {
+        "name": "Hazard lights switch"
+    },
+    "B3A11": {
+        "name": "Performance du circuit de commande de l'actionneur du détendeur de réfrigérant de climatisation"
+    },
+    "C0504": {
+        "name": "Front left wheel speed sensor"
+    },
+    "C050A": {
+        "name": "Front right wheel speed sensor"
+    },
+    "C0510": {
+        "name": "Rear left wheel speed sensor"
+    },
+    "C0516": {
+        "name": "Rear right wheel speed sensor"
+    },
+    "C1426": {
+        "name": "Wheel speed sensor"
+    },
+    "C2202": {
+        "name": "VIN d'origine : discordant/manquant"
+    },
+    "P0071": {
+        "name": "Capteur de température d'air ambiant - Performance"
+    },
+    "P0072": {
+        "name": "Capteur de température d'air ambiant - Circuit bas"
+    },
+    "P0073": {
+        "name": "Capteur de température d'air ambiant - Circuit haut"
+    },
+    "P00DA": {
+        "name": "Plage/performance du circuit du capteur de température de l'air ambiant B"
+    },
+    "P00DB": {
+        "name": "Niveau bas du circuit du capteur de température de l'air ambiant B"
+    },
+    "P00DC": {
+        "name": "Circuit du capteur de température de l'air ambiant B haut"
+    },
+    "P0120": {
+        "name": "Accelerator pedal sensor 1"
+    },
+    "P0129": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P01E4": {
+        "name": "Performance du circuit du capteur de température du liquide de refroidissement du moteur 3"
+    },
+    "P01E5": {
+        "name": "Capteur de température du liquide de refroidissement moteur 3 - Circuit bas"
+    },
+    "P01E6": {
+        "name": "Capteur de température du liquide de refroidissement moteur 3 - Circuit haut"
+    },
+    "P0215": {
+        "name": "Principal relay control"
+    },
+    "P0217": {
+        "name": "Température liquide de refroidissement trop élevée"
+    },
+    "P0220": {
+        "name": "Accelerator pedal sensor 2"
+    },
+    "P0480": {
+        "name": "Fan assembly"
+    },
+    "P0481": {
+        "name": "Fan assembly 2 control circuit"
+    },
+    "P0482": {
+        "name": "Fan assembly"
+    },
+    "P0483": {
+        "name": "Fan assembly"
+    },
+    "P0484": {
+        "name": "Fan assembly"
+    },
+    "P0501": {
+        "name": "Vehicle speed sensor signal"
+    },
+    "P050F": {
+        "name": "Insufficient braking circuit vacuum level"
+    },
+    "P0513": {
+        "name": "Coded engine immobiliser code"
+    },
+    "P0515": {
+        "name": "Temperature sensor of the traction battery"
+    },
+    "P0525": {
+        "name": "Cruise control switch"
+    },
+    "P0527": {
+        "name": "Fan assembly"
+    },
+    "P0530": {
+        "name": "Air conditioning compressor clutch"
+    },
+    "P0531": {
+        "name": "Air conditioning circuit pressure sensor"
+    },
+    "P0532": {
+        "name": "Air conditioning circuit pressure sensor"
+    },
+    "P0533": {
+        "name": "Air conditioning circuit pressure sensor"
+    },
+    "P0534": {
+        "name": "Heat pump function (loss of load)"
+    },
+    "P0535": {
+        "name": "Heat pump function (frozen air conditioning evaporator)"
+    },
+    "P0555": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0556": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P0560": {
+        "name": "Ancillaries battery"
+    },
+    "P0562": {
+        "name": "Ancillaries battery voltage level"
+    },
+    "P0563": {
+        "name": "Ancillaries battery voltage level"
+    },
+    "P0564": {
+        "name": "Contacteur de régulateur de vitesse 1"
+    },
+    "P0571": {
+        "name": "Intersystems CAN"
+    },
+    "P0572": {
+        "name": "Contacteur de freinage 1 coincé sur ON"
+    },
+    "P0573": {
+        "name": "Bouton de freinage 1 bloqué sur Off"
+    },
+    "P0579": {
+        "name": "Cruise control"
+    },
+    "P057A": {
+        "name": "Brake pedal sensor 1"
+    },
+    "P0585": {
+        "name": "Corrélation régulateurs de vitesse 1/2"
+    },
+    "P058B": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P058C": {
+        "name": "Ancillaries battery or battery charge status unit"
+    },
+    "P058E": {
+        "name": "Temperature of the traction battery modules"
+    },
+    "P058F": {
+        "name": "Average temperature of the traction battery"
+    },
+    "P0591": {
+        "name": "Vehicle speed limitation"
+    },
+    "P059A": {
+        "name": "Controlled air inlet module position sensor"
+    },
+    "P059B": {
+        "name": "Controlled air inlet module position sensor"
+    },
+    "P05A3": {
+        "name": "Control of the controlled air intake module"
+    },
+    "P05B2": {
+        "name": "Control of the controlled air intake module"
+    },
+    "P05C0": {
+        "name": "Control of the controlled air intake module"
+    },
+    "P05DB": {
+        "name": "Brake pedal sensor 2"
+    },
+    "P05E3": {
+        "name": "Handbrake"
+    },
+    "P0601": {
+        "name": "Module de contrôle interne - Erreur somme de contrôle"
+    },
+    "P0603": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P0604": {
+        "name": "Mémoire RAM (mémoire vive) de module de contrôle interne - Erreur"
+    },
+    "P0605": {
+        "name": "ROM module de contrôle interne"
+    },
+    "P0606": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P060A": {
+        "name": "Module de contrôle interne - Processeur de surveillance - Performance"
+    },
+    "P060B": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P060C": {
+        "name": "Rendement du processeur principal du module de commande interne"
+    },
+    "P060D": {
+        "name": "Accelerator pedal position sensor signal"
+    },
+    "P0610": {
+        "name": "Configuration"
+    },
+    "P0615": {
+        "name": "Starter relay control"
+    },
+    "P061A": {
+        "name": "Module de contrôle interne - Performance de couple"
+    },
+    "P061B": {
+        "name": "Module de contrôle interne - Performance de calcul de couple"
+    },
+    "P061E": {
+        "name": "Handbrake switch"
+    },
+    "P062C": {
+        "name": "Vehicle Speed limitation"
+    },
+    "P062F": {
+        "name": "Module de contrôle interne - Erreur d'EEPROM"
+    },
+    "P0630": {
+        "name": "Configuration of the VIN"
+    },
+    "P0642": {
+        "name": "Tension de référence capteur 1 - Circuit : bas"
+    },
+    "P0643": {
+        "name": "Tension de référence capteur 1 - Circuit : haut"
+    },
+    "P0657": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0658": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0659": {
+        "name": "Sensors N° 1 5 volt electrical supply"
+    },
+    "P0666": {
+        "name": "Hybrid drive train supervisor ECU internal temperature sensor"
+    },
+    "P0685": {
+        "name": "Power relay control"
+    },
+    "P0686": {
+        "name": "Power relay control"
+    },
+    "P0687": {
+        "name": "Power relay control"
+    },
+    "P0691": {
+        "name": "Fan assembly control"
+    },
+    "P0692": {
+        "name": "Fan assembly control"
+    },
+    "P0693": {
+        "name": "Fan assembly control"
+    },
+    "P0694": {
+        "name": "Fan assembly control"
+    },
+    "P0697": {
+        "name": "Capteur - Tension de référence 3 - Circuit"
+    },
+    "P06A1": {
+        "name": "Control of the air conditioning compressor and of the passenger compartment heating"
+    },
+    "P06A3": {
+        "name": "Circuit D de la tension de référence du capteur - Ouvert"
+    },
+    "P06AF": {
+        "name": "Drive train supervisor ECU"
+    },
+    "P06B0": {
+        "name": "Accelerator pedal sensor supply 1"
+    },
+    "P06B1": {
+        "name": "Capteur - Alimentation 1 - Circuit bas"
+    },
+    "P06B2": {
+        "name": "Capteur - Alimentation 1 - Circuit haut"
+    },
+    "P06B3": {
+        "name": "Accelerator pedal sensor supply 2"
+    },
+    "P06D3": {
+        "name": "Niveau bas du circuit 5 de tension de référence du capteur"
+    },
+    "P06D4": {
+        "name": "Niveau haut du circuit 5 de tension de référence du capteur"
+    },
+    "P06D7": {
+        "name": "Niveau bas du circuit 6 de tension de référence du capteur"
+    },
+    "P06D8": {
+        "name": "Niveau haut du circuit 6 de tension de référence du capteur"
+    },
+    "P06E6": {
+        "name": "Brake pedal sensor 1 supply"
+    },
+    "P0812": {
+        "name": "Park finger locking actuator"
+    },
+    "P090E": {
+        "name": "système de chauffage de la batterie de traction"
+    },
+    "P090F": {
+        "name": "système de chauffage de la batterie de traction"
+    },
+    "P092F": {
+        "name": "Fusible D haute tension"
+    },
+    "P0947": {
+        "name": "low level"
+    },
+    "P0948": {
+        "name": "high level"
+    },
+    "P0A01": {
+        "name": "Performance du circuit A du capteur de température de liquide de refroidissement de l'inverseur"
+    },
+    "P0A02": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0A03": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0A08": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P0A0A": {
+        "name": "Line for control of the status of the electric circuit breaker connector and of the locking of the high voltage connectors"
+    },
+    "P0A23": {
+        "name": "Controlled alternator"
+    },
+    "P0A2B": {
+        "name": "Temperature sensor of the electric traction machine"
+    },
+    "P0A2E": {
+        "name": "Temperature sensor of the electric traction machine"
+    },
+    "P0A30": {
+        "name": "Temperature sensor of the electric traction machine"
+    },
+    "P0A3C": {
+        "name": "Electric drive machine inverter"
+    },
+    "P0A3E": {
+        "name": "Electric drive machine inverter"
+    },
+    "P0A78": {
+        "name": "Electric drive machine inverter"
+    },
+    "P0A7A": {
+        "name": "Electric drive machine inverter"
+    },
+    "P0A7C": {
+        "name": "Electric drive machine inverter temperature"
+    },
+    "P0A7D": {
+        "name": "État de charge du bloc batterie hybride - Bas"
+    },
+    "P0A7E": {
+        "name": "Traction battery"
+    },
+    "P0A90": {
+        "name": "Electric drive machine inverter"
+    },
+    "P0A94": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P0A95": {
+        "name": "Fusible haute tension A"
+    },
+    "P0AA0": {
+        "name": "contacteur positif interne à la batterie de traction"
+    },
+    "P0AA1": {
+        "name": "Traction battery internal power switch soldered"
+    },
+    "P0AA2": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0AA4": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0AA5": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0AA6": {
+        "name": "Insulation of the traction circuit"
+    },
+    "P0AD9": {
+        "name": "Traction battery internal power switch open"
+    },
+    "P0ADA": {
+        "name": "Performance du circuit de contrôle du contacteur positif de batterie hybride/EV"
+    },
+    "P0ADC": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0AE1": {
+        "name": "Traction battery internal power pre-charge switch circuit"
+    },
+    "P0AED": {
+        "name": "Front electric drive machine inverter temperature sensor"
+    },
+    "P0AEE": {
+        "name": "Electric drive machine inverter temperature sensor"
+    },
+    "P0AF1": {
+        "name": "Electric drive machine inverter temperature sensor"
+    },
+    "P0AF2": {
+        "name": "Electric drive machine inverter temperature sensor"
+    },
+    "P0AF8": {
+        "name": "Traction battery"
+    },
+    "P0AFA": {
+        "name": "Insulation of the traction circuit"
+    },
+    "P0AFB": {
+        "name": "Insulation of the traction circuit"
+    },
+    "P0AFD": {
+        "name": "Temperature of the traction battery"
+    },
+    "P0C30": {
+        "name": "État de charge haut pack batterie hybride"
+    },
+    "P0C32": {
+        "name": "Traction battery cooling circuit"
+    },
+    "P0C39": {
+        "name": "On-board charger/direct voltage transformer assembly temperature sensor  (DC/DC)"
+    },
+    "P0C3C": {
+        "name": "On-board charger/direct voltage transformer assembly temperature sensor  (DC/DC)"
+    },
+    "P0C3E": {
+        "name": "Direct voltage transformer internal temperature sensor 2"
+    },
+    "P0C42": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0C43": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0C44": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0C45": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0C46": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0C47": {
+        "name": "Hybrid drive train cooling circuit electric coolant pump"
+    },
+    "P0C48": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0C49": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0C4C": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0C4D": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0C73": {
+        "name": "Performances de commande A de pompe à liquide de refroidissement électronique moteur"
+    },
+    "P0C78": {
+        "name": "Traction battery pre-charging system"
+    },
+    "P0CA4": {
+        "name": "Traction battery charging voltage"
+    },
+    "P0CA6": {
+        "name": "Traction battery charge current"
+    },
+    "P0CBD": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0CC0": {
+        "name": "Drive train cooling circuit coolant temperature sensor"
+    },
+    "P0CC7": {
+        "name": "relais de charge fermé"
+    },
+    "P0CD2": {
+        "name": "Performances du circuit de commande de déverrouillage de porte A port de charge"
+    },
+    "P0CD6": {
+        "name": "Plage/performance du circuit du capteur de température de sortie du liquide de refroidissement du bloc batterie hybride"
+    },
+    "P0CD7": {
+        "name": "Capteur de température de sortie du liquide de refroidissement du bloc batterie hybride - Circuit bas"
+    },
+    "P0CD8": {
+        "name": "Capteur de température de sortie de liquide de refroidissement du bloc batterie hybride - Circuit haut"
+    },
+    "P0CDF": {
+        "name": "Coolant-air conditioning heat exchanger solenoid valve"
+    },
+    "P0CE2": {
+        "name": "Coolant-air conditioning heat exchanger solenoid valve"
+    },
+    "P0CE3": {
+        "name": "Traction battery cooling circuit solenoid valve"
+    },
+    "P0CE9": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P0CEA": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P0CEB": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P0CEC": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P0CEF": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF0": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF1": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF2": {
+        "name": "Traction battery cooling circuit coolant temperature sensor"
+    },
+    "P0CF3": {
+        "name": "Control pilot"
+    },
+    "P0CF4": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CF5": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CF8": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CF9": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CFA": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CFB": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CFD": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CFE": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0CFF": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0D07": {
+        "name": "Traction battery internal rapid charging circuit positive power switch"
+    },
+    "P0D08": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0D0A": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0D0C": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0D0D": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0D0E": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0D0F": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0D10": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0D14": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0D15": {
+        "name": "Circuit breaker connector locking"
+    },
+    "P0D16": {
+        "name": "Traction circuit control line"
+    },
+    "P0D19": {
+        "name": "Traction circuit control line"
+    },
+    "P0D1A": {
+        "name": "Heating - air conditioning unit solenoid valve"
+    },
+    "P0D1D": {
+        "name": "Heating - air conditioning unit solenoid valve"
+    },
+    "P0D1E": {
+        "name": "Heating - air conditioning unit solenoid valve"
+    },
+    "P0D22": {
+        "name": "Traction battery on-board charger output current"
+    },
+    "P0D24": {
+        "name": "Traction battery on-board charger internal temperature"
+    },
+    "P0D28": {
+        "name": "Traction battery on-board charger input voltage"
+    },
+    "P0D29": {
+        "name": "Current entering the on-board charger too low"
+    },
+    "P0D2A": {
+        "name": "Excessive current entering the battery charger"
+    },
+    "P0D2B": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0D32": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P0D37": {
+        "name": "Current of the traction battery"
+    },
+    "P0D56": {
+        "name": "Proximity detection"
+    },
+    "P0D5C": {
+        "name": "Traction battery on-board charger output power"
+    },
+    "P0D6D": {
+        "name": "Electric air conditioning compressor voltage"
+    },
+    "P0D6E": {
+        "name": "Air conditioning compressor"
+    },
+    "P0D92": {
+        "name": "Performances basses de circuit de contrôle de serrure de coupleur chargeur de batterie"
+    },
+    "P0D93": {
+        "name": "Performances hautes de circuit de contrôle de serrure de coupleur chargeur de batterie"
+    },
+    "P0D94": {
+        "name": "Onboard charger of the traction battery"
+    },
+    "P0D98": {
+        "name": "Onboard charger of the traction battery"
+    },
+    "P0D9A": {
+        "name": "Plage/performances circuit de capteur A de température coupleur chargeur de batterie"
+    },
+    "P0D9B": {
+        "name": "Circuit bas de capteur A de température coupleur chargeur de batterie"
+    },
+    "P0D9C": {
+        "name": "Circuit haut de capteur A de température coupleur chargeur de batterie"
+    },
+    "P0D9E": {
+        "name": "Onboard charger of the traction battery"
+    },
+    "P0DE6": {
+        "name": "Insulation of the traction circuit"
+    },
+    "P0DE7": {
+        "name": "Insulation of the traction circuit"
+    },
+    "P0E13": {
+        "name": "Electric coolant heater"
+    },
+    "P0E14": {
+        "name": "Electric coolant heater"
+    },
+    "P0E15": {
+        "name": "Electric coolant heater"
+    },
+    "P0E19": {
+        "name": "Performances de commande B du chauffage de liquide de refroidissement du pack de la batterie hybride/EV"
+    },
+    "P0E1A": {
+        "name": "Electric drive train cooling circuit pump control"
+    },
+    "P0E1F": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0E2F": {
+        "name": "Fusible B haute tension"
+    },
+    "P0E30": {
+        "name": "Fusible C haute tension"
+    },
+    "P0E3C": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P0E56": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P0E57": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P0E5F": {
+        "name": "Température A de coupleur chargeur de batterie trop élevée"
+    },
+    "P0E60": {
+        "name": "Traction battery charge control circuit"
+    },
+    "P0E68": {
+        "name": "On-board charger/direct voltage transformer assembly"
+    },
+    "P0E6A": {
+        "name": "Traction battery internal power pre-charge switch"
+    },
+    "P0E6F": {
+        "name": "Traction battery internal negative power switch"
+    },
+    "P0E70": {
+        "name": "Traction battery internal positive power switch"
+    },
+    "P0E72": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0E73": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P0EBC": {
+        "name": "Circuit du capteur de température de réfrigérant de climatisation 1"
+    },
+    "P0EBF": {
+        "name": "Plage/Performance du circuit A du capteur de température de réfrigérant de climatisation"
+    },
+    "P0EE3": {
+        "name": "Controlled pressure relief valve"
+    },
+    "P0EE8": {
+        "name": "Plage/performances circuit de capteur B de température coupleur chargeur de batterie"
+    },
+    "P0EE9": {
+        "name": "Circuit bas de capteur B de température coupleur chargeur de batterie"
+    },
+    "P0EEA": {
+        "name": "Circuit haut de capteur B de température coupleur chargeur de batterie"
+    },
+    "P0EED": {
+        "name": "Traction battery maximum discharge power"
+    },
+    "P0FB2": {
+        "name": "Fusible haute tension E"
+    },
+    "P1001": {
+        "name": "Contact coupé - Temporisation - Fonctionnement : trop rapide"
+    },
+    "P1002": {
+        "name": "Contact coupé - Temporisation - Fonctionnement : trop lent"
+    },
+    "P1003": {
+        "name": "Vehicle crash signal"
+    },
+    "P1008": {
+        "name": "Heating unit pressure sensor supply"
+    },
+    "P100E": {
+        "name": "Braking circuit vacuum sensor 1 supply"
+    },
+    "P100F": {
+        "name": "Braking circuit vacuum sensor 2 supply"
+    },
+    "P1010": {
+        "name": "Braking circuit vacuum sensor 2"
+    },
+    "P101B": {
+        "name": "Door locks status sensor signal"
+    },
+    "P102A": {
+        "name": "Ancillaries battery"
+    },
+    "P102B": {
+        "name": "Ancillaries battery disconnected"
+    },
+    "P102C": {
+        "name": "Ancillaries battery"
+    },
+    "P102D": {
+        "name": "Ancillaries battery"
+    },
+    "P102F": {
+        "name": "Battery charge status unit"
+    },
+    "P104A": {
+        "name": "Engine compartment air conditioning evaporator pressure relief valve"
+    },
+    "P104B": {
+        "name": "Engine compartment air conditioning evaporator pressure relief valve"
+    },
+    "P1058": {
+        "name": "Ancillaries battery 1 switch"
+    },
+    "P105D": {
+        "name": "Maximum voltage of the traction battery cells"
+    },
+    "P105E": {
+        "name": "Traction battery cells minimum voltage"
+    },
+    "P105F": {
+        "name": "Traction battery  ( temperature too high )"
+    },
+    "P1060": {
+        "name": "Park finger locking actuator"
+    },
+    "P1061": {
+        "name": "Temperature sensor of a traction battery module"
+    },
+    "P1068": {
+        "name": "Traction battery first fault level"
+    },
+    "P1069": {
+        "name": "Traction battery second fault level"
+    },
+    "P106A": {
+        "name": "Traction battery third fault level"
+    },
+    "P106C": {
+        "name": "Status of the circuit breaker"
+    },
+    "P106D": {
+        "name": "Rapid charger function"
+    },
+    "P106E": {
+        "name": "Traction battery electrical insulation status"
+    },
+    "P106F": {
+        "name": "Operating status of the electric traction machine"
+    },
+    "P1070": {
+        "name": "Electric drive machine discharge mode active"
+    },
+    "P1071": {
+        "name": "Electric drive machine :  overspeed"
+    },
+    "P1072": {
+        "name": "Electric drive machine :  excess voltage"
+    },
+    "P1073": {
+        "name": "Electric drive machine :  speed too low"
+    },
+    "P1074": {
+        "name": "Electric drive machine :  under voltage"
+    },
+    "P107C": {
+        "name": "Electric drive machine :  excess current"
+    },
+    "P107D": {
+        "name": "Operating status of the electric traction machine"
+    },
+    "P107E": {
+        "name": "Front electric drive machine"
+    },
+    "P107F": {
+        "name": "Front electric drive machine"
+    },
+    "P1080": {
+        "name": "On-board charger/direct voltage transformer assembly discharge mode active"
+    },
+    "P1081": {
+        "name": "First fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P1082": {
+        "name": "Second fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P1083": {
+        "name": "Third fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P1084": {
+        "name": "Direct voltage transformer"
+    },
+    "P1085": {
+        "name": "Direct voltage transformer"
+    },
+    "P1086": {
+        "name": "Operating status of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108B": {
+        "name": "First fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108C": {
+        "name": "Second fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108D": {
+        "name": "Third fault level of the on-board charger/direct voltage transformer assembly"
+    },
+    "P108E": {
+        "name": "View the ABS/ESP ECU fault codes"
+    },
+    "P1090": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P1091": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1092": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1093": {
+        "name": "Controlled pressure relief valve"
+    },
+    "P1094": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1095": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1096": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1097": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1098": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P1099": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109A": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109B": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109C": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109D": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P109E": {
+        "name": "Air conditioning circuit ON/OFF solenoid valve ‎1"
+    },
+    "P109F": {
+        "name": "Air conditioning circuit ON/OFF solenoid valve ‎2"
+    },
+    "P10A1": {
+        "name": "Air conditioning circuit ON/OFF solenoid valve ‎2"
+    },
+    "P10A2": {
+        "name": "3-way electrovalve"
+    },
+    "P10A3": {
+        "name": "Engine compartment air conditioning evaporator pressure relief valve"
+    },
+    "P10A4": {
+        "name": "Refrigerant pressure sensor (high pressure)"
+    },
+    "P10A5": {
+        "name": "Refrigerant pressure sensor (low pressure)"
+    },
+    "P10A6": {
+        "name": "Refrigerant pressure sensor (medium pressure)"
+    },
+    "P10A7": {
+        "name": "Refrigerant temperature sensor"
+    },
+    "P10A8": {
+        "name": "Air conditioning circuit temperature sensor"
+    },
+    "P10A9": {
+        "name": "Air conditioning circuit temperature sensor"
+    },
+    "P10AA": {
+        "name": "Direct voltage transformer  cooling system"
+    },
+    "P10AC": {
+        "name": "Plausibility fault, difference in the temperature of the traction battery"
+    },
+    "P10AD": {
+        "name": "Plausibility fault, difference in the temperature of the traction battery"
+    },
+    "P10AE": {
+        "name": "Plausibility fault, difference in the temperature of the traction battery"
+    },
+    "P10AF": {
+        "name": "Traction battery"
+    },
+    "P10B0": {
+        "name": "Traction battery  ( minor fault )"
+    },
+    "P10B1": {
+        "name": "Unwanted acceleration  ( accelerator pedal released )"
+    },
+    "P10B2": {
+        "name": "Traction battery relay"
+    },
+    "P10B3": {
+        "name": "Traction battery energy"
+    },
+    "P10B4": {
+        "name": "Traction battery"
+    },
+    "P10B5": {
+        "name": "Accelerator pedal  signal"
+    },
+    "P10B6": {
+        "name": "Charging the traction battery"
+    },
+    "P10B7": {
+        "name": "Onboard charger of the traction battery"
+    },
+    "P10B8": {
+        "name": "Communication fault between the on-board charger/direct voltage transformer assembly and the traction battery"
+    },
+    "P10B9": {
+        "name": "High front electric drive machine torque"
+    },
+    "P10BC": {
+        "name": "Electric drive machine"
+    },
+    "P10BD": {
+        "name": "Ancillaries electrical network (12 V)"
+    },
+    "P10BE": {
+        "name": "Internal diagnostics of the electric vehicle ECU (BVCU)"
+    },
+    "P10C4": {
+        "name": "On-board charger/direct voltage transformer assembly internal alternating voltage value"
+    },
+    "P10C5": {
+        "name": "Wired circuit between the junction box and the on-board charger/direct voltage transformer assembly"
+    },
+    "P10C6": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P10C7": {
+        "name": "Communication between the on-board charger/direct voltage transformer assembly and the traction battery"
+    },
+    "P10C9": {
+        "name": "Thermal runaway of the traction battery cells"
+    },
+    "P10DB": {
+        "name": "indisponibilité totale de la boîte de vitesses"
+    },
+    "P10DC": {
+        "name": "Partial unavailability of the electric drive machine"
+    },
+    "P10DD": {
+        "name": "Total unavailability of the electric drive machine"
+    },
+    "P10E1": {
+        "name": "Front electric drive machine"
+    },
+    "P10E5": {
+        "name": "On-board charger/direct voltage transformer assembly"
+    },
+    "P10E6": {
+        "name": "On-board charger/direct voltage transformer assembly"
+    },
+    "P10EF": {
+        "name": "Air conditioning circuit pressure too low"
+    },
+    "P10F1": {
+        "name": "Air conditioning circuit pressure too high"
+    },
+    "P10F2": {
+        "name": "Overheating of the electric drive train cooling circuit"
+    },
+    "P10F3": {
+        "name": "Overheating of the traction battery cooling circuit"
+    },
+    "P10F7": {
+        "name": "Traction battery charge system circuit"
+    },
+    "P10FB": {
+        "name": "Charge terminal"
+    },
+    "P10FC": {
+        "name": "Electric drive chain cooling circuit"
+    },
+    "P10FD": {
+        "name": "Engine compartment air conditioning evaporator pressure relief valve"
+    },
+    "P111D": {
+        "name": "Phase U control"
+    },
+    "P112A": {
+        "name": "Electric drive machine inverter temperature sensor"
+    },
+    "P113B": {
+        "name": "Warning lamps flashing request from the rear electric drive machine ECU"
+    },
+    "P113F": {
+        "name": "Rear electric drive machine ECU"
+    },
+    "P114A": {
+        "name": "Request to flash the warning lamps from the on-board charger/direct voltage transformer assembly ECU"
+    },
+    "P114B": {
+        "name": "demande de clignotement des voyants d'alerte par le calculateur de batterie de traction"
+    },
+    "P114D": {
+        "name": "Fonction pompe à chaleur (plausibilité de débit d'eau haute temperature)"
+    },
+    "P114E": {
+        "name": "Refrigerant temperature sensor"
+    },
+    "P115D": {
+        "name": "Capteur de temperature liquide de refroidissement en sortie radiateur haute temperature"
+    },
+    "P117A": {
+        "name": "3-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P117B": {
+        "name": "3-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P117C": {
+        "name": "3-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P117D": {
+        "name": "3-way solenoid valve of the traction battery cooling circuit"
+    },
+    "P1181": {
+        "name": "Braking vacuum circuit"
+    },
+    "P1182": {
+        "name": "Braking vacuum circuit"
+    },
+    "P11BA": {
+        "name": "Vacuum pump"
+    },
+    "P11BB": {
+        "name": "Vacuum pump relay"
+    },
+    "P11BC": {
+        "name": "Vacuum pump relay"
+    },
+    "P11BF": {
+        "name": "Traction battery charge status difficulty"
+    },
+    "P11C0": {
+        "name": "Fuel preheating control unit"
+    },
+    "P11C3": {
+        "name": "Fuel preheating control unit"
+    },
+    "P120C": {
+        "name": "On-board charger/direct voltage transformer assembly temperature sensor"
+    },
+    "P120D": {
+        "name": "On-board charger/direct voltage transformer assembly temperature"
+    },
+    "P120E": {
+        "name": "Heater matrix water pump"
+    },
+    "P121E": {
+        "name": "Control of the relay in the sealed fuse and relay box"
+    },
+    "P122B": {
+        "name": "Traction battery temperature too low warning"
+    },
+    "P122C": {
+        "name": "Traction battery temperature too high warning"
+    },
+    "P12DD": {
+        "name": "Charging socket locking actuator control circuit"
+    },
+    "P12DE": {
+        "name": "Charging socket locking actuator control circuit"
+    },
+    "P12DF": {
+        "name": "Charging socket locking actuator control circuit"
+    },
+    "P12E0": {
+        "name": "Charging socket locking actuator control circuit"
+    },
+    "P12E1": {
+        "name": "Charging socket locking actuator control circuit"
+    },
+    "P12EB": {
+        "name": "Electric drive machine cooling circuit temperature sensor"
+    },
+    "P12EC": {
+        "name": "Electric drive machine cooling circuit temperature sensor"
+    },
+    "P12ED": {
+        "name": "Traction battery cooling circuit electric coolant pump"
+    },
+    "P12F1": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P12F3": {
+        "name": "On-board charger/direct voltage transformer assembly internal alternating current sensor electrical circuit"
+    },
+    "P12F6": {
+        "name": "Traction battery on-board charger input current"
+    },
+    "P12FA": {
+        "name": "On-board charger/direct voltage transformer assembly output direct voltage value"
+    },
+    "P135B": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P135D": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P135E": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P135F": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P136A": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "P136B": {
+        "name": "Electric air conditioning compressor"
+    },
+    "P136C": {
+        "name": "Refrigerant temperature sensor"
+    },
+    "P136D": {
+        "name": "Refrigerant temperature sensor"
+    },
+    "P136E": {
+        "name": "Temperature sensor of the traction battery"
+    },
+    "P136F": {
+        "name": "Traction battery cooling circuit"
+    },
+    "P1370": {
+        "name": "diode de puissance 12V"
+    },
+    "P1371": {
+        "name": "Rear electric drive machine torque"
+    },
+    "P137D": {
+        "name": "Electric drive machine locking system"
+    },
+    "P137E": {
+        "name": "système de verrouillage de la machine électrique de traction arrière"
+    },
+    "P137F": {
+        "name": "Rear electric drive machine"
+    },
+    "P13AD": {
+        "name": "Engine management ECU"
+    },
+    "P13BA": {
+        "name": "Ancillaries battery"
+    },
+    "P13BE": {
+        "name": "Ancillaries battery voltage regulation"
+    },
+    "P13F5": {
+        "name": "On-board charger/direct voltage transformer assembly internal current measurement"
+    },
+    "P13FD": {
+        "name": "On-board charger/direct voltage transformer assembly internal current measurement"
+    },
+    "P1430": {
+        "name": "Loss of isolation resistance from the electric air conditioning compressor"
+    },
+    "P1431": {
+        "name": "Dégradation de la résistance d'isolation de la chaine de traction electrique"
+    },
+    "P143F": {
+        "name": "relais du commande du flux de courant"
+    },
+    "P1440": {
+        "name": "Electric coolant heater locking system"
+    },
+    "P1441": {
+        "name": "Electric coolant heater locking system  ( additional  )"
+    },
+    "P1444": {
+        "name": "Module d'inverseur de puissance - Mode de contrôle incorrect"
+    },
+    "P1452": {
+        "name": "Cooling fan  of the on-board charger/direct voltage transformer assembly"
+    },
+    "P149A": {
+        "name": "Module de ventilateur de refroidissement - Interne"
+    },
+    "P149F": {
+        "name": "Moteur du ventilateur de refroidissement bloqué"
+    },
+    "P14A0": {
+        "name": "Moteur Ventilateur de Refroidissement Partiellement Bloqué"
+    },
+    "P14B5": {
+        "name": "Heat pump function (high pressure too high)"
+    },
+    "P14B6": {
+        "name": "Heat pump function (average pressure too high)"
+    },
+    "P14B7": {
+        "name": "Heat pump function (low pressure too high)"
+    },
+    "P14B8": {
+        "name": "Heat pump function (temperature too high)"
+    },
+    "P14B9": {
+        "name": "Heat pump function (inconsistency between high and low pressure)"
+    },
+    "P14BA": {
+        "name": "Heat pump operation  ( air con compressor command )"
+    },
+    "P14BB": {
+        "name": "Heating circuit coolant pump"
+    },
+    "P14BC": {
+        "name": "Heat pump function (high temperature)"
+    },
+    "P14BD": {
+        "name": "Heat pump operation  ( water flow of the water condenser )"
+    },
+    "P14BE": {
+        "name": "Heat pump operation  ( air flow )"
+    },
+    "P14BF": {
+        "name": "Fonction pompe à chaleur (débit d'eau à haute température)"
+    },
+    "P14CA": {
+        "name": "Fourth warning level of the traction battery"
+    },
+    "P14CB": {
+        "name": "Fifth warning level of the traction battery"
+    },
+    "P14CC": {
+        "name": "On-board charger locking system"
+    },
+    "P14CD": {
+        "name": "On-board charger locking system"
+    },
+    "P14CE": {
+        "name": "Electric coolant heater locking system"
+    },
+    "P14CF": {
+        "name": "Electric air conditioning compressor locking system"
+    },
+    "P14DC": {
+        "name": "On-board charger locking system"
+    },
+    "P14DF": {
+        "name": "Electric drive machine"
+    },
+    "P1501": {
+        "name": "Power steering"
+    },
+    "P1505": {
+        "name": "Collision detected"
+    },
+    "P1518": {
+        "name": "Stop lamps"
+    },
+    "P152C": {
+        "name": "Capot moteur - Interrupteur 2 - Circuit - Performance"
+    },
+    "P152D": {
+        "name": "Circuit 2 de commutation capot moteur bas"
+    },
+    "P152E": {
+        "name": "Capot moteur - Interrupteur 2 - Circuit haut"
+    },
+    "P152F": {
+        "name": "Capot moteur - Interrupteurs 2/1 - Corrélation"
+    },
+    "P1537": {
+        "name": "Accelerator pedal"
+    },
+    "P153A": {
+        "name": "Secondary ancillaries battery disconnected"
+    },
+    "P153B": {
+        "name": "Secondary ancillaries battery 2"
+    },
+    "P154A": {
+        "name": "isolement du compresseur électrique de refroidissment ou de chauffe-eau"
+    },
+    "P154D": {
+        "name": "incohérence entre le sens de rotation de l'avant de la machine de traction électrique et le sens de déplacement du véhicule"
+    },
+    "P157A": {
+        "name": "Engine compartment air conditioning evaporator pressure relief valve"
+    },
+    "P1593": {
+        "name": "Contacteur du régulateur de vitesse 1/2"
+    },
+    "P15B4": {
+        "name": "Accelerator pedal signal"
+    },
+    "P160A": {
+        "name": "Calibration reference"
+    },
+    "P160E": {
+        "name": "Supply cut-off during power latch"
+    },
+    "P160F": {
+        "name": "Approval reference"
+    },
+    "P1612": {
+        "name": "Coded engine immobiliser code"
+    },
+    "P1613": {
+        "name": "Configuration"
+    },
+    "P1614": {
+        "name": "Status of the hard point of the accelerator pedal"
+    },
+    "P1618": {
+        "name": "Tension de référence capteur 1 - Irrégulière"
+    },
+    "P161A": {
+        "name": "ECU en - Mode Plant Actif"
+    },
+    "P1621": {
+        "name": "Electric/hybrid drive train supervisor ECU  O( Safety level 2 O)"
+    },
+    "P1628": {
+        "name": "Brake pedal sensor"
+    },
+    "P1631": {
+        "name": "Hybrid drive train supervisor ECU"
+    },
+    "P1632": {
+        "name": "Limiting of torque  ( safety level 2 )"
+    },
+    "P1635": {
+        "name": "Main relay control  O:  low level"
+    },
+    "P1643": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P1644": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P1648": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P1655": {
+        "name": "Engine running information"
+    },
+    "P1656": {
+        "name": "Engine running information"
+    },
+    "P1657": {
+        "name": "Engine running information"
+    },
+    "P1665": {
+        "name": "Ancillaries electrical network (12 V)"
+    },
+    "P1667": {
+        "name": "Analogue / digital conversion not plausible"
+    },
+    "P1678": {
+        "name": "Heating circuit coolant pump"
+    },
+    "P1679": {
+        "name": "Heating circuit coolant pump"
+    },
+    "P167B": {
+        "name": "Arrêt contrôlé du système"
+    },
+    "P167D": {
+        "name": "Immobiliser  O:  TBTverrouillage dû au non-déverrouillage du calculateur superviseur de la chaîne de traction électrique"
+    },
+    "P168A": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P168B": {
+        "name": "Braking circuit vacuum sensor"
+    },
+    "P168C": {
+        "name": "4th-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P168D": {
+        "name": "5th-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P168E": {
+        "name": "4th-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P168F": {
+        "name": "5th-level fault on the on-board charger/direct voltage transformer assembly"
+    },
+    "P16AF": {
+        "name": "Power supply of the 5 V sensors"
+    },
+    "P16B1": {
+        "name": "Controlled air inlet module"
+    },
+    "P16B2": {
+        "name": "Controlled air inlet module"
+    },
+    "P16BE": {
+        "name": "Traction battery modules assembly resistive health status"
+    },
+    "P16BF": {
+        "name": "Traction battery modules assembly capacitive health status"
+    },
+    "P16C7": {
+        "name": "Configuration of the cruise control, speed limiter and vehicle speed curbing functions"
+    },
+    "P16CE": {
+        "name": "Braking circuit vacuum sensor signal"
+    },
+    "P16E6": {
+        "name": "ECU shutdown phase (power latch) not performed or not finished"
+    },
+    "P16F1": {
+        "name": "Semi-automatic/automatic parking system"
+    },
+    "P16F3": {
+        "name": "Semi-automatic/automatic parking system"
+    },
+    "P16F5": {
+        "name": "HCP interne - Défaillance PLD"
+    },
+    "P16F9": {
+        "name": "HCP interne - Performance d'arrêt"
+    },
+    "P1702": {
+        "name": "Powerlatch"
+    },
+    "P1707": {
+        "name": "Gear selection lever"
+    },
+    "P1716": {
+        "name": "Gear lever"
+    },
+    "P171B": {
+        "name": "Detection of incorrect pressing on the brake pedal"
+    },
+    "P171C": {
+        "name": "Detection of incorrect release of the brake pedal"
+    },
+    "P172E": {
+        "name": "Vehicle speed curbing reference value inconsistent"
+    },
+    "P177E": {
+        "name": "Discharge of the electric drive machine"
+    },
+    "P179E": {
+        "name": "Positive signal from the on-board charger/direct voltage transformer assembly temperature sensor"
+    },
+    "P179F": {
+        "name": "Negative signal from the on-board charger/direct voltage transformer assembly temperature sensor"
+    },
+    "P17C3": {
+        "name": "Park finger locking actuator"
+    },
+    "P17C4": {
+        "name": "Park finger locking actuator"
+    },
+    "P17CC": {
+        "name": "Brake pedal"
+    },
+    "P17F0": {
+        "name": "Traction battery circuit"
+    },
+    "P17F4": {
+        "name": "Ancillaries battery"
+    },
+    "P17F9": {
+        "name": "Solenoid valve / of the coolant - air conditioning heat exchanger ."
+    },
+    "P17FD": {
+        "name": "Coolant-air conditioning heat exchanger solenoid valve"
+    },
+    "P17FE": {
+        "name": "Air conditioning evaporator solenoid valve"
+    },
+    "P17FF": {
+        "name": "Heating circuit coolant pump"
+    },
+    "P1880": {
+        "name": "Fuel cell stack high temperature cooling circuit pump"
+    },
+    "P188F": {
+        "name": "Vehicle impact detected"
+    },
+    "P18E7": {
+        "name": "Fuel cell stack high temperature cooling circuit 3-way solenoid valve"
+    },
+    "P1902": {
+        "name": "Insulation check of the traction battery internal power switches"
+    },
+    "P1903": {
+        "name": "Charging the traction battery"
+    },
+    "P1904": {
+        "name": "Passenger compartment heating circuit"
+    },
+    "P1905": {
+        "name": "Braking circuit vacuum sensor 2"
+    },
+    "P1906": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P1907": {
+        "name": "Connection unit"
+    },
+    "P1908": {
+        "name": "Connection unit"
+    },
+    "P1909": {
+        "name": "Connection unit"
+    },
+    "P190A": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P190B": {
+        "name": "Air condtioning button"
+    },
+    "P190C": {
+        "name": "Locking of the charging socket unit"
+    },
+    "P190D": {
+        "name": "Traction battery internal power switches"
+    },
+    "P190E": {
+        "name": "On-board charger/direct voltage transformer assembly internal supply element current"
+    },
+    "P1910": {
+        "name": "Additional heating element"
+    },
+    "P1911": {
+        "name": "Electric drive machine"
+    },
+    "P191A": {
+        "name": "Additional heating control"
+    },
+    "P191B": {
+        "name": "Additional heating control"
+    },
+    "P191C": {
+        "name": "Additional heating control"
+    },
+    "P191D": {
+        "name": "Additional heating control"
+    },
+    "P1921": {
+        "name": "Front electric drive machine torque"
+    },
+    "P1922": {
+        "name": "Traction battery"
+    },
+    "P1923": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P1924": {
+        "name": "Charging socket unit"
+    },
+    "P1925": {
+        "name": "Lack of coherence between the status and the locking control of the charging socket"
+    },
+    "P1926": {
+        "name": "Charging socket unit proximity line"
+    },
+    "P1927": {
+        "name": "Charging socket unit"
+    },
+    "P1929": {
+        "name": "Passenger compartment air heating resistor"
+    },
+    "P192A": {
+        "name": "Traction battery cooling circuit"
+    },
+    "P192B": {
+        "name": "Traction battery cooling circuit"
+    },
+    "P198A": {
+        "name": "Premier niveau de defaillance du systeme de la pile a combustible assemblee Defaut systeme H2"
+    },
+    "P198B": {
+        "name": "Deuxieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut severe système"
+    },
+    "P198C": {
+        "name": "Troisieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut Systeme H2"
+    },
+    "P198D": {
+        "name": "Quatrieme niveau de defaillance du circuit de securite du systeme de la pile a combustible assemblee"
+    },
+    "P198E": {
+        "name": "Cinquieme niveau de defaillance du circuit de securite du systeme de la pile a combustible assemblee"
+    },
+    "P198F": {
+        "name": "Sixieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut systeme H2"
+    },
+    "P1990": {
+        "name": "Septieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut severe système"
+    },
+    "P1991": {
+        "name": "Huitieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut circuit securite"
+    },
+    "P1992": {
+        "name": "Neuvieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut systeme H2"
+    },
+    "P1993": {
+        "name": "Dixieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut severe systeme H2"
+    },
+    "P1994": {
+        "name": "Onzieme niveau de defaillance du systeme de la pile a combustible assemblee Defaut severe systeme H2"
+    },
+    "P19BB": {
+        "name": "Chargeur embarqué Système haute tension - Court-circuit impédant du côté du courant alternatif"
+    },
+    "P19BC": {
+        "name": "Chargeur embarqué Système haute tension - Court-circuit impédant du côté du courant continu"
+    },
+    "P19BD": {
+        "name": "Chargeur embarqué Système haute tension - Surintensité du côté courant continu"
+    },
+    "P19C6": {
+        "name": "Air conditioning activation switch jammed"
+    },
+    "P19C7": {
+        "name": "Passenger compartment air blower"
+    },
+    "P19C8": {
+        "name": "Passenger compartment temperature control"
+    },
+    "P19CD": {
+        "name": "Combined charging system"
+    },
+    "P19CE": {
+        "name": "Unexpected resetting of the ECU"
+    },
+    "P19D2": {
+        "name": "groupe motoventilateur de la batterie de traction"
+    },
+    "P19D4": {
+        "name": "préchauffage de la batterie de traction"
+    },
+    "P19D5": {
+        "name": "préchauffage de la batterie de traction"
+    },
+    "P19D6": {
+        "name": "préchauffage de la batterie de traction"
+    },
+    "P19D7": {
+        "name": "préchauffage de la batterie de traction"
+    },
+    "P19D8": {
+        "name": "vitesse véhicule provenant du calculateur de contrôle dynamique de stabilité et régime moteur provenant du calculateur de la machine électrique de traction"
+    },
+    "P1A00": {
+        "name": "Traction battery voltage sensor"
+    },
+    "P1A10": {
+        "name": "Current sensors of the traction battery"
+    },
+    "P1A11": {
+        "name": "Clé secrète non mémorisée dans l'ECU"
+    },
+    "P1A14": {
+        "name": "Traction battery"
+    },
+    "P1A1E": {
+        "name": "Circuit de contrôle du système thermique hybride"
+    },
+    "P1A40": {
+        "name": "Charging the traction battery"
+    },
+    "P1A4B": {
+        "name": "Traction battery cells voltage measurements"
+    },
+    "P1A54": {
+        "name": "Principal relay control"
+    },
+    "P1A69": {
+        "name": "On-board charger/direct voltage transformer assembly"
+    },
+    "P1A70": {
+        "name": "Poor or no production of electrical energy by the on-board charger/direct voltage transformer or charging socket unit locking malfunction"
+    },
+    "P1AB3": {
+        "name": "crabot de la machine électrique de traction"
+    },
+    "P1AB9": {
+        "name": "Couplage du crabot de la machine électrique de traction"
+    },
+    "P1ABE": {
+        "name": "Découplage du crabot de la machine électrique de traction"
+    },
+    "P1AC0": {
+        "name": "Découplage du crabot de la machine électrique de traction"
+    },
+    "P1AD2": {
+        "name": "Direct voltage (DC/DC) transformer"
+    },
+    "P1ADC": {
+        "name": "Erreur EEPROM module de commande interne MCPA"
+    },
+    "P1AEA": {
+        "name": "Traction battery"
+    },
+    "P1AED": {
+        "name": "Traction battery"
+    },
+    "P1AEF": {
+        "name": "Collision detected by the traction battery"
+    },
+    "P1AF2": {
+        "name": "Traction battery"
+    },
+    "P1B0C": {
+        "name": "Significant difference in voltage between the traction battery cells"
+    },
+    "P1B40": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P1B72": {
+        "name": "Performances de capteur de sortie de température de chauffage de liquide de refroidissement électrique"
+    },
+    "P1B73": {
+        "name": "Performances de capteur d'entrée de température de chauffage de liquide de refroidissement électrique"
+    },
+    "P1B74": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P1B78": {
+        "name": "Traction battery cells information"
+    },
+    "P1B79": {
+        "name": "Vehicle crash information wire circuit"
+    },
+    "P1B7A": {
+        "name": "Collision signal"
+    },
+    "P1B7C": {
+        "name": "Traction battery internal power switches"
+    },
+    "P1C8E": {
+        "name": "Alimentation 1 - Circuit : bas"
+    },
+    "P1C8F": {
+        "name": "Alimentation 1 - Circuit : élevé"
+    },
+    "P1CDB": {
+        "name": "Court-circuit de sortie de contrôle de réveil hybride/EV 1 à la batterie"
+    },
+    "P1CDC": {
+        "name": "Sortie de contrôle de réveil hybride/EV 1 - Court-circuit à la masse"
+    },
+    "P1CF8": {
+        "name": "Panne du système de chauffage de batterie"
+    },
+    "P1D52": {
+        "name": "Erreur de régulateur de vitesse du module de commande interne"
+    },
+    "P1D72": {
+        "name": "Câble de haute tension - Ouvert"
+    },
+    "P1DBA": {
+        "name": "Défaillance du système de refroidissement de batterie"
+    },
+    "P1DE0": {
+        "name": "Performances de capteur de température B de chauffage du liquide de refroidissement du pack de la batterie hybride/EV"
+    },
+    "P1DFD": {
+        "name": "Impossible de charger la batterie hybride/EV"
+    },
+    "P1E18": {
+        "name": "Module électronique de contrôle interne - Performance de stationnement"
+    },
+    "P1E1D": {
+        "name": "Performance de réveil incorrecte du module de commande"
+    },
+    "P1EA2": {
+        "name": "Performances de capteur de température de pompe A à liquide de refroidissement électronique moteur"
+    },
+    "P1EA3": {
+        "name": "Performances de capteur de température de pompe B à liquide de refroidissement électronique moteur"
+    },
+    "P1EA4": {
+        "name": "Performances de capteur de température A de pompe du liquide de refroidissement du pack de la batterie hybride/EV"
+    },
+    "P1EA5": {
+        "name": "Performances de capteur de température de pompe A à liquide de refroidissement"
+    },
+    "P1F00": {
+        "name": "a ne pas afficher"
+    },
+    "P2115": {
+        "name": "Performance d'arrêt minimum du capteur 1 de position de pédale d'accélérateur"
+    },
+    "P2116": {
+        "name": "Rendement de l'arrêt minimum du capteur de position de pédale d'accélérateur 2"
+    },
+    "P2122": {
+        "name": "Position of the accelerator pedal, signal 1"
+    },
+    "P2123": {
+        "name": "Position of the accelerator pedal, signal 1"
+    },
+    "P2127": {
+        "name": "Position of the accelerator pedal, signal 2"
+    },
+    "P2128": {
+        "name": "Position of the accelerator pedal, signal 2"
+    },
+    "P2137": {
+        "name": "Accelerator pedal position signals"
+    },
+    "P2138": {
+        "name": "Accelerator pedal position signals"
+    },
+    "P215B": {
+        "name": "Vitesse du véhicule - Corrélation de vitesse de l'arbre de sortie"
+    },
+    "P2166": {
+        "name": "Performance d'arrêt maximum du capteur 1 de position de pédale d'accélérateur"
+    },
+    "P2167": {
+        "name": "Performance d'arrêt maximum du capteur 2 de position de pédale d'accélérateur"
+    },
+    "P2181": {
+        "name": "Cooling circuit"
+    },
+    "P2183": {
+        "name": "Capteur de température du liquide de refroidissement du moteur 2 - Performance du circuit"
+    },
+    "P2184": {
+        "name": "Capteur de température du liquide de refroidissement moteur 2 - Circuit bas"
+    },
+    "P2185": {
+        "name": "Capteur de température du liquide de refroidissement moteur 2 - Circuit haut"
+    },
+    "P2227": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2228": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2229": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2230": {
+        "name": "Atmospheric pressure sensor"
+    },
+    "P2299": {
+        "name": "Accelerator pedal position sensor signal"
+    },
+    "P24EF": {
+        "name": "Remote controlled triggering signal"
+    },
+    "P24F0": {
+        "name": "Réveil du module de commande - Circuit bas"
+    },
+    "P24F1": {
+        "name": "Circuit de réveil du module de contrôle haut"
+    },
+    "P2510": {
+        "name": "Power relay control"
+    },
+    "P2515": {
+        "name": "Heating unit pressure sensor"
+    },
+    "P2516": {
+        "name": "Plage/Performance du circuit B du capteur de pression de réfrigérant de climatisation"
+    },
+    "P2525": {
+        "name": "Braking circuit vacuum sensor 1"
+    },
+    "P2531": {
+        "name": "Circuit bas de position de fonctionnement du commutateur d'allumage"
+    },
+    "P2532": {
+        "name": "Circuit haut de position de fonctionnement du commutateur d'allumage"
+    },
+    "P2534": {
+        "name": "Circuit bas de position de fonctionnement/démarrage du commutateur d'allumage"
+    },
+    "P2535": {
+        "name": "Circuit haut de position de fonctionnement/démarrage du commutateur d'allumage"
+    },
+    "P257D": {
+        "name": "Capot moteur - Interrupteur - Circuit - Plage/Performance"
+    },
+    "P257E": {
+        "name": "Capot moteur - Interrupteur - Circuit : bas"
+    },
+    "P257F": {
+        "name": "Capot moteur - Interrupteur - Circuit : haut"
+    },
+    "P2583": {
+        "name": "Distance alert ECU"
+    },
+    "P258A": {
+        "name": "Vacuum pump 1 control relay"
+    },
+    "P258C": {
+        "name": "Vacuum pump 1 control relay"
+    },
+    "P258D": {
+        "name": "Vacuum pump 1 control relay"
+    },
+    "P25EE": {
+        "name": "Vacuum pump 2 control relay"
+    },
+    "P25F0": {
+        "name": "Vacuum pump 2 control relay"
+    },
+    "P25F1": {
+        "name": "Vacuum pump 2 control relay"
+    },
+    "P2600": {
+        "name": "Electric coolant pump"
+    },
+    "P2601": {
+        "name": "Performance/blocage en position fermée du circuit de commande de pompe de liquide de refroidissement électrique"
+    },
+    "P2602": {
+        "name": "Electric water pump control"
+    },
+    "P2611": {
+        "name": "Circuit de contrôle de la soupape de distribution de réfrigérant de climatisation - ouvert"
+    },
+    "P2612": {
+        "name": "Circuit de contrôle de la soupape de distribution de réfrigérant de climatisation bas"
+    },
+    "P2613": {
+        "name": "Circuit de contrôle de la soupape de distribution du liquide de refroidissement de la climatisation/haut"
+    },
+    "P2670": {
+        "name": "Sensors N° 2 5 volt electrical supply"
+    },
+    "P2684": {
+        "name": "Sensors N° 3 5 volt electrical supply"
+    },
+    "P2685": {
+        "name": "Electrical supply"
+    },
+    "P2686": {
+        "name": "Electrical supply"
+    },
+    "P26C3": {
+        "name": "Module de contrôle interne - Performance du sélecteur électronique"
+    },
+    "P26DF": {
+        "name": "Brake pedal sensor 2 supply"
+    },
+    "P26FD": {
+        "name": "Air con compressor"
+    },
+    "P271A": {
+        "name": "Capteur de position du cliquet de stationnement 1 - Circuit : bas"
+    },
+    "P271B": {
+        "name": "Capteur de position du cliquet de stationnement 1 - Circuit : élevé"
+    },
+    "P271C": {
+        "name": "Capteur de position du cliquet de stationnement 2 - Circuit : bas"
+    },
+    "P271D": {
+        "name": "Capteur de position du cliquet de stationnement 2 - Circuit : élevé"
+    },
+    "P278B": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P278C": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P278D": {
+        "name": "Accelerator pedal sitff point signal"
+    },
+    "P27F6": {
+        "name": "Circuit C du capteur de position de cliquet de stationnement bas"
+    },
+    "P27F7": {
+        "name": "Circuit de capteur C de position de cliquet de stationnement haut"
+    },
+    "P288B": {
+        "name": "Performance du circuit d'actionneur de cliquet/verrouillage de stationnement"
+    },
+    "P2941": {
+        "name": "Circuit A de vanne de contrôle du liquide de refroidissement du système de propulsion hybride/EV amplitude/performance"
+    },
+    "P29BB": {
+        "name": "Performance du réchauffeur de liquide de refroidissement A"
+    },
+    "P2B28": {
+        "name": "Traction battery cooling circuit coolant pump"
+    },
+    "P2B29": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P2B2A": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P2B2F": {
+        "name": "Fan assembly"
+    },
+    "P2BE0": {
+        "name": "Circuit de capteur de niveau de liquide de refroidissement de batterie hybride/EV/ouvert"
+    },
+    "P2BE2": {
+        "name": "Circuit bas de capteur de niveau de liquide de refroidissement de batterie hybride/EV"
+    },
+    "P2C66": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P2C67": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P2C68": {
+        "name": "Electric drive train cooling circuit electric coolant pump"
+    },
+    "P2C96": {
+        "name": "circuit de désactivation de la batterie de traction"
+    },
+    "P2D00": {
+        "name": "Electric coolant pump motor of the electric drive train cooling circuit"
+    },
+    "P2D01": {
+        "name": "Surrégime de pompe à liquide de refroidissement A moteur électronique/air dans le système"
+    },
+    "P2D06": {
+        "name": "Surrégime de pompe à liquide de refroidissement B moteur électronique/air dans le système"
+    },
+    "P2D7D": {
+        "name": "Stopping of traction battery charging"
+    },
+    "P2DA0": {
+        "name": "Traction battery"
+    },
+    "P2DCE": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P2DD0": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P2DD1": {
+        "name": "Charging socket unit pilot line"
+    },
+    "P2E4B": {
+        "name": "Plage/performances circuit de capteur C de température coupleur chargeur de batterie"
+    },
+    "P2E4C": {
+        "name": "Circuit bas de capteur C de température coupleur chargeur de batterie"
+    },
+    "P2E4D": {
+        "name": "Circuit haut de capteur C de température coupleur chargeur de batterie"
+    },
+    "P2EBF": {
+        "name": "Commutateur mode chargement de batterie bloqué"
+    },
+    "P2F2F": {
+        "name": "performance de la pompe à huile du groupe motopropulseur A"
+    },
+    "P3028": {
+        "name": "Customer modification of the hybrid drive train supervisor ECU programming"
+    },
+    "P3059": {
+        "name": "Stop and Start function"
+    },
+    "P305B": {
+        "name": "Safety level 2 :  deactivation of the cruise control/speed limiter"
+    },
+    "P306E": {
+        "name": "Electric drive train supervisor ECU"
+    },
+    "P30A2": {
+        "name": "Identification number of the traction battery"
+    },
+    "U0001": {
+        "name": "Bus CAN-C"
+    },
+    "U0028": {
+        "name": "Bus A de communication du véhicule"
+    },
+    "U0037": {
+        "name": "Electric drive train supervisor ECU absent on the CAN HS1"
+    },
+    "U0046": {
+        "name": "Electric drive train supervisor ECU absent on the CAN  HS2"
+    },
+    "U0073": {
+        "name": "Intersystems CAN"
+    },
+    "U0074": {
+        "name": "Bus Powertrain (D-PT) CAN dédié désactivé"
+    },
+    "U0075": {
+        "name": "CAN hybrid network"
+    },
+    "U0076": {
+        "name": "ADAS CAN"
+    },
+    "U0079": {
+        "name": "Electric drive train CAN"
+    },
+    "U007C": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U0089": {
+        "name": "Electric drive train supervisor ECU absent on the CAN EPT"
+    },
+    "U0103": {
+        "name": "Communication interrompue avec le module de changement de vitesse électrique"
+    },
+    "U0104": {
+        "name": "Communication interrompue avec le module de régulation de vitesse"
+    },
+    "U0110": {
+        "name": "Perte de communication avec le module de commande du moteur d'entraînement A"
+    },
+    "U0111": {
+        "name": "Communication interrompue avec le module de contrôle d'énergie de batterie"
+    },
+    "U0121": {
+        "name": "Intersystems CAN  ( ESP ECU )"
+    },
+    "U0125": {
+        "name": "Communication interrompue avec le capteur dynamique"
+    },
+    "U0129": {
+        "name": "No communication with the ABS/ESP ECU on the high speed CAN 2"
+    },
+    "U0131": {
+        "name": "Perte de communication avec le module de contrôle de direction assistée A"
+    },
+    "U0140": {
+        "name": "Built-in systems interface   ( Intersystems CAN )"
+    },
+    "U0141": {
+        "name": "Communication with the built-in systems interface on the high speed CAN 2"
+    },
+    "U014F": {
+        "name": "Perte de communication avec le chauffage d'air d'habitacle"
+    },
+    "U0151": {
+        "name": "No communication with the airbag ECU"
+    },
+    "U0155": {
+        "name": "Instrument panel ECU"
+    },
+    "U0164": {
+        "name": "Absence of communication with the air conditioning"
+    },
+    "U016B": {
+        "name": "Perte de communication avec le Module de Contrôle du compresseur A/C A"
+    },
+    "U0184": {
+        "name": "Communication interrompue avec la radio"
+    },
+    "U019B": {
+        "name": "Onboard charger of the traction battery"
+    },
+    "U0279": {
+        "name": "Perte de communication avec le module de contrôle haptique"
+    },
+    "U0291": {
+        "name": "Hybrid automatic gearbox ECU on the hybrid CAN"
+    },
+    "U0305": {
+        "name": "CAN"
+    },
+    "U0315": {
+        "name": "ADAS CAN"
+    },
+    "U0322": {
+        "name": "Built-in systems interface on the high speed CAN 1"
+    },
+    "U0333": {
+        "name": "Hybrid automatic gearbox ECU on the hybrid CAN"
+    },
+    "U0336": {
+        "name": "Airbags and pretensioners ECU"
+    },
+    "U0404": {
+        "name": "ESM - Réception de données non plausibles"
+    },
+    "U0405": {
+        "name": "Données non valides reçues du module de régulation de vitesse"
+    },
+    "U0411": {
+        "name": "Données non valables reçues du module A de commande du moteur d'entraînement"
+    },
+    "U0412": {
+        "name": "Module de contrôle d'énergie de batterie A - Réception de données non valides"
+    },
+    "U0415": {
+        "name": "ADAS CAN"
+    },
+    "U0416": {
+        "name": "ESP - Réception de données non plausibles"
+    },
+    "U0420": {
+        "name": "Données non valables reçues du module de commande au volant A"
+    },
+    "U0422": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U0423": {
+        "name": "Invalid information from the instrument panel"
+    },
+    "U0424": {
+        "name": "Information on air conditioning functioning status"
+    },
+    "U0452": {
+        "name": "Airbags and pretensioners ECU  ( CAN )"
+    },
+    "U046C": {
+        "name": "Air conditioning ECU  ( CAN )"
+    },
+    "U0485": {
+        "name": "Données non plausibles reçues de la radio"
+    },
+    "U04A1": {
+        "name": "Traction battery ECU"
+    },
+    "U04B1": {
+        "name": "Données non plausibles reçues du module de contrôle de la batterie"
+    },
+    "U0513": {
+        "name": "Données non valables reçues du module de capteur d'embardée"
+    },
+    "U0580": {
+        "name": "Données non valables reçues du module de commande haptique"
+    },
+    "U0623": {
+        "name": "Communication interrompue avec la pompe de liquide de refroidissement A"
+    },
+    "U062E": {
+        "name": "Perte de communication avec l'actionneur du détendeur de réfrigérant de climatisation A"
+    },
+    "U0646": {
+        "name": "Perte de communication avec la pompe à refroidissement A de l'électronique du moteur"
+    },
+    "U069E": {
+        "name": "Perte de communication avec le radiateur à refroidissement B"
+    },
+    "U06A0": {
+        "name": "Perte de communication avec la vanne de commande du liquide de refroidissement du système de propulsion hybride/véhicule électrique A"
+    },
+    "U1000": {
+        "name": "Hybrid drive train supervisor ECU not communicating on the high-speed CAN 1"
+    },
+    "U1008": {
+        "name": "Bus LIN 1"
+    },
+    "U1009": {
+        "name": "Electric drive train supervisor ECU not communicating on the high-speed CAN 2"
+    },
+    "U100B": {
+        "name": "Hybrid drive train supervisor ECU not communicating on the hybrid CAN"
+    },
+    "U1101": {
+        "name": "Electric brake servo master cylinder on the high speed CAN 2"
+    },
+    "U1105": {
+        "name": "Steering wheel angle sensor  ( CAN )"
+    },
+    "U1108": {
+        "name": "Engine management ECU on the high speed CAN 1"
+    },
+    "U1109": {
+        "name": "Hybrid automatic gearbox ECU on the high speed CAN 1"
+    },
+    "U110C": {
+        "name": "Park finger locking actuator  ( CAN )"
+    },
+    "U110E": {
+        "name": "On-board charger/direct voltage transformer assembly  ( CAN )"
+    },
+    "U110F": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U1110": {
+        "name": "Message de perte de vitesse du véhicule"
+    },
+    "U1113": {
+        "name": "ABS/ESP ECU ( CAN )"
+    },
+    "U1118": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U111A": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U111D": {
+        "name": "No communication with the parking assistance ECU"
+    },
+    "U1121": {
+        "name": "Power steering ECU  ( CAN )"
+    },
+    "U1129": {
+        "name": "Communication interrompue avec le module indicateur de niveau de batterie"
+    },
+    "U112A": {
+        "name": "Communication interrompue avec module indicateur de statut de charge"
+    },
+    "U112D": {
+        "name": "Absence de communication avec calculateur de la machine électrique de traction arrière"
+    },
+    "U112E": {
+        "name": "Absence of communication with the electric power steering ECU"
+    },
+    "U1136": {
+        "name": "Communication with the ancillaries battery switch"
+    },
+    "U1137": {
+        "name": "Communication interrompue avec le module de contrôle d'énergie de batterie"
+    },
+    "U113B": {
+        "name": "No communication with anti-lock braking system (ABS) or electronic stability program (ESP)"
+    },
+    "U113E": {
+        "name": "Perte cation avec le capteur de batterie intelligent A"
+    },
+    "U1148": {
+        "name": "Engine management ECU on the high speed CAN 2"
+    },
+    "U114B": {
+        "name": "Communication with the traction battery ECU"
+    },
+    "U114C": {
+        "name": "Fuel cell propulsion system ECU  ( CAN )"
+    },
+    "U1153": {
+        "name": "Communication with the ABS/ESP ECU"
+    },
+    "U1158": {
+        "name": "Communication with the BSI  ( CAN )"
+    },
+    "U115E": {
+        "name": "Communication with the electric drive machine"
+    },
+    "U1162": {
+        "name": "Vehicle Distance Assistance  ( CAN )"
+    },
+    "U1173": {
+        "name": "Electric air conditioning compressor  ( CAN )"
+    },
+    "U1174": {
+        "name": "Connection unit  ( CAN )"
+    },
+    "U1186": {
+        "name": "Rear electric drive machine ECU  ( CAN hybrid network )"
+    },
+    "U1188": {
+        "name": "Engine management ECU on the hybrid CAN"
+    },
+    "U118A": {
+        "name": "Ancillaries battery 1(Réseau CAN) switch"
+    },
+    "U11A0": {
+        "name": "Traction battery ECU on the hybrid CAN"
+    },
+    "U11A2": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U11C8": {
+        "name": "absence de la trame de l'unité électronique de déconnexion de l'essieu sur le réseau CAN FD8"
+    },
+    "U11DE": {
+        "name": "On-board charger/direct voltage transformer assembly on the hybrid CAN"
+    },
+    "U1205": {
+        "name": "Steering wheel angle sensor  ( CAN )"
+    },
+    "U1208": {
+        "name": "Data sent by the engine management ECU on the CAN"
+    },
+    "U1209": {
+        "name": "Hybrid automatic gearbox ECU on the hybrid CAN"
+    },
+    "U120C": {
+        "name": "Park finger locking actuator  ( CAN )"
+    },
+    "U1213": {
+        "name": "Dynamic stability control ECU on the CAN"
+    },
+    "U1217": {
+        "name": "Données non valables reçues du module de commande de la batterie"
+    },
+    "U1218": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U121A": {
+        "name": "unité de contrôle de la pompe à huile électrique droite (réseau LIN)"
+    },
+    "U1221": {
+        "name": "Communication with the ABS/ESP ECU  ( CAN )"
+    },
+    "U122F": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U1236": {
+        "name": "calculateur de dispostif de maintien de tension réseau (réseau CAN)"
+    },
+    "U124B": {
+        "name": "Traction battery ECU on the CAN"
+    },
+    "U124C": {
+        "name": "Fuel cell propulsion system ECU  ( CAN )"
+    },
+    "U125E": {
+        "name": "Electric drive machine ECU  ( CAN )"
+    },
+    "U1262": {
+        "name": "Vehicle Distance Assistance  ( CAN )"
+    },
+    "U1273": {
+        "name": "Electric air conditioning compressor  ( CAN )"
+    },
+    "U1274": {
+        "name": "Connection unit  ( CAN )"
+    },
+    "U1286": {
+        "name": "Problem communicating with the rear electric drive machine ECU"
+    },
+    "U1288": {
+        "name": "Engine management ECU on the hybrid CAN"
+    },
+    "U128A": {
+        "name": "Ancillaries battery 1 switch  ( CAN )"
+    },
+    "U12A0": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U12A2": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U12AF": {
+        "name": "Communication interrompue avec module de charge double intégré"
+    },
+    "U12B3": {
+        "name": "Perte de communication avec le module de commande des dispositifs de retenue des occupants (ORC)"
+    },
+    "U12B7": {
+        "name": "Communication interrompue avec le module A de commande du système d'antiblocage (ABS)"
+    },
+    "U12BA": {
+        "name": "Communication interrompue avec le module de contrôle de la caisse"
+    },
+    "U12BB": {
+        "name": "Données non valables reçues du Module de commande de carrosserie"
+    },
+    "U12DE": {
+        "name": "On-board charger/direct voltage transformer assembly on the CAN"
+    },
+    "U1308": {
+        "name": "Communication with the engine management ECU (Réseau CAN)"
+    },
+    "U1309": {
+        "name": "Hybrid automatic gearbox ECU on the high speed CAN 1"
+    },
+    "U130C": {
+        "name": "Park finger locking actuator  ( CAN )"
+    },
+    "U1313": {
+        "name": "Dynamic stability control ECU on the high speed CAN 1"
+    },
+    "U1318": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U1321": {
+        "name": "Communication with the electric power steering ECU"
+    },
+    "U132F": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U133A": {
+        "name": "Data sent by the engine management ECU on the Flexray"
+    },
+    "U133C": {
+        "name": "Hybrid automatic gearbox ECU on the Flexray"
+    },
+    "U133D": {
+        "name": "Rear electric drive machine ECU on the Flexray"
+    },
+    "U1348": {
+        "name": "Engine management ECU on the high speed CAN 2"
+    },
+    "U134C": {
+        "name": "Fuel cell propulsion system ECU  ( CAN )"
+    },
+    "U1353": {
+        "name": "Dynamic stability control ECU on the high speed CAN 2"
+    },
+    "U1358": {
+        "name": "Built-in systems interface on the high speed CAN 2"
+    },
+    "U135E": {
+        "name": "Electric drive machine ECU  ( CAN )"
+    },
+    "U1362": {
+        "name": "Distance alert ECU  ( CAN )"
+    },
+    "U1374": {
+        "name": "CAN"
+    },
+    "U1386": {
+        "name": "Rear electric drive machine ECU  ( CAN hybrid network )"
+    },
+    "U1388": {
+        "name": "Engine management ECU on the hybrid CAN"
+    },
+    "U138A": {
+        "name": "Ancillaries battery 1 switch  ( CAN )"
+    },
+    "U13A0": {
+        "name": "Traction battery ECU  ( CAN )"
+    },
+    "U13A2": {
+        "name": "Push gear lever  ( CAN )"
+    },
+    "U13DE": {
+        "name": "Communication fault with the on board traction battery charger (OBC)"
+    },
+    "U1400": {
+        "name": "LIN  ( network blocked )"
+    },
+    "U1404": {
+        "name": "Network Flexray"
+    },
+    "U1405": {
+        "name": "Local configuration on the Flexray network"
+    },
+    "U1406": {
+        "name": "Flexray network configuration"
+    },
+    "U1407": {
+        "name": "Network Flexray"
+    },
+    "U1412": {
+        "name": "Signal de vitesse du véhicule non plausible"
+    },
+    "U144E": {
+        "name": "Données non valables reçues du module A de commande du moteur d'entraînement"
+    },
+    "U1460": {
+        "name": "Air conditioning ECU  ( LIN )"
+    },
+    "U1461": {
+        "name": "Air conditioning ECU  ( LIN )"
+    },
+    "U1462": {
+        "name": "Heating circuit electric coolant heater  ( LIN )"
+    },
+    "U1463": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "U1464": {
+        "name": "LIN :  Heating unit solenoid valve  ( 2-way solenoid valve )"
+    },
+    "U1465": {
+        "name": "LIN :  Heating unit solenoid valve  ( 2-way solenoid valve )"
+    },
+    "U1466": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1467": {
+        "name": "LIN"
+    },
+    "U1468": {
+        "name": "Communication with the electric coolant heater ECU on the LIN"
+    },
+    "U1475": {
+        "name": "Built-in systems interface BCM  ( CAN )"
+    },
+    "U1486": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1487": {
+        "name": "Communication with the coolant - air conditioning heat exchanger solenoid valve on the LIN"
+    },
+    "U1488": {
+        "name": "Absence of communication with the engine management ECU (réseau LIN)"
+    },
+    "U148A": {
+        "name": "Communication with the air conditioning evaporator solenoid valve on the LIN"
+    },
+    "U148B": {
+        "name": "Communication with the air conditioning evaporator solenoid valve on the LIN"
+    },
+    "U148C": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U148D": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U148E": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U148F": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1490": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1491": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1492": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1493": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1494": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1495": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1496": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U1498": {
+        "name": "Heating circuit electric coolant heater  ( LIN )"
+    },
+    "U149A": {
+        "name": "Données non valables reçues du module indicateur de statut de charge"
+    },
+    "U149B": {
+        "name": "Heating circuit electric coolant heater"
+    },
+    "U149E": {
+        "name": "Données invalides reçues du module de commande A du système d'antiblocage du freinage (ABS)"
+    },
+    "U14A0": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U14A1": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U14A2": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U14A3": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U14A4": {
+        "name": "Communication with the electric drive train supervisor ECU on the LIN"
+    },
+    "U14A5": {
+        "name": "communication avec le panneau de commande du système de climatisation sur le réseau LIN"
+    },
+    "U14A6": {
+        "name": "E-toggle gear lever  ( CAN )"
+    },
+    "U14B3": {
+        "name": "Windscreen condensation sensor"
+    },
+    "U151D": {
+        "name": "Données non plausibles reçues du module de charge double intégré"
+    },
+    "U1600": {
+        "name": "Electric drive train supervisor ECU  ( CAN )"
+    },
+    "U160F": {
+        "name": "Communication interrompue avec module de charge double intégré"
+    },
+    "U1663": {
+        "name": "communication avec le chauffage d'air de cabine A sur le réseau CAN"
+    },
+    "U1815": {
+        "name": "Perte de communication avec le module de commande du moteur d'entraînement A"
+    },
+    "U1831": {
+        "name": "Communication interrompue avec ESM sur D-PT"
+    },
+    "U190F": {
+        "name": "Implausible Data Received From Integrated Dual Charge"
+    },
+    "U1942": {
+        "name": "Intelligent instrument panel (BCCM)  ( CAN )"
+    },
+    "U1944": {
+        "name": "CAN not communicating fault"
+    },
+    "U1945": {
+        "name": "Vehicle CAN"
+    },
+    "U1947": {
+        "name": "ADAS CAN"
+    },
+    "U1948": {
+        "name": "Airbags and pretensioners ECU  ( CAN )"
+    },
+    "U1950": {
+        "name": "Air conditioning ECU  ( LIN )"
+    },
+    "U1F00": {
+        "name": "Fault event not stored in the faults log"
+    },
+    "U1F25": {
+        "name": "Instrument panel ECU"
+    },
+    "U1FB5": {
+        "name": "High speed CAN 4"
+    },
+    "U1FBA": {
+        "name": "High speed CAN 4"
+    },
+    "U1FC1": {
+        "name": "High speed CAN 5"
+    },
+    "U1FC6": {
+        "name": "ECU mute on the CAN"
+    },
+    "U2000": {
+        "name": "Remote controlled triggering line  ( Request for principal wake-up of the ECU not plausible or absent )"
+    },
+    "U2003": {
+        "name": "Request for ECU wake-up (wire signal) inconsistent with the CAN data"
+    },
+    "U2232": {
+        "name": "Traction battery"
+    },
+    "U2233": {
+        "name": "Onboard charger of the traction battery  ( CAN )"
+    },
+    "U2234": {
+        "name": "Traction battery"
+    },
+    "U2235": {
+        "name": "Electric drive machine"
+    },
+    "U2247": {
+        "name": "Electric drive machine  ( CAN )"
+    },
+    "U2248": {
+        "name": "Communication on the CAN"
+    },
+    "U225D": {
+        "name": "Windscreen condensation sensor"
+    },
+    "U2FFF": {
+        "name": "a ne pas afficher"
+    },
+    "U3002": {
+        "name": "VIN"
+    }
+}

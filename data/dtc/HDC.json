@@ -1,0 +1,95 @@
+{
+    "_comment": {
+        "name": "HDC DTC Codes grabbed from Diagbox FDB. ECUTYPE union: COM2008P. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1004": {
+        "name": "ECU internal fault"
+    },
+    "B100C": {
+        "name": "ECU supply fault"
+    },
+    "B112B": {
+        "name": "Windscreen wiping or washing controls fault"
+    },
+    "B112C": {
+        "name": "Wiping control fault"
+    },
+    "B1180": {
+        "name": "Lighting controls fault"
+    },
+    "B1181": {
+        "name": "Lighting and signalling control fault"
+    },
+    "B1182": {
+        "name": "Windscreen wiping or washing controls fault"
+    },
+    "B1183": {
+        "name": "Fault on the button at the end of the wipers stalk"
+    },
+    "B1184": {
+        "name": "Fault on the button at the end of the lights stalk"
+    },
+    "B1185": {
+        "name": "Horn button fault"
+    },
+    "B118B": {
+        "name": "Windscreen wash-wipe control fault"
+    },
+    "B118C": {
+        "name": "Direction indicators control fault"
+    },
+    "B1237": {
+        "name": "Buzzer fault"
+    },
+    "B126E": {
+        "name": "Cruise control and speed limiter switch fault"
+    },
+    "B152C": {
+        "name": "Radio controls fault"
+    },
+    "B1830": {
+        "name": "High frequency function fault"
+    },
+    "B1831": {
+        "name": "High frequency function fault"
+    },
+    "B1832": {
+        "name": "ECU internal fault"
+    },
+    "B1833": {
+        "name": "Key transponder fault"
+    },
+    "B1834": {
+        "name": "Transponder function fault"
+    },
+    "B1835": {
+        "name": "High frequency function fault"
+    },
+    "B1836": {
+        "name": "Transponder aerial fault"
+    },
+    "B1837": {
+        "name": "Fault in communication with the transponder"
+    },
+    "B1838": {
+        "name": "Integral controls steering wheel ECU supply fault"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Fault: no communication with the built-in systems interface ."
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F1A": {
+        "name": "LIN fault"
+    },
+    "U1F2A": {
+        "name": "Fault: absence of communication with the integral controls steering wheel ECU"
+    }
+}

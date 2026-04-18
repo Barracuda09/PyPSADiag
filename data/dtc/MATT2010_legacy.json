@@ -1,0 +1,6 @@
+{
+    "_comment": { "name":  "" },
+    "B2E0C": { "name": "Fault in the coherence of the navigator configuration" },
+    "U1F00": { "name": "Fault event not stored in the faults log" },
+    "U1F03": { "name": "No communication with the built-in systems interface" }
+}
