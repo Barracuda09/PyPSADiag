@@ -9,7 +9,7 @@
         "name": "Passenger's seat belt sensor"
     },
     "B00A0": {
-        "name": "système de classification des occupants"
+        "name": "Occupant classification system"
     },
     "B1000": {
         "name": "Calibration download"
@@ -54,10 +54,10 @@
         "name": "Driving school module: Sticking of the headlamp flash button"
     },
     "B111D": {
-        "name": "Driving school module: Non coherent position of the direction indicators dial"
+        "name": "Driving school module: inconsistent position of the direction indicators dial"
     },
     "B111E": {
-        "name": "Driving school module: Non coherent position of the lights dial"
+        "name": "Driving school module: inconsistent position of the lights dial"
     },
     "B1120": {
         "name": "Neck heater load reduction fault"
@@ -621,7 +621,7 @@
         "name": "Air conditioning compressor variable capacity valve control fault"
     },
     "B1336": {
-        "name": "Non-adjustable ambiance lighting control fault"
+        "name": "Non-adjustable ambient lighting control fault"
     },
     "B1337": {
         "name": "Rear air blower authorisation fault"
@@ -951,7 +951,7 @@
         "name": "Ignition positive relay inverted status fault"
     },
     "B1623": {
-        "name": "Fault in the ignition plus (+APC) relay"
+        "name": "Ignition-plus (+APC) relay fault"
     },
     "B1624": {
         "name": "Supplies protection and management unit: Central power switch positive relay status fault"
@@ -2799,13 +2799,13 @@
         "name": "Variable valve lift system  ( actuator jammed )"
     },
     "P1032": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1033": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1034": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P1035": {
         "name": "End-of-life of the piston linked to self-ignition before spark (Rumble)"
@@ -3462,7 +3462,7 @@
         "name": "Engine management ECU"
     },
     "P1F00": {
-        "name": "A ne pas afficher"
+        "name": "Do not display"
     },
     "P2002": {
         "name": "Particle filter  ( Efficiency too low )"
@@ -5010,7 +5010,7 @@
         "name": "No communication with the multiplexed reduction motor of the heating unit front left-hand mixing flap on the LIN 5"
     },
     "U1FF7": {
-        "name": "absence de communication avec le motoréducteur multiplexé du volet de distribution du groupe de chauffage sur le réseau LIN 5"
+        "name": "No communication with the multiplexed motor-reducer of the heater distribution flap on the LIN 5 network"
     },
     "U1FF8": {
         "name": "No communication with the multiplexed reduction motor of the heating unit air inlet flap on the LIN 5"
@@ -5019,7 +5019,7 @@
         "name": "No communication with the multiplexed reduction motor of the heating unit front right-hand mixing flap on the LIN 5"
     },
     "U1FFA": {
-        "name": "absence de communication avec le capteur de détection de particules fines dans l'habitacle sur le réseau LIN 5"
+        "name": "No communication with the cabin fine-particle detection sensor on the LIN 5 network"
     },
     "U1FFB": {
         "name": "No communication with the exterior air quality sensor on the LIN 5"
