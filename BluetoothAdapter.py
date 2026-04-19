@@ -23,7 +23,7 @@ class BluetoothAdapter:
     """
 
     # Common baud rates for ELM327 adapters (most popular first)
-    BAUD_RATES = [230400, 115200, 57600, 38400, 19200, 9600]
+    BAUD_RATES = [115200, 57600, 38400, 19200, 9600, 230400]
 
     # ELM327 AT ST timing (hex, units ≈ 4.096 ms).
     # Lower = faster per-frame return, but more NO DATA on slow ECUs.
@@ -31,7 +31,7 @@ class BluetoothAdapter:
     #   "10" = 0x10 = 16 dec × 4.096 ≈  65 ms  (aggressive)
     #   "20" = 0x20 = 32 dec × 4.096 ≈ 131 ms  (compromise fallback)
     #   "32" = 0x32 = 50 dec × 4.096 ≈ 205 ms  (conservative, original)
-    AT_ST_NORMAL = "19"     # main per-frame timeout
+    AT_ST_NORMAL = "25"     # main per-frame timeout
     AT_ST_CF_RAPID = "05"   # ~20 ms between intermediate CFs (all NO DATA)
 
     def __init__(self, logger=None, **kwargs):
