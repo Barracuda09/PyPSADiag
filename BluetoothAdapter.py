@@ -23,7 +23,16 @@ class BluetoothAdapter:
     """
 
     # Common baud rates for ELM327 adapters (most popular first)
-    BAUD_RATES = [115200, 38400, 9600, 57600, 19200, 230400]
+    BAUD_RATES = [115200, 57600, 38400, 19200, 9600, 230400]
+
+    # ELM327 AT ST timing (hex, units ≈ 4.096 ms).
+    # Lower = faster per-frame return, but more NO DATA on slow ECUs.
+    # A/B-tunable from one place.
+    #   "10" = 0x10 = 16 dec × 4.096 ≈  65 ms  (aggressive)
+    #   "20" = 0x20 = 32 dec × 4.096 ≈ 131 ms  (compromise fallback)
+    #   "32" = 0x32 = 50 dec × 4.096 ≈ 205 ms  (conservative, original)
+    AT_ST_NORMAL = "25"     # main per-frame timeout
+    AT_ST_CF_RAPID = "05"   # ~20 ms between intermediate CFs (all NO DATA)
 
     def __init__(self, logger=None, **kwargs):
         self.logger = logger
@@ -326,9 +335,10 @@ class BluetoothAdapter:
 
             # Timing: short ST so ELM327 quickly returns First Frame to us,
             # leaving enough time to send Flow Control before ECU's N_BS timeout (1000ms).
-            # AT ST 32 = 50 × 4.096ms ≈ 200ms — enough for ECU P2 response time.
+            # Value comes from class constant AT_ST_NORMAL (see top of class).
+            # Default "10" ≈ 65 ms — enough for fast ECUs; slow ECUs retry.
             self._send_at("AT AT0")   # Adaptive timing OFF
-            self._send_at("AT ST 32") # ~200ms timeout per frame
+            self._send_at(f"AT ST {self.AT_ST_NORMAL}")
 
             self.configured = True
             self.log(f"Configured: TX={tx_id} RX={rx_id} protocol={protocol}")
@@ -465,7 +475,9 @@ class BluetoothAdapter:
             data_len = len(data) // 2
             read_timeout = max(timeout / 1000.0, 3.0)
 
-            for attempt in range(5):  # up to 4 retries on incomplete multi-frame
+            for attempt in range(7):  # up to 6 retries on incomplete multi-frame
+                # Bumped from 5→7 to tolerate more NO DATA misses at
+                # short AT ST (~65 ms); retries are cheap if first succeeds.
                 self.serialPort.reset_input_buffer()
                 self._multiframe_incomplete = False
 
@@ -488,9 +500,9 @@ class BluetoothAdapter:
                 if data_len > 7 and result in ("", "Timeout"):
                     should_retry = True
 
-                if should_retry and attempt < 4:
+                if should_retry and attempt < 6:
                     self.log(f"Retrying multi-frame for {data} "
-                             f"(attempt {attempt + 2}/5)...")
+                             f"(attempt {attempt + 2}/7)...")
                     time.sleep(0.15 * (attempt + 1))
                     continue
 
@@ -546,16 +558,16 @@ class BluetoothAdapter:
             num_cfs = (len(remaining) + 13) // 14  # total CFs needed
 
             # Shorten AT ST for intermediate CFs (they get NO DATA anyway)
-            # so we don't wait ~200ms per frame. Restore before last CF.
+            # so we don't wait per-frame. Restore before last CF.
             if num_cfs > 1:
-                self._send_at("AT ST 05")  # ~20ms for rapid CF sending
+                self._send_at(f"AT ST {self.AT_ST_CF_RAPID}")
 
             while remaining:
                 is_last = len(remaining) <= 14
 
                 # Restore normal timeout before the last CF (need ECU response)
                 if is_last and num_cfs > 1:
-                    self._send_at("AT ST 32")
+                    self._send_at(f"AT ST {self.AT_ST_NORMAL}")
 
                 cf_pci = f"2{seq & 0x0F:X}"
                 cf_data = remaining[:14]           # up to 7 bytes = 14 hex chars

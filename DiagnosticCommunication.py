@@ -758,6 +758,8 @@ class DiagnosticCommunication(QThread):
             if not self.writeQ.empty():
                 element = self.writeQ.get()
                 if isinstance(element, dict):
+                    zone_count = len(element)
+                    t_start = time.perf_counter()
                     for zoneIDObject in element:
                         self.ecuReadZone = str(zoneIDObject).upper()
                         self.zoneActive = element[str(zoneIDObject)]
@@ -768,6 +770,15 @@ class DiagnosticCommunication(QThread):
                         receiveData = self.writeECUCommand(ecuReadZoneSend)
                         self.parseReadResponse(receiveData);
                         self.msleep(100)
+                    # Report block-read timing so user can A/B baud rates
+                    # and adapter tuning. Uses perf_counter (monotonic).
+                    elapsed = time.perf_counter() - t_start
+                    if zone_count > 0:
+                        avg_ms = elapsed / zone_count * 1000
+                        msg = (f"[Timing] Read {zone_count} zone(s) in "
+                               f"{elapsed:.2f}s ({avg_ms:.0f} ms/zone avg)")
+                        self.writeToOutputView(msg)
+                        print(msg)  # also to console for terminal users
                 else:
                     # Just empty zone names
                     self.zoneName = ""
@@ -794,4 +805,4 @@ class DiagnosticCommunication(QThread):
                 self.isRunning = False
 
         # Always emit "Done" Signal
-        self.readZoneListDoneSignal.emit()
+        self.readZoneListDoneSignal.emit() 
