@@ -39,6 +39,12 @@ contribute to the project, like:
 - test reports
 - spread the word!
 
+Use VCI Interface Support
+-----
+- Install [python-3.13.12-embed-win32](https://www.python.org/ftp/python/3.13.12/python-3.13.12-embed-win32.zip) to C:\python\python32
+- VCI driver installed in device manager **(Not part of PyPSADiag)**
+- VCI communication files installed in C:\AWRoot\drv and C:\AWRoot\dtrd **(Not part of PyPSADiag)**
+
 Use a Release
 -----
 - Get release a from [Download Release](https://github.com/Barracuda09/PyPSADiag/releases) There is Windows, Linux and macOS versions
