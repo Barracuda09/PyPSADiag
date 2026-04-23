@@ -1,0 +1,961 @@
+{
+  "_comment": "-",
+  "name": "EMF_C_SC_T8_9800853380_00",
+  "tx_id": "765",
+  "rx_id": "665",
+  "protocol": "kwp_hab",
+  "key_type": "single",
+  "keys": "",
+  "tabs": {
+        "ident": "Identification",
+        "coding": "Telecoding",
+        "display_options": "Display options",
+        "vehicle_options": "Vehicle options",
+        "personalisation_menu": "Personalisation menu",
+        "brightness_table": "Brightness table"
+  },
+  "coding": "true",
+  "errors": "true",
+  "include_zone_object": "./data/IdentKWPECU.json",
+  "zones":
+  {
+    "80":
+    {
+        "id": "ZA_ZONE",
+        "tab": "ident",
+        "name": "ZA Zone",
+        "read_only": true,
+        "byte": 0,
+        "type": "raw",
+        "form_type": "multi",
+        "params": [
+            {
+                "name": "Equipment Part Number",
+                "byte": 0,
+                "byte_range": 5,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Equipment Additional Reference",
+                "byte": 7,
+                "byte_range": 5,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Supplier",
+                "byte": 5,
+                "byte_range": 2,
+                "type": "zi_sup",
+                "form_type": "string"
+            },
+            {
+                "name": "Software edition",
+                "byte": 12,
+                "byte_range": 2,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Diagnostics e-mail",
+                "byte": 18,
+                "byte_range": 4,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "name": "Messaging index",
+                "byte": 16,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    },
+    "C0":
+    {
+      "name": "Telecoding_EMF-C_C0",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "MP_LANGUE_DU_CLIENT",
+            "name": "Driver language",
+            "byte": 0,
+            "type": "bool",
+            "mask": "11111111",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - French"},
+                { "mask": "00000001", "name": "01 - English"},
+                { "mask": "00000010", "name": "02 - German"},
+                { "mask": "00000011", "name": "03 - Spanish"},
+                { "mask": "00000100", "name": "04 - Italian"},
+                { "mask": "00000101", "name": "05 - Portuguese"},
+                { "mask": "00000110", "name": "06 - Netherlands"},
+                { "mask": "00001000", "name": "08 - Brasilian"},
+                { "mask": "00001010", "name": "0A - Traditional Chinese"},
+                { "mask": "00001011", "name": "0B - Simplified Chinese"},
+                { "mask": "00001100", "name": "0C - Turkish"}
+            ]
+        }
+      ]
+    },
+    "C4":
+    {
+      "name": "Telecoding_EMF-C_C4",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id":"MPLUMAFACT",
+            "name": "MPLUMAFACT",
+            "byte": 0,
+            "byte_range": 1,
+            "type": "raw",
+            "form_type": "string"
+        },
+        {
+            "id": "MPLCLBPAN",
+            "name": "MPLCLBPAN",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00001111",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0000"},
+                { "mask": "00000001", "name": "0001"},
+                { "mask": "00000010", "name": "0010"},
+                { "mask": "00000011", "name": "0011"},
+                { "mask": "00000100", "name": "0100"},
+                { "mask": "00000101", "name": "0101"},
+                { "mask": "00000110", "name": "0110"},
+                { "mask": "00001000", "name": "1000"},
+                { "mask": "00001010", "name": "1010"},
+                { "mask": "00001011", "name": "1011"},
+                { "mask": "00001100", "name": "1100"},
+                { "mask": "00001101", "name": "1101"},
+                { "mask": "00001110", "name": "1110"},
+                { "mask": "00001111", "name": "1111"}
+            ]
+        },
+        {
+            "id":"MP_TEMP_LCD",
+            "name": "MP_TEMP_LCD",
+            "byte": 3,
+            "byte_range": 1,
+            "type": "raw",
+            "form_type": "string"
+        }
+      ]
+    },
+    "B1":
+    {
+        "name": "Telecoding_EMF-C_B1",
+        "tab": "display_options",
+        "type": "raw",
+        "form_type": "multi",
+        "_comment": "Value range is 00-FF (in hexadecimal) where 00 represents 0% and FF represents 100%.",
+        "params": [
+            {
+                "id":"MP_FORMAT_DATE",
+                "name": "Date format",
+                "byte": 0,
+                "type": "raw",
+                "mask": "00010000",
+                "form_type": "combobox",
+                "params": [
+                    { "mask": "00000000", "name": "00 - DD MM YYYY"},
+                    { "mask": "00010000", "name": "01 - MM DD YYYY"}
+                ]
+            },
+            {
+                "id":"MP_UNITE_VOLUME_ET_DISTANCE",
+                "name": "Volume and Distance unit",
+                "byte": 0,
+                "type": "raw",
+                "mask": "00001100",
+                "form_type": "combobox",
+                "params": [
+                    { "mask": "00000000", "name": "00 - Litres/100km"},
+                    { "mask": "00000100", "name": "01 - Miles/gallon"},
+                    { "mask": "00001000", "name": "10 - Km/l"}
+                ]
+            },
+            {
+                "id":"CFG_ADF_CLIM_UNITETEMP_000",
+                "name": "Temperature unit",
+                "byte": 0,
+                "type": "raw",
+                "mask": "00000010",
+                "form_type": "combobox",
+                "params": [
+                    { "mask": "00000000", "name": "0 - Celsius"},
+                    { "mask": "00000010", "name": "1 - Fahrenheit"}
+                ]
+            },
+            {
+                "id":"MP_TYPE_AFFICHAGE",
+                "name": "Display type",
+                "byte": 0,
+                "type": "raw",
+                "mask": "00000001",
+                "form_type": "combobox",
+                "params": [
+                    { "mask": "00000000", "name": "0 - Normal"},
+                    { "mask": "00000001", "name": "1 - Inverse"}
+                ]
+            }
+        ]
+    },
+    "B2":
+    {
+      "name": "Telecoding_EMF-C_B2",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "CFG_AYF_EMF_FONCTION_CSV_000",
+            "name": "Control the screen with the steering wheel remote control",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - Inactive"},
+                { "mask": "00010000", "name": "1 - Active"}
+            ]
+        },
+        {
+            "id": "CFG_TMP_MTTECHNOCDT_temp",
+            "name": "Remote control type",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001100",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - Wired"},
+                { "mask": "00000100", "name": "01 - Infrared"},
+                { "mask": "00001000", "name": "10 - CAN bus (RD4 radio)"},
+                { "mask": "00001100", "name": "11 - Buttons on the EMF screen"}
+            ]
+        }
+      ]
+    },
+    "B3":
+    {
+      "name": "Telecoding_EMF-C_B3",
+      "tab": "vehicle_options",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "CFG_AHQ_RADIO_PARK_AID_000",
+            "name": "Parking aid present",
+            "byte": 0,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_OPTION_CLIMATISATION",
+            "name": "Show climate control information",
+            "byte": 0,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_OPTION_CHANGEUR_CD",
+            "name": "CD changer present",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_MENU_VEHICULE",
+            "name": "Vehicle menu present",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "AFFICHAGE_TEMPERATURE_EXTERIEURE",
+            "name": "Show external temperature",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_OPTION_RADIO",
+            "name": "Radio option present",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_A98_BSI_ODB_000",
+            "name": "Show on-board computer information",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_OPTION_CLIM_MONOZONE_BIZONE",
+            "name": "Mono-zone or bi-zone climate control information",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - MP_OPTION_CLIM_MONOZONE"},
+                { "mask": "00000001", "name": "1 - MP_OPTION_CLIM_BIZONE"}
+            ]
+        },
+        {
+            "id": "CFG_ALW_EMF_PRE_COND_000",
+            "name": "Show programming of additional heater burner",
+            "byte": 1,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_TYPE_COMBINE",
+            "name": "CMB type",
+            "byte": 1,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - With obd information"},
+                { "mask": "01000000", "name": "1 - Without obd information"}
+            ]
+        },
+        {
+            "id": "CFG_A6N_BSI_DSG_000",
+            "name": "Show tyre pressure information",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_KML",
+            "name": "KML present",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_AFFICHAGE_JOURNAL_DES_ALERTES",
+            "name": "Show vehicle alert log",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_AFFICHAGE_JOURNAL_DES_ETATS",
+            "name": "Show vehicle status log",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "ID_CODE_DIAG_DSG",
+            "name": "Show tyre pressure diagnostic",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BE4_EMF_BTEL_000",
+            "name": "Telematics unit present",
+            "byte": 2,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BE5_EMF_AFF_SILHOU_VEHIC_000",
+            "name": "Permanent displaying of the vehicle outline",
+            "byte": 2,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_OPTION_NOMADE",
+            "name": "Nomad menu option present",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_AFFICHAGE_ALERTES_EMF",
+            "name": "Show vehicle alerts",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_MENU_CONFIGURATION_UNITE_TEMPERATURE",
+            "name": "Show temperature unit configuration menu",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "INFO_FONCTION_STT",
+            "name": "Show Stop & Start information",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_SYN_HORLRGE_RESEAU",
+            "name": "Synchronize time on CAN bus",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_DD5_EMF_ELECTIC_001",
+            "name": "Vehicle with electric motor",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        }
+      ]
+    },
+    "B4":
+    {
+      "name": "Telecoding_EMF-C_B4",
+      "tab": "personalisation_menu",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "MP_PERSONNALISATION",
+            "name": "Personalisation menu present",
+            "byte": 0,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASJ_EMF_MP_ACCEUIL_000",
+            "name": "Display of the \"driving position clearance\" option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_DOPTOTAL",
+            "name": "Display of the \"Total nearby obstacle detection\"",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASL_EMF_MP_SECUROSCOPE_000",
+            "name": "CFG_ASL_EMF_MP_SECUROSCOPE_000",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASM_EMF_MP_AAD_SON_000",
+            "name": "CFG_ASM_EMF_MP_AAD_SON_000",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASN_EMF_MP_AAD_TOT_000",
+            "name": "CFG_ASN_EMF_MP_AAD_TOT_000",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_TMP_ESSUYARENMAR_temp",
+            "name": "Display of the \"engagement of the rear wiping when reversing\" option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASP_EMF_MP_EEX_AUT_000",
+            "name": "Display of the \"automatic headlamp illumination\" option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASQ_EMF_MP_EEX_FMH_000",
+            "name": "Display of the \"guide-me-home lighting\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASR_EMF_MP_EEX_ADAPT_000",
+            "name": "Display of the \"directional headlamp\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_TMP_MTFSE_temp",
+            "name": "Display of the \"deactivation automatic electric secondary brake\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASS_EMF_MP_EIN_AMB_000",
+            "name": "Display of the \"ambient lighting\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AST_EMF_MP_GAV_COFFRE_000",
+            "name": "Display of the \"permanent locking of the boot\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASU_EMF_MP_GAV_PORTE_COND_000",
+            "name": "Display of the \"locking of the driver's door only\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASV_EMF_MP_GAV_ELOIGN_000",
+            "name": "Display of the \"locking of the doors when you move away\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_MODE_DE_VERROUILLAGE_VEHICULE",
+            "name": "Display of the \"vehicle locking mode\" option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASX_EMF_MP_SIGN_DIURNES_000",
+            "name": "Display of the \"daylight lights\" option",
+            "byte": 2,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "MP_FARC",
+            "name": "MP_FARC",
+            "byte": 2,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        }
+      ]
+    },
+    "B5":
+    {
+      "name": "Telecoding_EMF-C_B5",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "MPSEUVERIH",
+            "name": "MPSEUVERIH",
+            "byte": 0,
+            "type": "string",
+            "mask": "01000000",
+            "form_type": "string"
+        }
+        ]
+    },
+    "B6":
+    {
+        "name": "Brightness table (B6)",
+        "tab": "brightness_table",
+        "type": "raw",
+        "form_type": "multi",
+        "_comment": "Value range is 00-FF (in hexadecimal) where 00 represents 0% and FF represents 100%.",
+        "params": [
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_00",
+                "name": "Brightness on Level 1 (in %)",
+                "byte": 0,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_01",
+                "name": "Brightness on Level 2 (in %)",
+                "byte": 1,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_02",
+                "name": "Brightness on Level 3 (in %)",
+                "byte": 2,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_03",
+                "name": "Brightness on Level 4 (in %)",
+                "byte": 3,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_04",
+                "name": "Brightness on Level 5 (in %)",
+                "byte": 4,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_05",
+                "name": "Brightness on Level 6 (in %)",
+                "byte": 5,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_06",
+                "name": "Brightness on Level 7 (in %)",
+                "byte": 6,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_07",
+                "name": "Brightness on Level 8 (in %)",
+                "byte": 7,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_08",
+                "name": "Brightness on Level 9 (in %)",
+                "byte": 8,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_09",
+                "name": "Brightness on Level 10 (in %)",
+                "byte": 9,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_10",
+                "name": "Brightness on Level 11 (in %)",
+                "byte": 10,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_11",
+                "name": "Brightness on Level 12 (in %)",
+                "byte": 11,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_12",
+                "name": "Brightness on Level 13 (in %)",
+                "byte": 12,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_13",
+                "name": "Brightness on Level 14 (in %)",
+                "byte": 13,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_14",
+                "name": "Brightness on Level 15 (in %)",
+                "byte": 14,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_15",
+                "name": "Brightness on Level 16 (in %)",
+                "byte": 15,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    },
+    "B7":
+    {
+        "name": "Brightness table ? - MPLUMCDT (B7)",
+        "tab": "brightness_table",
+        "type": "raw",
+        "form_type": "multi",
+        "_comment": "Value range is 00-FF (in hexadecimal) where 00 represents 0% and FF represents 100%.",
+        "params": [
+            {
+                "id":"MPLUMCDT0",
+                "name": "Brightness on Level 1 (in %)",
+                "byte": 0,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT1",
+                "name": "Brightness on Level 2 (in %)",
+                "byte": 1,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT2",
+                "name": "Brightness on Level 3 (in %)",
+                "byte": 2,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT3",
+                "name": "Brightness on Level 4 (in %)",
+                "byte": 3,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT4",
+                "name": "Brightness on Level 5 (in %)",
+                "byte": 4,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT5",
+                "name": "Brightness on Level 6 (in %)",
+                "byte": 5,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT6",
+                "name": "Brightness on Level 7 (in %)",
+                "byte": 6,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT7",
+                "name": "Brightness on Level 8 (in %)",
+                "byte": 7,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT8",
+                "name": "Brightness on Level 9 (in %)",
+                "byte": 8,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT9",
+                "name": "Brightness on Level 10 (in %)",
+                "byte": 9,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT10",
+                "name": "Brightness on Level 11 (in %)",
+                "byte": 10,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT11",
+                "name": "Brightness on Level 12 (in %)",
+                "byte": 11,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT12",
+                "name": "Brightness on Level 13 (in %)",
+                "byte": 12,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT13",
+                "name": "Brightness on Level 14 (in %)",
+                "byte": 13,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT14",
+                "name": "Brightness on Level 15 (in %)",
+                "byte": 14,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MPLUMCDT15",
+                "name": "Brightness on Level 16 (in %)",
+                "byte": 15,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    },
+    "B8":
+    {
+      "name": "Telecoding_EMF-C_B2",
+      "tab": "coding",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "MP_COULEUR_FOND_ECRAN",
+            "name": "Background color",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000111",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "000 - BLEU"},
+                { "mask": "00000001", "name": "001 - ROUGE"},
+                { "mask": "00000010", "name": "010 - BEIGE"},
+                { "mask": "00000011", "name": "011 - VERT"},
+                { "mask": "00000100", "name": "100 - ORANGE"},
+                { "mask": "00000111", "name": "111 - COULEUR_NUIT"}
+            ]
+        }
+      ]
+    }
+  }
+}
