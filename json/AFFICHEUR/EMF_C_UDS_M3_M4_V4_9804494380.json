@@ -1,0 +1,586 @@
+{
+  "_comment": "-",
+  "name": "EMF_C_UDS_M3_M4_V4_9804494380",
+  "tx_id": "765",
+  "rx_id": "665",
+  "protocol": "uds",
+  "key_type": "single",
+  "keys": "F6C4",
+  "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding",
+        "display_options": "Display options",
+        "vehicle_options": "Vehicle options",
+        "personalisation_menu": "Personalisation menu",
+        "brightness_table": "Brightness table"
+  },
+  "coding": "true",
+  "errors": "true",
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "zones":
+  {
+    "2200":
+    {
+      "name": "Telecoding_EMF-C_2200",
+      "tab": "display_options",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "CFG_BUN_EMF_NOT_DAT_000",
+            "name": "Date format",
+            "byte": 0,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "0 - DD MM YYYY"},
+                { "mask": "10000000", "name": "1 - MM DD YYYY"}
+            ]
+        },
+        {
+            "id": "CFG_BUP_EMF_ETAT_SCROLLING_000",
+            "name": "Displaying of the option \"automatic scrolling of texts\"",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BUO_EMF_AUTORISATION_SCROLL_000",
+            "name": "Authorisation of \"automatic scrolling of texts\"",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        }
+      ]
+    },
+    "2300":
+    {
+      "name": "Telecoding_EMF-C_2300",
+      "tab": "tele",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "MP_TECHNOCDT",
+            "name": "Type of connection to the remote control",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001100",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - MP_TECHNOCDT_F1"},
+                { "mask": "00000100", "name": "01 - MP_TECHNOCDT_F2"},
+                { "mask": "00001000", "name": "10 - MP_TECHNOCDT_F3"}
+            ]
+        },
+        {
+            "id": "CFG_DBS_EMF_PARAM_DIV_HDC_000",
+            "name": "Type of connection to the remote control",
+            "byte": 0,
+            "type": "bool",
+            "mask": "11110000",
+            "form_type": "combobox",
+            "params": [
+                { "mask": "00000000", "name": "00 - HDC_0"},
+                { "mask": "00010000", "name": "01 - HDC_1"},
+                { "mask": "00100000", "name": "10 - HDC_2"},
+                { "mask": "00110000", "name": "11 - HDC_3"},
+                { "mask": "01000000", "name": "11 - HDC_4"}
+            ]
+        }
+      ]
+    },
+    "2400":
+    {
+      "name": "Telecoding_EMF-C_2400",
+      "tab": "vehicle_options",
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+            "id": "CFG_BP9_EMF_MENU_PARAM_FCT_000",
+            "name": "Presence of Vehicle parameters menu",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AFI_EMF_T_EXT_000",
+            "name": "Display of outside temperature",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AFG_EMF_RADIO_000",
+            "name": "Audio equipment option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BP6_EMF_EXPORT_AUDIO_000",
+            "name": "Displaying of the audio and telephone data",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AF2_EMF_AAS_000",
+            "name": "Parking assistance option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPA_EMF_MENU_PARAM_UL_000",
+            "name": "Function of the menu for selecting units and languages",
+            "byte": 0,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BP5_EMF_MENU_UNIT_000",
+            "name": "Option for configuration of the volume and distance units",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AFE_EMF_ODB_000",
+            "name": "Trip computer option",
+            "byte": 0,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AT1_EMF_KML_000",
+            "name": "Hands free kit option",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_B87_EMF_JDA_000",
+            "name": "Display of the warning log",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_B88_EMF_JDE_000",
+            "name": "Display of the status log",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BW8_EMF_RAPPEL_XVV_000",
+            "name": "Temporary displaying of the memorised cruise control and speed limiter speeds",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BST_EMF_STT_001",
+            "name": "Display of information on the Stop And Start function",
+            "byte": 1,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPD_EMF_MENU_TCFG_000",
+            "name": "Presence of the configurable button menu",
+            "byte": 1,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPC_EMF_MENU_LANGUE_000",
+            "name": "Option for configuration of the choice of language",
+            "byte": 1,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BJX_EMF_NOMADE_000",
+            "name": "Nomad menu option",
+            "byte": 2,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BJY_EMF_ALERTES_000",
+            "name": "Display of warnings on the Multifunction display",
+            "byte": 2,
+            "type": "bool",
+            "mask": "01000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BK0_EMF_MENU_TEMP_000",
+            "name": "Temperature units configuration option",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00100000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPE_EMF_ITEM_BLACKPANEL_TCFG_000",
+            "name": "Black panel mode",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00010000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPF_EMF_ITEM_ACCESJDA_TCFG_000",
+            "name": "History of warnings",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00001000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPG_EMF_ITEM_PERSOCMB_TCFG_000",
+            "name": "Configuration of the presence of the instrument panel personalisation item on the configurable button menu",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000100",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPH_EMF_ITEM_COLORCMB_TCFG_000",
+            "name": "Configuration of the presence of the instrument panel colour item on the configurable button menu",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000010",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPI_EMF_ITEM_ECLAIPLAF_TCFG_000",
+            "name": "Configuration of the presence of the courtesy light lighting item on the configurable button menu",
+            "byte": 2,
+            "type": "bool",
+            "mask": "00000001",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BPJ_EMF_MENU_SONS_000",
+            "name": "Displaying of the menu \"choice of sounds\"",
+            "byte": 3,
+            "type": "bool",
+            "mask": "10000000",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BWK_EMF_VIT_BUTEE_MAX_000",
+            "name": "CFG_BWK_EMF_VIT_BUTEE_MAX_000",
+            "byte": 4,
+            "mask": "11111111",
+            "type": "int",
+            "form_type": "string"
+        },
+        {
+            "id": "CFG_BWL_EMF_VIT_BUTEE_MIN_000",
+            "name": "CFG_BWL_EMF_VIT_BUTEE_MIN_000",
+            "byte": 5,
+            "mask": "11111111",
+            "type": "int",
+            "form_type": "string"
+        }
+      ]
+    },
+    "2100":
+    {
+      "name": "Telecoding_EMF-C_2100",
+      "tab": "brightness_table",
+      "_comment": "Value range is 00-FF (in hexadecimal) where 00 represents 0% and FF represents 100%.",
+      "type": "raw",
+      "form_type": "multi",
+        "params": [
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_00",
+                "name": "Brightness on Level 1 (in %)",
+                "byte": 0,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_01",
+                "name": "Brightness on Level 2 (in %)",
+                "byte": 1,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_02",
+                "name": "Brightness on Level 3 (in %)",
+                "byte": 2,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_03",
+                "name": "Brightness on Level 4 (in %)",
+                "byte": 3,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_04",
+                "name": "Brightness on Level 5 (in %)",
+                "byte": 4,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_05",
+                "name": "Brightness on Level 6 (in %)",
+                "byte": 5,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_06",
+                "name": "Brightness on Level 7 (in %)",
+                "byte": 6,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_07",
+                "name": "Brightness on Level 8 (in %)",
+                "byte": 7,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_08",
+                "name": "Brightness on Level 9 (in %)",
+                "byte": 8,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_09",
+                "name": "Brightness on Level 10 (in %)",
+                "byte": 9,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_10",
+                "name": "Brightness on Level 11 (in %)",
+                "byte": 10,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_11",
+                "name": "Brightness on Level 12 (in %)",
+                "byte": 11,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_12",
+                "name": "Brightness on Level 13 (in %)",
+                "byte": 12,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_13",
+                "name": "Brightness on Level 14 (in %)",
+                "byte": 13,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_14",
+                "name": "Brightness on Level 15 (in %)",
+                "byte": 14,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            },
+            {
+                "id":"MP_NIVEAU_ECLAIRAGE_15",
+                "name": "Brightness on Level 16 (in %)",
+                "byte": 15,
+                "byte_range": 1,
+                "type": "raw",
+                "form_type": "string"
+            }
+        ]
+    },
+    "2500":
+    {
+    "name": "Telecoding_EMF-C_2500",
+    "tab": "personalisation_menu",
+    "type": "raw",
+    "form_type": "multi",
+    "params": [
+        {
+            "id": "CFG_ASK_EMF_MP_DOP_TOTAL_000",
+            "name": "Display of the option \"Total detection of obstacle in proximity\"",
+            "byte": 0,
+            "mask": "10000000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASP_EMF_MP_EEX_AUT_000",
+            "name": "Display of the \"automatic headlamp illumination\" option",
+            "byte": 0,
+            "mask": "01000000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASQ_EMF_MP_EEX_FMH_000",
+            "name": "Display of the \"assistance lighting\" option",
+            "byte": 0,
+            "mask": "00100000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASR_EMF_MP_EEX_ADAPT_000",
+            "name": "Display of the \"adaptive lighting\" option",
+            "byte": 0,
+            "mask": "00010000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASO_EMF_MP_ELAV_ES_AR_000",
+            "name": "Displaying of the \"triggering of rear wipe when reversing\" option",
+            "byte": 0,
+            "mask": "00000100",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BQE_EMF_MP_SELEC_OUV_CAB_000",
+            "name": "Displaying of the option \"locking of the cab only\"",
+            "byte": 0,
+            "mask": "00001000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASX_EMF_MP_SIGN_DIURNES_000",
+            "name": "Display of the \"day running lights\" option",
+            "byte": 0,
+            "mask": "00000010",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASZ_EMF_MP_CGC_FSE_AUTO_000",
+            "name": "Display of the \"Automatic Electric Parking Brake deactivation\" option",
+            "byte": 0,
+            "mask": "00000001",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_ASU_EMF_MP_GAV_PORTE_COND_000",
+            "name": "Display of the \"locking of the driver's door only\" option",
+            "byte": 1,
+            "mask": "10000000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_AST_EMF_MP_GAV_COFFRE_000",
+            "name": "Display of the \"permanent boot locking\" option",
+            "byte": 1,
+            "mask": "01000000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        },
+        {
+            "id": "CFG_BQF_EMF_MP_SELEC_OUV_AR_000",
+            "name": "Displaying of the option \"motorised tailgate\"",
+            "byte": 1,
+            "mask": "00100000",
+            "type": "bool",
+            "form_type": "checkbox",
+            "available_logic": "active_high"
+        }
+    ]
+    }
+  }
+}
