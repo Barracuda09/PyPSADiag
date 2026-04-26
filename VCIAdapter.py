@@ -173,11 +173,7 @@ class VCIAdapter(QObject):
         """Read output from bridge subprocess"""
         try:
             while self.bridge_process and self.bridge_process.poll() is None:
-                lines, errors = self.bridge_process.communicate()
-                if errors:
-                    for error in errors.splitlines():
-                        self.log(error)
-
+                lines = self.bridge_process.stdout.readline()
                 if not lines:
                     break
 
