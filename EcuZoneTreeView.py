@@ -299,16 +299,41 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
             hide_item = False
+
+            # Check if item should be hidden due to hideZones filter
             if self.hideZones:
                 widget = item.treeWidget().itemWidget(item, 2)
                 if widget and widget.isEnabled() == False:
                     hide_item = True
 
-            if not hide_item and self.searchText:
-                zone_id = item.text(0).lower()
-                zone_desc = item.text(1).lower()
-                if search_lower not in zone_id and search_lower not in zone_desc:
-                    hide_item = True
+            # Always process children to ensure proper visibility state
+            if not hide_item:
+                if self.searchText:
+                    # Text filter is active - check matches
+                    zone_id = item.text(0).lower()
+                    zone_desc = item.text(1).lower()
+                    top_level_matches = search_lower in zone_id or search_lower in zone_desc
+
+                    # Check children for matches
+                    child_matches = False
+                    for child_index in range(item.childCount()):
+                        child = item.child(child_index)
+                        child_param_name = child.text(1).lower()
+                        child_matches_search = search_lower in child_param_name
+
+                        # Hide/show individual children based on search
+                        child.setHidden(not child_matches_search)
+                        if child_matches_search:
+                            child_matches = True
+
+                    # Hide top-level item only if neither it nor any of its children match
+                    if not top_level_matches and not child_matches:
+                        hide_item = True
+                else:
+                    # No text filter - make sure all children are visible
+                    for child_index in range(item.childCount()):
+                        child = item.child(child_index)
+                        child.setHidden(False)
 
             item.setHidden(hide_item)
             if not hide_item:
