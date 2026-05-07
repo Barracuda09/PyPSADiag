@@ -318,6 +318,11 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                     child_matches = False
                     for child_index in range(item.childCount()):
                         child = item.child(child_index)
+                        # Children marked as variant-mismatch by changeZoneOption
+                        # (Disabled(2)) stay hidden regardless of search filter.
+                        if bool(child.data(0, Qt.UserRole + 1)):
+                            child.setHidden(True)
+                            continue
                         child_param_name = child.text(1).lower()
                         child_matches_search = search_lower in child_param_name
 
@@ -330,10 +335,14 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                     if not top_level_matches and not child_matches:
                         hide_item = True
                 else:
-                    # No text filter - make sure all children are visible
+                    # No text filter - make children visible, but keep
+                    # variant-mismatch children hidden.
                     for child_index in range(item.childCount()):
                         child = item.child(child_index)
-                        child.setHidden(False)
+                        if bool(child.data(0, Qt.UserRole + 1)):
+                            child.setHidden(True)
+                        else:
+                            child.setHidden(False)
 
             item.setHidden(hide_item)
             if not hide_item:
@@ -372,4 +381,4 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unknown Error" or data == "Timeout" or (len(data) >= 6 and data[0:6] == "Error:"):
                 self.markItemNoResponse(cellItem)
                 return
-            cellItem.changeZoneOption(cellItem, data, valueType)
+            cellItem.changeZoneOption(cellItem, data, valueType) 
