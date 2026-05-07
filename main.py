@@ -27,7 +27,10 @@ import time
 import os
 from datetime import datetime
 from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator, QEventLoop
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QDialog, QVBoxLayout, QLabel, QPushButton, QHBoxLayout
+from PySide6.QtWidgets import (QApplication, QMainWindow, QFileDialog, QMessageBox,
+                               QDialog, QVBoxLayout, QLabel, QPushButton, QHBoxLayout,
+                               QPlainTextEdit, QGroupBox, QGridLayout)
+from PySide6.QtGui import QFont, QGuiApplication
 from PySide6.QtCore import QTimer
 
 from PyPSADiagGUI import PyPSADiagGUI
@@ -42,6 +45,7 @@ from MessageDialog  import MessageDialog
 from i18n import i18n
 from DecodeCalUlpFile import DecodeCalUlpFile
 from DiagnosticAdapter import DiagnosticAdapter
+from EcuKeyBruteforce import BruteforceWorker
 
 """
   - Change GUI in: PyPSADiagGUI.py
@@ -140,6 +144,168 @@ class VisioparkCalibrationDialog(QDialog):
         self.accept()
 
 
+class EcuKeyBruteforceDialog(QDialog):
+    """Dialog: equivalence-class brute-force search for the 16-bit ECU key."""
+
+    def __init__(self, serialController, tx_id, rx_id, protocol, writeToOutputView, parent=None):
+        super().__init__(parent)
+        self.serialController = serialController
+        self.tx_id = tx_id
+        self.rx_id = rx_id
+        self.protocol = protocol
+        self.writeToOutputView = writeToOutputView
+        self.worker = None
+        self.confirmed_keys = []
+
+        self.setWindowTitle("Bruteforce ECU Key")
+        self.setMinimumSize(640, 520)
+
+        layout = QVBoxLayout(self)
+
+        # Target line
+        sa_level_text = "SA Level 2" if not protocol.startswith("kwp") else "SA Level (KWP)"
+        targetLabel = QLabel(f"<b>Target:</b> {tx_id}:{rx_id}  ({protocol}, {sa_level_text})")
+        targetLabel.setStyleSheet("padding: 6px;")
+        layout.addWidget(targetLabel)
+
+        # Status block
+        statusBox = QGroupBox("Status")
+        statusGrid = QGridLayout()
+        self.candidatesLabel = QLabel("65536")
+        self.roundLabel = QLabel("0")
+        self.rateLabel = QLabel("--")
+        self.elapsedLabel = QLabel("0s")
+        self.confirmedLabel = QLabel("0")
+        self.resultLabel = QLabel("")
+        self.resultLabel.setWordWrap(True)
+        self.resultLabel.setStyleSheet("font-size: 13px; padding: 4px;")
+        statusGrid.addWidget(QLabel("Candidates:"), 0, 0); statusGrid.addWidget(self.candidatesLabel, 0, 1)
+        statusGrid.addWidget(QLabel("Round:"),       0, 2); statusGrid.addWidget(self.roundLabel,      0, 3)
+        statusGrid.addWidget(QLabel("Rate:"),        0, 4); statusGrid.addWidget(self.rateLabel,       0, 5)
+        statusGrid.addWidget(QLabel("Elapsed:"),     1, 0); statusGrid.addWidget(self.elapsedLabel,    1, 1)
+        statusGrid.addWidget(QLabel("Confirmed:"),   1, 2); statusGrid.addWidget(self.confirmedLabel,  1, 3)
+        statusGrid.addWidget(self.resultLabel,       2, 0, 1, 6)
+        statusBox.setLayout(statusGrid)
+        layout.addWidget(statusBox)
+
+        # Log block
+        self.logEdit = QPlainTextEdit()
+        self.logEdit.setReadOnly(True)
+        mono = QFont("Consolas")
+        mono.setStyleHint(QFont.Monospace)
+        mono.setPointSize(9)
+        self.logEdit.setFont(mono)
+        layout.addWidget(self.logEdit, 1)
+
+        # Buttons
+        btnLayout = QHBoxLayout()
+        btnLayout.addStretch()
+        self.startBtn = QPushButton("Start")
+        self.startBtn.clicked.connect(self.onStart)
+        self.stopBtn = QPushButton("Stop")
+        self.stopBtn.setEnabled(False)
+        self.stopBtn.clicked.connect(self.onStop)
+        self.closeBtn = QPushButton("Close")
+        self.closeBtn.clicked.connect(self.onClose)
+        btnLayout.addWidget(self.startBtn)
+        btnLayout.addWidget(self.stopBtn)
+        btnLayout.addWidget(self.closeBtn)
+        layout.addLayout(btnLayout)
+
+    @Slot()
+    def onStart(self):
+        self.logEdit.clear()
+        self.resultLabel.setText("")
+        self.resultLabel.setStyleSheet("font-size: 13px; padding: 4px;")
+        self.confirmed_keys = []
+        self.worker = BruteforceWorker(
+            self.serialController, self.tx_id, self.rx_id, self.protocol, self
+        )
+        self.worker.logSignal.connect(self.onLog)
+        self.worker.progressSignal.connect(self.onProgress)
+        self.worker.doneSignal.connect(self.onDone)
+        self.startBtn.setEnabled(False)
+        self.stopBtn.setEnabled(True)
+        self.closeBtn.setEnabled(False)
+        self.worker.start()
+
+    @Slot()
+    def onStop(self):
+        if self.worker is not None:
+            self.worker.stop()
+            self.stopBtn.setEnabled(False)
+            self.appendLog("\n!! Stopping... waiting for graceful exit ...")
+
+    @Slot()
+    def onClose(self):
+        if self.worker is not None and self.worker.isRunning():
+            ret = QMessageBox.question(
+                self, "Bruteforce running",
+                "A bruteforce is in progress. Stop and close?",
+                QMessageBox.Yes | QMessageBox.No
+            )
+            if ret != QMessageBox.Yes:
+                return
+            self.worker.stop()
+            self.worker.wait(5000)
+        self.accept()
+
+    @Slot(str)
+    def onLog(self, msg: str):
+        self.appendLog(msg)
+        # Mirror everything to PyPSADiag main output too — useful when dialog is closed
+        self.writeToOutputView("[Bruteforce] " + msg)
+
+    def appendLog(self, msg: str):
+        self.logEdit.appendPlainText(msg)
+        sb = self.logEdit.verticalScrollBar()
+        sb.setValue(sb.maximum())
+
+    @Slot(int, int, float, float, int, int)
+    def onProgress(self, rounds, candidates, rate, elapsed, hits, confirmed):
+        self.candidatesLabel.setText(str(candidates))
+        self.roundLabel.setText(str(rounds))
+        self.rateLabel.setText(f"{rate:.1f} rnd/s")
+        self.elapsedLabel.setText(self._fmt_secs(elapsed))
+        self.confirmedLabel.setText(str(confirmed))
+
+    @Slot(list)
+    def onDone(self, confirmed: list):
+        self.confirmed_keys = confirmed
+        self.startBtn.setEnabled(True)
+        self.stopBtn.setEnabled(False)
+        self.closeBtn.setEnabled(True)
+        if confirmed:
+            keys_text = ", ".join(f"{k:04X}" for k in confirmed)
+            self.resultLabel.setText(f"FOUND KEY: {keys_text}")
+            self.resultLabel.setStyleSheet(
+                "font-size: 14px; padding: 4px; color: green; font-weight: bold;"
+            )
+            # Copy to clipboard for convenience
+            try:
+                QGuiApplication.clipboard().setText(keys_text)
+                self.appendLog(f"\n   (copied to clipboard: {keys_text})")
+            except Exception:
+                pass
+            self.writeToOutputView(f"[Bruteforce] FOUND KEY: {keys_text}")
+        else:
+            self.resultLabel.setText("No KEY found")
+            self.resultLabel.setStyleSheet(
+                "font-size: 14px; padding: 4px; color: gray;"
+            )
+
+    @staticmethod
+    def _fmt_secs(s: float) -> str:
+        s = int(s)
+        if s < 60:
+            return f"{s}s"
+        m, s = divmod(s, 60)
+        if m < 60:
+            return f"{m}m {s}s"
+        h, m = divmod(m, 60)
+        return f"{h}h {m}m {s}s"
+
+
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
     ecuObjectList = {}
@@ -207,6 +373,7 @@ class MainWindow(QMainWindow):
         self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
         self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
         self.ui.visioparkCalibrationAction.triggered.connect(self.visioparkCalibration)
+        self.ui.bruteforceKeyAction.triggered.connect(self.bruteforceKey)
         self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
         # Connect Other/General signals to slots
@@ -230,6 +397,7 @@ class MainWindow(QMainWindow):
         self.ui.commandsMenu.setEnabled(False)
         self.ui.disableEcoMode.setEnabled(False)
         self.ui.visioparkCalibrationAction.setEnabled(False)
+        self.ui.bruteforceKeyAction.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -427,6 +595,7 @@ class MainWindow(QMainWindow):
             self.ui.commandsMenu.setEnabled(True)
             self.ui.disableEcoMode.setEnabled(True)
             self.ui.visioparkCalibrationAction.setEnabled(True)
+            self.ui.bruteforceKeyAction.setEnabled(True)
 
             if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
                 self.setEcuCommandsState(True)
@@ -462,6 +631,7 @@ class MainWindow(QMainWindow):
         self.ui.commandsMenu.setEnabled(enabled)
         self.ui.disableEcoMode.setEnabled(enabled)
         self.ui.visioparkCalibrationAction.setEnabled(enabled)
+        self.ui.bruteforceKeyAction.setEnabled(enabled)
 
     @Slot()
     def hideNoResponseZones(self, state):
@@ -545,6 +715,7 @@ class MainWindow(QMainWindow):
             self.ui.commandsMenu.setEnabled(True)
             self.ui.disableEcoMode.setEnabled(True)
             self.ui.visioparkCalibrationAction.setEnabled(True)
+            self.ui.bruteforceKeyAction.setEnabled(True)
             self.updateEcuTxRxLabel()
 
     @Slot()
@@ -853,6 +1024,22 @@ class MainWindow(QMainWindow):
 
         # Stop diagnostic session (1001)
         self.udsCommunication.stopDiagnosticMode()
+
+    @Slot()
+    def bruteforceKey(self):
+        if not self.serialController.isOpen():
+            self.writeToOutputView(i18n().tr("Port not open!"))
+            return
+        if not isinstance(self.ecuObjectList, dict) or not self.ecuObjectList.get("tx_id"):
+            self.writeToOutputView("No ECU loaded. Load an ECU zone file first.")
+            return
+        tx = self.ecuObjectList.get("tx_id", "")
+        rx = self.ecuObjectList.get("rx_id", "")
+        proto = self.ecuObjectList.get("protocol", "uds")
+        dialog = EcuKeyBruteforceDialog(
+            self.serialController, tx, rx, proto, self.writeToOutputView, self
+        )
+        dialog.exec()
 
     @Slot()
     def csvReadCallback(self, value: list):
