@@ -19,66 +19,181 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget, QLabel, QFrame
+from PySide6.QtCore import Qt, Slot
+from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget
+from PySide6.QtGui import QPalette, QColor
 
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
+from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 from i18n import i18n
+import PyPSADiagGUI
 
 
-class EcuZoneTreeWidgetItem(QTreeWidgetItem):
+class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     zone = ""
     zoneDescription = ""
-    def __init__(self, parent, row: int, zone: str, description: str):
-        super(EcuZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), i18n().tr(description)])
-        if isinstance(parent, QTreeWidget):
-            parent.insertTopLevelItem(row, self)
+    zoneObject = {}
+    integrity = True
+    selfUpdate = False
+    def __init__(self, parent: QTreeWidget, row: int, zone: str, description: str, zoneObject: dict):
+        super(EcuMultiZoneTreeWidgetItem, self).__init__(parent, [zone.upper(), str("** " + i18n().tr(description) + " **")])
+        parent.insertTopLevelItem(row, self)
         self.setToolTip(1, i18n().tr(description))
+        self.zoneObject = zoneObject
         self.zone = zone.upper()
         self.zoneDescription = description
 
-#        label = QLabel(description)
-#        label.setWordWrap(True)
-#        label.setFrameStyle(QFrame.NoFrame)
-#        label.setContentsMargins(0, 0, 0, 0)
-#        self.treeWidget().setItemWidget(self, 1, label)
-
-    def addItem(self, tree: QTreeWidgetItem, widget):
+    def addRootWidgetItem(self, tree: QTreeWidget, widget):
+        widget.setReadOnly(True)
         tree.setItemWidget(self, 2, widget)
+        self.__setupConnections(widget)
+
+    def addChildWidgetItem(self, tree: QTreeWidget, label, widget):
+        level = EcuZoneTreeWidgetItem(self, None, "", label)
+        level.setToolTip(1, i18n().tr(label))
+        tree.setItemWidget(level, 2, widget)
+        self.__setupConnections(widget)
+
+    def __setupConnections(self, widget):
+        if isinstance(widget, EcuZoneLineEdit):
+            widget.textChanged.connect(self.textChanged)
+        elif isinstance(widget, EcuZoneCheckBox):
+            widget.stateChanged.connect(self.stateChanged)
+        elif isinstance(widget, EcuZoneComboBox):
+            widget.currentIndexChanged.connect(self.currentIndexChanged)
 
     def getValuesAsCSV(self):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
-        if isinstance(widget, EcuZoneLineEdit):
-            value = widget.getValuesAsCSV()
-        elif isinstance(widget, EcuZoneCheckBox):
-            value = widget.getValuesAsCSV()
-        elif isinstance(widget, EcuZoneComboBox):
+        # Check if Integrity is correct, then return Zone data
+        if self.integrity and isinstance(widget, EcuZoneLineEdit):
             value = widget.getValuesAsCSV()
         return [self.zone, value, self.zoneDescription]
 
     def clearZoneListValues(self):
-        widget = self.treeWidget().itemWidget(self, 2)
-        widget.clearZoneValue()
+        rootWidget = self.treeWidget().itemWidget(self, 2)
+        rootWidget.clearZoneValue()
+        for index in range(self.childCount()):
+            cellItem = self.child(index)
+            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            self.__clearWidget(widget, cellItem)
 
     def getZoneAndHex(self, virginWrite: bool()):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
-        if isinstance(widget, EcuZoneLineEdit):
-            value = widget.getZoneAndHex(virginWrite)
-        elif isinstance(widget, EcuZoneCheckBox):
-            value = widget.getZoneAndHex(virginWrite)
-        elif isinstance(widget, EcuZoneComboBox):
+        # Check if Integrity is correct, then return Zone data
+        if self.integrity and isinstance(widget, EcuZoneLineEdit):
             value = widget.getZoneAndHex(virginWrite)
         return [self.zone, value]
 
-    def changeZoneOption(self, cellItem, data: str, valueType: str):
-        widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-        if isinstance(widget, EcuZoneLineEdit):
-            widget.changeZoneOption(data, valueType)
-        elif isinstance(widget, EcuZoneCheckBox):
-            widget.changeZoneOption(data, valueType)
-        elif isinstance(widget, EcuZoneComboBox):
-            widget.changeZoneOption(data, valueType)
+    def changeZoneOption(self, root, data: str, valueType: str):
+        self.selfUpdate = True
+        try:
+            # Set Root value of Multi Config zone
+            widget = root.treeWidget().itemWidget(root, 2)
+            widget.changeZoneOption(data, "")
+
+            # Set individual Sub items
+            for index in range(root.childCount()):
+                cellItem = root.child(index)
+                widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+                result = widget.changeZoneOption(data, valueType)
+                if result == 2:
+                    print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
+                    p = widget.palette()
+                    p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                    widget.setPalette(p)
+                    widget.setEnabled(False)
+                    cellItem.setHidden(True)
+                    # Mark as "variant mismatch" so applyFilters keeps it hidden
+                    # even when the search filter is empty.
+                    cellItem.setData(0, Qt.UserRole + 1, True)
+                elif result == 1:
+                    print("Disabled(1): " + self.zone + " - " + widget.getDescriptionName())
+                    self.integrity = False
+        except:
+            print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption " + self.zone + " - " + widget.getDescriptionName())
+
+        self.selfUpdate = False
+        # Integrity wrong, disable the sub zones and coding
+        if not self.integrity:
+            for index in range(root.childCount()):
+                cellItem = root.child(index)
+                widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+                p = widget.palette()
+                p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                widget.setPalette(p)
+                widget.setEnabled(False)
+
+    def __clearWidget(self, widget, cellItem):
+        widget.clearZoneValue()
+        p = widget.palette()
+        p.setColor(QPalette.Button, PyPSADiagGUI.BUTTON_COLOR)
+        widget.setPalette(p)
+        widget.setEnabled(True)
+        cellItem.setHidden(False)
+        # Clear the variant-mismatch marker
+        cellItem.setData(0, Qt.UserRole + 1, None)
+
+
+    def __update(self):
+        # If we are "self" updating (By loading CSV file) do not call update
+        if self.selfUpdate == True:
+            return
+
+        rootWidget = self.treeWidget().itemWidget(self, 2)
+        data = rootWidget.text()
+        # Make Bytes (2 chars) from input data
+        byteData = []
+        for i in range(0, len(data), 2):
+            byteData.append(data[i:i + 2])
+
+        for index in range(self.childCount()):
+            cellItem = self.child(index)
+            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            # Is this widget used or disabled?
+            if widget.isEnabled() == False:
+#                print("Disabled widget - " + widget.getDescriptionName())
+                continue
+
+#            print("Enabled widget - " + widget.getDescriptionName())
+
+            byteNr = widget.getCorrespondingByte()
+            size = widget.getCorrespondingByteSize()
+
+            # Size do not correspond or not Enabled, Then Goto next item
+            if (byteNr + size) > len(byteData) or widget.isEnabled() == False:
+                continue
+
+            # Get the corresponing data for this "zone"
+            currData = str().join(byteData[byteNr : byteNr + size])
+
+            if isinstance(widget, EcuZoneLineEdit):
+                currData = widget.update(currData)
+            elif isinstance(widget, EcuZoneCheckBox):
+                currData = widget.update(currData)
+            elif isinstance(widget, EcuZoneComboBox):
+                currData = widget.update(currData)
+
+            # Put back changed "zone" data
+            for i in range(size):
+                j = (i * 2)
+                byteData[byteNr + i] = currData[j:j + 2]
+
+        # Update changed "zone" data
+        rootWidget.updateText(str().join(byteData))
+
+    @Slot()
+    def currentIndexChanged(self, item: int):
+        self.__update()
+
+    @Slot()
+    def textChanged(self, item: str):
+        self.__update()
+
+    @Slot()
+    def stateChanged(self, item: int):
+        self.__update()
+ 

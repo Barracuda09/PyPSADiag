@@ -205,6 +205,9 @@ class PyPSADiagGUI(object):
 
         self.visioparkCalibrationAction = QAction(self.commandsMenu)
         self.commandsMenu.addAction(self.visioparkCalibrationAction)
+
+        self.bruteforceKeyAction = QAction(self.commandsMenu)
+        self.commandsMenu.addAction(self.bruteforceKeyAction)
         ###################################################
 
         ###################################################
@@ -429,7 +432,8 @@ class PyPSADiagGUI(object):
         self.commandsMenu.setTitle(i18n().tr("ECU Commands"))
         self.disableEcoModeAction.setText(i18n().tr("Disable Eco Mode"))
         self.visioparkCalibrationAction.setText(i18n().tr("Visiopark Calibration"))
+        self.bruteforceKeyAction.setText(i18n().tr("Bruteforce ECU Key..."))
         self.languageMenu.setTitle(i18n().tr("Language"))
 
     def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
-        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol))
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol)) 
