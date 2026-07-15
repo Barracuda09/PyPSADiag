@@ -96,12 +96,12 @@
     <message>
         <location filename="../DiagnosticCommunication.py" line="154" />
         <source>** Skipping/Stripping **</source>
-        <translation>** Skipping/Stripping **</translation>
+        <translation>** Atlanıyor/Ayıklanıyor **</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="160" />
         <source>** Stripping **</source>
-        <translation>** Stripping **</translation>
+        <translation>** Ayıklanıyor **</translation>
     </message>
     <message>
         <location filename="../DiagnosticCommunication.py" line="174" />
@@ -356,7 +356,7 @@
     <message>
         <location filename="../main.py" line="421" />
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation>Tamam</translation>
     </message>
 <message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/BECB/BECB_GEN2.json" line="2" />
@@ -6333,23 +6333,23 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="621" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="50" />
         <source>Petrol</source>
-        <translation>Benzina</translation>
+        <translation>Benzin</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="610" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="625" />
         <source>Petrol Fuel (GPL)</source>
-        <translation>A benzina (GPL)</translation>
+        <translation>Benzin Yakıtı (GPL)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="614" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="629" />
         <source>Petrol Fuel (GNV)</source>
-        <translation>A benzina (GNV)</translation>
+        <translation>Benzin Yakıtı (GNV)</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="618" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="633" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/ARTIV/ARTIV_UDS.json" line="38" />
         <source>Diesel</source>
-        <translation>Diesel</translation>
+        <translation>Dizel</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="622" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="637" />
@@ -6359,7 +6359,7 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="626" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="641" />
         <source>Petrol et Alcohol</source>
-        <translation>Benzina et alcol</translation>
+        <translation>Benzin ve Alkol</translation>
     </message><message>
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/RCC.json" line="630" />
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/json/TELEMAT/NAC.json" line="645" />
@@ -17517,5 +17517,5310 @@
         <location filename="/mnt/Dropbox/git/PyProjects/PyPSADiag/data/IdentUDSECU.json" line="5" />
         <source>Secure Traceability Value</source>
         <translation>Güvenli İzlenebilirlik Değeri</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="36" />
+        <source>Tire size</source>
+        <translation>Lastik ebadı</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="43" />
+        <source>215/70R16 (2196 mm)</source>
+        <translation>215/70R16 (2196 mm)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="47" />
+        <source>215/65R17 (2208 mm)</source>
+        <translation>215/65R17 (2208 mm)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="51" />
+        <source>225/55R18 (2181 mm)</source>
+        <translation>225/55R18 (2181 mm)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="55" />
+        <source>205/55R19 (2187 mm)</source>
+        <translation>205/55R19 (2187 mm)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="59" />
+        <source>235/40R19</source>
+        <translation>235/40R19</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="63" />
+        <source>235/50R19 (2223 mm)</source>
+        <translation>235/50R19 (2223 mm)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="69" />
+        <source>Front brakes</source>
+        <translation>Ön frenler</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="76" />
+        <source>283X26-PHI60</source>
+        <translation>283X26-PHI60</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="80" />
+        <source>304X18-PHI60</source>
+        <translation>304X18-PHI60</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="84" />
+        <source>330X30-PHI60 (PHEV)</source>
+        <translation>330X30-PHI60 (PHEV)</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="90" />
+        <source>Rear brakes</source>
+        <translation>Arka frenler</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="97" />
+        <source>268X12-PHI38</source>
+        <translation>268X12-PHI38</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="101" />
+        <source>290X12-PHI42</source>
+        <translation>290X12-PHI42</translation>
+    </message><message>
+        <location filename="../json/ABRASR/ESP90.json" line="105" />
+        <source>290X12-PHI42 (PHEV)</source>
+        <translation>290X12-PHI42 (PHEV)</translation>
+    </message><message>
+        <location filename="../json/BECB/BECB_GEN4.json" line="2" />
+        <source>BECB_GEN4</source>
+        <translation>BECB_GEN4</translation>
+    </message><message>
+        <location filename="../json/BECB/BECB_GEN4.json" line="28" />
+        <source>Engine variant</source>
+        <translation>Motor varyantı</translation>
+    </message><message>
+        <location filename="../json/BECB/BECB_GEN4.json" line="36" />
+        <source>Status</source>
+        <translation>Durum</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="152" />
+        <source>340 Ohms?</source>
+        <translation>340 Ohms?</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="165" />
+        <source>0 Ohms</source>
+        <translation>0 Ohms</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="166" />
+        <source>56 Ohms</source>
+        <translation>56 Ohms</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="167" />
+        <source>60 Ohms?</source>
+        <translation>60 Ohms?</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="168" />
+        <source>62 Ohms?</source>
+        <translation>62 Ohms?</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="170" />
+        <source>70 Ohms</source>
+        <translation>70 Ohms</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="297" />
+        <source>Rear Sensors</source>
+        <translation>Arka Sensörler</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="301" />
+        <source>Front Sensors</source>
+        <translation>Ön Sensörler</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="305" />
+        <source>Front and Rear Sensors</source>
+        <translation>Ön ve Arka Sensörler</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="311" />
+        <source>Available space measurement managed by the parking assistance ECU</source>
+        <translation>Park yardımı ECU'su tarafından yönetilen boş alan ölçümü</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="327" />
+        <source>Available space measurement managed by the blind spot monitoring ECU</source>
+        <translation>Kör nokta izleme ECU'su tarafından yönetilen boş alan ölçümü</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="343" />
+        <source>Visual reversing assistance</source>
+        <translation>Görsel geri vites yardımı</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="359" />
+        <source>Semi-automatic parking assistance system</source>
+        <translation>Yarı otomatik park yardım sistemi</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="375" />
+        <source>Semi-automatic parking system with perpendicular parking option</source>
+        <translation>Dik park seçenekli yarı otomatik park sistemi</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="1287" />
+        <source>C4 Picasso 7-seats</source>
+        <translation>C4 Picasso 7 koltuklu</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="1289" />
+        <source>C4 Picasso 5-ats</source>
+        <translation>C4 Picasso 5 koltuklu</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="2730" />
+        <source>The presence of grille lights</source>
+        <translation>Izgara aydınlatmalarının varlığı</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="3667" />
+        <source>Additional rear overall lights</source>
+        <translation>İlave arka genel aydınlatmalar</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="4431" />
+        <source>CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Selection Wheel for Anti-Skid ???</source>
+        <translation>CFG_BSE_BSI_UCECAN_ADS_ASRPLUS_000: Selection Wheel for Anti-Skid ???</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="4679" />
+        <source>CFG_EWM_BSI_UCECAN_WLC_000: Wireless charger</source>
+        <translation>CFG_EWM_BSI_UCECAN_WLC_000: Wireless charger</translation>
+    </message><message>
+        <location filename="../json/BMF/BSI2010.json" line="5055" />
+        <source>CFG_EZ_BSI_UCELIN_???_000: ????</source>
+        <translation>CFG_EZ_BSI_UCELIN_???_000: ????</translation>
+    </message><message>
+        <location filename="../json/BVA/AxN8.json" line="2" />
+        <source>BVA AMN8/ATN8</source>
+        <translation>BVA AMN8/ATN8</translation>
+    </message><message>
+        <location filename="../json/BVA/AxN8.json" line="31" />
+        <source>Type of gearbox selector</source>
+        <translation>Vites seçici tipi</translation>
+    </message><message>
+        <location filename="../json/BVA/AxN8.json" line="38" />
+        <source>e-toggle</source>
+        <translation>e-toggle</translation>
+    </message><message>
+        <location filename="../json/BVA/AxN8.json" line="42" />
+        <source>Joystick</source>
+        <translation>Joystick</translation>
+    </message><message>
+        <location filename="../json/BVA/AxN8.json" line="46" />
+        <source>Rotating knob</source>
+        <translation>Döner düğme</translation>
+    </message><message>
+        <location filename="../json/COMBINE/CIROCCO.json" line="172" />
+        <source>Presence of Blind Spot Monitoring</source>
+        <translation>Kör Nokta İzleme Varlığı</translation>
+    </message><message>
+        <location filename="../json/COMBINE/COMBINE_UDS.json" line="22" />
+        <source>Configuration 0200</source>
+        <translation>Yapılandırma 0200</translation>
+    </message><message>
+        <location filename="../json/DIRECTN/DAE_UDS.json" line="144" />
+        <source>Bodywork</source>
+        <translation>Kaporta</translation>
+    </message><message>
+        <location filename="../json/DIRECTN/DAE_UDS.json" line="152" />
+        <source>Engine</source>
+        <translation>Motor</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="2" />
+        <source>No Sub Type Information</source>
+        <translation>Alt Tip Bilgisi Yok</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="3" />
+        <source>General Electrical Failure</source>
+        <translation>Genel Elektrik Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="4" />
+        <source>General Signal Failure</source>
+        <translation>Genel Sinyal Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="5" />
+        <source>FM (Frequency Modulated) /PWM (Pulse Width Modulated)Failure</source>
+        <translation>FM (Frekans Modülasyonlu) / PWM (Darbe Genişlik Modülasyonlu) Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="6" />
+        <source>System Internal Failure</source>
+        <translation>Sistem Dahili Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="7" />
+        <source>System Programming Failure</source>
+        <translation>Sistem Programlama Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="8" />
+        <source>Algorithm-Based Failure</source>
+        <translation>Algoritma Tabanlı Arıza</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="9" />
+        <source>Mechanical Failure</source>
+        <translation>Mekanik Arıza</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="10" />
+        <source>Bus Signal / Message Failure</source>
+        <translation>Veri Yolu Sinyal / Mesaj Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="11" />
+        <source>Component Failure</source>
+        <translation>Bileşen Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="12" />
+        <source>Circuit Short To Ground</source>
+        <translation>Devre Şaseye Kısa Devre</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="13" />
+        <source>Circuit Short To Battery</source>
+        <translation>Devre Aküye Kısa Devre</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="14" />
+        <source>Circuit Open</source>
+        <translation>Devre Açık</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="15" />
+        <source>Circuit Short To Ground or Open</source>
+        <translation>Devre Şaseye Kısa Devre veya Açık</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="16" />
+        <source>Circuit Short To Battery or Open</source>
+        <translation>Devre Aküye Kısa Devre veya Açık</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="17" />
+        <source>Circuit Voltage Below</source>
+        <translation>Devre Gerilimi Eşiğin Altında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="18" />
+        <source>Circuit Voltage Above Threshold</source>
+        <translation>Devre Gerilimi Eşiğin Üstünde</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="19" />
+        <source>Circuit Current Below Threshold</source>
+        <translation>Devre Akımı Eşiğin Altında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="20" />
+        <source>Circuit Current Above Threshold</source>
+        <translation>Devre Akımı Eşiğin Üstünde</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="21" />
+        <source>Circuit Resistance Below Threshold</source>
+        <translation>Devre Direnci Eşiğin Altında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="22" />
+        <source>Circuit Resistance Above Threshold</source>
+        <translation>Devre Direnci Eşiğin Üstünde</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="23" />
+        <source>Circuit Voltage Out of Range</source>
+        <translation>Devre Gerilimi Aralık Dışında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="24" />
+        <source>Circuit Current Out of Range</source>
+        <translation>Devre Akımı Aralık Dışında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="25" />
+        <source>Circuit Resistance Out of Range</source>
+        <translation>Devre Direnci Aralık Dışında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="26" />
+        <source>Circuit Intermittent</source>
+        <translation>Devre Kesintili</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="27" />
+        <source>Signal Amplitude &lt; Minimum</source>
+        <translation>Sinyal Genliği &lt; Minimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="28" />
+        <source>Signal Amplitude &gt; Maximum</source>
+        <translation>Sinyal Genliği &gt; Maksimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="29" />
+        <source>Signal Stuck Low</source>
+        <translation>Sinyal Düşükte Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="30" />
+        <source>Signal Stuck High</source>
+        <translation>Sinyal Yüksekte Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="31" />
+        <source>Signal Shape / Waveform Failure</source>
+        <translation>Sinyal Şekli / Dalga Biçimi Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="32" />
+        <source>Signal Rate of Change Below Threshold</source>
+        <translation>Sinyal Değişim Hızı Eşiğin Altında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="33" />
+        <source>Signal Rate of Change Above Threshold</source>
+        <translation>Sinyal Değişim Hızı Eşiğin Üstünde</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="34" />
+        <source>Signal Bias Level Out of Range</source>
+        <translation>Sinyal Ofset Seviyesi Aralık Dışında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="35" />
+        <location filename="../data/DTCFailureType.json" line="91" />
+        <source>Signal Invalid</source>
+        <translation>Sinyal Geçersiz</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="36" />
+        <source>Signal Stuck In Range</source>
+        <translation>Sinyal Aralık İçinde Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="37" />
+        <source>Signal Cross Coupled</source>
+        <translation>Sinyal Çapraz Bağlı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="38" />
+        <source>Signal Erratic</source>
+        <translation>Sinyal Düzensiz</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="39" />
+        <source>No Signal</source>
+        <translation>Sinyal Yok</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="40" />
+        <source>Signal Low Time &lt; Minimum</source>
+        <translation>Sinyal Düşük Süresi &lt; Minimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="41" />
+        <source>Signal Low Time &gt; Maximum</source>
+        <translation>Sinyal Düşük Süresi &gt; Maksimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="42" />
+        <source>Signal High Time &lt; Minimum</source>
+        <translation>Sinyal Yüksek Süresi &lt; Minimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="43" />
+        <source>Signal High Time &gt; Maximum</source>
+        <translation>Sinyal Yüksek Süresi &gt; Maksimum</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="44" />
+        <source>Signal Frequency Too Low</source>
+        <translation>Sinyal Frekansı Çok Düşük</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="45" />
+        <source>Signal Frequency Too High</source>
+        <translation>Sinyal Frekansı Çok Yüksek</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="46" />
+        <source>Signal Frequency Incorrect</source>
+        <translation>Sinyal Frekansı Hatalı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="47" />
+        <source>Signal Has Too Few Pulses</source>
+        <translation>Sinyalde Çok Az Darbe Var</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="48" />
+        <source>Signal Has Too Many Pulses</source>
+        <translation>Sinyalde Çok Fazla Darbe Var</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="49" />
+        <source>General Checksum Failure</source>
+        <translation>Genel Sağlama Toplamı Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="50" />
+        <source>General Memory Failure</source>
+        <translation>Genel Bellek Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="51" />
+        <source>Special Memory Failure</source>
+        <translation>Özel Bellek Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="52" />
+        <source>Data Memory Failure</source>
+        <translation>Veri Belleği Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="53" />
+        <source>Program Memory Failure</source>
+        <translation>Program Belleği Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="54" />
+        <source>Calibration / Parameter Memory</source>
+        <translation>Kalibrasyon / Parametre Belleği</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="55" />
+        <source>Watchdog / Safety uC Failure</source>
+        <translation>Watchdog / Güvenlik Mikrodenetleyici Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="56" />
+        <source>Supervision Software Failure</source>
+        <translation>Denetim Yazılımı Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="57" />
+        <source>Internal Electronic Failure</source>
+        <translation>Dahili Elektronik Arıza</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="58" />
+        <source>Incorrect Component Installed</source>
+        <translation>Yanlış Bileşen Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="59" />
+        <source>Over Temperature</source>
+        <translation>Aşırı Sıcaklık</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="60" />
+        <source>Not Programmed</source>
+        <translation>Programlanmamış</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="61" />
+        <source>Not Activated</source>
+        <translation>Etkinleştirilmemiş</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="62" />
+        <source>Deactivated</source>
+        <translation>Devre Dışı Bırakılmış</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="63" />
+        <source>Missing Calibration</source>
+        <translation>Kalibrasyon Eksik</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="64" />
+        <source>Not Configured</source>
+        <translation>Yapılandırılmamış</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="65" />
+        <source>Invalid / Incompatible Configuration</source>
+        <translation>Geçersiz / Uyumsuz Yapılandırma</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="66" />
+        <source>Invalid / Incompatible Software</source>
+        <translation>Geçersiz / Uyumsuz Yazılım</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="67" />
+        <source>Signal Calculation Failure</source>
+        <translation>Sinyal Hesaplama Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="68" />
+        <source>Signal Compare Failure</source>
+        <translation>Sinyal Karşılaştırma Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="69" />
+        <source>Circuit / Component Protection Time-Out</source>
+        <translation>Devre / Bileşen Koruma Zaman Aşımı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="70" />
+        <source>Signal Plausibility Failure</source>
+        <translation>Sinyal Makuliyet Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="71" />
+        <source>Signal Has Too Few Transitions / Events</source>
+        <translation>Sinyalde Çok Az Geçiş / Olay Var</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="72" />
+        <source>Signal Has Too Many Transitions / Events</source>
+        <translation>Sinyalde Çok Fazla Geçiş / Olay Var</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="73" />
+        <source>Signal Incorrect After Event</source>
+        <translation>Olaydan Sonra Sinyal Hatalı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="74" />
+        <source>Event Information</source>
+        <translation>Olay Bilgisi</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="75" />
+        <source>Actuator Stuck</source>
+        <translation>Aktüatör Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="76" />
+        <source>Actuator Stuck Open</source>
+        <translation>Aktüatör Açık Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="77" />
+        <source>Actuator Stuck Closed</source>
+        <translation>Aktüatör Kapalı Takılı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="78" />
+        <source>Actuator Slipping</source>
+        <translation>Aktüatör Kayıyor</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="79" />
+        <source>Emergency Position Not Reachable</source>
+        <translation>Acil Konuma Ulaşılamıyor</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="80" />
+        <source>Wrong Mounting Position</source>
+        <translation>Yanlış Montaj Konumu</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="81" />
+        <source>Commanded Position Not Reachable</source>
+        <translation>Komut Verilen Konuma Ulaşılamıyor</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="82" />
+        <source>Alignment or Adjustment Incorrect</source>
+        <translation>Hizalama veya Ayar Hatalı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="83" />
+        <source>Mechanical Linkage Failure</source>
+        <translation>Mekanik Bağlantı Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="84" />
+        <source>Fluid Leak or Seal Failure</source>
+        <translation>Sıvı Kaçağı veya Conta Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="85" />
+        <source>Low Fluid Level</source>
+        <translation>Düşük Sıvı Seviyesi</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="86" />
+        <source>Invalid Serial Data Received</source>
+        <translation>Geçersiz Seri Veri Alındı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="87" />
+        <source>Alive / Sequence Counter Incorrect / Not Updated</source>
+        <translation>Canlılık / Sıra Sayacı Hatalı / Güncellenmemiş</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="88" />
+        <source>Value of Signal Protection Calculation Incorrect</source>
+        <translation>Sinyal Koruma Hesaplama Değeri Hatalı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="89" />
+        <source>Signal Below Allowable Range</source>
+        <translation>Sinyal İzin Verilen Aralığın Altında</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="90" />
+        <source>Signal Above Allowable Range</source>
+        <translation>Sinyal İzin Verilen Aralığın Üstünde</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="92" />
+        <source>Missing Message</source>
+        <translation>Mesaj Eksik</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="93" />
+        <source>Bus off</source>
+        <translation>Veri Yolu Kapalı (Bus off)</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="94" />
+        <source>Erratic</source>
+        <translation>Düzensiz</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="95" />
+        <source>Parametric</source>
+        <translation>Parametrik</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="96" />
+        <source>Performance or Incorrect</source>
+        <translation>Performans veya Hatalı</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="97" />
+        <source>No Operation</source>
+        <translation>Çalışma Yok</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="98" />
+        <source>Unexpected Operation</source>
+        <translation>Beklenmeyen Çalışma</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="99" />
+        <source>Incorrect Assembly</source>
+        <translation>Hatalı Montaj</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="100" />
+        <source>Component Internal Failure</source>
+        <translation>Bileşen Dahili Arızası</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="101" />
+        <source>Component or System Operation Obstructed or Blocked</source>
+        <translation>Bileşen veya Sistem Çalışması Engellenmiş veya Bloke</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="102" />
+        <source>Component or System Over Temperature</source>
+        <translation>Bileşen veya Sistem Aşırı Sıcaklık</translation>
+    </message><message>
+        <location filename="../data/DTCFailureType.json" line="103" />
+        <source>Component or System Operating Conditions</source>
+        <translation>Bileşen veya Sistem Çalışma Koşulları</translation>
+    </message><message>
+        <location filename="../data/IdentUDSECU.json" line="88" />
+        <source>Teletransmission Tool ID / 020000 = Factory</source>
+        <translation>Teletransmisyon Cihazı Kimliği / 020000 = Fabrika</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="2" />
+        <source>BSI2010_EV.md DTC Codes (UDS) grabbed from ludwig-v github</source>
+        <translation>ludwig-v github'dan alınan BSI2010_EV.md DTC Kodları (UDS)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="3" />
+        <source>Calibration downloading fault</source>
+        <translation>Kalibrasyon indirme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="4" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="5" />
+        <source>Unexpected resetting of the module</source>
+        <translation>Modülün beklenmeyen şekilde sıfırlanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="6" />
+        <source>Secure configuration fault (Warning, this fault may be a phantom fault)</source>
+        <translation>Güvenli yapılandırma arızası (Dikkat, bu arıza hayalet arıza olabilir)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="7" />
+        <source>Module internal fault</source>
+        <translation>Modül dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="8" />
+        <source>Master windscreen wiper motor fault (driver's side)</source>
+        <translation>Ana ön cam silecek motoru arızası (sürücü tarafı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="9" />
+        <source>Slave windscreen wiper motor fault (passenger's side)</source>
+        <translation>Yardımcı ön cam silecek motoru arızası (yolcu tarafı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="10" />
+        <source>Module supply fault</source>
+        <translation>Modül besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="11" />
+        <source>Module internal clock fault</source>
+        <translation>Modül dahili saat arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="12" />
+        <source>Power output deactivated definitively</source>
+        <translation>Güç çıkışı kalıcı olarak devre dışı bırakıldı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="13" />
+        <source>Power output temporarily deactivated</source>
+        <translation>Güç çıkışı geçici olarak devre dışı bırakıldı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="14" />
+        <source>Reset of the BSI</source>
+        <translation>BSI sıfırlama</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="15" />
+        <source>Driving school module: Sticking of the horn button</source>
+        <translation>Sürücü kursu modülü: Korna düğmesinin takılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="16" />
+        <source>Driving school module: Sticking of the headlamp flash button</source>
+        <translation>Sürücü kursu modülü: Far selektör düğmesinin takılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="17" />
+        <source>Driving school module: Non coherent position of the direction indicators dial</source>
+        <translation>Sürücü kursu modülü: Sinyal kolu konumunun tutarsızlığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="18" />
+        <source>Driving school module: Non coherent position of the lights dial</source>
+        <translation>Sürücü kursu modülü: Aydınlatma kolu konumunun tutarsızlığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="19" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="164" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="165" />
+        <source>Neck heater load reduction fault</source>
+        <translation>Boyun ısıtıcısı yük azaltma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="20" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="76" />
+        <source>Windscreen wiping or washing controls fault</source>
+        <translation>Ön cam silme veya yıkama kumandaları arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="21" />
+        <source>Front right dipped headlamp control fault</source>
+        <translation>Ön sağ kısa hüzme far kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="22" />
+        <source>Front left dipped headlamp control fault</source>
+        <translation>Ön sol kısa hüzme far kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="23" />
+        <source>Front right main beam headlamp control fault</source>
+        <translation>Ön sağ uzun hüzme far kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="24" />
+        <source>Front left main beam headlamp control fault</source>
+        <translation>Ön sol uzun hüzme far kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="25" />
+        <source>Right-hand blind fault</source>
+        <translation>Sağ perde arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="26" />
+        <source>Left-hand blind fault</source>
+        <translation>Sol perde arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="27" />
+        <source>Right-hand dedicated daytime running lamp fault</source>
+        <translation>Sağ özel gündüz farı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="28" />
+        <source>Left-hand dedicated daytime running lamp fault</source>
+        <translation>Sol özel gündüz farı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="29" />
+        <source>Front right foglamp control fault</source>
+        <translation>Ön sağ sis farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="30" />
+        <source>Front left foglamp control fault</source>
+        <translation>Ön sol sis farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="31" />
+        <source>Fault - Engine relay unit : Fault: right-hand static cornering lamp</source>
+        <translation>Arıza - Motor röle ünitesi: Arıza: sağ sabit viraj farı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="32" />
+        <source>Fault - Engine relay unit : Fault: left-hand static cornering lamp</source>
+        <translation>Arıza - Motor röle ünitesi: Arıza: sol sabit viraj farı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="33" />
+        <source>Day running lamps activation relay control fault</source>
+        <translation>Gündüz farları etkinleştirme rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="34" />
+        <source>Front right side lamp control fault</source>
+        <translation>Ön sağ park lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="35" />
+        <source>Front left side lamp control fault</source>
+        <translation>Ön sol park lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="36" />
+        <source>Rear right side lamp control fault</source>
+        <translation>Arka sağ park lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="37" />
+        <source>Rear left side lamp control fault</source>
+        <translation>Arka sol park lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="38" />
+        <source>Additional side lamp control fault</source>
+        <translation>İlave park lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="39" />
+        <source>Headlamp wash pump control fault</source>
+        <translation>Far yıkama pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="40" />
+        <source>Front screenwash pump control fault</source>
+        <translation>Ön cam yıkama pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="41" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="49" />
+        <source>Rear screen wash pump control fault</source>
+        <translation>Arka cam yıkama pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="42" />
+        <source>Windscreen wiper park information fault</source>
+        <translation>Ön cam silecek park konumu bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="43" />
+        <source>Windscreen wiper slow speed control fault</source>
+        <translation>Ön cam silecek yavaş hız kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="44" />
+        <source>Windscreen wiper fast speed control fault</source>
+        <translation>Ön cam silecek hızlı hız kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="45" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="84" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="223" />
+        <source>Horn fault</source>
+        <translation>Korna arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="46" />
+        <source>Passenger compartment ambience lighting control fault</source>
+        <translation>Yolcu kabini ambiyans aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="47" />
+        <source>Rear wiper park information fault</source>
+        <translation>Arka silecek park konumu bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="48" />
+        <source>Windscreen wash pump control fault</source>
+        <translation>Ön cam yıkama pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="50" />
+        <source>Fault: rear wiper control</source>
+        <translation>Arıza: arka silecek kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="51" />
+        <source>Front courtesy lamp control fault</source>
+        <translation>Ön tavan lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="52" />
+        <source>Rear courtesy lamp or footwells control fault</source>
+        <translation>Arka tavan lambası veya ayak aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="53" />
+        <source>Door sills or third row courtesy lamp control fault</source>
+        <translation>Kapı eşiği veya üçüncü sıra tavan lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="54" />
+        <source>Boot lighting control fault</source>
+        <translation>Bagaj aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="55" />
+        <source>Number plate lighting control fault</source>
+        <translation>Plaka aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="56" />
+        <source>Right-hand brake lamp control fault</source>
+        <translation>Sağ fren lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="57" />
+        <source>Left-hand brake lamp control fault</source>
+        <translation>Sol fren lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="58" />
+        <source>Front right direction indicator control fault</source>
+        <translation>Ön sağ sinyal lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="59" />
+        <source>Front left direction indicator control fault</source>
+        <translation>Ön sol sinyal lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="60" />
+        <source>Rear right direction indicator control fault</source>
+        <translation>Arka sağ sinyal lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="61" />
+        <source>Rear left direction indicator control fault</source>
+        <translation>Arka sol sinyal lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="62" />
+        <source>Rear left foglamp control fault</source>
+        <translation>Arka sol sis farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="63" />
+        <source>Rear right foglamp control fault</source>
+        <translation>Arka sağ sis farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="64" />
+        <source>Left-hand reversing lamp control fault</source>
+        <translation>Sol geri vites lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="65" />
+        <source>Right-hand reversing lamp control fault</source>
+        <translation>Sağ geri vites lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="66" />
+        <source>Left-hand direction indicator repeater control fault</source>
+        <translation>Sol sinyal tekrarlayıcı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="67" />
+        <source>Right-hand direction indicator repeater control fault</source>
+        <translation>Sağ sinyal tekrarlayıcı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="68" />
+        <source>Additional brake lamp control fault</source>
+        <translation>İlave fren lambası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="69" />
+        <source>Front left direction indicator and left-hand side repeater control fault</source>
+        <translation>Ön sol sinyal lambası ve sol yan tekrarlayıcı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="70" />
+        <source>Front right direction indicator and right-hand side repeater control fault</source>
+        <translation>Ön sağ sinyal lambası ve sağ yan tekrarlayıcı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="71" />
+        <source>Right-hand day running lamp control fault</source>
+        <translation>Sağ gündüz farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="72" />
+        <source>Left-hand day running lamp control fault</source>
+        <translation>Sol gündüz farı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="73" />
+        <source>Exterior lateral lighting control fault</source>
+        <translation>Dış yan aydınlatma kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="74" />
+        <source>Lighting controls fault</source>
+        <translation>Aydınlatma kumandaları arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="75" />
+        <source>Lighting and signalling control fault</source>
+        <translation>Aydınlatma ve sinyalizasyon kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="77" />
+        <source>Fault in the button at the end of the wiper control stalk</source>
+        <translation>Silecek kumanda kolu ucundaki düğmede arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="78" />
+        <source>Fault in the button at the end of the lighting control stalk</source>
+        <translation>Aydınlatma kumanda kolu ucundaki düğmede arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="79" />
+        <source>Horn button fault</source>
+        <translation>Korna düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="80" />
+        <source>Main beam headlamps assistant activation button fault</source>
+        <translation>Uzun hüzme far asistanı etkinleştirme düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="81" />
+        <source>Main beam headlamps assistant activation button LED fault</source>
+        <translation>Uzun hüzme far asistanı etkinleştirme düğmesi LED arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="82" />
+        <source>Windscreen wipers activation relay control fault</source>
+        <translation>Ön cam silecekleri etkinleştirme rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="83" />
+        <source>Windscreen wipers speed selection relay control fault</source>
+        <translation>Ön cam silecekleri hız seçim rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="85" />
+        <source>Windscreen wash-wipe control fault</source>
+        <translation>Ön cam yıkama-silme kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="86" />
+        <source>Direction indicators control fault</source>
+        <translation>Sinyal lambaları kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="87" />
+        <source>Front foglamps activation relay control fault</source>
+        <translation>Ön sis farları etkinleştirme rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="88" />
+        <source>Main beam headlamps activation relay control fault</source>
+        <translation>Uzun hüzme farlar etkinleştirme rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="89" />
+        <source>Trailer brake lamps switch fault</source>
+        <translation>Römork fren lambaları anahtarı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="90" />
+        <source>Fault: engine ECU faulty or incorrect configuring of the BSI for the Stop and Start function</source>
+        <translation>Arıza: motor ECU'su arızalı veya Stop and Start işlevi için BSI'nin yanlış yapılandırılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="91" />
+        <source>Right-hand headlamp fan fault</source>
+        <translation>Sağ far fanı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="92" />
+        <source>Left-hand headlamp fan fault</source>
+        <translation>Sol far fanı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="93" />
+        <source>Traceability of the forcing of the maintaining of the lighting of the dipped headlamps : Ignore this fault</source>
+        <translation>Kısa hüzme farların aydınlatmasının zorla açık tutulmasının izlenebilirliği: Bu arızayı yok sayın</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="94" />
+        <source>Steering-mounted controls ECU faulty</source>
+        <translation>Direksiyon üzeri kumandalar ECU'su arızalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="95" />
+        <source>Fault: matrix screen ECU faulty</source>
+        <translation>Arıza: matris ekran ECU'su arızalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="96" />
+        <source>Fault: instrument panel ECU faulty</source>
+        <translation>Arıza: gösterge paneli ECU'su arızalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="97" />
+        <source>Fault: head-up display ECU faulty</source>
+        <translation>Arıza: head-up gösterge ECU'su arızalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="98" />
+        <source>Blind spot monitoring function configuration fault</source>
+        <translation>Kör nokta izleme işlevi yapılandırma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="99" />
+        <source>Parking assistance function configuration fault</source>
+        <translation>Park yardımı işlevi yapılandırma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="100" />
+        <source>Distance alert function or adapted cruise control function information fault</source>
+        <translation>Mesafe uyarısı işlevi veya uyarlanabilir hız sabitleyici işlevi bilgi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="101" />
+        <source>Collision risk alert function fault</source>
+        <translation>Çarpışma riski uyarısı işlevi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="102" />
+        <source>Fault in the reference value information used for the cruise control and speed limiter</source>
+        <translation>Hız sabitleyici ve hız sınırlayıcı için kullanılan referans değer bilgisinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="103" />
+        <source>Automatic braking on risk of collision function fault</source>
+        <translation>Çarpışma riskinde otomatik frenleme işlevi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="104" />
+        <source>Fault: internal combustion engine status information</source>
+        <translation>Arıza: içten yanmalı motor durum bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="105" />
+        <source>Absence of a datastream from the ESP ECU</source>
+        <translation>ESP ECU'sundan veri akışı yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="106" />
+        <source>Fault in the electric power steering status information for the semi-automatic parking system</source>
+        <translation>Yarı otomatik park sistemi için elektrikli direksiyon durum bilgisinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="107" />
+        <source>Loss of the electric vehicle system main status and direction indicators status information</source>
+        <translation>Elektrikli araç sistemi ana durum ve sinyal lambaları durum bilgisinin kaybı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="108" />
+        <source>Warning LED supply fault</source>
+        <translation>Uyarı LED besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="109" />
+        <source>Built-in systems interface internal fault for the adapted cruise control (ACC)</source>
+        <translation>Uyarlanabilir hız sabitleyici (ACC) için yerleşik sistemler arayüzü dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="110" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="111" />
+        <source>Automatic cruise control requested status and information received</source>
+        <translation>Otomatik hız sabitleyici istenen durum ve alınan bilgi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="112" />
+        <source>Interior front left sensor fault</source>
+        <translation>İç ön sol sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="113" />
+        <source>Exterior front left sensor fault</source>
+        <translation>Dış ön sol sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="114" />
+        <source>Interior rear left sensor fault</source>
+        <translation>İç arka sol sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="115" />
+        <source>Exterior rear left sensor fault</source>
+        <translation>Dış arka sol sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="116" />
+        <source>Interior front right sensor fault</source>
+        <translation>İç ön sağ sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="117" />
+        <source>Exterior front right sensor fault</source>
+        <translation>Dış ön sağ sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="118" />
+        <source>Interior rear right sensor fault</source>
+        <translation>İç arka sağ sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="119" />
+        <source>Exterior rear right sensor fault</source>
+        <translation>Dış arka sağ sensör arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="120" />
+        <source>Sensors supply fault</source>
+        <translation>Sensörler besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="121" />
+        <source>Buzzer fault</source>
+        <translation>Buzer arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="122" />
+        <source>Unlocking of the engine immobiliser by the automatic gearbox ECU</source>
+        <translation>Motor immobilizerinin otomatik şanzıman ECU'su tarafından kilidinin açılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="123" />
+        <source>Left-hand rear view mirror warning lamp fault</source>
+        <translation>Sol dikiz aynası uyarı lambası arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="124" />
+        <source>Right-hand rear view mirror warning lamp fault</source>
+        <translation>Sağ dikiz aynası uyarı lambası arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="125" />
+        <source>Rear left lateral parking assistance sensor fault</source>
+        <translation>Arka sol yan park yardımı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="126" />
+        <source>Rear right lateral parking assistance sensor fault</source>
+        <translation>Arka sağ yan park yardımı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="127" />
+        <source>Exterior mirror indicator lamps shared output fault</source>
+        <translation>Dış ayna sinyal lambaları ortak çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="128" />
+        <source>Front left lateral parking assistance sensor fault</source>
+        <translation>Ön sol yan park yardımı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="129" />
+        <source>Front right lateral parking assistance sensor fault</source>
+        <translation>Ön sağ yan park yardımı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="130" />
+        <source>Inconsistency between the measured inter-vehicle</source>
+        <translation>Ölçülen araç arası mesafe arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="131" />
+        <source>Semi-automatic parking system function selection button fault</source>
+        <translation>Yarı otomatik park sistemi işlev seçim düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="132" />
+        <source>Cruise control and speed limiter switch fault</source>
+        <translation>Hız sabitleyici ve hız sınırlayıcı anahtarı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="133" />
+        <source>Speed limiter / cruise control switches fault</source>
+        <translation>Hız sınırlayıcı / hız sabitleyici anahtarları arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="134" />
+        <source>Fault: cruise control / speed limiter statuses in the BSI and the engine management ECU not coherent</source>
+        <translation>Arıza: BSI ve motor yönetim ECU'sundaki hız sabitleyici / hız sınırlayıcı durumları tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="135" />
+        <source>Adaptive Cruise Control function speed settings + / - buttons fault</source>
+        <translation>Uyarlanabilir Hız Sabitleyici işlevi hız ayarı + / - düğmeleri arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="136" />
+        <source>Fuel filler flap sensor fault</source>
+        <translation>Yakıt kapağı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="137" />
+        <source>Fuel gauge fault</source>
+        <translation>Yakıt göstergesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="138" />
+        <source>Adaptive Cruise Control function deactivation  /  reactivation button fault</source>
+        <translation>Uyarlanabilir Hız Sabitleyici işlevi devre dışı bırakma / yeniden etkinleştirme düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="139" />
+        <source>Adaptive Cruise Control and cruise control functions selection buttons fault</source>
+        <translation>Uyarlanabilir Hız Sabitleyici ve hız sabitleyici işlevleri seçim düğmeleri arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="140" />
+        <source>Adaptive Cruise Control function OFF button fault</source>
+        <translation>Uyarlanabilir Hız Sabitleyici işlevi KAPAT düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="141" />
+        <source>Adaptive Cruise Control function distance alert + / - buttons fault</source>
+        <translation>Uyarlanabilir Hız Sabitleyici işlevi mesafe uyarısı + / - düğmeleri arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="142" />
+        <source>Fault of lack of coherence between the built-in systems interface and the Adaptive Cruise Control ECU</source>
+        <translation>Yerleşik sistemler arayüzü ile Uyarlanabilir Hız Sabitleyici ECU'su arasında tutarsızlık arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="143" />
+        <source>GPL button</source>
+        <translation>GPL düğmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="144" />
+        <source>Fault of lack of coherence of the information used by the emergency collision braking (in town) function</source>
+        <translation>Acil çarpışma frenleme (şehir içi) işlevi tarafından kullanılan bilgide tutarsızlık arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="145" />
+        <source>Emergency collision braking (in town) function fault : Detection of an impact</source>
+        <translation>Acil çarpışma frenleme (şehir içi) işlevi arızası: Bir darbe algılandı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="146" />
+        <source>No request to unlock the front electric drive machine</source>
+        <translation>Ön elektrikli tahrik makinesinin kilidini açma isteği yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="147" />
+        <source>Multiplexed information received from the ABS / ESP</source>
+        <translation>ABS / ESP'den alınan çoğullanmış bilgi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="148" />
+        <source>Additional heating: Coolant pump</source>
+        <translation>İlave ısıtma: Soğutma sıvısı pompası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="149" />
+        <source>Additional heating: Metering pump</source>
+        <translation>İlave ısıtma: Dozaj pompası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="150" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="213" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="214" />
+        <source>Additional heating: Additional heating assembly</source>
+        <translation>İlave ısıtma: İlave ısıtma tertibatı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="151" />
+        <source>Additional heating: Cooling valve</source>
+        <translation>İlave ısıtma: Soğutma valfi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="152" />
+        <source>Air conditioning compressor clutch or variable capacity control fault</source>
+        <translation>Klima kompresörü kavraması veya değişken kapasite kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="153" />
+        <source>Control fault of the variable swept volume for a displacement air conditioning compressor</source>
+        <translation>Deplasmanlı klima kompresörü için değişken süpürme hacmi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="154" />
+        <source>Coolant heater electronic control fault</source>
+        <translation>Soğutma sıvısı ısıtıcısı elektronik kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="155" />
+        <source>Evaporator sensor fault</source>
+        <translation>Evaporatör sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="156" />
+        <source>Additional air conditioning pump control fault</source>
+        <translation>İlave klima pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="157" />
+        <source>Air quality sensor fault</source>
+        <translation>Hava kalitesi sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="158" />
+        <source>Right-hand sunshine sensor fault</source>
+        <translation>Sağ güneş ışığı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="159" />
+        <source>Sunshine sensor fault</source>
+        <translation>Güneş ışığı sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="160" />
+        <source>Passenger compartment air recirculation motor fault</source>
+        <translation>Yolcu kabini hava sirkülasyon motoru arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="161" />
+        <source>Distribution motor fault</source>
+        <translation>Dağıtım motoru arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="162" />
+        <source>Interior buttons lighting control fault</source>
+        <translation>İç düğme aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="163" />
+        <source>Front right distribution motor fault</source>
+        <translation>Ön sağ dağıtım motoru arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="166" />
+        <source>Neck heater operation authorisation fault</source>
+        <translation>Boyun ısıtıcısı çalışma izni arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="167" />
+        <source>Heated seats supply fault</source>
+        <translation>Isıtmalı koltuklar besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="168" />
+        <source>Front air conditioning blower control fault</source>
+        <translation>Ön klima fanı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="169" />
+        <source>Passenger compartment air heating elements 1 control fault</source>
+        <translation>Yolcu kabini hava ısıtma elemanları 1 kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="170" />
+        <source>Passenger compartment air heating elements 2 control fault</source>
+        <translation>Yolcu kabini hava ısıtma elemanları 2 kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="171" />
+        <source>Rear screen and / or mirrors de-icing control fault</source>
+        <translation>Arka cam ve / veya ayna buz çözme kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="172" />
+        <source>Air conditioning circuit high pressure safety fault</source>
+        <translation>Klima devresi yüksek basınç güvenlik arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="173" />
+        <source>Air conditioning circuit low pressure safety fault</source>
+        <translation>Klima devresi düşük basınç güvenlik arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="174" />
+        <source>Button backlighting fault</source>
+        <translation>Düğme arka aydınlatması arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="175" />
+        <source>Exterior temperature sensor fault</source>
+        <translation>Dış sıcaklık sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="176" />
+        <source>Heated seats operation authorisation fault</source>
+        <translation>Isıtmalı koltuklar çalışma izni arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="177" />
+        <source>Cup holder cooling or heating authorisation fault</source>
+        <translation>Bardak tutucu soğutma veya ısıtma izni arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="178" />
+        <source>Air conditioning high pressure information fault</source>
+        <translation>Klima yüksek basınç bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="179" />
+        <source>Electric window authorisation output fault</source>
+        <translation>Elektrikli cam izni çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="180" />
+        <source>Driver's seat adjustment authorisation output fault</source>
+        <translation>Sürücü koltuğu ayar izni çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="181" />
+        <source>Passenger's seat adjustment authorisation output fault</source>
+        <translation>Yolcu koltuğu ayar izni çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="182" />
+        <source>Air conditioning compressor variable capacity valve control fault</source>
+        <translation>Klima kompresörü değişken kapasite valfi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="183" />
+        <source>Non-adjustable ambiance lighting control fault</source>
+        <translation>Ayarlanamayan ambiyans aydınlatması kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="184" />
+        <source>Rear air blower authorisation fault</source>
+        <translation>Arka hava fanı izni arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="185" />
+        <source>Front seats massaging function authorisation output fault</source>
+        <translation>Ön koltuklar masaj işlevi izni çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="186" />
+        <source>Front seats lumbar adjustment function authorisation output fault</source>
+        <translation>Ön koltuklar bel desteği ayar işlevi izni çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="187" />
+        <source>Front left mixer motor fault</source>
+        <translation>Ön sol karıştırıcı motor arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="188" />
+        <source>Front right mixer motor fault</source>
+        <translation>Ön sağ karıştırıcı motor arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="189" />
+        <source>Air conditioning compressor clutch supply fault</source>
+        <translation>Klima kompresörü kavrama besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="190" />
+        <source>Front window relay control output fault</source>
+        <translation>Ön cam rölesi kumanda çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="191" />
+        <source>Rear window relay control output fault</source>
+        <translation>Arka cam rölesi kumanda çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="192" />
+        <source>Heated windscreen switch jammed fault</source>
+        <translation>Isıtmalı ön cam anahtarı sıkışma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="193" />
+        <source>Fault: deicing circuit control of the heated windscreen wiper blades area</source>
+        <translation>Arıza: ısıtmalı ön cam silecek alanı buz çözme devresi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="194" />
+        <source>Heated windscreen complete deicing circuit control fault</source>
+        <translation>Isıtmalı ön cam tam buz çözme devresi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="195" />
+        <source>Front right seat heated pads and ventilation regulation ECU : Seat heated pad control circuit</source>
+        <translation>Ön sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="196" />
+        <source>Front left seat heated pads and ventilation regulation ECU : Seat heated pad control circuit</source>
+        <translation>Ön sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="197" />
+        <source>Front right seat heated pads and ventilation regulation ECU : Seat air blower control circuit</source>
+        <translation>Ön sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk hava fanı kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="198" />
+        <source>Front left seat heated pads and ventilation regulation ECU : Seat air blower control circuit</source>
+        <translation>Ön sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk hava fanı kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="199" />
+        <source>Front right seat heated pads and ventilation regulation ECU : Seat heated pad temperature sensor circuit</source>
+        <translation>Ön sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi sıcaklık sensörü devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="200" />
+        <source>Front left seat heated pads and ventilation regulation ECU : Seat heated pad temperature sensor circuit</source>
+        <translation>Ön sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi sıcaklık sensörü devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="201" />
+        <source>Electric air conditioning compressor : Air conditioning compressor low voltage supply circuit</source>
+        <translation>Elektrikli klima kompresörü: Klima kompresörü düşük gerilim besleme devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="202" />
+        <source>Electric air conditioning compressor : Placing of the electric air conditioning</source>
+        <translation>Elektrikli klima kompresörü: Elektrikli klimanın konumlandırılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="203" />
+        <source>Electric air conditioning compressor : Electric air conditioning compressor low voltage electrical supply</source>
+        <translation>Elektrikli klima kompresörü: Elektrikli klima kompresörü düşük gerilim elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="204" />
+        <source>Electric air conditioning compressor : Permanent lack of operation of the electric air conditioning compressor</source>
+        <translation>Elektrikli klima kompresörü: Elektrikli klima kompresörünün kalıcı olarak çalışmaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="205" />
+        <source>Electric air conditioning compressor : Unwanted operation of the electric air conditioning compressor</source>
+        <translation>Elektrikli klima kompresörü: Elektrikli klima kompresörünün istenmeyen çalışması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="206" />
+        <source>Rear left seat heated pads and ventilation regulation ECU : Seat heated pad control circuit</source>
+        <translation>Arka sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="207" />
+        <source>Rear right seat heated pads and ventilation regulation ECU : Seat heated pad control circuit</source>
+        <translation>Arka sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="208" />
+        <source>Rear left seat heated pads and ventilation regulation ECU : Seat air blower control circuit</source>
+        <translation>Arka sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk hava fanı kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="209" />
+        <source>Rear right seat heated pads and ventilation regulation ECU : Seat air blower control circuit</source>
+        <translation>Arka sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk hava fanı kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="210" />
+        <source>Rear left seat heated pads and ventilation regulation ECU : Seat heated pad temperature sensor circuit</source>
+        <translation>Arka sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi sıcaklık sensörü devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="211" />
+        <source>Rear right seat heated pads and ventilation regulation ECU : Seat heated pad temperature sensor circuit</source>
+        <translation>Arka sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su: Koltuk ısıtma pedi sıcaklık sensörü devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="212" />
+        <source>Additional heating: Solenoid valves</source>
+        <translation>İlave ısıtma: Solenoid valfler</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="215" />
+        <source>Additional heating: Glow trigger</source>
+        <translation>İlave ısıtma: Kızdırma tetikleyici</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="216" />
+        <source>Additional heating: Thermal fuse</source>
+        <translation>İlave ısıtma: Termik sigorta</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="217" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="218" />
+        <source>Additional heating: Temperature sensor</source>
+        <translation>İlave ısıtma: Sıcaklık sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="219" />
+        <source>Additional heating: Air turbine</source>
+        <translation>İlave ısıtma: Hava türbini</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="220" />
+        <source>Fault in the status of the seat belt fastening information for determining the presence of the driver</source>
+        <translation>Sürücünün varlığını belirlemek için emniyet kemeri takma durum bilgisinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="221" />
+        <source>Stop and Start function activation / deactivation button</source>
+        <translation>Stop and Start işlevi etkinleştirme / devre dışı bırakma düğmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="222" />
+        <source>Heating circuit electric coolant heater</source>
+        <translation>Isıtma devresi elektrikli soğutma sıvısı ısıtıcısı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="224" />
+        <source>Front left audio output : Short circuit to earth</source>
+        <translation>Ön sol ses çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="225" />
+        <source>Front right audio output : Short circuit to earth</source>
+        <translation>Ön sağ ses çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="226" />
+        <source>Rear left audio output : Short circuit to earth</source>
+        <translation>Arka sol ses çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="227" />
+        <source>Rear right audio output : Short circuit to earth</source>
+        <translation>Arka sağ ses çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="228" />
+        <source>Microphone 1 input : Short circuit to earth</source>
+        <translation>Mikrofon 1 girişi: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="229" />
+        <source>Absence of communication with the independent telematic unit : Not characterised</source>
+        <translation>Bağımsız telematik ünitesi ile iletişim yok: Karakterize edilmemiş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="230" />
+        <source>Aerial input 1 : Open circuit</source>
+        <translation>Anten girişi 1: Açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="231" />
+        <source>Aerial input 2 : Open circuit</source>
+        <translation>Anten girişi 2: Açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="232" />
+        <source>CD player : Electrical fault</source>
+        <translation>CD çalar: Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="233" />
+        <source>Hi-fi amplifier</source>
+        <translation>Hi-fi amplifikatör</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="234" />
+        <source>NAC audio-navigation or RCC connected audio system ECU (Bluetooth module)</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ECU'su (Bluetooth modülü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="235" />
+        <source>Radio ON / OFF button fault</source>
+        <translation>Radyo AÇ / KAPAT düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="236" />
+        <source>Radio control fault</source>
+        <translation>Radyo kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="237" />
+        <source>Compatibility of the software : Not characterised</source>
+        <translation>Yazılım uyumluluğu: Karakterize edilmemiş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="238" />
+        <source>GPS aerial : Open circuit</source>
+        <translation>GPS anteni: Açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="239" />
+        <source>GPS module : Internal fault</source>
+        <translation>GPS modülü: Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="240" />
+        <source>NAC audio-navigation or RCC connected audio system ECU (Radio module) : Internal fault</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ECU'su (Radyo modülü): Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="241" />
+        <source>NAC audio-navigation or RCC connected audio system fan : Internal fault</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi fanı: Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="242" />
+        <source>Digital radio aerial : Open circuit</source>
+        <translation>Dijital radyo anteni: Açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="243" />
+        <source>Multifunction touch screen electrical supply circuit : Not characterised</source>
+        <translation>Çok işlevli dokunmatik ekran elektrik besleme devresi: Karakterize edilmemiş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="244" />
+        <source>NAC audio-navigation or RCC connected audio system ECU (Wi-Fi module) : Not characterised</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ECU'su (Wi-Fi modülü): Karakterize edilmemiş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="245" />
+        <source>Microphone 2 input : Short circuit to earth</source>
+        <translation>Mikrofon 2 girişi: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="246" />
+        <source>Front centre channel audio output : Short circuit to earth</source>
+        <translation>Ön merkez kanal ses çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="247" />
+        <source>Bass box output : Short circuit to earth</source>
+        <translation>Bas hoparlör çıkışı: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="248" />
+        <source>NAC audio-navigation or RCC connected audio system ECU : Secure private key damaged</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ECU'su: Güvenli özel anahtar hasarlı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="249" />
+        <source>NAC audio-navigation or RCC connected audio system USB controller : Internal fault</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi USB denetleyicisi: Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="250" />
+        <source>USB4 socket (Customer’s USB stick) : Electrical fault</source>
+        <translation>USB4 soketi (Müşterinin USB belleği): Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="251" />
+        <source>USB3 socket (Customer’s USB stick) : Electrical fault</source>
+        <translation>USB3 soketi (Müşterinin USB belleği): Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="252" />
+        <source>USB2 socket (Vehicle USB) : Electrical fault</source>
+        <translation>USB2 soketi (Araç USB'si): Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="253" />
+        <source>USB1 socket (To the independent telematic unit) : Electrical fault</source>
+        <translation>USB1 soketi (Bağımsız telematik ünitesine): Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="254" />
+        <source>NAC audio-navigation or RCC connected audio system ECU : Encrypted system files access error</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ECU'su: Şifreli sistem dosyalarına erişim hatası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="255" />
+        <source>Failure of the programming of the 180° visual reversing assistance function</source>
+        <translation>180° görsel geri vites yardımı işlevinin programlama arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="256" />
+        <source>Absence of communication with the visual manoeuvring assistance ECU : Message missing</source>
+        <translation>Görsel manevra yardımı ECU'su ile iletişim yok: Mesaj eksik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="257" />
+        <source>Loss of communication with the 180° visual reversing assistance camera : Lack of coherence of the signal</source>
+        <translation>180° görsel geri vites yardımı kamerası ile iletişim kaybı: Sinyal tutarsızlığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="258" />
+        <source>Internal failure of the 180° visual reversing assistance function</source>
+        <translation>180° görsel geri vites yardımı işlevinin dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="259" />
+        <source>Fault: CAN positive supply present but central power switch positive supply absent</source>
+        <translation>Arıza: CAN pozitif beslemesi mevcut ancak merkezi güç anahtarı pozitif beslemesi yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="260" />
+        <source>Central power switch positive (+CPC) relay control fault</source>
+        <translation>Merkezi güç anahtarı pozitif (+CPC) rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="261" />
+        <source>Main relay status fault</source>
+        <translation>Ana röle durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="262" />
+        <source>Fault: alternator charge</source>
+        <translation>Arıza: alternatör şarjı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="263" />
+        <source>Supplies protection and management unit : Internal fault (secure)</source>
+        <translation>Besleme koruma ve yönetim ünitesi: Dahili arıza (güvenli)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="264" />
+        <source>Battery charge status unit : Battery charge status unit reset fault</source>
+        <translation>Akü şarj durumu ünitesi: Akü şarj durumu ünitesi sıfırlama arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="265" />
+        <source>Battery charge status unit : Configuration fault</source>
+        <translation>Akü şarj durumu ünitesi: Yapılandırma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="266" />
+        <source>Battery charge status unit : ECU memory area fault</source>
+        <translation>Akü şarj durumu ünitesi: ECU bellek alanı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="267" />
+        <source>Fault in the load reduction command sent to the 230 V unit</source>
+        <translation>230 V ünitesine gönderilen yük azaltma komutunda arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="268" />
+        <source>Fault in the main relay</source>
+        <translation>Ana rölede arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="269" />
+        <source>Power relay fault</source>
+        <translation>Güç rölesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="270" />
+        <source>Ignition positive relay inverted status fault</source>
+        <translation>Kontak pozitif rölesi ters durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="271" />
+        <source>Fault in the ignition plus (+APC) relay</source>
+        <translation>Kontak artı (+APC) rölesinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="272" />
+        <source>Supplies protection and management unit: Central power switch positive relay status fault</source>
+        <translation>Besleme koruma ve yönetim ünitesi: Merkezi güç anahtarı pozitif röle durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="273" />
+        <source>Battery voltage fault</source>
+        <translation>Akü gerilimi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="274" />
+        <source>Battery charge status unit : Voltage sensor fault</source>
+        <translation>Akü şarj durumu ünitesi: Gerilim sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="275" />
+        <source>Battery charge status unit : Current sensor fault</source>
+        <translation>Akü şarj durumu ünitesi: Akım sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="276" />
+        <source>Battery charge status unit : Temperature sensor fault</source>
+        <translation>Akü şarj durumu ünitesi: Sıcaklık sensörü arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="277" />
+        <source>Fault: unjustified maintaining of the central power switch positive (+CPC)</source>
+        <translation>Arıza: merkezi güç anahtarı pozitifinin (+CPC) gereksiz yere açık tutulması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="278" />
+        <source>Fault: CAN+ relay control and status not coherent</source>
+        <translation>Arıza: CAN+ rölesi kumanda ve durumu tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="279" />
+        <source>Fault: accessories positive relay control and status not coherent</source>
+        <translation>Arıza: aksesuar pozitif rölesi kumanda ve durumu tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="280" />
+        <source>Front doors deadlocking motors control fault</source>
+        <translation>Ön kapılar emniyet kilidi motorları kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="281" />
+        <source>Rear doors deadlocking / child lock motors control fault</source>
+        <translation>Arka kapılar emniyet kilidi / çocuk kilidi motorları kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="282" />
+        <source>Door locking motors control fault</source>
+        <translation>Kapı kilitleme motorları kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="283" />
+        <source>Selective locking control fault</source>
+        <translation>Seçmeli kilitleme kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="284" />
+        <source>Boot opening catch control fault</source>
+        <translation>Bagaj açma mandalı kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="285" />
+        <source>Rear screen opening control fault</source>
+        <translation>Arka cam açma kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="286" />
+        <source>Fuel filler flap lock control fault</source>
+        <translation>Yakıt kapağı kilidi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="287" />
+        <source>Central locking switch status fault</source>
+        <translation>Merkezi kilit anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="288" />
+        <source>Load area locking switch fault</source>
+        <translation>Yük bölmesi kilit anahtarı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="289" />
+        <source>Exterior boot opening switch status fault</source>
+        <translation>Dış bagaj açma anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="290" />
+        <source>Rear screen opening switch fault</source>
+        <translation>Arka cam açma anahtarı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="291" />
+        <source>Fuel filler flap control switch status fault</source>
+        <translation>Yakıt kapağı kumanda anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="292" />
+        <source>Child lock or automatic main beam / dipped beam switch function activation button fault</source>
+        <translation>Çocuk kilidi veya otomatik uzun / kısa hüzme anahtarı işlevi etkinleştirme düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="293" />
+        <source>Fault: lack of coherence between the status of the child lock and the status of the rear locks</source>
+        <translation>Arıza: çocuk kilidi durumu ile arka kilitlerin durumu arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="294" />
+        <source>Front left door lock switch status fault</source>
+        <translation>Ön sol kapı kilidi anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="295" />
+        <source>Front right door lock switch status fault</source>
+        <translation>Ön sağ kapı kilidi anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="296" />
+        <source>Hinged rear doors lock switch status fault</source>
+        <translation>Menteşeli arka kapılar kilit anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="297" />
+        <source>Fault: lack of coherence between the status of the child lock and the status of the rear right lock</source>
+        <translation>Arıza: çocuk kilidi durumu ile arka sağ kilit durumu arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="298" />
+        <source>Fault: lack of coherence between the status of the child lock and the status of the rear left lock</source>
+        <translation>Arıza: çocuk kilidi durumu ile arka sol kilit durumu arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="299" />
+        <source>Rear right door locking status fault</source>
+        <translation>Arka sağ kapı kilitleme durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="300" />
+        <source>Rear left door locking status fault</source>
+        <translation>Arka sol kapı kilitleme durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="301" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="302" />
+        <source>Fault: lack of coherence between the vehicle</source>
+        <translation>Arıza: araç durumları arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="303" />
+        <source>Hinged rear doors locking status fault</source>
+        <translation>Menteşeli arka kapılar kilitleme durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="304" />
+        <source>Remote control not synchronised</source>
+        <translation>Uzaktan kumanda senkronize değil</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="305" />
+        <source>Interior boot opening switch status fault</source>
+        <translation>İç bagaj açma anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="306" />
+        <source>Rear right lock status fault (lock closed but declared open)</source>
+        <translation>Arka sağ kilit durum arızası (kilit kapalı ama açık olarak bildirildi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="307" />
+        <source>Rear left lock status fault (lock closed but declared open)</source>
+        <translation>Arka sol kilit durum arızası (kilit kapalı ama açık olarak bildirildi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="308" />
+        <source>Front right lock status fault (lock closed but declared open)</source>
+        <translation>Ön sağ kilit durum arızası (kilit kapalı ama açık olarak bildirildi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="309" />
+        <source>Front left lock status fault (lock closed but declared open)</source>
+        <translation>Ön sol kilit durum arızası (kilit kapalı ama açık olarak bildirildi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="310" />
+        <source>Hinged rear doors lock fault</source>
+        <translation>Menteşeli arka kapılar kilit arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="311" />
+        <source>Rear view mirrors unfolding control fault</source>
+        <translation>Dikiz aynaları açılma kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="312" />
+        <source>Rear view mirrors folding control fault</source>
+        <translation>Dikiz aynaları katlanma kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="313" />
+        <source>Door and window central closing control fault</source>
+        <translation>Kapı ve cam merkezi kapatma kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="314" />
+        <source>Locking / deadlocking motors shared output fault</source>
+        <translation>Kilitleme / emniyet kilidi motorları ortak çıkış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="315" />
+        <source>Front left door unlocking sensor circuit (Keyless access and starting function)</source>
+        <translation>Ön sol kapı kilit açma sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="316" />
+        <source>Front right door unlocking sensor circuit (Keyless access and starting function)</source>
+        <translation>Ön sağ kapı kilit açma sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="317" />
+        <source>Rear left door unlocking sensor circuit (Keyless access and starting function)</source>
+        <translation>Arka sol kapı kilit açma sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="318" />
+        <source>Rear right door unlocking sensor circuit (Keyless access and starting function)</source>
+        <translation>Arka sağ kapı kilit açma sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="319" />
+        <source>Front left door handle circuit (Keyless access and starting function)</source>
+        <translation>Ön sol kapı kolu devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="320" />
+        <source>Front right door handle circuit (Keyless access and starting function)</source>
+        <translation>Ön sağ kapı kolu devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="321" />
+        <source>Rear left door handle circuit (Keyless access and starting function)</source>
+        <translation>Arka sol kapı kolu devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="322" />
+        <source>Rear right door handle circuit (Keyless access and starting function)</source>
+        <translation>Arka sağ kapı kolu devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="323" />
+        <source>Boot unlocking control circuit (Keyless access and starting function)</source>
+        <translation>Bagaj kilit açma kumanda devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="324" />
+        <source>Dashboard front interior aerial(s) circuit (keyless access and starting function)</source>
+        <translation>Gösterge paneli ön iç anten(ler) devresi (anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="325" />
+        <source>Central interior aerial circuit (keyless access and starting function)</source>
+        <translation>Merkezi iç anten devresi (anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="326" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="370" />
+        <source>Boot interior aerial circuit (keyless access and starting function)</source>
+        <translation>Bagaj iç anten devresi (anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="327" />
+        <source>Front left door locking sensor circuit (Keyless access and starting function)</source>
+        <translation>Ön sol kapı kilitleme sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="328" />
+        <source>Front right door locking sensor circuit (Keyless access and starting function)</source>
+        <translation>Ön sağ kapı kilitleme sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="329" />
+        <source>Rear left door locking sensor circuit (Keyless access and starting function)</source>
+        <translation>Arka sol kapı kilitleme sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="330" />
+        <source>Rear right door locking sensor circuit (Keyless access and starting function)</source>
+        <translation>Arka sağ kapı kilitleme sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="331" />
+        <source>Ignition switch status fault</source>
+        <translation>Kontak anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="332" />
+        <source>Child lock LED control fault</source>
+        <translation>Çocuk kilidi LED kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="333" />
+        <source>Fault in the status of the driver's door for the determination of driver presence</source>
+        <translation>Sürücü varlığının belirlenmesi için sürücü kapısı durum bilgisinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="334" />
+        <source>Intrusion alarm switch fault</source>
+        <translation>İzinsiz giriş alarmı anahtarı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="335" />
+        <source>Fault in identifying the mechanical / electronic key or the hands-free remote control present in the reader</source>
+        <translation>Okuyucuda bulunan mekanik / elektronik anahtarın veya elsiz uzaktan kumandanın tanımlanmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="336" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="406" />
+        <source>Fault in authenticating the mechanical / electronic</source>
+        <translation>Mekanik / elektronik anahtarın doğrulanmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="337" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="405" />
+        <source>Fault in authenticating the hands-free remote control not present in the reader</source>
+        <translation>Okuyucuda bulunmayan elsiz uzaktan kumandanın doğrulanmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="338" />
+        <source>Fault in the authorisation by the built-in systems interface of control of the rear electric windows</source>
+        <translation>Arka elektrikli camların kumandasının yerleşik sistemler arayüzü tarafından yetkilendirilmesinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="339" />
+        <source>Sunroof or Blind supply output fault (authorisation)</source>
+        <translation>Sunroof veya perde besleme çıkış arızası (yetkilendirme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="340" />
+        <source>Fault in the configuration of the hands-free</source>
+        <translation>Elsiz sistemin yapılandırılmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="341" />
+        <source>Fault in the configuration of the</source>
+        <translation>Yapılandırmada arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="342" />
+        <source>Suspected failure of the door open switch on the driver's side</source>
+        <translation>Sürücü tarafındaki kapı açık anahtarında şüpheli arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="343" />
+        <source>Electric windows supply maintaining request line fault</source>
+        <translation>Elektrikli camlar besleme sürdürme istek hattı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="344" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="443" />
+        <source>Fault in communication with the transponder</source>
+        <translation>Transponder ile iletişimde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="345" />
+        <source>Fault in the authentication of the mechanical key, of the hands-free identifier or of the hands-free remote control (according to equipment) : Authentication code not received</source>
+        <translation>Mekanik anahtarın, elsiz tanımlayıcının veya elsiz uzaktan kumandanın (donanıma göre) doğrulanmasında arıza: Doğrulama kodu alınmadı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="346" />
+        <source>Fault in the authentication of the mechanical key, of the hands-free identifier or of the hands-free remote control (according to equipment) : Authentication code incorrect</source>
+        <translation>Mekanik anahtarın, elsiz tanımlayıcının veya elsiz uzaktan kumandanın (donanıma göre) doğrulanmasında arıza: Doğrulama kodu hatalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="347" />
+        <source>Electric steering lock communicating on the CAN but configured "Absent" in the built-in systems interface</source>
+        <translation>Elektrikli direksiyon kilidi CAN üzerinde iletişim kuruyor ancak yerleşik sistemler arayüzünde "Yok" olarak yapılandırılmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="348" />
+        <source>Sliding side door motorised striker supply or control circuit</source>
+        <translation>Sürgülü yan kapı motorlu kilit karşılığı besleme veya kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="349" />
+        <source>Sliding side door motorised striker status switch circuit</source>
+        <translation>Sürgülü yan kapı motorlu kilit karşılığı durum anahtarı devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="350" />
+        <source>Control of the sunroof relay</source>
+        <translation>Sunroof rölesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="351" />
+        <source>Central closing of the windows control</source>
+        <translation>Camların merkezi kapatma kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="352" />
+        <source>Hinged rear door unlocking sensor circuit (Keyless access and starting function)</source>
+        <translation>Menteşeli arka kapı kilit açma sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="353" />
+        <source>Hinged rear door locking sensor circuit (Keyless access and starting function)</source>
+        <translation>Menteşeli arka kapı kilitleme sensörü devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="354" />
+        <source>Hands full access ECU, right-hand side or rear : Problem with communication on the LIN 3</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: LIN 3 üzerinde iletişim sorunu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="355" />
+        <source>Hands full access ECU, right-hand side or rear : Internal failure of the hands full access ECU</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: Eller dolu erişim ECU'sunun dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="356" />
+        <source>Hands full access ECU, right-hand side or rear : Upper aerial</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: Üst anten</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="357" />
+        <source>Hands full access ECU, right-hand side or rear : Lower aerial</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: Alt anten</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="358" />
+        <source>Hands full access ECU, right-hand side or rear : Hands full access ECU supply</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: Eller dolu erişim ECU'su beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="359" />
+        <source>Hands full access ECU, left-hand side : Problem with communication on the LIN 3</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: LIN 3 üzerinde iletişim sorunu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="360" />
+        <source>Hands full access ECU, left-hand side : Internal failure of the hands full access ECU</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: Eller dolu erişim ECU'sunun dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="361" />
+        <source>Hands full access ECU, left-hand side : Upper aerial</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: Üst anten</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="362" />
+        <source>Hands full access ECU, left-hand side : Lower aerial</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: Alt anten</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="363" />
+        <source>Hands full access ECU, left-hand side : Hands full access ECU supply</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: Eller dolu erişim ECU'su beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="364" />
+        <source>Lack of coherence of the configuration of the electric child lock in the built-in systems interface</source>
+        <translation>Yerleşik sistemler arayüzünde elektrikli çocuk kilidi yapılandırmasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="365" />
+        <source>Hinged rear door handle circuit (Keyless access and starting function)</source>
+        <translation>Menteşeli arka kapı kolu devresi (Anahtarsız erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="366" />
+        <source>Circuits of the hinged rear door electric child lock indicator lamp control or activation status reading</source>
+        <translation>Menteşeli arka kapı elektrikli çocuk kilidi gösterge lambası kumandası veya etkinleştirme durumu okuma devreleri</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="367" />
+        <source>Boot exterior aerial circuit (hands-free access and starting function)</source>
+        <translation>Bagaj dış anten devresi (elsiz erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="368" />
+        <source>Front zone interior aerial circuit (hands-free access and starting function)</source>
+        <translation>Ön bölge iç anten devresi (elsiz erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="369" />
+        <source>Rear zone interior aerial circuit (hands-free access and starting function)</source>
+        <translation>Arka bölge iç anten devresi (elsiz erişim ve çalıştırma işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="371" />
+        <source>Left-hand motorised sliding side door exterior control electrical circuit</source>
+        <translation>Sol motorlu sürgülü yan kapı dış kumanda elektrik devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="372" />
+        <source>Right-hand motorised sliding side door exterior control electrical circuit</source>
+        <translation>Sağ motorlu sürgülü yan kapı dış kumanda elektrik devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="373" />
+        <source>Circuit of the switch for activation of the</source>
+        <translation>Etkinleştirme anahtarı devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="374" />
+        <source>Control circuit for the LED on the</source>
+        <translation>LED kumanda devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="375" />
+        <source>Hands full access ECU, right-hand side or rear : Downloading incorrect or not carried out</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: İndirme hatalı veya gerçekleştirilmedi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="376" />
+        <source>Hands full access ECU, left-hand side : Downloading incorrect or not carried out</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: İndirme hatalı veya gerçekleştirilmedi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="377" />
+        <source>Hands full access ECU, right-hand side or rear : Placing of the function in protection mode</source>
+        <translation>Eller dolu erişim ECU'su, sağ taraf veya arka: İşlevin koruma moduna alınması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="378" />
+        <source>Hands full access ECU, left-hand side : Placing of the function in protection mode</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf: İşlevin koruma moduna alınması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="379" />
+        <source>Front left-hand retractable exterior opening control ECU: Retractable exterior opening control sensor</source>
+        <translation>Ön sol katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="380" />
+        <source>Front right-hand retractable exterior opening control ECU: Retractable exterior opening control sensor</source>
+        <translation>Ön sağ katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="381" />
+        <source>Rear left-hand retractable exterior opening control ECU: Retractable exterior opening control sensor</source>
+        <translation>Arka sol katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="382" />
+        <source>Rear right-hand retractable exterior opening control ECU: Retractable exterior opening control sensor</source>
+        <translation>Arka sağ katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="383" />
+        <source>Front left-hand retractable exterior opening control ECU: Retractable exterior opening control motor</source>
+        <translation>Ön sol katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda motoru</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="384" />
+        <source>Front right-hand retractable exterior opening control ECU: Retractable exterior opening control motor</source>
+        <translation>Ön sağ katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda motoru</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="385" />
+        <source>Rear left-hand retractable exterior opening control ECU: Retractable exterior opening control motor</source>
+        <translation>Arka sol katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda motoru</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="386" />
+        <source>Rear right-hand retractable exterior opening control ECU: Retractable exterior opening control motor</source>
+        <translation>Arka sağ katlanır dış kapı kolu kumanda ECU'su: Katlanır dış kapı kolu kumanda motoru</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="387" />
+        <source>Status of the sliding side door exterior opening control</source>
+        <translation>Sürgülü yan kapı dış açma kumandası durumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="388" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="392" />
+        <source>Front right-hand retractable exterior opening control ECU</source>
+        <translation>Ön sağ katlanır dış kapı kolu kumanda ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="389" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="393" />
+        <source>Rear left-hand retractable exterior opening control ECU</source>
+        <translation>Arka sol katlanır dış kapı kolu kumanda ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="390" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="394" />
+        <source>Rear right-hand retractable exterior opening control ECU</source>
+        <translation>Arka sağ katlanır dış kapı kolu kumanda ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="391" />
+        <source>Front left-hand retractable exterior opening control ECU</source>
+        <translation>Ön sol katlanır dış kapı kolu kumanda ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="395" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="396" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="397" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="398" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="399" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1401" />
+        <source>Engine fuse box ECU internal fault</source>
+        <translation>Motor sigorta kutusu ECU'su dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="400" />
+        <source>Starter fault</source>
+        <translation>Marş arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="401" />
+        <source>Cutting out of the internal combustion engine while driving fault</source>
+        <translation>Sürüş sırasında içten yanmalı motorun stop etmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="402" />
+        <source>Fault with the unlocking of the immobiliser by the hybrid management ECU 1</source>
+        <translation>İmmobilizerin hibrit yönetim ECU'su 1 tarafından kilit açılmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="403" />
+        <source>Fault in the unlocking of the immobiliser by the engine management ECU</source>
+        <translation>İmmobilizerin motor yönetim ECU'su tarafından kilit açılmasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="404" />
+        <source>Hands-free identifier authentication / identification back-up aerial circuit</source>
+        <translation>Elsiz tanımlayıcı doğrulama / tanımlama yedek anten devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="407" />
+        <source>Fault on the diesel fuel additive pump</source>
+        <translation>Dizel yakıt katkı pompasında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="408" />
+        <source>Engine starting switch signal fault</source>
+        <translation>Motor çalıştırma anahtarı sinyal arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="409" />
+        <source>Fault in the starting signal or in the ignition signal from the ignition switch</source>
+        <translation>Kontak anahtarından gelen çalıştırma sinyalinde veya kontak sinyalinde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="410" />
+        <source>Signals from the engine starting switch not coherent</source>
+        <translation>Motor çalıştırma anahtarından gelen sinyaller tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="411" />
+        <source>Fault: loss of the hybrid drive train status</source>
+        <translation>Arıza: hibrit güç aktarma organı durumunun kaybı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="412" />
+        <source>Starting line fault</source>
+        <translation>Çalıştırma hattı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="413" />
+        <source>Oil level fault</source>
+        <translation>Yağ seviyesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="414" />
+        <source>Brake fluid level fault</source>
+        <translation>Fren hidroliği seviyesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="415" />
+        <source>Fault in the response from the electric steering lock to the request for locking / unlocking</source>
+        <translation>Elektrikli direksiyon kilidinin kilitleme / kilit açma isteğine yanıtında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="416" />
+        <source>Brake pedal switch status fault</source>
+        <translation>Fren pedalı anahtarı durum arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="417" />
+        <source>ABS or ESP ECU relay control fault</source>
+        <translation>ABS veya ESP ECU'su röle kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="418" />
+        <source>Power steering ECU supply relay control fault</source>
+        <translation>Hidrolik direksiyon ECU'su besleme rölesi kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="419" />
+        <source>No detection of pressing of the brake pedal</source>
+        <translation>Fren pedalına basılması algılanmadı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="420" />
+        <source>Diesel heater or oil vapours heater supply fault</source>
+        <translation>Dizel ısıtıcı veya yağ buharı ısıtıcısı besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="421" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="423" />
+        <source>Air pump supply fault</source>
+        <translation>Hava pompası besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="422" />
+        <source>Variable valve lift motor supply fault</source>
+        <translation>Değişken supap kaldırma motoru besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="424" />
+        <source>Coolant level warning fault</source>
+        <translation>Soğutma sıvısı seviyesi uyarısı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="425" />
+        <source>Oil level information fault</source>
+        <translation>Yağ seviyesi bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="426" />
+        <source>Engine oil pressure alert fault</source>
+        <translation>Motor yağ basıncı uyarısı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="427" />
+        <source>Fault: gear change down paddle stuck</source>
+        <translation>Arıza: vites küçültme paleti takılı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="428" />
+        <source>Fault: gear change up paddle stuck</source>
+        <translation>Arıza: vites büyütme paleti takılı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="429" />
+        <source>Fault on the traction battery charge status</source>
+        <translation>Çekiş aküsü şarj durumunda arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="430" />
+        <source>Reversible alternator operating status fault</source>
+        <translation>Tersinir alternatör çalışma durumu arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="431" />
+        <source>Power fault between the rear wheels and the electric drive machine</source>
+        <translation>Arka tekerlekler ile elektrikli tahrik makinesi arasında güç arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="432" />
+        <source>Power fault between the front wheels and the internal combustion engine</source>
+        <translation>Ön tekerlekler ile içten yanmalı motor arasında güç arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="433" />
+        <source>Power fault between the internal combustion engine and the traction battery</source>
+        <translation>İçten yanmalı motor ile çekiş aküsü arasında güç arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="434" />
+        <source>Service overdue fault</source>
+        <translation>Bakım süresi geçti arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="435" />
+        <source>Detection of pressing of the brake pedal (information from the brake switch) during accelerations</source>
+        <translation>Hızlanmalar sırasında fren pedalına basılmasının algılanması (fren anahtarından gelen bilgi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="436" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="437" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="441" />
+        <source>High frequency function fault</source>
+        <translation>Yüksek frekans işlevi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="438" />
+        <source>ECU internal fault</source>
+        <translation>ECU dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="439" />
+        <source>Key transponder fault</source>
+        <translation>Anahtar transponder arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="440" />
+        <source>Transponder function fault</source>
+        <translation>Transponder işlevi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="442" />
+        <source>Transponder aerial fault</source>
+        <translation>Transponder anteni arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="444" />
+        <source>Integral controls steering wheel ECU supply fault</source>
+        <translation>Entegre kumandalı direksiyon ECU'su besleme arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="445" />
+        <source>Descent control system function button jammed</source>
+        <translation>İniş kontrol sistemi işlev düğmesi sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="446" />
+        <source>Number of engine starts and  /  or restarts counter fault</source>
+        <translation>Motor çalıştırma ve / veya yeniden çalıştırma sayısı sayacı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="447" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="448" />
+        <source>Built-in systems interface internal fault</source>
+        <translation>Yerleşik sistemler arayüzü dahili arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="449" />
+        <source>Position of the brake pedal</source>
+        <translation>Fren pedalı konumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="450" />
+        <source>Main brake switch signal : Released state</source>
+        <translation>Ana fren anahtarı sinyali: Bırakılmış durum</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="451" />
+        <source>Main brake switch signal : Status pressed</source>
+        <translation>Ana fren anahtarı sinyali: Basılı durum</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="452" />
+        <source>Brake switch signal redundant : Status pressed</source>
+        <translation>Yedek fren anahtarı sinyali: Basılı durum</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="453" />
+        <source>Status of the brake switch incoherent with the status received from the ABS / ESP ECU</source>
+        <translation>Fren anahtarı durumu ABS / ESP ECU'sundan alınan durumla tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="454" />
+        <source>Brake switch signal redundant : Released state</source>
+        <translation>Yedek fren anahtarı sinyali: Bırakılmış durum</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="455" />
+        <source>Lack of coherence between the status of the</source>
+        <translation>Durum arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="456" />
+        <source>Internal combustion engine starting authorisation circuit</source>
+        <translation>İçten yanmalı motor çalıştırma izni devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="457" />
+        <source>Inconsistency between the inactive status of the</source>
+        <translation>Pasif durum arasında tutarsızlık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="458" />
+        <source>Dynamic driving function button jammed</source>
+        <translation>Dinamik sürüş işlevi düğmesi sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="459" />
+        <source>Partial dynamic driving function button jammed</source>
+        <translation>Kısmi dinamik sürüş işlevi düğmesi sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="460" />
+        <source>Parking assistance deactivation button fault</source>
+        <translation>Park yardımı devre dışı bırakma düğmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="461" />
+        <source>Fault : Stop and Start switch</source>
+        <translation>Arıza: Stop and Start anahtarı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="462" />
+        <source>Maintenance parameters configuration fault</source>
+        <translation>Bakım parametreleri yapılandırma arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="463" />
+        <source>Service parameters configured incorrectly fault</source>
+        <translation>Bakım parametreleri yanlış yapılandırılmış arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="464" />
+        <source>Engine oil pressure information fault</source>
+        <translation>Motor yağ basıncı bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="465" />
+        <source>Fault: loss of the built-in systems interface time counter</source>
+        <translation>Arıza: yerleşik sistemler arayüzü zaman sayacının kaybı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="466" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="467" />
+        <source>Front left wheel speed sensor</source>
+        <translation>Ön sol tekerlek hız sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="468" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="469" />
+        <source>Front right wheel speed sensor</source>
+        <translation>Ön sağ tekerlek hız sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="470" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="471" />
+        <source>Rear left wheel speed sensor</source>
+        <translation>Arka sol tekerlek hız sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="472" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="473" />
+        <source>Rear right wheel speed sensor</source>
+        <translation>Arka sağ tekerlek hız sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="474" />
+        <source>Brake pedal sensor</source>
+        <translation>Fren pedalı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="475" />
+        <source>Brake fluid level low fault</source>
+        <translation>Fren hidroliği seviyesi düşük arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="476" />
+        <source>Steering wheel angle sensor</source>
+        <translation>Direksiyon açısı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="477" />
+        <source>Yaw speed sensor signal</source>
+        <translation>Yalpalama hızı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="478" />
+        <source>Spare wheel of small diameter detected on the vehicle</source>
+        <translation>Araçta küçük çaplı yedek lastik algılandı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="479" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="480" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="481" />
+        <source>Front left wheel speed sensor signal</source>
+        <translation>Ön sol tekerlek hız sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="482" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="483" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="484" />
+        <source>Front right wheel speed sensor signal</source>
+        <translation>Ön sağ tekerlek hız sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="485" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="486" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="487" />
+        <source>Rear left wheel speed sensor signal</source>
+        <translation>Arka sol tekerlek hız sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="488" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="489" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="490" />
+        <source>Rear right wheel speed sensor signal</source>
+        <translation>Arka sağ tekerlek hız sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="491" />
+        <source>Confirmation of the taking into account of the</source>
+        <translation>Dikkate alındığının onayı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="492" />
+        <source>Indirect tyre under-inflation detection function</source>
+        <translation>Dolaylı lastik basıncı düşüklüğü algılama işlevi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="493" />
+        <source>Absence of confirmation from the ESP of the</source>
+        <translation>ESP'den onay gelmemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="494" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="495" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="496" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="497" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="531" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1030" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1031" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1232" />
+        <source>Control of the high pressure fuel flow regulator</source>
+        <translation>Yüksek basınç yakıt debisi regülatörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="498" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="500" />
+        <source>Inlet camshaft position sensor signal (Camshaft dephasure)</source>
+        <translation>Emme eksantrik mili konum sensörü sinyali (Eksantrik mili faz kayması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="499" />
+        <source>Exhaust camshaft position sensor signal (Camshaft dephasure)</source>
+        <translation>Egzoz eksantrik mili konum sensörü sinyali (Eksantrik mili faz kayması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="501" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="879" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1091" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1092" />
+        <source>Inlet camshaft dephaser</source>
+        <translation>Emme eksantrik mili faz ayarlayıcı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="502" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="661" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="662" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="664" />
+        <source>Inlet camshaft position sensor signal</source>
+        <translation>Emme eksantrik mili konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="503" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="505" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="671" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="672" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="673" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="674" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="675" />
+        <source>Exhaust camshaft position sensor signal</source>
+        <translation>Egzoz eksantrik mili konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="504" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="878" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1095" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1096" />
+        <source>Exhaust camshaft dephaser</source>
+        <translation>Egzoz eksantrik mili faz ayarlayıcı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="506" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="877" />
+        <source>Crankshaft - camshaft synchronisation</source>
+        <translation>Krank mili - eksantrik mili senkronizasyonu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="507" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="724" />
+        <source>Starting monitoring</source>
+        <translation>Çalıştırma izleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="508" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="509" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="510" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="569" />
+        <source>Upstream oxygen sensor (Oxygen sensor heating)</source>
+        <translation>Ön oksijen sensörü (Oksijen sensörü ısıtması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="511" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="512" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="513" />
+        <source>Control of the wastegate</source>
+        <translation>Wastegate kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="514" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="515" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="516" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="521" />
+        <source>Downstream oxygen sensor (Oxygen sensor heating)</source>
+        <translation>Arka oksijen sensörü (Oksijen sensörü ısıtması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="517" />
+        <source>Discharge solenoid valve shut</source>
+        <translation>Boşaltma solenoid valfi kapalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="518" />
+        <source>Control of the inlet camshaft dephaser command (Performance of the control)</source>
+        <translation>Emme eksantrik mili faz ayarlayıcı komutunun kumandası (Kumandanın performansı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="519" />
+        <source>Inlet camshaft position sensor</source>
+        <translation>Emme eksantrik mili konum sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="520" />
+        <source>Upstream oxygen sensor heating</source>
+        <translation>Ön oksijen sensörü ısıtması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="522" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="596" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="880" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="881" />
+        <source>Air turbocharging pressure</source>
+        <translation>Turbo şarj basıncı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="523" />
+        <source>Outside air temperature sensor</source>
+        <translation>Dış hava sıcaklığı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="524" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="525" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="526" />
+        <source>Inlet air temperature sensor at the air flow sensor (diesel engine) or exterior air temperature sensor (petrol engine)</source>
+        <translation>Hava debisi sensöründeki emme havası sıcaklığı sensörü (dizel motor) veya dış hava sıcaklığı sensörü (benzinli motor)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="527" />
+        <source>High pressure fuel circuit pressure (Pressure too low)</source>
+        <translation>Yüksek basınç yakıt devresi basıncı (Basınç çok düşük)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="528" />
+        <source>High pressure fuel circuit pressure (Pressure too high)</source>
+        <translation>Yüksek basınç yakıt devresi basıncı (Basınç çok yüksek)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="529" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="539" />
+        <source>Low pressure fuel circuit</source>
+        <translation>Düşük basınç yakıt devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="530" />
+        <source>Low pressure fuel circuit (Pressure)</source>
+        <translation>Düşük basınç yakıt devresi (Basınç)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="532" />
+        <source>High pressure fuel circuit pressure (Large leak detected)</source>
+        <translation>Yüksek basınç yakıt devresi basıncı (Büyük kaçak algılandı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="533" />
+        <source>High pressure fuel circuit pressure (Leak detected )</source>
+        <translation>Yüksek basınç yakıt devresi basıncı (Kaçak algılandı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="534" />
+        <source>Intake air temperature signal</source>
+        <translation>Emme havası sıcaklığı sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="535" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="536" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="537" />
+        <source>Inlet air temperature sensor (Downstream of the motorised throttle housing / Air mixer unit)</source>
+        <translation>Emme havası sıcaklığı sensörü (Motorlu gaz kelebeği gövdesi / Hava karıştırıcı ünitesinin sonrasında)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="538" />
+        <source>Turbocharger actuator control</source>
+        <translation>Turboşarj aktüatörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="540" />
+        <source>Engine management ECU (Injection control)</source>
+        <translation>Motor yönetim ECU'su (Enjeksiyon kumandası)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="541" />
+        <source>Air inlet circuit</source>
+        <translation>Hava emme devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="542" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="621" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1183" />
+        <source>Air inlet circuit (Air flow )</source>
+        <translation>Hava emme devresi (Hava debisi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="543" />
+        <source>Supplier fault code</source>
+        <translation>Tedarikçi arıza kodu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="544" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="546" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="547" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1228" />
+        <source>Air flow sensor</source>
+        <translation>Hava debisi sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="545" />
+        <source>Air flow : Non-coherent variation of the signal</source>
+        <translation>Hava debisi: Sinyalin tutarsız değişimi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="548" />
+        <source>Air flow sensor or open circuit</source>
+        <translation>Hava debisi sensörü veya açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="549" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="550" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="551" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="552" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="553" />
+        <source>Intake manifold pressure sensor</source>
+        <translation>Emme manifoldu basınç sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="554" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="555" />
+        <source>Inlet air temperature sensor at the air flow sensor</source>
+        <translation>Hava debisi sensöründeki emme havası sıcaklığı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="556" />
+        <source>Engine coolant temperature</source>
+        <translation>Motor soğutma sıvısı sıcaklığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="557" />
+        <source>Engine coolant temperature sensor</source>
+        <translation>Motor soğutma sıvısı sıcaklığı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="558" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="559" />
+        <source>Engine coolant temperature signal</source>
+        <translation>Motor soğutma sıvısı sıcaklığı sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="560" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="561" />
+        <source>Air mixer position signal</source>
+        <translation>Hava karıştırıcı konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="562" />
+        <source>Engine coolant temperature below the temperature of the thermostatic regulator</source>
+        <translation>Motor soğutma sıvısı sıcaklığı termostatik regülatör sıcaklığının altında</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="563" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1145" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1146" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1147" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1148" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1149" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1159" />
+        <source>Atmospheric pressure sensor</source>
+        <translation>Atmosferik basınç sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="564" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="565" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="566" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="567" />
+        <source>Upstream oxygen sensor signal</source>
+        <translation>Ön oksijen sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="568" />
+        <source>NOx content upstream of the deNOx catalytic converter signal</source>
+        <translation>deNOx katalitik konvertör öncesi NOx içeriği sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="570" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="571" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="572" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1156" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1157" />
+        <source>Downstream oxygen sensor signal</source>
+        <translation>Arka oksijen sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="573" />
+        <source>NOx content downstream of the deNOx catalytic converter</source>
+        <translation>deNOx katalitik konvertör sonrası NOx içeriği</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="574" />
+        <source>Oxygen rate signal from the downstream oxygen sensor / Downstream NOx sensor</source>
+        <translation>Arka oksijen sensöründen oksijen oranı sinyali / Arka NOx sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="575" />
+        <source>Mixture regulation (Mixture too lean)</source>
+        <translation>Karışım regülasyonu (Karışım çok fakir)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="576" />
+        <source>Mixture regulation (Mixture too rich)</source>
+        <translation>Karışım regülasyonu (Karışım çok zengin)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="577" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="578" />
+        <source>Fuel temperature sensor signal</source>
+        <translation>Yakıt sıcaklığı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="579" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="581" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="582" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="583" />
+        <source>Fuel high pressure sensor</source>
+        <translation>Yakıt yüksek basınç sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="580" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="868" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="869" />
+        <source>Fuel high pressure sensor signal</source>
+        <translation>Yakıt yüksek basınç sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="584" />
+        <source>Engine oil temperature</source>
+        <translation>Motor yağı sıcaklığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="585" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="608" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="609" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="901" />
+        <source>Control of the cylinder 1 fuel injector</source>
+        <translation>Silindir 1 yakıt enjektörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="586" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="611" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="612" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="902" />
+        <source>Control of the cylinder 2 fuel injector</source>
+        <translation>Silindir 2 yakıt enjektörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="587" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="614" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="615" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="903" />
+        <source>Control of the cylinder 3 fuel injector</source>
+        <translation>Silindir 3 yakıt enjektörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="588" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="618" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="619" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="904" />
+        <source>Control of the cylinder 4 fuel injector</source>
+        <translation>Silindir 4 yakıt enjektörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="589" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1041" />
+        <source>Main relay control</source>
+        <translation>Ana röle kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="590" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="591" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="592" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="593" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="594" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1121" />
+        <source>Position sensor of the motorised throttle housing (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensörü (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="595" />
+        <source>Diesel fuel heater or coolant or air or fuel pump control fault</source>
+        <translation>Dizel yakıt ısıtıcısı veya soğutma sıvısı veya hava veya yakıt pompası kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="597" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="598" />
+        <source>Air turbocharging pressure sensor signal</source>
+        <translation>Turbo şarj basıncı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="599" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="600" />
+        <source>Air turbocharging pressure signal</source>
+        <translation>Turbo şarj basıncı sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="601" />
+        <source>Turbocharger additional coolant pump actuator control</source>
+        <translation>Turboşarj ilave soğutma sıvısı pompası aktüatörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="602" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="603" />
+        <source>Control of the coolant pump actuator</source>
+        <translation>Soğutma sıvısı pompası aktüatörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="604" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="606" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="607" />
+        <source>Turbocharger control</source>
+        <translation>Turboşarj kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="605" />
+        <source>Engine management ECU (Control of the turbocharger)</source>
+        <translation>Motor yönetim ECU'su (Turboşarj kumandası)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="610" />
+        <source>Combustion of cylinder N° 1 (Fuel)</source>
+        <translation>Silindir N° 1 yanması (Yakıt)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="613" />
+        <source>Combustion of cylinder N° 2 (Fuel)</source>
+        <translation>Silindir N° 2 yanması (Yakıt)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="616" />
+        <source>Combustion of cylinder N° 3 (Fuel)</source>
+        <translation>Silindir N° 3 yanması (Yakıt)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="617" />
+        <source>Injection problem during heating of the catalytic converter</source>
+        <translation>Katalitik konvertör ısınması sırasında enjeksiyon sorunu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="620" />
+        <source>Combustion of cylinder N° 4 (Fuel)</source>
+        <translation>Silindir N° 4 yanması (Yakıt)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="622" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="626" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="627" />
+        <source>Combustion of cylinder N° 1 (Richness)</source>
+        <translation>Silindir N° 1 yanması (Zenginlik)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="623" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="628" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="629" />
+        <source>Combustion of cylinder N° 2 (Richness)</source>
+        <translation>Silindir N° 2 yanması (Zenginlik)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="624" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="630" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="631" />
+        <source>Combustion of cylinder N° 3 (Richness)</source>
+        <translation>Silindir N° 3 yanması (Zenginlik)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="625" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="632" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="633" />
+        <source>Combustion of cylinder N° 4 (Richness)</source>
+        <translation>Silindir N° 4 yanması (Zenginlik)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="634" />
+        <source>Air mixer unit</source>
+        <translation>Hava karıştırıcı ünitesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="635" />
+        <source>EGR valve : Actuator jammed open</source>
+        <translation>EGR valfi: Aktüatör açık sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="636" />
+        <source>EGR valve : Actuator jammed shut</source>
+        <translation>EGR valfi: Aktüatör kapalı sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="637" />
+        <source>Air mixer unit (Air flow )</source>
+        <translation>Hava karıştırıcı ünitesi (Hava debisi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="638" />
+        <source>Air flow</source>
+        <translation>Hava debisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="639" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="886" />
+        <source>Cylinder 1 fuel injector</source>
+        <translation>Silindir 1 yakıt enjektörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="640" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="887" />
+        <source>Cylinder 2 fuel injector</source>
+        <translation>Silindir 2 yakıt enjektörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="641" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="888" />
+        <source>Cylinder 3 fuel injector</source>
+        <translation>Silindir 3 yakıt enjektörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="642" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="889" />
+        <source>Cylinder 4 fuel injector</source>
+        <translation>Silindir 4 yakıt enjektörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="643" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="650" />
+        <source>Combustion misfiring</source>
+        <translation>Yanma teklemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="644" />
+        <source>Misfiring on cylinder 1</source>
+        <translation>Silindir 1'de tekleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="645" />
+        <source>Misfiring on cylinder 2</source>
+        <translation>Silindir 2'de tekleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="646" />
+        <source>Misfiring on cylinder 3</source>
+        <translation>Silindir 3'te tekleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="647" />
+        <source>Misfiring on cylinder 4</source>
+        <translation>Silindir 4'te tekleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="648" />
+        <source>Combustion misfiring (Level in the fuel tank)</source>
+        <translation>Yanma teklemesi (Yakıt deposu seviyesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="649" />
+        <source>Engine speed sensor signal fault</source>
+        <translation>Motor devri sensörü sinyal arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="651" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="652" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="653" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="654" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="655" />
+        <source>Knock detector</source>
+        <translation>Vuruntu sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="656" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="657" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="660" />
+        <source>Crankshaft position sensor signal</source>
+        <translation>Krank mili konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="658" />
+        <source>Engine speed : Not enough teeth seen over one revolution by the target</source>
+        <translation>Motor devri: Hedef tarafından bir devirde yeterli diş görülmedi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="659" />
+        <source>Engine speed : Too many teeth seen over one revolution by the target</source>
+        <translation>Motor devri: Hedef tarafından bir devirde çok fazla diş görüldü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="663" />
+        <source>Camshaft position : Signal absent when starting</source>
+        <translation>Eksantrik mili konumu: Çalıştırma sırasında sinyal yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="665" />
+        <source>Ignition coil signal</source>
+        <translation>Ateşleme bobini sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="666" />
+        <source>Cylinder 1 ignition coil control</source>
+        <translation>Silindir 1 ateşleme bobini kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="667" />
+        <source>Cylinder 2 ignition coil control</source>
+        <translation>Silindir 2 ateşleme bobini kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="668" />
+        <source>Cylinder 3 ignition coil control</source>
+        <translation>Silindir 3 ateşleme bobini kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="669" />
+        <source>Cylinder 4 ignition coil control</source>
+        <translation>Silindir 4 ateşleme bobini kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="670" />
+        <source>Engine misfires with risk of destroying the catalytic converter</source>
+        <translation>Katalitik konvertörü tahrip etme riski olan motor teklemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="676" />
+        <source>Air inlet circuit : Air flow higher than the reference value, legislative threshold</source>
+        <translation>Hava emme devresi: Hava debisi referans değerden yüksek, yasal eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="677" />
+        <source>Air inlet circuit : Air flow below the reference value, legislative threshold</source>
+        <translation>Hava emme devresi: Hava debisi referans değerin altında, yasal eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="678" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="702" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="710" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="711" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="933" />
+        <source>Control of the EGR valve</source>
+        <translation>EGR valfi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="679" />
+        <source>EGR valve</source>
+        <translation>EGR valfi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="680" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="681" />
+        <source>EGR valve position signal</source>
+        <translation>EGR valfi konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="682" />
+        <source>Pre-catalyser (Efficiency too low)</source>
+        <translation>Ön katalizör (Verim çok düşük)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="683" />
+        <source>Pre-catalyser (Component detected absent)</source>
+        <translation>Ön katalizör (Bileşen yok algılandı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="684" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="685" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="686" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="687" />
+        <source>Pre-catalyst upstream exhaust gas temperature sensor signal</source>
+        <translation>Ön katalizör öncesi egzoz gazı sıcaklığı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="688" />
+        <source>EGR valve : Actuator too open in relation to the reference value</source>
+        <translation>EGR valfi: Aktüatör referans değere göre çok açık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="689" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="712" />
+        <source>EGR valve : Actuator too closed in relation to the reference value</source>
+        <translation>EGR valfi: Aktüatör referans değere göre çok kapalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="690" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="691" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="692" />
+        <source>Canister purge solenoid valve control</source>
+        <translation>Kanister tahliye solenoid valfi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="693" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="694" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="695" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="696" />
+        <source>Fuel vapour leak measuring device valve and sensor assembly</source>
+        <translation>Yakıt buharı kaçağı ölçüm cihazı valf ve sensör tertibatı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="697" />
+        <source>Fuel vapour leak measuring device valve and sensor assembly (Leak detected)</source>
+        <translation>Yakıt buharı kaçağı ölçüm cihazı valf ve sensör tertibatı (Kaçak algılandı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="698" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="699" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="700" />
+        <source>Fuel level sensor signal</source>
+        <translation>Yakıt seviyesi sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="701" />
+        <source>Fuel level information (received by the CAN)</source>
+        <translation>Yakıt seviyesi bilgisi (CAN üzerinden alınan)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="703" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="704" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="705" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="706" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="707" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="713" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="714" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="715" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="731" />
+        <source>Fan assembly</source>
+        <translation>Fan tertibatı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="708" />
+        <source>Air mixer unit : Actuator too open in relation to the reference value</source>
+        <translation>Hava karıştırıcı ünitesi: Aktüatör referans değere göre çok açık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="709" />
+        <source>Air mixer unit : Actuator too closed in relation to the reference value</source>
+        <translation>Hava karıştırıcı ünitesi: Aktüatör referans değere göre çok kapalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="716" />
+        <source>Air inlet circuit : Air flow higher than the reference value, after sales threshold</source>
+        <translation>Hava emme devresi: Hava debisi referans değerden yüksek, satış sonrası eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="717" />
+        <source>Air inlet circuit : Air flow below the reference value, after sales threshold</source>
+        <translation>Hava emme devresi: Hava debisi referans değerin altında, satış sonrası eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="718" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="719" />
+        <source>Vehicle speed sensor signal</source>
+        <translation>Araç hızı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="720" />
+        <source>Brake switch signal</source>
+        <translation>Fren anahtarı sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="721" />
+        <source>Idle control system at cold starting</source>
+        <translation>Soğuk çalıştırmada rölanti kontrol sistemi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="722" />
+        <source>Idle control system at cold starting (Slower than expected)</source>
+        <translation>Soğuk çalıştırmada rölanti kontrol sistemi (Beklenenden yavaş)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="723" />
+        <source>Idle control system at cold starting (Quicker than expected)</source>
+        <translation>Soğuk çalıştırmada rölanti kontrol sistemi (Beklenenden hızlı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="725" />
+        <source>Engine coolant temperature sensor signal</source>
+        <translation>Motor soğutma sıvısı sıcaklığı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="726" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="955" />
+        <source>Coded immobiliser</source>
+        <translation>Kodlu immobilizer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="727" />
+        <source>Oil pressure sensor signal</source>
+        <translation>Yağ basıncı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="728" />
+        <source>Engine oil pressure sensor signal</source>
+        <translation>Motor yağ basıncı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="729" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="966" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="967" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="968" />
+        <source>Engine oil pressure sensor</source>
+        <translation>Motor yağ basıncı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="730" />
+        <source>Engine management ECU (Vehicle speed information)</source>
+        <translation>Motor yönetim ECU'su (Araç hızı bilgisi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="732" />
+        <source>Inlet camshaft position on cold starting (Excessive delay)</source>
+        <translation>Soğuk çalıştırmada emme eksantrik mili konumu (Aşırı gecikme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="733" />
+        <source>Signal from the air conditioning fluid pressure sensor</source>
+        <translation>Klima akışkanı basınç sensöründen sinyal</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="734" />
+        <source>Exhaust camshaft position on cold starting (Excessive delay)</source>
+        <translation>Soğuk çalıştırmada egzoz eksantrik mili konumu (Aşırı gecikme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="735" />
+        <source>Braking circuit vacuum sensor signal</source>
+        <translation>Fren devresi vakum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="736" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="737" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="738" />
+        <source>Ancillaries battery</source>
+        <translation>Yardımcı donanımlar aküsü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="740" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="742" />
+        <source>Ancillaries battery or battery charge status unit</source>
+        <translation>Yardımcı donanımlar aküsü veya akü şarj durumu ünitesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="741" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="743" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="744" />
+        <source>Battery charge status unit</source>
+        <translation>Akü şarj durumu ünitesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="745" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1023" />
+        <source>Vehicle speed limiter</source>
+        <translation>Araç hız sınırlayıcı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="746" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="747" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="748" />
+        <source>Piloted thermostat control fault</source>
+        <translation>Kumandalı termostat kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="749" />
+        <source>Control of the controlled air intake module - Position 1</source>
+        <translation>Kontrollü hava emme modülü kumandası - Konum 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="750" />
+        <source>Control of the controlled air intake module - Position 2</source>
+        <translation>Kontrollü hava emme modülü kumandası - Konum 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="751" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="756" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="757" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="761" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="762" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="764" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="774" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="808" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="942" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="977" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="978" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="979" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="980" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="981" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="989" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1060" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1107" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1280" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1284" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1285" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1286" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1287" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1288" />
+        <source>Engine management ECU</source>
+        <translation>Motor yönetim ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="752" />
+        <source>Engine management ECU : Calibration missing</source>
+        <translation>Motor yönetim ECU'su: Kalibrasyon eksik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="753" />
+        <source>Engine management ECU : Non-volatile memory fault</source>
+        <translation>Motor yönetim ECU'su: Kalıcı bellek arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="754" />
+        <source>Engine management ECU : Memory fault</source>
+        <translation>Motor yönetim ECU'su: Bellek arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="755" />
+        <source>Engine management ECU : Incorrect calibration</source>
+        <translation>Motor yönetim ECU'su: Hatalı kalibrasyon</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="758" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="759" />
+        <source>Engine management ECU : Internal fault</source>
+        <translation>Motor yönetim ECU'su: Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="760" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1118" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1161" />
+        <source>Accelerator pedal position sensor signal</source>
+        <translation>Gaz pedalı konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="763" />
+        <source>Starter relay control</source>
+        <translation>Marş rölesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="765" />
+        <source>Alternator</source>
+        <translation>Alternatör</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="766" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="767" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="768" />
+        <source>Control of the low pressure fuel supply pump</source>
+        <translation>Düşük basınç yakıt besleme pompası kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="769" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="777" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1211" />
+        <source>Low-pressure fuel pump</source>
+        <translation>Düşük basınç yakıt pompası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="770" />
+        <source>Fuel injector</source>
+        <translation>Yakıt enjektörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="771" />
+        <source>Vehicle Speed limitation</source>
+        <translation>Araç hız sınırlaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="772" />
+        <source>Injector bank 1</source>
+        <translation>Enjektör bankı 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="773" />
+        <source>Injector bank 2</source>
+        <translation>Enjektör bankı 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="775" />
+        <source>Throttle position regulation fault</source>
+        <translation>Gaz kelebeği konum regülasyonu arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="776" />
+        <source>Air conditioning compressor clutch relay</source>
+        <translation>Klima kompresörü kavrama rölesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="778" />
+        <source>Downloading / Configuration : Homologation number corrupted</source>
+        <translation>İndirme / Yapılandırma: Homologasyon numarası bozuk</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="779" />
+        <source>Fuel level</source>
+        <translation>Yakıt seviyesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="780" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="781" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="782" />
+        <source>Sensors N° 1 5 volt electrical supply</source>
+        <translation>Sensörler N° 1 5 volt elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="783" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="784" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="824" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="825" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="826" />
+        <source>Controlled alternator</source>
+        <translation>Kontrollü alternatör</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="785" />
+        <source>Temperature sensor internal to the engine ECU</source>
+        <translation>Motor ECU'su dahili sıcaklık sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="786" />
+        <source>Engine management ECU internal temperature : Voltage of the component too low</source>
+        <translation>Motor yönetim ECU'su dahili sıcaklığı: Bileşen gerilimi çok düşük</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="787" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="788" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="794" />
+        <source>Pre-heat glow plug N° 1</source>
+        <translation>Ön ısıtma kızdırma bujisi N° 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="789" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="790" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="795" />
+        <source>Pre-heat glow plug N° 2</source>
+        <translation>Ön ısıtma kızdırma bujisi N° 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="791" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="792" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="796" />
+        <source>Pre-heat glow plug N° 3</source>
+        <translation>Ön ısıtma kızdırma bujisi N° 3</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="793" />
+        <source>Control of the pre-heat unit</source>
+        <translation>Ön ısıtma ünitesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="797" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="798" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="799" />
+        <source>Pre-heat glow plug N° 4</source>
+        <translation>Ön ısıtma kızdırma bujisi N° 4</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="800" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="801" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="802" />
+        <source>Power relay control</source>
+        <translation>Güç rölesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="803" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="804" />
+        <source>Fan assembly control - High speed</source>
+        <translation>Fan tertibatı kumandası - Yüksek hız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="805" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="806" />
+        <source>Fan assembly control - Slow speed</source>
+        <translation>Fan tertibatı kumandası - Yavaş hız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="807" />
+        <source>Engine management ECU electronic supply</source>
+        <translation>Motor yönetim ECU'su elektronik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="809" />
+        <source>Pre-post heat unit</source>
+        <translation>Ön-son ısıtma ünitesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="810" />
+        <source>Starter motor (Maximum number of activations reached)</source>
+        <translation>Marş motoru (Maksimum etkinleştirme sayısına ulaşıldı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="811" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="820" />
+        <source>Clutch position sensor signal</source>
+        <translation>Debriyaj konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="812" />
+        <source>Clutch master cylinder position signal</source>
+        <translation>Debriyaj ana merkezi konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="813" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="814" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="819" />
+        <source>Clutch pedal angle position sensor signal</source>
+        <translation>Debriyaj pedalı açı konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="815" />
+        <source>Clutch pedal position sensor signal</source>
+        <translation>Debriyaj pedalı konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="816" />
+        <source>Reverse lamp switch</source>
+        <translation>Geri vites lambası anahtarı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="817" />
+        <source>Stop and Start function restarting authorisation information</source>
+        <translation>Stop and Start işlevi yeniden çalıştırma izni bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="818" />
+        <source>Starter relay</source>
+        <translation>Marş rölesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="821" />
+        <source>Gearbox neutral sensor signal</source>
+        <translation>Şanzıman boş konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="822" />
+        <source>Deterioration of the engine oil : Service interval exceeded</source>
+        <translation>Motor yağının bozulması: Bakım aralığı aşıldı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="823" />
+        <source>Neutral sensor signal</source>
+        <translation>Boş konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="827" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="828" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="829" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="830" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="831" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="834" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="857" />
+        <source>Variable valve lift system position sensor</source>
+        <translation>Değişken supap kaldırma sistemi konum sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="832" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="833" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="838" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="859" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="861" />
+        <source>Variable valve lift system</source>
+        <translation>Değişken supap kaldırma sistemi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="835" />
+        <source>Variable valve lift system (Programming of the low stops)</source>
+        <translation>Değişken supap kaldırma sistemi (Alt durakların programlanması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="836" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="837" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="858" />
+        <source>Variable valve lift system (Programming)</source>
+        <translation>Değişken supap kaldırma sistemi (Programlama)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="839" />
+        <source>Variable valve lift system (Actuator jammed)</source>
+        <translation>Değişken supap kaldırma sistemi (Aktüatör sıkışmış)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="840" />
+        <source>Self-ignition before spark (Rumble) (Low incidence)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşleme (Rumble) (Düşük görülme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="841" />
+        <source>Self-ignition before spark (Rumble) (Average incidence)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşleme (Rumble) (Orta görülme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="842" />
+        <source>Self-ignition before spark (Rumble) (High incidence)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşleme (Rumble) (Yüksek görülme)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="843" />
+        <source>End-of-life of the piston linked to self-ignition before spark (Rumble)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşlemeye bağlı piston ömrünün sonu (Rumble)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="844" />
+        <source>Unprotected piston linked to self-ignition before spark (Rumble) (Premature engine failure)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşlemeye bağlı korumasız piston (Rumble) (Erken motor arızası)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="845" />
+        <source>Slight limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşlemeye bağlı silindir dolumunun hafif kısıtlanması (Rumble)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="846" />
+        <source>Severe limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)</source>
+        <translation>Kıvılcımdan önce kendiliğinden ateşlemeye bağlı silindir dolumunun ciddi kısıtlanması (Rumble)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="847" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="848" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="849" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="854" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="855" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="856" />
+        <source>Variable valve lift system relay</source>
+        <translation>Değişken supap kaldırma sistemi rölesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="850" />
+        <source>Heated urea pipe</source>
+        <translation>Isıtmalı üre borusu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="851" />
+        <source>DeNOx system</source>
+        <translation>DeNOx sistemi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="852" />
+        <source>Frozen pipes detected on the particle filter differential pressure sensor (Level 2)</source>
+        <translation>Partikül filtresi diferansiyel basınç sensöründe donmuş borular algılandı (Seviye 2)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="853" />
+        <source>Frozen pipes detected on the particle filter differential pressure sensor (Level 1)</source>
+        <translation>Partikül filtresi diferansiyel basınç sensöründe donmuş borular algılandı (Seviye 1)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="860" />
+        <source>Variable valve lift system (Actuator)</source>
+        <translation>Değişken supap kaldırma sistemi (Aktüatör)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="862" />
+        <source>Air inlet circuit : Air turbocharging pressure higher than the reference value, after sales threshold</source>
+        <translation>Hava emme devresi: Turbo şarj basıncı referans değerden yüksek, satış sonrası eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="863" />
+        <source>Air inlet circuit : Air turbocharging pressure lower than the reference value, after sales threshold</source>
+        <translation>Hava emme devresi: Turbo şarj basıncı referans değerden düşük, satış sonrası eşik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="864" />
+        <source>Fuel high pressure circuit : Fuel pressure below the minimum threshold</source>
+        <translation>Yakıt yüksek basınç devresi: Yakıt basıncı minimum eşiğin altında</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="865" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1108" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1109" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1110" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1111" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1112" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1114" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1115" />
+        <source>Motorised throttle housing control (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi kumandası (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="866" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1230" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1234" />
+        <source>Motorised throttle housing (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="867" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1235" />
+        <source>Fuel injectors programming</source>
+        <translation>Yakıt enjektörleri programlama</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="870" />
+        <source>Braking vacuum circuit : Inadequate braking assistance</source>
+        <translation>Fren vakum devresi: Yetersiz fren yardımı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="871" />
+        <source>Fuel injector 1 : System or component fault</source>
+        <translation>Yakıt enjektörü 1: Sistem veya bileşen arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="872" />
+        <source>Fuel injector 2 : System or component fault</source>
+        <translation>Yakıt enjektörü 2: Sistem veya bileşen arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="873" />
+        <source>Fuel injector 3 : System or component fault</source>
+        <translation>Yakıt enjektörü 3: Sistem veya bileşen arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="874" />
+        <source>Fuel injector 4 : System or component fault</source>
+        <translation>Yakıt enjektörü 4: Sistem veya bileşen arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="875" />
+        <source>Fuel circuit (Fuel level on reserve)</source>
+        <translation>Yakıt devresi (Yakıt seviyesi rezervde)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="876" />
+        <source>Deterioration of the engine oil</source>
+        <translation>Motor yağının bozulması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="882" />
+        <source>Pressure of the fuel in the high pressure fuel circuit</source>
+        <translation>Yüksek basınç yakıt devresindeki yakıt basıncı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="883" />
+        <source>Accelerator pedal potentiometer sensor</source>
+        <translation>Gaz pedalı potansiyometre sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="884" />
+        <source>Damage to the high pressure fuel pump : Detection of wear of the high pressure fuel pump</source>
+        <translation>Yüksek basınç yakıt pompası hasarı: Yüksek basınç yakıt pompası aşınmasının algılanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="885" />
+        <source>Signal from the motorised throttle housing position sensor (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensöründen sinyal (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="890" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="891" />
+        <source>EGR valve position</source>
+        <translation>EGR valfi konumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="892" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="893" />
+        <source>Supplier fault code &amp;</source>
+        <translation>Tedarikçi arıza kodu &amp;</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="894" />
+        <source>Combustion misfiring (impact on catalytic converter) : Cylinder undetermined</source>
+        <translation>Yanma teklemesi (katalitik konvertöre etki): Silindir belirlenemedi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="895" />
+        <source>Combustion misfiring (impact on catalytic converter) : Cylinder 1</source>
+        <translation>Yanma teklemesi (katalitik konvertöre etki): Silindir 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="896" />
+        <source>Combustion misfiring (impact on catalytic converter) : Cylinder 2</source>
+        <translation>Yanma teklemesi (katalitik konvertöre etki): Silindir 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="897" />
+        <source>Combustion misfiring (impact on catalytic converter) : Cylinder 3</source>
+        <translation>Yanma teklemesi (katalitik konvertöre etki): Silindir 3</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="898" />
+        <source>Pre-post heat unit : Open circuit on the control</source>
+        <translation>Ön-son ısıtma ünitesi: Kumandada açık devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="899" />
+        <source>Pre-post heat unit : Short-circuit to earth on the control</source>
+        <translation>Ön-son ısıtma ünitesi: Kumandada şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="900" />
+        <source>Pre-post heat unit : Coherence fault</source>
+        <translation>Ön-son ısıtma ünitesi: Tutarlılık arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="905" />
+        <source>Control of the cylinder 1 petrol injector : Voltage outside the norms</source>
+        <translation>Silindir 1 benzin enjektörü kumandası: Gerilim normların dışında</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="906" />
+        <source>Control of the cylinder 2 petrol injector : Voltage outside the norms</source>
+        <translation>Silindir 2 benzin enjektörü kumandası: Gerilim normların dışında</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="907" />
+        <source>Control of the cylinder 3 petrol injector : Voltage outside the norms</source>
+        <translation>Silindir 3 benzin enjektörü kumandası: Gerilim normların dışında</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="908" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="909" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="999" />
+        <source>Ancillary drive belt</source>
+        <translation>Yardımcı donanım tahrik kayışı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="910" />
+        <source>Super-knock information</source>
+        <translation>Süper vuruntu bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="911" />
+        <source>Combustion engine starting inhibited by the gearbox</source>
+        <translation>İçten yanmalı motor çalıştırması şanzıman tarafından engellendi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="912" />
+        <source>Super knock sensor</source>
+        <translation>Süper vuruntu sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="913" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="914" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="915" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="920" />
+        <source>Fault internal to the engine ECU : Safety level</source>
+        <translation>Motor ECU'su dahili arızası: Güvenlik seviyesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="916" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="917" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="918" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="919" />
+        <source>Fault internal to the engine ECU : Malfunction</source>
+        <translation>Motor ECU'su dahili arızası: Çalışma bozukluğu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="921" />
+        <source>Engine management ECU : Safety level</source>
+        <translation>Motor yönetim ECU'su: Güvenlik seviyesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="922" />
+        <source>Battery : Exceeding of the maximum threshold for the discharge current supplied by the ancillaries battery during the last start or restart</source>
+        <translation>Akü: Son çalıştırma veya yeniden çalıştırma sırasında yardımcı donanımlar aküsü tarafından sağlanan deşarj akımı maksimum eşiğinin aşılması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="923" />
+        <source>Voltage maintaining device : Internal fault</source>
+        <translation>Gerilim sürdürme cihazı: Dahili arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="924" />
+        <source>Voltage maintaining device : Compensation for losses on line fault</source>
+        <translation>Gerilim sürdürme cihazı: Hat kayıplarının telafisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="925" />
+        <source>Reversible alternator : Overvoltage of the electrical network</source>
+        <translation>Tersinir alternatör: Elektrik şebekesinde aşırı gerilim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="926" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="927" />
+        <source>Starter control interface unit</source>
+        <translation>Marş kumanda arayüz ünitesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="928" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="929" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="930" />
+        <source>Network voltage maintaining device</source>
+        <translation>Şebeke gerilimi sürdürme cihazı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="931" />
+        <source>Additional heating control 1</source>
+        <translation>İlave ısıtma kumandası 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="932" />
+        <source>Additional heating control 2</source>
+        <translation>İlave ısıtma kumandası 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="934" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1187" />
+        <source>Particle filter overloaded</source>
+        <translation>Partikül filtresi aşırı yüklü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="935" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1302" />
+        <source>Multiplexed additive pump</source>
+        <translation>Çoğullanmış katkı pompası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="936" />
+        <source>Control of the additive pump by wire</source>
+        <translation>Katkı pompasının kablo ile kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="937" />
+        <source>Control of the additive pump by wire : Short circuit to earth</source>
+        <translation>Katkı pompasının kablo ile kumandası: Şaseye kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="938" />
+        <source>Control of the additive pump by wire : Short circuit to positive</source>
+        <translation>Katkı pompasının kablo ile kumandası: Pozitife kısa devre</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="939" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="969" />
+        <source>Fuel additive tank</source>
+        <translation>Yakıt katkı deposu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="940" />
+        <source>Particle filter regeneration</source>
+        <translation>Partikül filtresi rejenerasyonu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="941" />
+        <source>Particle filter : Ineffective regeneration of the particle emission filter (threshold 1)</source>
+        <translation>Partikül filtresi: Partikül emisyon filtresinin etkisiz rejenerasyonu (eşik 1)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="943" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="950" />
+        <source>Programming the EGR valve stops</source>
+        <translation>EGR valfi duraklarının programlanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="944" />
+        <source>Programming of the upper stop of the EGR valve</source>
+        <translation>EGR valfi üst durağının programlanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="945" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="946" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1203" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1204" />
+        <source>Position of the turbocharger</source>
+        <translation>Turboşarj konumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="947" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="948" />
+        <source>Position of the air mixer</source>
+        <translation>Hava karıştırıcı konumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="949" />
+        <source>Programming of the stops of the turbocharger</source>
+        <translation>Turboşarj duraklarının programlanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="951" />
+        <source>Programming the air mixer stops</source>
+        <translation>Hava karıştırıcı duraklarının programlanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="952" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="953" />
+        <source>Fuel high pressure common rail pressure sensor</source>
+        <translation>Yakıt yüksek basınç ortak rail basınç sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="954" />
+        <source>Engine stopping request</source>
+        <translation>Motor durdurma isteği</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="956" />
+        <source>Brake pedal position signal</source>
+        <translation>Fren pedalı konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="957" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="958" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="959" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="963" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="964" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="965" />
+        <source>Engine oil circuit pressure</source>
+        <translation>Motor yağ devresi basıncı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="960" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="961" />
+        <source>Control of the engine oil pressure regulation</source>
+        <translation>Motor yağ basıncı regülasyonu kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="962" />
+        <source>Engine oil circuit pressure (Regulation valve)</source>
+        <translation>Motor yağ devresi basıncı (Regülasyon valfi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="970" />
+        <source>Position of the accelerator pedal</source>
+        <translation>Gaz pedalı konumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="971" />
+        <source>Fuel injectors configuration</source>
+        <translation>Yakıt enjektörleri yapılandırması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="972" />
+        <source>Calibration reference</source>
+        <translation>Kalibrasyon referansı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="973" />
+        <source>Approval reference</source>
+        <translation>Onay referansı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="974" />
+        <source>EEPROM memory (Coded immobiliser)</source>
+        <translation>EEPROM belleği (Kodlu immobilizer)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="975" />
+        <source>Configuration : Configuration not valid</source>
+        <translation>Yapılandırma: Yapılandırma geçersiz</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="976" />
+        <source>Status of the hard point of the accelerator pedal</source>
+        <translation>Gaz pedalı sert noktasının durumu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="982" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="983" />
+        <source>Accelerator pedal sitff point signal</source>
+        <translation>Gaz pedalı sert nokta sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="984" />
+        <source>Accelerator pedal tight spot sensor : Malfunction</source>
+        <translation>Gaz pedalı sert nokta sensörü: Çalışma bozukluğu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="985" />
+        <source>Engine management ECU : ECU reset</source>
+        <translation>Motor yönetim ECU'su: ECU sıfırlama</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="986" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="987" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="988" />
+        <source>Engine running information</source>
+        <translation>Motor çalışma bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="990" />
+        <source>Engine management ECU (Safety level 2 : Clutch)</source>
+        <translation>Motor yönetim ECU'su (Güvenlik seviyesi 2: Debriyaj)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="991" />
+        <source>Request from the Stop and Start function to stop the internal combustion engine</source>
+        <translation>Stop and Start işlevinden içten yanmalı motoru durdurma isteği</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="992" />
+        <source>Starting request information</source>
+        <translation>Çalıştırma isteği bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="993" />
+        <source>Engine management ECU (Injection bank 1)</source>
+        <translation>Motor yönetim ECU'su (Enjeksiyon bankı 1)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="994" />
+        <source>Engine management ECU (Injection bank 2)</source>
+        <translation>Motor yönetim ECU'su (Enjeksiyon bankı 2)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="995" />
+        <source>Internal combustion engine (Oil ingestion)</source>
+        <translation>İçten yanmalı motor (Yağ yutma)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="996" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="997" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="998" />
+        <source>Control of the crankcase fumes heater</source>
+        <translation>Karter buharı ısıtıcısı kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1000" />
+        <source>Engine management ECU (Sensors internal electrical supply)</source>
+        <translation>Motor yönetim ECU'su (Sensörler dahili elektrik beslemesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1001" />
+        <source>Control of the controlled air intake module (Actuator jammed)</source>
+        <translation>Kontrollü hava emme modülü kumandası (Aktüatör sıkışmış)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1002" />
+        <source>Control of the controlled air intake module (Actuator jammed) open</source>
+        <translation>Kontrollü hava emme modülü kumandası (Aktüatör sıkışmış) açık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1003" />
+        <source>Thermostat controlled : Actuator jammed open</source>
+        <translation>Kumandalı termostat: Aktüatör açık sıkışmış</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1004" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1005" />
+        <source>Starter control interface unit information return signal</source>
+        <translation>Marş kumanda arayüz ünitesi bilgi dönüş sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1006" />
+        <source>Cruise control, speed limiter and vehicle speed curbing</source>
+        <translation>Hız sabitleyici, hız sınırlayıcı ve araç hızı frenleme</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1008" />
+        <source>Damage to the double damping flywheel</source>
+        <translation>Çift kütleli volan hasarı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1009" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1215" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1216" />
+        <source>Control of the motorised coolant outlet housing</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1010" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1011" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1012" />
+        <source>Motorised coolant outlet housing position sensor signal</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi konum sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1013" />
+        <source>Deterioration of the engine oil (Presence of carbon)</source>
+        <translation>Motor yağının bozulması (Karbon varlığı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1014" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1015" />
+        <source>Control of the starter motor</source>
+        <translation>Marş motoru kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1016" />
+        <source>5-V electrical supply for the sensors</source>
+        <translation>Sensörler için 5 V elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1017" />
+        <source>Sensors N° 4 5 volt electrical supply</source>
+        <translation>Sensörler N° 4 5 volt elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1018" />
+        <source>Sensors N° 5 5 volt electrical supply</source>
+        <translation>Sensörler N° 5 5 volt elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1019" />
+        <source>Motorised coolant outlet housing (Heater matrix closed position)</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi (Isıtıcı radyatör kapalı konum)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1020" />
+        <source>Motorised coolant outlet housing (Heater matrix open and bypass closed position)</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi (Isıtıcı radyatör açık ve bypass kapalı konum)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1021" />
+        <source>Motorised coolant outlet housing (Bypass open and engine cooling radiator closed)</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi (Bypass açık ve motor soğutma radyatörü kapalı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1022" />
+        <source>Motorised coolant outlet housing (Engine cooling radiator open)</source>
+        <translation>Motorlu soğutma sıvısı çıkış gövdesi (Motor soğutma radyatörü açık)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1025" />
+        <source>Engine management ECU (Powerlatch)</source>
+        <translation>Motor yönetim ECU'su (Powerlatch)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1026" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1186" />
+        <source>Particle filter differential pressure sensor</source>
+        <translation>Partikül filtresi diferansiyel basınç sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1027" />
+        <source>Combustion of the cylinders : Acyclism correction too great or insufficient</source>
+        <translation>Silindirlerin yanması: Devir düzensizliği düzeltmesi çok fazla veya yetersiz</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1028" />
+        <source>Depollution of the deNOx system (Ammonia concentration)</source>
+        <translation>deNOx sistemi arındırması (Amonyak konsantrasyonu)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1029" />
+        <source>High pressure fuel circuit pressure (Overpressure detected)</source>
+        <translation>Yüksek basınç yakıt devresi basıncı (Aşırı basınç algılandı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1032" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1033" />
+        <source>Semi-automatic/automatic parking system</source>
+        <translation>Yarı otomatik/otomatik park sistemi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1034" />
+        <source>Detection of incorrect pressing on the brake pedal</source>
+        <translation>Fren pedalına yanlış basılmasının algılanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1035" />
+        <source>Detection of incorrect release of the brake pedal</source>
+        <translation>Fren pedalının yanlış bırakılmasının algılanması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1036" />
+        <source>Damage to the clutch : Overheating of the clutch</source>
+        <translation>Debriyaj hasarı: Debriyajın aşırı ısınması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1037" />
+        <source>Vehicle speed</source>
+        <translation>Araç hızı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1038" />
+        <source>Engine management ECU (Control of the oil pump)</source>
+        <translation>Motor yönetim ECU'su (Yağ pompası kumandası)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1039" />
+        <source>The engine has stalled</source>
+        <translation>Motor stop etti</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1040" />
+        <source>Temperature in the exhaust line</source>
+        <translation>Egzoz hattındaki sıcaklık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1042" />
+        <source>Power storage battery or voltage retaining device : Voltage value prohibited</source>
+        <translation>Güç depolama aküsü veya gerilim tutma cihazı: Gerilim değeri yasak</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1043" />
+        <source>Power storage battery or voltage retaining device : Temperature value not valid</source>
+        <translation>Güç depolama aküsü veya gerilim tutma cihazı: Sıcaklık değeri geçersiz</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1044" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1045" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1377" />
+        <source>Authorisation line for restarting</source>
+        <translation>Yeniden çalıştırma izni hattı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1053" />
+        <source>Reversible alternator (Ancillaries battery charge voltage regulation)</source>
+        <translation>Tersinir alternatör (Yardımcı donanımlar aküsü şarj gerilimi regülasyonu)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1054" />
+        <source>Energy accumulator (State of health)</source>
+        <translation>Enerji akümülatörü (Sağlık durumu)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1055" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1056" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1058" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1059" />
+        <source>Voltage maintaining device</source>
+        <translation>Gerilim sürdürme cihazı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1057" />
+        <source>Voltage of the power accumulator or of the voltage maintaining device</source>
+        <translation>Güç akümülatörünün veya gerilim sürdürme cihazının gerilimi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1061" />
+        <source>Not characterised</source>
+        <translation>Karakterize edilmemiş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1062" />
+        <source>Particle filter (Efficiency too low)</source>
+        <translation>Partikül filtresi (Verim çok düşük)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1063" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1064" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1065" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1066" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1067" />
+        <source>Fuel vapours temperature sensor</source>
+        <translation>Yakıt buharı sıcaklığı sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1068" />
+        <source>Control of the urea reservoir heating : Consumption of electrical current too low</source>
+        <translation>Üre deposu ısıtması kumandası: Elektrik akımı tüketimi çok düşük</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1069" />
+        <source>Control of the urea reservoir heating : Consumption of electrical current too high</source>
+        <translation>Üre deposu ısıtması kumandası: Elektrik akımı tüketimi çok yüksek</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1070" />
+        <source>Urea fluid level : Tank empty</source>
+        <translation>Üre sıvısı seviyesi: Depo boş</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1071" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1072" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1090" />
+        <source>Pre-catalyst downstream exhaust gas temperature sensor signal</source>
+        <translation>Ön katalizör sonrası egzoz gazı sıcaklığı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1073" />
+        <source>Urea fluid level : Urea fluid consumption not coherent</source>
+        <translation>Üre sıvısı seviyesi: Üre sıvısı tüketimi tutarsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1074" />
+        <source>Urea solution level : Level in the reservoir too low</source>
+        <translation>Üre çözeltisi seviyesi: Depodaki seviye çok düşük</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1075" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1076" />
+        <source>Urea solution temperature signal</source>
+        <translation>Üre çözeltisi sıcaklığı sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1077" />
+        <source>Urea pump - gauge module (Urea fluid temperature)</source>
+        <translation>Üre pompası - gösterge modülü (Üre sıvısı sıcaklığı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1078" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1079" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1080" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1222" />
+        <source>Control of the urea injector</source>
+        <translation>Üre enjektörü kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1081" />
+        <source>Urea pump - gauge module (Pressure of the urea solution)</source>
+        <translation>Üre pompası - gösterge modülü (Üre çözeltisi basıncı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1082" />
+        <source>Pressure of the urea fluid : Signal blocked</source>
+        <translation>Üre sıvısı basıncı: Sinyal bloke</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1083" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1103" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1104" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1261" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1262" />
+        <source>Pressure of the urea solution</source>
+        <translation>Üre çözeltisi basıncı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1084" />
+        <source>DeNOx system circuit : Detection of a blockage</source>
+        <translation>DeNOx sistemi devresi: Tıkanıklık algılandı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1085" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1086" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1087" />
+        <source>Control of the deNOx system relay</source>
+        <translation>deNOx sistemi rölesi kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1088" />
+        <source>Inlet pressure regulation : Incoherence between pressure and position of throttle: not defined</source>
+        <translation>Emme basıncı regülasyonu: Basınç ile gaz kelebeği konumu arasında tutarsızlık: tanımsız</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1089" />
+        <source>Urea solution : Characteristic of the component that does not conform</source>
+        <translation>Üre çözeltisi: Uygun olmayan bileşen özelliği</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1093" />
+        <source>Pressure of the urea fluid : Urea fluid pressure too low</source>
+        <translation>Üre sıvısı basıncı: Üre sıvısı basıncı çok düşük</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1094" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1106" />
+        <source>DeNOx system circuit</source>
+        <translation>DeNOx sistemi devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1097" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1098" />
+        <source>Correction of the post-catalytic converter mixture</source>
+        <translation>Katalitik konvertör sonrası karışım düzeltmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1099" />
+        <source>Urea reservoir heating circuit</source>
+        <translation>Üre deposu ısıtma devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1100" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1260" />
+        <source>DeNOx system circuit (Urea pump - gauge module)</source>
+        <translation>DeNOx sistemi devresi (Üre pompası - gösterge modülü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1101" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1102" />
+        <source>Control of the urea pipe heating</source>
+        <translation>Üre borusu ısıtması kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1105" />
+        <source>Depolution of the deNOx system (Effectiveness) Performance or operation does not conform</source>
+        <translation>deNOx sistemi arındırması (Etkinlik) Performans veya çalışma uygun değil</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1113" />
+        <source>Programming of the motorised throttle housing lower stop (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi alt durağının programlanması (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1116" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1117" />
+        <source>Position of the accelerator pedal, signal 1</source>
+        <translation>Gaz pedalı konumu, sinyal 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1119" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1120" />
+        <source>Position of the accelerator pedal, signal 2</source>
+        <translation>Gaz pedalı konumu, sinyal 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1122" />
+        <source>Accelerator pedal position signals</source>
+        <translation>Gaz pedalı konum sinyalleri</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1123" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1124" />
+        <source>Bank N° 1 of fuel injectors</source>
+        <translation>Yakıt enjektörleri bankı N° 1</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1125" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1126" />
+        <source>Bank N° 2 of fuel injectors</source>
+        <translation>Yakıt enjektörleri bankı N° 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1127" />
+        <source>Vehicle speed information</source>
+        <translation>Araç hızı bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1128" />
+        <source>Programming of the motorised throttle housing upper stop (Air mixer unit)</source>
+        <translation>Motorlu gaz kelebeği gövdesi üst durağının programlanması (Hava karıştırıcı ünitesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1129" />
+        <source>Motorised throttle housing position sensor signal : Negative drift</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensörü sinyali: Negatif kayma</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1130" />
+        <source>Motorised throttle housing position sensor signal : Positive drift</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensörü sinyali: Pozitif kayma</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1131" />
+        <source>Motorised throttle housing position sensor signal : Coherence of the natural position of the motorised throttle housing</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensörü sinyali: Motorlu gaz kelebeği gövdesinin doğal konumunun tutarlılığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1132" />
+        <source>Fault adaptative memory data of the mixture regulation: not characterized. : Mixture too lean</source>
+        <translation>Karışım regülasyonu uyarlanabilir bellek verisi arızası: karakterize edilmemiş. : Karışım çok fakir</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1133" />
+        <source>Fault adaptative memory data of the mixture regulation: not characterized. : Mixture too rich</source>
+        <translation>Karışım regülasyonu uyarlanabilir bellek verisi arızası: karakterize edilmemiş. : Karışım çok zengin</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1134" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1135" />
+        <source>Mixture regulation</source>
+        <translation>Karışım regülasyonu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1136" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1137" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1151" />
+        <source>Upstream oxygen sensor</source>
+        <translation>Ön oksijen sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1138" />
+        <source>Urea solution level signal</source>
+        <translation>Üre çözeltisi seviyesi sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1139" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1141" />
+        <source>Upstream NOx sensor (NOx information signal)</source>
+        <translation>Ön NOx sensörü (NOx bilgi sinyali)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1140" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1142" />
+        <source>Upstream NOx sensor (Heating of the NOx sensor)</source>
+        <translation>Ön NOx sensörü (NOx sensörü ısıtması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1143" />
+        <source>Upstream NOx sensor (NOX sensor supply)</source>
+        <translation>Ön NOx sensörü (NOx sensörü beslemesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1144" />
+        <source>Downstream NOx sensor (NOX sensor supply)</source>
+        <translation>Arka NOx sensörü (NOx sensörü beslemesi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1150" />
+        <source>Downstream oxygen sensor</source>
+        <translation>Arka oksijen sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1152" />
+        <source>Turbine discharge electrovalve open</source>
+        <translation>Türbin boşaltma elektrovalfi açık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1153" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1158" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1227" />
+        <source>Turbocharging air circuit</source>
+        <translation>Turbo şarj hava devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1154" />
+        <source>Water in fuel sensor signal</source>
+        <translation>Yakıtta su sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1155" />
+        <source>Particle emission filter faulty</source>
+        <translation>Partikül emisyon filtresi arızalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1160" />
+        <source>Starting monitoring (Fuel pressure measured in the fuel high pressure common rail)</source>
+        <translation>Çalıştırma izleme (Yakıt yüksek basınç ortak rail'inde ölçülen yakıt basıncı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1162" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1164" />
+        <source>Downstream NOx sensor (NOx information signal)</source>
+        <translation>Arka NOx sensörü (NOx bilgi sinyali)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1163" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1165" />
+        <source>Downstream NOx sensor (Heating of the NOx sensor)</source>
+        <translation>Arka NOx sensörü (NOx sensörü ısıtması)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1166" />
+        <source>Cylinder 1 ignition coil control fault</source>
+        <translation>Silindir 1 ateşleme bobini kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1167" />
+        <source>Cylinder 2 ignition coil control fault</source>
+        <translation>Silindir 2 ateşleme bobini kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1168" />
+        <source>Cylinder 3 ignition coil control fault</source>
+        <translation>Silindir 3 ateşleme bobini kumanda arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1169" />
+        <source>Detection of super knock cylinder no. 1</source>
+        <translation>Silindir no. 1 süper vuruntu algılaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1170" />
+        <source>Detection of super knock cylinder no. 2</source>
+        <translation>Silindir no. 2 süper vuruntu algılaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1171" />
+        <source>Detection of super knock cylinder no. 3</source>
+        <translation>Silindir no. 3 süper vuruntu algılaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1172" />
+        <source>Detection of super knock cylinder no. 4</source>
+        <translation>Silindir no. 4 süper vuruntu algılaması</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1173" />
+        <source>EGR valve circuit clogged</source>
+        <translation>EGR valfi devresi tıkalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1174" />
+        <source>Canister purge solenoid valve shut</source>
+        <translation>Kanister tahliye solenoid valfi kapalı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1175" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1176" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1177" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1178" />
+        <source>EGR exchanger bypass control</source>
+        <translation>EGR eşanjörü bypass kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1179" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1180" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1181" />
+        <source>Temperature of the exhaust gas upstream of the turbocharger</source>
+        <translation>Turboşarj öncesi egzoz gazı sıcaklığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1182" />
+        <source>Maximum additive threshold of additive in the particle filter</source>
+        <translation>Partikül filtresindeki katkı maddesi maksimum eşiği</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1184" />
+        <source>Particle filter (Differential pressure too high)</source>
+        <translation>Partikül filtresi (Diferansiyel basınç çok yüksek)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1185" />
+        <source>Particle emission filter differential pressure sensor signal (Plausibility)</source>
+        <translation>Partikül emisyon filtresi diferansiyel basınç sensörü sinyali (Makuliyet)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1188" />
+        <source>Particle filter (Arduous use)</source>
+        <translation>Partikül filtresi (Zorlu kullanım)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1189" />
+        <source>Clogged particle filter</source>
+        <translation>Tıkalı partikül filtresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1190" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1191" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1192" />
+        <source>EGR exchanger bypass position signal</source>
+        <translation>EGR eşanjörü bypass konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1193" />
+        <source>Particle filter blocked : Malfunction</source>
+        <translation>Partikül filtresi tıkalı: Çalışma bozukluğu</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1194" />
+        <source>EGR exchanger by-pass</source>
+        <translation>EGR eşanjörü bypass'ı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1195" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1196" />
+        <source>Soot sensor</source>
+        <translation>Kurum sensörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1197" />
+        <source>Soot sensor self-cleaning incomplete</source>
+        <translation>Kurum sensörü kendi kendini temizleme tamamlanmadı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1198" />
+        <source>Engine oil level sensor signal</source>
+        <translation>Motor yağ seviyesi sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1199" />
+        <source>Oil level sensor signal</source>
+        <translation>Yağ seviyesi sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1200" />
+        <source>Power relay : Temperature too high</source>
+        <translation>Güç rölesi: Sıcaklık çok yüksek</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1201" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1202" />
+        <source>Low pressure fuel circuit fuel pressure sensor signal</source>
+        <translation>Düşük basınç yakıt devresi yakıt basıncı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1205" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1206" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1207" />
+        <source>Turbocharger position signal</source>
+        <translation>Turboşarj konum sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1208" />
+        <source>Distance alert information</source>
+        <translation>Mesafe uyarısı bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1209" />
+        <source>Electric coolant pump</source>
+        <translation>Elektrikli soğutma sıvısı pompası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1210" />
+        <source>Internal counter for ECUs in dormant mode</source>
+        <translation>Uyku modundaki ECU'lar için dahili sayaç</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1212" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1213" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1214" />
+        <source>Sensors N° 2 5 volt electrical supply</source>
+        <translation>Sensörler N° 2 5 volt elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1217" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1218" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1219" />
+        <source>Sensors N° 3 5 volt electrical supply</source>
+        <translation>Sensörler N° 3 5 volt elektrik beslemesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1220" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1221" />
+        <source>Control of the fuel heater</source>
+        <translation>Yakıt ısıtıcısı kumandası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1223" />
+        <source>Upstream NOx sensor (Oxygen information signal)</source>
+        <translation>Ön NOx sensörü (Oksijen bilgi sinyali)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1224" />
+        <source>Downstream NOx sensor (Oxygen information signal)</source>
+        <translation>Arka NOx sensörü (Oksijen bilgi sinyali)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1225" />
+        <source>DeNOx catalytic converter</source>
+        <translation>deNOx katalitik konvertörü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1226" />
+        <source>Air circuit</source>
+        <translation>Hava devresi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1229" />
+        <source>Motorised throttle housing (Air mixer unit) open</source>
+        <translation>Motorlu gaz kelebeği gövdesi (Hava karıştırıcı ünitesi) açık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1231" />
+        <source>Motorised throttle housing position sensor signal : Electrical fault</source>
+        <translation>Motorlu gaz kelebeği gövdesi konum sensörü sinyali: Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1233" />
+        <source>Customer modification of the programming of the engine management ECU</source>
+        <translation>Motor yönetim ECU'su programlamasının müşteri tarafından değiştirilmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1236" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1240" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1244" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1248" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1252" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1256" />
+        <source>Fuel injector 1 (Resetting)</source>
+        <translation>Yakıt enjektörü 1 (Sıfırlama)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1237" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1241" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1245" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1249" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1253" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1257" />
+        <source>Fuel injector 2 (Resetting)</source>
+        <translation>Yakıt enjektörü 2 (Sıfırlama)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1238" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1242" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1246" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1250" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1254" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1258" />
+        <source>Fuel injector 3 (Resetting)</source>
+        <translation>Yakıt enjektörü 3 (Sıfırlama)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1239" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1243" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1247" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1251" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1255" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1259" />
+        <source>Fuel injector 4 (Resetting)</source>
+        <translation>Yakıt enjektörü 4 (Sıfırlama)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1263" />
+        <source>Estimation of the particle filter charge in relation to a calculation</source>
+        <translation>Bir hesaplamaya göre partikül filtresi doluluğunun tahmini</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1264" />
+        <source>Engine management ECU (Stop and start function)</source>
+        <translation>Motor yönetim ECU'su (Stop and start işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1266" />
+        <source>Engine management ECU (Speed limiter / cruise control function)</source>
+        <translation>Motor yönetim ECU'su (Hız sınırlayıcı / hız sabitleyici işlevi)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1267" />
+        <source>Engine management ECU (Fuel injection)</source>
+        <translation>Motor yönetim ECU'su (Yakıt enjeksiyonu)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1268" />
+        <source>Number of self-ignitions before spark (Rumble) too high over the last few miles (kilometres) travelled</source>
+        <translation>Son kat edilen birkaç mil (kilometre) boyunca kıvılcımdan önce kendiliğinden ateşleme (Rumble) sayısı çok yüksek</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1269" />
+        <source>High number of self-ignitions before spark (Rumble) over the last few miles (kilometres) travelled</source>
+        <translation>Son kat edilen birkaç mil (kilometre) boyunca yüksek sayıda kıvılcımdan önce kendiliğinden ateşleme (Rumble)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1270" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1271" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1272" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1273" />
+        <source>Motorised throttle housing : Adaptive value at stop</source>
+        <translation>Motorlu gaz kelebeği gövdesi: Durakta uyarlanabilir değer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1274" />
+        <source>Exhaust variable timing electrovalve : Adaptive value at stop</source>
+        <translation>Egzoz değişken zamanlama elektrovalfi: Durakta uyarlanabilir değer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1275" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1276" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1278" />
+        <source>Injection time : Adaptive value at stop</source>
+        <translation>Enjeksiyon süresi: Durakta uyarlanabilir değer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1277" />
+        <source>Inlet variable timing electrovalve : Adaptive value at stop</source>
+        <translation>Emme değişken zamanlama elektrovalfi: Durakta uyarlanabilir değer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1279" />
+        <source>Coherence between the position of the motorised throttle housing (air mixer) and the inlet air pressure</source>
+        <translation>Motorlu gaz kelebeği gövdesi (hava karıştırıcı) konumu ile emme havası basıncı arasındaki tutarlılık</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1281" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1282" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1283" />
+        <source>Pressure of the fuel in the high pressure fuel circuit : Adaptive value at stop</source>
+        <translation>Yüksek basınç yakıt devresindeki yakıt basıncı: Durakta uyarlanabilir değer</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1289" />
+        <source>Body CAN (Built-in systems interface)</source>
+        <translation>Gövde CAN (Yerleşik sistemler arayüzü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1290" />
+        <source>CAN (Loss of communication between the BSI and the instrument panel)</source>
+        <translation>CAN (BSI ile gösterge paneli arasında iletişim kaybı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1291" />
+        <source>Intersystems CAN (Engine management ECU silent)</source>
+        <translation>Sistemler arası CAN (Motor yönetim ECU'su sessiz)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1292" />
+        <source>Suspension and wheels CAN (Engine management ECU silent)</source>
+        <translation>Süspansiyon ve tekerlekler CAN (Motor yönetim ECU'su sessiz)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1293" />
+        <source>Comfort CAN (Built-in systems interface)</source>
+        <translation>Konfor CAN (Yerleşik sistemler arayüzü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1294" />
+        <source>Intersystems CAN</source>
+        <translation>Sistemler arası CAN</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1295" />
+        <source>Emissions control CAN network</source>
+        <translation>Emisyon kontrol CAN ağı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1296" />
+        <source>Suspension and wheels CAN</source>
+        <translation>Süspansiyon ve tekerlekler CAN</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1297" />
+        <source>Emissions control CAN network (Engine management ECU silent)</source>
+        <translation>Emisyon kontrol CAN ağı (Motor yönetim ECU'su sessiz)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1298" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1327" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1345" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1360" />
+        <source>Gearbox ECU (CAN)</source>
+        <translation>Şanzıman ECU'su (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1299" />
+        <source>Intersystems CAN (Gearbox ECU)</source>
+        <translation>Sistemler arası CAN (Şanzıman ECU'su)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1300" />
+        <source>Pre-post heat unit (Loss of communication)</source>
+        <translation>Ön-son ısıtma ünitesi (İletişim kaybı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1301" />
+        <source>Emissions control CAN network (Urea pump - gauge module)</source>
+        <translation>Emisyon kontrol CAN ağı (Üre pompası - gösterge modülü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1303" />
+        <source>Intersystems CAN (ESP ECU)</source>
+        <translation>Sistemler arası CAN (ESP ECU'su)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1304" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1314" />
+        <source>Intersystems CAN (Built-in systems interface)</source>
+        <translation>Sistemler arası CAN (Yerleşik sistemler arayüzü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1305" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1315" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1338" />
+        <source>Communication with the BSI</source>
+        <translation>BSI ile iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1306" />
+        <source>Communication with the built-in systems interface on request for unlocking of the engine management ECU : Absence of communication</source>
+        <translation>Motor yönetim ECU'sunun kilit açma isteğinde yerleşik sistemler arayüzü ile iletişim: İletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1307" />
+        <source>Emissions control CAN network (Downstream NOx sensor)</source>
+        <translation>Emisyon kontrol CAN ağı (Arka NOx sensörü)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1308" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1321" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1346" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1379" />
+        <source>Upstream NOx sensor (CAN)</source>
+        <translation>Ön NOx sensörü (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1309" />
+        <source>Detection of a leak from the degassing system</source>
+        <translation>Gaz çıkarma sisteminden kaçak algılandı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1310" />
+        <source>Communication with the soot sensor</source>
+        <translation>Kurum sensörü ile iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1311" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1322" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1342" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1358" />
+        <source>DeNOx system (CAN)</source>
+        <translation>DeNOx sistemi (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1312" />
+        <source>Gearbox ECU</source>
+        <translation>Şanzıman ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1313" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1317" />
+        <source>ABS/ESP ECU</source>
+        <translation>ABS/ESP ECU'su</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1316" />
+        <source>Urea ECU (Emissions control CAN network)</source>
+        <translation>Üre ECU'su (Emisyon kontrol CAN ağı)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1318" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1337" />
+        <source>Communication with the ESP ECU</source>
+        <translation>ESP ECU'su ile iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1319" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1329" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1348" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1363" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1372" />
+        <source>Built-in systems interface (CAN)</source>
+        <translation>Yerleşik sistemler arayüzü (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1320" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1343" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1378" />
+        <source>Downstream NOx sensor (CAN)</source>
+        <translation>Arka NOx sensörü (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1323" />
+        <source>Communication of the engine management ECU on the intersystems CAN : Absence of communication</source>
+        <translation>Motor yönetim ECU'sunun sistemler arası CAN üzerinde iletişimi: İletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1324" />
+        <source>Fault on intersystems CAN network</source>
+        <translation>Sistemler arası CAN ağında arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1325" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1411" />
+        <source>Suspension and wheels CAN fault</source>
+        <translation>Süspansiyon ve tekerlekler CAN arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1326" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1344" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1359" />
+        <source>Steering wheel angle sensor (CAN)</source>
+        <translation>Direksiyon açısı sensörü (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1328" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1347" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1362" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1371" />
+        <source>ABS/ESP ECU (CAN)</source>
+        <translation>ABS/ESP ECU'su (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1330" />
+        <source>No communication with the parking assistance ECU</source>
+        <translation>Park yardımı ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1331" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1350" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1366" />
+        <source>Power steering ECU (CAN)</source>
+        <translation>Hidrolik direksiyon ECU'su (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1332" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1364" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1374" />
+        <source>Particle filter differential pressure sensor (SENT)</source>
+        <translation>Partikül filtresi diferansiyel basınç sensörü (SENT)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1333" />
+        <source>No communication with the night vision ECU</source>
+        <translation>Gece görüş ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1334" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1352" />
+        <source>Reversible alternator (CAN)</source>
+        <translation>Tersinir alternatör (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1335" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1353" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1368" />
+        <source>Centralised voltage maintaining device (CAN)</source>
+        <translation>Merkezi gerilim sürdürme cihazı (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1336" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1370" />
+        <source>Communication with the gearbox ECU</source>
+        <translation>Şanzıman ECU'su ile iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1339" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1355" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1373" />
+        <source>Vehicle Distance Assistance (CAN)</source>
+        <translation>Araç Mesafe Yardımı (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1340" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1354" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1361" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1369" />
+        <source>Engine oil pressure and temperature sensor signal</source>
+        <translation>Motor yağ basıncı ve sıcaklığı sensörü sinyali</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1341" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1375" />
+        <source>Fault in communication with the network voltage maintaining device ECU</source>
+        <translation>Şebeke gerilimi sürdürme cihazı ECU'su ile iletişimde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1349" />
+        <source>Particle emission filter differential pressure sensor signal (SENT)</source>
+        <translation>Partikül emisyon filtresi diferansiyel basınç sensörü sinyali (SENT)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1351" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1367" />
+        <source>Network voltage maintaining device ECU (CAN)</source>
+        <translation>Şebeke gerilimi sürdürme cihazı ECU'su (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1356" />
+        <source>Soot sensor (CAN)</source>
+        <translation>Kurum sensörü (CAN)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1357" />
+        <source>Communication with the network voltage maintaining device ECU</source>
+        <translation>Şebeke gerilimi sürdürme cihazı ECU'su ile iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1365" />
+        <source>Engine management ECU : Built-in systems interface internal clock fault</source>
+        <translation>Motor yönetim ECU'su: Yerleşik sistemler arayüzü dahili saat arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1376" />
+        <source>LIN</source>
+        <translation>LIN</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1380" />
+        <source>Vehicle speed data fault</source>
+        <translation>Araç hızı verisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1381" />
+        <source>Fault: steering wheel angle information</source>
+        <translation>Arıza: direksiyon açısı bilgisi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1382" />
+        <source>Wheel pulse counters information fault</source>
+        <translation>Tekerlek darbe sayaçları bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1383" />
+        <source>Oil temperature information fault</source>
+        <translation>Yağ sıcaklığı bilgisi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1384" />
+        <source>Absence of communication with the multifunction video recording camera</source>
+        <translation>Çok işlevli video kayıt kamerası ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1385" />
+        <location filename="../data/dtc/BSI2010_EV.json" line="1386" />
+        <source>Encrypted communication between the built-in systems interface and the hands-free unit</source>
+        <translation>Yerleşik sistemler arayüzü ile elsiz ünite arasında şifreli iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1387" />
+        <source>Communication with the rain and brightness sensor missing</source>
+        <translation>Yağmur ve parlaklık sensörü ile iletişim eksik</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1388" />
+        <source>USB speed reduced in Full Speed mode</source>
+        <translation>Full Speed modunda USB hızı düşürüldü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1389" />
+        <source>USB link between the NAC audio-navigation or the RCC connected audio system and the independent telematics unit deactivated</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ile bağımsız telematik ünitesi arasındaki USB bağlantısı devre dışı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1390" />
+        <source>LVDS connection between the NAC audio-navigation or the RCC connected audio system and the multifunction touch screen : Electrical fault</source>
+        <translation>NAC ses-navigasyon veya RCC bağlantılı ses sistemi ile çok işlevli dokunmatik ekran arasındaki LVDS bağlantısı: Elektriksel arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1391" />
+        <source>Downloading of the software</source>
+        <translation>Yazılımın indirilmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1392" />
+        <source>Driving school module : Fault: absence of communication with the Built-in Systems Interface</source>
+        <translation>Sürücü kursu modülü: Arıza: Yerleşik Sistemler Arayüzü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1393" />
+        <source>Driving school module : CAN fault</source>
+        <translation>Sürücü kursu modülü: CAN arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1394" />
+        <source>Driving school module : ECU mute on the CAN</source>
+        <translation>Sürücü kursu modülü: ECU CAN üzerinde sessiz</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1395" />
+        <source>Fault: random triggering of the Passenger Compartment Low Speed CANs</source>
+        <translation>Arıza: Yolcu Kabini Düşük Hız CAN'lerinin rastgele tetiklenmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1396" />
+        <source>Unwanted triggering of the LIN 3 fault</source>
+        <translation>LIN 3 istenmeyen tetiklenmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1397" />
+        <source>Fault event not stored in the faults log</source>
+        <translation>Arıza olayı arıza kaydına kaydedilmedi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1398" />
+        <source>Fault: unwanted triggering of the BSI LIN 1</source>
+        <translation>Arıza: BSI LIN 1 istenmeyen tetiklenmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1399" />
+        <source>Fault: unwanted triggering of the BSI LIN 2</source>
+        <translation>Arıza: BSI LIN 2 istenmeyen tetiklenmesi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1400" />
+        <source>No communication with the built-in systems interface</source>
+        <translation>Yerleşik sistemler arayüzü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1402" />
+        <source>Remote controlled triggering line fault</source>
+        <translation>Uzaktan kumandalı tetikleme hattı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1403" />
+        <source>Fault on the Passenger Compartment CAN</source>
+        <translation>Yolcu Kabini CAN'inde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1404" />
+        <source>Fault on the Entertainment Information CAN</source>
+        <translation>Eğlence Bilgi CAN'inde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1405" />
+        <source>Body CAN fault</source>
+        <translation>Gövde CAN arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1406" />
+        <source>COMFORT CAN fault</source>
+        <translation>KONFOR CAN arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1407" />
+        <source>CAN fault</source>
+        <translation>CAN arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1408" />
+        <source>Transmission and reception fault on the Intersystems CAN /  High speed CAN 1</source>
+        <translation>Sistemler arası CAN / Yüksek hız CAN 1 üzerinde iletim ve alım arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1409" />
+        <source>Fault: ECU not communicating on the CAN</source>
+        <translation>Arıza: ECU CAN üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1410" />
+        <source>Fault - built-in systems interface not communicating on the intersystems CAN /  High speed CAN 1</source>
+        <translation>Arıza - yerleşik sistemler arayüzü sistemler arası CAN / Yüksek hız CAN 1 üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1412" />
+        <source>Fault: ECU not communicating on the Body CAN</source>
+        <translation>Arıza: ECU Gövde CAN üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1413" />
+        <source>Fault: ECU not communicating on the Entertainment Information CAN</source>
+        <translation>Arıza: ECU Eğlence Bilgi CAN üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1414" />
+        <source>ECU not communicating on the CAN</source>
+        <translation>ECU CAN üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1415" />
+        <source>ECU mute on the CAN Passenger compartment</source>
+        <translation>ECU Yolcu Kabini CAN üzerinde sessiz</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1416" />
+        <source>Fault in communication on the LIN 1</source>
+        <translation>LIN 1 üzerinde iletişimde arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1417" />
+        <source>LIN fault 2</source>
+        <translation>LIN arızası 2</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1418" />
+        <source>LIN fault 3</source>
+        <translation>LIN arızası 3</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1419" />
+        <source>Transmitting and receiving fault on the LAS CAN /  High speed CAN 2</source>
+        <translation>LAS CAN / Yüksek hız CAN 2 üzerinde iletim ve alım arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1420" />
+        <source>Unwanted triggering of the LIN 4 fault</source>
+        <translation>LIN 4 istenmeyen tetiklenmesi arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1421" />
+        <source>Fault: absence of communication with the electric air conditioning compressor</source>
+        <translation>Arıza: elektrikli klima kompresörü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1422" />
+        <source>Fault: absence of communication with the audio system</source>
+        <translation>Arıza: ses sistemi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1423" />
+        <source>Fault: absence of communication with the parking assistance ECU</source>
+        <translation>Arıza: park yardımı ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1424" />
+        <source>Fault: absence of communication with the multifunction screen</source>
+        <translation>Arıza: çok işlevli ekran ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1425" />
+        <source>Fault: absence of communication with the CD changer ECU</source>
+        <translation>Arıza: CD değiştirici ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1426" />
+        <source>Fault: absence of communication with the instrument panel</source>
+        <translation>Arıza: gösterge paneli ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1427" />
+        <source>Fault: absence of communication with the audio amplifier</source>
+        <translation>Arıza: ses amplifikatörü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1428" />
+        <source>Fault: absence of communication with the multifunction control panel</source>
+        <translation>Arıza: çok işlevli kontrol paneli ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1429" />
+        <source>Fault: absence of communication with the steering wheel switch module</source>
+        <translation>Arıza: direksiyon anahtar modülü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1430" />
+        <source>Fault: absence of communication with the integral controls steering wheel ECU</source>
+        <translation>Arıza: entegre kumandalı direksiyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1431" />
+        <source>Fault: absence of communication with the engine fuse box fault</source>
+        <translation>Arıza: motor sigorta kutusu ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1432" />
+        <source>Fault: absence of communication with the engine management ECU</source>
+        <translation>Arıza: motor yönetim ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1433" />
+        <source>Fault: absence of communication with the gearbox ECU</source>
+        <translation>Arıza: şanzıman ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1434" />
+        <source>Fault: absence of communication with the hands-free unit</source>
+        <translation>Arıza: elsiz ünite ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1435" />
+        <source>Fault: absence of communication with the high frequency remote control receiver</source>
+        <translation>Arıza: yüksek frekanslı uzaktan kumanda alıcısı ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1436" />
+        <source>Fault: absence of communication with the driver's door control pad</source>
+        <translation>Arıza: sürücü kapısı kontrol paneli ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1437" />
+        <source>Fault: absence of communication with the driver's seat memory unit</source>
+        <translation>Arıza: sürücü koltuğu hafıza ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1438" />
+        <source>Fault: absence of communication with the passenger seat memorisation unit</source>
+        <translation>Arıza: yolcu koltuğu hafıza ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1439" />
+        <source>Fault: absence of communication with the electronic key reader</source>
+        <translation>Arıza: elektronik anahtar okuyucusu ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1440" />
+        <source>Fault: absence of communication with the stand-alone telematic unit or the service module</source>
+        <translation>Arıza: bağımsız telematik ünitesi veya servis modülü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1441" />
+        <source>Fault: absence of communication with the head-up display ECU</source>
+        <translation>Arıza: head-up gösterge ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1442" />
+        <source>Fault: absence of communication with the instrument panel matrix display</source>
+        <translation>Arıza: gösterge paneli matris ekranı ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1443" />
+        <source>Fault: absence of communication with the rain / brightness sensor</source>
+        <translation>Arıza: yağmur / parlaklık sensörü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1444" />
+        <source>Fault: absence of communication with the windscreen wiper motor(s)</source>
+        <translation>Arıza: ön cam silecek motoru(ları) ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1445" />
+        <source>Fault: absence of communication with the multifunction control unit or the seat belt not fastened warning lamp</source>
+        <translation>Arıza: çok işlevli kontrol ünitesi veya emniyet kemeri takılı değil uyarı lambası ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1446" />
+        <source>Fault: absence of communication with the diesel additive pump</source>
+        <translation>Arıza: dizel katkı pompası ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1447" />
+        <source>Fault: absence of communication with the distance alert ECU</source>
+        <translation>Arıza: mesafe uyarısı ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1448" />
+        <source>Fault: absence of communication with the telematic unit</source>
+        <translation>Arıza: telematik ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1449" />
+        <source>Fault: absence of communication with the blind spot monitoring unit</source>
+        <translation>Arıza: kör nokta izleme ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1450" />
+        <source>Fault: absence of communication with the battery charge status control unit</source>
+        <translation>Arıza: akü şarj durumu kontrol ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1451" />
+        <source>Fault: absence of communication with the supplies protection and management unit</source>
+        <translation>Arıza: besleme koruma ve yönetim ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1452" />
+        <source>Fault: absence of communication with air conditioning ECU</source>
+        <translation>Arıza: klima ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1453" />
+        <source>Fault: absence of communication with the airbags and pre-tensioners unit</source>
+        <translation>Arıza: hava yastıkları ve ön gergiler ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1454" />
+        <source>Fault: absence of communication with the alarm ECU</source>
+        <translation>Arıza: alarm ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1455" />
+        <source>Fault: absence of communication with the trailer relay unit</source>
+        <translation>Arıza: römork röle ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1456" />
+        <source>Fault: absence of communication with the motorised boot unit</source>
+        <translation>Arıza: motorlu bagaj ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1457" />
+        <source>Fault: absence of communication with the mains beams assistant ECU</source>
+        <translation>Arıza: uzun hüzme far asistanı ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1458" />
+        <source>Fault: absence of communication with the anti-lock braking system (ABS) or the dynamic stability control (ESP)</source>
+        <translation>Arıza: kilitlenme önleyici fren sistemi (ABS) veya dinamik denge kontrolü (ESP) ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1459" />
+        <source>Fault: absence of communication with power steering ECU</source>
+        <translation>Arıza: hidrolik direksiyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1460" />
+        <source>Fault: absence of communication with the suspension ECU</source>
+        <translation>Arıza: süspansiyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1461" />
+        <source>Fault: absence of communication with the dynamic headlamp adjustment unit</source>
+        <translation>Arıza: dinamik far ayar ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1462" />
+        <source>Fault: absence of communication with the tyre under-inflation detection ECU</source>
+        <translation>Arıza: lastik basıncı düşüklüğü algılama ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1463" />
+        <source>Fault: absence of communication with electrically operated parking brake ECU</source>
+        <translation>Arıza: elektrikli park freni ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1464" />
+        <source>Fault: absence of communication with the steering wheel angle sensor</source>
+        <translation>Arıza: direksiyon açısı sensörü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1465" />
+        <source>Fault: absence of communication with the Adaptive Cruise Control ECU</source>
+        <translation>Arıza: Uyarlanabilir Hız Sabitleyici ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1466" />
+        <source>Fault: absence of communication with the multifunction video camera</source>
+        <translation>Arıza: çok işlevli video kamerası ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1467" />
+        <source>Fault: absence of communication with the under-driver's seat vibrator units control unit</source>
+        <translation>Arıza: sürücü koltuğu altı titreşim üniteleri kontrol ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1468" />
+        <source>Fault: absence of communication with the electric steering lock</source>
+        <translation>Arıza: elektrikli direksiyon kilidi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1469" />
+        <source>Fault: absence of communication with the Lane Departure Warning System ECU</source>
+        <translation>Arıza: Şerit Takip Uyarı Sistemi ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1470" />
+        <source>Fault: Absence of communication with the retractable roof ECU</source>
+        <translation>Arıza: açılır tavan ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1471" />
+        <source>Fault: absence of communication with : Driving school module</source>
+        <translation>Arıza: iletişim yok: Sürücü kursu modülü</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1472" />
+        <source>Fault: absence of communication with the alarm ultrasound module</source>
+        <translation>Arıza: alarm ultrason modülü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1473" />
+        <source>Fault: absence of  communication with the alarm siren unit</source>
+        <translation>Arıza: alarm siren ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1474" />
+        <source>Fault: loss of information coming from the Hybrid management ECU 1</source>
+        <translation>Arıza: Hibrit yönetim ECU'su 1'den gelen bilgi kaybı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1475" />
+        <source>Fault: absence of communication with the pedestrian impact detection ECU</source>
+        <translation>Arıza: yaya çarpması algılama ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1476" />
+        <source>Fault: absence of communication with the hybrid management ECU 1</source>
+        <translation>Arıza: hibrit yönetim ECU'su 1 ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1477" />
+        <source>Fault: absence of communication with the lighting fuse box</source>
+        <translation>Arıza: aydınlatma sigorta kutusu ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1478" />
+        <source>Fault: absence of communication with the clock unit</source>
+        <translation>Arıza: saat ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1479" />
+        <source>Fault: absence of communication with the controlled air inlet module</source>
+        <translation>Arıza: kontrollü hava emme modülü ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1480" />
+        <source>Fault of absence of communication with the left-hand reversible seat belt inertia reel unit</source>
+        <translation>Sol tersinir emniyet kemeri gergi ünitesi ile iletişim yok arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1481" />
+        <source>Absence of communication with the seat belt right-hand reversible inertia reel</source>
+        <translation>Sağ tersinir emniyet kemeri gergisi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1482" />
+        <source>Absence of communication with the signalling fuse box</source>
+        <translation>Sinyalizasyon sigorta kutusu ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1483" />
+        <source>Absence of communication with the panoramic visual assistance ECU</source>
+        <translation>Panoramik görsel yardım ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1484" />
+        <source>Absence of communication with the on-board network voltage maintaining unit</source>
+        <translation>Araç şebekesi gerilimi sürdürme ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1485" />
+        <source>Fault in the information transmitted by the</source>
+        <translation>İletilen bilgide arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1486" />
+        <source>Absence of communication with the multifunction screen</source>
+        <translation>Çok işlevli ekran ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1487" />
+        <source>Absence of communication with the coachbuilder conversion unit</source>
+        <translation>Karoser dönüşüm ünitesi ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1488" />
+        <source>Information sent by the CNG  /  LPG ECU</source>
+        <translation>CNG / LPG ECU'su tarafından gönderilen bilgi</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1489" />
+        <source>Fault in the information from the gear change paddles</source>
+        <translation>Vites değiştirme paletlerinden gelen bilgide arıza</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1490" />
+        <source>Fault: abnormal presence of communication with the electric steering lock with the ignition on</source>
+        <translation>Arıza: kontak açıkken elektrikli direksiyon kilidi ile anormal iletişim varlığı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1491" />
+        <source>Absence of communication with the driver's seat comfort ECU</source>
+        <translation>Sürücü koltuğu konfor ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1492" />
+        <source>Absence of communication with the driver's seat pneumatic functions ECU</source>
+        <translation>Sürücü koltuğu pnömatik işlevler ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1493" />
+        <source>Absence of communication with the passenger's seat pneumatic functions ECU</source>
+        <translation>Yolcu koltuğu pnömatik işlevler ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1494" />
+        <source>LIN fault 4</source>
+        <translation>LIN arızası 4</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1495" />
+        <source>Absence of communication with the hands full access ECU, left-hand side</source>
+        <translation>Eller dolu erişim ECU'su, sol taraf ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1496" />
+        <source>Absence of communication with the hands-free boot access ECU, right-hand side or rear</source>
+        <translation>Elsiz bagaj erişim ECU'su, sağ taraf veya arka ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1497" />
+        <source>Built-in systems interface not communicating on the suspension and wheels CAN /  High speed CAN</source>
+        <translation>Yerleşik sistemler arayüzü süspansiyon ve tekerlekler CAN / Yüksek hız CAN üzerinde iletişim kurmuyor</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1498" />
+        <source>Loss of information from the built-in systems interface fault</source>
+        <translation>Yerleşik sistemler arayüzünden bilgi kaybı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1499" />
+        <source>Loss of steering wheel angle sensor information fault</source>
+        <translation>Direksiyon açısı sensörü bilgisi kaybı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1500" />
+        <source>Loss of driving direction information fault</source>
+        <translation>Sürüş yönü bilgisi kaybı arızası</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1501" />
+        <source>Loss of datastream in the parking assistance ECU</source>
+        <translation>Park yardımı ECU'sunda veri akışı kaybı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1502" />
+        <source>Communication on the LVDS network</source>
+        <translation>LVDS ağı üzerinde iletişim</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1503" />
+        <source>No communication with the driver surveillance camera</source>
+        <translation>Sürücü izleme kamerası ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1504" />
+        <source>Absence of communication with the front right seat heated pads and ventilation regulation ECU</source>
+        <translation>Ön sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1505" />
+        <source>Absence of communication with the rear right seat heated pads and ventilation regulation ECU</source>
+        <translation>Arka sağ koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1506" />
+        <source>Absence of communication with the front left seat heated pads and ventilation regulation ECU</source>
+        <translation>Ön sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1507" />
+        <source>Absence of communication with the rear left seat heated pads and ventilation regulation ECU</source>
+        <translation>Arka sol koltuk ısıtma pedleri ve havalandırma regülasyon ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1508" />
+        <source>Absence of communication with the rear view ECU</source>
+        <translation>Arka görüş ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1509" />
+        <source>Absence of communication with the coolant heater ECU</source>
+        <translation>Soğutma sıvısı ısıtıcısı ECU'su ile iletişim yok</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1510" />
+        <source>Remote controlled triggering line (Request for main ECU triggering not plausible or absent)</source>
+        <translation>Uzaktan kumandalı tetikleme hattı (Ana ECU tetikleme isteği makul değil veya yok)</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1511" />
+        <source>Remote-controlled triggering (RCD) line</source>
+        <translation>Uzaktan kumandalı tetikleme (RCD) hattı</translation>
+    </message><message>
+        <location filename="../data/dtc/BSI2010_EV.json" line="1512" />
+        <source>Remote controlled triggering line (Lack of coherence between the status detected and the reference value of the slow speed)</source>
+        <translation>Uzaktan kumandalı tetikleme hattı (Algılanan durum ile yavaş hız referans değeri arasında tutarsızlık)</translation>
     </message></context>
 </TS>
