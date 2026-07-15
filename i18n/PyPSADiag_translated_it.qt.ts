@@ -79,6 +79,11 @@
         <translation>Chiari guasti ECU</translation>
     </message>
     <message>
+        <location filename="../PyPSADiagGUI.py" line="355" />
+        <source>Disable Eco Mode</source>
+        <translation>Disattiva modalità Eco</translation>
+    </message>
+    <message>
         <location filename="../PyPSADiagGUI.py" line="230" />
         <source>Write Secure Traceability</source>
         <translation>Scrivi una tracciabilità sicura</translation>

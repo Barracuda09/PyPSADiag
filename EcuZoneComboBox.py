@@ -19,16 +19,19 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent
-from PySide6.QtWidgets import QComboBox
+from PySide6.QtGui import QKeyEvent, QAction, QIcon, QPalette
+from PySide6.QtCore import Qt, Slot, QEvent, QSize, QPoint
+from PySide6.QtWidgets import QComboBox, QMenu
 
 from i18n import i18n
+import PyPSADiagGUI
 
 class EcuZoneComboBox(QComboBox):
     """
     """
-    value = 0
+    initialValue = 0
+    newValue = 0
+    style = ""
     zoneObject = {}
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
@@ -41,10 +44,53 @@ class EcuZoneComboBox(QComboBox):
         for paramObject in self.zoneObject["params"]:
             name = i18n().tr(paramObject["name"])
             if "mask" in paramObject:
-                self.addItem(name, int(paramObject["mask"], 2))
+                # Store as string with "b:" prefix to avoid Qt int64 overflow
+                self.addItem(name, "b:" + paramObject["mask"])
             else:
-                self.addItem(name, int(paramObject["value"], 16))
+                # Store as string with "h:" prefix for hex values
+                self.addItem(name, "h:" + paramObject["value"])
         self.setCurrentIndex(0)
+
+        # Notify changes, to change color if changed
+        self.currentIndexChanged.connect(self.indexChanged)
+
+        # Make Undo possible
+        self.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.customContextMenuRequested.connect(self.contextMenu)
+
+        # Save current style-sheet
+        self.style = self.styleSheet()
+
+    @Slot()
+    def indexChanged(self, index):
+        if index != self.newValue:
+            self.newValue = index
+
+        if self.newValue == self.initialValue:
+            self.setStyleSheet(self.style)
+        else:
+            self.setStyleSheet("combobox-popup: 3; background-color: rgb(42, 130, 218)")
+
+    @Slot()
+    def contextMenu(self, pos: QPoint):
+        contextMenu = QMenu(self)
+        undoIcon = QIcon.fromTheme(QIcon.ThemeIcon.EditUndo)
+        undoAction = QAction(undoIcon, i18n().tr("&Undo"), contextMenu)
+        contextMenu.addAction(undoAction)
+
+        action = contextMenu.exec_(self.mapToGlobal(pos))
+        if action == undoAction:
+            self.setCurrentIndex(self.initialValue)
+
+    def getItemDataAsInt(self, index: int) -> int:
+        """Convert stored string data back to integer"""
+        data = self.itemData(index)
+        if isinstance(data, str):
+            if data.startswith("b:"):
+                return int(data[2:], 2)
+            elif data.startswith("h:"):
+                return int(data[2:], 16)
+        return int(data)
 
     def event(self, event: QEvent):
         if event.type() == QEvent.KeyPress:
@@ -69,59 +115,60 @@ class EcuZoneComboBox(QComboBox):
 
     def getCorrespondingByteSize(self):
         if "mask" in self.zoneObject:
-            bits = int(self.zoneObject["mask"], 2).bit_count()
-            if bits > 8 and bits <= 16:
-                return 2
-            elif bits > 16 and bits <= 32:
-                return 4
+            bits = int(self.zoneObject["mask"], 2).bit_length()
+            # round up to the nearest bit
+            return (bits + 7) // 8
         return 1
 
     def setCurrentIndex(self, val):
-        self.value = val;
+        self.initialValue = val;
         super().setCurrentIndex(val)
 
-    def isComboBoxChanged(self, virginWrite: bool()):
-        return self.isEnabled() and not(self.itemReadOnly) and self.value != self.currentIndex()
+    def isComboBoxChanged(self, virginWrite: bool):
+        return self.isEnabled() and not(self.itemReadOnly) and self.initialValue != self.currentIndex()
 
     def getValuesAsCSV(self):
         value = "Disabled"
         if self.isEnabled():
             index = self.currentIndex()
-            value = "%0.2X" % self.itemData(index)
+            value = "%0.2X" % self.getItemDataAsInt(index)
         return value
 
     def clearZoneValue(self):
-        value = 0
+        self.initialValue = 0
         self.setCurrentIndex(0)
 
-    def getZoneAndHex(self, virginWrite: bool()):
+    def getZoneAndHex(self, virginWrite: bool):
         value = "None"
         if self.isComboBoxChanged(virginWrite):
             index = self.currentIndex()
-            value = "%0.2X" % self.itemData(index)
+            value = "%0.2X" % self.getItemDataAsInt(index)
         return value
 
     def update(self, byte: str):
         index = self.currentIndex()
         mask = int(self.zoneObject["mask"], 2)
-        value = (int(byte, 16) & ~mask) | self.itemData(index)
+        value = (int(byte, 16) & ~mask) | self.getItemDataAsInt(index)
         size = self.getCorrespondingByteSize() * 2
         byte = f"%0.{size}X" % value
         return byte
 
     def changeZoneOption(self, data: str, valueType: str):
-        byte = int(data, 16)
+        value = int(data, 16)
         if "mask" in self.zoneObject:
             byteData = []
             for i in range(0, len(data), 2):
                 byteData.append(data[i:i + 2])
 
             # Is this option used for this Zone (NAC/RCC JSON Files)
-            zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength > len(byteData):
-                    return 2
+                if isinstance(zoneLength, list):
+                    if len(byteData) not in zoneLength:
+                        return 2
+                else:
+                    if zoneLength != len(byteData):
+                        return 2
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
@@ -136,7 +183,7 @@ class EcuZoneComboBox(QComboBox):
             for i in range(len(currByteData)):
                 currData += currByteData[i]
 
-            byte = int(currData, 16) & mask
+            value = int(currData, 16) & mask
         else:
             print(" No mask")
             print("  Obj   : " + str(self.zoneObject))
@@ -144,15 +191,15 @@ class EcuZoneComboBox(QComboBox):
         # Find the Option (byte) from the ComboBox
         foundMatch = False
         for i in range(self.count()):
-            if self.itemData(i) == byte:
+            if self.getItemDataAsInt(i) == value:
                 self.setCurrentIndex(i)
                 foundMatch = True
                 break
 
         # Did we find item, else add it to combobox
         if foundMatch == False:
-            print("** Add missing combobox item " + "0x%0.2X" % byte + " **")
-            self.addItem("** 0x%0.2X" % byte, int(byte))
+            print("** Add missing combobox item " + "0x%0.2X" % value + " **")
+            self.addItem("** 0x%0.2X" % value, "h:%X" % value)
             self.setCurrentIndex(self.count() - 1)
 
         return 0

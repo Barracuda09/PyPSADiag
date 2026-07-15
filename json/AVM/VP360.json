@@ -1,0 +1,175 @@
+{
+  "name": "VISIOPARK_360",
+  "tx_id": "77E",
+  "rx_id": "67E",
+  "protocol": "uds",
+  "key_type": "multi",
+  "keys": {
+    "key1": "CA12"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "tele": "Telecoding",
+    "zeroZones": "0 Zones",
+    "czones": "C Zones",
+    "dzones": "D Zones",
+    "fzones": "F Zones"
+  },
+  "zones": {
+    "0D00": {
+      "id": "zero_d_zero_zero_zone",
+      "tab": "zeroZones",
+      "name": "0D00 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0D01": {
+      "id": "zero_d_zero_one_zone",
+      "tab": "zeroZones",
+      "name": "0D01 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "C000": {
+      "id": "c_zero_zero_zero_zone",
+      "tab": "czones",
+      "name": "C000 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "C002": {
+      "id": "c_zero_zero_two_zone",
+      "tab": "czones",
+      "name": "C002 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F08F": {
+      "id": "f_zero_eight_f_zone",
+      "tab": "fzones",
+      "name": "F08F Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F180": {
+      "id": "f_one_eight_zero_zone",
+      "tab": "fzones",
+      "name": "F180 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F186": {
+      "id": "f_one_eight_six_zone",
+      "tab": "fzones",
+      "name": "F186 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F18C": {
+      "id": "f_one_eight_c_zone",
+      "tab": "fzones",
+      "name": "F18C Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "D400": {
+      "id": "d_four_zero_zero_zone",
+      "tab": "dzones",
+      "name": "D400 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "D401": {
+      "id": "d_four_zero_one_zone",
+      "tab": "dzones",
+      "name": "D401 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "D402": {
+      "id": "d_four_zero_two_zone",
+      "tab": "dzones",
+      "name": "D402 Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "D403": {
+        "id": "d_four_zero_three_zone",
+        "tab": "dzones",
+        "name": "D403 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D404": {
+        "id": "d_four_zero_four_zone",
+        "tab": "dzones",
+        "name": "D404 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D405": {
+        "id": "d_four_zero_five_zone",
+        "tab": "dzones",
+        "name": "D405 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D406": {
+        "id": "d_four_zero_six_zone",
+        "tab": "dzones",
+        "name": "D406 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D407": {
+        "id": "d_four_zero_seven_zone",
+        "tab": "dzones",
+        "name": "D407 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D408": {
+        "id": "d_four_zero_eight_zone",
+        "tab": "dzones",
+        "name": "D408 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    },
+    "D409": {
+        "id": "d_four_zero_nine_zone",
+        "tab": "dzones",
+        "name": "D409 Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"  
+    },
+    "D40A": {
+        "id": "d_four_zero_a_zone",
+        "tab": "dzones",
+        "name": "D40A Zone",
+        "byte": 0,
+        "type": "raw",
+        "form_type": "string"
+    }
+  }
+}

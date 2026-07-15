@@ -1,0 +1,410 @@
+{
+    "_comment": {
+        "name": "FMUX DTC Codes grabbed from Diagbox FDB. ECUTYPE union: FMUX, FMUX_2, FMUX_AR, FMUX_SEA. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration download"
+    },
+    "B1003": {
+        "name": "Touch screen  :  Secure configuration fault"
+    },
+    "B1004": {
+        "name": "Multifunction control panel or touch screen"
+    },
+    "B1040": {
+        "name": "Fault internal to the navigator"
+    },
+    "B1041": {
+        "name": "Rear air conditioning control panel internal fault"
+    },
+    "B1202": {
+        "name": "Multifunction control panel ECU"
+    },
+    "B1270": {
+        "name": "BLACK PANEL button fault"
+    },
+    "B128D": {
+        "name": "Stop and Start switch"
+    },
+    "B12B2": {
+        "name": "Air blower switch"
+    },
+    "B12B3": {
+        "name": "Passenger compartment temperature control switch"
+    },
+    "B12B4": {
+        "name": "Air distribution switch"
+    },
+    "B12C9": {
+        "name": "Air recirculation switch"
+    },
+    "B12DE": {
+        "name": "Sunshine sensor"
+    },
+    "B12F9": {
+        "name": "Air blower motor"
+    },
+    "B1304": {
+        "name": "Evaporator sensor fault"
+    },
+    "B130D": {
+        "name": "Passenger compartment air recirculation motor fault"
+    },
+    "B131B": {
+        "name": "Passenger compartment air blower fault"
+    },
+    "B1320": {
+        "name": "Internal speaker"
+    },
+    "B1321": {
+        "name": "actionneur haptique"
+    },
+    "B1322": {
+        "name": "Touch buttons"
+    },
+    "B1330": {
+        "name": "Air recirculation button fault"
+    },
+    "B133A": {
+        "name": "Left hand mixer flap gear motor"
+    },
+    "B133F": {
+        "name": "Touch screen  :  Touch button"
+    },
+    "B1340": {
+        "name": "Front AUTO button fault"
+    },
+    "B1341": {
+        "name": "Deicing / front visibility button fault"
+    },
+    "B1342": {
+        "name": "Heated rear screen button fault"
+    },
+    "B1343": {
+        "name": "A/C button fault"
+    },
+    "B1345": {
+        "name": "Fault with the A/C MAX button"
+    },
+    "B1346": {
+        "name": "Fault with the MONO button"
+    },
+    "B1347": {
+        "name": "Fault with the REAR ON button"
+    },
+    "B1348": {
+        "name": "Rear air conditioning control panel deactivation button fault"
+    },
+    "B1349": {
+        "name": "REST (Restore function) button fault"
+    },
+    "B134A": {
+        "name": "Front air distribution button deicing position fault"
+    },
+    "B134B": {
+        "name": "Fault with the front left air distribution button in deicing position"
+    },
+    "B134C": {
+        "name": "Fault with the front RH air distribution button in deicing position"
+    },
+    "B134D": {
+        "name": "Front air distribution button ventilation position fault"
+    },
+    "B134E": {
+        "name": "Fault with the front left air distribution button in ventilation position"
+    },
+    "B134F": {
+        "name": "Fault with the front RH air distribution button in ventilation position"
+    },
+    "B1350": {
+        "name": "Front air distribution button footwells position fault"
+    },
+    "B1351": {
+        "name": "Fault with the front left air distribution button in footwells position"
+    },
+    "B1352": {
+        "name": "Fault with the front RH air distribution button in footwells position"
+    },
+    "B1353": {
+        "name": "Fault with the front air blower button +"
+    },
+    "B1354": {
+        "name": "Fault with the front air blower button -"
+    },
+    "B1355": {
+        "name": "Front air blower control fault"
+    },
+    "B1356": {
+        "name": "Front temperature setting control fault"
+    },
+    "B1357": {
+        "name": "Front left-hand temperature setting dial"
+    },
+    "B1358": {
+        "name": "Front right-hand temperature setting dial"
+    },
+    "B1359": {
+        "name": "Front air distribution control fault"
+    },
+    "B135A": {
+        "name": "Passenger compartment air recirculation motor fault"
+    },
+    "B135B": {
+        "name": "FAST button fault"
+    },
+    "B135C": {
+        "name": "SOFT button fault"
+    },
+    "B135D": {
+        "name": "Heated windscreen button"
+    },
+    "B135E": {
+        "name": "NORMAL button fault"
+    },
+    "B135F": {
+        "name": "Ventilation off button"
+    },
+    "B1360": {
+        "name": "Fault with the AUTO button of the air conditioning panel"
+    },
+    "B1361": {
+        "name": "Fault with the rear left air distribution button"
+    },
+    "B1362": {
+        "name": "Fault with the rear right air distribution button"
+    },
+    "B1363": {
+        "name": "Fault with the rear air blower button +"
+    },
+    "B1364": {
+        "name": "Fault with the rear air blower button -"
+    },
+    "B1365": {
+        "name": "Fault with the rear left temperature setting control"
+    },
+    "B1366": {
+        "name": "Fault with the rear right temperature setting control"
+    },
+    "B139E": {
+        "name": "Energy-saving touch button"
+    },
+    "B139F": {
+        "name": "Passenger compartment air quality button"
+    },
+    "B13A0": {
+        "name": "Temperature + button"
+    },
+    "B13A1": {
+        "name": "Temperature - button"
+    },
+    "B13A2": {
+        "name": "Rear air blower module"
+    },
+    "B13A4": {
+        "name": "Front right temperature + button"
+    },
+    "B13A5": {
+        "name": "Front right temperature - button"
+    },
+    "B13A6": {
+        "name": "Front right seat heating button"
+    },
+    "B13A7": {
+        "name": "Front left seat heating button"
+    },
+    "B13A8": {
+        "name": "Front right ventilated seat control"
+    },
+    "B13A9": {
+        "name": "Control of the front left-hand ventilated seat"
+    },
+    "B13AA": {
+        "name": "Steering wheel heating control"
+    },
+    "B13AE": {
+        "name": "Request for activation of air conditioning"
+    },
+    "B13AF": {
+        "name": "Return voltage of the left-hand mixing flap reduction motor"
+    },
+    "B13BA": {
+        "name": "Ioniser control output 1"
+    },
+    "B13BB": {
+        "name": "Ioniser control output 2"
+    },
+    "B13C1": {
+        "name": "Air blower motor return signal"
+    },
+    "B13C2": {
+        "name": "Air distribution flap reduction motor command"
+    },
+    "B13C3": {
+        "name": "Return voltage of the air distribution flap reduction motor"
+    },
+    "B13C4": {
+        "name": "Front de-icing switch"
+    },
+    "B13C5": {
+        "name": "Calibration of the air conditioning/heating unit reduction motors"
+    },
+    "B13C8": {
+        "name": "Passenger compartment temperature sensor"
+    },
+    "B1400": {
+        "name": "Supply voltage"
+    },
+    "B151D": {
+        "name": "Touch screen  :  Backlighting of the touch buttons"
+    },
+    "B151E": {
+        "name": "Button jammed"
+    },
+    "B1530": {
+        "name": "Multifunction control panel audio/telematics buttons"
+    },
+    "B1531": {
+        "name": "Navigator audio / telematics buttons fault"
+    },
+    "B1532": {
+        "name": "Navigator joystick fault"
+    },
+    "B1533": {
+        "name": "Multifunction control panel buttons fault"
+    },
+    "B1572": {
+        "name": "Multifunction touch screen backlighting"
+    },
+    "B1573": {
+        "name": "Multifunction touch screen touch pad"
+    },
+    "B1574": {
+        "name": "Multifunction touch screen ECU"
+    },
+    "B1575": {
+        "name": "Unexpected restarting of the multifunction touch screen ECU"
+    },
+    "B1576": {
+        "name": "Secure configuration of the multifunction touch screen"
+    },
+    "B1623": {
+        "name": "Ignition positive relay (+APC)"
+    },
+    "B187C": {
+        "name": "Supply voltage of the air conditioning/heating unit reduction motors"
+    },
+    "B2E34": {
+        "name": "Front left temperature display fault"
+    },
+    "B2E35": {
+        "name": "Front right temperature display fault"
+    },
+    "B2E37": {
+        "name": "LCD internal programme fault"
+    },
+    "B2F38": {
+        "name": "Accessories relay"
+    },
+    "U0301": {
+        "name": "Incorrect data or data stream that is too short received from the electric drive train supervisor ECU \\ engine management ECU"
+    },
+    "U0315": {
+        "name": "Information sent by the anti-lock braking system ECU (ABS) or the electronic stability program (ESP) on the CAN network"
+    },
+    "U0322": {
+        "name": "Incorrect data or excessively short datastream received from the built-in systems interface (BSI/VSM)"
+    },
+    "U0401": {
+        "name": "Invalid data received from the electric drive train supervisor ECU \\ engine management ECU"
+    },
+    "U0415": {
+        "name": "Invalid data received from the anti-lock braking system ECU (ABS) or the electronic stability program (ESP)"
+    },
+    "U0422": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0594": {
+        "name": "Invalid data received from the electric drive train supervisor ECU \\ hybrid control ECU 1"
+    },
+    "U1177": {
+        "name": "Communication with the air conditioning ECU"
+    },
+    "U1277": {
+        "name": "Invalid data received from the air conditioning ECU"
+    },
+    "U1377": {
+        "name": "Incorrect data or data stream that is too short received from the air conditioning ECU"
+    },
+    "U1387": {
+        "name": "Incorrect data or data stream that is too short received from the electric drive train supervisor ECU \\ hybrid control ECU 1"
+    },
+    "U145D": {
+        "name": "LIN blocked"
+    },
+    "U1801": {
+        "name": "Remote control"
+    },
+    "U1935": {
+        "name": "Communication on the CAN with the electric drive train supervisor ECU"
+    },
+    "U1942": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U1943": {
+        "name": "Communication on the CAN with the engine management ECU"
+    },
+    "U1944": {
+        "name": "ECU mute on the CAN"
+    },
+    "U1945": {
+        "name": "CAN"
+    },
+    "U1947": {
+        "name": "Communication with the anti-lock braking system ECU (ABS) or the electronic stability program (ESP) on the CAN network"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Fault: absence of communication with the Built-in Systems Interface"
+    },
+    "U1F0A": {
+        "name": "Multifunction control panel or touch screen"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F18": {
+        "name": "Touch screen not communicating on the multimedia CAN"
+    },
+    "U1F1A": {
+        "name": "Fault with the LIN network of the multifunction control panel"
+    },
+    "U1F2B": {
+        "name": "Fault: absence of communication with the telematics navigator"
+    },
+    "U1F2C": {
+        "name": "Fault: absence of communication with the rear air conditioning table ECU"
+    },
+    "U1F3E": {
+        "name": "Touch screen  :  absence of communication with the telematic unit"
+    },
+    "U1F6C": {
+        "name": "Absence of communication with the telematic receiver control"
+    },
+    "U1F80": {
+        "name": "Telematic receiver control LIN"
+    },
+    "U1F81": {
+        "name": "Communication of the multiplexed control panel on the LIN"
+    },
+    "U1F9E": {
+        "name": "No communication from the audio-navigation touch buttons"
+    },
+    "U1FA0": {
+        "name": "LVDS signal response time incorrect"
+    },
+    "U1FB5": {
+        "name": "High speed CAN 4"
+    }
+}

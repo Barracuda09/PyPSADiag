@@ -1,0 +1,56 @@
+{
+    "_comment": {
+        "name": "AVAS DTC Codes grabbed from Diagbox FDB. ECUTYPE union: AVAS, AVAS_GEN2. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration download"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1004": {
+        "name": "Pedestrian horn ECU"
+    },
+    "B11A8": {
+        "name": "Reverse gear information received via the high speed CAN 2"
+    },
+    "B1400": {
+        "name": "Supply voltage of the pedestrian horn ECU"
+    },
+    "B199E": {
+        "name": "No communication with the dynamic stability control ECU on the High Speed CAN 6"
+    },
+    "U0046": {
+        "name": "Pedestrian horn ECU not communicating on the high speed CAN 2"
+    },
+    "U0076": {
+        "name": "High speed CAN 2"
+    },
+    "U0115": {
+        "name": "Communication with the engine management ECU on the high speed CAN 2"
+    },
+    "U0141": {
+        "name": "Communication with the built-in systems interface on the high speed CAN 2"
+    },
+    "U1153": {
+        "name": "Communication with the ESP ECU on the high speed CAN 2"
+    },
+    "U1213": {
+        "name": "Information received from the ESP ECU via the high speed CAN 2"
+    },
+    "U1707": {
+        "name": "Communication with the built-in systems interface VSM on the high speed CAN 6"
+    },
+    "U1F00": {
+        "name": "Pedestrian horn faults log (JDD) history"
+    },
+    "U1FC3": {
+        "name": "Pedestrian horn ECU not communicating on the high speed CAN 6"
+    },
+    "U1FC4": {
+        "name": "No communication with the pedestrian horn on the high speed CAN 6"
+    },
+    "U1FC5": {
+        "name": "No communication on the high speed CAN 6 with the built-in systems interface"
+    }
+}

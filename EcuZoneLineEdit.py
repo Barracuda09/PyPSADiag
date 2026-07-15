@@ -22,7 +22,7 @@
 import json
 import os
 from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent
+from PySide6.QtCore import Qt, QEvent, Slot
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -31,14 +31,32 @@ class EcuZoneLineEdit(QLineEdit):
     """
     zoneObject = {}
     valueType = ""
-    initialValue = ""
+    initialLineValue = ""
+    newLineLineValue = ""
     initialRaw = ""
+    style = ""
     itemReadOnly = False
     def __init__(self, parent, zoneObject: dict, readOnly: bool):
         super(EcuZoneLineEdit, self).__init__(parent)
         self.itemReadOnly = readOnly
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
+
+        # Notify changes, to change color if changed
+        self.textEdited.connect(self.textChange)
+
+        # Save current style-sheet
+        self.style = self.styleSheet()
+
+    @Slot()
+    def textChange(self, text):
+        if text != self.newLineLineValue:
+            self.newLineLineValue = text
+
+        if self.newLineLineValue == self.initialLineValue:
+            self.setStyleSheet(self.style)
+        else:
+            self.setStyleSheet("background-color: rgb(42, 130, 218)")
 
     def event(self, event: QEvent):
         if event.type() == QEvent.KeyPress:
@@ -58,22 +76,20 @@ class EcuZoneLineEdit(QLineEdit):
 
     def getCorrespondingByteSize(self):
         if "mask" in self.zoneObject:
-            bits = int(self.zoneObject["mask"], 2).bit_count()
-            if bits > 8 and bits <= 16:
-                return 2
-            elif bits > 16 and bits <= 32:
-                return 4
+            bits = int(self.zoneObject["mask"], 2).bit_length()
+            # round up to the nearest bit
+            return (bits + 7) // 8
         return 1
 
     def __setText(self, val):
-        self.initialValue = val;
+        self.initialLineValue = val;
         super().setText(val)
 
     def updateText(self, val):
         super().setText(val)
 
-    def isLineEditChanged(self, virginWrite: bool()):
-        return self.isEnabled() and not(self.itemReadOnly) and (self.initialValue != self.text() or virginWrite)
+    def isLineEditChanged(self, virginWrite: bool):
+        return self.isEnabled() and not(self.itemReadOnly) and (self.initialLineValue != self.text() or virginWrite)
 
     def __convertZoneData(self):
         if self.valueType == "string_ascii":
@@ -94,12 +110,12 @@ class EcuZoneLineEdit(QLineEdit):
         return "Disabled"
 
     def clearZoneValue(self):
-        valueType = ""
-        initialValue = ""
-        initialRaw = ""
+        self.initialLineValue = ""
+        self.valueType = ""
+        self.initialRaw = ""
         self.clear()
 
-    def getZoneAndHex(self, virginWrite: bool()):
+    def getZoneAndHex(self, virginWrite: bool):
         value = "None"
         if self.isLineEditChanged(virginWrite):
             return self.__convertZoneData()
@@ -162,11 +178,14 @@ class EcuZoneLineEdit(QLineEdit):
                 byteData.append(data[i:i + 2])
 
             # Is this option used for this Zone (NAC/RCC JSON Files)
-            zoneLength = len(byteData)
             if "zoneLength" in self.zoneObject:
                 zoneLength = self.zoneObject["zoneLength"]
-                if zoneLength > len(byteData):
-                    return 2
+                if isinstance(zoneLength, list):
+                    if len(byteData) not in zoneLength:
+                        return 2
+                else:
+                    if zoneLength != len(byteData):
+                        return 2
 
             byteNr = self.zoneObject["byte"]
             mask = int(self.zoneObject["mask"], 2)
@@ -182,7 +201,10 @@ class EcuZoneLineEdit(QLineEdit):
                 currData += currByteData[i]
 
             byte = (int(currData, 16) & mask) >> self.__shift(mask)
-            self.__setText(str(byte))
+            if "type" in self.zoneObject and self.zoneObject["type"] == "mileage":
+                self.__setText(str(byte / 10))
+            else:
+                self.__setText(str(byte))
 
         elif "byte_range" in self.zoneObject:
             byteNr = self.zoneObject["byte"] * 2
@@ -191,6 +213,12 @@ class EcuZoneLineEdit(QLineEdit):
             if "type" in self.zoneObject:
                 if "zi_cal" == self.zoneObject["type"]:
                     txt = "96" + txt + "80"
+                elif "zi_tool" == self.zoneObject["type"]:
+                    file = open(os.path.join(os.path.dirname(__file__), "data/ToolType.json"), 'r', encoding='utf-8')
+                    jsonFile = file.read()
+                    tooltypeList = json.loads(jsonFile.encode("utf-8"))
+                    if txt in tooltypeList:
+                        txt = tooltypeList[str(txt)]
                 elif "zi_sup" == self.zoneObject["type"]:
                     file = open(os.path.join(os.path.dirname(__file__), "data/ECU_SUPPLIERS.json"), 'r', encoding='utf-8')
                     jsonFile = file.read()

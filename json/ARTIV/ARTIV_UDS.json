@@ -3,6 +3,7 @@
   "tx_id": "6B6",
   "rx_id": "696",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/ARTIV.json",
   "key_type": "single",
   "keys": "EFCA",
   "coding": true,

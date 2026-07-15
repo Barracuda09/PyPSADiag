@@ -1,10 +1,11 @@
 {
-  "name": "BVA AMN8/ATN8",
-  "tx_id": "6A9",
-  "rx_id": "689",
+  "name": "E_VCU_CTE1",
+  "tx_id": "6A2",
+  "rx_id": "682",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/VCU.json",
   "key_type": "single",
-  "keys": "4854",
+  "keys": "0107",
   "coding": true,
   "errors": true,
   "include_zone_object": "./data/IdentUDSECU.json",
@@ -27,41 +28,20 @@
       "name": "Gauging group data values",
       "type": "raw",
       "form_type": "multi",
-      "CFG_GEAR_SELECTOR": {
-        "name": "Type of gearbox selector",
-        "byte": 5,
-        "type": "bool",
-        "form_type": "combobox",
-        "mask": "00011000",
-        "params": [
-          {
-            "name": "e-toggle",
-            "mask": "00001000"
-          },
-          {
-            "name": "Joystick",
-            "mask": "00010000"
-          },
-          {
-            "name": "Rotating knob",
-            "mask": "00011000"
-          }
-        ]
-      },
       "CFG_ACC_PRESENCE": {
         "name": "Adapted cruise control (ACC)",
-        "byte": 6,
+        "byte": 3,
         "type": "bool",
         "form_type": "combobox",
-        "mask": "00000001",
+        "mask": "10000000",
         "params": [
           {
             "name": "Function ABSENT",
-            "mask": "00000000"
+            "mask": "10000000"
           },
           {
             "name": "Function present",
-            "mask": "00000001"
+            "mask": "00000000"
           }
         ]
       }

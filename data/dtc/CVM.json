@@ -1,0 +1,332 @@
+{
+    "_comment": {
+        "name": "CVM DTC Codes grabbed from Diagbox FDB. ECUTYPE union: CVM, CVM_2, CVM_3, CVM_SEA, CVM_W2_25. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Downloading of the calibration of the multifunction video camera"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1004": {
+        "name": "Multifunction video camera"
+    },
+    "B1007": {
+        "name": "Learning not carried out"
+    },
+    "B1009": {
+        "name": "ECU internal fault"
+    },
+    "B100B": {
+        "name": "Operating temperature"
+    },
+    "B100C": {
+        "name": "Multifunction video camera supply"
+    },
+    "B1170": {
+        "name": "Rain sensor fault"
+    },
+    "B1173": {
+        "name": "Ambient light sensor fault"
+    },
+    "B1174": {
+        "name": "Fault adaptation of the windscreen sensor impossible"
+    },
+    "B117F": {
+        "name": "Multifunction video camera image sensor"
+    },
+    "B11A5": {
+        "name": "Multifunction video camera programming fault"
+    },
+    "B1214": {
+        "name": "DIAG procedure in progress deactivating the multifunction video camera"
+    },
+    "B1215": {
+        "name": "Coherence between the information from the built-in systems interface and the emergency collision braking function"
+    },
+    "B1216": {
+        "name": "Emergency collision braking function"
+    },
+    "B122F": {
+        "name": "Multifunction video camera"
+    },
+    "B1238": {
+        "name": "Field of vision of the multifunction video camera"
+    },
+    "B1239": {
+        "name": "Steering wheel angle sensor is faulty"
+    },
+    "B128B": {
+        "name": "Focussing the multifunction video camera"
+    },
+    "B1298": {
+        "name": "Inconsistency between the frontal-collision activation request sent by the smart service box and the frontal-collision function of the front radar"
+    },
+    "B129A": {
+        "name": "Lack of coherence between the activation request for the adaptive cruise control and the status of the cruise control selection sent by the built-in systems interface"
+    },
+    "B129B": {
+        "name": "Lack of coherence between the adaptive cruise control request, the distance alert ECU request and the speed setting transmitted by the built-in systems interface"
+    },
+    "B129C": {
+        "name": "Lack of coherence between the activation statuses of the adaptive cruise control and of the speed limiter sent by the built-in systems interface"
+    },
+    "B129D": {
+        "name": "Lack of coherence between the torque reference value and the accelerator pedal"
+    },
+    "B129E": {
+        "name": "Inconsistency between the braking request signal and the torque request received by the adaptive cruise control"
+    },
+    "B129F": {
+        "name": "Inconsistency between the torque request status and the adaptive cruise control status"
+    },
+    "B12A0": {
+        "name": "Inconsistency between the deceleration signal from the multifunction video camera and the adaptive cruise control"
+    },
+    "B12A1": {
+        "name": "Inconsistency between the reference speed transmitted by the adaptive cruise control and the speed reference value transmitted by the built-in systems interface"
+    },
+    "B12A5": {
+        "name": "Inconsistency between the reference value transmitted by the distance alert ECU and the speed reference value transmitted by the adaptive cruise control"
+    },
+    "B12A7": {
+        "name": "The adaptive cruise control status received by the engine management ECU"
+    },
+    "B12A8": {
+        "name": "Emergency collision braking"
+    },
+    "B12A9": {
+        "name": "Adaptive cruise control status received by the dynamic stability control ECU"
+    },
+    "B12AA": {
+        "name": "Position of the brake pedal"
+    },
+    "B12AB": {
+        "name": "Signal from the automatic gearbox/piloted manual gearbox"
+    },
+    "B165B": {
+        "name": "Do not display"
+    },
+    "B17F6": {
+        "name": "VAEB issue"
+    },
+    "B1918": {
+        "name": "Lane-keeping assist function"
+    },
+    "B19BA": {
+        "name": "Adaptive cruise control"
+    },
+    "B1F00": {
+        "name": "Do not display"
+    },
+    "B2E0E": {
+        "name": "VIN incorrect"
+    },
+    "B2F04": {
+        "name": "Brake light control failure"
+    },
+    "C1025": {
+        "name": "ECU internal fault"
+    },
+    "P0000": {
+        "name": "Electrical fault"
+    },
+    "U0037": {
+        "name": "Multifunction video camera ECU not communicating on the 1 high speed network"
+    },
+    "U0046": {
+        "name": "Multifunction video camera ECU not communicating on the 2 high speed network"
+    },
+    "U0073": {
+        "name": "1 high speed network"
+    },
+    "U0076": {
+        "name": "2 high speed network"
+    },
+    "U0115": {
+        "name": "Communication with the engine management ECU on the CAN High Speed 2 network"
+    },
+    "U0121": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U0126": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U0129": {
+        "name": "No communication with the ECU on the CAN High Speed 2 network"
+    },
+    "U0140": {
+        "name": "Communication with the BSI"
+    },
+    "U0141": {
+        "name": "Communication with the BSI"
+    },
+    "U0143": {
+        "name": "Communication with the motorised boot unit"
+    },
+    "U0146": {
+        "name": "No communication with the VSM on the CAN High Speed 2 network"
+    },
+    "U0147": {
+        "name": "No communication with the built-in systems interface on the high speed CAN 1"
+    },
+    "U023A": {
+        "name": "No communication with the multifunction video camera on the CAN High Speed 1"
+    },
+    "U0301": {
+        "name": "Invalid data or too-short frame received from the engine (TH/HY) or from the EVCU (EV)"
+    },
+    "U0315": {
+        "name": "Invalid data or too-short frame received from the brake control ECU"
+    },
+    "U0320": {
+        "name": "Invalid data or too-short frame received from the electric power-steering ECU"
+    },
+    "U0322": {
+        "name": "Invalid data or too-short frame received from the smart service box (VSM)"
+    },
+    "U0328": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U0401": {
+        "name": "Data received from the smart service box ECU on the CAN network is invalid"
+    },
+    "U0402": {
+        "name": "Communication with the automatic gearbox ECU on the CAN network"
+    },
+    "U0415": {
+        "name": "Communication with the brake control ECU on the CAN network is invalid"
+    },
+    "U0420": {
+        "name": "Data received from the electric power-steering ECU on the CAN network is invalid"
+    },
+    "U0422": {
+        "name": "Data received from the smart service box ECU on the CAN network is invalid"
+    },
+    "U0452": {
+        "name": "Airbag ECU"
+    },
+    "U1000": {
+        "name": "Multifunction video camera ECU not communicating"
+    },
+    "U1003": {
+        "name": "1 high speed network"
+    },
+    "U1007": {
+        "name": "Suspension and wheels network or high speed 2 network"
+    },
+    "U1009": {
+        "name": "Multifunction video camera ECU not communicating on the suspension and wheels CAN or high speed 2 network"
+    },
+    "U1011": {
+        "name": "Multifunction video camera ECU not communicating on the ADAS CAN"
+    },
+    "U1012": {
+        "name": "ADAS CAN"
+    },
+    "U1105": {
+        "name": "Communication with the steering wheel angle sensor or the ABS/ESP ECU"
+    },
+    "U1108": {
+        "name": "Communication with the engine management ECU"
+    },
+    "U1109": {
+        "name": "Communication with the gearbox ECU on the 1 high speed network"
+    },
+    "U1113": {
+        "name": "Absence of communication on the CAN with the ABS/ESP ECU"
+    },
+    "U1148": {
+        "name": "Communication with the engine management ECU on the 2 high speed network"
+    },
+    "U1150": {
+        "name": "No communication with the electronic control system ECU on the CAN High Speed 2 network"
+    },
+    "U1153": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U1158": {
+        "name": "Communication with the built-in systems interface on the 2 high speed network"
+    },
+    "U1162": {
+        "name": "Communication with the distance alert ECU on the ADAS CAN"
+    },
+    "U1163": {
+        "name": "Distance alert ECU absent from the ADAS CAN"
+    },
+    "U1205": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U1208": {
+        "name": "Communication with the engine management ECU"
+    },
+    "U1213": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U1218": {
+        "name": "Communication with the BSI"
+    },
+    "U1262": {
+        "name": "Communication with the distance alert ECU"
+    },
+    "U1276": {
+        "name": "Data received on the CAN network is invalid"
+    },
+    "U1305": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U1308": {
+        "name": "Invalid data or too-short frame received from the engine (TH/HY) or from the EVCU (EV)"
+    },
+    "U1309": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U1313": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U1318": {
+        "name": "Communication with the BSI"
+    },
+    "U1353": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U1354": {
+        "name": "Communication with the assembled fuel-cell ECU on the CAN network"
+    },
+    "U1538": {
+        "name": "Communication with the standalone telematics box on the CAN network"
+    },
+    "U1806": {
+        "name": "Do not display"
+    },
+    "U1807": {
+        "name": "Park information fault"
+    },
+    "U1937": {
+        "name": "Communication with the standalone telematics box on the CAN network"
+    },
+    "U1EF4": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F06": {
+        "name": "CAN"
+    },
+    "U1F0A": {
+        "name": "CAN"
+    },
+    "U1F0F": {
+        "name": "Multifunction video camera ECU not communicating on the CAN"
+    },
+    "U1F2E": {
+        "name": "Communication with the engine management ECU on the high speed CAN 1"
+    },
+    "U1F52": {
+        "name": "Communication with the seat vibrators control unit"
+    }
+}

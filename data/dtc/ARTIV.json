@@ -1,0 +1,365 @@
+{
+    "_comment": {
+        "name": "ARTIV DTC Codes grabbed from Diagbox FDB. ECUTYPE union: ARTIV, ARTIV_UDS, CORNER_RADAR_FL, CORNER_RADAR_FR, CORNER_RADAR_RL, CORNER_RADAR_RR, FRONT_RADAR_5, RADAR_AV_4, RADAR_AV_W2_25. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Download calibration"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1004": {
+        "name": "Corner radar"
+    },
+    "B100C": {
+        "name": "Corner radar supply"
+    },
+    "B1210": {
+        "name": "Disalignment fault in the Distance Alert sensor"
+    },
+    "B1211": {
+        "name": "Alignment of the corner radar"
+    },
+    "B1213": {
+        "name": "Deterioration in the performance of the corner radar"
+    },
+    "B1214": {
+        "name": "Programming of the distance alert radar in progress"
+    },
+    "B1215": {
+        "name": "Fault of lack of coherence between the information from the built-in systems interface and the collision risk alert function"
+    },
+    "B1216": {
+        "name": "Coherence of the information between the brake sensor and the emergency collision braking function"
+    },
+    "B1217": {
+        "name": "Downgrading of the functions linked with the distance alert radar following the receipt of incoherent information"
+    },
+    "B1254": {
+        "name": "Alignment too great between the centreline of the distance alert radar and the centreline of the multifunction video camera"
+    },
+    "B1256": {
+        "name": "Software error"
+    },
+    "B1298": {
+        "name": "Lack of coherence between the collision risk alert activation request sent by the built-in systems interface and the collision risk alert from the distance alert radar"
+    },
+    "B1299": {
+        "name": "Lack of coherence between the emergency collision braking activation request sent by the built-in systems interface and the collision risk alert from the distance alert radar"
+    },
+    "B129A": {
+        "name": "Lack of coherence between the selection status sent by the built-in systems interface and the activation status of the adaptive cruise control"
+    },
+    "B129B": {
+        "name": "Lack of coherence between the adaptive cruise control request, the distance alert ECU request and the speed setting transmitted by the built-in systems interface"
+    },
+    "B129C": {
+        "name": "Lack of coherence between the activation statuses of the adaptive cruise control and of the speed limiter sent by the built-in systems interface"
+    },
+    "B129D": {
+        "name": "Lack of coherence between the torque reference value and the accelerator pedal"
+    },
+    "B129E": {
+        "name": "Simultaneous control between the ESP ECU and the engine management ECU"
+    },
+    "B129F": {
+        "name": "Lack of coherence between the request from the distance alert ECU and the status return from the engine management ECU"
+    },
+    "B12A0": {
+        "name": "Lack of coherence between the request from the distance alert ECU and the status return from the ESP ECU"
+    },
+    "B12A1": {
+        "name": "Vehicle speed reference value outside the range"
+    },
+    "B12A5": {
+        "name": "Reference value from the distance alert ECU outside the range"
+    },
+    "B12A7": {
+        "name": "Data from the adaptive cruise control read by the engine management ECU"
+    },
+    "B12A8": {
+        "name": "Data from the emergency collision braking function read by the ESP ECU"
+    },
+    "B12A9": {
+        "name": "Data from the adaptive cruise control read by the ESP ECU"
+    },
+    "B12AA": {
+        "name": "Brake pedal"
+    },
+    "B12AB": {
+        "name": "Automatic gearbox ECU"
+    },
+    "B12AC": {
+        "name": "Steering wheel angle sensor"
+    },
+    "B12C1": {
+        "name": "Acceleration when starting is too fast for the adaptive cruise control"
+    },
+    "B12C2": {
+        "name": "Internal temperature of the distance alert radar"
+    },
+    "B12CA": {
+        "name": "Deterioration in the performance of the front radar"
+    },
+    "B1679": {
+        "name": "Headway-time radar disturbance due to surrounding high-frequency waves"
+    },
+    "B18F8": {
+        "name": "Maximum value of the time counter reached for the driving aid system (ADAS)"
+    },
+    "B2E0E": {
+        "name": "VIN incorrect"
+    },
+    "B2EDF": {
+        "name": "Calibration of the corner radar"
+    },
+    "B2EF1": {
+        "name": "Poor alignment of the corner radar"
+    },
+    "B2EF2": {
+        "name": "Multifunction video camera"
+    },
+    "B2EF3": {
+        "name": "Internal malfunction"
+    },
+    "B2EF4": {
+        "name": "Front radar and multifunction video camera"
+    },
+    "B2EF5": {
+        "name": "Multifunction video camera"
+    },
+    "B2EF6": {
+        "name": "Rear left-hand corner radar"
+    },
+    "B2EF7": {
+        "name": "Rear right-hand corner radar"
+    },
+    "B2EF8": {
+        "name": "Steering wheel angle sensor"
+    },
+    "B2EF9": {
+        "name": "Alignment of the corner radar completed with failure"
+    },
+    "B2EFA": {
+        "name": "Inconsistency between the calculated speed and the wheel speed transmitted by the dynamic stability control (ESP) ECU"
+    },
+    "B2EFF": {
+        "name": "Corner radar aerial"
+    },
+    "U0078": {
+        "name": "CAN"
+    },
+    "U0126": {
+        "name": "No communication with steering wheel angle sensor"
+    },
+    "U0146": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U023D": {
+        "name": "No communication on the CAN with the front left-hand corner radar"
+    },
+    "U023E": {
+        "name": "No communication on the CAN with the front right-hand corner radar"
+    },
+    "U02B4": {
+        "name": "Front radar datastream not present"
+    },
+    "U02B6": {
+        "name": "No communication on the CAN with the rear right-hand corner radar"
+    },
+    "U02B7": {
+        "name": "No communication on the CAN with the rear left-hand corner radar"
+    },
+    "U0322": {
+        "name": "Communication with the built-in systems interface (VSM1) on the CAN"
+    },
+    "U0422": {
+        "name": "Communication with the built-in systems interface (VSM1) on the CAN"
+    },
+    "U043B": {
+        "name": "Communication with the front left-hand corner radar on the CAN"
+    },
+    "U043C": {
+        "name": "Communication with the front right-hand corner radar on the CAN"
+    },
+    "U0447": {
+        "name": "Information transmitted by the built-in systems interface"
+    },
+    "U053B": {
+        "name": "Information transmitted by the multifunction video camera"
+    },
+    "U05B7": {
+        "name": "Communication with the rear right-hand corner radar on the CAN"
+    },
+    "U05B8": {
+        "name": "Communication with the rear left-hand corner radar on the CAN"
+    },
+    "U1007": {
+        "name": "CAN"
+    },
+    "U1009": {
+        "name": "ECU mute on the CAN"
+    },
+    "U1011": {
+        "name": "Distance alert ECU absent from the ADAS CAN"
+    },
+    "U1012": {
+        "name": "ADAS CAN"
+    },
+    "U1105": {
+        "name": "Information transmitted by the steering wheel angle sensor received on the CAN"
+    },
+    "U1109": {
+        "name": "No communication with gearbox ECU"
+    },
+    "U1113": {
+        "name": "Fault in communication with the ABS/ESP ECU"
+    },
+    "U112C": {
+        "name": "No communication on the CAN with the multifunction video camera"
+    },
+    "U1148": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U1153": {
+        "name": "No communication with the ESP ECU"
+    },
+    "U1158": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1164": {
+        "name": "Absence of communication with the multifunction video camera"
+    },
+    "U1205": {
+        "name": "Steering wheel angle sensor"
+    },
+    "U1208": {
+        "name": "Information transmitted by the engine management ECU"
+    },
+    "U1213": {
+        "name": "Information transmitted by the ESP ECU"
+    },
+    "U1218": {
+        "name": "Information transmitted by the built-in systems interface"
+    },
+    "U1221": {
+        "name": "The electric power steering ECU is transmitting invalid data. Remote."
+    },
+    "U1305": {
+        "name": "Information transmitted by the steering wheel angle sensor"
+    },
+    "U1309": {
+        "name": "Information transmitted by the built-in systems interface"
+    },
+    "U1313": {
+        "name": "Information transmitted by the ESP ECU"
+    },
+    "U1318": {
+        "name": "Information transmitted by the built-in systems interface"
+    },
+    "U1321": {
+        "name": "Communication with the electric power steering ECU on the CAN"
+    },
+    "U1330": {
+        "name": "Communication with the multifunction video camera on the CAN"
+    },
+    "U1602": {
+        "name": "Communication with the built-in systems interface (VSM)"
+    },
+    "U1607": {
+        "name": "Distance alert ECU datastream"
+    },
+    "U1608": {
+        "name": "Multifunction video camera datastream not present"
+    },
+    "U1802": {
+        "name": "Vehicle speed information"
+    },
+    "U1806": {
+        "name": "Vehicle yaw speed information fault"
+    },
+    "U1F00": {
+        "name": "Event not stored in the history"
+    },
+    "U1F03": {
+        "name": "No communication with the built-in systems interface"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F2E": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U1F48": {
+        "name": "Absence of communication with the braking ECU"
+    },
+    "U1F4E": {
+        "name": "No communication with steering wheel angle sensor"
+    },
+    "U1F60": {
+        "name": "Absence of communication with the seat belt left-hand reversible inertia reel"
+    },
+    "U1F61": {
+        "name": "Absence of communication with the seat belt right-hand reversible inertia reel"
+    },
+    "U1F70": {
+        "name": "Fault in the distance alert function status from the built-in systems interface"
+    },
+    "U1F78": {
+        "name": "Signal error transmitted by the steering wheel angle sensor over the CAN network"
+    },
+    "U1F79": {
+        "name": "Fault in the information sent by the ESP ECU"
+    },
+    "U1F7A": {
+        "name": "Fault in the information received by the collision risk alert function from the engine management ECU"
+    },
+    "U1F8C": {
+        "name": "No communication on the CAN with the multifunction video camera"
+    },
+    "U1F90": {
+        "name": "Loss of information from the built-in systems interface"
+    },
+    "U1F91": {
+        "name": "Loss of information from the ESP ECU"
+    },
+    "U1F92": {
+        "name": "Loss of information from the engine management ECU"
+    },
+    "U1F93": {
+        "name": "Loss of information from the steering wheel angle ECU"
+    },
+    "U1F97": {
+        "name": "Fault in the information received by the collision risk alert function from the gearbox ECU"
+    },
+    "U1F98": {
+        "name": "Loss of CAN information received by the collision risk alert function coming from the driver's seat belt reversible inertia reel"
+    },
+    "U1F99": {
+        "name": "Loss of CAN information received by the distance alert ECU coming from the gearbox ECU"
+    },
+    "U1FBC": {
+        "name": "No communication on the CAN with the built-in systems interface (VSM1)"
+    },
+    "U1FBD": {
+        "name": "No communication on the CAN with the built-in systems interface (VSM1)"
+    },
+    "U1FBE": {
+        "name": "Front radar not communicating on the CAN"
+    },
+    "U1FBF": {
+        "name": "No communication on the CAN with the parking assistance ECU"
+    },
+    "U1FF0": {
+        "name": "ECU not communicating"
+    },
+    "U1FF2": {
+        "name": "Communication on the CAN"
+    },
+    "U3002": {
+        "name": "VIN"
+    }
+}

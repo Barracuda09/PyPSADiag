@@ -1,0 +1,69 @@
+{
+    "name": "VERINS_MOTORISES",
+    "tx_id": "76B",
+    "rx_id": "66B",
+    "protocol": "uds",
+    "dtc_lookup": "data/dtc/BCM.json",
+    "key_type": "multi",
+    "keys": {
+        "VERINS_MOTORISES": "F18F"
+    },
+    "coding": true,
+    "errors": true,
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Gauging group data values",
+            "tab": "tele",
+            "name": "Gauging group data values",
+            "type": "raw",
+            "form_type": "multi",
+            "CFG_FII_BCM_CATVM_BSG_RG_001": {
+                "name": "Trailer switch unit",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "10000000",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "10000000"
+                    }
+                ]
+            },
+            "CFG_FIH_BCM_BCM_CATVM_CAP_PRES_002": {
+                "name": "Presence and number of the anti-pinch sensors",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "01100000",
+                "params": [
+                    {
+                        "name": "Without anti-pinch sensors",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "1 anti-pinch sensor (upper sensor)",
+                        "mask": "00100000"
+                    },
+                    {
+                        "name": "2 anti-pinch sensors (left and right sensors)",
+                        "mask": "01000000"
+                    },
+                    {
+                        "name": "3 anti-pinch sensors (left, right and upper sensors)",
+                        "mask": "01100000"
+                    }
+                ]
+            }
+        }
+    }
+} 

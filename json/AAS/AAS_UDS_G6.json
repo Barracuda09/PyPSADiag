@@ -3,6 +3,7 @@
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/AAS.json",
   "key_type": "multi",
   "keys": {
     "key 1": "D1F5",
@@ -20,22 +21,6 @@
       "id": "Configuration_Group_Data_List_0100",
       "tab": "tele",
       "name": "Configuration group data list 0100",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "0101": {
-      "id": "Configuration_Group_Data_List_0101",
-      "tab": "tele",
-      "name": "Configuration group data list 0101",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-    "2100": {
-      "id": "Configuration_Group_Data_List_2100",
-      "tab": "tele",
-      "name": "Configuration group data list 2100",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
@@ -294,14 +279,6 @@
           }
         ]
       }
-    },
-    "2102": {
-      "id": "Configuration_Group_Data_List_2102",
-      "tab": "tele",
-      "name": "Configuration group data list 2102",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
     }
   }
 }

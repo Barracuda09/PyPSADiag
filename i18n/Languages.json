@@ -1,0 +1,13 @@
+{
+    "en": {"name": "English"},
+    "it": {"name": "Italiano"},
+    "de": {"name": "Deutsch"},
+    "nl": {"name": "Nederlands"},
+    "pl": {"name": "Polski"},
+    "uk": {"name": "Українська"},
+    "ru": {"name": "Русский"},
+    "gr": {"name": "Greek"},
+    "tr": {"name": "Türkçe" },
+    "es": {"name": "España" },
+    "zh-CN": {"name": "简体中文"}
+}

@@ -26,8 +26,12 @@ import csv
 import time
 import os
 from datetime import datetime
-from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
+from PySide6.QtCore import Qt, Slot, QIODevice, QTranslator, QEventLoop
+from PySide6.QtWidgets import (QApplication, QMainWindow, QFileDialog, QMessageBox,
+                               QDialog, QVBoxLayout, QLabel, QPushButton, QHBoxLayout,
+                               QPlainTextEdit, QGroupBox, QGridLayout)
+from PySide6.QtGui import QFont, QGuiApplication
+from PySide6.QtCore import QTimer
 
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
@@ -39,23 +43,284 @@ from FileConverter import FileConverter
 from EcuZoneTreeView  import EcuZoneTreeView
 from MessageDialog  import MessageDialog
 from i18n import i18n
-
+from DecodeCalUlpFile import DecodeCalUlpFile
+from DiagnosticAdapter import DiagnosticAdapter
+from EcuKeyBruteforce import BruteforceWorker
 
 """
   - Change GUI in: PyPSADiagGUI.py
   - Run with: python main.py
 """
+
+
+class VisioparkCalibrationDialog(QDialog):
+    """Dialog for Visiopark dynamic camera calibration with status polling."""
+
+    STATUS_MESSAGES = {
+        "0101": "Waiting for white lines to be visible...",
+        "0102": "Get out of parking spot (max 5km/h)...",
+        "0103": "Get back in parking spot (max 5km/h)...",
+    }
+
+    def __init__(self, udsCommunication, writeToOutputView, parent=None):
+        super().__init__(parent)
+        self.udsCommunication = udsCommunication
+        self.writeToOutputView = writeToOutputView
+        self.setWindowTitle("Visiopark Calibration")
+        self.setMinimumWidth(400)
+        self.setModal(True)
+
+        # Layout
+        layout = QVBoxLayout(self)
+
+        self.statusLabel = QLabel("Calibration started. Polling ECU...")
+        self.statusLabel.setWordWrap(True)
+        self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px;")
+        layout.addWidget(self.statusLabel)
+
+        self.stepLabel = QLabel("")
+        self.stepLabel.setStyleSheet("font-size: 11px; color: gray; padding: 0 10px;")
+        layout.addWidget(self.stepLabel)
+
+        # Buttons
+        btnLayout = QHBoxLayout()
+        btnLayout.addStretch()
+        self.cancelBtn = QPushButton("Cancel")
+        self.cancelBtn.clicked.connect(self.onCancel)
+        btnLayout.addWidget(self.cancelBtn)
+        layout.addLayout(btnLayout)
+
+        # Polling timer — every 1 second
+        self.pollTimer = QTimer(self)
+        self.pollTimer.timeout.connect(self.pollStatus)
+        self.pollTimer.start(1000)
+
+    def pollStatus(self):
+        """Send 3103DF0C and interpret response."""
+        receiveData = self.udsCommunication.writeECUCommand("3103DF0C")
+
+        if receiveData == "Timeout" or len(receiveData) < 12:
+            self.stepLabel.setText("Response: " + receiveData)
+            return
+
+        # Expected: 7103DF0C + status (2 bytes = 4 hex chars)
+        if receiveData[:8] != "7103DF0C":
+            self.stepLabel.setText("Unexpected: " + receiveData)
+            return
+
+        status = receiveData[8:12]
+        statusByte1 = receiveData[8:10]
+        statusCode = receiveData[8:12]
+
+        self.stepLabel.setText("Status: " + receiveData)
+
+        # Check known status codes
+        if statusCode in self.STATUS_MESSAGES:
+            self.statusLabel.setText(self.STATUS_MESSAGES[statusCode])
+            self.writeToOutputView("[Visiopark] " + self.STATUS_MESSAGES[statusCode])
+
+        elif statusByte1 == "02":
+            # Procedure completed (7103DF0C02XX)
+            self.pollTimer.stop()
+            msg = "Visiopark calibration completed successfully!"
+            self.statusLabel.setText(msg)
+            self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px; color: green;")
+            self.writeToOutputView("[Visiopark] " + msg)
+            self.cancelBtn.setText("Close")
+
+        elif statusByte1 == "03":
+            # Procedure failed (7103DF0C03XX)
+            self.pollTimer.stop()
+            msg = "Visiopark calibration failed."
+            self.statusLabel.setText(msg)
+            self.statusLabel.setStyleSheet("font-size: 14px; padding: 10px; color: red;")
+            self.writeToOutputView("[Visiopark] " + msg)
+            self.cancelBtn.setText("Close")
+
+    def onCancel(self):
+        self.pollTimer.stop()
+        if self.cancelBtn.text() == "Cancel":
+            self.writeToOutputView("[Visiopark] Calibration cancelled by user.")
+        self.accept()
+
+
+class EcuKeyBruteforceDialog(QDialog):
+    """Dialog: equivalence-class brute-force search for the 16-bit ECU key."""
+
+    def __init__(self, serialController, tx_id, rx_id, protocol, writeToOutputView, parent=None):
+        super().__init__(parent)
+        self.serialController = serialController
+        self.tx_id = tx_id
+        self.rx_id = rx_id
+        self.protocol = protocol
+        self.writeToOutputView = writeToOutputView
+        self.worker = None
+        self.confirmed_keys = []
+
+        self.setWindowTitle("Bruteforce ECU Key")
+        self.setMinimumSize(640, 520)
+
+        layout = QVBoxLayout(self)
+
+        # Target line
+        sa_level_text = "SA Level 2" if not protocol.startswith("kwp") else "SA Level (KWP)"
+        targetLabel = QLabel(f"<b>Target:</b> {tx_id}:{rx_id}  ({protocol}, {sa_level_text})")
+        targetLabel.setStyleSheet("padding: 6px;")
+        layout.addWidget(targetLabel)
+
+        # Status block
+        statusBox = QGroupBox("Status")
+        statusGrid = QGridLayout()
+        self.candidatesLabel = QLabel("65536")
+        self.roundLabel = QLabel("0")
+        self.rateLabel = QLabel("--")
+        self.elapsedLabel = QLabel("0s")
+        self.confirmedLabel = QLabel("0")
+        self.resultLabel = QLabel("")
+        self.resultLabel.setWordWrap(True)
+        self.resultLabel.setStyleSheet("font-size: 13px; padding: 4px;")
+        statusGrid.addWidget(QLabel("Candidates:"), 0, 0); statusGrid.addWidget(self.candidatesLabel, 0, 1)
+        statusGrid.addWidget(QLabel("Round:"),       0, 2); statusGrid.addWidget(self.roundLabel,      0, 3)
+        statusGrid.addWidget(QLabel("Rate:"),        0, 4); statusGrid.addWidget(self.rateLabel,       0, 5)
+        statusGrid.addWidget(QLabel("Elapsed:"),     1, 0); statusGrid.addWidget(self.elapsedLabel,    1, 1)
+        statusGrid.addWidget(QLabel("Confirmed:"),   1, 2); statusGrid.addWidget(self.confirmedLabel,  1, 3)
+        statusGrid.addWidget(self.resultLabel,       2, 0, 1, 6)
+        statusBox.setLayout(statusGrid)
+        layout.addWidget(statusBox)
+
+        # Log block
+        self.logEdit = QPlainTextEdit()
+        self.logEdit.setReadOnly(True)
+        mono = QFont("Consolas")
+        mono.setStyleHint(QFont.Monospace)
+        mono.setPointSize(9)
+        self.logEdit.setFont(mono)
+        layout.addWidget(self.logEdit, 1)
+
+        # Buttons
+        btnLayout = QHBoxLayout()
+        btnLayout.addStretch()
+        self.startBtn = QPushButton("Start")
+        self.startBtn.clicked.connect(self.onStart)
+        self.stopBtn = QPushButton("Stop")
+        self.stopBtn.setEnabled(False)
+        self.stopBtn.clicked.connect(self.onStop)
+        self.closeBtn = QPushButton("Close")
+        self.closeBtn.clicked.connect(self.onClose)
+        btnLayout.addWidget(self.startBtn)
+        btnLayout.addWidget(self.stopBtn)
+        btnLayout.addWidget(self.closeBtn)
+        layout.addLayout(btnLayout)
+
+    @Slot()
+    def onStart(self):
+        self.logEdit.clear()
+        self.resultLabel.setText("")
+        self.resultLabel.setStyleSheet("font-size: 13px; padding: 4px;")
+        self.confirmed_keys = []
+        self.worker = BruteforceWorker(
+            self.serialController, self.tx_id, self.rx_id, self.protocol, self
+        )
+        self.worker.logSignal.connect(self.onLog)
+        self.worker.progressSignal.connect(self.onProgress)
+        self.worker.doneSignal.connect(self.onDone)
+        self.startBtn.setEnabled(False)
+        self.stopBtn.setEnabled(True)
+        self.closeBtn.setEnabled(False)
+        self.worker.start()
+
+    @Slot()
+    def onStop(self):
+        if self.worker is not None:
+            self.worker.stop()
+            self.stopBtn.setEnabled(False)
+            self.appendLog("\n!! Stopping... waiting for graceful exit ...")
+
+    @Slot()
+    def onClose(self):
+        if self.worker is not None and self.worker.isRunning():
+            ret = QMessageBox.question(
+                self, "Bruteforce running",
+                "A bruteforce is in progress. Stop and close?",
+                QMessageBox.Yes | QMessageBox.No
+            )
+            if ret != QMessageBox.Yes:
+                return
+            self.worker.stop()
+            self.worker.wait(5000)
+        self.accept()
+
+    @Slot(str)
+    def onLog(self, msg: str):
+        self.appendLog(msg)
+        # Mirror everything to PyPSADiag main output too — useful when dialog is closed
+        self.writeToOutputView("[Bruteforce] " + msg)
+
+    def appendLog(self, msg: str):
+        self.logEdit.appendPlainText(msg)
+        sb = self.logEdit.verticalScrollBar()
+        sb.setValue(sb.maximum())
+
+    @Slot(int, int, float, float, int, int)
+    def onProgress(self, rounds, candidates, rate, elapsed, hits, confirmed):
+        self.candidatesLabel.setText(str(candidates))
+        self.roundLabel.setText(str(rounds))
+        self.rateLabel.setText(f"{rate:.1f} rnd/s")
+        self.elapsedLabel.setText(self._fmt_secs(elapsed))
+        self.confirmedLabel.setText(str(confirmed))
+
+    @Slot(list)
+    def onDone(self, confirmed: list):
+        self.confirmed_keys = confirmed
+        self.startBtn.setEnabled(True)
+        self.stopBtn.setEnabled(False)
+        self.closeBtn.setEnabled(True)
+        if confirmed:
+            keys_text = ", ".join(f"{k:04X}" for k in confirmed)
+            self.resultLabel.setText(f"FOUND KEY: {keys_text}")
+            self.resultLabel.setStyleSheet(
+                "font-size: 14px; padding: 4px; color: green; font-weight: bold;"
+            )
+            # Copy to clipboard for convenience
+            try:
+                QGuiApplication.clipboard().setText(keys_text)
+                self.appendLog(f"\n   (copied to clipboard: {keys_text})")
+            except Exception:
+                pass
+            self.writeToOutputView(f"[Bruteforce] FOUND KEY: {keys_text}")
+        else:
+            self.resultLabel.setText("No KEY found")
+            self.resultLabel.setStyleSheet(
+                "font-size: 14px; padding: 4px; color: gray;"
+            )
+
+    @staticmethod
+    def _fmt_secs(s: float) -> str:
+        s = int(s)
+        if s < 60:
+            return f"{s}s"
+        m, s = divmod(s, 60)
+        if m < 60:
+            return f"{m}m {s}s"
+        h, m = divmod(m, 60)
+        return f"{h}h {m}m {s}s"
+
+
 class MainWindow(QMainWindow):
     ui = PyPSADiagGUI()
     ecuObjectList = {}
+    diagtool_type = "serial"
     simulation = False
     scan = False
+    flashEnable = False
     stream = None
     csvWriter = None
+    app: QApplication
 
     def __init__(self, app: QApplication):
         super(MainWindow, self).__init__()
-        self.lang_code = "tr"
+        self.app = app
+        self.lang_code = "en"
         self.lang = False
         if len(sys.argv) >= 2:
             for arg in sys.argv:
@@ -68,6 +333,8 @@ class MainWindow(QMainWindow):
                     self.simulation = True
                 elif arg == "--scan":
                     self.scan = True
+                elif arg == "--flash":
+                    self.flashEnable = True
                 elif arg == "--checkcalc":
                     calc = SeedKeyAlgorithm()
                     calc.testCalculations()
@@ -75,16 +342,19 @@ class MainWindow(QMainWindow):
                 elif arg == "--help":
                     print("Use --simu      For simulation")
                     print("Use --lang nl   For NL translation")
+                    print("Use --flash     Enable flash option (Work In Progress: use at your own risk!!)")
                     sys.exit(1)
 
         self.addTranslators()
 
         self.ui.setupGUI(app, self, self.scan, self.lang_code)
-        self.ui.languageComboBox.currentIndexChanged.connect(self.changeLanguage)
 
-        #converter = FileConverter()
-        #converter.convertNAC("./json/test_nac_original.json", "./json/test_nac_conv.json")
-        #converter.convertCIROCCO("./json/test_CIROCCO_original.json", "./json/test_CIROCCO_conv.json")
+        # Disable Sync Zone files with github (Still Work In Progress)
+        self.ui.syncZoneFiles.setVisible(False)
+
+        # Disable flash when not explicit enabled at startup (Still Work In Progress use at your own risk)
+        if self.flashEnable == False:
+            self.ui.flashEcu.setVisible(False)
 
         # Connect button signals to slots
         self.ui.sendCommand.clicked.connect(self.sendCommand)
@@ -93,72 +363,125 @@ class MainWindow(QMainWindow):
         self.ui.openZoneFile.clicked.connect(self.openZoneFile)
         self.ui.readZone.clicked.connect(self.readZone)
         self.ui.writeZone.clicked.connect(self.writeZone)
+        self.ui.flashEcu.clicked.connect(self.flashEcu)
         self.ui.rebootEcu.clicked.connect(self.rebootEcu)
         self.ui.readEcuFaults.clicked.connect(self.readEcuFaults)
         self.ui.clearEcuFaults.clicked.connect(self.clearEcuFaults)
         self.ui.SearchConnectPort.clicked.connect(self.searchConnectPort)
         self.ui.ConnectPort.clicked.connect(self.connectPort)
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
+        self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
+        self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
+        self.ui.visioparkCalibrationAction.triggered.connect(self.visioparkCalibration)
+        self.ui.bruteforceKeyAction.triggered.connect(self.bruteforceKey)
+        self.ui.canFrameSnifferAction.triggered.connect(self.openCanFrameSniffer)
         self.ui.hideNoResponseZone.stateChanged.connect(self.hideNoResponseZones)
 
         # Connect Other/General signals to slots
         self.ui.command.returnPressed.connect(self.sendCommand)
+        self.ui.searchZoneLineEdit.textChanged.connect(self.searchZones)
+        self.ui.diagtoolTypeComboBox.currentIndexChanged.connect(self.changeDiagtoolType)
+        self.ui.languageActionGroup.triggered.connect(self.changeLanguage)
 
         # Setup serial controller and Search for Ports
-        self.serialController = SerialPort(self.simulation)
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode="serial", simulation=self.simulation)
         self.searchConnectPort()
 
         # Set initial button states
         self.ui.DisconnectPort.setEnabled(False)
         self.ui.readZone.setEnabled(False)
         self.ui.writeZone.setEnabled(False)
+        self.ui.flashEcu.setEnabled(False)
         self.ui.rebootEcu.setEnabled(False)
         self.ui.clearEcuFaults.setEnabled(False)
         self.ui.readEcuFaults.setEnabled(False)
+        self.ui.commandsMenu.setEnabled(False)
+        self.ui.disableEcoMode.setEnabled(False)
+        self.ui.disableEcoModeAction.setEnabled(False)
+        self.ui.visioparkCalibrationAction.setEnabled(False)
+        self.ui.bruteforceKeyAction.setEnabled(False)
+        self.ui.canFrameSnifferAction.setEnabled(False)
         self.ui.virginWriteZone.setCheckState(Qt.Unchecked)
         self.ui.writeSecureTraceability.setCheckState(Qt.Checked)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 
+        self.setupCommunication()
+
+        # Open CSV reader, load file with method "enable(path)"
+        self.fileLoaderThread = FileLoader.FileLoaderThread()
+        self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
+
+    def setupCommunication(self):
         # UDS
         self.udsCommunication = DiagnosticCommunication(self.serialController, "uds")
         self.udsCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.udsCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.udsCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.udsCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
         # KWP_IS
         self.kwpisCommunication = DiagnosticCommunication(self.serialController, "kwp_is")
         self.kwpisCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.kwpisCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwpisCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
+        self.kwpisCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
         # KWP_HAB
         self.kwphabCommunication = DiagnosticCommunication(self.serialController, "kwp_hab")
         self.kwphabCommunication.receivedPacketSignal.connect(self.serialPacketReceiverCallback)
         self.kwphabCommunication.outputToTextEditSignal.connect(self.outputToTextEditCallback)
         self.kwphabCommunication.updateZoneDataSignal.connect(self.updateZoneDataback)
-
-        # Open CSV reader, load file with method "enable(path)"
-        self.fileLoaderThread = FileLoader.FileLoaderThread()
-        self.fileLoaderThread.newRowSignal.connect(self.csvReadCallback)
+        self.kwphabCommunication.readZoneListDoneSignal.connect(self.readZoneListDoneCallback)
 
     def addTranslators(self):
-            self.translator = QTranslator()
-            self.loadTranslator()
-            QApplication.instance().installTranslator(self.translator)
+        self.translator = QTranslator()
+        self.loadTranslator()
+        QApplication.instance().installTranslator(self.translator)
 
-    def changeLanguage(self, index):
-            lang_code = self.ui.languageComboBox.itemData(index)
-            if lang_code:
-                self.lang_code = lang_code
+    def changeLanguage(self, action):
+        # Action data returns variant [code, language, iconPath]
+        lang_code = action.data()[0]
+        if lang_code:
+            self.lang_code = lang_code
 
-            self.loadTranslator()
-            self.ui.translateGUI(self)
-            if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
-                self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.loadTranslator()
+        self.ui.translateGUI()
+        if self.ecuObjectList is not None and not (isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) == 0):
+            self.updateEcuZonesAndKeys(self.ecuObjectList)
+        self.updateEcuTxRxLabel()
+
+    def changeDiagtoolType(self, index):
+        self.diagtool_type = self.ui.diagtoolTypeComboBox.itemData(index)
+        if self.diagtool_type.lower() == "serial" or self.diagtool_type.lower() == "bluetooth":
+            # Arduino and Bluetooth both use COM port selection
+            self.ui.portNameComboBox.setEnabled(True)
+            self.ui.SearchConnectPort.setEnabled(True)
+            self.ui.portNameComboBox.setVisible(True)
+            self.ui.canPinsComboBox.setVisible(False)
+            self.ui.wsIpInput.setVisible(False)
+            if self.ui.portNameComboBox.count() > 0:
+                self.ui.ConnectPort.setEnabled(True)
+            else:
+                self.ui.ConnectPort.setEnabled(False)
+        elif self.diagtool_type.lower() == "vci":
+            # VCI mode - no COM port needed, show CAN pins
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
+            self.ui.canPinsComboBox.setVisible(True)
+            self.ui.wsIpInput.setVisible(False)
+            self.ui.ConnectPort.setEnabled(True)
+        elif self.diagtool_type.lower() == "websocket":
+            # Websocket mode - no COM port needed, show IP input
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
+            self.ui.canPinsComboBox.setVisible(False)
+            self.ui.portNameComboBox.setVisible(False)
+            self.ui.wsIpInput.setVisible(True)
+            self.ui.ConnectPort.setEnabled(True)
 
     def loadTranslator(self):
-            qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
-            self.translator.load(qm_path)
+        qm_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", "translations", f"PyPSADiag_{self.lang_code}.qm")
+        self.translator.load(qm_path)
 
     # Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZonesAndKeys(self, ecuObjectList: dict):
@@ -191,9 +514,47 @@ class MainWindow(QMainWindow):
 
         self.ui.treeView.updateView(ecuObjectList)
 
+    def updateEcuTxRxLabel(self):
+        txId = "-"
+        rxId = "-"
+        protocol = "-"
+        if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
+            txId = self.ecuObjectList.get("tx_id", "-")
+            rxId = self.ecuObjectList.get("rx_id", "-")
+            protocol = self.ecuObjectList.get("protocol", "-")
+
+        self.ui.setEcuTxRxText(txId, rxId, protocol)
+
     def writeToOutputView(self, text: str):
         self.ui.output.append(str(datetime.now()) + " --|  " + text)
         self.ui.output.viewport().repaint()
+
+    def configureCommunication(self):
+        if self.serialController.isOpen():
+            bus = self.ui.canPinsComboBox.currentData() or "DIAG"
+            success = self.serialController.configure(
+                self.ecuObjectList.get("tx_id", ""),
+                self.ecuObjectList.get("rx_id", ""),
+                self.ecuObjectList.get("protocol", ""),
+                bus=bus
+            )
+            ecuName = self.ecuObjectList.get("name", "")
+
+            if not success:
+                if ecuName != "":
+                    self.writeToOutputView("Diag tool configuration failed for ECU: " + ecuName)
+                else:
+                    self.writeToOutputView("Diag tool configuration failed")
+            else:
+                if ecuName != "":
+                    self.writeToOutputView("Diag tool configuration successful for ECU: " + ecuName)
+                else:
+                    self.writeToOutputView("Diag tool configuration successful")
+                return True
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+        return False
 
     @Slot()
     def searchConnectPort(self):
@@ -205,28 +566,45 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connectPort(self):
+        self.serialController = DiagnosticAdapter(logger=self.writeToOutputView, mode=self.diagtool_type, simulation=self.simulation, ipAddress=self.ui.wsIpInput.text())
+        self.setupCommunication()
+
         # Set begin connecting button states
         self.ui.ConnectPort.setEnabled(False)
         self.ui.DisconnectPort.setEnabled(False)
-        error = self.serialController.open(self.ui.portNameComboBox.currentText(), 115200)
+
+        # TODO: Make this more elegant
+        # Give time to Close Dialog and Repaint
+        QApplication.processEvents(QEventLoop.AllEvents, 1000)
+
+        portName = self.ui.portNameComboBox.currentData() or self.ui.portNameComboBox.currentText()
+        error = self.serialController.open(portName, 115200)
         if error == "":
-            # First send an Version and Reset command
-            cmd = "V"
-            self.writeToOutputView("> " + cmd)
-            receiveData = self.serialController.sendReceive(cmd)
-            self.writeToOutputView("< " + receiveData)
-            if receiveData == "Timeout":
+            success = self.configureCommunication()
+
+            if not success:
                 self.serialController.close()
                 self.ui.ConnectPort.setEnabled(True)
                 return
-            cmd = "R"
-            self.writeToOutputView("> " + cmd)
-            receiveData = self.serialController.sendReceive(cmd)
-            self.writeToOutputView("< " + receiveData)
 
             # Set button states
+            self.ui.diagtoolTypeComboBox.setEnabled(False)
+            self.ui.canPinsComboBox.setEnabled(False)
+            self.ui.portNameComboBox.setEnabled(False)
+            self.ui.SearchConnectPort.setEnabled(False)
             self.ui.ConnectPort.setEnabled(False)
+            self.ui.wsIpInput.setEnabled(False)
             self.ui.DisconnectPort.setEnabled(True)
+            self.ui.commandsMenu.setEnabled(True)
+            self.ui.disableEcoMode.setEnabled(True)
+            self.ui.disableEcoModeAction.setEnabled(True)
+            self.ui.visioparkCalibrationAction.setEnabled(True)
+            self.ui.bruteforceKeyAction.setEnabled(True)
+            self.ui.canFrameSnifferAction.setEnabled(True)
+
+            if isinstance(self.ecuObjectList, dict) and len(self.ecuObjectList) > 0:
+                self.setEcuCommandsState(True)
+
         else:
             self.ui.ConnectPort.setEnabled(True)
             self.writeToOutputView(error)
@@ -236,20 +614,39 @@ class MainWindow(QMainWindow):
         if self.stream != None:
             self.stream.close()
         self.serialController.close()
+        self.ui.diagtoolTypeComboBox.setEnabled(True)
+        self.ui.canPinsComboBox.setEnabled(True)
+        self.ui.portNameComboBox.setEnabled(True)
+        self.ui.SearchConnectPort.setEnabled(True)
         self.ui.ConnectPort.setEnabled(True)
+        self.ui.wsIpInput.setEnabled(True)
         self.ui.DisconnectPort.setEnabled(False)
-        self.ui.readZone.setEnabled(False)
-        self.ui.writeZone.setEnabled(False)
-        self.ui.writeZone.setEnabled(False)
-        self.ui.clearEcuFaults.setEnabled(False)
-        self.ui.readEcuFaults.setEnabled(False)
-        self.ui.rebootEcu.setEnabled(False)
+
+        self.setEcuCommandsState(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
 #        self.ui.useSketchSeedGenerator.setEnabled(True)
+
+    def setEcuCommandsState(self, enabled):
+        self.ui.readZone.setEnabled(enabled)
+        self.ui.writeZone.setEnabled(enabled)
+        self.ui.flashEcu.setEnabled(enabled)
+        self.ui.clearEcuFaults.setEnabled(enabled)
+        self.ui.readEcuFaults.setEnabled(enabled)
+        self.ui.rebootEcu.setEnabled(enabled)
+        self.ui.commandsMenu.setEnabled(enabled)
+        self.ui.disableEcoMode.setEnabled(enabled)
+        self.ui.disableEcoModeAction.setEnabled(enabled)
+        self.ui.visioparkCalibrationAction.setEnabled(enabled)
+        self.ui.bruteforceKeyAction.setEnabled(enabled)
+        self.ui.canFrameSnifferAction.setEnabled(enabled)
 
     @Slot()
     def hideNoResponseZones(self, state):
         self.ui.treeView.hideNoResponseZones(state == 2)
+
+    @Slot(str)
+    def searchZones(self, text):
+        self.ui.treeView.filterZones(text)
 
     @Slot()
     def sendCommand(self):
@@ -313,12 +710,22 @@ class MainWindow(QMainWindow):
 
         self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.ui.setFilePathInWindowsTitle("")
-        self.ui.readZone.setEnabled(True)
-        self.ui.writeZone.setEnabled(True)
-        self.ui.writeZone.setEnabled(True)
-        self.ui.clearEcuFaults.setEnabled(True)
-        self.ui.readEcuFaults.setEnabled(True)
-        self.ui.rebootEcu.setEnabled(True)
+
+        success = self.configureCommunication()
+        if success:
+            self.ui.readZone.setEnabled(True)
+            self.ui.writeZone.setEnabled(True)
+            self.ui.flashEcu.setEnabled(False)
+            self.ui.clearEcuFaults.setEnabled(True)
+            self.ui.readEcuFaults.setEnabled(True)
+            self.ui.rebootEcu.setEnabled(True)
+            self.ui.commandsMenu.setEnabled(True)
+            self.ui.disableEcoMode.setEnabled(True)
+            self.ui.disableEcoModeAction.setEnabled(True)
+            self.ui.visioparkCalibrationAction.setEnabled(True)
+            self.ui.bruteforceKeyAction.setEnabled(True)
+            self.ui.canFrameSnifferAction.setEnabled(True)
+            self.updateEcuTxRxLabel()
 
     @Slot()
     def readZone(self):
@@ -328,10 +735,15 @@ class MainWindow(QMainWindow):
             if fileName[0] == "":
                 return
 
+            self.ui.treeView.clearZoneListValues()
+
             # Open CSV for writing
             self.ui.setFilePathInWindowsTitle(fileName[0])
             self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
             self.csvWriter = csv.writer(self.stream)
+
+            # Disable UI to prevent interruption
+            self.setEnabled(False)
 
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
@@ -367,7 +779,6 @@ class MainWindow(QMainWindow):
                     self.kwphabCommunication.setZonesToRead(ecu, lin, zone)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -406,7 +817,6 @@ class MainWindow(QMainWindow):
                 lin = "L" + self.ecuObjectList["lin_id"]
 
             if self.ecuObjectList["protocol"] == "uds":
-#                self.udsCommunication.writeZoneList(self.ui.useSketchSeedGenerator.isChecked(), ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
                 self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             elif self.ecuObjectList["protocol"] == "kwp_is":
                 self.kwpisCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
@@ -414,7 +824,66 @@ class MainWindow(QMainWindow):
                 self.kwphabCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+
+    @Slot()
+    def flashEcu(self):
+        if self.serialController.isOpen():
+            if self.ecuObjectList["protocol"] != "uds":
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
                 return
+
+            # Check if we have the correct sketch version. Only Vlud V1.9 sketch is supported.
+            cmd = "V"
+            self.writeToOutputView("> " + cmd)
+            receiveData = self.serialController.sendReceive(cmd)
+            self.writeToOutputView("< " + receiveData)
+            if float(receiveData) > 1.9:
+                self.writeToOutputView(i18n().tr("Flashing only supported with sketch version V1.9"))
+                return
+
+            path = os.path.join(os.path.dirname(__file__), "ulp")
+            fileName = QFileDialog.getOpenFileName(self, i18n().tr("CAUTION... Flash CAL/ULP File"), path, i18n().tr("CAL Files") + "(*.cal)" + ";;" + i18n().tr("ULP Files") + "(*.ulp)")
+            if fileName[0] == "":
+                return
+
+            # TODO: Make this more elegant
+            # Give time to Close Dialog and Repaint
+            QApplication.processEvents(QEventLoop.AllEvents, 1000)
+
+            flashFile = DecodeCalUlpFile()
+            fileOk = flashFile.decodeCalUlpFile(fileName[0], False)
+            if fileOk == False:
+                self.writeToOutputView(i18n().tr("File contains errors") + ": " + fileName[0])
+                return
+
+            # Give a warning and some option to cancel the Flash
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Warning)
+            msg.addButton(QMessageBox.Cancel)
+            msg.addButton(QMessageBox.Ok)
+            msg.setDefaultButton(QMessageBox.Cancel)
+            msg.setWindowTitle(i18n().tr("CAUTION: Use at your own RISK!!!"))
+            msg.setText(i18n().tr("Flashing ECU with:") + os.linesep + fileName[0] + os.linesep + os.linesep + i18n().tr("Do NOT Interrupt the flashing process!!!"))
+            if QMessageBox.Cancel == msg.exec():
+                return
+
+            # Disable UI to prevent interruption
+            self.setEnabled(False)
+
+            self.writeToOutputView(i18n().tr("Fashing file") + ":" + fileName[0] )
+
+            # Setup CAN_EMIT_ID
+            ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
+            if self.ecuObjectList["protocol"] == "uds":
+                self.udsCommunication.flashEcu(ecu, flashFile)
+            else:
+                self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+
+            # Enable UI again
+            self.setEnabled(True)
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -425,13 +894,21 @@ class MainWindow(QMainWindow):
             # Setup CAN_EMIT_ID
             ecu = ">" + self.ecuObjectList["tx_id"] + ":" + self.ecuObjectList["rx_id"]
 
-            if self.ecuObjectList["protocol"] == "uds":
+            if self.ecuObjectList.get("name") in ("IVI", "BSRF", "RTBM"):
+                # IVI/BSRF/RTBM require extended session and DTC read before reboot
+                commands = [ecu, "1003", "190209", "1103"]
+                for cmd in commands:
+                    self.writeToOutputView("> " + cmd)
+                    receiveData = self.serialController.sendReceive(cmd)
+                    self.writeToOutputView("< " + receiveData)
+                    if receiveData == "Timeout":
+                        break
+            elif self.ecuObjectList["protocol"] == "uds":
                 self.udsCommunication.rebootEcu(ecu)
             elif self.ecuObjectList["protocol"] == "kwp_hab":
                 self.kwphabCommunication.rebootEcu(ecu)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -446,7 +923,6 @@ class MainWindow(QMainWindow):
                 ParseDTC.parse(dtc, self.ecuObjectList.get("dtc_lookup", ""))
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
@@ -465,15 +941,169 @@ class MainWindow(QMainWindow):
                 self.udsCommunication.clearEcuFaults(ecu)
             else:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
-                return
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
+
+    @Slot()
+    def disableEcoMode(self):
+        if self.serialController.isOpen():
+            ecu = ">752:652"
+            key = "B4E0"
+
+            # Select BSI
+            self.writeToOutputView("> " + ecu)
+            receiveData = self.serialController.sendReceive(ecu)
+            self.writeToOutputView("< " + receiveData)
+            if receiveData == "Timeout":
+                return
+
+            # Start diagnostic session (1003)
+            if not self.udsCommunication.startDiagnosticMode():
+                return
+
+            # Unlock ECU with BSI key (2703 -> compute seed -> 2704)
+            seed = self.udsCommunication.unlockingServiceForConfiguration(key)
+            if len(seed) == 0:
+                self.udsCommunication.stopDiagnosticMode()
+                return
+
+            time.sleep(2)
+
+            if not self.udsCommunication.sendUnlockingResponseForConfiguration(seed):
+                self.udsCommunication.stopDiagnosticMode()
+                return
+
+            # Send Disable Eco Mode routine
+            self.udsCommunication.writeECUCommand("3101DF0A3C")
+
+            # Stop diagnostic session (1001)
+            self.udsCommunication.stopDiagnosticMode()
+        else:
+            self.writeToOutputView(i18n().tr("Port not open!"))
+
+    @Slot()
+    def visioparkCalibration(self):
+        if not self.serialController.isOpen():
+            self.writeToOutputView(i18n().tr("Port not open!"))
+            return
+
+        # Get key from currently loaded JSON
+        index = self.ui.ecuKeyComboBox.currentIndex()
+        if index < 0:
+            self.writeToOutputView("No ECU key selected. Load NAC or RCC zone file first.")
+            return
+        key = self.ui.ecuKeyComboBox.itemData(index)
+
+        ecu = ">764:664"
+
+        # Select NAC/RCC ECU
+        self.writeToOutputView("> " + ecu)
+        receiveData = self.serialController.sendReceive(ecu)
+        self.writeToOutputView("< " + receiveData)
+        if receiveData == "Timeout":
+            return
+
+        # Start diagnostic session (1003)
+        if not self.udsCommunication.startDiagnosticMode():
+            return
+
+        # Unlock ECU with key from JSON (2703 -> compute seed -> 2704)
+        seed = self.udsCommunication.unlockingServiceForConfiguration(key)
+        if len(seed) == 0:
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        time.sleep(2)
+
+        if not self.udsCommunication.sendUnlockingResponseForConfiguration(seed):
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        # Start dynamic Visiopark calibration routine
+        self.writeToOutputView("Starting Visiopark dynamic calibration...")
+        receiveData = self.udsCommunication.writeECUCommand("3101DF0C")
+        if len(receiveData) < 4 or receiveData[:4] != "7101":
+            self.writeToOutputView("Failed to start calibration: " + receiveData)
+            self.udsCommunication.stopDiagnosticMode()
+            return
+
+        # Open polling dialog
+        dialog = VisioparkCalibrationDialog(self.udsCommunication, self.writeToOutputView, self)
+        dialog.exec()
+
+        # Stop diagnostic session (1001)
+        self.udsCommunication.stopDiagnosticMode()
+
+    @Slot()
+    def bruteforceKey(self):
+        if not self.serialController.isOpen():
+            self.writeToOutputView(i18n().tr("Port not open!"))
+            return
+        if not isinstance(self.ecuObjectList, dict) or not self.ecuObjectList.get("tx_id"):
+            self.writeToOutputView("No ECU loaded. Load an ECU zone file first.")
+            return
+        tx = self.ecuObjectList.get("tx_id", "")
+        rx = self.ecuObjectList.get("rx_id", "")
+        proto = self.ecuObjectList.get("protocol", "uds")
+        dialog = EcuKeyBruteforceDialog(
+            self.serialController, tx, rx, proto, self.writeToOutputView, self
+        )
+        dialog.exec()
+
+    @Slot()
+    def openCanFrameSniffer(self):
+        """Open the CAN-frame sniffer + PIN extractor dialog.
+
+        Uses the existing PyPSADiag serial connection (must be connected
+        via the main "Connect" button first).  The dialog drives the
+        adapter into ATMA (Monitor All) mode on the 500 kbps HS-CAN-DIAG
+        bus (OBD pins 6/14), aggregates frames with IDs 0x072 (challenge,
+        ECM) and 0x0A8 (response, BSI), and feeds captured pairs to the
+        PIN extractor to recover the 4-char ASCII PIN.
+
+        All status / error / debug output goes to PyPSADiag's main console.
+        Non-modal — user can keep working in the main window while sniff
+        is running.
+        """
+        if not self.serialController.isOpen():
+            self.writeToOutputView(
+                "[PinExtractor] Connect to OBD via PyPSADiag main window first "
+                "(serial mode, ELM327 adapter on COM port).")
+            return
+
+        # The dialog borrows the raw pyserial.Serial held by the SerialPort
+        # transport.  VCI / Bluetooth / WebSocket modes don't expose a raw
+        # serial object, so we bail out cleanly if that's the case.
+        transport = getattr(self.serialController, 'transport', None)
+        raw_serial = getattr(transport, 'serialPort', None)
+        if raw_serial is None or not hasattr(raw_serial, 'is_open'):
+            self.writeToOutputView(
+                "[PinExtractor] Requires a serial-port connection (Arduino "
+                "or raw ELM327 adapter on COM port).  Current transport "
+                "does not expose a raw serial object.")
+            return
+
+        # Lazy import so sniffer deps don't slow main startup
+        from CanFrameSniffDialog import CanFrameSniffDialog
+        # Keep a reference so the dialog isn't GC'd when this slot returns
+        self._canFrameSnifferDialog = CanFrameSniffDialog(
+            serial_port=raw_serial,
+            log_callback=self.writeToOutputView,
+            parent=self)
+        self._canFrameSnifferDialog.show()
 
     @Slot()
     def csvReadCallback(self, value: list):
         # Did we had an empty line in CSV? Then skip it.
         if len(value) >= 2:
-            self.ui.treeView.changeZoneOption(value[0], value[1]);
+            self.ui.treeView.changeZoneOption(value[0], value[1])
+
+    @Slot()
+    def readZoneListDoneCallback(self):
+        self.ui.flashEcu.setEnabled(True)
+
+        # Enable UI again
+        self.setEnabled(True)
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str):

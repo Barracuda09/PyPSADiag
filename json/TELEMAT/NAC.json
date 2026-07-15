@@ -4,6 +4,7 @@
     "tx_id": "764",
     "rx_id": "664",
     "protocol": "uds",
+    "dtc_lookup": "data/dtc/TELEMAT.json",
     "key_type": "multi",
     "keys": {
         "NAC": "D91C"
@@ -22,7 +23,8 @@
         "hmi": "HMI",
         "obc": "OBC",
         "visiopark": "VISIOPARK",
-        "telemat": "Telematic Unit (BTEL)"
+        "telemat": "Telematic Unit (BTEL)",
+        "cal": "Calibrations"
     },
     "zones": {
         "2100": {
@@ -31,6 +33,33 @@
             "type": "raw",
             "form_type": "multi",
             "params": [
+                {
+                    "extra_name": "AAS_PUSH_LED",
+                    "name_original": "DUL",
+                    "name": "Driving Functions: display touch button \"Parking assistance\"",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DG_AAS_PUSH_POS",
+                    "name_original": "DMM",
+                    "name": "Touch button Position \"Parking assistance\"",
+                    "byte": 0,
+                    "mask": "00111110",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "ATT_DG_AAS_PUSH",
+                    "name_original": "D8R",
+                    "name": "Physical Button \"Parking assistance\"",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
                 {
                     "extra_name": "AAS",
                     "name_original": "AKS",
@@ -61,33 +90,6 @@
                     "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "ATT_DG_AAS_PUSH",
-                    "name_original": "D8R",
-                    "name": "Physical Button \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "DG_AAS_PUSH_POS",
-                    "name_original": "DMM",
-                    "name": "Touch button Position \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "00111110",
-                    "type": "raw",
-                    "form_type": "string"
-                },
-                {
-                    "extra_name": "AAS_PUSH_LED",
-                    "name_original": "DUL",
-                    "name": "Display Touch button \"Parking assistance\"",
-                    "byte": 0,
-                    "mask": "00000001",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 }
             ]
         },
@@ -100,7 +102,7 @@
                 {
                     "extra_name": "ATT_DG_AFIL_PUSH",
                     "name_original": "D8N",
-                    "name": "Display Touch button \"Lane departure warning system (AFIL)\"",
+                    "name": "Driving Functions: display touch button \"Lane departure warning system (AFIL)\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -133,6 +135,15 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "ATT_DG_ARTIV_PUSH",
+                    "name_original": "D8M",
+                    "name": "Driving Functions: display touch button \"Distance Alert (ARTIV)\"",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DG_ARTIV_PUSH_POS",
                     "name_original": "DMX",
                     "name": "Touch Button Position \"Distance Alert (ARTIV)\"\"",
@@ -140,15 +151,6 @@
                     "mask": "00011111",
                     "type": "raw",
                     "form_type": "string"
-                },
-                {
-                    "extra_name": "ATT_DG_ARTIV_PUSH",
-                    "name_original": "D8M",
-                    "name": "Display Touch button \"Distance Alert (ARTIV)\"",
-                    "byte": 0,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 },
                 {
                     "extra_name": "DG_ARTIV_PUSH_PANEL",
@@ -252,7 +254,7 @@
                 {
                     "extra_name": "SPEED_SVR",
                     "name_original": "DER",
-                    "name": "Sound attenuation based on speed (km/h)",
+                    "name": "Speed threshold for voice recognition (km/h)",
                     "byte": 1,
                     "mask": "11111111",
                     "type": "raw",
@@ -590,25 +592,6 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "ATT_DG_JDA",
-                    "zoneLength": 10,
-                    "name_original": "BSZ",
-                    "name": "Alerts history",
-                    "byte": 7,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "ATT_DG_JDA",
-                    "name_original": "BSZ",
-                    "name": "Alerts history",
-                    "byte": 6,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
                     "extra_name": "TYPE_ENERGIE",
                     "name_original": "D32",
                     "name": "Vehicle power source",
@@ -634,15 +617,15 @@
                         },
                         {
                             "mask": "00100000",
-                            "name": "Petrol et traction battery"
+                            "name": "Petrol and traction battery"
                         },
                         {
                             "mask": "00101000",
-                            "name": "Petrol et Alcohol"
+                            "name": "Petrol and Alcohol"
                         },
                         {
                             "mask": "00110000",
-                            "name": "Diesel et traction battery"
+                            "name": "Diesel and traction battery"
                         },
                         {
                             "mask": "00111000",
@@ -655,11 +638,11 @@
                     ]
                 },
                 {
-                    "extra_name": "SMARTAPPS",
-                    "name_original": "DK3",
-                    "name": "\"SMARTAPPS\" Function",
-                    "byte": 2,
-                    "mask": "00010000",
+                    "extra_name": "OPTION_SD_MEDIA_EVO",
+                    "name_original": "DNY",
+                    "name": "Advanced Shutdown (Shutdown when the door is opened: information and sensor required !)",
+                    "byte": 0,
+                    "mask": "00000100",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
@@ -707,11 +690,38 @@
                     ]
                 },
                 {
-                    "extra_name": "OPTION_SD_MEDIA_EVO",
-                    "name_original": "DNY",
-                    "name": "Advanced Shutdown (Shutdown when the door is opened: information and sensor required !)",
-                    "byte": 0,
+                    "extra_name": "SMARTAPPS",
+                    "name_original": "DK3",
+                    "name": "\"SMARTAPPS\" Function",
+                    "byte": 2,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DAT_DG_DRIVE_ICC_SET",
+                    "name_original": "DNI",
+                    "name": "Display of the \"Adaptive cruise control\" settings",
+                    "byte": 2,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "ATT_DG_USB",
+                    "name_original": "BO8",
+                    "name": "USB1 port",
+                    "byte": 2,
                     "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "ATT_DG_USB_2ND",
+                    "name_original": "BO8",
+                    "name": "USB2 port",
+                    "byte": 2,
+                    "mask": "00000010",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
@@ -725,31 +735,31 @@
                     "form_type": "string"
                 },
                 {
-                    "extra_name": "HIDE_CAMERA_LINES",
+                    "extra_name": "CFG_DRH_BTEL_CURRENT_PROFILE_000",
                     "name_original": "D00",
-                    "name": "Hide camera lines",
+                    "name": "Current Profile",
                     "byte": 3,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "mask": "00001111",
+                    "type": "raw",
+                    "form_type": "string"
                 },
                 {
                     "extra_name": "VEHICLE",
                     "name_original": "DSF",
-                    "name": "\"MENU\" button",
+                    "name": "Presense of \"Vehicle Settings\" menu tab",
                     "byte": 4,
                     "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "OUTLINE",
-                    "name_original": "DSG",
-                    "name": "OUTLINE",
+                    "extra_name": "DIAG_ML_ON_OFF",
+                    "name_original": "DUZ",
+                    "name": "\"MirrorLink\" function",
                     "byte": 4,
-                    "mask": "01100000",
-                    "type": "raw",
-                    "form_type": "string"
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
                 },
                 {
                     "extra_name": "ICE_WARNING_TEMP",
@@ -763,26 +773,8 @@
                     "form_type": "string"
                 },
                 {
-                    "extra_name": "DIAG_ML_ON_OFF",
-                    "name_original": "DUZ",
-                    "name": "\"MirrorLink\" function",
-                    "byte": 4,
-                    "mask": "00010000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
                     "extra_name": "DRIVER_REST_CFG",
-                    "zoneLength": 10,
-                    "name_original": "DZK",
-                    "name": "Driver Restriction function",
-                    "byte": 7,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "DRIVER_REST_CFG",
+                    "zoneLength": 9,
                     "name_original": "DZK",
                     "name": "Driver Restriction function",
                     "byte": 6,
@@ -791,17 +783,18 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DIPO_ON_OFF",
-                    "zoneLength": 10,
-                    "name_original": "DZR",
-                    "name": "\"Apple Carplay\" function",
-                    "byte": 7,
-                    "mask": "00100000",
+                    "extra_name": "ATT_DG_JDA",
+                    "zoneLength": 9,
+                    "name_original": "BSZ",
+                    "name": "Alerts history",
+                    "byte": 6,
+                    "mask": "01000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
                     "extra_name": "DIPO_ON_OFF",
+                    "zoneLength": 9,
                     "name_original": "DZR",
                     "name": "\"Apple Carplay\" function",
                     "byte": 6,
@@ -820,15 +813,15 @@
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "0x00 - W4: Traveller"
+                            "name": "0x00 - W4: Traveller / Spacetourer / ProAce City Verso"
                         },
                         {
                             "mask": "00000001",
-                            "name": "0x01 - W4: Traveller"
+                            "name": "0x01 - W4: Traveller / Doblo"
                         },
                         {
                             "mask": "00000010",
-                            "name": "0x02 - W4: Traveller"
+                            "name": "0x02 - W4_HD: DS7 | W4: Traveller"
                         },
                         {
                             "mask": "00000011",
@@ -836,27 +829,27 @@
                         },
                         {
                             "mask": "00000100",
-                            "name": "0x04 - W4: Partner / DS3 Cabrio."
+                            "name": "0x04 - W4: Partner / DS3 Cabrio"
                         },
                         {
                             "mask": "00000101",
-                            "name": "0x05 - W4: Traveller"
+                            "name": "0x05 - W4_HD: DS3 Cross | W4: Traveller / Jumpy / ProAce Verso"
                         },
                         {
                             "mask": "00000110",
-                            "name": "0x06 - W4_HD: Corsa F | W4: 3008"
+                            "name": "0x06 - W4_HD: DS9 / Corsa F | W4: 3008 / C4 Picasso / Corsa F / ProAce City"
                         },
                         {
                             "mask": "00000111",
-                            "name": "0x07 - W4: 5008"
+                            "name": "0x07 - W4: 5008 / C4 Spacetourer / Corsa F / ProAce"
                         },
                         {
                             "mask": "00001000",
-                            "name": "0x08 - W4: 508"
+                            "name": "0x08 - W4: 508 / C3 / Mokka"
                         },
                         {
                             "mask": "00001001",
-                            "name": "0x09 - W4: 2008"
+                            "name": "0x09 - W4_HD: DS9 / Mokka | W4: 2008 / C4L / Mokka"
                         },
                         {
                             "mask": "00001010",
@@ -864,15 +857,15 @@
                         },
                         {
                             "mask": "00001011",
-                            "name": "0x0B: 308 / C4 Cactus"
+                            "name": "0x0B - W4: 308 / C4 Cactus"
                         },
                         {
                             "mask": "00001100",
-                            "name": "0x0C - W4: 308 / C4 Cactus"
+                            "name": "0x0C - W4_HD: DS3 Cross E-tense"
                         },
                         {
                             "mask": "00001101",
-                            "name": "0x0D - W4: 308 / C4 Cactus"
+                            "name": "0x0D - W4: C4 Cactus"
                         },
                         {
                             "mask": "00001110",
@@ -884,11 +877,11 @@
                         },
                         {
                             "mask": "00010000",
-                            "name": "0x10 - W4: Traveller / Jumpy"
+                            "name": "0x10 - W4_HD: Grandland | W4: Rifter / Jumpy"
                         },
                         {
                             "mask": "00010001",
-                            "name": "0x11 - Rifter / Jumpy"
+                            "name": "0x11 - W4: Rifter / Jumpy"
                         },
                         {
                             "mask": "00010010",
@@ -896,31 +889,31 @@
                         },
                         {
                             "mask": "00010011",
-                            "name": "0x13 - W4: Partner"
+                            "name": "0x13 - W4_HD: C4 | W4: Partner"
                         },
                         {
                             "mask": "00010100",
-                            "name": "0x14 - W4: New 508"
+                            "name": "0x14 - W4_HD: New 508 / eC4 | W4: New 508"
                         },
                         {
                             "mask": "00010101",
-                            "name": "0x15 - W4: New 508SW"
+                            "name": "0x15 - W4_HD: New 508 SW / C5 Aircross | W4: New 508SW"
                         },
                         {
                             "mask": "00010110",
-                            "name": "0x16 - W4: New 208"
+                            "name": "0x16 - W4_HD: New 208 / C3 Aircross | W4: New 208"
                         },
                         {
                             "mask": "00010111",
-                            "name": "0x17 - W4: 2008"
+                            "name": "0x17 - W4_HD: New 2008 | W4: 2008"
                         },
                         {
                             "mask": "00011000",
-                            "name": "0x18 - W4_HD: New 2008 | W4: e2008"
+                            "name": "0x18 - W4_HD: e2008 | W4: e2008"
                         },
                         {
                             "mask": "00011001",
-                            "name": "0x19 - W4: e208"
+                            "name": "0x19 - W4_HD: e208 | W4: e208"
                         },
                         {
                             "mask": "00011010",
@@ -932,7 +925,7 @@
                         },
                         {
                             "mask": "00011100",
-                            "name": "0x1C - W4_HD: New 508 | W4: New 508"
+                            "name": "0x1C - W4_HD: New 508 SW | W4: New 508"
                         },
                         {
                             "mask": "00011101",
@@ -944,35 +937,35 @@
                         },
                         {
                             "mask": "00011111",
-                            "name": "0x1F - W4_HD: New 5008"
+                            "name": "0x1F - W4_HD: New 5008 | W4: New 5008"
                         },
                         {
                             "mask": "00100000",
-                            "name": "0x20"
+                            "name": "0x20 - W4: New 3008"
                         },
                         {
                             "mask": "00100001",
-                            "name": "0x21"
+                            "name": "0x21 - W4_HD: New 5008 | W4: New 3008"
                         },
                         {
                             "mask": "00100010",
-                            "name": "0x22 - W4: 308 iCockpit"
+                            "name": "0x22 - W4_HD: 508 PSE | W4: 308 iCockpit"
                         },
                         {
                             "mask": "00100011",
-                            "name": "0x23 - W4: 308SW iCockpit"
+                            "name": "0x23 - W4_HD: 508 SW PSE | W4: 308SW iCockpit"
                         },
                         {
                             "mask": "00100100",
-                            "name": "0x24 - W4: Traveller"
+                            "name": "0x24"
                         },
                         {
                             "mask": "00100101",
-                            "name": "0x25 - W4: Traveller"
+                            "name": "0x25"
                         },
                         {
                             "mask": "00100110",
-                            "name": "0x26 - W4: Traveller"
+                            "name": "0x26"
                         },
                         {
                             "mask": "00100111",
@@ -1018,6 +1011,7 @@
                 },
                 {
                     "extra_name": "DG_CARLINE",
+                    "zoneLength": 9,
                     "name_original": "E3W",
                     "name": "Vehicle model",
                     "byte": 6,
@@ -1091,11 +1085,41 @@
                     ]
                 },
                 {
-                    "extra_name": "DOORS_TYPE_001",
+                    "extra_name": "DRIVER_REST_CFG",
                     "zoneLength": 10,
+                    "name_original": "DZK",
+                    "name": "Driver Restriction function",
+                    "byte": 7,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "ATT_DG_JDA",
+                    "zoneLength": 10,
+                    "name_original": "BSZ",
+                    "name": "Security system alerts history",
+                    "byte": 7,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DIPO_ON_OFF",
+                    "zoneLength": 10,
+                    "name_original": "DZR",
+                    "name": "\"Apple Carplay\" function",
+                    "byte": 7,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DOORS_TYPE_001",
+                    "zoneLength": 9,
                     "name_original": "E5B",
                     "name": "Type of accesses",
-                    "byte": 9,
+                    "byte": 8,
                     "mask": "11000000",
                     "form_type": "combobox",
                     "params": [
@@ -1114,10 +1138,34 @@
                     ]
                 },
                 {
+                    "extra_name": "ODS_TYPE",
+                    "zoneLength": 9,
+                    "name_original": "E88",
+                    "name": "Type of obstacle detection system",
+                    "byte": 8,
+                    "mask": "00011000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Rear"
+                        },
+                        {
+                            "mask": "00001000",
+                            "name": "Front / Rear"
+                        },
+                        {
+                            "mask": "00010000",
+                            "name": "Front + Side / Rear + Side"
+                        }
+                    ]
+                },
+                {
                     "extra_name": "DOORS_TYPE_001",
+                    "zoneLength": 10,
                     "name_original": "E5B",
                     "name": "Type of accesses",
-                    "byte": 8,
+                    "byte": 9,
                     "mask": "11000000",
                     "form_type": "combobox",
                     "params": [
@@ -1159,32 +1207,10 @@
                     ]
                 },
                 {
-                    "extra_name": "ODS_TYPE",
-                    "name_original": "E88",
-                    "name": "Type of obstacle detection system",
-                    "byte": 8,
-                    "mask": "00011000",
-                    "form_type": "combobox",
-                    "params": [
-                        {
-                            "mask": "00000000",
-                            "name": "Rear"
-                        },
-                        {
-                            "mask": "00001000",
-                            "name": "Front / Rear"
-                        },
-                        {
-                            "mask": "00010000",
-                            "name": "Front + Side / Rear + Side"
-                        }
-                    ]
-                },
-                {
                     "extra_name": "PERSO_CFG",
                     "zoneLength": 10,
                     "name_original": "EIO",
-                    "name": "Instrument panel personalization",
+                    "name": "Presence of dashboard personalization menu",
                     "byte": 9,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1192,8 +1218,9 @@
                 },
                 {
                     "extra_name": "PERSO_CFG",
+                    "zoneLength": 9,
                     "name_original": "EIO",
-                    "name": "Instrument panel personalization",
+                    "name": "Presence of dashboard personalization menu",
                     "byte": 8,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -1210,7 +1237,7 @@
                 {
                     "extra_name": "DG_CAFR_PUSH",
                     "name_original": "D8L",
-                    "name": "Display Touch button \"Main beams assistant\"",
+                    "name": "Driving Functions: display touch button \"Main beams assistant\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1553,7 +1580,7 @@
                 {
                     "extra_name": "ATT_DG_MPD_PUSH_POS",
                     "name_original": "D8O",
-                    "name": "Display Touch button \"Parking space measurement system\"",
+                    "name": "Driving Functions: display touch button \"Parking space measurement system\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1861,7 +1888,7 @@
                 {
                     "extra_name": "ATT_DG_SAM_PUSH",
                     "name_original": "D8P",
-                    "name": "Display Touch button \"Blind spot monitoring\"",
+                    "name": "Driving Functions: display touch button \"Blind spot monitoring\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1896,7 +1923,7 @@
                 {
                     "extra_name": "DAT_DG_LKA_PUSH_LED",
                     "name_original": "DM9",
-                    "name": "Display Touch button \"Lane Guard system\"",
+                    "name": "Driving Functions: display touch button \"Lane Guard system\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1931,7 +1958,7 @@
                 {
                     "extra_name": "DAT_DG_ACV_PUSH_LED",
                     "name_original": "DMA",
-                    "name": "Display Touch button \"Automatic control of the volume \"ACV\"\"",
+                    "name": "Driving Functions: display Touch button \"Automatic control of the volume \"ACV\"\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -1964,20 +1991,29 @@
             "form_type": "multi",
             "params": [
                 {
-                    "extra_name": "DAT_DG_ALARM_HISTORY",
-                    "name_original": "DNL",
-                    "name": "History of on-board computer alerts",
+                    "extra_name": "CFG_DNM_BTEL_DAT_DG_ALARM_HISTORY_000",
+                    "name_original": "CFG_DNM_BTEL_DAT_DG_ALARM_HISTORY_000",
+                    "name": "Driving functions: Display \"Diagnostics\" button with vehicle alerts history (overwrites 210B)",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DAT_DG_ALARM",
-                    "name_original": "DNM",
+                    "extra_name": "CFG_DNM_BTEL_DAT_DG_ALARM_000",
+                    "name_original": "CFG_DNM_BTEL_DAT_DG_ALARM_000",
                     "name": "On-board computer alerts (Vehicle without matrix)",
                     "byte": 0,
                     "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_DR6_BTEL_CPUSH_ALARMLOG_000",
+                    "name_original": "CFG_DR6_BTEL_CPUSH_ALARMLOG_000",
+                    "name": "Presence of physical \"Alerts History\" button",
+                    "byte": 0,
+                    "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -2007,6 +2043,15 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "DAT_DG_TYRES_PRES",
+                    "name_original": "DNF",
+                    "name": "Driving Functions: add \"Tyre\" to \"Diagnostics\" button",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DAT_DG_UREA",
                     "name_original": "DNE",
                     "name": "Urea solution level",
@@ -2016,31 +2061,62 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DAT_DG_TYRES_PRES",
-                    "name_original": "DNF",
-                    "name": "Tire pressure",
+                    "extra_name": "OBC_PERMANENTPAGE",
+                    "name_original": "DUD",
+                    "name": "Permanent display of the on-board computer",
                     "byte": 0,
-                    "mask": "10000000",
+                    "mask": "00100000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DATE_TIME_DISP",
-                    "name_original": "DSN",
-                    "name": "Date and time display",
-                    "byte": 3,
-                    "mask": "00000010",
+                    "extra_name": "ODO_PARTIAL",
+                    "name_original": "DUG",
+                    "name": "Partial mileage display",
+                    "byte": 0,
+                    "mask": "00010000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DATE_TIME_MENU",
-                    "name_original": "DSO",
-                    "name": "Date and time configuration",
-                    "byte": 3,
-                    "mask": "00000001",
+                    "extra_name": "OBC",
+                    "name_original": "DUH",
+                    "name": "On-board computer display",
+                    "byte": 0,
+                    "mask": "00001000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "OBC_STT",
+                    "name_original": "DUI",
+                    "name": "Stop&Start statistics in on-board computer",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "OBC_PAGE",
+                    "name_original": "DUP",
+                    "name": "Configuration of the on-board computer",
+                    "byte": 0,
+                    "mask": "00000011",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Instant consumption"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Route 1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "Route 2"
+                        }
+                    ]
                 },
                 {
                     "extra_name": "DATE_TIME_ZONE",
@@ -2173,6 +2249,24 @@
                     ]
                 },
                 {
+                    "extra_name": "DATE_TIME_ZONE_INIT",
+                    "name_original": "DTQ",
+                    "name": "Time zone initialization",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00110010",
+                            "name": "UTC"
+                        },
+                        {
+                            "mask": "00110100",
+                            "name": "UTC+1"
+                        }
+                    ]
+                },
+                {
                     "extra_name": "DATE_FORMAT_INIT",
                     "name_original": "DST",
                     "name": "Initial date format",
@@ -2199,9 +2293,18 @@
                     ]
                 },
                 {
+                    "extra_name": "NOT_DATE",
+                    "name_original": "DSU",
+                    "name": "Initial date format",
+                    "byte": 3,
+                    "mask": "00110000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
                     "extra_name": "DATE_TIME_SYNC",
                     "name_original": "DTO",
-                    "name": "Date synchronization",
+                    "name": "Date-time synchronization",
                     "byte": 3,
                     "mask": "00001000",
                     "form_type": "checkbox",
@@ -2210,63 +2313,27 @@
                 {
                     "extra_name": "DATE_TIME_SYNC_INIT",
                     "name_original": "DTP",
-                    "name": "Initial date synchronization",
+                    "name": "Initial date-time synchronization",
                     "byte": 3,
                     "mask": "00000100",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "DATE_TIME_ZONE_INIT",
-                    "name_original": "DTQ",
-                    "name": "Time zone initialization",
-                    "byte": 2,
-                    "mask": "11111111",
-                    "form_type": "combobox",
-                    "params": [
-                        {
-                            "mask": "00110010",
-                            "name": "UTC"
-                        },
-                        {
-                            "mask": "00110100",
-                            "name": "UTC+1"
-                        }
-                    ]
-                },
-                {
-                    "extra_name": "OBC_PERMANENTPAGE",
-                    "name_original": "DUD",
-                    "name": "Permanent display of the on-board computer",
-                    "byte": 0,
-                    "mask": "00100000",
+                    "extra_name": "DATE_TIME_DISP",
+                    "name_original": "DSN",
+                    "name": "Date and time display",
+                    "byte": 3,
+                    "mask": "00000010",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "ODO_PARTIAL",
-                    "name_original": "DUG",
-                    "name": "Partial mileage display",
-                    "byte": 0,
-                    "mask": "00010000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "OBC",
-                    "name_original": "DUH",
-                    "name": "On-board computer display",
-                    "byte": 0,
-                    "mask": "00001000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "OBC_STT",
-                    "name_original": "DUI",
-                    "name": "Stop and Start function",
-                    "byte": 0,
-                    "mask": "00000100",
+                    "extra_name": "DATE_TIME_MENU",
+                    "name_original": "DSO",
+                    "name": "Date and time configuration",
+                    "byte": 3,
+                    "mask": "00000001",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
@@ -2289,31 +2356,9 @@
                     "available_logic": "active_high"
                 },
                 {
-                    "extra_name": "OBC_PAGE",
-                    "name_original": "DUP",
-                    "name": "Configuration of the on-board computer",
-                    "byte": 0,
-                    "mask": "00000011",
-                    "form_type": "combobox",
-                    "params": [
-                        {
-                            "mask": "00000000",
-                            "name": "Instant consumption"
-                        },
-                        {
-                            "mask": "00000001",
-                            "name": "Routing 1"
-                        },
-                        {
-                            "mask": "00000010",
-                            "name": "Routing 2"
-                        }
-                    ]
-                },
-                {
                     "extra_name": "MAINTEANCE",
                     "name_original": "DUQ",
-                    "name": "Viewing maintenance data",
+                    "name": "Driving Functions: add \"Maintenance\" to \"Diagnostics\" button",
                     "byte": 4,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2330,7 +2375,7 @@
                 {
                     "extra_name": "CPUSH_BLACK_PANEL",
                     "name_original": "DR7",
-                    "name": "Blackpanel button",
+                    "name": "Presense of physical \"Blackpanel\" button",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -2339,7 +2384,7 @@
                 {
                     "extra_name": "CPUSH_COLORCLUST",
                     "name_original": "DR8",
-                    "name": "Instrument panel themes (iCockpit Amplify)",
+                    "name": "Presense of physical \"iCockpit Amplify\" button",
                     "byte": 0,
                     "mask": "00100000",
                     "form_type": "checkbox",
@@ -2348,7 +2393,7 @@
                 {
                     "extra_name": "CPUSH_CHECK",
                     "name_original": "DR9",
-                    "name": "\"CHECK\" button",
+                    "name": "Presense of physical \"Check Service\" button",
                     "byte": 0,
                     "mask": "00010000",
                     "form_type": "checkbox",
@@ -2357,7 +2402,7 @@
                 {
                     "extra_name": "CPUSH_DOMELIGHT",
                     "name_original": "DRB",
-                    "name": "CPUSH DOMELIGHT",
+                    "name": "Presense of physical \"DOMELIGHT\" button",
                     "byte": 0,
                     "mask": "00000100",
                     "form_type": "checkbox",
@@ -3284,7 +3329,7 @@
                     "extra_name": "NOM_ITEM6_FAMILLE_1",
                     "name_original": "DZ5",
                     "name": "Vehicule menu 1 Item 6",
-                    "byte": 7,
+                    "byte": 9,
                     "mask": "11111111",
                     "form_type": "combobox",
                     "params": [
@@ -9270,7 +9315,7 @@
                 {
                     "extra_name": "NV_PUSH_LED_1",
                     "name_original": "EO9",
-                    "name": "Display Touch button \"Night Vision\"",
+                    "name": "Driving Functions: display touch button \"Night Vision\"",
                     "zoneLength": 7,
                     "byte": 6,
                     "mask": "00000001",
@@ -9578,23 +9623,6 @@
             "type": "string_ascii",
             "form_type": "string"
         },
-        "F18C": {
-            "name": "Telecoding_Serial",
-            "tab": "telemat",
-            "type": "raw",
-            "form_type": "multi",
-            "params": [
-                {
-                    "extra_name": "SN",
-                    "name_original": "SN",
-                    "name": "ignore",
-                    "byte": 0,
-                    "mask": "11111111",
-                    "type": "raw",
-                    "form_type": "string"
-                }
-            ]
-        },
         "210B": {
             "name": "Telecoding_Fct_CHECK",
             "tab": "telemat",
@@ -9604,7 +9632,7 @@
                 {
                     "extra_name": "CHECK_PUSH",
                     "name_original": "ERG",
-                    "name": "Display Touch button \"Check\"",
+                    "name": "Driving Functions: display touch button \"Vehicle check service\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -9621,7 +9649,7 @@
                 {
                     "extra_name": "CDC",
                     "name_original": "ACS",
-                    "name": "CD Charger presence",
+                    "name": "CD Changer presence",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -9638,7 +9666,7 @@
                 {
                     "extra_name": "ATT_DG_CFG_CITYPARK",
                     "name_original": "D7L",
-                    "name": "Semi-automatic parking system presence",
+                    "name": "Park assist",
                     "byte": 0,
                     "mask": "01100000",
                     "form_type": "combobox",
@@ -9660,7 +9688,7 @@
                 {
                     "extra_name": "ATT_DG_CITYPARK_PUSH",
                     "name_original": "D8Q",
-                    "name": "Display Touch button \"Semi-automatic parking system\"",
+                    "name": "Driving Functions: display touch button \"Park assist\"",
                     "byte": 0,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -9669,7 +9697,7 @@
                 {
                     "extra_name": "DG_CPAS_PUSH_POS",
                     "name_original": "DMH",
-                    "name": "Touch button Position \"Semi-automatic parking system\"",
+                    "name": "Touch button Position \"Park Assist\"",
                     "byte": 0,
                     "mask": "00011111",
                     "type": "raw",
@@ -9681,6 +9709,15 @@
                     "name": "Obstacle detection",
                     "byte": 1,
                     "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DG_CPAS_PUSH_PANEL",
+                    "name_original": "DMS",
+                    "name": "Physical button for \"Park assist\"",
+                    "byte": 1,
+                    "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -9921,11 +9958,11 @@
                         },
                         {
                             "mask": "00001000",
-                            "name": "Physical button"
+                            "name": "Touch button"
                         },
                         {
                             "mask": "00010000",
-                            "name": "Touch Button"
+                            "name": "Touch button under \"Options\" menu"
                         }
                     ]
                 }
@@ -9938,9 +9975,18 @@
             "form_type": "multi",
             "params": [
                 {
+                    "extra_name": "INIT_DSGI_001",
+                    "name_original": "DRG",
+                    "name": "Driving Functions: display tyres under-inflation initialisation button",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
                     "extra_name": "DG_DGSI_PUSH_POS",
                     "name_original": "DMI",
-                    "name": "Under-inflation detection Position",
+                    "name": "Under-inflation initialisation button Position",
                     "byte": 0,
                     "mask": "00111110",
                     "type": "raw",
@@ -9949,18 +9995,9 @@
                 {
                     "extra_name": "DG_DGSI_PUSH_PANEL",
                     "name_original": "DMT",
-                    "name": "Physical Button for Under-inflation detection",
+                    "name": "Physical Button for Under-inflation initialisation",
                     "byte": 0,
                     "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "INIT_DSGI_001",
-                    "name_original": "DRG",
-                    "name": "Under-inflation detection reset button",
-                    "byte": 0,
-                    "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -10009,7 +10046,7 @@
                 {
                     "extra_name": "ATT_DG_STT_PUSH",
                     "name_original": "D8T",
-                    "name": "Display Touch button \"Stop and Start\"",
+                    "name": "Driving functions: display touch button \"Stop and Start\"",
                     "byte": 0,
                     "mask": "01000000",
                     "form_type": "checkbox",
@@ -10041,6 +10078,60 @@
             "type": "raw",
             "form_type": "multi",
             "params": [
+                {
+                    "extra_name": "XVV_DMD",
+                    "name_original": "DTG",
+                    "name": "Display of the vehicle cruise control and speed limiter instructions reminder",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "RLVV_MEMORIZATION",
+                    "name_original": "DSW",
+                    "name": "Driving functions: display touch button \"Memorized Speeds\"",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "RLVV_SELECTION",
+                    "name_original": "DSX",
+                    "name": "Display Memorized Speeds menu after MEM button is pressed",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CONF_RVVI",
+                    "name_original": "DSV",
+                    "name": "Adaptive cruise control",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "XVV_STOPADJUST",
+                    "name_original": "E03",
+                    "name": "Speed Adjustment of the cruise control and speed limiter",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "RVV_RVVI_PUSH_LED",
+                    "name_original": "E09",
+                    "name": "Driving Functions: display touch button \"Adaptive Cruise Control\"",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
                 {
                     "extra_name": "XVV_MAX",
                     "name_original": "DRK",
@@ -10094,60 +10185,6 @@
                     "mask": "11111111",
                     "type": "raw",
                     "form_type": "string"
-                },
-                {
-                    "extra_name": "CONF_RVVI",
-                    "name_original": "DSV",
-                    "name": "Adaptive cruise control",
-                    "byte": 0,
-                    "mask": "00010000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "RLVV_MEMORIZATION",
-                    "name_original": "DSW",
-                    "name": "Memorized speeds",
-                    "byte": 0,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "RLVV_SELECTION",
-                    "name_original": "DSX",
-                    "name": "Selected speeds",
-                    "byte": 0,
-                    "mask": "00100000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "XVV_DMD",
-                    "name_original": "DTG",
-                    "name": "Display of the vehicle cruise control and speed limiter instructions reminder",
-                    "byte": 0,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "XVV_STOPADJUST",
-                    "name_original": "E03",
-                    "name": "Speed Adjustment of the cruise control and speed limiter",
-                    "byte": 0,
-                    "mask": "00001000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "RVV_RVVI_PUSH_LED",
-                    "name_original": "E09",
-                    "name": "Display Touch button \"Adaptive Cruise control\"",
-                    "byte": 0,
-                    "mask": "00000100",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
                 },
                 {
                     "extra_name": "RVV_RVVI_PUSH_LED_PA",
@@ -10271,11 +10308,11 @@
             "form_type": "multi",
             "params": [
                 {
-                    "extra_name": "ASR_PUSH_LED_PANEL",
-                    "name_original": "E7X",
-                    "name": "Physical Button \"Traction Control\"",
+                    "extra_name": "ASR_PUSH_LED",
+                    "name_original": "E7Z",
+                    "name": "Driving Functions: display touch button \"Traction Control\"",
                     "byte": 0,
-                    "mask": "01000000",
+                    "mask": "00000001",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 },
@@ -10289,11 +10326,20 @@
                     "form_type": "string"
                 },
                 {
-                    "extra_name": "ASR_PUSH_LED",
-                    "name_original": "E7Z",
-                    "name": "Display Touch button \"Traction Control\"",
+                    "extra_name": "ASR_PUSH_LED_PANEL",
+                    "name_original": "E7X",
+                    "name": "Physical Button \"Traction Control\"",
                     "byte": 0,
-                    "mask": "00000001",
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DAT_DG_DRIVE_ASRPLUS",
+                    "name_original": "DNJ",
+                    "name": "Physical Button \"Traction Control\" (ASR+)",
+                    "byte": 0,
+                    "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
                 }
@@ -10705,6 +10751,947 @@
             "type": "string_ascii",
             "form_type": "string",
             "name": "VIN"
+        },
+        "0100": {
+            "id": "0100",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AAS"
+        },
+        "0103": {
+            "id": "0103",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AUDIO"
+        },
+        "0104": {
+            "id": "0104",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AVP"
+        },
+        "0105": {
+            "id": "0105",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AVR"
+        },
+        "0107": {
+            "id": "0107",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_BTEL"
+        },
+        "010A": {
+            "id": "010A",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_CITYPARK"
+        },
+        "010C": {
+            "id": "010C",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ENTREE_VIDEO"
+        },
+        "010D": {
+            "id": "010D",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_FAN"
+        },
+        "010E": {
+            "id": "010E",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_FMUX"
+        },
+        "010F": {
+            "id": "010F",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_HY"
+        },
+        "0110": {
+            "id": "0110",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_INTERNET"
+        },
+        "0112": {
+            "id": "0112",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_NAV"
+        },
+        "0115": {
+            "id": "0115",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_STT"
+        },
+        "0116": {
+            "id": "010C",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_XVV"
+        },
+        "0117": {
+            "id": "0117",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_LUM"
+        },
+        "0118": {
+            "id": "0118",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_OBC"
+        },
+        "0119": {
+            "id": "0119",
+            "name": "List of available languages",
+            "tab": "hmi",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "name_original": "Lang 03_01",
+                    "name": "Vietnamese",
+                    "byte": 3,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_02",
+                    "name": "Ukrainian",
+                    "byte": 3,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_04",
+                    "name": "Turkish",
+                    "byte": 3,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_08",
+                    "name": "Traditional Chinese",
+                    "byte": 3,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_10",
+                    "name": "Swedish",
+                    "byte": 3,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_20",
+                    "name": "Spanish",
+                    "byte": 3,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_40",
+                    "name": "Simplified Chinese",
+                    "byte": 3,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 03_80",
+                    "name": "Serbian",
+                    "byte": 3,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_01",
+                    "name": "Russian",
+                    "byte": 2,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_02",
+                    "name": "Romanian",
+                    "byte": 2,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_04",
+                    "name": "Portuguese",
+                    "byte": 2,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_08",
+                    "name": "Polish",
+                    "byte": 2,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_10",
+                    "name": "Norwegian",
+                    "byte": 2,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_20",
+                    "name": "Korean",
+                    "byte": 2,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_40",
+                    "name": "Japanese",
+                    "byte": 2,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 02_80",
+                    "name": "Italian",
+                    "byte": 2,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_01",
+                    "name": "Hungarian",
+                    "byte": 1,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_02",
+                    "name": "Hebrew",
+                    "byte": 1,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_04",
+                    "name": "Greek",
+                    "byte": 1,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_08",
+                    "name": "German",
+                    "byte": 1,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_10",
+                    "name": "French",
+                    "byte": 1,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_20",
+                    "name": "Finnish",
+                    "byte": 1,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_40",
+                    "name": "Farsi",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 01_80",
+                    "name": "Estonian",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_01",
+                    "name": "English",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_02",
+                    "name": "Dutch",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_04",
+                    "name": "Danish",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_08",
+                    "name": "Czech",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_10",
+                    "name": "Croatian",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_20",
+                    "name": "Bulgarian",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_40",
+                    "name": "Brazilian Portuguese",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name_original": "Lang 00_80",
+                    "name": "Arabic",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
+        },
+        "011A": {
+            "id": "011A",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_WIFI"
+        },
+        "011B": {
+            "id": "011B",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_VIDEOTIMING"
+        },
+        "011C": {
+            "id": "011C",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_CLIM"
+        },
+        "011D": {
+            "id": "011D",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_HDC"
+        },
+        "011E": {
+            "id": "011E",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_SVR"
+        },
+        "011F": {
+            "id": "011F",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_LVDS"
+        },
+        "0120": {
+            "id": "0120",
+            "name": "Rear Camera Parking Lines Colour",
+            "tab": "visiopark",
+            "type": "raw",
+            "form_type": "multi",
+            "Colour_1": {
+                "name": "Last Parking Line",
+                "byte": 63,
+                "type": "hex",
+                "mask": "111111111111111111111111",
+                "form_type": "combobox",
+                "params": [
+                    {
+                        "name": "Red",
+                        "value": "FF0000"
+                    },
+                    {
+                        "name": "Communist Red",
+                        "value": "CC0000"
+                    },
+                    {
+                        "name": "Lollipop Red",
+                        "value": "D41945"
+                    },
+                    {
+                        "name": "Deep Pink",
+                        "value": "FF2099"
+                    },
+                    {
+                        "name": "Major Magenta",
+                        "value": "ED4BB2"
+                    },
+                    {
+                        "name": "Blood Orange",
+                        "value": "D40719"
+                    },
+                    {
+                        "name": "Jack-O Orange",
+                        "value": "F39000"
+                    },
+                    {
+                        "name": "Blue",
+                        "value": "0000FF"
+                    },
+                    {
+                        "name": "Blue Mana",
+                        "value": "6FC5F6"
+                    },
+                    {
+                        "name": "Hawaii Morning Blue",
+                        "value": "00B4FF"
+                    },
+                    {
+                        "name": "Cerulean",
+                        "value": "4BB2ED"
+                    },
+                    {
+                        "name": "Blasphemous Blue",
+                        "value": "454BB2"
+                    },
+                    {
+                        "name": "Cyan",
+                        "value": "00FFFF"
+                    },
+                    {
+                        "name": "Navy Blue",
+                        "value": "000080"
+                    },
+                    {
+                        "name": "Cosmic Heart Purple",
+                        "value": "980EED"
+                    },
+                    {
+                        "name": "Dragon's Gold Yellow",
+                        "value": "E3E846"
+                    },
+                    {
+                        "name": "Fuchsia",
+                        "value": "ED0ECF"
+                    },
+                    {
+                        "name": "Alien Abduction Green",
+                        "value": "0EED16"
+                    }
+                ]
+            },
+            "Colour_2": {
+                "name": "Second Parking Line",
+                "byte": 66,
+                "type": "hex",
+                "mask": "111111111111111111111111",
+                "form_type": "combobox",
+                "params": [
+                    {
+                        "name": "Red",
+                        "value": "FF0000"
+                    },
+                    {
+                        "name": "Communist Red",
+                        "value": "CC0000"
+                    },
+                    {
+                        "name": "Lollipop Red",
+                        "value": "D41945"
+                    },
+                    {
+                        "name": "Deep Pink",
+                        "value": "FF2099"
+                    },
+                    {
+                        "name": "Major Magenta",
+                        "value": "ED4BB2"
+                    },
+                    {
+                        "name": "Blood Orange",
+                        "value": "D40719"
+                    },
+                    {
+                        "name": "Jack-O Orange",
+                        "value": "F39000"
+                    },
+                    {
+                        "name": "Blue",
+                        "value": "0000FF"
+                    },
+                    {
+                        "name": "Blue Mana",
+                        "value": "6FC5F6"
+                    },
+                    {
+                        "name": "Hawaii Morning Blue",
+                        "value": "00B4FF"
+                    },
+                    {
+                        "name": "Cerulean",
+                        "value": "4BB2ED"
+                    },
+                    {
+                        "name": "Blasphemous Blue",
+                        "value": "454BB2"
+                    },
+                    {
+                        "name": "Cyan",
+                        "value": "00FFFF"
+                    },
+                    {
+                        "name": "Navy Blue",
+                        "value": "000080"
+                    },
+                    {
+                        "name": "Cosmic Heart Purple",
+                        "value": "980EED"
+                    },
+                    {
+                        "name": "Dragon's Gold Yellow",
+                        "value": "E3E846"
+                    },
+                    {
+                        "name": "Fuchsia",
+                        "value": "ED0ECF"
+                    },
+                    {
+                        "name": "Alien Abduction Green",
+                        "value": "0EED16"
+                    }
+                ]
+            },
+            "Colour_3": {
+                "name": "First Parking Line",
+                "byte": 69,
+                "type": "hex",
+                "mask": "111111111111111111111111",
+                "form_type": "combobox",
+                "params": [
+                    {
+                        "name": "Red",
+                        "value": "FF0000"
+                    },
+                    {
+                        "name": "Communist Red",
+                        "value": "CC0000"
+                    },
+                    {
+                        "name": "Lollipop Red",
+                        "value": "D41945"
+                    },
+                    {
+                        "name": "Deep Pink",
+                        "value": "FF2099"
+                    },
+                    {
+                        "name": "Major Magenta",
+                        "value": "ED4BB2"
+                    },
+                    {
+                        "name": "Blood Orange",
+                        "value": "D40719"
+                    },
+                    {
+                        "name": "Jack-O Orange",
+                        "value": "F39000"
+                    },
+                    {
+                        "name": "Blue",
+                        "value": "0000FF"
+                    },
+                    {
+                        "name": "Blue Mana",
+                        "value": "6FC5F6"
+                    },
+                    {
+                        "name": "Hawaii Morning Blue",
+                        "value": "00B4FF"
+                    },
+                    {
+                        "name": "Cerulean",
+                        "value": "4BB2ED"
+                    },
+                    {
+                        "name": "Blasphemous Blue",
+                        "value": "454BB2"
+                    },
+                    {
+                        "name": "Cyan",
+                        "value": "00FFFF"
+                    },
+                    {
+                        "name": "Navy Blue",
+                        "value": "000080"
+                    },
+                    {
+                        "name": "Cosmic Heart Purple",
+                        "value": "980EED"
+                    },
+                    {
+                        "name": "Dragon's Gold Yellow",
+                        "value": "E3E846"
+                    },
+                    {
+                        "name": "Fuchsia",
+                        "value": "ED0ECF"
+                    },
+                    {
+                        "name": "Alien Abduction Green",
+                        "value": "0EED16"
+                    }
+                ]
+            },
+            "Colour_4": {
+                "name": "Side Parking Lines",
+                "byte": 72,
+                "type": "hex",
+                "mask": "111111111111111111111111",
+                "form_type": "combobox",
+                "params": [
+                    {
+                        "name": "Red",
+                        "value": "FF0000"
+                    },
+                    {
+                        "name": "Communist Red",
+                        "value": "CC0000"
+                    },
+                    {
+                        "name": "Lollipop Red",
+                        "value": "D41945"
+                    },
+                    {
+                        "name": "Deep Pink",
+                        "value": "FF2099"
+                    },
+                    {
+                        "name": "Major Magenta",
+                        "value": "ED4BB2"
+                    },
+                    {
+                        "name": "Blood Orange",
+                        "value": "D40719"
+                    },
+                    {
+                        "name": "Jack-O Orange",
+                        "value": "F39000"
+                    },
+                    {
+                        "name": "Blue",
+                        "value": "0000FF"
+                    },
+                    {
+                        "name": "Blue Mana",
+                        "value": "6FC5F6"
+                    },
+                    {
+                        "name": "Hawaii Morning Blue",
+                        "value": "00B4FF"
+                    },
+                    {
+                        "name": "Cerulean",
+                        "value": "4BB2ED"
+                    },
+                    {
+                        "name": "Blasphemous Blue",
+                        "value": "454BB2"
+                    },
+                    {
+                        "name": "Cyan",
+                        "value": "00FFFF"
+                    },
+                    {
+                        "name": "Navy Blue",
+                        "value": "000080"
+                    },
+                    {
+                        "name": "Cosmic Heart Purple",
+                        "value": "980EED"
+                    },
+                    {
+                        "name": "Dragon's Gold Yellow",
+                        "value": "E3E846"
+                    },
+                    {
+                        "name": "Fuchsia",
+                        "value": "ED0ECF"
+                    },
+                    {
+                        "name": "Alien Abduction Green",
+                        "value": "0EED16"
+                    }
+                ]
+            }
+        },
+        "0121": {
+            "id": "0121",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ION"
+        },
+        "0122": {
+            "id": "0122",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_PPS"
+        },
+        "0123": {
+            "id": "0123",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_VIDEOTIMING_2"
+        },
+        "0124": {
+            "id": "0124",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_LVDS_EXPORT"
+        },
+        "0125": {
+            "id": "0125",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_HW_VERSION"
+        },
+        "0126": {
+            "id": "0126",
+            "name": "BEIDOU function",
+            "tab": "btel",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "name_original": "Beidou",
+                    "name": "Baidu CarLife (replaces MirrorLink)",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
+        },
+        "0127": {
+            "id": "0127",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_DGT"
+        },
+        "0128": {
+            "id": "0128",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_MASS"
+        },
+        "0129": {
+            "id": "0129",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_PPS2"
+        },
+        "012A": {
+            "id": "012A",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_VP1_HW"
+        },
+        "012B": {
+            "id": "012B",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_USB"
+        },
+        "012C": {
+            "id": "012C",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_WAVE4 (Hybrid)"
+        },
+        "FFF1": {
+            "id": "FFF1",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_COLOR_CORRECTION"
+        },
+        "FFF2": {
+            "id": "FFF2",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ECNR"
+        },
+        "FFF3": {
+            "id": "FFF3",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_SOUND_TUNING_DATA"
+        },
+        "FFF4": {
+            "id": "FFF4",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_ENGINE_SOUND_DATA"
+        },
+        "FFF5": {
+            "id": "FFF5",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AUDIO_FUNCTIONAL_EQUALIZER"
+        },
+        "FFF6": {
+            "id": "FFF6",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_SOUND_EPICS_DATA"
+        },
+        "00DE": {
+            "id": "00DE",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_PUSH_LUM"
+        },
+        "00DD": {
+            "id": "00DD",
+            "tab": "cal",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string",
+            "name": "Calibration_Fct_AEE_SEL"
         }
     }
 }

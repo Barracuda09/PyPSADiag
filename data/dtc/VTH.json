@@ -1,0 +1,74 @@
+{
+    "_comment": {
+        "name": "VTH DTC Codes grabbed from Diagbox FDB. ECUTYPE union: VTH_UDS, VTH_UDS_2. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration downloading fault"
+    },
+    "B1002": {
+        "name": "Software reset fault"
+    },
+    "B1003": {
+        "name": "Secure configuration fault"
+    },
+    "B1004": {
+        "name": "Internal control unit fault"
+    },
+    "B1280": {
+        "name": "Sunlight sensor fault"
+    },
+    "B1281": {
+        "name": "Motorisation system fault"
+    },
+    "B1282": {
+        "name": "Position sensor faulty"
+    },
+    "B1572": {
+        "name": "Backlighting of the head-up display unit screen"
+    },
+    "B1575": {
+        "name": "Unexpected restart of the head-up display unit"
+    },
+    "B1576": {
+        "name": "Secure configuration of the head-up display unit"
+    },
+    "B2E07": {
+        "name": "Down adjustment button jammed fault"
+    },
+    "B2E08": {
+        "name": "Up adjustment button jammed fault"
+    },
+    "B2E09": {
+        "name": "ON/OFF button jammed fault"
+    },
+    "B2E0A": {
+        "name": "Rheostat plus button jammed fault"
+    },
+    "B2E0B": {
+        "name": "Rheostat minus button jammed fault"
+    },
+    "B2E0D": {
+        "name": "Navigator fault"
+    },
+    "U1802": {
+        "name": "Vehicle speed information fault"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Fault: no communication with the BSI"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F89": {
+        "name": "Calibration fault"
+    },
+    "U1FA0": {
+        "name": "LVDS response time incorrect"
+    }
+}

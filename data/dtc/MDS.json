@@ -1,0 +1,383 @@
+{
+    "_comment": {
+        "name": "MDS DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BSRF_2010, BTA4S_2, BTA_CN, BTA_D, RTBM, RTBM_2010. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration download"
+    },
+    "B1002": {
+        "name": "Unexpected reset of the ECU"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1004": {
+        "name": "ECU internal fault"
+    },
+    "B100C": {
+        "name": "ECU supply"
+    },
+    "B1202": {
+        "name": "Incorrect updating of the independent telematic unit"
+    },
+    "B12B1": {
+        "name": "Unwanted zero reset of the independent telematic unit"
+    },
+    "B1320": {
+        "name": "Internal speaker"
+    },
+    "B1406": {
+        "name": "Accelerometer"
+    },
+    "B142F": {
+        "name": "Self-test of the accelerometer"
+    },
+    "B146E": {
+        "name": "Date, time and geolocation information not coherent"
+    },
+    "B146F": {
+        "name": "Geolocation position and navigation via a (GNSS) satellite system"
+    },
+    "B1470": {
+        "name": "Geolocation and navigation via a (GNSS) satellite system"
+    },
+    "B1471": {
+        "name": "Date, time and geolocation information missing"
+    },
+    "B1472": {
+        "name": "Incorrect data from the cybersecurity function"
+    },
+    "B1473": {
+        "name": "Unavailability of recording of the cybersecurity function"
+    },
+    "B1474": {
+        "name": "Malfunction of the speed limit indication function"
+    },
+    "B1505": {
+        "name": "Microphone  input"
+    },
+    "B1507": {
+        "name": "Aerial input 1"
+    },
+    "B1508": {
+        "name": "Aerial input 2"
+    },
+    "B1513": {
+        "name": "Internal audio amplifier"
+    },
+    "B1516": {
+        "name": "Error in communication between the telematic unit and the independent telematic unit"
+    },
+    "B152D": {
+        "name": "Emergency call button"
+    },
+    "B152E": {
+        "name": "Assistance call button"
+    },
+    "B152F": {
+        "name": "Electrical problem on the wired connection of the airbags ECU"
+    },
+    "B1537": {
+        "name": "Geolocation and navigation via a (GNSS) satellite system"
+    },
+    "B1539": {
+        "name": "Radio module"
+    },
+    "B153C": {
+        "name": "Radio frequency connectivity box (BSRF_2010) fan"
+    },
+    "B1541": {
+        "name": "Service battery"
+    },
+    "B1542": {
+        "name": "Telecommunication aerial"
+    },
+    "B1543": {
+        "name": "Module GPS"
+    },
+    "B1545": {
+        "name": "Telecommunication aerial"
+    },
+    "B1546": {
+        "name": "GPS aerial"
+    },
+    "B154D": {
+        "name": "Wi-Fi module"
+    },
+    "B155B": {
+        "name": "Secure private key damaged"
+    },
+    "B15A5": {
+        "name": "Emergency call system green LED"
+    },
+    "B15A6": {
+        "name": "Specification of the vehicle architecture"
+    },
+    "B15A7": {
+        "name": "Emergency call system orange LED"
+    },
+    "B15AA": {
+        "name": "External speaker"
+    },
+    "B15AB": {
+        "name": "Malfunction LED"
+    },
+    "B15AC": {
+        "name": "Emergency call status LED"
+    },
+    "B15B1": {
+        "name": "Emergency call button"
+    },
+    "B15B2": {
+        "name": "Assistance call button"
+    },
+    "B15B3": {
+        "name": "Audio amplifier"
+    },
+    "B15B4": {
+        "name": "Configuration"
+    },
+    "B15C0": {
+        "name": "ECU internal temperature sensor"
+    },
+    "B15C1": {
+        "name": "Amplifier of the radio frequency supervision unit (BSRF_2010) radio aerial"
+    },
+    "B15C2": {
+        "name": "Radio frequency supervision unit (BSRF_2010) (remote assisted programming (RAP))"
+    },
+    "B15C4": {
+        "name": "GSM aerial N° 1"
+    },
+    "B15C5": {
+        "name": "Pairing between the built-in systems interface (BSI1) and the radio frequency connectivity box (BSRF_2010)"
+    },
+    "B15E2": {
+        "name": "GSM module"
+    },
+    "B15E3": {
+        "name": "SIM card fault"
+    },
+    "B15E4": {
+        "name": "OTA download"
+    },
+    "B15E5": {
+        "name": "Incorrect configuration of the radio frequency supervision unit  software"
+    },
+    "B15E6": {
+        "name": "Pairing between the built-in systems interface (BSI1) and the radio frequency connectivity box (BSRF_2010)"
+    },
+    "B15EC": {
+        "name": "SIM card update"
+    },
+    "B15ED": {
+        "name": "Mobile network configuration file missing"
+    },
+    "B15EE": {
+        "name": "Main microphone supply from the telematic unit"
+    },
+    "B15EF": {
+        "name": "Registering the SIM card on the telephone network"
+    },
+    "B15F0": {
+        "name": "Radio frequency connectivity box (BSRF_2010) back-up battery (charge threshold between low and very low level)"
+    },
+    "B15F1": {
+        "name": "Radio frequency connectivity box  back-up battery"
+    },
+    "B15F2": {
+        "name": "Radio frequency connectivity box  back-up battery (charge threshold very low)"
+    },
+    "B1649": {
+        "name": "Radio frequency connectivity box  back-up battery charge"
+    },
+    "B164A": {
+        "name": "Compatibility problem between the configuration of the radio frequency connectivity box (BSRF_2010) and the vehicle's electrical/electronic architecture"
+    },
+    "B164E": {
+        "name": "Aerial input 1"
+    },
+    "B164F": {
+        "name": "Aerial input 2"
+    },
+    "B1650": {
+        "name": "Radio frequency connectivity box  back-up battery charge"
+    },
+    "B1651": {
+        "name": "Radio frequency connectivity box  back-up battery (charge threshold insufficient)"
+    },
+    "B1652": {
+        "name": "Charging time of the radio frequency connectivity box (BSRF_2010) back-up battery too slow"
+    },
+    "B1653": {
+        "name": "Radio frequency connectivity box  back-up battery (charge threshold too high)"
+    },
+    "B1654": {
+        "name": "Temperature sensor of the radio frequency connectivity box (BSRF_2010) back-up battery"
+    },
+    "B1655": {
+        "name": "Radio frequency connectivity box (BSRF_2010) back-up battery not recognised"
+    },
+    "B1667": {
+        "name": "Geolocation and navigation via a (GNSS) satellite system"
+    },
+    "B1668": {
+        "name": "GSM aerial N° 2"
+    },
+    "B1673": {
+        "name": "VIN incorrect"
+    },
+    "B16E1": {
+        "name": "EEPROM memory"
+    },
+    "B16E8": {
+        "name": "OTA update failure"
+    },
+    "B16E9": {
+        "name": "GSM external aerial"
+    },
+    "B16EA": {
+        "name": "Independent telematic unit (BTA)"
+    },
+    "B16EE": {
+        "name": "RAM"
+    },
+    "B16F1": {
+        "name": "OTA (Over the Air) update failure"
+    },
+    "B16F4": {
+        "name": "OTA download"
+    },
+    "B16F5": {
+        "name": "OTA download"
+    },
+    "B16F6": {
+        "name": "Authorisation from the built-in systems interface (VSM1) to start the OTA download"
+    },
+    "B16F7": {
+        "name": "OTA download"
+    },
+    "B16F8": {
+        "name": "OTA download"
+    },
+    "B16F9": {
+        "name": "Ethernet connection with the IVI audio-navigation system ECU"
+    },
+    "B16FB": {
+        "name": "OTA download  ( Over the Air )"
+    },
+    "B16FC": {
+        "name": "OTA download"
+    },
+    "B19D9": {
+        "name": "Audio configuration of the independent telematic unit"
+    },
+    "B19DA": {
+        "name": "Audio system configuration"
+    },
+    "B1F6A": {
+        "name": "Saturation of the non-volatile memory of the radio frequency connectivity box (BSRF_2010) used for the OTA (Over The Air) update"
+    },
+    "B2E0E": {
+        "name": "VIN incorrect"
+    },
+    "B2E3D": {
+        "name": "Loss of the ''INFO_CRASH'' datastream from the airbags ECU"
+    },
+    "U0121": {
+        "name": "Communication with the ABS ECU or the ESP ECU"
+    },
+    "U1020": {
+        "name": "ECU not communicating on the INFO DIV CAN (Entertainment Information CAN)"
+    },
+    "U1109": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U1113": {
+        "name": "Communication with the ABS ECU or the ESP ECU"
+    },
+    "U1116": {
+        "name": "Communication with the BSI"
+    },
+    "U11DF": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U1213": {
+        "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU"
+    },
+    "U1471": {
+        "name": "No communication from the IVI audio-navigation system ECU on the Ethernet network 1"
+    },
+    "U1474": {
+        "name": "No communication from the IVI audio-navigation system ECU on the Ethernet network 1"
+    },
+    "U1477": {
+        "name": "No communication from the IVI audio-navigation system ECU on the Ethernet network 1"
+    },
+    "U1610": {
+        "name": "Communication with the built-in systems interface on the high speed CAN 3"
+    },
+    "U180B": {
+        "name": "Impact information"
+    },
+    "U1815": {
+        "name": "Loss of the ''INFO_CRASH'' datastream from the airbags ECU"
+    },
+    "U1817": {
+        "name": "ESP ECU signal fault"
+    },
+    "U18A0": {
+        "name": "USB speed reduced in Full Speed mode"
+    },
+    "U1934": {
+        "name": "CAN"
+    },
+    "U1946": {
+        "name": "No communication with Built-in Systems Interface ECU"
+    },
+    "U1947": {
+        "name": "Communication with the anti-lock braking system ECU (ABS) or the electronic stability program (ESP) on the CAN network"
+    },
+    "U1EF5": {
+        "name": "Software certificate error"
+    },
+    "U1EF6": {
+        "name": "INFO DIV CAN communication"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F15": {
+        "name": "Independent telematic unit not communicating"
+    },
+    "U1F3E": {
+        "name": "Absence of communication with the telematic unit"
+    },
+    "U1FB7": {
+        "name": "ECU not communicating"
+    },
+    "U1FB8": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1FB9": {
+        "name": "CAN at Bus off"
+    },
+    "U1FCD": {
+        "name": "High speed CAN 3"
+    },
+    "U1FCE": {
+        "name": "Communication with the built-in systems interface (‎BSI1 or ‎VSM1) on the high speed CAN ‎3 or ‎4"
+    },
+    "U1FCF": {
+        "name": "Radio frequency connectivity box (BSRF_2010) not communicating on the high speed CAN 3"
+    },
+    "U2132": {
+        "name": "Airbags and pretensioners ECU signal"
+    },
+    "U2246": {
+        "name": "Diagnostic communications"
+    }
+}

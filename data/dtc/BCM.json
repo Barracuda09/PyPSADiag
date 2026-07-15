@@ -1,0 +1,1964 @@
+{
+    "_comment": {
+        "name": "BCM DTC Codes grabbed from Diagbox FDB. ECUTYPE union: BCM, BCM_F, BCM_KP1, BCM_SEA, BCM_VERINS_MOTORISES, IBCM_DE_KP1, IBCM_GE_KP1, VERINS_MOTORISES. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration download"
+    },
+    "B1001": {
+        "name": "Red indicator lamp on the engine starting switch"
+    },
+    "B1002": {
+        "name": "Hands-free identifier windows lowering button"
+    },
+    "B1003": {
+        "name": "High frequency receiver fault"
+    },
+    "B1004": {
+        "name": "ECU internal fault"
+    },
+    "B1005": {
+        "name": "Fault: illumination of the rear LH fog lamp"
+    },
+    "B1006": {
+        "name": "Screen wipe speed relay"
+    },
+    "B1007": {
+        "name": "Main beam relay"
+    },
+    "B1008": {
+        "name": "Hands-free identifier window raising button"
+    },
+    "B1009": {
+        "name": "Battery voltage fault"
+    },
+    "B100B": {
+        "name": "Horn relay"
+    },
+    "B100C": {
+        "name": "Motorised boot unit supply fault"
+    },
+    "B100D": {
+        "name": "Engine starting switch relay"
+    },
+    "B1010": {
+        "name": "Fault: brake pedal switches"
+    },
+    "B1011": {
+        "name": "Fault: illumination of the rear LH brake lamp"
+    },
+    "B1012": {
+        "name": "Fault: front interior lamp illumination"
+    },
+    "B1013": {
+        "name": "Power relay"
+    },
+    "B1014": {
+        "name": "Left-hand stoplamp lighting fault"
+    },
+    "B1015": {
+        "name": "Right-hand stoplamp lighting fault"
+    },
+    "B1016": {
+        "name": "Sidelamps relay"
+    },
+    "B1017": {
+        "name": "Fault: sliding side door locking relay control"
+    },
+    "B1018": {
+        "name": "Fault: windscreen wiper relay - slow speed control"
+    },
+    "B1019": {
+        "name": "Fault: front interior lamp illumination"
+    },
+    "B101A": {
+        "name": "Rear interior lamp lighting fault"
+    },
+    "B101E": {
+        "name": "Heated rear screen relay fault"
+    },
+    "B101F": {
+        "name": "Fault: headlamp washer relay control"
+    },
+    "B1020": {
+        "name": "Fault: windscreen wiper relay - slow speed control"
+    },
+    "B1021": {
+        "name": "Exterior mirror unfolding/folding motor"
+    },
+    "B1022": {
+        "name": "Left-hand side lights illumination fault"
+    },
+    "B1023": {
+        "name": "Left-hand daytime running lamp"
+    },
+    "B1024": {
+        "name": "Rear left fog lamp"
+    },
+    "B1025": {
+        "name": "Fault: main beam headlamps relay control"
+    },
+    "B1026": {
+        "name": "Fault: illumination of the third brake lamp"
+    },
+    "B1027": {
+        "name": "Starter relay"
+    },
+    "B1028": {
+        "name": "Rear right fog lamp"
+    },
+    "B1029": {
+        "name": "Exterior air temperature information fault"
+    },
+    "B102A": {
+        "name": "Green indicator lamp on the engine starting switch"
+    },
+    "B102D": {
+        "name": "Control of the rear foglamps"
+    },
+    "B102E": {
+        "name": "Bus Off"
+    },
+    "B1030": {
+        "name": "Front courtesy lamp lighting control"
+    },
+    "B1031": {
+        "name": "Reversing lamp"
+    },
+    "B1032": {
+        "name": "Stop lamps"
+    },
+    "B1033": {
+        "name": "Right direction indicator"
+    },
+    "B1034": {
+        "name": "Fault: vanity mirror illumination"
+    },
+    "B1035": {
+        "name": "Unlocking of the driver's door"
+    },
+    "B1036": {
+        "name": "Unlocking of the passenger's door"
+    },
+    "B1037": {
+        "name": "Door locking"
+    },
+    "B1038": {
+        "name": "Oil pump relay"
+    },
+    "B1039": {
+        "name": "Left hand direction indicator"
+    },
+    "B103A": {
+        "name": "Front left fog lamp"
+    },
+    "B103B": {
+        "name": "Left hand direction indicator"
+    },
+    "B103C": {
+        "name": "Left dipped headlamp"
+    },
+    "B103D": {
+        "name": "Interior courtesy lamp"
+    },
+    "B1040": {
+        "name": "Right dipped headlamp"
+    },
+    "B1041": {
+        "name": "Fault: driver's door status information (to the sequential manual gearbox ECU"
+    },
+    "B1042": {
+        "name": "Right-hand daytime running lamp"
+    },
+    "B1043": {
+        "name": "Front right fog lamp"
+    },
+    "B1044": {
+        "name": "Exit economy mode"
+    },
+    "B1045": {
+        "name": "Fault: lighting stalk at steering wheel"
+    },
+    "B1046": {
+        "name": "Fault: wiper stalk at steering wheel"
+    },
+    "B1047": {
+        "name": "LIN fault  :  Communication impossible"
+    },
+    "B1048": {
+        "name": "\"CITY\" power steering button fault"
+    },
+    "B1049": {
+        "name": "Fault: load space locking relay"
+    },
+    "B104A": {
+        "name": "Control of the heated windscreen"
+    },
+    "B104B": {
+        "name": "Front left parking lamp"
+    },
+    "B104C": {
+        "name": "Front right parking lamp"
+    },
+    "B104D": {
+        "name": "Battery voltage"
+    },
+    "B104E": {
+        "name": "Front right-hand daytime running lamp control"
+    },
+    "B104F": {
+        "name": "Rear parking lamps"
+    },
+    "B1050": {
+        "name": "Fault: windscreen wipers"
+    },
+    "B1051": {
+        "name": "Rear wiper fault"
+    },
+    "B1052": {
+        "name": "Fault: airbag ECU supply cut-off in the event of an impact function"
+    },
+    "B1053": {
+        "name": "Right low frequency aerial"
+    },
+    "B1054": {
+        "name": "Fault: starting impossible following activation of the supply cut-off in the event of an impact"
+    },
+    "B1055": {
+        "name": "Left low frequency aerial"
+    },
+    "B1056": {
+        "name": "Windscreen wash-wipe control fault"
+    },
+    "B1057": {
+        "name": "Fault: front RH electric window lower control"
+    },
+    "B1058": {
+        "name": "Direction indicator lamps one-touch control"
+    },
+    "B1059": {
+        "name": "Rear door opening indicator light fault"
+    },
+    "B105A": {
+        "name": "Indicator light control"
+    },
+    "B105B": {
+        "name": "Control of the doors unlocking relay"
+    },
+    "B105D": {
+        "name": "Door deadlocking control"
+    },
+    "B105E": {
+        "name": "Front right door opening button"
+    },
+    "B1060": {
+        "name": "Engine starting switch 1"
+    },
+    "B1061": {
+        "name": "Engine starting switch 2"
+    },
+    "B1062": {
+        "name": "Engine starting switches 1 and 2"
+    },
+    "B1063": {
+        "name": "Collision signal"
+    },
+    "B1064": {
+        "name": "Speed limiter/cruise control switch push button fault"
+    },
+    "B1065": {
+        "name": "Hazard lights switch"
+    },
+    "B1066": {
+        "name": "Front left door opening button"
+    },
+    "B1067": {
+        "name": "Horn control"
+    },
+    "B106B": {
+        "name": "Control of the rear foglamps"
+    },
+    "B106F": {
+        "name": "Windscreen wiper"
+    },
+    "B1070": {
+        "name": "Front left LED headlamp supply"
+    },
+    "B1071": {
+        "name": "Under-inflated front left-hand wheel"
+    },
+    "B1072": {
+        "name": "Under-inflated front right-hand wheel"
+    },
+    "B1073": {
+        "name": "Under-inflated rear left-hand wheel"
+    },
+    "B1074": {
+        "name": "Under-inflated rear right-hand wheel"
+    },
+    "B1075": {
+        "name": "Wheel pressure sensor identifier lost"
+    },
+    "B1076": {
+        "name": "Detection of identical wheel pressure sensor identifiers"
+    },
+    "B1077": {
+        "name": "Fuel filter heater"
+    },
+    "B1078": {
+        "name": "Front right-hand daytime running lamp information return"
+    },
+    "B1079": {
+        "name": "Front left-hand wheel pressure sensor"
+    },
+    "B107A": {
+        "name": "Front right-hand wheel pressure sensor"
+    },
+    "B107B": {
+        "name": "Rear left-hand wheel pressure sensor"
+    },
+    "B107C": {
+        "name": "Rear right-hand wheel pressure sensor"
+    },
+    "B107D": {
+        "name": "Front left-hand wheel pressure sensor"
+    },
+    "B107E": {
+        "name": "Front right-hand wheel pressure sensor"
+    },
+    "B107F": {
+        "name": "Rear left-hand wheel pressure sensor"
+    },
+    "B1080": {
+        "name": "Rear right-hand wheel pressure sensor"
+    },
+    "B1081": {
+        "name": "Front left-hand wheel pressure sensor"
+    },
+    "B1082": {
+        "name": "Front right-hand wheel pressure sensor"
+    },
+    "B1083": {
+        "name": "Rear left-hand wheel pressure sensor"
+    },
+    "B1084": {
+        "name": "Rear right-hand wheel pressure sensor"
+    },
+    "B1085": {
+        "name": "Stop and Start system indicator lamp fault"
+    },
+    "B1088": {
+        "name": "Engine management ECU authentication fault"
+    },
+    "B1090": {
+        "name": "Left-hand dipped headlamp lighting fault"
+    },
+    "B1091": {
+        "name": "Right-hand dipped headlamp lighting fault"
+    },
+    "B1092": {
+        "name": "Traction battery voltage minimum shedding fault"
+    },
+    "B10AA": {
+        "name": "Vehicle configuration (PROXI)"
+    },
+    "B1101": {
+        "name": "Ignition relay control"
+    },
+    "B1104": {
+        "name": "Ignition key in the START position"
+    },
+    "B1105": {
+        "name": "Ignition key"
+    },
+    "B1106": {
+        "name": "Status of the key"
+    },
+    "B1107": {
+        "name": "Rear left direction indicator control"
+    },
+    "B1108": {
+        "name": "Rear right direction indicator control"
+    },
+    "B110F": {
+        "name": "Front left-hand foglamp control"
+    },
+    "B1110": {
+        "name": "Front right-hand foglamp control"
+    },
+    "B1112": {
+        "name": "Control of the starter relay"
+    },
+    "B111A": {
+        "name": "Rear interior lamp lighting fault"
+    },
+    "B111E": {
+        "name": "Heated rear screen relay control fault"
+    },
+    "B112B": {
+        "name": "Control of the foglamps"
+    },
+    "B112C": {
+        "name": "Sidelights control circuit"
+    },
+    "B1137": {
+        "name": "Front right dipped headlamp control"
+    },
+    "B1138": {
+        "name": "Front left dipped headlamp control"
+    },
+    "B1139": {
+        "name": "Right driving light control"
+    },
+    "B113A": {
+        "name": "Front left main beam headlamp control"
+    },
+    "B113F": {
+        "name": "Front right fog lamp control"
+    },
+    "B1140": {
+        "name": "Front LH foglamp control"
+    },
+    "B114A": {
+        "name": "Front right sidelamp control"
+    },
+    "B1153": {
+        "name": "Windscreen wiper fixed stop information"
+    },
+    "B1155": {
+        "name": "Fast speed windscreen wiper control"
+    },
+    "B115B": {
+        "name": "Rear windscreen wiper fixed stop information"
+    },
+    "B115E": {
+        "name": "Rear screen wipe control"
+    },
+    "B1161": {
+        "name": "Hazard warning lamps switch"
+    },
+    "B1162": {
+        "name": "Boot lighting control circuit"
+    },
+    "B1164": {
+        "name": "Right brake light control"
+    },
+    "B1165": {
+        "name": "Left brake light control"
+    },
+    "B1166": {
+        "name": "Front right direction indicator control"
+    },
+    "B1167": {
+        "name": "Front light direction indicator control"
+    },
+    "B1168": {
+        "name": "Rear right direction indicator control"
+    },
+    "B1169": {
+        "name": "Rear left direction indicator control"
+    },
+    "B116E": {
+        "name": "Status of the Stop and Start switch"
+    },
+    "B1175": {
+        "name": "Additional brake light control"
+    },
+    "B117A": {
+        "name": "Right-hand daytime lamp control"
+    },
+    "B117B": {
+        "name": "Left-hand daytime lamp control"
+    },
+    "B1180": {
+        "name": "Road sign recognition"
+    },
+    "B1181": {
+        "name": "Dipped beam / main beam inverter control"
+    },
+    "B1185": {
+        "name": "Driving school module: Sticking of the horn button"
+    },
+    "B1186": {
+        "name": "Short-circuit to the battery positive"
+    },
+    "B1191": {
+        "name": "Fault: engine ECU faulty or incorrect configuring of the BSI for the Stop and Start function"
+    },
+    "B11A0": {
+        "name": "Front left day running lamp or day running lamps"
+    },
+    "B11A1": {
+        "name": "Front right-hand daytime running lamp"
+    },
+    "B11A2": {
+        "name": "Direction indicator repeaters lighting fault"
+    },
+    "B11A3": {
+        "name": "Fault: front LH electric window lower control"
+    },
+    "B11A4": {
+        "name": "Driver's front window raising control fault"
+    },
+    "B11A5": {
+        "name": "Fault: front RH electric window lower control"
+    },
+    "B11A6": {
+        "name": "Passenger's front window raising control fault"
+    },
+    "B11AE": {
+        "name": "Fault: load space locking relay"
+    },
+    "B11AF": {
+        "name": "Right-hand parking lamps lighting fault"
+    },
+    "B11B0": {
+        "name": "Left-hand parking lamps lighting fault"
+    },
+    "B1200": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1201": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1202": {
+        "name": "Built-in systems interface (BCM_SEA)"
+    },
+    "B1210": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1211": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1212": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1220": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1230": {
+        "name": "Fault internal to the BSI"
+    },
+    "B1231": {
+        "name": "Wheel pressure sensor identifier not configured"
+    },
+    "B1232": {
+        "name": "Detection of identical wheel pressure sensor identifiers"
+    },
+    "B1233": {
+        "name": "Incoherence of stored wheel pressure sensor identifiers"
+    },
+    "B1234": {
+        "name": "Radiofrequency receiver"
+    },
+    "B1239": {
+        "name": "Instrument panel backlighting"
+    },
+    "B1242": {
+        "name": "Left-hand rear view mirror warning lamp fault"
+    },
+    "B1243": {
+        "name": "Right-hand rear view mirror warning lamp fault"
+    },
+    "B1262": {
+        "name": "\"MENU\" button"
+    },
+    "B1263": {
+        "name": "\"MODE\" key"
+    },
+    "B1266": {
+        "name": "bouton SPEED+"
+    },
+    "B1267": {
+        "name": "bouton SPEED-"
+    },
+    "B1280": {
+        "name": "Ambient light sensor"
+    },
+    "B128C": {
+        "name": "ECO mode switch"
+    },
+    "B128D": {
+        "name": "Stop and Start switch"
+    },
+    "B12A5": {
+        "name": "Fault: heated rear screen control"
+    },
+    "B12A7": {
+        "name": "Passenger's window control fault"
+    },
+    "B12A8": {
+        "name": "Driver's window control fault"
+    },
+    "B12A9": {
+        "name": "Driver's side passenger window control fault"
+    },
+    "B12AC": {
+        "name": "Bonnet switch"
+    },
+    "B12B2": {
+        "name": "Driver's lock barrel position fault"
+    },
+    "B12BA": {
+        "name": "Rear courtesy lamp supply control"
+    },
+    "B12C0": {
+        "name": "Fault: brake fluid level information"
+    },
+    "B12C1": {
+        "name": "Left dipped headlamp"
+    },
+    "B12C6": {
+        "name": "Right dipped headlamp"
+    },
+    "B12C9": {
+        "name": "Vehicle speed information fault"
+    },
+    "B12CA": {
+        "name": "Fault in the information coming from the tachograph"
+    },
+    "B12CB": {
+        "name": "Speed limiter/cruise control switch fault"
+    },
+    "B12CC": {
+        "name": "Cruise control/speed limiter control"
+    },
+    "B12CF": {
+        "name": "Fault in the wiper controls"
+    },
+    "B12D1": {
+        "name": "Built-in systems interface internal fault"
+    },
+    "B12D2": {
+        "name": "Built-in systems interface internal fault"
+    },
+    "B12D3": {
+        "name": "Lane departure warning system button"
+    },
+    "B1304": {
+        "name": "Evaporator sensor fault"
+    },
+    "B1310": {
+        "name": "Information from the steering wheel angle sensor"
+    },
+    "B1320": {
+        "name": "Information from the anti-lock braking system (ABS) ECU"
+    },
+    "B1328": {
+        "name": "Rear screen and/or mirrors de-icing control fault"
+    },
+    "B132B": {
+        "name": "Backlighting fault"
+    },
+    "B132C": {
+        "name": "Fault: external temperature sensor"
+    },
+    "B1331": {
+        "name": "Electric window authorisation output fault"
+    },
+    "B1341": {
+        "name": "Deicing / front visibility button fault"
+    },
+    "B1343": {
+        "name": "A/C button fault"
+    },
+    "B137E": {
+        "name": "Exterior mirror control, driver's side"
+    },
+    "B137F": {
+        "name": "Exterior mirror control, passenger's side"
+    },
+    "B138D": {
+        "name": "Front electric windows switch"
+    },
+    "B138E": {
+        "name": "Front RH electric window switch"
+    },
+    "B138F": {
+        "name": "Rear left electric window jammed"
+    },
+    "B1390": {
+        "name": "Rear right-hand electric window jammed"
+    },
+    "B1391": {
+        "name": "Supply of the front left-hand electric window motor"
+    },
+    "B1392": {
+        "name": "Supply of the front right-hand electric window motor"
+    },
+    "B1393": {
+        "name": "Supply to the rear leftwindow motor"
+    },
+    "B1394": {
+        "name": "Supply to the rear rightwindow motor"
+    },
+    "B1400": {
+        "name": "Supply voltage of the BSI"
+    },
+    "B145E": {
+        "name": "Rear left-hand switch of the control on the steering wheel"
+    },
+    "B145F": {
+        "name": "Rear right-hand switch of the control on the steering wheel"
+    },
+    "B1460": {
+        "name": "Front left-hand switch of the control on the steering wheel"
+    },
+    "B1520": {
+        "name": "Incoherent number of high frequency remote controls programmed"
+    },
+    "B1530": {
+        "name": "Control in progress"
+    },
+    "B1559": {
+        "name": "Lane keeping assistance button"
+    },
+    "B1603": {
+        "name": "Fault: alternator charge"
+    },
+    "B1606": {
+        "name": "Battery charge status unit"
+    },
+    "B1607": {
+        "name": "Battery charge status unit"
+    },
+    "B1608": {
+        "name": "Stop and Start ECU internal fault"
+    },
+    "B1627": {
+        "name": "Battery voltage sensor fault"
+    },
+    "B1628": {
+        "name": "Battery current sensor fault"
+    },
+    "B1629": {
+        "name": "Battery temperature sensor fault"
+    },
+    "B162A": {
+        "name": "Left hand dipped headlights control circuit"
+    },
+    "B162B": {
+        "name": "Fault: CAN+ relay control and status not coherent"
+    },
+    "B162E": {
+        "name": "Right hand dipped headlights control circuit"
+    },
+    "B1632": {
+        "name": "Left hand driving lights control circuit"
+    },
+    "B1636": {
+        "name": "Right hand driving lights control circuit"
+    },
+    "B165A": {
+        "name": "Malfunction of the lamps reported to the built-in systems interface (BCM)"
+    },
+    "B16AF": {
+        "name": "Right-hand brake lamp control circuit"
+    },
+    "B16B3": {
+        "name": "Left-hand brake lamp control circuit"
+    },
+    "B1704": {
+        "name": "Boot opening catch control fault"
+    },
+    "B1707": {
+        "name": "Central locking switch status fault"
+    },
+    "B1712": {
+        "name": "Front left LED headlamp control"
+    },
+    "B1713": {
+        "name": "Front right LED headlamp control"
+    },
+    "B1715": {
+        "name": "Daytime running lamp and sidelamp LEDs supply  ( left-hand side )"
+    },
+    "B1716": {
+        "name": "Daytime running lamp and sidelamp LEDs supply  ( right-hand side )"
+    },
+    "B1717": {
+        "name": "Return of information from the daytime running lamp and the sidelamp  ( left-hand side )"
+    },
+    "B1718": {
+        "name": "Return of information from the daytime running lamp and the sidelamp  ( right-hand side )"
+    },
+    "B1719": {
+        "name": "Front left LED headlamp information return"
+    },
+    "B1720": {
+        "name": "Front right LED headlamp information return"
+    },
+    "B1721": {
+        "name": "Return of information from the daytime running lamp and the sidelamp  ( left-hand side )"
+    },
+    "B1722": {
+        "name": "Return of information from the daytime running lamp and the sidelamp  ( right-hand side )"
+    },
+    "B1725": {
+        "name": "Left-hand dipped headlamp control"
+    },
+    "B1726": {
+        "name": "Right-hand dipped headlamp control"
+    },
+    "B1727": {
+        "name": "Return of information from the left-hand dipped beam headlamp"
+    },
+    "B1728": {
+        "name": "Return of information from the left-hand dipped beam headlamp"
+    },
+    "B173C": {
+        "name": "Intrusion alarm switch"
+    },
+    "B1745": {
+        "name": "Left-hand main beam headlamp control"
+    },
+    "B1746": {
+        "name": "Fault in the synchronisation of the 2 motorised tailgate gas struts  ( Initialise the motorised tailgate )"
+    },
+    "B1747": {
+        "name": "Motorised tailgate initialisation fault  ( Loss of the motorised boot unit supply or position of the motorised tailgate not coherent )"
+    },
+    "B1748": {
+        "name": "Right-hand anti-pinch sensor signal fault"
+    },
+    "B1749": {
+        "name": "Left-hand anti-pinch sensor signal fault"
+    },
+    "B174C": {
+        "name": "Fault in the control of the motorised tailgate by the high frequency remote control"
+    },
+    "B174D": {
+        "name": "Fault in the configuration of the vehicle body type and of the anti-pinch sensors"
+    },
+    "B174E": {
+        "name": "Motorised tailgate lock closing to second notch status switch signal fault"
+    },
+    "B174F": {
+        "name": "Motorised tailgate lock closing to first notch status switch signal fault"
+    },
+    "B1750": {
+        "name": "Motorised tailgate left-hand gas strut position sensor signal fault"
+    },
+    "B1751": {
+        "name": "Motorised tailgate right-hand gas strut position sensor signal fault"
+    },
+    "B1752": {
+        "name": "Motorised tailgate left-hand gas strut motor control fault"
+    },
+    "B1753": {
+        "name": "Motorised tailgate right-hand gas strut motor control fault"
+    },
+    "B1754": {
+        "name": "Upper anti-pinch sensor signal fault"
+    },
+    "B1755": {
+        "name": "Motorised tailgate motorised opening request fault  ( Button on the motorised tailgate )"
+    },
+    "B1756": {
+        "name": "Motorised tailgate motorised closing request fault  ( Button on the inside of the motorised tailgate )"
+    },
+    "B1757": {
+        "name": "Motorised tailgate closing assistance module control fault"
+    },
+    "B1758": {
+        "name": "Tailgate remote buzzer control"
+    },
+    "B17D9": {
+        "name": "Heating of the exterior mirrors"
+    },
+    "B17FA": {
+        "name": "Motorised tailgate lock"
+    },
+    "B1800": {
+        "name": "Supply voltage of the BSI"
+    },
+    "B1801": {
+        "name": "Electrical harness or steering lock switch signal"
+    },
+    "B1805": {
+        "name": "Starter motor fault"
+    },
+    "B180A": {
+        "name": "Fault: transponder"
+    },
+    "B1811": {
+        "name": "Indicators"
+    },
+    "B1812": {
+        "name": "Engine starting switch signal"
+    },
+    "B181C": {
+        "name": "Brake pedal switch status fault"
+    },
+    "B1820": {
+        "name": "High frequency remote control"
+    },
+    "B1830": {
+        "name": "Electrical supply harness short-circuited to earth or fuse blown"
+    },
+    "B1840": {
+        "name": "Door locking status signal"
+    },
+    "B1850": {
+        "name": "Windscreen wipers function"
+    },
+    "B1852": {
+        "name": "Driver's window switch"
+    },
+    "B1856": {
+        "name": "Driver´s electric window motor control"
+    },
+    "B185D": {
+        "name": "Passenger's window switch"
+    },
+    "B1860": {
+        "name": "Brake switch information fault"
+    },
+    "B1861": {
+        "name": "Passenger´s electric window motor control"
+    },
+    "B1868": {
+        "name": "Passenger's window switch  (driver's side)"
+    },
+    "B1870": {
+        "name": "Electric window control pads"
+    },
+    "B1871": {
+        "name": "Output electrical harness in open circuit or short-circuited to positive"
+    },
+    "B1872": {
+        "name": "Front LH wheel transmitter battery flat"
+    },
+    "B1873": {
+        "name": "Front RH wheel transmitter battery flat"
+    },
+    "B1874": {
+        "name": "Rear LH wheel transmitter battery flat"
+    },
+    "B1875": {
+        "name": "Rear RH wheel transmitter battery flat"
+    },
+    "B1876": {
+        "name": "Front Left wheel transmitter module information not received"
+    },
+    "B1877": {
+        "name": "Front Right wheel transmitter module information not received"
+    },
+    "B1878": {
+        "name": "Rear Left wheel transmitter module information not received"
+    },
+    "B1879": {
+        "name": "Rear Right wheel transmitter module information not received"
+    },
+    "B1880": {
+        "name": "Front left wheel transmitter module"
+    },
+    "B1881": {
+        "name": "Front right wheel transmitter module"
+    },
+    "B1882": {
+        "name": "Rear left wheel transmitter module"
+    },
+    "B1883": {
+        "name": "Rear right wheel transmitter module"
+    },
+    "B1884": {
+        "name": "Front left-hand wheel sensor temperature too high"
+    },
+    "B1885": {
+        "name": "Front right-hand wheel sensor temperature too high"
+    },
+    "B1886": {
+        "name": "Rear left-hand wheel sensor temperature too high"
+    },
+    "B1887": {
+        "name": "Rear right-hand wheel sensor temperature too high"
+    },
+    "B1888": {
+        "name": "Driving mode selector"
+    },
+    "B1900": {
+        "name": "Initialisation of the rain and brightness sensor not completed"
+    },
+    "B1901": {
+        "name": "Rain and brightness sensor  :  internal fault"
+    },
+    "B1902": {
+        "name": "Rain and brightness sensor  :  configuration incorrect"
+    },
+    "B1903": {
+        "name": "Rain and brightness sensor  :  calibration not done"
+    },
+    "B1904": {
+        "name": "Rain and brightness sensor  :  temperature too high"
+    },
+    "B1905": {
+        "name": "Rain and brightness sensor  :  excess voltage"
+    },
+    "B1906": {
+        "name": "Rain and brightness sensor  :  no communication"
+    },
+    "B191C": {
+        "name": "Electrical line faulty"
+    },
+    "B191D": {
+        "name": "Electrical line faulty"
+    },
+    "B191E": {
+        "name": "Electrical line faulty"
+    },
+    "B191F": {
+        "name": "The built-in systems interface is unlocked"
+    },
+    "B1920": {
+        "name": "Front left-hand daytime running lamp"
+    },
+    "B1921": {
+        "name": "Front right-hand daytime running lamp"
+    },
+    "B1922": {
+        "name": "Interior buttons lighting control"
+    },
+    "B1923": {
+        "name": "Interior lighting control"
+    },
+    "B1924": {
+        "name": "Horn relay"
+    },
+    "B1925": {
+        "name": "Horn switch"
+    },
+    "B1926": {
+        "name": "Compressor with clutch"
+    },
+    "B1927": {
+        "name": "Charging socket unit indicator lamp"
+    },
+    "B1929": {
+        "name": "Stop and Start indicator lamp"
+    },
+    "B192A": {
+        "name": "ECO warning lamp"
+    },
+    "B192C": {
+        "name": "Lane keeping assistance function indicator lamp"
+    },
+    "B192D": {
+        "name": "Interior alarm indicator"
+    },
+    "B192E": {
+        "name": "Control of the accessories positive relay"
+    },
+    "B192F": {
+        "name": "Control of the accessories positive relay"
+    },
+    "B1930": {
+        "name": "Control of the accessories positive relay"
+    },
+    "B1931": {
+        "name": "Steering column locking/unlocking information fault"
+    },
+    "B1932": {
+        "name": "Lighting relay control"
+    },
+    "B1933": {
+        "name": "Dipped beam headlamps switch"
+    },
+    "B1934": {
+        "name": "Windscreen wiper speed"
+    },
+    "B1935": {
+        "name": "Rear screen wash/wipe"
+    },
+    "B1936": {
+        "name": "Left-hand direction indicators control"
+    },
+    "B1937": {
+        "name": "Right-hand direction indicators control"
+    },
+    "B1938": {
+        "name": "Instrument panel ECU"
+    },
+    "B1939": {
+        "name": "Instrument panel navigation button UP"
+    },
+    "B193A": {
+        "name": "Instrument panel navigation button DOWN"
+    },
+    "B193B": {
+        "name": "Park shunt"
+    },
+    "B193C": {
+        "name": "Driver's door switch"
+    },
+    "B193D": {
+        "name": "Passenger's door switch"
+    },
+    "B193E": {
+        "name": "Rear left door switch"
+    },
+    "B193F": {
+        "name": "Rear right door switch"
+    },
+    "B1940": {
+        "name": "Luggage compartment switch"
+    },
+    "B1941": {
+        "name": "Bonnet switch"
+    },
+    "B1942": {
+        "name": "Fuel filler flap"
+    },
+    "B1943": {
+        "name": "Front LH door handle"
+    },
+    "B1944": {
+        "name": "Front RH door handle"
+    },
+    "B1945": {
+        "name": "Charging connector"
+    },
+    "B1946": {
+        "name": "Exterior rear view mirrors adjustment switch"
+    },
+    "B1947": {
+        "name": "Cruise control/speed limiter control"
+    },
+    "B1948": {
+        "name": "Handbrake switch"
+    },
+    "B1949": {
+        "name": "LH main beam headlamp"
+    },
+    "B194A": {
+        "name": "RH main beam headlamp"
+    },
+    "B194B": {
+        "name": "LH dipped beam headlamp"
+    },
+    "B194C": {
+        "name": "RH dipped beam headlamp"
+    },
+    "B194D": {
+        "name": "Sidelamps/number plate lamps"
+    },
+    "B194E": {
+        "name": "Door actuator"
+    },
+    "B194F": {
+        "name": "Control of windscreen wipe slow speed"
+    },
+    "B1950": {
+        "name": "LED   deferred charging"
+    },
+    "B1951": {
+        "name": "Charge status warning lamp"
+    },
+    "B1952": {
+        "name": "LED   charge fault"
+    },
+    "B1953": {
+        "name": "LED electric windows"
+    },
+    "B1954": {
+        "name": "Air conditioning compressor cut-off"
+    },
+    "B1955": {
+        "name": "Control of the starter"
+    },
+    "B1956": {
+        "name": "Deadlocking of the doors and load space"
+    },
+    "B1957": {
+        "name": "Right-hand front window command"
+    },
+    "B1958": {
+        "name": "Left-hand front window command"
+    },
+    "B1959": {
+        "name": "Right-hand rear window command"
+    },
+    "B195A": {
+        "name": "Left-hand rear window command"
+    },
+    "B195B": {
+        "name": "Rear screen demisting switch"
+    },
+    "B195C": {
+        "name": "Rear screen de-icing relay"
+    },
+    "B195D": {
+        "name": "Reverse switch"
+    },
+    "B195E": {
+        "name": "Air blower relay"
+    },
+    "B195F": {
+        "name": "Electric window locking/unlocking switch"
+    },
+    "B196A": {
+        "name": "Windscreen wiper switch"
+    },
+    "B196D": {
+        "name": "Immobiliser configurations"
+    },
+    "B196E": {
+        "name": "Selective unlocking"
+    },
+    "B1970": {
+        "name": "Passenger's door switch"
+    },
+    "B1971": {
+        "name": "Rear right door switch"
+    },
+    "B1972": {
+        "name": "Boot switch"
+    },
+    "B1973": {
+        "name": "Boot switch"
+    },
+    "B1974": {
+        "name": "Bonnet switch"
+    },
+    "B1975": {
+        "name": "Fuel flap switch"
+    },
+    "B1976": {
+        "name": "Right-hand front window command"
+    },
+    "B1977": {
+        "name": "Left-hand front window command"
+    },
+    "B1978": {
+        "name": "Right-hand rear window command"
+    },
+    "B1979": {
+        "name": "Left-hand rear window command"
+    },
+    "B197B": {
+        "name": "Right-hand daytime lamp control"
+    },
+    "B197C": {
+        "name": "Left-hand daytime lamp control"
+    },
+    "B1980": {
+        "name": "Rear seat belt not fastened warning lamp"
+    },
+    "B1984": {
+        "name": "Built-in systems interface (BCM_SEA)"
+    },
+    "B1995": {
+        "name": "Control of the starter"
+    },
+    "B199A": {
+        "name": "Battery charge status unit"
+    },
+    "B199B": {
+        "name": "Battery charge status unit"
+    },
+    "B199C": {
+        "name": "Door locking motors control circuit"
+    },
+    "B199D": {
+        "name": "Door locking motors control circuit"
+    },
+    "B19A7": {
+        "name": "Anti-lock brake control unit"
+    },
+    "B19AB": {
+        "name": "Passenger compartment ambient lighting control circuit"
+    },
+    "B19B0": {
+        "name": "Remote controlled triggering line"
+    },
+    "B19D0": {
+        "name": "Front left-hand daytime running lamps control"
+    },
+    "B19D1": {
+        "name": "Front right-hand daytime running lamps control"
+    },
+    "B19D2": {
+        "name": "Rear left brake lamp"
+    },
+    "B19D3": {
+        "name": "Rear RH stoplamp"
+    },
+    "B19DD": {
+        "name": "Vehicle recharging cable"
+    },
+    "B1A03": {
+        "name": "Disconnection of the ancillaries battery"
+    },
+    "B1A20": {
+        "name": "No communication with the high frequency remote control receiver"
+    },
+    "B1A7D": {
+        "name": "Starter switch"
+    },
+    "B1A7E": {
+        "name": "Ignition key position information"
+    },
+    "B1EAD": {
+        "name": "Lane Departure Warning System switch"
+    },
+    "B1EB0": {
+        "name": "Status of the lane departure warning system warning lamp"
+    },
+    "B1F00": {
+        "name": "Push gear lever"
+    },
+    "B2131": {
+        "name": "Rain and brightness sensor"
+    },
+    "B2132": {
+        "name": "Rain and brightness sensor"
+    },
+    "B2204": {
+        "name": "Vehicle configuration (PROXI)"
+    },
+    "B2332": {
+        "name": "Request for activation of the horn"
+    },
+    "B2E0E": {
+        "name": "VIN"
+    },
+    "B2E2C": {
+        "name": "Stop and Start switch"
+    },
+    "B2E48": {
+        "name": "Air condtioning button"
+    },
+    "B2F00": {
+        "name": "Ignition switch"
+    },
+    "B2F02": {
+        "name": "Control of the rear foglamps"
+    },
+    "B2F05": {
+        "name": "Reversing lamp control"
+    },
+    "B2F09": {
+        "name": "Controls under the steering wheel for the direction indicators"
+    },
+    "B2F16": {
+        "name": "Reversing lamps control circuit"
+    },
+    "B2F21": {
+        "name": "Door locking warning lamp"
+    },
+    "B2F27": {
+        "name": "Central locking control"
+    },
+    "B2F28": {
+        "name": "Coded engine immobiliser code"
+    },
+    "B2F29": {
+        "name": "Hazard warning lamps control"
+    },
+    "B2F2E": {
+        "name": "Electrical line faulty"
+    },
+    "B2F30": {
+        "name": "Electrical line faulty"
+    },
+    "B2F31": {
+        "name": "Electrical line faulty"
+    },
+    "B2F33": {
+        "name": "Tailgate motor"
+    },
+    "B2F37": {
+        "name": "Air conditioning compressor relay"
+    },
+    "B2F3C": {
+        "name": "\"Stop and Start\" button LED"
+    },
+    "B2F3E": {
+        "name": "Fault on the cruise control / speed limiter"
+    },
+    "B2F4A": {
+        "name": "Fault: jamming of the speed limiter or cruise control switch"
+    },
+    "P065A": {
+        "name": "Controlled alternator fault"
+    },
+    "U0001": {
+        "name": "Fault: intersystems CAN (CAN C): communications impossible"
+    },
+    "U0002": {
+        "name": "Problem with transmission and reception on the CAN C"
+    },
+    "U0010": {
+        "name": "CAN BH not communicating"
+    },
+    "U0011": {
+        "name": "Problem with transmission and reception on the CAN BH"
+    },
+    "U0019": {
+        "name": "Fault on the Comfort/Body CAN (CAN B)"
+    },
+    "U0046": {
+        "name": "Suspension and wheels CAN  ( engine ECU mute )"
+    },
+    "U0055": {
+        "name": "CAN C2 not communicating"
+    },
+    "U0056": {
+        "name": "Problem with transmission and reception on the CAN C2"
+    },
+    "U0073": {
+        "name": "CAN bus-off"
+    },
+    "U0076": {
+        "name": "Suspension and wheels CAN"
+    },
+    "U0080": {
+        "name": "Gateway wiring housing"
+    },
+    "U0081": {
+        "name": "connected audio system"
+    },
+    "U0082": {
+        "name": "Independent telematic unit"
+    },
+    "U0083": {
+        "name": "Visual manoeuvring assistance ECU"
+    },
+    "U0084": {
+        "name": "Air conditioning ECU"
+    },
+    "U0086": {
+        "name": "Instrument panel ECU"
+    },
+    "U0088": {
+        "name": "Engine management ECU"
+    },
+    "U0089": {
+        "name": "Gearbox ECU"
+    },
+    "U0091": {
+        "name": "Airbag ECU"
+    },
+    "U0092": {
+        "name": "Electric parking brake ECU"
+    },
+    "U0093": {
+        "name": "Steering wheel angle sensor"
+    },
+    "U0101": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U0129": {
+        "name": "No communication with the ABS/ESP ECU on the high speed CAN 2"
+    },
+    "U0199": {
+        "name": "Driver's door module"
+    },
+    "U0200": {
+        "name": "Passenger's door module"
+    },
+    "U0201": {
+        "name": "Rear right door module"
+    },
+    "U0202": {
+        "name": "Rear LH door module"
+    },
+    "U0204": {
+        "name": "Rain and brightness sensor"
+    },
+    "U023B": {
+        "name": "No communication with the multifunction video camera on the CAN HS2"
+    },
+    "U0254": {
+        "name": "(ETM / LTM) audio-navigation ECU"
+    },
+    "U0301": {
+        "name": "Communication with the engine management ECU on the hybrid CAN"
+    },
+    "U0302": {
+        "name": "Intersystems CAN  ( gearbox ECU )"
+    },
+    "U0304": {
+        "name": "Communication with the gearbox ECU on the CAN"
+    },
+    "U0315": {
+        "name": "Communication with the ABS/ESP ECU on the CAN"
+    },
+    "U0320": {
+        "name": "Intersystems CAN"
+    },
+    "U0336": {
+        "name": "Communication with the airbags and pretensioners ECU on the CAN"
+    },
+    "U0401": {
+        "name": "Communication with the engine management ECU on the CAN"
+    },
+    "U0402": {
+        "name": "Incoherent values received from the automatic gearbox ECU"
+    },
+    "U0406": {
+        "name": "Dynamic stability control ECU (BSM)"
+    },
+    "U040B": {
+        "name": "Automatic gearbox ECU (TCM)"
+    },
+    "U0415": {
+        "name": "Electric steering lock  (ESL)"
+    },
+    "U041A": {
+        "name": "Airbags and pre-tensioners ECU (ORC)"
+    },
+    "U0420": {
+        "name": "ABS/ESP ECUs (CAN)"
+    },
+    "U0423": {
+        "name": "Independent telematic unit (TBM)"
+    },
+    "U0426": {
+        "name": "Electric steering lock  (ESL)"
+    },
+    "U0431": {
+        "name": "Rain and brightness sensor"
+    },
+    "U0432": {
+        "name": "Unlocking of the built-in systems interface not carried out"
+    },
+    "U0433": {
+        "name": "Error in the engine immobiliser code sent by the engine management ECU to the built-in systems interface"
+    },
+    "U0434": {
+        "name": "Built-in systems interface starter relay"
+    },
+    "U043F": {
+        "name": "Pedestrian horn"
+    },
+    "U0440": {
+        "name": "Electric/hybrid drive train supervisor ECU ‎(EVCU)"
+    },
+    "U0441": {
+        "name": "Hands-free access and starting electronic unit (RFHM)"
+    },
+    "U0452": {
+        "name": "Airbag ECUs (CAN)"
+    },
+    "U053B": {
+        "name": "Information transmitted by the multifunction video camera"
+    },
+    "U0541": {
+        "name": "No communication with the high frequency receiver ECU"
+    },
+    "U0546": {
+        "name": "Communication with the IVI audio-navigation system on the CAN"
+    },
+    "U0592": {
+        "name": "Gearbox ECU  ( CAN )"
+    },
+    "U0618": {
+        "name": "Parking assistance switch"
+    },
+    "U0623": {
+        "name": "Invalid information received from the wireless charger"
+    },
+    "U063F": {
+        "name": "Pedestrian horn"
+    },
+    "U0640": {
+        "name": "Electric/hybrid drive train supervisor ECU ‎(EVCU)"
+    },
+    "U1000": {
+        "name": "Rain and brightness sensor"
+    },
+    "U1002": {
+        "name": "Driver's door module  LIN"
+    },
+    "U1003": {
+        "name": "Communication with the rain and brightness sensor missing.  LIN"
+    },
+    "U1009": {
+        "name": "CAN"
+    },
+    "U100A": {
+        "name": "No communication with control panel ECU"
+    },
+    "U100B": {
+        "name": "Absence of communication with the electric steering lock"
+    },
+    "U100C": {
+        "name": "No communication with the air conditioning ECU"
+    },
+    "U100D": {
+        "name": "No communication with the gateway fuse box"
+    },
+    "U100E": {
+        "name": "No communication with the gateway fuse box"
+    },
+    "U100F": {
+        "name": "No communication with the gateway fuse box"
+    },
+    "U1012": {
+        "name": "No communication with the gateway fuse box"
+    },
+    "U1013": {
+        "name": "No communication with the gateway fuse box"
+    },
+    "U1017": {
+        "name": "Built-in systems interface in downgrade mode"
+    },
+    "U1018": {
+        "name": "Engine management ECU authentication fault"
+    },
+    "U1019": {
+        "name": "Engine management ECU authentication fault"
+    },
+    "U101A": {
+        "name": "Engine management ECU authentication fault"
+    },
+    "U101B": {
+        "name": "Hands-free remote control"
+    },
+    "U101C": {
+        "name": "Communication problem with the hands-free unit"
+    },
+    "U110D": {
+        "name": "Radio or radiotelephone (radio part)"
+    },
+    "U1147": {
+        "name": "Vehicle configuration (PROXI)"
+    },
+    "U1150": {
+        "name": "ABS/ESP ECUs (CAN)"
+    },
+    "U1175": {
+        "name": "Ancillaries battery current sensor"
+    },
+    "U1176": {
+        "name": "Communication with the instrument panel on the CAN"
+    },
+    "U1178": {
+        "name": "Absence of communication with the driving school module"
+    },
+    "U1179": {
+        "name": "Heating and air conditioning ECU"
+    },
+    "U118C": {
+        "name": "No communication with the trailer interface module (TIM) ECU on the CAN"
+    },
+    "U1207": {
+        "name": "Communication with the electric/hybrid drive train supervisor ECU on the CAN"
+    },
+    "U1216": {
+        "name": "Lane Departure Warning System ECU  (HALF)"
+    },
+    "U122F": {
+        "name": "Communication with the sequential gear lever on the CAN"
+    },
+    "U1275": {
+        "name": "Radio or radiotelephone (radio part)"
+    },
+    "U1276": {
+        "name": "Communication with the instrument panel on the CAN"
+    },
+    "U1278": {
+        "name": "Communication with the driving school ECU"
+    },
+    "U1279": {
+        "name": "Heating and air conditioning ECU"
+    },
+    "U1290": {
+        "name": "Communication with the electric steering lock on the passenger compartment CAN"
+    },
+    "U1307": {
+        "name": "Communication with the electric/hybrid drive train supervisor ECU on the CAN"
+    },
+    "U130D": {
+        "name": "Communication with the IVI audio-navigation system on the CAN"
+    },
+    "U1318": {
+        "name": "Incorrect data or excessively short datastream received from the built-in systems interface (BSI/VSM)"
+    },
+    "U132F": {
+        "name": "Communication with the sequential gear lever on the CAN"
+    },
+    "U1330": {
+        "name": "Multifunction video camera"
+    },
+    "U1375": {
+        "name": "Radio or radiotelephone (radio part)"
+    },
+    "U1376": {
+        "name": "Communication with the instrument panel on the CAN"
+    },
+    "U1378": {
+        "name": "Communication with the driving school ECU"
+    },
+    "U1379": {
+        "name": "Heating and air conditioning ECU"
+    },
+    "U1390": {
+        "name": "Electric steering lock"
+    },
+    "U1408": {
+        "name": "Battery charge status sensor faulty"
+    },
+    "U1411": {
+        "name": "Fault: absence of communication with the battery charger status sensor"
+    },
+    "U1412": {
+        "name": "Communication with the alarm ECU"
+    },
+    "U1414": {
+        "name": "Fault: no communication with the rain/brightness sensor"
+    },
+    "U1416": {
+        "name": "Pedestrian horn"
+    },
+    "U1423": {
+        "name": "Wireless charger"
+    },
+    "U1431": {
+        "name": "Rain and brightness sensor"
+    },
+    "U1432": {
+        "name": "Rain and brightness sensor"
+    },
+    "U1459": {
+        "name": "Cruise control switch"
+    },
+    "U145E": {
+        "name": "Switching at the steering wheel"
+    },
+    "U147E": {
+        "name": "Electric steering lock"
+    },
+    "U1495": {
+        "name": "Steering wheel angle sensor information"
+    },
+    "U14A6": {
+        "name": "E-toggle gear lever"
+    },
+    "U14A7": {
+        "name": "No communication with the alarm unit on the LIN 2"
+    },
+    "U14A8": {
+        "name": "No communication with the alarm unit on the LIN 2"
+    },
+    "U14A9": {
+        "name": "Rear parking assistance sensor information on the LIN2"
+    },
+    "U1538": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U160B": {
+        "name": "Front parking assistance sensor information on LIN 1 network"
+    },
+    "U160D": {
+        "name": "No communication with the rain and brightness sensor on the LIN 2"
+    },
+    "U160E": {
+        "name": "Communication with the instrument panel on the LIN 1 network"
+    },
+    "U161C": {
+        "name": "Fault: absence of communication between the built-in systems interface and the driving school module"
+    },
+    "U1701": {
+        "name": "Engine ECU (ECM)"
+    },
+    "U1702": {
+        "name": "Fault absence of communication with the electric power steering ECU"
+    },
+    "U1703": {
+        "name": "Instrument panel  (IPC_F)  (  CAN C1 )"
+    },
+    "U1705": {
+        "name": "Fault: absence of communication with the audio system ECU"
+    },
+    "U1706": {
+        "name": "Fault - lack of communication with the anti-lock braking system (ABS) or the electronic stability program (ESP)"
+    },
+    "U170B": {
+        "name": "Automatic gearbox ECU (TCM)"
+    },
+    "U1710": {
+        "name": "Fault: no communication with air conditioning ECU"
+    },
+    "U1711": {
+        "name": "Fault: no communication with manual sequential gearbox ECU"
+    },
+    "U1712": {
+        "name": "Fault: no communication with the steering wheel angle sensor"
+    },
+    "U1715": {
+        "name": "Electric steering lock  (ESL)"
+    },
+    "U1716": {
+        "name": "Automatic gearbox electric control ECU  (AGSM / ESM)"
+    },
+    "U1718": {
+        "name": "Parking assistance ECU (PAM)"
+    },
+    "U171A": {
+        "name": "Airbags and pre-tensioners ECU (ORC)"
+    },
+    "U171E": {
+        "name": "Lane Departure Warning System ECU  (HALF)"
+    },
+    "U1720": {
+        "name": "Tyre under-inflation detection ECU  (TPM)"
+    },
+    "U1723": {
+        "name": "Independent telematic unit (TBM)"
+    },
+    "U1724": {
+        "name": "Fault: no communication with the parking assistance ECU"
+    },
+    "U1726": {
+        "name": "Fault: no communication with airbag ECU"
+    },
+    "U1727": {
+        "name": "Fault  -  absence of communication with the pneumatic suspension ECU"
+    },
+    "U1730": {
+        "name": "No communication with lane departure warning system ECU"
+    },
+    "U1732": {
+        "name": "Absence of communication with the tyre under-inflation detection ECU"
+    },
+    "U1733": {
+        "name": "Fault: no communication with telematic ECU"
+    },
+    "U1734": {
+        "name": "No communication with the heating ECU"
+    },
+    "U1736": {
+        "name": "Absence of communication with the telematic unit"
+    },
+    "U1739": {
+        "name": "Fault: absence of communication with the battery charger status sensor"
+    },
+    "U173F": {
+        "name": "Trailer fuse box (TTM)"
+    },
+    "U1740": {
+        "name": "Electric/hybrid drive train supervisor ECU ‎(EVCU)  ( CAN C1 )"
+    },
+    "U1741": {
+        "name": "Hands-free access and starting electronic unit (RFHM)"
+    },
+    "U1744": {
+        "name": "Fault: absence of communication with the over-charging detection ECU"
+    },
+    "U1751": {
+        "name": "Information from the left-hand blind spot monitoring ECU"
+    },
+    "U1752": {
+        "name": "Information from the right-hand blind spot monitoring ECU"
+    },
+    "U1763": {
+        "name": "Fault: absence of communication with the trailer relay unit"
+    },
+    "U1767": {
+        "name": "Radio activation/deactivation switch  (EMCM)"
+    },
+    "U1783": {
+        "name": "Multifunction touch screen (DCSD) ECU"
+    },
+    "U17A0": {
+        "name": "Secondary parking assistance ECU  (PAM2)"
+    },
+    "U1801": {
+        "name": "Problem with communication on the LIN 1"
+    },
+    "U1802": {
+        "name": "Problem with communication on the LIN 2"
+    },
+    "U1804": {
+        "name": "Problem with communication on the LIN 4"
+    },
+    "U1903": {
+        "name": "Instrument panel (IPC_F)  (  CAN BH )"
+    },
+    "U1930": {
+        "name": "Built-in systems interface (BCM)  ( signal internal to the ECU )"
+    },
+    "U1932": {
+        "name": "Dynamic stability control ECU (BSM)  ( CAN C2 )"
+    },
+    "U1933": {
+        "name": "Battery charge status unit not communicating on the CAN"
+    },
+    "U1934": {
+        "name": "CAN"
+    },
+    "U1935": {
+        "name": "No communication with the electric drive train supervisor ECU"
+    },
+    "U1936": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U1937": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U1938": {
+        "name": "Communication with the cruise control / speed limiter"
+    },
+    "U1940": {
+        "name": "Electric/hybrid drive train supervisor ECU ‎(EVCU)  ( CAN C2 )"
+    },
+    "U1944": {
+        "name": "CAN not communicating fault"
+    },
+    "U1945": {
+        "name": "CAN"
+    },
+    "U1947": {
+        "name": "Communication with the anti-lock braking system ECU ABS or the electronic stability program ESP on the CAN network"
+    },
+    "U1948": {
+        "name": "No communication with the airbag ECU"
+    },
+    "U1952": {
+        "name": "Absence of communication with the engine management ECU on the CAN"
+    },
+    "U1953": {
+        "name": "Communication with the gearbox ECU on the CAN"
+    },
+    "U19E1": {
+        "name": "Fuel cell stack ECU  (FCPS)"
+    },
+    "U1F00": {
+        "name": "Fault not recorded in the built-in systems interface faults log"
+    },
+    "U1F03": {
+        "name": "Fault: no communication with BSI"
+    },
+    "U1F08": {
+        "name": "Body / passenger compartment CAN"
+    },
+    "U1F0A": {
+        "name": "Physical layer of Low Speed CAN"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F15": {
+        "name": "Fault: ECU not communicating on the Entertainment Information CAN"
+    },
+    "U1F1B": {
+        "name": "Fault on the LIN 2"
+    },
+    "U1F3B": {
+        "name": "No communication with the seat belts not fastened warning lamp on the LIN 1"
+    },
+    "U1F45": {
+        "name": "Fault: absence of communication with the trailer relay unit"
+    },
+    "U1F5E": {
+        "name": "No communication with the controlled air inlet module on the LIN 2"
+    },
+    "U2002": {
+        "name": "Remote controlled triggering line fault"
+    },
+    "U2004": {
+        "name": "Remote controlled triggering line fault"
+    }
+}

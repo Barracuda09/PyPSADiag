@@ -3,6 +3,7 @@
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/AAS.json",
   "key_type": "multi",
   "keys": {
     "key 1": "D1F5",
@@ -16,15 +17,7 @@
     "tele": "Telecoding"
   },
   "zones": {
-     "2100": {
-      "id": "Configuration_Group_Data_List",
-      "tab": "tele",
-      "name": "Configuration group data list",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
-   "2102": {
+    "2102": {
       "id": "Gauging_Group_Data_Values",
       "name": "Gauging group data values",
       "tab": "tele",
@@ -38,7 +31,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00000001",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_DEQ_AAS_TYPE_CHAINE_TRACTION_000": {
         "tab": "aas_uds",
@@ -48,7 +42,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00000010",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_BVW_AAS_SAM_000": {
         "tab": "aas_uds",
@@ -59,7 +54,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00000100",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_DAY_AAS_PRESENCE_CITYPARK_000": {
         "tab": "aas_uds",
@@ -69,7 +65,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00001000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_DBN_AAS_PRESENCE_AMSP_000": {
         "name": "Availability of the parking assistance function",
@@ -78,7 +75,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00010000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_A05_AAS_AAS_AV_000": {
         "name": "Availability of front obstacle sensors",
@@ -87,7 +85,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "00100000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       },
       "CFG_EFH_AAS_ACTIVATION_ENVOI_DTC_000": {
         "name": "CFG_EFH_AAS_ACTIVATION_ENVOI_DTC_000",
@@ -95,7 +94,8 @@
         "byte": 0,
         "type": "bool",
         "form_type": "checkbox",
-        "mask": "10000000"
+        "mask": "10000000",
+        "available_logic": "active_high"
       },
       "CFG_E4P_PRESENCE_FLANKGUARD_000": {
         "name": "CFG_E4P_PRESENCE_FLANKGUARD_000",
@@ -104,7 +104,8 @@
         "byte": 0,
         "type": "bool",
         "mask": "01000000",
-        "form_type": "checkbox"
+        "form_type": "checkbox",
+        "available_logic": "active_high"
       }
     }
   }

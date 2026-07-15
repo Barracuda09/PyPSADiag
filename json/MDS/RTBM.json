@@ -1,0 +1,458 @@
+{
+  "name": "RTBM",
+  "tx_id": "77C",
+  "rx_id": "77F",
+  "protocol": "uds",
+  "dtc_lookup": "data/dtc/MDS.json",
+  "key_type": "multi",
+  "keys": {
+    "RTBM": "DE6B",
+    "BSRF Dual-Can": "B7A9"
+  },
+  "coding": true,
+  "errors": true,
+  "include_zone_object": "./data/IdentUDSECU.json",
+  "tabs": {
+    "ident": "Identification",
+    "vin": "VIN",
+    "tele": "Telecoding"
+  },
+  "zones": {
+    "F190": {
+      "id": "VIN",
+      "tab": "vin",
+      "byte": 0,
+      "type": "string_ascii",
+      "form_type": "string",
+      "name": "VIN"
+    },
+    "2100": {
+      "id": "variant_coding_zone",
+      "tab": "tele",
+      "name": "Variant Coding Zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "2101": {
+      "id": "configuration_data_values",
+      "tab": "tele",
+      "name": "Configuration data values",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "multi",
+      "params": [
+        {
+          "extra_name": "Alimentazione veicolo",
+          "name_original": "Alimentazione veicolo",
+          "name": "Alimentazione veicolo",
+          "byte": 1,
+          "mask": "1111111111110000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0000",
+              "name": "Non definito"
+            },
+            {
+              "value": "0040",
+              "name": "Benzina"
+            },
+            {
+              "value": "0080",
+              "name": "Diesel"
+            },
+            {
+              "value": "00C0",
+              "name": "Gas naturale"
+            },
+            {
+              "value": "0140",
+              "name": "Elettrico"
+            },
+            {
+              "value": "0180",
+              "name": "Idrogeno"
+            },
+            {
+              "value": "01C0",
+              "name": "Idrogeno (alt)"
+            }
+          ]
+        },
+        {
+          "extra_name": "Tipo veicolo",
+          "name_original": "Tipo veicolo",
+          "name": "Tipo veicolo",
+          "byte": 7,
+          "mask": "11111111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "00",
+              "name": "Non definito"
+            },
+            {
+              "value": "01",
+              "name": "Categoria passeggeri M1"
+            },
+            {
+              "value": "02",
+              "name": "Categoria bus M2"
+            },
+            {
+              "value": "03",
+              "name": "Categoria bus M3"
+            },
+            {
+              "value": "04",
+              "name": "Autocarro con pianale, categoria N1"
+            }
+          ]
+        },
+        {
+          "extra_name": "Frequenza banda AM",
+          "name_original": "Frequenza banda AM",
+          "name": "Frequenza banda AM",
+          "byte": 3,
+          "mask": "00001111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "1",
+              "name": "Disabilitata"
+            },
+            {
+              "value": "3",
+              "name": "Opzione 1 153-279kHz (A:3kHz-M:1kHz)"
+            },
+            {
+              "value": "5",
+              "name": "Opzione 2 531-1602kHz (A:9kHz-M:1kHz)"
+            },
+            {
+              "value": "7",
+              "name": "Opzione 3 531-1629kHz (A:9kHz-M:1kHz)"
+            },
+            {
+              "value": "9",
+              "name": "Opzione 4 531-1701kHz (A:9kHz-M:1kHz)"
+            },
+            {
+              "value": "B",
+              "name": "Opzione 5 530-1710kHz (A:10kHz-M:1kHz)"
+            },
+            {
+              "value": "D",
+              "name": "Opzione 6 153-279kHz & 531-1620kHz (A:9kHz-M:1kHz)"
+            }
+          ]
+        },
+        {
+          "extra_name": "Riduzione rumore ambientale AM",
+          "name_original": "Riduzione rumore ambientale AM",
+          "name": "Riduzione rumore ambientale AM",
+          "byte": 4,
+          "mask": "00100000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "50us fuori dagli Stati Uniti"
+            },
+            {
+              "value": "1",
+              "name": "75us Stati Uniti"
+            }
+          ]
+        },
+        {
+          "extra_name": "Pulsante help",
+          "name_original": "Pulsante help",
+          "name": "Pulsante help",
+          "byte": 4,
+          "mask": "00000010",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Assente"
+            },
+            {
+              "value": "1",
+              "name": "Presente"
+            }
+          ]
+        },
+        {
+          "extra_name": "Frequenze banda FM",
+          "name_original": "Frequenze banda FM",
+          "name": "Frequenze banda FM",
+          "byte": 5,
+          "mask": "00001111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Disabilitata"
+            },
+            {
+              "value": "1",
+              "name": "76.0-95.0MHz (A:100kHz-M:50kHz)"
+            },
+            {
+              "value": "2",
+              "name": "76.0-108.0MHz (A:100kHz-M:50kHz)"
+            },
+            {
+              "value": "3",
+              "name": "76.0-108.0MHz (A:200kHz-M:50kHz)"
+            },
+            {
+              "value": "4",
+              "name": "87.5-108.0MHz (A:100kHz-M:50kHz)"
+            },
+            {
+              "value": "5",
+              "name": "87.5-108.0MHz (A:250kHz-M:50kHz)"
+            },
+            {
+              "value": "6",
+              "name": "87.9-108.0MHz (A:100kHz-M:50kHz)"
+            },
+            {
+              "value": "7",
+              "name": "87.9-108.0MHz (A:200kHz-M:50kHz)"
+            }
+          ]
+        },
+        {
+          "extra_name": "Numero antenne radio",
+          "name_original": "Numero antenne radio",
+          "name": "Numero antenne radio",
+          "byte": 6,
+          "mask": "10000000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "1 antenna"
+            },
+            {
+              "value": "1",
+              "name": "2 antenne"
+            }
+          ]
+        },
+        {
+          "extra_name": "Chiamata di emergenza",
+          "name_original": "Presenza e tipo di chiamata di emergenza",
+          "name": "Presenza e tipo di chiamata di emergenza",
+          "byte": 9,
+          "mask": "00001111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "E",
+              "name": "Unione europea"
+            },
+            {
+              "value": "F",
+              "name": "Assente"
+            }
+          ]
+        },
+        {
+          "extra_name": "Radio digitale / area",
+          "name_original": "Accensione radio digitale e area geografica",
+          "name": "Accensione radio digitale e area geografica",
+          "byte": 10,
+          "mask": "11110000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Radio digitale disattivata"
+            },
+            {
+              "value": "1",
+              "name": "Unione europea"
+            }
+          ]
+        },
+        {
+          "extra_name": "Filtraggio suoni",
+          "name_original": "Segnale utilizzato per filtrare i suoni",
+          "name": "Segnale utilizzato per filtrare i suoni",
+          "byte": 11,
+          "mask": "00001111",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Segnale disabilitato"
+            },
+            {
+              "value": "1",
+              "name": "Segnale basso"
+            },
+            {
+              "value": "2",
+              "name": "Segnale medio"
+            },
+            {
+              "value": "3",
+              "name": "Segnale alto"
+            }
+          ]
+        },
+        {
+          "extra_name": "Soglia ricezione banda digitale",
+          "name_original": "Configurazione soglia di ricezione della banda digitale",
+          "name": "Configurazione soglia di ricezione della banda digitale",
+          "byte": 13,
+          "mask": "01100000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Debole-basso"
+            },
+            {
+              "value": "1",
+              "name": "Medio"
+            },
+            {
+              "value": "2",
+              "name": "Alto"
+            }
+          ]
+        },
+        {
+          "extra_name": "Tuner digitale",
+          "name_original": "Tuner digitale",
+          "name": "Tuner digitale",
+          "byte": 13,
+          "mask": "00010000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Funzione disattiva"
+            },
+            {
+              "value": "1",
+              "name": "Funzione attiva"
+            }
+          ]
+        },
+        {
+          "extra_name": "Funzione traffico TA FM",
+          "name_original": "Funzione traffico TA FM",
+          "name": "Funzione traffico TA FM",
+          "byte": 13,
+          "mask": "00001000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Funzione disattivata"
+            },
+            {
+              "value": "1",
+              "name": "Funzione attiva"
+            }
+          ]
+        },
+        {
+          "extra_name": "Soglia ricezione banda AM",
+          "name_original": "Configurazione soglia di ricezione della banda AM",
+          "name": "Configurazione soglia di ricezione della banda AM",
+          "byte": 13,
+          "mask": "00000011",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Debole-basso"
+            },
+            {
+              "value": "1",
+              "name": "Medio"
+            },
+            {
+              "value": "2",
+              "name": "Alto"
+            }
+          ]
+        },
+        {
+          "extra_name": "Soglia ricezione banda FM",
+          "name_original": "Configurazione soglia di ricezione della banda FM",
+          "name": "Configurazione soglia di ricezione della banda FM",
+          "byte": 14,
+          "mask": "11110000",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Debole-basso"
+            },
+            {
+              "value": "2",
+              "name": "Medio"
+            },
+            {
+              "value": "4",
+              "name": "Alto"
+            }
+          ]
+        },
+        {
+          "extra_name": "Stato radio FM",
+          "name_original": "Stato radio FM",
+          "name": "Stato radio FM",
+          "byte": 14,
+          "mask": "00000110",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Funzione disabilitata"
+            },
+            {
+              "value": "1",
+              "name": "Segnale basso"
+            },
+            {
+              "value": "2",
+              "name": "Segnale medio"
+            },
+            {
+              "value": "3",
+              "name": "Segnale alto"
+            }
+          ]
+        },
+        {
+          "extra_name": "TA radio digitale",
+          "name_original": "Funzione traffico TA radio digitale",
+          "name": "Funzione traffico TA radio digitale",
+          "byte": 14,
+          "mask": "00000001",
+          "form_type": "combobox",
+          "params": [
+            {
+              "value": "0",
+              "name": "Funzione disattivata"
+            },
+            {
+              "value": "1",
+              "name": "Funzione attivata"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

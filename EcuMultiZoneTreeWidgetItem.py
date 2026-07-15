@@ -21,12 +21,14 @@
 
 from PySide6.QtCore import Qt, Slot
 from PySide6.QtWidgets import QTreeWidgetItem, QTreeWidget
+from PySide6.QtGui import QPalette, QColor
 
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
 from EcuZoneComboBox import EcuZoneComboBox
 from EcuZoneTreeWidgetItem import EcuZoneTreeWidgetItem
 from i18n import i18n
+import PyPSADiagGUI
 
 
 class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
@@ -76,7 +78,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            widget.clearZoneValue()
+            self.__clearWidget(widget, cellItem)
 
     def getZoneAndHex(self, virginWrite: bool()):
         widget = self.treeWidget().itemWidget(self, 2)
@@ -87,7 +89,15 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         return [self.zone, value]
 
     def changeZoneOption(self, root, data: str, valueType: str):
-        self.selfUpdate == True
+        self.selfUpdate = True
+        # Reset state from any previous load (e.g. a shorter / invalid CSV that
+        # tripped integrity) so each CSV (re)load starts from a clean slate,
+        # instead of staying disabled/red after one bad file.
+        self.integrity = True
+        for index in range(root.childCount()):
+            cellItem = root.child(index)
+            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            self.__clearWidget(widget, cellItem)
         try:
             # Set Root value of Multi Config zone
             widget = root.treeWidget().itemWidget(root, 2)
@@ -100,23 +110,41 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 result = widget.changeZoneOption(data, valueType)
                 if result == 2:
                     print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
-                    widget.setStyleSheet("QComboBox{background-color: red;}")
+                    p = widget.palette()
+                    p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                    widget.setPalette(p)
                     widget.setEnabled(False)
                     cellItem.setHidden(True)
+                    # Mark as "variant mismatch" so applyFilters keeps it hidden
+                    # even when the search filter is empty.
+                    cellItem.setData(0, Qt.UserRole + 1, True)
                 elif result == 1:
                     print("Disabled(1): " + self.zone + " - " + widget.getDescriptionName())
                     self.integrity = False
         except:
             print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption " + self.zone + " - " + widget.getDescriptionName())
 
-        self.selfUpdate == False
+        self.selfUpdate = False
         # Integrity wrong, disable the sub zones and coding
         if not self.integrity:
             for index in range(root.childCount()):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-                widget.setStyleSheet("QComboBox{background-color: red;}")
+                p = widget.palette()
+                p.setColor(QPalette.Button, PyPSADiagGUI.RED)
+                widget.setPalette(p)
                 widget.setEnabled(False)
+
+    def __clearWidget(self, widget, cellItem):
+        widget.clearZoneValue()
+        p = widget.palette()
+        p.setColor(QPalette.Button, PyPSADiagGUI.BUTTON_COLOR)
+        widget.setPalette(p)
+        widget.setEnabled(True)
+        cellItem.setHidden(False)
+        # Clear the variant-mismatch marker
+        cellItem.setData(0, Qt.UserRole + 1, None)
+
 
     def __update(self):
         # If we are "self" updating (By loading CSV file) do not call update
@@ -133,6 +161,12 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         for index in range(self.childCount()):
             cellItem = self.child(index)
             widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+            # Is this widget used or disabled?
+            if widget.isEnabled() == False:
+#                print("Disabled widget - " + widget.getDescriptionName())
+                continue
+
+#            print("Enabled widget - " + widget.getDescriptionName())
 
             byteNr = widget.getCorrespondingByte()
             size = widget.getCorrespondingByteSize()
@@ -170,4 +204,4 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
     @Slot()
     def stateChanged(self, item: int):
         self.__update()
-
+  

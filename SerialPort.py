@@ -19,6 +19,7 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
+import re
 import time
 import serial.tools.list_ports
 
@@ -26,19 +27,27 @@ from EcuSimulation import EcuSimulation
 from i18n import i18n
 
 
+def _natural_com_key(name: str):
+    """Sort key so COM4 comes before COM12 (numeric, not lexicographic)."""
+    m = re.search(r"\d+", name or "")
+    return (int(m.group()) if m else 0, name or "")
+
+
 class SerialPort():
     ecuSimulation = EcuSimulation()
     simulation = False
 
-    def __init__(self, simulation: bool()):
+    def __init__(self, logger=None, simulation: bool = False):
         self.serialPort = serial.Serial()
         self.simulation = simulation
+        self.logger = logger
 
     # Get available Serial ports and put it in Combobox
     def fillPortNameCombobox(self, combobox):
         combobox.clear()
         comPorts = serial.tools.list_ports.comports()
-        nameList = list(port.device for port in comPorts)
+        nameList = sorted((port.device for port in comPorts),
+                          key=_natural_com_key)
         for name in nameList:
             combobox.addItem(name)
 
@@ -59,27 +68,41 @@ class SerialPort():
         except serial.SerialException as e:
             return i18n().tr('Error opening port: ') + str(e)
 
+    def configure(self, tx_id, rx_id, protocol="uds", bus="DIAG", target=None, dialog_type="0"):
+        # First send an Version and Reset command
+        cmd = "V"
+        self.logger("> " + cmd)
+        receiveData = self.sendReceive(cmd)
+        self.logger("< " + receiveData)
+        if receiveData == "Timeout":
+            return False
+        cmd = "R"
+        self.logger("> " + cmd)
+        receiveData = self.sendReceive(cmd)
+        self.logger("< " + receiveData)
+
+        return True
+
     def write(self, data):
         #print(data)
+        self.serialPort.reset_input_buffer()
         self.serialPort.write(data)
+        self.serialPort.flush()
 
     def readRawData(self):
         data = bytearray()
-        runLoop = 80
-        while runLoop > 0:
-            dataLen = self.serialPort.in_waiting
-            if dataLen > 1:
-                subData = self.serialPort.read_until(expected=b"\r\n")
-                if len(subData) > 0:
-                    data.extend(subData)
-                    if data.find(b"\r") != -1:
-#                        print(data)
-                        break
-                    time.sleep(0.1)
-                    runLoop = 10
+        end = time.monotonic() + self.serialPort.timeout
+
+        while time.monotonic() < end:
+            n = self.serialPort.in_waiting
+            if n:
+                data.extend(self.serialPort.read(n))
+                end = time.monotonic() + self.serialPort.timeout
+                if b"\n" in data:
+                    break
             else:
-                time.sleep(0.1)
-                runLoop -= 1
+                time.sleep(0.01)
+
         return data
 
     def readData(self):
@@ -87,7 +110,7 @@ class SerialPort():
             return self.ecuSimulation.receive()
         else:
             data = self.readRawData()
-            if len(data) == 0:
+            if not data:
                 # Do not translate
                 return "Timeout"
 

@@ -1,0 +1,86 @@
+{
+    "name": "AVAS",
+    "tx_id": "5B0",
+    "rx_id": "5AF",
+    "protocol": "uds",
+    "dtc_lookup": "data/dtc/AVAS.json",
+    "key_type": "multi",
+    "keys": {
+        "AVAS": "C504"
+    },
+    "coding": true,
+    "errors": true,
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Configuration_Group_Data_List",
+            "tab": "tele",
+            "name": "Configuration group data list",
+            "byte": 0,
+            "type": "raw",
+            "form_type": "string"
+        },
+        "2101": {
+            "id": "Gauging group data values",
+            "tab": "tele",
+            "name": "Gauging group data values",
+            "type": "raw",
+            "form_type": "multi",
+            "CFG_EZ9_NIVEAU_SONORE_AVAS_MARCHE_AVANT": {
+                "name": "Volume of the pedestrian horn in forward gear",
+                "byte": 1,
+                "type": "raw",
+                "form_type": "string",
+                "mask": "1111111111111111"
+            },
+            "CFG_EZA_NIVEAU_SONORE_AVAS_MARCHE_ARRIERE": {
+                "name": "Volume of the pedestrian horn in reverse gear",
+                "byte": 3,
+                "type": "raw",
+                "form_type": "string",
+                "mask": "1111111111111111"
+            },
+            "CFG_EZI_SELECTION_SON_AVAS": {
+                "name": "Selection of the pedestrian horn sound",
+                "byte": 5,
+                "type": "hex",
+                "form_type": "combobox",
+                "mask": "11111111",
+                "params": [
+                    {
+                        "name": "Default value. No sound",
+                        "value": "00"
+                    },
+                    {
+                        "name": "Sound 1",
+                        "value": "01"
+                    },
+                    {
+                        "name": "Sound 2",
+                        "value": "02"
+                    },
+                    {
+                        "name": "Sound 3",
+                        "value": "03"
+                    },
+                    {
+                        "name": "Sound 4",
+                        "value": "04"
+                    },
+                    {
+                        "name": "Sound 5",
+                        "value": "05"
+                    },
+                    {
+                        "name": "Sound 6",
+                        "value": "06"
+                    }
+                ]
+            }
+        }
+    }
+} 

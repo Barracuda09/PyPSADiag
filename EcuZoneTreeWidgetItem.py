@@ -81,5 +81,4 @@ class EcuZoneTreeWidgetItem(QTreeWidgetItem):
         elif isinstance(widget, EcuZoneCheckBox):
             widget.changeZoneOption(data, valueType)
         elif isinstance(widget, EcuZoneComboBox):
-            widget.changeZoneOption(data, valueType)
-
+            widget.changeZoneOption(data, valueType) 

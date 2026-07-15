@@ -1,0 +1,551 @@
+{
+    "_comment": {
+        "name": "TELEMAT DTC Codes grabbed from Diagbox FDB. ECUTYPE union: AIO_IVI, BOITIER_TELEMATIQUE, IVI, IVI_HEAD_UNIT, IVI_HEAD_UNIT_R2, NAC, RCC. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Calibration download"
+    },
+    "B1001": {
+        "name": "Fault on the GPS aerial"
+    },
+    "B1002": {
+        "name": "Unexpected reset of the ECU"
+    },
+    "B1003": {
+        "name": "Secure configuration"
+    },
+    "B1004": {
+        "name": "IVI audio-navigation system"
+    },
+    "B1005": {
+        "name": "Telematic unit ECU internal fault"
+    },
+    "B1006": {
+        "name": "SIM card fault"
+    },
+    "B1007": {
+        "name": "Fault on indicator lamps 1 to 6"
+    },
+    "B1008": {
+        "name": "Fault: +30 supply fuse"
+    },
+    "B1009": {
+        "name": "GSM aerial fault"
+    },
+    "B100C": {
+        "name": "IVI audio-navigation supply"
+    },
+    "B101B": {
+        "name": "LVDS connection with the (EDGE Screen) multifunction touch screen"
+    },
+    "B101C": {
+        "name": "LVDS connection with the IVI multifunction touch screen"
+    },
+    "B101D": {
+        "name": "Connection LVDS with the digital panoramic visual assistance cameras"
+    },
+    "B11D7": {
+        "name": "Loss of communication with the  visual reversing assistance camera"
+    },
+    "B1203": {
+        "name": "Controls under the steering wheel ECU"
+    },
+    "B120C": {
+        "name": "CVBS video signal input"
+    },
+    "B12C4": {
+        "name": "Audio-navigation ECU"
+    },
+    "B1400": {
+        "name": "IVI audio-navigation system supply voltage"
+    },
+    "B1406": {
+        "name": "Accelerometer"
+    },
+    "B1501": {
+        "name": "Front left audio output"
+    },
+    "B1502": {
+        "name": "Front right audio output"
+    },
+    "B1503": {
+        "name": "Rear left audio output"
+    },
+    "B1504": {
+        "name": "Rear right audio output"
+    },
+    "B1505": {
+        "name": "Microphone 1 input"
+    },
+    "B1506": {
+        "name": "Absence of communication with the independent telematic unit"
+    },
+    "B1507": {
+        "name": "Aerial input 1"
+    },
+    "B1508": {
+        "name": "Aerial input 2"
+    },
+    "B1509": {
+        "name": "Aerial input 2"
+    },
+    "B1512": {
+        "name": "CD player"
+    },
+    "B1513": {
+        "name": "HIFI amplifier"
+    },
+    "B1516": {
+        "name": "IVI audio-navigation USB module"
+    },
+    "B1517": {
+        "name": "IVI audio-navigation Bluetooth module"
+    },
+    "B1535": {
+        "name": "Compatibility of the software"
+    },
+    "B1537": {
+        "name": "GPS aerial"
+    },
+    "B1538": {
+        "name": "Module GPS"
+    },
+    "B1539": {
+        "name": "Audio-navigation system  ( radio module )"
+    },
+    "B153A": {
+        "name": "Audio-navigation system  ( second tuner )"
+    },
+    "B153B": {
+        "name": "Tuner 3"
+    },
+    "B153C": {
+        "name": "IVI audio-navigation system fan"
+    },
+    "B153D": {
+        "name": "Digital radio aerial"
+    },
+    "B153E": {
+        "name": "Visual reversing assistance video input"
+    },
+    "B153F": {
+        "name": "Multifunction touch screen electrical supply circuit"
+    },
+    "B154D": {
+        "name": "IVI audio-navigation system Wi-Fi module"
+    },
+    "B154E": {
+        "name": "Microphone 2 input"
+    },
+    "B154F": {
+        "name": "Front centre channel audio output"
+    },
+    "B1550": {
+        "name": "Bass box output"
+    },
+    "B1551": {
+        "name": "Bass box output"
+    },
+    "B155B": {
+        "name": "IVI audio-navigation ECU  ( Secure private key damaged )"
+    },
+    "B155C": {
+        "name": "USB stick data cannot be read"
+    },
+    "B155D": {
+        "name": "NAC audio-navigation or RCC connected audio system USB controller"
+    },
+    "B155E": {
+        "name": "Insufficient space for software update"
+    },
+    "B1560": {
+        "name": "USB4 port ( Customer's USB stick )"
+    },
+    "B1561": {
+        "name": "USB3 port ( Customer's USB stick )"
+    },
+    "B1562": {
+        "name": "USB2 port  ( vehicle USB )"
+    },
+    "B1563": {
+        "name": "USB1 port  ( to the independent telematic unit )"
+    },
+    "B1579": {
+        "name": "Encrypted system files access error"
+    },
+    "B158F": {
+        "name": "Failure of the programming of the visual reversing assistance function 180°"
+    },
+    "B1590": {
+        "name": "Absence of communication with the visual manoeuvring assistance ECU"
+    },
+    "B1591": {
+        "name": "Loss of communication with the 180° visual reversing assistance camera"
+    },
+    "B1592": {
+        "name": "Internal fault of the visual reversing assistance function 180°"
+    },
+    "B15BB": {
+        "name": "Configuration of the hifi amplifier"
+    },
+    "B15C8": {
+        "name": "Bass box output"
+    },
+    "B15C9": {
+        "name": "Bass box output"
+    },
+    "B15CA": {
+        "name": "Fault on the front LH Tweeter"
+    },
+    "B15CB": {
+        "name": "Fault on the front RH Tweeter"
+    },
+    "B15CC": {
+        "name": "Rear left Tweeter fault"
+    },
+    "B15CD": {
+        "name": "Rear right Tweeter fault"
+    },
+    "B15CE": {
+        "name": "Audio output of the rear right-hand tweeter, row 3"
+    },
+    "B15CF": {
+        "name": "Audio output of the rear left-hand tweeter, row 3"
+    },
+    "B15D0": {
+        "name": "Audio output of the rear left-hand speaker, row 2"
+    },
+    "B15D1": {
+        "name": "Audio output of the rear right-hand speaker, row 2"
+    },
+    "B15D2": {
+        "name": "Audio output of the front left-hand speaker, row 2"
+    },
+    "B15D3": {
+        "name": "Audio output of the front right-hand speaker, row 2"
+    },
+    "B15D4": {
+        "name": "Audio output of the rear left-hand speaker, row 3"
+    },
+    "B15D5": {
+        "name": "Audio output of the rear right-hand speaker, row 3"
+    },
+    "B15D6": {
+        "name": "Fault on the front LH Woofer"
+    },
+    "B15D7": {
+        "name": "Rear left Woofer fault"
+    },
+    "B15D8": {
+        "name": "Rear right Woofer fault"
+    },
+    "B15D9": {
+        "name": "Fault on the front RH Woofer"
+    },
+    "B15E0": {
+        "name": "Microphone 1 input"
+    },
+    "B15E1": {
+        "name": "Microphone 2 input"
+    },
+    "B15F3": {
+        "name": "IVI audio-navigation system USB port supply"
+    },
+    "B15F4": {
+        "name": "Down arrow button on the steering wheel with integrated controls"
+    },
+    "B15F5": {
+        "name": "Up arrow button on the steering wheel with integrated controls"
+    },
+    "B15F6": {
+        "name": "Button OK of the steering wheel with integrated controls"
+    },
+    "B15F7": {
+        "name": "\"voice recognition\" button on the steering wheel with integrated controls"
+    },
+    "B15F8": {
+        "name": "\"phone\" button on the steering wheel with integrated controls"
+    },
+    "B15F9": {
+        "name": "\"+\" volume button on the steering wheel with integrated controls"
+    },
+    "B15FA": {
+        "name": "\"-\" volume button on the steering wheel with integrated controls"
+    },
+    "B15FB": {
+        "name": "\"ON/OFF\" button on the multifunction control panel"
+    },
+    "B15FC": {
+        "name": "\"+\" volume button on the multifunction control panel"
+    },
+    "B15FD": {
+        "name": "\"-\" volume button on the multifunction control panel"
+    },
+    "B15FE": {
+        "name": "\"HOME\" button on the multifunction control panel"
+    },
+    "B15FF": {
+        "name": "\"ADAS\" button on the multifunction control panel"
+    },
+    "B1637": {
+        "name": "Multifunction control panel air conditioning menu button"
+    },
+    "B1639": {
+        "name": "Overheating of the IVI audio-navigation system"
+    },
+    "B1656": {
+        "name": "Error loading voice recognition launch keyword"
+    },
+    "B1657": {
+        "name": "Error loading voice synthesis text"
+    },
+    "B1658": {
+        "name": "Incompatible digital audio amplifier software"
+    },
+    "B1659": {
+        "name": "Overheating of the audio amplifier"
+    },
+    "B165A": {
+        "name": "Overheating of the HIFI amplifier"
+    },
+    "B16F2": {
+        "name": "Configuration fault"
+    },
+    "B16F3": {
+        "name": "OTA download"
+    },
+    "B16FD": {
+        "name": "OTA download  ( Memory full )"
+    },
+    "B16FE": {
+        "name": "OTA download  ( Over the Air )  ( Internet connection problem )"
+    },
+    "B16FF": {
+        "name": "OTA download"
+    },
+    "B196F": {
+        "name": "Microphone  340  ohms"
+    },
+    "B2E0E": {
+        "name": "VIN incorrect"
+    },
+    "B2EDD": {
+        "name": "Buttons of the steering wheel with integrated controls"
+    },
+    "B2EDE": {
+        "name": "Button jammed on the multifunction control panel"
+    },
+    "U0100": {
+        "name": "No communication with the engine management ECU or with the electric drive train supervisor ECU"
+    },
+    "U0103": {
+        "name": "No communication with the automatic gearbox ECU or with the piloted manual gearbox ECU or with the electric drive train supervisor ECU"
+    },
+    "U0121": {
+        "name": "No communication with the ABS/ESP ECU on the high speed CAN 1"
+    },
+    "U0140": {
+        "name": "No communication with the built-in systems interface on the CAN IS/HS1"
+    },
+    "U0301": {
+        "name": "Communication with the engine management ECU or with the electric drive train supervisor ECU on the CAN"
+    },
+    "U0302": {
+        "name": "Communication with the automatic gearbox ECU or with the electric drive train supervisor ECU on the CAN network"
+    },
+    "U0304": {
+        "name": "Communication fault with the gearbox ECU on the CAN network"
+    },
+    "U0315": {
+        "name": "ABS/ESP ECU  ( CAN )"
+    },
+    "U0320": {
+        "name": "Communication with the electric power steering ECU on the CAN"
+    },
+    "U0322": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U0401": {
+        "name": "Communication with the engine management ECU or with the electric drive train supervisor ECU on the CAN"
+    },
+    "U0402": {
+        "name": "Communication with the automatic gearbox ECU or with the electric drive train supervisor ECU on the CAN network"
+    },
+    "U0415": {
+        "name": "ABS/ESP ECU  ( CAN )"
+    },
+    "U0420": {
+        "name": "Audio-navigation / connected audio system"
+    },
+    "U0422": {
+        "name": "Built-in systems interface  ( CAN )"
+    },
+    "U11DF": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U1213": {
+        "name": "ABS/ESP ECUs (CAN)"
+    },
+    "U1313": {
+        "name": "ABS/ESP ECUs (CAN)"
+    },
+    "U1387": {
+        "name": "No communication with the hybrid drive train supervisor ECU or with the electric drive train supervisor ECU"
+    },
+    "U1470": {
+        "name": "No radio frequency connectivity box (BSRF) communication on the Ethernet network 1"
+    },
+    "U1472": {
+        "name": "No radio frequency connectivity box (BSRF) communication on the Ethernet network 1"
+    },
+    "U1474": {
+        "name": "No communication from the IVI audio-navigation system ECU on the Ethernet network 1"
+    },
+    "U1476": {
+        "name": "No radio frequency connectivity box (BSRF) communication on the Ethernet network 1"
+    },
+    "U1478": {
+        "name": "Communication with the instrument panel on the CAN"
+    },
+    "U1538": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U1601": {
+        "name": "Fault in communication on the C-CAN"
+    },
+    "U1602": {
+        "name": "Fault in communication on the B-CAN"
+    },
+    "U1800": {
+        "name": "Exterior temperature data fault"
+    },
+    "U180E": {
+        "name": "No radio frequency connectivity box (BSRF) communication"
+    },
+    "U1820": {
+        "name": "Communication with the head-up display unit on the LVDS 4 network"
+    },
+    "U1821": {
+        "name": "Communication with the instrument panel on the LVDS 4 network"
+    },
+    "U1822": {
+        "name": "Communication with the main multifunction touch screen on the LVDS 1 network"
+    },
+    "U1823": {
+        "name": "Communication with the (EDGE Screen) secondary multifunction touch screen on the LVDS 2 network"
+    },
+    "U1824": {
+        "name": "No communication between the 180° visual reversing assistance camera and the connection LVDS"
+    },
+    "U1825": {
+        "name": "No communication between the head-up display unit and the connection LVDS"
+    },
+    "U1826": {
+        "name": "Instrument panel LVDS 4 network"
+    },
+    "U1827": {
+        "name": "Main multifunction touch screen LVDS 1 network"
+    },
+    "U1828": {
+        "name": "Secondary multifunction touch screen LVDS 2 network"
+    },
+    "U1829": {
+        "name": "Digital panoramic visual assistance rear camera LVDS 5 network"
+    },
+    "U182B": {
+        "name": "Configuration of the instrument panel"
+    },
+    "U182C": {
+        "name": "(EDGE Screen) multifunction touch screen configuration"
+    },
+    "U182D": {
+        "name": "IVI multifunction touch screen configuration"
+    },
+    "U183A": {
+        "name": "Synchronisation between the digital panoramic visual assistance ECU and the connection LVDS"
+    },
+    "U183B": {
+        "name": "Pairing between the IVI audio-navigation system and the head-up display unit"
+    },
+    "U183C": {
+        "name": "Connection A2B between the IVI audio-navigation system and the HIFI amplifier"
+    },
+    "U183D": {
+        "name": "Connection A2B between the IVI audio-navigation system and the HIFI amplifier"
+    },
+    "U18A0": {
+        "name": "USB speed reduced in Full Speed mode"
+    },
+    "U18A1": {
+        "name": "USB connection deactivated between the audio-navigation and the independent telematic unit"
+    },
+    "U1934": {
+        "name": "CAN"
+    },
+    "U1935": {
+        "name": "No communication with the electric drive train supervisor ECU"
+    },
+    "U1936": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U1937": {
+        "name": "Communication with the independent telematic unit on the CAN"
+    },
+    "U1949": {
+        "name": "Communication with the built-in systems interface on the CAN"
+    },
+    "U1EF3": {
+        "name": "LVDS connection between the NAC audio-navigation and the digital instrument panel"
+    },
+    "U1EF5": {
+        "name": "Software certificate error"
+    },
+    "U1F00": {
+        "name": "Audio-navigation faults log history"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F07": {
+        "name": "CAN INFO DIV (Entertainment Information CAN)"
+    },
+    "U1F15": {
+        "name": "CAN INFO DIV (Entertainment Information CAN)"
+    },
+    "U1F18": {
+        "name": "ECU not communicating on the High Speed CAN fault"
+    },
+    "U1F22": {
+        "name": "No communication with the parking assistance ECU"
+    },
+    "U1F24": {
+        "name": "No communication with the CD changer ECU"
+    },
+    "U1F42": {
+        "name": "No communication with the air conditioning ECU"
+    },
+    "U1F5F": {
+        "name": "Absence of communication with the multifunction touch screen"
+    },
+    "U1F6D": {
+        "name": "Absence of communication with the multifunction touch screen"
+    },
+    "U1F8E": {
+        "name": "Communication with the digital panoramic visual assistance ECU on the CAN"
+    },
+    "U1FA1": {
+        "name": "Communication on the LVDS network"
+    },
+    "U1FB7": {
+        "name": "ECU not communicating"
+    },
+    "U1FB8": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1FB9": {
+        "name": "Communication with the IVI audio-navigation system on the CAN"
+    },
+    "U1FBF": {
+        "name": "No communication from the parking assistance ECU on the CAN"
+    }
+}

@@ -3,8 +3,9 @@
   "tx_id": "75F",
   "rx_id": "65F",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/COMBINE.json",
   "key_type": "multi",
-  "keys":  {
+  "keys": {
     "Key1": "50A6",
     "Key2": "DA33"
   },
@@ -23,7 +24,6 @@
       "tab": "tele",
       "type": "raw",
       "byte": 0,
-      "type": "raw",
       "form_type": "string"
     },
     "2100": {

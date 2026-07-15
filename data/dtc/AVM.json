@@ -1,0 +1,92 @@
+{
+    "_comment": {
+        "name": "AVM DTC Codes grabbed from Diagbox FDB. ECUTYPE union: AVM_KP1. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B2300": {
+        "name": "Voltage of the ancillaries battery"
+    },
+    "B2301": {
+        "name": "Visual manoeuvring assistance front camera"
+    },
+    "B2302": {
+        "name": "Left-hand mirror parking assistance camera"
+    },
+    "B2303": {
+        "name": "Visual manoeuvring assistance rear camera"
+    },
+    "B2304": {
+        "name": "Right-hand mirror parking assistance camera"
+    },
+    "B2305": {
+        "name": "Visual manoeuvring assistance front camera"
+    },
+    "B2306": {
+        "name": "Left-hand mirror parking assistance camera"
+    },
+    "B2307": {
+        "name": "Visual manoeuvring assistance rear camera"
+    },
+    "B2308": {
+        "name": "Right-hand mirror parking assistance camera"
+    },
+    "B230A": {
+        "name": "Supply voltage"
+    },
+    "B230C": {
+        "name": "CAN"
+    },
+    "B230D": {
+        "name": "Calibration fault"
+    },
+    "B230E": {
+        "name": "Communication on the USB port"
+    },
+    "B230F": {
+        "name": "Communication between the visual manoeuvring assistance ECU and the multifunction touch screen"
+    },
+    "U1980": {
+        "name": "Communication with the BSI"
+    },
+    "U1982": {
+        "name": "Gateway wiring housing"
+    },
+    "U1983": {
+        "name": "Gateway wiring housing"
+    },
+    "U1984": {
+        "name": "Gateway wiring housing"
+    },
+    "U1985": {
+        "name": "Gateway wiring housing"
+    },
+    "U1987": {
+        "name": "Gateway wiring housing"
+    },
+    "U1988": {
+        "name": "Gateway wiring housing"
+    },
+    "U1989": {
+        "name": "Gateway wiring housing"
+    },
+    "U198B": {
+        "name": "Parking assistance ECU"
+    },
+    "U198F": {
+        "name": "Gateway wiring housing"
+    },
+    "U1996": {
+        "name": "Gateway wiring housing"
+    },
+    "U19A1": {
+        "name": "Communication with the steering wheel angle sensor"
+    },
+    "U19A2": {
+        "name": "Communication with the gearbox ECU"
+    },
+    "U19A3": {
+        "name": "Communication with the ESP ECU"
+    },
+    "U19A7": {
+        "name": "Equipment part number"
+    }
+}

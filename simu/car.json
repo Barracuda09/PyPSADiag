@@ -26,5 +26,9 @@
 	"764:664": {
 		"protocol": "uds",
 		"file": "./simu/RCC.csv"
+	},
+	"6AD:68D": {
+		"protocol": "uds",
+		"file": "./simu/ESP90.csv"
 	}
 }

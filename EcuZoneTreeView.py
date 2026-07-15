@@ -19,9 +19,9 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-from PySide6.QtCore import Qt, Slot
-from PySide6.QtWidgets import QSizePolicy, QTabWidget, QTreeWidget
-from PySide6.QtGui import QColor
+from PySide6.QtCore import Qt, Slot, QEvent, QSize, QPoint
+from PySide6.QtWidgets import QSizePolicy, QMenu, QTabWidget, QTreeWidget, QTabBar, QStyle, QStylePainter, QStyleOptionTab
+from PySide6.QtGui import QColor, QPaintEvent
 
 from EcuZoneLineEdit import EcuZoneLineEdit
 from EcuZoneCheckBox import EcuZoneCheckBox
@@ -31,14 +31,58 @@ from EcuMultiZoneTreeWidgetItem import EcuMultiZoneTreeWidgetItem
 from i18n import i18n
 import PyPSADiagGUI
 
+class HorizontalTextTabBar(QTabBar):
+    """
+    Special Text TabBar, with always Horizontal text
+    """
+    def __init__(self, parent):
+        super(HorizontalTextTabBar, self).__init__(parent)
+
+    def paintEvent(self, event: QPaintEvent):
+        painter = QStylePainter(self)
+        option = QStyleOptionTab()
+        for index in range(self.count()):
+            self.initStyleOption(option, index)
+            painter.drawControl(QStyle.CE_TabBarTabShape, option)
+            painter.drawText(self.tabRect(index),
+                             Qt.AlignCenter | Qt.AlignLeft | Qt.TextDontClip,
+                             self.tabText(index))
+
+    def tabSizeHint(self, index):
+        size = QTabBar.tabSizeHint(self, index)
+        if size.width() < size.height():
+            size.transpose()
+        return size - QSize(5, 4)
+
 class EcuZoneTreeView(QTabWidget):
     """
     """
+    tabs = []
+
     def __init__(self, parent, ecuObjectList = None):
         super(EcuZoneTreeView, self).__init__(parent)
+        self.setTabBar(HorizontalTextTabBar(self))
         self.hideZones = False
+        self.searchText = ""
         self.setSizePolicy(QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.MinimumExpanding))
         self.updateView(ecuObjectList)
+        self.setTabPosition(self.TabPosition.North)
+
+        self.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.customContextMenuRequested.connect(self.contextMenu)
+
+    @Slot()
+    def contextMenu(self, pos: QPoint):
+        contextMenu = QMenu(self)
+        tabsTop = contextMenu.addAction(i18n().tr("Tabs above the pages"))
+        tabsLeft = contextMenu.addAction(i18n().tr("Tabs to the left of the pages"))
+
+        action = contextMenu.exec_(self.mapToGlobal(pos))
+        if action == tabsTop:
+            self.setTabPosition(self.TabPosition.North)
+
+        if action == tabsLeft:
+            self.setTabPosition(self.TabPosition.West)
 
     def updateView(self, ecuObjectList):
         if ecuObjectList != None:
@@ -47,7 +91,7 @@ class EcuZoneTreeView(QTabWidget):
             elif "ecu" in ecuObjectList:
                 self.zoneObjectList = ecuObjectList["ecu"]
             else:
-                return;
+                return
 
             # Checking integrity of JSON file
             for zoneIDObject in self.zoneObjectList:
@@ -67,13 +111,28 @@ class EcuZoneTreeView(QTabWidget):
                 self.tabs.append([tabs, index])
 
             self.hideNoResponseZones(self.hideZones)
+            if hasattr(self, 'searchText') and self.searchText:
+                self.filterZones(self.searchText)
 
     def hideNoResponseZones(self, hide: bool()):
         # Take over the hide flag, so we know for next update/change
         self.hideZones = hide
         for tab in self.tabs:
-            widget = self.widget(tab[1])
-            widget.hideNoResponseZones(hide)
+            index = tab[1]
+            widget = self.widget(index)
+            has_visible = widget.hideNoResponseZones(hide)
+            self.setTabVisible(index, has_visible)
+
+    def filterZones(self, text: str):
+        if len(self.tabs) == 0:
+            return
+
+        self.searchText = text
+        for tab in self.tabs:
+            index = tab[1]
+            widget = self.widget(index)
+            has_visible = widget.setFilterText(text)
+            self.setTabVisible(index, has_visible)
 
     def getValuesAsCSV(self):
         value = []
@@ -118,6 +177,8 @@ class EcuZoneTreeView(QTabWidget):
 class EcuZoneTreeViewWidget(QTreeWidget):
     def __init__(self, parent, zoneObjectList, tabName: str):
         super(EcuZoneTreeViewWidget, self).__init__(parent)
+        self.hideZones = False
+        self.searchText = ""
         self.setColumnCount(3)
         headers = [i18n().tr("Zone"), i18n().tr("Zone Description"), i18n().tr("Options")]
         self.setHeaderLabels(headers)
@@ -134,6 +195,8 @@ class EcuZoneTreeViewWidget(QTreeWidget):
                 continue
             if "read_only" in zoneObject:
                 itemReadOnly = zoneObject["read_only"]
+            else:
+                itemReadOnly = False
 
             itemName = i18n().tr(zoneObject["name"])
             formType = zoneObject["form_type"]
@@ -223,14 +286,72 @@ class EcuZoneTreeViewWidget(QTreeWidget):
             item.setBackground(2, PyPSADiagGUI.BASE_COLOR)
 
     def hideNoResponseZones(self, hide: bool()):
+        self.hideZones = hide
+        return self.applyFilters()
+
+    def setFilterText(self, text: str):
+        self.searchText = text
+        return self.applyFilters()
+
+    def applyFilters(self):
+        search_lower = self.searchText.lower()
+        visible_count = 0
         for index in range(self.topLevelItemCount()):
             item = self.topLevelItem(index)
-            if hide:
+            hide_item = False
+
+            # Check if item should be hidden due to hideZones filter
+            if self.hideZones:
                 widget = item.treeWidget().itemWidget(item, 2)
-                if widget.isEnabled() == False:
-                    item.setHidden(True)
-            else:
-                item.setHidden(False)
+                if widget and widget.isEnabled() == False:
+                    hide_item = True
+
+            # Always process children to ensure proper visibility state
+            if not hide_item:
+                if self.searchText:
+                    # Text filter is active - check matches
+                    zone_id = item.text(0).lower()
+                    zone_desc = item.text(1).lower()
+                    top_level_matches = search_lower in zone_id or search_lower in zone_desc
+
+                    # Check children for matches
+                    child_matches = False
+                    for child_index in range(item.childCount()):
+                        child = item.child(child_index)
+                        # Children marked as variant-mismatch by changeZoneOption
+                        # (Disabled(2)) stay hidden regardless of search filter.
+                        if bool(child.data(0, Qt.UserRole + 1)):
+                            child.setHidden(True)
+                            continue
+                        if top_level_matches:
+                            # Parent zone matches - show all children
+                            child.setHidden(False)
+                            child_matches = True
+                        else:
+                            child_param_name = child.text(1).lower()
+                            child_matches_search = search_lower in child_param_name
+                            child.setHidden(not child_matches_search)
+                            if child_matches_search:
+                                child_matches = True
+
+                    # Hide top-level item only if neither it nor any of its children match
+                    if not top_level_matches and not child_matches:
+                        hide_item = True
+                else:
+                    # No text filter - make children visible, but keep
+                    # variant-mismatch children hidden.
+                    for child_index in range(item.childCount()):
+                        child = item.child(child_index)
+                        if bool(child.data(0, Qt.UserRole + 1)):
+                            child.setHidden(True)
+                        else:
+                            child.setHidden(False)
+
+            item.setHidden(hide_item)
+            if not hide_item:
+                visible_count += 1
+
+        return visible_count > 0
 
     def getValuesAsCSV(self):
         value = []
@@ -259,7 +380,17 @@ class EcuZoneTreeViewWidget(QTreeWidget):
         cellItems = self.findItems(zone, Qt.MatchExactly)
         if cellItems:
             cellItem = cellItems[0]
-            if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unkown Error" or data == "Timeout" or (len(data) >= 6 and data[0:6] == "Error:"):
+            # Do not translate these strings
+            if data == "Disabled" or data == "No Response" or data == "Request out of range" or data == "Unknown Error" or data == "Timeout" or (len(data) >= 6 and data[0:6] == "Error:"):
                 self.markItemNoResponse(cellItem)
                 return
-            cellItem.changeZoneOption(cellItem, data, valueType)
+            # Valid value: undo a previous "no response" disable so reloading a
+            # correct CSV re-enables a zone that errored on an earlier load.
+            self.markItemAsNormal(cellItem)
+            # Multi-config zone headers are painted green at build time
+            # (markItemAsRootLevel). markItemAsNormal repaints BASE_COLOR, which
+            # is right for single zones but wipes a header's green on recovery,
+            # so restore it for multi-zone roots.
+            if isinstance(cellItem, EcuMultiZoneTreeWidgetItem):
+                self.markItemAsRootLevel(cellItem)
+            cellItem.changeZoneOption(cellItem, data, valueType) 

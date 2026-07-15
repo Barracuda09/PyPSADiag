@@ -33,9 +33,13 @@ added_files = [
     ('data/*.json', 'data'),
     ('json/*', 'json'),
     ('simu/*', 'simu'),
+    ('i18n/Languages.json', 'i18n'),
     ('i18n/flags/*', 'i18n/flags'),
     ('i18n/translations/*', 'i18n/translations'),
 ]
+
+if platform_name == "windows":
+    added_files += [ ('VCIBridge.py', './') ]
 
 # PyInstaller build pipeline
 a = Analysis(

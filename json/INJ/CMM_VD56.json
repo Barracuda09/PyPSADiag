@@ -3,13 +3,14 @@
   "tx_id": "6A8",
   "rx_id": "688",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/INJ.json",
   "key_type": "multi",
   "keys": {
     "key1": "9395"
   },
   "coding": true,
   "errors": true,
-  "include_zone_object": "./data/IdentUDSECU.json",
+  "include_zone_object": "data/IdentUDSECU.json",
   "tabs": {
     "ident": "Identification",
     "tele": "Telecoding"

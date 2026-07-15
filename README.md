@@ -6,6 +6,7 @@ This application is as is, and you use it **at your own risk**.<br/>
 I am not responsible for any damages or injuries resulting from the use of this application.<br/>
 **VERY IMPORTANT:** This application is for **educational** purposes only **and should be used with care!.**
 
+
 -------
 
 PyPSADiag is an Python application for sending diagnostic frames over CAN-BUS to PSA/Stellantis based cars <br/>
@@ -17,11 +18,17 @@ Currently supporting:
 - Reading Zones that are listed in JSON Configuration file
 - Saving Zones to CSV file
 - Saving changed Zones (as an list) to ECU
+- Flashing of CAL and ULP Files to ECU
 
 What I would like to support:
 - More ECU JSON Files
 
-Help
+Need Help?
+-------
+If you need some help, try to look at the [Wiki](https://github.com/Barracuda09/PyPSADiag/wiki)
+
+
+Help the Project
 -------
 Help in any way is appreciated, just send me an email with anything you can
 contribute to the project, like:
@@ -31,6 +38,29 @@ contribute to the project, like:
 - ideas / feature requests
 - test reports
 - spread the word!
+
+Use of VCI Interface Support
+-----
+- Install [python-3.13.12-embed-win32](https://www.python.org/ftp/python/3.13.12/python-3.13.12-embed-win32.zip) to C:\python\python32
+- VCI driver installed in device manager **(Not part of PyPSADiag)**
+- VCI communication files installed in C:\AWRoot\drv and C:\AWRoot\dtrd **(Not part of PyPSADiag)**
+
+Use of ELM327 Support
+-----
+There are few things to note regarding ELM327 adapter.
+- AEE2010 CAN-DIAG is set on pins 3/8, while ELM327 connects to pins 6/14. Therefore, to make use of it, you need to create an     adapter, that will direct pins 3/8 of an ODB port to pins 6/14 of your OBDII device.
+NEA2020 cars (newer ones) have CAN-DIAG on pins 6/14, so these cars do not need any adapters.
+
+- The OBDII device MUST be a good one, not 1$ clone from Temu/Aliexpress. It should be branded (vLinker, vGate, etc) and should have 'real' mac-address. If the OBDII device is of poor quality - then, most likely, you will simply not be able to read zones at all.
+
+Known issues:
+- AAS is unreadable for some reason, for now use Arduino.
+
+Use of the PIN Extractor
+-----
+This works *only* with ELM327, which should be plugged directly into OBD. No additional adapters required.
+Usage is simple: plug into ODB, connect to ELM327 and press 'Extract PIN' on PIN Extractor tab.
+PIN Calculator tab is able to calculate PIN without a car, if you have relevant data from other sources. E.g. - if you know what to paste into PIN Calculator - you will get your PIN.
 
 Use a Release
 -----
@@ -82,11 +112,17 @@ To show information of a CAL or ULP File.
 Make Translations
 ------
 
-For example to make a translation for Dutch use this command:
-- `python buildi18n.py --lang nl` --> Build the qt.ts file
-- `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate
+For example to make a translation for Dutch NL use these commands:
+- `i18n/Languages.json` Add the language code and name like: `"nl": {"name": "Nederlands"}`
+- `i18n/flags/nl.png` Add the .PNG flag for the NL language (About 128 x 84 Pixels)
+- `python buildi18n.py --lang nl` --> Build the NL qt.ts file
+- `python translate.py --input ./i18n/PyPSADiag_nl.qt.ts` --> Google Translate to NL and release qm file
+
+Only for translation corrections use this:
 - `pyside6-linguist ./i18n/PyPSADiag_translated_nl.qt.ts` --> Correct translation if required
 - `python translate.py --releaseonly --input ./i18n/PyPSADiag_nl.qt.ts` --> Only Release translation qm file
+
+Start PyPSADiag with a specific language:
 - `python main.py --lang nl` --> Run with nl language
 
 Donate

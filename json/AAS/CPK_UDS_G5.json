@@ -3,8 +3,9 @@
   "tx_id": "75D",
   "rx_id": "65D",
   "protocol": "uds",
+  "dtc_lookup": "data/dtc/AAS.json",
   "key_type": "single",
-  "keys":  "D1F5",
+  "keys": "D1F5",
   "coding": true,
   "errors": true,
   "include_zone_object": "./data/IdentUDSECU.json",
@@ -18,14 +19,6 @@
     "E2": "AAS Metasystem"
   },
   "zones": {
-    "2100": {
-      "id": "Configuration_Group_Data_List",
-      "tab": "tele",
-      "name": "Configuration group data list",
-      "byte": 0,
-      "type": "raw",
-      "form_type": "string"
-    },
     "2101": {
       "id": "Configuration_Group_Data_Values",
       "name": "Configuration group data values",

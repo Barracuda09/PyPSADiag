@@ -19,19 +19,19 @@
    Or, point your browser to http://www.gnu.org/copyleft/gpl.html
 """
 
-import os
+import os, json, sys
 from datetime import datetime
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+    QSize, QTime, QUrl, Qt, QRegularExpression)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
+    QPalette, QPixmap, QRadialGradient, QTransform, QAction, QActionGroup, QRegularExpressionValidator)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
-    QHBoxLayout, QLineEdit, QMainWindow, QPushButton,
+    QHBoxLayout, QLabel, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSpacerItem, QSplitter, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget, QStyleFactory)
+    QTextEdit, QVBoxLayout, QWidget, QStyleFactory, QGroupBox, QMenuBar, QMenu)
 
 from EcuZoneTreeView  import EcuZoneTreeView
 from HistoryLineEdit import HistoryLineEdit
@@ -51,17 +51,20 @@ class PyPSADiagGUI(object):
 
     def setupGlobalColors(self):
         # Global Color variables
+        global RED
         global DARK_RED
         global DARK_GREEN
         global ORANGE
 
-        DARK_RED = QColor(255, 0, 0).darker(125)
+        RED = QColor(255, 0, 0)
+        DARK_RED = RED.darker(125)
         DARK_GREEN = QColor(0, 255, 0).darker(150)
         ORANGE = QColor(255, 128, 0)
 
     def setupDarkMode(self, app: QApplication):
         # Global Color variables
         global BASE_COLOR
+        global BUTTON_COLOR
 
         GRAY = QColor(130, 130, 130)
         DARK_GRAY = QColor(130, 130, 130)
@@ -74,6 +77,7 @@ class PyPSADiagGUI(object):
         dark = backGround.darker(150)
         BASE_COLOR = black.lighter(200)
         ALT_BASE_COLOR = DARK_GRAY.darker(125)
+        BUTTON_COLOR = DARK_GRAY.lighter(100)
 
         darkPalette = QPalette()
         darkPalette.setColor(QPalette.Window, DARK_GRAY)
@@ -83,7 +87,7 @@ class PyPSADiagGUI(object):
         darkPalette.setColor(QPalette.ToolTipBase, blue)
         darkPalette.setColor(QPalette.ToolTipText, Qt.white)
         darkPalette.setColor(QPalette.Text, Qt.white)
-        darkPalette.setColor(QPalette.Button, DARK_GRAY.lighter(100))
+        darkPalette.setColor(QPalette.Button, BUTTON_COLOR)
         darkPalette.setColor(QPalette.ButtonText, Qt.white)
         darkPalette.setColor(QPalette.Link, blue)
         darkPalette.setColor(QPalette.Highlight, GRAY.darker(150))
@@ -104,7 +108,7 @@ class PyPSADiagGUI(object):
         self.mainWindow = MainWindow
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1100, 700)
+        MainWindow.resize(1200, 750)
         MainWindow.setSizeIncrement(QSize(1, 1))
         self.setFilePathInWindowsTitle("")
         self.centralwidget = QWidget(MainWindow)
@@ -119,19 +123,11 @@ class PyPSADiagGUI(object):
 
         self.setupGlobalColors()
 
-#        global globalPalette
-#        globalPalette = app.palette()
-#        global BASE_COLOR
-#        BASE_COLOR = globalPalette.color(QPalette.Base)
-
         self.setupDarkMode(app)
 
         self.command = HistoryLineEdit()
         self.output = QTextEdit()
         self.output.setReadOnly(True)
-
-        # Setup languages
-        self.setupLanguages(lang_code)
 
         self.syncZoneFiles = QPushButton()
 
@@ -139,6 +135,9 @@ class PyPSADiagGUI(object):
         self.openCSVFile = QPushButton()
         self.saveCSVFile = QPushButton()
 
+        self.diagtoolTypeComboBox = QComboBox()
+        self.canPinsComboBox = QComboBox()
+        self.wsIpInput = QLineEdit()
         self.portNameComboBox = QComboBox()
         self.ConnectPort = QPushButton()
         self.SearchConnectPort = QPushButton()
@@ -149,19 +148,75 @@ class PyPSADiagGUI(object):
         self.ecuKeyComboBox = QComboBox()
         self.readZone = QPushButton()
         self.writeZone = QPushButton()
+        self.flashEcu = QPushButton()
         self.rebootEcu = QPushButton()
         self.readEcuFaults = QPushButton()
         self.clearEcuFaults = QPushButton()
+        self.disableEcoMode = QPushButton()
+        self.disableEcoMode.setVisible(False)
         self.writeSecureTraceability = QCheckBox()
         self.virginWriteZone = QCheckBox()
         self.hideNoResponseZone = QCheckBox()
 #        self.useSketchSeedGenerator = QCheckBox()
+        self.ecuTxRxLabel = QLabel()
+        self.statusbar = QStatusBar()
+        self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
+
+        self.searchZoneLineEdit = QLineEdit()
+        self.searchZoneLineEdit.setClearButtonEnabled(True)
 
         self.treeView = EcuZoneTreeView(None)
         if scan:
             self.scanTreeView = EcuZoneTreeView(None)
 
-        self.translateGUI(self)
+        ###################################################
+        # Fill Diagnostic-Tool Combobox
+        self.diagtoolTypeComboBox.addItem("Arduino", "serial")
+        self.diagtoolTypeComboBox.addItem("ELM327", "bluetooth")
+        if sys.platform == "win32":
+            self.diagtoolTypeComboBox.addItem("VCI", "vci")
+        self.diagtoolTypeComboBox.addItem("Websocket", "websocket")
+
+        ip_regex = QRegularExpression(r"^(\d{1,3}\.){3}\d{1,3}$")
+        self.wsIpInput.setValidator(QRegularExpressionValidator(ip_regex))
+        self.wsIpInput.setMaxLength(15)
+        fm = self.wsIpInput.fontMetrics()
+        self.wsIpInput.setFixedWidth(fm.horizontalAdvance("0") * 15 + 10)
+        self.wsIpInput.setText("192.168.100.1")
+        self.wsIpInput.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        self.wsIpInput.setVisible(False)
+
+        # Fill CAN Pins Combobox (VCI only)
+        self.canPinsComboBox.addItem("Pins 3/8 (AEE)", "DIAG")
+        self.canPinsComboBox.addItem("Pins 6/14 (NEA)", "IS")
+        self.canPinsComboBox.setVisible(False)
+        ###################################################
+
+        ###################################################
+        # Setup Menu bar
+        self.mainMenu = QMenuBar()
+        self.commandsMenu = self.mainMenu.addMenu("")
+        self.languageMenu = self.mainMenu.addMenu("")
+
+        self.languageActionGroup = QActionGroup(self.languageMenu)
+
+        self.disableEcoModeAction = QAction(self.commandsMenu)
+        self.commandsMenu.addAction(self.disableEcoModeAction)
+
+        self.visioparkCalibrationAction = QAction(self.commandsMenu)
+        self.commandsMenu.addAction(self.visioparkCalibrationAction)
+
+        self.bruteforceKeyAction = QAction(self.commandsMenu)
+        self.commandsMenu.addAction(self.bruteforceKeyAction)
+
+        self.canFrameSnifferAction = QAction(self.commandsMenu)
+        self.commandsMenu.addAction(self.canFrameSnifferAction)
+        ###################################################
+
+        ###################################################
+        # Setup languages
+        self.setupLanguages(lang_code)
+        ###################################################
 
         ###################################################
         # Setup Top Left Layout
@@ -173,31 +228,46 @@ class PyPSADiagGUI(object):
         ###################################################
         # Setup Top Button Header Layout
         self.topButtonHeaderLayout = QHBoxLayout()
-
         self.topButtonHeaderLayout.addStretch()
-        self.topButtonHeaderLayout.setContentsMargins(10, 10, 10, 0)
+        self.topButtonHeaderLayout.setContentsMargins(5, 5, 5, 0)
         self.topButtonHeaderLayout.addWidget(self.syncZoneFiles)
-        self.topButtonHeaderLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
-        self.topButtonHeaderLayout.addWidget(self.languageComboBox)
 
         ###################################################
         # Setup Top Right Layout
         self.topRightLayout = QVBoxLayout()
+
+        # -- CSV File section --
+        self.csvFileBox = QGroupBox()
+        self.csvFileBoxLayout = QVBoxLayout(self.csvFileBox)
+        self.csvFileBoxLayout.setContentsMargins(5, 5, 5, 5)
+        self.csvFileBoxLayout.addWidget(self.openCSVFile)
+        self.csvFileBoxLayout.addWidget(self.saveCSVFile)
+
+        # -- Connection section --
+        self.connectionBox = QGroupBox()
+        self.connectionBoxLayout = QVBoxLayout(self.connectionBox)
+        self.connectionBoxLayout.setContentsMargins(5, 5, 5, 5)
+        self.connectionBoxLayout.addWidget(self.diagtoolTypeComboBox)
+        self.connectionBoxLayout.addWidget(self.canPinsComboBox)
+        self.connectionBoxLayout.addWidget(self.portNameComboBox)
+        self.connectionBoxLayout.addWidget(self.wsIpInput)
+        self.connectionBoxLayout.addWidget(self.SearchConnectPort)
+        self.connectionBoxLayout.addWidget(self.ConnectPort)
+        self.connectionBoxLayout.addWidget(self.DisconnectPort)
+        self.connectionBoxLayout.addWidget(self.disableEcoMode)
+
+        # -- Add widgets to Top Right Layout --
         self.topRightLayout.addWidget(self.sendCommand)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
-        self.topRightLayout.addWidget(self.openCSVFile)
-        self.topRightLayout.addWidget(self.saveCSVFile)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
-        self.topRightLayout.addWidget(self.portNameComboBox)
-        self.topRightLayout.addWidget(self.SearchConnectPort)
-        self.topRightLayout.addWidget(self.ConnectPort)
-        self.topRightLayout.addWidget(self.DisconnectPort)
-        self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addItem(QSpacerItem(10, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addWidget(self.csvFileBox)
+        self.topRightLayout.addItem(QSpacerItem(10, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.topRightLayout.addWidget(self.connectionBox)
         ###################################################
 
         ###################################################
         # Setup Bottom Left Layout (TreeView)
         self.bottomLeftLayout = QVBoxLayout()
+        self.bottomLeftLayout.addWidget(self.searchZoneLineEdit)
         self.bottomLeftLayout.addWidget(self.treeView)
         ###################################################
 
@@ -209,6 +279,7 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.ecuKeyComboBox)
         self.bottomRightLayout.addWidget(self.readZone)
         self.bottomRightLayout.addWidget(self.writeZone)
+        self.bottomRightLayout.addWidget(self.flashEcu)
         self.bottomRightLayout.addWidget(self.readEcuFaults)
         self.bottomRightLayout.addWidget(self.clearEcuFaults)
         self.bottomRightLayout.addWidget(self.rebootEcu)
@@ -216,7 +287,7 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
         self.bottomRightLayout.addWidget(self.hideNoResponseZone)
 #        self.bottomRightLayout.addWidget(self.useSketchSeedGenerator)
-        self.bottomRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
+        self.bottomRightLayout.addItem(QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
         ###################################################
@@ -277,7 +348,7 @@ class PyPSADiagGUI(object):
             ###################################################
 
         self.frame = QFrame(self.centralwidget)
-        self.frame.setContentsMargins(10, 0, 10, 10)
+        self.frame.setContentsMargins(1, 5, 1, 1)
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
 
@@ -301,40 +372,43 @@ class PyPSADiagGUI(object):
         self.mainLayout.addWidget(self.frame)
         self.centralwidget.setLayout(self.mainLayout)
 
-        self.statusbar = QStatusBar()
-        self.mainLayout.addWidget(self.statusbar)
+        # Set Menu- and Status-Bar
         self.statusbar.showMessage(f"PyPSADiag {VERSION} - Copyright \u00A9 {datetime.now().year} by Barracuda09")
+        MainWindow.setMenuBar(self.mainMenu)
+        MainWindow.setStatusBar(self.statusbar)
+
+        # Translate
+        self.translateGUI()
 
         MainWindow.setCentralWidget(self.centralwidget)
 
 
     def setupLanguages(self, lang_code: str):
-        self.languageComboBox = QComboBox()
-        self.languageComboBox.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
-        self.languageComboBox.setMinimumWidth(100)
+        languagesPath = os.path.join(self.currentDir, "i18n", "Languages.json")
+        flagsPath = os.path.join(self.currentDir, "i18n", "flags")
 
-        flags_path = os.path.join(self.currentDir, "i18n", "flags")
-
-        languages = [
-            ("tr", "Türkçe"),
-            ("en", "English"),
-            ("it", "Italiano"),
-            ("de", "Deutsch"),
-            ("nl", "Nederlands"),
-            ("pl", "Polski"),
-            ("uk", "Українська"),
-            ("ru", "Русский"),
-        ]
+        # Read the languages from json file
+        file = open(languagesPath, 'r', encoding='utf-8')
+        jsonFile = file.read()
+        languagesList = json.loads(jsonFile.encode("utf-8"))
+        # build list
+        languages = []
+        for language in languagesList:
+            languages.append((language ,languagesList[language]["name"]))
 
         for code, name in languages:
-            icon_path = os.path.join(flags_path, f"{code}.png")
-            self.languageComboBox.addItem(QIcon(icon_path), name, code)
+            iconPath = os.path.join(flagsPath, f"{code}.png")
 
-        index = self.languageComboBox.findData(lang_code)
-        if index != -1:
-            self.languageComboBox.setCurrentIndex(index)
+            action = self.languageMenu.addAction(QIcon(iconPath), name)
+            action.setActionGroup(self.languageActionGroup)
+            action.setCheckable(True)
+            action.setData([code, name, iconPath])
+            if lang_code == code:
+                action.setChecked(True)
 
-    def translateGUI(self, MainWindow):
+    def translateGUI(self):
+        self.csvFileBox.setTitle(i18n().tr("File"))
+        self.connectionBox.setTitle(i18n().tr("Connection"))
         self.syncZoneFiles.setText(i18n().tr("Sync Zone Files"))
         self.sendCommand.setText(i18n().tr("Send Command"))
         self.openCSVFile.setText(i18n().tr("Open CSV File"))
@@ -345,10 +419,25 @@ class PyPSADiagGUI(object):
         self.openZoneFile.setText(i18n().tr("Open Zone File"))
         self.readZone.setText(i18n().tr("Read"))
         self.writeZone.setText(i18n().tr("Write"))
+        self.flashEcu.setText(i18n().tr("Flash CAL/ULP"))
         self.rebootEcu.setText(i18n().tr("Reboot ECU"))
         self.readEcuFaults.setText(i18n().tr("Read ECU Faults") + " " + i18n().tr("(DTC)"))
         self.clearEcuFaults.setText(i18n().tr("Clear ECU Faults") + " " + i18n().tr(" (DTC)"))
+        self.disableEcoMode.setText(i18n().tr("Disable Eco Mode"))
         self.writeSecureTraceability.setText(i18n().tr("Write Secure Traceability"))
         self.virginWriteZone.setText(i18n().tr("Virgin Write"))
         self.hideNoResponseZone.setText(i18n().tr("Hide 'No Response' Zones"))
 #        self.useSketchSeedGenerator.setText(i18n().tr("Use Sketch Seed Generator"))
+        self.searchZoneLineEdit.setPlaceholderText(i18n().tr("Search Zones..."))
+        self.setEcuTxRxText("-", "-", "-")
+
+        # -- Translate Menu --
+        self.commandsMenu.setTitle(i18n().tr("ECU Commands"))
+        self.disableEcoModeAction.setText(i18n().tr("Disable Eco Mode"))
+        self.visioparkCalibrationAction.setText(i18n().tr("Visiopark Calibration"))
+        self.bruteforceKeyAction.setText(i18n().tr("Bruteforce ECU Key..."))
+        self.canFrameSnifferAction.setText(i18n().tr("PIN Extractor"))
+        self.languageMenu.setTitle(i18n().tr("Language"))
+
+    def setEcuTxRxText(self, txId: str, rxId: str, protocol: str):
+        self.ecuTxRxLabel.setText("TX: " + str(txId) + " | RX: " + str(rxId) + " | protocol: " + str(protocol)) 

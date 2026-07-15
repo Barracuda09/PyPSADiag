@@ -1,0 +1,410 @@
+{
+    "_comment": {
+        "name": "DIRECTN DTC Codes grabbed from Diagbox FDB. ECUTYPE union: DAE, DAE_A515, DAE_BVH2, DAE_D, DAE_UDS, DAE_UDS_SC, DAE_UDS_SC_E. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "C0529": {
+        "name": "Electric power steering flywheel angle sensor"
+    },
+    "C1025": {
+        "name": "Electric power steering ECU"
+    },
+    "C110A": {
+        "name": "Calibration not downloaded"
+    },
+    "C110B": {
+        "name": "Supply"
+    },
+    "C110C": {
+        "name": "Electric power steering ECU"
+    },
+    "C1111": {
+        "name": "Electric power steering torque sensor supply voltage"
+    },
+    "C1113": {
+        "name": "Main and secondary torque sensor voltages different"
+    },
+    "C1114": {
+        "name": "Electric power steering torque sensor supply voltage"
+    },
+    "C1115": {
+        "name": "Voltage of the secondary torque sensor"
+    },
+    "C1121": {
+        "name": "Coherence between the engine speed and the vehicle speed"
+    },
+    "C1122": {
+        "name": "Engine speed"
+    },
+    "C1124": {
+        "name": "Vehicle speed"
+    },
+    "C1135": {
+        "name": "Steering wheel angle sensor fault"
+    },
+    "C1136": {
+        "name": "Steering wheel angle information"
+    },
+    "C1141": {
+        "name": "Electric power steering motor amperage measured"
+    },
+    "C1142": {
+        "name": "Electric power steering motor amperage measured"
+    },
+    "C1143": {
+        "name": "Electric power steering motor amperage measured"
+    },
+    "C1144": {
+        "name": "Electric power steering motor"
+    },
+    "C1145": {
+        "name": "Electric power steering motor amperage measured"
+    },
+    "C1151": {
+        "name": "Steering wheel angle sensor"
+    },
+    "C1152": {
+        "name": "Response times"
+    },
+    "C1153": {
+        "name": "Electric power steering ECU supply voltage"
+    },
+    "C1154": {
+        "name": "Electric power steering ECU supply voltage"
+    },
+    "C1155": {
+        "name": "Electric power steering ECU"
+    },
+    "C1209": {
+        "name": "+IGNITION input"
+    },
+    "C120D": {
+        "name": "Loss of steering wheel angle measurement reference value"
+    },
+    "C120E": {
+        "name": "Steering wheel angle information"
+    },
+    "C1388": {
+        "name": "Steering wheel angle sensor fault"
+    },
+    "C1398": {
+        "name": "Configuration not carried out"
+    },
+    "C1400": {
+        "name": "Torque sensor"
+    },
+    "C1401": {
+        "name": "Control fault of the power steering motor"
+    },
+    "C1402": {
+        "name": "Control fault of the power steering motor"
+    },
+    "C1404": {
+        "name": "Control fault of the power steering motor"
+    },
+    "C1405": {
+        "name": "Electric power steering motor excess current"
+    },
+    "C1406": {
+        "name": "Overheating of the power steering motor or ECU"
+    },
+    "C1407": {
+        "name": "Vehicle speed information coming from the engine management ECU fault"
+    },
+    "C1408": {
+        "name": "Vehicle speed information coming from the engine management ECU fault"
+    },
+    "C1409": {
+        "name": "Torque sensor power supply fault"
+    },
+    "C140B": {
+        "name": "Supply"
+    },
+    "C140C": {
+        "name": "Steering wheel angle information"
+    },
+    "C140D": {
+        "name": "Electric power steering ECU"
+    },
+    "C140E": {
+        "name": "Assistance limitation"
+    },
+    "C140F": {
+        "name": "Unlocking key not valid"
+    },
+    "C1410": {
+        "name": "Electric power steering (DAE) motor temperature sensor information fault"
+    },
+    "C1411": {
+        "name": "Electric power steering (DAE) motor temperature sensor information fault"
+    },
+    "C1412": {
+        "name": "Electric power steering motor"
+    },
+    "C1413": {
+        "name": "Torque sensor"
+    },
+    "C1414": {
+        "name": "Electric power steering motor"
+    },
+    "C1415": {
+        "name": "Overheating of the power steering motor or ECU"
+    },
+    "C1418": {
+        "name": "Steering wheel angle sensor fault"
+    },
+    "C1419": {
+        "name": "Electric power steering / dynamic stability control (ESP) coupling fault"
+    },
+    "C141A": {
+        "name": "Fault in the power relay of the power steering ECU"
+    },
+    "C1422": {
+        "name": "Electric power steering torque sensor signal out of range"
+    },
+    "C1423": {
+        "name": "Electric power steering torque sensor signal out of range"
+    },
+    "C1424": {
+        "name": "Electric power steering torque sensor overvoltage"
+    },
+    "C142F": {
+        "name": "Inhibition of the lane keeping assistance function in progress"
+    },
+    "C1430": {
+        "name": "Inhibition of the lane positioning assist function in progress"
+    },
+    "C1432": {
+        "name": "Electric power steering ECU"
+    },
+    "C1433": {
+        "name": "Inconsistency between the vehicle speed information and the power steering sensors"
+    },
+    "C1434": {
+        "name": "Power steering stopped after the triggering line is cut off and if there is no communication with the vehicle"
+    },
+    "C1435": {
+        "name": "Overheating of the Electric Power Steering ECU"
+    },
+    "C1436": {
+        "name": "Slight under-voltage in the power steering"
+    },
+    "C1437": {
+        "name": "Serious under-voltage in the power steering"
+    },
+    "C1438": {
+        "name": "Critical under-voltage in power steering"
+    },
+    "C1439": {
+        "name": "Over-voltage for the power steering"
+    },
+    "C143A": {
+        "name": "Assistance limitation"
+    },
+    "C1566": {
+        "name": "Communication error"
+    },
+    "C156F": {
+        "name": "VIN"
+    },
+    "C1638": {
+        "name": "Communication error"
+    },
+    "C163A": {
+        "name": "Overheating of the power steering motor or ECU"
+    },
+    "C1643": {
+        "name": "Steering wheel angle sensor fault"
+    },
+    "C1644": {
+        "name": "Supply fault"
+    },
+    "P0500": {
+        "name": "Vehicle speed data fault"
+    },
+    "P0501": {
+        "name": "Vehicle speed information coming from the engine management ECU fault"
+    },
+    "P0560": {
+        "name": "Voltage of the system"
+    },
+    "P0562": {
+        "name": "Undervoltage fault"
+    },
+    "P0563": {
+        "name": "Overvoltage fault"
+    },
+    "P0602": {
+        "name": "Downloading fault"
+    },
+    "P0603": {
+        "name": "Internal fault"
+    },
+    "P0604": {
+        "name": "Internal fault"
+    },
+    "P0605": {
+        "name": "Internal fault"
+    },
+    "P0606": {
+        "name": "internal fault"
+    },
+    "P0654": {
+        "name": "Engine speed sensor"
+    },
+    "P1511": {
+        "name": "+IGNITION input"
+    },
+    "P1613": {
+        "name": "Configuration fault"
+    },
+    "P1648": {
+        "name": "internal fault"
+    },
+    "U0037": {
+        "name": "Intersystems CAN  /  High speed CAN 1  ( engine ECU mute )"
+    },
+    "U0046": {
+        "name": "Suspension and wheels CAN  ( engine ECU mute )"
+    },
+    "U0073": {
+        "name": "CAN"
+    },
+    "U0076": {
+        "name": "Suspension and wheels CAN"
+    },
+    "U007C": {
+        "name": "CAN FD 8"
+    },
+    "U0100": {
+        "name": "Fault in communication on the CAN with the engine management ECU"
+    },
+    "U0115": {
+        "name": "Communication with the engine management ECU"
+    },
+    "U0121": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0129": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0140": {
+        "name": "Built-in systems interface"
+    },
+    "U0141": {
+        "name": "Communication with the BSI"
+    },
+    "U0148": {
+        "name": "CAN FD 8"
+    },
+    "U023B": {
+        "name": "Multifunction video camera datastream not present"
+    },
+    "U0301": {
+        "name": "Communication with the engine management ECU"
+    },
+    "U0315": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0322": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U0401": {
+        "name": "CAN"
+    },
+    "U0402": {
+        "name": "CAN"
+    },
+    "U0415": {
+        "name": "Communication on the CAN with the ESP ECU"
+    },
+    "U0422": {
+        "name": "Communication on the CAN with the built-in systems interface"
+    },
+    "U053B": {
+        "name": "Communication with the multifunction video camera on the CAN"
+    },
+    "U1000": {
+        "name": "No communication on the CAN"
+    },
+    "U1003": {
+        "name": "Fault in communication on the CAN"
+    },
+    "U1025": {
+        "name": "Electric power steering ECU"
+    },
+    "U1100": {
+        "name": "CAN FD 8"
+    },
+    "U1103": {
+        "name": "CAN FD 8"
+    },
+    "U1105": {
+        "name": "Steering wheel angle sensor"
+    },
+    "U1108": {
+        "name": "Fault: internal combustion engine status information"
+    },
+    "U110F": {
+        "name": "CAN FD 8"
+    },
+    "U1111": {
+        "name": "CAN FD 8"
+    },
+    "U1113": {
+        "name": "Fault - lack of communication with the anti-lock braking system (ABS) or the electronic stability program (ESP)"
+    },
+    "U1118": {
+        "name": "Fault: no communication with the built-in systems interface"
+    },
+    "U111D": {
+        "name": "Fault: no communication with the parking assistance ECU"
+    },
+    "U1205": {
+        "name": "Communication fault with the steering wheel angle sensor"
+    },
+    "U1208": {
+        "name": "Fault: internal combustion engine status information"
+    },
+    "U1213": {
+        "name": "Communication fault between the electric power steering (DAE) ECU and the ABS/ESP ECU"
+    },
+    "U1218": {
+        "name": "Built-in systems interface"
+    },
+    "U121D": {
+        "name": "Communication fault with the parking assistance ECU"
+    },
+    "U1305": {
+        "name": "Steering wheel angle sensor"
+    },
+    "U1308": {
+        "name": "Fault: internal combustion engine status information"
+    },
+    "U1313": {
+        "name": "Fault - lack of communication with the anti-lock braking system (ABS) or the electronic stability program (ESP)"
+    },
+    "U1318": {
+        "name": "Fault: no communication with the built-in systems interface"
+    },
+    "U131D": {
+        "name": "Fault: no communication with the parking assistance ECU"
+    },
+    "U1330": {
+        "name": "Communication with the multifunction video camera on the CAN"
+    },
+    "U1387": {
+        "name": "Communication on the CAN with the electric drive train supervisor ECU"
+    },
+    "U1935": {
+        "name": "Communication on the CAN with the electric drive train supervisor ECU"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1FC6": {
+        "name": "CAN FD 8  (  power steering ECU not communicating on the )"
+    },
+    "U2003": {
+        "name": "Remote controlled triggering line fault"
+    }
+}

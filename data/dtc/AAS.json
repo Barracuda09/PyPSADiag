@@ -1,0 +1,305 @@
+{
+    "_comment": {
+        "name": "AAS DTC Codes grabbed from Diagbox FDB. ECUTYPE union: AAS, AAS_MMC, AAS_UDS, AAS_UDS_G6. Conflicting labels resolved by majority vote across ECUTYPEs."
+    },
+    "B1000": {
+        "name": "Parking assistance ECU calibration downloading fault"
+    },
+    "B1003": {
+        "name": "Parking assistance ECU secure configuration fault"
+    },
+    "B1004": {
+        "name": "Parking assistance ECU internal fault"
+    },
+    "B120E": {
+        "name": "Fault: internal combustion engine status information"
+    },
+    "B1218": {
+        "name": "Absence of a datastream from the ESP ECU"
+    },
+    "B1219": {
+        "name": "Fault in the electric power steering status information for the semi-automatic parking system"
+    },
+    "B121A": {
+        "name": "Loss of the electric vehicle system main status and direction indicators status information"
+    },
+    "B121C": {
+        "name": "Fault: loss of information coming from the Hybrid management ECU 1"
+    },
+    "B1221": {
+        "name": "Inner front left parking assistance sensor fault"
+    },
+    "B1222": {
+        "name": "Outer front left parking assistance sensor fault"
+    },
+    "B1223": {
+        "name": "Inner rear left parking assistance sensor fault"
+    },
+    "B1224": {
+        "name": "Outer rear left parking assistance sensor fault"
+    },
+    "B1225": {
+        "name": "Inner front right parking assistance sensor fault"
+    },
+    "B1226": {
+        "name": "Outer front right parking assistance sensor fault"
+    },
+    "B1227": {
+        "name": "Inner rear right parking assistance sensor fault"
+    },
+    "B1228": {
+        "name": "Outer rear right parking assistance sensor fault"
+    },
+    "B1229": {
+        "name": "Parking assistance sensors supply fault"
+    },
+    "B1242": {
+        "name": "Left-hand rear view mirror warning lamp fault"
+    },
+    "B1243": {
+        "name": "Right-hand rear view mirror warning lamp fault"
+    },
+    "B1244": {
+        "name": "Rear left lateral parking assistance sensor fault"
+    },
+    "B1245": {
+        "name": "Rear right lateral parking assistance sensor fault"
+    },
+    "B124A": {
+        "name": "Exterior mirror indicator lamps shared output fault"
+    },
+    "B1250": {
+        "name": "Front left lateral parking assistance sensor fault"
+    },
+    "B1251": {
+        "name": "Front right lateral parking assistance sensor fault"
+    },
+    "B125D": {
+        "name": "Semi-automatic parking system function selection button fault"
+    },
+    "B128E": {
+        "name": "The temperature of the parking assistance sensor is outside the range"
+    },
+    "B128F": {
+        "name": "Incoherence between the vehicle's physical direction of travel and the information received by the parking assistance ECU"
+    },
+    "B1292": {
+        "name": "\"Semi-automatic parking system\" function selection button"
+    },
+    "B1293": {
+        "name": "\"Semi-automatic parking system\" function selection button"
+    },
+    "B1294": {
+        "name": "\"Semi-automatic parking system\" function selection button"
+    },
+    "B1295": {
+        "name": "\"Semi-automatic parking system\" function selection button"
+    },
+    "B12A6": {
+        "name": "Error between the reference value of the steering wheel and the position of the steering wheel (Angular deviation too great)"
+    },
+    "B2526": {
+        "name": "Exterior front right sensor fault"
+    },
+    "B2527": {
+        "name": "Exterior front right sensor fault"
+    },
+    "B2528": {
+        "name": "Exterior front left sensor fault"
+    },
+    "B2529": {
+        "name": "Exterior front left sensor fault"
+    },
+    "B252A": {
+        "name": "Interior front right sensor fault"
+    },
+    "B252B": {
+        "name": "Interior front right sensor fault"
+    },
+    "B252C": {
+        "name": "Interior front left sensor fault"
+    },
+    "B252D": {
+        "name": "Interior front left sensor fault"
+    },
+    "B252E": {
+        "name": "Exterior rear right sensor fault"
+    },
+    "B252F": {
+        "name": "Exterior rear right sensor fault"
+    },
+    "B2530": {
+        "name": "Exterior rear left sensor fault"
+    },
+    "B2531": {
+        "name": "Exterior rear left sensor fault"
+    },
+    "B2532": {
+        "name": "Interior rear right sensor fault"
+    },
+    "B2533": {
+        "name": "Interior rear right sensor fault"
+    },
+    "B2534": {
+        "name": "Interior rear left sensor fault"
+    },
+    "B2535": {
+        "name": "Interior rear left sensor fault"
+    },
+    "B2E24": {
+        "name": "Parking assistance deactivation button fault"
+    },
+    "C1001": {
+        "name": "Fault on the rear left exterior sensor circuit"
+    },
+    "C1002": {
+        "name": "Fault on the rear left interior sensor circuit"
+    },
+    "C1003": {
+        "name": "Fault on the rear right interior sensor circuit"
+    },
+    "C1004": {
+        "name": "Fault on the rear right exterior sensor circuit"
+    },
+    "C1005": {
+        "name": "Fault on the sensor common supply circuit."
+    },
+    "C1006": {
+        "name": "ECU fault"
+    },
+    "U0001": {
+        "name": "CAN fault"
+    },
+    "U0078": {
+        "name": "CAN"
+    },
+    "U0100": {
+        "name": "No communication with the engine management ECU or with the electric drive train supervisor ECU"
+    },
+    "U0101": {
+        "name": "Fault - absence of communication with the gearbox ECU"
+    },
+    "U0121": {
+        "name": "No communication with electronic stability program (ESP) ECU"
+    },
+    "U0140": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U0141": {
+        "name": "Fault: absence of communication with the Built-in Systems Interface"
+    },
+    "U0293": {
+        "name": "Absence of communication with the hybrid management ECU 1"
+    },
+    "U0422": {
+        "name": "CAN"
+    },
+    "U1003": {
+        "name": "General CAN fault"
+    },
+    "U1105": {
+        "name": "No communication on the CAN"
+    },
+    "U1109": {
+        "name": "No communication with gearbox ECU"
+    },
+    "U1113": {
+        "name": "No communication on the CAN"
+    },
+    "U111D": {
+        "name": "Loss of datastream in the parking assistance ECU"
+    },
+    "U11A2": {
+        "name": "Absence of communication with the sequential gear lever"
+    },
+    "U1209": {
+        "name": "Absence of communication with the sequential gear lever"
+    },
+    "U1213": {
+        "name": "CAN"
+    },
+    "U1221": {
+        "name": "CAN"
+    },
+    "U1313": {
+        "name": "CAN"
+    },
+    "U1318": {
+        "name": "CAN"
+    },
+    "U1602": {
+        "name": "Fault: CAN"
+    },
+    "U1700": {
+        "name": "Fault: no communication with BSI"
+    },
+    "U1802": {
+        "name": "Vehicle speed information fault"
+    },
+    "U1804": {
+        "name": "Fault: steering wheel angle information"
+    },
+    "U1805": {
+        "name": "Wheel pulse counters information fault"
+    },
+    "U1F00": {
+        "name": "Event not recorded fault"
+    },
+    "U1F03": {
+        "name": "Absence of communication with the BSI"
+    },
+    "U1F0A": {
+        "name": "CAN fault"
+    },
+    "U1F0F": {
+        "name": "Fault: ECU not communicating on the CAN"
+    },
+    "U1F18": {
+        "name": "Touch screen not communicating on the multimedia CAN"
+    },
+    "U1F25": {
+        "name": "No communication with the instrument panel"
+    },
+    "U1F2E": {
+        "name": "Absence of communication with the engine management ECU"
+    },
+    "U1F3E": {
+        "name": "Absence of communication with the telematic unit"
+    },
+    "U1F48": {
+        "name": "Fault: absence of communication with the ESP ECU"
+    },
+    "U1F49": {
+        "name": "Fault absence of communication with the electric power steering ECU"
+    },
+    "U1F5B": {
+        "name": "Absence of communication with the hybrid management ECU 1"
+    },
+    "U1F90": {
+        "name": "Loss of information from the built-in systems interface fault"
+    },
+    "U1F91": {
+        "name": "No communication with the BSI"
+    },
+    "U1F94": {
+        "name": "Loss of steering wheel angle sensor information fault"
+    },
+    "U1F95": {
+        "name": "Loss of driving direction information fault"
+    },
+    "U1F96": {
+        "name": "Loss of datastream in the parking assistance ECU"
+    },
+    "U1F9D": {
+        "name": "No communication with the parking assistance ECU"
+    },
+    "U1FBC": {
+        "name": "Loss of communication with the BSI"
+    },
+    "U1FBD": {
+        "name": "No communication with the BSI"
+    },
+    "U1FBE": {
+        "name": "Check communication over the CAN network"
+    }
+}
