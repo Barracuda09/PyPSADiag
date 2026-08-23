@@ -7,7 +7,9 @@
     "dtc_lookup": "data/dtc/COMBINE.json",
     "key_type": "multi",
     "keys": {
-        "CIROCCO": "FAFA"
+        "CIROCCO": "FAFA",
+        "CIROCCO_2": "716D",
+        "CIROCCO_3": "8487"
     },
     "include_zone_object": "./data/IdentUDSECU.json",
     "tabs": {
@@ -2173,13 +2175,13 @@
             ]
         },
         "D70A": {
-            "name": "Calibration_Mileage",
+            "name": "Calibration_Kilometrage",
             "tab": "cal",
             "type": "raw",
             "form_type": "multi",
             "Mileage": {
-                "name": "Mileage",
-                "byte": 4,
+                "name": "Kilometrage",
+                "byte": 8,
                 "mask": "111111111111111111111111",
                 "type": "mileage",
                 "form_type": "string"
@@ -2228,11 +2230,92 @@
             "form_type": "string"
         },
         "0900": {
-            "name": "Calibration_Fct_0900",
-            "tab": "cal",
+            "name": "Calibration_Fct_HMI",
+            "tab": "cmb",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
+                    "name_original": "F4E",
+                    "name": "Ambience 1",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
+                    "name_original": "F4D",
+                    "name": "Ambience 2",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
+                    "name_original": "F4F",
+                    "name": "Ambience 3",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
+                    "name_original": "F4G",
+                    "name": "Ambience 4",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
+                    "name_original": "F4H",
+                    "name": "Ambience 5",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
+                    "name_original": "F4I",
+                    "name": "Ambience 6",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
+                    "name_original": "F4J",
+                    "name": "Ambience 7",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
+                    "name_original": "F4K",
+                    "name": "Ambience 8",
+                    "zoneLength": 17,
+                    "byte": 16,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
         "0A00": {
             "name": "Calibration_Fct_0A00",
@@ -2248,22 +2331,106 @@
             "byte": 0,
             "form_type": "string"
         },
+        "0D00": {
+            "name": "Calibration_Fct_0D00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "0D01": {
+            "name": "Calibration_Fct_0D01",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "C000": {
+            "name": "Calibration_Fct_C000",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D400": {
+            "name": "Data_Push_Button_Status",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D401": {
+            "name": "Data_D401",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D402": {
+            "name": "Data_D402",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D500": {
+            "name": "Data_D500",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
         "D600": {
-            "name": "Calibration_Fct_D600",
+            "name": "Data_Clock_Presense",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
             "form_type": "string"
         },
         "D700": {
-            "name": "Calibration_Fct_D700",
+            "name": "Data_D700",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D707": {
+            "name": "Data_D707",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D708": {
+            "name": "Data_D708",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D709": {
+            "name": "Data_D709",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "D800": {
+            "name": "Data_D800",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
             "form_type": "string"
         },
         "DA00": {
-            "name": "Calibration_Fct_DA00",
+            "name": "Data_DA00",
+            "tab": "cal",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "string"
+        },
+        "DA10": {
+            "name": "Data_DA10",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
