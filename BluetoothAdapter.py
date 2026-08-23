@@ -3,84 +3,122 @@
 
    ELM327 Bluetooth OBD Adapter for PyPSADiag
    Communicates with ELM327-based Bluetooth OBD scanners via virtual COM port
-
-   This program is free software; you can redistribute it and/or
-   modify it under the terms of the GNU General Public License
-   as published by the Free Software Foundation; either version 2
-   of the License, or (at your option) any later version.
+   (Windows) or a /dev/cu.* RFCOMM device (macOS / Linux).
 """
 
+import atexit
+import os
 import re
+import sys
 import threading
 import time
 import serial
 import serial.tools.list_ports
 
 
+IS_WINDOWS = sys.platform == "win32"
+
+_POSIX_PORT_BLACKLIST = (
+    "bluetooth-incoming-port",
+    "bluetooth-modem",
+    "debug-console",
+    "wlan-debug",
+)
+
+_POSIX_USB_MARKERS = (
+    "usbserial", "usbmodem", "slab_", "wchusbserial", "ftdi", "ttyusb", "ttyacm",
+)
+
+
+def _is_rfcomm_device(device: str) -> bool:
+    if IS_WINDOWS or not device:
+        return False
+    leaf = device.rsplit("/", 1)[-1].lower()
+    return device.startswith("/dev/cu.") and \
+        not any(m in leaf for m in _POSIX_USB_MARKERS)
+
+
 def _natural_com_key(name: str):
-    """Sort key so COM4 comes before COM12 (numeric, not lexicographic)."""
     m = re.search(r"\d+", name or "")
     return (int(m.group()) if m else 0, name or "")
 
 
+def _is_bluetooth_port(port) -> bool:
+    if IS_WINDOWS:
+        return "BTHENUM" in (port.hwid or "").upper() or \
+               "BLUETOOTH" in (port.description or "").upper()
+
+    device = port.device or ""
+    if not device.startswith("/dev/cu."):
+        return False
+    leaf = device[len("/dev/cu."):].lower()
+    return not any(bad in leaf for bad in _POSIX_PORT_BLACKLIST)
+
+
 class BluetoothAdapter:
-    """
-    ELM327 Bluetooth OBD Adapter
-    Translates PyPSADiag commands to ELM327 AT command protocol
-    """
-
-    # Common baud rates for ELM327 adapters (most popular first)
     BAUD_RATES = [115200, 57600, 38400, 19200, 9600, 230400]
+    POSIX_NOMINAL_BAUD = 115200
 
-    # ELM327 AT ST timing (hex, units ≈ 4.096 ms).
-    # Lower = faster per-frame return, but more NO DATA on slow ECUs.
-    # A/B-tunable from one place.
-    #   "10" = 0x10 = 16 dec × 4.096 ≈  65 ms  (aggressive)
-    #   "20" = 0x20 = 32 dec × 4.096 ≈ 131 ms  (compromise fallback)
-    #   "32" = 0x32 = 50 dec × 4.096 ≈ 205 ms  (conservative, original)
-    AT_ST_NORMAL = "30"     # main per-frame timeout
-    AT_ST_CF_RAPID = "05"   # ~20 ms between intermediate CFs (all NO DATA)
+    AT_ST_NATIVE = "40"
+    AT_ST_NORMAL = "30"
 
-    def __init__(self, logger=None, **kwargs):
+    def __init__(self, logger=None, isotp_mode=None, debug_timing=None, **kwargs):
         self.logger = logger
         self.serialPort = serial.Serial()
         self.connected = False
         self.configured = False
         self.current_tx_id = ""
         self.current_rx_id = ""
+        self.current_protocol = "uds"
         self.elm_version = ""
         self.detected_baud = None
         self._raw_can_supported = True
+        self._multiframe_incomplete = False
+        self._exit_hook_armed = False
 
-        # ─── Keep-alive infrastructure ──────────────────────────────
-        # RLock so sendReceive → configure nests cleanly (both take the
-        # lock, same thread is allowed to re-enter). Serializes ALL
-        # serialPort I/O between the GUI worker thread
-        # (sendReceive/readData/configure) and the background keep-alive
-        # thread. Low-level helpers (_send_at, _send_uds) do NOT re-acquire.
+        mode = isotp_mode or os.environ.get("PYPSADIAG_ISOTP") or "native"
+        self.isotp_mode = "raw" if str(mode).lower() == "raw" else "native"
+        self._isotp_pref = self.isotp_mode   # user's original choice — for reconnect recovery
+        self._native_failed = False
+        self._native_segmented_tx = True
+
+        if debug_timing is None:
+            debug_timing = os.environ.get("PYPSADIAG_BT_TIMING", "") not in ("", "0")
+        self.debug_timing = bool(debug_timing)
+
+        self.at_st_native = self._env_st("PYPSADIAG_ST_NATIVE", self.AT_ST_NATIVE)
+        self.at_st_raw = self._env_st("PYPSADIAG_ST_RAW", self.AT_ST_NORMAL)
+
         self._io_lock = threading.RLock()
         self._ka_thread = None
         self._ka_stop = threading.Event()
-        self._ka_period = 2.0  # seconds — covers UDS S3 (5s), BT idle, ELM sleep
+        self._ka_period = 2.0
+        self._session_ka = False           # True between app "KU" and "S": send 3E80; else warm link with ATI
+        self._last_io = time.monotonic()   # last serial write — keep-alive only warms when the link is idle
+
+    @staticmethod
+    def _env_st(name, default):
+        raw = (os.environ.get(name) or "").strip().upper()
+        if not raw:
+            return default
+        if re.fullmatch(r"[0-9A-F]{1,2}", raw) and int(raw, 16) > 0:
+            return raw.zfill(2)
+        print(f"[BT] Ignoring {name}={raw!r}: expected 1-2 hex digits 01-FF, "
+              f"keeping {default}")
+        return default
 
     def log(self, message, ui=False):
-        """Log message. ui=True forwards to GUI logger, but ONLY from the
-        main thread — the logger (writeToOutputView) calls
-        QTextEdit.append() + viewport().repaint() synchronously, which
-        corrupts Qt paint state and crashes if invoked from a worker
-        thread (e.g. DiagnosticCommunication's QThread during a read).
-        From worker threads we silently drop the UI forward and keep the
-        console print."""
         log_msg = f"[BT] {message}"
         print(log_msg)
         if ui and self.logger and \
                 threading.current_thread() is threading.main_thread():
             self.logger(log_msg)
 
-    # ─── Port Management ─────────────────────────────────────────
+    def _timing(self, label, t0):
+        if self.debug_timing:
+            self.log(f"  [t] {label}: {(time.monotonic() - t0) * 1000:.0f} ms")
 
     def fillPortNameCombobox(self, combobox):
-        """Scan COM ports and auto-detect ELM327 Bluetooth adapters"""
         combobox.clear()
         comPorts = serial.tools.list_ports.comports()
 
@@ -88,27 +126,25 @@ class BluetoothAdapter:
         other_ports = []
 
         for port in comPorts:
-            is_bt = "BTHENUM" in (port.hwid or "").upper() or \
-                    "BLUETOOTH" in (port.description or "").upper()
+            if not IS_WINDOWS and (port.device or "").startswith("/dev/tty."):
+                continue
 
-            if is_bt:
+            if _is_bluetooth_port(port):
                 bt_ports.append(port)
             else:
                 other_ports.append(port)
 
-        # Natural sort within each group: COM4 before COM12.
         bt_ports.sort(key=lambda p: _natural_com_key(p.device))
         other_ports.sort(key=lambda p: _natural_com_key(p.device))
 
-        self.log(f"Found {len(bt_ports)} Bluetooth port(s), {len(other_ports)} other port(s)", ui=True)
+        self.log(f"Found {len(bt_ports)} Bluetooth port(s), "
+                 f"{len(other_ports)} other port(s)", ui=True)
 
-        # Try to auto-detect ELM327 on Bluetooth ports
         for port in bt_ports:
             self.log(f"Scanning {port.device} ({port.description})...", ui=True)
             baud, version = self._probe_elm327(port.device)
             if baud:
                 label = f"{port.device} - ELM327 [{version}] @ {baud} baud"
-                # Store both port name and detected baud rate
                 combobox.addItem(label, f"{port.device}:{baud}")
                 self.log(f"  Found ELM327: {version} @ {baud}", ui=True)
             else:
@@ -116,35 +152,31 @@ class BluetoothAdapter:
                 combobox.addItem(label, f"{port.device}:0")
                 self.log(f"  No ELM327 response", ui=True)
 
-        # Also list other ports (user might have a USB Bluetooth dongle)
         for port in other_ports:
             label = f"{port.device} - {port.description or 'Unknown'}"
             combobox.addItem(label, f"{port.device}:0")
 
     def _probe_elm327(self, port_name):
-        """Try to detect ELM327 on a port by sending ATZ at different baud rates.
-           Returns (baud_rate, version_string) or (None, None)"""
-        test_port = serial.Serial()
-        test_port.port = port_name
-        test_port.timeout = 1.5
-        test_port.write_timeout = 1.5
+        bauds = [self.POSIX_NOMINAL_BAUD] if _is_rfcomm_device(port_name) \
+            else self.BAUD_RATES
 
-        for baud in self.BAUD_RATES:
+        for baud in bauds:
+            test_port = serial.Serial()
+            test_port.port = port_name
+            test_port.baudrate = baud
+            test_port.timeout = 1.5
+            test_port.write_timeout = 3.0
             try:
-                test_port.baudrate = baud
                 test_port.open()
                 time.sleep(0.3)
-
-                # Flush any garbage
                 test_port.reset_input_buffer()
 
-                # Send ATZ (reset) and look for "ELM" in response
                 test_port.write(b"ATZ\r")
-                test_port.flush()
+                if IS_WINDOWS:
+                    test_port.flush()
 
-                # Read response
                 data = bytearray()
-                end = time.monotonic() + 2.0
+                end = time.monotonic() + 3.0
                 while time.monotonic() < end:
                     n = test_port.in_waiting
                     if n:
@@ -154,43 +186,57 @@ class BluetoothAdapter:
                     else:
                         time.sleep(0.01)
 
-                test_port.close()
-
                 if data:
                     response = data.decode("utf-8", errors="ignore")
                     if "ELM" in response.upper():
-                        # Extract version string
                         for line in response.split("\r"):
                             line = line.strip()
                             if "ELM" in line.upper():
                                 return baud, line
                         return baud, "ELM327"
 
-            except (serial.SerialException, OSError):
-                pass
+            except (serial.SerialException, OSError) as e:
+                self.log(f"  probe {port_name}@{baud} failed: {e}")
             finally:
-                if test_port.isOpen():
-                    test_port.close()
+                try:
+                    if test_port.is_open:
+                        test_port.close()
+                except Exception:
+                    pass
 
         return None, None
 
-    # ─── Connection ───────────────────────────────────────────────
-
     def open(self, portNr, baudRate=None):
-        """Connect to ELM327 via Bluetooth COM port"""
         try:
-            # Parse port:baud if provided by fillPortNameCombobox
             detected_baud = None
-            if isinstance(portNr, str) and ":" in portNr:
-                portNr, baud_str = portNr.rsplit(":", 1)
-                if baud_str.isdigit() and int(baud_str) > 0:
-                    detected_baud = int(baud_str)
+            if isinstance(portNr, str) and portNr.rsplit(":", 1)[-1].isdigit() \
+                    and ":" in portNr:
+                head, baud_str = portNr.rsplit(":", 1)
+                if head:
+                    portNr = head
+                    if int(baud_str) > 0:
+                        detected_baud = int(baud_str)
 
             self.serialPort.port = portNr
             self.serialPort.timeout = 3.0
-            self.serialPort.write_timeout = 3.0
+            self.serialPort.write_timeout = 5.0
 
-            # If baud rate was detected during scan, use it directly
+            if _is_rfcomm_device(portNr):
+                baud = detected_baud or self.POSIX_NOMINAL_BAUD
+                self.log(f"Connecting to {portNr} (RFCOMM, line speed ignored)", ui=True)
+                self.serialPort.baudrate = baud
+                self.serialPort.open()
+                time.sleep(0.5)
+
+                if self._init_elm327():
+                    self.connected = True
+                    self.detected_baud = baud
+                    self._arm_exit_cleanup()
+                    self._start_keep_alive()   # warm the BT link from connect, before any session
+                    return ""
+                self.serialPort.close()
+                return "ELM327 not responding on " + portNr
+
             if detected_baud:
                 self.log(f"Connecting to {portNr} @ {detected_baud} baud (auto-detected)", ui=True)
                 self.serialPort.baudrate = detected_baud
@@ -200,17 +246,17 @@ class BluetoothAdapter:
                 if self._init_elm327():
                     self.connected = True
                     self.detected_baud = detected_baud
+                    self._arm_exit_cleanup()
+                    self._start_keep_alive()   # warm the BT link from connect, before any session
                     return ""
-                else:
-                    self.serialPort.close()
+                self.serialPort.close()
 
-            # Auto-detect baud rate by trying each one
             self.log(f"Auto-detecting baud rate on {portNr}...", ui=True)
             for baud in self.BAUD_RATES:
                 try:
                     self.log(f"  Trying {baud} baud...", ui=True)
                     self.serialPort.baudrate = baud
-                    if not self.serialPort.isOpen():
+                    if not self.serialPort.is_open:
                         self.serialPort.open()
                     time.sleep(0.3)
 
@@ -218,11 +264,13 @@ class BluetoothAdapter:
                         self.connected = True
                         self.detected_baud = baud
                         self.log(f"Connected @ {baud} baud", ui=True)
+                        self._arm_exit_cleanup()
+                        self._start_keep_alive()   # warm the BT link from connect, before any session
                         return ""
 
                     self.serialPort.close()
                 except serial.SerialException:
-                    if self.serialPort.isOpen():
+                    if self.serialPort.is_open:
                         self.serialPort.close()
                     continue
 
@@ -231,15 +279,25 @@ class BluetoothAdapter:
         except serial.SerialException as e:
             return f"Error opening Bluetooth port: {str(e)}"
 
-    def close(self):
-        """Disconnect from ELM327"""
-        # Stop keep-alive thread BEFORE touching the serial port, so we don't
-        # race with a keep-alive tick that's mid-write.
-        self._stop_keep_alive()
-        if self.serialPort.isOpen():
+    def _arm_exit_cleanup(self):
+        if IS_WINDOWS or self._exit_hook_armed:
+            return
+        atexit.register(self._atexit_close)
+        self._exit_hook_armed = True
+
+    def _atexit_close(self):
+        try:
+            self.close(quick=True)
+        except Exception:
+            pass
+
+    def close(self, quick=False):
+        atexit.unregister(self._atexit_close)
+        self._exit_hook_armed = False
+        self._stop_keep_alive(join_timeout=1.0 if quick else None)
+        if self.serialPort.is_open:
             try:
-                # Reset ELM327 before closing
-                self._send_at("ATZ", timeout=3)
+                self._send_at("ATZ", timeout=0.5 if quick else 3)
             except Exception:
                 pass
             self.serialPort.close()
@@ -248,265 +306,391 @@ class BluetoothAdapter:
         return True
 
     def isOpen(self):
-        """Check if connected to ELM327"""
-        return self.serialPort.isOpen() and self.connected
+        return self.serialPort.is_open and self.connected
 
     def is_configured(self):
-        """Check if ELM327 is configured for CAN communication"""
         return self.configured
 
-    # ─── ELM327 Initialization ────────────────────────────────────
-
     def _init_elm327(self):
-        """Initialize ELM327 with required AT commands"""
-        # Reset
         response = self._send_at("ATZ", timeout=3)
         if response is None:
             self.log("ELM327 not responding")
             return False
 
-        # Store ELM version
-        self.elm_version = response.strip()
+        self.elm_version = next(
+            (l.strip() for l in response.split("\n") if "ELM" in l.upper()),
+            response.strip())
         self.log(f"ELM327 version: {self.elm_version}")
 
-        # Basic configuration
-        # CAF0 + CFC0: we handle ISO-TP framing and flow control manually
-        # in Python, because ELM327 auto-FC doesn't work for non-standard
-        # CAN IDs (PSA uses 0x764/0x664 instead of OBD 0x7E0-0x7E7).
-        init_commands = [
+        common = [
             ("ATE0",    "Echo off"),
             ("ATL0",    "Linefeeds off"),
             ("ATS0",    "Spaces off"),
             ("ATH0",    "Headers off"),
-            ("AT CAF0", "CAN auto-formatting off (manual ISO-TP)"),
-            ("AT CFC0", "CAN flow control off (manual FC)"),
-            ("AT SP 6", "Protocol: ISO 15765-4 CAN 500kbps 11-bit"),
         ]
-
-        for cmd, description in init_commands:
+        for cmd, description in common:
             response = self._send_at(cmd)
             if response is None:
                 self.log(f"Failed: {description} ({cmd})")
                 return False
             self.log(f"OK: {description}")
 
-        # Disable ELM327 low-power mode (non-fatal — many clones answer '?').
-        # Prevents the adapter from auto-sleeping after ~15 min of idle,
-        # which is one of the root causes of post-idle Write timeout.
+        # Reconnect recovery: if the user asked for native, re-attempt it on
+        # every (re)init even if a prior fallback flipped us to raw. The ATZ
+        # reset above clears whatever transient state caused the earlier failure,
+        # so 'R' / a reconnect can bring native (fast reads) back.
+        if self._isotp_pref == "native":
+            self.isotp_mode = "native"
+            self._native_failed = False
+            self._native_segmented_tx = True
+
+        if self.isotp_mode == "native":
+            if not self._init_native_isotp():
+                self.log("Native ISO-TP unsupported by this adapter — "
+                         "falling back to raw CAF0 mode", ui=True)
+                self.isotp_mode = "raw"
+                self._native_failed = True
+
+        if self.isotp_mode == "raw":
+            if not self._init_raw_isotp():
+                return False
+
         lp_resp = self._send_at("AT LP 0")
         if lp_resp is None or "?" in (lp_resp or ""):
             self.log("AT LP 0 not supported (clone) — ignoring")
         else:
             self.log("OK: Low-power mode disabled")
 
+        st = self.at_st_native if self.isotp_mode == "native" else self.at_st_raw
+        self.log(f"ISO-TP mode: {self.isotp_mode.upper()} "
+                 f"(AT ST {st} ~= {int(st, 16) * 4.096:.0f} ms)", ui=True)
         return True
 
-    # ─── Configuration ────────────────────────────────────────────
+    def _init_native_isotp(self):
+        for cmd, description in [
+            ("AT CAF1", "CAN auto-formatting on (ELM does ISO-TP)"),
+            ("AT SP 6", "Protocol: ISO 15765-4 CAN 500kbps 11-bit"),
+            ("AT AT1",  "Adaptive timing on"),
+        ]:
+            resp = self._send_at(cmd)
+            if resp is None or "?" in (resp or "") or "ERROR" in (resp or "").upper():
+                self.log(f"Native ISO-TP init failed at {cmd}: {resp}")
+                return False
+            self.log(f"OK: {description}")
+
+        self._send_at(f"AT ST {self.at_st_native}")
+        return True
+
+    def _init_raw_isotp(self):
+        for cmd, description in [
+            ("AT CAF0", "CAN auto-formatting off (manual ISO-TP)"),
+            ("AT CFC0", "CAN flow control off (manual FC)"),
+            ("AT SP 6", "Protocol: ISO 15765-4 CAN 500kbps 11-bit"),
+        ]:
+            resp = self._send_at(cmd)
+            if resp is None:
+                self.log(f"Failed: {description} ({cmd})")
+                return False
+            self.log(f"OK: {description}")
+        return True
 
     def configure(self, tx_id, rx_id, protocol="uds", bus="DIAG", target=None, dialog_type="0"):
-        """Configure ELM327 for ECU communication.
-
-        Takes self._io_lock so the background keep-alive thread can't
-        interleave writes. RLock lets sendReceive('R') re-enter safely."""
         if not self.connected:
             self.log("Not connected")
             return False
 
+        if not tx_id or not rx_id:
+            self.log("No ECU selected yet — deferring CAN configuration")
+            return True
+
         with self._io_lock:
             self.current_tx_id = tx_id
             self.current_rx_id = rx_id
+            self.current_protocol = protocol
 
-            # Set CAN protocol based on PyPSADiag protocol
-            protocol_lower = protocol.lower()
+            protocol_lower = (protocol or "uds").lower()
             if protocol_lower in ("uds", "kwp_is", "kwp_hab"):
-                # ISO 15765-4 CAN 500kbps 11-bit
                 self._send_at("AT SP 6")
             elif protocol_lower in ("kwp2000", "psa2000"):
-                # User-defined protocol may be needed
                 self._send_at("AT SP B")
 
-            # Set transmit CAN ID (header)
             response = self._send_at(f"AT SH {tx_id}")
-            if response is None or "ERROR" in (response or ""):
-                self.log(f"Failed to set TX ID: {tx_id}")
+            if self._elm_error(response) is not None or response is None:
+                self.log(f"Failed to set TX ID: {tx_id} ({response!r})")
                 return False
 
-            # Set receive CAN ID filter (software) + hardware CAN filter/mask
             response = self._send_at(f"AT CRA {rx_id}")
-            if response is None or "ERROR" in (response or ""):
-                self.log(f"Failed to set RX filter: {rx_id}")
+            if self._elm_error(response) is not None or response is None:
+                self.log(f"Failed to set RX filter: {rx_id} ({response!r})")
                 return False
-            # Hardware CAN acceptance filter — blocks non-matching frames at chip level,
-            # critical on busy CAN buses (e.g. BSI body CAN) to prevent buffer overflow
+
+            # Hardware CAN acceptance filter — drops non-matching frames at the
+            # chip level. Critical on busy buses (e.g. BSI body CAN) so the ELM's
+            # receive buffer can't overflow (BUFFER FULL / apparent disconnects).
             self._send_at(f"AT CF {rx_id}")   # CAN Filter = exact RX ID
             self._send_at("AT CM 7FF")        # CAN Mask = all 11 bits must match
 
-            # Flow control is handled manually in _send_uds / _parse_isotp_response
-            # (AT CFC0 set in init — ELM327 auto-FC doesn't work for non-OBD CAN IDs)
-
-            # Timing: short ST so ELM327 quickly returns First Frame to us,
-            # leaving enough time to send Flow Control before ECU's N_BS timeout (1000ms).
-            # Value comes from class constant AT_ST_NORMAL (see top of class).
-            # Default "10" ≈ 65 ms — enough for fast ECUs; slow ECUs retry.
-            self._send_at("AT AT0")   # Adaptive timing OFF
-            self._send_at(f"AT ST {self.AT_ST_NORMAL}")
+            if self.isotp_mode == "native":
+                if not self._configure_native_fc(tx_id):
+                    self.log("Custom flow control rejected — switching to raw mode",
+                             ui=True)
+                    self.isotp_mode = "raw"
+                    self._native_failed = True
+                    self._init_raw_isotp()
+                    self._send_at("AT AT0")
+                    self._send_at(f"AT ST {self.at_st_raw}")
+                else:
+                    self._send_at("AT AT1")
+                    self._send_at(f"AT ST {self.at_st_native}")
+            else:
+                self._send_at("AT AT0")
+                self._send_at(f"AT ST {self.at_st_raw}")
 
             self.configured = True
-            self.log(f"Configured: TX={tx_id} RX={rx_id} protocol={protocol}")
+            self.log(f"Configured: TX={tx_id} RX={rx_id} protocol={protocol} "
+                     f"mode={self.isotp_mode}")
             return True
 
-    # ─── Communication ────────────────────────────────────────────
+    def _configure_native_fc(self, tx_id):
+        for cmd in (f"AT FC SH {tx_id}", "AT FC SD 300000", "AT FC SM 1", "AT CFC1"):
+            resp = self._send_at(cmd)
+            if resp is None or "?" in (resp or "") or "ERROR" in (resp or "").upper():
+                self.log(f"Flow control setup failed at '{cmd}': {resp}")
+                return False
+        self.log("OK: ELM-native flow control armed for " + tx_id)
+        return True
 
     def sendReceive(self, data, timeout=1500):
-        """Send command to ECU and receive response.
-
-        All serial I/O goes through self._io_lock so the background
-        keep-alive thread can safely interleave TesterPresent writes
-        between user commands."""
         if not self.connected:
             return ""
 
-        # K*/S are keep-alive life-cycle signals from DiagnosticCommunication.
-        # Handle them OUTSIDE the lock so _start/_stop can manage the thread
-        # cleanly (stop joins the thread, which itself needs the lock briefly).
         if data.startswith("K"):
+            self._session_ka = True
             self._start_keep_alive()
             return "OK"
         elif data == "S":
-            self._stop_keep_alive()
+            # Stop CAN TesterPresent, but keep the keep-alive thread running so it
+            # keeps the BT link warm (local ATI pings) during post-session idle.
+            # The thread is only truly stopped on close().
+            self._session_ka = False
+            self.log("Keep-alive: session ended -> link-warm mode (ATI)")
             return "OK"
 
         with self._io_lock:
-            # Handle Arduino-specific commands (same approach as VCIAdapter)
             if data.startswith(">") and ":" in data:
-                # Arduino ECU selection ">6B4:694" - already configured via configure()
                 self.log("ECU already configured, skipping Arduino command")
                 return "OK"
             elif data.startswith("L"):
                 self.log("LIN not supported on ELM327 OBD")
                 return "OK"
             elif data == "R":
-                # Reset - re-init ELM327. configure() re-acquires the
-                # RLock safely (same thread → recursive allow).
                 self._init_elm327()
                 if self.current_tx_id and self.current_rx_id:
-                    self.configure(self.current_tx_id, self.current_rx_id)
+                    self.configure(self.current_tx_id, self.current_rx_id,
+                                   self.current_protocol)
                 return "OK"
             elif data == "V":
-                # Version request
                 return self.elm_version or "ELM327 Bluetooth"
 
-            # Regular UDS command
-            return self._send_uds(data, timeout)
+            t0 = time.monotonic()
+            if self.isotp_mode == "native":
+                result = self._send_uds_native(data, timeout)
+            else:
+                result = self._send_uds_raw(data, timeout)
+            self._timing(f"sendReceive({data[:16]})", t0)
+            return result
 
-    def readData(self):
-        """Read next response from ECU (for Response Pending / NRC 78 handling).
-           Uses AT MA to monitor CAN bus for the ECU's delayed response."""
-        with self._io_lock:
+    def _send_uds_native(self, data, timeout=1500):
+        read_timeout = max(timeout / 1000.0, 3.0)
+        is_segmented = len(data) // 2 > 7
+        if is_segmented:
+            read_timeout = max(read_timeout, 6.0)
+            if not self._native_segmented_tx:
+                return self._send_raw_excursion(data, timeout)
+
+        reasserted = False
+        for attempt in range(3):
             try:
-                self.serialPort.reset_input_buffer()
-                self.serialPort.write(b"ATMA\r")
-                self.serialPort.flush()
+                self._drain_input()
+                t0 = time.monotonic()
+                self._write_line(data)
+                self._timing("write", t0)
 
-                frame = self._read_monitor_frame(timeout=6.0)
-                self._stop_monitor()
+                t0 = time.monotonic()
+                response = self._read_elm_response(read_timeout)
+                self._timing("read", t0)
 
-                if frame is None:
+                if response is None:
+                    if attempt < 2:
+                        self.log(f"No response for {data}, retry {attempt + 2}/3")
+                        time.sleep(0.15 * (attempt + 1))
+                        continue
                     return "Timeout"
 
-                return self._parse_isotp_response(frame, 3.0)
-            except Exception as e:
-                self.log(f"readData error: {e}")
-                self._stop_monitor()
+                err = self._elm_error(response)
+                if err is not None:
+                    if is_segmented and self._native_segmented_tx and \
+                            (err == "?" or err.startswith("ERR")):
+                        self._native_segmented_tx = False
+                        self.log(f"Adapter cannot send segmented ISO-TP "
+                                 f"({err}) — framing long requests in Python "
+                                 f"from now on", ui=True)
+                        return self._send_raw_excursion(data, timeout)
+                    if err == "?" and not self._native_failed:
+                        # A transient '?' mid-session usually means the ELM
+                        # slipped out of native — e.g. residue from a write's
+                        # raw excursion. Re-assert native and retry once before
+                        # giving up; don't latch to raw on the first hiccup.
+                        if not reasserted:
+                            reasserted = True
+                            self.log("Native '?' — re-asserting native config "
+                                     "and retrying")
+                            self._reassert_native()
+                            continue
+                        self.log("Adapter rejected native ISO-TP payload — "
+                                 "falling back to raw mode", ui=True)
+                        self._fallback_to_raw()
+                        return self._send_uds_raw(data, timeout)
+                    if err == "BUFFER FULL":
+                        # Response too big for the native buffer. Fetch THIS one
+                        # via a raw excursion (streamed frame-by-frame), but keep
+                        # native for later short reads.
+                        self.log("Response too long for native buffer — "
+                                 "reading this one in raw mode")
+                        return self._send_raw_excursion(data, timeout)
+                    if attempt < 2 and err in ("NO DATA", "CAN ERROR"):
+                        self.log(f"ELM327 error '{err}' for {data}, "
+                                 f"retry {attempt + 2}/3")
+                        time.sleep(0.15 * (attempt + 1))
+                        continue
+                    self.log(f"ELM327 error: {err}")
+                    return ""
+
+                parsed = self._parse_native_response(response)
+                if not parsed:
+                    if attempt < 2:
+                        self.log(f"Unparseable response for {data}: {response!r}, "
+                                 f"retry {attempt + 2}/3")
+                        time.sleep(0.15 * (attempt + 1))
+                        continue
+                    self.log(f"Could not parse ELM response for {data}: "
+                             f"{response!r}", ui=True)
+                return parsed
+
+            except serial.SerialTimeoutException:
+                self.log(f"Write timeout for {data} (BT link stalled)")
                 return "Timeout"
+            except Exception as e:
+                self.log(f"UDS send error: {e}")
+                return ""
 
-    def _read_monitor_frame(self, timeout=6.0):
-        """Read a single valid ISO-TP response frame from AT MA monitor mode.
-           Skips NRC 78 (Response Pending) — waits for the real answer."""
-        buf = bytearray()
-        end = time.monotonic() + timeout
+        return ""
 
-        while time.monotonic() < end:
-            n = self.serialPort.in_waiting
-            if n:
-                buf.extend(self.serialPort.read(n))
-                text = buf.decode("utf-8", errors="ignore")
-                for line in text.split("\r"):
-                    cleaned = line.strip().replace(" ", "")
-                    if not cleaned or len(cleaned) < 4 or len(cleaned) % 2 != 0:
-                        continue
-                    if not all(c in "0123456789ABCDEFabcdef" for c in cleaned):
-                        continue
-                    cleaned = cleaned.upper()
-                    first_byte = int(cleaned[0:2], 16)
-                    ft = (first_byte >> 4) & 0x0F
+    def _parse_native_response(self, response):
+        if not response:
+            return ""
 
-                    if ft == 0:  # Single Frame
-                        dl = first_byte & 0x0F
-                        if 0 < dl <= 7:
-                            data = cleaned[2:2 + dl * 2]
-                            # Skip another NRC 78 (Response Pending)
-                            if len(data) >= 6 and data[0:2] == "7F" and data[4:6] == "78":
-                                continue
-                            return cleaned
-                    elif ft == 1:  # First Frame (multi-frame response)
-                        return cleaned
-            else:
-                time.sleep(0.01)
+        lines = [l.strip().replace(" ", "")
+                 for l in response.replace("\r", "\n").split("\n")]
+        lines = [l for l in lines if l]
+        if not lines:
+            return ""
 
-        return None
+        indexed = []
+        plain = []
 
-    def _stop_monitor(self):
-        """Stop AT MA / AT MR monitoring mode"""
+        for line in lines:
+            if len(line) > 2 and line[1] == ":" and \
+                    line[0].upper() in "0123456789ABCDEF":
+                payload = line[2:].upper()
+                if all(c in "0123456789ABCDEF" for c in payload):
+                    indexed.append(payload)
+                continue
+            up = line.upper()
+            if up and all(c in "0123456789ABCDEF" for c in up):
+                plain.append(up)
+
+        if indexed:
+            total_len = None
+            for up in plain:
+                if len(up) <= 4:
+                    total_len = int(up, 16)
+                    break
+
+            ordered = "".join(indexed)
+            if total_len:
+                got = len(ordered) // 2
+                if got < total_len:
+                    self.log(f"Multi-frame incomplete: {got}/{total_len} bytes")
+                return ordered[:total_len * 2]
+            return ordered
+
+        singles = [up for up in plain if len(up) >= 2 and len(up) % 2 == 0]
+        if singles:
+            for s in singles:
+                if not (len(s) >= 6 and s[0:2] == "7F" and s[4:6] == "78"):
+                    return s
+            return singles[-1]
+
+        return ""
+
+    def _reassert_native(self):
+        # Put the ELM firmly back into native ISO-TP after a raw excursion or a
+        # transient native error. Re-arms the per-ECU flow-control headers too —
+        # a bare "AT CFC1" isn't enough on clones that drop the FC config when
+        # CFC is toggled off during the excursion.
+        self._send_at("AT CAF1")
+        if self.current_tx_id:
+            self._send_at(f"AT FC SH {self.current_tx_id}")
+            self._send_at("AT FC SD 300000")
+            self._send_at("AT FC SM 1")
+        self._send_at("AT CFC1")
+        self._send_at("AT AT1")
+        self._send_at(f"AT ST {self.at_st_native}")
+
+    def _send_raw_excursion(self, data, timeout):
+        self._send_at("AT CAF0")
+        self._send_at("AT CFC0")
+        self._send_at("AT AT0")
+        self._send_at(f"AT ST {self.at_st_raw}")
         try:
-            self.serialPort.write(b"\r")
-            time.sleep(0.1)
-            self.serialPort.reset_input_buffer()
-        except Exception:
-            pass
+            return self._send_uds_raw(data, timeout)
+        finally:
+            # Restore native for the next request so reads stay fast. Guard on
+            # isotp_mode: a permanent fallback may have flipped us to raw while
+            # we were inside the excursion.
+            if self.isotp_mode == "native":
+                self._reassert_native()
 
-    # ─── Low-level ELM327 Communication ──────────────────────────
+    def _fallback_to_raw(self):
+        self.isotp_mode = "raw"
+        self._native_failed = True
+        self._init_raw_isotp()
+        if self.current_tx_id:
+            self._send_at(f"AT SH {self.current_tx_id}")
+        if self.current_rx_id:
+            self._send_at(f"AT CRA {self.current_rx_id}")
+        self._send_at("AT AT0")
+        self._send_at(f"AT ST {self.at_st_raw}")
 
-    def _send_at(self, command, timeout=2):
-        """Send AT command to ELM327 and return response"""
-        try:
-            self.serialPort.reset_input_buffer()
-            cmd = command + "\r"
-            self.serialPort.write(cmd.encode("utf-8"))
-            self.serialPort.flush()
-            return self._read_elm_response(timeout)
-        except Exception as e:
-            self.log(f"AT command error ({command}): {e}")
-            return None
-
-    def _send_uds(self, data, timeout=1500):
-        """Send UDS hex data to ECU via ELM327 with manual ISO-TP framing.
-           AT CAF0 + AT CFC0: we build SF frames and handle FC ourselves."""
+    def _send_uds_raw(self, data, timeout=1500):
         try:
             data_len = len(data) // 2
             read_timeout = max(timeout / 1000.0, 3.0)
 
-            for attempt in range(7):  # up to 6 retries on incomplete multi-frame
-                # Bumped from 5→7 to tolerate more NO DATA misses at
-                # short AT ST (~65 ms); retries are cheap if first succeeds.
-                self.serialPort.reset_input_buffer()
+            for attempt in range(7):
+                self._drain_input()
                 self._multiframe_incomplete = False
 
                 if data_len <= 7:
-                    # ── Single Frame: PCI(1 byte) + data, padded to 8 bytes ──
                     sf_pci = f"{data_len:02X}"
                     raw_frame = (sf_pci + data).ljust(16, '0')
-
-                    self.serialPort.write((raw_frame + "\r").encode("utf-8"))
-                    self.serialPort.flush()
-
+                    self._write_line(raw_frame)
                     response = self._read_elm_response(read_timeout)
                     result = self._check_and_parse(response, read_timeout)
                 else:
-                    # ── Multi-frame send: First Frame + wait FC + Consecutive Frames ──
                     result = self._send_uds_multiframe(data, data_len, read_timeout)
 
-                # Retry on incomplete multi-frame read OR NO DATA on multi-frame send
                 should_retry = self._multiframe_incomplete
                 if data_len > 7 and result in ("", "Timeout"):
                     should_retry = True
@@ -531,31 +715,25 @@ class BluetoothAdapter:
             return ""
 
     def _send_uds_multiframe(self, data, data_len, read_timeout):
-        """Send UDS command > 7 bytes using ISO-TP multi-frame (FF + CF)."""
         try:
-            # ── First Frame: PCI(2 bytes) + first 6 data bytes ──
-            ff_pci = f"1{data_len:03X}"          # e.g. "100A" for 10 bytes
-            ff_data = data[:12]                   # first 6 bytes = 12 hex chars
+            ff_pci = f"1{data_len:03X}"
+            ff_data = data[:12]
             ff_frame = (ff_pci + ff_data).ljust(16, '0')
 
-            self.serialPort.reset_input_buffer()
-            self.serialPort.write((ff_frame + "\r").encode("utf-8"))
-            self.serialPort.flush()
+            self._drain_input()
+            self._write_line(ff_frame)
 
-            # Read Flow Control from ECU (should be 30 xx xx = Continue To Send)
             fc_response = self._read_elm_response(read_timeout)
             if fc_response is None:
                 self.log("Multi-frame send: no FC from ECU")
                 return "Timeout"
 
-            # Verify FC frame (type 3 = Flow Control)
             fc_ok = False
             for fc_line in fc_response.replace("\r", "\n").split("\n"):
                 cleaned = fc_line.strip().replace(" ", "")
                 if cleaned and len(cleaned) >= 2 and \
                    all(c in "0123456789ABCDEFabcdef" for c in cleaned):
-                    fb = int(cleaned[0:2], 16)
-                    if (fb >> 4) == 3:  # FC frame
+                    if (int(cleaned[0:2], 16) >> 4) == 3:
                         fc_ok = True
                         break
 
@@ -563,38 +741,22 @@ class BluetoothAdapter:
                 self.log(f"Multi-frame send: invalid FC: {fc_response}")
                 return ""
 
-            # ── Consecutive Frames ──
-            remaining = data[12:]  # after first 6 bytes
+            remaining = data[12:]
             seq = 1
-            num_cfs = (len(remaining) + 13) // 14  # total CFs needed
-
-            # Shorten AT ST for intermediate CFs (they get NO DATA anyway)
-            # so we don't wait per-frame. Restore before last CF.
-            if num_cfs > 1:
-                self._send_at(f"AT ST {self.AT_ST_CF_RAPID}")
-
             while remaining:
                 is_last = len(remaining) <= 14
 
-                # Restore normal timeout before the last CF (need ECU response)
-                if is_last and num_cfs > 1:
-                    self._send_at(f"AT ST {self.AT_ST_NORMAL}")
-
                 cf_pci = f"2{seq & 0x0F:X}"
-                cf_data = remaining[:14]           # up to 7 bytes = 14 hex chars
+                cf_data = remaining[:14]
                 remaining = remaining[14:]
                 cf_frame = (cf_pci + cf_data).ljust(16, '0')
 
-                self.serialPort.write((cf_frame + "\r").encode("utf-8"))
-                self.serialPort.flush()
-
-                # Read response: intermediate CFs get NO DATA, last CF gets ECU answer
+                self._write_line(cf_frame)
                 cf_resp = self._read_elm_response(read_timeout)
 
                 if is_last:
                     return self._check_and_parse(cf_resp, read_timeout)
 
-                # Intermediate CF — ignore NO DATA, continue sending
                 seq += 1
 
             return ""
@@ -603,14 +765,11 @@ class BluetoothAdapter:
             return ""
 
     def _check_and_parse(self, response, read_timeout):
-        """Check ELM327 response for errors, then parse ISO-TP."""
         if response is None:
             return "Timeout"
 
-        first_line = response.split("\n")[0].strip()
-
-        # Detect unsupported clone
-        if first_line == "?":
+        err = self._elm_error(response)
+        if err == "?":
             if self._raw_can_supported:
                 self._raw_can_supported = False
                 self.log("Your ELM327 clone is not supported! "
@@ -618,62 +777,16 @@ class BluetoothAdapter:
                          "required for PSA diagnostics. "
                          "Use a quality adapter (Vgate iCar Pro 2s, etc).", ui=True)
             return ""
-
-        elm_errors = ("NO DATA", "CAN ERROR", "BUFFER FULL",
-                      "BUS INIT: ...ERROR", "UNABLE TO CONNECT",
-                      "FB ERROR", "DATA ERROR", "ACT ALERT",
-                      "STOPPED", "ERROR")
-        if first_line in elm_errors or first_line.startswith("BUS INIT"):
-            self.log(f"ELM327 error: {first_line}")
+        if err is not None:
+            self.log(f"ELM327 error: {err}")
             return ""
 
         return self._parse_isotp_response(response, read_timeout)
 
-    def _read_elm_response(self, timeout=2):
-        """Read full response from ELM327 until '>' prompt"""
-        data = bytearray()
-        end = time.monotonic() + timeout
-
-        while time.monotonic() < end:
-            n = self.serialPort.in_waiting
-            if n:
-                data.extend(self.serialPort.read(n))
-                # ELM327 signals end of response with '>' prompt
-                if b">" in data:
-                    break
-                # Reset timeout on data received
-                end = time.monotonic() + timeout
-            else:
-                time.sleep(0.01)
-
-        if not data:
-            return None
-
-        # Decode and clean up response
-        response = data.decode("utf-8", errors="ignore")
-        # Remove prompt
-        response = response.replace(">", "").strip()
-        # Split into lines, keep ALL non-empty lines
-        lines = response.split("\r")
-        clean_lines = [line.strip() for line in lines if line.strip()]
-        if clean_lines:
-            # Return all lines joined with \n (for multi-frame parsing)
-            return "\n".join(clean_lines)
-        return None
-
     def _parse_isotp_response(self, response, read_timeout):
-        """Parse raw ISO-TP CAN frames (AT CAF0 mode).
-
-           With CAF0 + CFC0 + ATH0 + ATS0, each CAN frame is a raw hex line
-           (up to 16 hex chars = 8 bytes). We decode ISO-TP framing manually:
-             SF: 0N DDDDDD...  (N = data length, 1-7)
-             FF: 1N NN DDDDDD  (NNN = total length, 12-bit)
-             CF: 2N DDDDDD...  (N = sequence 0-F)
-        """
         if not response:
             return ""
 
-        # Collect valid hex lines from response
         hex_lines = []
         for line in response.replace("\r", "\n").split("\n"):
             cleaned = line.strip().replace(" ", "")
@@ -684,41 +797,27 @@ class BluetoothAdapter:
         if not hex_lines:
             return ""
 
-        # Find the first frame that looks like a real ISO-TP response
-        # (skip any stale noise lines).  Track NRC 78 (Response Pending)
-        # separately: if it's the ONLY thing we got, return it cleaned
-        # (PCI byte stripped) so the upper layer's "7F XX 78" detector
-        # in DiagnosticCommunication.writeECUCommand matches and re-reads
-        # the bus to catch the slow ECU's real response (AAS does this).
         last_nrc78 = None
         for frame in hex_lines:
             first_byte = int(frame[0:2], 16)
             frame_type = (first_byte >> 4) & 0x0F
 
             if frame_type == 0:
-                # ── Single Frame ──
                 data_len = first_byte & 0x0F
                 if data_len == 0 or data_len > 7:
                     continue
                 data = frame[2:2 + data_len * 2]
-                # Skip NRC 78 (Response Pending) — real response may follow
                 if len(data) >= 6 and data[0:2] == "7F" and data[4:6] == "78":
                     last_nrc78 = data
                     continue
                 return data
 
             elif frame_type == 1:
-                # ── First Frame (multi-frame start) ──
                 total_len = ((first_byte & 0x0F) << 8) | int(frame[2:4], 16)
-                ff_data = frame[4:]  # up to 6 bytes (12 hex chars)
+                ff_data = frame[4:]
 
-                # Send Flow Control immediately — no AT commands between FF and FC
-                # to minimize latency (AT ST 32 ~200ms is enough for CF collection)
-                self.serialPort.reset_input_buffer()
-                self.serialPort.write(b"3000050000000000\r")
-                self.serialPort.flush()
+                self._write_line("3000000000000000")
 
-                # Read Consecutive Frames
                 cf_response = self._read_elm_response(read_timeout)
 
                 all_data = ff_data
@@ -729,13 +828,11 @@ class BluetoothAdapter:
                             continue
                         if not all(c in "0123456789ABCDEFabcdef" for c in cf_clean):
                             continue
-                        cf_byte = int(cf_clean[0:2], 16)
-                        if (cf_byte >> 4) == 2:  # Consecutive Frame (PCI = 0x2N)
-                            all_data += cf_clean[2:].upper()  # skip PCI byte
+                        if (int(cf_clean[0:2], 16) >> 4) == 2:
+                            all_data += cf_clean[2:].upper()
                 else:
                     self.log("Multi-frame error: no Consecutive Frames received after FC")
 
-                # Trim to declared total length
                 result = all_data[:total_len * 2].upper()
                 got = len(result) // 2
                 if got < total_len:
@@ -743,30 +840,149 @@ class BluetoothAdapter:
                     self._multiframe_incomplete = True
                 return result
 
-        # All frames in this window were Response Pending NRCs — return
-        # the last one cleaned (no PCI byte) so the upper layer detects
-        # "7F XX 78" and re-reads via readData() / ATMA to catch the slow
-        # ECU's real response (e.g. AAS on session 10 03).
         if last_nrc78 is not None:
             return last_nrc78
 
-        # Fallback: return longest hex line as raw data
         return max(hex_lines, key=len)
 
-    # ─── Keep-alive ───────────────────────────────────────────────
+    def readData(self):
+        with self._io_lock:
+            try:
+                self._drain_input()
+                self._write_line("ATMA")
+
+                frame = self._read_monitor_frame(timeout=6.0)
+                self._stop_monitor()
+
+                if frame is None:
+                    return "Timeout"
+
+                return self._parse_isotp_response(frame, 3.0)
+            except Exception as e:
+                self.log(f"readData error: {e}")
+                self._stop_monitor()
+                return "Timeout"
+
+    def _read_monitor_frame(self, timeout=6.0):
+        buf = bytearray()
+        end = time.monotonic() + timeout
+
+        while time.monotonic() < end:
+            n = self.serialPort.in_waiting
+            if n:
+                buf.extend(self.serialPort.read(n))
+                text = buf.decode("utf-8", errors="ignore")
+                for line in text.split("\r"):
+                    cleaned = line.strip().replace(" ", "")
+                    if not cleaned or len(cleaned) < 4 or len(cleaned) % 2 != 0:
+                        continue
+                    if not all(c in "0123456789ABCDEFabcdef" for c in cleaned):
+                        continue
+                    cleaned = cleaned.upper()
+                    first_byte = int(cleaned[0:2], 16)
+                    ft = (first_byte >> 4) & 0x0F
+
+                    if ft == 0:
+                        dl = first_byte & 0x0F
+                        if 0 < dl <= 7:
+                            data = cleaned[2:2 + dl * 2]
+                            if len(data) >= 6 and data[0:2] == "7F" and data[4:6] == "78":
+                                continue
+                            return cleaned
+                    elif ft == 1:
+                        return cleaned
+            else:
+                time.sleep(0.005)
+
+        return None
+
+    def _stop_monitor(self):
+        try:
+            self.serialPort.write(b"\r")
+            time.sleep(0.1)
+            self.serialPort.reset_input_buffer()
+        except Exception:
+            pass
+
+    def _write_line(self, payload: str):
+        self.serialPort.write((payload + "\r").encode("ascii", errors="ignore"))
+        if IS_WINDOWS:
+            self.serialPort.flush()
+        self._last_io = time.monotonic()
+
+    def _drain_input(self):
+        try:
+            self.serialPort.reset_input_buffer()
+        except Exception:
+            pass
+
+    def _send_at(self, command, timeout=2):
+        try:
+            self._drain_input()
+            self._write_line(command)
+            return self._read_elm_response(timeout)
+        except Exception as e:
+            self.log(f"AT command error ({command}): {e}")
+            return None
+
+    @staticmethod
+    def _elm_error(response):
+        if response is None:
+            return None
+        first_line = response.split("\n")[0].strip().upper()
+        if first_line == "?":
+            return "?"
+        elm_errors = ("NO DATA", "CAN ERROR", "BUFFER FULL",
+                      "UNABLE TO CONNECT", "FB ERROR", "DATA ERROR",
+                      "ACT ALERT", "STOPPED", "ERROR")
+        if first_line in elm_errors or first_line.startswith("BUS INIT"):
+            return first_line
+        if re.fullmatch(r"ERR[0-9A-Z]{2}", first_line):
+            return first_line
+        return None
+
+    def _read_elm_response(self, timeout=2):
+        data = bytearray()
+        # Idle-gap timeout: idle_deadline is pushed forward on every byte we
+        # receive, so a slow-but-alive Bluetooth link (bursty multi-frame reads,
+        # EEPROM dumps) keeps the read going and we only give up after `timeout`
+        # seconds of true silence. abs_deadline caps the total wait so a
+        # pathologically chatty bus can't hang the read forever.
+        now = time.monotonic()
+        idle_deadline = now + timeout
+        abs_deadline = now + timeout * 4
+        poll = 0.002 if not IS_WINDOWS else 0.005
+
+        while time.monotonic() < idle_deadline and time.monotonic() < abs_deadline:
+            n = self.serialPort.in_waiting
+            if n:
+                data.extend(self.serialPort.read(n))
+                if b">" in data:
+                    break
+                idle_deadline = time.monotonic() + timeout   # extend while data flows
+            else:
+                time.sleep(poll)
+        else:
+            if data:
+                head = bytes(data[:120])
+                more = f" (+{len(data) - 120} more bytes)" if len(data) > 120 else ""
+                self.log(f"Read timed out after {timeout:.1f}s idle with no '>' "
+                         f"prompt: {head!r}{more}")
+
+        if not data:
+            return None
+
+        response = data.decode("utf-8", errors="ignore")
+        response = response.replace(">", "").strip()
+        lines = response.split("\r")
+        clean_lines = [line.strip() for line in lines if line.strip()]
+        if clean_lines:
+            return "\n".join(clean_lines)
+        return None
 
     def _start_keep_alive(self):
-        """Start the background TesterPresent thread (idempotent).
-
-        Purpose:
-          - Keeps BT RFCOMM link warm (prevents OS 10-min idle drop)
-          - Keeps ELM327 out of low-power sleep
-          - Keeps ECU UDS session alive (resets S3 timer)
-
-        Called when DiagnosticCommunication sends 'KK' / 'KU' at the
-        start of a diagnostic session."""
         if self._ka_thread is not None and self._ka_thread.is_alive():
-            return  # already running
+            return
         self._ka_stop.clear()
         self._ka_thread = threading.Thread(
             target=self._keep_alive_loop,
@@ -776,78 +992,68 @@ class BluetoothAdapter:
         self._ka_thread.start()
         self.log(f"Keep-alive started (period={self._ka_period}s)")
 
-    def _stop_keep_alive(self):
-        """Signal the keep-alive thread to stop and wait briefly for it."""
+    def _stop_keep_alive(self, join_timeout=None):
         if self._ka_thread is None:
             return
         self._ka_stop.set()
         if self._ka_thread.is_alive():
-            self._ka_thread.join(timeout=self._ka_period + 1.0)
+            self._ka_thread.join(
+                timeout=self._ka_period + 1.0 if join_timeout is None
+                else join_timeout)
         self._ka_thread = None
         self.log("Keep-alive stopped")
 
     def _keep_alive_loop(self):
-        """Periodic TesterPresent sender, runs in its own daemon thread.
-
-        Sends UDS `3E 80` (TesterPresent with suppressPosRspMsgIndicationBit
-        — ECU stays silent, minimum bus traffic). Acquires self._io_lock
-        for the full tick so it never interleaves with a user command."""
         while not self._ka_stop.wait(self._ka_period):
-            if not self.connected or not self.configured:
-                # Nothing useful to send yet; just keep looping so the
-                # user can start a session later without restarting us.
+            if not self.connected:
                 continue
-            # Try-lock with short timeout: if the main thread is in the
-            # middle of a long multi-frame read, skip this tick rather
-            # than pile up. Next tick will likely succeed.
+            # Only warm the link when it has actually been idle — never interfere
+            # with an active read/write/flash (their writes refresh _last_io).
+            if time.monotonic() - self._last_io < self._ka_period:
+                continue
             if not self._io_lock.acquire(timeout=0.5):
                 continue
             try:
-                if not self.serialPort.isOpen():
+                if not self.serialPort.is_open:
                     continue
-                self._send_uds_no_response("3E80")
+                if self.configured and self._session_ka:
+                    # Active session: 3E 80 TesterPresent (suppressPosRsp) — resets
+                    # the ECU S3 timer and warms the BT link, no lingering 7E 00.
+                    self._send_keep_alive_frame("3E80")
+                else:
+                    # Connected but idle (no ECU selected, or after "S"): keep the
+                    # RFCOMM link warm and the ELM clone out of sleep with a local
+                    # AT command — no CAN traffic, safe even mid-flash.
+                    self._send_at("ATI")
             except serial.SerialTimeoutException:
-                # BT write deadline — link looks dead. We don't reconnect
-                # from the keep-alive thread (the user-initiated path in
-                # _send_uds will handle it on the next real command).
                 self.log("Keep-alive: write timeout (link may be dead)")
             except Exception as e:
-                # Any other transient error — log and keep looping.
                 self.log(f"Keep-alive tick error (ignored): {e}")
             finally:
                 self._io_lock.release()
 
-    def _send_uds_no_response(self, data):
-        """Send a single ISO-TP Single Frame without parsing a response.
-
-        Used by keep-alive: we only care that the bytes leave the BT link
-        (keeps RFCOMM + ELM + ECU session alive). Caller MUST hold
-        self._io_lock."""
-        data_len = len(data) // 2
-        if data_len > 7:
-            return  # keep-alive payloads are always tiny
-        sf_pci = f"{data_len:02X}"
-        raw_frame = (sf_pci + data).ljust(16, '0')
+    def _send_keep_alive_frame(self, data):
+        if len(data) // 2 > 7:
+            return
+        if self.isotp_mode == "native":
+            frame = data
+        else:
+            frame = (f"{len(data) // 2:02X}" + data).ljust(16, '0')
         try:
-            self.serialPort.reset_input_buffer()
-            self.serialPort.write((raw_frame + "\r").encode("utf-8"))
-            self.serialPort.flush()
-            # Drain the ELM prompt so the next real read starts clean.
-            # Short timeout — with 3E 80 there's no UDS response, only '>'.
-            self._read_elm_response(timeout=0.5)
+            self._drain_input()
+            self._write_line(frame)
+            self._read_elm_response(timeout=1.5)
         except serial.SerialTimeoutException:
-            raise  # bubble up to _keep_alive_loop
-
-    # ─── Info ─────────────────────────────────────────────────────
+            raise
 
     def get_adapter_info(self):
-        """Get adapter information"""
         return {
             "name": "ELM327 Bluetooth OBD",
             "type": "Bluetooth",
             "connected": self.connected,
             "configured": self.configured,
             "elm_version": self.elm_version,
+            "isotp_mode": self.isotp_mode,
             "tx_id": self.current_tx_id,
             "rx_id": self.current_rx_id,
         }
