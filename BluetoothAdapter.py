@@ -3,7 +3,11 @@
 
    ELM327 Bluetooth OBD Adapter for PyPSADiag
    Communicates with ELM327-based Bluetooth OBD scanners via virtual COM port
-   (Windows) or a /dev/cu.* RFCOMM device (macOS / Linux).
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   as published by the Free Software Foundation; either version 2
+   of the License, or (at your option) any later version.
 """
 
 import atexit
@@ -78,7 +82,7 @@ class BluetoothAdapter:
 
         mode = isotp_mode or os.environ.get("PYPSADIAG_ISOTP") or "native"
         self.isotp_mode = "raw" if str(mode).lower() == "raw" else "native"
-        self._isotp_pref = self.isotp_mode   # user's original choice — for reconnect recovery
+        self._isotp_pref = self.isotp_mode
         self._native_failed = False
         self._native_segmented_tx = True
 
@@ -93,8 +97,9 @@ class BluetoothAdapter:
         self._ka_thread = None
         self._ka_stop = threading.Event()
         self._ka_period = 2.0
-        self._session_ka = False           # True between app "KU" and "S": send 3E80; else warm link with ATI
-        self._last_io = time.monotonic()   # last serial write — keep-alive only warms when the link is idle
+        self._session_ka = False
+        self._last_io = time.monotonic()
+        self._ka_suspended = False
 
     @staticmethod
     def _env_st(name, default):
@@ -232,7 +237,7 @@ class BluetoothAdapter:
                     self.connected = True
                     self.detected_baud = baud
                     self._arm_exit_cleanup()
-                    self._start_keep_alive()   # warm the BT link from connect, before any session
+                    self._start_keep_alive()
                     return ""
                 self.serialPort.close()
                 return "ELM327 not responding on " + portNr
@@ -247,7 +252,7 @@ class BluetoothAdapter:
                     self.connected = True
                     self.detected_baud = detected_baud
                     self._arm_exit_cleanup()
-                    self._start_keep_alive()   # warm the BT link from connect, before any session
+                    self._start_keep_alive()
                     return ""
                 self.serialPort.close()
 
@@ -265,7 +270,7 @@ class BluetoothAdapter:
                         self.detected_baud = baud
                         self.log(f"Connected @ {baud} baud", ui=True)
                         self._arm_exit_cleanup()
-                        self._start_keep_alive()   # warm the BT link from connect, before any session
+                        self._start_keep_alive()
                         return ""
 
                     self.serialPort.close()
@@ -335,10 +340,6 @@ class BluetoothAdapter:
                 return False
             self.log(f"OK: {description}")
 
-        # Reconnect recovery: if the user asked for native, re-attempt it on
-        # every (re)init even if a prior fallback flipped us to raw. The ATZ
-        # reset above clears whatever transient state caused the earlier failure,
-        # so 'R' / a reconnect can bring native (fast reads) back.
         if self._isotp_pref == "native":
             self.isotp_mode = "native"
             self._native_failed = False
@@ -424,11 +425,8 @@ class BluetoothAdapter:
                 self.log(f"Failed to set RX filter: {rx_id} ({response!r})")
                 return False
 
-            # Hardware CAN acceptance filter — drops non-matching frames at the
-            # chip level. Critical on busy buses (e.g. BSI body CAN) so the ELM's
-            # receive buffer can't overflow (BUFFER FULL / apparent disconnects).
-            self._send_at(f"AT CF {rx_id}")   # CAN Filter = exact RX ID
-            self._send_at("AT CM 7FF")        # CAN Mask = all 11 bits must match
+            self._send_at(f"AT CF {rx_id}")
+            self._send_at("AT CM 7FF")
 
             if self.isotp_mode == "native":
                 if not self._configure_native_fc(tx_id):
@@ -469,9 +467,6 @@ class BluetoothAdapter:
             self._start_keep_alive()
             return "OK"
         elif data == "S":
-            # Stop CAN TesterPresent, but keep the keep-alive thread running so it
-            # keeps the BT link warm (local ATI pings) during post-session idle.
-            # The thread is only truly stopped on close().
             self._session_ka = False
             self.log("Keep-alive: session ended -> link-warm mode (ATI)")
             return "OK"
@@ -537,10 +532,6 @@ class BluetoothAdapter:
                                  f"from now on", ui=True)
                         return self._send_raw_excursion(data, timeout)
                     if err == "?" and not self._native_failed:
-                        # A transient '?' mid-session usually means the ELM
-                        # slipped out of native — e.g. residue from a write's
-                        # raw excursion. Re-assert native and retry once before
-                        # giving up; don't latch to raw on the first hiccup.
                         if not reasserted:
                             reasserted = True
                             self.log("Native '?' — re-asserting native config "
@@ -552,9 +543,6 @@ class BluetoothAdapter:
                         self._fallback_to_raw()
                         return self._send_uds_raw(data, timeout)
                     if err == "BUFFER FULL":
-                        # Response too big for the native buffer. Fetch THIS one
-                        # via a raw excursion (streamed frame-by-frame), but keep
-                        # native for later short reads.
                         self.log("Response too long for native buffer — "
                                  "reading this one in raw mode")
                         return self._send_raw_excursion(data, timeout)
@@ -635,10 +623,6 @@ class BluetoothAdapter:
         return ""
 
     def _reassert_native(self):
-        # Put the ELM firmly back into native ISO-TP after a raw excursion or a
-        # transient native error. Re-arms the per-ECU flow-control headers too —
-        # a bare "AT CFC1" isn't enough on clones that drop the FC config when
-        # CFC is toggled off during the excursion.
         self._send_at("AT CAF1")
         if self.current_tx_id:
             self._send_at(f"AT FC SH {self.current_tx_id}")
@@ -656,9 +640,6 @@ class BluetoothAdapter:
         try:
             return self._send_uds_raw(data, timeout)
         finally:
-            # Restore native for the next request so reads stay fast. Guard on
-            # isotp_mode: a permanent fallback may have flipped us to raw while
-            # we were inside the excursion.
             if self.isotp_mode == "native":
                 self._reassert_native()
 
@@ -943,11 +924,6 @@ class BluetoothAdapter:
 
     def _read_elm_response(self, timeout=2):
         data = bytearray()
-        # Idle-gap timeout: idle_deadline is pushed forward on every byte we
-        # receive, so a slow-but-alive Bluetooth link (bursty multi-frame reads,
-        # EEPROM dumps) keeps the read going and we only give up after `timeout`
-        # seconds of true silence. abs_deadline caps the total wait so a
-        # pathologically chatty bus can't hang the read forever.
         now = time.monotonic()
         idle_deadline = now + timeout
         abs_deadline = now + timeout * 4
@@ -959,7 +935,7 @@ class BluetoothAdapter:
                 data.extend(self.serialPort.read(n))
                 if b">" in data:
                     break
-                idle_deadline = time.monotonic() + timeout   # extend while data flows
+                idle_deadline = time.monotonic() + timeout
             else:
                 time.sleep(poll)
         else:
@@ -980,7 +956,21 @@ class BluetoothAdapter:
             return "\n".join(clean_lines)
         return None
 
+    def pause_keep_alive(self):
+        self._ka_suspended = True
+        self._stop_keep_alive()
+        self.log("Keep-alive SUSPENDED — port handed to external consumer "
+                 "(PIN Extractor)", ui=True)
+
+    def resume_keep_alive(self):
+        self._ka_suspended = False
+        self.log("Keep-alive RESUMED", ui=True)
+        if self.connected:
+            self._start_keep_alive()
+
     def _start_keep_alive(self):
+        if self._ka_suspended:
+            return
         if self._ka_thread is not None and self._ka_thread.is_alive():
             return
         self._ka_stop.clear()
@@ -1007,8 +997,8 @@ class BluetoothAdapter:
         while not self._ka_stop.wait(self._ka_period):
             if not self.connected:
                 continue
-            # Only warm the link when it has actually been idle — never interfere
-            # with an active read/write/flash (their writes refresh _last_io).
+            if self._ka_suspended:
+                continue
             if time.monotonic() - self._last_io < self._ka_period:
                 continue
             if not self._io_lock.acquire(timeout=0.5):
@@ -1017,13 +1007,8 @@ class BluetoothAdapter:
                 if not self.serialPort.is_open:
                     continue
                 if self.configured and self._session_ka:
-                    # Active session: 3E 80 TesterPresent (suppressPosRsp) — resets
-                    # the ECU S3 timer and warms the BT link, no lingering 7E 00.
                     self._send_keep_alive_frame("3E80")
                 else:
-                    # Connected but idle (no ECU selected, or after "S"): keep the
-                    # RFCOMM link warm and the ELM clone out of sleep with a local
-                    # AT command — no CAN traffic, safe even mid-flash.
                     self._send_at("ATI")
             except serial.SerialTimeoutException:
                 self.log("Keep-alive: write timeout (link may be dead)")
