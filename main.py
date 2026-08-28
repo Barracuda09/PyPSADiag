@@ -1083,6 +1083,16 @@ class MainWindow(QMainWindow):
                 "does not expose a raw serial object.")
             return
 
+        # The sniffer drives raw_serial directly (ATMA monitor mode) and does
+        # NOT take the adapter's I/O lock. Suspend the BluetoothAdapter
+        # keep-alive for the dialog's lifetime — otherwise its periodic
+        # ATI/3E80 writes abort ATMA every 2 s and the sniffer captures
+        # nothing. getattr() keeps this a no-op for serial/VCI transports.
+        pause = getattr(transport, 'pause_keep_alive', None)
+        resume = getattr(transport, 'resume_keep_alive', None)
+        if callable(pause):
+            pause()
+
         # Lazy import so sniffer deps don't slow main startup
         from CanFrameSniffDialog import CanFrameSniffDialog
         # Keep a reference so the dialog isn't GC'd when this slot returns
@@ -1090,6 +1100,8 @@ class MainWindow(QMainWindow):
             serial_port=raw_serial,
             log_callback=self.writeToOutputView,
             parent=self)
+        if callable(resume):
+            self._canFrameSnifferDialog.finished.connect(lambda *_: resume())
         self._canFrameSnifferDialog.show()
 
     @Slot()
