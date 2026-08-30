@@ -52,6 +52,17 @@ from EcuKeyBruteforce import BruteforceWorker
   - Run with: python main.py
 """
 
+# Transports that switch ECU with the ">tx:rx" line; the rest (ELM327, VCI)
+# ignore it and are addressed by configure(). Negative test, so an unknown
+# transport gets configure() - the safe side.
+ADDRESSED_BY_SELECT_LINE = ("SerialPort", "WebSocketClientTransport")
+
+
+def addressedBySelectLine(serialController) -> bool:
+    transport = getattr(serialController, "transport", serialController)
+    names = {cls.__name__ for cls in type(transport).__mro__}
+    return bool(names.intersection(ADDRESSED_BY_SELECT_LINE))
+
 
 class VisioparkCalibrationDialog(QDialog):
     """Dialog for Visiopark dynamic camera calibration with status polling."""
@@ -621,6 +632,8 @@ class MainWindow(QMainWindow):
         self.ui.ConnectPort.setEnabled(True)
         self.ui.wsIpInput.setEnabled(True)
         self.ui.DisconnectPort.setEnabled(False)
+        self.ui.disableEcoMode.setEnabled(False)
+        self.ui.disableEcoModeAction.setEnabled(False)
 
         self.setEcuCommandsState(False)
 #        self.ui.useSketchSeedGenerator.setCheckState(Qt.Unchecked)
@@ -634,8 +647,8 @@ class MainWindow(QMainWindow):
         self.ui.readEcuFaults.setEnabled(enabled)
         self.ui.rebootEcu.setEnabled(enabled)
         self.ui.commandsMenu.setEnabled(enabled)
-        self.ui.disableEcoMode.setEnabled(enabled)
-        self.ui.disableEcoModeAction.setEnabled(enabled)
+        # disableEcoMode is deliberately not here: it needs an open port, not a
+        # loaded zone file. connectPort()/disconnectPort() drive it.
         self.ui.visioparkCalibrationAction.setEnabled(enabled)
         self.ui.bruteforceKeyAction.setEnabled(enabled)
         self.ui.canFrameSnifferAction.setEnabled(enabled)
@@ -944,42 +957,141 @@ class MainWindow(QMainWindow):
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
+    def selectEcuAddress(self, txId: str, rxId: str, protocol: str = "uds",
+                         bus: str = "DIAG") -> bool:
+        """Point the adapter at one fixed ECU on any transport. Both the
+        ">tx:rx" line and configure() are issued; each transport uses one.
+        Only the VCI reads `bus`; the ELM ignores it."""
+        if not addressedBySelectLine(self.serialController):
+            self.writeToOutputView("> configure tx=" + txId + " rx=" + rxId
+                                   + " " + protocol + " " + bus)
+            try:
+                configured = self.serialController.configure(txId, rxId, protocol,
+                                                             bus=bus)
+            except Exception as error:                      # transport specific
+                self.writeToOutputView("< " + str(error))
+                return False
+            self.writeToOutputView("< " + ("OK" if configured else "FAILED"))
+            if configured is False:
+                return False
+
+        ecu = ">" + txId + ":" + rxId
+        self.writeToOutputView("> " + ecu)
+        receiveData = self.serialController.sendReceive(ecu)
+        self.writeToOutputView("< " + str(receiveData))
+        return bool(receiveData) and receiveData != "Timeout"
+
+    def restoreEcuAddress(self):
+        """Hand addressing back to the ECU selected in the main window."""
+        if addressedBySelectLine(self.serialController):
+            return
+        if isinstance(self.ecuObjectList, dict) and self.ecuObjectList.get("tx_id"):
+            self.configureCommunication()
+
+    def sleepKeepingUiAlive(self, seconds: float):
+        """time.sleep() that keeps the window repainting while it waits."""
+        end = time.monotonic() + seconds
+        while True:
+            remaining = end - time.monotonic()
+            if remaining <= 0:
+                return
+            time.sleep(min(0.05, remaining))
+            QApplication.processEvents(QEventLoop.AllEvents, 10)
+
     @Slot()
     def disableEcoMode(self):
-        if self.serialController.isOpen():
-            ecu = ">752:652"
-            key = "B4E0"
+        """Exit the energy saving mode as DiagBox does.
 
-            # Select BSI
-            self.writeToOutputView("> " + ecu)
-            receiveData = self.serialController.sendReceive(ecu)
-            self.writeToOutputView("< " + receiveData)
-            if receiveData == "Timeout":
-                return
+        Follows campaign/act/exiting_energy_saving_mode.s, branch BSI2010
+        (BMF/BSI2010_EV, 752/652). No SecurityAccess: DiagBox uses none and the
+        routine is not flagged secured in DSD.
 
-            # Start diagnostic session (1003)
-            if not self.udsCommunication.startDiagnosticMode():
-                return
-
-            # Unlock ECU with BSI key (2703 -> compute seed -> 2704)
-            seed = self.udsCommunication.unlockingServiceForConfiguration(key)
-            if len(seed) == 0:
-                self.udsCommunication.stopDiagnosticMode()
-                return
-
-            time.sleep(2)
-
-            if not self.udsCommunication.sendUnlockingResponseForConfiguration(seed):
-                self.udsCommunication.stopDiagnosticMode()
-                return
-
-            # Send Disable Eco Mode routine
-            self.udsCommunication.writeECUCommand("3101DF0A3C")
-
-            # Stop diagnostic session (1001)
-            self.udsCommunication.stopDiagnosticMode()
-        else:
+        10 03 is required. The flowchart never asks for it - its OpenECU node
+        does, out of sight - and the car answers 7F 31 22 without it."""
+        if not self.serialController.isOpen():
             self.writeToOutputView(i18n().tr("Port not open!"))
+            return
+
+        txId, rxId = "752", "652"
+        recoRequest, recoReply = "22F080", "62F080"        # ECUVE reco
+        session, sessionReply = "1003", "5003"             # extended session
+        closeSession = "1001"                              # ECUVE fini
+        startRoutine, startReply = "3101DF0A3C", "7101DF0A"
+        pollRoutine, pollReply = "3103DF0A", "7103DF0A"
+        pollInterval, timeout, settle = 0.25, 10.0, 0.5    # Waitms, chrono, Waitms
+        outcomes = {"02": "OK", "03": "NOK", "04": "STOP"}
+
+        def classify(reply, expected):
+            """(status, failure); status is frame byte 5."""
+            if not reply or reply == "Timeout":
+                return None, "ERROR"
+            if reply[:2] == "7F":
+                return None, "NACK"
+            if not reply.startswith(expected) or len(reply) < len(expected) + 2:
+                return None, "ERROR"
+            return reply[len(expected):len(expected) + 2], None
+
+        # OpenECU BMF/BSI2010_EV
+        if not self.selectEcuAddress(txId, rxId):
+            self.writeToOutputView("Eco mode: could not address the BSI on "
+                                   + txId + "/" + rxId + ".")
+            self.restoreEcuAddress()
+            return
+
+        opened = False
+        try:
+            if not self.udsCommunication.writeECUCommand(recoRequest).startswith(recoReply):
+                self.writeToOutputView("Eco mode: no " + recoReply + " answer to the "
+                                       "identification read, is this a BSI2010?")
+                return
+            if not self.udsCommunication.writeECUCommand(session).startswith(sessionReply):
+                self.writeToOutputView("Eco mode: the ECU refused session " + session + ".")
+                return
+            opened = True
+            self.writeToOutputView("Eco mode: extended session " + session + " open.")
+
+            self.writeToOutputView("Eco mode: exit from energy economy mode in progress...")
+            started = time.monotonic()
+            reply = self.udsCommunication.writeECUCommand(startRoutine)
+            status, failure = classify(reply, startReply)
+
+            # DiagBox order: wait, poll, stopwatch, frame, status - so a late
+            # answer still counts as late.
+            while failure is None and status == "01":
+                self.sleepKeepingUiAlive(pollInterval)
+                reply = self.udsCommunication.writeECUCommand(pollRoutine)
+                if time.monotonic() - started >= timeout:
+                    failure = "TIMEOUT"
+                    break
+                status, failure = classify(reply, pollReply)
+
+            outcome = failure if failure else outcomes.get(status, "ERROR")
+
+            if outcome == "OK":
+                message = "energy economy mode exited"
+            elif outcome == "NOK":
+                detail = reply[10:12] if len(reply) >= 12 else ""   # byte 6
+                message = ("not performed, telecoding error" if detail == "07"
+                           else "not performed")
+            elif outcome == "TIMEOUT":
+                message = "took too long"
+            elif outcome == "NACK":
+                nrc = reply[4:6] if len(reply) >= 6 else "?"
+                message = "refused by the ECU, NRC " + nrc
+                if nrc == "22":
+                    message += " (conditions not correct; the extended session is "
+                    message += "already open, so that is not the cause)"
+            else:
+                message = "routine communication error"
+
+            self.writeToOutputView("Eco mode: status " + str(status) + " -> " + outcome
+                                   + " (" + message + "), "
+                                   + ("%.1f" % (time.monotonic() - started)) + " s")
+            self.sleepKeepingUiAlive(settle)
+        finally:
+            if opened:
+                self.udsCommunication.writeECUCommand(closeSession)   # fini
+            self.restoreEcuAddress()
 
     @Slot()
     def visioparkCalibration(self):
