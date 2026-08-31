@@ -9041,17 +9041,17 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3653"/>
         <source>There is on the front left</source>
-        <translation>Il y a à l&apos;avant gauche</translation>
+        <translation>Présence à l&apos;avant gauche</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3657"/>
         <source>There is on the front right</source>
-        <translation>Il y a sur le devant droit</translation>
+        <translation>Présence à l&apos;avant droit</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3661"/>
         <source>There is on the front left and right</source>
-        <translation>Il y a sur le devant gauche et droit</translation>
+        <translation>Présence à l&apos;avant gauche et droit</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3664"/>
@@ -9295,7 +9295,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3958"/>
         <source>The presence of a solution optimization module</source>
-        <translation>La présence d’un module d’optimisation de solution</translation>
+        <translation>Présence d’un module d’optimisation de solution</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3966"/>
@@ -10709,7 +10709,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="5904"/>
         <source>There is</source>
-        <translation>Il y a</translation>
+        <translation>Présent</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="5907"/>
@@ -11705,7 +11705,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7374"/>
         <source>Experimental: Type of acquisition architecture of the radio ON/OFF button</source>
-        <translation>Expérimental : Type d&apos;architecture d&apos;acquisition du contacteur touche ON/OFF de la radio</translation>
+        <translation>Type d&apos;architecture d&apos;acquisition du contacteur touche ON/OFF de la radio</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7386"/>
@@ -11720,7 +11720,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7393"/>
         <source>Experimental: Type of uncontrolled alternator</source>
-        <translation>Expérimental&#xa0;: Type d&apos;alternateur non piloté</translation>
+        <translation>Type d&apos;alternateur non piloté</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7409"/>
