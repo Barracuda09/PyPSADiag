@@ -21,7 +21,7 @@
 
 import os, json, sys
 from datetime import datetime
-from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+from PySide6.QtCore import (QCoreApplication, Slot, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt, QRegularExpression)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
@@ -160,6 +160,7 @@ class PyPSADiagGUI(object):
 #        self.useSketchSeedGenerator = QCheckBox()
         self.ecuTxRxLabel = QLabel()
         self.statusbar = QStatusBar()
+        self.statusbar.messageChanged.connect(self.statusbarMessageChanged)
         self.statusbar.addPermanentWidget(self.ecuTxRxLabel)
 
         self.searchZoneLineEdit = QLineEdit()
@@ -373,7 +374,8 @@ class PyPSADiagGUI(object):
         self.centralwidget.setLayout(self.mainLayout)
 
         # Set Menu- and Status-Bar
-        self.statusbar.showMessage(f"PyPSADiag {VERSION} - Copyright \u00A9 {datetime.now().year} by Barracuda09")
+        self.statusbarText = f"PyPSADiag {VERSION} - Copyright \u00A9 {datetime.now().year} by Barracuda09"
+        self.statusbar.showMessage(self.statusbarText)
         MainWindow.setMenuBar(self.mainMenu)
         MainWindow.setStatusBar(self.statusbar)
 
@@ -382,6 +384,10 @@ class PyPSADiagGUI(object):
 
         MainWindow.setCentralWidget(self.centralwidget)
 
+    @Slot()
+    def statusbarMessageChanged(self, message):
+        if not message:
+            self.statusbar.showMessage(self.statusbarText)
 
     def setupLanguages(self, lang_code: str):
         languagesPath = os.path.join(self.currentDir, "i18n", "Languages.json")
