@@ -3510,7 +3510,7 @@
     },
     "23BA": {
       "id": "CFG_D60_BSI_PRESENCE_CAV_000",
-      "tab": "unsorted",
+      "tab": "drive_assist",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
@@ -3638,7 +3638,7 @@
     },
     "23C3": {
       "id": "CFG_23C3_BSI_PRESENCE_ECR_000",
-      "tab": "unsorted",
+      "tab": "security",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -3959,7 +3959,7 @@
     },
     "23DA": {
       "id": "CFG_DCV_BSI_PRES_MODE_DYNAMIQUE_000",
-      "tab": "unsorted",
+      "tab": "comfort",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
@@ -4545,7 +4545,7 @@
     },
     "2405": {
       "id": "CFG_DLG_BSI_TYPE_DA_000",
-      "tab": "unsorted",
+      "tab": "drive_assist",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -4803,7 +4803,7 @@
     },
     "2413": {
       "id": "CFG_DXU_BSI_OPTION_BSG_TC_000",
-      "tab": "unsorted",
+      "tab": "other",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
@@ -7356,7 +7356,7 @@
     },
     "23E3": {
       "id": "CFG_DEL_BSI_PRESENCE_FMUX_AUDIO_000",
-      "tab": "unsorted",
+      "tab": "comfort",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -7371,11 +7371,11 @@
           "name": "Presence of multiplex control panel"
         }
       ],
-      "name": "Experimental: Type of acquisition architecture of the radio ON/OFF button"
+      "name": "Type of acquisition architecture of the radio ON/OFF button"
     },
     "23E4": {
       "id": "CFG_DES_BSI_TYPE_ALT_STANDARD_000",
-      "tab": "unsorted",
+      "tab": "engine",
       "byte": 0,
       "type": "hex",
       "form_type": "combobox",
@@ -7390,7 +7390,7 @@
           "name": "L-line excited"
         }
       ],
-      "name": "Experimental: Type of uncontrolled alternator"
+      "name": "Type of uncontrolled alternator"
     },
     "23E9": {
       "id": "CFG_DFL_BSI_TYPE_OPT_VIDE_001",
@@ -7548,7 +7548,7 @@
     },
     "2463": {
       "id": "CFG_ERF_BSI_OPT_VISION_NOCTURNE_000",
-      "tab": "unsorted",
+      "tab": "drive_assist",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
@@ -7556,7 +7556,7 @@
     },
     "2467": {
       "id": "CFG_EW6_BSI_OPT_DISTRACTION_MODE_000",
-      "tab": "unsorted",
+      "tab": "drive_assist",
       "byte": 0,
       "type": "bool",
       "form_type": "checkbox",
