@@ -735,6 +735,123 @@
                             "name": "Electric parking brake"
                         }
                     ]
+                },
+                {
+                    "extra_name": "GIZ_CMB_SLI_ENCAP_2020",
+                    "name_original": "GIZ",
+                    "name": "GIZ_CMB_SLI_ENCAP_2020",
+                    "byte": 22,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "GIY_CMB_SOCKET_SIDE",
+                    "name_original": "GIY",
+                    "name": "Charging flap",
+                    "byte": 22,
+                    "mask": "01000000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Left-hand side"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "Right-hand side"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "GIX_CMB_GAUG_FUEL_LEV_TR_SID",
+                    "name_original": "GIX",
+                    "name": "Fuel filler flap",
+                    "byte": 22,
+                    "mask": "00100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Left-hand side"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "Right-hand side"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "DOG_CMB_GAUGE_COOL_TEMP_DIGI",
+                    "name_original": "DOG",
+                    "name": "Engine coolant temperature indicator",
+                    "byte": 22,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DOF_CMB_GAUGE_OIL_TEMP",
+                    "name_original": "DOF",
+                    "name": "Engine oil temperature gauge",
+                    "byte": 22,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "GII_CMB_TYPE_HMI_ADVCNP",
+                    "name_original": "GII",
+                    "name": "Overspeed warning",
+                    "byte": 23,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Speed greater than 120 km/h"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "Speed greater than the actual value"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "GN6_CMB_DAT_DG_HY_TYPE_HY",
+                    "name_original": "GN6",
+                    "name": "Hybrid engine type",
+                    "byte": 24,
+                    "mask": "10000000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "PHEV"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "MHEV"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "GN7_CMB_DAT_DG_MAINTENANCE",
+                    "name_original": "GN7",
+                    "name": "Displaying of the maintenance data",
+                    "byte": 25,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "GTK_CMB_REGUL_ADAS_GSR_V2",
+                    "name_original": "GTK",
+                    "name": "GTK_CMB_REGUL_ADAS_GSR_V2",
+                    "byte": 25,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
                 }
             ]
         },
