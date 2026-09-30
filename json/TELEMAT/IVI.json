@@ -3419,7 +3419,7 @@
             },
             {
               "mask": "00000010",
-              "name": "0x01 - IVI: 408 P54E / DS4 CROSSBACK / ASTRA SW (Sports Tourer) / C4 (C43 - Middle East)"
+              "name": "0x01 - IVI: 408 (P54E) / DS4 CROSSBACK / ASTRA SW (Sports Tourer) / C4 (C43 - Middle East)"
             },
             {
               "mask": "00000100",
@@ -3431,7 +3431,7 @@
             },
             {
               "mask": "00001000",
-              "name": "0x04 - IVI: DS9 E-TENSE / 208 (P21)"
+              "name": "0x04 - IVI: DS9 E-TENSE / 208 (P21) / C4 restyle"
             },
             {
               "mask": "00001010",
@@ -3439,7 +3439,7 @@
             },
             {
               "mask": "00001100",
-              "name": "0x06 - IVI: 508 (R8) lifthback"
+              "name": "0x06 - IVI: 508 (R8) liftback"
             },
             {
               "mask": "00001110",
@@ -3448,6 +3448,10 @@
             {
               "mask": "00010010",
               "name": "0x09 - IVI: Rifter"
+            },
+            {
+              "mask": "00011000",
+              "name": "0x12 - IVI: Vivaro"
             },
             {
               "mask": "00100110",
