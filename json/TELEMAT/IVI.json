@@ -3415,47 +3415,67 @@
           "params": [
             {
               "mask": "00000000",
-              "name": "0x00 - IVI: 308 / CITROEN C5X / DS4 / ASTRA SEDAN"
+              "name": "308 / CITROEN C5X / DS4 / ASTRA SEDAN / EXPERT / TRAVELLER / DISPATCH / SpaceTourer / Zafira Vivaro Life / Vivaro"
             },
             {
               "mask": "00000010",
-              "name": "0x01 - IVI: 408 P54E / DS4 CROSSBACK / ASTRA SW (Sports Tourer) / C4 (C43 - Middle East)"
+              "name": "408 (P54) / DS4 CROSSBACK / ASTRA SW (Sports Tourer) / Citroën C4 X"
             },
             {
               "mask": "00000100",
-              "name": "0x02 - IVI: DS 7 CROSSBACK / C4 / C4 (C41)"
+              "name": "DS7 CROSSBACK / C4 / C4 (C41) / Corsa F"
             },
             {
               "mask": "00000110",
-              "name": "0x03 - IVI: 308 SW / DS 3 CROSSBACK"
+              "name": "308 SW / DS 3 CROSSBACK / Citroën C4 X / MOKKA"
             },
             {
               "mask": "00001000",
-              "name": "0x04 - IVI: DS9 E-TENSE / 208 (P21)"
+              "name": "DS9 E-TENSE / 208 (P21) / C4 (C41) / MOKKA (GSE)"
             },
             {
               "mask": "00001010",
-              "name": "0x05 - IVI: 2008"
+              "name": "2008"
             },
             {
               "mask": "00001100",
-              "name": "0x06 - IVI: 508 (R8) lifthback"
+              "name": "508 (R8) liftback"
             },
             {
               "mask": "00001110",
-              "name": "0x07 - IVI: 508 (R8) station wagon/SW"
+              "name": "508 (R8) Estate/SW"
             },
             {
               "mask": "00010010",
-              "name": "0x09 - IVI: Rifter"
+              "name": "Rifter S / Partner S / BERLINGO S / COMBO LIFE S"
+            },
+            {
+              "mask": "00010100",
+              "name": "Rifter M / Partner M / BERLINGO M / COMBO LIFE M"
+            },
+            {
+              "mask": "00010110",
+              "name": "EXPERT M / TRAVELLER M / DISPATCH M / SpaceTourer M / Zafira Vivaro Life M / Vivaro M"
+            },
+            {
+              "mask": "00011000",
+              "name": "EXPERT XL / TRAVELLER XL / DISPATCH XL / SpaceTourer XL / Zafira Vivaro Life XL / Vivaro XL"
+            },
+            {
+              "mask": "00011110",
+              "name": "308 (P5)"
+            },
+            {
+              "mask": "00100000",
+              "name": "408 CROSSOVER"
             },
             {
               "mask": "00100110",
-              "name": "0x13 - IVI: 508 (R8) liftback PERFO 4X4"
+              "name": "508 (R8) liftback PERFO 4X4"
             },
             {
               "mask": "00101000",
-              "name": "0x14 - IVI: 508 (R8) station wagon/SW PERFO 4X4"
+              "name": "508 (R8) station wagon/SW PERFO 4X4"
             }
           ]
         },
