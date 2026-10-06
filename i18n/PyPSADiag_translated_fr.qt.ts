@@ -8512,7 +8512,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="2976"/>
         <source>NAC/RCC</source>
-        <translation>CNA/RCC</translation>
+        <translation>NAC/RCC</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="2980"/>
@@ -22645,7 +22645,7 @@
         <location filename="../json/TELEMAT/NAC.json" line="17"/>
         <location filename="../json/TELEMAT/RCC.json" line="17"/>
         <source>AAS</source>
-        <translation>SAA</translation>
+        <translation>AAS</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="17"/>
@@ -26337,7 +26337,7 @@
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="6046"/>
         <source>Missing</source>
-        <translation>Manquant</translation>
+        <translation>Sans</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="6053"/>
@@ -26749,7 +26749,7 @@
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="3"/>
         <source>NAC</source>
-        <translation>CNA</translation>
+        <translation>NAC</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="19"/>
@@ -60816,7 +60816,7 @@
     <message>
         <location filename="../data/dtc/MATT.json" line="6"/>
         <source>Calibration file downloading fault</source>
-        <translation>Défaut de téléchargement du fichier d&apos;étalonnage</translation>
+        <translation>Défaut de téléchargement du fichier de calibration</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="9"/>
@@ -60832,17 +60832,17 @@
     <message>
         <location filename="../data/dtc/MATT.json" line="36"/>
         <source>Vehicle speed information not valid fault</source>
-        <translation>L&apos;information sur la vitesse du véhicule n&apos;est pas valable.</translation>
+        <translation>Défaut de l&apos;information de vitesse véhicule</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="39"/>
         <source>Engine oil level information fault</source>
-        <translation>Anomalie information niveau huile moteur</translation>
+        <translation>Défaut d&apos;information niveau huile moteur</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="45"/>
         <source>Absence of communication with the BSI fault</source>
-        <translation>Absence de communication avec le défaut BSI</translation>
+        <translation>Défaut d&apos;absence de communication avec le BSI</translation>
     </message>
 </context>
 </TS>
