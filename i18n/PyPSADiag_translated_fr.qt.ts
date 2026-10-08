@@ -8512,7 +8512,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="2976"/>
         <source>NAC/RCC</source>
-        <translation>CNA/RCC</translation>
+        <translation>NAC/RCC</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="2980"/>
@@ -9041,17 +9041,17 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3653"/>
         <source>There is on the front left</source>
-        <translation>Il y a à l&apos;avant gauche</translation>
+        <translation>Présence à l&apos;avant gauche</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3657"/>
         <source>There is on the front right</source>
-        <translation>Il y a sur le devant droit</translation>
+        <translation>Présence à l&apos;avant droit</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3661"/>
         <source>There is on the front left and right</source>
-        <translation>Il y a sur le devant gauche et droit</translation>
+        <translation>Présence à l&apos;avant gauche et droit</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3664"/>
@@ -9295,7 +9295,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3958"/>
         <source>The presence of a solution optimization module</source>
-        <translation>La présence d’un module d’optimisation de solution</translation>
+        <translation>Présence d’un module d’optimisation de solution</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="3966"/>
@@ -10709,7 +10709,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="5904"/>
         <source>There is</source>
-        <translation>Il y a</translation>
+        <translation>Présent</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="5907"/>
@@ -11705,7 +11705,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7374"/>
         <source>Experimental: Type of acquisition architecture of the radio ON/OFF button</source>
-        <translation>Expérimental : Type d&apos;architecture d&apos;acquisition du contacteur touche ON/OFF de la radio</translation>
+        <translation>Type d&apos;architecture d&apos;acquisition du contacteur touche ON/OFF de la radio</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7386"/>
@@ -11720,7 +11720,7 @@
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7393"/>
         <source>Experimental: Type of uncontrolled alternator</source>
-        <translation>Expérimental&#xa0;: Type d&apos;alternateur non piloté</translation>
+        <translation>Type d&apos;alternateur non piloté</translation>
     </message>
     <message>
         <location filename="../json/BMF/BSI2010.json" line="7409"/>
@@ -22645,7 +22645,7 @@
         <location filename="../json/TELEMAT/NAC.json" line="17"/>
         <location filename="../json/TELEMAT/RCC.json" line="17"/>
         <source>AAS</source>
-        <translation>SAA</translation>
+        <translation>AAS</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="17"/>
@@ -26337,7 +26337,7 @@
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="6046"/>
         <source>Missing</source>
-        <translation>Manquant</translation>
+        <translation>Sans</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/IVI.json" line="6053"/>
@@ -26749,7 +26749,7 @@
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="3"/>
         <source>NAC</source>
-        <translation>CNA</translation>
+        <translation>NAC</translation>
     </message>
     <message>
         <location filename="../json/TELEMAT/NAC.json" line="19"/>
@@ -60816,7 +60816,7 @@
     <message>
         <location filename="../data/dtc/MATT.json" line="6"/>
         <source>Calibration file downloading fault</source>
-        <translation>Défaut de téléchargement du fichier d&apos;étalonnage</translation>
+        <translation>Défaut de téléchargement du fichier de calibration</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="9"/>
@@ -60832,17 +60832,17 @@
     <message>
         <location filename="../data/dtc/MATT.json" line="36"/>
         <source>Vehicle speed information not valid fault</source>
-        <translation>L&apos;information sur la vitesse du véhicule n&apos;est pas valable.</translation>
+        <translation>Défaut de l&apos;information de vitesse véhicule</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="39"/>
         <source>Engine oil level information fault</source>
-        <translation>Anomalie information niveau huile moteur</translation>
+        <translation>Défaut d&apos;information niveau huile moteur</translation>
     </message>
     <message>
         <location filename="../data/dtc/MATT.json" line="45"/>
         <source>Absence of communication with the BSI fault</source>
-        <translation>Absence de communication avec le défaut BSI</translation>
+        <translation>Défaut d&apos;absence de communication avec le BSI</translation>
     </message>
 </context>
 </TS>

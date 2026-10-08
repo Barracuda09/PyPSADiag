@@ -10786,11 +10786,43 @@
         },
         "0107": {
             "id": "0107",
+            "name": "Calibration_Fct_BTEL",
             "tab": "cal",
-            "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_BTEL"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name_original": "ERG_OVIP_DAT_CLIM_NB_TIMER",
+                    "name": "ERG_OVIP_DAT_CLIM_NB_TIMER",
+                    "byte": 0,
+                    "mask": "00011100",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "0"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "1"
+                        }
+                    ]
+                },
+                {
+                    "name_original": "ATT_DG_DRIVER_REST_ACTIVATE",
+                    "name": "Activate driver restriction at speed higher than, kph",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ATT_DG_DRIVER_REST_DEACTIVAT",
+                    "name": "Deactivate driver restriction at speed lower than, kph",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string"
+                }
+             ]
         },
         "010A": {
             "id": "010A",
@@ -11155,19 +11187,132 @@
         },
         "011B": {
             "id": "011B",
+            "name": "Calibration_Fct_VIDEOTIMING",
             "tab": "cal",
-            "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_VIDEOTIMING"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name_original": "ERG_OVIP_PIXEL_CLOCK",
+                    "name": "Pixel Clock, Mhz x 100",
+                    "byte": 0,
+                    "mask": "1111111111111111",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_THPB",
+                    "name": "Horizontal Back Porch (THPB), px",
+                    "byte": 2,
+                    "mask": "1111111111000000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_THD",
+                    "name": "Picture Width (THD), px",
+                    "byte": 3,
+                    "mask": "0011111111111000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_THFP",
+                    "name": "Horizontal Front Porch (THFP), px",
+                    "byte": 4,
+                    "mask": "0000011111111110",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_THP",
+                    "name": "Horizontal synchro-impulse width (THP), px",
+                    "byte": 5,
+                    "mask": "000000011111111110000000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_TVBP",
+                    "name": "Vertical Back Porch (TVBP), px",
+                    "byte": 7,
+                    "mask": "0111111111100000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_TVD",
+                    "name": "Picture Height (TVD), px",
+                    "byte": 8,
+                    "mask": "0001111111111000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_TVFP",
+                    "name": "Vertical Front Porch (TVFP), px",
+                    "byte": 9,
+                    "mask": "0000011111111110",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_TVP",
+                    "name": "Vertical synchro-impulse width (TVP), px",
+                    "byte": 10,
+                    "mask": "000000011111111110000000",
+                    "form_type": "string"
+                },
+                {
+                    "name_original": "ERG_OVIP_TVH",
+                    "name": "Vertical clock, Hz",
+                    "byte": 12,
+                    "mask": "01111111",
+                    "form_type": "string"
+                }
+            ]
         },
         "011C": {
             "id": "011C",
+            "name": "Calibration_Fct_CLIM",
             "tab": "cal",
-            "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_CLIM"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name_original": "ERG_OVIP_CLIM_PRECOND_TIMER_NB",
+                    "name": "ERG_OVIP_CLIM_PRECOND_TIMER_NB",
+                    "byte": 4,
+                    "mask": "11100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "0"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "1"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "2"
+                        },
+                        {
+                            "mask": "01100000",
+                            "name": "3"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "4"
+                        },
+                        {
+                            "mask": "10100000",
+                            "name": "5"
+                        },
+                        {
+                            "mask": "11000000",
+                            "name": "6"
+                        },
+                        {
+                            "mask": "11100000",
+                            "name": "7"
+                        }
+                    ]
+                }
+             ]
         },
         "011D": {
             "id": "011D",

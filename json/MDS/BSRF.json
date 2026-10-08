@@ -14,7 +14,9 @@
   "tabs": {
     "ident": "Identification",
     "vin": "VIN",
-    "tele": "Telecoding"
+    "tele": "Telecoding",
+    "cal": "Calibration",
+    "data": "Data"
   },
   "zones": {
     "F190": {
@@ -30,10 +32,17 @@
       "tab": "ident",
       "type": "raw",
       "form_type": "multi",
-      "Reference number": {
-        "name": "Reference Number",
+      "ID_REFERENCE_LOGICIEL": {
+        "name": "Software Reference Number",
         "byte": 2,
         "byte_range": 10,
+        "type": "raw",
+        "form_type": "string"
+      },
+      "ID_PID_REFERENCE_LOGICIEL": {
+        "name": "Software reference product identifier",
+        "byte": 13,
+        "byte_range": 1,
         "type": "raw",
         "form_type": "string"
       }
@@ -594,6 +603,660 @@
           ]
         }
       ]
+    },
+    "F021": {
+      "name": "WIFI Connection",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "F022": {
+      "name": "Connectivity State",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "F023": {
+      "name": "Download State",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "F024": {
+      "name": "Install State",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0100": {
+      "name": "0100",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0101": {
+      "name": "CAL_Fct_LIFECYCLE",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_SWM_PMA_CYCLES_P1": {
+        "name": "CFG_SWM_PMA_CYCLES_P1",
+        "byte": 0,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_CYCLES_P2": {
+        "name": "CFG_SWM_PMA_CYCLES_P2",
+        "byte": 2,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_CYCLES_P3": {
+        "name": "CFG_SWM_PMA_CYCLES_P3",
+        "byte": 4,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_CYCLES_P4": {
+        "name": "CFG_SWM_PMA_CYCLES_P4",
+        "byte": 6,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_INAC_TIME_P1": {
+        "name": "CFG_SWM_PMA_INAC_TIME_P1",
+        "byte": 8,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_INAC_TIME_P2": {
+        "name": "CFG_SWM_PMA_INAC_TIME_P2",
+        "byte": 10,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_INAC_TIME_P3": {
+        "name": "CFG_SWM_PMA_INAC_TIME_P3",
+        "byte": 12,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_INAC_TIME_P4": {
+        "name": "CFG_SWM_PMA_INAC_TIME_P4",
+        "byte": 14,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_SWM_TIME_P1": {
+        "name": "CFG_SWM_PMA_SWM_TIME_P1",
+        "byte": 16,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_SWM_TIME_P2": {
+        "name": "CFG_SWM_PMA_SWM_TIME_P2",
+        "byte": 17,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_SWM_TIME_P3": {
+        "name": "CFG_SWM_PMA_SWM_TIME_P3",
+        "byte": 18,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMA_SWM_TIME_P4": {
+        "name": "CFG_SWM_PMA_SWM_TIME_P4",
+        "byte": 19,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_CYCLES_P1": {
+        "name": "CFG_SWM_PMD_CYCLES_P1",
+        "byte": 20,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_CYCLES_P2": {
+        "name": "CFG_SWM_PMD_CYCLES_P2",
+        "byte": 22,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_CYCLES_P3": {
+        "name": "CFG_SWM_PMD_CYCLES_P3",
+        "byte": 24,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_CYCLES_P4": {
+        "name": "CFG_SWM_PMD_CYCLES_P4",
+        "byte": 26,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_INAC_TIME_P1": {
+        "name": "CFG_SWM_PMD_INAC_TIME_P1",
+        "byte": 28,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_INAC_TIME_P2": {
+        "name": "CFG_SWM_PMD_INAC_TIME_P2",
+        "byte": 30,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_INAC_TIME_P3": {
+        "name": "CFG_SWM_PMD_INAC_TIME_P3",
+        "byte": 32,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_INAC_TIME_P4": {
+        "name": "CFG_SWM_PMD_INAC_TIME_P4",
+        "byte": 34,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_SWM_TIME_P1": {
+        "name": "CFG_SWM_PMD_SWM_TIME_P1",
+        "byte": 36,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_SWM_TIME_P2": {
+        "name": "CFG_SWM_PMD_SWM_TIME_P2",
+        "byte": 37,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_SWM_TIME_P3": {
+        "name": "CFG_SWM_PMD_SWM_TIME_P3",
+        "byte": 38,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_SWM_PMD_SWM_TIME_P4": {
+        "name": "CFG_SWM_PMD_SWM_TIME_P4",
+        "byte": 39,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_THER_MITI_HYST_RAP": {
+        "name": "CFG_THER_MITI_HYST_RAP",
+        "byte": 41,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_THER_MITI_TEMP_RAP1": {
+        "name": "CFG_THER_MITI_TEMP_RAP1",
+        "byte": 42,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_THER_MITI_TEMP_RAP2": {
+        "name": "CFG_THER_MITI_TEMP_RAP2",
+        "byte": 43,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_THER_MITI_TEMP_RAP3": {
+        "name": "CFG_THER_MITI_TEMP_RAP3",
+        "byte": 44,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_THER_MITI_TEMP_RAP4": {
+        "name": "CFG_THER_MITI_TEMP_RAP4",
+        "byte": 45,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_LC_TIMEOUT_BEF_SLEEP": {
+        "name": "CFG_LC_TIMEOUT_BEF_SLEEP",
+        "byte": 46,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0102": {
+      "name": "CAL_Fct_POSITIONING",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_GNSS_DATA_RATE": {
+        "name": "CFG_GNSS_DATA_RATE",
+        "byte": 0,
+        "mask": "00001111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_GNSS_MIN_ELEVATION": {
+        "name": "CFG_GNSS_MIN_ELEVATION",
+        "byte": 0,
+        "mask": "11110000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_TICKS_REVOL": {
+        "name": "CFG_TICKS_REVOL",
+        "byte": 1,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_VHL_WIDTH": {
+        "name": "CFG_VHL_WIDTH",
+        "byte": 2,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_WHEEL_DIAMETER": {
+        "name": "CFG_WHEEL_DIAMETER",
+        "byte": 4,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0103": {
+      "name": "CAL_Fct_ACCELERO",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_ACC_ANGLE_PITCH": {
+        "name": "CFG_ACC_ANGLE_PITCH",
+        "byte": 0,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_ACC_ANGLE_ROLL": {
+        "name": "CFG_ACC_ANGLE_ROLL",
+        "byte": 2,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_ACC_ANGLE_YAW": {
+        "name": "CFG_ACC_ANGLE_YAW",
+        "byte": 4,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0104": {
+      "name": "CAL_Fct_CONNECT",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_CONNECT_WIFI_AP_DEV": {
+        "name": "CFG_CONNECT_WIFI_AP_DEV",
+        "byte": 0,
+        "mask": "00001111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_WIFI_CLI_N_CNX_REGIST": {
+        "name": "CFG_WIFI_CLI_N_CNX_REGIST",
+        "byte": 1,
+        "mask": "11111100",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_WIFI_CLI_N_CNX_N_REG": {
+        "name": "CFG_WIFI_CLI_N_CNX_N_REG",
+        "byte": 1,
+        "mask": "0000001111110000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_WIFI_CLI_CNX_REGIST": {
+        "name": "CFG_WIFI_CLI_CNX_REGIST",
+        "byte": 2,
+        "mask": "0000111111000000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_WIFI_CLI_CNX_N_REGIST": {
+        "name": "CFG_WIFI_CLI_CNX_N_REGIST",
+        "byte": 3,
+        "mask": "00111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0105": {
+      "name": "0105",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0106": {
+      "name": "CAL_Fct_ECALL_TYPE_EMERG_PR",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0107": {
+      "name": "0107",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0108": {
+      "name": "0108",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "0109": {
+      "name": "CAL_Fct_ETHERNET",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_LINK_STATUS_DELAY": {
+        "name": "CFG_LINK_STATUS_DELAY",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_UNREACHABLE_LINK": {
+        "name": "CFG_UNREACHABLE_LINK",
+        "byte": 1,
+        "mask": "1111111111110000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_INCREMENT_OF_CLINK": {
+        "name": "CFG_INCREMENT_OF_CLINK",
+        "byte": 3,
+        "mask": "1111111111110000",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0110": {
+      "name": "CAL_Fct_DM",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_DM_BOOTSTRAP_SVR_URI": {
+        "name": "CFG_DM_BOOTSTRAP_SVR_URI",
+        "byte": 0,
+        "byte_range": 128,
+        "type": "string_ascii",
+        "form_type": "string"
+      }
+    },
+    "0111": {
+      "name": "CAL_Fct_ENGINEERING",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_EM_ACTIVATION": {
+        "name": "CFG_EM_ACTIVATION",
+        "byte": 0,
+        "mask": "00000001",
+        "type": "hex",
+        "form_type": "combobox",
+        "params": [
+                    {
+                        "name": "CFG_EM_ACTIVATION_0",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "CFG_EM_ACTIVATION_1",
+                        "mask": "00000001"
+                    }
+        ]
+      }
+    },
+    "0112": {
+      "name": "CAL_Fct_OTAUPD",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "CFG_OTAUPD_DRVC_STOP_SEV": {
+        "name": "CFG_OTAUPD_DRVC_STOP_SEV",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_OTAUPD_DRVC_STRT_GMP": {
+        "name": "CFG_OTAUPD_DRVC_STRT_GMP",
+        "byte": 1,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "CFG_OTAUPD_INST_DUR_MAX": {
+        "name": "CFG_OTAUPD_INST_DUR_MAX",
+        "byte": 2,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "0113": {
+      "name": "0113",
+      "tab": "cal",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+    "D400": {
+      "name": "Data_Fct_GNSS",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_NOMBRE_DE_SATTELITES_VISIBLES": {
+        "name": "Number of satellites instantly visible to the radio frequency connectivity box (BSRF)",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "MP_NOMBRE_MAXIMAL_DE_SATTELITES_VISIBLES": {
+        "name": "Maximum number of satellites visible to the radio frequency connectivity box (BSRF)",
+        "byte": 1,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "D401": {
+      "name": "Data_Fct_D401",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "ID_CODE_IMEI": {
+        "name": "IMEI code",
+        "byte": 0,
+        "byte_range": 15,
+        "type": "string_ascii",
+        "form_type": "string"
+      },
+      "ID_CODE_IMSI": {
+        "name": "IMSI code",
+        "byte": 15,
+        "byte_range": 15,
+        "type": "string_ascii",
+        "form_type": "string"
+      },
+      "ID_CODE_ICCID": {
+        "name": "ICCID code",
+        "byte": 30,
+        "byte_range": 20,
+        "type": "string_ascii",
+        "form_type": "string"
+      }
+    },
+    "D402": {
+      "name": "Data_Fct_EM",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_NOMBRE_REINITIALIZATION_RTBM_2010_INATTENDU": {
+        "name": "Number of unexpected reinitialisations of the radio frequency connectivity box (BSRF)",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "D403": {
+      "name": "Data_Fct_xCall",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_ETAT_BOUTON_ECALL": {
+        "name": "Status of the emergency call button",
+        "byte": 0,
+        "mask": "01000000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "MP_ETAT_BOUTON_ACALL": {
+        "name": "Status of the assistance call button",
+        "byte": 0,
+        "mask": "10000000",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "MP_ANGLE_RENVERSEMENT_VEHICULE": {
+        "name": "Vehicle tilt angle calculated by the accelerometer of the radio frequency connectivity box (BSRF)",
+        "byte": 3,
+        "mask": "1111111111111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "D404": {
+      "name": "Data_Fct_BROADCAST",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_NIVEAU_SIGNAL_RADIO_NUMERIQUE": {
+        "name": "Digital radio signal levels",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      },
+      "MP_NIVEAU_SIGNAL_RADIO": {
+        "name": "(AM/FM) analogue radio signal level",
+        "byte": 1,
+        "mask": "11111111",
+        "type": "hex",
+        "form_type": "string"
+      }
+    },
+    "D408": {
+      "name": "Data_Fct_TRACABILITY_LABEL",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_NUM_SERIE_RTBM_2010": {
+        "name": "Radio frequency connectivity box (BSRF) serial number",
+        "byte": 0,
+        "byte_range": 20,
+        "type": "string_ascii",
+        "form_type": "string"
+      }
+    },
+    "D409": {
+      "name": "Data_Fct_SW_VERSION",
+      "tab": "data",
+      "type": "raw",
+      "form_type": "multi",
+      "MP_VERSION_LOGICIEL_VUC": {
+        "name": "Microcontroller software version",
+        "byte": 0,
+        "byte_range": 20,
+        "type": "string_ascii",
+        "form_type": "string"
+
+      },
+      "MP_VERSION_LOGICIEL_RAP": {
+        "name": "Software version of the IVI audio-navigation system processor",
+        "byte": 20,
+        "byte_range": 20,
+        "type": "string_ascii",
+        "form_type": "string"
+
+      },
+      "MP_VERSION_LOGICIEL_NAD": {
+        "name": "Software version of the network access device",
+        "byte": 40,
+        "byte_range": 20,
+        "type": "string_ascii",
+        "form_type": "string"
+      }
+    },
+    "D413": {
+      "name": "D413",
+      "tab": "data",
+      "type": "raw",
+      "byte": 0,
+      "form_type": "string"
+    },
+      "C000": {
+      "name": "Secured Coding Traceability",
+      "tab": "cal",
+      "type": "raw",
+      "form_type": "multi",
+      "Telecode amount": {
+        "name": "Number Of Coding NOC",
+        "byte": 0,
+        "mask": "11111111",
+        "type": "int",
+        "form_type": "string"
+      }
     }
   }
 }

@@ -229,6 +229,11 @@ class EcuZoneLineEdit(QLineEdit):
                     txt = txt
                 elif "string_date" == self.zoneObject["type"]:
                     txt = self.__convertStringToDate(txt)
+                elif "string_ascii" == self.zoneObject["type"]:
+                    try:
+                        txt = bytes.fromhex(txt).decode("utf-8", errors="ignore").rstrip("\x00 ")
+                    except:
+                        pass   # not decodable -> leave as hex
             self.__setText(txt)
         else:
             if valueType == "string_ascii":
@@ -248,4 +253,4 @@ class EcuZoneLineEdit(QLineEdit):
 
             self.__setText(txt)
 
-        return 0
+        return 0 
