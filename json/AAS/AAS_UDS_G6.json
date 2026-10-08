@@ -32,67 +32,67 @@
       "type": "raw",
       "form_type": "multi",
       "CFG_ETB_AAS_TYPE_ACTIV_CITYPARK_000": {
-        "name": "INDICATES THE TYPE OF PUSH TO ACTIVATE THE CITYPARK",
+        "name": "Type of push to activate citypark",
         "byte": 0,
         "form_type": "combobox",
         "mask": "00000110",
         "params": [
           {
-            "name": "3 Option",
+            "name": "Capacitive button or specific multiplexed button",
             "mask": "00000110"
           },
           {
-            "name": "2 Option",
+            "name": "Dedicated physical push-button",
             "mask": "00000100"
           },
           {
-            "name": "1 Option",
+            "name": "Touch screen - Driver Assistance menu",
             "mask": "00000010"
           },
           {
-            "name": "0 Option",
+            "name": "Absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_ETA_AAS_TYPE_CPT_ANGLE_VOLAN_000": {
-        "name": "INDICATES THE TYPE OF STEERING WHEEL ANGLE (SENSOR OR ESTIMATOR)",
+        "name": "Type of steering wheel angle (sensor or estimator)",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00011000",
         "params": [
           {
-            "name": "3 Option",
+            "name": "Specific electrical network architecture",
             "mask": "00011000"
           },
           {
-            "name": "2 Option",
+            "name": "Steering angle value dynamically calculated by ABS/ESP",
             "mask": "00010000"
           },
           {
-            "name": "1 Option",
+            "name": "Physical steering angle sensor COM2000",
             "mask": "00001000"
           },
           {
-            "name": "0 Option",
+            "name": "Absent",
             "mask": "00000000"
           }
         ]
       },
       "CFG_BVV_AAS_AVR_000": {
-        "name": "Presence of the Reversing Vision Assistance function on the vehicle",
+        "name": "Presence of Reversing Vision Assistance function on the vehicle",
         "byte": 0,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000001",
         "params": [
           {
-            "name": "ABSENT",
+            "name": "Absent",
             "mask": "00000000"
           },
           {
-            "name": "PRESENT",
+            "name": "Present",
             "mask": "00000001"
           }
         ]
@@ -112,35 +112,35 @@
         "form_type": "string"
       },
       "CFG_EQW_AAS_OPTI_CONTI_ACTIV_CPK_000": {
-        "name": "OPTION CONTINUOUS ACTIV CPK ACTIVATION OF THE CONT",
+        "name": "Option continuous CPK activation",
         "byte": 5,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00010000",
         "params": [
           {
-            "name": "ABSENT",
+            "name": "Absent",
             "mask": "00000000"
           },
           {
-            "name": "PRESENT",
+            "name": "Present",
             "mask": "00010000"
           }
         ]
       },
       "CFG_EQV_AAS_OPTION_LXA_000": {
-        "name": "INDICATES THE PRESENCE OF THE LKA OR LP",
+        "name": "Presence of LKA or LPA function",
         "byte": 5,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00001000",
         "params": [
           {
-            "name": "ABSENT",
+            "name": "Absent",
             "mask": "00000000"
           },
           {
-            "name": "PRESENT",
+            "name": "Present",
             "mask": "00001000"
           }
         ]
@@ -153,11 +153,11 @@
         "mask": "00000100",
         "params": [
           {
-            "name": "ABSENT",
+            "name": "Absent",
             "mask": "00000000"
           },
           {
-            "name": "PRESENT",
+            "name": "Present",
             "mask": "00000100"
           }
         ]
@@ -170,111 +170,111 @@
         "mask": "00000011",
         "params": [
           {
-            "name": "3 Option",
+            "name": "e-EAT8",
             "mask": "00000011"
           },
           {
-            "name": "2 Option",
+            "name": "e-EAT8",
             "mask": "00000010"
           },
           {
-            "name": "1 Option",
+            "name": "EAT6 EAT8 ETG6",
             "mask": "00000001"
           },
           {
-            "name": "0 Option",
+            "name": "BVM5 BVM6",
             "mask": "00000000"
           }
         ]
       },
       "CFG_EQU_AAS_TYPE_FUNCTIONAL_ABSD_000": {
-        "name": "INDICATES THE KIND OF ACTIVE (ABSD)",
+        "name": "Type of active (ABSD) function",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000001",
         "params": [
           {
-            "name": "Off",
+            "name": "Absent",
             "mask": "00000000"
           },
           {
-            "name": "On",
+            "name": "Present",
             "mask": "00000001"
           }
         ]
       },
       "CFG_EQY_AAS_TYPE_DOP_000": {
-        "name": "Type of Park Pilot",
+        "name": "Type of parking assistance",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00000110",
         "params": [
           {
-            "name": "3 Option",
+            "name": "Variable frequency sensors",
             "mask": "00000110"
           },
           {
-            "name": "2 Option",
+            "name": "Front + Rear + Sides",
             "mask": "00000100"
           },
           {
-            "name": "1 Option",
+            "name": "Front + Rear",
             "mask": "00000010"
           },
           {
-            "name": "0 Option",
+            "name": "Rear",
             "mask": "00000000"
           }
         ]
       },
       "CFG_EQX_AAS_TYPE_CITYPARK_000": {
-        "name": "Type of City Park",
+        "name": "Type of city park assist",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
         "mask": "00011000",
         "params": [
           {
-            "name": "3 Option",
+            "name": "Reserved",
             "mask": "00011000"
           },
           {
-            "name": "2 Option",
+            "name": "Full Park Assist / Guided Park Assist",
             "mask": "00010000"
           },
           {
-            "name": "1 Option",
+            "name": "Advanced Park Assist",
             "mask": "00001000"
           },
           {
-            "name": "0 Option",
+            "name": "Park Assist controls only the steering wheel",
             "mask": "00000000"
           }
         ]
       },
       "CFG_EQT_AAS_TYPE_CHAINE_TRACTION_001": {
-        "name": "Type of drive",
+        "name": "Type of traction chain",
         "byte": 6,
         "type": "bool",
         "form_type": "combobox",
         "mask": "01100000",
         "params": [
           {
-            "name": "3 Option",
+            "name": "Electric BEV",
             "mask": "01100000"
           },
           {
-            "name": "2 Option",
+            "name": "Plug-in Hybrid (PHEV)",
             "mask": "01000000"
           },
           {
-            "name": "1 Option",
+            "name": "MHEV e-DCS6 gearbox",
             "mask": "00100000"
           },
           {
-            "name": "0 Option",
+            "name": "Internal combustion engine",
             "mask": "00000000"
           }
         ]
