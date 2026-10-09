@@ -21,8 +21,8 @@
 
 import json
 import os
-from PySide6.QtGui import QKeyEvent
-from PySide6.QtCore import Qt, QEvent, Slot
+from PySide6.QtGui import QKeyEvent, QRegularExpressionValidator
+from PySide6.QtCore import Qt, QEvent, Slot, QRegularExpression
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -41,6 +41,21 @@ class EcuZoneLineEdit(QLineEdit):
         self.itemReadOnly = readOnly
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
+        self.asciiByteRange = (zoneObject.get("type") == "string_ascii"
+                               and "byte_range" in zoneObject and "mask" not in zoneObject)
+        if self.asciiByteRange:
+            size = zoneObject["byte_range"]
+            if not isinstance(size, int) or size <= 0:
+                raise ValueError("ASCII byte_range must be a positive integer")
+            padding = zoneObject.get("padding_byte", "00")
+            if not isinstance(padding, str) or len(padding) != 2:
+                raise ValueError("padding_byte must be a two-digit hexadecimal byte")
+            self.paddingByte = bytes.fromhex(padding)
+            if len(self.paddingByte) != 1:
+                raise ValueError("padding_byte must be a two-digit hexadecimal byte")
+            expression = QRegularExpression(r"[\x00-\x7F]{0,%d}" % size)
+            self.setValidator(QRegularExpressionValidator(expression, self))
+            self.setToolTip("ASCII text, maximum %d bytes" % size)
 
         # Notify changes, to change color if changed
         self.textEdited.connect(self.textChange)
@@ -75,6 +90,8 @@ class EcuZoneLineEdit(QLineEdit):
         return self.zoneObject["byte"]
 
     def getCorrespondingByteSize(self):
+        if self.asciiByteRange:
+            return self.zoneObject["byte_range"]
         if "mask" in self.zoneObject:
             bits = int(self.zoneObject["mask"], 2).bit_length()
             # round up to the nearest bit
@@ -92,7 +109,9 @@ class EcuZoneLineEdit(QLineEdit):
         return self.isEnabled() and not(self.itemReadOnly) and (self.initialLineValue != self.text() or virginWrite)
 
     def __convertZoneData(self):
-        if self.valueType == "string_ascii":
+        if self.asciiByteRange:
+            return self.update(self.initialRaw).upper()
+        elif self.valueType == "string_ascii":
             value = self.text().encode().hex()
         elif self.valueType == "string_date":
             value = self.initialRaw
@@ -117,7 +136,7 @@ class EcuZoneLineEdit(QLineEdit):
 
     def getZoneAndHex(self, virginWrite: bool):
         value = "None"
-        if self.isLineEditChanged(virginWrite):
+        if self.hasAcceptableInput() and self.isLineEditChanged(virginWrite):
             return self.__convertZoneData()
 
         return "None"
@@ -142,6 +161,13 @@ class EcuZoneLineEdit(QLineEdit):
         return c
 
     def update(self, byte: str):
+        if self.asciiByteRange:
+            if not self.hasAcceptableInput():
+                return byte
+            if self.text() == self.initialLineValue:
+                return self.initialRaw
+            data = self.text().encode("ascii")
+            return data.ljust(self.getCorrespondingByteSize(), self.paddingByte).hex().upper()
         if "mask" in self.zoneObject:
             text = self.text()
             mask = int(self.zoneObject["mask"], 2)
@@ -210,6 +236,20 @@ class EcuZoneLineEdit(QLineEdit):
             byteNr = self.zoneObject["byte"] * 2
             ran = self.zoneObject["byte_range"] * 2
             txt = data[byteNr:byteNr + ran]
+            if self.asciiByteRange:
+                if len(txt) != ran:
+                    return 1
+                try:
+                    raw = bytes.fromhex(txt)
+                    # Keep legacy display trimming when padding is unspecified.
+                    padding = self.paddingByte if "padding_byte" in self.zoneObject else b"\x00 "
+                    decoded = raw.rstrip(padding).decode("ascii")
+                except ValueError:
+                    return 1
+                self.initialRaw = txt
+                self.valueType = "string_ascii"
+                self.__setText(decoded)
+                return 0
             if "type" in self.zoneObject:
                 if "zi_cal" == self.zoneObject["type"]:
                     txt = "96" + txt + "80"

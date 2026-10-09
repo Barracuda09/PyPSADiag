@@ -68,7 +68,7 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
         # Check if Integrity is correct, then return Zone data
-        if self.integrity and isinstance(widget, EcuZoneLineEdit):
+        if self.integrity and self.hasAcceptableInput() and isinstance(widget, EcuZoneLineEdit):
             value = widget.getValuesAsCSV()
         return [self.zone, value, self.zoneDescription]
 
@@ -84,9 +84,18 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         widget = self.treeWidget().itemWidget(self, 2)
         value = "None"
         # Check if Integrity is correct, then return Zone data
-        if self.integrity and isinstance(widget, EcuZoneLineEdit):
+        if self.integrity and self.hasAcceptableInput() and isinstance(widget, EcuZoneLineEdit):
             value = widget.getZoneAndHex(virginWrite)
         return [self.zone, value]
+
+    def hasAcceptableInput(self):
+        for index in range(self.childCount()):
+            item = self.child(index)
+            widget = self.treeWidget().itemWidget(item, 2)
+            if isinstance(widget, EcuZoneLineEdit) and widget.isEnabled():
+                if not widget.hasAcceptableInput():
+                    return False
+        return True
 
     def changeZoneOption(self, root, data: str, valueType: str):
         self.selfUpdate = True
