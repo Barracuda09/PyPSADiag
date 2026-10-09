@@ -10869,8 +10869,34 @@
             "tab": "cal",
             "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_INTERNET"
+            "form_type": "multi",
+            "name": "Calibration_Fct_INTERNET",
+            "params": [
+                {
+                    "name": "URL_ACCUEIL",
+                    "byte": 0,
+                    "byte_range": 100,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20"
+                },
+                {
+                    "name": "URL_PSA",
+                    "byte": 100,
+                    "byte_range": 100,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20"
+                },
+                {
+                    "name": "URL_PROXI",
+                    "byte": 200,
+                    "byte_range": 100,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20"
+                }
+            ]
         },
         "0112": {
             "id": "0112",
