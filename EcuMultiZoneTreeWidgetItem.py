@@ -103,11 +103,11 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
         # tripped integrity) so each CSV (re)load starts from a clean slate,
         # instead of staying disabled/red after one bad file.
         self.integrity = True
-        for index in range(root.childCount()):
-            cellItem = root.child(index)
-            widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-            self.__clearWidget(widget, cellItem)
         try:
+            for index in range(root.childCount()):
+                cellItem = root.child(index)
+                widget = cellItem.treeWidget().itemWidget(cellItem, 2)
+                self.__clearWidget(widget, cellItem)
             # Set Root value of Multi Config zone
             widget = root.treeWidget().itemWidget(root, 2)
             widget.changeZoneOption(data, "")
@@ -116,7 +116,14 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
             for index in range(root.childCount()):
                 cellItem = root.child(index)
                 widget = cellItem.treeWidget().itemWidget(cellItem, 2)
-                result = widget.changeZoneOption(data, valueType)
+                try:
+                    result = widget.changeZoneOption(data, valueType)
+                except Exception as error:
+                    # One malformed field must not skip variant checks for the
+                    # remaining fields, or leave the zone eligible for writing.
+                    print("Invalid field: " + self.zone + " - " + widget.getDescriptionName()
+                          + ": " + repr(error))
+                    result = 1
                 if result == 2:
                     print("Disabled(2): " + self.zone + " - " + widget.getDescriptionName())
                     p = widget.palette()
@@ -130,10 +137,11 @@ class EcuMultiZoneTreeWidgetItem(QTreeWidgetItem):
                 elif result == 1:
                     print("Disabled(1): " + self.zone + " - " + widget.getDescriptionName())
                     self.integrity = False
-        except:
-            print("except: EcuMultiZoneTreeWidgetItem:changeZoneOption " + self.zone + " - " + widget.getDescriptionName())
-
-        self.selfUpdate = False
+        except Exception as error:
+            self.integrity = False
+            print("Invalid zone: " + self.zone + ": " + repr(error))
+        finally:
+            self.selfUpdate = False
         # Integrity wrong, disable the sub zones and coding
         if not self.integrity:
             for index in range(root.childCount()):

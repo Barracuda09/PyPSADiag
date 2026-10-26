@@ -132,7 +132,7 @@ class EcuZoneCheckBox(QCheckBox):
             mask = int(self.zoneObject["mask"], 2)
 
             # Integrity wrong, size does not match
-            if byteNr > len(byteData):
+            if byteNr < 0 or byteNr >= len(byteData):
                 return 1
 
             byte = int(byteData[byteNr], 16) & mask

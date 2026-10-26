@@ -141,6 +141,10 @@
                     {
                         "name": "2.0HDI (DW10FCC EURO6.3)",
                         "value": "7FFFFFFFFFFF"
+                    },
+                    {
+                        "name": "2.0 HDI (DW10FEH EURO6D)",
+                        "value": "FFFFFFDFFFFF"
                     }
                 ]
             },
@@ -369,6 +373,10 @@
                     {
                         "name": "Peugeot Rifter SWB (K9)",
                         "value": "FFFFEFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot Expert (K0)",
+                        "value": "FFEFFFFFFFFF"
                     }
                 ]
             },
@@ -551,6 +559,10 @@
                     {
                         "name": "Citroen C3 Aircross(CC24) 5 seats",
                         "value": "FFBFFFFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS3 E-tense",
+                        "value": "FFFFFFFFFFFBFFFFFFFF"
                     }
                 ]
             },
@@ -715,6 +727,10 @@
                     {
                         "name": "???",
                         "value": "FFFFFFFBFFFF"
+                    },
+                    {
+                        "name": "???",
+                        "value": "FFFFFFDFFFFF"
                     }
                 ]
             },
@@ -893,6 +909,10 @@
                     {
                         "name": "330X30-PHI60",
                         "value": "FFFE"
+                    },
+                    {
+                        "name": "304x28",
+                        "value": "FFFB"
                     }
                 ]
             },
@@ -973,6 +993,10 @@
                     {
                         "name": "290X12-PHI42",
                         "value": "EFFF"
+                    },
+                    {
+                        "name": "290X12",
+                        "value": "BFFF"
                     }
                 ]
             },
