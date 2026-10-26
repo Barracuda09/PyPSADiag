@@ -339,6 +339,10 @@
                         "value": "FFFFFFFF7FFF"
                     },
                     {
+                        "name": "Citroen C5 Aircross (China)",
+                        "value": "FFFFFFDFFFFF"
+                    },
+                    {
                         "name": "DS7",
                         "value": "FFFDFFFFFFFF"
                     },
@@ -347,16 +351,24 @@
                         "value": "FFFFFFFDFFFF"
                     },
                     {
+                        "name": "Peugeot 208 (P21)",
+                        "value": "FFFFFFFFFFDF"
+                    },
+                    {
                         "name": "Peugeot 308 (T9)",
                         "value": "EFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 508 (R8)",
+                        "name": "Peugeot 508 (R8) Hatchback",
                         "value": "FFFFFEFFFFFF"
                     },
                     {
-                        "name": "Peugeot 508 (R8) SW",
+                        "name": "Peugeot 508 (R8) Estate/SW",
                         "value": "FF7FFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508L (R83)",
+                        "value": "FFFFFDFFFFFF"
                     },
                     {
                         "name": "Peugeot 3008 (P84)",
@@ -375,8 +387,8 @@
                         "value": "FFFFEFFFFFFF"
                     },
                     {
-                        "name": "Peugeot Expert (K0)",
-                        "value": "FFEFFFFFFFFF"
+                        "name": "Peugeot Expert (K0) / C4 CACTUS (F3 AMLAT)",
+                        "value": "FFFFFFFFFFEF"
                     }
                 ]
             },
@@ -401,7 +413,15 @@
                         "value": "FFFFFFFF7FFFFFFFFFFF"
                     },
                     {
-                        "name": "Opel Grandland X (P1UO) ICE",
+                        "name": "Citroen C4 Picasso",
+                        "value": "FFFFFFF7FFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C4 Spacetourer (B78)",
+                        "value": "FFFFFFF7FFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Opel Grandland X (P1UO) ICE / Corsa F (PERFO)",
                         "value": "FFFFFFFFFDFFFFFFFFFF"
                     },
                     {
@@ -413,12 +433,20 @@
                         "value": "BFFFFFFFFFFFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot 508 (R8) / Citroen C3 Aircross(CC24) 7 seats",
+                        "name": "Peugeot 508 (R8) Estate/SW / Citroen C3 Aircross(CC24) 7 seats",
                         "value": "FF7FFFFFFFFFFFFFFFFF"
                     },
                     {
                         "name": "Peugeot 508 (R8) 4x2 Plug-in Hybrid",
                         "value": "FFFFFEFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508 (R8) Estate/SW PERFO 4X4",
+                        "value": "FFFFFFFFFFFFFBFFFFFF"
+                    },
+                    {
+                        "name": "Peugeot 508 (R8) Hatchback PERFO 4X4",
+                        "value": "FFFFFFFFFFFFFBFFFFFF"
                     },
                     {
                         "name": "Peugeot 3008 (P84) Restyle / Citroen C3 Aircross(CC24) electrical",
@@ -449,7 +477,7 @@
                         "value": "FFFFFFFFFFEFFFFFFFFF"
                     },
                     {
-                        "name": "Peugeot Rifter (K9)",
+                        "name": "Peugeot Rifter (K9) / Citroen C4 (C41)",
                         "value": "FFFFFFFFFFF7FFFFFFFF"
                     },
                     {
@@ -477,15 +505,31 @@
                         "value": "FBFFFFFFFFFFFFFFFFFF"
                     },
                     {
+                        "name": "Citroen C4 (C430)",
+                        "value": "FFFFFFFFFFFFFDFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C5 Aircross (China)",
+                        "value": "FFFFFFBFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "Citroen C5 Aircross (Malaysia)",
+                        "value": "FFFFFFDFFFFFFFFFFFFF"
+                    },
+                    {
                         "name": "Opel Astra Sedan Electric",
                         "value": "FFFFFFFFFFFFFFFDFFFF"
+                    },
+                    {
+                        "name": "Opel Mokka",
+                        "value": "FFFFFFFFFFFFFEFFFFFF"
                     },
                     {
                         "name": "Peugeot 308 Electric",
                         "value": "FFFFFFFFFFFFFFFEFFFF"
                     },
                     {
-                        "name": "Opel Astra SW (Sports Tourer) GSE",
+                        "name": "Opel Astra SW (Sports Tourer) GSE / C3 Aircross (A88)",
                         "value": "FFFFFFFFFFFFFFFFFFFD"
                     },
                     {
@@ -497,8 +541,24 @@
                         "value": "FFFFBFFFFFFFFFFFFFFF"
                     },
                     {
+                        "name": "Peugeot 508L (R83)",
+                        "value": "FFFFFDFFFFFFFFFFFFFF"
+                    },
+                    {
                         "name": "Opel Astra SW (Sports Tourer)",
                         "value": "FFFFFFFFFFFFFFFFF7FF"
+                    },
+                    {
+                        "name": "DS9 E-TENSE 4X2 (China) / DS9 E-TENSE thermal",
+                        "value": "FFFFFBFFFFFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS9 E-TENSE 4X2 (export)",
+                        "value": "FFFFFFFFFEFFFFFFFFFF"
+                    },
+                    {
+                        "name": "DS9 E-TENSE 4X4",
+                        "value": "FFFFFFFFFFFFBFFFFFFF"
                     },
                     {
                         "name": "Peugeot 408 (P54) / Peugeot 408X(P54C) / Opel Crossland X 7 seats",
