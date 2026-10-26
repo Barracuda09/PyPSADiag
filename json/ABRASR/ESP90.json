@@ -1047,24 +1047,28 @@
                 "mask": "00111111",
                 "params": [
                     {
-                        "name": "Without ACC",
+                        "name": "Without adaptive cruise control",
                         "mask": "00111111"
                     },
                     {
-                        "name": "ACC",
+                        "name": "With adaptive cruise control",
                         "mask": "00111110"
                     },
                     {
-                        "name": "ACC 30",
+                        "name": "With adaptive cruise control (manual gearbox)",
                         "mask": "00111011"
                     },
                     {
-                        "name": "ACC Stop&Go",
+                        "name": "With adaptive cruise control (AMN8 or ATN8 automatic gearbox)/With adaptive cruise control until the vehicle stops with automatic restarting",
                         "mask": "00101111"
                     },
                     {
-                        "name": "ACC 30 v2",
+                        "name": "Adaptive cruise control up to a speed of 30 km/h",
                         "mask": "00110111"
+                    },
+                    {
+                        "name": "With adaptive cruise control(ATN8 automatic gearbox)",
+                        "mask": "00111101"
                     }
                 ]
             },
@@ -1077,27 +1081,27 @@
                 "mask": "00111111",
                 "params": [
                     {
-                        "name": "Without ACC",
+                        "name": "Without adaptive cruise control",
                         "mask": "00111111"
                     },
                     {
-                        "name": "ACC",
+                        "name": "With adaptive cruise control",
                         "mask": "00111110"
                     },
                     {
-                        "name": "ACC 30",
+                        "name": "With adaptive cruise control (manual gearbox)",
                         "mask": "00111011"
                     },
                     {
-                        "name": "ACC Stop&Go",
+                        "name": "With adaptive cruise control (AMN8 or ATN8 automatic gearbox)/With adaptive cruise control until the vehicle stops with automatic restarting",
                         "mask": "00101111"
                     },
                     {
-                        "name": "ACC 30 v2",
+                        "name": "Adaptive cruise control up to a speed of 30 km/h",
                         "mask": "00110111"
                     },
                     {
-                        "name": "CFG_000_FREIN_UDS_UCPR_ACC_111101",
+                        "name": "With adaptive cruise control(ATN8 automatic gearbox)",
                         "mask": "00111101"
                     }
                 ]
@@ -1227,11 +1231,11 @@
                 "mask": "00000100",
                 "params": [
                     {
-                        "name": "2 CAN",
+                        "name": "2CAN: With automatic braking on risk of collision",
                         "mask": "00000100"
                     },
                     {
-                        "name": "1 CAN",
+                        "name": "1CAN: Without automatic braking on risk of collision",
                         "mask": "00000000"
                     }
                 ]
@@ -1531,16 +1535,20 @@
                 "mask": "11000000",
                 "params": [
                     {
+                        "name": "Stop and Start with starter",
+                        "mask": "01000000"
+                    },
+                    {
                         "name": "Without Stop and Start",
                         "mask": "11000000"
                     },
                     {
-                        "name": "Stop and Start with alternator",
+                        "name": "With Stop and Start (reversible alternator)",
                         "mask": "10000000"
                     },
                     {
-                        "name": "Stop and Start with starter",
-                        "mask": "01000000"
+                        "name": "Without Stop and Start by starter motor",
+                        "mask": "00000000"
                     }
                 ]
             },
@@ -1551,18 +1559,22 @@
                 "type": "bool",
                 "form_type": "combobox",
                 "mask": "11000000",
-                "params": [
+               "params": [
+                    {
+                        "name": "Stop and Start with starter",
+                        "mask": "01000000"
+                    },
                     {
                         "name": "Without Stop and Start",
                         "mask": "11000000"
                     },
                     {
-                        "name": "Stop and Start with alternator",
+                        "name": "With Stop and Start (reversible alternator)",
                         "mask": "10000000"
                     },
                     {
-                        "name": "Stop and Start with starter",
-                        "mask": "01000000"
+                        "name": "Without Stop and Start by starter motor",
+                        "mask": "00000000"
                     }
                 ]
             },
