@@ -11220,10 +11220,15 @@
             "params": [
                 {
                     "name_original": "ERG_OVIP_PIXEL_CLOCK",
-                    "name": "Pixel Clock, Mhz x 100",
+                    "name": "Pixel clock (MHz)",
                     "byte": 0,
                     "mask": "1111111111111111",
-                    "form_type": "string"
+                    "form_type": "string",
+                    "scale": 0.01,
+                    "offset": 0,
+                    "decimals": 2,
+                    "min": 0,
+                    "max": 655.35
                 },
                 {
                     "name_original": "ERG_OVIP_THPB",
