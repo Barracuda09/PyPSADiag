@@ -1753,10 +1753,10 @@
                     ]
                 },
                 {
-                    "extra_name": "CFG_EQH_CMB_WIRE_IN_IAF_000",
-                    "name_original": "CFG_EQH_CMB_WIRE_IN_IAF_000",
+                    "extra_name": "CFG_EQD_CMB_WIRE_IN_PAS_000",
+                    "name_original": "CFG_EQD_CMB_WIRE_IN_PAS_000",
                     "zoneLength": 23,
-                    "name": "IAF PUSH input",
+                    "name": "PAS PUSH input (Parking assistance)",
                     "byte": 21,
                     "mask": "11111111",
                     "form_type": "combobox",
@@ -1796,10 +1796,10 @@
                     ]
                 },
                 {
-                    "extra_name": "CFG_EQI_CMB_WIRE_OUT_IAF_000",
-                    "name_original": "CFG_EQI_CMB_WIRE_OUT_IAF_000",
+                    "extra_name": "CFG_EQE_CMB_WIRE_OUT_PAS_000",
+                    "name_original": "CFG_EQE_CMB_WIRE_OUT_PAS_000",
                     "zoneLength": 23,
-                    "name": "IAF LED output",
+                    "name": "PAS LED output (Parking assistance)",
                     "byte": 22,
                     "mask": "11111111",
                     "form_type": "combobox",
@@ -1955,7 +1955,7 @@
                     "name_original": "CFG_DQY_CMB_DAT_DG_BRAND_CFG_001",
                     "name": "Brand configuration",
                     "byte": 7,
-                    "mask": "00011111",
+                    "mask": "11100000",
                     "form_type": "string"
                 }
             ]
@@ -2123,180 +2123,562 @@
                 },
                 {
                     "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
-                    "zoneLength": 7,
                     "name_original": "F4K",
                     "name": "Ambience 8",
                     "byte": 6,
                     "mask": "10000000",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
-                    "zoneLength": 7,
                     "name_original": "F4J",
                     "name": "Ambience 7",
                     "byte": 6,
                     "mask": "01000000",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
-                    "zoneLength": 7,
                     "name_original": "F4I",
                     "name": "Ambience 6",
                     "byte": 6,
                     "mask": "00100000",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
-                    "zoneLength": 7,
                     "name_original": "F4H",
                     "name": "Ambience 5",
                     "byte": 6,
                     "mask": "00010000",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
-                    "zoneLength": 7,
                     "name_original": "F4G",
                     "name": "Ambience 4",
                     "byte": 6,
                     "mask": "00001000",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
-                    "zoneLength": 7,
                     "name_original": "F4F",
                     "name": "Ambience 3",
                     "byte": 6,
                     "mask": "00000100",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
-                    "zoneLength": 7,
                     "name_original": "F4D",
                     "name": "Ambience 2",
                     "byte": 6,
                     "mask": "00000010",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
                     "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
-                    "zoneLength": 7,
                     "name_original": "F4E",
                     "name": "Ambience 1",
                     "byte": 6,
                     "mask": "00000001",
                     "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "available_logic": "active_high",
+                    "zoneLength": [7, 8]
                 },
                 {
-                    "extra_name": "F4K_CMB_MENU_AMBIANCE_8",
-                    "zoneLength": 8,
-                    "name_original": "F4K",
-                    "name": "Ambience 8",
-                    "byte": 7,
-                    "mask": "10000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "extra_name": "CFG_F4N_CMB_AMBIANCE_DEFAULT_000",
+                    "zoneLength": 7,
+                    "name_original": "F4N",
+                    "name": "Default Ambience",
+                    "byte": 0,
+                    "mask": "00011100",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Ambience 1"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "Ambience 2"
+                        },
+                        {
+                            "mask": "00001000",
+                            "name": "Ambience 3"
+                        },
+                        {
+                            "mask": "00001100",
+                            "name": "Ambience 4"
+                        },
+                        {
+                            "mask": "00010000",
+                            "name": "Ambience 5"
+                        },
+                        {
+                            "mask": "00010100",
+                            "name": "Ambience 6"
+                        },
+                        {
+                            "mask": "00011000",
+                            "name": "Ambience 7"
+                        },
+                        {
+                            "mask": "00011100",
+                            "name": "Ambience 8"
+                        }
+                    ]
                 },
                 {
-                    "extra_name": "F4J_CMB_MENU_AMBIANCE_7",
+                    "extra_name": "CFG_GJ0_CMB_AMBIA_DEFAULT_NORMAL_000",
                     "zoneLength": 8,
-                    "name_original": "F4J",
-                    "name": "Ambience 7",
+                    "name_original": "GJ0",
+                    "name": "Default Normal Ambience",
                     "byte": 7,
-                    "mask": "01000000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4I_CMB_MENU_AMBIANCE_6",
-                    "zoneLength": 8,
-                    "name_original": "F4I",
-                    "name": "Ambience 6",
-                    "byte": 7,
-                    "mask": "00100000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4H_CMB_MENU_AMBIANCE_5",
-                    "zoneLength": 8,
-                    "name_original": "F4H",
-                    "name": "Ambience 5",
-                    "byte": 7,
-                    "mask": "00010000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4G_CMB_MENU_AMBIANCE_4",
-                    "zoneLength": 8,
-                    "name_original": "F4G",
-                    "name": "Ambience 4",
-                    "byte": 7,
-                    "mask": "00001000",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4F_CMB_MENU_AMBIANCE_3",
-                    "zoneLength": 8,
-                    "name_original": "F4F",
-                    "name": "Ambience 3",
-                    "byte": 7,
-                    "mask": "00000100",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4D_CMB_MENU_AMBIANCE_2",
-                    "zoneLength": 8,
-                    "name_original": "F4D",
-                    "name": "Ambience 2",
-                    "byte": 7,
-                    "mask": "00000010",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
-                    "zoneLength": 8,
-                    "name_original": "F4E",
-                    "name": "Ambience 1",
-                    "byte": 7,
-                    "mask": "00000001",
-                    "form_type": "checkbox",
-                    "available_logic": "active_high"
+                    "mask": "11100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "Ambience 1"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "Ambience 2"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "Ambience 3"
+                        },
+                        {
+                            "mask": "01100000",
+                            "name": "Ambience 4"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "Ambience 5"
+                        },
+                        {
+                            "mask": "10100000",
+                            "name": "Ambience 6"
+                        },
+                        {
+                            "mask": "11000000",
+                            "name": "Ambience 7"
+                        },
+                        {
+                            "mask": "11100000",
+                            "name": "Ambience 8"
+                        }
+                    ]
                 }
             ]
         },
         "0200": {
-            "name": "Calibration_Fct_Main",
+            "name": "Calibration_Display_Backlight_And_Thresholds",
             "tab": "cal",
             "type": "raw",
             "form_type": "multi",
             "params": [
                 {
-                    "extra_name": "F4N_CMB_AMBIANCE_DEFAULT",
-                    "name_original": "F4N",
-                    "name": "Number of the default ambience",
+                    "name": "Wake fade total duration (raw x 0.1 s)",
+                    "byte": 0,
+                    "mask": "00011111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stable samples required by two-channel monitor (0..10)",
+                    "byte": 1,
+                    "mask": "11110000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stored brightness level (0..15)",
+                    "byte": 2,
+                    "mask": "01111000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Default brightness level (0..15)",
+                    "byte": 2,
+                    "mask": "0000011110000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Wake fade delay (raw x 0.1 s)",
+                    "byte": 3,
+                    "mask": "00111110",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Wake fade target (0..15)",
+                    "byte": 4,
+                    "mask": "00011111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Wake fade ramp duration (raw x 0.1 s)",
+                    "byte": 5,
+                    "mask": "11111000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Speed display zero threshold (raw x 0.5 km/h)",
+                    "byte": 8,
+                    "mask": "0001111110000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Speedometer upper scale (km/h)",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Speedometer lower scale (km/h)",
+                    "byte": 11,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Conditional extra speed offset (raw /100 km/h)",
+                    "byte": 15,
+                    "mask": "1111111111000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Language/unit CAN timeout (raw x33 cycles)",
                     "byte": 35,
-                    "mask": "00001110",
-                    "type": "raw",
-                    "form_type": "string"
+                    "mask": "01111100",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC set-distance transition delay (raw x4 cycles)",
+                    "byte": 36,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid segment lower hysteresis (raw -3)",
+                    "byte": 44,
+                    "mask": "11000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid segment upper hysteresis",
+                    "byte": 44,
+                    "mask": "00110000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Ice warning outside-temperature threshold (raw/2 - 40 C)",
+                    "byte": 56,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stored language code",
+                    "byte": 64,
+                    "mask": "01111110",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 numerical display enable",
+                    "byte": 5,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Relax/Boost HMI gate",
+                    "byte": 34,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Use default personal wells for invalid selection",
+                    "byte": 35,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Double CAN 1E7 byte7 value",
+                    "byte": 58,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Enable CAN 3E1 byte6 numerical display",
+                    "byte": 58,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 0 (0..255)",
+                    "byte": 18,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 1 (0..255)",
+                    "byte": 19,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 2 (0..255)",
+                    "byte": 20,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 3 (0..255)",
+                    "byte": 21,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 4 (0..255)",
+                    "byte": 22,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 5 (0..255)",
+                    "byte": 23,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 6 (0..255)",
+                    "byte": 24,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 7 (0..255)",
+                    "byte": 25,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 8 (0..255)",
+                    "byte": 26,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 9 (0..255)",
+                    "byte": 27,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 10 (0..255)",
+                    "byte": 28,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 11 (0..255)",
+                    "byte": 29,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 12 (0..255)",
+                    "byte": 30,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 13 (0..255)",
+                    "byte": 31,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 14 (0..255)",
+                    "byte": 32,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 1 brightness curve level 15 (0..255)",
+                    "byte": 33,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC set-distance preset 1",
+                    "byte": 37,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC set-distance preset 2",
+                    "byte": 38,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC set-distance preset 3",
+                    "byte": 39,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC received-distance boundary 1",
+                    "byte": 40,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC received-distance boundary 2",
+                    "byte": 41,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC received-distance boundary 3",
+                    "byte": 42,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ACC received-distance boundary 4",
+                    "byte": 43,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 0 (0..100)",
+                    "byte": 45,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 1 (0..100)",
+                    "byte": 46,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 2 (0..100)",
+                    "byte": 47,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 3 (0..100)",
+                    "byte": 48,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 4 (0..100)",
+                    "byte": 49,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 5 (0..100)",
+                    "byte": 50,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 6 (0..100)",
+                    "byte": 51,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 7 (0..100)",
+                    "byte": 52,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 8 (0..100)",
+                    "byte": 53,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 3E0 byte0 segment boundary 9 (0..100)",
+                    "byte": 54,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
                 }
             ]
         },
@@ -2305,41 +2687,329 @@
             "tab": "cal",
             "type": "raw",
             "form_type": "multi",
-            "Mileage": {
-                "name": "Kilometrage",
-                "byte": 8,
-                "mask": "111111111111111111111111",
-                "type": "mileage",
-                "form_type": "string"
-            }
+            "read_only": true,
+            "params": [
+                {
+                    "extra_name": "LOG_COUNT",
+                    "name": "Recorded large mileage increases (saturates at 255)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "LOG_BEFORE",
+                    "name": "Last recorded large increase: previous local value (km)",
+                    "byte": 1,
+                    "mask": "111111111111111111111111",
+                    "type": "mileage",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "LOG_AFTER",
+                    "name": "Last recorded large increase: incoming value (km)",
+                    "byte": 4,
+                    "mask": "111111111111111111111111",
+                    "type": "mileage",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "LOG_MIN",
+                    "name": "Logging lower bound for previous local mileage (km)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "KILOMETRAGE",
+                    "name": "Kilometrage: local persistent kilometrage (km)",
+                    "byte": 8,
+                    "mask": "111111111111111111111111",
+                    "type": "mileage",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "LOG_DELTA",
+                    "name": "Large increase threshold (km)",
+                    "byte": 11,
+                    "mask": "111111111111111110000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "DF04_LIMIT",
+                    "name": "DF04 local mileage limit (km)",
+                    "byte": 13,
+                    "mask": "0111111111000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "DF03_LIMIT",
+                    "name": "DF03 local mileage limit (km)",
+                    "byte": 14,
+                    "mask": "0011111111100000",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
         },
         "0201": {
-            "name": "Calibration_0201",
+            "name": "Calibration_Oil_Temperature_Gauge",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Temperature curve point 1 output (%)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve point 2 output (%)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve point 3 output (%)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve point 1 input (raw - 40 C)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve point 2 input (raw - 40 C)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve point 3 input (raw - 40 C)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve 100% endpoint (raw - 40 C)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Temperature curve 0% endpoint (raw - 40 C)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0202": {
-            "name": "Calibration_0202",
+            "name": "Calibration_Antifreeze_Temperature_Gauge",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Coolant temperature curve input point 0 (raw -40 C)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve input point 1 (raw -40 C)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve input point 2 (raw -40 C)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve input point 3 (raw -40 C)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve input point 4 (raw -40 C)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve input point 5 (raw -40 C)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant overtemperature threshold (raw -40 C)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve point 1 output (%)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve point 2 output (%)",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve point 3 output (%)",
+                    "byte": 9,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Coolant temperature curve point 4 output (%)",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0203": {
-            "name": "Calibration_Fct_0203",
+            "name": "Calibration_Tachometer_And_Hybrid_Scale",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Tachometer diesel upper scale (raw /4 rpm)",
+                    "byte": 8,
+                    "mask": "1111111111111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Tachometer petrol upper scale (raw /4 rpm)",
+                    "byte": 10,
+                    "mask": "1111111111111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Tachometer diesel red zone start (raw /4 rpm)",
+                    "byte": 16,
+                    "mask": "1111111111111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Tachometer petrol red zone start (raw /4 rpm)",
+                    "byte": 18,
+                    "mask": "1111111111111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 1E7 power-like value boundary 1 (raw - 50)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 1E7 power-like value boundary 2 (raw - 50)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 1E7 power-like value boundary 3 (raw - 50)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hybrid CAN 1E7 power-like value boundary 4 (raw - 50)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0204": {
-            "name": "Calibration_Fct_0204",
+            "name": "Calibration_Videodecoder",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Video decoder device42 register 05 (raw)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Video decoder device42 register 06 (raw)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Video decoder device42 register 07 (raw)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Video decoder device42 register 08 (raw)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Video decoder device42 register 0A (raw)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0205": {
             "name": "Calibration_Fct_0205",
@@ -2349,18 +3019,130 @@
             "form_type": "string"
         },
         "0206": {
-            "name": "Calibration_Fct_0206",
+            "name": "Calibration_Hardware_Line_Diagnostics",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
             "form_type": "string"
         },
         "0900": {
-            "name": "Calibration_Fct_HMI",
-            "tab": "cmb",
+            "name": "Calibration_Backlight_And_Ambience",
+            "tab": "cal",
             "type": "raw",
             "form_type": "multi",
             "params": [
+                {
+                    "name": "PWM channel 0 brightness curve level 0 (0..255)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 1 (0..255)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 2 (0..255)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 3 (0..255)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 4 (0..255)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 5 (0..255)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 6 (0..255)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 7 (0..255)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 8 (0..255)",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 9 (0..255)",
+                    "byte": 9,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 10 (0..255)",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 11 (0..255)",
+                    "byte": 11,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 12 (0..255)",
+                    "byte": 12,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 13 (0..255)",
+                    "byte": 13,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 14 (0..255)",
+                    "byte": 14,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "PWM channel 0 brightness curve level 15 (0..255)",
+                    "byte": 15,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
                 {
                     "extra_name": "F4E_CMB_MENU_AMBIANCE_1",
                     "name_original": "F4E",
@@ -2444,18 +3226,84 @@
             ]
         },
         "0A00": {
-            "name": "Calibration_Fct_0A00",
+            "name": "Calibration_Service_Interval_Adblue",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "CAN 3E7 distance warning threshold (raw)",
+                    "byte": 0,
+                    "mask": "0000111111111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "CAN 3E7 second warning threshold (raw)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "CAN 276 range threshold 1 (raw x100)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "CAN 276 range threshold 2 (raw x100)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "CAN 276 range threshold 3 (raw x100)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "CAN 276 range threshold 4 (raw x100)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0B00": {
-            "name": "Calibration_Fct_0B00",
+            "name": "Calibration_Unit_Conversion_Constants",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "params": [
+                {
+                    "name": "Distance conversion coefficient (1500+raw)/1000",
+                    "byte": 25,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Volume conversion coefficient (370+raw)/100",
+                    "byte": 26,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Maintenance distance coefficient (1500+raw)/1000",
+                    "byte": 27,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "0D00": {
             "name": "Calibration_Fct_0D00",
@@ -2465,46 +3313,276 @@
             "form_type": "string"
         },
         "0D01": {
-            "name": "Calibration_Fct_0D01",
+            "name": "Data_Application_Constant",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "Application constant",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "C000": {
-            "name": "Calibration_Fct_C000",
+            "name": "Data_Persistent_Counter_Block",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         },
         "D400": {
             "name": "Data_Push_Button_Status",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "City Park input state",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Low tyre pressure reset input state",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "ESP input state",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Lane departure input state",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Hill assist input state",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "LKA input state",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Dynamic mode input state",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "LPA input state",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "PAS input state",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Stop and Start input state",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                },
+                {
+                    "name": "Eco mode input state",
+                    "byte": 1,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "type": "raw",
+                    "available_logic": "active_high"
+                }
+            ]
         },
         "D401": {
-            "name": "Data_D401",
+            "name": "Data_Trip_Reset_And_Rheostat_Buttons",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "Trip odometer reset button state",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Rheostat button state",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "D402": {
-            "name": "Data_D402",
+            "name": "Data_Stored_Selections_And_Engine_Type_Bit",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "Stored engine-type",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stored selection (raw + 1)",
+                    "byte": 0,
+                    "mask": "00111000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stored selection A",
+                    "byte": 1,
+                    "mask": "11111000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stored selection B",
+                    "byte": 2,
+                    "mask": "11111000",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "D500": {
-            "name": "Data_D500",
+            "name": "Data_Input_State_Snapshot",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "City Park input snapshot",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Low tyre pressure reset input snapshot",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "ESP input snapshot",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Lane departure input snapshot",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Hill assist input snapshot",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "LKA input snapshot",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Dynamic mode input snapshot",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "LPA input snapshot",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Parking assistant button input snapshot",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Stop and Start input snapshot",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "form_type": "string",
+                    "type": "raw"
+                },
+                {
+                    "name": "Eco mode input snapshot",
+                    "byte": 1,
+                    "mask": "00100000",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "D600": {
             "name": "Data_Clock_Presense",
@@ -2514,53 +3592,86 @@
             "form_type": "string"
         },
         "D700": {
-            "name": "Data_D700",
+            "name": "Data_Hardware_Test_Output_State",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         },
         "D707": {
-            "name": "Data_D707",
+            "name": "Data_IO_Control_Output_States",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         },
         "D708": {
-            "name": "Data_D708",
+            "name": "Data_Mileage_Reset_Attempts",
             "tab": "cal",
             "type": "raw",
-            "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "extra_name": "DF03_ATTEMPT",
+                    "name": "DF03 attempt latched",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "DF04_ATTEMPT",
+                    "name": "DF04 attempt latched",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
         },
         "D709": {
-            "name": "Data_D709",
+            "name": "Data_Stored_Counter_Sum",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "Saturated sum of stored counters [0] and [7] (max255)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "D800": {
-            "name": "Data_D800",
+            "name": "Data_HMI_Control_Command_1",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         },
         "DA00": {
-            "name": "Data_DA00",
+            "name": "Data_IO_Control_Command_Nibble",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         },
         "DA10": {
-            "name": "Data_DA10",
+            "name": "Data_HMI_Control_Command_2",
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string"
+            "form_type": "string",
+            "read_only": true
         }
     }
 }
