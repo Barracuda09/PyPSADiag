@@ -488,19 +488,19 @@
                     "params": [
                         {
                             "mask": "00000000",
-                            "name": "Type 1"
+                            "name": "VisioPark 1 (Rear 180 camera)"
                         },
                         {
                             "mask": "00000010",
-                            "name": "Type 2"
+                            "name": "VisioPark 2 (Rear+front virtual 360 camera)"
                         },
                         {
                             "mask": "00000100",
-                            "name": "Type 3"
+                            "name": "VisioPark 3 (Rear+front+side 360 full hd camera)"
                         },
                         {
                             "mask": "00000110",
-                            "name": "Type 4"
+                            "name": "camera with graphical lines (van LCV)"
                         }
                     ]
                 },
