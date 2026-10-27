@@ -41,6 +41,7 @@ class EcuZoneLineEdit(QLineEdit):
         self.itemReadOnly = readOnly
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
+        self.rangeToolTip = ""
         self.asciiByteRange = (zoneObject.get("type") == "string_ascii"
                                and "byte_range" in zoneObject and "mask" not in zoneObject)
         if self.asciiByteRange:
@@ -57,6 +58,41 @@ class EcuZoneLineEdit(QLineEdit):
             self.setValidator(QRegularExpressionValidator(expression, self))
             self.setToolTip("ASCII text, maximum %d bytes" % size)
 
+        # Optional affine scaling for masked numeric fields:
+        #   displayed = offset + code * scale        (code = (word & mask) >> shift)
+        #   code      = round((displayed - offset) / scale)
+        # Lets a field show a physical value (km, mpg, ...) instead of the raw code.
+        # Fields without "scale" are unaffected (behaviour identical to before).
+        self.scale = zoneObject.get("scale", None)
+        self.offset = zoneObject.get("offset", 0)
+        self.decimals = zoneObject.get("decimals", None)
+        if self.scale is not None:
+            if "mask" not in zoneObject:
+                raise ValueError("scale requires a mask")
+            if not isinstance(self.scale, (int, float)) or self.scale == 0:
+                raise ValueError("scale must be a non-zero number")
+            if not isinstance(self.offset, (int, float)):
+                raise ValueError("offset must be a number")
+            if self.decimals is not None and (not isinstance(self.decimals, int) or self.decimals < 0):
+                raise ValueError("decimals must be a non-negative integer")
+            smask = int(zoneObject["mask"], 2)
+            maxCode = smask >> self.__shift(smask)
+            rawLo = self.offset + 0 * self.scale
+            rawHi = self.offset + maxCode * self.scale
+            lo = zoneObject.get("min", min(rawLo, rawHi))
+            hi = zoneObject.get("max", max(rawLo, rawHi))
+            dec = self.decimals if self.decimals is not None else 3
+            validator = QDoubleValidator(float(min(lo, hi)), float(max(lo, hi)), dec, self)
+            # Standard (not scientific) notation, so e.g. "22" stays "22" and is
+            # never reformatted to "2e+01".
+            validator.setNotation(QDoubleValidator.StandardNotation)
+            locale = QLocale.c()
+            locale.setNumberOptions(QLocale.RejectGroupSeparator)
+            validator.setLocale(locale)
+            self.setValidator(validator)
+            self.rangeToolTip = ("Enter a value between %s and %s" % (min(lo, hi), max(lo, hi)))
+            self.setToolTip(self.rangeToolTip)
+
         # Notify changes, to change color if changed
         self.textEdited.connect(self.textChange)
 
@@ -68,6 +104,18 @@ class EcuZoneLineEdit(QLineEdit):
         if text != self.newLineLineValue:
             self.newLineLineValue = text
 
+        # Out-of-range / invalid input: flag it red with a tooltip instead of
+        # silently mangling (e.g. "2e+01") or accepting it.
+        if self.validator() is not None and not self.hasAcceptableInput():
+            self.setStyleSheet("background-color: rgb(200, 60, 60)")
+            if self.rangeToolTip:
+                self.setToolTip("Value out of range. " + self.rangeToolTip)
+            else:
+                self.setToolTip("Value out of range")
+            return
+
+        if self.rangeToolTip:
+            self.setToolTip(self.rangeToolTip)
         if self.newLineLineValue == self.initialLineValue:
             self.setStyleSheet(self.style)
         else:
@@ -173,7 +221,18 @@ class EcuZoneLineEdit(QLineEdit):
             mask = int(self.zoneObject["mask"], 2)
             if text != None and text != "":
                 size = self.getCorrespondingByteSize() * 2
-                newByte = int(text) << self.__shift(mask)
+                shift = self.__shift(mask)
+                if self.scale is not None:
+                    # Don't write an out-of-range / invalid value; leave the byte as-is.
+                    if not self.hasAcceptableInput():
+                        return byte
+                    code = int(round((float(text) - self.offset) / self.scale))
+                    # keep within the field so a write never spills into neighbouring bits
+                    maxCode = mask >> shift
+                    code = max(0, min(code, maxCode))
+                    newByte = (code << shift) & mask
+                else:
+                    newByte = int(text) << shift
                 value = (int(byte, 16) & ~mask) | newByte
                 byte = f"%0.{size}X" % value
         return byte
@@ -228,6 +287,13 @@ class EcuZoneLineEdit(QLineEdit):
 
             byte = (int(currData, 16) & mask) >> self.__shift(mask)
             if "type" in self.zoneObject and self.zoneObject["type"] == "mileage":
+            if self.scale is not None:
+                value = self.offset + byte * self.scale
+                if self.decimals is not None:
+                    self.__setText("%.*f" % (self.decimals, value))
+                else:
+                    self.__setText(str(value))
+            elif "type" in self.zoneObject and self.zoneObject["type"] == "mileage":
                 self.__setText(str(byte / 10))
             else:
                 self.__setText(str(byte))
