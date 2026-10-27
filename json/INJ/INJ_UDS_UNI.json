@@ -6,6 +6,8 @@
   "dtc_lookup": "data/dtc/INJ.json",
   "key_type": "multi",
   "keys": {
+    "MD1CS003 E6.2": "1948",
+    "MD1CS003 E6.3/E6.4": "4454",
     "CMM_VD56": "9395",
     "VD46.1": "4552",
     "VD46.11": "31A7",
