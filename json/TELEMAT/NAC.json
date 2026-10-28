@@ -10773,8 +10773,98 @@
             "tab": "cal",
             "byte": 0,
             "type": "raw",
+            "form_type": "multi",
+            "name": "Calibration_Fct_AVP",
+            "params": [
+                {
+                    "extra_name": "AVP_REGION_0_X_MIN",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 0: X minimum",
+                    "byte": 1,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_0_X_MAX",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 0: X maximum",
+                    "byte": 3,
+                    "mask": "1111111111111111",
+                    "type": "raw",
             "form_type": "string",
-            "name": "Calibration_Fct_AVP"
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_0_Y_MIN",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 0: Y minimum",
+                    "byte": 5,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+        },
+                {
+                    "extra_name": "AVP_REGION_0_Y_MAX",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 0: Y maximum",
+                    "byte": 7,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_1_X_MIN",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 1: X minimum",
+                    "byte": 9,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_1_X_MAX",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 1: X maximum",
+                    "byte": 11,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_1_Y_MIN",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 1: Y minimum",
+                    "byte": 13,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                },
+                {
+                    "extra_name": "AVP_REGION_1_Y_MAX",
+                    "name_original": "ERG_OVIP_VISIOPARK_CROP",
+                    "name": "Visiopark crop region 1: Y maximum",
+                    "byte": 15,
+                    "mask": "1111111111111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 17,
+                    "signed": true
+                }
+            ]
         },
         "0105": {
             "id": "0105",
@@ -10837,8 +10927,54 @@
             "tab": "cal",
             "byte": 0,
             "type": "raw",
+            "form_type": "multi",
+            "name": "Calibration_Fct_ENTREE_VIDEO",
+            "params": [
+                {
+                    "extra_name": "ATT_DG_CONTRAST",
+                    "name_original": "ERG_OVIP_ATT_DG_CONTRAST",
+                    "name": "Contrast",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "signed": true,
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 8
+                },
+                {
+                    "extra_name": "ATT_DG_BRIGHTNESS",
+                    "name_original": "ERG_OVIP_ATT_DG_BRIGHTNESS",
+                    "name": "Brightness",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "signed": true,
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 8
+                },
+                {
+                    "extra_name": "CHROMA_HU",
+                    "name_original": "ERG_OVIP_CHROMA_HU",
+                    "name": "Hue (CHROMA_HU) (-128..127)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "signed": true,
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 8
+                },
+                {
+                    "extra_name": "ATT_DG_CONTRAST_2",
+                    "name_original": "ERG_OVIP_ATT_DG_CONTRAST_2",
+                    "name": "Saturation (ATT_DG_CONTRAST_2) (-128..127)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "signed": true,
+                    "type": "raw",
             "form_type": "string",
-            "name": "Calibration_Fct_ENTREE_VIDEO"
+                    "zoneLength": 8
+                }
+            ]
         },
         "010D": {
             "id": "010D",

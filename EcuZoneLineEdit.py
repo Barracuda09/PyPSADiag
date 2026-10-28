@@ -21,8 +21,8 @@
 
 import json
 import os
-from PySide6.QtGui import QKeyEvent, QRegularExpressionValidator
-from PySide6.QtCore import Qt, QEvent, Slot, QRegularExpression
+from PySide6.QtGui import QKeyEvent, QRegularExpressionValidator, QIntValidator, QDoubleValidator
+from PySide6.QtCore import Qt, QEvent, Slot, QRegularExpression, QLocale
 from PySide6.QtWidgets import QLineEdit
 
 
@@ -42,6 +42,29 @@ class EcuZoneLineEdit(QLineEdit):
         self.setReadOnly(readOnly)
         self.zoneObject = zoneObject
         self.rangeToolTip = ""
+        self.signed = zoneObject.get("signed", False)
+        if not isinstance(self.signed, bool):
+            raise ValueError("signed must be a boolean")
+        if self.signed:
+            if "mask" not in zoneObject:
+                raise ValueError("Signed fields require a contiguous binary mask")
+            mask = int(zoneObject["mask"], 2)
+            if mask <= 0 or mask.bit_length() > 32:
+                raise ValueError("Signed masks must fit in 1..32 bits")
+            self.signedShift = self.__shift(mask)
+            fieldMask = mask >> self.signedShift
+            if fieldMask & (fieldMask + 1):
+                raise ValueError("Signed fields require a contiguous binary mask")
+            self.signedBits = fieldMask.bit_length()
+            limit = 1 << (self.signedBits - 1)
+            validator = QIntValidator(-limit, limit - 1, self)
+            locale = QLocale.c()
+            locale.setNumberOptions(QLocale.RejectGroupSeparator)
+            validator.setLocale(locale)
+            self.setValidator(validator)
+            self.rangeToolTip = ("Signed %d-bit integer, %d to %d" %
+                                 (self.signedBits, -limit, limit - 1))
+            self.setToolTip(self.rangeToolTip)
         self.asciiByteRange = (zoneObject.get("type") == "string_ascii"
                                and "byte_range" in zoneObject and "mask" not in zoneObject)
         if self.asciiByteRange:
@@ -67,6 +90,8 @@ class EcuZoneLineEdit(QLineEdit):
         self.offset = zoneObject.get("offset", 0)
         self.decimals = zoneObject.get("decimals", None)
         if self.scale is not None:
+            if self.signed:
+                raise ValueError("scale cannot be combined with signed")
             if "mask" not in zoneObject:
                 raise ValueError("scale requires a mask")
             if not isinstance(self.scale, (int, float)) or self.scale == 0:
@@ -157,7 +182,11 @@ class EcuZoneLineEdit(QLineEdit):
         return self.isEnabled() and not(self.itemReadOnly) and (self.initialLineValue != self.text() or virginWrite)
 
     def __convertZoneData(self):
-        if self.asciiByteRange:
+        if self.signed:
+            start = self.getCorrespondingByte() * 2
+            size = self.getCorrespondingByteSize() * 2
+            return self.update(self.initialRaw[start:start + size]).upper()
+        elif self.asciiByteRange:
             return self.update(self.initialRaw).upper()
         elif self.valueType == "string_ascii":
             value = self.text().encode().hex()
@@ -172,6 +201,8 @@ class EcuZoneLineEdit(QLineEdit):
 
     def getValuesAsCSV(self):
         if self.isEnabled():
+            if self.signed and not self.hasAcceptableInput():
+                return "None"
             return self.__convertZoneData()
 
         return "Disabled"
@@ -219,6 +250,13 @@ class EcuZoneLineEdit(QLineEdit):
         if "mask" in self.zoneObject:
             text = self.text()
             mask = int(self.zoneObject["mask"], 2)
+            if self.signed:
+                if not self.hasAcceptableInput():
+                    return byte
+                word = int(text) & ((1 << self.signedBits) - 1)
+                newByte = (word << self.signedShift) & mask
+                value = (int(byte, 16) & ~mask) | newByte
+                return "%0.*X" % (self.getCorrespondingByteSize() * 2, value)
             if text != None and text != "":
                 size = self.getCorrespondingByteSize() * 2
                 shift = self.__shift(mask)
@@ -286,7 +324,8 @@ class EcuZoneLineEdit(QLineEdit):
                 currData += currByteData[i]
 
             byte = (int(currData, 16) & mask) >> self.__shift(mask)
-            if "type" in self.zoneObject and self.zoneObject["type"] == "mileage":
+            if self.signed and byte & (1 << (self.signedBits - 1)):
+                byte -= 1 << self.signedBits
             if self.scale is not None:
                 value = self.offset + byte * self.scale
                 if self.decimals is not None:
