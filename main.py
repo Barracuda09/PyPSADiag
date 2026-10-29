@@ -36,7 +36,7 @@ from PySide6.QtCore import QTimer
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
 from ParseDTC import ParseDTC
-from DiagnosticCommunication import DiagnosticCommunication
+from DiagnosticCommunication import DiagnosticCommunication, ZoneWriteWorker
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
@@ -798,6 +798,8 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def writeZone(self):
+        if getattr(self, "_zoneWriteWorker", None) is not None:
+            return
         if self.serialController.isOpen():
             # Setup text of changed zones and put it into MessageBox
             virginWrite = self.ui.virginWriteZone.isChecked()
@@ -829,16 +831,63 @@ class MainWindow(QMainWindow):
             if "lin_id" in self.ecuObjectList:
                 lin = "L" + self.ecuObjectList["lin_id"]
 
-            if self.ecuObjectList["protocol"] == "uds":
-                self.udsCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
-            elif self.ecuObjectList["protocol"] == "kwp_is":
-                self.kwpisCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
-            elif self.ecuObjectList["protocol"] == "kwp_hab":
-                self.kwphabCommunication.writeZoneList(False, ecu, lin, key, valueList, self.ui.writeSecureTraceability.isChecked())
-            else:
+            communication = {
+                "uds": self.udsCommunication,
+                "kwp_is": self.kwpisCommunication,
+                "kwp_hab": self.kwphabCommunication,
+            }.get(self.ecuObjectList["protocol"])
+            if communication is None:
                 self.writeToOutputView(i18n().tr("Protocol not supported yet!"))
+                return
+            arguments = (False, ecu, lin, key, valueList,
+                         self.ui.writeSecureTraceability.isChecked())
+            if self.diagtool_type.lower() == "bluetooth":
+                self.startBluetoothZoneWrite(communication, arguments)
+            else:
+                communication.writeZoneList(*arguments)
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
+
+
+    def startBluetoothZoneWrite(self, communication, arguments):
+        self._zoneWriteWorker = ZoneWriteWorker(communication, arguments, self)
+        # Disable inputs, not their parent containers: the main console
+        # stays enabled for selection, scrolling and copying.
+        names = ("command", "sendCommand", "openCSVFile", "saveCSVFile",
+                 "openZoneFile", "syncZoneFiles", "diagtoolTypeComboBox",
+                 "canPinsComboBox", "wsIpInput", "portNameComboBox",
+                 "ConnectPort", "SearchConnectPort", "DisconnectPort",
+                 "ecuComboBox", "ecuKeyComboBox", "readZone", "writeZone",
+                 "flashEcu", "rebootEcu", "readEcuFaults", "clearEcuFaults",
+                 "disableEcoMode", "writeSecureTraceability", "virginWriteZone",
+                 "treeView", "mainMenu")
+        self._zoneWriteControls = [(getattr(self.ui, name), getattr(self.ui, name).isEnabled())
+                                   for name in names]
+        for widget, enabled in self._zoneWriteControls:
+            widget.setEnabled(False)
+        self._zoneWriteWorker.log.connect(self.outputToTextEditCallback)
+        self._zoneWriteWorker.outcome.connect(self.zoneWriteOutcome)
+        self._zoneWriteWorker.finished.connect(self.zoneWriteFinished)
+        self._zoneWriteWorker.start()
+
+    @Slot(bool)
+    def zoneWriteOutcome(self, ok):
+        self.writeToOutputView("Bluetooth write completed" if ok else
+                               "Bluetooth write incomplete — see zone results above")
+
+    @Slot()
+    def zoneWriteFinished(self):
+        for widget, enabled in self._zoneWriteControls:
+            widget.setEnabled(enabled)
+        self._zoneWriteWorker.deleteLater()
+        self._zoneWriteWorker = None
+
+    def closeEvent(self, event):
+        if getattr(self, "_zoneWriteWorker", None) is not None:
+            self.writeToOutputView("Wait for the active zone write to finish before closing.")
+            event.ignore()
+        else:
+            super().closeEvent(event)
 
 
     @Slot()
