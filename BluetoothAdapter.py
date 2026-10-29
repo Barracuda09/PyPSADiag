@@ -60,7 +60,8 @@ def _is_bluetooth_port(port) -> bool:
 
 
 class BluetoothAdapter:
-    BAUD_RATES = [115200, 57600, 38400, 19200, 9600, 230400]
+    zone_write_recovery = True
+    BAUD_RATES = [115200]
     POSIX_NOMINAL_BAUD = 115200
 
     AT_ST_NATIVE = "40"
@@ -84,7 +85,7 @@ class BluetoothAdapter:
         self.isotp_mode = "raw" if str(mode).lower() == "raw" else "native"
         self._isotp_pref = self.isotp_mode
         self._native_failed = False
-        self._native_segmented_tx = True
+        self._native_segmented_tx = False
 
         if debug_timing is None:
             debug_timing = os.environ.get("PYPSADIAG_BT_TIMING", "") not in ("", "0")
@@ -115,7 +116,9 @@ class BluetoothAdapter:
     def log(self, message, ui=False):
         log_msg = f"[BT] {message}"
         print(log_msg)
-        if ui and self.logger and \
+        if getattr(self, "progress_logger", None):
+            self.progress_logger(log_msg)
+        elif ui and self.logger and \
                 threading.current_thread() is threading.main_thread():
             self.logger(log_msg)
 
@@ -212,77 +215,31 @@ class BluetoothAdapter:
         return None, None
 
     def open(self, portNr, baudRate=None):
+        # Accept saved COM:baud selections, but always use the fixed speed.
+        if isinstance(portNr, str) and ":" in portNr and portNr.rsplit(":", 1)[-1].isdigit():
+            portNr = portNr.rsplit(":", 1)[0]
+        self.connected = False
+        self.detected_baud = None
         try:
-            detected_baud = None
-            if isinstance(portNr, str) and portNr.rsplit(":", 1)[-1].isdigit() \
-                    and ":" in portNr:
-                head, baud_str = portNr.rsplit(":", 1)
-                if head:
-                    portNr = head
-                    if int(baud_str) > 0:
-                        detected_baud = int(baud_str)
-
             self.serialPort.port = portNr
+            self.serialPort.baudrate = 115200
             self.serialPort.timeout = 3.0
             self.serialPort.write_timeout = 5.0
-
-            if _is_rfcomm_device(portNr):
-                baud = detected_baud or self.POSIX_NOMINAL_BAUD
-                self.log(f"Connecting to {portNr} (RFCOMM, line speed ignored)", ui=True)
-                self.serialPort.baudrate = baud
-                self.serialPort.open()
-                time.sleep(0.5)
-
-                if self._init_elm327():
-                    self.connected = True
-                    self.detected_baud = baud
-                    self._arm_exit_cleanup()
-                    self._start_keep_alive()
-                    return ""
+            self.log(f"Connecting to {portNr} @ 115200 baud", ui=True)
+            self.serialPort.open()
+            time.sleep(0.3)
+            if self._init_elm327():
+                self.connected = True
+                self.detected_baud = 115200
+                self._arm_exit_cleanup()
+                self._start_keep_alive()
+                return ""
+            self.serialPort.close()
+            return f"ELM327 not responding on {portNr} @ 115200 baud"
+        except (serial.SerialException, OSError) as e:
+            if self.serialPort.is_open:
                 self.serialPort.close()
-                return "ELM327 not responding on " + portNr
-
-            if detected_baud:
-                self.log(f"Connecting to {portNr} @ {detected_baud} baud (auto-detected)", ui=True)
-                self.serialPort.baudrate = detected_baud
-                self.serialPort.open()
-                time.sleep(0.5)
-
-                if self._init_elm327():
-                    self.connected = True
-                    self.detected_baud = detected_baud
-                    self._arm_exit_cleanup()
-                    self._start_keep_alive()
-                    return ""
-                self.serialPort.close()
-
-            self.log(f"Auto-detecting baud rate on {portNr}...", ui=True)
-            for baud in self.BAUD_RATES:
-                try:
-                    self.log(f"  Trying {baud} baud...", ui=True)
-                    self.serialPort.baudrate = baud
-                    if not self.serialPort.is_open:
-                        self.serialPort.open()
-                    time.sleep(0.3)
-
-                    if self._init_elm327():
-                        self.connected = True
-                        self.detected_baud = baud
-                        self.log(f"Connected @ {baud} baud", ui=True)
-                        self._arm_exit_cleanup()
-                        self._start_keep_alive()
-                        return ""
-
-                    self.serialPort.close()
-                except serial.SerialException:
-                    if self.serialPort.is_open:
-                        self.serialPort.close()
-                    continue
-
-            return "ELM327 not found: no response at any baud rate"
-
-        except serial.SerialException as e:
-            return f"Error opening Bluetooth port: {str(e)}"
+            return f"Error opening Bluetooth port: {e}"
 
     def _arm_exit_cleanup(self):
         if IS_WINDOWS or self._exit_hook_armed:
@@ -343,7 +300,7 @@ class BluetoothAdapter:
         if self._isotp_pref == "native":
             self.isotp_mode = "native"
             self._native_failed = False
-            self._native_segmented_tx = True
+            self._native_segmented_tx = False
 
         if self.isotp_mode == "native":
             if not self._init_native_isotp():
@@ -503,8 +460,9 @@ class BluetoothAdapter:
             if not self._native_segmented_tx:
                 return self._send_raw_excursion(data, timeout)
 
+        attempts = 2 if data[:2].upper() in ("19", "21", "22") else 1
         reasserted = False
-        for attempt in range(3):
+        for attempt in range(attempts):
             try:
                 self._drain_input()
                 t0 = time.monotonic()
@@ -516,8 +474,8 @@ class BluetoothAdapter:
                 self._timing("read", t0)
 
                 if response is None:
-                    if attempt < 2:
-                        self.log(f"No response for {data}, retry {attempt + 2}/3")
+                    if attempt + 1 < attempts:
+                        self.log(f"No response for {data}, retry {attempt + 2}/{attempts}")
                         time.sleep(0.15 * (attempt + 1))
                         continue
                     return "Timeout"
@@ -531,6 +489,9 @@ class BluetoothAdapter:
                                  f"({err}) — framing long requests in Python "
                                  f"from now on", ui=True)
                         return self._send_raw_excursion(data, timeout)
+                    if attempts == 1:
+                        self.log(f"Request not repeated after adapter error: {err}")
+                        return ""
                     if err == "?" and not self._native_failed:
                         if not reasserted:
                             reasserted = True
@@ -546,9 +507,9 @@ class BluetoothAdapter:
                         self.log("Response too long for native buffer — "
                                  "reading this one in raw mode")
                         return self._send_raw_excursion(data, timeout)
-                    if attempt < 2 and err in ("NO DATA", "CAN ERROR"):
+                    if attempt + 1 < attempts and err in ("NO DATA", "CAN ERROR"):
                         self.log(f"ELM327 error '{err}' for {data}, "
-                                 f"retry {attempt + 2}/3")
+                                 f"retry {attempt + 2}/{attempts}")
                         time.sleep(0.15 * (attempt + 1))
                         continue
                     self.log(f"ELM327 error: {err}")
@@ -556,9 +517,9 @@ class BluetoothAdapter:
 
                 parsed = self._parse_native_response(response)
                 if not parsed:
-                    if attempt < 2:
+                    if attempt + 1 < attempts:
                         self.log(f"Unparseable response for {data}: {response!r}, "
-                                 f"retry {attempt + 2}/3")
+                                 f"retry {attempt + 2}/{attempts}")
                         time.sleep(0.15 * (attempt + 1))
                         continue
                     self.log(f"Could not parse ELM response for {data}: "
@@ -633,11 +594,11 @@ class BluetoothAdapter:
         self._send_at(f"AT ST {self.at_st_native}")
 
     def _send_raw_excursion(self, data, timeout):
-        self._send_at("AT CAF0")
-        self._send_at("AT CFC0")
-        self._send_at("AT AT0")
-        self._send_at(f"AT ST {self.at_st_raw}")
         try:
+            for command in ("AT CAF0", "AT CFC0", "AT AT0", f"AT ST {self.at_st_raw}"):
+                if self._send_at(command) != "OK":
+                    self.log(f"Cannot prepare raw ISO-TP: {command}; request not sent")
+                    return ""
             return self._send_uds_raw(data, timeout)
         finally:
             if self.isotp_mode == "native":
@@ -659,7 +620,8 @@ class BluetoothAdapter:
             data_len = len(data) // 2
             read_timeout = max(timeout / 1000.0, 3.0)
 
-            for attempt in range(7):
+            attempts = 2 if data[:2].upper() in ("19", "21", "22") else 1
+            for attempt in range(attempts):
                 self._drain_input()
                 self._multiframe_incomplete = False
 
@@ -676,9 +638,9 @@ class BluetoothAdapter:
                 if data_len > 7 and result in ("", "Timeout"):
                     should_retry = True
 
-                if should_retry and attempt < 6:
+                if should_retry and attempt + 1 < attempts:
                     self.log(f"Retrying multi-frame for {data} "
-                             f"(attempt {attempt + 2}/7)...")
+                             f"(attempt {attempt + 2}/{attempts})...")
                     time.sleep(0.15 * (attempt + 1))
                     continue
 
@@ -689,61 +651,109 @@ class BluetoothAdapter:
                     else:
                         self.log(f"Retry OK for {data}")
 
-                return result
+                return "" if self._multiframe_incomplete else result
 
         except Exception as e:
             self.log(f"UDS send error: {e}")
             return ""
 
+    @staticmethod
+    def _parse_flow_control(response):
+        for line in (response or "").replace("\r", "\n").split("\n"):
+            frame = line.strip().replace(" ", "").upper()
+            if len(frame) >= 6 and re.fullmatch(r"[0-9A-F]+", frame) and frame[0] == "3":
+                if frame[:2] != "30":
+                    raise ValueError(f"ECU did not grant transmission (FC {frame[:2]})")
+                st = int(frame[4:6], 16)
+                if st <= 0x7F:
+                    delay = st / 1000.0
+                elif 0xF1 <= st <= 0xF9:
+                    delay = (st - 0xF0) / 10000.0
+                else:
+                    raise ValueError("Invalid ECU STmin")
+                return int(frame[2:4], 16), delay
+        raise ValueError(f"Missing/invalid ECU Flow Control: {response}")
+
     def _send_uds_multiframe(self, data, data_len, read_timeout):
+        responses_on = True
+        configured = False
+        def require(command):
+            if self._send_at(command) != "OK":
+                raise ValueError(f"Adapter rejected {command}")
+        def exchange(frame, label, one_response=False):
+            start = time.monotonic()
+            self._write_line(frame + ("1" if one_response else ""))
+            response = self._read_elm_response(read_timeout)
+            self.log(f"ISO-TP {label} TX {frame} RX {response!r} "
+                     f"({(time.monotonic() - start) * 1000:.0f} ms)")
+            return response
         try:
-            ff_pci = f"1{data_len:03X}"
-            ff_data = data[:12]
-            ff_frame = (ff_pci + ff_data).ljust(16, '0')
-
+            if not 8 <= data_len <= 4095:
+                raise ValueError("ISO-TP payload must contain 8..4095 bytes")
+            # ST30 is only 197 ms (shorter than this ECU's 200 ms P2).
+            # Set the larger final-response window BEFORE the First Frame.
+            configured = True
+            require("AT ST FF")
+            require("AT R1")
             self._drain_input()
-            self._write_line(ff_frame)
-
-            fc_response = self._read_elm_response(read_timeout)
-            if fc_response is None:
-                self.log("Multi-frame send: no FC from ECU")
+            ff = (f"1{data_len:03X}" + data[:12]).ljust(16, '0')
+            # Exactly one FC is expected. Do not wait another ST interval
+            # after it: that delay consumes the ECU's consecutive-frame timer.
+            response = exchange(ff, "FF/FC", one_response=True)
+            if response is None:
                 return "Timeout"
-
-            fc_ok = False
-            for fc_line in fc_response.replace("\r", "\n").split("\n"):
-                cleaned = fc_line.strip().replace(" ", "")
-                if cleaned and len(cleaned) >= 2 and \
-                   all(c in "0123456789ABCDEFabcdef" for c in cleaned):
-                    if (int(cleaned[0:2], 16) >> 4) == 3:
-                        fc_ok = True
-                        break
-
-            if not fc_ok:
-                self.log(f"Multi-frame send: invalid FC: {fc_response}")
-                return ""
-
-            remaining = data[12:]
-            seq = 1
+            block_size, delay = self._parse_flow_control(response)
+            self.log(f"ISO-TP FC: BS={block_size}, STmin={delay * 1000:g} ms; final ST=1044 ms")
+            remaining, seq, in_block = data[12:], 1, 0
+            last_reply = time.monotonic()
             while remaining:
                 is_last = len(remaining) <= 14
-
-                cf_pci = f"2{seq & 0x0F:X}"
-                cf_data = remaining[:14]
+                expects_fc = bool(block_size and in_block + 1 == block_size and not is_last)
+                wants_response = is_last or expects_fc
+                if wants_response != responses_on:
+                    # Only silence frames for which ISO-TP expects no reply.
+                    # Re-enable reception BEFORE the block boundary/final CF.
+                    require("AT R1" if wants_response else "AT R0")
+                    responses_on = wants_response
+                time.sleep(delay)
+                frame = (f"2{seq & 0x0F:X}" + remaining[:14]).ljust(16, '0')
                 remaining = remaining[14:]
-                cf_frame = (cf_pci + cf_data).ljust(16, '0')
-
-                self._write_line(cf_frame)
-                cf_resp = self._read_elm_response(read_timeout)
-
+                self.log(f"ISO-TP CF{seq}: gap after previous reply "
+                         f"{(time.monotonic() - last_reply) * 1000:.0f} ms")
+                response = exchange(frame, f"CF{seq}", one_response=expects_fc)
+                last_reply = time.monotonic()
+                if response is None:
+                    return "Timeout"
                 if is_last:
-                    return self._check_and_parse(cf_resp, read_timeout)
-
+                    result = self._check_and_parse(response, read_timeout)
+                    deadline = time.monotonic() + 30.0
+                    # Do not send mode-restoration AT commands while the ECU
+                    # is still completing the write: they may discard its ACK.
+                    while result.upper() == "7F" + data[:2].upper() + "78":
+                        if time.monotonic() >= deadline:
+                            return "Timeout"
+                        self.log("ISO-TP ECU response pending; waiting without resending")
+                        result = self.readData()
+                    return result
+                in_block += 1
+                if expects_fc:
+                    block_size, delay = self._parse_flow_control(response)
+                    in_block = 0
+                elif response.strip() not in ("", "OK"):
+                    raise ValueError(f"Unexpected transmit-only response: {response}")
                 seq += 1
-
             return ""
         except Exception as e:
-            self.log(f"Multi-frame send error: {e}")
+            self.log(f"Multi-frame send stopped: {e}")
             return ""
+        finally:
+            if configured:
+                # Restore even after failures so normal reads remain usable.
+                restored = self._send_at("AT R1") == "OK"
+                restored = (self._send_at(f"AT ST {self.at_st_raw}") == "OK") and restored
+                if not restored:
+                    self.log("ISO-TP adapter restoration failed; reconnect required")
+                    self.connected = False
 
     def _check_and_parse(self, response, read_timeout):
         if response is None:
@@ -802,6 +812,7 @@ class BluetoothAdapter:
                 cf_response = self._read_elm_response(read_timeout)
 
                 all_data = ff_data
+                expected_seq = 1
                 if cf_response:
                     for cf_line in cf_response.replace("\r", "\n").split("\n"):
                         cf_clean = cf_line.strip().replace(" ", "")
@@ -810,6 +821,11 @@ class BluetoothAdapter:
                         if not all(c in "0123456789ABCDEFabcdef" for c in cf_clean):
                             continue
                         if (int(cf_clean[0:2], 16) >> 4) == 2:
+                            if int(cf_clean[1], 16) != expected_seq or len(cf_clean) < 4:
+                                self._multiframe_incomplete = True
+                                self.log("Multi-frame receive: missing/out-of-order frame")
+                                return ""
+                            expected_seq = (expected_seq + 1) & 0x0F
                             all_data += cf_clean[2:].upper()
                 else:
                     self.log("Multi-frame error: no Consecutive Frames received after FC")
@@ -954,7 +970,8 @@ class BluetoothAdapter:
         clean_lines = [line.strip() for line in lines if line.strip()]
         if clean_lines:
             return "\n".join(clean_lines)
-        return None
+        # R0 successfully transmitted a frame and returned a bare prompt.
+        return "" if b">" in data else None
 
     def pause_keep_alive(self):
         self._ka_suspended = True

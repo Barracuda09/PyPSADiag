@@ -157,6 +157,11 @@ class DiagnosticCommunication(QThread):
             self.writeToOutputView("> " + cmd)
         receiveData = self.serialPort.sendReceive(cmd)
 
+        # A lost acknowledgement is not permission to execute a write again.
+        transport = getattr(self.serialPort, "transport", self.serialPort)
+        if cmd[:2].upper() in ("2E", "34", "3B") or type(transport).__name__ == "BluetoothAdapter":
+            retries = 0
+
         # Retry on Timeout
         retry = 0
         while receiveData == "Timeout" and retry < retries:
@@ -169,8 +174,12 @@ class DiagnosticCommunication(QThread):
         # 7F3E03 (Custom error)
         # 7Fxx78 (Request Correctly Received - Response Pending)
         if len(receiveData) >= 6:
+            pending_deadline = time.monotonic() + 30.0
             i = receiveData.find("7F3E03")
             while i >= 0 or (receiveData[:2] == "7F" and receiveData[4:6] == "78"):
+                if time.monotonic() >= pending_deadline:
+                    self.writeToOutputView("Response pending timed out; request was not repeated")
+                    return "Timeout"
                 self.writeToOutputView("< " + receiveData + "  " +  i18n().tr("** Skipping/Stripping **"))
                 time.sleep(0.2)
                 if i > 0:
@@ -377,7 +386,7 @@ class DiagnosticCommunication(QThread):
     def writeUDSZoneConfigurationCommand(self, zone: str(), data: str()):
         writeCmd = self.writeZoneTag + zone + data
         receiveData = self.writeECUCommand(writeCmd)
-        if len(receiveData) == 6 and receiveData[:2] == "6E":
+        if receiveData.upper() == "6E" + zone.upper():
             return True
 
         # Is Configuration Write in progress? then wait untill finished
@@ -390,8 +399,11 @@ class DiagnosticCommunication(QThread):
                 if tryCnt == 0:
                     self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
                     return False
-            self.writeToOutputView(i18n().tr("Write Configuration Zone: Ok"), receiveData)
-            return True
+            if receiveData.upper() == "6E" + zone.upper():
+                self.writeToOutputView(i18n().tr("Write Configuration Zone: Ok"), receiveData)
+                return True
+            self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
+            return False
         else:
             message = i18n().tr("Write Configuration Zone: Failed")
             if len(receiveData) >= 6 and receiveData[:2] == "7F":
@@ -435,6 +447,38 @@ class DiagnosticCommunication(QThread):
             return True
 
         self.writeToOutputView(i18n().tr("Write Configuration Zone: Failed"), receiveData)
+        return False
+
+    def _write_verified_bluetooth_zone(self, zone, data, before, require_ack=False):
+        """Recover a lost acknowledgement using read-back, not blind retries."""
+        expected = ("62" + zone + data).upper()
+        ack = ("6E" + zone).upper()
+        for attempt in range(2):
+            self.writeToOutputView(f"Zone {zone}: write attempt {attempt + 1}/2")
+            reply = self.writeECUCommand("2E" + zone + data, retries=0).upper()
+            time.sleep(0.2)
+            after = self.writeECUCommand("22" + zone, retries=0).upper()
+            if reply == ack and after == expected:
+                self.writeToOutputView(f"Zone {zone}: acknowledged and verified")
+                return True
+            # An unchanged pre-existing value cannot prove that this write ran.
+            # Traceability requires an ACK even if its visible bytes changed.
+            before_valid = before.upper().startswith(("62" + zone).upper()) and \
+                len(before) == len(expected) and all(c in "0123456789ABCDEF" for c in before.upper())
+            ambiguous = reply in ("", "TIMEOUT")
+            if not require_ack and ambiguous and before_valid and \
+                    before.upper() != expected and after == expected:
+                self.writeToOutputView(f"Zone {zone}: ACK lost, value change verified by read-back")
+                return True
+            readable = after.startswith(("62" + zone).upper()) and \
+                len(after) == len(expected) and all(c in "0123456789ABCDEF" for c in after)
+            if not ambiguous or not readable:
+                self.writeToOutputView(f"Zone {zone}: cannot confirm write; reply={reply!r}, read-back={after!r}")
+                return False
+            if attempt == 0:
+                self.writeToOutputView(f"Zone {zone}: ECU responds to read-back; retrying write once")
+                before = after
+        self.writeToOutputView(f"Zone {zone}: no confirmed write after two attempts")
         return False
 
     def writeZoneList(self, useSketchSeed: bool, ecuID: str, lin: str, key: str, valueList: list, writeSecureTraceability: bool):
@@ -484,29 +528,61 @@ class DiagnosticCommunication(QThread):
                 if not self.stopSendingKeepAlive():
                     return
 
-        # Write Zones
+        # Stop the batch on the first failed acknowledgement or verification.
+        total = sum(len(tab) for tab in valueList)
+        index = 0
         for tabList in valueList:
             for zone in tabList:
-                time.sleep(0.2)
+                index += 1
+                self.writeToOutputView(f"Writing zone {zone[0]} ({index}/{total})")
                 readCmd = self.readZoneTag + zone[0]
                 time.sleep(0.2)
-                receiveData = self.writeECUCommand(readCmd)
+                before = self.writeECUCommand(readCmd)
                 time.sleep(0.2)
+                transport = getattr(self.serialPort, "transport", self.serialPort)
+                if self.protocol == "uds" and getattr(transport, "zone_write_recovery", False) is True:
+                    if not self._write_verified_bluetooth_zone(zone[0], zone[1], before):
+                        self.writeToOutputView(f"Zone {zone[0]} unconfirmed; remaining zones were not written")
+                        self.stopDiagnosticMode()
+                        return False
+                    self.updateZoneDataSignal.emit(zone[0], zone[1])
+                    self.writeToOutputView(f"Zone {zone[0]} verified ({index}/{total})")
+                    continue
                 if self.protocol == "uds":
-                    self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
+                    ok = self.writeUDSZoneConfigurationCommand(zone[0], zone[1])
                 elif self.protocol == "kwp_is":
-                    self.writeKWPisZoneConfigurationCommand(zone[0], zone[1])
-                elif self.protocol == "kwp_hab":
-                    self.writeKWPhabZoneConfigurationCommand(zone[0], zone[1])
+                    ok = self.writeKWPisZoneConfigurationCommand(zone[0], zone[1])
+                else:
+                    ok = self.writeKWPhabZoneConfigurationCommand(zone[0], zone[1])
+                if not ok:
+                    self.writeToOutputView(f"Zone {zone[0]} not confirmed. Batch stopped; read the zone before trying again.")
+                    self.stopDiagnosticMode()
+                    return False
                 time.sleep(0.2)
                 receiveData = self.writeECUCommand(readCmd)
+                if self.protocol in ("uds", "kwp_hab"):
+                    prefix = "62" if self.protocol == "uds" else "61"
+                    if receiveData.upper() != (prefix + zone[0] + zone[1]).upper():
+                        self.writeToOutputView(f"Zone {zone[0]} read-back mismatch. Batch stopped.", receiveData)
+                        self.stopDiagnosticMode()
+                        return False
+                    self.updateZoneDataSignal.emit(zone[0], zone[1])
+                    self.writeToOutputView(f"Zone {zone[0]} verified ({index}/{total})")
 
         if self.protocol == "uds":
             receiveData = self.writeECUCommand(self.readSecureTraceability)
             if writeSecureTraceability:
-                receiveData = self.writeECUCommand(self.secureTraceability)
-                if len(receiveData) != 6 or receiveData[:2] != "6E":
+                transport = getattr(self.serialPort, "transport", self.serialPort)
+                if getattr(transport, "zone_write_recovery", False) is True:
+                    ok = self._write_verified_bluetooth_zone(self.secureTraceability[2:6],
+                            self.secureTraceability[6:], receiveData, require_ack=True)
+                    receiveData = "6E" + self.secureTraceability[2:6] if ok else ""
+                else:
+                    receiveData = self.writeECUCommand(self.secureTraceability)
+                if receiveData.upper() != "6E" + self.secureTraceability[2:6].upper():
                     self.writeToOutputView(i18n().tr("Configuration Write of Secure Traceability Zone: Failed"), receiveData)
+                    self.stopDiagnosticMode()
+                    return False
             else:
                 self.writeToOutputView(i18n().tr("NO Secure Traceability is Written!!"))
 
@@ -514,6 +590,7 @@ class DiagnosticCommunication(QThread):
             return
 
         self.writeToOutputView(i18n().tr("Write Successful"))
+        return True
 
     def flashEcu(self, ecuID: str, flashFile: DecodeCalUlpFile):
         if not self.serialPort.isOpen():
@@ -805,4 +882,33 @@ class DiagnosticCommunication(QThread):
                 self.isRunning = False
 
         # Always emit "Done" Signal
-        self.readZoneListDoneSignal.emit() 
+        self.readZoneListDoneSignal.emit()
+
+
+class ZoneWriteWorker(QThread):
+    log = Signal(str)
+    outcome = Signal(bool)
+
+    def __init__(self, communication, arguments, parent=None):
+        super().__init__(parent)
+        self.communication = communication
+        self.arguments = arguments
+
+    def run(self):
+        transport = self.communication.serialPort.transport
+        previous_logger = getattr(transport, "progress_logger", None)
+        previous_suspend = transport._ka_suspended
+        ok = False
+        # Keep the background ATI/tester-present loop out of the whole batch,
+        # including the gaps between security access and pending responses.
+        with transport._io_lock:
+            transport._ka_suspended = True
+            transport.progress_logger = self.log.emit
+            try:
+                ok = bool(self.communication.writeZoneList(*self.arguments))
+            except Exception as exc:
+                self.log.emit(f"Write stopped: {exc}. Read back the zone before retrying.")
+            finally:
+                transport.progress_logger = previous_logger
+                transport._ka_suspended = previous_suspend
+        self.outcome.emit(ok)
