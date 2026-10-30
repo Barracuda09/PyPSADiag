@@ -683,7 +683,7 @@
                     "extra_name": "CFG_GTK_CMB_REGUL_ADAS_GSR_V2_000",
                     "zoneLength": 24,
                     "name_original": "CFG_GTK_CMB_REGUL_ADAS_GSR_V2_000",
-                    "name": "CFG_GTK_CMB_REGUL_ADAS_GSR_V2_000",
+                    "name": "Enable ADAS GSR2 regulation features",
                     "byte": 23,
                     "mask": "00000100",
                     "form_type": "checkbox",

@@ -740,7 +740,7 @@
                     "extra_name": "GIZ_CMB_SLI_ENCAP_2020",
                     "zoneLength": [23, 24, 25, 26],
                     "name_original": "GIZ",
-                    "name": "GIZ_CMB_SLI_ENCAP_2020",
+                    "name": "Weather dependent speed limit",
                     "byte": 22,
                     "mask": "10000000",
                     "form_type": "checkbox",
@@ -856,7 +856,7 @@
                     "extra_name": "GTK_CMB_REGUL_ADAS_GSR_V2",
                     "zoneLength": 26,
                     "name_original": "GTK",
-                    "name": "GTK_CMB_REGUL_ADAS_GSR_V2",
+                    "name": "Enable ADAS GSR2 regulation features",
                     "byte": 25,
                     "mask": "00000010",
                     "form_type": "checkbox",
@@ -3334,8 +3334,17 @@
             "tab": "cal",
             "type": "raw",
             "byte": 0,
-            "form_type": "string",
-            "read_only": true
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "name": "Telecode count",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "string",
+                    "type": "raw"
+                }
+            ]
         },
         "D400": {
             "name": "Data_Push_Button_Status",
