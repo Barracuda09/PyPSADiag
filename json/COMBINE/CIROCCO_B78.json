@@ -732,24 +732,6 @@
                     "mask": "10000000",
                     "form_type": "checkbox",
                     "available_logic": "active_high"
-                },
-                {
-                    "extra_name": "CFG_D0G_CMB_CONF_RAPPORT_DRIVE_000",
-                    "name_original": "CFG_D0G_CMB_CONF_RAPPORT_DRIVE_000",
-                    "name": "Bit 6: reserved / B73C drive-gear configuration",
-                    "byte": 0,
-                    "mask": "01000000",
-                    "type": "raw",
-                    "form_type": "string"
-                },
-                {
-                    "extra_name": "CFG_RESERVE_1_000_B73C",
-                    "name_original": "CFG_RESERVE_1_000_B73C",
-                    "name": "Reserved bits (CFG_RESERVE_1_000_B73C)",
-                    "byte": 0,
-                    "mask": "00111111",
-                    "type": "raw",
-                    "form_type": "string"
                 }
             ]
         },
