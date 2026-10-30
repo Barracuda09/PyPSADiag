@@ -1,6 +1,6 @@
 {
     "_comment": "Adapted from CIROCCO.json",
-    "name": "combine",
+    "name": "CIROCCO B78",
     "tx_id": "75F",
     "rx_id": "65F",
     "protocol": "uds",
