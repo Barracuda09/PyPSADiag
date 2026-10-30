@@ -1,0 +1,864 @@
+{
+    "_comment": "Adapted from CIROCCO.json",
+    "name": "combine",
+    "tx_id": "75F",
+    "rx_id": "65F",
+    "protocol": "uds",
+    "dtc_lookup": "data/dtc/COMBINE.json",
+    "key_type": "multi",
+    "keys": {
+        "CIROCCO": "FAFA",
+        "CIROCCO_2": "716D",
+        "CIROCCO_3": "8487"
+    },
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "cmb": "Instrument Panel CIROCCO B78",
+        "cal": "Calibrations"
+    },
+    "zones": {
+        "2100": {
+            "name": "Telecoding_Fct_Main",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "CFG_D3N_CMB_CONF_MAINT_000",
+                    "name_original": "CFG_D3N_CMB_CONF_MAINT_000",
+                    "name": "Maintenance display",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_AV2_CMB_CONF_LVV_000",
+                    "name_original": "AV2",
+                    "name": "Vehicle speed limit indicator",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_AV1_CMB_CONF_RVV_000",
+                    "name_original": "AV1",
+                    "name": "Cruise control (RVV) indicator",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3W_CMB_CONF_RVVI_000",
+                    "name_original": "D3W",
+                    "name": "Adaptive Cruise Control (ACC) indicator",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3Y_CMB_ST_FCT_TNB_000",
+                    "name_original": "CFG_D3Y_CMB_ST_FCT_TNB_000",
+                    "name": "Seat belt warning function",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3Z_CMB_CONF_RANG3_TNB_000",
+                    "name_original": "CFG_D3Z_CMB_CONF_RANG3_TNB_000",
+                    "name": "Third-row seat belt warning",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3U_CMB_CONF_FCT_DESIGNATEUR_000",
+                    "name_original": "CFG_D3U_CMB_CONF_FCT_DESIGNATEUR_000",
+                    "name": "Designator function",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3O_CMB_ALERTES_001",
+                    "name_original": "CFG_D3O_CMB_ALERTES_001",
+                    "name": "display of vehicle warning messages",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D49_CMB_CONF_DOP_000",
+                    "name_original": "D49",
+                    "name": "Obstacle detection indicator",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D9Z_CMB_CONF_AVR_AVP_000",
+                    "name_original": "CFG_D9Z_CMB_CONF_AVR_AVP_000",
+                    "name": "AVR / AVP configuration",
+                    "byte": 1,
+                    "mask": "01100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D9Z_CMB_CONF_AVR_AVP_000_00"
+                        },
+                        {
+                            "mask": "00100000",
+                            "name": "CFG_D9Z_CMB_CONF_AVR_AVP_000_01"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "CFG_D9Z_CMB_CONF_AVR_AVP_000_10"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D7O_CMB_CONF_MESSAGE_JURIDIQ_000",
+                    "name_original": "CFG_D7O_CMB_CONF_MESSAGE_JURIDIQ_000",
+                    "name": "Legal message",
+                    "byte": 1,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D7P_CMB_CONF_CP_000",
+                    "name_original": "CFG_D7P_CMB_CONF_CP_000",
+                    "name": "City Park configuration",
+                    "byte": 1,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3P_CMB_CONF_SILHOUETTE_000",
+                    "name_original": "CFG_D3P_CMB_CONF_SILHOUETTE_000",
+                    "name": "Body shape configuration",
+                    "byte": 1,
+                    "mask": "00000111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D3P_CMB_CONF_SILHOUETTE_000_000"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D3P_CMB_CONF_SILHOUETTE_000_001"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D3P_CMB_CONF_SILHOUETTE_000_010"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D3P_CMB_CONF_SILHOUETTE_000_011"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D3F_CMB_CONF_AFFICHAGE_DATE_000",
+                    "name_original": "CFG_D3F_CMB_CONF_AFFICHAGE_DATE_000",
+                    "name": "Date display",
+                    "byte": 2,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D4A_CMB_CONF_AFFICHAGE_HEURE_000",
+                    "name_original": "CFG_D4A_CMB_CONF_AFFICHAGE_HEURE_000",
+                    "name": "Time display",
+                    "byte": 2,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3I_CMB_CONF_MENU_REG_DATE_000",
+                    "name_original": "CFG_D3I_CMB_CONF_MENU_REG_DATE_000",
+                    "name": "Date adjustment menu",
+                    "byte": 2,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3H_CMB_CONF_MENU_REG_HEURE_000",
+                    "name_original": "CFG_D3H_CMB_CONF_MENU_REG_HEURE_000",
+                    "name": "Time adjustment menu",
+                    "byte": 2,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3Q_CMB_CONF_ARTIV_000",
+                    "name_original": "CFG_D3Q_CMB_CONF_ARTIV_000",
+                    "name": "ARTIV configuration",
+                    "byte": 2,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_B7C_CMB_ODB_000",
+                    "name_original": "CFG_B7C_CMB_ODB_000",
+                    "name": "Trip computer",
+                    "byte": 2,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3X_CMB_CONF_ODO_PARTIEL_000",
+                    "name_original": "CFG_D3X_CMB_CONF_ODO_PARTIEL_000",
+                    "name": "Trip odometer",
+                    "byte": 2,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_B78_CMB_CLIM_000",
+                    "name_original": "CFG_B78_CMB_CLIM_000",
+                    "name": "Air conditioning",
+                    "byte": 2,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D40_CMB_THEME_DEFAUT_000",
+                    "name_original": "CFG_D40_CMB_THEME_DEFAUT_000",
+                    "name": "Default theme (raw code)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "CFG_ADS_CMB_CONF_NIVHU_000",
+                    "name_original": "ADS",
+                    "name": "Oil level indicator",
+                    "byte": 4,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3S_CMB_CONF_BVA_BVMP_000",
+                    "name_original": "CFG_D3S_CMB_CONF_BVA_BVMP_000",
+                    "name": "Automatic / piloted gearbox display",
+                    "byte": 4,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3T_CMB_CONF_GSI_000",
+                    "name_original": "CFG_D3T_CMB_CONF_GSI_000",
+                    "name": "Gear shift indicator (GSI)",
+                    "byte": 4,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3J_CMB_CONF_PAGE_T_EXT_000",
+                    "name_original": "CFG_D3J_CMB_CONF_PAGE_T_EXT_000",
+                    "name": "Outside temperature page",
+                    "byte": 4,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_BX9_CMB_CONF_STT_000",
+                    "name_original": "CFG_BX9_CMB_CONF_STT_000",
+                    "name": "Stop and Start system",
+                    "byte": 4,
+                    "mask": "00001000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D3M_CMB_CONF_TYPE_CLE_000",
+                    "name_original": "CFG_D3M_CMB_CONF_TYPE_CLE_000",
+                    "name": "Key type configuration",
+                    "byte": 4,
+                    "mask": "00000100",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_DA0_CMB_CONF_DSG_CHECK_000",
+                    "name_original": "CFG_DA0_CMB_CONF_DSG_CHECK_000",
+                    "name": "Designator CHECK function",
+                    "byte": 4,
+                    "mask": "00000010",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_DCD_CMB_PARAM_DIV_CONF_AUDIO_000",
+                    "name_original": "CFG_DCD_CMB_PARAM_DIV_CONF_AUDIO_000",
+                    "name": "Audio configuration",
+                    "byte": 4,
+                    "mask": "00000001",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D7R_CMB_CONF_NAV_000",
+                    "name_original": "CFG_D7R_CMB_CONF_NAV_000",
+                    "name": "Navigation display",
+                    "byte": 5,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D7S_CMB_CONF_POI_RADAR_000",
+                    "name_original": "D7S",
+                    "name": "Alerts, POI and hazardous areas indicator",
+                    "byte": 5,
+                    "mask": "01000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D7T_CMB_CONF_VIT_CONSEILLE_000",
+                    "name_original": "D7T",
+                    "name": "Recommended speed display",
+                    "byte": 5,
+                    "mask": "00100000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_DXZ_CMB_GENERATION_RVVI_000",
+                    "name_original": "CFG_DXZ_CMB_GENERATION_RVVI_000",
+                    "name": "Adaptive cruise control generation",
+                    "byte": 5,
+                    "mask": "00010000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                }
+            ]
+        },
+        "2200": {
+            "name": "Telecoding_Fct_Secondary",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "CFG_D3L_CMB_NOT_DATE_001",
+                    "name_original": "CFG_D3L_CMB_NOT_DATE_001",
+                    "name": "Date notation",
+                    "byte": 0,
+                    "mask": "11000000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D3L_CMB_NOT_DATE_001_00"
+                        },
+                        {
+                            "mask": "01000000",
+                            "name": "CFG_D3L_CMB_NOT_DATE_001_01"
+                        },
+                        {
+                            "mask": "10000000",
+                            "name": "CFG_D3L_CMB_NOT_DATE_001_10"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D7Q_CMB_CONF_GRAD_TACKY_000",
+                    "name_original": "CFG_D7Q_CMB_CONF_GRAD_TACKY_000",
+                    "name": "Speedometer graduations",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00100000",
+                            "name": "CFG_D7Q_CMB_CONF_GRAD_TACKY_000_1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "2300": {
+            "name": "Telecoding_Fct_HMI",
+            "tab": "cmb",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "CFG_D41_CMB_MODE_1_000",
+                    "name_original": "CFG_D41_CMB_MODE_1_000",
+                    "name": "Display mode slot 1",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D41_CMB_MODE_1_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D41_CMB_MODE_1_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D41_CMB_MODE_1_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D41_CMB_MODE_1_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D41_CMB_MODE_1_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D41_CMB_MODE_1_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D41_CMB_MODE_1_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D42_CMB_MODE_2_000",
+                    "name_original": "CFG_D42_CMB_MODE_2_000",
+                    "name": "Display mode slot 2",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D42_CMB_MODE_2_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D42_CMB_MODE_2_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D42_CMB_MODE_2_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D42_CMB_MODE_2_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D42_CMB_MODE_2_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D42_CMB_MODE_2_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D42_CMB_MODE_2_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D43_CMB_MODE_3_000",
+                    "name_original": "CFG_D43_CMB_MODE_3_000",
+                    "name": "Display mode slot 3",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D43_CMB_MODE_3_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D43_CMB_MODE_3_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D43_CMB_MODE_3_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D43_CMB_MODE_3_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D43_CMB_MODE_3_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D43_CMB_MODE_3_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D43_CMB_MODE_3_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D44_CMB_MODE_4_000",
+                    "name_original": "CFG_D44_CMB_MODE_4_000",
+                    "name": "Display mode slot 4",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D44_CMB_MODE_4_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D44_CMB_MODE_4_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D44_CMB_MODE_4_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D44_CMB_MODE_4_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D44_CMB_MODE_4_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D44_CMB_MODE_4_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D44_CMB_MODE_4_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D45_CMB_MODE_5_000",
+                    "name_original": "CFG_D45_CMB_MODE_5_000",
+                    "name": "Display mode slot 5",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D45_CMB_MODE_5_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D45_CMB_MODE_5_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D45_CMB_MODE_5_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D45_CMB_MODE_5_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D45_CMB_MODE_5_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D45_CMB_MODE_5_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D45_CMB_MODE_5_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D46_CMB_MODE_6_000",
+                    "name_original": "CFG_D46_CMB_MODE_6_000",
+                    "name": "Display mode slot 6",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D46_CMB_MODE_6_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D46_CMB_MODE_6_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D46_CMB_MODE_6_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D46_CMB_MODE_6_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D46_CMB_MODE_6_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D46_CMB_MODE_6_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D46_CMB_MODE_6_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D47_CMB_MODE_7_000",
+                    "name_original": "CFG_D47_CMB_MODE_7_000",
+                    "name": "Display mode slot 7",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D47_CMB_MODE_7_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D47_CMB_MODE_7_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D47_CMB_MODE_7_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D47_CMB_MODE_7_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D47_CMB_MODE_7_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D47_CMB_MODE_7_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D47_CMB_MODE_7_000_6"
+                        }
+                    ]
+                },
+                {
+                    "extra_name": "CFG_D48_CMB_MODE_8_000",
+                    "name_original": "CFG_D48_CMB_MODE_8_000",
+                    "name": "Display mode slot 8",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "form_type": "combobox",
+                    "params": [
+                        {
+                            "mask": "00000000",
+                            "name": "CFG_D48_CMB_MODE_8_000_0"
+                        },
+                        {
+                            "mask": "00000001",
+                            "name": "CFG_D48_CMB_MODE_8_000_1"
+                        },
+                        {
+                            "mask": "00000010",
+                            "name": "CFG_D48_CMB_MODE_8_000_2"
+                        },
+                        {
+                            "mask": "00000011",
+                            "name": "CFG_D48_CMB_MODE_8_000_3"
+                        },
+                        {
+                            "mask": "00000100",
+                            "name": "CFG_D48_CMB_MODE_8_000_4"
+                        },
+                        {
+                            "mask": "00000101",
+                            "name": "CFG_D48_CMB_MODE_8_000_5"
+                        },
+                        {
+                            "mask": "00000110",
+                            "name": "CFG_D48_CMB_MODE_8_000_6"
+                        }
+                    ]
+                }
+            ]
+        },
+        "D600": {
+            "name": "Data_Clock_Presense",
+            "tab": "cal",
+            "type": "raw",
+            "form_type": "multi",
+            "params": [
+                {
+                    "extra_name": "MP_PRESENCE_MONTRE",
+                    "name_original": "MP_PRESENCE_MONTRE",
+                    "name": "Clock present",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high"
+                },
+                {
+                    "extra_name": "CFG_D0G_CMB_CONF_RAPPORT_DRIVE_000",
+                    "name_original": "CFG_D0G_CMB_CONF_RAPPORT_DRIVE_000",
+                    "name": "Bit 6: reserved / B73C drive-gear configuration",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "CFG_RESERVE_1_000_B73C",
+                    "name_original": "CFG_RESERVE_1_000_B73C",
+                    "name": "Reserved bits (CFG_RESERVE_1_000_B73C)",
+                    "byte": 0,
+                    "mask": "00111111",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
+        },
+        "D400": {
+            "name": "Data_Push_Button_Status",
+            "tab": "cal",
+            "type": "raw",
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "extra_name": "MP_ETAT_TOUCHE_AIDE_STATIONNEMENT_AR",
+                    "name_original": "MP_ETAT_TOUCHE_AIDE_STATIONNEMENT_AR",
+                    "name": "Semi-automatic parking assistance button",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_TOUCHE_FRANCHISSEMENT_LIGNE",
+                    "name_original": "MP_ETAT_TOUCHE_FRANCHISSEMENT_LIGNE",
+                    "name": "Lane departure warning system button",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_TOUCHE_ANGLE_MORT_AR",
+                    "name_original": "MP_ETAT_TOUCHE_ANGLE_MORT_AR",
+                    "name": "Blind spot monitoring button",
+                    "byte": 0,
+                    "mask": "00000010",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_TOUCHE_ASSISTANCE_FEUX_AUTOMATIQUE",
+                    "name_original": "MP_ETAT_TOUCHE_ASSISTANCE_FEUX_AUTOMATIQUE",
+                    "name": "Main beam headlamps assistant button",
+                    "byte": 0,
+                    "mask": "00000001",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_TOUCHE_ESP",
+                    "name_original": "MP_ETAT_TOUCHE_ESP",
+                    "name": "MP_ETAT_TOUCHE_ESP",
+                    "byte": 1,
+                    "mask": "10000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_PRESENCE_DESIGNATEUR_TELEMATIQUE",
+                    "name_original": "MP_PRESENCE_DESIGNATEUR_TELEMATIQUE",
+                    "name": "Telematic navigator button",
+                    "byte": 1,
+                    "mask": "01000000",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
+        },
+        "D401": {
+            "name": "Data_Trip_Reset_And_Rheostat_Buttons",
+            "tab": "cal",
+            "type": "raw",
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "extra_name": "MP_ETAT_RAZ_ODOMETRE_1",
+                    "name_original": "MP_ETAT_RAZ_ODOMETRE_1",
+                    "name": "odometer reset button",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_RHEOSTAT_MOINS_1",
+                    "name_original": "MP_ETAT_RHEOSTAT_MOINS_1",
+                    "name": "Rheostat \"Minus\" button",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "type": "raw",
+                    "form_type": "string"
+                },
+                {
+                    "extra_name": "MP_ETAT_RHEOSTAT_PLUS_2",
+                    "name_original": "MP_ETAT_RHEOSTAT_PLUS_2",
+                    "name": "Rheostat \"Plus\" button",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "type": "raw",
+                    "form_type": "string"
+                }
+            ]
+        },
+        "DA10": {
+            "name": "Data_HMI_Control_Command_2",
+            "tab": "cal",
+            "type": "raw",
+            "form_type": "string",
+            "read_only": true,
+            "byte": 0
+        }
+    }
+}
