@@ -1,0 +1,658 @@
+{
+    "name": "SAC Autoliv",
+    "tx_id": "744",
+    "rx_id": "644",
+    "protocol": "kwp_hab",
+    "key_type": "single",
+    "keys": "B2DF",
+    "coding": false,
+    "errors": true,
+    "include_zone_object": "./data/IdentKWPECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "D0": {
+            "id": "Airbag_Configuration",
+            "name": "Airbag configuration",
+            "tab": "tele",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "multi",
+            "read_only": true,
+            "params": [
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_LEFT_BELT_PRETENSIONER",
+                    "name": "Front left seat belt pretensioner",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_RIGHT_BELT_PRETENSIONER",
+                    "name": "Front right seat belt pretensioner",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_ROW2_LEFT_BELT_PRETENSIONER",
+                    "name": "Row 2 left seat belt pretensioner",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_ROW2_RIGHT_BELT_PRETENSIONER",
+                    "name": "Row 2 right seat belt pretensioner",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_ROW2_CENTRE_BELT_PRETENSIONER",
+                    "name": "Row 2 centre seat belt pretensioner",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_AIRBAG_STAGE_1",
+                    "name": "Driver airbag, stage 1",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "01000000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "40"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_AIRBAG_STAGE_2",
+                    "name": "Driver airbag, stage 2",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_AIRBAG_STAGE_1",
+                    "name": "Passenger airbag, stage 1",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "10000000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "80"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_AIRBAG_STAGE_2",
+                    "name": "Passenger airbag, stage 2",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_KNEE_AIRBAG",
+                    "name": "Driver knee airbag",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_KNEE_AIRBAG",
+                    "name": "Passenger knee airbag",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_LEFT_SIDE_AIRBAG",
+                    "name": "Front left side airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_RIGHT_SIDE_AIRBAG_B2",
+                    "name": "Front right side airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_REAR_LEFT_SIDE_AIRBAG",
+                    "name": "Rear left side airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_REAR_RIGHT_SIDE_AIRBAG",
+                    "name": "Rear right side airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_LEFT_CURTAIN_AIRBAG",
+                    "name": "Left curtain airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_RIGHT_CURTAIN_AIRBAG",
+                    "name": "Right curtain airbag",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00100000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_SEAT_POSITION_SENSOR",
+                    "name": "Driver seat position sensor",
+                    "byte": 4,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_SEAT_POSITION_SENSOR",
+                    "name": "Passenger seat position sensor",
+                    "byte": 4,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_REAR_LEFT_IMPACT_SENSOR",
+                    "name": "Rear left impact sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_REAR_RIGHT_IMPACT_SENSOR",
+                    "name": "Rear right impact sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_LEFT_IMPACT_SENSOR",
+                    "name": "Front left impact sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_RIGHT_IMPACT_SENSOR",
+                    "name": "Front right impact sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_OCCUPANCY_SENSOR",
+                    "name": "Passenger occupancy sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00100000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_OCCUPANCY_SENSOR",
+                    "name": "Driver occupancy sensor",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "01000000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "40"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_AIRBAG_DEACTIVATION_SWITCH",
+                    "name": "Passenger airbag deactivation switch",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "10000000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "80"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_LEFT_HEAD_SIDE_AIRBAG",
+                    "name": "Front left head side airbag",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_FRONT_RIGHT_SIDE_AIRBAG_B6",
+                    "name": "Front right side airbag",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_BELT_RETRACTOR_PRETENSIONER",
+                    "name": "Passenger seat belt retractor pretensioner",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_BELT_RETRACTOR_PRETENSIONER",
+                    "name": "Driver seat belt retractor pretensioner",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_ROW1_CENTRE_BELT_PRETENSIONER",
+                    "name": "Row 1 centre seat belt pretensioner",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00100000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PEDESTRIAN_IMPACT_DETECTION_ECU",
+                    "name": "Pedestrian impact detection ECU",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "01000000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "40"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_WIRED_EMERGENCY_CALL",
+                    "name": "Wired emergency call",
+                    "byte": 7,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_PASSENGER_ANTI_SUBMARINING_AIRBAG",
+                    "name": "Passenger anti-submarining airbag",
+                    "byte": 7,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_SAC_AUTOLIV_DRIVER_ANTI_SUBMARINING_AIRBAG",
+                    "name": "Driver anti-submarining airbag",
+                    "byte": 7,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00100000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "20"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
