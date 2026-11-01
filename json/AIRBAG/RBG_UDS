@@ -1,0 +1,411 @@
+{
+    "name": "AIRBAG UDS",
+    "tx_id": "744",
+    "rx_id": "644",
+    "protocol": "uds",
+    "key_type": "multi",
+    "keys": {
+        "RBG_SPEED_UDS (Continental)": "E55A",
+        "RBG_UDS (Bosch)": "CB2D",
+        "RBG_UDS_AUTOLIV": "B2DF",
+        "RBG_UDS_VEONEER": "B2DF"
+    },
+    "coding": true,
+    "errors": true,
+    "include_zone_object": "./data/IdentUDSECU.json",
+    "tabs": {
+        "ident": "Identification",
+        "vin": "VIN",
+        "tele": "Telecoding"
+    },
+    "zones": {
+        "2100": {
+            "id": "Airbag_Configuration_2100",
+            "name": "Configuration 2100 (Continental / Bosch / Autoliv)",
+            "tab": "tele",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "multi",
+            "read_only": false,
+            "params": [
+                {
+                    "id": "CFG_RBG_SPEED_UDS_DRIVER_AIRBAG_STAGE_1",
+                    "name": "Driver airbag, stage 1 (Continental only)",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_PASSENGER_AIRBAG_STAGE_1",
+                    "name": "Passenger airbag, stage 1 (Continental only)",
+                    "byte": 0,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_FRONT_LEFT_BELT_PRETENSIONER",
+                    "name": "Front left seat belt pretensioner (Continental only)",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_FRONT_RIGHT_BELT_PRETENSIONER",
+                    "name": "Front right seat belt pretensioner (Continental only)",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_RIGHT_CURTAIN_AIRBAG",
+                    "name": "Right curtain airbag (Continental only)",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_LEFT_CURTAIN_AIRBAG",
+                    "name": "Left curtain airbag (Continental only)",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_RIGHT_SIDE_AIRBAG",
+                    "name": "Right side airbag (Continental only)",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000010",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "02"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_LEFT_SIDE_AIRBAG",
+                    "name": "Left side airbag (Continental only)",
+                    "byte": 2,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_RIGHT_SIDE_IMPACT_SENSOR",
+                    "name": "Right side impact sensor (Continental only)",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_LEFT_SIDE_IMPACT_SENSOR",
+                    "name": "Left side impact sensor (Continental only)",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_PASSENGER_AIRBAG_DEACTIVATION_SWITCH",
+                    "name": "Passenger airbag deactivation switch (Continental only)",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000001",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "01"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_AIRBAG_UDS_2100_STEERING_SIDE",
+                    "name": "Steering wheel side (Continental / Bosch / Autoliv)",
+                    "byte": 6,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00110000",
+                    "params": [
+                        {
+                            "name": "Right-hand drive",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Left-hand drive",
+                            "value": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_DRIVER_LAP_BELT_PRETENSIONER",
+                    "name": "Driver lap belt pretensioner (Continental only)",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000100",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_PASSENGER_LAP_BELT_PRETENSIONER",
+                    "name": "Passenger lap belt pretensioner (Continental only)",
+                    "byte": 1,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00001000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "08"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_ROW2_LEFT_BELT_PRETENSIONER",
+                    "name": "Row 2 left seat belt pretensioner (Continental only)",
+                    "byte": 3,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00010000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_SPEED_UDS_ROW2_RIGHT_BELT_PRETENSIONER",
+                    "name": "Row 2 right seat belt pretensioner (Continental only)",
+                    "byte": 3,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00100000",
+                    "params": [
+                        {
+                            "name": "Absent",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Present",
+                            "value": "20"
+                        }
+                    ]
+                }
+            ]
+        },
+        "2101": {
+            "id": "Airbag_Configuration_2101",
+            "name": "Configuration 2101 (Veoneer only)",
+            "tab": "tele",
+            "type": "raw",
+            "byte": 0,
+            "form_type": "multi",
+            "read_only": false,
+            "params": [
+                {
+                    "id": "CFG_RBG_UDS_VEONEER_STEERING_SIDE",
+                    "name": "Steering wheel side (Veoneer only)",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00110000",
+                    "params": [
+                        {
+                            "name": "Unspecified",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Left-hand drive",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Right-hand drive",
+                            "value": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "CFG_RBG_UDS_VEONEER_PASSENGER_AIRBAG_DEACTIVATION",
+                    "name": "Passenger airbag presence and deactivation (Veoneer only)",
+                    "byte": 5,
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "mask": "00000111",
+                    "params": [
+                        {
+                            "name": "Unspecified",
+                            "value": "00"
+                        },
+                        {
+                            "name": "Automatic passenger airbag deactivation switch",
+                            "value": "03"
+                        },
+                        {
+                            "name": "Manual passenger airbag deactivation switch",
+                            "value": "05"
+                        },
+                        {
+                            "name": "No passenger airbag deactivation switch",
+                            "value": "06"
+                        }
+                    ]
+                }
+            ]
+        },
+        "F190": {
+            "id": "VIN",
+            "name": "VIN",
+            "tab": "vin",
+            "read_only": false,
+            "type": "string_ascii",
+            "byte": 0,
+            "byte_range": 17,
+            "form_type": "string"
+        },
+        "D600": {
+            "id": "Airbag_Lock_Status",
+            "name": "Airbag lock status (Continental / Bosch / Autoliv)",
+            "tab": "ident",
+            "read_only": true,
+            "type": "raw",
+            "byte": 0,
+            "mask": "11111111",
+            "form_type": "combobox",
+            "params": [
+                {
+                    "name": "Locked",
+                    "value": "15"
+                },
+                {
+                    "name": "Unlocked",
+                    "value": "1A"
+                }
+            ]
+        }
+    }
+}
