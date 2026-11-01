@@ -496,6 +496,7 @@ class MainWindow(QMainWindow):
 
     # Update ECU Combobox and Zone Tree view with "new" Zone file
     def updateEcuZonesAndKeys(self, ecuObjectList: dict):
+        self._resetCSVSnapshot()
         # Update ECU Zone ComboBox
         self.ui.ecuComboBox.clear()
         name = ecuObjectList["name"]
@@ -622,8 +623,7 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def disconnectPort(self):
-        if self.stream != None:
-            self.stream.close()
+        self._closeReadCSV()
         self.serialController.close()
         self.ui.diagtoolTypeComboBox.setEnabled(True)
         self.ui.canPinsComboBox.setEnabled(True)
@@ -672,6 +672,51 @@ class MainWindow(QMainWindow):
         else:
             self.writeToOutputView(i18n().tr("Port not open!"))
 
+    def _closeReadCSV(self):
+        if self.stream is not None:
+            self.stream.close()
+        self.stream = None
+        self.csvWriter = None
+
+    def _resetCSVSnapshot(self):
+        self._closeReadCSV()
+        self._csvRows = None
+        self._csvBaseline = {}
+        self._csvPendingBaseline = set()
+
+    def _csvViewValues(self):
+        return {row[0].upper(): row[1]
+                for tab in self.ui.treeView.getValuesAsCSV() for row in tab}
+
+    def _rememberCSVRow(self, row):
+        if getattr(self, "_csvRows", None) is None:
+            self._csvRows = []
+            self._csvBaseline = {}
+        self._csvRows.append(list(row))
+        if len(row) >= 2:
+            zone = row[0].upper()
+            self._csvBaseline[zone] = self._csvViewValues().get(zone)
+
+    def _rowsForCSVExport(self):
+        # The read packets are the authoritative order, descriptions and errors.
+        # Widgets are only an overlay for values actually changed in the editor.
+        current = self._csvViewValues()
+        source = getattr(self, "_csvRows", None)
+        if source is None:
+            view_rows = {r[0].upper(): r for tab in self.ui.treeView.getValuesAsCSV() for r in tab}
+            return [view_rows[z.upper()] for z in self.ecuObjectList.get("zones", {})
+                    if z.upper() in view_rows]
+        rows = [list(row) for row in source]
+        last_row = {row[0].upper(): i for i, row in enumerate(rows) if len(row) >= 2}
+        for zone, index in last_row.items():
+            if zone not in current or current[zone] == self._csvBaseline.get(zone):
+                continue
+            value = current[zone]
+            if not value or value in ("None", "Disabled"):
+                raise ValueError(f"Zone {zone}: invalid edited value; CSV was not saved")
+            rows[index][1] = value
+        return rows
+
     @Slot()
     def openCSVFile(self):
         path = os.path.join(os.path.dirname(__file__), "csv")
@@ -679,6 +724,8 @@ class MainWindow(QMainWindow):
         if fileName[0] == "":
             return
 
+        self._resetCSVSnapshot()
+        self._csvRows = []
         self.ui.treeView.clearZoneListValues()
         self.ui.setFilePathInWindowsTitle(fileName[0])
         self.fileLoaderThread.enable(fileName[0], 0)
@@ -690,16 +737,15 @@ class MainWindow(QMainWindow):
         if fileName[0] == "":
             return
 
-        # Open CSV for writing
+        try:
+            rows = self._rowsForCSVExport()
+        except ValueError as exc:
+            self.writeToOutputView(str(exc))
+            return
+        # A manual export must not replace the live read writer or stay open.
+        with open(fileName[0], 'w', newline='', encoding='utf-8') as stream:
+            csv.writer(stream).writerows(rows)
         self.ui.setFilePathInWindowsTitle(fileName[0])
-        self.stream = open(fileName[0], 'w', newline='', encoding='utf-8')
-        self.csvWriter = csv.writer(self.stream)
-        if self.stream != None:
-            valueList = self.ui.treeView.getValuesAsCSV()
-            for tabList in valueList:
-                for zone in tabList:
-                    self.csvWriter.writerow(zone)
-            self.stream.flush()
 
     @Slot()
     def openZoneFile(self):
@@ -748,6 +794,8 @@ class MainWindow(QMainWindow):
             if fileName[0] == "":
                 return
 
+            self._resetCSVSnapshot()
+            self._csvRows = []
             self.ui.treeView.clearZoneListValues()
 
             # Open CSV for writing
@@ -879,6 +927,12 @@ class MainWindow(QMainWindow):
     def zoneWriteFinished(self):
         for widget, enabled in self._zoneWriteControls:
             widget.setEnabled(enabled)
+        pending = getattr(self, "_csvPendingBaseline", set())
+        if pending:
+            current = self._csvViewValues()
+            for zone in pending:
+                self._csvBaseline[zone] = current.get(zone)
+            pending.clear()
         self._zoneWriteWorker.deleteLater()
         self._zoneWriteWorker = None
 
@@ -1271,17 +1325,34 @@ class MainWindow(QMainWindow):
         # Did we had an empty line in CSV? Then skip it.
         if len(value) >= 2:
             self.ui.treeView.changeZoneOption(value[0], value[1])
+        self._rememberCSVRow(value)
 
     @Slot()
     def readZoneListDoneCallback(self):
+        self._closeReadCSV()
         self.ui.flashEcu.setEnabled(True)
 
         # Enable UI again
         self.setEnabled(True)
+        if getattr(self, "_csvRows", None) is not None:
+            self._csvBaseline = self._csvViewValues()
+            self._csvPendingBaseline = set()
 
     @Slot()
     def updateZoneDataback(self, zoneData: str, value: str):
         self.ui.treeView.changeZoneOption(zoneData, value)
+        if getattr(self, "_csvRows", None) is not None:
+            zone = zoneData.upper()
+            for row in reversed(self._csvRows):
+                if len(row) >= 2 and row[0].upper() == zone:
+                    row[1] = value
+                    if self.ui.treeView.isEnabled():
+                        self._csvBaseline[zone] = self._csvViewValues().get(zone)
+                    else:
+                        if not hasattr(self, "_csvPendingBaseline"):
+                            self._csvPendingBaseline = set()
+                        self._csvPendingBaseline.add(zone)
+                    break
 
     @Slot()
     def outputToTextEditCallback(self, text: str):
@@ -1291,6 +1362,7 @@ class MainWindow(QMainWindow):
     def serialPacketReceiverCallback(self, packet: list, time: float):
         self.writeToOutputView(str(packet))
         if self.stream != None:
+            self._rememberCSVRow(packet)
             self.csvWriter.writerow(packet)
             self.stream.flush()
 
