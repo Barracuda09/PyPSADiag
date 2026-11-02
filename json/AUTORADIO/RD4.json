@@ -224,7 +224,7 @@
             "form_type": "combobox",
             "params": [
                 { "mask": "00000000", "name": "0 - Passive"},
-                { "mask": "01000000", "name": "1 - Active"}
+                { "mask": "00100000", "name": "1 - Active"}
             ]
         },
         {
