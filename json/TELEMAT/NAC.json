@@ -26,6 +26,318 @@
         "telemat": "Telematic Unit (BTEL)",
         "cal": "Calibrations"
     },
+    "enums": {
+        "FMUX_SOURCE": [
+            {
+                "value": "00",
+                "name": "Unassigned (0x00)"
+            },
+            {
+                "value": "01",
+                "name": "H_SRC (0x01)"
+            },
+            {
+                "value": "02",
+                "name": "H_OK_MENU (0x02)"
+            },
+            {
+                "value": "03",
+                "name": "H_ESC (0x03)"
+            },
+            {
+                "value": "04",
+                "name": "H_MODE (0x04)"
+            },
+            {
+                "value": "05",
+                "name": "H_COMODO_GAUCHE (0x05)"
+            },
+            {
+                "value": "06",
+                "name": "H_TEL (0x06)"
+            },
+            {
+                "value": "07",
+                "name": "H_SEEK- (0x07)"
+            },
+            {
+                "value": "08",
+                "name": "H_PUSH (0x08)"
+            },
+            {
+                "value": "09",
+                "name": "H_COMODO_DROIT (0x09)"
+            },
+            {
+                "value": "0A",
+                "name": "H_PARK (0x0A)"
+            },
+            {
+                "value": "0B",
+                "name": "H_MEMPUSH (0x0B)"
+            },
+            {
+                "value": "0C",
+                "name": "H_LIST (0x0C)"
+            },
+            {
+                "value": "0D",
+                "name": "H_MUTE (0x0D)"
+            },
+            {
+                "value": "0E",
+                "name": "F_CONFIG (0x0E)"
+            },
+            {
+                "value": "0F",
+                "name": "F_SRC (0x0F)"
+            },
+            {
+                "value": "10",
+                "name": "F_STANDBYMODE (0x10)"
+            },
+            {
+                "value": "11",
+                "name": "H_RECO_VOC (0x11)"
+            },
+            {
+                "value": "12",
+                "name": "F_EJECT (0x12)"
+            },
+            {
+                "value": "13",
+                "name": "F_MDRIVE (0x13)"
+            },
+            {
+                "value": "14",
+                "name": "H_AUDDIAL (0x14)"
+            },
+            {
+                "value": "15",
+                "name": "F_HYBRID (0x15)"
+            },
+            {
+                "value": "16",
+                "name": "F_CLIM_OPT (0x16)"
+            },
+            {
+                "value": "17",
+                "name": "F_DARK (0x17)"
+            },
+            {
+                "value": "18",
+                "name": "F_MENU (0x18)"
+            },
+            {
+                "value": "19",
+                "name": "H_LIST_MOINS (0x19)"
+            },
+            {
+                "value": "1A",
+                "name": "F_PHONE (0x1A)"
+            },
+            {
+                "value": "1B",
+                "name": "H_LIST_PLUS (0x1B)"
+            },
+            {
+                "value": "1C",
+                "name": "H_LIST_TEL (0x1C)"
+            },
+            {
+                "value": "1D",
+                "name": "H_LIST_VALID (0x1D)"
+            },
+            {
+                "value": "1E",
+                "name": "F_MEDIA (0x1E)"
+            },
+            {
+                "value": "1F",
+                "name": "H_SRC_MUTE (0x1F)"
+            },
+            {
+                "value": "20",
+                "name": "F_NAV (0x20)"
+            },
+            {
+                "value": "21",
+                "name": "F_MASS_C (0x21)"
+            },
+            {
+                "value": "22",
+                "name": "F_SETUP (0x22)"
+            },
+            {
+                "value": "23",
+                "name": "F_MASS_P (0x23)"
+            },
+            {
+                "value": "24",
+                "name": "F_1 (0x24)"
+            },
+            {
+                "value": "25",
+                "name": "F_2 (0x25)"
+            },
+            {
+                "value": "26",
+                "name": "F_3 (0x26)"
+            },
+            {
+                "value": "27",
+                "name": "F_FONCTION_4 (0x27)"
+            },
+            {
+                "value": "28",
+                "name": "F_FONCTION_5 (0x28)"
+            },
+            {
+                "value": "29",
+                "name": "F_FONCTION_6 (0x29)"
+            },
+            {
+                "value": "2A",
+                "name": "F_ESC_FACADE (0x2A)"
+            },
+            {
+                "value": "2B",
+                "name": "F_ESC_DESIGNATEUR (0x2B)"
+            },
+            {
+                "value": "2C",
+                "name": "F_DISPLAY_DARK (0x2C)"
+            },
+            {
+                "value": "2D",
+                "name": "F_DISPLAY (0x2D)"
+            },
+            {
+                "value": "2E",
+                "name": "F_TA_INFO (0x2E)"
+            },
+            {
+                "value": "2F",
+                "name": "F_TA (0x2F)"
+            },
+            {
+                "value": "30",
+                "name": "F_SOURCE_TEL (0x30)"
+            },
+            {
+                "value": "31",
+                "name": "F_BAND (0x31)"
+            },
+            {
+                "value": "32",
+                "name": "F_LIST (0x32)"
+            },
+            {
+                "value": "33",
+                "name": "F_AUDIO (0x33)"
+            },
+            {
+                "value": "34",
+                "name": "F_FLECHE_GAUCHE (0x34)"
+            },
+            {
+                "value": "35",
+                "name": "F_FLECHE_DROITR (0x35)"
+            },
+            {
+                "value": "36",
+                "name": "F_MICRO (0x36)"
+            },
+            {
+                "value": "37",
+                "name": "F_MODE (0x37)"
+            },
+            {
+                "value": "38",
+                "name": "F_WEB (0x38)"
+            },
+            {
+                "value": "39",
+                "name": "F_DRIVE (0x39)"
+            },
+            {
+                "value": "3A",
+                "name": "F_CLIMATE (0x3A)"
+            },
+            {
+                "value": "3B",
+                "name": "F_FLECHE_HAUT (0x3B)"
+            },
+            {
+                "value": "3C",
+                "name": "F_FLECHE_BAS (0x3C)"
+            },
+            {
+                "value": "3D",
+                "name": "F_FLECHE_OK (0x3D)"
+            },
+            {
+                "value": "3E",
+                "name": "F_DECROCHER (0x3E)"
+            },
+            {
+                "value": "3F",
+                "name": "F_RACCROCHER (0x3F)"
+            },
+            {
+                "value": "40",
+                "name": "F_RADIO (0x40)"
+            },
+            {
+                "value": "41",
+                "name": "F_MUSIC (0x41)"
+            },
+            {
+                "value": "42",
+                "name": "F_TRAFFIC (0x42)"
+            },
+            {
+                "value": "43",
+                "name": "H_SEEK+ (0x43)"
+            },
+            {
+                "value": "44",
+                "name": "F_ADDRESS_BOOK (0x44)"
+            },
+            {
+                "value": "45",
+                "name": "H_VOL+ (0x45)"
+            },
+            {
+                "value": "46",
+                "name": "F_DIR_GAUCHE (0x46)"
+            },
+            {
+                "value": "47",
+                "name": "F_DIR_DROITE (0x47)"
+            },
+            {
+                "value": "48",
+                "name": "F_DIR_HAUT (0x48)"
+            },
+            {
+                "value": "49",
+                "name": "F_DIR_BAS (0x49)"
+            },
+            {
+                "value": "4A",
+                "name": "F_PUSH_DSGN_RES_1 (0x4A)"
+            },
+            {
+                "value": "4B",
+                "name": "H_VOL- (0x4B)"
+            },
+            {
+                "value": "4C",
+                "name": "H_SRCTEL (0x4C)"
+            }
+        ]
+    },
     "zones": {
         "2100": {
             "name": "Telecoding_Fct_AAS",
@@ -10766,7 +11078,7 @@
                     "name": "Rear parking assistance sound setting",
                     "byte": 0,
                     "mask": "11110000",
-            "type": "raw",
+                    "type": "raw",
                     "form_type": "string"
                 },
                 {
@@ -10876,7 +11188,7 @@
                     "byte": 3,
                     "mask": "1111111111111111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 17,
                     "signed": true
                 },
@@ -10890,7 +11202,7 @@
                     "form_type": "string",
                     "zoneLength": 17,
                     "signed": true
-        },
+                },
                 {
                     "extra_name": "AVP_REGION_0_Y_MAX",
                     "name_original": "ERG_OVIP_VISIOPARK_CROP",
@@ -10962,7 +11274,7 @@
                     "name": "Rear-camera picture template",
                     "byte": 0,
                     "mask": "11111111",
-            "type": "raw",
+                    "type": "raw",
                     "form_type": "combobox",
                     "zoneLength": 1,
                     "params": [
@@ -11092,7 +11404,7 @@
                     "mask": "11111111",
                     "form_type": "string"
                 }
-             ]
+            ]
         },
         "010A": {
             "id": "010A",
@@ -11164,7 +11476,7 @@
                     "mask": "11111111",
                     "signed": true,
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 8
                 }
             ]
@@ -11182,8 +11494,954 @@
             "tab": "cal",
             "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_FMUX"
+            "form_type": "multi",
+            "name": "Calibration_Fct_FMUX",
+            "params": [
+                {
+                    "extra_name": "BTEL_PUSH_1",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_1 (input 0x0109)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_2",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_2 (input 0x010A)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_3",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_3 (input 0x010B)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_4",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_4 (input 0x010C)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_5",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_5 (input 0x010D)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_6",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_6 (input 0x010E)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_7",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_7 (input 0x010F)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_8",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_8 (input 0x0110)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_9",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_9 (input 0x0111)",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_10",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_10 (input 0x0112)",
+                    "byte": 9,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_11",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_11 (input 0x0113)",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_12",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_12 (input 0x0114)",
+                    "byte": 11,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_13",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_13 (input 0x0115)",
+                    "byte": 12,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_14",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_14 (input 0x0116)",
+                    "byte": 13,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_15",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_15 (input 0x0117)",
+                    "byte": 14,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_16",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_16 (input 0x0118)",
+                    "byte": 15,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_17",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_17 (input 0x0119)",
+                    "byte": 16,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_18",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_18 (input 0x011A)",
+                    "byte": 17,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_19",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_19 (input 0x011B)",
+                    "byte": 18,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_20",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_20 (input 0x011C)",
+                    "byte": 19,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_21",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_21 (input 0x011D)",
+                    "byte": 20,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_22",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_22 (input 0x011E)",
+                    "byte": 21,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_23",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_23 (input 0x011F)",
+                    "byte": 22,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_24",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_24 (input 0x0120)",
+                    "byte": 23,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_25",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_25 (input 0x0121)",
+                    "byte": 24,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_26",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_26 (input 0x0122)",
+                    "byte": 25,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_27",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_27 (input 0x0123)",
+                    "byte": 26,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_28",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_28 (input 0x0124)",
+                    "byte": 27,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_29",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_29 (input 0x0125)",
+                    "byte": 28,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_30",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_30 (input 0x0126)",
+                    "byte": 29,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_31",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_31 (input 0x0127)",
+                    "byte": 30,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_32",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_32 (input 0x0128)",
+                    "byte": 31,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_33",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_33 (input 0x0129)",
+                    "byte": 32,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_34",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_34 (input 0x012A)",
+                    "byte": 33,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_35",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_35 (input 0x012B)",
+                    "byte": 34,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_36",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_36 (input 0x012C)",
+                    "byte": 35,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_37",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_37 (input 0x012D)",
+                    "byte": 36,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_38",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_38 (input 0x012E)",
+                    "byte": 37,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_39",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_39 (input 0x012F)",
+                    "byte": 38,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_40",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_40 (input 0x0130)",
+                    "byte": 39,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_41",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_41 (input 0x0131)",
+                    "byte": 40,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_42",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_42 (input 0x0132)",
+                    "byte": 41,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_43",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_43 (input 0x0133)",
+                    "byte": 42,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_44",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_44 (input 0x0134)",
+                    "byte": 43,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "combobox",
+                    "zoneLength": 44,
+                    "params_ref": "FMUX_SOURCE"
+                },
+                {
+                    "extra_name": "BTEL_PUSH_1",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_1 (46-byte schema; raw)",
+                    "byte": 0,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_2",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_2 (46-byte schema; raw)",
+                    "byte": 1,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_3",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_3 (46-byte schema; raw)",
+                    "byte": 2,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_4",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_4 (46-byte schema; raw)",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_5",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_5 (46-byte schema; raw)",
+                    "byte": 4,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_6",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_6 (46-byte schema; raw)",
+                    "byte": 5,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_7",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_7 (46-byte schema; raw)",
+                    "byte": 6,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_8",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_8 (46-byte schema; raw)",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_9",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_9 (46-byte schema; raw)",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_10",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_10 (46-byte schema; raw)",
+                    "byte": 9,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_11",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_11 (46-byte schema; raw)",
+                    "byte": 10,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_12",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_12 (46-byte schema; raw)",
+                    "byte": 11,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_13",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_13 (46-byte schema; raw)",
+                    "byte": 12,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_14",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_14 (46-byte schema; raw)",
+                    "byte": 13,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_15",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_15 (46-byte schema; raw)",
+                    "byte": 14,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_16",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_16 (46-byte schema; raw)",
+                    "byte": 15,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_17",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_17 (46-byte schema; raw)",
+                    "byte": 16,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_18",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_18 (46-byte schema; raw)",
+                    "byte": 17,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_19",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_19 (46-byte schema; raw)",
+                    "byte": 18,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_20",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_20 (46-byte schema; raw)",
+                    "byte": 19,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_21",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_21 (46-byte schema; raw)",
+                    "byte": 20,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_22",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_22 (46-byte schema; raw)",
+                    "byte": 21,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_23",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_23 (46-byte schema; raw)",
+                    "byte": 22,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_24",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_24 (46-byte schema; raw)",
+                    "byte": 23,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_25",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_25 (46-byte schema; raw)",
+                    "byte": 24,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_26",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_26 (46-byte schema; raw)",
+                    "byte": 25,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_27",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_27 (46-byte schema; raw)",
+                    "byte": 26,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_28",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_28 (46-byte schema; raw)",
+                    "byte": 27,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_29",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_29 (46-byte schema; raw)",
+                    "byte": 28,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_30",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_30 (46-byte schema; raw)",
+                    "byte": 29,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_31",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_31 (46-byte schema; raw)",
+                    "byte": 30,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_32",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_32 (46-byte schema; raw)",
+                    "byte": 31,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_33",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_33 (46-byte schema; raw)",
+                    "byte": 32,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_34",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_34 (46-byte schema; raw)",
+                    "byte": 33,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_35",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_35 (46-byte schema; raw)",
+                    "byte": 34,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_36",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_36 (46-byte schema; raw)",
+                    "byte": 35,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_37",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_37 (46-byte schema; raw)",
+                    "byte": 36,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_38",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_38 (46-byte schema; raw)",
+                    "byte": 37,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_39",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_39 (46-byte schema; raw)",
+                    "byte": 38,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_40",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_40 (46-byte schema; raw)",
+                    "byte": 39,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_41",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_41 (46-byte schema; raw)",
+                    "byte": 40,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_42",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_42 (46-byte schema; raw)",
+                    "byte": 41,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_43",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_43 (46-byte schema; raw)",
+                    "byte": 42,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "BTEL_PUSH_44",
+                    "name_original": "ERG_OVIP_BTEL_PUSH_X",
+                    "name": "BTEL_PUSH_44 (46-byte schema; raw)",
+                    "byte": 43,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "MOL_FAC_1",
+                    "name_original": "ERG_OVIP_MOL_FAC_1",
+                    "name": "MOL_FAC_1 (46-byte schema; raw)",
+                    "byte": 44,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                },
+                {
+                    "extra_name": "MOL_FAC_2",
+                    "name_original": "ERG_OVIP_MOL_FAC_2",
+                    "name": "MOL_FAC_2 (46-byte schema; raw)",
+                    "byte": 45,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 46
+                }
+            ]
         },
         "010F": {
             "id": "010F",
@@ -11356,7 +12614,7 @@
                     "mask": "1111111111111111",
                     "type": "raw",
                     "zoneLength": 6,
-            "form_type": "string",
+                    "form_type": "string",
                     "scale": 0.01,
                     "offset": 0,
                     "decimals": 2,
@@ -11942,9 +13200,9 @@
                     "byte": 31,
                     "mask": "1111111111111111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 38
-        },
+                },
                 {
                     "extra_name": "EXPORT_NAV_VIDEO_POPUP_WIDTH",
                     "name_original": "ERG_OVIP_EXPORT_NAV_VIDEO_POPUP_WIDTH",
@@ -12030,13 +13288,13 @@
                     "byte": 0,
                     "mask": "11110000",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "scale": 1,
                     "offset": 0,
                     "decimals": 0,
                     "min": 0,
                     "max": 15
-        },
+                },
                 {
                     "extra_name": "ATT_DG_XVV_PUSH_PRIORITE",
                     "name_original": "ERG_OVIP_ATT_DG_XVV_PUSH_PRIORITE",
@@ -12068,14 +13326,14 @@
                     "byte": 0,
                     "mask": "11110000",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 18,
                     "scale": 1,
                     "offset": 0,
                     "decimals": 0,
                     "min": 0,
                     "max": 15
-        },
+                },
                 {
                     "extra_name": "DAT_DG_LUM_OFFSET_DARKNESS",
                     "name_original": "ERG_OVIP_DAT_DG_LUM_OFFSET_DARKNESS",
@@ -12413,7 +13671,7 @@
                     "byte": 0,
                     "mask": "1111111111100000",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 10,
                     "scale": 100,
                     "offset": 0,
@@ -12807,14 +14065,14 @@
                     "byte": 0,
                     "mask": "11111111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 2,
                     "scale": 1,
                     "offset": 0,
                     "decimals": 0,
                     "min": 0,
                     "max": 100
-        },
+                },
                 {
                     "extra_name": "WIFI_BYTE_1",
                     "name": "WIFI calibration byte 1 (code; meaning unverified)",
@@ -13110,7 +14368,7 @@
                         }
                     ]
                 }
-             ]
+            ]
         },
         "011D": {
             "id": "011D",
@@ -13125,8 +14383,8 @@
                     "name": "HDC calibration byte (code; meaning unverified)",
                     "byte": 0,
                     "mask": "11111111",
-            "type": "raw",
-            "form_type": "string",
+                    "type": "raw",
+                    "form_type": "string",
                     "zoneLength": 1
                 }
             ]
@@ -13281,7 +14539,7 @@
                     "name": "CMB cable equalizer (code)",
                     "byte": 4,
                     "mask": "11110000",
-            "type": "raw",
+                    "type": "raw",
                     "form_type": "combobox",
                     "zoneLength": 5,
                     "params": [
@@ -13992,7 +15250,7 @@
                     "byte": 12,
                     "mask": "11111111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 26,
                     "scale": 1,
                     "offset": 0,
@@ -14074,7 +15332,7 @@
                     "decimals": 0,
                     "min": 0,
                     "max": 21
-        },
+                },
                 {
                     "extra_name": "DAT_DG_CLIM_TYPE_FRAGRANCE_C5P2",
                     "name_original": "ERG_OVIP_DAT_DG_CLIM_TYPE_FRAGRANCE_C5P2",
@@ -15129,7 +16387,7 @@
                             "name": "Code 5"
                         },
                         {
-                    "mask": "11000000",
+                            "mask": "11000000",
                             "name": "Code 6"
                         },
                         {
@@ -15144,7 +16402,7 @@
                     "name": "PPS factory massage passager type (instance 1)",
                     "byte": 9,
                     "mask": "00011100",
-            "type": "raw",
+                    "type": "raw",
                     "form_type": "combobox",
                     "zoneLength": 18,
                     "params": [
@@ -15317,14 +16575,14 @@
                     "byte": 10,
                     "mask": "00011111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 18,
                     "scale": 1,
                     "offset": 0,
                     "decimals": 0,
                     "min": 0,
                     "max": 31
-        },
+                },
                 {
                     "extra_name": "MEDIA_PLAYLIST_1",
                     "name_original": "PPS_FACTORY_MEDIA_PLAYLIST_1",
@@ -15718,13 +16976,13 @@
                     "name": "Pixel clock (MHz)",
                     "byte": 0,
                     "mask": "1111111111111111",
-            "form_type": "string",
+                    "form_type": "string",
                     "scale": 0.01,
                     "offset": 0,
                     "decimals": 2,
                     "min": 0,
                     "max": 655.35
-        },
+                },
                 {
                     "name_original": "ERG_OVIP_THPB_2",
                     "name": "Horizontal Back Porch (THPB), px",
@@ -15824,8 +17082,8 @@
                     "name": "N_AS LVDS object (code; meaning unverified)",
                     "byte": 2,
                     "mask": "11111111",
-            "type": "raw",
-            "form_type": "string",
+                    "type": "raw",
+                    "form_type": "string",
                     "zoneLength": 3
                 }
             ]
@@ -15845,7 +17103,7 @@
                     "byte": 0,
                     "mask": "00001111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 1,
                     "scale": 1,
                     "offset": 0,
@@ -15974,7 +17232,7 @@
                     "byte": 1,
                     "mask": "00001111",
                     "type": "raw",
-            "form_type": "string",
+                    "form_type": "string",
                     "zoneLength": 3,
                     "scale": 1,
                     "offset": 0,
@@ -16198,8 +17456,8 @@
                     "name": "USB voltage compensation (code; meaning unverified)",
                     "byte": 0,
                     "mask": "11110000",
-            "type": "raw",
-            "form_type": "string",
+                    "type": "raw",
+                    "form_type": "string",
                     "zoneLength": 1,
                     "scale": 1,
                     "offset": 0,
@@ -16348,8 +17606,8 @@
                     "name": "HY ZEV threshold, MPG (raw 16-bit BE; scaling unverified)",
                     "byte": 9,
                     "mask": "1111111111111111",
-            "type": "raw",
-            "form_type": "string",
+                    "type": "raw",
+                    "form_type": "string",
                     "zoneLength": 11
                 }
             ]
@@ -16416,7 +17674,7 @@
                     "name": "Push-button luminosity calibration (PUSH_LUM_CLA, 16-byte raw; structure unverified)",
                     "byte": 0,
                     "byte_range": 16,
-            "type": "raw",
+                    "type": "raw",
                     "form_type": "string"
                 }
             ]

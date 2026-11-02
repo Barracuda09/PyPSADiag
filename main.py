@@ -747,6 +747,33 @@ class MainWindow(QMainWindow):
             csv.writer(stream).writerows(rows)
         self.ui.setFilePathInWindowsTitle(fileName[0])
 
+    def __expandEnumRefs(self, ecuObjectList: dict):
+        # Expand shared enum references: a field may use "params_ref": "<name>"
+        # instead of an inline "params" list, and the list is defined once under
+        # the top-level "enums" object. This keeps large repeated option lists
+        # (e.g. FMUX source selectors) defined a single time. After expansion the
+        # in-memory structure is identical to inline "params", so no other code
+        # needs to know about references.
+        enums = ecuObjectList.get("enums")
+        if not isinstance(enums, dict):
+            return
+        def resolve(obj):
+            if isinstance(obj, dict):
+                ref = obj.get("params_ref")
+                if ref is not None and "params" not in obj:
+                    src = enums.get(ref)
+                    if isinstance(src, list):
+                        obj["params"] = [dict(entry) for entry in src]
+                    else:
+                        self.writeToOutputView(i18n().tr("Unknown enum reference: ") + str(ref))
+                        obj["params"] = []
+                for value in obj.values():
+                    resolve(value)
+            elif isinstance(obj, list):
+                for value in obj:
+                    resolve(value)
+        resolve(ecuObjectList.get("zones", {}))
+
     @Slot()
     def openZoneFile(self):
         path = os.path.join(os.path.dirname(__file__), "json")
@@ -766,6 +793,10 @@ class MainWindow(QMainWindow):
                 self.ecuObjectList["zones"].update(includeObjectList)
             else:
                 self.writeToOutputView(i18n().tr("Include Zone file not found: ") + includeZonePath)
+
+        # Expand any shared enum references (params_ref -> params) after the
+        # optional include so referenced lists resolve for included zones too.
+        self.__expandEnumRefs(self.ecuObjectList)
 
         self.updateEcuZonesAndKeys(self.ecuObjectList)
         self.ui.setFilePathInWindowsTitle("")
