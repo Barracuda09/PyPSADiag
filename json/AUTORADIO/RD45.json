@@ -76,7 +76,6 @@
                 "form_type": "string",
                 "available_logic": "active_high"
             },
-
             {
                 "id": "CFG_D0S_RADIO_RADIO_CMD_TYP_000",
                 "name": "CFG_D0S_RADIO_RADIO_CMD_TYP_000",
@@ -162,7 +161,7 @@
                 "name": "Volume linked to the vehicle speed active",
                 "byte": 2,
                 "type": "bool",
-                "mask": "01000000",
+                "mask": "00010000",
                 "form_type": "checkbox",
                 "available_logic": "active_high"
             },
@@ -182,8 +181,8 @@
                 ]
             },
             {
-                "id": "RESERVE_5",
-                "name": "RESERVE_5",
+                "id": "RESERVE_2_5",
+                "name": "RESERVE_2_5",
                 "byte": 2,
                 "type": "bool",
                 "mask": "00100000",
@@ -241,8 +240,8 @@
                 ]
             },
             {
-                "id": "RESERVE_2",
-                "name": "RESERVE_2",
+                "id": "RESERVE_3_2",
+                "name": "RESERVE_3_2",
                 "byte": 3,
                 "type": "bool",
                 "mask": "00000100",
@@ -250,21 +249,20 @@
                 "available_logic": "active_high"
             },
             {
-                "id": "RESERVE_5",
-                "name": "RESERVE_5",
+                "id": "RESERVE_3_5",
+                "name": "RESERVE_3_5",
                 "byte": 3,
                 "type": "bool",
                 "mask": "00100000",
                 "form_type": "checkbox",
                 "available_logic": "active_high"
             },
-
             {
                 "id": "CFG_AGZ_RADIO_LOI_LODX_000",
                 "name": "LO/DX sensitivity curve",
                 "byte": 4,
                 "type": "bool",
-                "mask": "00011000",
+                "mask": "00110000",
                 "form_type": "combobox",
                 "params": [
                     { "mask": "00000000", "name": "00 - Curve N° 1" },
@@ -298,15 +296,6 @@
                     { "mask": "00000110", "name": "110 - Saudi Arabia"},
                     { "mask": "00000111", "name": "111 - China"}
                 ]
-            },
-            {
-                "id": "RESERVE_767",
-                "name": "RESERVE_767",
-                "byte": 4,
-                "type": "raw",
-                "mask": "11000000",
-                "form_type": "string",
-                "available_logic": "active_high"
             },
             {
                 "id": "CFG_ALA_RADIO_PANNE_ANTE_000",
@@ -367,15 +356,6 @@
                 "available_logic": "active_high"
             },
             {
-                "id": "RESERVE_235",
-                "name": "RESERVE_235",
-                "byte": 5,
-                "type": "raw",
-                "mask": "00001100",
-                "form_type": "string",
-                "available_logic": "active_high"
-            },
-            {
                 "id": "CFG_AH2_RADIO_NB_ANTENNE_000",
                 "name": "Number of aerials",
                 "byte": 5,
@@ -385,7 +365,8 @@
                 "params": [
                     { "mask": "00000000", "name": "0 - One"},
                     { "mask": "00001000", "name": "1 - Two"}
-                ]            },
+                ]
+            },
             {
                 "id": "CFG_AIR_RADIO_TYPE_ANTENNE_2_000",
                 "name": "Configuration of the type of aerial 2",
@@ -416,7 +397,6 @@
                 "form_type": "checkbox",
                 "available_logic": "active_high"
             },
-
             {
                 "id": "CFG_BPO_RADIO_TYPE_EMF_000",
                 "name": "EMF type",
@@ -457,7 +437,6 @@
                     { "mask": "00001100", "name": "11 - AUX4"}
                 ]
             },
-
             {
                 "id": "RESERVE10",
                 "name": "RESERVE10",
@@ -531,68 +510,6 @@
                 "available_logic": "active_high"
             }
         ]
-    },
-    "BA": {
-      "name": "Telecoding_RD45_BA",
-      "tab": "coding",
-      "type": "raw",
-      "form_type": "multi",
-      "params": [
-        {
-            "id":"MP_MICRO_PRESENT",
-            "name": "MP_MICRO_PRESENT",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00000001",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        },
-        {
-            "id":"MP_PRESENCE_LECTEUR_CD",
-            "name": "MP_PRESENCE_LECTEUR_CD",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00100000",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        },
-        {
-            "id":"MP_PRESENCE_USB",
-            "name": "MP_PRESENCE_USB",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00010000",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        },
-        {
-            "id":"MP_PRESENCE_IPOD",
-            "name": "MP_PRESENCE_IPOD",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00001000",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        },
-        {
-            "id":"MP_PRESENCE_JACK_new1",
-            "name": "MP_PRESENCE_JACK_new1",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00000100",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        },
-        {
-            "id":"MP_APPAIRAGE_BLUETOOTH",
-            "name": "MP_APPAIRAGE_BLUETOOTH",
-            "byte": 0,
-            "type": "bool",
-            "mask": "00000010",
-            "form_type": "checkbox",
-            "available_logic": "active_high"
-        }
-      ]
     },
     "A1": {
         "name": "Lighting table (A1)",
