@@ -90,8 +90,6 @@ class EcuZoneLineEdit(QLineEdit):
         self.offset = zoneObject.get("offset", 0)
         self.decimals = zoneObject.get("decimals", None)
         if self.scale is not None:
-            if self.signed:
-                raise ValueError("scale cannot be combined with signed")
             if "mask" not in zoneObject:
                 raise ValueError("scale requires a mask")
             if not isinstance(self.scale, (int, float)) or self.scale == 0:
@@ -102,8 +100,14 @@ class EcuZoneLineEdit(QLineEdit):
                 raise ValueError("decimals must be a non-negative integer")
             smask = int(zoneObject["mask"], 2)
             maxCode = smask >> self.__shift(smask)
-            rawLo = self.offset + 0 * self.scale
-            rawHi = self.offset + maxCode * self.scale
+            # "signed" + "scale": the code is two's complement (decoded in changeZoneOption)
+            if self.signed:
+                codeLo = -(1 << (self.signedBits - 1))
+                codeHi = (1 << (self.signedBits - 1)) - 1
+            else:
+                codeLo, codeHi = 0, maxCode
+            rawLo = self.offset + codeLo * self.scale
+            rawHi = self.offset + codeHi * self.scale
             lo = zoneObject.get("min", min(rawLo, rawHi))
             hi = zoneObject.get("max", max(rawLo, rawHi))
             dec = self.decimals if self.decimals is not None else 3
@@ -253,7 +257,13 @@ class EcuZoneLineEdit(QLineEdit):
             if self.signed:
                 if not self.hasAcceptableInput():
                     return byte
-                word = int(text) & ((1 << self.signedBits) - 1)
+                if self.scale is not None:
+                    limit = 1 << (self.signedBits - 1)
+                    code = int(round((float(text) - self.offset) / self.scale))
+                    code = max(-limit, min(code, limit - 1))
+                else:
+                    code = int(text)
+                word = code & ((1 << self.signedBits) - 1)
                 newByte = (word << self.signedShift) & mask
                 value = (int(byte, 16) & ~mask) | newByte
                 return "%0.*X" % (self.getCorrespondingByteSize() * 2, value)
@@ -398,4 +408,4 @@ class EcuZoneLineEdit(QLineEdit):
 
             self.__setText(txt)
 
-        return 0 
+        return 0  
