@@ -11387,22 +11387,115 @@
                         {
                             "mask": "00000100",
                             "name": "1"
+                        },
+                        {
+                            "mask": "00001000",
+                            "name": "2"
+                        },
+                        {
+                            "mask": "00001100",
+                            "name": "3"
+                        },
+                        {
+                            "mask": "00010000",
+                            "name": "4"
+                        },
+                        {
+                            "mask": "00010100",
+                            "name": "5"
+                        },
+                        {
+                            "mask": "00011000",
+                            "name": "6"
+                        },
+                        {
+                            "mask": "00011100",
+                            "name": "7"
                         }
-                    ]
+                    ],
+                    "zoneLength": 108
                 },
                 {
                     "name_original": "ATT_DG_DRIVER_REST_ACTIVATE",
                     "name": "Activate driver restriction at speed higher than, kph",
                     "byte": 1,
                     "mask": "11111111",
-                    "form_type": "string"
+                    "form_type": "string",
+                    "zoneLength": 108
                 },
                 {
                     "name_original": "ATT_DG_DRIVER_REST_DEACTIVAT",
                     "name": "Deactivate driver restriction at speed lower than, kph",
                     "byte": 2,
                     "mask": "11111111",
-                    "form_type": "string"
+                    "form_type": "string",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "TMAX_REPONSE_BSI",
+                    "name": "TMAX_REPONSE_BSI",
+                    "byte": 3,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "HMI_DAT_DG_UNITS_LOST_TEMP",
+                    "name": "HMI_DAT_DG_UNITS_LOST_TEMP",
+                    "byte": 4,
+                    "mask": "11110000",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "WAIT_TIME",
+                    "name": "WAIT_TIME",
+                    "byte": 7,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "CHANGE_THEME_TIMEOUT",
+                    "name": "CHANGE_THEME_TIMEOUT",
+                    "byte": 8,
+                    "mask": "11111111",
+                    "type": "raw",
+                    "form_type": "string",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "DIAG_ML_DEVICEID",
+                    "name": "DIAG_ML_DEVICEID",
+                    "byte": 9,
+                    "byte_range": 32,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "DIAG_ML_FRIENDLYNAME",
+                    "name": "DIAG_ML_FRIENDLYNAME",
+                    "byte": 41,
+                    "byte_range": 32,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20",
+                    "zoneLength": 108
+                },
+                {
+                    "name_original": "DIAG_ML_MANUFACTURER",
+                    "name": "DIAG_ML_MANUFACTURER",
+                    "byte": 73,
+                    "byte_range": 32,
+                    "type": "string_ascii",
+                    "form_type": "string",
+                    "padding_byte": "20",
+                    "zoneLength": 108
                 }
             ]
         },
@@ -14394,8 +14487,70 @@
             "tab": "cal",
             "byte": 0,
             "type": "raw",
-            "form_type": "string",
-            "name": "Calibration_Fct_SVR"
+            "form_type": "multi",
+            "name": "Calibration_Fct_SVR",
+            "params": [
+                {
+                    "name_original": "SVR_APPLE_DIPO",
+                    "name": "SVR_APPLE_DIPO",
+                    "byte": 0,
+                    "mask": "10000000",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                },
+                {
+                    "name_original": "SVR_APPLE_SIRI_EF",
+                    "name": "SVR_APPLE_SIRI_EF",
+                    "byte": 0,
+                    "mask": "01000000",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                },
+                {
+                    "name_original": "SVR_MIRRORLINK",
+                    "name": "SVR_MIRRORLINK",
+                    "byte": 0,
+                    "mask": "00100000",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                },
+                {
+                    "name_original": "SVR_OTHERS",
+                    "name": "SVR_OTHERS",
+                    "byte": 0,
+                    "mask": "00010000",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                },
+                {
+                    "name_original": "SVR_SAMSUNG_SVOICE",
+                    "name": "SVR_SAMSUNG_SVOICE",
+                    "byte": 0,
+                    "mask": "00001000",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                },
+                {
+                    "name_original": "SVR_SPEED_LIMIT_ACTIVIATION",
+                    "name": "SVR_SPEED_LIMIT_ACTIVIATION",
+                    "byte": 0,
+                    "mask": "00000100",
+                    "type": "raw",
+                    "form_type": "checkbox",
+                    "available_logic": "active_high",
+                    "zoneLength": 1
+                }
+            ]
         },
         "011F": {
             "id": "011F",
