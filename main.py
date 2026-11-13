@@ -36,7 +36,7 @@ from PySide6.QtCore import QTimer
 from PyPSADiagGUI import PyPSADiagGUI
 import FileLoader
 from ParseDTC import ParseDTC
-from DiagnosticCommunication import DiagnosticCommunication, ZoneWriteWorker
+from DiagnosticCommunication import DiagnosticCommunication, ZoneWriteWorker, EngineRoutineWorker, ENGINE_ROUTINES
 from SeedKeyAlgorithm import SeedKeyAlgorithm
 from SerialPort import SerialPort
 from FileConverter import FileConverter
@@ -383,6 +383,8 @@ class MainWindow(QMainWindow):
         self.ui.DisconnectPort.clicked.connect(self.disconnectPort)
         self.ui.disableEcoMode.clicked.connect(self.disableEcoMode)
         self.ui.disableEcoModeAction.triggered.connect(self.disableEcoMode)
+        for key, action in self.ui.engineRoutineActions.items():
+            action.triggered.connect(lambda checked=False, routine=key: self.startEngineRoutine(routine))
         self.ui.visioparkCalibrationAction.triggered.connect(self.visioparkCalibration)
         self.ui.bruteforceKeyAction.triggered.connect(self.bruteforceKey)
         self.ui.canFrameSnifferAction.triggered.connect(self.openCanFrameSniffer)
@@ -928,8 +930,41 @@ class MainWindow(QMainWindow):
             self.writeToOutputView(i18n().tr("Port not open!"))
 
 
+    def startEngineRoutine(self, routine):
+        if getattr(self, "_zoneWriteWorker", None) is not None:
+            return
+        if not self.serialController.isOpen():
+            self.writeToOutputView("Port not open!")
+            return
+        title, rid, argument, description = ENGINE_ROUTINES[routine]
+        target = dict(self.ecuObjectList or {})
+        if not target.get('tx_id') or not target.get('rx_id'):
+            self.writeToOutputView("Load an ECU JSON first so its address can be restored afterwards.")
+            return
+        target['bus'] = self.ui.canPinsComboBox.currentData() or 'DIAG'
+        message = (description + "\n\nCompatibility is not checked automatically. "
+                   "You are responsible for selecting the appropriate routine.\n"
+                   "This runs the routine only: no automatic DTC clearing, voltage check, "
+                   "ECU reset or ignition-cycle wizard.\n\n"
+                   "Target: engine ECU 6A8/688 (regardless of the open JSON).\n"
+                   "Start command: 3101" + rid + argument + "\nRun this routine?")
+        if QMessageBox.question(self, title, message, QMessageBox.Yes | QMessageBox.No,
+                                QMessageBox.No) != QMessageBox.Yes:
+            return
+        worker = EngineRoutineWorker(self.udsCommunication, routine, target,
+                                     addressedBySelectLine(self.serialController), self)
+        self._startDiagnosticWorker(worker, self.engineRoutineOutcome)
+
+    @Slot(bool)
+    def engineRoutineOutcome(self, ok):
+        self.writeToOutputView("Engine routine completed; see result above" if ok else
+                               "Engine routine incomplete - see log above")
+
     def startBluetoothZoneWrite(self, communication, arguments):
-        self._zoneWriteWorker = ZoneWriteWorker(communication, arguments, self)
+        self._startDiagnosticWorker(ZoneWriteWorker(communication, arguments, self), self.zoneWriteOutcome)
+
+    def _startDiagnosticWorker(self, worker, outcome):
+        self._zoneWriteWorker = worker
         # Disable inputs, not their parent containers: the main console
         # stays enabled for selection, scrolling and copying.
         names = ("command", "sendCommand", "openCSVFile", "saveCSVFile",
@@ -945,7 +980,7 @@ class MainWindow(QMainWindow):
         for widget, enabled in self._zoneWriteControls:
             widget.setEnabled(False)
         self._zoneWriteWorker.log.connect(self.outputToTextEditCallback)
-        self._zoneWriteWorker.outcome.connect(self.zoneWriteOutcome)
+        self._zoneWriteWorker.outcome.connect(outcome)
         self._zoneWriteWorker.finished.connect(self.zoneWriteFinished)
         self._zoneWriteWorker.start()
 
@@ -969,7 +1004,7 @@ class MainWindow(QMainWindow):
 
     def closeEvent(self, event):
         if getattr(self, "_zoneWriteWorker", None) is not None:
-            self.writeToOutputView("Wait for the active zone write to finish before closing.")
+            self.writeToOutputView("Wait for the active diagnostic operation to finish before closing.")
             event.ignore()
         else:
             super().closeEvent(event)
