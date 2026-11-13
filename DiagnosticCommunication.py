@@ -996,3 +996,123 @@ class ZoneWriteWorker(QThread):
                 transport.progress_logger = previous_logger
                 transport._ka_suspended = previous_suspend
         self.outcome.emit(ok)
+
+
+# Manual routines: compatibility is explained to the user, never inferred from JSON.
+ENGINE_ROUTINES = {
+    "battery": ("Register battery replacement", "DF20", "",
+        "Known families: VD46, MED17_4_4, MEVD17_4_4, EDC17C60, DCM71. "
+        "Registers replacement of the 12 V battery; does not code capacity or type. "
+        "Ignition on, engine stopped. Follow the vehicle-specific ignition cycle after completion."),
+    "scr_df2b": ("Reset SCR / AdBlue faults (DF2B)", "DF2B", "",
+        "Known families: EDC17C60, DCM62, early DCM71 variants A-G. "
+        "Fault reset after SCR repair, not AdBlue deactivation. Ignition on, engine stopped."),
+    "scr_dd1e": ("Reset SCR / AdBlue faults (DD1E)", "DD1E", "",
+        "Known families: DCM71 variants H/I/J and DCM71 EURO6_4. "
+        "Fault reset after SCR repair, not AdBlue deactivation. Ignition on, engine stopped. "
+        "The full service procedure may require ECU reset and a power-latch cycle afterwards."),
+    "stop_start_off": ("Stop & Start: inhibit automatic stop", "DFC7", "02",
+        "Known families: EDC17C60, DCM62. Requests inhibition of automatic engine stop. "
+        "Persistence after an ignition cycle is not verified."),
+    "stop_start_normal": ("Stop & Start: normal operation", "DFC7", "00",
+        "Known families: EDC17C60, DCM62. Requests normal Stop & Start operation."),
+}
+
+
+class EngineRoutineWorker(QThread):
+    log = Signal(str)
+    outcome = Signal(bool)
+
+    def __init__(self, communication, routine, restore_target, select_line=False, parent=None):
+        super().__init__(parent)
+        self.communication = communication
+        self.routine = routine
+        self.restore_target = dict(restore_target)
+        self.select_line = select_line
+
+    def _select(self, target):
+        port = self.communication.serialPort
+        if not self.select_line:
+            if port.configure(target['tx_id'], target['rx_id'], target['protocol'],
+                              bus=target.get('bus', 'DIAG')) is False:
+                raise RuntimeError("Adapter configuration failed")
+        reply = self.communication.writeECUCommand(
+            '>' + target['tx_id'] + ':' + target['rx_id'], retries=0)
+        if reply.strip().upper() != 'OK':
+            raise RuntimeError("ECU address selection failed: " + repr(reply))
+
+    def _request(self, command, prefix):
+        reply = self.communication.writeECUCommand(command, retries=0).upper()
+        if not reply.startswith(prefix) or len(reply) % 2 or any(c not in '0123456789ABCDEF' for c in reply):
+            raise RuntimeError("Command " + command + ": expected " + prefix + ", received " + repr(reply))
+        return reply[len(prefix):]
+
+    def _execute(self):
+        title, rid, argument, _ = ENGINE_ROUTINES[self.routine]
+        opened = False
+        ok = False
+        try:
+            self.log.emit(title + ': target 6A8/688; manual compatibility selection')
+            # Stop sketch keep-alive before switching ECU; ELM is suspended in run().
+            if self.communication.writeECUCommand('S', retries=0).upper() != 'OK':
+                raise RuntimeError('Could not stop adapter keep-alive')
+            self._select(dict(tx_id='6A8', rx_id='688', protocol='uds', bus='DIAG'))
+            opened = True  # Attempt cleanup even when the session ACK is lost.
+            self._request('1003', '5003')
+            status = self._request('3101' + rid + argument, '7101' + rid)
+            if status and status[:2] not in ('00', '01', '02'):
+                raise RuntimeError('Routine start status: ' + status)
+            deadline = time.monotonic() + 30.0
+            while True:
+                if time.monotonic() >= deadline:
+                    raise RuntimeError('Routine result timed out; no automatic restart')
+                time.sleep(0.25)
+                status = self._request('3103' + rid, '7103' + rid)
+                if time.monotonic() >= deadline:
+                    raise RuntimeError('Routine result timed out; no automatic restart')
+                if status[:2] == '02':
+                    self.log.emit('ECU confirmed routine completion: ' + rid)
+                    ok = True
+                    break
+                if status[:2] != '01':
+                    raise RuntimeError('Routine result not successful: ' + repr(status))
+        except Exception as exc:
+            self.log.emit('Routine result unconfirmed: ' + str(exc))
+        finally:
+            if opened:
+                try:
+                    self._request('1001', '5001')
+                except Exception as exc:
+                    ok = False
+                    self.log.emit('Session cleanup failed: ' + str(exc))
+            try:
+                self._select(self.restore_target)
+                if self.restore_target.get('lin_id'):
+                    reply = self.communication.writeECUCommand('L' + self.restore_target['lin_id'], retries=0)
+                    if reply.upper() != 'OK':
+                        raise RuntimeError('LIN address restoration failed: ' + repr(reply))
+                self.log.emit('Previous ECU address restored')
+            except Exception as exc:
+                ok = False
+                self.log.emit('Could not restore previous ECU address; reconnect before continuing: ' + str(exc))
+        return ok
+
+    def run(self):
+        from contextlib import nullcontext
+        transport = getattr(self.communication.serialPort, 'transport', self.communication.serialPort)
+        lock = getattr(transport, '_io_lock', None)
+        saved = {}
+        ok = False
+        with lock if lock is not None else nullcontext():
+            try:
+                for name, value in (('_ka_suspended', True), ('progress_logger', self.log.emit), ('logger', self.log.emit)):
+                    if hasattr(transport, name):
+                        saved[name] = getattr(transport, name)
+                        setattr(transport, name, value)
+                ok = self._execute()
+            except Exception as exc:
+                self.log.emit('Routine failed: ' + str(exc))
+            finally:
+                for name, value in saved.items():
+                    setattr(transport, name, value)
+        self.outcome.emit(ok)
