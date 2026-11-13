@@ -204,6 +204,13 @@ class PyPSADiagGUI(object):
         self.disableEcoModeAction = QAction(self.commandsMenu)
         self.commandsMenu.addAction(self.disableEcoModeAction)
 
+        from DiagnosticCommunication import ENGINE_ROUTINES
+        self.engineRoutinesMenu = self.commandsMenu.addMenu("Engine routines")
+        self.engineRoutineActions = {}
+        for key, (title, _, _, _) in ENGINE_ROUTINES.items():
+            action = self.engineRoutinesMenu.addAction(title)
+            self.engineRoutineActions[key] = action
+
         self.visioparkCalibrationAction = QAction(self.commandsMenu)
         self.commandsMenu.addAction(self.visioparkCalibrationAction)
 
