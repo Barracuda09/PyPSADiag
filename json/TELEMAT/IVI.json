@@ -3493,7 +3493,7 @@
           "extra_name": "CFG_GF7_IVI_OPT_PERS_MOD_CLST_000",
           "name_original": "CFG_GF7_IVI_OPT_PERS_MOD_CLST_000",
           "name": "Digital instrument panel configuration",
-          "zoneLength": [30, 32, 34, 35, 37, 38, 39, 40],          
+          "zoneLength": [30, 32, 34, 35, 37, 38, 39, 40],
           "byte": 29,
           "mask": "10000000",
           "form_type": "checkbox",
@@ -5993,6 +5993,14 @@
       "type": "raw",
       "form_type": "string"
     },
+    "0102": {
+      "id": "Calibration_Fct_0102",
+      "tab": "cal",
+      "name": "Calibration_Fct_0102",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "0103": {
       "id": "Calibration_Fct_0103",
       "tab": "cal",
@@ -6029,6 +6037,14 @@
       "id": "Calibration_Fct_0107",
       "tab": "cal",
       "name": "Calibration_Fct_0107",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0108": {
+      "id": "Calibration_Fct_0108",
+      "tab": "cal",
+      "name": "Calibration_Fct_0108",
       "byte": 0,
       "type": "raw",
       "form_type": "string"
@@ -6289,6 +6305,22 @@
       "type": "raw",
       "form_type": "string"
     },
+    "0D00": {
+      "id": "Calibration_Fct_0D00",
+      "tab": "cal",
+      "name": "Calibration_Fct_0D00",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "0D01": {
+      "id": "Calibration_Fct_0D01",
+      "tab": "cal",
+      "name": "Calibration_Fct_0D01",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "C000": {
       "id": "Secured Coding Traceability",
       "tab": "cal",
@@ -6524,6 +6556,14 @@
       "form_type": "string",
       "name": "VIN"
     },
+    "F180": {
+      "id": "Unknown_F180",
+      "tab": "ident",
+      "name": "Unknown zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
     "F181": {
       "name": "Telecoding_Reference",
       "tab": "ident",
@@ -6536,6 +6576,38 @@
         "type": "raw",
         "form_type": "string"
       }
+    },
+    "F182": {
+      "id": "Unknown_F182",
+      "tab": "ident",
+      "name": "Unknown zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F186": {
+      "id": "Unknown_F186",
+      "tab": "ident",
+      "name": "Unknown zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F188": {
+      "id": "Unknown_F188",
+      "tab": "ident",
+      "name": "Unknown zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
+    },
+    "F191": {
+      "id": "Unknown_F191",
+      "tab": "ident",
+      "name": "Unknown zone",
+      "byte": 0,
+      "type": "raw",
+      "form_type": "string"
     },
     "2123": {
       "id": "CFG_G82_IVI_VAR_CAN_EN_FUEL_TYPE_000",
