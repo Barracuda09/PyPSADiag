@@ -39,6 +39,91 @@
                     }
                 ]
             },
+            "CFG_FII_BCM_CATVM_BSG_RG_002": {
+                "name": "Close button",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00001000",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "00001000"
+                    }
+                ]
+            },
+            "CFG_FII_BCM_CATVM_BSG_RG_003": {
+                "name": "Close button on door",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000100",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "00000100"
+                    }
+                ]
+            },
+            "CFG_FII_BCM_CATVM_BSG_RG_004": {
+                "name": "Remote control PLIP",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000010",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "00000010"
+                    }
+                ]
+            },
+            "CFG_FII_BCM_CATVM_BSG_RG_005": {
+                "name": "Additional closing motor",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00000001",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "00000001"
+                    }
+                ]
+            },
+            "CFG_FII_BCM_CATVM_BSG_RG_006": {
+                "name": "Electric tailgate",
+                "byte": 0,
+                "type": "bool",
+                "form_type": "combobox",
+                "mask": "00010000",
+                "params": [
+                    {
+                        "name": "Absent",
+                        "mask": "00000000"
+                    },
+                    {
+                        "name": "Present",
+                        "mask": "00010000"
+                    }
+                ]
+            },
             "CFG_FIH_BCM_BCM_CATVM_CAP_PRES_002": {
                 "name": "Presence and number of the anti-pinch sensors",
                 "byte": 0,
